@@ -2,16 +2,19 @@ import pandas as pd
 import logging, math, datetime
 import csv,json,os,sys,argparse,time,pprint
 from CSVData import *
-from util import Queue, ConfusionMatrix
+from util import *
 from MLT import MoreLikeThisQuery
 from MLT import ElasticsearchHandler
+from elasticsearch.helpers import
+import cProfile, pstats, io
+from pstats import SortKey
+
 # Configure logging
 logging.basicConfig(
     filename='example.log',  # Specify the log file name
     level=logging.INFO,      # Set the minimum log level (DEBUG logs everything)
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-
 # Create a logger for your module
 logger = logging.getLogger(__name__)
 project=["tomcat","JGroups","spring-integration",
@@ -28,7 +31,7 @@ BUG_DISCOVERED_W_DAYS = 2
 BUG_FOUND = 3
 
 def read_json(file_path):
-	with open(file_path, 'r') as json_file:
+	with open(file_path, 'r',encoding='utf-8') as json_file:
 		json_document = json.load(json_file)
 		return json_document
 
@@ -53,10 +56,10 @@ def populate_index(es_handler,index_name,folder_path,commit_id,doc_id):
             document = read_json(file_path)
             doc_id += 1
             response = es_handler.index_json_document(document, index_name, doc_id)
-        print("Indexed ",len(commit_files), " docs for ",commit_id)
+    print("Indexed ",len(commit_files), " docs for ",commit_id)
     return doc_id
 
-def populate_index(es_handler,index_name,folder_path,commit_id,doc_id):
+def populate_index_bulk(es_handler,index_name,folder_path,commit_id,doc_id):
     commit_files = get_files_for_commit(commit_id,folder_path)
     if len(commit_files) > 0:
         bulk_data=[]
@@ -70,10 +73,10 @@ def populate_index(es_handler,index_name,folder_path,commit_id,doc_id):
                 "_source": json_doc
             }
             bulk_data.append(document)
+        response = es_handler.index_bulk(bulk_data)
+    return doc_id
 
-        response = es_handler.index_bulk(document, index_name, doc_id)
-
-
+@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
 def run_evaluation_with_latency(csv_data_list,type3_list,folder_path,es_handler,index_name):
      TRAIN_DATA_LENGTH = math.ceil(len(csv_data_list)*0.1)
      W = 90
@@ -84,7 +87,8 @@ def run_evaluation_with_latency(csv_data_list,type3_list,folder_path,es_handler,
      result_list = []
      for row in csv_data_list:
          if row_count <= TRAIN_DATA_LENGTH :
-             doc_id = populate_index(es_handler,index_name,folder_path,row.commit_id,doc_id)
+             #doc_id = populate_index(es_handler,index_name,folder_path,row.commit_id,doc_id)
+             doc_id = populate_index_bulk(es_handler,index_name,folder_path,row.commit_id,doc_id)
          elif row_count > TRAIN_DATA_LENGTH: #only index first 10% commits
              predicted = predict(row.commit_id,folder_path,index_name)
              if predicted is not None:
@@ -97,12 +101,12 @@ def run_evaluation_with_latency(csv_data_list,type3_list,folder_path,es_handler,
 
              if len(new_tr_examples) > 0:
                  for example in new_tr_examples:
-                    doc_id = populate_index(es_handler,index_name,folder_path,example.commit_id,doc_id)
+                    doc_id = populate_index_bulk(es_handler,index_name,folder_path,example.commit_id,doc_id)
 
              new_tr_examples = check_CLH_queue(CLH_queue,row.author_date_unix_timestamp,W,type3_list)
              if len(new_tr_examples) > 0:
                  for example in new_tr_examples:
-                     doc_id = populate_index(es_handler,index_name,folder_path,example.commit_id,doc_id)
+                     doc_id = populate_index_bulk(es_handler,index_name,folder_path,example.commit_id,doc_id)
          row_count +=1
      return result_list
 
@@ -226,7 +230,6 @@ def calculate_time_elapsed(timestamp1,timestamp2):
     days_difference = time_difference.days
     return days_difference
 
-
 def main(argv):
     # TO DOs:
     # Dry run
@@ -243,10 +246,10 @@ def main(argv):
     args = parser.parse_args()
 
     project = args.arg1
-    index_name = "cabral_"+project.lower()
+    index_name = "cabral_test_"+project.lower()
     path = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/cabral_dataset/"+project+"/data/"
     folder_path = path+project+"_jsonfiles/"
-    csv_file = path+project+"_commits.csv"
+    csv_file = path+project+"_commits_test.csv"
 
     es_handler = ElasticsearchHandler()
     response = es_handler.check_health()
@@ -255,13 +258,17 @@ def main(argv):
 
     if not es_handler.client.indices.exists(index=index_name):
         response = es_handler.create_index(index_name)
+        print(response)
+
     csv_data_list,type3_list = read_commits_csv(csv_file)
+
     result_list = run_evaluation_with_latency(csv_data_list,type3_list,folder_path,es_handler,index_name)
 
+    '''
     result_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/results/metrics_"+project+".txt"
     cm = ConfusionMatrix(result_list)
     cm.display_to_file(result_file)
-
+    '''
     response = es_handler.delete_index(index_name)
     print("Index deleted:",response)
 

@@ -1,6 +1,8 @@
 from elasticsearch_dsl import Search, Q
 from elasticsearch import Elasticsearch
+from elasticsearch.helpers import bulk
 
+import json
 def get_index_settings(filename):
     with open(filename) as f:
         index_settings = f.read()
@@ -23,9 +25,14 @@ class ElasticsearchHandler:
         response = self.client.index(index=index_name,id=doc_id,body=json_document,doc_type='_doc')
         return response
 
-    def index_bulk(self,json_document,index_name,doc_id):
+    def index_bulk(self,bulk_data):
+        #print(json.dumps(bulk_data, indent=2))
         try:
-            response = self.client.bulk(index=index_name, body=bulk_data,refresh=True)  # Specify the index and provide the bulk data
+            success,failed = bulk(self.client,bulk_data,refresh=True)  # provide the bulk data
+            if failed:
+                for item in failed:
+                    print(f"Failed operation: {item['index']['_id']}, reason: {item['index']['error']['reason']}")
+
             print("Bulk request executed successfully.")
         except Exception as e:
             print("Bulk request failed:", str(e))
