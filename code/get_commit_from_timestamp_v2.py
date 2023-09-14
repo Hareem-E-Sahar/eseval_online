@@ -16,7 +16,7 @@ def read_and_analyze_data(fname):
 		csvreader = csv.DictReader(csvfile)
 		for row in csvreader:
 			print(row['fixes'])
-
+			
 def commits_by_type(fname):
 	import pandas as pd
 	import numpy as np
@@ -27,8 +27,10 @@ def commits_by_type(fname):
 	print(specific_column)
 	#specific_column=df["contains_bug"].value_counts()
 
-def read_file(fname,wfname):
+
+def get_commit_hashes(fname,wfname):
 	commit_dicts = get_gitlog()
+	print("len of gitlog:",len(commit_dicts))
 	with open(fname, mode='r') as input_file, open(wfname, mode='w', newline='') as output_file:
 		reader = csv.DictReader(input_file)
 		fieldnames = reader.fieldnames + ['commit_id']
@@ -42,11 +44,12 @@ def read_file(fname,wfname):
 			actual_timestamp = row['author_date_unix_timestamp']
 			if actual_timestamp is not None:
 				commit_sha = timestamp_to_commit_using_gitlog(int(actual_timestamp))
-				if len(commit_sha) == 0:
+				if len(commit_sha) == 0 :
 					commit_sha = fetch_commit_hash_from_gitlog(str(actual_timestamp),commit_dicts)
 				row['commit_id'] = commit_sha
 				writer.writerow(row)
 
+'''
 def timestamp_to_commit_using_API(actual_timestamp):
 	access_token = "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"
 	g = Github(access_token)
@@ -61,6 +64,7 @@ def timestamp_to_commit_using_API(actual_timestamp):
 	commits = repo.get_commits(since=start_datetime, until=end_datetime)
 	for commit in commits:
 		return commit.sha #in case of multiple, first is returned
+'''
 
 def timestamp_to_commit_using_gitlog(actual_timestamp):
 	#This way you don't encounter API rate limit error.
@@ -75,6 +79,13 @@ def timestamp_to_commit_using_gitlog(actual_timestamp):
 	    return commit_hashes[0]	#in case of multiple, first is returned
 	else:
 		return None
+
+def find_unique():
+	import pandas as pd
+	import numpy as np
+	df=pd.read_csv(fname)
+	specific_column=df["classification"].unique()
+	#specific_column=df["contains_bug"].value_counts()
 
 import json, git, subprocess, pathlib, getopt
 from unidiff import PatchSet
@@ -190,44 +201,18 @@ def get_gitlog():
 	        'commit_timestamp': str(date_to_timestamp(date_strs[1])),
 	        'author_timestamp': str(date_to_timestamp(date_strs[2]))
 	    }
-
 	    # Append the commit dictionary to the list
 	    commit_dicts.append(commit_dict)
 	return commit_dicts
 
-def run_tests():
-	#test1
+def test1():
 	print(timestamp_to_commit_using_gitlog(1404477609))
 	commit_dict = get_gitlog()
 	print(fetch_commit_hash_from_gitlog(str(1404477609),commit_dict))
-	#test2
-	commits_by_type(pathToCsv)
 
 def main(argv):
 	repositoryFolder = ''
-	'''
-	parser = argparse.ArgumentParser(description='This script uses timestamp to get commit sha. It also gets changes for each commit using github API')
-	parser.add_argument('-r', '--repositoryFolder', help='Path to the repository folder')
-	parser.add_argument('-p', '--pathToCsv', help='Path to the CSV file')
-	parser.add_argument('-n', '--nameOfTheProject', help='Name of the project')
-	parser.add_argument('-H', '--help', action='store_true', help='Pass arguments -r for repo -p for path to csv -n for project name')
 
-	args = parser.parse_args()
-
-	if args.help:
-	    parser.print_help()
-	    exit()
-
-	repoFolder = args.repositoryFolder
-	pathToCsv = args.pathToCsv
-	project = args.nameOfTheProject
-
-	if not repoFolder or not pathToCsv or not project:
-	    print("Please provide all required arguments.")
-	    parser.print_help()
-	    exit()
-
-	'''
 	try:
 		opts, args = getopt.getopt(argv,"hr:p:n:")
 	except getopt.GetoptError as e:
@@ -244,18 +229,19 @@ def main(argv):
 			repoFolder = arg
 		elif opt == '-n':
 			project = arg
-	'''
+
 	parentdir ="/home/hareem/UofA2023/eseval_v2/eseval_timewise/cabral_dataset/"+project+"/data/"
 	createFileIfNotExist(parentdir)
 	subdir = project +"_jsonfiles/"
 	jsondir = os.path.join(parentdir, subdir)
 	createFileIfNotExist(jsondir)
-
 	write_fname = parentdir+project+'_commits.csv'
-	read_file(pathToCsv,write_fname)
+	#only call this function to get commit_ids  
+	get_commit_hashes(pathToCsv,write_fname)
+	
+	#call this function to make json files 
+	#replace first argument (write_fname) with pathToCsv when called without 'get_commit_hashes' 
 	get_commit_sourcecode(write_fname,jsondir,project,repoFolder)
-	'''
-
 
 if __name__ == "__main__":
     main(sys.argv[1:])
