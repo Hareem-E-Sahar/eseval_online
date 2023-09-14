@@ -6,12 +6,12 @@ from util import *
 from MLT import *
 from Queue import Queue
 from Classifier import Classifier
-from ConfusionMatrix import *
 from elasticsearch.helpers import bulk
 import cProfile, pstats, io
 from pstats import SortKey
 
 commit_files_dict = {}
+'''
 # Configure logging
 logging.basicConfig(
     filename='example.log',  # Specify the log file name
@@ -20,10 +20,11 @@ logging.basicConfig(
 )
 # Create a logger for your module
 logger = logging.getLogger(__name__)
-project=["tomcat","JGroups","spring-integration",
-				"camel","brackets","nova","fabric8",
-				"neutron","npm","BroadleafCommerce"]
-
+'''
+projects=["tomcat","JGroups","spring-integration",
+				"camel","nova","fabric8",
+				"neutron","BroadleafCommerce"]
+K = 5
 #the commit is not buggy
 NOT_BUG = 0
 # the commit is buggy but its true label was not found within W days for test dataset
@@ -32,18 +33,6 @@ BUG_NOT_DISCOVERED_W_DAYS = 1
 BUG_DISCOVERED_W_DAYS = 2
 #the true label of a defective commit was assigned.
 BUG_FOUND = 3
-
-'''
-def populate_index(es_handler,index_name,folder_path,commit_id,doc_id):
-    commit_files = get_files_for_commit(commit_id,folder_path)
-    if len(commit_files) > 0:
-        for file_path in commit_files:
-            document = read_json(file_path)
-            doc_id += 1
-            response = es_handler.index_json_document(document, index_name, doc_id)
-    print("Indexed ",len(commit_files), " docs for ",commit_id)
-    return doc_id
-'''
 
 def populate_index_bulk(es_handler,index_name,folder_path,commit_id,doc_id):
     if commit_id in commit_files_dict:
@@ -66,7 +55,7 @@ def populate_index_bulk(es_handler,index_name,folder_path,commit_id,doc_id):
         response = es_handler.index_bulk(bulk_data)
     return doc_id
 
-@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
+#@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
 def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,index_name):
      TRAIN_DATA_LENGTH = math.ceil(len(csv_data_list)*0.1)
      W = 90
@@ -112,11 +101,11 @@ def predict(commit_id,folder_path,index_name):
             mlt_query_executor.execute_mlt_query(like_text, field) #min_term_freq, min_doc_freq
         #print_similar_documents(mlt_query_executor.similar_documents)
         clf = Classifier(mlt_query_executor.similar_documents)
-        predicted = clf.classify_knn(3)
+        predicted = clf.classify_knn(K)
         return predicted
     return None
 
-@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
+#@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
 def check_WFL_queue(WFL_queue,CLH_queue,current_timestamp,W,type3_dict):
     #either bug is reported for commit or it has waited for W days in WFL_queue
     tr_examples = []
@@ -142,7 +131,7 @@ def check_WFL_queue(WFL_queue,CLH_queue,current_timestamp,W,type3_dict):
                 WFL_queue.remove(row)
     return tr_examples
 
-@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
+#@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
 def check_CLH_queue(CLH_queue,current_timestamp,W,type3_dict):
     tr_examples = []
     for row in CLH_queue:
@@ -151,16 +140,6 @@ def check_CLH_queue(CLH_queue,current_timestamp,W,type3_dict):
             tr_examples.append(row)
             CLH_queue.remove(row)
     return tr_examples
-
-'''
-def defect_linked_at_timestamp(item,current_timestamp,type3_list):
-    for row in type3_list:
-        if row==item:
-            print("timestamp->",row.author_date_unix_timestamp,item.author_date_unix_timestamp)
-            if row.author_date_unix_timestamp <=current_timestamp:
-                return True
-    return False
-'''
 
 def defect_linked_at_timestamp(item,current_timestamp,type3_dict):
     if item.commit_id in type3_dict:
@@ -192,7 +171,7 @@ def calculate_time_elapsed(timestamp1,timestamp2):
     days_difference = time_difference.days
     return days_difference
 
-@profile(sort_by='cumulative', lines_to_print=20, strip_dirs=True)
+#@profile(sort_by='cumulative', lines_to_print=20, strip_dirs=True)
 def main(argv):
     # TO DOs:
     # Dry run
@@ -204,35 +183,34 @@ def main(argv):
     # ensemble of knn and la?
     parser = argparse.ArgumentParser(description="Example script to demonstrate argument parsing.")
     parser.add_argument('arg1', type=str, help='Project name.')
-    parser.add_argument('arg2', type=str, help='test arg2')
+    #parser.add_argument('arg2', type=str, help='test arg2')
     #parser.add_argument('--arg2', type=str, default='default_value', help='Description of argument 2')
     args = parser.parse_args()
 
     project = args.arg1
     index_name = "cabral_"+project.lower()
     path = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/cabral_dataset/"+project+"/data/"
-    folder_path = path+project+"_jsonfiles/"
-    csv_file = path+project+"_commits.csv"
+    folder_path = path + project + "_jsonfiles/"
+    csv_file    = path + project + "_commits.csv"
 
     es_handler = ElasticsearchHandler()
     #response = es_handler.check_health()
-
     response = es_handler.delete_index(index_name)
-
     if not es_handler.client.indices.exists(index=index_name):
         response = es_handler.create_index(index_name)
         print(response)
 
     csv_data_list,type3_list = read_commits_csv(csv_file)
     type3_dict = find_matches(csv_data_list,type3_list)
+
+    start_time = time.time()
     result_list = run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,index_name)
+    end_time = time.time()
 
-    result_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/results/metrics_"+project+".txt"
-    resultlist_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/results/resultlist_"+project+".txt"
-
+    execution_time = end_time - start_time
     cm = ConfusionMatrix(result_list)
-    cm.compute_metrics(resultlist_file)
-    cm.display_to_file(result_file)
+    cm.compute_metrics()
+    save_result(project,K,cm,execution_time)
 
     response = es_handler.delete_index(index_name)
     print("Index deleted:",response)
