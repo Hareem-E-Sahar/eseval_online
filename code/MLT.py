@@ -33,7 +33,6 @@ class ElasticsearchHandler:
                 for item in failed:
                     print(f"Failed operation: {item['index']['_id']}, reason: {item['index']['error']['reason']}")
 
-            print("Bulk request executed successfully.")
         except Exception as e:
             print("Bulk request failed:", str(e))
 
