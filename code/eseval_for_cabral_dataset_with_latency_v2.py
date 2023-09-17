@@ -24,7 +24,6 @@ logger = logging.getLogger(__name__)
 projects=["tomcat","JGroups","spring-integration",
 				"camel","nova","fabric8",
 				"neutron","BroadleafCommerce"]
-K = 5
 #the commit is not buggy
 NOT_BUG = 0
 # the commit is buggy but its true label was not found within W days for test dataset
@@ -56,7 +55,7 @@ def populate_index_bulk(es_handler,index_name,folder_path,commit_id,doc_id):
     return doc_id
 
 #@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
-def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,index_name):
+def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,index_name,K):
      TRAIN_DATA_LENGTH = math.ceil(len(csv_data_list)*0.1)
      W = 90
      row_count = 0
@@ -68,7 +67,7 @@ def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,
          if row_count <= TRAIN_DATA_LENGTH :#only index first 10% commits
              doc_id = populate_index_bulk(es_handler,index_name,folder_path,row.commit_id,doc_id)
          elif row_count > TRAIN_DATA_LENGTH:
-             predicted = predict(row.commit_id,folder_path,index_name)
+             predicted = predict(K,row.commit_id,folder_path,index_name)
              if predicted is not None:
                  res = Result(row.commit_id,row.contains_bug,predicted)
                  result_list.append(res)
@@ -88,7 +87,7 @@ def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,
      return result_list
 
 #parallelize
-def predict(commit_id,folder_path,index_name):
+def predict(K,commit_id,folder_path,index_name):
     mlt_query_executor = MoreLikeThisQuery(index_name) #class object
     commit_files = get_files_for_commit(commit_id,folder_path)
     commit_files_dict[commit_id] = commit_files
@@ -182,17 +181,23 @@ def main(argv):
     # Setup JITLine evaluation
     # ensemble of knn and la?
     parser = argparse.ArgumentParser(description="Example script to demonstrate argument parsing.")
-    parser.add_argument('arg1', type=str, help='Project name.')
-    #parser.add_argument('arg2', type=str, help='test arg2')
-    #parser.add_argument('--arg2', type=str, default='default_value', help='Description of argument 2')
+    parser.add_argument('-project', type=str,  default='', help='Project name.')
+    parser.add_argument('-K', type=int, default=3, help='value of K for KNN.')
     args = parser.parse_args()
 
-    project = args.arg1
-    index_name = "cabral_"+project.lower()
-    path = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/cabral_dataset/"+project+"/data/"
-    folder_path = path + project + "_jsonfiles/"
-    csv_file    = path + project + "_commits.csv"
+    current_dir = os.getcwd() #code
+    parent_dir = os.path.dirname(current_dir) #eseval_online
+    print(parent_dir)
+    results_dir = os.path.join(parent_dir, "results") #results dir
+    data_dir = os.path.join(parent_dir, "cabral_dataset",args.project,"data/")
+    print(data_dir)
 
+
+    index_name = "cabral_"+args.project.lower()
+    jsonfolder_path = os.path.join(data_dir , f"{args.project}_jsonfiles")
+    csv_file    = os.path.join(data_dir , f"{args.project}_commits.csv")
+    print(jsonfolder_path)
+    print(csv_file)
     es_handler = ElasticsearchHandler()
     #response = es_handler.check_health()
     response = es_handler.delete_index(index_name)
@@ -204,13 +209,13 @@ def main(argv):
     type3_dict = find_matches(csv_data_list,type3_list)
 
     start_time = time.time()
-    result_list = run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,index_name)
+    result_list = run_evaluation_with_latency(csv_data_list,type3_dict,jsonfolder_path,es_handler,index_name,args.K)
     end_time = time.time()
 
     execution_time = end_time - start_time
     cm = ConfusionMatrix(result_list)
     cm.compute_metrics()
-    save_result(project,K,cm,execution_time)
+    save_result(args.project,args.K,cm,execution_time,results_dir)
 
     response = es_handler.delete_index(index_name)
     print("Index deleted:",response)

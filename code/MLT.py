@@ -17,7 +17,7 @@ class ElasticsearchHandler:
         return response
 
     def create_index(self,index_name):
-        custom_settings = get_index_settings("/home/hareem/UofA2023/eseval_v2/eseval_timewise/code/indexsettings.txt")
+        custom_settings = get_index_settings("./indexsettings.txt")
         response = self.client.indices.create(index=index_name,body=custom_settings)
         return response
 

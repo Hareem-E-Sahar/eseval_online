@@ -20,10 +20,10 @@ def get_files_for_commit(commit_hash,folder_path):
                 commit_files.append(os.path.join(root, file_name))
     return commit_files
 
-def save_result(project,K,cm,execution_time):
-	preidictions_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/results/resultlist_"+project+".csv"
-	cm.save_result_list(preidictions_file)
-	metrics_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise/results/metrics.csv"
+def save_result(project,K,cm,execution_time,results_dir):
+	predictions_file = os.path.join(results_dir, f"resultlist_{project}_K={K}.csv")
+	cm.save_result_list(predictions_file)
+	metrics_file = os.path.join(results_dir, f"metrics.csv")
 	header = ["project", "K", "TP", "TN", "FP", "FN", "Prec", "Recall1", "Recall0", "F1", "Gmean", "Acc","time"]
 	metrics = [project, K, cm.tp, cm.tn, cm.fp, cm.fn, cm.precision(), cm.recall_buggy_class(), cm.recall_clean_class(), cm.f1_score(), cm.g_mean(), cm.accuracy(),execution_time]
 	file_exists = os.path.isfile(metrics_file)

@@ -1,4 +1,7 @@
-import csv 
+import csv
+import cProfile, pstats, io
+from pstats import SortKey
+from util import *
 class CSVData:
     def __init__(self, fix, ns, nd, nf, entrophy, la, ld, lt, ndev, age, nuc, exp, rexp, sexp, contains_bug, author_date_unix_timestamp, commit_type, commit_id):
         self.fix = fix
@@ -39,7 +42,7 @@ class CSVData:
                 and self.rexp == other.rexp
                 and self.sexp == other.sexp
                 and self.contains_bug == other.contains_bug
-                
+
             )
         return False
 
@@ -75,9 +78,27 @@ def read_commits_csv(csv_file_path):
             else:
                 type3_list.append(csv_data)
     return csv_data_list,type3_list
+    
+    
+#@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
+def find_matches(list1, list2): #csv_data_list, type3_list
+    type3_dict = {}
+    for i in list1:
+        for j in list2:
+            if i==j:
+                type3_dict[i.commit_id]=j.author_date_unix_timestamp
+    return type3_dict
+
+def read_commits_csv_with_pandas(csv_file_path):
+     na_values = ['NA', 'N/A', 'NaN', 'None', '']
+     df = pd.read_csv(csv_file_path,na_values=na_values)
+     # you can filter rows based on a condition:
+     # buggy_commits = df[df['contains_bug'] == True]
+     # label = df[df['commit_id']==id]
+     df = df.dropna()
+     return df
 
 
-# Create an empty list to store CSVData objects
 
 '''
 data1 = CSVData(False, 2, 79, 976, 8.937691918, 264772, 0, 0, 1, 0, 0, 487.5, 0, 974, False, 1143467626, 0, "a84fabcbc6fee8a69253ad92a304b4718e96a7c9")
