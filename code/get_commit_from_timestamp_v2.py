@@ -16,7 +16,7 @@ def read_and_analyze_data(fname):
 		csvreader = csv.DictReader(csvfile)
 		for row in csvreader:
 			print(row['fixes'])
-			
+
 def commits_by_type(fname):
 	import pandas as pd
 	import numpy as np
@@ -153,18 +153,20 @@ def curl_commits(commit_id,project,buggy_status,dir,repositoryFolder):
 					json.dump(my_dict, outfile)
 
 def get_commit_sourcecode(fname,dir,project,repoFolder):
+	processed_commits = set()
 	with open(fname,'r') as csv_file:
 		csv_reader = csv.DictReader(csv_file, delimiter=',')
 		#header = next(csv_reader,None)
 		total_commits_processed = 0
 		for row in csv_reader:
 			commit_id = row["commit_id"]
-			if len(commit_id)>0:
+			if commit_id not in processed_commits and len(commit_id)>0:
 				print(commit_id)
 				label = row["contains_bug"]
 				#ctimestamp = int(row["author_date_unix_timestamp"])
 				#cdate = datetime.fromtimestamp(ctimestamp,tz=pytz.UTC)
 				total_commits_processed += 1
+				processed_commits.add(commit_id)
 				curl_commits(commit_id,project,label,dir,repoFolder)
 	print("Done fetching testing code diffs, total: ",total_commits_processed)
 
@@ -236,11 +238,11 @@ def main(argv):
 	jsondir = os.path.join(parentdir, subdir)
 	createFileIfNotExist(jsondir)
 	write_fname = parentdir+project+'_commits.csv'
-	#only call this function to get commit_ids  
+	#only call this function to get commit_ids
 	get_commit_hashes(pathToCsv,write_fname)
-	
-	#call this function to make json files 
-	#replace first argument (write_fname) with pathToCsv when called without 'get_commit_hashes' 
+
+	#call this function to make json files
+	#replace first argument (write_fname) with pathToCsv when called without 'get_commit_hashes'
 	get_commit_sourcecode(write_fname,jsondir,project,repoFolder)
 
 if __name__ == "__main__":
