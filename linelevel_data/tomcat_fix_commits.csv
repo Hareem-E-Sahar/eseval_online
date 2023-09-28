@@ -1,0 +1,1610 @@
+commit_id,date,message
+ee8c92e62c8a0cae8e3090aa2ab23c69612a17da,2006-04-26 06:10:53+00:00,"Fix that StandardSession#getLastAccessedTime() uses correct exception message
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@397098 13f79535-47bb-0310-9956-ffa450edef68"
+34bd7ef64c1a15df45f14afc90e61f67e469c819,2006-08-09 14:44:50+00:00,"Fixed deadlock issue with thread pool
+Fixed error catches for a known JDK bug on windows #5076772 
+Added in the ability to have more than one poller, although performance actually gets worse
+Next steps: hand off setting socket options etc to the worker thread for faster acceptance of new socket
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@430064 13f79535-47bb-0310-9956-ffa450edef68"
+a91b95efc9c1ca7c30946ecc9e0dc111f5ccebee,2006-08-28 04:49:31+00:00,"Porting fix for BZ #40306
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@437530 13f79535-47bb-0310-9956-ffa450edef68"
+0ea770e04004528fa2fa1b6ebf46236d5221a635,2006-09-18 20:10:04+00:00,"- When EL is ignored, restore '#' correctly in template text.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@447535 13f79535-47bb-0310-9956-ffa450edef68"
+0e360f39c2ab4e39d427f67b3fb024c9e08b633a,2006-10-21 23:30:39+00:00,"Update license header in TC6 trunk to comply with:
+http://www.apache.org/legal/src-headers.html#headers
+
+It does compile but I need to check the commit message carefully to ensure the script hasn't changed anything it shouldn't have done.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@466609 13f79535-47bb-0310-9956-ffa450edef68"
+27928b33b7f9787439d4787eb4aa882688798594,2007-04-03 10:45:51+00:00,"Fix #41973 by not initializing IPV6 if address is null.
+APR cannot listen both on IPV4 and IPV6 on some platforms
+(e.g BSD and Windows).
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@525132 13f79535-47bb-0310-9956-ffa450edef68"
+8980bfd16828dec273359ecc096b4bf2a56ff331,2007-04-03 10:47:06+00:00,"Fix #41973 by not initializing IPV6 if address is null.
+APR cannot listen both on IPV4 and IPV6 on some platforms
+(e.g BSD and Windows).
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@525133 13f79535-47bb-0310-9956-ffa450edef68"
+787bacb087f22dd2af9c77a0a0002dcbc48af612,2007-05-20 22:28:47+00:00,"Always reset the MB when doing getBytes
+
+Fix for bug #36155
+
+1) an unconditional reset is cheap if I'm going to call MB.setBytes
+2) the JK connector doesn't support any charset except iso-latin-1 anyway
+3) This particular connector is on the fast track to deprecated
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@539971 13f79535-47bb-0310-9956-ffa450edef68"
+9c37a0110a695c837bd8613b1ee3f14e7f8c16c3,2007-08-28 13:33:18+00:00,"Fix bug 43216: Set correct StandardSession#accessCount as StandardSession.ACTIVITY_CHECK is true.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@570417 13f79535-47bb-0310-9956-ffa450edef68"
+4b17634ed0bacda764384e271cb0d3eace61282e,2007-09-23 23:33:56+00:00,"bug 41797: CNFE/NPE thrown from function mapper when externalizing
+Patch by Tuomas Kiviaho- tuomas.kiviahos at ikis fi
+(submit part2 of the patch as seem in comment #3)
+
+(Format police - help!!! I did my best)
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@578610 13f79535-47bb-0310-9956-ffa450edef68"
+7b93f573331df0e7dd92ab5ff5e36f3df7629cc6,2007-10-26 02:37:39+00:00,"Continue to give Remy a headache by fixing the problem where when the outer most wrapper is a ServetRequest/ResponseWrapper, but not a HttpServletRequest/ResponseWrapper would cause an NPE.
+
+Fix for bug: #43668
+Reported by:   Mailmur  
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/tc6.0.x/trunk@588477 13f79535-47bb-0310-9956-ffa450edef68"
+0b79df04792149161f6877ebe9dc63f0da3e8071,2007-11-24 01:37:36+00:00,"Remove conditional headers from the re-played request.
+
+These confuse some UAs (notably FireFox), and we can't really keep them from the HTTP/1.1 spec.
+
+Fix for bug #43687
+Reported By:   Przemyslaw Madzik  
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@597781 13f79535-47bb-0310-9956-ffa450edef68"
+c3c525b901e8225864be9b5218584b535385cc73,2008-04-07 09:29:41+00:00,"Submitted by Ruediger Pluem. PR#44595
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@645428 13f79535-47bb-0310-9956-ffa450edef68"
+fa91954f998f069bbc38221ea69c07c192814c9b,2008-05-01 21:25:01+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=43150
+# in installation path stops Tomcat starting
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@652669 13f79535-47bb-0310-9956-ffa450edef68"
+7125c9fc203b683374220322159e451c2c418cef,2008-05-05 18:18:00+00:00,"Fix bugs https://issues.apache.org/bugzilla/show_bug.cgi?id=43013 and https://issues.apache.org/bugzilla/show_bug.cgi?id=44021
+Add support to manger and deployer for wars and dirs that use # to denote multi-level contexts.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@653549 13f79535-47bb-0310-9956-ffa450edef68"
+36de11539c280e9930a54f84dddaed5839c12630,2008-07-18 06:39:45+00:00,"Grammar + typos: Fix PR#45422
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@677836 13f79535-47bb-0310-9956-ffa450edef68"
+fea7658d34dc9dea44719b373a54ef5f7dde2966,2008-08-21 13:34:40+00:00,"JAVA part of the #43327 fix.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@687755 13f79535-47bb-0310-9956-ffa450edef68"
+46055c585e222cbe503082f6cfe4e053a6aa52e3,2008-08-27 07:23:40+00:00,"Fix for PR#44809
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@689395 13f79535-47bb-0310-9956-ffa450edef68"
+6a1f316cef3e7e7a3e93be5d744d5a65eaad50e4,2008-08-27 07:42:58+00:00,"Fix for PR#45074
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@689402 13f79535-47bb-0310-9956-ffa450edef68"
+28386afe4c564d241c8092fc7a18d36ca64df1c2,2008-10-06 17:30:44+00:00,"Handle nested contexts when foo#bar.xml exists
+Bug reported on users list
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@702208 13f79535-47bb-0310-9956-ffa450edef68"
+82ba76c711234cd8d41cff915dfce1371aea4ad0,2008-11-07 21:40:37+00:00,"Fix NPE to use Http11NioProtocol handler with default parameters!
+# example:
+<Executor name=""tomcatThreadPool"" namePrefix=""catalina-exec-"" 
+        maxThreads=""150"" minSpareThreads=""4""/>
+<Connector executor=""tomcatThreadPool""
+               port=""8080"" protocol=""org.apache.coyote.http11.Http11NioProtocol"" 
+               connectionTimeout=""20000"" 
+               redirectPort=""8443"" />
+
+Used at MAC OS X with ""-Djava.net.preferIPv4Stack=true""
+
+I am not sure that default returns are correct!
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@712278 13f79535-47bb-0310-9956-ffa450edef68"
+85fc30c1bfa5869971ca7513248c4bc67e1f33e4,2008-12-26 23:50:26+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=46261
+%2F in context paths should be treated literally, not as / - that is what '#' is for.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@729571 13f79535-47bb-0310-9956-ffa450edef68"
+ba68a7b8de48f2528c4d7a39ec86f1b2c4e079c1,2009-04-21 01:14:36+00:00,"not sure what went wrong, my SVN is going ape #!$
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@766936 13f79535-47bb-0310-9956-ffa450edef68"
+9af8cf3edd2bca81ff4063369689f4720782a7db,2009-06-19 20:25:01+00:00,"As per http://www.apache.org/dev/crypto.html#inform add a crypto notice to each of the releases
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@786654 13f79535-47bb-0310-9956-ffa450edef68"
+24f053a430f36cc56685a527f02855fc99dc087b,2009-11-02 08:37:41+00:00,"Include root cause exception into the one produced by ApplicationContextFacade#doPrivileged()
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@831819 13f79535-47bb-0310-9956-ffa450edef68"
+600443618ad003148e754035ae9bfa0d17220ba3,2009-11-02 10:30:49+00:00,"Mark JspCompilationContext#removed as volatile,
+because JspCompilationContext#isRemoved() is called from JspServletWrapper#service,
+and that access is not synchronized.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@831850 13f79535-47bb-0310-9956-ffa450edef68"
+7f03558a9ea8cb04b0765eab9b24922f7201c3c3,2009-11-04 16:40:16+00:00,"revert based on https://issues.apache.org/bugzilla/show_bug.cgi?id=47512#c4
+
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@832792 13f79535-47bb-0310-9956-ffa450edef68"
+63507c6b7187682a09c321100438009f756dceda,2009-11-09 15:04:07+00:00,"With rev.834080 WebappClassLoader#findResourceInternal(String,String) is always called with AccessController.doPrivileged(), thus there is no need to wrap #findResourceInternal(File,String) call that is inside it.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@834096 13f79535-47bb-0310-9956-ffa450edef68"
+b8507e699eb656d32e0131e688f3a302d4106e98,2009-12-21 21:51:29+00:00,"Fix second part of Comment 8 in https://issues.apache.org/bugzilla/show_bug.cgi?id=47413#c8
+Coerce result of composite EL expression (${a}${b}) from String to the expected type.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@893001 13f79535-47bb-0310-9956-ffa450edef68"
+d7f065818f4181ee5c481f09052fb12a5e697dcf,2010-01-02 13:17:11+00:00,"Change license header in bcel java source files using
+the copy2license.pl script.
+
+Although the previous form is what the license file states how to
+correctly apply ASL 2.0, usually the ASF copyright notice is not
+applied to every source file. See
+
+   http://www.apache.org/legal/src-headers.html#headers
+
+for details.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@895187 13f79535-47bb-0310-9956-ffa450edef68"
+a104f3ae3f8ce948c816dacbcdc9d8f521ced9af,2010-01-02 13:26:32+00:00,"Change license header in two tomcat-lite java source files
+using the copy2license.pl script.
+
+Although the previous form is what the license file states how to
+correctly apply ASL 2.0, usually the ASF copyright notice is not
+applied to every source file. See
+
+   http://www.apache.org/legal/src-headers.html#headers
+
+for details.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@895189 13f79535-47bb-0310-9956-ffa450edef68"
+32dfe728bb2cb31a200b2faecd157a3d21260b15,2010-01-02 13:47:10+00:00,"Fix calling Tomcat Windows scripts from a directory containg spaces,
+as noted in https://issues.apache.org/bugzilla/show_bug.cgi?id=48464#c4 by LiuYan
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@895191 13f79535-47bb-0310-9956-ffa450edef68"
+c2af29f48c72a5e5e80fd3b5c54b040ab10faa24,2010-01-02 14:08:45+00:00,"Change license header in tomcat-lite java source files
+using the copy2license.pl script.
+
+Although the previous form is what the license file states how to
+correctly apply ASL 2.0, usually the ASF copyright notice is not
+applied to every source file. See
+
+   http://www.apache.org/legal/src-headers.html#headers
+
+for details.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@895199 13f79535-47bb-0310-9956-ffa450edef68"
+726ee52d7448e671f161f75cabd9528e6e93d4cc,2010-01-03 14:02:31+00:00,"Followup to r895191
+Fix calling Tomcat Windows scripts from a directory containing '&' character,
+and allow to use this character in the names of CATALINA_HOME/CATALINA_BASE directories.
+https://issues.apache.org/bugzilla/show_bug.cgi?id=48464#c4
+
+Note, that both 'set' and 'echo' commands have to use quotes.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@895392 13f79535-47bb-0310-9956-ffa450edef68"
+065fb77885dca7ad4af6a209e491f7c57fbbe7c7,2010-01-06 17:41:11+00:00,"Additional tests for the specific escaping (of ""${"" and ""#{"") for LiteralExpressions
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@896571 13f79535-47bb-0310-9956-ffa450edef68"
+3eaeb577fe26c81fe44fa2556c5d44ed8ff71aab,2010-01-10 11:10:36+00:00,"Re-work EL attribute parsing. The underlying issue was complete independence of attribute and EL parsing. The attribute parser would generate the same result - ${1+1} - after parsing ${1+1} and \${+1} and the EL had no way to differentiate between the first (that should be treated as an expression) and the second (that should be treated as a literal). The attribute parser has been modified to output any literals that would be mi-interpreted by the EL parser as EL literals. ie \ is output as ${'\\'} or #{'\\'}, $ as ${'$'} or #{'$'} and # as ${'#'} or #{'#'}.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@897614 13f79535-47bb-0310-9956-ffa450edef68"
+b650e6d50bdb3d532134dfa0c0bfd469b90c3f24,2010-01-10 12:52:20+00:00,"\$ and \# are not valid escapes. The Parser will throw an error before this code is ever called but remove them anyway for clarity.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@897632 13f79535-47bb-0310-9956-ffa450edef68"
+5f0ed11e4eef8b41583ec6041dbde5b304c592c2,2010-01-28 03:29:16+00:00,"Revert r903928, because it breaks Connector#setProtocol():
+Apr connector is not auto-selected when TC-Native library is available
+
+See https://issues.apache.org/bugzilla/show_bug.cgi?id=48613#c3
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@903948 13f79535-47bb-0310-9956-ffa450edef68"
+3725911ad6a30559095b5f794c5f100a40a22e12,2010-01-31 00:56:47+00:00,"Test mixing ${...} and #{...} in the same expression
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@904943 13f79535-47bb-0310-9956-ffa450edef68"
+8480d7cf60d9c3449bbcd50a8d0472d040bfeb9f,2010-02-04 12:16:51+00:00,"Test for a bug with processing of double quotes in AttributeParser#parseEL
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@906464 13f79535-47bb-0310-9956-ffa450edef68"
+a67e5cafbfdd125f2908aa1a8416e4e93677e2d2,2010-02-04 12:18:28+00:00,"Fix for a bug with processing of double quotes in AttributeParser#parseEL()
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@906465 13f79535-47bb-0310-9956-ffa450edef68"
+d269a08a4a0eda3025298a8d9246858424f01c6e,2010-02-09 01:06:01+00:00,"Fix parsing bug spotted when reviewing r907538
+Allowing #{} expressions to be parsed even when they are disabled breaks ${} expressions if they are intermixed with them. See the testcase added in r907860, r907862.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@907864 13f79535-47bb-0310-9956-ffa450edef68"
+eb06b92925deec9f99f883471479a4f69fc0f5ba,2010-02-17 01:10:34+00:00,"Apply my patch from https://issues.apache.org/bugzilla/show_bug.cgi?id=48616#c20
+This patch
+- Reverts r905145,
+- Provides an alternative fix for bug 48616 and bug 42390,
+- Replaces Vector -> List, Hashtable -> HashMap in the affected API.
+
+JspFragments are scriptless, so no need to declare or sync scripting
+variables for fragments. Since errors in syncing the scripting variables for
+JSP Fragments caused 48616 & 42390, this fixes both these bugs too.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@910792 13f79535-47bb-0310-9956-ffa450edef68"
+b4541b68cc4df65fbeb10a310468e455d6d0cb04,2010-02-24 10:12:58+00:00,"fixes for #getElement():
+- avoid infinite looping on unexpected end of file
+- fix XML comment reading
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@915737 13f79535-47bb-0310-9956-ffa450edef68"
+921974dbd51a868639d08c073657f699441ed85f,2010-02-25 02:58:25+00:00,"fix for #mergeIntoWebXml()
+Note that the ""inserted"" flag was never set to true in the old code.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@916097 13f79535-47bb-0310-9956-ffa450edef68"
+68b2ba9bcc3d7930d915c5f1e8c24522a699e22f,2010-03-03 17:26:54+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=48831
+Address issues 1 & 2 by using a ReadWriteLock to control access to the writer. This ensures messages won't be written while the writer is null. Note there is no (easy) way to not close the handler.
+Address issue 3 by re-enabling the JULI shutdown hook if JULI is being used and Tomcat isn't stopped via a shutdown hook.
+Address issue 4 by making ClassLoaderLogManager#useShutdownHook volatile
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@918594 13f79535-47bb-0310-9956-ffa450edef68"
+9b8038f2817ab42893f8b77e444ee11943db9fbb,2010-03-04 00:18:44+00:00,"Fix 2. of https://issues.apache.org/bugzilla/show_bug.cgi?id=48831#c3
+When resetting a logger do not close handlers that do not belong to the current class loader.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@918787 13f79535-47bb-0310-9956-ffa450edef68"
+11ca0ae617b4d299f6cf95b099e433716db9e379,2010-03-04 08:05:36+00:00,"Fix 1. of https://issues.apache.org/bugzilla/show_bug.cgi?id=48831#c3
+Ignore the reset() call from java.util.logging.LogManager.Cleaner,
+because we have our own shutdown hook that will take care.
+
+There are three hooks that run at VM shutdown:
+1. j.u.l.LogManager.Cleaner
+2. o.a.j.ClassLoaderLogManager.Cleaner
+3. o.a.c.startup.Catalina.CatalinaShutdownHook
+2. vs. 3. was taken care by r910974 and r918594. This takes care of 1. vs. (2.,3.)
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@918885 13f79535-47bb-0310-9956-ffa450edef68"
+916154fb573e86a3eac4a21d7b3215b510553a49,2010-03-06 21:03:14+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=48668
+Honor isELIgnored and isDeferredSyntaxAllowed in the Parser
+
+Uncommented the test cases in TestParser/bug48668a.jsp that now are passing.
+The ##12,13,16,17 remain commented, because they are still failing.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@919851 13f79535-47bb-0310-9956-ffa450edef68"
+de0e6e1e1df5106a514f9d1c1df672b9d63c2bd5,2010-03-07 02:43:12+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=48668
+Fix remaining issues in BZ48668
+The idea behind this change is to make ELParser aware about isDeferredAsLiteral option.
+Before this change ELParser was used to parse an attribute regardless of isELIgnored or isDeferredSyntaxAllowedAsLiteral values. With this change we do not use ELParser when isELIgnored is true and ELParser does not parse '#{' in expressions when isDeferredSyntaxAllowedAsLiteral is true.
+It simplified the code in many places.
+Also, servlet specification version from web.xml and JSP specification version from TLD file are now taken into account when determining the default values for isELIgnored and isDeferredSyntaxAllowedAsLiteral. As far as I understand the code, previously only isELIgnored was determined by the servlet specification version.
+
+TstParser.java, bug48668a.jsp:
+I reenabled the tests that now pass with these changes applied.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@919914 13f79535-47bb-0310-9956-ffa450edef68"
+6a1df3e24cb06a95583b3add418a2f2de8dff5bf,2010-03-09 15:04:53+00:00,"https://issues.apache.org/bugzilla/show_bug.cgi?id=48007#c5
+Improve exception processing in CustomObjectInputStream#resolveClass(),
+to help find the cause behind BZ 48007.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@920912 13f79535-47bb-0310-9956-ffa450edef68"
+424af8a12b941fc03c6aa46a12ca45fac4f08ba0,2010-03-26 14:40:30+00:00,"Mark ResourceEntry.loadedClass as volatile.
+That is because WebappClassLoader#findClassInternal() uses double-checked locking to initialize this field.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@927877 13f79535-47bb-0310-9956-ffa450edef68"
+96a6cd3a6a7a257a470b1dda6a8a885380f191db,2010-04-11 18:09:16+00:00,"Add test cases for https://issues.apache.org/bugzilla/show_bug.cgi?id=49081
+""#${1+1}"" should evaluate to ""#2""
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@932965 13f79535-47bb-0310-9956-ffa450edef68"
+9590fadf345464f69fbc269bb8f58ab13191c08b,2010-04-11 18:15:02+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=49081
+""#${1+1}"" should evaluate to ""#2""
+Note that all files apart from ELParser.jjt are generated by javacc from the changes to ELParser.jjt
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@932967 13f79535-47bb-0310-9956-ffa450edef68"
+c1ada45af7a1ffb8d59f15476a78f10e58bde125,2010-04-26 10:46:01+00:00,"Include .project and .classpath files to src distribution.
+s. http://ant.apache.org/manual/dirtasks.html#defaultexcludes to not include scm files!
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@937993 13f79535-47bb-0310-9956-ffa450edef68"
+e2d982e8a1b740b56febb13ce1931bfbea1be4de,2010-04-28 09:08:52+00:00,"Mark StandardContext#aliases as private, because there is a getter method.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@938829 13f79535-47bb-0310-9956-ffa450edef68"
+33969170eba20cd63fc4ee7dc66ae539df80aa11,2010-04-28 16:21:32+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=49207
+FilterMap#filterName was null when it was configured dynamically with addMappingForUrlPatterns()
+Patch provided by Pid
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@939001 13f79535-47bb-0310-9956-ffa450edef68"
+6ed2fcb8095905a0c666f02af2dff0d6a100603a,2010-04-29 12:52:36+00:00,"Remove MultiMap class. It is never used.
+Note, that its implementation was incomplete, e.g. MultiMap.Field#name and #value fields are never assigned.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@939299 13f79535-47bb-0310-9956-ffa450edef68"
+b7c336a1b0414898adab2fc6e79aa9471003e2be,2010-04-30 03:49:40+00:00,"Log unexpected runtima and IO errors in ApplicationContext#getResource() and ApplicationContext#getResourceAsStream(). This is inspired by BZ 49218.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@939551 13f79535-47bb-0310-9956-ffa450edef68"
+a3bcab9dca96a065f6022eb96c8d34141c46f720,2010-05-05 20:13:30+00:00,"More anchor handling improvements:
+1) escape '#' character as well as spaces. See virtual-hosting-howto.html for an example.
+2) allow to explicitly specify anchor name, using anchor="""" attribute on a (sub)section. See default-servlet.html for an example.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@941463 13f79535-47bb-0310-9956-ffa450edef68"
+c78049367689aab19e95fa8b9187a05f07d26a75,2010-05-19 15:55:33+00:00,"Add method TomcatBaseTest#getTemporaryDirectory()
+Use mkdirs() to create tempDir directory in TomcatBaseTest#setUp()
+Fix issue with TestRegistration test failing when ${tomcat.output} ant property had non-default value.
+
+The failure was due to the contextDir.mkdir() call in TestRegistration#testMBeanDeregistration() failing to create a subdirectory because its parent directory did not exist.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@946241 13f79535-47bb-0310-9956-ffa450edef68"
+7cf1de548cce7205cb1186c3adf1ab0c34cf1b66,2010-09-24 06:00:00+00:00,"Fix Bz #49993 by checking the JAVA_HOME/JRE_HOME environment variables
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1000718 13f79535-47bb-0310-9956-ffa450edef68"
+7ac94d6dca0d590249584eb94b4bf5f2a0f8963a,2010-11-22 03:05:44+00:00,"Revert r1032232
+It broke evaluation of <c:set var=""v"">value<c:set>
+https://issues.apache.org/bugzilla/show_bug.cgi?id=50228#c3
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1037594 13f79535-47bb-0310-9956-ffa450edef68"
+561481797673619ce27b3fe2427d5ba4c5ec4e17,2010-12-14 20:49:28+00:00,"Fixed bug #49125: toString on byte[] array probably is not correct
+- Added HexUtils.toHexString method
+- Wrapped output of byte[] objects with a call to HexUtils.toHexString
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1049263 13f79535-47bb-0310-9956-ffa450edef68"
+4fe1ec88bd2663e4bbc27aff2ede876de2bcebcb,2011-01-09 08:07:02+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50413#c6
+Serve the error page regardless of ""Range"" header in the original request.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1056889 13f79535-47bb-0310-9956-ffa450edef68"
+cb67e5b2ba2b810a441b0f5e0905672377f9d3ab,2011-01-09 08:10:33+00:00,"Enable testcase for 50413#c6, now that the issue is fixed with r1056889.
+Update changelog.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1056890 13f79535-47bb-0310-9956-ffa450edef68"
+a580b59581cc5c9357c7e6fb3f161720809dffd9,2011-01-15 17:26:58+00:00,"Updated ReplicationValve examples in the docs with the new regexp syntax.
+Added *.jpeg pattern to the list, as inspired by the comment in BZ 31912
+https://issues.apache.org/bugzilla/show_bug.cgi?id=31912#c2
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1059375 13f79535-47bb-0310-9956-ffa450edef68"
+d8f8be11af0571c6eaa45961eac8407bce9096a3,2011-01-15 17:43:46+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50591
+Do not throw NullPointerException when ReplicationValve#filter is not set.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1059379 13f79535-47bb-0310-9956-ffa450edef68"
+6a69e818751dbe58175a1d7be1456b4b2ed310e1,2011-01-21 17:46:03+00:00,"Fixed bug #49711: HttpServletRequest#getParts() does not work in a Filter
+- Added <Connector> attribute allowCasualMultipartParsing (default false)
+- Requests that contain multipart/form-data will be parsed in the absence of @MultipartConfig when the above attribute is set to ""true""
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1061929 13f79535-47bb-0310-9956-ffa450edef68"
+f69c17895d03835cbb87ee804379c600c39e9598,2011-01-21 18:32:39+00:00,"Re-fixed bug #49711: HttpServletRequest#getParts() does not work in a Filter
+- Moved allowCasualMultipartParsing setting from <Connector> to <Context>
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1061953 13f79535-47bb-0310-9956-ffa450edef68"
+877a3dff8b5533f5fd87b343a25a471bfbc7bc31,2011-02-14 08:47:49+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=50771
+Ensure HttpServletRequest#getAuthType() returns the name of the authentication scheme 
+if request has already been authenticated.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1070409 13f79535-47bb-0310-9956-ffa450edef68"
+7266f3cbfcd611b51d50fb49b161e58a3786f07b,2011-03-08 11:15:37+00:00,"Refactor to address https://issues.apache.org/bugzilla/show_bug.cgi?id=48208#c13
+Don't configure a TrustManagerFactory instance if it isn't going to be used.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1079323 13f79535-47bb-0310-9956-ffa450edef68"
+01913cf564ad1e8fa71ff0645665771509cb33c5,2011-04-23 21:27:54+00:00,"Ensure response is committed when AsyncContext#complete() is called.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1096235 13f79535-47bb-0310-9956-ffa450edef68"
+673a1eb857a9706cce29eecbf48ddc5d60c228ae,2011-06-09 12:03:25+00:00,"Tests for ClassLoaderLogManager#replace()
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1133816 13f79535-47bb-0310-9956-ffa450edef68"
+257d7fb1deb5e5e9a4551c885a0a7a10cc0eecd2,2011-06-15 13:21:16+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=51376
+Dynamically added Servlet instances were ignoring setLoadOnStartup(), @ServletSecurity, etc.:  When adding a Servlet via ServletContext#addServlet(String, Servlet), the Servlet was not initialized when the web application started and a load on startup value  was set.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1136028 13f79535-47bb-0310-9956-ffa450edef68"
+423fd89e1357ab2891b7098840ec6ad95d117e5b,2011-09-20 20:17:23+00:00,"Fixed bug #51687: Improve JreMemoryLeakPreventionListener against leak caused by sun.java2d.Disposer
+- Added (optional) protection against sun.java2d.Disposer thread pinning a WebappClassLoader into memory in the JreMemoryLeakPreventionListener.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1173333 13f79535-47bb-0310-9956-ffa450edef68"
+feff880cd5e9cfdf5f4e3bcf4f9da2370c667980,2011-09-20 20:30:10+00:00,"Fixed bug #51580: Severe error deploying WAR application (ExpandWar error)
+- Added error mesage when JarEntry InputStream cannot be found due to a broken WAR file
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1173342 13f79535-47bb-0310-9956-ffa450edef68"
+3d76869485aaef73796bc4e8796c19c9e9d2a98b,2011-09-28 20:36:42+00:00,"Improve TestGroupChannelMemberArrival
+1. Add synchronization when accessing TestMbrListener.members.
+This should fix the failures observed by Gump.
+2. Remove unused method #clear().
+3. Improve messages printed to System.out during the test:
+- Add timestamps
+- Add hash code of threads (because thread names are not unique: They all are either ""Membership-MemberAdded."" or ""Membership-MemberDisappeared."").
+- Add current length of members list
+4. Print messages when memberAdded()/memberDisappeared() performed no work.
+That is if notification arrives twice for the same Member. I have not observed such events when running the tests.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1177050 13f79535-47bb-0310-9956-ffa450edef68"
+d6d1c6f3e9234227b82d8937d1ed94e0ffe8b8c9,2011-10-04 21:59:20+00:00,"Fixed bug #51956: RemoteAddrFilter uses remote host (not address) in doFilterEvent
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1178976 13f79535-47bb-0310-9956-ffa450edef68"
+7e7da2b4d62983b104a6923b4ed37fd52ca2f2f1,2011-10-20 10:18:40+00:00,"https://issues.apache.org/bugzilla/show_bug.cgi?id=51940#c9
+Restore original method name when forward to the login page returns
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1186712 13f79535-47bb-0310-9956-ffa450edef68"
+9242b2ed39e0c92c5d64955672b5c0cda9cf2724,2011-10-20 11:56:54+00:00,"Expand the test to cover regression fixed in 7.0.23:
+check that parameters in the original request have reached the protected page.
+https://issues.apache.org/bugzilla/show_bug.cgi?id=51940#c9
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1186750 13f79535-47bb-0310-9956-ffa450edef68"
+68930d283221554b30ed7b8c410ae70955b2049c,2011-11-07 11:30:51+00:00,"Followup to r1198696:
+- Fix bug in Request#parseParameters():
+Forgot to flag the main use case of parsing POST parameters as successful.
+- Update comment in FailedRequestFilter.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1198707 13f79535-47bb-0310-9956-ffa450edef68"
+c2001cef1ff4b4737135347d6dd466c222066c1e,2011-11-09 21:34:31+00:00,"Fixed bug #50570 - Allow explicit use of FIPS mode in APR lifecycle listener
+- Added ""FIPSMode"" attribute to AprLifecycleListener that causes OpenSSL to go into FIPS mode
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1199980 13f79535-47bb-0310-9956-ffa450edef68"
+5d31b75b5b110a5f25d6fa5351ef77d7887868a8,2011-12-26 20:22:54+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=52243
+Clarify how to include # or ; in an environment value
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1224801 13f79535-47bb-0310-9956-ffa450edef68"
+95923d1f42f82ab885798780ab2a7389b58f9f37,2012-01-08 19:02:55+00:00,"Change TestCometProcessor#testCometConnectorStop() to test whether END event was processed by servlet
+and write other information as a log message.
+The old test was not 100% reliable and fails for me with APR. It needs more investigation.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1228918 13f79535-47bb-0310-9956-ffa450edef68"
+9f6d234dca7f89d353faa5f7e823c68d06b7d05d,2012-01-15 05:11:42+00:00,"When building a Windows installer apply fixcrlf only after all files has been copied.
+
+The difference is what line ends the INSTALLLICENSE and tomcat.nsi files will have.
+Some NSIS docs [1] mention that license file must have CRLF line ends.
+
+[1] ""4.8.1.26 LicenseData"" in Scripting Reference,
+http://nsis.sourceforge.net/Docs/Chapter4.html#4.8.1.26
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1231625 13f79535-47bb-0310-9956-ffa450edef68"
+f5b18a78089697133d028d37a0d5b499ecf5dc25,2012-01-15 05:53:59+00:00,"Remove res/License.rtf
+The file that is actually shown by the Windows installer in res/INSTALLLICENSE. We do not need two license files here.
+
+The MUI_PAGE_LICENSE macro in tomcat.nsi file actually creates its own LicenseData statement, though not a global one but scoped to PageEx directive. The global LicenseData statement is not needed, because we have no other license pages besides the one created by this macro.
+
+For reference - see:
+1) ${base.path}/nsis-2.46/Contrib/Modern UI 2/Pages/License.nsh
+-> MUI_PAGE_LICENSE macro source code (line 50)
+2) LicenseData + PageEx example in NSIS documentation,
+""4.5.2 Page Options"" http://nsis.sourceforge.net/Docs/Chapter4.html#4.5.2
+""4.5.6 PageEx"" http://nsis.sourceforge.net/Docs/Chapter4.html#4.5.6
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1231630 13f79535-47bb-0310-9956-ffa450edef68"
+9e1e755d7c4c1069969f328c57da4fd06ea10dc5,2012-02-22 15:03:46+00:00,"Document that VirtualWebappLoader#virtualClasspath trims spaces from the values.
+Use this feature to make documentation examples more readable.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1292334 13f79535-47bb-0310-9956-ffa450edef68"
+4924cbff04623dde714142c77f83c7a01cf6605b,2012-02-22 15:10:06+00:00,"Explicitly ignore empty tokens in the value of VirtualWebappLoader#virtualClasspath
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1292338 13f79535-47bb-0310-9956-ffa450edef68"
+3549def9252c6c00dd18885d96b1697b37bb6e3c,2012-03-01 23:05:51+00:00,"Fix WebSocket's non blocking call
+http://tomcat.markmail.org/thread/drj7zgq2csfdnvoh#query:+page:1+mid:y4dheqpm2wx5xzba+state:results
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1295978 13f79535-47bb-0310-9956-ffa450edef68"
+712192522fd1a90a9b05888dc0cd1ff43d501174,2012-03-23 16:38:43+00:00,"https://issues.apache.org/bugzilla/show_bug.cgi?id=52830#c6
+Alternative implementation of the fix,
+which does not require that name were an instance of CompositeName.
+
+(I am not sure that this change is worth it, but I think it is better this way).
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1304468 13f79535-47bb-0310-9956-ffa450edef68"
+4cc6543903f4f76b595c9caad1167fac8f77dacd,2012-05-07 09:10:04+00:00,"Make sure ContextMBean#findFilterDefs returns correct filter definitions. 
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1334932 13f79535-47bb-0310-9956-ffa450edef68"
+ddd69a2e155b8d42bbf0e1e91dd5d5cf159ed9b8,2012-05-31 19:10:17+00:00,"Add some tests inspired by BZ53257 that confirm that the ServletContext correctly handles getResource() calls for resources that used ';', '+', '&', and '#' in the file name
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1344868 13f79535-47bb-0310-9956-ffa450edef68"
+7ae8155e98ef778556e8cc05eedefbad834dd874,2012-06-01 21:33:19+00:00,"For https://issues.apache.org/bugzilla/show_bug.cgi?id=53257
+Review of r1344902:
+Restore passing DirContextURLStreamHandler instance into the new URL.
+
+Note that we use ""new DirContextURLStreamHandler(DirContext)"" and
+thus the handler will not need to call DirContextURLStreamHandler#get() to retrieve the context.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1345357 13f79535-47bb-0310-9956-ffa450edef68"
+d407e233dd9829a9a9ed7864efb7960a927ca400,2012-06-06 13:34:54+00:00,"https://issues.apache.org/bugzilla/show_bug.cgi?id=48097#c7
+https://issues.apache.org/bugzilla/show_bug.cgi?id=53366#c1
+If _jspService() cannot properly handle an exception because _jspx_page_context initialization failed,
+write it to the logs instead of silent swallowing.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1346885 13f79535-47bb-0310-9956-ffa450edef68"
+f7a1b83b179f855ffee8465e328f7bbbc6175e85,2012-06-14 15:24:34+00:00,"Improve InternalNioInputBuffer#parseHeaders()
+Move the code and s/end/pos/
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1350294 13f79535-47bb-0310-9956-ffa450edef68"
+0469d7f4e2f40d05b45bfc36219818a5fa9751f8,2012-07-15 19:37:46+00:00,"Deprecate unused code
+Remove deprecation markers from JAASReam#setAppName
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1361769 13f79535-47bb-0310-9956-ffa450edef68"
+f79caae0b97e153e65c8a91d07e670b3338a94aa,2012-07-16 12:26:41+00:00,"Remove redundant output of error message from
+error report.
+
+See: https://issues.apache.org/bugzilla/show_bug.cgi?id=53071#c9
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1361991 13f79535-47bb-0310-9956-ffa450edef68"
+2c17efcb4020977389bd062acf406547839b65e0,2012-09-18 09:42:33+00:00,"Fix a behavior of TcpPingInterceptor#useThread.
+If set to false, ping thread is never started. 
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1387072 13f79535-47bb-0310-9956-ffa450edef68"
+349a67dc730f7a90287d39db45b15e91dede6786,2013-01-25 12:36:33+00:00,"Implement Session#getContainer() for client and server
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1438471 13f79535-47bb-0310-9956-ffa450edef68"
+c11952dc3dfda4d8d37fe55de5e3c54de6d78048,2013-02-13 09:28:58+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=54552
+Servlet 3.1
+Implement HttpSessionIdListener and HttpServletRequest#changeSessionId()
+Patch provided by Nick Williams. 
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1445517 13f79535-47bb-0310-9956-ffa450edef68"
+630fed5843666ae2b53c0b68131bcbfb991486bb,2013-02-14 08:57:43+00:00,"Remove duplicate code on ManagerBase and DeltaManager.
+Introduce following interfaces.
+  Manager#changeSessionId(Session, String)
+  Session#tellChangedSessionId(String, String, boolean, boolean)
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1446072 13f79535-47bb-0310-9956-ffa450edef68"
+7eae8a53c5dcff4083ce3b667a7391bbb8da38cd,2013-02-14 09:16:12+00:00,"Use Manager#changeSessionId method to change session ID.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1446077 13f79535-47bb-0310-9956-ffa450edef68"
+0f83d0b932c48211fc3efb4f21c9dbbb3a159061,2013-03-25 14:20:35+00:00,"Partial fix for https://issues.apache.org/bugzilla/show_bug.cgi?id=54734
+Implement new method ServletContext#getgetVirtualServerName()
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1460675 13f79535-47bb-0310-9956-ffa450edef68"
+ce6bd608e51ff10a423ad43851c74c2a939f28c8,2013-04-18 02:56:00+00:00,"Add support for Host#xmlBase.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1469144 13f79535-47bb-0310-9956-ffa450edef68"
+1e6bb703a2a573f8638ac67fa83b861c9cca6f11,2013-04-23 09:13:58+00:00,"Follow-up for r1469138.
+In HostConfig#check(String), if redeploy resources are updated, ensure that the application is deployed immediately.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1470859 13f79535-47bb-0310-9956-ffa450edef68"
+59a06765b7eb2e242829d01f52e40f1c36dd2591,2013-04-23 20:06:02+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=54708
+Handle ROOT##version as well
+Suggestion by kkolinko
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1471127 13f79535-47bb-0310-9956-ffa450edef68"
+1b3a7a7f63ef2230eb0b5b38f471e2f00e803ad4,2013-05-15 09:13:04+00:00,"Return the correct version number (2.3) of the JSP specification that is supported by the JSP engine when javax.servlet.jsp.JspEngineInfo#getSpecificationVersion() is invoked.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1482734 13f79535-47bb-0310-9956-ffa450edef68"
+249ecef8fb64d257a76cc76dc6f8312b4aae2cb9,2013-06-24 14:06:24+00:00,"Changes to java.beans.Introspector#flushCaches() mean that AppContext protection is not required from 1.7.0_02 onwards.
+Changes to AppContext meant the memory leak protection required a graphical environment from 1.7.0_25 onwards.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1496061 13f79535-47bb-0310-9956-ffa450edef68"
+5d126585d542e8cf21c2d8a204efa2a87b259519,2013-07-12 12:00:26+00:00,"More updates for the new method FunctionMapper#mapFunction
+- null method should remove an entry from the map
+- ensure implementations that need to override new method do so
+- fix concurrency issues in FunctionMapperImpl
+- align methods that add to the map to new signature
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1502522 13f79535-47bb-0310-9956-ffa450edef68"
+a05ec1444f1059be4d86dff878c56206247d3651,2013-07-20 19:00:17+00:00,"Add disabled testcase for #55285
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1505190 13f79535-47bb-0310-9956-ffa450edef68"
+7a5c84a7905616cd03711691239c9712ccd2ccc0,2013-07-21 14:01:52+00:00,"Handle calls to Optional#orElseGet where the LambdaExpression has already been evaluated
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1505394 13f79535-47bb-0310-9956-ffa450edef68"
+f1f9c5a0971f2216edc1d570b3d18e90961d2b57,2013-10-18 02:23:14+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=55663
+Notice files are corrected according to http://www.apache.org/legal/src-headers.html#notice
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1533312 13f79535-47bb-0310-9956-ffa450edef68"
+cacff56ad40d42a306fe3b782487e34aa991686a,2013-10-30 05:40:38+00:00,"Simplify the code of DeltaManager#startInternal().
+Reduce unnecessary nesting for acquisition of cluster instance.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1536968 13f79535-47bb-0310-9956-ffa450edef68"
+8fe01fd69b92ce826de97d4a585570de24da8c2f,2013-12-12 10:25:49+00:00,"In AbstractReplicatedMap#finalize, remove rpcChannel from channel Listener of group channel before sending MapMessage.MSG_STOP message.
+This prevent that the node that sent the MapMessage.MSG_STOP by normal shutdown is added to member map again by ping at heartbeat thread in the node that received the MapMessage.MSG_STOP.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1550391 13f79535-47bb-0310-9956-ffa450edef68"
+06be968569c92907e5b6b75ed8a60b64a44234ed,2013-12-16 20:39:19+00:00,"Performance improvement
+The context class loader was set in *Endpoint#processSocket() in case a new thread was created since this method may be triggered from web application code and that in turn would trigger a memory leak since the thread would end up with the web app class loader as its context class loader. However, this is only an issue when creating threads and since getting the current class loader is expensive, move this code to where threads are created rather than calling it on every call to *Endpoint#processSocket().
+This appears (on my fairly unscientific tests) to remove ~5% of the overhead from all request processing.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1551340 13f79535-47bb-0310-9956-ffa450edef68"
+0f985f26faa8515def44fb54442483f1d341e569,2013-12-23 19:15:35+00:00,"fix #55917 by allowing 8-bit ISO-8859-1 characters in V0 cookie values
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1553187 13f79535-47bb-0310-9956-ffa450edef68"
+c711f65526bd6899e4b3f839a10ec9ff738980c0,2014-04-12 20:57:45+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=55483#c4
+Return exact match as soon as it is found. Note without the change the same method is returned it just takes a little longer
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1586899 13f79535-47bb-0310-9956-ffa450edef68"
+4b3b546e011dcbffcba1f36fb6b896029147a051,2014-04-28 23:08:14+00:00,"Correct the handling of back-slash escaping in the EL parser and no longer require that ""\$"" or ""\#"" must be followed by ""{"" in order for the back-slash escaping to take effect.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1590835 13f79535-47bb-0310-9956-ffa450edef68"
+72135ab69d6f2ed90a375f271cb146c917b8b21a,2014-05-08 18:01:35+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=56472#c1
+
+Per my comment on that issue, always set 'NamingContextListener.initialized' field to 'true'
+so that its cleanup on configure_stop event is not skipped.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1593356 13f79535-47bb-0310-9956-ffa450edef68"
+1338db82257f83132bee1a38b3e9a6cded2b5c87,2014-05-26 17:52:57+00:00,"Implement third part of pull request from Greg Wilkins to make Jasper more independent from Tomcat.
+Add support for using an existing list of TLDs rather than scanning for them
+This closes #4
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1597617 13f79535-47bb-0310-9956-ffa450edef68"
+d9c49e3e5d610efaadaf97b2d4d629f7a7be4ea2,2014-06-03 18:52:14+00:00,"https://issues.apache.org/bugzilla/show_bug.cgi?id=56582#c1
+Implement DISPATCH_EXECUTE action for AJP connector.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1599752 13f79535-47bb-0310-9956-ffa450edef68"
+c8c7e8d528749ff2968f069e19d19cb0dde07214,2014-06-18 20:43:58+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=56334#c15
+Handle potential whitespace around input.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1603621 13f79535-47bb-0310-9956-ffa450edef68"
+780dc4747835a777c126bd5355843aa4a3a719f0,2014-06-19 09:34:14+00:00,"Followup to the tests for fix for https://issues.apache.org/bugzilla/show_bug.cgi?id=56334#c15
+Enable result check for test 07g.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1603783 13f79535-47bb-0310-9956-ffa450edef68"
+73d1d76bd32c55b2fcc0f675d075d5b244084134,2014-06-22 22:17:20+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=56657#c2
+Ensure that re-mapping selects the context version that we expect.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1604661 13f79535-47bb-0310-9956-ffa450edef68"
+f9bd161f2142413ec22828b6118372aaedc6138f,2014-06-23 17:48:14+00:00,"Amend changelog message for
+https://issues.apache.org/bugzilla/show_bug.cgi?id=44312#c6
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1604893 13f79535-47bb-0310-9956-ffa450edef68"
+f1b15da9e2e78776dc138b347561ba614220c402,2014-07-13 13:02:45+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=56658#c3
+Fix regression that context reloads were broken.
+Correct changelog entries.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1610186 13f79535-47bb-0310-9956-ffa450edef68"
+7a0ab701c2209a2066210e3eabe2610d54c615d4,2014-07-28 20:51:52+00:00,"When scanning class files (e.g. for annotations) and reading the number of parameters in a <code>MethodParameters</code> structure only read a single byte (rather than two bytes) as per the JVM specification. Patch provided by labes.
+This closes #12.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1614169 13f79535-47bb-0310-9956-ffa450edef68"
+5d8f98c3d08b47267aa460ec1afc74e9c60a606e,2014-07-28 21:06:16+00:00,"Allow the JNDI Realm to start even if the directory is not available. The directory not being available is not fatal once the Realm is started and it need not be fatal when the Realm starts. Based on a patch by Cédric Couralet.
+This closes #11 
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1614179 13f79535-47bb-0310-9956-ffa450edef68"
+f721cffe4f2fca61b31c000dae1f35efb6f81059,2014-08-18 09:24:38+00:00,"Fix logic error. No functional impact but the code would have been a little slower.
+Based on a patch by martinschaef.
+This closes #13
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1618565 13f79535-47bb-0310-9956-ffa450edef68"
+24db03624e7f54189bfdadaa3c9a8411d648b88b,2014-08-26 21:41:47+00:00,"Fixed minor resource-leak [Coverity issue #45132].
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1620743 13f79535-47bb-0310-9956-ffa450edef68"
+7a7c4277deea9953f7fbb6460638f2d37a281151,2014-10-22 00:40:56+00:00,"Suppress timestamp comment in generated Javadoc. Such as
+<!-- Generated by javadoc (version 1.7.0_65) on Wed Oct 22 09:10:36 EST 2014 -->
+
+Those comments result in one changed line per each HTML file,
+which makes the diff between different versions of documentation unnecessary huge.
+
+Documentation:
+http://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javadoc.html#standard
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1633500 13f79535-47bb-0310-9956-ffa450edef68"
+0e4ee154c254139b07e7898d724369c0b2c4f2a5,2014-10-24 16:28:48+00:00,"Ensure only \${ and \#{ are treated as escapes for ${ and #{ rather than \$ and \# being treated as escapes for $ and # when processing literal expressions in expression language.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1634089 13f79535-47bb-0310-9956-ffa450edef68"
+7ec393bf2a09269719d510babe57754e80e2ae85,2014-10-27 23:43:16+00:00,"Follow up to 1634161
+Update XML template text parser so ""\${"" and ""\#{"" are considered
+escapes but ""\$"" and ""\#"" are not.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1634741 13f79535-47bb-0310-9956-ffa450edef68"
+73befe0bc26e7af7751891d9121aadd4d88c4ad5,2014-12-09 00:51:00+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=57331
+Allow ExpiresFilter to use ""year"" as synonym for ""years"" in its configuration.
+Update documentation to mention both ""<unit>"" and ""<unit>s"" duration unit names.
+Fix minor formatting issue (Many lines in XML text were wrongly wrapped. because quote character was replaced by &#27; and that broke wrapping algorithm.)
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1643963 13f79535-47bb-0310-9956-ffa450edef68"
+0b8cef2989cba9c68490370f9033cb9b0c0ede70,2015-01-22 10:00:53+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=57178
+Origin values of ""null"" should be included if ""*"" is allowed.
+This closes #16
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1653797 13f79535-47bb-0310-9956-ffa450edef68"
+800923f4a73320a7486f98ba18aae549148e9662,2015-02-01 14:04:53+00:00,"Fix typo.
+Patch provided by caoxudong
+This closes #17
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1656298 13f79535-47bb-0310-9956-ffa450edef68"
+e685933f250f397d5349b1f2c2fec9083005a3ae,2015-02-12 15:57:35+00:00,"Delay closing the connection until maxSwallowSize bytes have been read. This gives the client a chance to read the response. See http://httpd.apache.org/docs/2.0/misc/fin_wait_2.html#appendix
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1659293 13f79535-47bb-0310-9956-ffa450edef68"
+6f43b7187406da8c5cf5bb1c6e200359f4cd00d8,2015-02-28 18:59:14+00:00,"Add repro for #57647
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1662988 13f79535-47bb-0310-9956-ffa450edef68"
+e361e1c44f42a0cb1aedc21454811a783bfd7f74,2015-04-06 02:34:10+00:00,"Avoid unnecessary call of DeltaRequest#addSessionListener in non-primary nodes.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1671470 13f79535-47bb-0310-9956-ffa450edef68"
+6d322453aba624dec3eb3020a021bac4aa428c79,2015-06-10 10:21:52+00:00,"Add JASPIC API JAR to the build
+Based on a patch by fjodorver
+This closes #21
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1684633 13f79535-47bb-0310-9956-ffa450edef68"
+8063bb3fadb311d90a3d7b82f92323448732e689,2015-09-10 13:18:02+00:00,"For EL expressions used within attribute values:
+a) attribute escaping (e.g. for quotes) DOES NOT apply inside the EL expression
+b) EL expressions can not be used with scriptlets (<%= ... %>)
+
+For EL expressions in JSP
+c) '\$' is an escape for '$' rather than '\${' being an escape for '${'
+d) '\#' is an escape for '#' rather than '\#{' being an escape for '#{'
+
+The implications of this include:
+1. Due to a) 
+   <tags:echo echo=""10-${'hello ""world'}"" />
+   is treated as valid (previously the double quote had to be escaped)
+
+2. Due to c) (and similarly for d))
+   <p>04-\$500</p>
+   will now render as
+   <p>04-$500</p>
+   whereas previously it rendered unchanged
+
+3. Due to a)
+   <tags:echo echo=""01-${\""hello world\""}"" />
+   will now trigger an error
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1702244 13f79535-47bb-0310-9956-ffa450edef68"
+0ba0d1cd915354b084f256277ae5c3aa96493573,2015-09-12 19:11:16+00:00,"Added LocalString entries for standardManager.loading.{cnfe,ioe}. They could probably be replaced by standardManager.loading.exception, as the exception#toString method does not add much information to the stacktrace.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1702666 13f79535-47bb-0310-9956-ffa450edef68"
+a2615007c65e00116f6f4406e40d883a264059de,2015-10-14 20:28:55+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=58489
+
+Comparator should follow the rules. If first object has lastInvocation of zero,
+we should compare it to the second objects lastInvocation and vice versa.
+When we do that, we can use Long#compare just as well.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1708687 13f79535-47bb-0310-9956-ffa450edef68"
+38a235bf48c8ae53d9f1d5bc1f7479cd9bf4ce5b,2015-11-12 09:24:10+00:00,"Add support for DIGEST authentication to the JNDIRealm
+Based on a patch by Alexis Hassler
+This closes #24
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1713987 13f79535-47bb-0310-9956-ffa450edef68"
+3245405962f650d0f674a8a2509122a56cbc2e62,2015-11-20 14:18:57+00:00,"Add an important note from the JNI javadoc (confirmed at: http://httpd.apache.org/docs/2.2/mod/mod_ssl.html#sslcertificatechainfile) when using multiple certificates.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1715369 13f79535-47bb-0310-9956-ffa450edef68"
+f829f47f541648d0377f035acfd1d321bdaab9ee,2015-11-25 10:42:10+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=57136#c25
+Change default value of quoteAttributeEL setting in Jasper to be true
+for better compatibility with other implementations and older versions of Tomcat.
+Add command line option -no-quoteAttributeEL in JspC.
+
+Fix tests. For reference: r1702244
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1716347 13f79535-47bb-0310-9956-ffa450edef68"
+32b9a16bbf70c247f7be77df08b8b682c1fef622,2016-01-18 02:45:49+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=58766#c4
+Slightly improve performance of scanning a directory:
+check the file name first, as file.canRead() is an I/O operation.
+
+Add debug logging.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1725165 13f79535-47bb-0310-9956-ffa450edef68"
+9b4cf40aebf95dbc984958cb68eda493b638bf4a,2016-03-08 20:45:57+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=59017
+Make the pre-compressed file support in the Default Servlet generic so any compression may be used rather than just gzip.
+Patch provided by Mikko Tiihonen.
+This closes #28
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1734150 13f79535-47bb-0310-9956-ffa450edef68"
+b50e9029a154456732591f7b24f04fba60658a43,2016-04-12 18:58:24+00:00,"Correctly configure the base path for a resources directory provided by an expanded JAR file.
+Patch provided by hengyunabc.
+This closes #31
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1738850 13f79535-47bb-0310-9956-ffa450edef68"
+c3a535e0af70834cff602105a4f0976ce30b25fa,2016-05-04 13:26:05+00:00,"Fix copy/paste error and throw correct exception
+This closes #29
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1742276 13f79535-47bb-0310-9956-ffa450edef68"
+e80e672819cc81807628132501c1bda426c54d5f,2016-06-21 06:21:40+00:00,"If the ping message has been received at the AbstractReplicatedMap#leftOver method, ensure that notify the member is alive than ignore it.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1749445 13f79535-47bb-0310-9956-ffa450edef68"
+537d028d3acb58762bbfef97e12b1e925bee2a2e,2016-08-10 10:45:42+00:00,"MBeans Descriptors How-To is moved to mbeans-descriptors-howto.html. Patch provided by Radoslav Husar. This solves Github PR#33
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1755717 13f79535-47bb-0310-9956-ffa450edef68"
+1fb6b54be37f120f9c44624e268551af6eaea6fe,2016-08-11 21:58:21+00:00,"Follow-up for https://bz.apache.org/bugzilla/show_bug.cgi?id=59823
+HttpServletRequest#authenticate() should return false for a null Principal
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1756056 13f79535-47bb-0310-9956-ffa450edef68"
+560db93e12fb01ac147bc702a2bc82fc12f1ee75,2016-08-31 11:16:49+00:00,"Fixed StringIndexOutOfBoundsException when trying to get the first char of an empty string. String.substring methods always return an object. Based on a patch provided by wuwen via Github. This closes apache/tomcat70#10 and apache/tomcat80#6
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1758584 13f79535-47bb-0310-9956-ffa450edef68"
+31144cd01a56ab239ea750f1027af961ccbb6428,2016-11-07 14:49:36+00:00,"Allow customization of service.bat, such as heap memory size, service startup mode and JVM args. Patch provided by isapir via Github. This closes #36
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1768520 13f79535-47bb-0310-9956-ffa450edef68"
+07744b492142d42a67b30f995dcc76c7c472594b,2016-11-21 11:43:35+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=60393
+Use consistent parameter naming in implementations of Realm#authenticate(GSSContext, boolean)
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1770656 13f79535-47bb-0310-9956-ffa450edef68"
+40ffdf6d79ae30e441be5201973e1cdcbdbbb7ee,2016-11-21 21:09:09+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=60380
+Ensure that a call to HttpServletRequest#logout() triggers a call to TomcatPrincipal#logout().
+Based on a patch by Michael Osipov.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1770762 13f79535-47bb-0310-9956-ffa450edef68"
+2b03c928035962024fae0aa312e9cc8be869cabf,2016-11-28 11:14:29+00:00,"Fix https://issues.apache.org/bugzilla/show_bug.cgi?id=60410
+Ensure that multiple calls to JarInputStreamWrapper#close() do not incorrectly trigger the closure of the underlying JAR or WAR file.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1771711 13f79535-47bb-0310-9956-ffa450edef68"
+7d4d318b9d19e11136c2337cd2574d9a1551d92c,2017-01-10 16:19:42+00:00,"Update changelog. 
+This closes #37
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1778154 13f79535-47bb-0310-9956-ffa450edef68"
+3623fbfaddfee6e8fe8086696a5326d5b8ca8cd2,2017-01-11 11:24:27+00:00,"Spelling fixes. Patch provided by Josh Soref.
+
+This closes #38
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1778275 13f79535-47bb-0310-9956-ffa450edef68"
+c643f8e50a8f99a371356dc21d5e7d1247e74973,2017-01-23 10:16:18+00:00,"Make it easier for sub-classes of Tomcat to modify the default web.xml settings by over-riding getDefaultWebXmlListener().
+Patch provided by Aaron Anderson.
+This closes #40
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1779899 13f79535-47bb-0310-9956-ffa450edef68"
+230c1083fd9f10ec50ccd1d15032f2df29e4de2c,2017-01-24 20:20:11+00:00,"Correctly create a CONNECT request when establishing a WebSocket connection via a proxy.
+Patch provided by Svetlin Zarev.
+This closes #39
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1780109 13f79535-47bb-0310-9956-ffa450edef68"
+d85c35f9679c7d7a78678a411ed8585798b0afd9,2017-01-25 14:26:53+00:00,"Reduce the contention in the default InstanceManager implementation when multiple threads are managing objects and need to reference the annotation cache.
+Prior to this patch, TestDefaultInstanceManager#testConcurrency() showed a roughly linear increase in execution time as the thread count increased. With this patch applied, the test shows broadly no change in execution time as the thread count is increased from 1 to 8 on a machine with 8 cores available.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1780189 13f79535-47bb-0310-9956-ffa450edef68"
+f14440d062e88648d35f4495edf21f8b41316871,2017-02-13 14:36:33+00:00,"Apply violetagg's performance improvement.
+This closes #43
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1782779 13f79535-47bb-0310-9956-ffa450edef68"
+37a8b2def898acba318254f60fedfd38561f42eb,2017-02-13 20:39:14+00:00,"Java 9 support for annotation scanning
+Based on:
+http://cr.openjdk.java.net/~mr/jigsaw/spec/lang-vm.html#jigsaw-2.6
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1782857 13f79535-47bb-0310-9956-ffa450edef68"
+07f08e3b14e5d9f3c3d7a73fa38143a4cf00eda7,2017-03-26 19:04:40+00:00,"Call to #toString() is not needed.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1788764 13f79535-47bb-0310-9956-ffa450edef68"
+84edbfb2cc9bb569f7642b343cb40214067db660,2017-03-30 08:55:46+00:00,"# does not need to be escaped in the value component of a properties file
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1789466 13f79535-47bb-0310-9956-ffa450edef68"
+ca92f04362e99c2a378b08f108521493c7ac505d,2017-03-31 13:37:32+00:00,"Correct various edge cases in the new HTTP Host header validation parser.
+Patch provided by Katya Todorova.
+This closes #48
+
+Fix IPv6/IPv4 parsing for host header:
+    - chars other than : should not be allowed in IPv6 address after ]
+    - ::: should not present in IPv6 address
+    - IPv4 part of IPv6 address was not correctly parsed (1 symbol of IPv4 part was ignored)
+    - tests added to cover IPv4/6 parsing 
+    - parsed test class fixed not to throw NPE when an exception is expected but not thrown 
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1789685 13f79535-47bb-0310-9956-ffa450edef68"
+1f6c4d757fffa53e7f61804fb8ffbc7cb9647f47,2017-04-12 15:34:26+00:00,"When there is no javax.servlet.WriteListener registered then a call to javax.servlet.ServletOutputStream#isReady will return 'false' instead of throwing IllegalStateException.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1791134 13f79535-47bb-0310-9956-ffa450edef68"
+5e9d00534261541554e28f2a60b34ac4d7e8eec5,2017-04-12 15:52:06+00:00,"When there is no javax.servlet.ReadListener registered then a call to javax.servlet.ServletInputStream#isReady will return 'false' instead of throwing IllegalStateException.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1791137 13f79535-47bb-0310-9956-ffa450edef68"
+312fa67797f2f8b376743a4b3e616ad8a01a1623,2017-04-28 20:13:10+00:00,"Introduce new API - WsSession#suspend/WsSession#resume that can be used to suspend/resume reading of the incoming messages.
+
+This closes #42
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1793147 13f79535-47bb-0310-9956-ffa450edef68"
+5a5401e450777835951e672f2acda3aea9a9be26,2017-04-28 20:15:14+00:00,"Test for WsSession#suspend/resume. (the test was forgotten when committing the new functionality)
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1793148 13f79535-47bb-0310-9956-ffa450edef68"
+ac36a058720c3213f5f4c472930b84373993c8e7,2017-05-10 06:53:37+00:00,"Correct javadoc. Patch provided by John Andrew (XUZHOUWANG).
+
+This closes #55
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1794674 13f79535-47bb-0310-9956-ffa450edef68"
+289419307666987970c76cb63132a12df73fffdd,2017-06-01 11:31:48+00:00,"TagLibraryInfo#uri and TagLibraryInfo#prefix fields should not be final. Patch provided by Katya Todorova.
+
+This closes #57
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1797197 13f79535-47bb-0310-9956-ffa450edef68"
+cb8137982056e3c7b7f374f92648e84dc0b79e94,2017-06-09 15:50:59+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61134
+Do not use '[' and ']' symbols around substituted text fragments when generating the default error pages. Patch provided by Katya Todorova via GitHub.
+
+This closes #61
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1798238 13f79535-47bb-0310-9956-ffa450edef68"
+bc8eb7aec5eb800573e353209e74f032a4fbf988,2017-06-09 21:15:26+00:00,"Correct typo in Context Container Configuration Reference. Patch provided by Katya Todorova via GitHub.
+
+This closes #62
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1798280 13f79535-47bb-0310-9956-ffa450edef68"
+d0fc016424c2110fdf40fd02fb90b23a6bba150c,2017-06-18 19:52:44+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61180
+Log a warning message rather than an information message if it takes more than 100ms to initialised a SecureRandom instance for a web application to use to generate session identifiers.
+Patch provided by Piotr Chlebda.
+This closes #64
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1799126 13f79535-47bb-0310-9956-ffa450edef68"
+1e7e2bcc01a588520c0c9d199ed5d3be97ff5a0d,2017-06-18 20:22:08+00:00,"Trivial comment tweak
+This closes #59
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1799133 13f79535-47bb-0310-9956-ffa450edef68"
+f3068da68a641caeb2af4c1751201e6fe6f4dea9,2017-06-21 14:58:57+00:00,"Allow human-readable channelSendOptions and mapSendOptions in configurations.
+Patch provided by Igal Sapir.
+
+This closes #56.
+
+
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1799462 13f79535-47bb-0310-9956-ffa450edef68"
+ef0be592e7489c6f433cbce57c82e3f9847e7a74,2017-06-26 12:14:27+00:00,"Remove deleted attribute <code>servlets</code> from the Context MBean description.
+Patch provided by Alexis Hassler.
+This closes #65.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1799885 13f79535-47bb-0310-9956-ffa450edef68"
+b82871716002dc7f55148cb122fe7da0e7ae92ae,2017-06-26 17:15:07+00:00,"Improve layout for CompositeData and TabularData when viewing via the JMX proxy servlet.
+Patch provided by Alexis Hassler.
+This closes #67
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1799952 13f79535-47bb-0310-9956-ffa450edef68"
+4ce1f2094d75af63c82d1f4c7d8b742795ef0db7,2017-06-26 20:39:16+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61224
+Make the GlobalRequestProcessor MBean attributes read-only.
+Patch provided by Alexis Hassler.
+This closes #68
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1799986 13f79535-47bb-0310-9956-ffa450edef68"
+9e36f2a4287a72ea5b092e5b9bd797d812e77482,2017-07-12 07:53:07+00:00,"When log rotation is disabled only one separator will be used when generating the log file name.
+Patch provided by Katya Todorova via GitHub.
+
+This closes #69
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1801686 13f79535-47bb-0310-9956-ffa450edef68"
+d6a227adc3f03e59968c95516f63f9ae6b006415,2017-08-02 15:31:42+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61366
+Add a new attribute, localDataSource, to the JDBCStore that allows the Store to be configured to use a DataSource defined by the web application rather than the default of using a globally defined DataSource.
+Patch provided by Jonathan Horowitz.
+This closes #71
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1803828 13f79535-47bb-0310-9956-ffa450edef68"
+5fca54ea7b653403b5b12ac1d830a8a5fa5484d7,2017-08-31 21:49:19+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61451
+Correct a regression in the fix to enable the use of Java key stores that contained multiple keys that did not all have the same password. The regression broke support for any key store that did not store keys in PKCS #8 format such as hardware key stores and Windows key stores.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1806873 13f79535-47bb-0310-9956-ffa450edef68"
+44aa9d80f3a09ad30bbc34d45f29a2f7c8a7b7dc,2017-11-11 20:54:58+00:00,"Provide the SessionInitializerFilter that can be used to ensure that an HTTP session exists when initiating a WebSocket connection.
+Patch provided by isapir.
+This closes #76
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1814973 13f79535-47bb-0310-9956-ffa450edef68"
+e906281a3adbfdaaa3790edafb16616dba9214bd,2017-11-11 21:04:10+00:00,"Try and improve the wording.
+This closes #79
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1814980 13f79535-47bb-0310-9956-ffa450edef68"
+0736a81497ed9b04c3ccc1a1aec21e036a9afcac,2017-11-16 13:30:26+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61736
+Improve performance of NIO connector when clients leave large time gaps between network packets.
+Patch provided by Zilong Song.
+This closes #81
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815451 13f79535-47bb-0310-9956-ffa450edef68"
+277d583b32b874357626f16182eebbc30cc8d1d8,2017-11-20 11:53:20+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61777
+Avoid a NullPointerException when detaching a JASPIC RegistrationListener.
+Patch provided by Lazar.
+This closes #85
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815793 13f79535-47bb-0310-9956-ffa450edef68"
+2c5c659d30a4a3c9af06ac58f1e1199c3c5a86b2,2017-11-20 12:57:22+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61778
+Correct the return value when detaching a JASPIC RegistrationListener.
+Patch provided by Lazar.
+This closes #86
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815800 13f79535-47bb-0310-9956-ffa450edef68"
+1ee42fa7d131bcf6ecf2c3d0fa02040bf823e4b3,2017-11-20 13:38:30+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61780
+Only include the default JASPIC registration ID in the return value for a call to AuthConfigFactory.getRegistrationIDs() if a RegistrationContext has been registered using the default registration ID.
+Patch provided by Lazar.
+This closes #88
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815806 13f79535-47bb-0310-9956-ffa450edef68"
+8a10e8235545bc998f7401804bd8581daa2be2f2,2017-11-20 18:13:15+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61781
+Enable JASPIC provider registrations to be persisted when the layer and/or application context are null.
+Patch provided by Lazar.
+This closes #89
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815826 13f79535-47bb-0310-9956-ffa450edef68"
+0128ae37ea4cc19beecf7e8edd851a26496ff210,2017-11-20 18:26:28+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61782
+When calling AuthConfigFactoryImpl.doRegisterConfigProvider() and the requested JASPIC config provider class is found by the web application class loader, do not attempt to load the class with the class loader that loaded the JASPIC API.
+Patch provided by Lazar.
+This closes #90
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815829 13f79535-47bb-0310-9956-ffa450edef68"
+c8168e12edb845947ab1af1bdebddeddb569bbec,2017-11-20 18:51:07+00:00,"When calling AuthConfigFactory.removeRegistration() and the registration is persistent, it should be removed from the persistent store.
+Patch provided by Lazar.
+This closes #91
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1815834 13f79535-47bb-0310-9956-ffa450edef68"
+4f6cc8f037fdaa97719968b8d26f41ae5c19e826,2017-11-22 20:17:53+00:00,"Correctly handle the case when AuthConfigFactoryImpl.registerConfigProvider() is called with a provider name of <code>null</code>.
+Patch provided by Lazar.
+This closes #94
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1816076 13f79535-47bb-0310-9956-ffa450edef68"
+4c1ca352265fbc8ed8340d9b5bbff782f3e75f79,2017-11-22 20:48:39+00:00,"Add a property to the Authenticator implementations to enable a custom JASPIC CallbackHandler to be specified.
+Patch provided by Lazar.
+This closes #93
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1816078 13f79535-47bb-0310-9956-ffa450edef68"
+18ad6f3460677ce07f5ba2a8d14f13fbe2ee6865,2018-01-09 13:50:52+00:00,"Modify the Default and WebDAV Servlets so that a 405 status code is returned for PUT and DELETE requests when disabled via the readonly initialisation parameter.
+
+Align the contents of the <code>Allow</code> header with the response code for the Default and WebDAV Servlets. For any given resource a method that returns a 405 status code will not be listed in the Allow header and a method listed in the Allow header will not return a 405 status code.
+
+Based on a patch suggested by Ken Dombeck.
+
+This closes #96
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1820663 13f79535-47bb-0310-9956-ffa450edef68"
+2d9c0fc0ab740954babff315f9998fd521f4fc9f,2018-02-15 11:38:11+00:00,"Prevent Tomcat from applying gzip compression to content that is already compressed with brotli compression.
+Patch provided by burka.
+This closes #99
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1824297 13f79535-47bb-0310-9956-ffa450edef68"
+d7af1f7e9ecd8fb37765b2768a589a602a0b7722,2018-02-21 13:07:33+00:00,"Fix for RequestDumperFilter log attribute. Patch provided by Kirill Romanov via Github.
+This closes #100
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1824959 13f79535-47bb-0310-9956-ffa450edef68"
+f745dd1657147a6e230be67b8f66f8d41b167e39,2018-04-06 19:35:41+00:00,"Correct off-by-one error in thread pool that allowed thread pools to increase in size to one more than the configured limit.
+Patch provided by usc.
+This closes #104
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1828545 13f79535-47bb-0310-9956-ffa450edef68"
+2472354176ba22ea0a3a73d396447fda0232cafa,2018-04-27 12:32:28+00:00,"Avoid warning when running under Cygwin when the JAVA_ENDORSED_DIRS environment variable is not set. Patch provided by Zemian Deng.
+This closes #106
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1830341 13f79535-47bb-0310-9956-ffa450edef68"
+c6e1958637dddc04ef3367d1f0ba233fe45747fe,2018-04-27 17:14:19+00:00,"Collapse multiple leading '/' characters to a single '/' in the return value of HttpServletRequest#getContextPath() to avoid issues if the value is used with HttpServletResponse#sendRedirect(). This behaviour is enabled by default and configurable via the new Context attribute allowMultipleLeadingForwardSlashInPath.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1830367 13f79535-47bb-0310-9956-ffa450edef68"
+5b224440ff26f50c54d2467e921ab89b979c106e,2018-06-01 16:51:48+00:00,"Add the IPv6 loopback address to the default internalProxies regular expression.
+Patch by Craig Andrews.
+This closes #111
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1832707 13f79535-47bb-0310-9956-ffa450edef68"
+1286f76368716c26770c2a15970806fdabe8512f,2018-06-04 18:57:59+00:00,"Correctly handle the case when the request passes through one or more trustedProxies but no internalProxies.
+Based on a patch by zhanhb
+This closes #45
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1832882 13f79535-47bb-0310-9956-ffa450edef68"
+0757533d3130d79463efcf2e4436da9580723ede,2018-08-06 13:35:41+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=62547
+JASPIC cleanSubject() was not called on logout when the authenticator was configured to cache the authenticated Principal.
+Patch provided by Guillermo González de Agüero.
+This closes #116
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1837520 13f79535-47bb-0310-9956-ffa450edef68"
+619656c59912c1eb5e79fe7aa788afca1b580f14,2018-08-10 15:16:11+00:00,"Correct various spelling errors throughout the source code and documentation.
+Patch provided by Kazuhiro Sera.
+This closes #118
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1837809 13f79535-47bb-0310-9956-ffa450edef68"
+589fd5695527ea0e144ad22d18aa1e9e1ca56bea,2018-08-10 15:46:39+00:00,"Remove ServletException from declaration of Tomcat.addWebapp(String,String) since it is never thrown.
+Patch provided by Tzafrir.
+This closes #114
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1837818 13f79535-47bb-0310-9956-ffa450edef68"
+331dd8d062b73b7771ada95b8c7399bf9814c7f7,2018-08-24 18:27:37+00:00,"Expand the information in the documentation web application regarding the use of CATALINA_HOME and CATALINA_BASE.
+Patch provided by Marek Czernek.
+This closes #117
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1838925 13f79535-47bb-0310-9956-ffa450edef68"
+4607ad58150985410abb55ec34f95e94a2548e06,2018-10-05 10:07:49+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=62739
+Do not reject requests with an empty HTTP Host header. Such requests are unusual but not invalid.
+Patch provided by Michael Orr.
+This closes #124.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1842878 13f79535-47bb-0310-9956-ffa450edef68"
+d7fa05ab014d97ad02e5704343d1c7c587956eac,2018-10-21 17:05:03+00:00,"Ignore an attribute named source on Context elements provided by StandardContext. This is to suppress warnings generated by the Eclipse / Tomcat integration provided by Eclipse.
+Based on a patch by mdfst13.
+This closes #127.
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1844502 13f79535-47bb-0310-9956-ffa450edef68"
+1f6794a6cb446b948b943dfad6abd9df10649b0e,2018-10-29 10:53:01+00:00,"Add missing word.
+Reflow.
+Based on a patch provided by mdfst13
+This fixes #128
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1845099 13f79535-47bb-0310-9956-ffa450edef68"
+492a6dfb58d2e4b40a3380858a6244be4203dcf1,2018-11-01 15:06:53+00:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=61171
+Add the portOffset attribute to the Server element which is added to the configured shutdown and Connector ports.
+Based on a patch by Marek Czernek.
+THis closes #125
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1845482 13f79535-47bb-0310-9956-ffa450edef68"
+d3ea1e71bb296fca58dfbdca892312ac02fe1838,2018-11-01 15:35:46+00:00,"Create a little visual separation between the Undeploy button and the other buttons in the Manager application.
+Patch provided by Łukasz Jąder.
+This closes #130
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1845489 13f79535-47bb-0310-9956-ffa450edef68"
+979500ea3acf413fca41924573e47e21dad7a596,2018-11-19 09:31:14+00:00,"Update ECJ dependency in IDE support files.
+Patch provided by Lukasz Jader
+This closes #133
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1846889 13f79535-47bb-0310-9956-ffa450edef68"
+368fa687de01d8dd2c1229807922b9ac28a5aec1,2019-01-09 10:37:10+00:00,"Trivial reformatting to use camel case
+Patch provided by yangli
+This closes #136 
+
+git-svn-id: https://svn.apache.org/repos/asf/tomcat/trunk@1850844 13f79535-47bb-0310-9956-ffa450edef68"
+5e284283bac15530c6c34017e79d87e13fc8ef5b,2019-03-05 08:56:18-05:00,"Merge pull request #141 from csutherl/master
+
+Update BUILDING and CONTRIBUTING docs after the svn->git migration."
+e4f2ee28babfd53b4d0141e78ecd0eb3836a4296,2019-03-05 16:28:55+01:00,"Fix edge case causing a missing initial notification
+
+This could be seen on CI #4110, which I managed to reproduce. Hopefully
+will not cause regressions."
+8a1d9a05327c498d498716d205f0b63f64c3d64a,2019-03-14 13:15:29+00:00,"Merge pull request #146 from markt-asf/bz-63235
+
+Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=63235"
+3617dbbab6a0f8b8230368a5b39ef29051a2a3d4,2019-03-14 19:21:01+00:00,"Merge pull request #148 from samslow/master
+
+Remove duplicated comments"
+004fe8bbab588b97b61f0bb03726deb379d0227b,2019-03-15 15:19:13+01:00,"Fix regular read taking over async reads
+
+A call to registerReadInterest with the right timing could cause a
+regular read to occur, preventing the use of vectored IO. This is
+exhibited in the very elusive client timeout failure seen on CI, for
+example here in build #4128:
+https://ci.apache.org/projects/tomcat/tomcat9/logs/4128/TEST-org.apache.coyote.http2.TestHttp2Section_6_7.NIO2.txt"
+116a63b516fc13ea614ca219dff1fc9d61257b90,2019-03-19 14:54:23+09:00,"Improved maxAge handling.
+This closes #140"
+950b940c6abdc1b674278c59c6bd6672a23120ea,2019-03-27 11:15:59+01:00,"Harmonize NIO2 isReadyForWrite with isReadyForRead code
+
+Following 8.5 #1717, it is better to redo it with sync as it seems to
+indicate a leftover write issue."
+294d13b16f244a54df018dffb9fb47231dcbd26b,2019-03-28 23:15:02+00:00,Fix regression for PKCS#8 private keys with OpenSSL
+687c0ff7ff5b8be0cae740913bb70a0c32694fd9,2019-04-23 13:27:58-04:00,"Merge pull request #159 from woonsan/bugfix/messages_of_examples_war
+
+63370 - Message files (LocalStrings_*.properties) of the examples webapp not converted to ascii"
+c84623e594d8cf317de5fdcf28b8b5d9b54ec2d5,2019-04-26 13:57:59-04:00,"Merge pull request #160 from ChristopherSchultz/master
+
+Add javadoc to describe IntrospectionUtils.isInstance"
+f1cf343959ee40b245db463a055b7363a41fc202,2019-04-30 11:53:07+02:00,"Cleanup the preface read code
+
+Try to reduce code duplication. I'll then look if I can reproduce the
+#4263 failures if they occur again."
+7a471d3238bc771d17f23ac07c84a4147253b458,2019-05-04 14:19:33+02:00,"Enable debug again
+
+Try to look at #4285, if it happens again."
+7040497fa564c63d8eba4ffc7d4c6e58cbccc369,2019-05-06 15:36:36+02:00,"Add sync when processing asynchronous operation in NIO
+
+The NIO poller seems to create some unwanted concurrency, causing rare
+CI test failures that for whatever reason did not show up before 9.0.20.
+#4293 and #4297 show thread safety related buffer corruption which as
+far as I can tell can only occur through the poller. It doesn't seem
+right to me that there is concurrency here, but it's not hard to add a
+sync."
+c946142b886e1c103fd1ad992f5cb9c6604b99f1,2019-05-17 13:07:59+02:00,Add sync back after #4366
+6d8c383e42442bd84a0d0be64098ab5bb0d691e8,2019-05-23 10:12:24+01:00,Refactor to remove use of session#lock and #unlock in the DeltaManager
+28473488e48d8e90ce49556d8117006719de540c,2019-05-23 10:12:24+01:00,"Refactor to create internal lock methods.
+
+This is a step on the path to making ReplicatedMapEntry#lock() and
+unlock() NO-OPs."
+547fb246149d828279cb7cdf7193165f7ef9985d,2019-05-23 10:12:24+01:00,Refactor #requestCompleted to re-use DeltaSession#getDiff()
+93c5ffcc9d5c51d442a8f9576156859dc200cbc7,2019-05-29 01:06:55+02:00,Enable debug logging in case #4394 failure occurs again
+d32856033bf762b63f95e82209ec92156d16d351,2019-06-22 12:12:39+02:00,"Fix charset name for UTF-32LE in bom detection.
+
+Patch by zhanhb vi Github. Closes #173 on Github"
+2edb9b000e77967b651fe78df81d47ac5fb828fb,2019-07-08 13:02:38+01:00,Use enhanced for-loops. Based on PR #177 by Govinda Sakhare.
+f1a93f0945cd4d90ea8e63d700c7cc5d70ae16e1,2019-07-12 16:34:43+01:00,"Fix https://bz.apache.org/bugzilla/show_bug.cgi?id=63524 part 2 of 2
+
+Enable PKCS#1 format private keys to be read into the in-memory key
+store."
+b724612ef327f1e3c493de44b29ae24e1d757d0f,2019-08-05 14:33:29+02:00,"BZ 63627: Implement more fine-grained handling in RealmBase#authenticate(GSSContext, boolean)"
+63cc1eb4607846e055047d582b8f022755f164cc,2019-08-12 23:11:42+02:00,BZ 63636: Context#findRoleMapping() never called in StandardWrapper#findSecurityReference()
+a3fa39d38431eee1fda2088dd7ca3ec1be6bf5d5,2019-08-15 21:31:45+01:00,"Merge pull request #190 from KangZhiDong/master
+
+Fix comment typo"
+af4c20cad0ea2220aa55b63d9b539ea47f993e90,2019-08-20 13:24:08+02:00,"Merge pull request #193 from maxime-beck/master
+
+Fix '/opt already exists' build error"
+162dd79f16daaafd49ea68231525cbb650216169,2019-08-27 11:56:13+02:00,"fix JSSE_OPTS quoting
+
+Part of #196 on github"
+07a2804b43eb1ed5c5e09e3fbf54b28aaa11ff58,2019-08-27 11:56:26+02:00,"Fix JSSE_OPTS quoting in catalina.bat
+
+Contributed by Peter Uhnak.
+Closes #196 on github"
+d5f3c97a05e050a1b38b801e9545b92d97c93407,2019-08-28 12:36:56+02:00,BZ 63684: Wrapper never passed to RealmBase#hasRole() for given security constraints
+ca429e45eb4387f9ecb119340a90b3a01b90b83f,2019-09-11 18:22:57+01:00,"Merge pull request #202 from xiantang/master
+
+Polish. Add spaces"
+5daacce2722bb8f895221d58dfc5cd7ca3b8f91e,2019-10-07 10:32:44+01:00,"Fix typos (#208)
+
+Clean-up. Fix typos, remove obsolete comment about ServerFactory"
+386da630c0cdf9d6700154554949a8b68b7ca4c2,2019-10-21 15:26:42-04:00,"Merge pull request #217 from euske/master
+
+Made some variable names more consistent and readable."
+2f4e1f2b64bdf908d9fb1fae2c09598a3f11bae6,2019-11-06 12:50:03+00:00,Fix PR #211 via POEditor
+c3883aa5a9e66f048943ad604bb268584168cf8b,2019-12-02 10:44:46+01:00,"BZ 63681: Introduce RealmBase#authenticate(GSSName, GSSCredential) and friends"
+0f96b6b6c67ebf684472efa123c33a45fbb0bfa3,2019-12-04 20:49:45+00:00,Fix error reported via PR #125
+37044b36368fa8aa9a15fd59b93486addfafdcc8,2019-12-05 11:29:23+01:00,BZ 63987: Deprecate Realm#getRoles(Principal)
+d2c22d7d1c49928a97e2caec695fb9357726d391,2019-12-05 12:54:00+00:00,PR #227 Unit test FileStore utility methods
+b9ad09a1d1369e5e046f619f2d2a2d651a6077f3,2019-12-05 12:54:00+00:00,Review PR #227. Add changelog entry
+b978b2c83ffe1be0670f47ccab0cbfaebdaba694,2020-01-09 18:30:07+01:00,"Allow more quoted tokens for RewriteValve config
+
+Along with quoted token parsing, RewriteMaps can have more than one
+parameter now.
+
+Bugzilla Id: 64067
+Part of #221"
+f386fbb4abaa3fe8f3b3df1da7d14f756c729e2e,2020-02-03 08:42:27+02:00,"Merge pull request #236 from martin-g/feature/build-tomcat-on-arm64
+
+Test Tomcat on ARM64 at TravisCI"
+c1a8aaf5976fcbfc7e77261d43e5e731209f45fe,2020-02-17 10:07:22+01:00,"Merge pull request #243 from bohmber/dnsmembership_doc
+
+Improved CloudMembershipService documentation and configuration, submitted by Bernd Bohmann."
+9ff6b12c3d7c99b4efc05a686f53e46aa24ad8a1,2020-02-19 14:35:51+02:00,"Check for non-null 'methods'
+
+... because jakarta.servlet.http.HttpServlet#getAllDeclaredMethods(Class) returns 'null' when the class is j.servlet.http.HttpServlet"
+f124a9c7230227d3eaff9d2dc1c52f82ce10e03f,2020-02-24 11:21:31-05:00,"Merge pull request #240 from ThStock/master
+
+Added extension point for custom delta requests"
+8f83475ea84e95fab3f6a54235a40f69053a7152,2020-02-28 11:09:04+00:00,"The '$' in the class name of Digester$EnvironmentPropertySource is no… (#244)
+
+The '$' in the class name of Digester$EnvironmentPropertySource is not really shell friendly for unix environments. The class should not a inner class."
+23a68103b10e07c20327cb6f9a23a451efe0ff67,2020-03-31 20:33:05+01:00,"Speed up unit tests.
+
+Only run TestCharsetUtil#testIsAcsiiSupersetAll() if a new Charset is
+detected."
+d43f2df565ef90dcf7a3b4139d894a2127e50ab6,2020-04-22 12:13:56+01:00,Update change log for PR #269
+3ce60ffaf7eef040dd87ab9a3b50ae2dd4f1ad62,2020-04-22 14:10:24+01:00,Update change log for PR #271
+f7faac9334b1b41fd45dc0a2344f29ddba4d0299,2020-04-22 17:31:56+01:00,Update changelog for PR #272
+33045bd814d2c20e4f85e6454afe8717471ba26d,2020-04-22 18:24:06+01:00,Update changelog for PR #270
+cbe6edb720299913ff2a5850abc50b32aae6800f,2020-04-23 17:55:01+03:00,"Merge pull request #276 from linux-on-ibm-z/s390x-travis
+
+Add s390x Travis support"
+4684537a5b71a8bd980c5985365f6a5921a84cd9,2020-04-27 10:17:12+03:00,"Merge pull request #286 from XavierChengZW/master
+
+optimized code,replace some c-style array"
+dabcbc120fcd5e9d8d23b193e1027cd927463cb6,2020-05-04 14:10:31+01:00,"Align with 9.0.x & 8.5.x
+
+Review of classes impacted by PR #285"
+8efcc6c9cd072bd270895c642938e268f452922c,2020-05-19 16:12:30+02:00,"Fix use of multiple parameters when defining RewriteMaps
+
+Missing part of PR #221."
+0446c5c97741344556c519a566db926d660e4b8a,2020-05-20 13:22:40+02:00,"Add the default internal rewrite maps
+
+After looking at the httpd docs, integrate more parts of PR #221 with
+some additions."
+c455eb914d9ca98e74d2e2d1acca0a60245d16a8,2020-06-29 14:25:23+03:00,"Merge pull request #307 from rotty3000/github.actions
+
+github actions"
+19f6175d3cd3deca5e0c484e271473bc7d9df870,2020-07-06 09:46:46+03:00,"Merge pull request #314 from jbampton/fix-case-of-css
+
+Changed css to CSS"
+d905816c933ace097133c869eea6cf6a27f821d0,2020-07-06 10:09:13+03:00,"Merge pull request #312 from martin-g/master
+
+Use StringBuilder instead of StringBuffer"
+da4f6bb1e570f8781b5cb27b2bce31f67316cbf6,2020-07-07 14:48:09+01:00,"support of schemes ""wss"" and ""ws"" in WsHandshakeRequest.buildRequestUri()
+requests with scheme ""wss"" or ""ws"", as outlined in [RFC 6455 section 11.1](https://tools.ietf.org/html/rfc6455#section-11.1), will cause an `IllegalArgumentException` with message ""wsHandshakeRequest.unknownScheme""
+
+this fixes a regression from e09e6b04e41d3dae27fcfe060e6f8f89f1c0d6b5 / BZ 62731"
+55bf3a5fabe46888a7aa3b3c84fcc22a2d9157ef,2020-07-08 14:44:29+10:00,"Fix bare URL
+
+https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md034---bare-url-used"
+6ff891103d99377e512acea1d0574b04da3dd6fb,2020-07-09 11:02:59+03:00,"Merge pull request #320 from javierlete/patch-1
+
+Read firstName and lastName from the request parameters in reqparams.html example"
+a2e62e0bf56e9714d15a89f9286ef0347d142c84,2020-07-09 11:23:16+03:00,"Merge pull request #319 from jbampton/fix-bare-url
+
+Fix bare URL in README.md"
+768524f02643c58f412c0ecea67bc41ebf4b7085,2020-07-10 17:33:39+03:00,"Simplify some #toString() methods
+
+Do not use StringBuilder when String concatenation is just fine.
+
+Append char instead of String when possible.
+
+Fix the toString of ExampleFilter"
+da79085e88ac4d50da433e45e52fe6c8d16361ea,2020-07-13 14:48:47+03:00,"Merge pull request #321 from martin-g/master
+
+Simplify some #toString() methods"
+098c4c81602ba1e8d5f33b0795d7caf55f70d573,2020-07-21 14:08:32-07:00,"Simpler way to determine Graal runtime
+
+Also, allows to mock the behavior
+https://www.graalvm.org/sdk/javadoc/org/graalvm/nativeimage/ImageInfo.html#PROPERTY_IMAGE_CODE_KEY"
+cb5eaa3925bb4649a74a3872a9fda76fc9d102b1,2020-07-22 11:43:43-07:00,"Revert ""Simpler way to determine Graal runtime""
+
+This reverts commit 098c4c81602ba1e8d5f33b0795d7caf55f70d573.
+https://tomcat.markmail.org/search/?q=#query:%20list%3Aorg.apache.tomcat.dev+page:1+mid:7vo7ugmqjz2z7x5f+state:results"
+ec5e948652e3bc4a3ea084501fe56f1939297952,2020-08-06 13:26:28+02:00,"Merge pull request #309 from jfclere/trunk
+
+Allow recursive substitution of properties."
+30283fc629afdb4745052831692fa0349f40e7aa,2020-08-27 15:01:55+03:00,"Merge pull request #345 from tomchiverton/patch-1
+
+Clarify where wildcards are allowed in Host and Alias directives"
+3a1824fe286232ada14ac95fda541e7744e31ab4,2020-09-01 13:54:08+01:00,"Manually apply PR #346 - fix BZ64644 add write/read idle session timeout
+
+https://bz.apache.org/bugzilla/show_bug.cgi?id=64644"
+17d9e688fab3b138d35c80c840763c4422e7dbfa,2020-09-05 16:57:42+01:00,"Manually merge #332 - BZ 57661 - Vary when 100 response code is sent
+
+Allows the user to control when the 100 response is sent when the
+request contains an expectation. Options are immediately (no change) or
+on first read of the reques body."
+6053839acc97b4f3eb9f286c5633d0c1dc2e9c09,2020-09-15 12:20:58+03:00,"Merge pull request #356 from martin-g/improvement/use-string-isempty
+
+Micro optimization: replace """".equals(a) with a.isEmpty()"
+c4a789ebdddad0262509db5a6ae45ea39219b9b4,2020-09-16 12:01:04+03:00,"Merge pull request #364 from jbampton/fix-word-case
+
+Fix case of HTML and SHTML"
+a4fbb7041861878c76469a7bc91c77e72331e208,2020-09-17 19:44:09+01:00,Lazy init ELContext#listeners to avoid unnecessary ArrayList and ArrayList$Itr instances
+ce17edeee6c7c1a5965be4e60a4d1ccff96fbc38,2020-09-23 11:49:12+02:00,"Add a bloom filter to speed up archive lookup
+
+The can improve deployment speed of applications with a large number of
+JARs.
+Patch provided by Jatin Kamnani, with changes. PR #352"
+6f178006f246ce9248a349705ba79d054d189b70,2020-09-24 13:46:31+03:00,"http2: Add 'EndOfStream' to the logs for writeHeaders and writeBody
+
+Mark Http2AsyncUpgradeHandler#errorCompletion and #applicationErrorCompletion as final.
+Call streams.size() just once.
+Extract local variables and reuse them instead of calling getters on every usage"
+b8819c3d137007b3f2957aa83eee4bbdd7e65a38,2020-10-05 19:05:57+01:00,"Allow for path length in cached resource size
+
+Based on PR #368"
+864b138b3948011219b23a9b754cce3a94abe25e,2020-10-06 09:44:01+03:00,"Update FailedRequestFilter's javadoc
+
+Use same text as at http://tomcat.apache.org/tomcat-9.0-doc/config/filter.html#Failed_Request_Filter
+
+discussed-at: https://markmail.org/message/ys3el54jmzta5jby"
+418986821ddc0859023571a62086f0bd675e9227,2020-12-04 08:40:40+00:00,"Merge pull request #380 from markt-asf/bz-64110
+
+Fix BZ 64110 - request attr for requested ciphers and protocols"
+a9d67fd7c08272c01b870edd24d001740d88e5f6,2020-12-07 17:18:06+00:00,"Fix BZ 60781 Escape access log output where httpd does (#384)
+
+Fix BZ 60781 Escape access log output where httpd does
+
+https://bz.apache.org/bugzilla/show_bug.cgi?id=60781
+Isn't quite that simple as httpd and Tomact support slightly
+different things and validate at different points. See the
+code comments."
+f41c7d91e2d33f4d09254f7a46df63960238bbc4,2020-12-09 10:59:10+02:00,Micro optimization: Use String#[last]indexOf(int) instead of #indexOf(String) where possible
+834f356384b47fc8b79dbaa1d50d6db9b13628fb,2020-12-10 15:25:44+01:00,"Merge pull request #385 from rainerjung/peer-address
+
+Add peerAddress to coyote request"
+8e84084e13c421d7297955f99bba257da0b37f39,2020-12-14 10:29:10+02:00,"Merge pull request #388 from zzk0/master
+
+Update ide-support package version"
+588410cffd385ff4307215c236ecb7a5fbefb705,2020-12-17 10:22:20+02:00,"Merge pull request #391 from lanicc/lanicc-patch-1
+
+Optimize if condition"
+e8dbc1919a7c44a4632664f6a593856a72d62559,2020-12-18 09:11:00+02:00,docs: fix spelling (#392)
+538fb427d32d574006372a319c276adac873006e,2020-12-21 11:51:40+02:00,update Javadoc return value for ServletContext#getMajorVersion()
+6593fa7b23a67ae5396c76a7893c45b4e5616135,2020-12-28 11:24:38+02:00,[65022] Change tomcat access log attributes to be shown as code. (#397)
+654e01edd2c884af8456be08466f830ab9163dec,2021-01-27 07:32:43+03:00,"Update NSIS to version 3.06.1.
+Update build script to create an Unicode installer.
+See https://nsis.sourceforge.io/Docs/Chapter1.html#intro-unicode"
+ea00bb55348faad97db3f5f70de0efad036fec17,2021-05-19 12:17:17+01:00,"Fix #418 - add ""pass-through"" as an option for useBomIfPresent
+
+Based on a PR by Jean-Louis Monteiro
+Also adds support for the <pr> element in the change log"
+94c352d518f3bb03028c450933dfcd95b69c23ff,2021-05-19 13:03:16+01:00,"Fix #412. Add commented out users for the Manager app
+
+Based on a PR by Arnaud Dagnelies."
+ac7f2f39ab7e6ed78e82b404d6a538d2bbfef219,2021-05-21 12:07:37+01:00,Fix #419. Check parameter value size before conversion to String
+878387ba5c732d5c3dd924d96d0c2511e156311d,2021-06-16 09:45:31+01:00,Relax parsing of 1#token to align with RFC 7230 section 7
+8e15d4e69acf85897b078be2448e7149dfe86a6c,2021-06-16 15:00:35+01:00,"Fix BZ 6539. Closes #422. Add Java 16+ options to service.bat
+
+https://bz.apache.org/bugzilla/show_bug.cgi?id=65369"
+40920f6522f3f390a503738dd943a1a5be5b96b2,2021-06-30 14:06:59+03:00,"Fix typo in method's javadoc (#429)
+
+s/contain/container/"
+b5d84e4299668795fac658aa64ea151cf653684c,2021-07-13 08:21:42+01:00,"Fix typo (#433)
+
+* Fix typo
+
+add missing words"
+3bdd80293fb2b88a8b3df50692a93047261bd082,2021-08-24 13:07:12+01:00,"Fix BZ 65505. HTTP header removal must not change order of other headers
+
+If there are headers with multiple values, we must retain relative order
+of those values. It is easier to retain order for all header values.
+
+https://bz.apache.org/bugzilla/show_bug.cgi?id=65505
+https://datatracker.ietf.org/doc/html/rfc7230#section-3.2.2"
+386912a93f130078f52e7094be3a730cda742121,2021-09-09 08:36:12+01:00,"Fix BZ 65563. Correct parsing of Content-Range headers
+
+Tomcat was incorrectly requiring an '=' character after ""bytes"". Fix
+based on pull request #449  by Thierry Guérin."
+1988fad4b49fa04ffbafe4abe4377617d51d8c49,2021-09-14 11:08:48-04:00,"Merge pull request #450 from tussupbekov/typo-fix
+
+Fix typo"
+74bafa3c9dd55b131b6b66094c1a20e2afaba496,2021-11-04 10:35:48+00:00,"MimeHeader.toString to speed up debugging in IDEs (#457)
+
+#457 MimeHeader.toString to speed up debugging in IDEs
+
+Co-authored-by: Mark Thomas <markt@apache.org>"
+b84dc386296ff62fbf42234b032b4c5eac767b16,2021-11-08 14:40:18+00:00,"Optimize the comment about class loader
+
+In HotSpot JVM, javaseClassLoader is actually Extension ClassLoader, The comment of javaseClassLoader mentioned:
+```java
+    /**
+     * The bootstrap class loader used to load the JavaSE classes. In some
+     * implementations this class loader is always <code>null</code> and in
+     * those cases {@link ClassLoader#getParent()} will be called recursively on
+     * the system class loader and the last non-null result used.
+     */
+    private ClassLoader javaseClassLoader;
+```
+So I think it is more appropriate to use bootstrap classLoader in the comments."
+6d84fe760ec58527719222614f9a7fbfea7e664a,2021-11-25 14:29:28+00:00,Alternative fix for PR #453 - lost log messages on shutdown
+c3edf437da20af0f11edc0ad6d893399b01e6287,2022-02-08 14:10:10+01:00,"Add support for additional user attributes in TomcatPrincipal
+
+This closes #463"
+a754fc05208215bde7016c0e274b0f845dc457e1,2022-02-10 17:24:49+00:00,Update changelog for #467
+e276edcee0dd2747909ac7f87e10f3bcf3182413,2022-02-10 19:53:15+00:00,"Based on #464. Avoid using null for class loader during lookups
+
+Fall back to the class loader used to load JULI when the thread context
+class loader is not set. In a normal Tomcat configuration, this will be
+the system class loader.
+Based on a pull request by jackshirazi."
+3b664f114f8a0342ea82eae9769eaa3aa2fef6a4,2022-02-15 16:44:46+00:00,Add #474 to changelog
+6311bcff2849b40e84976d48bd158ec7687688c7,2022-03-01 15:04:01+00:00,"Fix Response#sendRedirect() if no request context exists.
+
+If no ROOT context is defined, the context may be null in special cases, e.g. RewriteValve may use Response#sendRedirect() without any application context associated.
+In this case, the Tomcat behaviors for the context attributes useRelativeRedirects and sendRedirectBody are assumed, but without considering org.apache.catalina.STRICT_SERVLET_COMPLIANCE."
+9ea53009ba8e5c64827f488b297646aab3803a7b,2022-03-01 15:06:09+00:00,Add #479 to changelog
+7560ad854e6aaa2a12f97b184035fc96ea16626a,2022-03-08 10:57:33+00:00,Follow up to #479. Fix logic. Thanks to kkolinko review
+23a92d7a55cffa58e604f5162403521da3ca5d25,2022-03-23 21:00:41+01:00,"PR #487: Improve logging of unknown settings frames
+
+Pull request by Thomas Hoffmann."
+45471f79f8d489a169fe6b1700b1d7795a69c8e5,2022-04-07 13:55:35+02:00,"PR#494: Fix native library location
+
+Submitted by Dimitrios Soumis."
+35c51e7657f0d3aa6a636db9d61730cba6fc246a,2022-04-07 16:08:15-07:00,"Merge pull request #495 from leggiero/patch-1
+
+Minor typo on javadoc of setHostHeader method"
+1709d6773799afb12a7421d0b1bd3bd766540faa,2022-05-10 13:02:01+01:00,Add support for encrypted PKCS#1 keys. Based on #511. Thanks to jfclere
+357aa7d8b07043f749a6b5eb10b2f839184265f5,2022-05-24 11:21:38+01:00,Add changelog entry for #516 / BZ 66084
+314c31ea1ec20daf3612409aabccd3c1bf0aad8c,2022-05-26 08:18:01+01:00,Fix regression that broke support for unencrypted PKCS#1 keys
+8ffc799b2d533437f3d2e7731b010ebad5e14206,2022-06-06 12:37:48+01:00,"Don't try and clean directory that doesn't exists + refactoring
+
+Avoid error message by not trying to clean up old files from the logging
+directory before the directory has been created.
+Based on #521 by HanLi.
+
+Refactor obtaining Path for a given directory"
+e3298caedb58032ffa1445c3c59c605618e035d6,2022-07-13 17:52:41+01:00,Add test case for PR #524
+72ef65020d3e19f3eb670fdc4f477a240c497bf0,2022-08-01 11:43:45+01:00,Add a changelog entry for #532
+46d7162237352f97b98d44123d293529c34ed7bb,2022-08-16 01:36:54+01:00,Follow-up to #533
+cbf884c4d54bf4eacace15261511bf627a11da36,2022-08-23 09:20:38+01:00,"BZ 66183. Log all values for given cookie, not just the first.
+
+https://bz.apache.org/bugzilla/show_bug.cgi?id=66183
+Based on #541 by Han Li."
+0e323eb32b854f59ce56ee1cd8fdd88dd48f34b6,2022-08-24 14:20:58+01:00,"Manually merge #535 - improve error message for duplicate fragments
+
+Now lists the JARs that contain the duplicates. PR by Mads Rolsdorph"
+c0c50fb1e422e86797c1d570d386bab902e90fab,2022-08-25 14:29:40+01:00,"Switch to Executor for async logging
+
+Replace logging thread for JULI's AsyncFileHandlerwith an executor to
+protect against failure of the logging thread.
+Based on pull request #545 by Piotr P. Karwasz."
+054abe0fab178bfdfab005ae75f2317e7ca80151,2022-08-29 21:46:43+08:00,Manually merge #548 - Avoid int overflow when parsing octet
+74babb122c9d4ab6d212cda1cf458fd655a2c3a3,2022-09-07 14:45:55+08:00,Avoid potential IndexOutOfBoundsException when matching HTTP/2 preface. Submitted #551 by 刘文章.
+7eae54393e6bac1771a719219714c860e216184c,2022-09-12 16:42:03+01:00,"Http11Processor's keep alive state and input buffer's swallow state must be synchronized (#550)
+
+* Fixing a bug where a connection would be kept alive without swallowing the input from the request stream.
+
+When a request comes in with a 100 Continue expectation, and the server immediately responds with a 200 status without reading the request body at all, the next request on the connection will fail because Tomcat cannot parse the HTTP verb.
+
+The new unit test replicates the issue and is addressed by removing the unnecessary changes to the swallowInput field of the Http11InputBuffer."
+6afb00b3d5c5de8b6f0000bb02cd1159356763fb,2022-09-27 11:04:44+08:00,"Polishing TaskQueue & ThreadPoolExecutor
+
+The ThreadPoolExecutor#setCorePoolSize no longer does queue.remainingCapacity()==0 checks on JDK7 and above, so remove the code that temporarily fakes this condition."
+36d5187d6eba8c9b71cb61bc1692fa3748e0cbba,2022-10-03 13:32:55+01:00,Document nonceRequestParameterName. Based on #553 by Mert Ülkgün.
+34a48511a5b9c52b508daa347438a4a1e2b4ccfb,2022-10-20 21:40:18+08:00,"Fix for Lambda coercion security manager missing privileges.
+
+Based on pull request #557 by Isaac Rivera Rivas"
+a012d122e7941434281e29bd76113a9755e1cc63,2023-01-24 10:16:41+00:00,"Review all uses of LinkedHashMap#removeEldestEntry
+
+Ensure FIFO or LRU is used as appropriate.
+Add/expand existing comments to make intentions clearer.
+Don't override default load factor to retain size/performance balance."
+cdb6f515a9ec3f3296965337a15ac7d10a7532db,2023-01-31 11:38:42+08:00,"Update objenesis and unboundid versions for IDE configs (#577)
+
+Update objenesis and unboundid versions for IDE configs"
+2c2a1bd248b1ee200a0898c30e355802f0a6f7a6,2023-02-09 15:46:27+01:00,"Add proxy and redirect error report valve
+
+Although this could be merged in the default valve, I prefer keeping it
+separate. The code duplication is minimal after refactoring.
+Keep the ability to use a properties file as an option for that (with
+URLs, the server.xml could become very verbose very fast), although it
+will default to the status code configuration from the superclass.
+Based on PR#506 submitted by Max Fortun."
+87e1cbf7679fffdc0eeb620961d709681e564e3b,2023-02-10 16:34:59+08:00,Improve: Reuse the instance of StringBuilder to avoid duplicate object creation (#588)
+03ae0436fa1ffefe334432238b020532a7165016,2023-02-10 17:16:41+08:00,Replace manually invoke close method with try-with-resources. (#590)
+b3b1cd21c878d7528e38a3c58a77dc36fbc3d8b7,2023-02-14 17:25:24+00:00,"Remove redundant modifiers
+
+Identified by CheckStyle
+~80% fixed automatically by Eclipse
+~20% reviewed manually
+
+Based on PR #578 by Dimitrios Soumis"
+d0f2c0bea898dedac4ffebe63086d6b1ce8c56b5,2023-02-22 11:48:08+01:00,"Add support for txt: and rnd: map types
+
+From mod_rewrite.
+Based on PR#591 provided by Dimitrios Soumis."
+50a9edfdb230c06de40ccc69be8fe4947ebd3fce,2023-03-02 14:38:00+01:00,"Improve JSON filter
+
+Add more capabilities (filtering from a writer, as in the PR, etc). Some
+common chars have a special more readable escape sequence in RFC 8259.
+Based on parts of PR#539 submitted by Thomas Meyer."
+00edb6d271f6ffbe65a01acc377b1930c7354ab0,2023-03-03 10:40:08+01:00,"Add an access log valve that uses a json format
+
+Note: The attribute names are important, and are not final. Please
+comment if you care about this.
+There's an inconsistency in the code between JSON and Json. I kept Json
+to go along with the existing JsonErrorReportValve.
+Based on code submitted by Thomas Meyer in PR#539."
+154fdc5636235fe18958cfbfbe8c7edd73b83d0c,2023-03-07 16:47:29+08:00,Fix wrong exception message.#595
+c8fba3264d0c75637a44eb403d10b163384981e7,2023-03-10 15:26:36+08:00,"Improved regexp performance: ""a-zA-Z0-9_"" -> ""\w"" (#592)
+
+Submitted by Andrei Briukhov"
+cae3d5f42e98b21d2c69815260207278162afb63,2023-03-14 18:56:14-07:00,"Merge pull request #598 from apache/use-available-constants
+
+Use available constants"
+0ac33836c37dda486842b2d2ec4446ac112452ff,2023-03-27 16:58:04+01:00,"Fix Bug 66543 -  Wrong log message used in StandardContext#fireRequestDestroyEvent
+
+Give it its own log message instead of re-using the one from
+fireRequestInitEvent."
+4de1e9e2168e36a2c8596ae041a1584c6c1ec10a,2023-04-11 09:47:33+02:00,"Expose utility executor to webapps
+
+With the removal of the security manager, the webapps can have access to
+useful container components. Part of the discussions in PR#607
+This change could likely be backported, but only enabled when the
+security manager is not active."
+433b5b5e84309c83ba81abae883790f2cf68868e,2023-04-18 16:35:20-04:00,"Enhance PEMFile to load from an InputStream.
+
+Merged PR #610 from Romain Manni-Bucau."
+d3a50551e9212a1406648ac2cb9919eeff547a20,2023-04-28 15:19:42+02:00,"Fix possible partial corrupted file copies
+
+PR#613 submitted by Jack Shirazi"
+e2dd77b6d8d5c3f4ce6ec319873287e210793f46,2023-05-06 05:04:44+03:00,"Merge pull request #607 from apache/ratelimit-filter
+
+Added RateLimitFilter"
+5af5af674f74bc88febc5cd5dc06213de516eb3e,2023-05-19 14:06:09+08:00,"Fix BZ 66602 - skip sending the WINDOW_UPDATE frame if the increment is zero.
+
+Closes #619
+https://bz.apache.org/bugzilla/show_bug.cgi?id=66602"
+bc161f3204b41f5f580d4ff4466b25aaea073c4e,2023-05-24 14:19:15+01:00,"Fix BZ 66609. Correctly escape XML directory listings
+
+Based on #621 by Alex Kachanov"
+33bdf0c7aa970ff66f53d5c687b5e293af737a87,2023-06-01 10:16:16+01:00,BZ 66513: Enforce one concurrent request per session requirement (#623)
+0a3a2609a9755de62566bd43d9fc7b72044ba413,2023-06-21 16:08:42+02:00,"Update valve.xml
+
+this change is with respect to issue #66662"
+74b8f3eabf6b2366dff83cc27dfd656bc5495fa3,2023-07-24 11:16:24+01:00,"Add an entry for BZ 66680 / #638
+
+https://bz.apache.org/bugzilla/show_bug.cgi?id=66680"
+60c838826e90e197cf723f20e3d76a61f898e743,2023-08-09 08:01:35+02:00,"Merge pull request #644 from jfclere/warn_ciphers
+
+Warn when non default ciphers are removed because the engine rejects them."
+d0b655d8316bcef78b84255a9d8ee2f7cd78d649,2023-09-05 14:07:23+08:00,"Refactor Request::getSession() to invoke Request::getSession(false) internally. (#648)
+
+Refactor Request::getSession() to invoke Request::getSession(false) internally to eliminate code redundancy."
+f650ea788df8067baa4267ac4df806ba1bff1853,2023-09-05 11:22:49+01:00,Simplify code. Based on PR #651 by wonyongChoi05
+ff53af8b692c179606404d00344511ea7ca8eae3,2023-09-05 15:46:21+01:00,"Eliminating duplicate execution of checkFacade logic in ResponseFacade (#654)
+
+Eliminating duplicate execution of checkFacade logic in ResponseFacade"
+6e641be1d7365845b947f9a06ab520aba937b9af,2023-09-06 08:40:43+01:00,"Eliminating duplicate execution of checkFacade logic in ResponseFacade (#657)
+
+Eliminating duplicate execution of checkFacade logic in ResponseFacade"
+9c908d2c29ee627da4fbe725b779d8cf4573d977,2023-09-06 13:36:34+01:00,"Unify constant delimiters and Refactoring for better readability (#659)
+
+Use an existing constants & remove unnecessary code
+
+Co-authored-by: Mark Thomas <markt@apache.org>"
+65e1c7ddc2604ac9afa42ac79cbc6a289bd3dc1f,2023-09-06 13:41:53+01:00,"Optimize when call getSessionCookieName & getSessionUriParamName (#660)
+
+Reduce duplicate / unnecessary code"
+e34c370a60d0223387f078ad9b7f147bdb00c1ff,2023-09-06 14:13:18+01:00,"Unify conditional statement format (#661)
+
+Remove unnecessary parentheses
+
+Simplify some conditional statements using De Morgan's law"
+b1fbe2cdbd6066127c9c15ecf1688fea62cbd287,2023-09-06 21:18:22+01:00,"Upgrade Readability by removing brackets (#652)
+
+Remove needless brackets"
+a2ec03a34276792b42f66182c407f2f8c791dcc1,2023-09-06 21:24:04+01:00,"Simplify and enhance charset extraction from content type (#662)
+
+Using MediaType to comply with specifications"
+268b7cc8de7f59f22a2d2aac4df47be7dce192b6,2023-09-11 10:38:13+08:00,"Update documentation (#668)
+
+* Update graal.xml
+
+JMX is now supported as a experimental feature
+https://medium.com/graalvm/a-new-graalvm-release-and-new-free-license-4aab483692f5#8501
+and the previous github issue related to this was closed long ago as resolved https://github.com/oracle/graal/issues/2103
+
+* Update index.xml
+
+remove non existent page and and added missing one"
+a6acd986aa7b415c6390d578318054f51efbe876,2023-09-11 16:33:51+08:00,"Update tool-wrapper.bat (#665)
+
+Solved issue with spaces in path"
