@@ -1,0 +1,74 @@
+{
+  "settings": {
+    "number_of_shards": 1, 
+    "analysis": {
+          "analyzer": {
+              "camel_analyzer": {
+    	         "tokenizer": "whitespace",
+                 "filter": ["camel_filter"]
+            }, "simple_analyzer": {
+                "tokenizer": "whitespace",
+                "filter": ["lowercase"]
+            }
+          },  
+          "filter": {
+            "camel_filter": {
+                "type": "word_delimiter",
+                "preserve_original": "true",
+                "split_on_numerics": "false"
+            }
+         }   
+      }
+  }, 
+  "mappings": {
+    "properties": {
+      "message": { "type": "text" },
+       "lines_added": {
+	   	 "type": "text",
+	   	 "term_vector": "yes",
+	    	 "analyzer": "camel_analyzer",
+		 "search_analyzer": "camel_analyzer"
+     },
+     "bug_inducing": {
+	    "type": "text",
+	    "fields": {
+	    "keyword": {
+	    "type": "keyword",
+	    "ignore_above": 256
+	  }
+    	}
+   },
+   "commit_id": {
+       "type": "text",
+       "fields": {
+       "keyword": {
+       "type": "keyword",
+       "ignore_above": 256
+     }
+   }
+  },
+   "revision_id": {
+       "type": "text",
+       "fields": {
+       "keyword": {
+       "type": "keyword",
+       "ignore_above": 256
+     }
+   }
+  },
+   "filename": {
+       "type": "text",
+       "fields": {
+       "keyword": {
+       "type": "keyword",
+       "ignore_above": 256
+       }
+     }
+   }  
+  } 
+ }
+}
+
+
+
+
