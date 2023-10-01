@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import logging, math, datetime
 import csv,json,os,sys,argparse,time,pprint
 from CSVData import *
@@ -53,16 +54,22 @@ def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,
 	CLH_queue = Queue()
 	result_list = []
 	for row in csv_data_list:
+
 		if row.commit_id not in test_data['commit_id'].values:
 			doc_id = populate_index_bulk(es_handler,index_name,folder_path,row.commit_id,doc_id)
 		else:
-			print(row.commit_id,row.contains_bug)
 			predicted = predict(K,row.commit_id,folder_path,index_name,qtype)
 			#if predicted is not None:
 			res = Result(row.commit_id,row.contains_bug,predicted)
 			result_list.append(res)
 			print(row.commit_id,row.contains_bug,predicted)
 			print('\n')
+			
+			duplicate_count = np.count_nonzero(test_data['commit_id'].values == row.commit_id)
+			print(duplicate_count)
+			for i in range(1,duplicate_count):
+				result_list.append(res)
+
 			WFL_queue.enqueue(row) #store object of class CSVData
 			new_tr_examples = check_WFL_queue(WFL_queue,CLH_queue,row.author_date_unix_timestamp,W,type3_dict)
 			if len(new_tr_examples) > 0:
@@ -79,10 +86,12 @@ def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,
 
 #parallelize
 def predict(K,commit_id,folder_path,index_name,qtype):
+	
 	mlt_query_executor = MoreLikeThisQuery(index_name) #class object
 	commit_files = get_files_for_commit(commit_id,folder_path)
 	commit_files_dict[commit_id] = commit_files
 	print("Test commit:",commit_id)
+	predicted = 'False'
 	if len(commit_files)>0:
 		for file_path in commit_files:
 			like_text = get_lines_added(file_path)       # text to use for similarity
@@ -98,8 +107,7 @@ def predict(K,commit_id,folder_path,index_name,qtype):
 		#print_similar_documents(mlt_query_executor.similar_documents)
 		clf = Classifier(mlt_query_executor.similar_documents)
 		predicted = clf.classify_knn(K)
-		return predicted
-	return 'False' # or None
+	return predicted #'True','False' but not None anymore
 
 
 #@profile(sort_by='cumulative', lines_to_print=10, strip_dirs=True)
@@ -203,7 +211,9 @@ def main(argv):
 	csv_data_list,type3_list = read_commits_csv(csv_file)
 	type3_dict = find_matches(csv_data_list,type3_list)
 
+	#jitline_results_folder = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/sampled_test_commits/"
 	jitline_results_folder = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/sampled_test_commits/"
+
 
 	test_commits_file = jitline_results_folder + "./"+args.project+"_sampled_test_commits.csv"
 	test_data = pd.read_csv(test_commits_file,header=0)
