@@ -178,15 +178,6 @@ for project in all_projects:
 	unique_commits_to_blame_df.to_csv("./"+project+"_buggy_commits_to_blame.csv")
 	print("All done!")
 
-#get_defective_lines(fix_commits[0],'spring-integration-ip/src/test/java/org/springframework/integration/ip/tcp/SimpleTcpNetOutboundGatewayTests.java')
-'''
-The output from get_commits_last_modified_lines
-{'pom.xml': {'3be8f7b46d22258029c7b39856ac7f5ee8d7b8d0', 'fa7d80aaaeda11d5d8b1b947941ba50920e48439'}, 'spring-integration-core/pom.xml': {'e4dc5e41e788c03fb971c2c491018e013ea0ae04', '43310c9cabd078310b5d8c5881467f0628c5bdb8'}, 'spring-integration-ip/src/test/java/org/springframework/integration/ip/tcp/SimpleTcpNetOutboundGatewayTests.java': {'89705c4fe0f2cc5dccc9bedf58b46a903dc5eadf'}}
-
-The output from diff
-{'added': [(25, 'import org.junit.Ignore;'), (122, '\t@Ignore @Test')], 'deleted': [(121, '\t@Test')]}
-'''
-
 
 #https://stackoverflow.com/questions/70231772/how-to-get-last-touched-lines-in-a-file-of-a-commit-pydriller
 #https://pydriller.readthedocs.io/en/latest/reference.html
