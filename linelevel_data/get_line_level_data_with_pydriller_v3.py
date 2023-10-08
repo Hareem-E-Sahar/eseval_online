@@ -5,49 +5,21 @@ import csv,os
 import multiprocessing
 
 
-'''
-def get_buggy_commits_from_openstack_data():
-	filename =  '/home/hareem/Desktop/openstack_RF_DE_SMOTE_min_df_3_prediction_result.csv'
-	df = pd.read_csv(filename)
-	buggy_commits_in_test_data = df[(df['actual'] == 1) & (df['pred'] == 1)]['test_commit']
-	return buggy_commits_in_test_data.tolist()
 
-
-def unique_buggy_commits_in_openstack_data():
-	openstack_line='/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/openstack_and_qt_data/openstack_complete_buggy_line_level.csv'
-	
-	buggy = get_buggy_commits_from_openstack_data()
-	df = pd.read_csv(openstack_line)
-	unique_linelevel=df['commit_hash'].unique()
-	print(len(unique_linelevel))
-	common = set(buggy).intersection(unique_linelevel)
-	print(len(buggy),len(unique_linelevel),len(common))
-
-
-def unique_buggy_commits_in_linelevel_data():
-	buggy = get_buggy_commits_from_test_data("tomcat")
-	filename = "/home/hareem/UofA2023/eseval_v2/eseval_online/linelevel_data/tomcat_complete_buggy_line_level.csv"
-	df = pd.read_csv(filename)
-	unique_linelevel=df['commit_hash'].unique()
-	common = set(buggy).intersection(unique_linelevel)
-	print(len(buggy),len(unique_linelevel),len(common))
-'''
-
-def get_buggy_commits_from_test_data(project):
-	filename = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/sampled_test_commits/"+project+"_sampled_test_commits.csv"
-	df = pd.read_csv(filename)
+def get_buggy_commits_from_test_data(project,test_data_file):
+	df = pd.read_csv(test_data_file)
 	buggy_commits_in_test_data = df[df['contains_bug'] == True]['commit_id']
 	return buggy_commits_in_test_data.tolist()
 
 
-def get_correctly_pred_buggy_commits():
-	irjit_df = pd.read_csv("/home/hareem/UofA2023/eseval_v2/eseval_timewise_batched/results/results_lines_added_camel/resultlist_"+project+"_K=3.csv")
+def get_correctly_pred_buggy_commits(irjit_file, jitline_file):
+	irjit_df = pd.read_csv(irjit_file)
 
-	jitline_df =  pd.read_csv("/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/predictions/"+project+"_RF_DE_SMOTE_min_df_3_prediction_result.csv")
+	jitline_df =  pd.read_csv(jitline_file)
 
 	result_jitline_df =  jitline_df[(jitline_df['actual'] == True) & (jitline_df['pred'] == True)]
 	result_irjit_df = irjit_df[(irjit_df['actual'] == True) & (irjit_df['predicted'] == True)]
-	 
+
 	combined_df = pd.merge(irjit_df, jitline_df , on='commit_id', suffixes=('_irjit', '_jitline'))
 
 
@@ -82,7 +54,6 @@ def save_fixing_commits(fixing_commits):
 	       	print("Code Changes:", commit_info["Code Changes"])
 	       	print("="*100)
 			'''
-
 
 
 def find_defect_fixing_commits(repo):
@@ -130,6 +101,7 @@ def get_defective_lines(fix_commit, patchfile):
 
 
 def match_buggy_and_fixing(fixing_commits,buggy_commits_list,writer):
+	commits_to_blame = []
 	for fix_commit in fixing_commits:
 			print(fix_commit.hash)
 			#set of commits that changed last the lines modified in the files included in the fix_commit.
@@ -142,24 +114,23 @@ def match_buggy_and_fixing(fixing_commits,buggy_commits_list,writer):
 						 if buggy_commit in buggy_commits_list:
 							 if(buggy_commit in irjit_pred_buggy_commits):
 							 	print("YAY",fix_commit.hash,buggy_commit)
-							 added_lines,removed_lines = get_defective_lines(fix_commit,patchfile) #examine diff of fix_commit
+							 added_lines,removed_lines = get_defective_lines(fix_commit,patchfile) #examine diff of fix_commit					 commits_to_blame.append(buggy_commit)
 							 if added_lines:
 								 add_to_csvfile(fix_commit.hash, buggy_commit, added_lines,   0,'added', writer) #clean
 							 if removed_lines:
-								 add_to_csvfile(fix_commit.hash, buggy_commit, removed_lines, 1,'deleted', writer)    #buggy
+								 add_to_csvfile(fix_commit.hash, buggy_commit, removed_lines, 1,'deleted', writer)
+	return commits_to_blame
 
 
-def process_commits(fixing_commits,buggy_commits_list): #
-	line_level_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise_batched/linelevel_data/"+project+"_complete_buggy_line_level_NEW.csv"
+def process_commits(fixing_commits,buggy_commits_list,line_level_file):
 	header=[ 'fix_commit_hash', 'commit_hash', 'change_type', 'is_buggy_line', 'code_change_remove_common_tokens']
 	f = open(line_level_file, "a", newline='')
 	writer = csv.writer(f)
 	writer.writerow(header)
-	
-	match_buggy_and_fixing(fixing_commits,buggy_commits_list,writer)
-	
-	print("All done!")
+
+	commits_to_blame = match_buggy_and_fixing(fixing_commits,buggy_commits_list,writer)
 	f.close()
+	return commits_to_blame
 
 def add_to_csvfile(fix_commit_id, buggy_commit_id, lines, status, change_type, writer):
 	unique_lines=[]
@@ -181,9 +152,7 @@ def add_to_csvfile(fix_commit_id, buggy_commit_id, lines, status, change_type, w
 
 
 #identify defect fixing commits for each defect introducing commit in original data.
-all_projects=['tomcat'] 
-unique_buggy_commits_in_linelevel_data()
-'''
+all_projects=['npm','brackets']
 for project in all_projects:
 	print(project)
 	basedir = "/home/hareem/UofA2023/"
@@ -191,18 +160,23 @@ for project in all_projects:
 	gitrepo = Git(repo_path)
 	repo = Repository(repo_path)
 
-	buggy_commits = get_buggy_commits_from_test_data(project)
-	irjit_pred_buggy_commits,jitline_pred_buggy_commits,combined_pred_buggy_commits = get_correctly_pred_buggy_commits()
+	test_data_file = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/sampled_test_commits/"+project+"_sampled_test_commits.csv"
+	#test_data_file = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/change_metrics/"+project+"_metrics.csv"
+	buggy_commits = get_buggy_commits_from_test_data(project,test_data_file)
+	'''
+	jitline_file="/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/predictions/"+project+"_RF_DE_SMOTE_min_df_3_prediction_result.csv"
+	irjit_file = "/home/hareem/UofA2023/eseval_v2/eseval_timewise_batched/results/results_lines_added_camel/resultlist_"+project+"_K=3.csv"
+	irjit_pred_buggy_commits,jitline_pred_buggy_commits,combined_pred_buggy_commits = get_correctly_pred_buggy_commits(irjit_file,jitline_file)
 	print(len(buggy_commits),len(irjit_pred_buggy_commits),len(jitline_pred_buggy_commits),len(combined_pred_buggy_commits))
-	#tomcat = 353, 317, 187, 176 out of 1200 sampled commits
-
-	
+	'''
 	fix_commits = find_defect_fixing_commits(repo)
-	#save_fixing_commits(fix_commits)
-	process_commits(fix_commits,buggy_commits)
-	#process_commits(fix_commits, irjit_pred_buggy_commits)
-
-'''
+	save_fixing_commits(fix_commits)
+	line_level_file = "/home/hareem/UofA2023/eseval_v2/eseval_online/linelevel_data/"+project+"_complete_buggy_line_level.csv"
+	commits_to_blame = process_commits(fix_commits,buggy_commits,line_level_file)
+	commits_to_blame_df = DataFrame(commits_to_blame)
+	unique_commits_to_blame_df = commit_to_blame_df['commit_hash'].unique()
+	unique_commits_to_blame_df.to_csv("./"+project+"_buggy_commits_to_blame.csv")
+	print("All done!")
 
 #get_defective_lines(fix_commits[0],'spring-integration-ip/src/test/java/org/springframework/integration/ip/tcp/SimpleTcpNetOutboundGatewayTests.java')
 '''
