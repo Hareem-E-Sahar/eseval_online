@@ -1,0 +1,229 @@
+commit_id,line,line_level_label,count,line_score,row
+0a82ae877ab4f23a62f41602c079083a9157f623,"@AdminPresentation(friendlyName = ""URLHandlerImpl_isRegexHandler"", order = 1, group = ""URLHandlerImpl_friendyName"", prominent = true, groupOrder = 1,",1,9,1.0,1
+0a82ae877ab4f23a62f41602c079083a9157f623,//This is just a placeholder object to allow us to cache a URI that does not have a URL handler.,1,7,0.7777777777777777,2
+0a82ae877ab4f23a62f41602c079083a9157f623,private static final long serialVersionUID = 1L;,1,7,0.7777777777777777,3
+0a82ae877ab4f23a62f41602c079083a9157f623,* This is assumed to be a relatively small list of regex URLHandlers (perhaps in the dozens or hundreds of,1,7,0.7777777777777777,4
+0a82ae877ab4f23a62f41602c079083a9157f623,* Indicates if the value returned by <code>getIncomingURL()</code> is a regex expression,1,5,0.5555555555555556,5
+0a82ae877ab4f23a62f41602c079083a9157f623,* Indicates if the value set by the method <code>setIncomingURL(String)</code> should be treated as a regex,1,5,0.5555555555555556,6
+0a82ae877ab4f23a62f41602c079083a9157f623,* is just a convenience method to allow the manipulation of the URI coming in that we are trying to,1,5,0.5555555555555556,7
+0a82ae877ab4f23a62f41602c079083a9157f623,public abstract void setUrlRedirectType(URLRedirectType redirectType);,1,5,0.5555555555555556,8
+0a82ae877ab4f23a62f41602c079083a9157f623,"* Be cautious when calling this.  If there are a large number of records, this can cause performance and",1,4,0.4444444444444444,9
+0a82ae877ab4f23a62f41602c079083a9157f623,"protected String buildKey(Site site, SandBox sandBox, String requestUri) {",1,4,0.4444444444444444,10
+0a82ae877ab4f23a62f41602c079083a9157f623,if (handler == null) {,1,4,0.4444444444444444,11
+0a82ae877ab4f23a62f41602c079083a9157f623,//See if this is in cache first...,1,4,0.4444444444444444,12
+0a82ae877ab4f23a62f41602c079083a9157f623,"String key = buildKey(site, sandbox, uri);",1,4,0.4444444444444444,13
+0a82ae877ab4f23a62f41602c079083a9157f623,public URLHandler findURLHandlerById(Long id);,1,4,0.4444444444444444,14
+0a82ae877ab4f23a62f41602c079083a9157f623,public URLHandler saveURLHandler(URLHandler handler);,1,4,0.4444444444444444,15
+0a82ae877ab4f23a62f41602c079083a9157f623,protected static final NullURLHandler NULL_URL_HANDLER = new NullURLHandler();,1,4,0.4444444444444444,16
+0a82ae877ab4f23a62f41602c079083a9157f623,public URLHandler findURLHandlerByURI(String uri);,1,4,0.4444444444444444,17
+0a82ae877ab4f23a62f41602c079083a9157f623,protected boolean isRegex = false;,1,4,0.4444444444444444,18
+0a82ae877ab4f23a62f41602c079083a9157f623,public void setUrlRedirectType(URLRedirectType redirectType);,0,4,0.4444444444444444,19
+0a82ae877ab4f23a62f41602c079083a9157f623,"TypedQuery<URLHandler> query = em.createNamedQuery(""BC_READ_ALL_REGEX_HANDLERS"", URLHandler.class);",1,4,0.4444444444444444,20
+0a82ae877ab4f23a62f41602c079083a9157f623,"TypedQuery<URLHandler> query = em.createNamedQuery(""BC_READ_BY_INCOMING_URL"", URLHandler.class);",1,4,0.4444444444444444,21
+0a82ae877ab4f23a62f41602c079083a9157f623,"TypedQuery<URLHandler> query = em.createNamedQuery(""BC_READ_OUTGOING_URL"", URLHandler.class);",0,4,0.4444444444444444,22
+0a82ae877ab4f23a62f41602c079083a9157f623,if (location == null) {,1,4,0.4444444444444444,23
+0a82ae877ab4f23a62f41602c079083a9157f623,if (BroadleafRequestContext.getBroadleafRequestContext() != null) {,1,3,0.3333333333333333,24
+0a82ae877ab4f23a62f41602c079083a9157f623,if (urlHandlers != null) {,1,3,0.3333333333333333,25
+0a82ae877ab4f23a62f41602c079083a9157f623,public List<URLHandler> findAllRegexURLHandlers() {,1,3,0.3333333333333333,26
+0a82ae877ab4f23a62f41602c079083a9157f623,if (handler instanceof NullURLHandler) {,1,3,0.3333333333333333,27
+0a82ae877ab4f23a62f41602c079083a9157f623,} else if (!(URLHandlerDTO.class.isAssignableFrom(handler.getClass()))) {,1,3,0.3333333333333333,28
+0a82ae877ab4f23a62f41602c079083a9157f623,"incomingUrl = ""^/"" + incomingUrl + ""$"";",0,3,0.3333333333333333,29
+0a82ae877ab4f23a62f41602c079083a9157f623,URLHandler handler = null;,1,3,0.3333333333333333,30
+0a82ae877ab4f23a62f41602c079083a9157f623,if (p == null) {,0,3,0.3333333333333333,31
+0a82ae877ab4f23a62f41602c079083a9157f623,"incomingUrl = ""^"" + incomingUrl + ""$"";",0,3,0.3333333333333333,32
+0a82ae877ab4f23a62f41602c079083a9157f623,"incomingUrl = ""^"" + incomingUrl + ""$"";",1,3,0.3333333333333333,33
+0a82ae877ab4f23a62f41602c079083a9157f623,String incomingUrl = currentHandler.getIncomingURL();,1,3,0.3333333333333333,34
+0a82ae877ab4f23a62f41602c079083a9157f623,if (sandBox != null) {,1,3,0.3333333333333333,35
+0a82ae877ab4f23a62f41602c079083a9157f623,"incomingUrl = ""^/"" + incomingUrl + ""$"";",1,3,0.3333333333333333,36
+0a82ae877ab4f23a62f41602c079083a9157f623,if (p == null) {,1,3,0.3333333333333333,37
+0a82ae877ab4f23a62f41602c079083a9157f623,* find a match for.,1,3,0.3333333333333333,38
+0a82ae877ab4f23a62f41602c079083a9157f623,protected String manipulateUri(String uri) {,1,3,0.3333333333333333,39
+0a82ae877ab4f23a62f41602c079083a9157f623,protected URLHandler getUrlHandlerFromCache(String key) {,1,3,0.3333333333333333,40
+0a82ae877ab4f23a62f41602c079083a9157f623,if (cacheElement != null) {,1,3,0.3333333333333333,41
+0a82ae877ab4f23a62f41602c079083a9157f623,protected Cache getUrlHandlerCache() {,1,3,0.3333333333333333,42
+0a82ae877ab4f23a62f41602c079083a9157f623,if (urlHandlerCache == null) {,1,3,0.3333333333333333,43
+0a82ae877ab4f23a62f41602c079083a9157f623,if (site != null) {,1,3,0.3333333333333333,44
+0a82ae877ab4f23a62f41602c079083a9157f623,List<URLHandler> urlHandlers = findAllURLHandlers();,0,3,0.3333333333333333,45
+0a82ae877ab4f23a62f41602c079083a9157f623,String incomingUrl = currentHandler.getIncomingURL();,0,3,0.3333333333333333,46
+0a82ae877ab4f23a62f41602c079083a9157f623,"* records at a maximum).  Having large number of records here (more 1000, for example)",1,3,0.3333333333333333,47
+0a82ae877ab4f23a62f41602c079083a9157f623,public abstract boolean isRegexHandler();,1,3,0.3333333333333333,48
+0a82ae877ab4f23a62f41602c079083a9157f623,"* provided URL.    If the URL contains a Regular Expression, then we can't",0,3,0.3333333333333333,49
+0a82ae877ab4f23a62f41602c079083a9157f623,} else if (!(URLHandlerDTO.class.isAssignableFrom(handler.getClass()))) {,0,3,0.3333333333333333,50
+0a82ae877ab4f23a62f41602c079083a9157f623,* Finds a URLHandler by its ID.,1,3,0.3333333333333333,51
+0a82ae877ab4f23a62f41602c079083a9157f623,} else if (!(handler.getClass().isAssignableFrom(URLHandlerDTO.class))) {,1,3,0.3333333333333333,52
+0a82ae877ab4f23a62f41602c079083a9157f623,public List<URLHandler> findAllRegexURLHandlers() {,1,3,0.3333333333333333,53
+0a82ae877ab4f23a62f41602c079083a9157f623,* A Null instance of a URLHandler.   Used by the default URLHandlerServiceImpl implementation to,0,3,0.3333333333333333,54
+0a82ae877ab4f23a62f41602c079083a9157f623,* A Null instance of a URLHandler.   Used by the default URLHandlerServiceImpl implementation to,1,3,0.3333333333333333,55
+0a82ae877ab4f23a62f41602c079083a9157f623,* rather than a concrete URI.  Default is false.,1,3,0.3333333333333333,56
+0a82ae877ab4f23a62f41602c079083a9157f623,public abstract void setRegexHandler(boolean regexHandler);,1,3,0.3333333333333333,57
+0a82ae877ab4f23a62f41602c079083a9157f623,public boolean isRegexHandler() {,1,3,0.3333333333333333,58
+0a82ae877ab4f23a62f41602c079083a9157f623,} else if (hasRegExCharacters(location)) {,0,3,0.3333333333333333,59
+0a82ae877ab4f23a62f41602c079083a9157f623,public void setRegexHandler(boolean regexHandler) {,1,3,0.3333333333333333,60
+0a82ae877ab4f23a62f41602c079083a9157f623,protected Boolean isRegex = false;,1,3,0.3333333333333333,61
+0a82ae877ab4f23a62f41602c079083a9157f623,} else if (isRegexHandler()) {,1,3,0.3333333333333333,62
+0a82ae877ab4f23a62f41602c079083a9157f623,public boolean isRegexHandler() {,1,3,0.3333333333333333,63
+0a82ae877ab4f23a62f41602c079083a9157f623,if (isRegex == null) {,1,3,0.3333333333333333,64
+0a82ae877ab4f23a62f41602c079083a9157f623,public void setRegexHandler(boolean regexHandler) {,1,3,0.3333333333333333,65
+0a82ae877ab4f23a62f41602c079083a9157f623,"* provided URL.    If the URL contains a Regular Expression, then we can't",1,3,0.3333333333333333,66
+0a82ae877ab4f23a62f41602c079083a9157f623,URLHandler findURLHandlerByURI(String uri);,0,3,0.3333333333333333,67
+0a82ae877ab4f23a62f41602c079083a9157f623,URLHandler saveURLHandler(URLHandler handler);,0,3,0.3333333333333333,68
+0a82ae877ab4f23a62f41602c079083a9157f623,URLHandler findURLHandlerById(Long id);,0,3,0.3333333333333333,69
+0a82ae877ab4f23a62f41602c079083a9157f623,public List<URLHandler> findAllURLHandlers();,1,3,0.3333333333333333,70
+0a82ae877ab4f23a62f41602c079083a9157f623,uri = manipulateUri(uri);,1,2,0.2222222222222222,71
+0a82ae877ab4f23a62f41602c079083a9157f623,handler = checkForMatches(uri);,1,2,0.2222222222222222,72
+0a82ae877ab4f23a62f41602c079083a9157f623,//Check for a regex match,1,2,0.2222222222222222,73
+0a82ae877ab4f23a62f41602c079083a9157f623,handler = urlHandlerDao.findURLHandlerByURI(uri);,1,2,0.2222222222222222,74
+0a82ae877ab4f23a62f41602c079083a9157f623,handler = getUrlHandlerFromCache(key);,1,2,0.2222222222222222,75
+0a82ae877ab4f23a62f41602c079083a9157f623,} else {,0,2,0.2222222222222222,76
+0a82ae877ab4f23a62f41602c079083a9157f623,protected Cache urlHandlerCache;,1,2,0.2222222222222222,77
+0a82ae877ab4f23a62f41602c079083a9157f623,if (newUrl.equals(urlHandler.getNewURL())) {,0,2,0.2222222222222222,78
+0a82ae877ab4f23a62f41602c079083a9157f623,String newUrl = m.replaceFirst(urlHandler.getNewURL());,0,2,0.2222222222222222,79
+0a82ae877ab4f23a62f41602c079083a9157f623,handler = NULL_URL_HANDLER;,1,2,0.2222222222222222,80
+0a82ae877ab4f23a62f41602c079083a9157f623,//This URL does not have a match.,1,2,0.2222222222222222,81
+0a82ae877ab4f23a62f41602c079083a9157f623,StringBuilder key = new StringBuilder();,1,2,0.2222222222222222,82
+0a82ae877ab4f23a62f41602c079083a9157f623,//Create a non-entity instance of the DTO to cache.,1,2,0.2222222222222222,83
+0a82ae877ab4f23a62f41602c079083a9157f623,"handler = new URLHandlerDTO(handler.getNewURL(), handler.getUrlRedirectType());",1,2,0.2222222222222222,84
+0a82ae877ab4f23a62f41602c079083a9157f623,List<URLHandler> urlHandlers = findAllRegexURLHandlers();,1,2,0.2222222222222222,85
+0a82ae877ab4f23a62f41602c079083a9157f623,"if (!incomingUrl.startsWith(""^"")) {",1,2,0.2222222222222222,86
+0a82ae877ab4f23a62f41602c079083a9157f623,"if (incomingUrl.startsWith(""/"")) {",1,2,0.2222222222222222,87
+0a82ae877ab4f23a62f41602c079083a9157f623,} else {,1,2,0.2222222222222222,88
+0a82ae877ab4f23a62f41602c079083a9157f623,if (m.find()) {,1,2,0.2222222222222222,89
+0a82ae877ab4f23a62f41602c079083a9157f623,String newUrl = m.replaceFirst(urlHandler.getNewURL());,1,2,0.2222222222222222,90
+0a82ae877ab4f23a62f41602c079083a9157f623,"* Some clients may wish, for example, to convert the URI into all lower case, or to manipulate it in some way.  This",1,2,0.2222222222222222,91
+0a82ae877ab4f23a62f41602c079083a9157f623,//The default is not to modify the URI at all.,1,2,0.2222222222222222,92
+0a82ae877ab4f23a62f41602c079083a9157f623,if (m.find()) {,0,2,0.2222222222222222,93
+0a82ae877ab4f23a62f41602c079083a9157f623,if (newUrl.equals(urlHandler.getNewURL())) {,1,2,0.2222222222222222,94
+0a82ae877ab4f23a62f41602c079083a9157f623,"if (incomingUrl.startsWith(""/"")) {",0,2,0.2222222222222222,95
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Index(name = ""IS_REGEX_HANDLER_INDEX"", columnNames = {""IS_REGEX""})",1,2,0.2222222222222222,96
+0a82ae877ab4f23a62f41602c079083a9157f623,"if (!incomingUrl.startsWith(""^"")) {",0,2,0.2222222222222222,97
+0a82ae877ab4f23a62f41602c079083a9157f623,return query.getResultList();,1,2,0.2222222222222222,98
+0a82ae877ab4f23a62f41602c079083a9157f623,* @return,1,2,0.2222222222222222,99
+0a82ae877ab4f23a62f41602c079083a9157f623,* expression rather than as a concrete URI.,1,2,0.2222222222222222,100
+0a82ae877ab4f23a62f41602c079083a9157f623,"* In a preview environment, {@link #getLocation()} attempts to navigate to the",0,2,0.2222222222222222,101
+0a82ae877ab4f23a62f41602c079083a9157f623,"@DirectCopyTransformMember(templateTokens = DirectCopyTransformTypes.SANDBOX, skipOverlaps = true),",1,2,0.2222222222222222,102
+0a82ae877ab4f23a62f41602c079083a9157f623,parameters = {,1,2,0.2222222222222222,103
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Parameter(name = ""segment_value"", value = ""URLHandlerImpl""),",1,2,0.2222222222222222,104
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Parameter(name = ""entity_name"", value = ""org.broadleafcommerce.cms.url.domain.URLHandlerImpl"")",1,2,0.2222222222222222,105
+0a82ae877ab4f23a62f41602c079083a9157f623,"helpText = ""urlHandlerIsRegexHandler_help"")",1,2,0.2222222222222222,106
+0a82ae877ab4f23a62f41602c079083a9157f623,parameters = {,0,2,0.2222222222222222,107
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Index(name = ""INCOMING_URL_INDEX"", columnNames = {""INCOMING_URL""})",1,2,0.2222222222222222,108
+0a82ae877ab4f23a62f41602c079083a9157f623,* Persists the URLHandler to the DB.,1,2,0.2222222222222222,109
+0a82ae877ab4f23a62f41602c079083a9157f623,public List<URLHandler> findAllRegexURLHandlers();,1,2,0.2222222222222222,110
+0a82ae877ab4f23a62f41602c079083a9157f623,if (hasRegExCharacters(getIncomingURL())) {,1,2,0.2222222222222222,111
+0a82ae877ab4f23a62f41602c079083a9157f623,"* is not likely necessary to accomplish the desired goal, and can cause performance problems.",1,2,0.2222222222222222,112
+0a82ae877ab4f23a62f41602c079083a9157f623,* @param handler,1,2,0.2222222222222222,113
+0a82ae877ab4f23a62f41602c079083a9157f623,* @param id,1,2,0.2222222222222222,114
+0a82ae877ab4f23a62f41602c079083a9157f623,* @return,1,2,0.2222222222222222,115
+0a82ae877ab4f23a62f41602c079083a9157f623,List<URLHandler> findAllURLHandlers();,0,2,0.2222222222222222,116
+0a82ae877ab4f23a62f41602c079083a9157f623,"* In a preview environment, {@link #getLocation()} attempts to navigate to the",1,2,0.2222222222222222,117
+0a82ae877ab4f23a62f41602c079083a9157f623,return false;,1,2,0.2222222222222222,118
+0a82ae877ab4f23a62f41602c079083a9157f623,site = BroadleafRequestContext.getBroadleafRequestContext().getNonPersistentSite();,1,1,0.1111111111111111,119
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Resource(name = ""blURLHandlerDao"")",1,1,0.1111111111111111,120
+0a82ae877ab4f23a62f41602c079083a9157f623,sandbox = BroadleafRequestContext.getBroadleafRequestContext().getSandBox();,1,1,0.1111111111111111,121
+0a82ae877ab4f23a62f41602c079083a9157f623,Site site = null;,1,1,0.1111111111111111,122
+0a82ae877ab4f23a62f41602c079083a9157f623,SandBox sandbox = null;,1,1,0.1111111111111111,123
+0a82ae877ab4f23a62f41602c079083a9157f623,//what is passed in.,1,1,0.1111111111111111,124
+0a82ae877ab4f23a62f41602c079083a9157f623,"//The default implementation simply does not manipulate the URI in any way, but simply returns",1,1,0.1111111111111111,125
+0a82ae877ab4f23a62f41602c079083a9157f623,*,1,1,0.1111111111111111,126
+0a82ae877ab4f23a62f41602c079083a9157f623,Pattern p = urlPatternMap.get(incomingUrl);,0,1,0.1111111111111111,127
+0a82ae877ab4f23a62f41602c079083a9157f623,"return new URLHandlerDTO(newUrl, urlHandler.getUrlRedirectType());",0,1,0.1111111111111111,128
+0a82ae877ab4f23a62f41602c079083a9157f623,return urlHandler;,0,1,0.1111111111111111,129
+0a82ae877ab4f23a62f41602c079083a9157f623,Matcher m = p.matcher(requestURI);,0,1,0.1111111111111111,130
+0a82ae877ab4f23a62f41602c079083a9157f623,},0,1,0.1111111111111111,131
+0a82ae877ab4f23a62f41602c079083a9157f623,currentHandler = urlHandler;,0,1,0.1111111111111111,132
+0a82ae877ab4f23a62f41602c079083a9157f623,for (URLHandler urlHandler : urlHandlers) {,0,1,0.1111111111111111,133
+0a82ae877ab4f23a62f41602c079083a9157f623,return null;,1,1,0.1111111111111111,134
+0a82ae877ab4f23a62f41602c079083a9157f623,},1,1,0.1111111111111111,135
+0a82ae877ab4f23a62f41602c079083a9157f623,*/,1,1,0.1111111111111111,136
+0a82ae877ab4f23a62f41602c079083a9157f623,return handler;,1,1,0.1111111111111111,137
+0a82ae877ab4f23a62f41602c079083a9157f623,@Override,1,1,0.1111111111111111,138
+0a82ae877ab4f23a62f41602c079083a9157f623,return key.toString();,1,1,0.1111111111111111,139
+0a82ae877ab4f23a62f41602c079083a9157f623,return urlHandlerCache;,1,1,0.1111111111111111,140
+0a82ae877ab4f23a62f41602c079083a9157f623,"urlHandlerCache = CacheManager.getInstance().getCache(""cmsUrlHandlerCache"");",1,1,0.1111111111111111,141
+0a82ae877ab4f23a62f41602c079083a9157f623,return (URLHandler) cacheElement.getObjectValue();,1,1,0.1111111111111111,142
+0a82ae877ab4f23a62f41602c079083a9157f623,Element cacheElement = getUrlHandlerCache().get(key);,1,1,0.1111111111111111,143
+0a82ae877ab4f23a62f41602c079083a9157f623,return uri;,1,1,0.1111111111111111,144
+0a82ae877ab4f23a62f41602c079083a9157f623,*,0,1,0.1111111111111111,145
+0a82ae877ab4f23a62f41602c079083a9157f623,"return new URLHandlerDTO(newUrl, urlHandler.getUrlRedirectType());",1,1,0.1111111111111111,146
+0a82ae877ab4f23a62f41602c079083a9157f623,return urlHandler;,1,1,0.1111111111111111,147
+0a82ae877ab4f23a62f41602c079083a9157f623,Matcher m = p.matcher(requestURI);,1,1,0.1111111111111111,148
+0a82ae877ab4f23a62f41602c079083a9157f623,p = Pattern.compile(incomingUrl);,1,1,0.1111111111111111,149
+0a82ae877ab4f23a62f41602c079083a9157f623,Pattern p = urlPatternMap.get(incomingUrl);,1,1,0.1111111111111111,150
+0a82ae877ab4f23a62f41602c079083a9157f623,currentHandler = urlHandler;,1,1,0.1111111111111111,151
+0a82ae877ab4f23a62f41602c079083a9157f623,for (URLHandler urlHandler : urlHandlers) {,1,1,0.1111111111111111,152
+0a82ae877ab4f23a62f41602c079083a9157f623,return urlHandlerDao.findAllRegexURLHandlers();,1,1,0.1111111111111111,153
+0a82ae877ab4f23a62f41602c079083a9157f623,return checkForMatches(uri);,0,1,0.1111111111111111,154
+0a82ae877ab4f23a62f41602c079083a9157f623,p = Pattern.compile(incomingUrl);,0,1,0.1111111111111111,155
+0a82ae877ab4f23a62f41602c079083a9157f623,protected StatisticsService statisticsService;,0,1,0.1111111111111111,156
+0a82ae877ab4f23a62f41602c079083a9157f623,* @param regexHandler,1,1,0.1111111111111111,157
+0a82ae877ab4f23a62f41602c079083a9157f623,this.isRegex = regexHandler;,1,1,0.1111111111111111,158
+0a82ae877ab4f23a62f41602c079083a9157f623,},1,1,0.1111111111111111,159
+0a82ae877ab4f23a62f41602c079083a9157f623,return isRegex;,1,1,0.1111111111111111,160
+0a82ae877ab4f23a62f41602c079083a9157f623,@Override,1,1,0.1111111111111111,161
+0a82ae877ab4f23a62f41602c079083a9157f623,*,1,1,0.1111111111111111,162
+0a82ae877ab4f23a62f41602c079083a9157f623,return  createResponse;,0,1,0.1111111111111111,163
+0a82ae877ab4f23a62f41602c079083a9157f623,*,0,1,0.1111111111111111,164
+0a82ae877ab4f23a62f41602c079083a9157f623,*/,1,1,0.1111111111111111,165
+0a82ae877ab4f23a62f41602c079083a9157f623,"@DirectCopyTransformMember(templateTokens = DirectCopyTransformTypes.SANDBOX, skipOverlaps=true),",0,1,0.1111111111111111,166
+0a82ae877ab4f23a62f41602c079083a9157f623,*,1,1,0.1111111111111111,167
+0a82ae877ab4f23a62f41602c079083a9157f623,/**,1,1,0.1111111111111111,168
+0a82ae877ab4f23a62f41602c079083a9157f623,*,1,1,0.1111111111111111,169
+0a82ae877ab4f23a62f41602c079083a9157f623,*,0,1,0.1111111111111111,170
+0a82ae877ab4f23a62f41602c079083a9157f623,},1,1,0.1111111111111111,171
+0a82ae877ab4f23a62f41602c079083a9157f623,"query.setHint(QueryHints.HINT_CACHEABLE, true);",1,1,0.1111111111111111,172
+0a82ae877ab4f23a62f41602c079083a9157f623,*/,1,1,0.1111111111111111,173
+0a82ae877ab4f23a62f41602c079083a9157f623,return createResponse;,1,1,0.1111111111111111,174
+0a82ae877ab4f23a62f41602c079083a9157f623,@Override,1,1,0.1111111111111111,175
+0a82ae877ab4f23a62f41602c079083a9157f623,},0,1,0.1111111111111111,176
+0a82ae877ab4f23a62f41602c079083a9157f623,return isRegex;,1,1,0.1111111111111111,177
+0a82ae877ab4f23a62f41602c079083a9157f623,* memory issues.,1,1,0.1111111111111111,178
+0a82ae877ab4f23a62f41602c079083a9157f623,/**,1,1,0.1111111111111111,179
+0a82ae877ab4f23a62f41602c079083a9157f623,*,1,1,0.1111111111111111,180
+0a82ae877ab4f23a62f41602c079083a9157f623,*,0,1,0.1111111111111111,181
+0a82ae877ab4f23a62f41602c079083a9157f623,* navigate to it.,1,1,0.1111111111111111,182
+0a82ae877ab4f23a62f41602c079083a9157f623,this.isRegex = regexHandler;,1,1,0.1111111111111111,183
+0a82ae877ab4f23a62f41602c079083a9157f623,*,1,1,0.1111111111111111,184
+0a82ae877ab4f23a62f41602c079083a9157f623,return true;,1,1,0.1111111111111111,185
+0a82ae877ab4f23a62f41602c079083a9157f623,@Override,1,1,0.1111111111111111,186
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Column(name = ""IS_REGEX"")",1,1,0.1111111111111111,187
+0a82ae877ab4f23a62f41602c079083a9157f623,},1,1,0.1111111111111111,188
+0a82ae877ab4f23a62f41602c079083a9157f623,"strategy = ""org.broadleafcommerce.common.persistence.IdOverrideTableGenerator"",",1,1,0.1111111111111111,189
+0a82ae877ab4f23a62f41602c079083a9157f623,"name = ""URLHandlerID"",",1,1,0.1111111111111111,190
+0a82ae877ab4f23a62f41602c079083a9157f623,*,0,1,0.1111111111111111,191
+0a82ae877ab4f23a62f41602c079083a9157f623,* navigate to it.,0,1,0.1111111111111111,192
+0a82ae877ab4f23a62f41602c079083a9157f623,import net.sf.ehcache.Element;,1,0,0.0,193
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.cms.url.domain.NullURLHandler;,1,0,0.0,194
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.common.sandbox.domain.SandBox;,1,0,0.0,195
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.common.site.domain.Site;,1,0,0.0,196
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.common.web.BroadleafRequestContext;,1,0,0.0,197
+0a82ae877ab4f23a62f41602c079083a9157f623,import net.sf.ehcache.Cache;,1,0,0.0,198
+0a82ae877ab4f23a62f41602c079083a9157f623,import net.sf.ehcache.CacheManager;,1,0,0.0,199
+0a82ae877ab4f23a62f41602c079083a9157f623,"key.append(""sbx:"").append(sandBox.getId()).append('_');",1,0,0.0,200
+0a82ae877ab4f23a62f41602c079083a9157f623,"//This allows clients or implementors to manipulate the URI, for example making it all lower case.",1,0,0.0,201
+0a82ae877ab4f23a62f41602c079083a9157f623,//Check for an exact match in the DB...,1,0,0.0,202
+0a82ae877ab4f23a62f41602c079083a9157f623,//Use the NullURLHandler instance. This will be cached to indicate that,1,0,0.0,203
+0a82ae877ab4f23a62f41602c079083a9157f623,"getUrlHandlerCache().put(new Element(key, handler));",1,0,0.0,204
+0a82ae877ab4f23a62f41602c079083a9157f623,"urlPatternMap.put(incomingUrl, p);",1,0,0.0,205
+0a82ae877ab4f23a62f41602c079083a9157f623,/*,1,0,0.0,206
+0a82ae877ab4f23a62f41602c079083a9157f623,"key.append(""site:"").append(site.getId()).append('_');",1,0,0.0,207
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Resource(name=""blStatisticsService"")",0,0,0.0,208
+0a82ae877ab4f23a62f41602c079083a9157f623,"urlPatternMap.put(incomingUrl, p);",0,0,0.0,209
+0a82ae877ab4f23a62f41602c079083a9157f623,cloned.setUrlRedirectType( URLRedirectType.getInstance(urlRedirectType));,0,0,0.0,210
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Resource(name=""blURLHandlerDao"")",0,0,0.0,211
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.common.cache.StatisticsService;,0,0,0.0,212
+0a82ae877ab4f23a62f41602c079083a9157f623,cloned.setUrlRedirectType( URLRedirectType.getInstance(urlRedirectType));,0,0,0.0,213
+0a82ae877ab4f23a62f41602c079083a9157f623,cloned.setUrlRedirectType(URLRedirectType.getInstance(urlRedirectType));,1,0,0.0,214
+0a82ae877ab4f23a62f41602c079083a9157f623,cloned.setRegexHandler(isRegex);,1,0,0.0,215
+0a82ae877ab4f23a62f41602c079083a9157f623,import java.io.Serializable;,0,0,0.0,216
+0a82ae877ab4f23a62f41602c079083a9157f623,"name=""URLHandlerID"",",0,0,0.0,217
+0a82ae877ab4f23a62f41602c079083a9157f623,"strategy=""org.broadleafcommerce.common.persistence.IdOverrideTableGenerator"",",0,0,0.0,218
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Parameter(name=""segment_value"", value=""URLHandlerImpl""),",0,0,0.0,219
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Parameter(name=""entity_name"", value=""org.broadleafcommerce.cms.url.domain.URLHandlerImpl"")",0,0,0.0,220
+0a82ae877ab4f23a62f41602c079083a9157f623,"@Index(name=""INCOMING_URL_INDEX"", columnNames={""INCOMING_URL""})",0,0,0.0,221
+0a82ae877ab4f23a62f41602c079083a9157f623,cloned.setUrlRedirectType(URLRedirectType.getInstance(urlRedirectType));,1,0,0.0,222
+0a82ae877ab4f23a62f41602c079083a9157f623,cloned.setRegexHandler(isRegex);,1,0,0.0,223
+0a82ae877ab4f23a62f41602c079083a9157f623,import net.sf.ehcache.Cache;,0,0,0.0,224
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.cms.url.domain.URLHandler;,0,0,0.0,225
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.common.sandbox.domain.SandBox;,0,0,0.0,226
+0a82ae877ab4f23a62f41602c079083a9157f623,import org.broadleafcommerce.cms.url.domain.URLHandler;,1,0,0.0,227
+0a82ae877ab4f23a62f41602c079083a9157f623,key.append(requestUri);,1,0,0.0,228

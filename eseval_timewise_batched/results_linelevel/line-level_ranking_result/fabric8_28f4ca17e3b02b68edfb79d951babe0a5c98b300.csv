@@ -1,0 +1,944 @@
+commit_id,line,line_level_label,count,line_score,row
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Added Camel component "" + dto.getScheme() + "" ("" + dto.getArtifactId() + "") to the project"");",1,11,1.0,1
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Added Camel language "" + dto.getName() + "" ("" + dto.getArtifactId() + "") to the project"");",1,11,1.0,2
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Added Camel dataformat "" + dto.getName() + "" ("" + dto.getArtifactId() + "") to the project"");",1,10,0.9090909090909092,3
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Creates a new Spring XML file with CamelContext to your project"");",1,9,0.8181818181818182,4
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Adds a Camel component to your project dependencies"");",1,7,0.6363636363636364,5
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Adds a Camel language to your project dependencies"");",1,7,0.6363636363636364,6
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""Blueprint XML file "" + fullName + "" already exists"");",1,7,0.6363636363636364,7
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""A class with name "" + fqn + "" already exists"");",1,7,0.6363636363636364,8
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""Spring XML file "" + fullName + "" already exists"");",1,7,0.6363636363636364,9
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Created new Spring XML file "" + fullName);",1,7,0.6363636363636364,10
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""A class with name "" + fqn + "" already exists"");",1,7,0.6363636363636364,11
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Creates a new Camel component instance configuration using Spring"");",1,6,0.5454545454545454,12
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String fullName = ""src"" + File.separator + ""main"" + File.separator + ""resources"" + File.separator + fileName;",1,6,0.5454545454545454,13
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Created new RouteBuilder class "" + name.getValue());",1,6,0.5454545454545454,14
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Adds a Camel dataformat to your project dependencies"");",1,6,0.5454545454545454,15
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Creates a new Camel component instance configuration using CDI"");",1,6,0.5454545454545454,16
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Created new Blueprint XML file "" + fullName);",1,6,0.5454545454545454,17
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String fullName = ""src"" + File.separator + ""main"" + File.separator + ""resources"" + File.separator + fileName;",1,6,0.5454545454545454,18
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// need to parse to be able to extends another class,1,5,0.4545454545454546,19
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.success(""Created new class "" + generateClassName);",1,5,0.4545454545454546,20
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// need to parse to be able to extends another class,1,5,0.4545454545454546,21
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class ConfigureComponentPropertiesStep extends AbstractCamelProjectCommand implements UIWizardStep {,1,5,0.4545454545454546,22
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"throw new IllegalArgumentException(""Could not find catalog entry for component name: "" + camelComponentName);",1,5,0.4545454545454546,23
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Class Name"", required = true, description = ""Name of the Spring Component class to generate"")",1,5,0.4545454545454546,24
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelNewComponentInstanceSpringCommand extends AbstractCamelProjectCommand implements UIWizard {,1,5,0.4545454545454546,25
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelNewComponentInstanceCDICommand extends AbstractCamelProjectCommand implements UIWizard {,1,5,0.4545454545454546,26
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Creates a new Blueprint XML file with CamelContext"");",1,5,0.4545454545454546,27
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Instance Name"", required = true, description = ""Name of component instance to add"")",1,4,0.36363636363636365,28
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"throw new IllegalArgumentException(""The attribute value '"" + name + ""' did not get passed on from the previous wizard page"");",1,4,0.36363636363636365,29
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// lets create a field for each property on the component,1,4,0.36363636363636365,30
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// this will get a file in the src/main/resources directory where we want to store the spring xml file,1,4,0.36363636363636365,31
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelNewRouteBuilderCommand extends AbstractCamelProjectCommand {,1,4,0.36363636363636365,32
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelNewSpringXmlCommand extends AbstractCamelProjectCommand {,1,4,0.36363636363636365,33
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Instance Name"", required = true, description = ""Name of component instance to add"")",1,4,0.36363636363636365,34
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// this will get a file in the src/main/resources directory where we want to store the spring xml file,1,4,0.36363636363636365,35
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelNewBlueprintXmlCommand extends AbstractCamelProjectCommand {,1,4,0.36363636363636365,36
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelAddLanguageCommand extends AbstractCamelProjectCommand {,1,4,0.36363636363636365,37
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelAddDataFormatCommand extends AbstractCamelProjectCommand {,1,4,0.36363636363636365,38
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public class CamelAddComponentCommand extends AbstractCamelProjectCommand {,1,4,0.36363636363636365,39
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Component Name"", required = true, description = ""Name of component type to add"")",1,3,0.2727272727272727,40
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// do we already have a class with the name,1,3,0.2727272727272727,41
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: New Component"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,42
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// create the new file and set the content,1,3,0.2727272727272727,43
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: New XML spring"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,44
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// do we already have a class with the name,1,3,0.2727272727272727,45
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Creates a new Camel RouteBuilder class"");",1,3,0.2727272727272727,46
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: New RouteBuilder"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,47
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: New Component Spring"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,48
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Name"", required = true, description = ""Name of language to add"")",1,3,0.2727272727272727,49
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: New Component CDI"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,50
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// create the new file and set the content,1,3,0.2727272727272727,51
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: New XML blueprint"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,52
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: Add Language"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,53
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: Add DataFormat"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,54
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// we want to use same version as camel-core if its a camel component,1,3,0.2727272727272727,55
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"""Camel: Add Component"").category(Categories.create(CATEGORY))",1,3,0.2727272727272727,56
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Name"", required = true, description = ""Name of component type to add"")",1,3,0.2727272727272727,57
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Component Name"", required = true, description = ""Name of component type to add"")",1,3,0.2727272727272727,58
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,59
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,60
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String fqn = targetPackage.getValue() != null ? targetPackage.getValue() + ""."" + name.getValue() : name.getValue();",1,2,0.18181818181818182,61
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,62
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(builder.getUIContext());,1,2,0.18181818181818182,63
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Target Package"", required = false, description = ""The package name where this type will be created"")",1,2,0.18181818181818182,64
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Target Package"", required = false, description = ""The package name where this type will be created"")",1,2,0.18181818181818182,65
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,66
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Strings.capitalize(name) + ""ComponentFactory"";",1,2,0.18181818181818182,67
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(builder.getUIContext());,1,2,0.18181818181818182,68
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"description = ""The directory name where this type will be created"")",1,2,0.18181818181818182,69
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,70
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,71
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,72
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,73
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""XML File Name"", required = true, description = ""Name of XML file"")",1,2,0.18181818181818182,74
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,75
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String fileName = directory.getValue() != null ? directory.getValue() + File.separator + name.getValue() : name.getValue();,1,2,0.18181818181818182,76
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,77
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,78
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".description(""Configure the component options to use"");",1,2,0.18181818181818182,79
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,80
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,81
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// lets find the camel component class,1,2,0.18181818181818182,82
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String fqn = generatePackageName != null ? generatePackageName + ""."" + generateClassName : generateClassName;",1,2,0.18181818181818182,83
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// generate the correct class payload based on the style...,1,2,0.18181818181818182,84
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"valueExpression = ""\"""" + text + ""\"""";",1,2,0.18181818181818182,85
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(builder.getUIContext());,1,2,0.18181818181818182,86
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Strings.capitalize(name) + ""ComponentProducer"";",1,2,0.18181818181818182,87
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,88
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Package Name"", required = false, description = ""The package name where this type will be created"")",1,2,0.18181818181818182,89
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,90
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,91
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,92
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,93
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,final Project project = getSelectedProject(builder);,1,2,0.18181818181818182,94
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,95
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,96
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""Unknown Camel component"");",1,2,0.18181818181818182,97
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,98
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Name"", required = true, description = ""Name of dataformat to add"")",1,2,0.18181818181818182,99
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(builder);,1,2,0.18181818181818182,100
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,101
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,102
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""Unknown Camel dataformat"");",1,2,0.18181818181818182,103
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,104
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,105
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,106
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,107
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(builder);,1,2,0.18181818181818182,108
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,109
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String fileName = directory.getValue() != null ? directory.getValue() + File.separator + name.getValue() : name.getValue();,1,2,0.18181818181818182,110
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,111
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"description = ""The directory name where this type will be created"")",1,2,0.18181818181818182,112
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""File Name"", required = true, description = ""Name of XML file"")",1,2,0.18181818181818182,113
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Red Hat licenses this file to you under the Apache License, version",1,2,0.18181818181818182,114
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""Unknown Camel language"");",1,2,0.18181818181818182,115
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return Results.fail(""The project does not include camel-core"");",1,2,0.18181818181818182,116
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Project project = getSelectedProject(context);,1,2,0.18181818181818182,117
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String description = component.getDescription();,1,1,0.09090909090909091,118
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,119
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ComponentDto component = (ComponentDto) event.getNewValue();,1,1,0.09090909090909091,120
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setNote(description != null ? description : """");",1,1,0.09090909090909091,121
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public String call() throws Exception {,1,1,0.09090909090909091,122
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return getDefaultProducerClassName();,1,1,0.09090909090909091,123
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public NavigationResult next(UINavigationContext context) throws Exception {,1,1,0.09090909090909091,124
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Results.navigateTo(ConfigureComponentPropertiesStep.class);,1,1,0.09090909090909091,125
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,126
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Results.success();,1,1,0.09090909090909091,127
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String name = instanceName.getValue();,1,1,0.09090909090909091,128
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return null;,1,1,0.09090909090909091,129
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,130
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,131
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Class Name"", required = true, description = ""Name of RouteBuilder class"")",1,1,0.09090909090909091,132
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return createComponentDto(getCamelCatalog(), text);",1,1,0.09090909090909091,133
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,134
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// show note about the chosen component,1,1,0.09090909090909091,135
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Results.success();,1,1,0.09090909090909091,136
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public ComponentDto convert(String text) {,1,1,0.09090909090909091,137
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,138
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public String call() throws Exception {,1,1,0.09090909090909091,139
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return getDefaultProducerClassName();,1,1,0.09090909090909091,140
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public NavigationResult next(UINavigationContext context) throws Exception {,1,1,0.09090909090909091,141
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Results.navigateTo(ConfigureComponentPropertiesStep.class);,1,1,0.09090909090909091,142
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,143
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,144
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String name = instanceName.getValue();,1,1,0.09090909090909091,145
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return null;,1,1,0.09090909090909091,146
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,147
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,148
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,149
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Filter"", required = false, description = ""To filter components"")",1,1,0.09090909090909091,150
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,151
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelNewComponentInstanceSpringCommand.class).name(,1,1,0.09090909090909091,152
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public boolean isEnabled(UIContext context) {,1,1,0.09090909090909091,153
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return CamelCommandsHelper.isSpringProject(getSelectedProject(context));,1,1,0.09090909090909091,154
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return false;,1,1,0.09090909090909091,155
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelNewRouteBuilderCommand.class).name(,1,1,0.09090909090909091,156
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Map<String, Object> params = new HashMap<String, Object>();",1,1,0.09090909090909091,157
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,158
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,159
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"for (Map<String, String> propertyMap : data) {",1,1,0.09090909090909091,160
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String name = propertyMap.get(""name"");",1,1,0.09090909090909091,161
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String description = propertyMap.get(""description"");",1,1,0.09090909090909091,162
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public NavigationResult next(UINavigationContext context) throws Exception {,1,1,0.09090909090909091,163
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return null;,1,1,0.09090909090909091,164
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,165
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,166
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,CamelComponentDetails details = new CamelComponentDetails();,1,1,0.09090909090909091,167
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return result;,1,1,0.09090909090909091,168
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,StringBuilder buffer = new StringBuilder();,1,1,0.09090909090909091,169
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,for (InputComponent input : inputs) {,1,1,0.09090909090909091,170
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// only use value if there was a value set,1,1,0.09090909090909091,171
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Results.fail(e.getMessage());,1,1,0.09090909090909091,172
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,* Returns the mandatory String value of the given name,1,1,0.09090909090909091,173
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"public static String mandatoryAttributeValue(Map<Object, Object> attributeMap, String name) {",1,1,0.09090909090909091,174
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return text;,1,1,0.09090909090909091,175
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String description = component.getDescription();,1,1,0.09090909090909091,176
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Set<String> namesAdded = new HashSet<>();,1,1,0.09090909090909091,177
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,178
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(ConfigureComponentPropertiesStep.class).name(,1,1,0.09090909090909091,179
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,180
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,181
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,182
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,183
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public boolean isEnabled(UIContext context) {,1,1,0.09090909090909091,184
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// not enable for cdi or blueprint projects,1,1,0.09090909090909091,185
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return !cdi && !blueprint;,1,1,0.09090909090909091,186
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return false;,1,1,0.09090909090909091,187
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelNewRouteBuilderCommand.class).name(,1,1,0.09090909090909091,188
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,189
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,190
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,191
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,192
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,193
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,194
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,195
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private List<InputComponent> inputs = new ArrayList<>();,1,1,0.09090909090909091,196
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setNote(description != null ? description : """");",1,1,0.09090909090909091,197
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void valueChanged(ValueChangeEvent event) {,1,1,0.09090909090909091,198
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ComponentDto component = (ComponentDto) event.getNewValue();,1,1,0.09090909090909091,199
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,200
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelAddDataFormatCommand.class).name(,1,1,0.09090909090909091,201
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,202
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public DataFormatDto convert(String text) {,1,1,0.09090909090909091,203
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return createDataFormatDto(getCamelCatalog(), text);",1,1,0.09090909090909091,204
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void valueChanged(ValueChangeEvent event) {,1,1,0.09090909090909091,205
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String description = dataFormat.getDescription();,1,1,0.09090909090909091,206
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setNote(description != null ? description : """");",1,1,0.09090909090909091,207
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,208
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,209
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// we want to use same version as camel-core,1,1,0.09090909090909091,210
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,DependencyBuilder component = DependencyBuilder.create().setGroupId(dto.getGroupId()),1,1,0.09090909090909091,211
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// install the component,1,1,0.09090909090909091,212
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,213
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,214
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,215
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,216
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelAddLanguageCommand.class).name(,1,1,0.09090909090909091,217
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,218
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,219
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public LanguageDto convert(String text) {,1,1,0.09090909090909091,220
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// install the component,1,1,0.09090909090909091,221
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,222
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,223
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,224
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Filter"", required = false, description = ""To filter components"")",1,1,0.09090909090909091,225
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,226
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelAddComponentCommand.class).name(,1,1,0.09090909090909091,227
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,228
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public ComponentDto convert(String text) {,1,1,0.09090909090909091,229
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return createComponentDto(getCamelCatalog(), text);",1,1,0.09090909090909091,230
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// show note about the chosen component,1,1,0.09090909090909091,231
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void valueChanged(ValueChangeEvent event) {,1,1,0.09090909090909091,232
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ComponentDto component = (ComponentDto) event.getNewValue();,1,1,0.09090909090909091,233
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String description = component.getDescription();,1,1,0.09090909090909091,234
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setNote(description != null ? description : """");",1,1,0.09090909090909091,235
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,236
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,237
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,DependencyBuilder component = DependencyBuilder.create().setGroupId(dto.getGroupId()),1,1,0.09090909090909091,238
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,239
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,240
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return createLanguageDto(getCamelCatalog(), text);",1,1,0.09090909090909091,241
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,242
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,243
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,244
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Map<String, Object> params = new HashMap<String, Object>();",1,1,0.09090909090909091,245
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,246
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,247
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,248
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Filter"", required = false, description = ""To filter components"")",1,1,0.09090909090909091,249
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Class Name"", required = true, description = ""Name of @Producer class"")",1,1,0.09090909090909091,250
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelNewComponentInstanceCDICommand.class).name(,1,1,0.09090909090909091,251
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return Metadata.forCommand(CamelNewRouteBuilderCommand.class).name(,1,1,0.09090909090909091,252
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public boolean isEnabled(UIContext context) {,1,1,0.09090909090909091,253
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return CamelCommandsHelper.isCdiProject(getSelectedProject(context));,1,1,0.09090909090909091,254
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return false;,1,1,0.09090909090909091,255
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,256
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public ComponentDto convert(String text) {,1,1,0.09090909090909091,257
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"return createComponentDto(getCamelCatalog(), text);",1,1,0.09090909090909091,258
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// show note about the chosen language,1,1,0.09090909090909091,259
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// show note about the chosen component,1,1,0.09090909090909091,260
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.09090909090909091,261
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void valueChanged(ValueChangeEvent event) {,1,1,0.09090909090909091,262
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.09090909090909091,263
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// install the component,1,1,0.09090909090909091,264
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public void valueChanged(ValueChangeEvent event) {,1,1,0.09090909090909091,265
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return false;,1,1,0.09090909090909091,266
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String description = language.getDescription();,1,1,0.09090909090909091,267
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setNote(description != null ? description : """");",1,1,0.09090909090909091,268
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.09090909090909091,269
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// does the project already have camel?,1,1,0.09090909090909091,270
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// we want to use same version as camel-core,1,1,0.09090909090909091,271
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,DependencyBuilder component = DependencyBuilder.create().setGroupId(dto.getGroupId()),1,1,0.09090909090909091,272
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,LanguageDto language = (LanguageDto) event.getNewValue();,1,1,0.09090909090909091,273
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.09090909090909091,274
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.09090909090909091,275
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,public boolean isEnabled(UIContext context) {,1,1,0.09090909090909091,276
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// not enable for cdi or spring projects,1,1,0.09090909090909091,277
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,return !cdi && !spring;,1,1,0.09090909090909091,278
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  with the License.  You may obtain a copy of the License at,1,1,0.09090909090909091,279
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,280
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.model.source.JavaClassSource;,1,0,0.0,281
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@FacetConstraint({JavaSourceFacet.class, ResourcesFacet.class})",1,0,0.0,282
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,283
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,284
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> targetPackage;,1,0,0.0,285
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = findCamelCoreDependency(project);,1,0,0.0,286
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> name;,1,0,0.0,287
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.setCompleter(new PackageNameCompleter(facet));,1,0,0.0,288
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,289
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,0,0.0,290
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.addValidator(new PackageNameValidator());,1,0,0.0,291
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.getFacet(HintsFacet.class).setInputType(InputType.JAVA_PACKAGE_PICKER);,1,0,0.0,292
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.addValidator(new ClassNameValidator(false));,1,0,0.0,293
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.getFacet(HintsFacet.class).setInputType(InputType.JAVA_CLASS_PICKER);,1,0,0.0,294
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(targetPackage).add(name);,1,0,0.0,295
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,296
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.Roaster;,1,0,0.0,297
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,0,0.0,298
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,299
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,300
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,JavaResource existing = facet.getJavaResource(fqn);,1,0,0.0,301
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.completer.PackageNameCompleter;,1,0,0.0,302
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.PackageNameValidator;,1,0,0.0,303
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,304
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,0,0.0,305
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.parser.java.facets.JavaSourceFacet;,1,0,0.0,306
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.parser.java.resources.JavaResource;,1,0,0.0,307
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,308
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,309
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,310
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,311
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,312
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.hints.InputType;,1,0,0.0,313
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,314
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,315
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,316
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,317
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.ClassNameValidator;,1,0,0.0,318
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.URLResource;,1,0,0.0,319
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (existing != null && existing.exists()) {,1,0,0.0,320
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,321
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.net.URL;,1,0,0.0,322
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.HashMap;,1,0,0.0,323
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.Map;,1,0,0.0,324
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,325
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.ResourceNameValidator;,1,0,0.0,326
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,327
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,328
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,329
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,0,0.0,330
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,331
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,332
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,333
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.FileResource;,1,0,0.0,334
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.Resource;,1,0,0.0,335
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.ResourceFactory;,1,0,0.0,336
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,337
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.templates.Template;,1,0,0.0,338
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.io.File;,1,0,0.0,339
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,340
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,final JavaClassSource javaClass = Roaster.create(JavaClassSource.class);,1,0,0.0,341
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,342
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,javaClass.setName(name.getValue());,1,0,0.0,343
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (targetPackage.getValue() != null) {,1,0,0.0,344
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,javaClass.setPackage(targetPackage.getValue());,1,0,0.0,345
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"javaClass.setSuperType(""RouteBuilder"");",1,0,0.0,346
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"javaClass.addImport(""org.apache.camel.builder.RouteBuilder"");",1,0,0.0,347
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,javaClass.addMethod(),1,0,0.0,348
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,.setPublic(),1,0,0.0,349
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,.setReturnTypeVoid(),1,0,0.0,350
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".setName(""configure"")",1,0,0.0,351
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".addThrows(Exception.class).setBody("""");",1,0,0.0,352
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,facet.saveJavaSource(javaClass);,1,0,0.0,353
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,354
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,355
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,356
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,357
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,358
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,359
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,360
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,361
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,362
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,0,0.0,363
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,364
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,365
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,366
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,367
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,368
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,369
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.NavigationResult;,1,0,0.0,370
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,371
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,372
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,373
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,374
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.wizard.UIWizard;,1,0,0.0,375
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.model.util.Strings;,1,0,0.0,376
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createComponentDto;,1,0,0.0,377
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@FacetConstraint({JavaSourceFacet.class, ResourcesFacet.class, ClassLoaderFacet.class})",1,0,0.0,378
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,379
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<String> componentNameFilter;,1,0,0.0,380
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.hints.InputType;,1,0,0.0,381
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UINavigationContext;,1,0,0.0,382
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,383
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,384
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.templates.freemarker.FreemarkerTemplate;,1,0,0.0,385
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,386
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.completer.PackageNameCompleter;,1,0,0.0,387
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.ClassNameValidator;,1,0,0.0,388
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.PackageNameValidator;,1,0,0.0,389
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,1,0,0.0,390
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,391
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,392
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.DependencyResolver;,1,0,0.0,393
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,0,0.0,394
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.parser.java.facets.JavaSourceFacet;,1,0,0.0,395
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,396
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,397
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ClassLoaderFacet;,1,0,0.0,398
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,399
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,400
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,401
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<ComponentDto> componentName;,1,0,0.0,402
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> instanceName;,1,0,0.0,403
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> targetPackage;,1,0,0.0,404
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> className;,1,0,0.0,405
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,className.setDefaultValue(new Callable<String>() {,1,0,0.0,406
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,className.getFacet(HintsFacet.class).setInputType(InputType.JAVA_CLASS_PICKER);,1,0,0.0,407
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(componentNameFilter).add(componentName).add(instanceName).add(targetPackage).add(className);,1,0,0.0,408
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",1,0,0.0,409
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""componentName"", componentName.getValue().getScheme());",1,0,0.0,410
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""instanceName"", instanceName.getValue());",1,0,0.0,411
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""targetPackage"", targetPackage.getValue());",1,0,0.0,412
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""className"", className.getValue());",1,0,0.0,413
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""kind"", ""spring"");",1,0,0.0,414
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,protected String getDefaultProducerClassName() {,1,0,0.0,415
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (!Strings.isBlank(name)) {,1,0,0.0,416
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,417
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,418
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,419
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,420
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,421
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,422
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,className.addValidator(new ClassNameValidator(false));,1,0,0.0,423
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.getFacet(HintsFacet.class).setInputType(InputType.JAVA_PACKAGE_PICKER);,1,0,0.0,424
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.addValidator(new PackageNameValidator());,1,0,0.0,425
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentNameFilter.setDefaultValue(""<all>"");",1,0,0.0,426
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyResolver dependencyResolver;,1,0,0.0,427
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,428
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,429
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean enabled = super.isEnabled(context);,1,0,0.0,430
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (enabled) {,1,0,0.0,431
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,final JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,0,0.0,432
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentNameFilter.setValueChoices(CamelCommandsHelper.createComponentLabelValues(project, getCamelCatalog()));",1,0,0.0,433
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setValueChoices(CamelCommandsHelper.createComponentDtoValues(project, getCamelCatalog(), componentNameFilter, false));",1,0,0.0,434
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.setCompleter(new PackageNameCompleter(facet));,1,0,0.0,435
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// include converter from string->dto,1,0,0.0,436
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setValueConverter(new Converter<String, ComponentDto>() {",1,0,0.0,437
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,});,1,0,0.0,438
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,componentName.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,439
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (component != null) {,1,0,0.0,440
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} else {,1,0,0.0,441
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setNote("""");",1,0,0.0,442
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.templates.TemplateFactory;,1,0,0.0,443
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,javaClass.setName(generateClassName);,1,0,0.0,444
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,445
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (json == null) {,1,0,0.0,446
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (data != null) {,1,0,0.0,447
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String kind = propertyMap.get(""kind"");",1,0,0.0,448
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String type = propertyMap.get(""type"");",1,0,0.0,449
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String javaType = propertyMap.get(""javaType"");",1,0,0.0,450
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String deprecated = propertyMap.get(""deprecated"");",1,0,0.0,451
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String required = propertyMap.get(""required"");",1,0,0.0,452
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String currentValue = null;,1,0,0.0,453
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String defaultValue = propertyMap.get(""defaultValue"");",1,0,0.0,454
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String enums = propertyMap.get(""enum"");",1,0,0.0,455
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (!Strings.isNullOrEmpty(name)) {,1,0,0.0,456
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Class<Object> inputClazz = loadValidInputTypes(javaType, type);",1,0,0.0,457
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (inputClazz != null) {,1,0,0.0,458
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (namesAdded.add(name)) {,1,0,0.0,459
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"InputComponent input = createUIInput(componentFactory, getConverterFactory(), name, inputClazz, required, currentValue, defaultValue, enums, description);",1,0,0.0,460
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (input != null) {,1,0,0.0,461
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(input);,1,0,0.0,462
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,inputs.add(input);,1,0,0.0,463
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"List<Map<String, String>> data = JSonSchemaHelper.parseJsonSchema(""componentProperties"", json, true);",1,0,0.0,464
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String json = camelCatalog.componentJSonSchema(camelComponentName);,1,0,0.0,465
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,try {,1,0,0.0,466
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String camelComponentName = mandatoryAttributeValue(attributeMap, ""componentName"");",1,0,0.0,467
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,468
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.wizard.UIWizardStep;,1,0,0.0,469
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.Roaster;,1,0,0.0,470
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.model.source.JavaClassSource;,1,0,0.0,471
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.model.util.Strings;,1,0,0.0,472
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.addon.utils.UIHelper.createUIInput;,1,0,0.0,473
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper.ensureCamelArtifactIdAdded;,1,0,0.0,474
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper.loadCamelComponentDetails;,1,0,0.0,475
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper.loadValidInputTypes;,1,0,0.0,476
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,477
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private InputComponentFactory componentFactory;,1,0,0.0,478
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,479
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyResolver dependencyResolver;,1,0,0.0,480
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private CamelCatalog camelCatalog;,1,0,0.0,481
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,482
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,483
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Map<Object, Object> attributeMap = builder.getUIContext().getAttributeMap();",1,0,0.0,484
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",1,0,0.0,485
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String componentInstanceName = mandatoryAttributeValue(attributeMap, ""instanceName"");",1,0,0.0,486
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,487
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String text = value.toString();,1,0,0.0,488
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (value instanceof Number) {,1,0,0.0,489
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,valueExpression = value.toString();,1,0,0.0,490
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (valueExpression != null) {,1,0,0.0,491
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"buffer.append(""\n"");",1,0,0.0,492
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"buffer.append(""component.set"");",1,0,0.0,493
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,buffer.append(Strings.capitalize(input.getName()));,1,0,0.0,494
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"buffer.append(""("");",1,0,0.0,495
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,buffer.append(valueExpression);,1,0,0.0,496
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"buffer.append("");"");",1,0,0.0,497
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String configurationCode = buffer.toString();,1,0,0.0,498
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"if (kind.equals(""cdi"")) {",1,0,0.0,499
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"CamelCommandsHelper.createCdiComponentProducerClass(javaClass, details, camelComponentName, componentInstanceName, configurationCode);",1,0,0.0,500
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} else {,1,0,0.0,501
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"CamelCommandsHelper.createSpringComponentFactoryClass(javaClass, details, camelComponentName, componentInstanceName, configurationCode);",1,0,0.0,502
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,facet.saveJavaSource(javaClass);,1,0,0.0,503
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} catch (IllegalArgumentException e) {,1,0,0.0,504
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,* @throws IllegalArgumentException if the value is not available in the given attribute map,1,0,0.0,505
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (!Strings.isBlank(text)) {,1,0,0.0,506
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (value instanceof String) {,1,0,0.0,507
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String generatePackageName = mandatoryAttributeValue(attributeMap, ""targetPackage"");",1,0,0.0,508
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (value != null) {,1,0,0.0,509
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String generateClassName = mandatoryAttributeValue(attributeMap, ""className"");",1,0,0.0,510
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"String kind = mandatoryAttributeValue(attributeMap, ""kind"");",1,0,0.0,511
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,0,0.0,512
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = CamelProjectHelper.findCamelCoreDependency(project);,1,0,0.0,513
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,514
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Result result = loadCamelComponentDetails(camelCatalog, camelComponentName, details);",1,0,0.0,515
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (result != null) {,1,0,0.0,516
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"result = ensureCamelArtifactIdAdded(project, details, dependencyInstaller);",1,0,0.0,517
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,JavaResource existing = facet.getJavaResource(fqn);,1,0,0.0,518
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (existing != null && existing.exists()) {,1,0,0.0,519
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,final JavaClassSource javaClass = Roaster.create(JavaClassSource.class);,1,0,0.0,520
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.Map;,1,0,0.0,521
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (generatePackageName != null) {,1,0,0.0,522
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,javaClass.setPackage(generatePackageName);,1,0,0.0,523
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (input.hasValue()) {,1,0,0.0,524
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String valueExpression = null;,1,0,0.0,525
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Object value = input.getValue();,1,0,0.0,526
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,527
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,528
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,529
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean enabled = super.isEnabled(context);,1,0,0.0,530
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean cdi = CamelCommandsHelper.isCdiProject(project);,1,0,0.0,531
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean blueprint = CamelCommandsHelper.isBlueprintProject(project);,1,0,0.0,532
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,533
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.addValidator(new ResourceNameValidator(""xml""));",1,0,0.0,534
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.getFacet(HintsFacet.class).setInputType(InputType.FILE_PICKER);,1,0,0.0,535
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,directory.getFacet(HintsFacet.class).setInputType(InputType.DIRECTORY_PICKER);,1,0,0.0,536
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(directory).add(name);,1,0,0.0,537
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String projectName = project.getRoot().getName();,1,0,0.0,538
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ResourcesFacet facet = project.getFacet(ResourcesFacet.class);,1,0,0.0,539
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,FileResource<?> fileResource = facet.getResource(fileName);,1,0,0.0,540
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (fileResource.exists()) {,1,0,0.0,541
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = findCamelCoreDependency(project);,1,0,0.0,542
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,543
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"DependencyBuilder spring = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,0,0.0,544
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".setArtifactId(""camel-spring"").setVersion(core.getCoordinate().getVersion());",1,0,0.0,545
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// install camel-spring if missing,1,0,0.0,546
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"if (!dependencyInstaller.isManaged(project, spring)) {",1,0,0.0,547
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (enabled) {,1,0,0.0,548
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,549
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.NavigationResult;,1,0,0.0,550
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ResourceFactory resourceFactory;,1,0,0.0,551
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,552
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,0,0.0,553
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.hints.InputType;,1,0,0.0,554
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,555
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,556
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,557
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,558
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,559
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,560
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,561
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@FacetConstraint({ResourcesFacet.class}),1,0,0.0,562
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,563
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Directory"", required = false, defaultValue = ""META-INF/spring"",",1,0,0.0,564
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> directory;,1,0,0.0,565
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> name;,1,0,0.0,566
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,567
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private TemplateFactory factory;,1,0,0.0,568
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"dependencyInstaller.install(project, spring);",1,0,0.0,569
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Resource<URL> xml = resourceFactory.create(getClass().getResource(""/templates/camel-spring.ftl"")).reify(URLResource.class);",1,0,0.0,570
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Template template = factory.create(xml, FreemarkerTemplate.class);",1,0,0.0,571
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// any dynamic options goes into the params map,1,0,0.0,572
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,573
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.model.CamelComponentDetails;,1,0,0.0,574
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.apache.camel.catalog.CamelCatalog;,1,0,0.0,575
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.apache.camel.catalog.JSonSchemaHelper;,1,0,0.0,576
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,577
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.DependencyResolver;,1,0,0.0,578
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.parser.java.facets.JavaSourceFacet;,1,0,0.0,579
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.parser.java.resources.JavaResource;,1,0,0.0,580
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,581
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,582
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,583
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,584
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,585
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UINavigationContext;,1,0,0.0,586
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.InputComponent;,1,0,0.0,587
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.InputComponentFactory;,1,0,0.0,588
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,589
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.CamelProjectHelper;,1,0,0.0,590
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,591
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.Set;,1,0,0.0,592
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,593
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"params.put(""projectName"", projectName);",1,0,0.0,594
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String output = template.process(params);,1,0,0.0,595
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,fileResource.createNewFile();,1,0,0.0,596
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,fileResource.setContents(output);,1,0,0.0,597
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,598
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,599
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,600
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,601
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.Map;,1,0,0.0,602
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,603
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,604
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,605
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,606
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.ArrayList;,1,0,0.0,607
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.HashSet;,1,0,0.0,608
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.List;,1,0,0.0,609
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.concurrent.Callable;,1,0,0.0,610
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,611
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,612
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} else {,1,0,0.0,613
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(name);,1,0,0.0,614
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = findCamelCoreDependency(project);,1,0,0.0,615
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,616
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,DataFormatDto dto = name.getValue();,1,0,0.0,617
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (dto != null) {,1,0,0.0,618
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,.setArtifactId(dto.getArtifactId()).setVersion(core.getCoordinate().getVersion());,1,0,0.0,619
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"dependencyInstaller.install(project, component);",1,0,0.0,620
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,621
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,622
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,623
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,624
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,625
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,626
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,627
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,628
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,629
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,630
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setNote("""");",1,0,0.0,631
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (dataFormat != null) {,1,0,0.0,632
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.dto.LanguageDto;,1,0,0.0,633
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,DataFormatDto dataFormat = (DataFormatDto) event.getNewValue();,1,0,0.0,634
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,635
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,636
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,637
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,638
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createDataFormatDto;,1,0,0.0,639
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,640
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<DataFormatDto> name;,1,0,0.0,641
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,642
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,643
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,644
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// use value choices instead of completer as that works better in web console,1,0,0.0,645
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setValueChoices(new CamelDataFormatsCompleter(project, getCamelCatalog()).getValueChoices());",1,0,0.0,646
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// include converter from string->dto,1,0,0.0,647
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setValueConverter(new Converter<String, DataFormatDto>() {",1,0,0.0,648
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,});,1,0,0.0,649
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// show note about the chosen data format,1,0,0.0,650
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,651
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.completer.CamelLanguagesCompleter;,1,0,0.0,652
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,653
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,654
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,655
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// use value choices instead of completer as that works better in web console,1,0,0.0,656
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setValueChoices(new CamelLanguagesCompleter(project, getCamelCatalog()).getValueChoices());",1,0,0.0,657
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// include converter from string->dto,1,0,0.0,658
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setValueConverter(new Converter<String, LanguageDto>() {",1,0,0.0,659
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,});,1,0,0.0,660
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,661
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (language != null) {,1,0,0.0,662
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} else {,1,0,0.0,663
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setNote("""");",1,0,0.0,664
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(name);,1,0,0.0,665
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = findCamelCoreDependency(project);,1,0,0.0,666
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,667
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,LanguageDto dto = name.getValue();,1,0,0.0,668
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (dto != null) {,1,0,0.0,669
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,.setArtifactId(dto.getArtifactId()).setVersion(core.getCoordinate().getVersion());,1,0,0.0,670
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"dependencyInstaller.install(project, component);",1,0,0.0,671
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,672
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,673
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,674
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,675
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<LanguageDto> name;,1,0,0.0,676
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,677
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,678
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,679
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,680
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,681
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,682
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,683
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,684
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,685
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,686
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,687
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,688
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,689
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,690
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,691
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createLanguageDto;,1,0,0.0,692
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,693
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,694
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,695
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,696
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,697
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,698
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,699
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,700
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,701
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,702
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,703
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,704
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,705
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createComponentDto;,1,0,0.0,706
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,707
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<String> filter;,1,0,0.0,708
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<ComponentDto> name;,1,0,0.0,709
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,710
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,711
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,712
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"filter.setValueChoices(CamelCommandsHelper.createComponentLabelValues(project, getCamelCatalog()));",1,0,0.0,713
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"filter.setDefaultValue(""<all>"");",1,0,0.0,714
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,715
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,716
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,717
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,718
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,719
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,720
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,721
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,722
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,723
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,724
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,725
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,726
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,727
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,728
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,1,0,0.0,729
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,730
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,731
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,732
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,733
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,734
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,735
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setValueChoices(CamelCommandsHelper.createComponentDtoValues(project, getCamelCatalog(), filter, false));",1,0,0.0,736
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// include converter from string->dto,1,0,0.0,737
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setValueConverter(new Converter<String, ComponentDto>() {",1,0,0.0,738
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,});,1,0,0.0,739
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,740
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,741
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,742
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,743
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,744
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,745
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.completer.CamelDataFormatsCompleter;,1,0,0.0,746
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.dto.DataFormatDto;,1,0,0.0,747
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,748
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,749
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,750
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,751
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,752
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,753
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,754
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,755
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,756
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,757
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,758
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,759
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ComponentDto dto = name.getValue();,1,0,0.0,760
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,761
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (component != null) {,1,0,0.0,762
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} else {,1,0,0.0,763
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.setNote("""");",1,0,0.0,764
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(filter).add(name);,1,0,0.0,765
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = findCamelCoreDependency(project);,1,0,0.0,766
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,767
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (dto != null) {,1,0,0.0,768
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,769
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// otherwise use the version from the dto,1,0,0.0,770
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String version;,1,0,0.0,771
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"if (""org.apache.camel"".equals(dto.getGroupId())) {",1,0,0.0,772
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,version = core.getCoordinate().getVersion();,1,0,0.0,773
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,version = dto.getVersion();,1,0,0.0,774
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,.setArtifactId(dto.getArtifactId()).setVersion(version);,1,0,0.0,775
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"dependencyInstaller.install(project, component);",1,0,0.0,776
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,777
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,778
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,779
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,780
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,781
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,782
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,783
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,784
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.NavigationResult;,1,0,0.0,785
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,786
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,787
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,788
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,789
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.wizard.UIWizard;,1,0,0.0,790
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.roaster.model.util.Strings;,1,0,0.0,791
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createComponentDto;,1,0,0.0,792
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@FacetConstraint({JavaSourceFacet.class, ResourcesFacet.class, ClassLoaderFacet.class})",1,0,0.0,793
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,794
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<String> componentNameFilter;,1,0,0.0,795
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UISelectOne<ComponentDto> componentName;,1,0,0.0,796
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> instanceName;,1,0,0.0,797
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,798
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.hints.InputType;,1,0,0.0,799
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.concurrent.Callable;,1,0,0.0,800
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,0,0.0,801
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.completer.PackageNameCompleter;,1,0,0.0,802
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.ClassNameValidator;,1,0,0.0,803
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.PackageNameValidator;,1,0,0.0,804
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,1,0,0.0,805
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,806
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,807
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.DependencyResolver;,1,0,0.0,808
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,0,0.0,809
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.parser.java.facets.JavaSourceFacet;,1,0,0.0,810
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,811
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,812
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ClassLoaderFacet;,1,0,0.0,813
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,814
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,815
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,816
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,817
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UINavigationContext;,1,0,0.0,818
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> targetPackage;,1,0,0.0,819
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> className;,1,0,0.0,820
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,821
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyResolver dependencyResolver;,1,0,0.0,822
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,className.getFacet(HintsFacet.class).setInputType(InputType.JAVA_CLASS_PICKER);,1,0,0.0,823
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(componentNameFilter).add(componentName).add(instanceName).add(targetPackage).add(className);,1,0,0.0,824
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",1,0,0.0,825
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""componentName"", componentName.getValue().getScheme());",1,0,0.0,826
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""instanceName"", instanceName.getValue());",1,0,0.0,827
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""targetPackage"", targetPackage.getValue());",1,0,0.0,828
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""className"", className.getValue());",1,0,0.0,829
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"attributeMap.put(""kind"", ""cdi"");",1,0,0.0,830
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,protected String getDefaultProducerClassName() {,1,0,0.0,831
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (!Strings.isBlank(name)) {,1,0,0.0,832
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,833
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,834
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,835
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,836
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,837
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,838
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,839
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,className.setDefaultValue(new Callable<String>() {,1,0,0.0,840
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,className.addValidator(new ClassNameValidator(false));,1,0,0.0,841
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.getFacet(HintsFacet.class).setInputType(InputType.JAVA_PACKAGE_PICKER);,1,0,0.0,842
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setValueChoices(CamelCommandsHelper.createComponentDtoValues(project, getCamelCatalog(), componentNameFilter, false));",1,0,0.0,843
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,844
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,845
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean enabled = super.isEnabled(context);,1,0,0.0,846
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (enabled) {,1,0,0.0,847
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,final JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,0,0.0,848
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentNameFilter.setValueChoices(CamelCommandsHelper.createComponentLabelValues(project, getCamelCatalog()));",1,0,0.0,849
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentNameFilter.setDefaultValue(""<all>"");",1,0,0.0,850
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// include converter from string->dto,1,0,0.0,851
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.addValidator(new PackageNameValidator());,1,0,0.0,852
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setValueConverter(new Converter<String, ComponentDto>() {",1,0,0.0,853
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,});,1,0,0.0,854
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,componentName.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,855
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (component != null) {,1,0,0.0,856
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,} else {,1,0,0.0,857
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"componentName.setNote("""");",1,0,0.0,858
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,targetPackage.setCompleter(new PackageNameCompleter(facet));,1,0,0.0,859
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,860
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.Map;,1,0,0.0,861
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,862
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.ResourceFactory;,1,0,0.0,863
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.templates.Template;,1,0,0.0,864
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.templates.TemplateFactory;,1,0,0.0,865
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.templates.freemarker.FreemarkerTemplate;,1,0,0.0,866
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,867
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,868
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,0,0.0,869
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.hints.InputType;,1,0,0.0,870
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,871
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,872
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,873
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,874
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,875
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,876
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,877
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@FacetConstraint({ResourcesFacet.class}),1,0,0.0,878
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Inject,1,0,0.0,879
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"@WithAttributes(label = ""Directory"", required = false, defaultValue = ""OSGI-INF/blueprint"",",1,0,0.0,880
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.URLResource;,1,0,0.0,881
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.Resource;,1,0,0.0,882
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,883
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.resource.FileResource;,1,0,0.0,884
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,885
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,886
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,887
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,package io.fabric8.forge.camel.commands.project;,1,0,0.0,888
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.io.File;,1,0,0.0,889
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.net.URL;,1,0,0.0,890
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.HashMap;,1,0,0.0,891
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import java.util.Map;,1,0,0.0,892
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import javax.inject.Inject;,1,0,0.0,893
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.addon.utils.validator.ResourceNameValidator;,1,0,0.0,894
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,895
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,896
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,897
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,0,0.0,898
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.Project;,1,0,0.0,899
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,900
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,901
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> directory;,1,0,0.0,902
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private UIInput<String> name;,1,0,0.0,903
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private DependencyInstaller dependencyInstaller;,1,0,0.0,904
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,private TemplateFactory factory;,1,0,0.0,905
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"if (!dependencyInstaller.isManaged(project, spring)) {",1,0,0.0,906
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"dependencyInstaller.install(project, spring);",1,0,0.0,907
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Resource<URL> xml = resourceFactory.create(getClass().getResource(""/templates/camel-blueprint.ftl"")).reify(URLResource.class);",1,0,0.0,908
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"Template template = factory.create(xml, FreemarkerTemplate.class);",1,0,0.0,909
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// any dynamic options goes into the params map,1,0,0.0,910
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"params.put(""projectName"", projectName);",1,0,0.0,911
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String output = template.process(params);,1,0,0.0,912
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,fileResource.createNewFile();,1,0,0.0,913
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,fileResource.setContents(output);,1,0,0.0,914
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,/**,1,0,0.0,915
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,916
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*,1,0,0.0,917
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,918
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,919
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,920
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*  permissions and limitations under the License.,1,0,0.0,921
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,*/,1,0,0.0,922
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,// install camel-blueprint if missing,1,0,0.0,923
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,".setArtifactId(""camel-blueprint"").setVersion(core.getCoordinate().getVersion());",1,0,0.0,924
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"DependencyBuilder spring = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,0,0.0,925
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,directory.getFacet(HintsFacet.class).setInputType(InputType.DIRECTORY_PICKER);,1,0,0.0,926
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ResourceFactory resourceFactory;,1,0,0.0,927
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,@Override,1,0,0.0,928
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean enabled = super.isEnabled(context);,1,0,0.0,929
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (enabled) {,1,0,0.0,930
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean cdi = CamelCommandsHelper.isCdiProject(project);,1,0,0.0,931
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,boolean spring = CamelCommandsHelper.isSpringProject(project);,1,0,0.0,932
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,},1,0,0.0,933
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,"name.addValidator(new ResourceNameValidator(""xml""));",1,0,0.0,934
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (core == null) {,1,0,0.0,935
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,name.getFacet(HintsFacet.class).setInputType(InputType.FILE_PICKER);,1,0,0.0,936
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,builder.add(directory).add(name);,1,0,0.0,937
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,String projectName = project.getRoot().getName();,1,0,0.0,938
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,ResourcesFacet facet = project.getFacet(ResourcesFacet.class);,1,0,0.0,939
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,FileResource<?> fileResource = facet.getResource(fileName);,1,0,0.0,940
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,if (fileResource.exists()) {,1,0,0.0,941
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Dependency core = findCamelCoreDependency(project);,1,0,0.0,942
+28f4ca17e3b02b68edfb79d951babe0a5c98b300,Object value = attributeMap.get(name);,1,0,0.0,943

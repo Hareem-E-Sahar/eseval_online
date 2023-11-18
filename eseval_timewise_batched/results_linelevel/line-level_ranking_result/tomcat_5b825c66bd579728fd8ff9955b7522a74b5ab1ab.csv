@@ -1,0 +1,34 @@
+commit_id,line,line_level_label,count,line_score,row
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.debug(sm.getString(""aprListener.sslInit""));",1,1,1.0,1
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,// Ensure that the SSLEngine is consistent with that used for SSL init,0,1,1.0,2
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,// Ensure that the random seed is consistent with that used for SSL init,0,1,1.0,3
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,// Ensure that the FIPS mode is consistent with that used for SSL init,0,1,1.0,4
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.info(sm.getString(""aprListener.sslInit""));",1,1,1.0,5
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"protected static String FIPSMode = ""off""; // default off, valid only when SSLEngine=""on""",0,1,1.0,6
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"throw new IllegalStateException(sm.getString(""aprListener.tooLateForSSLEngine""));",0,0,0.0,7
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.error(sm.getString(""aprListener.initializeFIPSFailed""));",0,0,0.0,8
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"throw new IllegalStateException(sm.getString(""aprListener.initializeFIPSFailed""));",0,0,0.0,9
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,},0,0,0.0,10
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,if(sslInitialized),0,0,0.0,11
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,{,0,0,0.0,12
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"throw new IllegalStateException(sm.getString(""aprListener.tooLateForSSLRandomSeed""));",0,0,0.0,13
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,public void setFIPSMode(String FIPSMode),0,0,0.0,14
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"// This case should be handled by the native method,",0,0,0.0,15
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"throw new IllegalStateException(sm.getString(""aprListener.tooLateForFIPSMode""));",0,0,0.0,16
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,AprLifecycleListener.FIPSMode = FIPSMode;,0,0,0.0,17
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,public boolean isFIPSModeActive(),0,0,0.0,18
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"// but we'll make absolutely sure, here.",0,0,0.0,19
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,fipsModeActive = true;,0,0,0.0,20
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,} else {,0,0,0.0,21
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.info(sm.getString(""aprListener.initializeFIPSSuccess""));",0,0,0.0,22
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,if(1 == result) {,0,0,0.0,23
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,// success is defined as return value = 1,0,0,0.0,24
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,int result = SSL.fipsModeSet(1);,0,0,0.0,25
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.info(sm.getString(""aprListener.initializingFIPS""));",0,0,0.0,26
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"if(""on"".equalsIgnoreCase(AprLifecycleListener.FIPSMode)) {",0,0,0.0,27
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,fipsModeActive = false;,0,0,0.0,28
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.error(sm.getString(""aprListener.sslInit""), t);",0,0,0.0,29
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,protected static boolean fipsModeActive = false;,0,0,0.0,30
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,import org.apache.tomcat.jni.SSL;,0,0,0.0,31
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,"log.debug(sm.getString(""aprListener.sslInit""), t);",0,0,0.0,32
+5b825c66bd579728fd8ff9955b7522a74b5ab1ab,return fipsModeActive;,0,0,0.0,33

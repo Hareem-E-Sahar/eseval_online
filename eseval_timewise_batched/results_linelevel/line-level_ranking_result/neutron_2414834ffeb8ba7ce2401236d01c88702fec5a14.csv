@@ -1,0 +1,590 @@
+commit_id,line,line_level_label,count,line_score,row
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter\n[0:0] -A INPUT -j neutron-nwfilter-INPUT""",1,4,1.0,1
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter\n[0:0] -A INPUT -j neutron-nwfilter-INPUT""",1,4,1.0,2
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# COMMIT without first starting a table should result in nothing,",1,3,0.75,3
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'[1:1] -A OUTPUT -j CONTINUE',",1,3,0.75,4
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'[0:1] -A FORWARD -j CONTINUE',",1,3,0.75,5
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A OUTPUT -j neutron-nwfilter-OUTPUT\n""",1,3,0.75,6
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# COMMIT without first starting a table should result in nothing,",1,3,0.75,7
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""[2:3] foobar -A BAR -j BLAH""",1,3,0.75,8
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[2:140] -A OUTPUT -j neutron-nwfilter-OUTPUT\n""",1,3,0.75,9
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A FORWARD -j neutron-nwfilter-FORWARD\n""",1,3,0.75,10
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A INPUT -j neutron-nwfilter-INPUT\n""",1,3,0.75,11
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'[1:1] -A OUTPUT -j CONTINUE',",1,3,0.75,12
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'[0:1] -A FORWARD -j CONTINUE',",1,3,0.75,13
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'[0:0] -A INPUT -j CONTINUE',",1,3,0.75,14
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A OUTPUT -j neutron-nwfilter-OUTPUT\n""",1,3,0.75,15
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'[0:0] -A INPUT -j CONTINUE',",1,3,0.75,16
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""[2:3] foobar -A BAR -j BLAH""",1,3,0.75,17
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"table, res = _match_rule_line(table, line)",1,3,0.75,18
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[2:140] -A OUTPUT -j neutron-nwfilter-OUTPUT\n""",1,3,0.75,19
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Regexes to parse ebtables rule file input,1,3,0.75,20
+2414834ffeb8ba7ce2401236d01c88702fec5a14,[0:0] -A INPUT -j neutron-nwfilter-INPUT,1,3,0.75,21
+2414834ffeb8ba7ce2401236d01c88702fec5a14,[0:0] -A OUTPUT -j neutron-nwfilter-OUTPUT,1,3,0.75,22
+2414834ffeb8ba7ce2401236d01c88702fec5a14,[0:0] -A FORWARD -j neutron-nwfilter-FORWARD,1,3,0.75,23
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return table, res",1,3,0.75,24
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"table, res = _match_chain_name(table, tables, line)",1,3,0.75,25
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"table, res = _match_table_name(table, line)",1,3,0.75,26
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"cmd = ['ip', 'netns', 'exec', namespace] + cmd",1,3,0.75,27
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A INPUT -j neutron-nwfilter-INPUT\n""",1,3,0.75,28
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A FORWARD -j neutron-nwfilter-FORWARD\n""",1,3,0.75,29
+2414834ffeb8ba7ce2401236d01c88702fec5a14,[0:0] -A neutron-nwfilter-spoofing-fallb -j DROP,1,2,0.5,30
+2414834ffeb8ba7ce2401236d01c88702fec5a14,res = eb._process_ebtables_input(test_input),1,2,0.5,31
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"res = _match_commit_statement(table, line)",1,2,0.5,32
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"cmd = ['ebtables', '-t', table]",1,2,0.5,33
+2414834ffeb8ba7ce2401236d01c88702fec5a14,cmd += args,1,2,0.5,34
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"for table, args in arg_list:",1,2,0.5,35
+2414834ffeb8ba7ce2401236d01c88702fec5a14,parsed_outputs = (_process_ebtables_output(lines) for lines in raw_outputs),1,2,0.5,36
+2414834ffeb8ba7ce2401236d01c88702fec5a14,return '\n'.join(l for lines in parsed_outputs for l in lines),1,2,0.5,37
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-spoofing-fallb -j DROP\n""",1,2,0.5,38
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-OUTPUT -j neutron-nwfilter-isome-port-id\n""",1,2,0.5,39
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# Comments and empty lines are stripped, nothing should be left.",1,2,0.5,40
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# Comments and empty lines are stripped, nothing should be left.",1,2,0.5,41
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'-j CONTINUE , pcnt = 0 -- bcnt = 0\n'",1,2,0.5,42
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'-j CONTINUE , pcnt = 0 -- bcnt = 1\n'",1,2,0.5,43
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'-j CONTINUE , pcnt = 1 -- bcnt = 1').split('\n')",1,2,0.5,44
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-spoofing-fallb -j DROP\n""",1,2,0.5,45
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-OUTPUT -j neutron-nwfilter-isome-port-id\n""",1,2,0.5,46
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Setup filter with wrong IP/MAC address pair. Basic filters only allow,1,2,0.5,47
+2414834ffeb8ba7ce2401236d01c88702fec5a14,res = eb._process_ebtables_input(test_input),1,2,0.5,48
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'-j CONTINUE , pcnt = 0 -- bcnt = 0\n'",1,2,0.5,49
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'-j CONTINUE , pcnt = 0 -- bcnt = 1\n'",1,2,0.5,50
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'-j CONTINUE , pcnt = 1 -- bcnt = 1').split('\n')",1,2,0.5,51
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_FIND_COMMIT_STATEMENT.search(line),1,2,0.5,52
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables on that table with those arguments to get the rules applied.,1,2,0.5,53
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Setup filter with wrong IP/MAC address pair. Basic filters only allow,1,2,0.5,54
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return table, (table, ['--atomic-init'])",1,2,0.5,55
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_RULES_FIND_RULE_LINE.search(line),1,2,0.5,56
+2414834ffeb8ba7ce2401236d01c88702fec5a14,table = match.group(1),1,2,0.5,57
+2414834ffeb8ba7ce2401236d01c88702fec5a14,Key point: ebtables rules listing output is not the same as the rules,1,2,0.5,58
+2414834ffeb8ba7ce2401236d01c88702fec5a14,table = None,1,2,0.5,59
+2414834ffeb8ba7ce2401236d01c88702fec5a14,chain = '',1,2,0.5,60
+2414834ffeb8ba7ce2401236d01c88702fec5a14,rules = [],1,2,0.5,61
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_FIND_BRIDGE_RULE_COUNTERS.search(line),1,2,0.5,62
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_FIND_BRIDGE_CHAIN_INFO.search(line),1,2,0.5,63
+2414834ffeb8ba7ce2401236d01c88702fec5a14,chain = match.group(1),1,2,0.5,64
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_FIND_BRIDGE_TABLE_NAME.search(line),1,2,0.5,65
+2414834ffeb8ba7ce2401236d01c88702fec5a14,table = '*%s' % match.group(1),1,2,0.5,66
+2414834ffeb8ba7ce2401236d01c88702fec5a14,return [table] + chains + rules + ['COMMIT'],1,2,0.5,67
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# get chain name, nunmber of entries and policy name.",1,2,0.5,68
+2414834ffeb8ba7ce2401236d01c88702fec5a14,args = line[match.end():].split(),1,2,0.5,69
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"args = ['-N', match.group(1), '-P', match.group(2)]",1,2,0.5,70
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"res = [(table, args)]",1,2,0.5,71
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_RULES_FIND_TABLE_NAME.search(line),1,2,0.5,72
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return table, (table, args)",1,2,0.5,73
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"args = ['-P', match.group(1), match.group(2)]",1,2,0.5,74
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Initialize with current kernel table if we just start out,1,2,0.5,75
+2414834ffeb8ba7ce2401236d01c88702fec5a14,match = _RE_RULES_FIND_CHAIN_NAME.search(line),1,2,0.5,76
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return table, None",1,2,0.5,77
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"args = (rule % (match.group(1), match.group(2))).split()",1,2,0.5,78
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule = p.sub(r'-C \1 %s %s ', line[match.end() + 1:])",1,2,0.5,79
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#,1,1,0.25,80
+2414834ffeb8ba7ce2401236d01c88702fec5a14,observed_res = eb._process_ebtables_output(test_output),1,1,0.25,81
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"expected_res = ['*filter',",1,1,0.25,82
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.root_helper = 'sudo',1,1,0.25,83
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.ebtables_path = CONF.ebtables_path,1,1,0.25,84
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.execute_p = mock.patch('neutron.agent.linux.utils.execute'),1,1,0.25,85
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.execute = self.execute_p.start(),1,1,0.25,86
+2414834ffeb8ba7ce2401236d01c88702fec5a14,expected_res = [,1,1,0.25,87
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Copyright (c) 2015 OpenStack Foundation.,1,1,0.25,88
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# All Rights Reserved.,1,1,0.25,89
+2414834ffeb8ba7ce2401236d01c88702fec5a14,test_output = ('Bridge table: filter\n',1,1,0.25,90
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.25,91
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.25,92
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    not use this file except in compliance with the License. You may obtain,1,1,0.25,93
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    a copy of the License at,1,1,0.25,94
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.25,95
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.25,96
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.25,97
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    License for the specific language governing permissions and limitations,1,1,0.25,98
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    under the License.,1,1,0.25,99
+2414834ffeb8ba7ce2401236d01c88702fec5a14,NO_FILTER_APPLY = (,1,1,0.25,100
+2414834ffeb8ba7ce2401236d01c88702fec5a14,FILTER_APPLY_TEMPLATE = (,1,1,0.25,101
+2414834ffeb8ba7ce2401236d01c88702fec5a14,observed_res = eb._process_ebtables_input(test_input),1,1,0.25,102
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-i-arp-some-por """,1,1,0.25,103
+2414834ffeb8ba7ce2401236d01c88702fec5a14,TNAME = 'filter',1,1,0.25,104
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = "":neutron-nwfilter-OUTPUT ACCEPT""",1,1,0.25,105
+2414834ffeb8ba7ce2401236d01c88702fec5a14,test_input = \,1,1,0.25,106
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"TABLES_NAMES = ['filter', 'nat', 'broute']",1,1,0.25,107
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-i-arp-some-por -p ARP --arp-op Request """,1,1,0.25,108
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# packets with specified address combinations, thus all packets will",1,1,0.25,109
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# be dropped.,1,1,0.25,110
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"mac_ip_pair = dict(mac_addr=""11:11:11:22:22:22"", ip_addr=self.addr)",1,1,0.25,111
+2414834ffeb8ba7ce2401236d01c88702fec5a14,filter_apply = FILTER_APPLY_TEMPLATE % mac_ip_pair,1,1,0.25,112
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Assure that ping will work once we unfilter the instance,1,1,0.25,113
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Use the correct IP/MAC address pair for this one.,1,1,0.25,114
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"mac_ip_pair = dict(mac_addr=self.mac, ip_addr=self.addr)",1,1,0.25,115
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Cannot parallelize those tests. Therefore need to call them,1,1,0.25,116
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# in order from a single function.,1,1,0.25,117
+2414834ffeb8ba7ce2401236d01c88702fec5a14,CONF = cfg.CONF,1,1,0.25,118
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter\n:foobar ACCEPT""",1,1,0.25,119
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""[0:1] foobar blah bar""",1,1,0.25,120
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"tables = {""mytab"": []}",1,1,0.25,121
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"tables = {""mytab"": ['neutron-nwfilter-OUTPUT']}",1,1,0.25,122
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""*filter""",1,1,0.25,123
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""COMMIT""",1,1,0.25,124
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = (""# Here is a comment\n""",1,1,0.25,125
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Starting,1,1,0.25,126
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter""",1,1,0.25,127
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""COMMIT""",1,1,0.25,128
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter\nCOMMIT""",1,1,0.25,129
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""--arp-ip-src %(ip_addr)s -j RETURN\n""",1,1,0.25,130
+2414834ffeb8ba7ce2401236d01c88702fec5a14,test_input = \,1,1,0.25,131
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-isome-port-id """,1,1,0.25,132
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Take the IP addrss off one of the interfaces and apply it to the,1,1,0.25,133
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"tables = {""mytab"": []}",1,1,0.25,134
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"tables = {""mytab"": ['neutron-nwfilter-OUTPUT']}",1,1,0.25,135
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""*filter""",1,1,0.25,136
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""COMMIT""",1,1,0.25,137
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = (""# Here is a comment\n""",1,1,0.25,138
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Starting,1,1,0.25,139
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter""",1,1,0.25,140
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""COMMIT""",1,1,0.25,141
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter\nCOMMIT""",1,1,0.25,142
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"test_input = ""*filter\n:foobar ACCEPT""",1,1,0.25,143
+2414834ffeb8ba7ce2401236d01c88702fec5a14,observed_res = eb._process_ebtables_input(test_input),1,1,0.25,144
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = ""[0:1] foobar blah bar""",1,1,0.25,145
+2414834ffeb8ba7ce2401236d01c88702fec5a14,TNAME = 'filter',1,1,0.25,146
+2414834ffeb8ba7ce2401236d01c88702fec5a14,expected_res = [,1,1,0.25,147
+2414834ffeb8ba7ce2401236d01c88702fec5a14,test_output = ('Bridge table: filter\n',1,1,0.25,148
+2414834ffeb8ba7ce2401236d01c88702fec5a14,observed_res = eb._process_ebtables_output(test_output),1,1,0.25,149
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"expected_res = ['*filter',",1,1,0.25,150
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.root_helper = 'sudo',1,1,0.25,151
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.ebtables_path = CONF.ebtables_path,1,1,0.25,152
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.execute_p = mock.patch('neutron.agent.linux.utils.execute'),1,1,0.25,153
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.execute = self.execute_p.start(),1,1,0.25,154
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.execute.side_effect = RuntimeError,1,1,0.25,155
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rule_line = "":neutron-nwfilter-OUTPUT ACCEPT""",1,1,0.25,156
+2414834ffeb8ba7ce2401236d01c88702fec5a14,CONF = cfg.CONF,1,1,0.25,157
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-p arp -j neutron-nwfilter-i-arp-some-por\n""",1,1,0.25,158
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge = bridge_lib.BridgeDevice.addbr(,1,1,0.25,159
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-i-ip-some-port """,1,1,0.25,160
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-s %(mac_addr)s -p IPv4 --ip-source %(ip_addr)s -j RETURN\n""",1,1,0.25,161
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-p IPv4 -j neutron-nwfilter-i-ip-some-port\n""",1,1,0.25,162
+2414834ffeb8ba7ce2401236d01c88702fec5a14,bridge = self.useFixture(net_helpers.VethBridgeFixture()).bridge,1,1,0.25,163
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.source, self.destination = self.useFixture(",1,1,0.25,164
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Extract MAC and IP address of one of my interfaces,1,1,0.25,165
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.mac = self.source.port.link.address,1,1,0.25,166
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.addr = self.source.ip,1,1,0.25,167
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Pick one of the namespaces and setup a bridge for the local ethernet,1,1,0.25,168
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# interface there, because ebtables only works on bridged interfaces.",1,1,0.25,169
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Take the IP addrss off one of the interfaces and apply it to the,1,1,0.25,170
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"TABLES_NAMES = ['filter', 'nat', 'broute']",1,1,0.25,171
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# bridge interface instead.,1,1,0.25,172
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# packets with specified address combinations, thus all packets will",1,1,0.25,173
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# be dropped.,1,1,0.25,174
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"mac_ip_pair = dict(mac_addr=""11:11:11:22:22:22"", ip_addr=self.addr)",1,1,0.25,175
+2414834ffeb8ba7ce2401236d01c88702fec5a14,filter_apply = FILTER_APPLY_TEMPLATE % mac_ip_pair,1,1,0.25,176
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Assure that ping will work once we unfilter the instance,1,1,0.25,177
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Use the correct IP/MAC address pair for this one.,1,1,0.25,178
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"mac_ip_pair = dict(mac_addr=self.mac, ip_addr=self.addr)",1,1,0.25,179
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Cannot parallelize those tests. Therefore need to call them,1,1,0.25,180
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# in order from a single function.,1,1,0.25,181
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# bridge interface instead.,1,1,0.25,182
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.execute.side_effect = RuntimeError,1,1,0.25,183
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge = bridge_lib.BridgeDevice.addbr(,1,1,0.25,184
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"tables = {'filter': ['INPUT', 'FORWARD', 'OUTPUT'],",1,1,0.25,185
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_RULES_FIND_RULE_LINE = re.compile(r'^\[([0-9]+):([0-9]+)\]'),1,1,0.25,186
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Process raw output of ebtables rule listing file.",1,1,0.25,187
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"Empty lines and comments removed, ebtables listing output converted",1,1,0.25,188
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"For example, if the raw ebtables list lines (input to this function) are:",1,1,0.25,189
+2414834ffeb8ba7ce2401236d01c88702fec5a14,Bridge table: filter,1,1,0.25,190
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"Bridge chain: INPUT, entries: 0, policy: ACCEPT",1,1,0.25,191
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"Bridge chain: FORWARD, entries: 0, policy: ACCEPT",1,1,0.25,192
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"Bridge chain: OUTPUT, entries: 0, policy: ACCEPT",1,1,0.25,193
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:INPUT ACCEPT,1,1,0.25,194
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:FORWARD ACCEPT,1,1,0.25,195
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:OUTPUT ACCEPT,1,1,0.25,196
+2414834ffeb8ba7ce2401236d01c88702fec5a14,chains = [],1,1,0.25,197
+2414834ffeb8ba7ce2401236d01c88702fec5a14,for line in lines:,1,1,0.25,198
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if table and match:,1,1,0.25,199
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"rules.append('[%s:%s] -A %s %s' % (match.group(1),",1,1,0.25,200
+2414834ffeb8ba7ce2401236d01c88702fec5a14,p = _RE_FIND_APPEND_RULE,1,1,0.25,201
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Conclude by issuing the commit command,1,1,0.25,202
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return (table, ['--atomic-commit'])",1,1,0.25,203
+2414834ffeb8ba7ce2401236d01c88702fec5a14,return None,1,1,0.25,204
+2414834ffeb8ba7ce2401236d01c88702fec5a14,of a table name and ebtables arguments. The caller can then repeatedly call,1,1,0.25,205
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:neutron-nwfilter-spoofing-fallb ACCEPT,1,1,0.25,206
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:neutron-nwfilter-OUTPUT ACCEPT,1,1,0.25,207
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:neutron-nwfilter-INPUT ACCEPT,1,1,0.25,208
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_RULES_FIND_CHAIN_NAME = re.compile(r'^:(.*)[\s]+([A-Z]+)$'),1,1,0.25,209
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_RULES_FIND_TABLE_NAME = re.compile(r'^\*([a-z]+)$'),1,1,0.25,210
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_FIND_APPEND_RULE = re.compile(r'-A (\S+) '),1,1,0.25,211
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.25,212
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# interface there, because ebtables only works on bridged interfaces.",1,1,0.25,213
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Copyright (c) 2015 OpenStack Foundation.,1,1,0.25,214
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# All Rights Reserved.,1,1,0.25,215
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#,1,1,0.25,216
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.25,217
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    not use this file except in compliance with the License. You may obtain,1,1,0.25,218
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    a copy of the License at,1,1,0.25,219
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.25,220
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.25,221
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.25,222
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    License for the specific language governing permissions and limitations,1,1,0.25,223
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_FIND_COMMENTS_AND_BLANKS = re.compile(r'^#|^$'),1,1,0.25,224
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    under the License.,1,1,0.25,225
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Implement ebtables rules using linux utilities.""""""",1,1,0.25,226
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables_opts = [,1,1,0.25,227
+2414834ffeb8ba7ce2401236d01c88702fec5a14,CONF = cfg.CONF,1,1,0.25,228
+2414834ffeb8ba7ce2401236d01c88702fec5a14,LOG = logging.getLogger(__name__),1,1,0.25,229
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Collection of regexes to parse ebtables output,1,1,0.25,230
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_FIND_BRIDGE_TABLE_NAME = re.compile(r'^Bridge table:[\s]*([a-z]+)$'),1,1,0.25,231
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_FIND_BRIDGE_CHAIN_INFO = re.compile(,1,1,0.25,232
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_FIND_BRIDGE_RULE_COUNTERS = re.compile(,1,1,0.25,233
+2414834ffeb8ba7ce2401236d01c88702fec5a14,_RE_FIND_COMMIT_STATEMENT = re.compile(r'^COMMIT$'),1,1,0.25,234
+2414834ffeb8ba7ce2401236d01c88702fec5a14,:neutron-nwfilter-FORWARD ACCEPT,1,1,0.25,235
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"help=_('Location of temporary ebtables table files.')),",1,1,0.25,236
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables_args = list(),1,1,0.25,237
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.25,238
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    a copy of the License at,1,1,0.25,239
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.25,240
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.25,241
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.25,242
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.25,243
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    License for the specific language governing permissions and limitations,1,1,0.25,244
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    under the License.,1,1,0.25,245
+2414834ffeb8ba7ce2401236d01c88702fec5a14,NO_FILTER_APPLY = (,1,1,0.25,246
+2414834ffeb8ba7ce2401236d01c88702fec5a14,FILTER_APPLY_TEMPLATE = (,1,1,0.25,247
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-i-arp-some-por """,1,1,0.25,248
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""--arp-ip-src %(ip_addr)s -j RETURN\n""",1,1,0.25,249
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-i-arp-some-por -p ARP --arp-op Request """,1,1,0.25,250
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-isome-port-id """,1,1,0.25,251
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-p arp -j neutron-nwfilter-i-arp-some-por\n""",1,1,0.25,252
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-s %(mac_addr)s -p IPv4 --ip-source %(ip_addr)s -j RETURN\n""",1,1,0.25,253
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-p IPv4 -j neutron-nwfilter-i-ip-some-port\n""",1,1,0.25,254
+2414834ffeb8ba7ce2401236d01c88702fec5a14,bridge = self.useFixture(net_helpers.VethBridgeFixture()).bridge,1,1,0.25,255
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.source, self.destination = self.useFixture(",1,1,0.25,256
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Extract MAC and IP address of one of my interfaces,1,1,0.25,257
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.mac = self.source.port.link.address,1,1,0.25,258
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.addr = self.source.ip,1,1,0.25,259
+2414834ffeb8ba7ce2401236d01c88702fec5a14,for line in lines.splitlines():,1,1,0.25,260
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Pick one of the namespaces and setup a bridge for the local ethernet,1,1,0.25,261
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#    not use this file except in compliance with the License. You may obtain,1,1,0.25,262
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""[0:0] -A neutron-nwfilter-i-ip-some-port """,1,1,0.25,263
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#,1,1,0.25,264
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# We retry the execution of ebtables in case of failure. Known issue:,1,1,0.25,265
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return func(*args, **kwargs)",1,1,0.25,266
+2414834ffeb8ba7ce2401236d01c88702fec5a14,return ebtables_args,1,1,0.25,267
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def run_ebtables(namespace, execute, table, args):",1,1,0.25,268
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# All Rights Reserved.,1,1,0.25,269
+2414834ffeb8ba7ce2401236d01c88702fec5a14,Provide table name and list of additional arguments to ebtables.,1,1,0.25,270
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"f = '%s%s' % (CONF.ebtables_path, table)",1,1,0.25,271
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"# TODO(jbrendel): The root helper is used for every ebtables command,",1,1,0.25,272
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#                 but as we use an atomic file we only need root for,1,1,0.25,273
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#                 init and commit commands.,1,1,0.25,274
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#                 But the generated file by init ebtables command is,1,1,0.25,275
+2414834ffeb8ba7ce2401236d01c88702fec5a14,#                 only readable and writable by root.,1,1,0.25,276
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"cmd += ['--atomic-file', f]",1,1,0.25,277
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# See bug:    https://bugs.launchpad.net/nova/+bug/1316621,1,1,0.25,278
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"return _cmd_retry(execute, cmd, **{""run_as_root"": True})",1,1,0.25,279
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# Copyright (c) 2015 OpenStack Foundation.,1,1,0.25,280
+2414834ffeb8ba7ce2401236d01c88702fec5a14,Each arg_list element is a tuple containing the table name and a list,1,1,0.25,281
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"run_ebtables(namespace, execute, table, args)",1,1,0.25,282
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables_args = _process_ebtables_input(lines),1,1,0.25,283
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Import text ebtables rules and apply.""""""",1,1,0.25,284
+2414834ffeb8ba7ce2401236d01c88702fec5a14,# See patch:  https://review.openstack.org/#/c/140514/3,1,1,0.25,285
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"raw_outputs = (run_ebtables(namespace, execute,",1,1,0.25,286
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-OUTPUT ACCEPT\n""",1,0,0.0,287
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-isome-port-id ACCEPT\n""",1,0,0.0,288
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""COMMIT"")",1,0,0.0,289
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-spoofing-fallb ACCEPT\n""",1,0,0.0,290
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-FORWARD ACCEPT\n""",1,0,0.0,291
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-INPUT ACCEPT\n""",1,0,0.0,292
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":FORWARD ACCEPT\n""",1,0,0.0,293
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":OUTPUT ACCEPT\n""",1,0,0.0,294
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":INPUT ACCEPT\n""",1,0,0.0,295
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""*filter\n""",1,0,0.0,296
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests.functional import base,1,0,0.0,297
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests.common import net_helpers,1,0,0.0,298
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-i-ip-some-port ACCEPT\n""",1,0,0.0,299
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.agent.linux import bridge_lib,1,0,0.0,300
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.agent.linux import ebtables_driver,1,0,0.0,301
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests.common import machine_fixtures,1,0,0.0,302
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-i-arp-some-por ACCEPT\n""",1,0,0.0,303
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge.addif(self.source.port.name),1,0,0.0,304
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-p arp --arp-opcode 2 --arp-mac-src %(mac_addr)s """,1,0,0.0,305
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge.addr.add(self.source.ip_cidr),1,0,0.0,306
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.assert_ping(self.destination.ip),1,0,0.0,307
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"ebtables_driver.ebtables_restore(NO_FILTER_APPLY,",1,0,0.0,308
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.execute.assert_has_calls([mock.call(['ebtables', '--version'])])",1,0,0.0,309
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.assert_no_ping(self.destination.ip),1,0,0.0,310
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.execute),1,0,0.0,311
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"ebtables_driver.ebtables_restore(filter_apply,",1,0,0.0,312
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def _test_basic_port_filter_wrong_mac(self):,1,0,0.0,313
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge.link.set_up(),1,0,0.0,314
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-j ACCEPT\n""",1,0,0.0,315
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.port.addr.delete(self.source.ip_cidr),1,0,0.0,316
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'mybridge', self.source.namespace)",1,0,0.0,317
+2414834ffeb8ba7ce2401236d01c88702fec5a14,machine_fixtures.PeerMachines(bridge)).machines,1,0,0.0,318
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"super(EbtablesLowLevelTestCase, self).setUp()",1,0,0.0,319
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def setUp(self):,1,0,0.0,320
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesLowLevelTestCase(base.BaseSudoTestCase):,1,0,0.0,321
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-j neutron-nwfilter-spoofing-fallb\n""",1,0,0.0,322
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.assertFalse(ebtables_supported()),1,0,0.0,323
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-P', 'OUTPUT', 'ACCEPT']),",1,0,0.0,324
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.assertTrue(ebtables_supported()),1,0,0.0,325
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-FORWARD', '-P', 'ACCEPT']),",1,0,0.0,326
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-OUTPUT', '-P', 'ACCEPT']),",1,0,0.0,327
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-spoofing-fallb', '-P', 'ACCEPT']),",1,0,0.0,328
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-P', 'FORWARD', 'ACCEPT']),",1,0,0.0,329
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-P', 'INPUT', 'ACCEPT']),",1,0,0.0,330
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['--atomic-init']),",1,0,0.0,331
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(""*filter\n""",1,0,0.0,332
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_all_together(self):,1,0,0.0,333
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-N', 'foobar', '-P', 'ACCEPT'])],",1,0,0.0,334
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_chain(self):,1,0,0.0,335
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"['-A', 'INPUT', '-j', 'neutron-nwfilter-INPUT'])],",1,0,0.0,336
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter',",1,0,0.0,337
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_rule(self):,1,0,0.0,338
+2414834ffeb8ba7ce2401236d01c88702fec5a14,res),1,0,0.0,339
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_filtering(self):,1,0,0.0,340
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['--atomic-commit'])],",1,0,0.0,341
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-INPUT', '-P', 'ACCEPT']),",1,0,0.0,342
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'INPUT', '-j', 'neutron-nwfilter-INPUT']),",1,0,0.0,343
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_sanity_check(self):,1,0,0.0,344
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'OUTPUT', '-j', 'neutron-nwfilter-OUTPUT']),",1,0,0.0,345
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"super(EbtablesDriverTestCase, self).setUp()",1,0,0.0,346
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesDriverTestCase(base.BaseTestCase):,1,0,0.0,347
+2414834ffeb8ba7ce2401236d01c88702fec5a14,'COMMIT'],1,0,0.0,348
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"':OUTPUT ACCEPT',",1,0,0.0,349
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"':FORWARD ACCEPT',",1,0,0.0,350
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"':INPUT ACCEPT',",1,0,0.0,351
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'Bridge chain: OUTPUT, entries: 1, policy: ACCEPT\n'",1,0,0.0,352
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'Bridge chain: FORWARD, entries: 1, policy: ACCEPT\n'",1,0,0.0,353
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'Bridge chain: INPUT, entries: 1, policy: ACCEPT\n'",1,0,0.0,354
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_save_and_restore(self):,1,0,0.0,355
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesDriverLowLevelOutputTestCase(base.BaseTestCase):,1,0,0.0,356
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(expected_res, observed_res)",1,0,0.0,357
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['--atomic-commit'])]",1,0,0.0,358
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'neutron-nwfilter-spoofing-fallb', '-j', 'DROP']),",1,0,0.0,359
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'FORWARD', '-j', 'neutron-nwfilter-FORWARD']),",1,0,0.0,360
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def _test_basic_port_filter_correct_mac(self):,1,0,0.0,361
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-spoofing-fallb', '-P', 'ACCEPT']),",1,0,0.0,362
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self._test_basic_port_filter_wrong_mac(),1,0,0.0,363
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'neutron-nwfilter-spoofing-fallb', '-j', 'DROP']),",1,0,0.0,364
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'OUTPUT', '-j', 'neutron-nwfilter-OUTPUT']),",1,0,0.0,365
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'INPUT', '-j', 'neutron-nwfilter-INPUT']),",1,0,0.0,366
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-FORWARD', '-P', 'ACCEPT']),",1,0,0.0,367
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-INPUT', '-P', 'ACCEPT']),",1,0,0.0,368
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-N', 'neutron-nwfilter-OUTPUT', '-P', 'ACCEPT']),",1,0,0.0,369
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-P', 'OUTPUT', 'ACCEPT']),",1,0,0.0,370
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-P', 'FORWARD', 'ACCEPT']),",1,0,0.0,371
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-P', 'INPUT', 'ACCEPT']),",1,0,0.0,372
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['--atomic-init']),",1,0,0.0,373
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(""*filter\n""",1,0,0.0,374
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_all_together(self):,1,0,0.0,375
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-N', 'foobar', '-P', 'ACCEPT'])],",1,0,0.0,376
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_chain(self):,1,0,0.0,377
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"['-A', 'INPUT', '-j', 'neutron-nwfilter-INPUT'])],",1,0,0.0,378
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter',",1,0,0.0,379
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['-A', 'FORWARD', '-j', 'neutron-nwfilter-FORWARD']),",1,0,0.0,380
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"(TNAME, ['--atomic-commit'])]",1,0,0.0,381
+2414834ffeb8ba7ce2401236d01c88702fec5a14,res),1,0,0.0,382
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(expected_res, observed_res)",1,0,0.0,383
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_commit(self):,1,0,0.0,384
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.execute.assert_has_calls([mock.call(['ebtables', '--version'])])",1,0,0.0,385
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.assertTrue(ebtables_supported()),1,0,0.0,386
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_sanity_check(self):,1,0,0.0,387
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"super(EbtablesDriverTestCase, self).setUp()",1,0,0.0,388
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesDriverTestCase(base.BaseTestCase):,1,0,0.0,389
+2414834ffeb8ba7ce2401236d01c88702fec5a14,'COMMIT'],1,0,0.0,390
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"':OUTPUT ACCEPT',",1,0,0.0,391
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"':FORWARD ACCEPT',",1,0,0.0,392
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"':INPUT ACCEPT',",1,0,0.0,393
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'Bridge chain: OUTPUT, entries: 1, policy: ACCEPT\n'",1,0,0.0,394
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'Bridge chain: FORWARD, entries: 1, policy: ACCEPT\n'",1,0,0.0,395
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'Bridge chain: INPUT, entries: 1, policy: ACCEPT\n'",1,0,0.0,396
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_save_and_restore(self):,1,0,0.0,397
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesDriverLowLevelOutputTestCase(base.BaseTestCase):,1,0,0.0,398
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_rule(self):,1,0,0.0,399
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['--atomic-commit'])],",1,0,0.0,400
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self._test_basic_port_filter_correct_mac(),1,0,0.0,401
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab', ['-N', 'neutron-nwfilter-OUTPUT', '-P', 'ACCEPT'])),",1,0,0.0,402
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_match_chain_name(self):,1,0,0.0,403
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab', ['foobar', '-C', 'BAR', '2', '3', '-j', 'BLAH'])]),",1,0,0.0,404
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"[('mytab', ['foobar', '-A', 'BAR', '-j', 'BLAH']),",1,0,0.0,405
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab',",1,0,0.0,406
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.assertEqual(,1,0,0.0,407
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_rule_line(""mytab"", rule_line))",1,0,0.0,408
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(('mytab', [('mytab', ['foobar', 'blah', 'bar'])]),",1,0,0.0,409
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual((None, None), eb._match_rule_line(None, ""foo""))",1,0,0.0,410
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_match_rule_line(self):,1,0,0.0,411
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesDriverLowLevelInputTestCase(base.BaseTestCase):,1,0,0.0,412
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests import base,1,0,0.0,413
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.cmd.sanity.checks import ebtables_supported,1,0,0.0,414
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.agent.linux import ebtables_driver as eb,1,0,0.0,415
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from oslo_config import cfg,1,0,0.0,416
+2414834ffeb8ba7ce2401236d01c88702fec5a14,import mock,1,0,0.0,417
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual((None, None), eb._match_chain_name(None, None, ""foo""))",1,0,0.0,418
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_chain_name(""mytab"", tables, rule_line))",1,0,0.0,419
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual([('filter', ['--atomic-init']),",1,0,0.0,420
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab', ['-P', 'neutron-nwfilter-OUTPUT', 'ACCEPT'])),",1,0,0.0,421
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_commit(self):,1,0,0.0,422
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual([('filter', ['--atomic-init'])], res)",1,0,0.0,423
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_start(self):,1,0,0.0,424
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(list(), res)",1,0,0.0,425
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""# We just had an empty line.\n"")",1,0,0.0,426
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""\n""",1,0,0.0,427
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_comment(self):,1,0,0.0,428
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_commit_statement(""mytab"", rule_line))",1,0,0.0,429
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(('mytab', ['--atomic-commit']),",1,0,0.0,430
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(None, eb._match_commit_statement(None, ""foo""))",1,0,0.0,431
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_commit_statement(self):,1,0,0.0,432
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_table_name(""mytab"", rule_line))",1,0,0.0,433
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(('filter', ('filter', ['--atomic-init'])),",1,0,0.0,434
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual((None, None), eb._match_table_name(None, ""foo""))",1,0,0.0,435
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_match_table_name(self):,1,0,0.0,436
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual([('filter', ['--atomic-init']),",1,0,0.0,437
+2414834ffeb8ba7ce2401236d01c88702fec5a14,CONF.register_opts(ebtables_opts),1,0,0.0,438
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual([('filter', ['--atomic-init'])], res)",1,0,0.0,439
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['--atomic-commit'])",1,0,0.0,440
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-A', 'FORWARD', '-j', 'neutron-nwfilter-FORWARD'])",1,0,0.0,441
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-A', 'OUTPUT', '-j', 'neutron-nwfilter-OUTPUT'])",1,0,0.0,442
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-A', 'INPUT', '-j', 'neutron-nwfilter-INPUT'])",1,0,0.0,443
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-N', 'neutron-nwfilter-FORWARD', '-P', 'ACCEPT'])",1,0,0.0,444
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-N', 'neutron-nwfilter-INPUT', '-P', 'ACCEPT'])",1,0,0.0,445
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-N', 'neutron-nwfilter-OUTPUT', '-P', 'ACCEPT'])",1,0,0.0,446
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-N', 'neutron-nwfilter-spoofing-fallb', '-P', 'ACCEPT'])",1,0,0.0,447
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-P', 'OUTPUT', 'ACCEPT'])",1,0,0.0,448
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-P', 'FORWARD', 'ACCEPT'])",1,0,0.0,449
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-P', 'INPUT', 'ACCEPT'])",1,0,0.0,450
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['--atomic-init'])",1,0,0.0,451
+2414834ffeb8ba7ce2401236d01c88702fec5a14,... produces this output:,1,0,0.0,452
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"For example, this input:",1,0,0.0,453
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"The function prepares and returns a list of tuples, each tuple consisting",1,0,0.0,454
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables-save?format=raw,1,0,0.0,455
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('filter', ['-A', 'neutron-nwfilter-spoofing-fallb', '-j', 'DROP'])",1,0,0.0,456
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'nat': ['PREROUTING', 'OUTPUT', 'POSTROUTING'],",1,0,0.0,457
+2414834ffeb8ba7ce2401236d01c88702fec5a14,http://sourceforge.net/p/ebtables/code/ci/,1,0,0.0,458
+2414834ffeb8ba7ce2401236d01c88702fec5a14,'broute': ['BROUTING']},1,0,0.0,459
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def ebtables_save(execute, tables_names, namespace=None):",1,0,0.0,460
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"@utils.synchronized('ebtables', external=True)",1,0,0.0,461
+2414834ffeb8ba7ce2401236d01c88702fec5a14,of ebtables arguments.,1,0,0.0,462
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"Similar to run(), but runs ebtables for every element in arg_list.",1,0,0.0,463
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Run ebtables utility multiple times.",1,0,0.0,464
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def run_ebtables_multiple(namespace, execute, arg_list):",1,0,0.0,465
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if namespace:,1,0,0.0,466
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if CONF.ebtables_path:,1,0,0.0,467
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Run ebtables utility, with retry if necessary.",1,0,0.0,468
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def _cmd_retry(func, *args, **kwargs):",1,0,0.0,469
+2414834ffeb8ba7ce2401236d01c88702fec5a14,stop_max_delay=10000),1,0,0.0,470
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"@retry(wait_exponential_multiplier=1000, wait_exponential_max=10000,",1,0,0.0,471
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables_args.append(res),1,0,0.0,472
+2414834ffeb8ba7ce2401236d01c88702fec5a14,ebtables_args.extend(res),1,0,0.0,473
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if res:,1,0,0.0,474
+2414834ffeb8ba7ce2401236d01c88702fec5a14,3730ceb7c0a81781679321bfbf9eaa39cfcfb04e/tree/userspace/ebtables2/,1,0,0.0,475
+2414834ffeb8ba7ce2401236d01c88702fec5a14,Was based on:,1,0,0.0,476
+2414834ffeb8ba7ce2401236d01c88702fec5a14,Based on:,1,0,0.0,477
+2414834ffeb8ba7ce2401236d01c88702fec5a14,format for setting new rules.,1,0,0.0,478
+2414834ffeb8ba7ce2401236d01c88702fec5a14,*filter,1,0,0.0,479
+2414834ffeb8ba7ce2401236d01c88702fec5a14,The output then will be:,1,0,0.0,480
+2414834ffeb8ba7ce2401236d01c88702fec5a14,into ebtables rules.,1,0,0.0,481
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def _process_ebtables_output(lines):,1,0,0.0,482
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"r',[\s]*pcnt[\s]*=[\s]*([0-9]+)[\s]*--[\s]*bcnt[\s]*=[\s]*([0-9]+)$')",1,0,0.0,483
+2414834ffeb8ba7ce2401236d01c88702fec5a14,r'policy:[\s]*([A-Z]+)$'),1,0,0.0,484
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"r'^Bridge chain:[\s]*(.*),[\s]*entries:[\s]*[0-9]+,[\s]*'",1,0,0.0,485
+2414834ffeb8ba7ce2401236d01c88702fec5a14,],1,0,0.0,486
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"default='$state_path/ebtables-',",1,0,0.0,487
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"cfg.StrOpt('ebtables_path',",1,0,0.0,488
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.common import utils,1,0,0.0,489
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from oslo_log import log as logging,1,0,0.0,490
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from oslo_config import cfg,1,0,0.0,491
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from retrying import retry,1,0,0.0,492
+2414834ffeb8ba7ce2401236d01c88702fec5a14,import re,1,0,0.0,493
+2414834ffeb8ba7ce2401236d01c88702fec5a14,COMMIT,1,0,0.0,494
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""",1,0,0.0,495
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Import text ebtables rules. Similar to iptables-restore.",1,0,0.0,496
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if _RE_FIND_COMMENTS_AND_BLANKS.search(line):,1,0,0.0,497
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def _process_ebtables_input(lines):,1,0,0.0,498
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def _match_commit_statement(table, line):",1,0,0.0,499
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def _match_table_name(table, line):",1,0,0.0,500
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if match.group(1) not in tables[table]:,1,0,0.0,501
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def _match_chain_name(table, tables, line):",1,0,0.0,502
+2414834ffeb8ba7ce2401236d01c88702fec5a14,else:,1,0,0.0,503
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"res.append((table, args))",1,0,0.0,504
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if int(match.group(1)) > 0 and int(match.group(2)) > 0:,1,0,0.0,505
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def _match_rule_line(table, line):",1,0,0.0,506
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"chains.append(':%s %s' % (match.group(1), match.group(2)))",1,0,0.0,507
+2414834ffeb8ba7ce2401236d01c88702fec5a14,if match:,1,0,0.0,508
+2414834ffeb8ba7ce2401236d01c88702fec5a14,line[:match.start()].strip())),1,0,0.0,509
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"chain,",1,0,0.0,510
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"match.group(2),",1,0,0.0,511
+2414834ffeb8ba7ce2401236d01c88702fec5a14,continue,1,0,0.0,512
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""""""Generate text output of the ebtables rules.",1,0,0.0,513
+2414834ffeb8ba7ce2401236d01c88702fec5a14,http://sourceforge.net/p/ebtables/code/ci/master/tree/userspace/ebtables2/,1,0,0.0,514
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_start(self):,1,0,0.0,515
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab', ['foobar', '-C', 'BAR', '2', '3', '-j', 'BLAH'])]),",1,0,0.0,516
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab',",1,0,0.0,517
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.assertEqual(,1,0,0.0,518
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_rule_line(""mytab"", rule_line))",1,0,0.0,519
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(('mytab', [('mytab', ['foobar', 'blah', 'bar'])]),",1,0,0.0,520
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual((None, None), eb._match_rule_line(None, ""foo""))",1,0,0.0,521
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_match_rule_line(self):,1,0,0.0,522
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesDriverLowLevelInputTestCase(base.BaseTestCase):,1,0,0.0,523
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests import base,1,0,0.0,524
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.cmd.sanity.checks import ebtables_supported,1,0,0.0,525
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.agent.linux import ebtables_driver as eb,1,0,0.0,526
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from oslo_config import cfg,1,0,0.0,527
+2414834ffeb8ba7ce2401236d01c88702fec5a14,import mock,1,0,0.0,528
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self._test_basic_port_filter_correct_mac(),1,0,0.0,529
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self._test_basic_port_filter_wrong_mac(),1,0,0.0,530
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_filtering(self):,1,0,0.0,531
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"[('mytab', ['foobar', '-A', 'BAR', '-j', 'BLAH']),",1,0,0.0,532
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_match_chain_name(self):,1,0,0.0,533
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.assert_ping(self.destination.ip),1,0,0.0,534
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual((None, None), eb._match_chain_name(None, None, ""foo""))",1,0,0.0,535
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(list(), res)",1,0,0.0,536
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""# We just had an empty line.\n"")",1,0,0.0,537
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""\n""",1,0,0.0,538
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_ebtables_input_parse_comment(self):,1,0,0.0,539
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_commit_statement(""mytab"", rule_line))",1,0,0.0,540
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(('mytab', ['--atomic-commit']),",1,0,0.0,541
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(None, eb._match_commit_statement(None, ""foo""))",1,0,0.0,542
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_commit_statement(self):,1,0,0.0,543
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_table_name(""mytab"", rule_line))",1,0,0.0,544
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual(('filter', ('filter', ['--atomic-init'])),",1,0,0.0,545
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"self.assertEqual((None, None), eb._match_table_name(None, ""foo""))",1,0,0.0,546
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def test_match_table_name(self):,1,0,0.0,547
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab', ['-P', 'neutron-nwfilter-OUTPUT', 'ACCEPT'])),",1,0,0.0,548
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"eb._match_chain_name(""mytab"", tables, rule_line))",1,0,0.0,549
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"('mytab', ['-N', 'neutron-nwfilter-OUTPUT', '-P', 'ACCEPT'])),",1,0,0.0,550
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def _test_basic_port_filter_correct_mac(self):,1,0,0.0,551
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"ebtables_driver.ebtables_restore(NO_FILTER_APPLY,",1,0,0.0,552
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"t, ['-L', '--Lc']).splitlines() for t in tables_names)",1,0,0.0,553
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-isome-port-id ACCEPT\n""",1,0,0.0,554
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-spoofing-fallb ACCEPT\n""",1,0,0.0,555
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-FORWARD ACCEPT\n""",1,0,0.0,556
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-INPUT ACCEPT\n""",1,0,0.0,557
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-OUTPUT ACCEPT\n""",1,0,0.0,558
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":OUTPUT ACCEPT\n""",1,0,0.0,559
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":FORWARD ACCEPT\n""",1,0,0.0,560
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":INPUT ACCEPT\n""",1,0,0.0,561
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""*filter\n""",1,0,0.0,562
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests.functional import base,1,0,0.0,563
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests.common import net_helpers,1,0,0.0,564
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.tests.common import machine_fixtures,1,0,0.0,565
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.agent.linux import ebtables_driver,1,0,0.0,566
+2414834ffeb8ba7ce2401236d01c88702fec5a14,from neutron.agent.linux import bridge_lib,1,0,0.0,567
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"run_ebtables_multiple(namespace, execute, ebtables_args)",1,0,0.0,568
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"def ebtables_restore(lines, execute, namespace=None):",1,0,0.0,569
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""COMMIT"")",1,0,0.0,570
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-i-arp-some-por ACCEPT\n""",1,0,0.0,571
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.assert_no_ping(self.destination.ip),1,0,0.0,572
+2414834ffeb8ba7ce2401236d01c88702fec5a14,""":neutron-nwfilter-i-ip-some-port ACCEPT\n""",1,0,0.0,573
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.execute),1,0,0.0,574
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"ebtables_driver.ebtables_restore(filter_apply,",1,0,0.0,575
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def _test_basic_port_filter_wrong_mac(self):,1,0,0.0,576
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge.addr.add(self.source.ip_cidr),1,0,0.0,577
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge.link.set_up(),1,0,0.0,578
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.source.port.addr.delete(self.source.ip_cidr),1,0,0.0,579
+2414834ffeb8ba7ce2401236d01c88702fec5a14,dev_mybridge.addif(self.source.port.name),1,0,0.0,580
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"'mybridge', self.source.namespace)",1,0,0.0,581
+2414834ffeb8ba7ce2401236d01c88702fec5a14,machine_fixtures.PeerMachines(bridge)).machines,1,0,0.0,582
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"super(EbtablesLowLevelTestCase, self).setUp()",1,0,0.0,583
+2414834ffeb8ba7ce2401236d01c88702fec5a14,def setUp(self):,1,0,0.0,584
+2414834ffeb8ba7ce2401236d01c88702fec5a14,class EbtablesLowLevelTestCase(base.BaseSudoTestCase):,1,0,0.0,585
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-j neutron-nwfilter-spoofing-fallb\n""",1,0,0.0,586
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-j ACCEPT\n""",1,0,0.0,587
+2414834ffeb8ba7ce2401236d01c88702fec5a14,"""-p arp --arp-opcode 2 --arp-mac-src %(mac_addr)s """,1,0,0.0,588
+2414834ffeb8ba7ce2401236d01c88702fec5a14,self.assertFalse(ebtables_supported()),1,0,0.0,589

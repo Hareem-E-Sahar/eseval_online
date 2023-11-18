@@ -1,0 +1,88 @@
+commit_id,line,line_level_label,count,line_score,row
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Map<String, String> envs = getEnvironmentVariableProperties();",1,4,1.0,1
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Map<String, String> envs = getEnvironmentVariableProperties();",1,4,1.0,2
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Map<String, String> envs = getExportedEnvironmentVariables();",0,4,1.0,3
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Map<String, String> answer = new TreeMap<>();",0,3,0.75,4
+1302566811aeffbc515b9aa5b75906b41e2fe147,String name = entry.getKey();,0,3,0.75,5
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Map<String, String> map = toMap(properties);",0,3,0.75,6
+1302566811aeffbc515b9aa5b75906b41e2fe147,"throw new MojoExecutionException(""Failed to load environment variable json schema files: "" + e, e);",0,2,0.5,7
+1302566811aeffbc515b9aa5b75906b41e2fe147,"@Parameter(defaultValue = ""${project}"", readonly = true)",0,2,0.5,8
+1302566811aeffbc515b9aa5b75906b41e2fe147,"public Map<String, String> getEnvironmentVariableProperties() {",1,2,0.5,9
+1302566811aeffbc515b9aa5b75906b41e2fe147,Properties properties = new Properties();,0,2,0.5,10
+1302566811aeffbc515b9aa5b75906b41e2fe147,"@Parameter(property = ""fabric8.envFile"", defaultValue = ""${basedir}/src/main/fabric8/env.properties"")",0,2,0.5,11
+1302566811aeffbc515b9aa5b75906b41e2fe147,"public Map<String, String> getEnvironmentVariableProperties() throws MojoExecutionException {",0,2,0.5,12
+1302566811aeffbc515b9aa5b75906b41e2fe147,String value = entry.getValue().getDefaultValue();,0,2,0.5,13
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Set<Map.Entry<String, JsonSchemaProperty>> entries = properties.entrySet();",0,2,0.5,14
+1302566811aeffbc515b9aa5b75906b41e2fe147,"Map<String, JsonSchemaProperty> properties = schema.getProperties();",0,2,0.5,15
+1302566811aeffbc515b9aa5b75906b41e2fe147,"public Map<String, String> getExportedEnvironmentVariables() throws MojoExecutionException {",0,2,0.5,16
+1302566811aeffbc515b9aa5b75906b41e2fe147,"@Parameter(property = ""fabric8.includeAllEnvironmentVariables"", defaultValue = ""true"")",0,2,0.5,17
+1302566811aeffbc515b9aa5b75906b41e2fe147,* Whether the plugin should discover all the environment variable json schema files in the classpath and export those into the generated kubernetes JSON,0,2,0.5,18
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.kubernetes.api.model.HasMetadata;,1,1,0.25,19
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.maven.support.JsonSchema;,0,1,0.25,20
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.maven.support.JsonSchemas;,0,1,0.25,21
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.openshift.api.model.template.Template;,0,1,0.25,22
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.utils.Files;,0,1,0.25,23
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.utils.Strings;,0,1,0.25,24
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.plugin.MojoExecutionException;,0,1,0.25,25
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.plugins.annotations.Parameter;,0,1,0.25,26
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.project.MavenProject;,0,1,0.25,27
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.kubernetes.api.KubernetesHelper;,1,1,0.25,28
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.plugins.annotations.Component;,1,1,0.25,29
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.maven.support.JsonSchema;,1,1,0.25,30
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.maven.support.JsonSchemas;,1,1,0.25,31
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.openshift.api.model.template.Template;,1,1,0.25,32
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.utils.Files;,1,1,0.25,33
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.utils.Strings;,1,1,0.25,34
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.plugin.AbstractMojo;,1,1,0.25,35
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.plugin.MojoExecutionException;,1,1,0.25,36
+1302566811aeffbc515b9aa5b75906b41e2fe147,},0,1,0.25,37
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.plugins.annotations.Parameter;,1,1,0.25,38
+1302566811aeffbc515b9aa5b75906b41e2fe147,import org.apache.maven.project.MavenProject;,1,1,0.25,39
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.kubernetes.api.KubernetesHelper;,0,1,0.25,40
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.kubernetes.api.model.HasMetadata;,0,1,0.25,41
+1302566811aeffbc515b9aa5b75906b41e2fe147,"throw new MojoExecutionException(""Failed to load environment properties file: "" + envPropertiesFile + "". "" + e, e);",0,1,0.25,42
+1302566811aeffbc515b9aa5b75906b41e2fe147,private boolean includeAllEnvironmentVariables;,0,1,0.25,43
+1302566811aeffbc515b9aa5b75906b41e2fe147,} catch (IOException e) {,0,1,0.25,44
+1302566811aeffbc515b9aa5b75906b41e2fe147,JsonSchema schema = getEnvironmentVariableJsonSchema();,0,1,0.25,45
+1302566811aeffbc515b9aa5b75906b41e2fe147,import java.util.StringTokenizer;,1,1,0.25,46
+1302566811aeffbc515b9aa5b75906b41e2fe147,"JsonSchema schema = JsonSchemas.loadEnvironmentSchemas(getCompileClassLoader(), getProject().getBuild().getOutputDirectory());",1,1,0.25,47
+1302566811aeffbc515b9aa5b75906b41e2fe147,"getLog().warn(""No environment schemas found for file: "" + JsonSchemas.ENVIRONMENT_SCHEMA_FILE);",1,1,0.25,48
+1302566811aeffbc515b9aa5b75906b41e2fe147,} else {,1,1,0.25,49
+1302566811aeffbc515b9aa5b75906b41e2fe147,},1,1,0.25,50
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.maven.support.JsonSchema;,0,1,0.25,51
+1302566811aeffbc515b9aa5b75906b41e2fe147,import io.fabric8.maven.support.JsonSchemaProperty;,0,1,0.25,52
+1302566811aeffbc515b9aa5b75906b41e2fe147,import java.util.TreeMap;,0,1,0.25,53
+1302566811aeffbc515b9aa5b75906b41e2fe147,"JsonSchemas.addEnvironmentVariables(schema, envs);",1,1,0.25,54
+1302566811aeffbc515b9aa5b75906b41e2fe147,JsonSchema schema = getEnvironmentVariableJsonSchema();,0,1,0.25,55
+1302566811aeffbc515b9aa5b75906b41e2fe147,} else {,0,1,0.25,56
+1302566811aeffbc515b9aa5b75906b41e2fe147,"for (Map.Entry<String, JsonSchemaProperty> entry : entries) {",0,1,0.25,57
+1302566811aeffbc515b9aa5b75906b41e2fe147,import static io.fabric8.utils.PropertiesHelper.toMap;,0,1,0.25,58
+1302566811aeffbc515b9aa5b75906b41e2fe147,import java.util.Properties;,0,1,0.25,59
+1302566811aeffbc515b9aa5b75906b41e2fe147,import java.io.FileInputStream;,0,1,0.25,60
+1302566811aeffbc515b9aa5b75906b41e2fe147,* The properties file used to specify environment variables which allows ${FOO_BAR} expressions to be used,0,1,0.25,61
+1302566811aeffbc515b9aa5b75906b41e2fe147,} catch (IOException e) {,0,1,0.25,62
+1302566811aeffbc515b9aa5b75906b41e2fe147,},0,1,0.25,63
+1302566811aeffbc515b9aa5b75906b41e2fe147,"value = """";",0,1,0.25,64
+1302566811aeffbc515b9aa5b75906b41e2fe147,return getEnvironmentVariableProperties();,0,0,0.0,65
+1302566811aeffbc515b9aa5b75906b41e2fe147,answer.putAll(map);,0,0,0.0,66
+1302566811aeffbc515b9aa5b75906b41e2fe147,properties.load(new FileInputStream(envPropertiesFile));,0,0,0.0,67
+1302566811aeffbc515b9aa5b75906b41e2fe147,try {,0,0,0.0,68
+1302566811aeffbc515b9aa5b75906b41e2fe147,// lets override with these values,0,0,0.0,69
+1302566811aeffbc515b9aa5b75906b41e2fe147,if (envPropertiesFile != null && envPropertiesFile.isFile() && envPropertiesFile.exists()) {,0,0,0.0,70
+1302566811aeffbc515b9aa5b75906b41e2fe147,protected File envPropertiesFile;,0,0,0.0,71
+1302566811aeffbc515b9aa5b75906b41e2fe147,*/,0,0,0.0,72
+1302566811aeffbc515b9aa5b75906b41e2fe147,* without any Maven property expansion,0,0,0.0,73
+1302566811aeffbc515b9aa5b75906b41e2fe147,/**,0,0,0.0,74
+1302566811aeffbc515b9aa5b75906b41e2fe147,public List<EnvVar> getEnvironmentVariables() {,1,0,0.0,75
+1302566811aeffbc515b9aa5b75906b41e2fe147,displaySchema(schema);,0,0,0.0,76
+1302566811aeffbc515b9aa5b75906b41e2fe147,return answer;,0,0,0.0,77
+1302566811aeffbc515b9aa5b75906b41e2fe147,"answer.put(name, value);",0,0,0.0,78
+1302566811aeffbc515b9aa5b75906b41e2fe147,if (value == null) {,0,0,0.0,79
+1302566811aeffbc515b9aa5b75906b41e2fe147,try {,0,0,0.0,80
+1302566811aeffbc515b9aa5b75906b41e2fe147,if (includeAllEnvironmentVariables) {,0,0,0.0,81
+1302566811aeffbc515b9aa5b75906b41e2fe147,public List<EnvVar> getEnvironmentVariables() throws MojoExecutionException {,0,0,0.0,82
+1302566811aeffbc515b9aa5b75906b41e2fe147,*/,0,0,0.0,83
+1302566811aeffbc515b9aa5b75906b41e2fe147,/**,0,0,0.0,84
+1302566811aeffbc515b9aa5b75906b41e2fe147,displaySchema(schema);,1,0,0.0,85
+1302566811aeffbc515b9aa5b75906b41e2fe147,if (schema == null) {,1,0,0.0,86
+1302566811aeffbc515b9aa5b75906b41e2fe147,@Component,1,0,0.0,87

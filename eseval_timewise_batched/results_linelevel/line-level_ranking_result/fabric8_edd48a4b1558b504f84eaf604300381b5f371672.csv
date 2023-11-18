@@ -1,0 +1,492 @@
+commit_id,line,line_level_label,count,line_score,row
+edd48a4b1558b504f84eaf604300381b5f371672,// only use the value if a value was set (and the value is not the same as the default value),0,11,1.0,1
+edd48a4b1558b504f84eaf604300381b5f371672,// only use the value if a value was set (and the value is not the same as the default value),1,11,1.0,2
+edd48a4b1558b504f84eaf604300381b5f371672,// if we have a line number then use that to edit the existing value,1,8,0.7272727272727273,3
+edd48a4b1558b504f84eaf604300381b5f371672,// do not add the value if it match the default value,0,7,0.6363636363636364,4
+edd48a4b1558b504f84eaf604300381b5f371672,// do not add the value if it match the default value,1,7,0.6363636363636364,5
+edd48a4b1558b504f84eaf604300381b5f371672,"// if we created a new endpoint, then insert a new line with the endpoint details",1,7,0.6363636363636364,6
+edd48a4b1558b504f84eaf604300381b5f371672,// find if we have the endpoint already,1,6,0.5454545454545454,7
+edd48a4b1558b504f84eaf604300381b5f371672,"* To find the closet node that we need to insert the endpoints before, so the Camel schema is valid.",1,6,0.5454545454545454,8
+edd48a4b1558b504f84eaf604300381b5f371672,// if its required then we need to grab the value,1,6,0.5454545454545454,9
+edd48a4b1558b504f84eaf604300381b5f371672,// if its required then we need to grab the value,0,6,0.5454545454545454,10
+edd48a4b1558b504f84eaf604300381b5f371672,// only use the value if a value was set,1,6,0.5454545454545454,11
+edd48a4b1558b504f84eaf604300381b5f371672,// only use the value if a value was set,1,6,0.5454545454545454,12
+edd48a4b1558b504f84eaf604300381b5f371672,// only use the value if a value was set,0,6,0.5454545454545454,13
+edd48a4b1558b504f84eaf604300381b5f371672,"// wonder if we should have better way, than a replaceFirst?",1,5,0.4545454545454546,14
+edd48a4b1558b504f84eaf604300381b5f371672,* Returns the optional String value of the given name,1,5,0.4545454545454546,15
+edd48a4b1558b504f84eaf604300381b5f371672,* Returns the mandatory String value of the given name,1,5,0.4545454545454546,16
+edd48a4b1558b504f84eaf604300381b5f371672,// if there is endpoints then the cut-off is after the last,1,5,0.4545454545454546,17
+edd48a4b1558b504f84eaf604300381b5f371672,// does the project already have camel?,1,5,0.4545454545454546,18
+edd48a4b1558b504f84eaf604300381b5f371672,// we do not want to change the current code formatting so we need to search,1,5,0.4545454545454546,19
+edd48a4b1558b504f84eaf604300381b5f371672,// does the project already have camel?,1,5,0.4545454545454546,20
+edd48a4b1558b504f84eaf604300381b5f371672,// skip values which are the same as the default value,0,5,0.4545454545454546,21
+edd48a4b1558b504f84eaf604300381b5f371672,// does the project already have camel?,0,5,0.4545454545454546,22
+edd48a4b1558b504f84eaf604300381b5f371672,if (value != null) {,1,4,0.36363636363636365,23
+edd48a4b1558b504f84eaf604300381b5f371672,* @throws IllegalArgumentException if the value is not available in the given attribute map,1,4,0.36363636363636365,24
+edd48a4b1558b504f84eaf604300381b5f371672,// if no endpoints then try to find cut-off according the XSD rules,1,4,0.36363636363636365,25
+edd48a4b1558b504f84eaf604300381b5f371672,// okay its an endpoint so if we can match by id attribute,1,4,0.36363636363636365,26
+edd48a4b1558b504f84eaf604300381b5f371672,"private Result editEndpointXml(List<String> lines, String lineNumber, String endpointUrl, String uri, FileResource file, String xml) {",1,4,0.36363636363636365,27
+edd48a4b1558b504f84eaf604300381b5f371672,"// we are in add mode, so parse dom to find <camelContext> and insert the endpoint where its needed",1,4,0.36363636363636365,28
+edd48a4b1558b504f84eaf604300381b5f371672,FileResource file = facet != null ? facet.getResource(xml) : null;,1,4,0.36363636363636365,29
+edd48a4b1558b504f84eaf604300381b5f371672,if (value != null) {,0,4,0.36363636363636365,30
+edd48a4b1558b504f84eaf604300381b5f371672,// lets find the camel component class,1,4,0.36363636363636365,31
+edd48a4b1558b504f84eaf604300381b5f371672,if (value != null) {,1,4,0.36363636363636365,32
+edd48a4b1558b504f84eaf604300381b5f371672,// lets find the camel component class,1,4,0.36363636363636365,33
+edd48a4b1558b504f84eaf604300381b5f371672,if (value != null) {,0,4,0.36363636363636365,34
+edd48a4b1558b504f84eaf604300381b5f371672,// lets find the camel component class,0,4,0.36363636363636365,35
+edd48a4b1558b504f84eaf604300381b5f371672,// to be safe that & is not already &amp; we need to revert it first,1,4,0.36363636363636365,36
+edd48a4b1558b504f84eaf604300381b5f371672,int idx = lineNumber != null ? Integer.valueOf(lineNumber) - 1 : 0;,1,3,0.2727272727272727,37
+edd48a4b1558b504f84eaf604300381b5f371672,String value = input.getValue().toString();,1,3,0.2727272727272727,38
+edd48a4b1558b504f84eaf604300381b5f371672,file = webResourcesFacet != null ? webResourcesFacet.getWebResource(xml) : null;,1,3,0.2727272727272727,39
+edd48a4b1558b504f84eaf604300381b5f371672,if (lineNumber != null) {,1,3,0.2727272727272727,40
+edd48a4b1558b504f84eaf604300381b5f371672,"private Result addEndpointXml(Document root, String endpointInstanceName, String uri, FileResource file, String xml) throws Exception {",1,3,0.2727272727272727,41
+edd48a4b1558b504f84eaf604300381b5f371672,if (root != null) {,1,3,0.2727272727272727,42
+edd48a4b1558b504f84eaf604300381b5f371672,if (camels != null && camels.getLength() == 1) {,1,3,0.2727272727272727,43
+edd48a4b1558b504f84eaf604300381b5f371672,if (method != null) {,1,3,0.2727272727272727,44
+edd48a4b1558b504f84eaf604300381b5f371672,if (endpointInstanceName != null) {,1,3,0.2727272727272727,45
+edd48a4b1558b504f84eaf604300381b5f371672,// add the endpoint as a field,1,3,0.2727272727272727,46
+edd48a4b1558b504f84eaf604300381b5f371672,// replace the unformatted class soure code,1,3,0.2727272727272727,47
+edd48a4b1558b504f84eaf604300381b5f371672,String name = found.getNodeName();,1,3,0.2727272727272727,48
+edd48a4b1558b504f84eaf604300381b5f371672,if (endpoint != null) {,1,3,0.2727272727272727,49
+edd48a4b1558b504f84eaf604300381b5f371672,"throw new IllegalArgumentException(""The attribute value '"" + name + ""' did not get passed on from the previous wizard page"");",1,3,0.2727272727272727,50
+edd48a4b1558b504f84eaf604300381b5f371672,// only execute if we are last,1,3,0.2727272727272727,51
+edd48a4b1558b504f84eaf604300381b5f371672,if (result != null) {,1,3,0.2727272727272727,52
+edd48a4b1558b504f84eaf604300381b5f371672,// replace uri with new value,1,3,0.2727272727272727,53
+edd48a4b1558b504f84eaf604300381b5f371672,if (inputs != null) {,1,3,0.2727272727272727,54
+edd48a4b1558b504f84eaf604300381b5f371672,"String uri = ""We need Camel 2.15.1"";",1,3,0.2727272727272727,55
+edd48a4b1558b504f84eaf604300381b5f371672,*  with the License.  You may obtain a copy of the License at,1,3,0.2727272727272727,56
+edd48a4b1558b504f84eaf604300381b5f371672,if (result != null) {,0,3,0.2727272727272727,57
+edd48a4b1558b504f84eaf604300381b5f371672,String value = input.getValue().toString();,0,3,0.2727272727272727,58
+edd48a4b1558b504f84eaf604300381b5f371672,"String uri = ""We need Camel 2.15.1"";",0,3,0.2727272727272727,59
+edd48a4b1558b504f84eaf604300381b5f371672,"String line = String.format(""Endpoint %s = endpoint(\""%s\"");\n\n"", endpointInstanceName, uri);",0,3,0.2727272727272727,60
+edd48a4b1558b504f84eaf604300381b5f371672,if (result != null) {,1,3,0.2727272727272727,61
+edd48a4b1558b504f84eaf604300381b5f371672,String value = input.getValue().toString();,1,3,0.2727272727272727,62
+edd48a4b1558b504f84eaf604300381b5f371672,// make sure to import the Camel endpoint,0,3,0.2727272727272727,63
+edd48a4b1558b504f84eaf604300381b5f371672,// make sure to import the Camel endpoint,1,3,0.2727272727272727,64
+edd48a4b1558b504f84eaf604300381b5f371672,"String line = String.format(""Endpoint %s = endpoint(\""%s\"");\n\n"", endpointInstanceName, uri);",1,3,0.2727272727272727,65
+edd48a4b1558b504f84eaf604300381b5f371672,String value = input.getValue().toString();,0,3,0.2727272727272727,66
+edd48a4b1558b504f84eaf604300381b5f371672,// add the endpoint as a field,0,3,0.2727272727272727,67
+edd48a4b1558b504f84eaf604300381b5f371672,// make sure to import the Camel endpoint,1,3,0.2727272727272727,68
+edd48a4b1558b504f84eaf604300381b5f371672,"String line = String.format(""Endpoint %s = endpoint(\""%s\"");\n\n"", endpointInstanceName, uri);",1,3,0.2727272727272727,69
+edd48a4b1558b504f84eaf604300381b5f371672,if (core == null) {,1,2,0.18181818181818182,70
+edd48a4b1558b504f84eaf604300381b5f371672,String line = lines.get(idx);,1,2,0.18181818181818182,71
+edd48a4b1558b504f84eaf604300381b5f371672,"// the list is 0-based, and line number is 1-based",1,2,0.18181818181818182,72
+edd48a4b1558b504f84eaf604300381b5f371672,if (file == null || !file.exists()) {,1,2,0.18181818181818182,73
+edd48a4b1558b504f84eaf604300381b5f371672,if (uri == null) {,1,2,0.18181818181818182,74
+edd48a4b1558b504f84eaf604300381b5f371672,"String uri = camelCatalog.asEndpointUriXml(camelComponentName, options, false);",1,2,0.18181818181818182,75
+edd48a4b1558b504f84eaf604300381b5f371672,String key = input.getName();,1,2,0.18181818181818182,76
+edd48a4b1558b504f84eaf604300381b5f371672,// collect all the options that was set,1,2,0.18181818181818182,77
+edd48a4b1558b504f84eaf604300381b5f371672,"result = ensureCamelArtifactIdAdded(project, details, dependencyInstaller);",1,2,0.18181818181818182,78
+edd48a4b1558b504f84eaf604300381b5f371672,"Result result = loadCamelComponentDetails(camelCatalog, camelComponentName, details);",1,2,0.18181818181818182,79
+edd48a4b1558b504f84eaf604300381b5f371672,"String xml = mandatoryAttributeValue(attributeMap, ""xml"");",1,2,0.18181818181818182,80
+edd48a4b1558b504f84eaf604300381b5f371672,ResourcesFacet facet = project.getFacet(ResourcesFacet.class);,1,2,0.18181818181818182,81
+edd48a4b1558b504f84eaf604300381b5f371672,Project project = getSelectedProject(context);,1,2,0.18181818181818182,82
+edd48a4b1558b504f84eaf604300381b5f371672,// since this is XML we need to escape & as &amp;,1,2,0.18181818181818182,83
+edd48a4b1558b504f84eaf604300381b5f371672,String endpointUrl = null;,1,2,0.18181818181818182,84
+edd48a4b1558b504f84eaf604300381b5f371672,String lineNumber = null;,1,2,0.18181818181818182,85
+edd48a4b1558b504f84eaf604300381b5f371672,// edit mode includes the existing uri and line number,1,2,0.18181818181818182,86
+edd48a4b1558b504f84eaf604300381b5f371672,String content = LineNumberHelper.linesToString(lines);,1,2,0.18181818181818182,87
+edd48a4b1558b504f84eaf604300381b5f371672,"String mode = mandatoryAttributeValue(attributeMap, ""mode"");",1,2,0.18181818181818182,88
+edd48a4b1558b504f84eaf604300381b5f371672,"String endpointInstanceName = optionalAttributeValue(attributeMap, ""instanceName"");",1,2,0.18181818181818182,89
+edd48a4b1558b504f84eaf604300381b5f371672,"String camelComponentName = optionalAttributeValue(attributeMap, ""componentName"");",1,2,0.18181818181818182,90
+edd48a4b1558b504f84eaf604300381b5f371672,// and save the file back,1,2,0.18181818181818182,91
+edd48a4b1558b504f84eaf604300381b5f371672,"String routeBuilder = mandatoryAttributeValue(attributeMap, ""routeBuilder"");",1,2,0.18181818181818182,92
+edd48a4b1558b504f84eaf604300381b5f371672,// The DOM api is so fucking terrible!,1,2,0.18181818181818182,93
+edd48a4b1558b504f84eaf604300381b5f371672,"boolean cdi = findCamelArtifactDependency(project, ""camel-cdi"") != null;",1,2,0.18181818181818182,94
+edd48a4b1558b504f84eaf604300381b5f371672,"String componentName, String group,",1,2,0.18181818181818182,95
+edd48a4b1558b504f84eaf604300381b5f371672,"public static String optionalAttributeValue(Map<Object, Object> attributeMap, String name) {",1,2,0.18181818181818182,96
+edd48a4b1558b504f84eaf604300381b5f371672,String text = value.toString();,1,2,0.18181818181818182,97
+edd48a4b1558b504f84eaf604300381b5f371672,Object value = attributeMap.get(name);,1,2,0.18181818181818182,98
+edd48a4b1558b504f84eaf604300381b5f371672,"public static String mandatoryAttributeValue(Map<Object, Object> attributeMap, String name) {",1,2,0.18181818181818182,99
+edd48a4b1558b504f84eaf604300381b5f371672,String find = Pattern.quote(endpointUrl);,1,2,0.18181818181818182,100
+edd48a4b1558b504f84eaf604300381b5f371672,"String endpointUrl = mandatoryAttributeValue(attributeMap, ""endpointUri"");",1,2,0.18181818181818182,101
+edd48a4b1558b504f84eaf604300381b5f371672,String code = clazz.toUnformattedString();,1,2,0.18181818181818182,102
+edd48a4b1558b504f84eaf604300381b5f371672,// make sure to import what we use,1,2,0.18181818181818182,103
+edd48a4b1558b504f84eaf604300381b5f371672,if (field == null) {,1,2,0.18181818181818182,104
+edd48a4b1558b504f84eaf604300381b5f371672,Node camel = camels.item(0);,1,2,0.18181818181818182,105
+edd48a4b1558b504f84eaf604300381b5f371672,// special for CDI as we use different set of annotations,1,2,0.18181818181818182,106
+edd48a4b1558b504f84eaf604300381b5f371672,if (existing == null || !existing.exists()) {,1,2,0.18181818181818182,107
+edd48a4b1558b504f84eaf604300381b5f371672,"String uri = camelCatalog.asEndpointUri(camelComponentName, options, false);",1,2,0.18181818181818182,108
+edd48a4b1558b504f84eaf604300381b5f371672,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,2,0.18181818181818182,109
+edd48a4b1558b504f84eaf604300381b5f371672,"String camelComponentName = mandatoryAttributeValue(attributeMap, ""componentName"");",1,2,0.18181818181818182,110
+edd48a4b1558b504f84eaf604300381b5f371672,"String line = String.format(""<endpoint id=\""%s\"" uri=\""%s\""/>"", endpointInstanceName, uri);",1,2,0.18181818181818182,111
+edd48a4b1558b504f84eaf604300381b5f371672,// empty so use <camelContext> node,1,2,0.18181818181818182,112
+edd48a4b1558b504f84eaf604300381b5f371672,if (found == null) {,1,2,0.18181818181818182,113
+edd48a4b1558b504f84eaf604300381b5f371672,"String id = child.getAttributes().getNamedItem(""id"").getNodeValue();",1,2,0.18181818181818182,114
+edd48a4b1558b504f84eaf604300381b5f371672,"String kind = mandatoryAttributeValue(attributeMap, ""kind"");",1,2,0.18181818181818182,115
+edd48a4b1558b504f84eaf604300381b5f371672,// we want to 1-based,1,2,0.18181818181818182,116
+edd48a4b1558b504f84eaf604300381b5f371672,if (core == null) {,0,2,0.18181818181818182,117
+edd48a4b1558b504f84eaf604300381b5f371672,String key = input.getName();,0,2,0.18181818181818182,118
+edd48a4b1558b504f84eaf604300381b5f371672,"String kind = mandatoryAttributeValue(attributeMap, ""kind"");",1,2,0.18181818181818182,119
+edd48a4b1558b504f84eaf604300381b5f371672,"String routeBuilder = mandatoryAttributeValue(attributeMap, ""routeBuilder"");",1,2,0.18181818181818182,120
+edd48a4b1558b504f84eaf604300381b5f371672,"String endpointInstanceName = mandatoryAttributeValue(attributeMap, ""instanceName"");",1,2,0.18181818181818182,121
+edd48a4b1558b504f84eaf604300381b5f371672,"String camelComponentName = mandatoryAttributeValue(attributeMap, ""componentName"");",1,2,0.18181818181818182,122
+edd48a4b1558b504f84eaf604300381b5f371672,"String xml = mandatoryAttributeValue(attributeMap, ""xml"");",0,2,0.18181818181818182,123
+edd48a4b1558b504f84eaf604300381b5f371672,// insert the endpoint code,0,2,0.18181818181818182,124
+edd48a4b1558b504f84eaf604300381b5f371672,String body = configure.getBody();,0,2,0.18181818181818182,125
+edd48a4b1558b504f84eaf604300381b5f371672,if (existing == null || !existing.exists()) {,0,2,0.18181818181818182,126
+edd48a4b1558b504f84eaf604300381b5f371672,// TODO: require Camel 2.15.1,0,2,0.18181818181818182,127
+edd48a4b1558b504f84eaf604300381b5f371672,// collect all the options that was set,0,2,0.18181818181818182,128
+edd48a4b1558b504f84eaf604300381b5f371672,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,2,0.18181818181818182,129
+edd48a4b1558b504f84eaf604300381b5f371672,"result = ensureCamelArtifactIdAdded(project, details, dependencyInstaller);",0,2,0.18181818181818182,130
+edd48a4b1558b504f84eaf604300381b5f371672,"Result result = loadCamelComponentDetails(camelComponentName, details);",0,2,0.18181818181818182,131
+edd48a4b1558b504f84eaf604300381b5f371672,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,0,2,0.18181818181818182,132
+edd48a4b1558b504f84eaf604300381b5f371672,Project project = getSelectedProject(context);,0,2,0.18181818181818182,133
+edd48a4b1558b504f84eaf604300381b5f371672,"String routeBuilder = mandatoryAttributeValue(attributeMap, ""routeBuilder"");",0,2,0.18181818181818182,134
+edd48a4b1558b504f84eaf604300381b5f371672,"String endpointInstanceName = mandatoryAttributeValue(attributeMap, ""instanceName"");",0,2,0.18181818181818182,135
+edd48a4b1558b504f84eaf604300381b5f371672,"String camelComponentName = mandatoryAttributeValue(attributeMap, ""componentName"");",0,2,0.18181818181818182,136
+edd48a4b1558b504f84eaf604300381b5f371672,"String kind = mandatoryAttributeValue(attributeMap, ""kind"");",0,2,0.18181818181818182,137
+edd48a4b1558b504f84eaf604300381b5f371672,*  implied.  See the License for the specific language governing,1,2,0.18181818181818182,138
+edd48a4b1558b504f84eaf604300381b5f371672,Project project = getSelectedProject(context);,1,2,0.18181818181818182,139
+edd48a4b1558b504f84eaf604300381b5f371672,// set the updated body,0,2,0.18181818181818182,140
+edd48a4b1558b504f84eaf604300381b5f371672,if (core == null) {,1,2,0.18181818181818182,141
+edd48a4b1558b504f84eaf604300381b5f371672,"boolean cdi = findCamelArtifactDependency(project, ""camel-cdi"") != null;",0,2,0.18181818181818182,142
+edd48a4b1558b504f84eaf604300381b5f371672,String content = LineNumberHelper.linesToString(lines);,1,2,0.18181818181818182,143
+edd48a4b1558b504f84eaf604300381b5f371672,// the line to add/update,1,2,0.18181818181818182,144
+edd48a4b1558b504f84eaf604300381b5f371672,String line = lines.get(i);,1,2,0.18181818181818182,145
+edd48a4b1558b504f84eaf604300381b5f371672,"String match = String.format(""Endpoint %s="", endpointInstanceName);",1,2,0.18181818181818182,146
+edd48a4b1558b504f84eaf604300381b5f371672,"Result result = loadCamelComponentDetails(camelComponentName, details);",1,2,0.18181818181818182,147
+edd48a4b1558b504f84eaf604300381b5f371672,// insert the endpoint code,1,2,0.18181818181818182,148
+edd48a4b1558b504f84eaf604300381b5f371672,String body = configure.getBody();,1,2,0.18181818181818182,149
+edd48a4b1558b504f84eaf604300381b5f371672,// make sure to import what we use,0,2,0.18181818181818182,150
+edd48a4b1558b504f84eaf604300381b5f371672,if (annotation == null) {,0,2,0.18181818181818182,151
+edd48a4b1558b504f84eaf604300381b5f371672,if (field == null) {,0,2,0.18181818181818182,152
+edd48a4b1558b504f84eaf604300381b5f371672,if (body == null) {,1,2,0.18181818181818182,153
+edd48a4b1558b504f84eaf604300381b5f371672,// special for CDI as we use different set of annotations,0,2,0.18181818181818182,154
+edd48a4b1558b504f84eaf604300381b5f371672,// insert the endpoint code,1,2,0.18181818181818182,155
+edd48a4b1558b504f84eaf604300381b5f371672,String body = configure.getBody();,1,2,0.18181818181818182,156
+edd48a4b1558b504f84eaf604300381b5f371672,if (existing == null || !existing.exists()) {,1,2,0.18181818181818182,157
+edd48a4b1558b504f84eaf604300381b5f371672,// TODO: require Camel 2.15.1,1,2,0.18181818181818182,158
+edd48a4b1558b504f84eaf604300381b5f371672,String key = input.getName();,1,2,0.18181818181818182,159
+edd48a4b1558b504f84eaf604300381b5f371672,"result = ensureCamelArtifactIdAdded(project, details, dependencyInstaller);",1,2,0.18181818181818182,160
+edd48a4b1558b504f84eaf604300381b5f371672,// set the updated body,1,2,0.18181818181818182,161
+edd48a4b1558b504f84eaf604300381b5f371672,// collect all the options that was set,1,2,0.18181818181818182,162
+edd48a4b1558b504f84eaf604300381b5f371672,for (int i = 0; i < camel.getChildNodes().getLength(); i++) {,1,1,0.09090909090909091,163
+edd48a4b1558b504f84eaf604300381b5f371672,"NodeList camels = root.getElementsByTagName(""camelContext"");",1,1,0.09090909090909091,164
+edd48a4b1558b504f84eaf604300381b5f371672,// TODO: what about 2+ camel's ?,1,1,0.09090909090909091,165
+edd48a4b1558b504f84eaf604300381b5f371672,Node camelContext = null;,1,1,0.09090909090909091,166
+edd48a4b1558b504f84eaf604300381b5f371672,boolean created = false;,1,1,0.09090909090909091,167
+edd48a4b1558b504f84eaf604300381b5f371672,// find existing by id,1,1,0.09090909090909091,168
+edd48a4b1558b504f84eaf604300381b5f371672,Node found = null;,1,1,0.09090909090909091,169
+edd48a4b1558b504f84eaf604300381b5f371672,Node child = camel.getChildNodes().item(i);,1,1,0.09090909090909091,170
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""camelContext"".equals(camel.getNodeName())) {",1,1,0.09090909090909091,171
+edd48a4b1558b504f84eaf604300381b5f371672,camelContext = camel;,1,1,0.09090909090909091,172
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""camelContext"".equals(child.getNodeName())) {",1,1,0.09090909090909091,173
+edd48a4b1558b504f84eaf604300381b5f371672,camelContext = child;,1,1,0.09090909090909091,174
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""endpoint"".equals(child.getNodeName())) {",1,1,0.09090909090909091,175
+edd48a4b1558b504f84eaf604300381b5f371672,if (endpointInstanceName.equals(id)) {,1,1,0.09090909090909091,176
+edd48a4b1558b504f84eaf604300381b5f371672,"line = StringHelper.replaceAll(line, endpointUrl, uri);",1,1,0.09090909090909091,177
+edd48a4b1558b504f84eaf604300381b5f371672,found = child;,1,1,0.09090909090909091,178
+edd48a4b1558b504f84eaf604300381b5f371672,String lineNumber;,1,1,0.09090909090909091,179
+edd48a4b1558b504f84eaf604300381b5f371672,"endpointUrl = StringHelper.replaceAll(endpointUrl, ""&"", ""&amp;"");",1,1,0.09090909090909091,180
+edd48a4b1558b504f84eaf604300381b5f371672,int idx = Integer.valueOf(lineNumber) - 1;,1,1,0.09090909090909091,181
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""The project does not include camel-core"");",1,1,0.09090909090909091,182
+edd48a4b1558b504f84eaf604300381b5f371672,int extraLines = 0;,1,1,0.09090909090909091,183
+edd48a4b1558b504f84eaf604300381b5f371672,"endpointUrl = StringHelper.replaceAll(endpointUrl, "">"", ""&gt;"");",1,1,0.09090909090909091,184
+edd48a4b1558b504f84eaf604300381b5f371672,WebResourcesFacet webResourcesFacet = null;,1,1,0.09090909090909091,185
+edd48a4b1558b504f84eaf604300381b5f371672,if (project.hasFacet(WebResourcesFacet.class)) {,1,1,0.09090909090909091,186
+edd48a4b1558b504f84eaf604300381b5f371672,webResourcesFacet = project.getFacet(WebResourcesFacet.class);,1,1,0.09090909090909091,187
+edd48a4b1558b504f84eaf604300381b5f371672,Dependency core = CamelProjectHelper.findCamelCoreDependency(project);,1,1,0.09090909090909091,188
+edd48a4b1558b504f84eaf604300381b5f371672,CamelComponentDetails details = new CamelComponentDetails();,1,1,0.09090909090909091,189
+edd48a4b1558b504f84eaf604300381b5f371672,Document root = XmlLineNumberParser.parseXml(file.getResourceInputStream());,1,1,0.09090909090909091,190
+edd48a4b1558b504f84eaf604300381b5f371672,// and make sure its dependency is added,1,1,0.09090909090909091,191
+edd48a4b1558b504f84eaf604300381b5f371672,"Map<String, String> options = new HashMap<String, String>();",1,1,0.09090909090909091,192
+edd48a4b1558b504f84eaf604300381b5f371672,"boolean matchDefault = isDefaultValue(camelCatalog, camelComponentName, key, value);",1,1,0.09090909090909091,193
+edd48a4b1558b504f84eaf604300381b5f371672,if (!matchDefault) {,1,1,0.09090909090909091,194
+edd48a4b1558b504f84eaf604300381b5f371672,} else if (input.isRequired() && input.hasDefaultValue()) {,1,1,0.09090909090909091,195
+edd48a4b1558b504f84eaf604300381b5f371672,List<String> lines = LineNumberHelper.readLines(file.getResourceInputStream());,1,1,0.09090909090909091,196
+edd48a4b1558b504f84eaf604300381b5f371672,int extraSpaces = 0;,1,1,0.09090909090909091,197
+edd48a4b1558b504f84eaf604300381b5f371672,if (updated) {,1,1,0.09090909090909091,198
+edd48a4b1558b504f84eaf604300381b5f371672,created = true;,1,1,0.09090909090909091,199
+edd48a4b1558b504f84eaf604300381b5f371672,Node found = camel.getChildNodes().item(i);,1,1,0.09090909090909091,200
+edd48a4b1558b504f84eaf604300381b5f371672,"if (!field.hasAnnotation(""org.apache.camel.EndpointInject"")) {",1,1,0.09090909090909091,201
+edd48a4b1558b504f84eaf604300381b5f371672,"annotation = field.getAnnotation(""org.apache.camel.EndpointInject"");",1,1,0.09090909090909091,202
+edd48a4b1558b504f84eaf604300381b5f371672,MethodSource<JavaClassSource> method = CamelJavaParserHelper.findConfigureMethod(clazz);,1,1,0.09090909090909091,203
+edd48a4b1558b504f84eaf604300381b5f371672,"code = code.replaceFirst(find, uri);",1,1,0.09090909090909091,204
+edd48a4b1558b504f84eaf604300381b5f371672,// use this code currently to save content unformatted,1,1,0.09090909090909091,205
+edd48a4b1558b504f84eaf604300381b5f371672,Node endpoint = null;,1,1,0.09090909090909091,206
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""endpoint"".equals(name)) {",1,1,0.09090909090909091,207
+edd48a4b1558b504f84eaf604300381b5f371672,"if (!field.hasAnnotation(""org.apache.camel.cdi.Uri"")) {",1,1,0.09090909090909091,208
+edd48a4b1558b504f84eaf604300381b5f371672,endpoint = found;,1,1,0.09090909090909091,209
+edd48a4b1558b504f84eaf604300381b5f371672,Node last = null;,1,1,0.09090909090909091,210
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""dataFormats"".equals(name) || ""redeliveryPolicyProfile"".equals(name)",1,1,0.09090909090909091,211
+edd48a4b1558b504f84eaf604300381b5f371672,if (found.getNodeType() == Node.ELEMENT_NODE) {,1,1,0.09090909090909091,212
+edd48a4b1558b504f84eaf604300381b5f371672,last = found;,1,1,0.09090909090909091,213
+edd48a4b1558b504f84eaf604300381b5f371672,if (!Strings.isBlank(text)) {,1,1,0.09090909090909091,214
+edd48a4b1558b504f84eaf604300381b5f371672,"annotation = field.getAnnotation(""org.apache.camel.cdi.Uri"");",1,1,0.09090909090909091,215
+edd48a4b1558b504f84eaf604300381b5f371672,"if (!field.hasAnnotation(""javax.inject.Inject"")) {",1,1,0.09090909090909091,216
+edd48a4b1558b504f84eaf604300381b5f371672,found = insertEndpointBefore(camel);,1,1,0.09090909090909091,217
+edd48a4b1558b504f84eaf604300381b5f371672,if (created) {,1,1,0.09090909090909091,218
+edd48a4b1558b504f84eaf604300381b5f371672,found = camelContext;,1,1,0.09090909090909091,219
+edd48a4b1558b504f84eaf604300381b5f371672,extraSpaces = 2;,1,1,0.09090909090909091,220
+edd48a4b1558b504f84eaf604300381b5f371672,extraLines = 1;,1,1,0.09090909090909091,221
+edd48a4b1558b504f84eaf604300381b5f371672,lineNumber = (String) found.getUserData(XmlLineNumberParser.LINE_NUMBER);,1,1,0.09090909090909091,222
+edd48a4b1558b504f84eaf604300381b5f371672,"int spaces = LineNumberHelper.leadingSpaces(lines, idx) + extraSpaces;",1,1,0.09090909090909091,223
+edd48a4b1558b504f84eaf604300381b5f371672,"line = LineNumberHelper.padString(line, spaces);",1,1,0.09090909090909091,224
+edd48a4b1558b504f84eaf604300381b5f371672,JavaResource existing = facet.getJavaResource(routeBuilder);,1,1,0.09090909090909091,225
+edd48a4b1558b504f84eaf604300381b5f371672,// cdi uses @Inject @Uri,1,1,0.09090909090909091,226
+edd48a4b1558b504f84eaf604300381b5f371672,JavaClassSource clazz = existing.getJavaType();,1,1,0.09090909090909091,227
+edd48a4b1558b504f84eaf604300381b5f371672,boolean updated = true;,1,1,0.09090909090909091,228
+edd48a4b1558b504f84eaf604300381b5f371672,FieldSource field = clazz.getField(endpointInstanceName);,1,1,0.09090909090909091,229
+edd48a4b1558b504f84eaf604300381b5f371672,field = clazz.addField();,1,1,0.09090909090909091,230
+edd48a4b1558b504f84eaf604300381b5f371672,updated = false;,1,1,0.09090909090909091,231
+edd48a4b1558b504f84eaf604300381b5f371672,if (cdi) {,1,1,0.09090909090909091,232
+edd48a4b1558b504f84eaf604300381b5f371672,"endpointUrl = StringHelper.replaceAll(endpointUrl, ""<"", ""&lt;"");",1,1,0.09090909090909091,233
+edd48a4b1558b504f84eaf604300381b5f371672,if (input.hasValue()) {,1,1,0.09090909090909091,234
+edd48a4b1558b504f84eaf604300381b5f371672,"endpointUrl = StringHelper.replaceAll(endpointUrl, ""&amp;"", ""&"");",1,1,0.09090909090909091,235
+edd48a4b1558b504f84eaf604300381b5f371672,"annotation = field.getAnnotation(""org.apache.camel.cdi.Uri"");",0,1,0.09090909090909091,236
+edd48a4b1558b504f84eaf604300381b5f371672,"Map<String, String> options = new HashMap<String, String>();",1,1,0.09090909090909091,237
+edd48a4b1558b504f84eaf604300381b5f371672,if (input.hasValue()) {,1,1,0.09090909090909091,238
+edd48a4b1558b504f84eaf604300381b5f371672,JavaResource existing = facet.getJavaResource(routeBuilder);,1,1,0.09090909090909091,239
+edd48a4b1558b504f84eaf604300381b5f371672,JavaClassSource clazz = existing.getJavaType();,1,1,0.09090909090909091,240
+edd48a4b1558b504f84eaf604300381b5f371672,"MethodSource configure = clazz.getMethod(""configure"");",1,1,0.09090909090909091,241
+edd48a4b1558b504f84eaf604300381b5f371672,StringBuilder sb = new StringBuilder(body);,1,1,0.09090909090909091,242
+edd48a4b1558b504f84eaf604300381b5f371672,body = sb.toString();,1,1,0.09090909090909091,243
+edd48a4b1558b504f84eaf604300381b5f371672,// update source code,1,1,0.09090909090909091,244
+edd48a4b1558b504f84eaf604300381b5f371672,"boolean matchDefault = isDefaultValue(camelComponentName, key, value);",0,1,0.09090909090909091,245
+edd48a4b1558b504f84eaf604300381b5f371672,if (!matchDefault) {,0,1,0.09090909090909091,246
+edd48a4b1558b504f84eaf604300381b5f371672,} else if (input.isRequired() && input.hasDefaultValue()) {,0,1,0.09090909090909091,247
+edd48a4b1558b504f84eaf604300381b5f371672,boolean updated = true;,0,1,0.09090909090909091,248
+edd48a4b1558b504f84eaf604300381b5f371672,FieldSource field = clazz.getField(endpointInstanceName);,0,1,0.09090909090909091,249
+edd48a4b1558b504f84eaf604300381b5f371672,field = clazz.addField();,0,1,0.09090909090909091,250
+edd48a4b1558b504f84eaf604300381b5f371672,updated = false;,0,1,0.09090909090909091,251
+edd48a4b1558b504f84eaf604300381b5f371672,// and make sure its dependency is added,1,1,0.09090909090909091,252
+edd48a4b1558b504f84eaf604300381b5f371672,CamelComponentDetails details = new CamelComponentDetails();,1,1,0.09090909090909091,253
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""The project does not include camel-core"");",1,1,0.09090909090909091,254
+edd48a4b1558b504f84eaf604300381b5f371672,"Map<String, String> options = new HashMap<String, String>();",0,1,0.09090909090909091,255
+edd48a4b1558b504f84eaf604300381b5f371672,"endpointUrl = mandatoryAttributeValue(attributeMap, ""endpointUri"");",1,1,0.09090909090909091,256
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""xml"".equals(kind)) {",0,1,0.09090909090909091,257
+edd48a4b1558b504f84eaf604300381b5f371672,Dependency core = CamelProjectHelper.findCamelCoreDependency(project);,0,1,0.09090909090909091,258
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""The project does not include camel-core"");",0,1,0.09090909090909091,259
+edd48a4b1558b504f84eaf604300381b5f371672,CamelComponentDetails details = new CamelComponentDetails();,0,1,0.09090909090909091,260
+edd48a4b1558b504f84eaf604300381b5f371672,// and make sure its dependency is added,0,1,0.09090909090909091,261
+edd48a4b1558b504f84eaf604300381b5f371672,if (input.hasValue()) {,0,1,0.09090909090909091,262
+edd48a4b1558b504f84eaf604300381b5f371672,Dependency core = CamelProjectHelper.findCamelCoreDependency(project);,1,1,0.09090909090909091,263
+edd48a4b1558b504f84eaf604300381b5f371672,JavaResource existing = facet.getJavaResource(routeBuilder);,0,1,0.09090909090909091,264
+edd48a4b1558b504f84eaf604300381b5f371672,JavaClassSource clazz = existing.getJavaType();,0,1,0.09090909090909091,265
+edd48a4b1558b504f84eaf604300381b5f371672,"MethodSource configure = clazz.getMethod(""configure"");",0,1,0.09090909090909091,266
+edd48a4b1558b504f84eaf604300381b5f371672,StringBuilder sb = new StringBuilder(body);,0,1,0.09090909090909091,267
+edd48a4b1558b504f84eaf604300381b5f371672,body = sb.toString();,0,1,0.09090909090909091,268
+edd48a4b1558b504f84eaf604300381b5f371672,// update source code,0,1,0.09090909090909091,269
+edd48a4b1558b504f84eaf604300381b5f371672,if (cdi) {,0,1,0.09090909090909091,270
+edd48a4b1558b504f84eaf604300381b5f371672,// TODO: implement me,0,1,0.09090909090909091,271
+edd48a4b1558b504f84eaf604300381b5f371672,"if (!field.hasAnnotation(""javax.inject.Inject"")) {",0,1,0.09090909090909091,272
+edd48a4b1558b504f84eaf604300381b5f371672,private final String componentName;,1,1,0.09090909090909091,273
+edd48a4b1558b504f84eaf604300381b5f371672,this.projectFactory = projectFactory;,1,1,0.09090909090909091,274
+edd48a4b1558b504f84eaf604300381b5f371672,this.dependencyInstaller = dependencyInstaller;,1,1,0.09090909090909091,275
+edd48a4b1558b504f84eaf604300381b5f371672,this.camelCatalog = camelCatalog;,1,1,0.09090909090909091,276
+edd48a4b1558b504f84eaf604300381b5f371672,this.componentName = componentName;,1,1,0.09090909090909091,277
+edd48a4b1558b504f84eaf604300381b5f371672,this.group = group;,1,1,0.09090909090909091,278
+edd48a4b1558b504f84eaf604300381b5f371672,this.allInputs = allInputs;,1,1,0.09090909090909091,279
+edd48a4b1558b504f84eaf604300381b5f371672,this.inputs = inputs;,1,1,0.09090909090909091,280
+edd48a4b1558b504f84eaf604300381b5f371672,this.index = index + 1;,1,1,0.09090909090909091,281
+edd48a4b1558b504f84eaf604300381b5f371672,this.total = total;,1,1,0.09090909090909091,282
+edd48a4b1558b504f84eaf604300381b5f371672,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",1,1,0.09090909090909091,283
+edd48a4b1558b504f84eaf604300381b5f371672,if (last) {,1,1,0.09090909090909091,284
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""xml"".equals(kind)) {",1,1,0.09090909090909091,285
+edd48a4b1558b504f84eaf604300381b5f371672,"if (""edit"".equals(mode)) {",1,1,0.09090909090909091,286
+edd48a4b1558b504f84eaf604300381b5f371672,"annotation = field.addAnnotation(""org.apache.camel.cdi.Uri"");",0,1,0.09090909090909091,287
+edd48a4b1558b504f84eaf604300381b5f371672,"lineNumber = mandatoryAttributeValue(attributeMap, ""lineNumber"");",1,1,0.09090909090909091,288
+edd48a4b1558b504f84eaf604300381b5f371672,private final String group;,1,1,0.09090909090909091,289
+edd48a4b1558b504f84eaf604300381b5f371672,this.last = last;,1,1,0.09090909090909091,290
+edd48a4b1558b504f84eaf604300381b5f371672,*  permissions and limitations under the License.,1,1,0.09090909090909091,291
+edd48a4b1558b504f84eaf604300381b5f371672,if (line.trim().startsWith(match)) {,1,1,0.09090909090909091,292
+edd48a4b1558b504f84eaf604300381b5f371672,if (updated) {,0,1,0.09090909090909091,293
+edd48a4b1558b504f84eaf604300381b5f371672,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,1,0.09090909090909091,294
+edd48a4b1558b504f84eaf604300381b5f371672,"MethodSource configure = clazz.getMethod(""configure"");",1,1,0.09090909090909091,295
+edd48a4b1558b504f84eaf604300381b5f371672,"body = """";",1,1,0.09090909090909091,296
+edd48a4b1558b504f84eaf604300381b5f371672,int index = -1;,1,1,0.09090909090909091,297
+edd48a4b1558b504f84eaf604300381b5f371672,for (int i = 0; i < lines.size(); i++) {,1,1,0.09090909090909091,298
+edd48a4b1558b504f84eaf604300381b5f371672,List<String> lines = LineNumberHelper.readLines(new StringReader(body));,1,1,0.09090909090909091,299
+edd48a4b1558b504f84eaf604300381b5f371672,"annotation = field.getAnnotation(""org.apache.camel.EndpointInject"");",0,1,0.09090909090909091,300
+edd48a4b1558b504f84eaf604300381b5f371672,if (index == -1) {,1,1,0.09090909090909091,301
+edd48a4b1558b504f84eaf604300381b5f371672,// add new line in top,1,1,0.09090909090909091,302
+edd48a4b1558b504f84eaf604300381b5f371672,// update existing,1,1,0.09090909090909091,303
+edd48a4b1558b504f84eaf604300381b5f371672,// update source code,1,1,0.09090909090909091,304
+edd48a4b1558b504f84eaf604300381b5f371672,index = i;,1,1,0.09090909090909091,305
+edd48a4b1558b504f84eaf604300381b5f371672,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.09090909090909091,306
+edd48a4b1558b504f84eaf604300381b5f371672,"DependencyInstaller dependencyInstaller,",1,0,0.0,307
+edd48a4b1558b504f84eaf604300381b5f371672,return Metadata.forCommand(ConfigureEndpointPropertiesStep.class).name(,1,0,0.0,308
+edd48a4b1558b504f84eaf604300381b5f371672,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,309
+edd48a4b1558b504f84eaf604300381b5f371672,@Override,1,0,0.0,310
+edd48a4b1558b504f84eaf604300381b5f371672,"CamelCatalog camelCatalog,",1,0,0.0,311
+edd48a4b1558b504f84eaf604300381b5f371672,},1,0,0.0,312
+edd48a4b1558b504f84eaf604300381b5f371672,"boolean last, int index, int total) {",1,0,0.0,313
+edd48a4b1558b504f84eaf604300381b5f371672,"List<InputComponent> allInputs,",1,0,0.0,314
+edd48a4b1558b504f84eaf604300381b5f371672,"""Camel: Endpoint options"").category(Categories.create(CATEGORY))",1,0,0.0,315
+edd48a4b1558b504f84eaf604300381b5f371672,"List<InputComponent> inputs,",1,0,0.0,316
+edd48a4b1558b504f84eaf604300381b5f371672,public NavigationResult next(UINavigationContext context) throws Exception {,1,0,0.0,317
+edd48a4b1558b504f84eaf604300381b5f371672,".description(String.format(""Configure %s options (%s of %s)"", group, index, total));",1,0,0.0,318
+edd48a4b1558b504f84eaf604300381b5f371672,"@SuppressWarnings(""unchecked"")",1,0,0.0,319
+edd48a4b1558b504f84eaf604300381b5f371672,public void initializeUI(UIBuilder builder) throws Exception {,1,0,0.0,320
+edd48a4b1558b504f84eaf604300381b5f371672,for (InputComponent input : inputs) {,1,0,0.0,321
+edd48a4b1558b504f84eaf604300381b5f371672,builder.add(input);,1,0,0.0,322
+edd48a4b1558b504f84eaf604300381b5f371672,return null;,1,0,0.0,323
+edd48a4b1558b504f84eaf604300381b5f371672,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,324
+edd48a4b1558b504f84eaf604300381b5f371672,private final int total;,1,0,0.0,325
+edd48a4b1558b504f84eaf604300381b5f371672,"return executeXml(context, attributeMap);",1,0,0.0,326
+edd48a4b1558b504f84eaf604300381b5f371672,"public ConfigureEndpointPropertiesStep(ProjectFactory projectFactory,",1,0,0.0,327
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.source.JavaClassSource;,1,0,0.0,328
+edd48a4b1558b504f84eaf604300381b5f371672,private final int index;,1,0,0.0,329
+edd48a4b1558b504f84eaf604300381b5f371672,import org.w3c.dom.Node;,1,0,0.0,330
+edd48a4b1558b504f84eaf604300381b5f371672,"return executeJava(context, attributeMap);",1,0,0.0,331
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,332
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,333
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.wizard.UIWizardStep;,1,0,0.0,334
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.source.AnnotationSource;,1,0,0.0,335
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.source.FieldSource;,1,0,0.0,336
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.source.MethodSource;,1,0,0.0,337
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.util.Strings;,1,0,0.0,338
+edd48a4b1558b504f84eaf604300381b5f371672,import org.w3c.dom.Document;,1,0,0.0,339
+edd48a4b1558b504f84eaf604300381b5f371672,import org.w3c.dom.NodeList;,1,0,0.0,340
+edd48a4b1558b504f84eaf604300381b5f371672,private final boolean last;,1,0,0.0,341
+edd48a4b1558b504f84eaf604300381b5f371672,import static io.fabric8.forge.addon.utils.CamelProjectHelper.findCamelArtifactDependency;,1,0,0.0,342
+edd48a4b1558b504f84eaf604300381b5f371672,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.isDefaultValue;,1,0,0.0,343
+edd48a4b1558b504f84eaf604300381b5f371672,import static io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper.ensureCamelArtifactIdAdded;,1,0,0.0,344
+edd48a4b1558b504f84eaf604300381b5f371672,import static io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper.loadCamelComponentDetails;,1,0,0.0,345
+edd48a4b1558b504f84eaf604300381b5f371672,public class ConfigureEndpointPropertiesStep extends AbstractCamelProjectCommand implements UIWizardStep {,1,0,0.0,346
+edd48a4b1558b504f84eaf604300381b5f371672,private final DependencyInstaller dependencyInstaller;,1,0,0.0,347
+edd48a4b1558b504f84eaf604300381b5f371672,private final CamelCatalog camelCatalog;,1,0,0.0,348
+edd48a4b1558b504f84eaf604300381b5f371672,private final List<InputComponent> allInputs;,1,0,0.0,349
+edd48a4b1558b504f84eaf604300381b5f371672,private final List<InputComponent> inputs;,1,0,0.0,350
+edd48a4b1558b504f84eaf604300381b5f371672,} else {,1,0,0.0,351
+edd48a4b1558b504f84eaf604300381b5f371672,"existing.setContents(new ByteArrayInputStream(code.getBytes()), null);",1,0,0.0,352
+edd48a4b1558b504f84eaf604300381b5f371672,"protected Result executeXml(UIExecutionContext context, Map<Object, Object> attributeMap) throws Exception {",1,0,0.0,353
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,354
+edd48a4b1558b504f84eaf604300381b5f371672,"field.addAnnotation(""org.apache.camel.EndpointInject"");",1,0,0.0,355
+edd48a4b1558b504f84eaf604300381b5f371672,"annotation.setStringValue(""uri"", uri);",1,0,0.0,356
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.Endpoint"");",1,0,0.0,357
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""javax.inject.Inject"");",1,0,0.0,358
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.cdi.Uri"");",1,0,0.0,359
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.EndpointInject"");",1,0,0.0,360
+edd48a4b1558b504f84eaf604300381b5f371672,facet.saveJavaSource(clazz);,1,0,0.0,361
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Updated endpoint "" + endpointInstanceName + "" in "" + routeBuilder);",1,0,0.0,362
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Added endpoint "" + endpointInstanceName + "" in "" + routeBuilder);",1,0,0.0,363
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Updated endpoint "" + endpointUrl + "" -> "" + uri + "" in "" + routeBuilder);",1,0,0.0,364
+edd48a4b1558b504f84eaf604300381b5f371672,return result;,1,0,0.0,365
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""Cannot update endpoint"");",1,0,0.0,366
+edd48a4b1558b504f84eaf604300381b5f371672,private Node insertEndpointBefore(Node camel) {,1,0,0.0,367
+edd48a4b1558b504f84eaf604300381b5f371672,return endpoint;,1,0,0.0,368
+edd48a4b1558b504f84eaf604300381b5f371672,"|| ""onException"".equals(name) || ""onCompletion"".equals(name)",1,0,0.0,369
+edd48a4b1558b504f84eaf604300381b5f371672,"|| ""intercept"".equals(name) || ""interceptFrom"".equals(name)",1,0,0.0,370
+edd48a4b1558b504f84eaf604300381b5f371672,"|| ""interceptSendToEndpoint"".equals(name) || ""restConfiguration"".equals(name)",1,0,0.0,371
+edd48a4b1558b504f84eaf604300381b5f371672,"|| ""rest"".equals(name) || ""route"".equals(name)) {",1,0,0.0,372
+edd48a4b1558b504f84eaf604300381b5f371672,return found;,1,0,0.0,373
+edd48a4b1558b504f84eaf604300381b5f371672,return last;,1,0,0.0,374
+edd48a4b1558b504f84eaf604300381b5f371672,annotation.setStringValue(uri);,1,0,0.0,375
+edd48a4b1558b504f84eaf604300381b5f371672,"field.addAnnotation(""org.apache.camel.cdi.Uri"");",1,0,0.0,376
+edd48a4b1558b504f84eaf604300381b5f371672,"field.addAnnotation(""javax.inject.Inject"");",1,0,0.0,377
+edd48a4b1558b504f84eaf604300381b5f371672,field.setPrivate();,1,0,0.0,378
+edd48a4b1558b504f84eaf604300381b5f371672,for (InputComponent input : allInputs) {,1,0,0.0,379
+edd48a4b1558b504f84eaf604300381b5f371672,"options.put(key, value);",1,0,0.0,380
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""Cannot create endpoint uri"");",1,0,0.0,381
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""Cannot find XML file "" + xml);",1,0,0.0,382
+edd48a4b1558b504f84eaf604300381b5f371672,"return editEndpointXml(lines, lineNumber, endpointUrl, uri, file, xml);",1,0,0.0,383
+edd48a4b1558b504f84eaf604300381b5f371672,"return addEndpointXml(root, endpointInstanceName, uri, file, xml);",1,0,0.0,384
+edd48a4b1558b504f84eaf604300381b5f371672,"lines.set(idx, line);",1,0,0.0,385
+edd48a4b1558b504f84eaf604300381b5f371672,file.setContents(content);,1,0,0.0,386
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Update endpoint uri: "" + uri + "" in file "" + xml);",1,0,0.0,387
+edd48a4b1558b504f84eaf604300381b5f371672,break;,1,0,0.0,388
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""Cannot find <camelContext> in XML file "" + xml);",1,0,0.0,389
+edd48a4b1558b504f84eaf604300381b5f371672,idx += extraLines;,1,0,0.0,390
+edd48a4b1558b504f84eaf604300381b5f371672,"lines.add(idx, line);",1,0,0.0,391
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Added endpoint uri: "" + uri + "" in XML file "" + xml);",1,0,0.0,392
+edd48a4b1558b504f84eaf604300381b5f371672,"protected Result executeJava(UIExecutionContext context, Map<Object, Object> attributeMap) throws Exception {",1,0,0.0,393
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""RouteBuilder "" + routeBuilder + "" does not exist"");",1,0,0.0,394
+edd48a4b1558b504f84eaf604300381b5f371672,AnnotationSource annotation;,1,0,0.0,395
+edd48a4b1558b504f84eaf604300381b5f371672,field.setName(endpointInstanceName);,1,0,0.0,396
+edd48a4b1558b504f84eaf604300381b5f371672,"field.setType(""org.apache.camel.Endpoint"");",1,0,0.0,397
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,398
+edd48a4b1558b504f84eaf604300381b5f371672,*,1,0,0.0,399
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.result.NavigationResult;,1,0,0.0,400
+edd48a4b1558b504f84eaf604300381b5f371672,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.isDefaultValue;,0,0,0.0,401
+edd48a4b1558b504f84eaf604300381b5f371672,"sb.insert(0, line);",1,0,0.0,402
+edd48a4b1558b504f84eaf604300381b5f371672,configure.setBody(body);,1,0,0.0,403
+edd48a4b1558b504f84eaf604300381b5f371672,facet.saveJavaSource(clazz);,1,0,0.0,404
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Added endpoint "" + endpointInstanceName + "" to "" + routeBuilder);",1,0,0.0,405
+edd48a4b1558b504f84eaf604300381b5f371672,} catch (IllegalArgumentException e) {,1,0,0.0,406
+edd48a4b1558b504f84eaf604300381b5f371672,return Results.fail(e.getMessage());,1,0,0.0,407
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.source.AnnotationSource;,0,0,0.0,408
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.roaster.model.source.FieldSource;,0,0,0.0,409
+edd48a4b1558b504f84eaf604300381b5f371672,import static io.fabric8.forge.addon.utils.CamelProjectHelper.findCamelArtifactDependency;,0,0,0.0,410
+edd48a4b1558b504f84eaf604300381b5f371672,"""Camel: Add Endpoint"").category(Categories.create(CATEGORY))",0,0,0.0,411
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,412
+edd48a4b1558b504f84eaf604300381b5f371672,"options.put(key, value);",0,0,0.0,413
+edd48a4b1558b504f84eaf604300381b5f371672,},0,0,0.0,414
+edd48a4b1558b504f84eaf604300381b5f371672,AnnotationSource annotation;,0,0,0.0,415
+edd48a4b1558b504f84eaf604300381b5f371672,field.setName(endpointInstanceName);,0,0,0.0,416
+edd48a4b1558b504f84eaf604300381b5f371672,"field.setType(""org.apache.camel.Endpoint"");",0,0,0.0,417
+edd48a4b1558b504f84eaf604300381b5f371672,field.setPrivate();,0,0,0.0,418
+edd48a4b1558b504f84eaf604300381b5f371672,"field.addAnnotation(""javax.inject.Inject"");",0,0,0.0,419
+edd48a4b1558b504f84eaf604300381b5f371672,} else {,0,0,0.0,420
+edd48a4b1558b504f84eaf604300381b5f371672,annotation.removeAllValues();,0,0,0.0,421
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.Endpoint"");",1,0,0.0,422
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""RouteBuilder "" + routeBuilder + "" does not exist"");",1,0,0.0,423
+edd48a4b1558b504f84eaf604300381b5f371672,"options.put(key, value);",1,0,0.0,424
+edd48a4b1558b504f84eaf604300381b5f371672,for (InputComponent input : inputs) {,1,0,0.0,425
+edd48a4b1558b504f84eaf604300381b5f371672,"return executeXml(context, attributeMap);",0,0,0.0,426
+edd48a4b1558b504f84eaf604300381b5f371672,} else {,0,0,0.0,427
+edd48a4b1558b504f84eaf604300381b5f371672,"return executeJava(context, attributeMap);",0,0,0.0,428
+edd48a4b1558b504f84eaf604300381b5f371672,},0,0,0.0,429
+edd48a4b1558b504f84eaf604300381b5f371672,"protected Result executeJava(UIExecutionContext context, Map<Object, Object> attributeMap) throws Exception {",0,0,0.0,430
+edd48a4b1558b504f84eaf604300381b5f371672,return result;,0,0,0.0,431
+edd48a4b1558b504f84eaf604300381b5f371672,for (InputComponent input : inputs) {,0,0,0.0,432
+edd48a4b1558b504f84eaf604300381b5f371672,"options.put(key, value);",0,0,0.0,433
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.fail(""RouteBuilder "" + routeBuilder + "" does not exist"");",0,0,0.0,434
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.Endpoint"");",0,0,0.0,435
+edd48a4b1558b504f84eaf604300381b5f371672,"sb.insert(0, line);",0,0,0.0,436
+edd48a4b1558b504f84eaf604300381b5f371672,configure.setBody(body);,0,0,0.0,437
+edd48a4b1558b504f84eaf604300381b5f371672,facet.saveJavaSource(clazz);,0,0,0.0,438
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Added endpoint "" + endpointInstanceName + "" to "" + routeBuilder);",0,0,0.0,439
+edd48a4b1558b504f84eaf604300381b5f371672,"protected Result executeXml(UIExecutionContext context, Map<Object, Object> attributeMap) throws Exception {",0,0,0.0,440
+edd48a4b1558b504f84eaf604300381b5f371672,"return Results.success(""Added endpoint "" + endpointInstanceName + "" to "" + xml);",0,0,0.0,441
+edd48a4b1558b504f84eaf604300381b5f371672,try {,1,0,0.0,442
+edd48a4b1558b504f84eaf604300381b5f371672,},1,0,0.0,443
+edd48a4b1558b504f84eaf604300381b5f371672,return result;,1,0,0.0,444
+edd48a4b1558b504f84eaf604300381b5f371672,annotation.setStringValue(uri);,0,0,0.0,445
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.Endpoint"");",0,0,0.0,446
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""javax.inject.Inject"");",0,0,0.0,447
+edd48a4b1558b504f84eaf604300381b5f371672,import io.fabric8.forge.addon.utils.CamelProjectHelper;,1,0,0.0,448
+edd48a4b1558b504f84eaf604300381b5f371672,import io.fabric8.forge.addon.utils.XmlLineNumberParser;,1,0,0.0,449
+edd48a4b1558b504f84eaf604300381b5f371672,import io.fabric8.forge.camel.commands.project.helper.CamelJavaParserHelper;,1,0,0.0,450
+edd48a4b1558b504f84eaf604300381b5f371672,import io.fabric8.forge.camel.commands.project.helper.StringHelper;,1,0,0.0,451
+edd48a4b1558b504f84eaf604300381b5f371672,import io.fabric8.forge.camel.commands.project.model.CamelComponentDetails;,1,0,0.0,452
+edd48a4b1558b504f84eaf604300381b5f371672,import org.apache.camel.catalog.CamelCatalog;,1,0,0.0,453
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,454
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.parser.java.facets.JavaSourceFacet;,1,0,0.0,455
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.parser.java.resources.JavaResource;,1,0,0.0,456
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.projects.Project;,1,0,0.0,457
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.projects.ProjectFactory;,1,0,0.0,458
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,459
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,460
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.projects.facets.WebResourcesFacet;,1,0,0.0,461
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.resource.FileResource;,1,0,0.0,462
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,463
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,464
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,465
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.context.UINavigationContext;,1,0,0.0,466
+edd48a4b1558b504f84eaf604300381b5f371672,import org.jboss.forge.addon.ui.input.InputComponent;,1,0,0.0,467
+edd48a4b1558b504f84eaf604300381b5f371672,import io.fabric8.forge.addon.utils.LineNumberHelper;,1,0,0.0,468
+edd48a4b1558b504f84eaf604300381b5f371672,import javax.inject.Inject;,1,0,0.0,469
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.cdi.Uri"");",0,0,0.0,470
+edd48a4b1558b504f84eaf604300381b5f371672,import java.util.regex.Pattern;,1,0,0.0,471
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.EndpointInject"");",0,0,0.0,472
+edd48a4b1558b504f84eaf604300381b5f371672,"""Camel: Add Endpoint XML"").category(Categories.create(CATEGORY))",1,0,0.0,473
+edd48a4b1558b504f84eaf604300381b5f371672,"clazz.addImport(""org.apache.camel.Endpoint"");",1,0,0.0,474
+edd48a4b1558b504f84eaf604300381b5f371672,break;,1,0,0.0,475
+edd48a4b1558b504f84eaf604300381b5f371672,"lines.add(0, line);",1,0,0.0,476
+edd48a4b1558b504f84eaf604300381b5f371672,"lines.set(index, line);",1,0,0.0,477
+edd48a4b1558b504f84eaf604300381b5f371672,configure.setBody(content);,1,0,0.0,478
+edd48a4b1558b504f84eaf604300381b5f371672,/**,1,0,0.0,479
+edd48a4b1558b504f84eaf604300381b5f371672,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,480
+edd48a4b1558b504f84eaf604300381b5f371672,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,481
+edd48a4b1558b504f84eaf604300381b5f371672,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,482
+edd48a4b1558b504f84eaf604300381b5f371672,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,483
+edd48a4b1558b504f84eaf604300381b5f371672,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,484
+edd48a4b1558b504f84eaf604300381b5f371672,*/,1,0,0.0,485
+edd48a4b1558b504f84eaf604300381b5f371672,package io.fabric8.forge.camel.commands.project;,1,0,0.0,486
+edd48a4b1558b504f84eaf604300381b5f371672,import java.io.ByteArrayInputStream;,1,0,0.0,487
+edd48a4b1558b504f84eaf604300381b5f371672,import java.util.HashMap;,1,0,0.0,488
+edd48a4b1558b504f84eaf604300381b5f371672,import java.util.List;,1,0,0.0,489
+edd48a4b1558b504f84eaf604300381b5f371672,import java.util.Map;,1,0,0.0,490
+edd48a4b1558b504f84eaf604300381b5f371672,return text;,1,0,0.0,491

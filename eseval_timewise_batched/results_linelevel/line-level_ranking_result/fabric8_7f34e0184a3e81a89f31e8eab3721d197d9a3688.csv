@@ -1,0 +1,72 @@
+commit_id,line,line_level_label,count,line_score,row
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"String tag = ""fabric8-"" + Strings.join(names, ""-"").replace('.', '-');",0,4,1.0,1
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"String tag = ""fabric8-"" + Strings.join(names, ""-"").replace('.', '-');",1,4,1.0,2
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"environmentVariables.put(""FABRIC8_"" + portName + ""_PORT"", """" + port);",0,3,0.75,3
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"environmentVariables.put(""FABRIC8_"" + portName + ""_PROXY_PORT"", """" + externalPort);",0,3,0.75,4
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"@Reference(referenceInterface = FabricService.class, bind = ""bindFabricService"", unbind = ""unbindFabricService"")",1,3,0.75,5
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(""FABRIC8_"" + portName + ""_PORT="" + port);",1,3,0.75,6
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(""FABRIC8_"" + portName + ""_PROXY_PORT="" + externalPort);",1,3,0.75,7
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String entryPoint = configOverlay.get(DockerConstants.PROPERTIES.IMAGE_ENTRY_POINT);,1,2,0.5,8
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(EnvironmentVariables.FABRIC8_FABRIC_ENVIRONMENT + ""="" + DockerConstants.SCHEME);",1,2,0.5,9
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(EnvironmentVariables.FABRIC8_GLOBAL_RESOLVER + ""="" + ZkDefs.MANUAL_IP);",1,2,0.5,10
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(EnvironmentVariables.FABRIC8_MANUALIP + ""="" + dockerHost);",1,2,0.5,11
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(key + ""="" + value);",1,2,0.5,12
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String value = entry.getValue();,1,2,0.5,13
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String key = entry.getKey();,1,2,0.5,14
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"String actualImage = builder.generateContainerImage(service, container, profileOverlays, docker, javaContainerOptions, downloadExecutor, environmentVariables);",1,2,0.5,15
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,List<String> names = new ArrayList<String>(profileIds);,1,2,0.5,16
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String imageRepository = configOverlay.get(DockerConstants.PROPERTIES.IMAGE_REPOSITORY);,1,2,0.5,17
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String libDir = configOverlay.get(DockerConstants.PROPERTIES.JAVA_LIBRARY_PATH);,1,2,0.5,18
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"env.add(key + ""="" + value);",0,2,0.5,19
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String value = entry.getValue();,0,2,0.5,20
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String key = entry.getKey();,0,2,0.5,21
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"String actualImage = builder.generateContainerImage(service, container, profileOverlays, docker, javaContainerOptions, downloadExecutor, environmentVariables);",0,2,0.5,22
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,List<String> names = new ArrayList<String>(profileIds);,0,2,0.5,23
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String entryPoint = configOverlay.get(DockerConstants.PROPERTIES.IMAGE_ENTRY_POINT);,0,2,0.5,24
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String imageRepository = configOverlay.get(DockerConstants.PROPERTIES.IMAGE_REPOSITORY);,0,2,0.5,25
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,String libDir = configOverlay.get(DockerConstants.PROPERTIES.JAVA_LIBRARY_PATH);,0,2,0.5,26
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"Set<Map.Entry<String, String>> entries = environmentVariables.entrySet();",0,1,0.25,27
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"Set<Map.Entry<String, String>> entries = environmentVariables.entrySet();",1,1,0.25,28
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,env = new ArrayList<String>();,1,1,0.25,29
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,List<String> env = containerConfig.getEnv();,1,1,0.25,30
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"JavaContainerOptions javaContainerOptions = new JavaContainerOptions(image, imageRepository, tag, libDir, entryPoint);",1,1,0.25,31
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,javaContainerImageBuilder builder = new javaContainerImageBuilder();,1,1,0.25,32
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"Map<String, ?> javaContainerConfig = Profiles.getOverlayConfiguration(service, profileIds, versionId, ChildConstants.JAVA_CONTAINER_PID);",1,1,0.25,33
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,JavaContainerConfig javaConfig = new JavaContainerConfig();,1,1,0.25,34
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,env = new ArrayList<String>();,0,1,0.25,35
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"JavaContainerOptions javaContainerOptions = new JavaContainerOptions(image, imageRepository, tag, libDir, entryPoint);",0,1,0.25,36
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,javaContainerImageBuilder builder = new javaContainerImageBuilder();,0,1,0.25,37
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,JavaContainerConfig javaConfig = new JavaContainerConfig();,0,1,0.25,38
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"Map<String, String> javaContainerConfig = Profiles.getOverlayConfiguration(service, profileIds, versionId, ChildConstants.JAVA_CONTAINER_PID);",0,1,0.25,39
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,@Reference(referenceInterface = FabricService.class),0,1,0.25,40
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,List<String> env = containerConfig.getEnv();,0,1,0.25,41
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"container.setProvisionResult(""preparing"");",1,0,0.0,42
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (key != null && value != null) {,0,0,0.0,43
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"configurer.configure(javaContainerConfig, javaConfig);",1,0,0.0,44
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,javaConfig.updateEnvironmentVariables(environmentVariables);,1,0,0.0,45
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (!Strings.isNullOrBlank(libDir)) {,1,0,0.0,46
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (container != null) {,1,0,0.0,47
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,names.add(versionId);,1,0,0.0,48
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,container.setAlive(true);,1,0,0.0,49
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,},1,0,0.0,50
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (env == null) {,0,0,0.0,51
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,containerConfig.setImage(actualImage);,1,0,0.0,52
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (env == null) {,1,0,0.0,53
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"for (Map.Entry<String, String> entry : entries) {",1,0,0.0,54
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"for (Map.Entry<String, String> entry : entries) {",0,0,0.0,55
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,container.setAlive(true);,0,0,0.0,56
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,containerConfig.setImage(actualImage);,0,0,0.0,57
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,names.add(versionId);,0,0,0.0,58
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,},0,0,0.0,59
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"container.setProvisionResult(""preparing"");",0,0,0.0,60
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (container != null) {,0,0,0.0,61
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (!Strings.isNullOrBlank(libDir)) {,0,0,0.0,62
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,// now the environment variables are all set lets see if we need to make a custom image,0,0,0.0,63
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"environmentVariables.put(EnvironmentVariables.FABRIC8_FABRIC_ENVIRONMENT, DockerConstants.SCHEME);",0,0,0.0,64
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"environmentVariables.put(EnvironmentVariables.FABRIC8_GLOBAL_RESOLVER, ZkDefs.MANUAL_IP);",0,0,0.0,65
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"environmentVariables.put(EnvironmentVariables.FABRIC8_MANUALIP, dockerHost);",0,0,0.0,66
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,javaConfig.updateEnvironmentVariables(environmentVariables);,0,0,0.0,67
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"JolokiaAgentHelper.updateJolokiaPort(javaConfig, environmentVariables, port);",0,0,0.0,68
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,"configurer.configure(javaContainerConfig, javaConfig);",0,0,0.0,69
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,import io.fabric8.container.process.JolokiaAgentHelper;,0,0,0.0,70
+7f34e0184a3e81a89f31e8eab3721d197d9a3688,if (key != null && value != null) {,1,0,0.0,71

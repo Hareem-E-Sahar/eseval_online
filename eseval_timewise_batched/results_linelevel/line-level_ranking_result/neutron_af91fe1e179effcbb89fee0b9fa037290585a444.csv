@@ -1,0 +1,27 @@
+commit_id,line,line_level_label,count,line_score,row
+af91fe1e179effcbb89fee0b9fa037290585a444,"kwargs = {""fixed_ips"": [{'subnet_id': subnet['subnet']['id'],",1,5,1.0,1
+af91fe1e179effcbb89fee0b9fa037290585a444,"res = self._create_port(self.fmt, net_id=net_id, **kwargs)",1,4,0.8,2
+af91fe1e179effcbb89fee0b9fa037290585a444,res = subnet_req.get_response(self.api),0,2,0.4,3
+af91fe1e179effcbb89fee0b9fa037290585a444,cidr = 'fe80::/80',0,2,0.4,4
+af91fe1e179effcbb89fee0b9fa037290585a444,net_id = subnet['subnet']['network_id'],1,2,0.4,5
+af91fe1e179effcbb89fee0b9fa037290585a444,"port = self.deserialize(self.fmt, res)",1,2,0.4,6
+af91fe1e179effcbb89fee0b9fa037290585a444,cidr = 'fe80::0/80',1,2,0.4,7
+af91fe1e179effcbb89fee0b9fa037290585a444,# Allocate specific IP,1,1,0.2,8
+af91fe1e179effcbb89fee0b9fa037290585a444,"self.assertEqual(res.status_int, 400)",1,1,0.2,9
+af91fe1e179effcbb89fee0b9fa037290585a444,'ip_address': '10.0.1.2'}]},1,1,0.2,10
+af91fe1e179effcbb89fee0b9fa037290585a444,'ip_address': '10.0.0.2'}]},1,1,0.2,11
+af91fe1e179effcbb89fee0b9fa037290585a444,"self.assertEqual(res.status_int, 201)",1,1,0.2,12
+af91fe1e179effcbb89fee0b9fa037290585a444,with self.subnet(cidr='10.0.0.254/24') as subnet:,1,1,0.2,13
+af91fe1e179effcbb89fee0b9fa037290585a444,"self.assertEqual(res.status_int, webob.exc.HTTPBadRequest.code)",0,1,0.2,14
+af91fe1e179effcbb89fee0b9fa037290585a444,"subnet_req = self.new_create_request('subnets', data)",0,1,0.2,15
+af91fe1e179effcbb89fee0b9fa037290585a444,"data = {'subnet': {'network_id': network['network']['id'],",0,1,0.2,16
+af91fe1e179effcbb89fee0b9fa037290585a444,"cidr='2607:f0d0:1002:51::/124',",0,0,0.0,17
+af91fe1e179effcbb89fee0b9fa037290585a444,def test_create_subnet_bad_cidr(self):,0,0,0.0,18
+af91fe1e179effcbb89fee0b9fa037290585a444,with self.network() as network:,0,0,0.0,19
+af91fe1e179effcbb89fee0b9fa037290585a444,"'cidr': '10.0.2.5/24',",0,0,0.0,20
+af91fe1e179effcbb89fee0b9fa037290585a444,"'ip_version': 4,",0,0,0.0,21
+af91fe1e179effcbb89fee0b9fa037290585a444,'tenant_id': network['network']['tenant_id']}},0,0,0.0,22
+af91fe1e179effcbb89fee0b9fa037290585a444,"cidr='2607:f0d0:1002:51::0/124',",1,0,0.0,23
+af91fe1e179effcbb89fee0b9fa037290585a444,def test_fixed_ip_valid_ip_non_root_cidr(self):,1,0,0.0,24
+af91fe1e179effcbb89fee0b9fa037290585a444,"self._delete('ports', port['port']['id'])",1,0,0.0,25
+af91fe1e179effcbb89fee0b9fa037290585a444,def test_fixed_ip_invalid_ip_non_root_cidr(self):,1,0,0.0,26

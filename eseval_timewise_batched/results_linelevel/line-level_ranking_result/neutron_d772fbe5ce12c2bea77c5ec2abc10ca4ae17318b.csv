@@ -1,0 +1,770 @@
+commit_id,line,line_level_label,count,line_score,row
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,1.0,1
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,1.0,2
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,1.0,3
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# delete all packet_filters of the port from the controller,1,6,1.0,4
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# if needed, check to see if this is a port owned by",1,5,0.8333333333333333,5
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    not use this file except in compliance with the License. You may obtain,1,5,0.8333333333333333,6
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    not use this file except in compliance with the License. You may obtain,1,5,0.8333333333333333,7
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# delete all packet_filters of the network from the controller,1,5,0.8333333333333333,8
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec.common import utils as necutils,1,5,0.8333333333333333,9
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    not use this file except in compliance with the License. You may obtain,1,5,0.8333333333333333,10
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    a copy of the License at,1,4,0.6666666666666666,11
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec.common import utils,1,4,0.6666666666666666,12
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    under the License.,1,4,0.6666666666666666,13
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    License for the specific language governing permissions and limitations,1,4,0.6666666666666666,14
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.6666666666666666,15
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron import context,1,4,0.6666666666666666,16
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    under the License.,1,4,0.6666666666666666,17
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    License for the specific language governing permissions and limitations,1,4,0.6666666666666666,18
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    a copy of the License at,1,4,0.6666666666666666,19
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.6666666666666666,20
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    under the License.,1,4,0.6666666666666666,21
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# consider ports owned by floating ips as auto_delete as if there are,1,4,0.6666666666666666,22
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    a copy of the License at,1,4,0.6666666666666666,23
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#    License for the specific language governing permissions and limitations,1,4,0.6666666666666666,24
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.6666666666666666,25
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec.common import exceptions as nexc,1,4,0.6666666666666666,26
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Deactivate port by deleting port from OFC if exists.""""""",1,4,0.6666666666666666,27
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Also there is a case where neutron port is deleted,1,4,0.6666666666666666,28
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if changed and not new_net['admin_state_up']:,1,3,0.5,29
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# the port is active to avoid unexpected packet transfer.,1,3,0.5,30
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# are finished to inform the caller of API of the failure.,1,3,0.5,31
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,Delete network entry from DB and OFC. Then delete packet_filters,1,3,0.5,32
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,associated with the network. If the network is the last resource,1,3,0.5,33
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Make sure dpid is a hex string beginning with 0x.,1,3,0.5,34
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Determine it is required to update OFC port,1,3,0.5,35
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Update OFC port if required,1,3,0.5,36
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,or deactivate the port and packetfilters associated with it.,1,3,0.5,37
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Delete port and packet_filters associated with the port.""""""",1,3,0.5,38
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.tests.unit import test_security_groups_rpc as test_sg_rpc,1,3,0.5,39
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Copyright 2013 NEC Corporation,1,3,0.5,40
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.common import exceptions as n_exc,1,3,0.5,41
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.tests.unit import _test_extension_portbindings as test_bindings,1,3,0.5,42
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = self._update('ports', port_id, {'port': profile_arg},",1,3,0.5,43
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# delete portinfo with an empty dict,1,3,0.5,44
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# delete portinfo with None,1,3,0.5,45
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Copyright 2014 NEC Corporation.  All rights reserved.,1,3,0.5,46
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.tests import base,1,3,0.5,47
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# to update status in the database.,1,3,0.5,48
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# deactivate all ports on the network to drop all packet and show,1,3,0.5,49
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# ext_sg.SECURITYGROUPS attribute for the port is required,1,3,0.5,50
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Activate port by creating port on OFC if ready.",1,3,0.5,51
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import allowedaddresspairs_db as addr_pair_db,1,3,0.5,52
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# NOTE: callback_sg is referred to from the sg unit test.,1,3,0.5,53
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Copyright 2014 NEC Corporation.  All rights reserved.,1,3,0.5,54
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Compare two datapath IDs as hexadecimal int.",1,3,0.5,55
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec import config as nec_config,0,3,0.5,56
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.agent import securitygroups_rpc as sg_rpc,1,3,0.5,57
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api import extensions as neutron_extensions,1,3,0.5,58
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.common import constants as const,1,3,0.5,59
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.common import exceptions as n_exc,1,3,0.5,60
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.common import rpc as n_rpc,1,3,0.5,61
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api.v2 import attributes as attrs,1,3,0.5,62
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import quota_db  # noqa,1,3,0.5,63
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import securitygroups_rpc_base as sg_db_rpc,1,3,0.5,64
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.extensions import allowedaddresspairs as addr_pair,1,3,0.5,65
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.openstack.common import log as logging,1,3,0.5,66
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.common import constants as svc_constants,1,3,0.5,67
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec.common import config,1,3,0.5,68
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec.db import api as ndb,1,3,0.5,69
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec.db import router as rdb,1,3,0.5,70
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,information to and from the plugin.,1,3,0.5,71
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Thus we need to call self.get_port() instead of super().get_port(),1,2,0.3333333333333333,72
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Create a new port entry on DB, then try to activate it.""""""",1,2,0.3333333333333333,73
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Update port, and handle packetfilters associated with the port.",1,2,0.3333333333333333,74
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# since notifier.security_groups_member_updated() need the attribute.,1,2,0.3333333333333333,75
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# NOTE: Make sure that packet filters on this port exist while,1,2,0.3333333333333333,76
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# handler() raises an exception if an error occurs during processing.,1,2,0.3333333333333333,77
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# and l3-router.  If so, we should prevent deletion.",1,2,0.3333333333333333,78
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if (necutils.cmp_dpid(portinfo.datapath_id, datapath_id) and",1,2,0.3333333333333333,79
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if not portinfo:,1,2,0.3333333333333333,80
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if portbindings.PROFILE not in port_data:,1,2,0.3333333333333333,81
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# the API layer. See LP bug #1220011.,1,2,0.3333333333333333,82
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"of the tenant, delete unnessary ofc_tenant.",1,2,0.3333333333333333,83
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile_set = attrs.is_attr_set(profile) and profile,1,2,0.3333333333333333,84
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# it is regarded that portbinding.PROFILE is not set.,1,2,0.3333333333333333,85
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,:param context: neutron api request context,1,2,0.3333333333333333,86
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if dpid > 0xffffffffffffffffL:,1,2,0.3333333333333333,87
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,for port in [p for p in ports if p['device_owner'],1,2,0.3333333333333333,88
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# If an error occurs during port deletion,",1,2,0.3333333333333333,89
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if not only_auto_del:,1,2,0.3333333333333333,90
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# and will be auto deleted with self._process_l3_delete(),1,2,0.3333333333333333,91
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# check if there are any tenant owned ports in-use;,1,2,0.3333333333333333,92
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if not necutils.cmp_dpid(portinfo.datapath_id, datapath_id):",1,2,0.3333333333333333,93
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Delete network and packet_filters associated with the network.",1,2,0.3333333333333333,94
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""due to portinfo for port_id=%s was not """,1,2,0.3333333333333333,95
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = self._show('ports', port_id, neutron_context=ctx)['port']",1,2,0.3333333333333333,96
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,97
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from oslo_config import cfg,1,2,0.3333333333333333,98
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# TODO(amotoki): Raise an exception after all port operations,1,2,0.3333333333333333,99
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,100
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = self._update('ports', port_id,",1,2,0.3333333333333333,101
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Check create_ofc_port/delete_ofc_port are not called.,1,2,0.3333333333333333,102
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._update('ports', port_id, {'port': profile_arg},",1,2,0.3333333333333333,103
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(1, self.ofc.create_ofc_port.call_count)",1,2,0.3333333333333333,104
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"portinfo = {'id': port_id, 'port_no': 123}",1,2,0.3333333333333333,105
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile_arg = {portbindings.PROFILE: None},1,2,0.3333333333333333,106
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile_arg = {portbindings.PROFILE: {}},1,2,0.3333333333333333,107
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile_arg = {portbindings.PROFILE:,1,2,0.3333333333333333,108
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# modify portinfo,1,2,0.3333333333333333,109
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# portinfo unchanged,1,2,0.3333333333333333,110
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# add portinfo,1,2,0.3333333333333333,111
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Check a response of update_port,1,2,0.3333333333333333,112
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Check a response of get_port,1,2,0.3333333333333333,113
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Check a response of create_port,1,2,0.3333333333333333,114
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile_arg = {portbindings.PROFILE: self._get_portinfo()},1,2,0.3333333333333333,115
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.tests.unit.nec import test_nec_plugin,1,2,0.3333333333333333,116
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.extensions import portbindings,1,2,0.3333333333333333,117
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from webob import exc,1,2,0.3333333333333333,118
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from testtools import matchers,1,2,0.3333333333333333,119
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# enable ports of the network,1,2,0.3333333333333333,120
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Update network and handle resources associated with the network.",1,2,0.3333333333333333,121
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# If some error occurs, status of errored port is set to ERROR.",1,2,0.3333333333333333,122
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import agents_db,1,2,0.3333333333333333,123
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec import nec_router,1,2,0.3333333333333333,124
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec import extensions,1,2,0.3333333333333333,125
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.openstack.common import uuidutils,1,2,0.3333333333333333,126
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"from neutron.i18n import _LE, _LI, _LW",1,2,0.3333333333333333,127
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.extensions import portbindings,1,2,0.3333333333333333,128
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import portbindings_db,1,2,0.3333333333333333,129
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import portbindings_base,1,2,0.3333333333333333,130
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import external_net_db,1,2,0.3333333333333333,131
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import db_base_plugin_v2,1,2,0.3333333333333333,132
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.db import agentschedulers_db,1,2,0.3333333333333333,133
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.common import topics,1,2,0.3333333333333333,134
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec import packet_filter,1,2,0.3333333333333333,135
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api.rpc.handlers import metadata_rpc,1,2,0.3333333333333333,136
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api.rpc.handlers import l3_rpc,1,2,0.3333333333333333,137
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api.rpc.handlers import dhcp_rpc,1,2,0.3333333333333333,138
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api.rpc.agentnotifiers import dhcp_rpc_agent_api,1,2,0.3333333333333333,139
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from oslo_utils import importutils,1,2,0.3333333333333333,140
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from oslo_utils import excutils,1,2,0.3333333333333333,141
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from networking_nec.plugins.openflow import plugin,0,2,0.3333333333333333,142
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"It returns True if equal, otherwise False.",1,2,0.3333333333333333,143
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,144
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# disable all active ports of the network,1,2,0.3333333333333333,145
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.plugins.nec import ofc_manager,1,2,0.3333333333333333,146
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,from neutron.api.rpc.handlers import securitygroups_rpc,1,2,0.3333333333333333,147
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,L2 network isolation without VLAN and this plugin controls the OFC.,1,2,0.3333333333333333,148
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# 404 error from OFC.,1,2,0.3333333333333333,149
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,or deactivate ports and packetfilters associated with the network.,1,2,0.3333333333333333,150
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Consume from all consumers in threads,1,2,0.3333333333333333,151
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if not self.ofc.exists_ofc_tenant(context, tenant_id):",1,2,0.3333333333333333,152
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Create a new network entry on DB, and create it on OFC.""""""",1,2,0.3333333333333333,153
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# status='DOWN' to users. But the network is kept defined on OFC.,1,2,0.3333333333333333,154
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if not raise_exc:,1,2,0.3333333333333333,155
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.error(_LE(""Failed to delete port=%(port)s from OFC: """,1,2,0.3333333333333333,156
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# The port is already removed, so there is no need",1,2,0.3333333333333333,157
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# between exists_ofc_port and get_ofc_id in delete_ofc_port.,1,2,0.3333333333333333,158
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# NOTE: NEC Plugin accept admin_state_up. When it's False, this plugin",1,2,0.3333333333333333,159
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# delete_network. In such cases delete_ofc_port may receive,1,2,0.3333333333333333,160
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# release_dhcp_port and deletion of network owned ports in,1,2,0.3333333333333333,161
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# running concurrently. For example, delete_port from",1,2,0.3333333333333333,162
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# There is a case where multiple delete_port operation are,1,2,0.3333333333333333,163
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if not self.ofc.exists_ofc_port(context, port['id']):",1,2,0.3333333333333333,164
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if not port['admin_state_up']:,1,2,0.3333333333333333,165
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if not network:,1,2,0.3333333333333333,166
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,* portinfo are available (to identify port on OFC),1,2,0.3333333333333333,167
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if not self._check_ofc_tenant_in_use(context, tenant_id):",1,2,0.3333333333333333,168
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Check if the specified tenant is used.""""""",1,2,0.3333333333333333,169
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""update_ports(): ignore unchanged portinfo in """,1,1,0.16666666666666666,170
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# now that we've left db transaction, we are safe to notify",1,1,0.16666666666666666,171
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'''RPC API for NEC plugin agent.''',1,1,0.16666666666666666,172
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Update ports' information and activate/deavtivate them.",1,1,0.16666666666666666,173
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,id = p['id'],1,1,0.16666666666666666,174
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"portinfo = ndb.get_portinfo(session, id)",1,1,0.16666666666666666,175
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# All rights reserved.,1,1,0.16666666666666666,176
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = self._get_port(rpc_context, id)",1,1,0.16666666666666666,177
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"for id in kwargs.get('port_removed', []):",1,1,0.16666666666666666,178
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""received from different host """,1,1,0.16666666666666666,179
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,180
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#,1,1,0.16666666666666666,181
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,182
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = handler(context, port)",1,1,0.16666666666666666,183
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if l3_port_check:,1,1,0.16666666666666666,184
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if portinfo_changed in ['DEL', 'MOD']:",1,1,0.16666666666666666,185
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port = self._make_port_dict(port_db),1,1,0.16666666666666666,186
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if need_port_update_notify:,1,1,0.16666666666666666,187
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if addr_pair.ADDRESS_PAIRS in port['port']:,1,1,0.16666666666666666,188
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_port_update_notify = False,1,1,0.16666666666666666,189
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if need_add:,1,1,0.16666666666666666,190
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if need_packet_filter_update:,1,1,0.16666666666666666,191
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if need_del:,1,1,0.16666666666666666,192
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_packet_filter_update |= True,1,1,0.16666666666666666,193
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if portinfo_changed in ['ADD', 'MOD']:",1,1,0.16666666666666666,194
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if portinfo_changed:,1,1,0.16666666666666666,195
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if new_port['admin_state_up']:,1,1,0.16666666666666666,196
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if old_port['admin_state_up'] != new_port['admin_state_up']:,1,1,0.16666666666666666,197
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_packet_filter_update = False,1,1,0.16666666666666666,198
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,ENABLE_SG = False,1,1,0.16666666666666666,199
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,ENABLE_SG = True,1,1,0.16666666666666666,200
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""datapath_id should be a hex string"")",1,1,0.16666666666666666,201
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if port_no is None:,1,1,0.16666666666666666,202
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile = port[portbindings.PROFILE],1,1,0.16666666666666666,203
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_add = False,1,1,0.16666666666666666,204
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,205
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,206
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#,1,1,0.16666666666666666,207
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"profile = {'datapath_id': '0x10000000000000000',",1,1,0.16666666666666666,208
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Too big datapath_id,1,1,0.16666666666666666,209
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"profile = {'datapath_id': 'INVALID',",1,1,0.16666666666666666,210
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# non hexidecimal datapath_id,1,1,0.16666666666666666,211
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile = {'datapath_id': '0xabcdef'},1,1,0.16666666666666666,212
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile = {'port_no': 123},1,1,0.16666666666666666,213
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"profile = {'datapath_id': '1234567890abcdef',",1,1,0.16666666666666666,214
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# NOTE(mriedem): Handle long integer conversion universally.,1,1,0.16666666666666666,215
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo = self.plugin._validate_portinfo(profile),1,1,0.16666666666666666,216
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"profile = {'datapath_id': '0x1234567890abcdef',",1,1,0.16666666666666666,217
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Check validate_portinfo is called.,1,1,0.16666666666666666,218
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with self.port(subnet=subnet1) as port:,1,1,0.16666666666666666,219
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with self.network() as net1:,1,1,0.16666666666666666,220
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with self.subnet(network=net1) as subnet1:,1,1,0.16666666666666666,221
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"with self.network(set_context=True, tenant_id='test') as net1:",1,1,0.16666666666666666,222
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(0, self.ofc.delete_ofc_port.call_count)",1,1,0.16666666666666666,223
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with self.port() as port:,1,1,0.16666666666666666,224
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'port': profile_arg},",1,1,0.16666666666666666,225
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._update('ports', port_id,",1,1,0.16666666666666666,226
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# port-update with non admin user should fail,1,1,0.16666666666666666,227
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'ports', port_id, neutron_context=ctx)['port']",1,1,0.16666666666666666,228
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,ctx = self._get_non_admin_context(),1,1,0.16666666666666666,229
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# By default user is admin - now test non admin user,1,1,0.16666666666666666,230
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,ctx = context.get_admin_context(),1,1,0.16666666666666666,231
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,**profile_arg) as port:,1,1,0.16666666666666666,232
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_del = False,1,1,0.16666666666666666,233
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if datapath_id is None:,1,1,0.16666666666666666,234
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return (port['admin_state_up'] and,1,1,0.16666666666666666,235
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return False,1,1,0.16666666666666666,236
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with excutils.save_and_reraise_exception() as ctxt:,1,1,0.16666666666666666,237
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,except nexc.OFCException as exc:,1,1,0.16666666666666666,238
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.info(_LI(""deactivate_port(): OFC port for port=%s is """,1,1,0.16666666666666666,239
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# These two cases are valid situations.,1,1,0.16666666666666666,240
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# In this case OFCMappingNotFound is raised.,1,1,0.16666666666666666,241
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""does not exist."", port['id'])",1,1,0.16666666666666666,242
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if port_status != port['status']:,1,1,0.16666666666666666,243
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""no portinfo for this port."")",1,1,0.16666666666666666,244
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"elif not ndb.get_portinfo(context.session, port['id']):",1,1,0.16666666666666666,245
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,elif not network['admin_state_up']:,1,1,0.16666666666666666,246
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,* port admin_state is UP,1,1,0.16666666666666666,247
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,Conditions to activate port on OFC are:,1,1,0.16666666666666666,248
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"except (nexc.OFCException, nexc.OFCMappingNotFound) as exc:",1,1,0.16666666666666666,249
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if self.ofc.exists_ofc_tenant(context, tenant_id):",1,1,0.16666666666666666,250
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if rdb.get_router_count_by_provider(context.session,",1,1,0.16666666666666666,251
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if network['network']['admin_state_up']:,1,1,0.16666666666666666,252
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return True,1,1,0.16666666666666666,253
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if self.get_networks_count(context, filters=filters):",1,1,0.16666666666666666,254
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# All networks are created on OFC,1,1,0.16666666666666666,255
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if resource_dict['status'] != new_status:,1,1,0.16666666666666666,256
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,The port binding extension enables an external application relay,1,1,0.16666666666666666,257
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,NOTE: This is for Neutron API V2.  Codes for V1.0 and V1.1 are available,1,1,0.16666666666666666,258
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return port,1,1,0.16666666666666666,259
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if port:,1,1,0.16666666666666666,260
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port = ndb.get_port_from_device(device),1,1,0.16666666666666666,261
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return False,1,1,0.16666666666666666,262
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,263
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,264
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#,1,1,0.16666666666666666,265
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = super(NECPluginV2, self).create_port(context, port)",1,1,0.16666666666666666,266
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,ctxt.reraise = False,1,1,0.16666666666666666,267
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,import oslo_messaging,1,1,0.16666666666666666,268
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if cur_portinfo:,1,1,0.16666666666666666,269
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,:param port_data: port attributes passed in PUT request,1,1,0.16666666666666666,270
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if 'admin_state_up' in network['network']:,1,1,0.16666666666666666,271
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if (necutils.cmp_dpid(portinfo['datapath_id'],",1,1,0.16666666666666666,272
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,cur_portinfo.datapath_id) and,1,1,0.16666666666666666,273
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# TODO(amotoki): Allow Make None in binding:profile in,1,1,0.16666666666666666,274
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# it means binding:.profile needs to be cleared.,1,1,0.16666666666666666,275
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# If binding:profile is None or an empty dict,",1,1,0.16666666666666666,276
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Update portinfo according to bindings:profile in update_port().",1,1,0.16666666666666666,277
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo = None,1,1,0.16666666666666666,278
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo = self._validate_portinfo(profile),1,1,0.16666666666666666,279
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if profile_set:,1,1,0.16666666666666666,280
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# If portbindings.PROFILE is None, unspecified or an empty dict",1,1,0.16666666666666666,281
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,profile = port_data.get(portbindings.PROFILE),1,1,0.16666666666666666,282
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,:param port: port attributes to be returned,1,1,0.16666666666666666,283
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if handler:,1,1,0.16666666666666666,284
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Add portinfo according to bindings:profile in create_port().",1,1,0.16666666666666666,285
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# delete_network will be aborted.,1,1,0.16666666666666666,286
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if int(port_no) > 65535:,1,1,0.16666666666666666,287
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,for port in ports:,1,1,0.16666666666666666,288
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,elif changed and new_net['admin_state_up']:,1,1,0.16666666666666666,289
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"# no other tenant owned ports, those floating ips are disassociated",1,1,0.16666666666666666,290
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# Make sure auto-delete ports on OFC are deleted.,1,1,0.16666666666666666,291
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,# This is avoids too many rollback.,1,1,0.16666666666666666,292
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port = self.deactivate_port(context, port)",1,1,0.16666666666666666,293
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if portinfo:,1,1,0.16666666666666666,294
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,if msg:,1,1,0.16666666666666666,295
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"dpid = int(datapath_id, 16)",1,1,0.16666666666666666,296
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"if self.ofc.exists_ofc_network(context, id):",1,1,0.16666666666666666,297
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,dpid = hex(dpid),1,1,0.16666666666666666,298
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"super(NECPluginV2RPCCallbacks, self).__init__()",1,0,0.0,299
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"cctxt.cast(context, 'port_update', port=port)",1,0,0.0,300
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class NECPluginV2RPCCallbacks(object):,1,0,0.0,301
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,target = oslo_messaging.Target(version='1.0'),1,0,0.0,302
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def __init__(self, plugin):",1,0,0.0,303
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def update_ports(self, rpc_context, **kwargs):",1,0,0.0,304
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.plugin = plugin,1,0,0.0,305
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,Expected input format is:,1,0,0.0,306
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'topic': 'q-agent-notifier',",1,0,0.0,307
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'agent_id': 'nec-q-agent.' + <hostname>,",1,0,0.0,308
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'datapath_id': <datapath_id of br-int on remote host>,",1,0,0.0,309
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"cctxt = self.client.prepare(topic=self.topic_port_update, fanout=True)",1,0,0.0,310
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def __init__(self, topic):",1,0,0.0,311
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def port_update(self, context, port):",1,0,0.0,312
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.client = n_rpc.get_client(target),1,0,0.0,313
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"target = oslo_messaging.Target(topic=topic, version='1.0')",1,0,0.0,314
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"topic, topics.PORT, topics.UPDATE)",1,0,0.0,315
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.topic_port_update = topics.get_topic_name(,1,0,0.0,316
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.topic = topic,1,0,0.0,317
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class NECPluginV2AgentNotifierApi(sg_rpc.SecurityGroupAgentRpcApiMixin):,1,0,0.0,318
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.notify_routers_updated(context, router_ids)",1,0,0.0,319
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"super(NECPluginV2, self).delete_port(context, id)",1,0,0.0,320
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, id, do_notify=False)",1,0,0.0,321
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,router_ids = self.disassociate_floatingips(,1,0,0.0,322
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.prevent_l3_port_deletion(context, id)",1,0,0.0,323
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,for pf in port_db.packetfilters:,1,0,0.0,324
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,except n_exc.PortNotFound:,1,0,0.0,325
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,raise_exc=False),1,0,0.0,326
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'port_added': [<new PortInfo>,...],",1,0,0.0,327
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"rpc_context, id, raise_exc=False)",1,0,0.0,328
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"port_db = self._get_port(context, id)",1,0,0.0,329
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"return self.plugin.get_port(context, port_id)",1,0,0.0,330
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _get_port(self, context, port_id):",1,0,0.0,331
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.plugin.deactivate_port(rpc_context, port, raise_exc=False)",1,0,0.0,332
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'received': datapath_id}),1,0,0.0,333
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'registered': portinfo.datapath_id,",1,0,0.0,334
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""received_datapath_id=%(received)s)."",",1,0,0.0,335
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""(registered_datapath_id=%(registered)s, """,1,0,0.0,336
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""registered"", id)",1,0,0.0,337
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""update_ports(): ignore port_removed message """,1,0,0.0,338
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.plugin.activate_port_if_ready(rpc_context, port)",1,0,0.0,339
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.plugin.activate_packet_filters_by_port(rpc_context, id)",1,0,0.0,340
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.plugin.deactivate_packet_filters_by_port(,1,0,0.0,341
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'port_removed': [<removed Port ID>,...]}",1,0,0.0,342
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.plugin.deactivate_port(rpc_context, port,",1,0,0.0,343
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"mac=p.get('mac', ''))",1,0,0.0,344
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"ndb.add_portinfo(session, id, datapath_id, p['port_no'],",1,0,0.0,345
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"ndb.del_portinfo(session, id)",1,0,0.0,346
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,continue,1,0,0.0,347
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""port_added message (port_id=%s)."", id)",1,0,0.0,348
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo.port_no == p['port_no']):,1,0,0.0,349
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"for p in kwargs.get('port_added', []):",1,0,0.0,350
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,session = rpc_context.session,1,0,0.0,351
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,datapath_id = kwargs['datapath_id'],1,0,0.0,352
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""kwargs=%s ."", kwargs)",1,0,0.0,353
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2RPCCallbacks.update_ports() called, """,1,0,0.0,354
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"handler = self._get_port_handler('delete', port['device_owner'])",1,0,0.0,355
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,old_ofport_exist = get_ofport_exist(old_port),1,0,0.0,356
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.delete_port() called, id=%s ."", id)",1,0,0.0,357
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._process_portbindings_create(context, port_data, port)",1,0,0.0,358
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def get_ofport_exist(port):,1,0,0.0,359
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed):,1,0,0.0,360
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _update_ofc_port_if_required(self, context, old_port, new_port,",1,0,0.0,361
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"return handler(context, port)",1,0,0.0,362
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"handler = self._get_port_handler('create', port['device_owner'])",1,0,0.0,363
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.notify_security_groups_member_updated(context, port)",1,0,0.0,364
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_data.get(addr_pair.ADDRESS_PAIRS))),1,0,0.0,365
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, port,",1,0,0.0,366
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._process_create_allowed_address_pairs(,1,0,0.0,367
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port[addr_pair.ADDRESS_PAIRS] = (,1,0,0.0,368
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, port, sgids)",1,0,0.0,369
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._process_port_create_security_group(,1,0,0.0,370
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"sgids = self._get_security_groups_on_port(context, port)",1,0,0.0,371
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"class TestNecPortBinding(test_bindings.PortBindingsTestCase,",1,0,0.0,372
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._ensure_default_security_group_on_port(context, port)",1,0,0.0,373
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_data = port['port'],1,0,0.0,374
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port['port']['status'] = const.PORT_STATUS_DOWN,1,0,0.0,375
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.create_port() called, port=%s ."", port)",1,0,0.0,376
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def create_port(self, context, port):",1,0,0.0,377
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return handlers['default'],1,0,0.0,378
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return handler,1,0,0.0,379
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,handler = handlers.get(device_owner),1,0,0.0,380
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,handlers = self.port_handlers[operation],1,0,0.0,381
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _get_port_handler(self, operation, device_owner):",1,0,0.0,382
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed = self._process_portbindings_portinfo_update(,1,0,0.0,383
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _process_portbindings_update(self, context, port_data, port):",1,0,0.0,384
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,bool(port.get(portbindings.PROFILE))),1,0,0.0,385
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,new_ofport_exist = get_ofport_exist(new_port),1,0,0.0,386
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def delete_port(self, context, id, l3_port_check=True):",1,0,0.0,387
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, port['port'], new_port)",1,0,0.0,388
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return new_port,1,0,0.0,389
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed),1,0,0.0,390
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._update_ofc_port_if_required(context, old_port, new_port,",1,0,0.0,391
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.notifier.port_update(context, new_port)",1,0,0.0,392
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, old_port, new_port)",1,0,0.0,393
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_port_update_notify |= self.is_security_group_member_updated(,1,0,0.0,394
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, id, port, old_port, new_port)",1,0,0.0,395
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_port_update_notify |= self.update_security_group_on_port(,1,0,0.0,396
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,new_port)),1,0,0.0,397
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"old_port,",1,0,0.0,398
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.update_address_pairs_on_port(context, id, port,",1,0,0.0,399
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_port_update_notify |= (,1,0,0.0,400
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed = self._process_portbindings_update(,1,0,0.0,401
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_add |= new_ofport_exist,1,0,0.0,402
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"new_port = super(NECPluginV2, self).update_port(context, id, port)",1,0,0.0,403
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"old_port = super(NECPluginV2, self).get_port(context, id)",1,0,0.0,404
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'id': id, 'port': port})",1,0,0.0,405
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""id=%(id)s port=%(port)s ."",",1,0,0.0,406
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.update_port() called, """,1,0,0.0,407
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"Update network entry on DB. If admin_state_up was changed, activate",1,0,0.0,408
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def update_port(self, context, id, port):",1,0,0.0,409
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.activate_port_if_ready(context, new_port)",1,0,0.0,410
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.activate_packet_filters_by_port(context, id)",1,0,0.0,411
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.deactivate_packet_filters_by_port(context, id)",1,0,0.0,412
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.deactivate_port(context, new_port)",1,0,0.0,413
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,need_del |= old_ofport_exist,1,0,0.0,414
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return None,1,0,0.0,415
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(profile['port_no'],",1,0,0.0,416
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,test_nec_plugin.NecPluginV2TestCase):,1,0,0.0,417
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,**profile_arg):,1,0,0.0,418
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"int(portinfo['datapath_id'].replace('L', ''), 16)",1,0,0.0,419
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"0x1234567890abcdef,",1,0,0.0,420
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.assertEqual(,1,0,0.0,421
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'port_no': 123},1,0,0.0,422
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_validate_portinfo_ok(self):,1,0,0.0,423
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class TestNecPortBindingValidatePortInfo(test_nec_plugin.NecPluginV2TestCase):,1,0,0.0,424
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"expected_res_status=400,",1,0,0.0,425
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'port_no': 0xffff + 1}},1,0,0.0,426
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'datapath_id': '0xabc',",1,0,0.0,427
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_create_portinfo_validation_called(self):,1,0,0.0,428
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_update_portinfo_non_admin(self):,1,0,0.0,429
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,except exc.HTTPClientError:,1,0,0.0,430
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"set_context=True, tenant_id='test',",1,0,0.0,431
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(self.ofc.delete_ofc_port.call_count, 2)",1,0,0.0,432
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"arg_list=(portbindings.PROFILE,),",1,0,0.0,433
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"expected_res_status=403,",1,0,0.0,434
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"with self.port(subnet=subnet1,",1,0,0.0,435
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,try:,1,0,0.0,436
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_create_portinfo_non_admin(self):,1,0,0.0,437
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_no=123)},1,0,0.0,438
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._get_portinfo(datapath_id='0xabcd',",1,0,0.0,439
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,added=[portinfo]),1,0,0.0,440
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.rpcapi_update_ports(datapath_id='0x000000000000abcd',",1,0,0.0,441
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_update_for_existing_port_with_different_padding_dpid(self):,1,0,0.0,442
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_create_portinfo_with_none(self):,1,0,0.0,443
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_create_portinfo_with_empty_dict(self):,1,0,0.0,444
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,),1,0,0.0,445
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(portinfo['port_no'], 123)",1,0,0.0,446
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_validate_portinfo_ok_without_0x(self):,1,0,0.0,447
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _test_validate_exception(self, profile, expected_msg):",1,0,0.0,448
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, port_data, port)",1,0,0.0,449
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertFalse(utils.cmp_dpid('0xabcx', '0xabcx'))",1,0,0.0,450
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_cmp_dpid_with_exception(self):,1,0,0.0,451
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertFalse(utils.cmp_dpid('0x000000000000abcd', '0x00abc0'))",1,0,0.0,452
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertFalse(utils.cmp_dpid('0x000000000000abcd', '0xabc0'))",1,0,0.0,453
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertTrue(utils.cmp_dpid('0x000000000000abcd', '0x00abcd'))",1,0,0.0,454
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertTrue(utils.cmp_dpid('0x000000000000abcd', '0xabcd'))",1,0,0.0,455
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertTrue(utils.cmp_dpid('abcd', '0xabcd'))",1,0,0.0,456
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertTrue(utils.cmp_dpid('0xabcd', '0xabcd'))",1,0,0.0,457
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_cmp_dpid(self):,1,0,0.0,458
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class NecUtilsTest(base.BaseTestCase):,1,0,0.0,459
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""port_no should be [0:65535]"")",1,0,0.0,460
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'port_no': 65536},1,0,0.0,461
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_validate_portinfo_too_big_port_number(self):,1,0,0.0,462
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_validate_portinfo_invalid_datapath_id(self):,1,0,0.0,463
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""'-1' should be non-negative."")",1,0,0.0,464
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'port_no': -1},1,0,0.0,465
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_validate_portinfo_negative_port_number(self):,1,0,0.0,466
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._test_validate_exception(profile, expected_msg)",1,0,0.0,467
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""Validation of dictionary's keys failed."")",1,0,0.0,468
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"expected_msg = (""Invalid input for operation: """,1,0,0.0,469
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_validate_portinfo_dict_validation(self):,1,0,0.0,470
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertThat(str(e), matchers.StartsWith(expected_msg))",1,0,0.0,471
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.plugin._validate_portinfo, profile)",1,0,0.0,472
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"e = self.assertRaises(n_exc.InvalidInput,",1,0,0.0,473
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_update_portinfo_detail_clear_with_none(self):,1,0,0.0,474
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(self.ofc.delete_ofc_port.call_count, 1)",1,0,0.0,475
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,VIF_TYPE = portbindings.VIF_TYPE_OVS,1,0,0.0,476
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class TestNecPortBindingHost(,1,0,0.0,477
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(len(profile), 2)",1,0,0.0,478
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"expected = self._get_portinfo(datapath_id, port_no)",1,0,0.0,479
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_no=None):,1,0,0.0,480
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _check_response_portbinding_profile(self, port, datapath_id=None,",1,0,0.0,481
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'port_no': port_no},1,0,0.0,482
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"return {'datapath_id': datapath_id,",1,0,0.0,483
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_no = 1,1,0,0.0,484
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,datapath_id = '0xabc',1,0,0.0,485
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _get_portinfo(self, datapath_id=None, port_no=None):",1,0,0.0,486
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class TestNecPortBindingPortInfo(test_nec_plugin.NecPluginV2TestCase):,1,0,0.0,487
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,pass,1,0,0.0,488
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"test_bindings.PortBindingsHostTestCaseMixin,",1,0,0.0,489
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,FIREWALL_DRIVER = test_sg_rpc.FIREWALL_NOOP_DRIVER,1,0,0.0,490
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(self.ofc.create_ofc_port.call_count, 2)",1,0,0.0,491
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portbindings.OVS_HYBRID_PLUG: False},1,0,0.0,492
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"VIF_DETAILS = {portbindings.CAP_PORT_FILTER: False,",1,0,0.0,493
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class TestNecPortBindingNoSG(TestNecPortBinding):,1,0,0.0,494
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"super(TestNecPortBinding, self).setUp()",1,0,0.0,495
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,group='SECURITYGROUP'),1,0,0.0,496
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'enable_security_group', self.ENABLE_SG,",1,0,0.0,497
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,cfg.CONF.set_override(,1,0,0.0,498
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,test_sg_rpc.set_firewall_driver(self.FIREWALL_DRIVER),1,0,0.0,499
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def setUp(self):,1,0,0.0,500
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,FIREWALL_DRIVER = test_sg_rpc.FIREWALL_HYBRID_DRIVER,1,0,0.0,501
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portbindings.OVS_HYBRID_PLUG: True},1,0,0.0,502
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"VIF_DETAILS = {portbindings.CAP_PORT_FILTER: True,",1,0,0.0,503
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(profile['datapath_id'],",1,0,0.0,504
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,expected['datapath_id']),1,0,0.0,505
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,expected['port_no']),1,0,0.0,506
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _check_response_portbinding_no_profile(self, port):",1,0,0.0,507
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_no=99)},1,0,0.0,508
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._get_portinfo(datapath_id='0x1234567890',",1,0,0.0,509
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(self.ofc.delete_ofc_port.call_count, 0)",1,0,0.0,510
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_update_portinfo_detail(self):,1,0,0.0,511
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,neutron_context=ctx)['port'],1,0,0.0,512
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._check_response_portbinding_no_profile(port['port']),1,0,0.0,513
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(self.ofc.create_ofc_port.call_count, 0)",1,0,0.0,514
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_update_portinfo(self):,1,0,0.0,515
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,neutron_context=ctx),1,0,0.0,516
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"expected_code=exc.HTTPForbidden.code,",1,0,0.0,517
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._check_response_portbinding_no_profile(non_admin_port),1,0,0.0,518
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,non_admin_port = self._show(,1,0,0.0,519
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._check_response_portbinding_profile(port),1,0,0.0,520
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertEqual(self.ofc.create_ofc_port.call_count, 1)",1,0,0.0,521
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._check_response_portbinding_profile(port['port']),1,0,0.0,522
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_id = port['port']['id'],1,0,0.0,523
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"with self.port(arg_list=(portbindings.PROFILE,),",1,0,0.0,524
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def test_port_create_portinfo(self):,1,0,0.0,525
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"read_deleted=""no"")",1,0,0.0,526
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"is_admin=False,",1,0,0.0,527
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"tenant_id=self._tenant_id,",1,0,0.0,528
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"return context.Context(user_id=None,",1,0,0.0,529
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def _get_non_admin_context(self):,1,0,0.0,530
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertNotIn(portbindings.PROFILE, port)",1,0,0.0,531
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertIn('status', port)",1,0,0.0,532
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._process_portbindings_portinfo_create(context, port_data, port)",1,0,0.0,533
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"resource_dict['id'],",1,0,0.0,534
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"super(NECPluginV2, self)._process_portbindings_create_and_update(",1,0,0.0,535
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,metadata_rpc.MetadataRpcCallback()],1,0,0.0,536
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"resource_dict, new_status):",1,0,0.0,537
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _update_resource_status_if_changed(self, context, resource_type,",1,0,0.0,538
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,obj_db.update(request),1,0,0.0,539
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"obj_db = obj_getter(context, id)",1,0,0.0,540
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with context.session.begin(subtransactions=True):,1,0,0.0,541
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"obj_getter = getattr(self, '_get_%s' % resource)",1,0,0.0,542
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,request = {'status': status},1,0,0.0,543
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""Update status of specified resource.""""""",1,0,0.0,544
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _update_resource_status(self, context, resource, id, status):",1,0,0.0,545
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.conn.consume_in_threads(),1,0,0.0,546
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.conn.create_consumer(svc_topic, self.endpoints, fanout=False)",1,0,0.0,547
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,for svc_topic in self.service_topics.values():,1,0,0.0,548
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"agents_db.AgentExtRpcCallback(),",1,0,0.0,549
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.service_topics = {svc_constants.CORE: topics.PLUGIN,",1,0,0.0,550
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.callback_sg,",1,0,0.0,551
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"l3_rpc.L3RpcCallback(),",1,0,0.0,552
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"dhcp_rpc.DhcpRpcCallback(),",1,0,0.0,553
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"NECPluginV2RPCCallbacks(self.safe_reference),",1,0,0.0,554
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.endpoints = [,1,0,0.0,555
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.callback_sg = securitygroups_rpc.SecurityGroupServerRpcCallback(),1,0,0.0,556
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,nec_router.L3AgentNotifyAPI(),1,0,0.0,557
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.agent_notifiers[const.AGENT_TYPE_L3] = (,1,0,0.0,558
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,dhcp_rpc_agent_api.DhcpAgentNotifyAPI(),1,0,0.0,559
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.agent_notifiers[const.AGENT_TYPE_DHCP] = (,1,0,0.0,560
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.notifier = NECPluginV2AgentNotifierApi(topics.AGENT),1,0,0.0,561
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.conn = n_rpc.create_connection(new=True),1,0,0.0,562
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._update_resource_status(context, resource_type,",1,0,0.0,563
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,new_status),1,0,0.0,564
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,resource_dict['status'] = new_status,1,0,0.0,565
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _check_ofc_tenant_in_use(self, context, tenant_id):",1,0,0.0,566
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_status),1,0,0.0,567
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._update_resource_status(context, ""port"", port['id'],",1,0,0.0,568
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_status = const.PORT_STATUS_ERROR,1,0,0.0,569
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.error(_LE(""create_ofc_port() failed due to %s""), exc)",1,0,0.0,570
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_status = const.PORT_STATUS_ACTIVE,1,0,0.0,571
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.ofc.create_ofc_port(context, port['id'], port)",1,0,0.0,572
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""ofc_port already exists."")",1,0,0.0,573
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"elif self.ofc.exists_ofc_port(context, port['id']):",1,0,0.0,574
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""network.admin_state_up is False."")",1,0,0.0,575
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""port.admin_state_up is False."")",1,0,0.0,576
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""activate_port_if_ready(): skip, """,1,0,0.0,577
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port['network_id']),1,0,0.0,578
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"network = super(NECPluginV2, self).get_network(context,",1,0,0.0,579
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,* network admin_state is UP,1,0,0.0,580
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def activate_port_if_ready(self, context, port, network=None):",1,0,0.0,581
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.warn(_LW(""delete_ofc_tenant() failed due to %s""), exc)",1,0,0.0,582
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,tenant_id),1,0,0.0,583
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug('_cleanup_ofc_tenant: No OFC tenant for %s',",1,0,0.0,584
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,else:,1,0,0.0,585
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.ofc.delete_ofc_tenant(context, tenant_id)",1,0,0.0,586
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,try:,1,0,0.0,587
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _cleanup_ofc_tenant(self, context, tenant_id):",1,0,0.0,588
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,tenant_id):,1,0,0.0,589
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"nec_router.PROVIDER_OPENFLOW,",1,0,0.0,590
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,filters = {'tenant_id': [tenant_id]},1,0,0.0,591
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,svc_constants.L3_ROUTER_NAT: topics.L3PLUGIN},1,0,0.0,592
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def setup_rpc(self):,1,0,0.0,593
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def deactivate_port(self, context, port, raise_exc=True):",1,0,0.0,594
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.get_port_from_device() called, """,1,0,0.0,595
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""NECPluginV2 controls an OpenFlow Controller.",1,0,0.0,596
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,addr_pair_db.AllowedAddressPairsMixin):,1,0,0.0,597
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"portbindings_db.PortBindingMixin,",1,0,0.0,598
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"packet_filter.PacketFilterMixin,",1,0,0.0,599
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"nec_router.L3AgentSchedulerDbMixin,",1,0,0.0,600
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"agentschedulers_db.DhcpAgentSchedulerDbMixin,",1,0,0.0,601
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"SecurityGroupServerRpcMixin,",1,0,0.0,602
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"nec_router.RouterMixin,",1,0,0.0,603
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"external_net_db.External_net_db_mixin,",1,0,0.0,604
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"class NECPluginV2(db_base_plugin_v2.NeutronDbPluginV2,",1,0,0.0,605
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'device': device, 'ret': port})",1,0,0.0,606
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""device=%(device)s => %(ret)s."",",1,0,0.0,607
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port['device'] = device,1,0,0.0,608
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.start_periodic_dhcp_agent_status_check(),1,0,0.0,609
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def get_port_from_device(device):,1,0,0.0,610
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,@staticmethod,1,0,0.0,611
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class SecurityGroupServerRpcMixin(sg_db_rpc.SecurityGroupServerRpcMixin):,1,0,0.0,612
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,LOG = logging.getLogger(__name__),1,0,0.0,613
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,nec_config.register_plugin_opts(),0,0,0.0,614
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.setup_extension_aliases(aliases),0,0,0.0,615
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,class NECPluginV2(plugin.NECPluginV2Impl):,0,0,0.0,616
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,except Exception:,1,0,0.0,617
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"return (int(dpid_a, 16) == int(dpid_b, 16))",1,0,0.0,618
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,try:,1,0,0.0,619
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""",1,0,0.0,620
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def cmp_dpid(dpid_a, dpid_b):",1,0,0.0,621
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,The Neutron NECPluginV2 maps L2 logical networks to L2 virtualized networks,1,0,0.0,622
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,on an OpenFlow enabled network.  An OpenFlow Controller (OFC) provides,1,0,0.0,623
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,at https://github.com/nec-openstack/neutron-openflow-plugin .,1,0,0.0,624
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""""""",1,0,0.0,625
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,},1,0,0.0,626
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'default': self.deactivate_port,",1,0,0.0,627
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"const.DEVICE_OWNER_ROUTER_INTF: self.delete_router_port,",1,0,0.0,628
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"const.DEVICE_OWNER_ROUTER_GW: self.delete_router_port,",1,0,0.0,629
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'delete': {,1,0,0.0,630
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"},",1,0,0.0,631
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'default': self.activate_port_if_ready,",1,0,0.0,632
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"const.DEVICE_OWNER_ROUTER_INTF: self.create_router_port,",1,0,0.0,633
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"const.DEVICE_OWNER_ROUTER_GW: self.create_router_port,",1,0,0.0,634
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'create': {,1,0,0.0,635
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.port_handlers = {,1,0,0.0,636
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"nec_router.load_driver(self.safe_reference, self.ofc)",1,0,0.0,637
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,config.CONF.router_scheduler_driver,1,0,0.0,638
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.router_scheduler = importutils.import_object(,1,0,0.0,639
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,),1,0,0.0,640
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,config.CONF.network_scheduler_driver,1,0,0.0,641
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.network_scheduler = importutils.import_object(,1,0,0.0,642
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.l3_rpc_notifier = nec_router.L3AgentNotifyAPI(),1,0,0.0,643
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.setup_rpc(),1,0,0.0,644
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,neutron_extensions.append_api_extensions_path(extensions.__path__),1,0,0.0,645
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portbindings_base.register_port_dict_function(),1,0,0.0,646
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.base_binding_dict = self._get_base_binding_dict(),1,0,0.0,647
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.ofc = ofc_manager.OFCManager(self.safe_reference),1,0,0.0,648
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self.remove_packet_filter_extension_if_disabled(aliases),1,0,0.0,649
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,sg_rpc.disable_security_group_extension_by_config(aliases),1,0,0.0,650
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port['status'] = port_status,1,0,0.0,651
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""deactivate_port(): skip, ofc_port for port=%s """,1,0,0.0,652
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _process_portbindings_create(self, context, port_data, port):",1,0,0.0,653
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portbindings.OVS_HYBRID_PLUG: sg_enabled},1,0,0.0,654
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'datapath_id': {'type:string': None, 'required': True},",1,0,0.0,655
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,key_specs = {,1,0,0.0,656
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _validate_portinfo(self, profile):",1,0,0.0,657
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,del port_res[portbindings.PROFILE],1,0,0.0,658
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,elif portbindings.PROFILE in port_res:,1,0,0.0,659
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'port_no': portinfo['port_no'],",1,0,0.0,660
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'datapath_id': portinfo['datapath_id'],",1,0,0.0,661
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_res[portbindings.PROFILE] = {,1,0,0.0,662
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _extend_port_dict_binding_portinfo(self, port_res, portinfo):",1,0,0.0,663
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return binding,1,0,0.0,664
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portbindings.VIF_DETAILS: vif_details},1,0,0.0,665
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"binding = {portbindings.VIF_TYPE: portbindings.VIF_TYPE_OVS,",1,0,0.0,666
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"vif_details = {portbindings.CAP_PORT_FILTER: sg_enabled,",1,0,0.0,667
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._process_l3_delete(context, id)",1,0,0.0,668
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,sg_enabled = sg_rpc.is_firewall_enabled(),1,0,0.0,669
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,def _get_base_binding_dict(self):,1,0,0.0,670
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._cleanup_ofc_tenant(context, tenant_id)",1,0,0.0,671
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"super(NECPluginV2, self).delete_network(context, id)",1,0,0.0,672
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,const.NET_STATUS_ERROR),1,0,0.0,673
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, ""network"", net_db['id'],",1,0,0.0,674
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._update_resource_status(,1,0,0.0,675
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.error(_LE(""delete_network() failed due to %s""), exc)",1,0,0.0,676
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with excutils.save_and_reraise_exception():,1,0,0.0,677
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.ofc.delete_ofc_network(context, id, net_db)",1,0,0.0,678
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.delete_packet_filter(context, pf['id'])",1,0,0.0,679
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,for pf in net_db.packetfilters:,1,0,0.0,680
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"'port_no': {'type:non_negative': None, 'required': True,",1,0,0.0,681
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,'convert_to': attrs.convert_to_int},1,0,0.0,682
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"msg = attrs._validate_dict_or_empty(profile, key_specs=key_specs)",1,0,0.0,683
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,raise n_exc.InvalidInput(error_message=msg),1,0,0.0,684
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._extend_port_dict_binding_portinfo(port_res, port_db.portinfo)",1,0,0.0,685
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"super(NECPluginV2, self).extend_port_dict_binding(port_res, port_db)",1,0,0.0,686
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def extend_port_dict_binding(self, port_res, port_db):",1,0,0.0,687
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return portinfo_changed,1,0,0.0,688
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed = None,1,0,0.0,689
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed = 'DEL',1,0,0.0,690
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,elif cur_portinfo:,1,0,0.0,691
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed = 'MOD',1,0,0.0,692
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"ndb.del_portinfo(context.session, port['id'])",1,0,0.0,693
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo['port_no'] == cur_portinfo.port_no):,1,0,0.0,694
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo_changed = 'ADD',1,0,0.0,695
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"cur_portinfo = ndb.get_portinfo(context.session, port['id'])",1,0,0.0,696
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return,1,0,0.0,697
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,":returns: 'ADD', 'MOD', 'DEL' or None",1,0,0.0,698
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _process_portbindings_portinfo_update(self, context, port_data, port):",1,0,0.0,699
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._extend_port_dict_binding_portinfo(port, portinfo)",1,0,0.0,700
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"ndb.add_portinfo(context.session, port['id'], **portinfo)",1,0,0.0,701
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,portinfo['mac'] = port['mac_address'],1,0,0.0,702
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _process_portbindings_portinfo_create(self, context, port_data, port):",1,0,0.0,703
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"return {'datapath_id': dpid, 'port_no': port_no}",1,0,0.0,704
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,raise nexc.ProfilePortInfoInvalidPortNo(),1,0,0.0,705
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,raise nexc.ProfilePortInfoInvalidDataPathId(),1,0,0.0,706
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,except ValueError:,1,0,0.0,707
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port_no = profile.get('port_no'),1,0,0.0,708
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,datapath_id = profile.get('datapath_id'),1,0,0.0,709
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,in db_base_plugin_v2.AUTO_DELETE_PORT_OWNERS]:,1,0,0.0,710
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,raise n_exc.NetworkInUse(net_id=id),1,0,0.0,711
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.ofc.delete_ofc_port(context, port['id'], port)",1,0,0.0,712
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"tenant_id = self._get_tenant_id_for_create(context, network['network'])",1,0,0.0,713
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"new_net = super(NECPluginV2, self).create_network(context, network)",1,0,0.0,714
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,network['network']['status'] = const.NET_STATUS_ERROR,1,0,0.0,715
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""OFC: %(exc)s""), {'id': net_id, 'exc': exc})",1,0,0.0,716
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.error(_LE(""Failed to create network id=%(id)s on """,1,0,0.0,717
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.ofc.create_ofc_network(context, tenant_id, net_id, net_name)",1,0,0.0,718
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.ofc.create_ofc_tenant(context, tenant_id)",1,0,0.0,719
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,network['network']['status'] = self._net_status(network),1,0,0.0,720
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,network['network']['id'] = net_id,1,0,0.0,721
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._ensure_default_security_group(context, tenant_id)",1,0,0.0,722
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,#set up default security groups,1,0,0.0,723
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,net_id = uuidutils.generate_uuid(),1,0,0.0,724
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,net_name = network['network']['name'],1,0,0.0,725
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""network=%s ."", network)",1,0,0.0,726
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,for p in ports),1,0,0.0,727
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.create_network() called, """,1,0,0.0,728
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def create_network(self, context, network):",1,0,0.0,729
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return const.NET_STATUS_DOWN,1,0,0.0,730
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return const.NET_STATUS_ACTIVE,1,0,0.0,731
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def _net_status(self, network):",1,0,0.0,732
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, ""port"", port, const.PORT_STATUS_ERROR)",1,0,0.0,733
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""%(exc)s""), {'port': port['id'], 'exc': exc})",1,0,0.0,734
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,port['status'] = const.PORT_STATUS_DOWN,1,0,0.0,735
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""already removed.""), port['id'])",1,0,0.0,736
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"except (nexc.OFCResourceNotFound, nexc.OFCMappingNotFound):",1,0,0.0,737
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"context, ""port"", port, const.PORT_STATUS_DOWN)",1,0,0.0,738
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,self._update_resource_status_if_changed(,1,0,0.0,739
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._process_l3_create(context, new_net, network['network'])",1,0,0.0,740
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,return new_net,1,0,0.0,741
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def update_network(self, context, id, network):",1,0,0.0,742
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"Update network entry on DB. If 'admin_state_up' was changed, activate",1,0,0.0,743
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,p['device_owner'] == const.DEVICE_OWNER_FLOATINGIP,1,0,0.0,744
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,db_base_plugin_v2.AUTO_DELETE_PORT_OWNERS or,1,0,0.0,745
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,only_auto_del = all(p['device_owner'] in,1,0,0.0,746
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"ports = self.get_ports(context, filters={'network_id': [id]})",1,0,0.0,747
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,tenant_id = net_db['tenant_id'],1,0,0.0,748
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"net_db = self._get_network(context, id)",1,0,0.0,749
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.delete_network() called, id=%s ."", id)",1,0,0.0,750
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"def delete_network(self, context, id):",1,0,0.0,751
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.activate_port_if_ready(context, port, new_net)",1,0,0.0,752
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,admin_state_up=[True]),1,0,0.0,753
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"filters = dict(network_id=[id], status=[const.PORT_STATUS_DOWN],",1,0,0.0,754
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.deactivate_port(context, port, raise_exc=False)",1,0,0.0,755
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,filters=filters),1,0,0.0,756
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"ports = super(NECPluginV2, self).get_ports(context,",1,0,0.0,757
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"filters = dict(network_id=[id], status=[const.PORT_STATUS_ACTIVE])",1,0,0.0,758
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,changed = (old_net['admin_state_up'] != new_net['admin_state_up']),1,0,0.0,759
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self._process_l3_update(context, new_net, network['network'])",1,0,0.0,760
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,network),1,0,0.0,761
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"new_net = super(NECPluginV2, self).update_network(context, id,",1,0,0.0,762
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"old_net = super(NECPluginV2, self).get_network(context, id)",1,0,0.0,763
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,with session.begin(subtransactions=True):,1,0,0.0,764
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,session = context.session,1,0,0.0,765
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"{'id': id, 'network': network})",1,0,0.0,766
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"""id=%(id)s network=%(network)s ."",",1,0,0.0,767
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"LOG.debug(""NECPluginV2.update_network() called, """,1,0,0.0,768
+d772fbe5ce12c2bea77c5ec2abc10ca4ae17318b,"self.assertFalse(utils.cmp_dpid(None, None))",1,0,0.0,769

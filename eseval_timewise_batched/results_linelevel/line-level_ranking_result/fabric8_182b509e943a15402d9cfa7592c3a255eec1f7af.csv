@@ -1,0 +1,17 @@
+commit_id,line,line_level_label,count,line_score,row
+182b509e943a15402d9cfa7592c3a255eec1f7af,"System.out.println(""Created config "" + config.getBuildName() + "" with flow "" + config.getPipeline());",0,7,1.0,1
+182b509e943a15402d9cfa7592c3a255eec1f7af,"System.out.println(""Created config "" + config.getBuildName() + "" with flow "" + config.getFlow());",1,7,1.0,2
+182b509e943a15402d9cfa7592c3a255eec1f7af,String flow = config != null ? config.getPipeline() : null;,0,4,0.5714285714285714,3
+182b509e943a15402d9cfa7592c3a255eec1f7af,String flow = config != null ? config.getFlow() : null;,1,4,0.5714285714285714,4
+182b509e943a15402d9cfa7592c3a255eec1f7af,String flow = projectConfig.getPipeline();,0,2,0.2857142857142857,5
+182b509e943a15402d9cfa7592c3a255eec1f7af,} else {,0,2,0.2857142857142857,6
+182b509e943a15402d9cfa7592c3a255eec1f7af,String flow = projectConfig.getFlow();,1,2,0.2857142857142857,7
+182b509e943a15402d9cfa7592c3a255eec1f7af,"getLog().info(""Not creating Jenkins job as no pipeline defined for project configuration!"");",0,1,0.14285714285714285,8
+182b509e943a15402d9cfa7592c3a255eec1f7af,import java.util.Set;,1,1,0.14285714285714285,9
+182b509e943a15402d9cfa7592c3a255eec1f7af,"config.setPipeline(""maven/Deploy.groovy"");",0,0,0.0,10
+182b509e943a15402d9cfa7592c3a255eec1f7af,"config.setFlow(""maven/Deploy.groovy"");",1,0,0.0,11
+182b509e943a15402d9cfa7592c3a255eec1f7af,"addLink(""Git"", getGitUrl());",0,0,0.0,12
+182b509e943a15402d9cfa7592c3a255eec1f7af,"return getServiceUrl(ServiceNames.JENKINS, false, namespace, jenkinsNamespace);",0,0,0.0,13
+182b509e943a15402d9cfa7592c3a255eec1f7af,"return getServiceUrl(serviceName, false, namespaces);",0,0,0.0,14
+182b509e943a15402d9cfa7592c3a255eec1f7af,"return getServiceUrl(ServiceNames.JENKINS, namespace, jenkinsNamespace);",1,0,0.0,15
+182b509e943a15402d9cfa7592c3a255eec1f7af,"return getServiceUrl(serviceName, true, namespaces);",1,0,0.0,16

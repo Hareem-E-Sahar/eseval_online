@@ -1,0 +1,1035 @@
+commit_id,line,line_level_label,count,line_score,row
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return the name of the bridge with the port",1,12,1.0,1
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to list the names of ports on a bridge",1,12,1.0,2
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return the name of the bridge with the interface",1,12,1.0,3
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to list the names of interfaces on a bridge",1,11,0.9166666666666666,4
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return the current list of OVS bridge names",1,10,0.8333333333333333,5
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return a field's value in a record",1,8,0.6666666666666666,6
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return a list of OVSDB records",1,8,0.6666666666666666,7
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to add a port to an OVS bridge",1,8,0.6666666666666666,8
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to delete a port an OVS port",1,7,0.5833333333333333,9
+b4e42a341894177a1c870a48b2641bae6c36696e,# sense to change this to a RowNotFoundError in the future.,1,7,0.5833333333333333,10
+b4e42a341894177a1c870a48b2641bae6c36696e,port for port in ports if interface in port.interfaces),1,7,0.5833333333333333,11
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = next(br.name for br in bridges if port in br.ports),1,7,0.5833333333333333,12
+b4e42a341894177a1c870a48b2641bae6c36696e,# even if the set has the maximum number of items set to 1. Might be,1,7,0.5833333333333333,13
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to add a value to a record",1,7,0.5833333333333333,14
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to clear a field's value in a record",1,7,0.5833333333333333,15
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to set fields in a record",1,7,0.5833333333333333,16
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return a field from the Bridge's external_ids",1,7,0.5833333333333333,17
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to get Manager list from the OVS switch",1,7,0.5833333333333333,18
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to add a Manager to the OVS switch",1,7,0.5833333333333333,19
+b4e42a341894177a1c870a48b2641bae6c36696e,:param bridge:    The name of the bridge,1,6,0.5,20
+b4e42a341894177a1c870a48b2641bae6c36696e,# op. Will try to find a better way to default this op to '=',1,6,0.5,21
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = next(br.name for br in bridges if pname in br.ports),1,6,0.5,22
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:      :class:`Command` with list of port names result,1,6,0.5,23
+b4e42a341894177a1c870a48b2641bae6c36696e,:param bridge:    Only delete port if it is attached to this bridge,1,6,0.5,24
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to check if an OVS bridge exists",1,6,0.5,25
+b4e42a341894177a1c870a48b2641bae6c36696e,:param bridge: The name of the bridge,1,6,0.5,26
+b4e42a341894177a1c870a48b2641bae6c36696e,:param bridge:      The name of the bridge,1,6,0.5,27
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns: :class:`Command` with list of bridge names result,1,6,0.5,28
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to remove a Manager from the OVS switch",1,6,0.5,29
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to set an OVS bridge's OpenFlow controllers",1,5,0.41666666666666663,30
+b4e42a341894177a1c870a48b2641bae6c36696e,# we can get real return types instead of treating everything as string,1,5,0.41666666666666663,31
+b4e42a341894177a1c870a48b2641bae6c36696e,# could just add the external_id field to the conditions passed to find,1,5,0.41666666666666663,32
+b4e42a341894177a1c870a48b2641bae6c36696e,# This traversal of all ports could be eliminated by caching the bridge,1,5,0.41666666666666663,33
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = [i.name for p in br.ports if p.name != self.bridge,1,5,0.41666666666666663,34
+b4e42a341894177a1c870a48b2641bae6c36696e,# The interface on the port will be cleaned up by ovsdb-server,1,5,0.41666666666666663,35
+b4e42a341894177a1c870a48b2641bae6c36696e,# able to inspect the Schema and just do this conversion for that case.,1,5,0.41666666666666663,36
+b4e42a341894177a1c870a48b2641bae6c36696e,"# already set, do nothing, otherwise set the key to the value",1,5,0.41666666666666663,37
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:      :class:`Command` with list of interfaces names result,1,5,0.41666666666666663,38
+b4e42a341894177a1c870a48b2641bae6c36696e,:param port:      The name of the port,1,5,0.41666666666666663,39
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to set an OVS bridge's failure mode",1,5,0.41666666666666663,40
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return an OVS bridge's OpenFlow controllers",1,5,0.41666666666666663,41
+b4e42a341894177a1c870a48b2641bae6c36696e,:param name: The name of the OVS interface,1,5,0.41666666666666663,42
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to return find OVSDB records matching conditions",1,5,0.41666666666666663,43
+b4e42a341894177a1c870a48b2641bae6c36696e,:param name:      The name of the bridge,1,5,0.41666666666666663,44
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to destroy a record",1,5,0.41666666666666663,45
+b4e42a341894177a1c870a48b2641bae6c36696e,:attr result: The result of executing the command in a transaction,1,5,0.41666666666666663,46
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to add an OVS bridge",1,5,0.41666666666666663,47
+b4e42a341894177a1c870a48b2641bae6c36696e,:param name:            The name of the bridge,1,5,0.41666666666666663,48
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to delete an OVS bridge",1,5,0.41666666666666663,49
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns: :class:`Command` with list of Manager names result,1,5,0.41666666666666663,50
+b4e42a341894177a1c870a48b2641bae6c36696e,:param name: The name of the bridge,1,5,0.41666666666666663,51
+b4e42a341894177a1c870a48b2641bae6c36696e,:param name: The name of the OVS port,1,5,0.41666666666666663,52
+b4e42a341894177a1c870a48b2641bae6c36696e,:param name:  The name of the OVS Bridge,1,5,0.41666666666666663,53
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to create new record",1,5,0.41666666666666663,54
+b4e42a341894177a1c870a48b2641bae6c36696e,# We should be doing an add on a 'map' column. If the key is,1,4,0.3333333333333333,55
+b4e42a341894177a1c870a48b2641bae6c36696e,# name on the Port's external_id field,1,4,0.3333333333333333,56
+b4e42a341894177a1c870a48b2641bae6c36696e,"# Since this operation depends on the previous value, verify()",1,4,0.3333333333333333,57
+b4e42a341894177a1c870a48b2641bae6c36696e,# Create an empty value of the column type,1,4,0.3333333333333333,58
+b4e42a341894177a1c870a48b2641bae6c36696e,"# on set types without the list. The IDL is returning them as lists,",1,4,0.3333333333333333,59
+b4e42a341894177a1c870a48b2641bae6c36696e,"br = idlutils.row_by_value(self.api.idl, 'Bridge', 'name', self.bridge)",1,4,0.3333333333333333,60
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = [c.target for c in br.controller],1,4,0.3333333333333333,61
+b4e42a341894177a1c870a48b2641bae6c36696e,"port = idlutils.row_by_value(self.api.idl, 'Port', 'name',",1,4,0.3333333333333333,62
+b4e42a341894177a1c870a48b2641bae6c36696e,br = next(b for b in self.api._tables['Bridge'].rows.values(),1,4,0.3333333333333333,63
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = [p.name for p in br.ports if p.name != self.bridge],1,4,0.3333333333333333,64
+b4e42a341894177a1c870a48b2641bae6c36696e,return [cmd.result for cmd in self.commands],1,4,0.3333333333333333,65
+b4e42a341894177a1c870a48b2641bae6c36696e,"port = idlutils.row_by_value(self.api.idl, 'Port', 'name', self.name)",1,4,0.3333333333333333,66
+b4e42a341894177a1c870a48b2641bae6c36696e,"interface = idlutils.row_by_value(self.api.idl, 'Interface', 'name',",1,4,0.3333333333333333,67
+b4e42a341894177a1c870a48b2641bae6c36696e,# NOTE(kevinbenton): this is converted to a RuntimeError,1,4,0.3333333333333333,68
+b4e42a341894177a1c870a48b2641bae6c36696e,#    not use this file except in compliance with the License. You may obtain,1,4,0.3333333333333333,69
+b4e42a341894177a1c870a48b2641bae6c36696e,#    a copy of the License at,1,4,0.3333333333333333,70
+b4e42a341894177a1c870a48b2641bae6c36696e,# Use the 'list' command as it can return json and 'get' cannot so that,1,4,0.3333333333333333,71
+b4e42a341894177a1c870a48b2641bae6c36696e,# NOTE: openvswitch can return a single atomic value for fields that,1,4,0.3333333333333333,72
+b4e42a341894177a1c870a48b2641bae6c36696e,# the result of a db_get() call unsafe.,1,4,0.3333333333333333,73
+b4e42a341894177a1c870a48b2641bae6c36696e,"# We're only using it to make a unit test work, so we should fix",1,4,0.3333333333333333,74
+b4e42a341894177a1c870a48b2641bae6c36696e,"# would make this cleaner, but it's too early to rely on them.",1,4,0.3333333333333333,75
+b4e42a341894177a1c870a48b2641bae6c36696e,":type values:  The base type of the column. If column is a map, then",1,4,0.3333333333333333,76
+b4e42a341894177a1c870a48b2641bae6c36696e,# Replace the temporary row with the post-commit UUID to match vsctl,1,4,0.3333333333333333,77
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a command to clear an OVS bridge's OpenFlow controllers",1,4,0.3333333333333333,78
+b4e42a341894177a1c870a48b2641bae6c36696e,# This is a temporary row to be used within the transaction,1,4,0.3333333333333333,79
+b4e42a341894177a1c870a48b2641bae6c36696e,:param transaction_options: Options to pass to the transaction,1,4,0.3333333333333333,80
+b4e42a341894177a1c870a48b2641bae6c36696e,:param connection_uri: target to which manager needs to be set,1,4,0.3333333333333333,81
+b4e42a341894177a1c870a48b2641bae6c36696e,:param datapath_type:   The datapath_type of the bridge,1,4,0.3333333333333333,82
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:    :class:`Command` with bridge name result,1,4,0.3333333333333333,83
+b4e42a341894177a1c870a48b2641bae6c36696e,replaced (use the set command to replace an existing value).,1,4,0.3333333333333333,84
+b4e42a341894177a1c870a48b2641bae6c36696e,a dict containing the key name and the map's value type,1,4,0.3333333333333333,85
+b4e42a341894177a1c870a48b2641bae6c36696e,:type columns:    list of column names or None,1,4,0.3333333333333333,86
+b4e42a341894177a1c870a48b2641bae6c36696e,":type controllers:  list of strings, see ovs-vsctl manpage for format",1,4,0.3333333333333333,87
+b4e42a341894177a1c870a48b2641bae6c36696e,:param values: The values to be added to the column,1,4,0.3333333333333333,88
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:      :class:`Command` with list of controller strings result,1,4,0.3333333333333333,89
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = [m.target for m in,1,4,0.3333333333333333,90
+b4e42a341894177a1c870a48b2641bae6c36696e,"return "", "".join(str(cmd) for cmd in self.commands)",1,4,0.3333333333333333,91
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = [x.name for x in,1,4,0.3333333333333333,92
+b4e42a341894177a1c870a48b2641bae6c36696e,# Add the internal bridge port,1,4,0.3333333333333333,93
+b4e42a341894177a1c870a48b2641bae6c36696e,"br = idlutils.row_by_value(self.api.idl, 'Bridge', 'name',",1,4,0.3333333333333333,94
+b4e42a341894177a1c870a48b2641bae6c36696e,"br = idlutils.row_by_value(self.api.idl, 'Bridge', 'name', self.name)",1,4,0.3333333333333333,95
+b4e42a341894177a1c870a48b2641bae6c36696e,return [cmd.result for cmd in self.commands],1,4,0.3333333333333333,96
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Add a command to the transaction",1,4,0.3333333333333333,97
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, bridge):",1,3,0.25,98
+b4e42a341894177a1c870a48b2641bae6c36696e,returns The command passed as a convenience,1,3,0.25,99
+b4e42a341894177a1c870a48b2641bae6c36696e,for command in self.commands:,1,3,0.25,100
+b4e42a341894177a1c870a48b2641bae6c36696e,"for i, command in enumerate(self.commands):",1,3,0.25,101
+b4e42a341894177a1c870a48b2641bae6c36696e,"# For now, raise similar error to vsctl/utils.execute()",1,3,0.25,102
+b4e42a341894177a1c870a48b2641bae6c36696e,"def run_idl(self, txn):",1,3,0.25,103
+b4e42a341894177a1c870a48b2641bae6c36696e,for port in br.ports:,1,3,0.25,104
+b4e42a341894177a1c870a48b2641bae6c36696e,for interface in port.interfaces:,1,3,0.25,105
+b4e42a341894177a1c870a48b2641bae6c36696e,# NOTE (twilson) [x.name for x in rows.values()] if no index,1,3,0.25,106
+b4e42a341894177a1c870a48b2641bae6c36696e,# We should be appending to a 'set' column.,1,3,0.25,107
+b4e42a341894177a1c870a48b2641bae6c36696e,self.bridge = bridge,1,3,0.25,108
+b4e42a341894177a1c870a48b2641bae6c36696e,"# TODO(twilson) This is ugly, but set/find args are very similar except for",1,3,0.25,109
+b4e42a341894177a1c870a48b2641bae6c36696e,for i in p.interfaces],1,3,0.25,110
+b4e42a341894177a1c870a48b2641bae6c36696e,# for compat with the vsctl version. It might make more,1,3,0.25,111
+b4e42a341894177a1c870a48b2641bae6c36696e,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.25,112
+b4e42a341894177a1c870a48b2641bae6c36696e,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,3,0.25,113
+b4e42a341894177a1c870a48b2641bae6c36696e,#    License for the specific language governing permissions and limitations,1,3,0.25,114
+b4e42a341894177a1c870a48b2641bae6c36696e,for cmd in self.commands:,1,3,0.25,115
+b4e42a341894177a1c870a48b2641bae6c36696e,self.args = [] if args is None else args,1,3,0.25,116
+b4e42a341894177a1c870a48b2641bae6c36696e,"return MultiLineCommand(self.context, 'get-controller', args=[bridge])",1,3,0.25,117
+b4e42a341894177a1c870a48b2641bae6c36696e,"return MultiLineCommand(self.context, 'list-ports', args=[bridge])",1,3,0.25,118
+b4e42a341894177a1c870a48b2641bae6c36696e,"return MultiLineCommand(self.context, 'list-ifaces', args=[bridge])",1,3,0.25,119
+b4e42a341894177a1c870a48b2641bae6c36696e,:param may_exist: Do not fail if the port already exists,1,3,0.25,120
+b4e42a341894177a1c870a48b2641bae6c36696e,:param if_exists: Do not fail if the port does not exist,1,3,0.25,121
+b4e42a341894177a1c870a48b2641bae6c36696e,:type bridge:       string,1,3,0.25,122
+b4e42a341894177a1c870a48b2641bae6c36696e,:type bridge:     string,1,3,0.25,123
+b4e42a341894177a1c870a48b2641bae6c36696e,:param table:      The OVS table containing the record to be modified,1,3,0.25,124
+b4e42a341894177a1c870a48b2641bae6c36696e,:type bridge:  string,1,3,0.25,125
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""An OVSDB command that can be executed in a transaction",1,3,0.25,126
+b4e42a341894177a1c870a48b2641bae6c36696e,:param check_error: Allow the transaction to raise an exception?,1,3,0.25,127
+b4e42a341894177a1c870a48b2641bae6c36696e,:param log_errors:  Log an error if the transaction fails?,1,3,0.25,128
+b4e42a341894177a1c870a48b2641bae6c36696e,This API will remove the manager configured on the OVS switch.,1,3,0.25,129
+b4e42a341894177a1c870a48b2641bae6c36696e,:param if_exists: Do not fail if the bridge does not exist,1,3,0.25,130
+b4e42a341894177a1c870a48b2641bae6c36696e,:param field: The external_ids field to return,1,3,0.25,131
+b4e42a341894177a1c870a48b2641bae6c36696e,:param table:      The OVS table containing the record to be created,1,3,0.25,132
+b4e42a341894177a1c870a48b2641bae6c36696e,to be set after create,1,3,0.25,133
+b4e42a341894177a1c870a48b2641bae6c36696e,:param table:      The OVS table containing the record to be destroyed,1,3,0.25,134
+b4e42a341894177a1c870a48b2641bae6c36696e,"executes it, returning the value of the executed transaction",1,3,0.25,135
+b4e42a341894177a1c870a48b2641bae6c36696e,Adds each value or key-value pair to column in record in table. If,1,3,0.25,136
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:      :class:`Command` with the field's value result,1,3,0.25,137
+b4e42a341894177a1c870a48b2641bae6c36696e,"column is a map, then each value will be a dict, otherwise a base type.",1,3,0.25,138
+b4e42a341894177a1c870a48b2641bae6c36696e,:type records:    list of record ids (names/uuids),1,3,0.25,139
+b4e42a341894177a1c870a48b2641bae6c36696e,:param records:   The records to return values from,1,3,0.25,140
+b4e42a341894177a1c870a48b2641bae6c36696e,:param conditions:The conditions to satisfy the query,1,3,0.25,141
+b4e42a341894177a1c870a48b2641bae6c36696e,:param table:  The OVS table containing the record to be queried,1,3,0.25,142
+b4e42a341894177a1c870a48b2641bae6c36696e,:param column: The column name to be modified,1,3,0.25,143
+b4e42a341894177a1c870a48b2641bae6c36696e,:param table:  The OVS table containing the record to be modified,1,3,0.25,144
+b4e42a341894177a1c870a48b2641bae6c36696e,"If key already exists in a map column, then the current value is not",1,3,0.25,145
+b4e42a341894177a1c870a48b2641bae6c36696e,# Don't need to verify because we unconditionally overwrite,1,2,0.16666666666666666,146
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, port, bridge, if_exists):",1,2,0.16666666666666666,147
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, bridge, mode):",1,2,0.16666666666666666,148
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, bridge, port, may_exist):",1,2,0.16666666666666666,149
+b4e42a341894177a1c870a48b2641bae6c36696e,self.port = port,1,2,0.16666666666666666,150
+b4e42a341894177a1c870a48b2641bae6c36696e,port = txn.insert(self.api._tables['Port']),1,2,0.16666666666666666,151
+b4e42a341894177a1c870a48b2641bae6c36696e,"ports = getattr(br, 'ports', [])",1,2,0.16666666666666666,152
+b4e42a341894177a1c870a48b2641bae6c36696e,br.ports = ports,1,2,0.16666666666666666,153
+b4e42a341894177a1c870a48b2641bae6c36696e,iface = txn.insert(self.api._tables['Interface']),1,2,0.16666666666666666,154
+b4e42a341894177a1c870a48b2641bae6c36696e,"# This is a new port, so it won't have any existing interfaces",1,2,0.16666666666666666,155
+b4e42a341894177a1c870a48b2641bae6c36696e,ports = br.ports,1,2,0.16666666666666666,156
+b4e42a341894177a1c870a48b2641bae6c36696e,"""Row doesn't exist in the DB. Request info: """,1,2,0.16666666666666666,157
+b4e42a341894177a1c870a48b2641bae6c36696e,if port in b.ports),1,2,0.16666666666666666,158
+b4e42a341894177a1c870a48b2641bae6c36696e,if port not in br.ports and not self.if_exists:,1,2,0.16666666666666666,159
+b4e42a341894177a1c870a48b2641bae6c36696e,"msg = _(""Port %(port)s does not exist on %(bridge)s!"") % {",1,2,0.16666666666666666,160
+b4e42a341894177a1c870a48b2641bae6c36696e,"# In fact, if we did that, the only place that uses to_br functions",1,2,0.16666666666666666,161
+b4e42a341894177a1c870a48b2641bae6c36696e,ports = self.api._tables['Port'].rows.values(),1,2,0.16666666666666666,162
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, records, columns, if_exists):",1,2,0.16666666666666666,163
+b4e42a341894177a1c870a48b2641bae6c36696e,for record in self.records:,1,2,0.16666666666666666,164
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, bridge, targets):",1,2,0.16666666666666666,165
+b4e42a341894177a1c870a48b2641bae6c36696e,for target in self.targets:,1,2,0.16666666666666666,166
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, record):",1,2,0.16666666666666666,167
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = result[0],1,2,0.16666666666666666,168
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = row,1,2,0.16666666666666666,169
+b4e42a341894177a1c870a48b2641bae6c36696e,"cmd = DbSetCommand(self.api, 'Interface', self.name,",1,2,0.16666666666666666,170
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, name, if_exists):",1,2,0.16666666666666666,171
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, name):",1,2,0.16666666666666666,172
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.result = bool(idlutils.row_by_value(self.api.idl, 'Bridge',",1,2,0.16666666666666666,173
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, name, field):",1,2,0.16666666666666666,174
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = br.external_ids[self.field],1,2,0.16666666666666666,175
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, name, field, value):",1,2,0.16666666666666666,176
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, **columns):",1,2,0.16666666666666666,177
+b4e42a341894177a1c870a48b2641bae6c36696e,"for col, val in self.columns.items():",1,2,0.16666666666666666,178
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = txn.get_insert_uuid(self.result.uuid),1,2,0.16666666666666666,179
+b4e42a341894177a1c870a48b2641bae6c36696e,"# TODO(twilson) This feels wrong, but ovs-vsctl returns single results",1,2,0.16666666666666666,180
+b4e42a341894177a1c870a48b2641bae6c36696e,for c in columns,1,2,0.16666666666666666,181
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, record, *col_values):",1,2,0.16666666666666666,182
+b4e42a341894177a1c870a48b2641bae6c36696e,"for col, val in self.col_values:",1,2,0.16666666666666666,183
+b4e42a341894177a1c870a48b2641bae6c36696e,"# TODO(twilson) Ugh, the OVS library doesn't like OrderedDict",1,2,0.16666666666666666,184
+b4e42a341894177a1c870a48b2641bae6c36696e,# this soon.,1,2,0.16666666666666666,185
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, record, column, *values):",1,2,0.16666666666666666,186
+b4e42a341894177a1c870a48b2641bae6c36696e,for value in self.values:,1,2,0.16666666666666666,187
+b4e42a341894177a1c870a48b2641bae6c36696e,"for k, v in value.items():",1,2,0.16666666666666666,188
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, record, column):",1,2,0.16666666666666666,189
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = [,1,2,0.16666666666666666,190
+b4e42a341894177a1c870a48b2641bae6c36696e,args = [],1,2,0.16666666666666666,191
+b4e42a341894177a1c870a48b2641bae6c36696e,for uuid in row_uuids,1,2,0.16666666666666666,192
+b4e42a341894177a1c870a48b2641bae6c36696e,"args = ['create', 'Manager', conn_uri, '--', 'add', 'Open_vSwitch',",1,2,0.16666666666666666,193
+b4e42a341894177a1c870a48b2641bae6c36696e,"args = ['get', 'Manager', connection_uri, '--', 'remove',",1,2,0.16666666666666666,194
+b4e42a341894177a1c870a48b2641bae6c36696e,"return MultiLineCommand(self.context, 'list-br')",1,2,0.16666666666666666,195
+b4e42a341894177a1c870a48b2641bae6c36696e,args = [table],1,2,0.16666666666666666,196
+b4e42a341894177a1c870a48b2641bae6c36696e,"args = [table, record]",1,2,0.16666666666666666,197
+b4e42a341894177a1c870a48b2641bae6c36696e,"args = [table, record, column]",1,2,0.16666666666666666,198
+b4e42a341894177a1c870a48b2641bae6c36696e,for value in values:,1,2,0.16666666666666666,199
+b4e42a341894177a1c870a48b2641bae6c36696e,"for k, v in value.items()]",1,2,0.16666666666666666,200
+b4e42a341894177a1c870a48b2641bae6c36696e,"args = itertools.chain([table],",1,2,0.16666666666666666,201
+b4e42a341894177a1c870a48b2641bae6c36696e,*[_set_colval_args(c) for c in conditions]),1,2,0.16666666666666666,202
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_controller(self, bridge):",1,2,0.16666666666666666,203
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'del-controller', args=[bridge])",1,2,0.16666666666666666,204
+b4e42a341894177a1c870a48b2641bae6c36696e,"def get_controller(self, bridge):",1,2,0.16666666666666666,205
+b4e42a341894177a1c870a48b2641bae6c36696e,"args = filter(None, [bridge, port])",1,2,0.16666666666666666,206
+b4e42a341894177a1c870a48b2641bae6c36696e,"def list_ports(self, bridge):",1,2,0.16666666666666666,207
+b4e42a341894177a1c870a48b2641bae6c36696e,"def list_ifaces(self, bridge):",1,2,0.16666666666666666,208
+b4e42a341894177a1c870a48b2641bae6c36696e,for entry in col_values:,1,2,0.16666666666666666,209
+b4e42a341894177a1c870a48b2641bae6c36696e,"col, k, op, ovsdb.py_to_val(v)) for k, v in val.items()]",1,2,0.16666666666666666,210
+b4e42a341894177a1c870a48b2641bae6c36696e,return args,1,2,0.16666666666666666,211
+b4e42a341894177a1c870a48b2641bae6c36696e,self.name = name,1,2,0.16666666666666666,212
+b4e42a341894177a1c870a48b2641bae6c36696e,"return MultiLineCommand(self.context, 'get-manager')",1,2,0.16666666666666666,213
+b4e42a341894177a1c870a48b2641bae6c36696e,# This will add a new manager without overriding existing ones.,1,2,0.16666666666666666,214
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, table, *conditions, **kwargs):",1,2,0.16666666666666666,215
+b4e42a341894177a1c870a48b2641bae6c36696e,# NOTE(twilson) pre-commit result used for intra-transaction reference,1,2,0.16666666666666666,216
+b4e42a341894177a1c870a48b2641bae6c36696e,for c in self.columns,1,2,0.16666666666666666,217
+b4e42a341894177a1c870a48b2641bae6c36696e,for r in self.table.rows.values(),1,2,0.16666666666666666,218
+b4e42a341894177a1c870a48b2641bae6c36696e,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.16666666666666666,219
+b4e42a341894177a1c870a48b2641bae6c36696e,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.16666666666666666,220
+b4e42a341894177a1c870a48b2641bae6c36696e,#    under the License.,1,2,0.16666666666666666,221
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.ovsdb import api as ovsdb,1,2,0.16666666666666666,222
+b4e42a341894177a1c870a48b2641bae6c36696e,self.context = context,1,2,0.16666666666666666,223
+b4e42a341894177a1c870a48b2641bae6c36696e,return command,1,2,0.16666666666666666,224
+b4e42a341894177a1c870a48b2641bae6c36696e,"for i, record in enumerate(res):",1,2,0.16666666666666666,225
+b4e42a341894177a1c870a48b2641bae6c36696e,"full_args = [""ovs-vsctl""] + self.opts + args",1,2,0.16666666666666666,226
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.error(""Unable to execute %(cmd)s. """,1,2,0.16666666666666666,227
+b4e42a341894177a1c870a48b2641bae6c36696e,self.cmd = cmd,1,2,0.16666666666666666,228
+b4e42a341894177a1c870a48b2641bae6c36696e,return self.result,1,2,0.16666666666666666,229
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Command for ovs-vsctl commands that return multiple lines""""""",1,2,0.16666666666666666,230
+b4e42a341894177a1c870a48b2641bae6c36696e,"# If check_error=False, run_vsctl can return None",1,2,0.16666666666666666,231
+b4e42a341894177a1c870a48b2641bae6c36696e,for record in data:,1,2,0.16666666666666666,232
+b4e42a341894177a1c870a48b2641bae6c36696e,"for pos, heading in enumerate(headings):",1,2,0.16666666666666666,233
+b4e42a341894177a1c870a48b2641bae6c36696e,# super()'s never worked for setters http://bugs.python.org/issue14965,1,2,0.16666666666666666,234
+b4e42a341894177a1c870a48b2641bae6c36696e,# DbCommand will return [{'column': value}] and we just want value.,1,2,0.16666666666666666,235
+b4e42a341894177a1c870a48b2641bae6c36696e,"cmd = AddPortCommand(self.api, self.name, self.name, self.may_exist)",1,2,0.16666666666666666,236
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = result,1,2,0.16666666666666666,237
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, name, may_exist, datapath_type):",1,2,0.16666666666666666,238
+b4e42a341894177a1c870a48b2641bae6c36696e,:param record:     The record id (name/uuid) to be destroyed,1,2,0.16666666666666666,239
+b4e42a341894177a1c870a48b2641bae6c36696e,:type name:       string,1,2,0.16666666666666666,240
+b4e42a341894177a1c870a48b2641bae6c36696e,:type name:  string,1,2,0.16666666666666666,241
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:    :class:`Command` with bool result,1,2,0.16666666666666666,242
+b4e42a341894177a1c870a48b2641bae6c36696e,:type name:   string,1,2,0.16666666666666666,243
+b4e42a341894177a1c870a48b2641bae6c36696e,:type field:  string,1,2,0.16666666666666666,244
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:     :class:`Command` with field value result,1,2,0.16666666666666666,245
+b4e42a341894177a1c870a48b2641bae6c36696e,:type table:       string,1,2,0.16666666666666666,246
+b4e42a341894177a1c870a48b2641bae6c36696e,:type col_values:  Dictionary of columns id's and values,1,2,0.16666666666666666,247
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:          :class:`Command` with no result,1,2,0.16666666666666666,248
+b4e42a341894177a1c870a48b2641bae6c36696e,:param record:     The record id (name/uuid) to be modified,1,2,0.16666666666666666,249
+b4e42a341894177a1c870a48b2641bae6c36696e,:param record: The record id (name/uuid) to be queried,1,2,0.16666666666666666,250
+b4e42a341894177a1c870a48b2641bae6c36696e,":type col_values:  Tuples of (column, value). Values may be atomic",1,2,0.16666666666666666,251
+b4e42a341894177a1c870a48b2641bae6c36696e,# TODO(twilson) Consider handling kwargs for arguments where order,1,2,0.16666666666666666,252
+b4e42a341894177a1c870a48b2641bae6c36696e,# doesn't matter. Though that would break the assert_called_once_with,1,2,0.16666666666666666,253
+b4e42a341894177a1c870a48b2641bae6c36696e,:type table:   string,1,2,0.16666666666666666,254
+b4e42a341894177a1c870a48b2641bae6c36696e,:param record: The record id (name/uuid) to modified,1,2,0.16666666666666666,255
+b4e42a341894177a1c870a48b2641bae6c36696e,:type record:  string,1,2,0.16666666666666666,256
+b4e42a341894177a1c870a48b2641bae6c36696e,:type column:  string,1,2,0.16666666666666666,257
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:     :class:`Command` with no result,1,2,0.16666666666666666,258
+b4e42a341894177a1c870a48b2641bae6c36696e,:param record: The record id (name/uuid) to be modified,1,2,0.16666666666666666,259
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:               :class:`Command` with no result,1,2,0.16666666666666666,260
+b4e42a341894177a1c870a48b2641bae6c36696e,:type datapath_type:    string,1,2,0.16666666666666666,261
+b4e42a341894177a1c870a48b2641bae6c36696e,:param may_exist:       Do not fail if bridge already exists,1,2,0.16666666666666666,262
+b4e42a341894177a1c870a48b2641bae6c36696e,:type name:             string,1,2,0.16666666666666666,263
+b4e42a341894177a1c870a48b2641bae6c36696e,"manager = idlutils.row_by_value(self.api.idl, 'Manager', 'target',",1,2,0.16666666666666666,264
+b4e42a341894177a1c870a48b2641bae6c36696e,"Command = moves.moved_class(api.Command, 'Command', __name__)",0,2,0.16666666666666666,265
+b4e42a341894177a1c870a48b2641bae6c36696e,iface = importutils.import_module(,0,2,0.16666666666666666,266
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Immediately execute an OVSDB command",1,2,0.16666666666666666,267
+b4e42a341894177a1c870a48b2641bae6c36696e,This implicitly creates a transaction with the passed options and then,1,2,0.16666666666666666,268
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Commit the transaction to OVSDB""""""",1,2,0.16666666666666666,269
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Append an OVSDB operation to the transaction""""""",1,2,0.16666666666666666,270
+b4e42a341894177a1c870a48b2641bae6c36696e,return self,1,2,0.16666666666666666,271
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = self.commit(),1,2,0.16666666666666666,272
+b4e42a341894177a1c870a48b2641bae6c36696e,self.context = context,1,2,0.16666666666666666,273
+b4e42a341894177a1c870a48b2641bae6c36696e,iface = importutils.import_class(,1,2,0.16666666666666666,274
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a transaction",1,2,0.16666666666666666,275
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Create a transaction context.",1,2,0.16666666666666666,276
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns: Either a new transaction or an existing one.,1,2,0.16666666666666666,277
+b4e42a341894177a1c870a48b2641bae6c36696e,self._nested_txn = txn,1,2,0.16666666666666666,278
+b4e42a341894177a1c870a48b2641bae6c36696e,This API will add a new manager without overriding the existing ones.,1,2,0.16666666666666666,279
+b4e42a341894177a1c870a48b2641bae6c36696e,":type connection_uri: string, see ovs-vsctl manpage for format",1,2,0.16666666666666666,280
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:           :class:`Command` with no result,1,2,0.16666666666666666,281
+b4e42a341894177a1c870a48b2641bae6c36696e,:param connection_uri: target identifying the manager uri that,1,2,0.16666666666666666,282
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:      :class:`Command` with no result,1,2,0.16666666666666666,283
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:        :class:`Command` with no result,1,2,0.16666666666666666,284
+b4e42a341894177a1c870a48b2641bae6c36696e,:param table:     The OVS table to query,1,2,0.16666666666666666,285
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.GetControllerCommand(self, bridge)",1,2,0.16666666666666666,286
+b4e42a341894177a1c870a48b2641bae6c36696e,"def post_commit_failed_interfaces(self, txn):",1,2,0.16666666666666666,287
+b4e42a341894177a1c870a48b2641bae6c36696e,for iface_uuid in txn.expected_ifaces:,1,2,0.16666666666666666,288
+b4e42a341894177a1c870a48b2641bae6c36696e,ifaces = self.api.idl.tables['Interface'],1,2,0.16666666666666666,289
+b4e42a341894177a1c870a48b2641bae6c36696e,iface = ifaces.rows.get(uuid),1,2,0.16666666666666666,290
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.BridgeExistsCommand(self, name)",1,2,0.16666666666666666,291
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.PortToBridgeCommand(self, name)",1,2,0.16666666666666666,292
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.InterfaceToBridgeCommand(self, name)",1,2,0.16666666666666666,293
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_controller(self, bridge):",1,2,0.16666666666666666,294
+b4e42a341894177a1c870a48b2641bae6c36696e,"def get_controller(self, bridge):",1,2,0.16666666666666666,295
+b4e42a341894177a1c870a48b2641bae6c36696e,"def list_ports(self, bridge):",1,2,0.16666666666666666,296
+b4e42a341894177a1c870a48b2641bae6c36696e,"def do_post_commit(self, txn):",1,2,0.16666666666666666,297
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.ListPortsCommand(self, bridge)",1,2,0.16666666666666666,298
+b4e42a341894177a1c870a48b2641bae6c36696e,"def list_ifaces(self, bridge):",1,2,0.16666666666666666,299
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.ListIfacesCommand(self, bridge)",1,2,0.16666666666666666,300
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api = api,1,2,0.16666666666666666,301
+b4e42a341894177a1c870a48b2641bae6c36696e,self.result = None,1,2,0.16666666666666666,302
+b4e42a341894177a1c870a48b2641bae6c36696e,return self.result,1,2,0.16666666666666666,303
+b4e42a341894177a1c870a48b2641bae6c36696e,"def post_commit(self, txn):",1,2,0.16666666666666666,304
+b4e42a341894177a1c870a48b2641bae6c36696e,""", "".join(""%s=%s"" % (k, v) for k, v in command_info.items()",1,2,0.16666666666666666,305
+b4e42a341894177a1c870a48b2641bae6c36696e,:type table:      string,1,2,0.16666666666666666,306
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, target):",1,2,0.16666666666666666,307
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DelControllerCommand(self, bridge)",1,2,0.16666666666666666,308
+b4e42a341894177a1c870a48b2641bae6c36696e,# ovs-vsctl only logs these failures and does not return nonzero,1,2,0.16666666666666666,309
+b4e42a341894177a1c870a48b2641bae6c36696e,"def list_ifaces(self, bridge):",1,2,0.16666666666666666,310
+b4e42a341894177a1c870a48b2641bae6c36696e,:param if_exists: Do not fail if the record does not exist,1,2,0.16666666666666666,311
+b4e42a341894177a1c870a48b2641bae6c36696e,":returns:         :class:`Command` with [{'column', value}, ...] result",1,2,0.16666666666666666,312
+b4e42a341894177a1c870a48b2641bae6c36696e,Type of 'match' parameter MUST be identical to column,1,2,0.16666666666666666,313
+b4e42a341894177a1c870a48b2641bae6c36696e,See the ovs-vsctl man page for more operations,1,2,0.16666666666666666,314
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_controller(self, bridge):",1,2,0.16666666666666666,315
+b4e42a341894177a1c870a48b2641bae6c36696e,"def get_controller(self, bridge):",1,2,0.16666666666666666,316
+b4e42a341894177a1c870a48b2641bae6c36696e,:type port:       string,1,2,0.16666666666666666,317
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns:         :class:`Command` with no result,1,2,0.16666666666666666,318
+b4e42a341894177a1c870a48b2641bae6c36696e,"def list_ports(self, bridge):",1,2,0.16666666666666666,319
+b4e42a341894177a1c870a48b2641bae6c36696e,":param columns:   Limit results to only columns, None means all columns",1,2,0.16666666666666666,320
+b4e42a341894177a1c870a48b2641bae6c36696e,"message = _(""Failed to add interfaces: %(ifaces)s"")",1,2,0.16666666666666666,321
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api, ovsdb_connection, timeout,",1,2,0.16666666666666666,322
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api = api,1,2,0.16666666666666666,323
+b4e42a341894177a1c870a48b2641bae6c36696e,return command,1,2,0.16666666666666666,324
+b4e42a341894177a1c870a48b2641bae6c36696e,"def pre_commit(self, txn):",1,2,0.16666666666666666,325
+b4e42a341894177a1c870a48b2641bae6c36696e,"def post_commit(self, txn):",1,2,0.16666666666666666,326
+b4e42a341894177a1c870a48b2641bae6c36696e,attempts = 0,1,2,0.16666666666666666,327
+b4e42a341894177a1c870a48b2641bae6c36696e,txn = idl.Transaction(self.api.idl),1,2,0.16666666666666666,328
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(InterfaceToBridgeCommand, self).__init__(api)",1,1,0.08333333333333333,329
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(PortToBridgeCommand, self).__init__(api)",1,1,0.08333333333333333,330
+b4e42a341894177a1c870a48b2641bae6c36696e,# TODO(twilson) This is expensive!,1,1,0.08333333333333333,331
+b4e42a341894177a1c870a48b2641bae6c36696e,bridges = self.api._tables['Bridge'].rows.values(),1,1,0.08333333333333333,332
+b4e42a341894177a1c870a48b2641bae6c36696e,table_schema = self.api._tables[self.table],1,1,0.08333333333333333,333
+b4e42a341894177a1c870a48b2641bae6c36696e,pname = next(,1,1,0.08333333333333333,334
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbListCommand, self).__init__(api)",1,1,0.08333333333333333,335
+b4e42a341894177a1c870a48b2641bae6c36696e,self.records = records,1,1,0.08333333333333333,336
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(ListPortsCommand, self).__init__(api)",1,1,0.08333333333333333,337
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(ListIfacesCommand, self).__init__(api)",1,1,0.08333333333333333,338
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DelPortCommand, self).__init__(api)",1,1,0.08333333333333333,339
+b4e42a341894177a1c870a48b2641bae6c36696e,"'port': self.port, 'bridge': self.bridge",1,1,0.08333333333333333,340
+b4e42a341894177a1c870a48b2641bae6c36696e,# TODO(twilson) Make real errors across both implementations,1,1,0.08333333333333333,341
+b4e42a341894177a1c870a48b2641bae6c36696e,"msg = _(""Port %s does not exist"") % self.port",1,1,0.08333333333333333,342
+b4e42a341894177a1c870a48b2641bae6c36696e,row_uuids = [],1,1,0.08333333333333333,343
+b4e42a341894177a1c870a48b2641bae6c36696e,port.interfaces = [iface],1,1,0.08333333333333333,344
+b4e42a341894177a1c870a48b2641bae6c36696e,iface.name = self.port,1,1,0.08333333333333333,345
+b4e42a341894177a1c870a48b2641bae6c36696e,port.name = self.port,1,1,0.08333333333333333,346
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(AddPortCommand, self).__init__(api)",1,1,0.08333333333333333,347
+b4e42a341894177a1c870a48b2641bae6c36696e,br.fail_mode = self.mode,1,1,0.08333333333333333,348
+b4e42a341894177a1c870a48b2641bae6c36696e,self.mode = mode,1,1,0.08333333333333333,349
+b4e42a341894177a1c870a48b2641bae6c36696e,columns = self.columns or list(table_schema.columns.keys()) + ['_uuid'],1,1,0.08333333333333333,350
+b4e42a341894177a1c870a48b2641bae6c36696e,args += cmd.vsctl_args(),1,1,0.08333333333333333,351
+b4e42a341894177a1c870a48b2641bae6c36696e,row_uuids = table_schema.rows.keys(),1,1,0.08333333333333333,352
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context, check_error=False, log_errors=True, opts=None):",1,1,0.08333333333333333,353
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(GetControllerCommand, self).__init__(api)",1,1,0.08333333333333333,354
+b4e42a341894177a1c870a48b2641bae6c36696e,res = self.run_vsctl(args),1,1,0.08333333333333333,355
+b4e42a341894177a1c870a48b2641bae6c36696e,cmd.result = None,1,1,0.08333333333333333,356
+b4e42a341894177a1c870a48b2641bae6c36696e,def commit(self):,1,1,0.08333333333333333,357
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add(self, command):",1,1,0.08333333333333333,358
+b4e42a341894177a1c870a48b2641bae6c36696e,self.commands = [],1,1,0.08333333333333333,359
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.opts = [""--timeout=%d"" % self.context.vsctl_timeout,",1,1,0.08333333333333333,360
+b4e42a341894177a1c870a48b2641bae6c36696e,self.log_errors = log_errors,1,1,0.08333333333333333,361
+b4e42a341894177a1c870a48b2641bae6c36696e,self.check_error = check_error,1,1,0.08333333333333333,362
+b4e42a341894177a1c870a48b2641bae6c36696e,return OvsdbVsctl(context),1,1,0.08333333333333333,363
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbFindCommand, self).__init__(api)",1,1,0.08333333333333333,364
+b4e42a341894177a1c870a48b2641bae6c36696e,def api_factory(context):,1,1,0.08333333333333333,365
+b4e42a341894177a1c870a48b2641bae6c36696e,LOG = logging.getLogger(__name__),1,1,0.08333333333333333,366
+b4e42a341894177a1c870a48b2641bae6c36696e,from ovsdbapp import api as ovsdb_api,1,1,0.08333333333333333,367
+b4e42a341894177a1c870a48b2641bae6c36696e,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.08333333333333333,368
+b4e42a341894177a1c870a48b2641bae6c36696e,#,1,1,0.08333333333333333,369
+b4e42a341894177a1c870a48b2641bae6c36696e,# Copyright (c) 2014 OpenStack Foundation,1,1,0.08333333333333333,370
+b4e42a341894177a1c870a48b2641bae6c36696e,self.columns = (kwargs.get('columns') or,1,1,0.08333333333333333,371
+b4e42a341894177a1c870a48b2641bae6c36696e,self.conditions = conditions,1,1,0.08333333333333333,372
+b4e42a341894177a1c870a48b2641bae6c36696e,self.table = self.api._tables[table],1,1,0.08333333333333333,373
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(SetFailModeCommand, self).__init__(api)",1,1,0.08333333333333333,374
+b4e42a341894177a1c870a48b2641bae6c36696e,bridges = self.api._ovs.bridges,1,1,0.08333333333333333,375
+b4e42a341894177a1c870a48b2641bae6c36696e,br.controller = [],1,1,0.08333333333333333,376
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DelControllerCommand, self).__init__(api)",1,1,0.08333333333333333,377
+b4e42a341894177a1c870a48b2641bae6c36696e,"record = idlutils.row_by_record(self.api.idl, self.table, self.record)",1,1,0.08333333333333333,378
+b4e42a341894177a1c870a48b2641bae6c36696e,self.record = record,1,1,0.08333333333333333,379
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbDestroyCommand, self).__init__(api)",1,1,0.08333333333333333,380
+b4e42a341894177a1c870a48b2641bae6c36696e,row = txn.insert(self.api._tables[self.table]),1,1,0.08333333333333333,381
+b4e42a341894177a1c870a48b2641bae6c36696e,self.columns = columns,1,1,0.08333333333333333,382
+b4e42a341894177a1c870a48b2641bae6c36696e,self.table = table,1,1,0.08333333333333333,383
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbCreateCommand, self).__init__(api)",1,1,0.08333333333333333,384
+b4e42a341894177a1c870a48b2641bae6c36696e,br.external_ids = external_ids,1,1,0.08333333333333333,385
+b4e42a341894177a1c870a48b2641bae6c36696e,external_ids[self.field] = self.value,1,1,0.08333333333333333,386
+b4e42a341894177a1c870a48b2641bae6c36696e,"external_ids = getattr(br, 'external_ids', {})",1,1,0.08333333333333333,387
+b4e42a341894177a1c870a48b2641bae6c36696e,self.value = value,1,1,0.08333333333333333,388
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(BrSetExternalIdCommand, self).__init__(api)",1,1,0.08333333333333333,389
+b4e42a341894177a1c870a48b2641bae6c36696e,self.field = field,1,1,0.08333333333333333,390
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(BrGetExternalIdCommand, self).__init__(api)",1,1,0.08333333333333333,391
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(ListBridgesCommand, self).__init__(api)",1,1,0.08333333333333333,392
+b4e42a341894177a1c870a48b2641bae6c36696e,"'name', self.name, None))",1,1,0.08333333333333333,393
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(BridgeExistsCommand, self).__init__(api)",1,1,0.08333333333333333,394
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.bridges = bridges,1,1,0.08333333333333333,395
+b4e42a341894177a1c870a48b2641bae6c36696e,"res = res.replace(r'\\', '\\').splitlines()",1,1,0.08333333333333333,396
+b4e42a341894177a1c870a48b2641bae6c36696e,# Clean up cached ports/interfaces,1,1,0.08333333333333333,397
+b4e42a341894177a1c870a48b2641bae6c36696e,"msg = _(""Bridge %s does not exist"") % self.name",1,1,0.08333333333333333,398
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbSetCommand, self).__init__(api)",1,1,0.08333333333333333,399
+b4e42a341894177a1c870a48b2641bae6c36696e,self.col_values = col_values,1,1,0.08333333333333333,400
+b4e42a341894177a1c870a48b2641bae6c36696e,val = dict(val),1,1,0.08333333333333333,401
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbClearCommand, self).__init__(api)",1,1,0.08333333333333333,402
+b4e42a341894177a1c870a48b2641bae6c36696e,br.controller = controllers,1,1,0.08333333333333333,403
+b4e42a341894177a1c870a48b2641bae6c36696e,controller.target = target,1,1,0.08333333333333333,404
+b4e42a341894177a1c870a48b2641bae6c36696e,controller = txn.insert(self.api._tables['Controller']),1,1,0.08333333333333333,405
+b4e42a341894177a1c870a48b2641bae6c36696e,controllers = [],1,1,0.08333333333333333,406
+b4e42a341894177a1c870a48b2641bae6c36696e,self.targets = targets,1,1,0.08333333333333333,407
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(SetControllerCommand, self).__init__(api)",1,1,0.08333333333333333,408
+b4e42a341894177a1c870a48b2641bae6c36696e,"result = idlutils.get_column_value(record, self.column)",1,1,0.08333333333333333,409
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbGetCommand, self).__init__(api)",1,1,0.08333333333333333,410
+b4e42a341894177a1c870a48b2641bae6c36696e,"value = type(getattr(record, self.column))()",1,1,0.08333333333333333,411
+b4e42a341894177a1c870a48b2641bae6c36696e,"field = getattr(record, self.column, [])",1,1,0.08333333333333333,412
+b4e42a341894177a1c870a48b2641bae6c36696e,# NOTE(twilson) OVS 2.6's Python IDL has mutate methods that,1,1,0.08333333333333333,413
+b4e42a341894177a1c870a48b2641bae6c36696e,field[k] = v,1,1,0.08333333333333333,414
+b4e42a341894177a1c870a48b2641bae6c36696e,if k in field:,1,1,0.08333333333333333,415
+b4e42a341894177a1c870a48b2641bae6c36696e,"field = getattr(record, self.column, {})",1,1,0.08333333333333333,416
+b4e42a341894177a1c870a48b2641bae6c36696e,# must be called.,1,1,0.08333333333333333,417
+b4e42a341894177a1c870a48b2641bae6c36696e,self.values = values,1,1,0.08333333333333333,418
+b4e42a341894177a1c870a48b2641bae6c36696e,self.column = column,1,1,0.08333333333333333,419
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbAddCommand, self).__init__(api)",1,1,0.08333333333333333,420
+b4e42a341894177a1c870a48b2641bae6c36696e,val = existing,1,1,0.08333333333333333,421
+b4e42a341894177a1c870a48b2641bae6c36696e,"existing = getattr(record, col, {})",1,1,0.08333333333333333,422
+b4e42a341894177a1c870a48b2641bae6c36696e,return,1,1,0.08333333333333333,423
+b4e42a341894177a1c870a48b2641bae6c36696e,params = [name],1,1,0.08333333333333333,424
+b4e42a341894177a1c870a48b2641bae6c36696e,self.commands[i].result = record,1,1,0.08333333333333333,425
+b4e42a341894177a1c870a48b2641bae6c36696e,"def run_vsctl(self, args):",1,1,0.08333333333333333,426
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_get(self, table, record, column):",1,1,0.08333333333333333,427
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'clear', args=[table, record,",1,1,0.08333333333333333,428
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_clear(self, table, record, column):",1,1,0.08333333333333333,429
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'add', args=args)",1,1,0.08333333333333333,430
+b4e42a341894177a1c870a48b2641bae6c36696e,"args += [""{}={}"".format(ovsdb.py_to_val(k), ovsdb.py_to_val(v))",1,1,0.08333333333333333,431
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_add(self, table, record, column, *values):",1,1,0.08333333333333333,432
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'set', args=args)",1,1,0.08333333333333333,433
+b4e42a341894177a1c870a48b2641bae6c36696e,args += _set_colval_args(*col_values),1,1,0.08333333333333333,434
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_set(self, table, record, *col_values):",1,1,0.08333333333333333,435
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'destroy', args=args)",1,1,0.08333333333333333,436
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_destroy(self, table, record):",1,1,0.08333333333333333,437
+b4e42a341894177a1c870a48b2641bae6c36696e,"return DbCreateCommand(self.context, args=args)",1,1,0.08333333333333333,438
+b4e42a341894177a1c870a48b2641bae6c36696e,args += _set_colval_args(*col_values.items()),1,1,0.08333333333333333,439
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_create(self, table, **col_values):",1,1,0.08333333333333333,440
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'br-get-external-id',",1,1,0.08333333333333333,441
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_get_external_id(self, name, field):",1,1,0.08333333333333333,442
+b4e42a341894177a1c870a48b2641bae6c36696e,def list_br(self):,1,1,0.08333333333333333,443
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'iface-to-br', args=[name])",1,1,0.08333333333333333,444
+b4e42a341894177a1c870a48b2641bae6c36696e,"def iface_to_br(self, name):",1,1,0.08333333333333333,445
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'port-to-br', args=[name])",1,1,0.08333333333333333,446
+b4e42a341894177a1c870a48b2641bae6c36696e,"def port_to_br(self, name):",1,1,0.08333333333333333,447
+b4e42a341894177a1c870a48b2641bae6c36696e,"# are sets, but only have one value. This makes directly iterating over",1,1,0.08333333333333333,448
+b4e42a341894177a1c870a48b2641bae6c36696e,"return DbGetCommand(self.context, 'list', args=[table, record],",1,1,0.08333333333333333,449
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_list(self, table, records=None, columns=None, if_exists=False):",1,1,0.08333333333333333,450
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_port(self, port, bridge=None, if_exists=True):",1,1,0.08333333333333333,451
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DelBridgeCommand, self).__init__(api)",1,1,0.08333333333333333,452
+b4e42a341894177a1c870a48b2641bae6c36696e,"args += [""%s:%s%s%s"" % (",1,1,0.08333333333333333,453
+b4e42a341894177a1c870a48b2641bae6c36696e,"col, op, val = entry",1,1,0.08333333333333333,454
+b4e42a341894177a1c870a48b2641bae6c36696e,"col, op, val = entry[0], '=', entry[1]",1,1,0.08333333333333333,455
+b4e42a341894177a1c870a48b2641bae6c36696e,def _set_colval_args(*col_values):,1,1,0.08333333333333333,456
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_list_rows(self, table, record=None, if_exists=False):",1,1,0.08333333333333333,457
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_find_rows(self, table, *conditions, **kwargs):",1,1,0.08333333333333333,458
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_remove(self, table, record, column, *values, **keyvalues):",1,1,0.08333333333333333,459
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'del-port', opts, args)",1,1,0.08333333333333333,460
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'add-port', opts, [bridge, port])",1,1,0.08333333333333333,461
+b4e42a341894177a1c870a48b2641bae6c36696e,args += records,1,1,0.08333333333333333,462
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_port(self, bridge, port, may_exist=True):",1,1,0.08333333333333333,463
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'set-fail-mode', args=[bridge, mode])",1,1,0.08333333333333333,464
+b4e42a341894177a1c870a48b2641bae6c36696e,"def set_fail_mode(self, bridge, mode):",1,1,0.08333333333333333,465
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'set-controller',",1,1,0.08333333333333333,466
+b4e42a341894177a1c870a48b2641bae6c36696e,"def set_controller(self, bridge, controllers):",1,1,0.08333333333333333,467
+b4e42a341894177a1c870a48b2641bae6c36696e,"return DbCommand(self.context, 'find', args=args, columns=columns)",1,1,0.08333333333333333,468
+b4e42a341894177a1c870a48b2641bae6c36696e,"columns = kwargs.pop('columns', None)",1,1,0.08333333333333333,469
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_find(self, table, *conditions, **kwargs):",1,1,0.08333333333333333,470
+b4e42a341894177a1c870a48b2641bae6c36696e,"return DbCommand(self.context, 'list', opts=opts, args=args,",1,1,0.08333333333333333,471
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BrExistsCommand(self.context, 'list', args=['Bridge', name])",1,1,0.08333333333333333,472
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_exists(self, name):",1,1,0.08333333333333333,473
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'del-br', opts, [name])",1,1,0.08333333333333333,474
+b4e42a341894177a1c870a48b2641bae6c36696e,"def result(self, raw_result):",1,1,0.08333333333333333,475
+b4e42a341894177a1c870a48b2641bae6c36696e,data = json['data'],1,1,0.08333333333333333,476
+b4e42a341894177a1c870a48b2641bae6c36696e,headings = json['headings'],1,1,0.08333333333333333,477
+b4e42a341894177a1c870a48b2641bae6c36696e,# log and raise.,1,1,0.08333333333333333,478
+b4e42a341894177a1c870a48b2641bae6c36696e,"# This shouldn't happen, but if it does and we check_errors",1,1,0.08333333333333333,479
+b4e42a341894177a1c870a48b2641bae6c36696e,json = jsonutils.loads(raw_result),1,1,0.08333333333333333,480
+b4e42a341894177a1c870a48b2641bae6c36696e,self._result = None,1,1,0.08333333333333333,481
+b4e42a341894177a1c870a48b2641bae6c36696e,opts = [],1,1,0.08333333333333333,482
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context, cmd, opts=None, args=None, columns=None):",1,1,0.08333333333333333,483
+b4e42a341894177a1c870a48b2641bae6c36696e,self._result = raw_result.split(r'\n') if raw_result else [],1,1,0.08333333333333333,484
+b4e42a341894177a1c870a48b2641bae6c36696e,return self._result,1,1,0.08333333333333333,485
+b4e42a341894177a1c870a48b2641bae6c36696e,obj = {},1,1,0.08333333333333333,486
+b4e42a341894177a1c870a48b2641bae6c36696e,def result(self):,1,1,0.08333333333333333,487
+b4e42a341894177a1c870a48b2641bae6c36696e,"return itertools.chain(('--',), self.opts, (self.cmd,), self.args)",1,1,0.08333333333333333,488
+b4e42a341894177a1c870a48b2641bae6c36696e,def vsctl_args(self):,1,1,0.08333333333333333,489
+b4e42a341894177a1c870a48b2641bae6c36696e,"def execute(self, check_error=False, log_errors=True):",1,1,0.08333333333333333,490
+b4e42a341894177a1c870a48b2641bae6c36696e,self.opts = [] if opts is None else opts,1,1,0.08333333333333333,491
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context, cmd, opts=None, args=None):",1,1,0.08333333333333333,492
+b4e42a341894177a1c870a48b2641bae6c36696e,ctxt.reraise = False,1,1,0.08333333333333333,493
+b4e42a341894177a1c870a48b2641bae6c36696e,"return utils.execute(full_args, run_as_root=True,",1,1,0.08333333333333333,494
+b4e42a341894177a1c870a48b2641bae6c36696e,"# We log our own errors, so never have utils.execute do it",1,1,0.08333333333333333,495
+b4e42a341894177a1c870a48b2641bae6c36696e,results = [],1,1,0.08333333333333333,496
+b4e42a341894177a1c870a48b2641bae6c36696e,obj[heading] = ovsdb.val_to_py(record[pos]),1,1,0.08333333333333333,497
+b4e42a341894177a1c870a48b2641bae6c36696e,opts = ['--if-exists'] if if_exists else None,1,1,0.08333333333333333,498
+b4e42a341894177a1c870a48b2641bae6c36696e,"return Transaction(self.context, check_error, log_errors, **kwargs)",1,1,0.08333333333333333,499
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_br(self, name, if_exists=True):",1,1,0.08333333333333333,500
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, 'add-br', opts, params)",1,1,0.08333333333333333,501
+b4e42a341894177a1c870a48b2641bae6c36696e,opts = ['--may-exist'] if may_exist else None,1,1,0.08333333333333333,502
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_br(self, name, may_exist=True, datapath_type=None):",1,1,0.08333333333333333,503
+b4e42a341894177a1c870a48b2641bae6c36696e,"def remove_manager(self, connection_uri):",1,1,0.08333333333333333,504
+b4e42a341894177a1c870a48b2641bae6c36696e,def get_manager(self):,1,1,0.08333333333333333,505
+b4e42a341894177a1c870a48b2641bae6c36696e,"return BaseCommand(self.context, '--id=@manager', args=args)",1,1,0.08333333333333333,506
+b4e42a341894177a1c870a48b2641bae6c36696e,"conn_uri = 'target=""%s""' % connection_uri",1,1,0.08333333333333333,507
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_manager(self, connection_uri):",1,1,0.08333333333333333,508
+b4e42a341894177a1c870a48b2641bae6c36696e,"def create_transaction(self, check_error=False, log_errors=True, **kwargs):",1,1,0.08333333333333333,509
+b4e42a341894177a1c870a48b2641bae6c36696e,self._result = results,1,1,0.08333333333333333,510
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context):",1,1,0.08333333333333333,511
+b4e42a341894177a1c870a48b2641bae6c36696e,"return super(BrExistsCommand, self).execute(check_error=False,",1,1,0.08333333333333333,512
+b4e42a341894177a1c870a48b2641bae6c36696e,def execute(self):,1,1,0.08333333333333333,513
+b4e42a341894177a1c870a48b2641bae6c36696e,self._result = val is not None,1,1,0.08333333333333333,514
+b4e42a341894177a1c870a48b2641bae6c36696e,self._result = uuid.UUID(val) if val else val,1,1,0.08333333333333333,515
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.record_id = ""@%s"" % uuidutils.generate_uuid()",1,1,0.08333333333333333,516
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context, opts=None, args=None):",1,1,0.08333333333333333,517
+b4e42a341894177a1c870a48b2641bae6c36696e,self._result = list(self._result[0].values())[0],1,1,0.08333333333333333,518
+b4e42a341894177a1c870a48b2641bae6c36696e,"def result(self, val):",1,1,0.08333333333333333,519
+b4e42a341894177a1c870a48b2641bae6c36696e,self.if_exists = if_exists,1,1,0.08333333333333333,520
+b4e42a341894177a1c870a48b2641bae6c36696e,row.name = self.name,1,1,0.08333333333333333,521
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.bridges = self.api._ovs.bridges + [row],1,1,0.08333333333333333,522
+b4e42a341894177a1c870a48b2641bae6c36696e,def elapsed_time(self):,1,1,0.08333333333333333,523
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.ovsdb import api,1,1,0.08333333333333333,524
+b4e42a341894177a1c870a48b2641bae6c36696e,from ovs.db import idl,1,1,0.08333333333333333,525
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, connection):",0,1,0.08333333333333333,526
+b4e42a341894177a1c870a48b2641bae6c36696e,return NeutronOvsdbIdl(_connection),0,1,0.08333333333333333,527
+b4e42a341894177a1c870a48b2641bae6c36696e,def api_factory(context):,0,1,0.08333333333333333,528
+b4e42a341894177a1c870a48b2641bae6c36696e,"_connection = connection.Connection(idl_factory=connection.idl_factory,",0,1,0.08333333333333333,529
+b4e42a341894177a1c870a48b2641bae6c36696e,VswitchdInterfaceAddException = moves.moved_class(,0,1,0.08333333333333333,530
+b4e42a341894177a1c870a48b2641bae6c36696e,NeutronOVSDBTransaction = moves.moved_class(,0,1,0.08333333333333333,531
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_port(self, port, bridge=None, if_exists=True):",1,1,0.08333333333333333,532
+b4e42a341894177a1c870a48b2641bae6c36696e,:type may_exist:  bool,1,1,0.08333333333333333,533
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_port(self, bridge, port, may_exist=True):",1,1,0.08333333333333333,534
+b4e42a341894177a1c870a48b2641bae6c36696e,":type mode:    ""secure"" or ""standalone""",1,1,0.08333333333333333,535
+b4e42a341894177a1c870a48b2641bae6c36696e,:param mode:   The failure mode,1,1,0.08333333333333333,536
+b4e42a341894177a1c870a48b2641bae6c36696e,"def set_fail_mode(self, bridge, mode):",1,1,0.08333333333333333,537
+b4e42a341894177a1c870a48b2641bae6c36696e,:param controllers: The controller strings,1,1,0.08333333333333333,538
+b4e42a341894177a1c870a48b2641bae6c36696e,"def set_controller(self, bridge, controllers):",1,1,0.08333333333333333,539
+b4e42a341894177a1c870a48b2641bae6c36696e,set contains?:,1,1,0.08333333333333333,540
+b4e42a341894177a1c870a48b2641bae6c36696e,":type conditions: 3-tuples containing (column, operation, match)",1,1,0.08333333333333333,541
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_find(self, table, *conditions, **kwargs):",1,1,0.08333333333333333,542
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_list(self, table, records=None, columns=None, if_exists=False):",1,1,0.08333333333333333,543
+b4e42a341894177a1c870a48b2641bae6c36696e,:param column: The column whose value should be returned,1,1,0.08333333333333333,544
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.ovsdb.native import commands as cmd,1,1,0.08333333333333333,545
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.ovsdb.native import idlutils,1,1,0.08333333333333333,546
+b4e42a341894177a1c870a48b2641bae6c36696e,LOG = logging.getLogger(__name__),1,1,0.08333333333333333,547
+b4e42a341894177a1c870a48b2641bae6c36696e,return result,1,1,0.08333333333333333,548
+b4e42a341894177a1c870a48b2641bae6c36696e,"msg = _(""OVSDB Error: %s"") % txn.get_error()",1,1,0.08333333333333333,549
+b4e42a341894177a1c870a48b2641bae6c36696e,status = txn.commit_block(),1,1,0.08333333333333333,550
+b4e42a341894177a1c870a48b2641bae6c36696e,seqno = self.api.idl.change_seqno,1,1,0.08333333333333333,551
+b4e42a341894177a1c870a48b2641bae6c36696e,ctx.reraise = False,1,1,0.08333333333333333,552
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.debug(""Running txn command(idx=%(idx)s): %(cmd)s"",",1,1,0.08333333333333333,553
+b4e42a341894177a1c870a48b2641bae6c36696e,# TODO(twilson) Make sure we don't loop longer than vsctl_timeout,1,1,0.08333333333333333,554
+b4e42a341894177a1c870a48b2641bae6c36696e,if attempts > 0 and self.timeout_exceeded():,1,1,0.08333333333333333,555
+b4e42a341894177a1c870a48b2641bae6c36696e,self.start_time = time.time(),1,1,0.08333333333333333,556
+b4e42a341894177a1c870a48b2641bae6c36696e,def do_commit(self):,1,1,0.08333333333333333,557
+b4e42a341894177a1c870a48b2641bae6c36696e,result = self.results.get(timeout=self.timeout),1,1,0.08333333333333333,558
+b4e42a341894177a1c870a48b2641bae6c36696e,self.check_error = check_error,1,1,0.08333333333333333,559
+b4e42a341894177a1c870a48b2641bae6c36696e,def commit(self):,1,1,0.08333333333333333,560
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add(self, command):",1,1,0.08333333333333333,561
+b4e42a341894177a1c870a48b2641bae6c36696e,def __str__(self):,1,1,0.08333333333333333,562
+b4e42a341894177a1c870a48b2641bae6c36696e,self.expected_ifaces = set(),1,1,0.08333333333333333,563
+b4e42a341894177a1c870a48b2641bae6c36696e,self.timeout = timeout,1,1,0.08333333333333333,564
+b4e42a341894177a1c870a48b2641bae6c36696e,self.ovsdb_connection = ovsdb_connection,1,1,0.08333333333333333,565
+b4e42a341894177a1c870a48b2641bae6c36696e,self.results = Queue.Queue(1),1,1,0.08333333333333333,566
+b4e42a341894177a1c870a48b2641bae6c36696e,self.commands = [],1,1,0.08333333333333333,567
+b4e42a341894177a1c870a48b2641bae6c36696e,self.log_errors = log_errors,1,1,0.08333333333333333,568
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_get(self, table, record, column):",1,1,0.08333333333333333,569
+b4e42a341894177a1c870a48b2641bae6c36696e,:param column: The column whose value should be cleared,1,1,0.08333333333333333,570
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_clear(self, table, record, column):",1,1,0.08333333333333333,571
+b4e42a341894177a1c870a48b2641bae6c36696e,"def execute(self, **transaction_options):",1,1,0.08333333333333333,572
+b4e42a341894177a1c870a48b2641bae6c36696e,"def create_transaction(self, check_error=False, log_errors=True, **kwargs):",1,1,0.08333333333333333,573
+b4e42a341894177a1c870a48b2641bae6c36696e,return iface(context),1,1,0.08333333333333333,574
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Return the configured OVSDB API implementation""""""",1,1,0.08333333333333333,575
+b4e42a341894177a1c870a48b2641bae6c36696e,"def get(context, iface_name=None):",1,1,0.08333333333333333,576
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context):",1,1,0.08333333333333333,577
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __exit__(self, exc_type, exc_val, tb):",1,1,0.08333333333333333,578
+b4e42a341894177a1c870a48b2641bae6c36696e,def __enter__(self):,1,1,0.08333333333333333,579
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add(self, command):",1,1,0.08333333333333333,580
+b4e42a341894177a1c870a48b2641bae6c36696e,def commit(self):,1,1,0.08333333333333333,581
+b4e42a341894177a1c870a48b2641bae6c36696e,@abc.abstractmethod,1,1,0.08333333333333333,582
+b4e42a341894177a1c870a48b2641bae6c36696e,:type log_errors:   bool,1,1,0.08333333333333333,583
+b4e42a341894177a1c870a48b2641bae6c36696e,import abc,1,1,0.08333333333333333,584
+b4e42a341894177a1c870a48b2641bae6c36696e,return iface.api_factory(context),0,1,0.08333333333333333,585
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""Return the configured OVSDB API implementation""""""",0,1,0.08333333333333333,586
+b4e42a341894177a1c870a48b2641bae6c36696e,"def from_config(context, iface_name=None):",0,1,0.08333333333333333,587
+b4e42a341894177a1c870a48b2641bae6c36696e,"TimeoutException = moves.moved_class(exceptions.TimeoutException,",0,1,0.08333333333333333,588
+b4e42a341894177a1c870a48b2641bae6c36696e,"Transaction = moves.moved_class(api.Transaction, 'Transaction', __name__)",0,1,0.08333333333333333,589
+b4e42a341894177a1c870a48b2641bae6c36696e,"API = moves.moved_class(api.API, 'API', __name__)",0,1,0.08333333333333333,590
+b4e42a341894177a1c870a48b2641bae6c36696e,from ovsdbapp import api,0,1,0.08333333333333333,591
+b4e42a341894177a1c870a48b2641bae6c36696e,row.datapath_type = self.datapath_type,1,1,0.08333333333333333,592
+b4e42a341894177a1c870a48b2641bae6c36696e,:type check_error:  bool,1,1,0.08333333333333333,593
+b4e42a341894177a1c870a48b2641bae6c36696e,:returns: A new transaction,1,1,0.08333333333333333,594
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_add(self, table, record, column, *values):",1,1,0.08333333333333333,595
+b4e42a341894177a1c870a48b2641bae6c36696e,"def port_to_br(self, name):",1,1,0.08333333333333333,596
+b4e42a341894177a1c870a48b2641bae6c36696e,# unit tests,1,1,0.08333333333333333,597
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_set(self, table, record, *col_values):",1,1,0.08333333333333333,598
+b4e42a341894177a1c870a48b2641bae6c36696e,:type record:      uuid/string,1,1,0.08333333333333333,599
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_destroy(self, table, record):",1,1,0.08333333333333333,600
+b4e42a341894177a1c870a48b2641bae6c36696e,:param col_values: The columns and their associated values,1,1,0.08333333333333333,601
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_create(self, table, **col_values):",1,1,0.08333333333333333,602
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_get_external_id(self, name, field):",1,1,0.08333333333333333,603
+b4e42a341894177a1c870a48b2641bae6c36696e,def list_br(self):,1,1,0.08333333333333333,604
+b4e42a341894177a1c870a48b2641bae6c36696e,"def iface_to_br(self, name):",1,1,0.08333333333333333,605
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_exists(self, name):",1,1,0.08333333333333333,606
+b4e42a341894177a1c870a48b2641bae6c36696e,"def transaction(self, check_error=False, log_errors=True, **kwargs):",1,1,0.08333333333333333,607
+b4e42a341894177a1c870a48b2641bae6c36696e,:type if_exists:  bool,1,1,0.08333333333333333,608
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_br(self, name, if_exists=True):",1,1,0.08333333333333333,609
+b4e42a341894177a1c870a48b2641bae6c36696e,:type may_exist:        bool,1,1,0.08333333333333333,610
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_br(self, name, may_exist=True, datapath_type=None):",1,1,0.08333333333333333,611
+b4e42a341894177a1c870a48b2641bae6c36696e,needs to be removed.,1,1,0.08333333333333333,612
+b4e42a341894177a1c870a48b2641bae6c36696e,"def remove_manager(self, connection_uri):",1,1,0.08333333333333333,613
+b4e42a341894177a1c870a48b2641bae6c36696e,def get_manager(self):,1,1,0.08333333333333333,614
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_manager(self, connection_uri):",1,1,0.08333333333333333,615
+b4e42a341894177a1c870a48b2641bae6c36696e,yield txn,1,1,0.08333333333333333,616
+b4e42a341894177a1c870a48b2641bae6c36696e,return,1,1,0.08333333333333333,617
+b4e42a341894177a1c870a48b2641bae6c36696e,self._nested_txn = None,1,1,0.08333333333333333,618
+b4e42a341894177a1c870a48b2641bae6c36696e,return time.time() - self.start_time,1,1,0.08333333333333333,619
+b4e42a341894177a1c870a48b2641bae6c36696e,"def set_fail_mode(self, bridge, mode):",1,1,0.08333333333333333,620
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, api):",1,1,0.08333333333333333,621
+b4e42a341894177a1c870a48b2641bae6c36696e,LOG = logging.getLogger(__name__),1,1,0.08333333333333333,622
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.ovsdb.native import idlutils,1,1,0.08333333333333333,623
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.ovsdb import api,1,1,0.08333333333333333,624
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DelPortCommand(self, port, bridge, if_exists)",1,1,0.08333333333333333,625
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_port(self, port, bridge=None, if_exists=True):",1,1,0.08333333333333333,626
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.AddPortCommand(self, bridge, port, may_exist)",1,1,0.08333333333333333,627
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_port(self, bridge, port, may_exist=True):",1,1,0.08333333333333333,628
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.SetFailModeCommand(self, bridge, mode)",1,1,0.08333333333333333,629
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.SetControllerCommand(self, bridge, controllers)",1,1,0.08333333333333333,630
+b4e42a341894177a1c870a48b2641bae6c36696e,ctx.reraise = False,1,1,0.08333333333333333,631
+b4e42a341894177a1c870a48b2641bae6c36696e,"def set_controller(self, bridge, controllers):",1,1,0.08333333333333333,632
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbFindCommand(self, table, *conditions, **kwargs)",1,1,0.08333333333333333,633
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_find(self, table, *conditions, **kwargs):",1,1,0.08333333333333333,634
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbListCommand(self, table, records, columns, if_exists)",1,1,0.08333333333333333,635
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_list(self, table, records=None, columns=None, if_exists=False):",1,1,0.08333333333333333,636
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbGetCommand(self, table, record, column)",1,1,0.08333333333333333,637
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_get(self, table, record, column):",1,1,0.08333333333333333,638
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbClearCommand(self, table, record, column)",1,1,0.08333333333333333,639
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_clear(self, table, record, column):",1,1,0.08333333333333333,640
+b4e42a341894177a1c870a48b2641bae6c36696e,"def execute(self, check_error=False, log_errors=True):",1,1,0.08333333333333333,641
+b4e42a341894177a1c870a48b2641bae6c36696e,def __str__(self):,1,1,0.08333333333333333,642
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_add(self, table, record, column, *values):",1,1,0.08333333333333333,643
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(RemoveManagerCommand, self).__init__(api)",1,1,0.08333333333333333,644
+b4e42a341894177a1c870a48b2641bae6c36696e,row = txn.insert(self.api._tables['Bridge']),1,1,0.08333333333333333,645
+b4e42a341894177a1c870a48b2641bae6c36696e,def time_remaining(self):,1,1,0.08333333333333333,646
+b4e42a341894177a1c870a48b2641bae6c36696e,return,1,1,0.08333333333333333,647
+b4e42a341894177a1c870a48b2641bae6c36696e,br.datapath_type = self.datapath_type,1,1,0.08333333333333333,648
+b4e42a341894177a1c870a48b2641bae6c36696e,self.datapath_type = datapath_type,1,1,0.08333333333333333,649
+b4e42a341894177a1c870a48b2641bae6c36696e,self.may_exist = may_exist,1,1,0.08333333333333333,650
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(AddBridgeCommand, self).__init__(api)",1,1,0.08333333333333333,651
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.manager_options = manager_list,1,1,0.08333333333333333,652
+b4e42a341894177a1c870a48b2641bae6c36696e,manager_list = self.api._ovs.manager_options,1,1,0.08333333333333333,653
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(GetManagerCommand, self).__init__(api)",1,1,0.08333333333333333,654
+b4e42a341894177a1c870a48b2641bae6c36696e,command_info = self.__dict__,1,1,0.08333333333333333,655
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.manager_options = (,1,1,0.08333333333333333,656
+b4e42a341894177a1c870a48b2641bae6c36696e,except AttributeError:  # OVS < 2.6,1,1,0.08333333333333333,657
+b4e42a341894177a1c870a48b2641bae6c36696e,row.target = self.target,1,1,0.08333333333333333,658
+b4e42a341894177a1c870a48b2641bae6c36696e,row = txn.insert(self.api._tables['Manager']),1,1,0.08333333333333333,659
+b4e42a341894177a1c870a48b2641bae6c36696e,self.target = target,1,1,0.08333333333333333,660
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(AddManagerCommand, self).__init__(api)",1,1,0.08333333333333333,661
+b4e42a341894177a1c870a48b2641bae6c36696e,__repr__ = __str__,1,1,0.08333333333333333,662
+b4e42a341894177a1c870a48b2641bae6c36696e,"if k not in ['api', 'result']))",1,1,0.08333333333333333,663
+b4e42a341894177a1c870a48b2641bae6c36696e,"return ""%s(%s)"" % (",1,1,0.08333333333333333,664
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbAddCommand(self, table, record, column, *values)",1,1,0.08333333333333333,665
+b4e42a341894177a1c870a48b2641bae6c36696e,"msg = _(""Manager with target %s does not exist"") % self.target",1,1,0.08333333333333333,666
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbSetCommand(self, table, record, *col_values)",1,1,0.08333333333333333,667
+b4e42a341894177a1c870a48b2641bae6c36696e,"def vswitchd_has_completed(self, next_cfg):",1,1,0.08333333333333333,668
+b4e42a341894177a1c870a48b2641bae6c36696e,"def create_transaction(self, check_error=False, log_errors=True, **kwargs):",1,1,0.08333333333333333,669
+b4e42a341894177a1c870a48b2641bae6c36696e,return list(self._tables['Open_vSwitch'].rows.values())[0],1,1,0.08333333333333333,670
+b4e42a341894177a1c870a48b2641bae6c36696e,def _ovs(self):,1,1,0.08333333333333333,671
+b4e42a341894177a1c870a48b2641bae6c36696e,return self.idl.tables,1,1,0.08333333333333333,672
+b4e42a341894177a1c870a48b2641bae6c36696e,def _tables(self):,1,1,0.08333333333333333,673
+b4e42a341894177a1c870a48b2641bae6c36696e,self.idl = OvsdbIdl.ovsdb_connection.idl,1,1,0.08333333333333333,674
+b4e42a341894177a1c870a48b2641bae6c36696e,"def __init__(self, context):",1,1,0.08333333333333333,675
+b4e42a341894177a1c870a48b2641bae6c36696e,"ovsdb_connection = connection.Connection(cfg.CONF.OVS.ovsdb_connection,",1,1,0.08333333333333333,676
+b4e42a341894177a1c870a48b2641bae6c36696e,return self.api._ovs.cur_cfg >= next_cfg,1,1,0.08333333333333333,677
+b4e42a341894177a1c870a48b2641bae6c36696e,return failed,1,1,0.08333333333333333,678
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_manager(self, connection_uri):",1,1,0.08333333333333333,679
+b4e42a341894177a1c870a48b2641bae6c36696e,if iface and (not iface.ofport or iface.ofport == -1):,1,1,0.08333333333333333,680
+b4e42a341894177a1c870a48b2641bae6c36696e,uuid = txn.get_insert_uuid(iface_uuid),1,1,0.08333333333333333,681
+b4e42a341894177a1c870a48b2641bae6c36696e,failed = [],1,1,0.08333333333333333,682
+b4e42a341894177a1c870a48b2641bae6c36696e,next_cfg = txn.get_increment_new_value(),1,1,0.08333333333333333,683
+b4e42a341894177a1c870a48b2641bae6c36696e,txn.expected_ifaces = set(),1,1,0.08333333333333333,684
+b4e42a341894177a1c870a48b2641bae6c36696e,return self.elapsed_time() > self.timeout,1,1,0.08333333333333333,685
+b4e42a341894177a1c870a48b2641bae6c36696e,return self.timeout - self.elapsed_time(),1,1,0.08333333333333333,686
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_set(self, table, record, *col_values):",1,1,0.08333333333333333,687
+b4e42a341894177a1c870a48b2641bae6c36696e,def timeout_exceeded(self):,1,1,0.08333333333333333,688
+b4e42a341894177a1c870a48b2641bae6c36696e,"return NeutronOVSDBTransaction(self, OvsdbIdl.ovsdb_connection,",1,1,0.08333333333333333,689
+b4e42a341894177a1c870a48b2641bae6c36696e,failed = self.post_commit_failed_interfaces(txn),1,1,0.08333333333333333,690
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.AddManagerCommand(self, connection_uri)",1,1,0.08333333333333333,691
+b4e42a341894177a1c870a48b2641bae6c36696e,"def iface_to_br(self, name):",1,1,0.08333333333333333,692
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_destroy(self, table, record):",1,1,0.08333333333333333,693
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbCreateCommand(self, table, **col_values)",1,1,0.08333333333333333,694
+b4e42a341894177a1c870a48b2641bae6c36696e,def get_manager(self):,1,1,0.08333333333333333,695
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DbDestroyCommand(self, table, record)",1,1,0.08333333333333333,696
+b4e42a341894177a1c870a48b2641bae6c36696e,"def db_create(self, table, **col_values):",1,1,0.08333333333333333,697
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_set_external_id(self, name, field, value):",1,1,0.08333333333333333,698
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.BrGetExternalIdCommand(self, name, field)",1,1,0.08333333333333333,699
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_get_external_id(self, name, field):",1,1,0.08333333333333333,700
+b4e42a341894177a1c870a48b2641bae6c36696e,return cmd.ListBridgesCommand(self),1,1,0.08333333333333333,701
+b4e42a341894177a1c870a48b2641bae6c36696e,def list_br(self):,1,1,0.08333333333333333,702
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.BrSetExternalIdCommand(self, name, field, value)",1,1,0.08333333333333333,703
+b4e42a341894177a1c870a48b2641bae6c36696e,"def port_to_br(self, name):",1,1,0.08333333333333333,704
+b4e42a341894177a1c870a48b2641bae6c36696e,"def br_exists(self, name):",1,1,0.08333333333333333,705
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.DelBridgeCommand(self, name, if_exists)",1,1,0.08333333333333333,706
+b4e42a341894177a1c870a48b2641bae6c36696e,"def del_br(self, name, if_exists=True):",1,1,0.08333333333333333,707
+b4e42a341894177a1c870a48b2641bae6c36696e,return cmd.GetManagerCommand(self),1,1,0.08333333333333333,708
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.AddBridgeCommand(self, name, may_exist, datapath_type)",1,1,0.08333333333333333,709
+b4e42a341894177a1c870a48b2641bae6c36696e,"def add_br(self, name, may_exist=True, datapath_type=None):",1,1,0.08333333333333333,710
+b4e42a341894177a1c870a48b2641bae6c36696e,"def remove_manager(self, connection_uri):",1,1,0.08333333333333333,711
+b4e42a341894177a1c870a48b2641bae6c36696e,"return cmd.RemoveManagerCommand(self, connection_uri)",1,1,0.08333333333333333,712
+b4e42a341894177a1c870a48b2641bae6c36696e,"br.addvalue('ports', port)",1,0,0.0,713
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.bridge:,1,0,0.0,714
+b4e42a341894177a1c870a48b2641bae6c36696e,self.port),1,0,0.0,715
+b4e42a341894177a1c870a48b2641bae6c36696e,class DelPortCommand(BaseCommand):,1,0,0.0,716
+b4e42a341894177a1c870a48b2641bae6c36696e,txn.expected_ifaces.add(iface.uuid),1,0,0.0,717
+b4e42a341894177a1c870a48b2641bae6c36696e,ports.append(port),1,0,0.0,718
+b4e42a341894177a1c870a48b2641bae6c36696e,br.verify('ports'),1,0,0.0,719
+b4e42a341894177a1c870a48b2641bae6c36696e,class AddPortCommand(BaseCommand):,1,0,0.0,720
+b4e42a341894177a1c870a48b2641bae6c36696e,if port:,1,0,0.0,721
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.port, None)",1,0,0.0,722
+b4e42a341894177a1c870a48b2641bae6c36696e,class SetControllerCommand(BaseCommand):,1,0,0.0,723
+b4e42a341894177a1c870a48b2641bae6c36696e,class SetFailModeCommand(BaseCommand):,1,0,0.0,724
+b4e42a341894177a1c870a48b2641bae6c36696e,class GetControllerCommand(BaseCommand):,1,0,0.0,725
+b4e42a341894177a1c870a48b2641bae6c36696e,class DelControllerCommand(BaseCommand):,1,0,0.0,726
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(result, list) and len(result) == 1:",1,0,0.0,727
+b4e42a341894177a1c870a48b2641bae6c36696e,},1,0,0.0,728
+b4e42a341894177a1c870a48b2641bae6c36696e,controllers.append(controller),1,0,0.0,729
+b4e42a341894177a1c870a48b2641bae6c36696e,self.bridge),1,0,0.0,730
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.records:,1,0,0.0,731
+b4e42a341894177a1c870a48b2641bae6c36696e,"br.delvalue('ports', port)",1,0,0.0,732
+b4e42a341894177a1c870a48b2641bae6c36696e,"""Table=%(table)s. Columns=%(columns)s. """,1,0,0.0,733
+b4e42a341894177a1c870a48b2641bae6c36696e,{,1,0,0.0,734
+b4e42a341894177a1c870a48b2641bae6c36696e,}),1,0,0.0,735
+b4e42a341894177a1c870a48b2641bae6c36696e,"setattr(record, self.column, value)",1,0,0.0,736
+b4e42a341894177a1c870a48b2641bae6c36696e,"""records"": self.records,",1,0,0.0,737
+b4e42a341894177a1c870a48b2641bae6c36696e,"""columns"": self.columns,",1,0,0.0,738
+b4e42a341894177a1c870a48b2641bae6c36696e,"""table"": self.table,",1,0,0.0,739
+b4e42a341894177a1c870a48b2641bae6c36696e,"""Records=%(records)s."") % {",1,0,0.0,740
+b4e42a341894177a1c870a48b2641bae6c36696e,raise RuntimeError(_(,1,0,0.0,741
+b4e42a341894177a1c870a48b2641bae6c36696e,ports.remove(port),1,0,0.0,742
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.api.idl, self.table, record).uuid)",1,0,0.0,743
+b4e42a341894177a1c870a48b2641bae6c36696e,row_uuids.append(idlutils.row_by_record(,1,0,0.0,744
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbListCommand(BaseCommand):,1,0,0.0,745
+b4e42a341894177a1c870a48b2641bae6c36696e,class InterfaceToBridgeCommand(BaseCommand):,1,0,0.0,746
+b4e42a341894177a1c870a48b2641bae6c36696e,class PortToBridgeCommand(BaseCommand):,1,0,0.0,747
+b4e42a341894177a1c870a48b2641bae6c36696e,class ListIfacesCommand(BaseCommand):,1,0,0.0,748
+b4e42a341894177a1c870a48b2641bae6c36696e,class ListPortsCommand(BaseCommand):,1,0,0.0,749
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbGetCommand(BaseCommand):,1,0,0.0,750
+b4e42a341894177a1c870a48b2641bae6c36696e,class ListBridgesCommand(BaseCommand):,1,0,0.0,751
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbClearCommand(BaseCommand):,1,0,0.0,752
+b4e42a341894177a1c870a48b2641bae6c36696e,"setattr(record, self.column, idlutils.db_replace_record(field))",1,0,0.0,753
+b4e42a341894177a1c870a48b2641bae6c36696e,br.delete(),1,0,0.0,754
+b4e42a341894177a1c870a48b2641bae6c36696e,bridges.remove(br),1,0,0.0,755
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.api._ovs.delvalue('bridges', br)",1,0,0.0,756
+b4e42a341894177a1c870a48b2641bae6c36696e,port.delete(),1,0,0.0,757
+b4e42a341894177a1c870a48b2641bae6c36696e,interface.delete(),1,0,0.0,758
+b4e42a341894177a1c870a48b2641bae6c36696e,else:,1,0,0.0,759
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.if_exists:,1,0,0.0,760
+b4e42a341894177a1c870a48b2641bae6c36696e,self.name),1,0,0.0,761
+b4e42a341894177a1c870a48b2641bae6c36696e,class DelBridgeCommand(BaseCommand):,1,0,0.0,762
+b4e42a341894177a1c870a48b2641bae6c36696e,"('type', 'internal'))",1,0,0.0,763
+b4e42a341894177a1c870a48b2641bae6c36696e,cmd.run_idl(txn),1,0,0.0,764
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.verify('bridges'),1,0,0.0,765
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.api._ovs.addvalue('bridges', row)",1,0,0.0,766
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.datapath_type:,1,0,0.0,767
+b4e42a341894177a1c870a48b2641bae6c36696e,if br:,1,0,0.0,768
+b4e42a341894177a1c870a48b2641bae6c36696e,],1,0,0.0,769
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.name, None)",1,0,0.0,770
+b4e42a341894177a1c870a48b2641bae6c36696e,class BridgeExistsCommand(BaseCommand):,1,0,0.0,771
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._tables['Bridge'].rows.values()],1,0,0.0,772
+b4e42a341894177a1c870a48b2641bae6c36696e,class BrGetExternalIdCommand(BaseCommand):,1,0,0.0,773
+b4e42a341894177a1c870a48b2641bae6c36696e,"setattr(record, col, idlutils.db_replace_record(val))",1,0,0.0,774
+b4e42a341894177a1c870a48b2641bae6c36696e,record.verify(self.column),1,0,0.0,775
+b4e42a341894177a1c870a48b2641bae6c36696e,field.append(value),1,0,0.0,776
+b4e42a341894177a1c870a48b2641bae6c36696e,idlutils.db_replace_record(value)),1,0,0.0,777
+b4e42a341894177a1c870a48b2641bae6c36696e,"record.addvalue(self.column,",1,0,0.0,778
+b4e42a341894177a1c870a48b2641bae6c36696e,continue,1,0,0.0,779
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(value, collections.Mapping):",1,0,0.0,780
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbAddCommand(BaseCommand):,1,0,0.0,781
+b4e42a341894177a1c870a48b2641bae6c36696e,existing.update(val),1,0,0.0,782
+b4e42a341894177a1c870a48b2641bae6c36696e,class BrSetExternalIdCommand(BaseCommand):,1,0,0.0,783
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(val, dict):",1,0,0.0,784
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(val, collections.OrderedDict):",1,0,0.0,785
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbSetCommand(BaseCommand):,1,0,0.0,786
+b4e42a341894177a1c870a48b2641bae6c36696e,record.delete(),1,0,0.0,787
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbDestroyCommand(BaseCommand):,1,0,0.0,788
+b4e42a341894177a1c870a48b2641bae6c36696e,"setattr(row, col, idlutils.db_replace_record(val))",1,0,0.0,789
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbCreateCommand(BaseCommand):,1,0,0.0,790
+b4e42a341894177a1c870a48b2641bae6c36696e,"c: idlutils.get_column_value(table_schema.rows[uuid], c)",1,0,0.0,791
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbGetCommand(DbCommand):,1,0,0.0,792
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbFindCommand(BaseCommand):,1,0,0.0,793
+b4e42a341894177a1c870a48b2641bae6c36696e,list(self.table.columns.keys()) + ['_uuid']),1,0,0.0,794
+b4e42a341894177a1c870a48b2641bae6c36696e,"params += ['--', 'set', 'Bridge', name,",1,0,0.0,795
+b4e42a341894177a1c870a48b2641bae6c36696e,if datapath_type:,1,0,0.0,796
+b4e42a341894177a1c870a48b2641bae6c36696e,"'Open_vSwitch', '.', 'manager_options', '@manager']",1,0,0.0,797
+b4e42a341894177a1c870a48b2641bae6c36696e,"'.', 'manager_options', '@manager']",1,0,0.0,798
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(OvsdbVsctl, self).__init__()",1,0,0.0,799
+b4e42a341894177a1c870a48b2641bae6c36696e,class OvsdbVsctl(ovsdb_api.API):,1,0,0.0,800
+b4e42a341894177a1c870a48b2641bae6c36696e,log_errors=False),1,0,0.0,801
+b4e42a341894177a1c870a48b2641bae6c36696e,class BrExistsCommand(DbCommand):,1,0,0.0,802
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.opts.append(""--id=%s"" % self.record_id)",1,0,0.0,803
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbCreateCommand, self).__init__(context, ""create"", opts, args)",1,0,0.0,804
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbCreateCommand(BaseCommand):,1,0,0.0,805
+b4e42a341894177a1c870a48b2641bae6c36696e,if self._result:,1,0,0.0,806
+b4e42a341894177a1c870a48b2641bae6c36696e,"DbCommand.result.fset(self, val)",1,0,0.0,807
+b4e42a341894177a1c870a48b2641bae6c36696e,@DbCommand.result.setter,1,0,0.0,808
+b4e42a341894177a1c870a48b2641bae6c36696e,results.append(obj),1,0,0.0,809
+b4e42a341894177a1c870a48b2641bae6c36696e,"{'raw_result': raw_result, 'exception': e})",1,0,0.0,810
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.error(""Could not parse: %(raw_result)s. """,1,0,0.0,811
+b4e42a341894177a1c870a48b2641bae6c36696e,'datapath_type=%s' % datapath_type],1,0,0.0,812
+b4e42a341894177a1c870a48b2641bae6c36696e,"args=[name, field])",1,0,0.0,813
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(value, collections.Mapping):",1,0,0.0,814
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(val, collections.Mapping):",1,0,0.0,815
+b4e42a341894177a1c870a48b2641bae6c36696e,class AddBridgeCommand(BaseCommand):,1,0,0.0,816
+b4e42a341894177a1c870a48b2641bae6c36696e,"""%s%s%s"" % (col, op, "","".join(map(ovsdb.py_to_val, val))))",1,0,0.0,817
+b4e42a341894177a1c870a48b2641bae6c36696e,args.append(,1,0,0.0,818
+b4e42a341894177a1c870a48b2641bae6c36696e,"args.append(""%s%s%s"" % (col, op, ""[]""))",1,0,0.0,819
+b4e42a341894177a1c870a48b2641bae6c36696e,if len(val) == 0:,1,0,0.0,820
+b4e42a341894177a1c870a48b2641bae6c36696e,"not isinstance(val, six.string_types)):",1,0,0.0,821
+b4e42a341894177a1c870a48b2641bae6c36696e,"elif (isinstance(val, collections.Sequence) and",1,0,0.0,822
+b4e42a341894177a1c870a48b2641bae6c36696e,if len(entry) == 2:,1,0,0.0,823
+b4e42a341894177a1c870a48b2641bae6c36696e,else:,1,0,0.0,824
+b4e42a341894177a1c870a48b2641bae6c36696e,raise NotImplementedError(),1,0,0.0,825
+b4e42a341894177a1c870a48b2641bae6c36696e,args=[bridge] + list(controllers)),1,0,0.0,826
+b4e42a341894177a1c870a48b2641bae6c36696e,columns=columns),1,0,0.0,827
+b4e42a341894177a1c870a48b2641bae6c36696e,if records:,1,0,0.0,828
+b4e42a341894177a1c870a48b2641bae6c36696e,columns=[column]),1,0,0.0,829
+b4e42a341894177a1c870a48b2641bae6c36696e,column]),1,0,0.0,830
+b4e42a341894177a1c870a48b2641bae6c36696e,args.append(ovsdb.py_to_val(value)),1,0,0.0,831
+b4e42a341894177a1c870a48b2641bae6c36696e,with excutils.save_and_reraise_exception():,1,0,0.0,832
+b4e42a341894177a1c870a48b2641bae6c36696e,"except (ValueError, TypeError) as e:",1,0,0.0,833
+b4e42a341894177a1c870a48b2641bae6c36696e,if not raw_result:,1,0,0.0,834
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_utils import uuidutils,1,0,0.0,835
+b4e42a341894177a1c870a48b2641bae6c36696e,self.commands.append(command),1,0,0.0,836
+b4e42a341894177a1c870a48b2641bae6c36696e,self.opts += opts,1,0,0.0,837
+b4e42a341894177a1c870a48b2641bae6c36696e,if opts:,1,0,0.0,838
+b4e42a341894177a1c870a48b2641bae6c36696e,"'--oneline', '--format=json']",1,0,0.0,839
+b4e42a341894177a1c870a48b2641bae6c36696e,class Transaction(ovsdb_api.Transaction):,1,0,0.0,840
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.agent.common import utils,1,0,0.0,841
+b4e42a341894177a1c870a48b2641bae6c36696e,import six,1,0,0.0,842
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_utils import excutils,1,0,0.0,843
+b4e42a341894177a1c870a48b2641bae6c36696e,try:,1,0,0.0,844
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_serialization import jsonutils,1,0,0.0,845
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_log import log as logging,1,0,0.0,846
+b4e42a341894177a1c870a48b2641bae6c36696e,import uuid,1,0,0.0,847
+b4e42a341894177a1c870a48b2641bae6c36696e,import itertools,1,0,0.0,848
+b4e42a341894177a1c870a48b2641bae6c36696e,import collections,1,0,0.0,849
+b4e42a341894177a1c870a48b2641bae6c36696e,"if idlutils.row_match(r, self.conditions)",1,0,0.0,850
+b4e42a341894177a1c870a48b2641bae6c36696e,"c: idlutils.get_column_value(r, c)",1,0,0.0,851
+b4e42a341894177a1c870a48b2641bae6c36696e,if res is None:,1,0,0.0,852
+b4e42a341894177a1c870a48b2641bae6c36696e,log_fail_as_error=False).rstrip(),1,0,0.0,853
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(DbCommand, self).__init__(context, cmd, opts, args)",1,0,0.0,854
+b4e42a341894177a1c870a48b2641bae6c36696e,txn.add(self),1,0,0.0,855
+b4e42a341894177a1c870a48b2641bae6c36696e,"opts += ['--columns=%s' % "","".join(columns)]",1,0,0.0,856
+b4e42a341894177a1c870a48b2641bae6c36696e,if columns:,1,0,0.0,857
+b4e42a341894177a1c870a48b2641bae6c36696e,if opts is None:,1,0,0.0,858
+b4e42a341894177a1c870a48b2641bae6c36696e,class DbCommand(BaseCommand):,1,0,0.0,859
+b4e42a341894177a1c870a48b2641bae6c36696e,@result.setter,1,0,0.0,860
+b4e42a341894177a1c870a48b2641bae6c36696e,@property,1,0,0.0,861
+b4e42a341894177a1c870a48b2641bae6c36696e,class MultiLineCommand(BaseCommand):,1,0,0.0,862
+b4e42a341894177a1c870a48b2641bae6c36696e,log_errors=log_errors) as txn:,1,0,0.0,863
+b4e42a341894177a1c870a48b2641bae6c36696e,except Exception as e:,1,0,0.0,864
+b4e42a341894177a1c870a48b2641bae6c36696e,"with Transaction(self.context, check_error=check_error,",1,0,0.0,865
+b4e42a341894177a1c870a48b2641bae6c36696e,class BaseCommand(ovsdb_api.Command):,1,0,0.0,866
+b4e42a341894177a1c870a48b2641bae6c36696e,if not self.check_error:,1,0,0.0,867
+b4e42a341894177a1c870a48b2641bae6c36696e,"{'cmd': full_args, 'exception': e})",1,0,0.0,868
+b4e42a341894177a1c870a48b2641bae6c36696e,"""Exception: %(exception)s"",",1,0,0.0,869
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.log_errors:,1,0,0.0,870
+b4e42a341894177a1c870a48b2641bae6c36696e,with excutils.save_and_reraise_exception() as ctxt:,1,0,0.0,871
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.may_exist:,1,0,0.0,872
+b4e42a341894177a1c870a48b2641bae6c36696e,"""seconds"") % {'commands': self.commands,",1,0,0.0,873
+b4e42a341894177a1c870a48b2641bae6c36696e,manager.delete(),1,0,0.0,874
+b4e42a341894177a1c870a48b2641bae6c36696e,command.run_idl(txn),1,0,0.0,875
+b4e42a341894177a1c870a48b2641bae6c36696e,class Transaction(api.Transaction):,1,0,0.0,876
+b4e42a341894177a1c870a48b2641bae6c36696e,class VswitchdInterfaceAddException(exceptions.NeutronException):,1,0,0.0,877
+b4e42a341894177a1c870a48b2641bae6c36696e,"cfg.CONF.import_opt('ovs_vsctl_timeout', 'neutron.agent.common.ovs_lib')",1,0,0.0,878
+b4e42a341894177a1c870a48b2641bae6c36696e,"from neutron._i18n import _, _LE",1,0,0.0,879
+b4e42a341894177a1c870a48b2641bae6c36696e,from six.moves import queue as Queue,1,0,0.0,880
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_utils import excutils,1,0,0.0,881
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_log import log as logging,1,0,0.0,882
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron_lib import exceptions,1,0,0.0,883
+b4e42a341894177a1c870a48b2641bae6c36696e,import time,1,0,0.0,884
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(NeutronOvsdbIdl, self).__init__(connection)",0,0,0.0,885
+b4e42a341894177a1c870a48b2641bae6c36696e,vlog.use_python_logger(),0,0,0.0,886
+b4e42a341894177a1c870a48b2641bae6c36696e,class NeutronOvsdbIdl(impl_idl.OvsdbIdl):,0,0,0.0,887
+b4e42a341894177a1c870a48b2641bae6c36696e,timeout=cfg.CONF.ovs_vsctl_timeout),0,0,0.0,888
+b4e42a341894177a1c870a48b2641bae6c36696e,"'VswitchdInterfaceAddException',",0,0,0.0,889
+b4e42a341894177a1c870a48b2641bae6c36696e,"impl_idl.VswitchdInterfaceAddException,",0,0,0.0,890
+b4e42a341894177a1c870a48b2641bae6c36696e,__name__),0,0,0.0,891
+b4e42a341894177a1c870a48b2641bae6c36696e,"'NeutronOVSDBTransaction',",0,0,0.0,892
+b4e42a341894177a1c870a48b2641bae6c36696e,"check_error=False, log_errors=True):",1,0,0.0,893
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""",1,0,0.0,894
+b4e42a341894177a1c870a48b2641bae6c36696e,self.commands.append(command),1,0,0.0,895
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.check_error:,1,0,0.0,896
+b4e42a341894177a1c870a48b2641bae6c36696e,self.pre_commit(txn),1,0,0.0,897
+b4e42a341894177a1c870a48b2641bae6c36696e,attempts += 1,1,0,0.0,898
+b4e42a341894177a1c870a48b2641bae6c36696e,"raise RuntimeError(_(""OVS transaction timed out""))",1,0,0.0,899
+b4e42a341894177a1c870a48b2641bae6c36696e,while True:,1,0,0.0,900
+b4e42a341894177a1c870a48b2641bae6c36696e,command.post_commit(txn),1,0,0.0,901
+b4e42a341894177a1c870a48b2641bae6c36696e,pass,1,0,0.0,902
+b4e42a341894177a1c870a48b2641bae6c36696e,raise result.ex,1,0,0.0,903
+b4e42a341894177a1c870a48b2641bae6c36696e,LOG.error(result.tb),1,0,0.0,904
+b4e42a341894177a1c870a48b2641bae6c36696e,self.ovsdb_connection.queue_txn(self),1,0,0.0,905
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.log_errors:,1,0,0.0,906
+b4e42a341894177a1c870a48b2641bae6c36696e,"if isinstance(result, idlutils.ExceptionResult):",1,0,0.0,907
+b4e42a341894177a1c870a48b2641bae6c36696e,'timeout': self.timeout}),1,0,0.0,908
+b4e42a341894177a1c870a48b2641bae6c36696e,"_(""Commands %(commands)s exceeded timeout %(timeout)d """,1,0,0.0,909
+b4e42a341894177a1c870a48b2641bae6c36696e,raise api.TimeoutException(,1,0,0.0,910
+b4e42a341894177a1c870a48b2641bae6c36696e,except Queue.Empty:,1,0,0.0,911
+b4e42a341894177a1c870a48b2641bae6c36696e,try:,1,0,0.0,912
+b4e42a341894177a1c870a48b2641bae6c36696e,"impl_idl.OvsVsctlTransaction,",0,0,0.0,913
+b4e42a341894177a1c870a48b2641bae6c36696e,from ovsdbapp.schema.open_vswitch import impl_idl,0,0,0.0,914
+b4e42a341894177a1c870a48b2641bae6c36696e,from debtcollector import moves,0,0,0.0,915
+b4e42a341894177a1c870a48b2641bae6c36696e,"'vsctl': 'neutron.agent.ovsdb.impl_vsctl.OvsdbVsctl',",1,0,0.0,916
+b4e42a341894177a1c870a48b2641bae6c36696e,class API(object):,1,0,0.0,917
+b4e42a341894177a1c870a48b2641bae6c36696e,if exc_type is None:,1,0,0.0,918
+b4e42a341894177a1c870a48b2641bae6c36696e,class Transaction(object):,1,0,0.0,919
+b4e42a341894177a1c870a48b2641bae6c36696e,"""""""",1,0,0.0,920
+b4e42a341894177a1c870a48b2641bae6c36696e,class Command(object):,1,0,0.0,921
+b4e42a341894177a1c870a48b2641bae6c36696e,@six.add_metaclass(abc.ABCMeta),1,0,0.0,922
+b4e42a341894177a1c870a48b2641bae6c36696e,"'native': 'neutron.agent.ovsdb.impl_idl.NeutronOvsdbIdl',",1,0,0.0,923
+b4e42a341894177a1c870a48b2641bae6c36696e,import six,1,0,0.0,924
+b4e42a341894177a1c870a48b2641bae6c36696e,interface_map[iface_name or cfg.CONF.OVS.ovsdb_interface]),1,0,0.0,925
+b4e42a341894177a1c870a48b2641bae6c36696e,import contextlib,1,0,0.0,926
+b4e42a341894177a1c870a48b2641bae6c36696e,interface_map[iface_name or cfg.CONF.OVS.ovsdb_interface]),0,0,0.0,927
+b4e42a341894177a1c870a48b2641bae6c36696e,"'native': 'neutron.agent.ovsdb.impl_idl',",0,0,0.0,928
+b4e42a341894177a1c870a48b2641bae6c36696e,"'vsctl': 'neutron.agent.ovsdb.impl_vsctl',",0,0,0.0,929
+b4e42a341894177a1c870a48b2641bae6c36696e,"'TimeoutException', __name__)",0,0,0.0,930
+b4e42a341894177a1c870a48b2641bae6c36696e,from ovsdbapp import exceptions,0,0,0.0,931
+b4e42a341894177a1c870a48b2641bae6c36696e,from debtcollector import moves,0,0,0.0,932
+b4e42a341894177a1c870a48b2641bae6c36696e,@staticmethod,1,0,0.0,933
+b4e42a341894177a1c870a48b2641bae6c36696e,:rtype: :class:`Transaction`,1,0,0.0,934
+b4e42a341894177a1c870a48b2641bae6c36696e,pass,1,0,0.0,935
+b4e42a341894177a1c870a48b2641bae6c36696e,type,1,0,0.0,936
+b4e42a341894177a1c870a48b2641bae6c36696e,class TimeoutException(Exception):,1,0,0.0,937
+b4e42a341894177a1c870a48b2641bae6c36696e,"('protocols', '{>=}', 'OpenFlow13')",1,0,0.0,938
+b4e42a341894177a1c870a48b2641bae6c36696e,"('external_ids', '!=', {'iface-id', ''})",1,0,0.0,939
+b4e42a341894177a1c870a48b2641bae6c36696e,field exists?,1,0,0.0,940
+b4e42a341894177a1c870a48b2641bae6c36696e,"map: ('external_ids' '=', {'iface-id': 'xxx'})",1,0,0.0,941
+b4e42a341894177a1c870a48b2641bae6c36696e,"atomic: ('tag', '=', 7)",1,0,0.0,942
+b4e42a341894177a1c870a48b2641bae6c36696e,Examples:,1,0,0.0,943
+b4e42a341894177a1c870a48b2641bae6c36696e,values or unnested sequences/mappings,1,0,0.0,944
+b4e42a341894177a1c870a48b2641bae6c36696e,@contextlib.contextmanager,1,0,0.0,945
+b4e42a341894177a1c870a48b2641bae6c36696e,finally:,1,0,0.0,946
+b4e42a341894177a1c870a48b2641bae6c36696e,try:,1,0,0.0,947
+b4e42a341894177a1c870a48b2641bae6c36696e,"check_error, log_errors, **kwargs) as txn:",1,0,0.0,948
+b4e42a341894177a1c870a48b2641bae6c36696e,with self.create_transaction(,1,0,0.0,949
+b4e42a341894177a1c870a48b2641bae6c36696e,else:,1,0,0.0,950
+b4e42a341894177a1c870a48b2641bae6c36696e,yield self._nested_txn,1,0,0.0,951
+b4e42a341894177a1c870a48b2641bae6c36696e,if self._nested_txn:,1,0,0.0,952
+b4e42a341894177a1c870a48b2641bae6c36696e,"{'idx': i, 'cmd': command})",1,0,0.0,953
+b4e42a341894177a1c870a48b2641bae6c36696e,except Exception:,1,0,0.0,954
+b4e42a341894177a1c870a48b2641bae6c36696e,manager_list.remove(manager),1,0,0.0,955
+b4e42a341894177a1c870a48b2641bae6c36696e,with excutils.save_and_reraise_exception() as ctx:,1,0,0.0,956
+b4e42a341894177a1c870a48b2641bae6c36696e,"with self.api.transaction(check_error, log_errors) as txn:",1,0,0.0,957
+b4e42a341894177a1c870a48b2641bae6c36696e,try:,1,0,0.0,958
+b4e42a341894177a1c870a48b2641bae6c36696e,class BaseCommand(api.Command):,1,0,0.0,959
+b4e42a341894177a1c870a48b2641bae6c36696e,"from neutron._i18n import _, _LE",1,0,0.0,960
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_utils import excutils,1,0,0.0,961
+b4e42a341894177a1c870a48b2641bae6c36696e,from oslo_log import log as logging,1,0,0.0,962
+b4e42a341894177a1c870a48b2641bae6c36696e,import collections,1,0,0.0,963
+b4e42a341894177a1c870a48b2641bae6c36696e,_deprecate._MovedGlobals(commands),0,0,0.0,964
+b4e42a341894177a1c870a48b2641bae6c36696e,from neutron.common import _deprecate,0,0,0.0,965
+b4e42a341894177a1c870a48b2641bae6c36696e,from ovsdbapp.schema.open_vswitch import commands,0,0,0.0,966
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(NeutronOvsdbIdl, self).__init__(context)",1,0,0.0,967
+b4e42a341894177a1c870a48b2641bae6c36696e,vlog.use_oslo_logger(),1,0,0.0,968
+b4e42a341894177a1c870a48b2641bae6c36696e,class NeutronOvsdbIdl(OvsdbIdl):,1,0,0.0,969
+b4e42a341894177a1c870a48b2641bae6c36696e,"check_error, log_errors)",1,0,0.0,970
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.context.vsctl_timeout,",1,0,0.0,971
+b4e42a341894177a1c870a48b2641bae6c36696e,@property,1,0,0.0,972
+b4e42a341894177a1c870a48b2641bae6c36696e,OvsdbIdl.ovsdb_connection.start(),1,0,0.0,973
+b4e42a341894177a1c870a48b2641bae6c36696e,txn.add(self),1,0,0.0,974
+b4e42a341894177a1c870a48b2641bae6c36696e,except Exception:,1,0,0.0,975
+b4e42a341894177a1c870a48b2641bae6c36696e,with excutils.save_and_reraise_exception() as ctx:,1,0,0.0,976
+b4e42a341894177a1c870a48b2641bae6c36696e,class GetManagerCommand(BaseCommand):,1,0,0.0,977
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.api._ovs.delvalue('manager_options', manager)",1,0,0.0,978
+b4e42a341894177a1c870a48b2641bae6c36696e,raise RuntimeError(msg),1,0,0.0,979
+b4e42a341894177a1c870a48b2641bae6c36696e,LOG.error(msg),1,0,0.0,980
+b4e42a341894177a1c870a48b2641bae6c36696e,except idlutils.RowNotFound:,1,0,0.0,981
+b4e42a341894177a1c870a48b2641bae6c36696e,self.target),1,0,0.0,982
+b4e42a341894177a1c870a48b2641bae6c36696e,class RemoveManagerCommand(BaseCommand):,1,0,0.0,983
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._tables['Manager'].rows.values()],1,0,0.0,984
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.manager_options + [row]),1,0,0.0,985
+b4e42a341894177a1c870a48b2641bae6c36696e,if log_errors:,1,0,0.0,986
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.verify('manager_options'),1,0,0.0,987
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.api._ovs.addvalue('manager_options', row)",1,0,0.0,988
+b4e42a341894177a1c870a48b2641bae6c36696e,class AddManagerCommand(BaseCommand):,1,0,0.0,989
+b4e42a341894177a1c870a48b2641bae6c36696e,"self.__class__.__name__,",1,0,0.0,990
+b4e42a341894177a1c870a48b2641bae6c36696e,pass,1,0,0.0,991
+b4e42a341894177a1c870a48b2641bae6c36696e,if not check_error:,1,0,0.0,992
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.exception(_LE(""Error executing command""))",1,0,0.0,993
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(OvsdbIdl, self).__init__(context)",1,0,0.0,994
+b4e42a341894177a1c870a48b2641bae6c36696e,'Open_vSwitch'),1,0,0.0,995
+b4e42a341894177a1c870a48b2641bae6c36696e,"cfg.CONF.ovs_vsctl_timeout,",1,0,0.0,996
+b4e42a341894177a1c870a48b2641bae6c36696e,LOG.error(msg),1,0,0.0,997
+b4e42a341894177a1c870a48b2641bae6c36696e,self.post_commit(txn),1,0,0.0,998
+b4e42a341894177a1c870a48b2641bae6c36696e,elif status == txn.SUCCESS:,1,0,0.0,999
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.debug(""Transaction caused no change"")",1,0,0.0,1000
+b4e42a341894177a1c870a48b2641bae6c36696e,elif status == txn.UNCHANGED:,1,0,0.0,1001
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.debug(""Transaction aborted"")",1,0,0.0,1002
+b4e42a341894177a1c870a48b2641bae6c36696e,elif status == txn.ABORTED:,1,0,0.0,1003
+b4e42a341894177a1c870a48b2641bae6c36696e,raise RuntimeError(msg),1,0,0.0,1004
+b4e42a341894177a1c870a48b2641bae6c36696e,elif status == txn.ERROR:,1,0,0.0,1005
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api._ovs.increment('next_cfg'),1,0,0.0,1006
+b4e42a341894177a1c870a48b2641bae6c36696e,continue,1,0,0.0,1007
+b4e42a341894177a1c870a48b2641bae6c36696e,seqno),1,0,0.0,1008
+b4e42a341894177a1c870a48b2641bae6c36696e,"idlutils.wait_for_change(self.api.idl, self.time_remaining(),",1,0,0.0,1009
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.debug(""OVSDB transaction returned TRY_AGAIN, retrying"")",1,0,0.0,1010
+b4e42a341894177a1c870a48b2641bae6c36696e,if status == txn.TRY_AGAIN:,1,0,0.0,1011
+b4e42a341894177a1c870a48b2641bae6c36696e,if not self.check_error:,1,0,0.0,1012
+b4e42a341894177a1c870a48b2641bae6c36696e,txn.abort(),1,0,0.0,1013
+b4e42a341894177a1c870a48b2641bae6c36696e,class NeutronOVSDBTransaction(Transaction):,1,0,0.0,1014
+b4e42a341894177a1c870a48b2641bae6c36696e,"super(NeutronOVSDBTransaction, self).post_commit(txn)",1,0,0.0,1015
+b4e42a341894177a1c870a48b2641bae6c36696e,class OvsdbIdl(api.API):,1,0,0.0,1016
+b4e42a341894177a1c870a48b2641bae6c36696e,self.ovsdb_connection.poller.timer_wait(,1,0,0.0,1017
+b4e42a341894177a1c870a48b2641bae6c36696e,failed.append(iface.name),1,0,0.0,1018
+b4e42a341894177a1c870a48b2641bae6c36696e,if uuid:,1,0,0.0,1019
+b4e42a341894177a1c870a48b2641bae6c36696e,"""seconds post-commit"") % {'commands': self.commands,",1,0,0.0,1020
+b4e42a341894177a1c870a48b2641bae6c36696e,else:,1,0,0.0,1021
+b4e42a341894177a1c870a48b2641bae6c36696e,self.ovsdb_connection.poller.block(),1,0,0.0,1022
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api.idl.wait(self.ovsdb_connection.poller),1,0,0.0,1023
+b4e42a341894177a1c870a48b2641bae6c36696e,self.time_remaining() * 1000),1,0,0.0,1024
+b4e42a341894177a1c870a48b2641bae6c36696e,break,1,0,0.0,1025
+b4e42a341894177a1c870a48b2641bae6c36696e,self.do_post_commit(txn),1,0,0.0,1026
+b4e42a341894177a1c870a48b2641bae6c36696e,"ifaces="", "".join(failed))",1,0,0.0,1027
+b4e42a341894177a1c870a48b2641bae6c36696e,raise VswitchdInterfaceAddException(,1,0,0.0,1028
+b4e42a341894177a1c870a48b2641bae6c36696e,if failed:,1,0,0.0,1029
+b4e42a341894177a1c870a48b2641bae6c36696e,if self.vswitchd_has_completed(next_cfg):,1,0,0.0,1030
+b4e42a341894177a1c870a48b2641bae6c36696e,self.api.idl.run(),1,0,0.0,1031
+b4e42a341894177a1c870a48b2641bae6c36696e,while not self.timeout_exceeded():,1,0,0.0,1032
+b4e42a341894177a1c870a48b2641bae6c36696e,"LOG.exception(_LE(""Post-commit checks failed""))",1,0,0.0,1033
+b4e42a341894177a1c870a48b2641bae6c36696e,"args.append(""%s%s%s"" % (col, op, ovsdb.py_to_val(val)))",1,0,0.0,1034

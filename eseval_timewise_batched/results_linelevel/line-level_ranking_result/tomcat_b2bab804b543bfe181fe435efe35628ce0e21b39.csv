@@ -1,0 +1,23 @@
+commit_id,line,line_level_label,count,line_score,row
+b2bab804b543bfe181fe435efe35628ce0e21b39,if (mediaType != null) {,0,3,1.0,1
+b2bab804b543bfe181fe435efe35628ce0e21b39,String encoding = contentType.substring(start + 8);,1,3,1.0,2
+b2bab804b543bfe181fe435efe35628ce0e21b39,if (end >= 0) {,1,2,0.6666666666666666,3
+b2bab804b543bfe181fe435efe35628ce0e21b39,"if (encoding.length() > 2 && encoding.startsWith(""\"""") && encoding.endsWith(""\"""")) {",1,2,0.6666666666666666,4
+b2bab804b543bfe181fe435efe35628ce0e21b39,encoding = encoding.trim();,1,2,0.6666666666666666,5
+b2bab804b543bfe181fe435efe35628ce0e21b39,"encoding = encoding.substring(0, end);",1,2,0.6666666666666666,6
+b2bab804b543bfe181fe435efe35628ce0e21b39,"encoding = encoding.substring(1, encoding.length() - 1);",1,2,0.6666666666666666,7
+b2bab804b543bfe181fe435efe35628ce0e21b39,return null;,1,2,0.6666666666666666,8
+b2bab804b543bfe181fe435efe35628ce0e21b39,if (start < 0) {,1,2,0.6666666666666666,9
+b2bab804b543bfe181fe435efe35628ce0e21b39,return null;,0,2,0.6666666666666666,10
+b2bab804b543bfe181fe435efe35628ce0e21b39,} catch (IOException e) {,0,2,0.6666666666666666,11
+b2bab804b543bfe181fe435efe35628ce0e21b39,MediaType mediaType = null;,0,2,0.6666666666666666,12
+b2bab804b543bfe181fe435efe35628ce0e21b39,try {,0,1,0.3333333333333333,13
+b2bab804b543bfe181fe435efe35628ce0e21b39,mediaType = MediaType.parseMediaType(new StringReader(contentType));,0,1,0.3333333333333333,14
+b2bab804b543bfe181fe435efe35628ce0e21b39,// Ignore - null test below handles this,0,1,0.3333333333333333,15
+b2bab804b543bfe181fe435efe35628ce0e21b39,return mediaType.getCharset();,0,1,0.3333333333333333,16
+b2bab804b543bfe181fe435efe35628ce0e21b39,"int start = contentType.indexOf(""charset="");",1,1,0.3333333333333333,17
+b2bab804b543bfe181fe435efe35628ce0e21b39,},1,1,0.3333333333333333,18
+b2bab804b543bfe181fe435efe35628ce0e21b39,int end = encoding.indexOf(';');,1,1,0.3333333333333333,19
+b2bab804b543bfe181fe435efe35628ce0e21b39,return encoding.trim();,1,1,0.3333333333333333,20
+b2bab804b543bfe181fe435efe35628ce0e21b39,import java.io.StringReader;,0,0,0.0,21
+b2bab804b543bfe181fe435efe35628ce0e21b39,import org.apache.tomcat.util.http.parser.MediaType;,0,0,0.0,22

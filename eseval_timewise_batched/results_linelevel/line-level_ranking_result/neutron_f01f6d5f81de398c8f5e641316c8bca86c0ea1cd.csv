@@ -1,0 +1,55 @@
+commit_id,line,line_level_label,count,line_score,row
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,total_bytes_read = 0,0,2,1.0,1
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,total_bytes_read = 0,1,2,1.0,2
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,cycle_data_read = 0,1,2,1.0,3
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,data = client_socket.recv(QoSTest.BUFFER_SIZE),1,2,1.0,4
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,should_check = (time_elapsed >= 5 or,1,2,1.0,5
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,policy = self.os_admin.network_client.create_qos_policy(,0,2,1.0,6
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,policy = self.admin_manager.network_client.create_qos_policy(,1,2,1.0,7
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"port = self.client.list_ports(network_id=self.network['id'],",1,2,1.0,8
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,data = client_socket.recv(QoSTest.BUFFER_SIZE),0,2,1.0,9
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,time_elapsed = time.time() - cycle_start_time,1,1,0.5,10
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,self.fip = self.create_and_associate_floatingip(port['id']),1,1,0.5,11
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,self.fip = self.create_and_associate_floatingip(self.port['id']),0,1,0.5,12
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"self.port = self.client.list_ports(network_id=self.network['id'],",0,1,0.5,13
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,# Limit reached,1,1,0.5,14
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"""total_bytes_read = %(bytes_read)d,""",1,1,0.5,15
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"LOG.debug(""time_elapsed =  %(time_elapsed)d,""",1,1,0.5,16
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"""cycle_data_read = %(cycle_data)d"",",1,1,0.5,17
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,cycle_start_time = time.time(),1,1,0.5,18
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,bytes_per_second = total_bytes_read / time_elapsed,0,1,0.5,19
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"""bytes_per_second = %(bytes_per_second)d"",",0,1,0.5,20
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,time_elapsed = time.time() - start_time,0,1,0.5,21
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,start_time = time.time(),0,1,0.5,22
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"LOG.debug(""time_elapsed = %(time_elapsed)d, """,0,1,0.5,23
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"""total_bytes_read = %(total_bytes_read)d, """,0,1,0.5,24
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,device_id=self.server[,1,0,0.0,25
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,'server']['id'])['ports'][0],0,0,0.0,26
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,device_id=self.server[,0,0,0.0,27
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"""bytes_read"": total_bytes_read,",1,0,0.0,28
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,qos_policy_id=policy_id),1,0,0.0,29
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"self.admin_manager.network_client.update_port(port['id'],",1,0,0.0,30
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,self.admin_manager.network_client.create_bandwidth_limit_rule(,1,0,0.0,31
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,qos_policy_id=policy_id),0,0,0.0,32
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"self.os_admin.network_client.update_port(port['id'],",0,0,0.0,33
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,self.os_admin.network_client.create_bandwidth_limit_rule(,0,0,0.0,34
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,return True,1,0,0.0,35
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,return False,1,0,0.0,36
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,if cycle_data_read / time_elapsed > QoSTest.LIMIT_BYTES_SEC:,1,0,0.0,37
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"""cycle_data"": cycle_data_read})",1,0,0.0,38
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,return bytes_per_second <= QoSTest.LIMIT_BYTES_SEC,0,0,0.0,39
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"{""time_elapsed"": time_elapsed,",1,0,0.0,40
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,if should_check:,1,0,0.0,41
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,total_bytes_read == QoSTest.FILE_SIZE),1,0,0.0,42
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,cycle_data_read += len(data),1,0,0.0,43
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,raise,1,0,0.0,44
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,else:,1,0,0.0,45
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,continue,1,0,0.0,46
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"if e.args[0] in [errno.EAGAIN, errno.EWOULDBLOCK]:",1,0,0.0,47
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,except socket.error as e:,1,0,0.0,48
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,try:,1,0,0.0,49
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,client_socket.setblocking(0),1,0,0.0,50
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,'bytes_per_second': bytes_per_second}),0,0,0.0,51
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"'total_bytes_read': total_bytes_read,",0,0,0.0,52
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,"{'time_elapsed': time_elapsed,",0,0,0.0,53
+f01f6d5f81de398c8f5e641316c8bca86c0ea1cd,'server']['id'])['ports'][0],1,0,0.0,54

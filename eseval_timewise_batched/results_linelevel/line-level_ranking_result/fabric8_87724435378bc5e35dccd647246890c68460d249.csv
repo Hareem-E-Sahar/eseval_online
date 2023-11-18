@@ -1,0 +1,122 @@
+commit_id,line,line_level_label,count,line_score,row
+87724435378bc5e35dccd647246890c68460d249,} catch (Throwable e) {,0,2,1.0,1
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""failed to find git commit id. "" + e, e);",1,2,1.0,2
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not find .git folder based on the current basedir of "" + basedir);",1,2,1.0,3
+87724435378bc5e35dccd647246890c68460d249,"warnIfInCDBuild(""Could not find .git folder based on the current basedir of "" + basedir);",0,2,1.0,4
+87724435378bc5e35dccd647246890c68460d249,} catch (Exception e) {,0,2,1.0,5
+87724435378bc5e35dccd647246890c68460d249,if (connectError) {,0,2,1.0,6
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Failed to find git commit id. "" + e, e);",0,2,1.0,7
+87724435378bc5e35dccd647246890c68460d249,} catch (Exception e) {,1,2,1.0,8
+87724435378bc5e35dccd647246890c68460d249,} else {,0,2,1.0,9
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot connect to Kubernetes to find jenkins service URL: "" + cause.getMessage());",0,1,0.5,10
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Failed to initialise Git Repository: "" + e, e);",1,1,0.5,11
+87724435378bc5e35dccd647246890c68460d249,"warnIfInCDBuild(""Failed to initialise Git Repository: "" + e, e);",0,1,0.5,12
+87724435378bc5e35dccd647246890c68460d249,},0,1,0.5,13
+87724435378bc5e35dccd647246890c68460d249,try {,0,1,0.5,14
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not find BUILD_ID to create a specific jenkins build URL. So using: "" + jobUrl);",1,1,0.5,15
+87724435378bc5e35dccd647246890c68460d249,"throw new MojoExecutionException(""Could not find resource `"" + resourceName + ""` on the classpath!"");",1,1,0.5,16
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot find gogs service URL: "" + cause, cause);",0,1,0.5,17
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot connect to Kubernetes to find gogs service URL: "" + cause.getMessage());",0,1,0.5,18
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot find jenkins service URL: "" + cause, cause);",0,1,0.5,19
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not find gogs service URL: "" + cause, cause);",1,1,0.5,20
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot find BUILD_ID to create a specific jenkins build URL. So using: "" + jobUrl);",0,1,0.5,21
+87724435378bc5e35dccd647246890c68460d249,protected static Iterable<Throwable> createExceptionIterable(Throwable exception) {,0,1,0.5,22
+87724435378bc5e35dccd647246890c68460d249,// this requires online access to kubernetes so we should silently fail if no connection,0,1,0.5,23
+87724435378bc5e35dccd647246890c68460d249,"throw new MojoExecutionException(""Cannot find resource `"" + resourceName + ""` on the classpath!"");",0,1,0.5,24
+87724435378bc5e35dccd647246890c68460d249,},0,1,0.5,25
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not find gogs service URL: "" + cause, cause);",0,1,0.5,26
+87724435378bc5e35dccd647246890c68460d249,for (Throwable t : it) {,0,1,0.5,27
+87724435378bc5e35dccd647246890c68460d249,while (current != null) {,0,1,0.5,28
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not find jenkins service URL: "" + e, e);",1,1,0.5,29
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not find gogs service URL: "" + e, e);",1,1,0.5,30
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Systems;,1,0,0.0,31
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.maven.support.JsonSchema;,1,0,0.0,32
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Strings;,1,0,0.0,33
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Objects;,1,0,0.0,34
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.GitHelpers;,1,0,0.0,35
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Files;,1,0,0.0,36
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.openshift.api.model.Template;,1,0,0.0,37
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.openshift.api.model.DeploymentConfig;,1,0,0.0,38
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.maven.support.JsonSchemas;,1,0,0.0,39
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.KubernetesHelper;,1,0,0.0,40
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.model.ReplicationController;,1,0,0.0,41
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.model.KubernetesList;,1,0,0.0,42
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.model.HasMetadata;,1,0,0.0,43
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.ServiceNames;,1,0,0.0,44
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.devops.ProjectRepositories;,1,0,0.0,45
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.devops.ProjectConfigs;,1,0,0.0,46
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.devops.ProjectConfig;,1,0,0.0,47
+87724435378bc5e35dccd647246890c68460d249,return throwables;,0,0,0.0,48
+87724435378bc5e35dccd647246890c68460d249,Collections.reverse(throwables);,0,0,0.0,49
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.artifact.Artifact;,1,0,0.0,50
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.URLUtils;,1,0,0.0,51
+87724435378bc5e35dccd647246890c68460d249,"getLog().info(""Looking at repo with directory "" + repository.getDirectory());",0,0,0.0,52
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.plugin.MojoExecutionException;,1,0,0.0,53
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Could not create default value for $"" + envVarName + "" as no .git/config file could be found"");",1,0,0.0,54
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot create default value for $"" + envVarName + "" as no .git/config file could be found"");",1,0,0.0,55
+87724435378bc5e35dccd647246890c68460d249,repository.close();,1,0,0.0,56
+87724435378bc5e35dccd647246890c68460d249,"System.out.println(""Looking at repo with directory "" + repository.getDirectory());",1,0,0.0,57
+87724435378bc5e35dccd647246890c68460d249,"getLog().debug(""No environment schemas found for file: "" + JsonSchemas.ENVIRONMENT_SCHEMA_FILE);",0,0,0.0,58
+87724435378bc5e35dccd647246890c68460d249,"warnIfInCDBuild(""Cannot create default value for $"" + envVarName + "" as no .git/config file could be found"");",0,0,0.0,59
+87724435378bc5e35dccd647246890c68460d249,// ignore,0,0,0.0,60
+87724435378bc5e35dccd647246890c68460d249,repository.close();,0,0,0.0,61
+87724435378bc5e35dccd647246890c68460d249,throwables.add(current);,0,0,0.0,62
+87724435378bc5e35dccd647246890c68460d249,"getLog().debug(""current properties "" + new TreeSet<>(properties.keySet()));",1,0,0.0,63
+87724435378bc5e35dccd647246890c68460d249,"getLog().debug(""Cannot connect to Kubernetes due: "" + cause.getMessage());",1,0,0.0,64
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.plugins.annotations.Parameter;,1,0,0.0,65
+87724435378bc5e35dccd647246890c68460d249,"getLog().info(""Added enviroment annotations:"");",1,0,0.0,66
+87724435378bc5e35dccd647246890c68460d249,import java.util.Iterator;,1,0,0.0,67
+87724435378bc5e35dccd647246890c68460d249,"getLog().debug(""Current properties "" + new TreeSet<>(properties.keySet()));",0,0,0.0,68
+87724435378bc5e35dccd647246890c68460d249,"getLog().warn(""Cannot create default value for $"" + envVarName + "" as no .git/config file could be found"");",0,0,0.0,69
+87724435378bc5e35dccd647246890c68460d249,"getLog().info(""Added environment annotations:"");",0,0,0.0,70
+87724435378bc5e35dccd647246890c68460d249,import org.eclipse.jgit.storage.file.FileRepositoryBuilder;,1,0,0.0,71
+87724435378bc5e35dccd647246890c68460d249,import org.eclipse.jgit.lib.Repository;,1,0,0.0,72
+87724435378bc5e35dccd647246890c68460d249,import org.eclipse.jgit.lib.ObjectId;,1,0,0.0,73
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.project.MavenProject;,1,0,0.0,74
+87724435378bc5e35dccd647246890c68460d249,current = current.getCause();,0,0,0.0,75
+87724435378bc5e35dccd647246890c68460d249,"connectError = t instanceof ConnectException || ""No route to host"".equals(t.getMessage());",0,0,0.0,76
+87724435378bc5e35dccd647246890c68460d249,// spool to the bottom of the caused by tree,0,0,0.0,77
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.artifact.Artifact;,0,0,0.0,78
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Systems;,0,0,0.0,79
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Strings;,0,0,0.0,80
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Objects;,0,0,0.0,81
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.Files;,0,0,0.0,82
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.openshift.api.model.Template;,0,0,0.0,83
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.openshift.api.model.DeploymentConfig;,0,0,0.0,84
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.maven.support.JsonSchemas;,0,0,0.0,85
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.maven.support.JsonSchema;,0,0,0.0,86
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.model.ReplicationController;,0,0,0.0,87
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.model.KubernetesList;,0,0,0.0,88
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.model.HasMetadata;,0,0,0.0,89
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.ServiceNames;,0,0,0.0,90
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.kubernetes.api.KubernetesHelper;,0,0,0.0,91
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.devops.ProjectRepositories;,0,0,0.0,92
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.devops.ProjectConfigs;,0,0,0.0,93
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.devops.ProjectConfig;,0,0,0.0,94
+87724435378bc5e35dccd647246890c68460d249,import java.util.Iterator;,0,0,0.0,95
+87724435378bc5e35dccd647246890c68460d249,import java.util.Collections;,0,0,0.0,96
+87724435378bc5e35dccd647246890c68460d249,import java.net.ConnectException;,0,0,0.0,97
+87724435378bc5e35dccd647246890c68460d249,import io.fabric8.utils.URLUtils;,0,0,0.0,98
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.plugin.MojoExecutionException;,0,0,0.0,99
+87724435378bc5e35dccd647246890c68460d249,Throwable current = exception;,0,0,0.0,100
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.plugins.annotations.Parameter;,0,0,0.0,101
+87724435378bc5e35dccd647246890c68460d249,List<Throwable> throwables = new ArrayList<Throwable>();,0,0,0.0,102
+87724435378bc5e35dccd647246890c68460d249,*/,0,0,0.0,103
+87724435378bc5e35dccd647246890c68460d249,* @return the Iterable,0,0,0.0,104
+87724435378bc5e35dccd647246890c68460d249,* @param exception  the exception,0,0,0.0,105
+87724435378bc5e35dccd647246890c68460d249,* @see java.lang.Iterable,0,0,0.0,106
+87724435378bc5e35dccd647246890c68460d249,*,0,0,0.0,107
+87724435378bc5e35dccd647246890c68460d249,* (the last caused by going upwards to the root exception).,0,0,0.0,108
+87724435378bc5e35dccd647246890c68460d249,* Creates an Iterable to walk the exception from the bottom up,0,0,0.0,109
+87724435378bc5e35dccd647246890c68460d249,/**,0,0,0.0,110
+87724435378bc5e35dccd647246890c68460d249,"getLog().debug(""Cannot connect to Kubernetes due: "" + cause.getMessage());",0,0,0.0,111
+87724435378bc5e35dccd647246890c68460d249,break;,0,0,0.0,112
+87724435378bc5e35dccd647246890c68460d249,cause = t;,0,0,0.0,113
+87724435378bc5e35dccd647246890c68460d249,Iterable<Throwable> it = createExceptionIterable(e);,0,0,0.0,114
+87724435378bc5e35dccd647246890c68460d249,boolean connectError = false;,0,0,0.0,115
+87724435378bc5e35dccd647246890c68460d249,Throwable cause = e;,0,0,0.0,116
+87724435378bc5e35dccd647246890c68460d249,import org.eclipse.jgit.storage.file.FileRepositoryBuilder;,0,0,0.0,117
+87724435378bc5e35dccd647246890c68460d249,import org.eclipse.jgit.lib.Repository;,0,0,0.0,118
+87724435378bc5e35dccd647246890c68460d249,import org.eclipse.jgit.lib.ObjectId;,0,0,0.0,119
+87724435378bc5e35dccd647246890c68460d249,import org.apache.maven.project.MavenProject;,0,0,0.0,120
+87724435378bc5e35dccd647246890c68460d249,"getLog().info(""No environment schemas found for file: "" + JsonSchemas.ENVIRONMENT_SCHEMA_FILE);",1,0,0.0,121

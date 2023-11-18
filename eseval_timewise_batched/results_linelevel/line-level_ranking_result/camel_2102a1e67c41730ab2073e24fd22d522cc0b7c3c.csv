@@ -1,0 +1,34 @@
+commit_id,line,line_level_label,count,line_score,row
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,"public FeedEntryPollingConsumer(FeedEndpoint endpoint, Processor processor, boolean filter, Date lastUpdate, boolean throttleEntries) {",1,9,1.0,1
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,* Filters out all entries which occur before the last time of the entry we saw (assuming entries arrive sorted in,0,8,0.875,2
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,"public FeedEntryPollingConsumer(FeedEndpoint endpoint, Processor processor, boolean filter, Date lastUpdate,",0,7,0.75,3
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,* Filters out all entries which occur before the last time of the entry we saw (assuming,1,6,0.625,4
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,* Filters out all entries which occur before the last time of the entry we saw,1,6,0.625,5
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,protected abstract void populateList(Object feed) throws Exception;,0,4,0.375,6
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,protected abstract void populateList(Object feed) throws Exception;,1,4,0.375,7
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,"private static SyndFeed createSyndFeed(String feedUri) throws IOException, FeedException {",0,4,0.375,8
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,"private static SyndFeed createSyndFeed(HttpURLConnection connection) throws IOException, FeedException {",0,4,0.375,9
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,* entries arrive sorted in order).,1,3,0.25,10
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,* (assuming entries arrive sorted in order).,1,3,0.25,11
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,InputStream in = new URL(feedUri).openStream();,1,3,0.25,12
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,SyndFeedInput input = new SyndFeedInput();,1,2,0.125,13
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,try (XmlReader reader = new XmlReader(connection)) {,0,2,0.125,14
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,SyndFeedInput input = new SyndFeedInput();,0,2,0.125,15
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,try (XmlReader reader = new XmlReader(new URL(feedUri))) {,0,2,0.125,16
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,import java.io.IOException;,0,2,0.125,17
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,Date updated = ((Entry)entry).getUpdated();,1,2,0.125,18
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,Date updated = ((Entry) entry).getUpdated();,0,2,0.125,19
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,boolean throttleEntries) {,0,2,0.125,20
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,return createSyndFeed(feedUri);,0,1,0.0,21
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,return input.build(new XmlReader(in));,1,1,0.0,22
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,import java.io.InputStream;,1,1,0.0,23
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,return createSyndFeed(httpcon);,0,1,0.0,24
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,},0,1,0.0,25
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,return input.build(reader);,0,1,0.0,26
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,},1,1,0.0,27
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,import com.rometools.rome.io.FeedException;,0,1,0.0,28
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,updated = ((Entry)entry).getPublished();,1,1,0.0,29
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,},0,1,0.0,30
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,updated = ((Entry) entry).getPublished();,0,1,0.0,31
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,* order).,0,1,0.0,32
+2102a1e67c41730ab2073e24fd22d522cc0b7c3c,return input.build(new XmlReader(httpcon));,1,1,0.0,33

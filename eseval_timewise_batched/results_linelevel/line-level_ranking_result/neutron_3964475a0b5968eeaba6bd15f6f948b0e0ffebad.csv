@@ -1,0 +1,84 @@
+commit_id,line,line_level_label,count,line_score,row
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,matchmaker = importutils.import_object(,0,2,1.0,1
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,mm_path = CONF.rpc_zmq_matchmaker.split('.'),1,2,1.0,2
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,matchmaker = mm_constructor(),1,2,1.0,3
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,except qpid_exceptions.MessagingError as e:,0,2,1.0,4
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,except qpid_exceptions.ConnectionError as e:,1,2,1.0,5
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,# rpc_zmq_matchmaker should be set to a 'module.Class',1,2,1.0,6
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,# Only initialize a class.,1,1,0.5,7
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,msg_id = inside[-1]['args']['msg_id'],1,1,0.5,8
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,response = inside[-1]['args']['response'],1,1,0.5,9
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"data = [str(msg_id), _serialize(response)]",1,1,0.5,10
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if not topic in self.topic_proxy:,1,1,0.5,11
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,responses = _deserialize(msg[-1]),1,1,0.5,12
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,mm_module = '.'.join(mm_path[:-1]),1,1,0.5,13
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,mm_class = mm_path[-1],1,1,0.5,14
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,mm_impl = importutils.import_module(mm_module),1,1,0.5,15
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if mm_path[-1][0] not in string.ascii_uppercase:,1,1,0.5,16
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"raise RPCException(_(""Error loading Matchmaker.""))",1,1,0.5,17
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,sock_type = zmq.PUB,1,1,0.5,18
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"mm_constructor = getattr(mm_impl, mm_class)",1,1,0.5,19
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,except qpid_exceptions.MessagingError:,0,1,0.5,20
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,qpid_exceptions.MessagingError) as e:,0,1,0.5,21
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,except qpid_exceptions.ConnectionError:,1,1,0.5,22
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,inside = rpc_common.deserialize_msg(_deserialize(in_msg)),1,1,0.5,23
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,qpid_exceptions.ConnectionError) as e:,1,1,0.5,24
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if topic.startswith('fanout~'):,1,1,0.5,25
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,responses = _deserialize(msg[-1])[-1]['args']['response'],0,1,0.5,26
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,# Handle zmq_replies magic,1,1,0.5,27
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,msg_id = msg_id or 0,0,1,0.5,28
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"'msg_id': msg_id,  # Include for Folsom compat.",0,1,0.5,29
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,method = data.get('method'),0,1,0.5,30
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if not method:,0,1,0.5,31
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if topic.startswith('fanout~') or topic.startswith('zmq_replies'):,0,1,0.5,32
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if topic not in self.topic_proxy:,0,1,0.5,33
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if method == '-reply':,0,1,0.5,34
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"except (IndexError, KeyError):",0,1,0.5,35
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,import string,1,1,0.5,36
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if method == 'reply':,1,1,0.5,37
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,method = data['method'],1,1,0.5,38
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,if data['method'][0] == '-':,1,1,0.5,39
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,# For reply / process_reply,1,1,0.5,40
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,method = method[1:],1,1,0.5,41
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"raise RPCException(_(""RPC Message Invalid.""))",0,1,0.5,42
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"data.setdefault('version', None)",1,0,0.0,43
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,elif topic.startswith('zmq_replies'):,1,0,0.0,44
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"data.setdefault('args', {})",1,0,0.0,45
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"cast(CONF, ctx, topic, {",1,0,0.0,46
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"self.private_ctx.reply(ctx, proxy, **data['args'])",1,0,0.0,47
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,}),1,0,0.0,48
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"'msg_id': msg_id,",1,0,0.0,49
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"def _cast(addr, context, msg_id, topic, msg, timeout=None, serialize=True,",1,0,0.0,50
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"LOG.debug(_(""->response->%s""), response)",1,0,0.0,51
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,def _get_matchmaker():,1,0,0.0,52
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,force_envelope=False):,1,0,0.0,53
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"conn.cast(msg_id, topic, payload, serialize, force_envelope)",1,0,0.0,54
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"def _call(addr, context, msg_id, topic, msg, timeout=None,",1,0,0.0,55
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"_cast(addr, context, msg_id, topic, payload,",1,0,0.0,56
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"_topic, _topic, msg, timeout, serialize,",1,0,0.0,57
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,force_envelope),1,0,0.0,58
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"return method(_addr, context, _topic, _topic, msg, timeout,",1,0,0.0,59
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"self.outq.send([str(msg_id), str(topic), str('cast'),",1,0,0.0,60
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"LOG.error(_(""Matchmaker could not be loaded.\n""",1,0,0.0,61
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,_serialize(data)]),1,0,0.0,62
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"conn.cast(_msg_id, topic, payload, serialize, force_envelope)",0,0,0.0,63
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"return str(jsonutils.dumps(data, ensure_ascii=True))",1,0,0.0,64
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"CONF.rpc_zmq_matchmaker, *args, **kwargs)",0,0,0.0,65
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"return jsonutils.dumps(data, ensure_ascii=True)",0,0,0.0,66
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"self.outq.send(map(bytes, (msg_id, topic, 'cast', _serialize(data))))",0,0,0.0,67
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"_multi_send(_cast, ctx, topic, {",0,0,0.0,68
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"}, _msg_id=msg_id)",0,0,0.0,69
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"data.setdefault('version', None)",0,0,0.0,70
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"data.setdefault('args', {})",0,0,0.0,71
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"LOG.error(_(""RPC message did not include method.""))",0,0,0.0,72
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,return,0,0,0.0,73
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"self.private_ctx.reply(ctx, proxy, **data['args'])",0,0,0.0,74
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"def _cast(addr, context, topic, msg, timeout=None, serialize=True,",0,0,0.0,75
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"force_envelope=False, _msg_id=None):",0,0,0.0,76
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"def _call(addr, context, topic, msg, timeout=None,",0,0,0.0,77
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"_cast(addr, context, topic, payload,",0,0,0.0,78
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"_topic, msg, timeout, serialize,",0,0,0.0,79
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"force_envelope, _msg_id)",0,0,0.0,80
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"return method(_addr, context, _topic, msg, timeout,",0,0,0.0,81
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"def _get_matchmaker(*args, **kwargs):",0,0,0.0,82
+3964475a0b5968eeaba6bd15f6f948b0e0ffebad,"""rpc_zmq_matchmaker is not a class.""))",1,0,0.0,83

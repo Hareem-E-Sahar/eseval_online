@@ -1,0 +1,12 @@
+commit_id,line,line_level_label,count,line_score,row
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,"json[""dev-dependencies""] = null",1,3,1.0,1
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,json.bundleDependencies = json.bundledDependencies,0,1,0.3333333333333333,2
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,"var e = new Error(""bundleDependencies must be an array.\n""",0,1,0.3333333333333333,3
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,"delete json[""dev-dependencies""]",0,1,0.3333333333333333,4
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,if (json.bundledDependencies && !json.bundleDependencies) {,0,0,0.0,5
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,delete json.bundledDependencies,0,0,0.0,6
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,},0,0,0.0,7
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,if (json.bundleDependencies && !Array.isArray(json.bundleDependencies)) {,0,0,0.0,8
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,"+""See `npm help json`"")",0,0,0.0,9
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,if (cb) return cb(e),0,0,0.0,10
+06dd026d04768edd7adf2aa37cf9a8d9e8c335be,throw e,0,0,0.0,11

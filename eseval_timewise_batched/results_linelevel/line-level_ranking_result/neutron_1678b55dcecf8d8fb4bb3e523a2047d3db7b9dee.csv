@@ -1,0 +1,46 @@
+commit_id,line,line_level_label,count,line_score,row
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('The SSH password to use')),",1,4,1.0,1
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,3,0.75,2
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,#    License for the specific language governing permissions and limitations,1,3,0.75,3
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"""""""Implementation of Brocade ML2 Mechanism driver for ICX and MLX.""""""",1,3,0.75,4
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('The address of the host to SSH to')),",1,3,0.75,5
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('The SSH username to use')),",1,3,0.75,6
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,#    a copy of the License at,1,3,0.75,7
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.5,8
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,help=('Switches connected to the compute nodes'))],1,2,0.5,9
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,#    under the License.,1,2,0.5,10
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,#    not use this file except in compliance with the License. You may obtain,1,2,0.5,11
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"#    Unless required by applicable law or agreed to in writing, software",1,2,0.5,12
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.5,13
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"# Copyright 2015 Brocade Communications Systems, Inc.",1,2,0.5,14
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.StrOpt('physical_networks', default='',",1,1,0.25,15
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,for switch in switches:,1,1,0.25,16
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"switches = [x.strip() for x in self._switch_names.split(',')]",1,1,0.25,17
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('OS type of the device.')),",1,1,0.25,18
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.StrOpt('ports', default='',",1,1,0.25,19
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('Protocol used to communicate with Switch')),",1,1,0.25,20
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"ML2_BROCADE = [cfg.StrOpt('address', default='',",1,1,0.25,21
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,from oslo_config import cfg,1,1,0.25,22
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.25,23
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,#,1,1,0.25,24
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,# All rights reserved.,1,1,0.25,25
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"default='',",1,1,0.25,26
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"choices=('SSH', 'TELNET'),",1,0,0.0,27
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.CONF.register_opts(ML2_BROCADE, switch)",1,0,0.0,28
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,self._switch_names = cfg.CONF.ml2_brocade_fi_ni.switch_names,1,0,0.0,29
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,def __init__(self):,1,0,0.0,30
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,class BrocadeFiNiMechanism(mechanism_brocade_fi_ni.BrocadeFiNiMechanism):,1,0,0.0,31
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.CONF.register_opts(ML2_BROCADE, 'ML2_BROCADE_MLX_EXAMPLE')",1,0,0.0,32
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.CONF.register_opts(SWITCHES, 'ml2_brocade_fi_ni')",1,0,0.0,33
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,],1,0,0.0,34
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.StrOpt('ostype', default='NI', choices=('NI', 'FI'),",1,0,0.0,35
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('Allowed physical networks')),",1,0,0.0,36
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.StrOpt('transport', default='SSH',",1,0,0.0,37
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"help=('Ports')),",1,0,0.0,38
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.StrOpt('password', default='password', secret=True,",1,0,0.0,39
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"cfg.StrOpt('username', default='admin',",1,0,0.0,40
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"'switch_names',",1,0,0.0,41
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,cfg.StrOpt(,1,0,0.0,42
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,SWITCHES = [,1,0,0.0,43
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,from networking_brocade.mlx.ml2.fi_ni import mechanism_brocade_fi_ni,1,0,0.0,44
+1678b55dcecf8d8fb4bb3e523a2047d3db7b9dee,"super(BrocadeFiNiMechanism, self).__init__()",1,0,0.0,45

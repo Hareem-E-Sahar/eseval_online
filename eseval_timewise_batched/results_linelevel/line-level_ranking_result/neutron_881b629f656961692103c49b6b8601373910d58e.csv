@@ -1,0 +1,88 @@
+commit_id,line,line_level_label,count,line_score,row
+881b629f656961692103c49b6b8601373910d58e,"raise ValueError(_(""Multiple plugins for service """,1,5,1.0,1
+881b629f656961692103c49b6b8601373910d58e,from neutron.common import exceptions as q_exc,1,3,0.6000000000000001,2
+881b629f656961692103c49b6b8601373910d58e,from neutron.common import exceptions,1,3,0.6000000000000001,3
+881b629f656961692103c49b6b8601373910d58e,# search for possible agent notifiers declared in service plugin,0,3,0.6000000000000001,4
+881b629f656961692103c49b6b8601373910d58e,# search for possible agent notifiers declared in service plugin,1,3,0.6000000000000001,5
+881b629f656961692103c49b6b8601373910d58e,from neutron.common import exceptions as n_exc,0,3,0.6000000000000001,6
+881b629f656961692103c49b6b8601373910d58e,"LOG.info(""Loading service plugin %s, it is required by %s"",",0,2,0.4,7
+881b629f656961692103c49b6b8601373910d58e,# NOTE(liuyulong): adding one plugin multiple times does not have,0,2,0.4,8
+881b629f656961692103c49b6b8601373910d58e,# bad effect for it. Since all the plugin has its own specific,0,2,0.4,9
+881b629f656961692103c49b6b8601373910d58e,# for the same type is a fatal exception,1,2,0.4,10
+881b629f656961692103c49b6b8601373910d58e,"""%s were configured"") % plugin_type)",1,2,0.4,11
+881b629f656961692103c49b6b8601373910d58e,"LOG.debug(""Successfully loaded %(type)s plugin. """,0,1,0.2,12
+881b629f656961692103c49b6b8601373910d58e,"LOG.debug(""Successfully loaded %(type)s plugin. """,1,1,0.2,13
+881b629f656961692103c49b6b8601373910d58e,# disable incompatible extensions in core plugin if any,1,1,0.2,14
+881b629f656961692103c49b6b8601373910d58e,"if (hasattr(plugin, 'agent_notifiers') and",1,1,0.2,15
+881b629f656961692103c49b6b8601373910d58e,plugin = directory.get_plugin(),1,1,0.2,16
+881b629f656961692103c49b6b8601373910d58e,# specifying more than one plugin,1,1,0.2,17
+881b629f656961692103c49b6b8601373910d58e,# disable incompatible extensions in core plugin if any,0,1,0.2,18
+881b629f656961692103c49b6b8601373910d58e,"if (hasattr(plugin, 'agent_notifiers') and",0,1,0.2,19
+881b629f656961692103c49b6b8601373910d58e,plugin = directory.get_plugin(),0,1,0.2,20
+881b629f656961692103c49b6b8601373910d58e,for req_plugin in required_plugins:,0,1,0.2,21
+881b629f656961692103c49b6b8601373910d58e,),0,1,0.2,22
+881b629f656961692103c49b6b8601373910d58e,"for status in ('INACTIVE', 'PENDING_CREATE', 'PENDING_UPDATE'):",0,1,0.2,23
+881b629f656961692103c49b6b8601373910d58e,# (needed by agent management extension),0,0,0.0,24
+881b629f656961692103c49b6b8601373910d58e,"{""type"": plugin_type,",0,0,0.0,25
+881b629f656961692103c49b6b8601373910d58e,"""Description: %(desc)s"",",0,0,0.0,26
+881b629f656961692103c49b6b8601373910d58e,"utils.disable_extension_by_service_plugin(plugin, plugin_inst)",0,0,0.0,27
+881b629f656961692103c49b6b8601373910d58e,plugin.agent_notifiers.update(plugin_inst.agent_notifiers),0,0,0.0,28
+881b629f656961692103c49b6b8601373910d58e,"hasattr(plugin_inst, 'agent_notifiers')):",0,0,0.0,29
+881b629f656961692103c49b6b8601373910d58e,plugin_type = plugin_inst.get_plugin_type(),0,0,0.0,30
+881b629f656961692103c49b6b8601373910d58e,"directory.add_plugin(plugin_type, plugin_inst)",0,0,0.0,31
+881b629f656961692103c49b6b8601373910d58e,"plugin_class = self.load_class_for_provider(namespace, plugin_provider)",1,0,0.0,32
+881b629f656961692103c49b6b8601373910d58e,provider),0,0,0.0,33
+881b629f656961692103c49b6b8601373910d58e,"plugin_inst = self._get_plugin_instance('neutron.service_plugins',",0,0,0.0,34
+881b629f656961692103c49b6b8601373910d58e,"def _create_and_add_service_plugin(self, provider):",0,0,0.0,35
+881b629f656961692103c49b6b8601373910d58e,self._create_and_add_service_plugin(provider),0,0,0.0,36
+881b629f656961692103c49b6b8601373910d58e,"""desc"": plugin_inst.get_plugin_description()})",0,0,0.0,37
+881b629f656961692103c49b6b8601373910d58e,"hasattr(plugin_inst, 'agent_notifiers')):",1,0,0.0,38
+881b629f656961692103c49b6b8601373910d58e,return plugin_class(),1,0,0.0,39
+881b629f656961692103c49b6b8601373910d58e,"plugin_inst = self._get_plugin_instance('neutron.service_plugins',",1,0,0.0,40
+881b629f656961692103c49b6b8601373910d58e,provider),1,0,0.0,41
+881b629f656961692103c49b6b8601373910d58e,# only one implementation of svc_type allowed,1,0,0.0,42
+881b629f656961692103c49b6b8601373910d58e,# TODO(armax): simplify this by moving the conditional into the,1,0,0.0,43
+881b629f656961692103c49b6b8601373910d58e,# directory itself.,1,0,0.0,44
+881b629f656961692103c49b6b8601373910d58e,plugin_type = plugin_inst.get_plugin_type(),1,0,0.0,45
+881b629f656961692103c49b6b8601373910d58e,if directory.get_plugin(plugin_type):,1,0,0.0,46
+881b629f656961692103c49b6b8601373910d58e,"directory.add_plugin(plugin_type, plugin_inst)",1,0,0.0,47
+881b629f656961692103c49b6b8601373910d58e,# (needed by agent management extension),1,0,0.0,48
+881b629f656961692103c49b6b8601373910d58e,self._create_and_add_service_plugin(req_plugin),0,0,0.0,49
+881b629f656961692103c49b6b8601373910d58e,plugin.agent_notifiers.update(plugin_inst.agent_notifiers),1,0,0.0,50
+881b629f656961692103c49b6b8601373910d58e,"utils.disable_extension_by_service_plugin(plugin, plugin_inst)",1,0,0.0,51
+881b629f656961692103c49b6b8601373910d58e,"""Description: %(desc)s"",",1,0,0.0,52
+881b629f656961692103c49b6b8601373910d58e,"{""type"": plugin_type,",1,0,0.0,53
+881b629f656961692103c49b6b8601373910d58e,# unique name.,0,0,0.0,54
+881b629f656961692103c49b6b8601373910d58e,"exceptions.Invalid,",1,0,0.0,55
+881b629f656961692103c49b6b8601373910d58e,"req_plugin, provider)",0,0,0.0,56
+881b629f656961692103c49b6b8601373910d58e,"plugin_class, ""required_service_plugins"", [])",0,0,0.0,57
+881b629f656961692103c49b6b8601373910d58e,"self.assertRaises(n_exc.Invalid, router.APIRouter)",0,0,0.0,58
+881b629f656961692103c49b6b8601373910d58e,"self.assertRaises(q_exc.Invalid, router.APIRouter)",1,0,0.0,59
+881b629f656961692103c49b6b8601373910d58e,def test_get_logical_device_non_active(self):,0,0,0.0,60
+881b629f656961692103c49b6b8601373910d58e,ctx = context.get_admin_context(),0,0,0.0,61
+881b629f656961692103c49b6b8601373910d58e,self.plugin_instance.update_status(,0,0,0.0,62
+881b629f656961692103c49b6b8601373910d58e,"ctx, ldb.Pool, pool['pool']['id'], status)",0,0,0.0,63
+881b629f656961692103c49b6b8601373910d58e,pool['pool']['status'] = status,0,0,0.0,64
+881b629f656961692103c49b6b8601373910d58e,expected = {,0,0,0.0,65
+881b629f656961692103c49b6b8601373910d58e,"'pool': pool['pool'],",0,0,0.0,66
+881b629f656961692103c49b6b8601373910d58e,"'members': [],",0,0,0.0,67
+881b629f656961692103c49b6b8601373910d58e,"'healthmonitors': [],",0,0,0.0,68
+881b629f656961692103c49b6b8601373910d58e,'driver': 'dummy',0,0,0.0,69
+881b629f656961692103c49b6b8601373910d58e,},0,0,0.0,70
+881b629f656961692103c49b6b8601373910d58e,logical_config = self.callbacks.get_logical_device(,0,0,0.0,71
+881b629f656961692103c49b6b8601373910d58e,"ctx, pool['pool']['id']",0,0,0.0,72
+881b629f656961692103c49b6b8601373910d58e,"self.assertEqual(expected, logical_config)",0,0,0.0,73
+881b629f656961692103c49b6b8601373910d58e,def test_get_logical_device_inactive(self):,1,0,0.0,74
+881b629f656961692103c49b6b8601373910d58e,with self.vip(pool=pool) as vip:,1,0,0.0,75
+881b629f656961692103c49b6b8601373910d58e,with self.member(pool_id=vip['vip']['pool_id']):,1,0,0.0,76
+881b629f656961692103c49b6b8601373910d58e,self.assertRaises(,1,0,0.0,77
+881b629f656961692103c49b6b8601373910d58e,"self.callbacks.get_logical_device,",1,0,0.0,78
+881b629f656961692103c49b6b8601373910d58e,"context.get_admin_context(),",1,0,0.0,79
+881b629f656961692103c49b6b8601373910d58e,pool['pool']['id']),1,0,0.0,80
+881b629f656961692103c49b6b8601373910d58e,"def _get_plugin_class(self, namespace, plugin_provider):",0,0,0.0,81
+881b629f656961692103c49b6b8601373910d58e,"return self.load_class_for_provider(namespace, plugin_provider)",0,0,0.0,82
+881b629f656961692103c49b6b8601373910d58e,"return self._get_plugin_class(namespace, plugin_provider)()",0,0,0.0,83
+881b629f656961692103c49b6b8601373910d58e,plugin_class = self._get_plugin_class(,0,0,0.0,84
+881b629f656961692103c49b6b8601373910d58e,"'neutron.service_plugins', provider)",0,0,0.0,85
+881b629f656961692103c49b6b8601373910d58e,required_plugins = getattr(,0,0,0.0,86
+881b629f656961692103c49b6b8601373910d58e,"""desc"": plugin_inst.get_plugin_description()})",1,0,0.0,87

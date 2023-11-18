@@ -1,0 +1,136 @@
+commit_id,line,line_level_label,count,line_score,row
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,if not binding_profile_set and binding_profile is not None:,1,7,1.0,1
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,if not binding_vnic_set and binding_vnic is not None:,1,5,0.7142857142857142,2
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,binding = {,0,3,0.42857142857142855,3
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,self.extra_binding_dict = {,1,3,0.42857142857142855,4
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"values = filters and filters.get(portbindings.HOST_ID, [])",1,3,0.42857142857142855,5
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,host = bind_port.host if bind_port else None,1,3,0.42857142857142855,6
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,host = port_db.portbinding.host if port_db.portbinding else None,1,3,0.42857142857142855,7
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,binding_profile = port.get(portbindings.PROFILE),1,2,0.2857142857142857,8
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return bind_port.host if bind_port else None,1,2,0.2857142857142857,9
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,if not bind_port:,1,2,0.2857142857142857,10
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,del port[portbindings.PROFILE],1,2,0.2857142857142857,11
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,binding_profile_set = validators.is_attr_set(binding_profile),1,2,0.2857142857142857,12
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"if not isinstance(plugin, PortBindingMixin):",1,2,0.2857142857142857,13
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,if not values:,1,2,0.2857142857142857,14
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"port = super(BrocadePluginV2, self).get_port(",1,2,0.2857142857142857,15
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,self.base_binding_dict = {,0,2,0.2857142857142857,16
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,'security-group' in self.supported_extension_aliases}},0,2,0.2857142857142857,17
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,port[portbindings.CAPABILITIES] = {,1,2,0.2857142857142857,18
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,# Currently implemented for ML2 plugin that does not use,1,1,0.14285714285714285,19
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,query = query.outerjoin(,1,1,0.14285714285714285,20
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,query = query.filter(pmodels.PortBindingPort.host.in_(values)),1,1,0.14285714285714285,21
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,binding_vnic = port.get(portbindings.VNIC_TYPE),1,1,0.14285714285714285,22
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,binding_vnic_set = validators.is_attr_set(binding_vnic),1,1,0.14285714285714285,23
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,del port[portbindings.VNIC_TYPE],1,1,0.14285714285714285,24
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,# REVISIT(irenab) Add support for vnic_type for plugins that,1,1,0.14285714285714285,25
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,bind_port = context.session.query(,1,1,0.14285714285714285,26
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,host = port_data.get(portbindings.HOST_ID),1,1,0.14285714285714285,27
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,host_set = validators.is_attr_set(host),1,1,0.14285714285714285,28
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,bind_port.host = host,1,1,0.14285714285714285,29
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,bind_port = (,1,1,0.14285714285714285,30
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,port_res[portbindings.HOST_ID] = host,1,1,0.14285714285714285,31
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,plugin = directory.get_plugin(),1,1,0.14285714285714285,32
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.api.definitions import port as port_def,1,1,0.14285714285714285,33
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.api.definitions import portbindings,1,1,0.14285714285714285,34
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,if host_set:,1,1,0.14285714285714285,35
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,#    License for the specific language governing permissions and limitations,1,1,0.14285714285714285,36
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return binding,0,1,0.14285714285714285,37
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.14285714285714285,38
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,self.base_binding_dict = self._get_base_binding_dict(),0,1,0.14285714285714285,39
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"self._process_portbindings_create_and_update(context,",0,1,0.14285714285714285,40
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"port['port'],",0,1,0.14285714285714285,41
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,port_data = port['port'],0,1,0.14285714285714285,42
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,portbindings.CAPABILITIES: {,0,1,0.14285714285714285,43
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return port,0,1,0.14285714285714285,44
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,res_ports = [],1,1,0.14285714285714285,45
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"ports = super(BrocadePluginV2, self).get_ports(context,",1,1,0.14285714285714285,46
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,for port in ports:,1,1,0.14285714285714285,47
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,port[portbindings.VIF_TYPE] = portbindings.VIF_TYPE_BRIDGE,1,1,0.14285714285714285,48
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,'security-group' in self.supported_extension_aliases},1,1,0.14285714285714285,49
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return port,1,1,0.14285714285714285,50
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,#    not use this file except in compliance with the License. You may obtain,1,1,0.14285714285714285,51
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,# PortBindingMixin.,1,0,0.0,52
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"query_hook=_port_model_hook,",1,0,0.0,53
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,# can handle more than one type.,1,0,0.0,54
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,port):,1,0,0.0,55
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def _process_portbindings_create_and_update(self, context, port_data,",1,0,0.0,56
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"return super(PortBindingMixin, cls).__new__(cls, *args, **kwargs)",1,0,0.0,57
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,result_filters=_port_result_filter_hook),1,0,0.0,58
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"filter_hook=None,",1,0,0.0,59
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def _port_result_filter_hook(query, filters):",1,0,0.0,60
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"""portbindings_port"",",1,0,0.0,61
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"models_v2.Port,",1,0,0.0,62
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,model_query.register_hook(,1,0,0.0,63
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def __new__(cls, *args, **kwargs):",1,0,0.0,64
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,class PortBindingMixin(portbindings_base.PortBindingBaseMixin):,1,0,0.0,65
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,@resource_extend.has_resource_extenders,1,0,0.0,66
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,pmodels.PortBindingPort).filter_by(port_id=port['id']).first(),1,0,0.0,67
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return query,1,0,0.0,68
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,(original_model.id == pmodels.PortBindingPort.port_id)),1,0,0.0,69
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"pmodels.PortBindingPort,",1,0,0.0,70
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,with db_api.CONTEXT_WRITER.using(context):,1,0,0.0,71
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,context.session.query(pmodels.PortBindingPort.host).,1,0,0.0,72
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,context.session.add(,1,0,0.0,73
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"pmodels.PortBindingPort(port_id=port['id'], host=host))",1,0,0.0,74
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron.db import portbindings_base,1,0,0.0,75
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return,1,0,0.0,76
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def _extend_port_dict_binding(port_res, port_db):",1,0,0.0,77
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,@resource_extend.extends([port_def.COLLECTION_NAME]),1,0,0.0,78
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,@staticmethod,1,0,0.0,79
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"self._extend_port_dict_binding_host(port_res, host)",1,0,0.0,80
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def extend_port_dict_binding(self, port_res, port_db):",1,0,0.0,81
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"port_res, None)",1,0,0.0,82
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"super(PortBindingMixin, self).extend_port_dict_binding(",1,0,0.0,83
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def _extend_port_dict_binding_host(self, port_res, host):",1,0,0.0,84
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,),1,0,0.0,85
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,first(),1,0,0.0,86
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,filter_by(port_id=port_id).,1,0,0.0,87
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,with db_api.CONTEXT_READER.using(context):,1,0,0.0,88
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def get_port_host(self, context, port_id):",1,0,0.0,89
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"self._extend_port_dict_binding_host(port, host)",1,0,0.0,90
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,else:,1,0,0.0,91
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def _port_model_hook(context, original_model, query):",1,0,0.0,92
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"context, port_id, fields)",1,0,0.0,93
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron.db import models_v2,1,0,0.0,94
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"portbindings.VIF_TYPE: portbindings.VIF_TYPE_BRIDGE,",0,0,0.0,95
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"return self._fields(port, fields)",1,0,0.0,96
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"self._extend_port_dict_binding(context, port)",1,0,0.0,97
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,with context.session.begin(subtransactions=True):,1,0,0.0,98
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def get_port(self, context, port_id, fields=None):",1,0,0.0,99
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"return self._extend_port_dict_binding(context, port)",1,0,0.0,100
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"return self._extend_port_dict_binding(context, neutron_port)",1,0,0.0,101
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,agentschedulers_db.DhcpAgentSchedulerDbMixin):,1,0,0.0,102
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,portbindings.CAP_PORT_FILTER:,0,0,0.0,103
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,def _get_base_binding_dict(self):,0,0,0.0,104
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron.db.models import portbinding as pmodels,1,0,0.0,105
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,port),0,0,0.0,106
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"port_data,",0,0,0.0,107
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return neutron_port,0,0,0.0,108
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,neutron_port),0,0,0.0,109
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,portbindings_base.register_port_dict_function(),0,0,0.0,110
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,portbindings_base.PortBindingBaseMixin):,0,0,0.0,111
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"agentschedulers_db.DhcpAgentSchedulerDbMixin,",0,0,0.0,112
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron.db import portbindings_base,0,0,0.0,113
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def get_ports(self, context, filters=None, fields=None):",1,0,0.0,114
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"filters,",1,0,0.0,115
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,fields),1,0,0.0,116
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"res_ports.append(self._fields(port, fields))",1,0,0.0,117
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.plugins import directory,1,0,0.0,118
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.db import resource_extend,1,0,0.0,119
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.db import model_query,1,0,0.0,120
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.db import api as db_api,1,0,0.0,121
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,from neutron_lib.api import validators,1,0,0.0,122
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,#    under the License.,1,0,0.0,123
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,0,0.0,124
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"#    Unless required by applicable law or agreed to in writing, software",1,0,0.0,125
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,126
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,#    a copy of the License at,1,0,0.0,127
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,0,0.0,128
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,#,1,0,0.0,129
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,# All Rights Reserved.,1,0,0.0,130
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,# Copyright 2013 IBM Corp.,1,0,0.0,131
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,portbindings.CAP_PORT_FILTER:,1,0,0.0,132
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"def _extend_port_dict_binding(self, context, port):",1,0,0.0,133
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,return res_ports,1,0,0.0,134
+4a8c3af72f9b9385556abdc9681368d6a1db8ad4,"plugin.extend_port_dict_binding(port_res, port_db)",1,0,0.0,135

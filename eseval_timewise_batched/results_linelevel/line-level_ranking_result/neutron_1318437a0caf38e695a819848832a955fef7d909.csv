@@ -1,0 +1,64 @@
+commit_id,line,line_level_label,count,line_score,row
+1318437a0caf38e695a819848832a955fef7d909,active_agents = [agent for agent in agents if,0,5,1.0,1
+1318437a0caf38e695a819848832a955fef7d909,dead_bindings = [b for b in,1,5,1.0,2
+1318437a0caf38e695a819848832a955fef7d909,dead_agents = set([b.dhcp_agent_id for b in dead_bindings]),1,5,1.0,3
+1318437a0caf38e695a819848832a955fef7d909,"agents = self._create_and_set_agents_down(['host-a', 'host-b'], 2)",0,4,0.8,4
+1318437a0caf38e695a819848832a955fef7d909,"agents = self._create_and_set_agents_down(['host-a'], 1)",1,4,0.8,5
+1318437a0caf38e695a819848832a955fef7d909,agents = self.get_agent_objects(,0,2,0.4,6
+1318437a0caf38e695a819848832a955fef7d909,"agent = self._get_agent(context, binding_agent_id)",1,2,0.4,7
+1318437a0caf38e695a819848832a955fef7d909,context = ncontext.get_admin_context(),1,2,0.4,8
+1318437a0caf38e695a819848832a955fef7d909,"agent = self._get_agent(context, binding_agent_id)",0,2,0.4,9
+1318437a0caf38e695a819848832a955fef7d909,context = ncontext.get_admin_context(),0,2,0.4,10
+1318437a0caf38e695a819848832a955fef7d909,agents = self.get_agents_db(,1,2,0.4,11
+1318437a0caf38e695a819848832a955fef7d909,"LOG.warn(_LW(""Removing network %(network)s from agent """,1,2,0.4,12
+1318437a0caf38e695a819848832a955fef7d909,"LOG.warn(_LW(""No DHCP agents available, """,1,2,0.4,13
+1318437a0caf38e695a819848832a955fef7d909,"LOG.warn(_LW(""Time since last %s agent reschedule check has """,1,2,0.4,14
+1318437a0caf38e695a819848832a955fef7d909,"LOG.warning(_LW(""Removing network %(network)s from agent """,0,2,0.4,15
+1318437a0caf38e695a819848832a955fef7d909,"LOG.warning(_LW(""No DHCP agents available, """,0,2,0.4,16
+1318437a0caf38e695a819848832a955fef7d909,"LOG.warning(_LW(""Time since last %s agent reschedule check has """,0,2,0.4,17
+1318437a0caf38e695a819848832a955fef7d909,common_db_mixin.CommonDbMixin):,1,1,0.2,18
+1318437a0caf38e695a819848832a955fef7d909,"self._filter_bindings(context, down_bindings)]",1,1,0.2,19
+1318437a0caf38e695a819848832a955fef7d909,# transaction - otherwise we may fetch same agent record,1,1,0.2,20
+1318437a0caf38e695a819848832a955fef7d909,# we need new context to make sure we use different DB,1,1,0.2,21
+1318437a0caf38e695a819848832a955fef7d909,"dead_bindings = list(self._filter_bindings(context, down_bindings))",0,1,0.2,22
+1318437a0caf38e695a819848832a955fef7d909,# transaction - otherwise we may fetch same agent record,0,1,0.2,23
+1318437a0caf38e695a819848832a955fef7d909,# we need new context to make sure we use different DB,0,1,0.2,24
+1318437a0caf38e695a819848832a955fef7d909,from neutron.db import common_db_mixin,1,1,0.2,25
+1318437a0caf38e695a819848832a955fef7d909,"""%(agent)s because the agent did not report """,1,1,0.2,26
+1318437a0caf38e695a819848832a955fef7d909,"""before check to allow agents to send a heartbeat """,1,1,0.2,27
+1318437a0caf38e695a819848832a955fef7d909,"""to the server in the last %(dead_time)s """,0,1,0.2,28
+1318437a0caf38e695a819848832a955fef7d909,"""%(agent)s because the agent did not report """,0,1,0.2,29
+1318437a0caf38e695a819848832a955fef7d909,"""before check to allow agents to send a heartbeat """,0,1,0.2,30
+1318437a0caf38e695a819848832a955fef7d909,"""to the server in the last %(dead_time)s """,1,1,0.2,31
+1318437a0caf38e695a819848832a955fef7d909,"'agent': binding.dhcp_agent_id,",1,0,0.0,32
+1318437a0caf38e695a819848832a955fef7d909,# each time due to REPEATABLE_READ isolation level,0,0,0.0,33
+1318437a0caf38e695a819848832a955fef7d909,agents_db.AgentDbMixin):,0,0,0.0,34
+1318437a0caf38e695a819848832a955fef7d909,sched_db.DhcpAgentSchedulerDbMixin):,0,0,0.0,35
+1318437a0caf38e695a819848832a955fef7d909,"common_db_mixin.CommonDbMixin,",1,0,0.0,36
+1318437a0caf38e695a819848832a955fef7d909,"agents_db.AgentDbMixin,",1,0,0.0,37
+1318437a0caf38e695a819848832a955fef7d909,"sched_db.DhcpAgentSchedulerDbMixin,",1,0,0.0,38
+1318437a0caf38e695a819848832a955fef7d909,else:,1,0,0.0,39
+1318437a0caf38e695a819848832a955fef7d909,if agent.is_active:,0,0,0.0,40
+1318437a0caf38e695a819848832a955fef7d909,agents_back_online.add(binding_agent_id),0,0,0.0,41
+1318437a0caf38e695a819848832a955fef7d909,continue,0,0,0.0,42
+1318437a0caf38e695a819848832a955fef7d909,# each time due to REPEATABLE_READ isolation level,1,0,0.0,43
+1318437a0caf38e695a819848832a955fef7d909,if agent.is_active:,1,0,0.0,44
+1318437a0caf38e695a819848832a955fef7d909,agents_back_online.add(binding_agent_id),1,0,0.0,45
+1318437a0caf38e695a819848832a955fef7d909,'dead_time': agent_dead_limit}),1,0,0.0,46
+1318437a0caf38e695a819848832a955fef7d909,"self.is_eligible_agent(context, True, agent)]",0,0,0.0,47
+1318437a0caf38e695a819848832a955fef7d909,"{'network': binding.network_id,",1,0,0.0,48
+1318437a0caf38e695a819848832a955fef7d909,"""seconds.""),",1,0,0.0,49
+1318437a0caf38e695a819848832a955fef7d909,"""skipping rescheduling""))",1,0,0.0,50
+1318437a0caf38e695a819848832a955fef7d909,"""in case there was a clock adjustment.""), agent_type)",1,0,0.0,51
+1318437a0caf38e695a819848832a955fef7d909,"""exceeded the interval between checks. Waiting """,1,0,0.0,52
+1318437a0caf38e695a819848832a955fef7d909,'dead_time': agent_dead_limit}),0,0,0.0,53
+1318437a0caf38e695a819848832a955fef7d909,"'agent': binding.dhcp_agent_id,",0,0,0.0,54
+1318437a0caf38e695a819848832a955fef7d909,"{'network': binding.network_id,",0,0,0.0,55
+1318437a0caf38e695a819848832a955fef7d909,"""seconds.""),",0,0,0.0,56
+1318437a0caf38e695a819848832a955fef7d909,"""skipping rescheduling""))",0,0,0.0,57
+1318437a0caf38e695a819848832a955fef7d909,agent_type),0,0,0.0,58
+1318437a0caf38e695a819848832a955fef7d909,"""in case there was a clock adjustment.""),",0,0,0.0,59
+1318437a0caf38e695a819848832a955fef7d909,"""exceeded the interval between checks. Waiting """,0,0,0.0,60
+1318437a0caf38e695a819848832a955fef7d909,if len(agents) == len(dead_agents):,1,0,0.0,61
+1318437a0caf38e695a819848832a955fef7d909,if not active_agents:,0,0,0.0,62
+1318437a0caf38e695a819848832a955fef7d909,continue,1,0,0.0,63

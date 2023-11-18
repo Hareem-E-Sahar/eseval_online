@@ -1,0 +1,144 @@
+commit_id,line,line_level_label,count,line_score,row
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"previous = {'current': set([1, 2]),",0,5,1.0,1
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"expected = {'current': set([1, 2]),",0,4,0.8,2
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# check to see if any devices were locally modified based on their,0,3,0.6000000000000001,3
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# timestamps changing since the previous iteration. If a timestamp,0,3,0.6000000000000001,4
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# removed device,0,3,0.6000000000000001,5
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'removed': set([1, 2]),",0,3,0.6000000000000001,6
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# be handled as removed in the next iteration,0,3,0.6000000000000001,7
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# agent is considered started after initial sync with,0,3,0.6000000000000001,8
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,updated = set(),0,2,0.4,9
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.iter_num = self.iter_num + 1,0,2,0.4,10
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,resync = True,0,2,0.4,11
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# no resync is needed,1,2,0.4,12
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,if device not in self.mgr.get_all_devices():,0,2,0.4,13
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,device = device_details['device'],0,2,0.4,14
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# ignore exceptions from devices that disappear because they will,0,2,0.4,15
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# no resync is needed,0,2,0.4,16
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'removed': set([1, 2])}",1,2,0.4,17
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,device = device_details['device'],1,2,0.4,18
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"fake_current = set([1, 2])",0,2,0.4,19
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.debug(""Adding locally changed devices to updated set: %s"",",0,2,0.4,20
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'added': set(),",0,2,0.4,21
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"""""""Returns devices with previous timestamps that do not match new.",0,2,0.4,22
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'removed': set(),",0,2,0.4,23
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.info(_LI(""%s Agent out of sync with plugin!""),",0,2,0.4,24
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# 3 and 4 are not returned because 3 is a new device and 4 is a,0,2,0.4,25
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'removed': set(),",0,2,0.4,26
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'updated': set(),",0,2,0.4,27
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'removed': set([2]),",0,1,0.2,28
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"""for port removal %s"", device)",0,1,0.2,29
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'removed': set()},1,1,0.2,30
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'removed': set([1])},1,1,0.2,31
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'removed': set(),1,1,0.2,32
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,ectx.reraise = False,0,1,0.2,33
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.debug(""%s was removed during processing."", device)",0,1,0.2,34
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.sg_agent = agent_sg_rpc.SecurityGroupAgentRpc(,0,1,0.2,35
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.sg_agent = sg_rpc.SecurityGroupAgentRpc(,1,1,0.2,36
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.iter_num = 0,0,1,0.2,37
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,agent_api = self.mgr.get_agent_api(sg_agent=self.sg_agent),0,1,0.2,38
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,mock_connection = mock.Mock(),0,1,0.2,39
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.agent.connection = mock_connection,0,1,0.2,40
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,if self.iter_num > 0:,0,1,0.2,41
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# server (iter 0) is done,0,1,0.2,42
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.info(""%s Agent loop - iteration:%d started"",",0,1,0.2,43
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.info(""%s Agent loop - iteration:%d completed"",",0,1,0.2,44
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'updated': set([2]),",0,1,0.2,45
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'removed': set([1]),",0,1,0.2,46
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'removed': set([2]),1,1,0.2,47
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.agent.mgr.get_devices_modified_timestamps.return_value = (,0,1,0.2,48
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"If a device did not have a timestamp previously, it will not be",0,1,0.2,49
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"old_ts = {1: 10, 2: 2000, 4: 900}",0,1,0.2,50
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,LOG.info(_LI('%s Agent has just been revived. ',0,1,0.2,51
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,LB_AGENT_BINARY = 'neutron-linuxbridge-agent',1,1,0.2,52
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"BRIDGE_NAME_PREFIX = ""brq""",1,1,0.2,53
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"VXLAN_INTERFACE_PREFIX = ""vxlan-""",1,1,0.2,54
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.info(_LI(""LinuxBridge Agent RPC Daemon Started!""))",1,1,0.2,55
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.info(_LI(""Agent out of sync with plugin!""))",1,1,0.2,56
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# The initialization is complete; we can start receiving messages,0,1,0.2,57
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.info(_LI(""%s Agent RPC Daemon Started!""), self.agent_type)",0,1,0.2,58
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,if previous_timestamps.get(device) and,0,1,0.2,59
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,if locally_updated:,0,1,0.2,60
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"new_ts = {1: 1000, 2: 2000, 3: 3000}",0,1,0.2,61
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"# doesn't exist for a device, this calculation is skipped for that",0,1,0.2,62
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'removed': set()},1,1,0.2,63
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,# device.,0,1,0.2,64
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,device_info['timestamps'] = self.mgr.get_devices_modified_timestamps(,0,1,0.2,65
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,locally_updated = self._get_devices_locally_modified(,0,1,0.2,66
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,@contextlib.contextmanager,0,0,0.0,67
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,try:,0,0,0.0,68
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,device_details.get('segmentation_id'),1,0,0.0,69
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,device_details.get('mtu'),0,0,0.0,70
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"device_details.get('segmentation_id'),",0,0,0.0,71
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,from neutron.agent import securitygroups_rpc as sg_rpc,1,0,0.0,72
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,from neutron.api.rpc.handlers import securitygroups_rpc as sg_rpc,0,0,0.0,73
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,from neutron.agent import securitygroups_rpc as agent_sg_rpc,0,0,0.0,74
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.context, devices, self.agent_id, host=cfg.CONF.host)",0,0,0.0,75
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.context, devices, self.agent_id)",1,0,0.0,76
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,return False,1,0,0.0,77
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,with excutils.save_and_reraise_exception() as ectx:,0,0,0.0,78
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,except Exception:,0,0,0.0,79
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,yield,0,0,0.0,80
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,try:,0,0,0.0,81
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"def _ignore_missing_device_exceptions(self, device):",0,0,0.0,82
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"{'device': device,",0,0,0.0,83
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.ext_manager.delete_port(self.context,",0,0,0.0,84
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,super().setUp(),0,0,0.0,85
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'port_id': port_id}),0,0,0.0,86
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,def test_stop(self):,0,0,0.0,87
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"def _process_device_if_exists(self, device_details):",0,0,0.0,88
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.agent_type, self.iter_num)",0,0,0.0,89
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.agent_state.pop('start_flag', None)",0,0,0.0,90
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"super(TestCommonAgentLoop, self).setUp()",1,0,0.0,91
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,mock_connection.close.assert_called_once(),0,0,0.0,92
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.agent.stop(),0,0,0.0,93
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"with mock.patch.object(self.agent, 'set_rpc_timeout'):",0,0,0.0,94
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,conf_lb.register_linuxbridge_opts(cfg=cfg.CONF),0,0,0.0,95
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,except Exception:,0,0,0.0,96
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,from neutron.conf.plugins.ml2.drivers import linuxbridge as conf_lb,0,0,0.0,97
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"connection, self.mgr.get_extension_driver_type())",1,0,0.0,98
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"connection, self.mgr.get_extension_driver_type(), agent_api)",0,0,0.0,99
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'port_id': port_id}),1,0,0.0,100
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"{'device': device,",1,0,0.0,101
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.ext_manager.delete_port(self.context,",1,0,0.0,102
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"LOG.exception(""Error occurred while processing extensions """,0,0,0.0,103
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,with self._ignore_missing_device_exceptions(device):,0,0,0.0,104
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"consumers,",0,0,0.0,105
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,return False,0,0,0.0,106
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"def _get_devices_locally_modified(timestamps, previous_timestamps):",0,0,0.0,107
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"device_info['timestamps'], previous['timestamps'])",0,0,0.0,108
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,current_devices),0,0,0.0,109
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'timestamps': {}},0,0,0.0,110
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,timestamp != previous_timestamps.get(device)},0,0,0.0,111
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"return {device for device, timestamp in timestamps.items()",0,0,0.0,112
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"""""""",0,0,0.0,113
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,returned because this means it is new.,0,0,0.0,114
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,@staticmethod,0,0,0.0,115
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self._process_device_if_exists(device_details),0,0,0.0,116
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,consumers),1,0,0.0,117
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,start_listening=False),0,0,0.0,118
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.connection.consume_in_threads(),0,0,0.0,119
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'Doing a full sync.')),1,0,0.0,120
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,LOG.info(_LI('Agent has just been revived. ',1,0,0.0,121
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.agent_type),0,0,0.0,122
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"'Doing a full sync.'),",0,0,0.0,123
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,locally_updated),0,0,0.0,124
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,updated_devices |= locally_updated,0,0,0.0,125
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,def test__get_devices_locally_modified(self):,0,0,0.0,126
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,self.assertEqual(,0,0,0.0,127
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,from oslo_utils import excutils,0,0,0.0,128
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,import contextlib,0,0,0.0,129
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"fake_current, expected, sync):",1,0,0.0,130
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'timestamps': {},0,0,0.0,131
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"sync=False, fake_ts_current={2: 1000})",0,0,0.0,132
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self._test_scan_devices(previous, updated, fake_current, expected,",0,0,0.0,133
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'timestamps': {2: 1000}},0,0,0.0,134
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'timestamps': {2: 600}},0,0,0.0,135
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,def test_scan_devices_timestamp_triggers_updated(self):,0,0,0.0,136
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,'timestamps': {}},0,0,0.0,137
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,fake_ts_current or {}),0,0,0.0,138
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,fake_ts_current=None):,0,0,0.0,139
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"fake_current, expected, sync,",0,0,0.0,140
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.agent._get_devices_locally_modified(new_ts, old_ts))",0,0,0.0,141
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"set([1]),",0,0,0.0,142
+7d153a671b5fcc77437bc1e9b41015da1acc57f8,"self.agent_state.pop('start_flag', None)",1,0,0.0,143

@@ -1,0 +1,68 @@
+commit_id,line,line_level_label,count,line_score,row
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import static org.assertj.core.api.Assertions.assertThatExceptionOfType;,0,2,1.0,1
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void dispatchMessageWithSingleHandler() throws Exception {,1,2,1.0,2
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void currentHandlerIndexOverFlow() throws Exception {,1,2,1.0,3
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void multipleCyclesThroughHandlers() throws Exception {,1,2,1.0,4
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void differentHandlerInvokedOnSecondMessage() throws Exception {,1,2,1.0,5
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import static org.mockito.ArgumentMatchers.eq;,0,2,1.0,6
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import static org.assertj.core.api.Assertions.fail;,1,2,1.0,7
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import static org.mockito.Mockito.spy;,0,2,1.0,8
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import static org.mockito.BDDMockito.given;,0,2,1.0,9
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import static org.mockito.ArgumentMatchers.startsWith;,0,2,1.0,10
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"Log log = (Log) spy(directFieldAccessor.getPropertyType(""logger""));",0,1,0.5,11
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,catch (MessagingException e) {,1,1,0.5,12
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,},1,1,0.5,13
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,try {,1,1,0.5,14
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(differentHandler, atLeast(18)).handleMessage(message);",1,1,0.5,15
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(handler, atLeast(18)).handleMessage(message);",1,1,0.5,16
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,DirectFieldAccessor accessor = new DirectFieldAccessor(,1,1,0.5,17
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(handler, times(4)).handleMessage(message);",1,1,0.5,18
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,},0,1,0.5,19
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(log).debug(startsWith(""An exception was thrown by '""), eq(testException));",0,1,0.5,20
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(differentHandler, times(3)).handleMessage(message);",1,1,0.5,21
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,DirectFieldAccessor directFieldAccessor = new DirectFieldAccessor(this.dispatcher);,0,1,0.5,22
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void differentHandlerInvokedOnSecondMessage() {,0,1,0.5,23
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"RuntimeException testException = new RuntimeException(""intentional"");",0,1,0.5,24
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import org.apache.commons.logging.Log;,0,1,0.5,25
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,* @author Artem Bilan,0,1,0.5,26
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void dispatchMessageWithSingleHandler() {,0,1,0.5,27
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,import org.springframework.integration.test.util.TestUtils;,0,1,0.5,28
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void multipleCyclesThroughHandlers() {,0,1,0.5,29
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void currentHandlerIndexOverFlow() {,0,1,0.5,30
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,public void testFailOverAndLogging() {,0,1,0.5,31
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,verify(differentHandler).handleMessage(message);,1,0,0.0,32
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,given(log.isDebugEnabled()).willReturn(true);,0,0,0.0,33
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"directFieldAccessor.setPropertyValue(""logger"", log);",0,0,0.0,34
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,doThrow(testException),0,0,0.0,35
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,dispatcher.addHandler(handler);,1,0,0.0,36
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,dispatcher.dispatch(message);,1,0,0.0,37
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,dispatcher.addHandler(differentHandler);,1,0,0.0,38
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,verify(handler).handleMessage(message);,1,0,0.0,39
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"fail(""Expected Exception"");",1,0,0.0,40
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"new DirectFieldAccessor(dispatcher).getPropertyValue(""loadBalancingStrategy""));",1,0,0.0,41
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"((AtomicInteger) accessor.getPropertyValue(""currentHandlerIndex"")).set(Integer.MAX_VALUE - 5);",1,0,0.0,42
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"doThrow(new MessagingException(""Mock Exception"")).",1,0,0.0,43
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,when(handler).handleMessage(message);,1,0,0.0,44
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,assertThat(e.getFailedMessage()).isEqualTo(message);,1,0,0.0,45
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"doThrow(new MessagingException(dontReplaceThisMessage, ""Mock Exception"")).",1,0,0.0,46
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,.satisfies(ex -> assertThat(ex.getFailedMessage()).isEqualTo(dontReplaceThisMessage));,0,0,0.0,47
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,@Test,0,0,0.0,48
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,verify(this.handler).handleMessage(this.message);,0,0,0.0,49
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"doThrow(new MessagingException(dontReplaceThisMessage, ""Mock Exception""))",0,0,0.0,50
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,.satisfies(ex -> assertThat(ex.getFailedMessage()).isEqualTo(this.message));,0,0,0.0,51
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,this.dispatcher.addHandler(this.handler);,0,0,0.0,52
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,this.dispatcher.dispatch(this.message);,0,0,0.0,53
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,this.dispatcher.addHandler(this.differentHandler);,0,0,0.0,54
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,verify(this.differentHandler).handleMessage(this.message);,0,0,0.0,55
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(this.handler, times(4)).handleMessage(this.message);",0,0,0.0,56
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(this.differentHandler, times(3)).handleMessage(this.message);",0,0,0.0,57
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"TestUtils.getPropertyValue(this.dispatcher, ""loadBalancingStrategy.currentHandlerIndex"", AtomicInteger.class)",0,0,0.0,58
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,.set(Integer.MAX_VALUE - 5);,0,0,0.0,59
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(this.handler, atLeast(18)).handleMessage(this.message);",0,0,0.0,60
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"verify(this.differentHandler, atLeast(18)).handleMessage(this.message);",0,0,0.0,61
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,"doThrow(new MessagingException(""Mock Exception""))",0,0,0.0,62
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,.when(this.handler),0,0,0.0,63
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,.handleMessage(this.message);,0,0,0.0,64
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,assertThatExceptionOfType(MessagingException.class),0,0,0.0,65
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,.isThrownBy(() -> this.dispatcher.dispatch(this.message)),0,0,0.0,66
+fd373882dede46c9d7f6153c3c49a60c7a49edf0,assertThat(e.getFailedMessage()).isEqualTo(dontReplaceThisMessage);,1,0,0.0,67

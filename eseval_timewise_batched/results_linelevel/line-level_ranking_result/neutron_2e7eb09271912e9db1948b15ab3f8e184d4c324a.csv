@@ -1,0 +1,456 @@
+commit_id,line,line_level_label,count,line_score,row
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"args = ['add', 'link', src_dev, 'name', name, 'type', 'macvtap',",1,7,1.0,1
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd = ['add', 'link', physical_interface, 'name', name,",1,5,0.7142857142857142,2
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], 'link', ('add', name, 'type', 'dummy'))",1,5,0.7142857142857142,3
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"('add', 'link', 'eth0', 'name',",1,4,0.5714285714285714,4
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'name', 'tap1'))",1,4,0.5714285714285714,5
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('set', self.name, 'name', name))",1,4,0.5714285714285714,6
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return self._as_root([], ('set', self.name, 'up'))",1,4,0.5714285714285714,7
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return self._as_root([], ('set', self.name, 'down'))",1,4,0.5714285714285714,8
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"msg = _(""Network interface %(device)s not found in namespace """,1,4,0.5714285714285714,9
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd = ['add', name, 'type', 'vxlan', 'id', vni]",1,4,0.5714285714285714,10
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], 'tuntap', ('add', name, 'mode', mode))",1,4,0.5714285714285714,11
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.conf.plugins.ml2.drivers import macvtap as config,0,4,0.5714285714285714,12
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'Set the firewall_driver to ""noop"" and start the '",0,4,0.5714285714285714,13
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('set', self.name, 'alias', alias_name))",1,3,0.42857142857142855,14
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'alias', 'openvswitch'))",1,3,0.42857142857142855,15
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'netns', 'foo'))",1,3,0.42857142857142855,16
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'down'))",1,3,0.42857142857142855,17
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'up'))",1,3,0.42857142857142855,18
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'mtu', 1500))",1,3,0.42857142857142855,19
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'allmulticast', 'on'))",1,3,0.42857142857142855,20
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('set', 'eth0', 'address', 'aa:bb:cc:dd:ee:ff'))",1,3,0.42857142857142855,21
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('set', self.name, 'mtu', mtu_size))",1,3,0.42857142857142855,22
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('set', self.name, 'allmulticast', 'on'))",1,3,0.42857142857142855,23
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('set', self.name, 'address', mac_address))",1,3,0.42857142857142855,24
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"['add', 'link', 'eth0',",1,3,0.42857142857142855,25
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], 'link', tuple(args))",1,3,0.42857142857142855,26
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.plugins.ml2.drivers.macvtap.agent import config  # noqa,1,3,0.42857142857142855,27
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('set', self.name, 'netns', namespace))",1,3,0.42857142857142855,28
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"with mock.patch.object(pyroute2, ip_obj) as ip_mock_cls:",0,2,0.2857142857142857,29
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,device = self.manage_device(attr),0,2,0.2857142857142857,30
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"('add', 'tap0', 'mode', 'tap'),",1,2,0.2857142857142857,31
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.execute.assert_called_once_with([], 'link',",1,2,0.2857142857142857,32
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"['add', 'vxlan0', 'type',",1,2,0.2857142857142857,33
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _run_iproute_link(command, device, namespace=None, **kwargs):",0,2,0.2857142857142857,34
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"link = _run_iproute_link(""get"", device, namespace)[0]",0,2,0.2857142857142857,35
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mac = ip_lib.get_device_mac(devices[0].name),1,2,0.2857142857142857,36
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"with mock.patch.object(ip_lib.IPDevice, '_execute') as _execute:",1,2,0.2857142857142857,37
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mac = ip_lib.get_device_mac(device.name),0,2,0.2857142857142857,38
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"LOG.error(""Unable to obtain MAC address for unique ID. """,0,2,0.2857142857142857,39
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"LOG.error(""Unable to obtain MAC address for unique ID. """,1,2,0.2857142857142857,40
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.common import utils as common_utils,0,2,0.2857142857142857,41
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"with mock.patch.object(pyroute2, ""IPRoute"") as iproute_mock:",0,2,0.2857142857142857,42
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,LINK_SAMPLE = [,1,2,0.2857142857142857,43
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"ip_obj = ""NetNS"" if namespace else ""IPRoute""",0,2,0.2857142857142857,44
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ip_wrapper = ip_lib.IPWrapper(self.ip_dev.namespace),1,2,0.2857142857142857,45
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], 'link', cmd)",1,2,0.2857142857142857,46
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mac = ip_lib.get_device_mac(devices[0].name),0,2,0.2857142857142857,47
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mac = ip_lib.get_device_mac(device_name),0,2,0.2857142857142857,48
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mac = utils.get_interface_mac(devices[0].name),1,2,0.2857142857142857,49
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.api.rpc.handlers import securitygroups_rpc as sg_rpc,0,2,0.2857142857142857,50
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.agent import securitygroups_rpc as sg_rpc,1,2,0.2857142857142857,51
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mac = utils.get_interface_mac(device_name),1,2,0.2857142857142857,52
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,# TODO(slaweq): switch to pyroute2 when issue,0,2,0.2857142857142857,53
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['vxlan_group'] = group,0,2,0.2857142857142857,54
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['physical_interface'] = dev,0,2,0.2857142857142857,55
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,with _get_iproute(namespace) as ip:,0,2,0.2857142857142857,56
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], 'link', ('del', name))",1,2,0.2857142857142857,57
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,return {},1,1,0.14285714285714285,58
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_link_allmulticast_on(self):,0,1,0.14285714285714285,59
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"device_name, settings = value.replace(""\\"", '').split('>', 1)",1,1,0.14285714285714285,60
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,tokens = settings.split(),1,1,0.14285714285714285,61
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,keys = tokens[::2],1,1,0.14285714285714285,62
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,values = [int(v) if v.isdigit() else v for v in tokens[1::2]],1,1,0.14285714285714285,63
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"retval = dict(zip(keys, values))",1,1,0.14285714285714285,64
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,return retval,1,1,0.14285714285714285,65
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _run_iproute_link(command, device, namespace, **kwargs):",1,1,0.14285714285714285,66
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_up(self, set_link_attribute):",0,1,0.14285714285714285,67
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,attr = self.generate_device_details(),0,1,0.14285714285714285,68
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from pyroute2.netlink.rtnl import ifinfmsg,0,1,0.14285714285714285,69
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_address(self, set_link_attribute):",0,1,0.14285714285714285,70
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_allmulticast_on(self, set_link_flags):",0,1,0.14285714285714285,71
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_mtu(self, set_link_attribute):",0,1,0.14285714285714285,72
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return self._parse_line(self._run(['o'], ('show', self.name)))",1,1,0.14285714285714285,73
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_down(self, set_link_attribute):",0,1,0.14285714285714285,74
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_netns(self, set_link_attribute):",0,1,0.14285714285714285,75
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,original_namespace = self.parent.namespace,0,1,0.14285714285714285,76
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'eth0', original_namespace, net_ns_fd='foo')",0,1,0.14285714285714285,77
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _parse_line(self, value):",1,1,0.14285714285714285,78
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,new_flags = flags | link['flags'],0,1,0.14285714285714285,79
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._as_root([], ('delete', self.name))",1,1,0.14285714285714285,80
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, ifname=name)",0,1,0.14285714285714285,81
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,original_name = self.parent.name,0,1,0.14285714285714285,82
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from pyroute2.netlink.rtnl import ifinfmsg,0,1,0.14285714285714285,83
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, address=mac_address)",0,1,0.14285714285714285,84
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, ifinfmsg.IFF_ALLMULTI)",0,1,0.14285714285714285,85
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, mtu=mtu_size)",0,1,0.14285714285714285,86
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, state='up')",0,1,0.14285714285714285,87
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, state='down')",0,1,0.14285714285714285,88
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, net_ns_fd=namespace)",0,1,0.14285714285714285,89
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.name, self._parent.namespace, ifalias=alias_name)",0,1,0.14285714285714285,90
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,return {,0,1,0.14285714285714285,91
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def allmulticast(self):,0,1,0.14285714285714285,92
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,return self.attributes.get('allmulticast'),0,1,0.14285714285714285,93
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return privileged.get_link_attributes(self.name,",0,1,0.14285714285714285,94
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def set_link_flags(device, namespace, flags):",0,1,0.14285714285714285,95
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return _run_iproute_link(""set"", device, namespace, flags=new_flags)",0,1,0.14285714285714285,96
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def set_link_attribute(device, namespace, **attributes):",0,1,0.14285714285714285,97
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return _run_iproute_link(""set"", device, namespace, **attributes)",0,1,0.14285714285714285,98
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def get_link_attributes(device, namespace):",0,1,0.14285714285714285,99
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_name(self, set_link_attribute):",0,1,0.14285714285714285,100
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_state_property(self):,1,1,0.14285714285714285,101
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_set_alias(self, set_link_attribute):",0,1,0.14285714285714285,102
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,for device in devices:,0,1,0.14285714285714285,103
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_qdisc_property(self):,1,1,0.14285714285714285,104
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_qlen_property(self):,1,1,0.14285714285714285,105
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_alias_property(self):,1,1,0.14285714285714285,106
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_add_vxlan_valid_srcport_length(self):,1,1,0.14285714285714285,107
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_settings_property(self):,1,1,0.14285714285714285,108
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"expected = {'mtu': 1500,",1,1,0.14285714285714285,109
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"# Use lo, it has no MAC address",1,1,0.14285714285714285,110
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,_execute.return_value = LINK_SAMPLE[0],1,1,0.14285714285714285,111
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return 'macvtap%s' % mac.replace("":"", """")",0,1,0.14285714285714285,112
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.parent._execute = mock.Mock(return_value=LINK_SAMPLE[1]),1,1,0.14285714285714285,113
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return 'macvtap%s' % mac.replace("":"", """")",1,1,0.14285714285714285,114
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,import setproctitle,0,1,0.14285714285714285,115
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron_lib import constants,0,1,0.14285714285714285,116
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"proctitle = ""%s (%s)"" % (",0,1,0.14285714285714285,117
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron_lib import constants,0,1,0.14285714285714285,118
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"msg = 'MacVTap address: %s, read devices: %s\n' % (",0,1,0.14285714285714285,119
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,for device in ip_lib.IPWrapper().get_devices():,0,1,0.14285714285714285,120
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"msg += '  Device %s, MAC: %s' % (device.name,",0,1,0.14285714285714285,121
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_mtu_property(self):,1,1,0.14285714285714285,122
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_address_property(self):,1,1,0.14285714285714285,123
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_delete(self, delete):",0,1,0.14285714285714285,124
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_allmulticast_on(self):,1,1,0.14285714285714285,125
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_settings_property(self, get_link_attributes):",0,1,0.14285714285714285,126
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,with mock.patch.object(,0,1,0.14285714285714285,127
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,") as get_link_attributes, mock.patch.object(",0,1,0.14285714285714285,128
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,) as set_link_attribute:,0,1,0.14285714285714285,129
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,get_link_attributes.return_value = {},0,1,0.14285714285714285,130
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,' noqueue master brq0b24798c-07 state UP mode DEFAULT',1,1,0.14285714285714285,131
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.parent._run.return_value = LINK_SAMPLE[1],1,1,0.14285714285714285,132
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_address(self):,1,1,0.14285714285714285,133
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_mtu(self):,1,1,0.14285714285714285,134
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_sudo([], ('delete', 'eth0'))",1,1,0.14285714285714285,135
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_up(self):,1,1,0.14285714285714285,136
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,observed = self.link_cmd.set_up(),1,1,0.14285714285714285,137
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_down(self):,1,1,0.14285714285714285,138
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,observed = self.link_cmd.set_down(),1,1,0.14285714285714285,139
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_netns(self):,1,1,0.14285714285714285,140
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_name(self):,1,1,0.14285714285714285,141
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_set_alias(self):,1,1,0.14285714285714285,142
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_delete(self):,1,1,0.14285714285714285,143
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_add_vxlan_dstport(self):,1,1,0.14285714285714285,144
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"MACVTAP_AGENT_BINARY = ""neutron-macvtap-agent""",1,1,0.14285714285714285,145
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'type', 'vlan', 'id', '1'],",1,1,0.14285714285714285,146
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"kwargs[link_key] = _get_link_id(physical_interface, namespace)",0,1,0.14285714285714285,147
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs = {'vxlan_id': vni},0,1,0.14285714285714285,148
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['vxlan_ttl'] = ttl,0,1,0.14285714285714285,149
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['vxlan_tos'] = tos,0,1,0.14285714285714285,150
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['vxlan_local'] = local,0,1,0.14285714285714285,151
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['vxlan_proxy'] = proxy,0,1,0.14285714285714285,152
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"kwargs['vxlan_port_range'] = (str(srcport[0]), str(srcport[1]))",0,1,0.14285714285714285,153
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,kwargs['vxlan_port'] = str(dstport),0,1,0.14285714285714285,154
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron_lib import constants,0,1,0.14285714285714285,155
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _get_link_id(device, namespace):",0,1,0.14285714285714285,156
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,return ip.link_lookup(ifname=device)[0],0,1,0.14285714285714285,157
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _run_iproute_link(command, device, namespace, **kwargs):",0,1,0.14285714285714285,158
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"idx = _get_link_id(device, namespace)",0,1,0.14285714285714285,159
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return ip.link(command, index=idx, **kwargs)",0,1,0.14285714285714285,160
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,except OSError as e:,0,1,0.14285714285714285,161
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _run_iproute_neigh(command, device, namespace, **kwargs):",0,1,0.14285714285714285,162
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return ip.neigh(command, ifindex=idx, **kwargs)",0,1,0.14285714285714285,163
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def create_interface(ifname, namespace, kind, **kwargs):",0,1,0.14285714285714285,164
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ifname = ifname[:constants.DEVICE_NAME_MAX_LEN],0,1,0.14285714285714285,165
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"physical_interface = kwargs.pop(""physical_interface"", None)",0,1,0.14285714285714285,166
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,# will be closed,0,1,0.14285714285714285,167
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,# https://github.com/svinota/pyroute2/issues/463,0,1,0.14285714285714285,168
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"name, self.namespace, ""tuntap"", mode=mode)",0,1,0.14285714285714285,169
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_validate_firewall_driver_noop(self):,0,1,0.14285714285714285,170
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'name', 'eth0.1',",1,1,0.14285714285714285,171
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"supported_fw_drivers = ['neutron.agent.firewall.NoopFirewallDriver',",0,1,0.14285714285714285,172
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'firewall_driver""! Only the NoopFirewallDriver is '",0,1,0.14285714285714285,173
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'supported by macvtap agent, but ""%s"" is configured. '",0,1,0.14285714285714285,174
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'agent again. Agent terminated!'),",0,1,0.14285714285714285,175
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'NoopFirewallDriver"" is supported by macvtap agent, but'",1,1,0.14285714285714285,176
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'""%s"" is configured. Agent terminated!'),",1,1,0.14285714285714285,177
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_validate_firewall_driver_noop_long(self):,0,1,0.14285714285714285,178
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_validate_firewall_driver_noop(self):,1,1,0.14285714285714285,179
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,import neutron.plugins.ml2.drivers.macvtap.agent.config,1,1,0.14285714285714285,180
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,neutron.agent.securitygroups_rpc.security_group_opts),1,1,0.14285714285714285,181
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,import neutron.conf.plugins.ml2.drivers.agent,0,1,0.14285714285714285,182
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,import neutron.plugins.ml2.drivers.agent.config,1,1,0.14285714285714285,183
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"neutron.plugins.ml2.drivers.agent.config.agent_opts),",1,1,0.14285714285714285,184
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.agent.linux import utils,1,1,0.14285714285714285,185
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.patch.object(ip_lib, 'get_device_mac') as mock_gdn:",0,1,0.14285714285714285,186
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,from neutron.agent.linux import utils,1,1,0.14285714285714285,187
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,import neutron.conf.plugins.ml2.drivers.macvtap,0,1,0.14285714285714285,188
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"link_key = ""vxlan_link"" if kind == ""vxlan"" else ""link""",0,1,0.14285714285714285,189
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.patch.object(utils, 'get_interface_mac') as mock_gdn:",1,1,0.14285714285714285,190
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return ip.link(""add"", ifname=ifname, kind=kind, **kwargs)",0,1,0.14285714285714285,191
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.execute.assert_called_once_with([], 'tuntap',",1,1,0.14285714285714285,192
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_run_iproute_link_interface_not_exists(self):,0,1,0.14285714285714285,193
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ip_mock = iproute_mock(),0,1,0.14285714285714285,194
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ip_mock.__enter__().link_lookup.return_value = [],0,1,0.14285714285714285,195
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_run_iproute_link_namespace_not_exists(self):,0,1,0.14285714285714285,196
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,iproute_mock.side_effect = OSError(,0,1,0.14285714285714285,197
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_run_iproute_link_error(self):,0,1,0.14285714285714285,198
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,except OSError as e:,0,1,0.14285714285714285,199
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_add_tuntap(self):,1,1,0.14285714285714285,200
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_add_macvtap(self):,1,1,0.14285714285714285,201
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_run_iproute_link_no_namespace(self):,0,1,0.14285714285714285,202
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'macvtap0', 'type', 'macvtap',",1,1,0.14285714285714285,203
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'mode', 'bridge'),",1,1,0.14285714285714285,204
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_del_veth(self):,1,1,0.14285714285714285,205
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_add_dummy(self):,1,1,0.14285714285714285,206
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"('add', 'dummy0',",1,1,0.14285714285714285,207
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'type', 'dummy'),",1,1,0.14285714285714285,208
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def delete_interface(ifname, namespace, **kwargs):",0,1,0.14285714285714285,209
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_add_vlan(self):,1,1,0.14285714285714285,210
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,def test_run_iproute_link_in_namespace(self):,0,1,0.14285714285714285,211
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"run_as_root=True, namespace=None)",1,1,0.14285714285714285,212
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ip_mock.__enter__().link_lookup.return_value = [2],0,1,0.14285714285714285,213
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_add_vlan(self, create):",0,1,0.14285714285714285,214
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'type', 'vlan', 'id', vlan_id]",1,1,0.14285714285714285,215
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ip_mock = ip_mock_cls(),0,1,0.14285714285714285,216
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _run_iproute_neigh(command, device, namespace, **kwargs):",1,1,0.14285714285714285,217
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,idx = ip.link_lookup(ifname=device)[0],1,1,0.14285714285714285,218
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"return ip.neigh(command, ifindex=idx, **kwargs)",1,1,0.14285714285714285,219
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_add_macvtap(self, create):",0,1,0.14285714285714285,220
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_del_veth(self, delete):",0,1,0.14285714285714285,221
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_add_dummy(self, create):",0,1,0.14285714285714285,222
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_add_tuntap(self, create):",0,1,0.14285714285714285,223
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_add_vxlan_valid_srcport_length(self, create):",0,1,0.14285714285714285,224
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,create.side_effect = fake_create_interface,0,1,0.14285714285714285,225
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def _test_run_iproute_link(self, namespace=None):",0,1,0.14285714285714285,226
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def test_add_vxlan_dstport(self, create):",0,1,0.14285714285714285,227
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,expected_call_params = {,0,1,0.14285714285714285,228
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'mode', mode]",1,1,0.14285714285714285,229
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.call_params = dict(,0,1,0.14285714285714285,230
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"def fake_create_interface(ifname, namespace, kind, **kwargs):",0,1,0.14285714285714285,231
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.call_params = {},0,1,0.14285714285714285,232
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 promiscuity 0',",1,0,0.0,233
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"@mock.patch.object(priv_lib, 'get_link_attributes')",0,0,0.0,234
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"delete.assert_called_once_with(self.parent.name, self.parent.namespace)",0,0,0.0,235
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,get_link_attributes.assert_called_once_with(,0,0,0.0,236
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"@mock.patch.object(priv_lib, 'delete_interface')",0,0,0.0,237
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace)",0,0,0.0,238
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"priv_lib, 'get_link_attributes'",0,0,0.0,239
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"priv_lib, 'set_link_attribute'",0,0,0.0,240
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"get_link_attributes.assert_called_once_with(""lo"", None)",0,0,0.0,241
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,set_link_attribute.assert_not_called(),0,0,0.0,242
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN \\'",1,0,0.0,243
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.link_cmd.attributes,0,0,0.0,244
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'promiscuity 0',",1,0,0.0,245
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP '",1,0,0.0,246
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'qlen 1000\    link/ether cc:dd:ee:ff:ab:cd brd ff:ff:ff:ff:ff:ff',1,0,0.0,247
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    alias openvswitch',",1,0,0.0,248
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'3: br-int: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN '",1,0,0.0,249
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    link/ether aa:bb:cc:dd:ee:ff brd ff:ff:ff:ff:ff:ff promiscuity 0',",1,0,0.0,250
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'4: gw-ddc717df-49: <BROADCAST,MULTICAST> mtu 1500 qdisc noop '",1,0,0.0,251
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'state DOWN \    link/ether fe:dc:ba:fe:dc:ba brd ff:ff:ff:ff:ff:ff ',1,0,0.0,252
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'5: foo:foo: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state '",1,0,0.0,253
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'UP qlen 1000\    link/ether cc:dd:ee:ff:ab:cd brd ff:ff:ff:ff:ff:ff ',1,0,0.0,254
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'6: foo@foo: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state '",1,0,0.0,255
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"original_name, self.parent.namespace, ifname='tap1')",0,0,0.0,256
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'7: foo:foo@foo: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq '",1,0,0.0,257
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace, ifalias='openvswitch')",0,0,0.0,258
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'alias': link.get_attr('IFLA_IFALIAS'),",0,0,0.0,259
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace, state='down')",0,0,0.0,260
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.assertFalse(device.link.allmulticast),0,0,0.0,261
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    link/ether cc:dd:ee:ff:ab:cd brd ff:ff:ff:ff:ff:ff promiscuity 0',",1,0,0.0,262
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'mtu': link.get_attr('IFLA_MTU'),",0,0,0.0,263
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'qlen': link.get_attr('IFLA_TXQLEN'),",0,0,0.0,264
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'state': link.get_attr('IFLA_OPERSTATE'),",0,0,0.0,265
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'qdisc': link.get_attr('IFLA_QDISC'),",0,0,0.0,266
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'brd': link.get_attr('IFLA_BROADCAST'),",0,0,0.0,267
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'link/ether': link.get_attr('IFLA_ADDRESS'),",0,0,0.0,268
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'allmulticast': bool(link['flags'] & ifinfmsg.IFF_ALLMULTI),0,0,0.0,269
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,},0,0,0.0,270
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if not value:,1,0,0.0,271
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,dev.set_log_fail_as_error(False),1,0,0.0,272
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,device.link.set_allmulticast_on(),0,0,0.0,273
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.link_cmd.set_down(),0,0,0.0,274
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.assertTrue(device.link.allmulticast),0,0,0.0,275
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"@mock.patch.object(priv_lib, 'set_link_attribute')",0,0,0.0,276
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,set_link_attribute.assert_called_once_with(,0,0,0.0,277
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace,",0,0,0.0,278
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,address='aa:bb:cc:dd:ee:ff'),0,0,0.0,279
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"@mock.patch.object(priv_lib, 'set_link_flags')",0,0,0.0,280
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,set_link_flags.assert_called_once_with(,0,0,0.0,281
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace, ifinfmsg.IFF_ALLMULTI)",0,0,0.0,282
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace, mtu=1500)",0,0,0.0,283
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.link_cmd.set_up(),0,0,0.0,284
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.parent.name, self.parent.namespace, state='up')",0,0,0.0,285
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'state UP qlen 1000',1,0,0.0,286
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"constants.AGENT_TYPE_MACVTAP,",0,0,0.0,287
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'8: foo@foo:foo: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq '",1,0,0.0,288
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'9: bar.9@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc '",1,0,0.0,289
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._assert_call(['o'], ('show', 'eth0'))",1,0,0.0,290
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if mac:,0,0,0.0,291
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"""Agent terminated!"")",0,0,0.0,292
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,sys.exit(1),0,0,0.0,293
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if devices:,1,0,0.0,294
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,else:,1,0,0.0,295
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"""Agent terminated!"")",1,0,0.0,296
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,sys.exit(1),1,0,0.0,297
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"constants.AGENT_PROCESS_MACVTAP, setproctitle.getproctitle())",0,0,0.0,298
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,setproctitle.setproctitle(proctitle),0,0,0.0,299
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,constants.AGENT_PROCESS_MACVTAP),0,0,0.0,300
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,MACVTAP_AGENT_BINARY),1,0,0.0,301
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self._parent.namespace),0,0,0.0,302
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,constants.AGENT_PROCESS_MACVTAP),0,0,0.0,303
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'Macvtap agent',",1,0,0.0,304
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'neutron-macvtap-agent'),1,0,0.0,305
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,try:,0,0,0.0,306
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,common_utils.wait_until_true(,0,0,0.0,307
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"lambda: {macvtap.link.address} == self.mgr.get_all_devices(),",0,0,0.0,308
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,timeout=5),0,0,0.0,309
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,except common_utils.WaitTimeout:,0,0,0.0,310
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"macvtap.link.address, self.mgr.get_all_devices())",0,0,0.0,311
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,device.link.address),0,0,0.0,312
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.fail(msg),0,0,0.0,313
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(set([macvtap.link.address]),",1,0,0.0,314
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.attributes, expected)",1,0,0.0,315
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'alias': 'openvswitch'},1,0,0.0,316
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'link/ether': 'cc:dd:ee:ff:ab:cd',",1,0,0.0,317
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    vlan protocol 802.1q id 13 <REORDER_HDR>',",1,0,0.0,318
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'\    link/ether ab:04:49:b6:ab:a0 brd ff:ff:ff:ff:ff:ff promiscuity 0',1,0,0.0,319
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    vlan protocol 802.1q id 9 <REORDER_HDR>',",1,0,0.0,320
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'10: bar@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc '",1,0,0.0,321
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    vlan protocol 802.1Q id 10 <REORDER_HDR>',",1,0,0.0,322
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'11: bar:bar@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq '",1,0,0.0,323
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'\    link/ether cc:dd:ee:ff:ab:cd brd ff:ff:ff:ff:ff:ff promiscuity 0',1,0,0.0,324
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    vlan id 11 <REORDER_HDR>',",1,0,0.0,325
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'12: bar@bar@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq '",1,0,0.0,326
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'\    vlan id 12 <REORDER_HDR>',",1,0,0.0,327
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'13: bar:bar@bar@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 '",1,0,0.0,328
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'qdisc mq state UP qlen 1000',1,0,0.0,329
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'14: bar@bar:bar@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 '",1,0,0.0,330
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'brd': 'ff:ff:ff:ff:ff:ff',",1,0,0.0,331
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'\    vlan protocol 802.1Q id 14 <REORDER_HDR>'],1,0,0.0,332
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.parent._as_root.return_value, observed)",1,0,0.0,333
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.address, 'cc:dd:ee:ff:ab:cd')",1,0,0.0,334
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.mtu, 1500)",1,0,0.0,335
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.qdisc, 'mq')",1,0,0.0,336
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.qlen, 1000)",1,0,0.0,337
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.alias, 'openvswitch')",1,0,0.0,338
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(self.link_cmd.state, 'UP')",1,0,0.0,339
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'qlen': 1000,",1,0,0.0,340
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'state': 'UP',",1,0,0.0,341
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'qdisc': 'mq',",1,0,0.0,342
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,@privileged.default.entrypoint,0,0,0.0,343
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_id': 'vni0',",0,0,0.0,344
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,@property,0,0,0.0,345
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['tos', tos])",1,0,0.0,346
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"privileged.create_interface(name, self.namespace, ""vxlan"", **kwargs)",0,0,0.0,347
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,try:,0,0,0.0,348
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if e.errno == errno.ENOENT:,0,0,0.0,349
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,raise NetworkNamespaceNotFound(netns_name=namespace),0,0,0.0,350
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,raise,0,0,0.0,351
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,@privileged.default.entrypoint,0,0,0.0,352
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if physical_interface:,0,0,0.0,353
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"_run_iproute_link(""del"", ifname, namespace, **kwargs)",0,0,0.0,354
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['group', group])",1,0,0.0,355
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['dev', dev])",1,0,0.0,356
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['ttl', ttl])",1,0,0.0,357
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['local', local])",1,0,0.0,358
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"physical_interface=physical_interface,",0,0,0.0,359
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,cmd.append('proxy'),1,0,0.0,360
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['srcport', str(srcport[0]), str(srcport[1])])",1,0,0.0,361
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cmd.extend(['dstport', str(dstport)])",1,0,0.0,362
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,except IndexError:,1,0,0.0,363
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"""%(namespace)s."") % {'device': device,",1,0,0.0,364
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'namespace': namespace},1,0,0.0,365
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,raise NetworkInterfaceNotFound(msg),1,0,0.0,366
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"@mock.patch.object(priv_lib, 'create_interface')",0,0,0.0,367
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"create.assert_called_once_with('tap0', None, 'tuntap', mode='tap')",0,0,0.0,368
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,create.assert_called_once_with(,0,0,0.0,369
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'macvtap0', None, 'macvtap', physical_interface='eth0',",0,0,0.0,370
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,vlan_id=vlan_id),0,0,0.0,371
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"""vlan"",",0,0,0.0,372
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"@mock.patch.object(priv_lib, 'delete_interface')",0,0,0.0,373
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.patch.object(utils, 'get_interface_mac',",1,0,0.0,374
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'noop'],0,0,0.0,375
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if fw_driver not in supported_fw_drivers:,0,0,0.0,376
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if fw_driver != 'neutron.agent.firewall.NoopFirewallDriver':,1,0,0.0,377
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'firewall_driver""! Only ""neutron.agent.firewall.'",1,0,0.0,378
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"cfg.CONF.set_override('firewall_driver',",0,0,0.0,379
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'noop',",0,0,0.0,380
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'SECURITYGROUP'),0,0,0.0,381
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,macvtap_neutron_agent.validate_firewall_driver(),0,0,0.0,382
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,neutron.conf.agent.securitygroups_rpc.security_group_opts),0,0,0.0,383
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"neutron.conf.plugins.ml2.drivers.agent.agent_opts),",0,0,0.0,384
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.patch.object(ip_lib, 'get_device_mac',",0,0,0.0,385
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"neutron.conf.plugins.ml2.drivers.macvtap.macvtap_opts),",0,0,0.0,386
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"privileged.create_interface(name, self.namespace, ""dummy"")",0,0,0.0,387
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"neutron.plugins.ml2.drivers.macvtap.agent.config.macvtap_opts),",1,0,0.0,388
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,config.register_macvtap_opts(),0,0,0.0,389
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if (ip_lib.network_namespace_exists(self.ip_dev.namespace) or,0,0,0.0,390
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,if (ip_wrapper.netns.exists(self.ip_dev.namespace) or,1,0,0.0,391
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,privileged.create_interface(,0,0,0.0,392
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"privileged.create_interface(name,",0,0,0.0,393
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.namespace,",0,0,0.0,394
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"""macvtap"",",0,0,0.0,395
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"physical_interface=src_dev,",0,0,0.0,396
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mode=mode),0,0,0.0,397
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"privileged.delete_interface(name, self.namespace)",0,0,0.0,398
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,mode='bridge'),0,0,0.0,399
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"delete.assert_called_once_with('fpr-1234', None)",0,0,0.0,400
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"privileged.delete_interface(self.name, self._parent.namespace)",0,0,0.0,401
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,priv_lib._run_iproute_link(,0,0,0.0,402
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"test_param=""test_value"")])",0,0,0.0,403
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self._test_run_iproute_link(),0,0,0.0,404
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self._test_run_iproute_link(namespace=""testns"")",0,0,0.0,405
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.assertRaises(,0,0,0.0,406
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"priv_lib.NetworkInterfaceNotFound,",0,0,0.0,407
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"priv_lib._run_iproute_link,",0,0,0.0,408
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"""test_cmd"", ""eth0"", None, test_param=""test_value"")",0,0,0.0,409
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"errno.ENOENT, ""Test no netns exception"")",0,0,0.0,410
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"priv_lib.NetworkNamespaceNotFound,",0,0,0.0,411
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"errno.EINVAL, ""Test invalid argument exception"")",0,0,0.0,412
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,try:,0,0,0.0,413
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.fail(""OSError exception not raised"")",0,0,0.0,414
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.call.__exit__(None, None, None),",0,0,0.0,415
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertEqual(errno.EINVAL, e.errno)",0,0,0.0,416
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"('del', 'fpr-1234'),",1,0,0.0,417
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan', 'id', 'vni0', 'group',",1,0,0.0,418
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'group0', 'dev', 'dev0',",1,0,0.0,419
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'ttl', 'ttl0', 'tos', 'tos0',",1,0,0.0,420
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'local', 'local0', 'proxy',",1,0,0.0,421
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'srcport', '1', '2'],",1,0,0.0,422
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'srcport', '1', '2',",1,0,0.0,423
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'dstport', '4789'],",1,0,0.0,424
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,privileged.set_link_attribute(,0,0,0.0,425
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,privileged.set_link_flags(,0,0,0.0,426
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.call.__enter__().link(""test_cmd"", index=2,",0,0,0.0,427
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"mock.call.__enter__().link_lookup(ifname=""eth0""),",0,0,0.0,428
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"create.assert_called_once_with('dummy0', None, 'dummy')",0,0,0.0,429
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'kind': 'vxlan',",0,0,0.0,430
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"create.assert_called_once_with('eth0.1',",0,0,0.0,431
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"None,",0,0,0.0,432
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vlan',",0,0,0.0,433
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"physical_interface='eth0',",0,0,0.0,434
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,vlan_id='1'),0,0,0.0,435
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"ifname=ifname,",0,0,0.0,436
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"namespace=namespace,",0,0,0.0,437
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"kind=kind,",0,0,0.0,438
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,**kwargs),0,0,0.0,439
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'ifname': 'vxlan0',",0,0,0.0,440
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'namespace': None,",0,0,0.0,441
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_group': 'group0',",0,0,0.0,442
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,ip_mock.assert_has_calls([,0,0,0.0,443
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'physical_interface': 'dev0',",0,0,0.0,444
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_ttl': 'ttl0',",0,0,0.0,445
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_tos': 'tos0',",0,0,0.0,446
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_local': 'local0',",0,0,0.0,447
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_proxy': True,",0,0,0.0,448
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_port_range': ('1', '2')}",0,0,0.0,449
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"self.assertDictEqual(expected_call_params, self.call_params)",0,0,0.0,450
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"'vxlan_port_range': ('1', '2'),",0,0,0.0,451
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,'vxlan_port': '4789'},0,0,0.0,452
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"priv_lib._run_iproute_link(""test_cmd"", ""eth0"", namespace,",0,0,0.0,453
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,"test_param=""test_value"")",0,0,0.0,454
+2e7eb09271912e9db1948b15ab3f8e184d4c324a,self.mgr.get_all_devices()),1,0,0.0,455

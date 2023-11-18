@@ -1,0 +1,94 @@
+commit_id,line,line_level_label,count,line_score,row
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,} catch (IOException e) {,0,4,1.0,1
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,} catch (IOException e) {,1,4,1.0,2
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Copy remaining bytes read in HTTP phase to input buffer used by,0,3,0.75,3
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Only send a close message on an IOException if the client,0,3,0.75,4
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Copy remaining bytes read in HTTP phase to input buffer used by,1,3,0.75,5
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Only send a close message on an IOException if the client,1,3,0.75,6
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// has not yet received a close control message from the server,0,2,0.5,7
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// continuing to send a message after the server sent a close,1,2,0.5,8
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// as the IOException may be in response to the client,1,2,0.5,9
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// has not yet received a close control message from the server,1,2,0.5,10
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// continuing to send a message after the server sent a close,0,2,0.5,11
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// as the IOException may be in response to the client,0,2,0.5,12
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,protected void resumeProcessing() {,0,2,0.5,13
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,} else {,0,2,0.5,14
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// the data left in the response buffer will be consumed,0,2,0.5,15
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Return here so that the response buffer will not be,0,2,0.5,16
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// There is still data available in the response buffer,0,2,0.5,17
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Process the data we have,1,1,0.25,18
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,processSocketRead();,0,1,0.25,19
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,if (checkOpenOnError) {,0,1,0.25,20
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// control message.,0,1,0.25,21
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,if (log.isDebugEnabled()) {,0,1,0.25,22
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,close(e);,0,1,0.25,23
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,while (response.hasRemaining()) {,1,1,0.25,24
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// frame processing,1,1,0.25,25
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,close(exc);,1,1,0.25,26
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,},1,1,0.25,27
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,if (isOpen()) {,1,1,0.25,28
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,try {,1,1,0.25,29
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,processSocketRead();,1,1,0.25,30
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// control message.,1,1,0.25,31
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,close(e);,1,1,0.25,32
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,private void resumeProcessing(boolean checkOpenOnError) {,0,1,0.25,33
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,try {,0,1,0.25,34
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Get some more data,1,1,0.25,35
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"if (!changeReadState(ReadState.PROCESSING, ReadState.WAITING)) {",0,1,0.25,36
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// cleared and there will be no data read from the,0,1,0.25,37
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,private void doResumeProcessing(boolean checkOpenOnError) {,0,1,0.25,38
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,while (true) {,0,1,0.25,39
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,switch (getReadState()) {,0,1,0.25,40
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"if (!changeReadState(ReadState.WAITING, ReadState.PROCESSING)) {",0,1,0.25,41
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,},0,1,0.25,42
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,if (isSuspended()) {,0,1,0.25,43
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"if (!changeReadState(ReadState.SUSPENDING_PROCESS, ReadState.SUSPENDED)) {",0,1,0.25,44
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,while (response.hasRemaining()) {,0,1,0.25,45
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// socket. Thus when the read operation is resumed first,0,1,0.25,46
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// and then a new socket read will be performed,0,1,0.25,47
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// frame processing,0,1,0.25,48
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Process the data we have,0,1,0.25,49
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,// Get some more data,0,1,0.25,50
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,if (isOpen()) {,0,1,0.25,51
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"if (!changeReadState(ReadState.SUSPENDING_WAIT, ReadState.SUSPENDED)) {",0,1,0.25,52
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,close(exc);,0,1,0.25,53
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.position(inputBuffer.limit()).limit(inputBuffer.capacity());,1,0,0.0,54
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,resumeProcessing(checkOpenOnError);,0,0,0.0,55
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,case SUSPENDING_PROCESS:,0,0,0.0,56
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"sm.getString(""wsFrame.illegalReadState"", getReadState()));",0,0,0.0,57
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,@Override,0,0,0.0,58
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,resumeProcessing(true);,0,0,0.0,59
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"log.debug(sm.getString(""wsFrameClient.ioe""), e);",0,0,0.0,60
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.mark();,1,0,0.0,61
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"channel.read(response, null, handler);",1,0,0.0,62
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"int toCopy = Math.min(response.remaining(), inputBuffer.remaining());",1,0,0.0,63
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,int orgLimit = response.limit();,1,0,0.0,64
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,response.limit(response.position() + toCopy);,1,0,0.0,65
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.put(response);,1,0,0.0,66
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,response.limit(orgLimit);,1,0,0.0,67
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.limit(inputBuffer.position()).reset();,1,0,0.0,68
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,processInputBuffer();,1,0,0.0,69
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,response.clear();,1,0,0.0,70
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,doResumeProcessing(false);,0,0,0.0,71
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,case PROCESSING:,0,0,0.0,72
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,processInputBuffer();,0,0,0.0,73
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,doResumeProcessing(true);,0,0,0.0,74
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"sm.getString(""wsFrameServer.illegalReadState"", getReadState()));",0,0,0.0,75
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,case WAITING:,0,0,0.0,76
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,continue;,0,0,0.0,77
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,return;,0,0,0.0,78
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.mark();,0,0,0.0,79
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.position(inputBuffer.limit()).limit(inputBuffer.capacity());,0,0,0.0,80
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"int toCopy = Math.min(response.remaining(), inputBuffer.remaining());",0,0,0.0,81
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,int orgLimit = response.limit();,0,0,0.0,82
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,response.limit(response.position() + toCopy);,0,0,0.0,83
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.put(response);,0,0,0.0,84
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,response.limit(orgLimit);,0,0,0.0,85
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,inputBuffer.limit(inputBuffer.position()).reset();,0,0,0.0,86
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,response.clear();,0,0,0.0,87
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"channel.read(response, null, handler);",0,0,0.0,88
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,changeReadState(ReadState.CLOSING);,0,0,0.0,89
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,case SUSPENDING_WAIT:,0,0,0.0,90
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,default:,0,0,0.0,91
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,throw new IllegalStateException(,0,0,0.0,92
+c03b9118ad4b92be727e59a3e33ad9bb3b9d6bea,"log.debug(sm.getString(""wsFrameClient.ioe""), e);",1,0,0.0,93

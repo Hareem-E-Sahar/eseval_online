@@ -1,0 +1,65 @@
+commit_id,line,line_level_label,count,line_score,row
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,private String namespace = KubernetesHelper.defaultNamespace();,1,5,1.0,1
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,String namespace = null;,0,3,0.6000000000000001,2
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,private String namespace;,0,2,0.4,3
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"@Parameter(property = ""fabric8.environment"")",0,2,0.4,4
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,private String environment;,0,2,0.4,5
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,namespace = getNamespaceForEnvironment(environment);,0,2,0.4,6
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,namespace = environments.get(environment);,0,2,0.4,7
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"String envVarName = environment.toUpperCase() + ""_NAMESPACE"";",0,2,0.4,8
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"throw new IllegalStateException(""Could not find namespace for environment `"" + environment",0,2,0.4,9
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"getLog().info(""Mapping environment `"" + environment + ""` to namespace `"" + namespace + ""`"");",0,2,0.4,10
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"basedir = new File(System.getProperty(""basedir"", "".""));",0,2,0.4,11
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,namespace = Systems.getEnvVarOrSystemProperty(envVarName);,0,2,0.4,12
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,File basedir = project.getBasedir();,0,1,0.2,13
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,MavenProject project = getProject();,0,1,0.2,14
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,basedir = project.getBasedir();,0,1,0.2,15
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,return ProjectConfigs.loadFromFolder(basedir);,0,1,0.2,16
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,return null;,0,1,0.2,17
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,return project;,0,1,0.2,18
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,answer = basedir;,0,1,0.2,19
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,project = project.getParent();,0,1,0.2,20
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,return answer;,0,1,0.2,21
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,MavenProject parent = project.getParent();,0,1,0.2,22
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,project = parent;,0,1,0.2,23
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,File basedir = null;,0,1,0.2,24
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,basedir = rootProject.getBasedir();,0,1,0.2,25
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,File answer = null;,0,1,0.2,26
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,MavenProject rootProject = getRootProject();,0,1,0.2,27
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import java.io.File;,0,1,0.2,28
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,return namespace;,0,1,0.2,29
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import io.fabric8.devops.ProjectConfig;,0,1,0.2,30
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import io.fabric8.utils.Systems;,0,1,0.2,31
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import org.apache.maven.plugin.MojoExecutionException;,0,1,0.2,32
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import org.apache.maven.project.MavenProject;,0,1,0.2,33
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import io.fabric8.devops.ProjectConfigs;,0,1,0.2,34
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,import java.util.LinkedHashMap;,0,1,0.2,35
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,// lets try find an environment variable or system property,0,1,0.2,36
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,protected String getNamespaceForEnvironment(String environment) throws IllegalStateException {,0,1,0.2,37
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,ProjectConfig projectConfig = findProjectConfig();,0,1,0.2,38
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"LinkedHashMap<String, String> environments = projectConfig.getEnvironments();",0,1,0.2,39
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,* otherwise lets look for environment variables or return null,0,1,0.2,40
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (basedir == null) {,0,0,0.0,41
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (project != null) {,0,0,0.0,42
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,public MavenProject getProject() {,0,0,0.0,43
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,* Returns the root project folder,0,0,0.0,44
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (basedir != null) {,0,0,0.0,45
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,protected File getRootProjectFolder() {,0,0,0.0,46
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,while (project != null) {,0,0,0.0,47
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,protected MavenProject getRootProject() {,0,0,0.0,48
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (parent == null) {,0,0,0.0,49
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,protected ProjectConfig findProjectConfig() {,0,0,0.0,50
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (rootProject != null) {,0,0,0.0,51
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,*/,0,0,0.0,52
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,* or returns an empty configuraiton,0,0,0.0,53
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,* Returns the configuration of the project in the <code>fabric8.yml</code> file in the root project or current directory,0,0,0.0,54
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (Strings.isNotBlank(namespace)) {,0,0,0.0,55
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,"+ ""` by looking for a fabric8.yml file and at environment variable $"" + envVarName);",0,0,0.0,56
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (environments != null) {,0,0,0.0,57
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (projectConfig != null) {,0,0,0.0,58
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,* Lets look in the fabric8.yml file if it exists and find the environment name from it,0,0,0.0,59
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,/**,0,0,0.0,60
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,},0,0,0.0,61
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (Strings.isNotBlank(environment)) {,0,0,0.0,62
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,if (Strings.isNullOrBlank(namespace)) {,0,0,0.0,63
+ff16ca8db52a87c49d786f1feb925c7f7660f5b7,break;,0,0,0.0,64

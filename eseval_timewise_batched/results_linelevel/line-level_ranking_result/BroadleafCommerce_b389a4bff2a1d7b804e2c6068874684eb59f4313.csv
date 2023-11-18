@@ -1,0 +1,171 @@
+commit_id,line,line_level_label,count,line_score,row
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"for (Entry<String, EntityForm> entry : entityForm.getDynamicForms().entrySet()) {",0,5,1.0,1
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"for (Entry<String, Field> entry : entityForm.getFields().entrySet()) {",1,5,1.0,2
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"for (Entry<String, EntityForm> entry : entityForm.getDynamicForms().entrySet()) {",0,5,1.0,3
+b389a4bff2a1d7b804e2c6068874684eb59f4313,for (Field field : fieldGroup.getFields()) {,1,5,1.0,4
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public Entity updateEntity(EntityForm entityForm, String[] customCriteria) throws ServiceException {",1,4,0.8,5
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"for (Entry<String, List<String>> error : dynamicFormEntity.getValidationErrors().entrySet()) {",1,4,0.8,6
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"for (Entry<String, List<String>> error : dynamicFormEntity.getValidationErrors().entrySet()) {",1,4,0.8,7
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public Entity addEntity(EntityForm entityForm, String[] customCriteria) throws ServiceException {",1,4,0.8,8
+b389a4bff2a1d7b804e2c6068874684eb59f4313,for (Tab tab : tabs) {,1,3,0.6000000000000001,9
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Property p = new Property();,1,3,0.6000000000000001,10
+b389a4bff2a1d7b804e2c6068874684eb59f4313,for (FieldGroup fieldGroup : tab.getFieldGroups()) {,1,3,0.6000000000000001,11
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public PersistenceResponse updateEntity(EntityForm entityForm, String[] customCriteria) throws ServiceException {",1,3,0.6000000000000001,12
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public PersistenceResponse addEntity(EntityForm entityForm, String[] customCriteria) throws ServiceException {",1,3,0.6000000000000001,13
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"protected void persistDynamicForms(EntityForm entityForm,",1,2,0.4,14
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"* Since the entity form can have multiple dynamic forms defined within it, it should be saved as an all-or-nothing",1,2,0.4,15
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"@Transactional(value = ""blTransactionManager"", rollbackFor = {ServiceException.class})",1,2,0.4,16
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"// Once the entity has been saved, we can utilize its id for the subsequent dynamic forms",1,2,0.4,17
+b389a4bff2a1d7b804e2c6068874684eb59f4313,} catch (ClassNotFoundException e) {,1,2,0.4,18
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"String idProperty = (String) idMetadata.get(""name"");",1,2,0.4,19
+b389a4bff2a1d7b804e2c6068874684eb59f4313,//add all of the validation errors from the dynamic forms to the main entity,1,2,0.4,20
+b389a4bff2a1d7b804e2c6068874684eb59f4313,} catch (ValidationException e) {,0,2,0.4,21
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, List<String>> dynamicFormValidationErrors) throws ServiceException {",1,2,0.4,22
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Entity dynamicFormEntity = update(ppr).getEntity();,1,2,0.4,23
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"//if the dynamic form has failed validation, ensure they are properly added to the main entity validation",1,2,0.4,24
+b389a4bff2a1d7b804e2c6068874684eb59f4313,} else {,0,2,0.4,25
+b389a4bff2a1d7b804e2c6068874684eb59f4313,throws ServiceException {,0,2,0.4,26
+b389a4bff2a1d7b804e2c6068874684eb59f4313,List<Property> properties = getPropertiesFromEntityForm(entityForm);,0,2,0.4,27
+b389a4bff2a1d7b804e2c6068874684eb59f4313,List<Property> properties = new ArrayList<Property>();,1,2,0.4,28
+b389a4bff2a1d7b804e2c6068874684eb59f4313,} catch (ValidationException e) {,0,2,0.4,29
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return fields == null ? null : fields.get(fieldName);,1,2,0.4,30
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"//if the dynamic form has failed validation, ensure they are properly added to the main entity validation",1,2,0.4,31
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Entity returnEntity = add(ppr);,1,2,0.4,32
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Entity dynamicFormEntity = update(ppr);,1,2,0.4,33
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public Entity addEntity(EntityForm entityForm, String[] customCriteria)",0,2,0.4,34
+b389a4bff2a1d7b804e2c6068874684eb59f4313,throws ServiceException {,0,2,0.4,35
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public Entity updateEntity(EntityForm entityForm, String[] customCriteria)",0,2,0.4,36
+b389a4bff2a1d7b804e2c6068874684eb59f4313,} catch (ValidationException e) {,0,2,0.4,37
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"* Since the entity form can have multiple dynamic forms defined within it, it should be saved as an all-or-nothing",1,2,0.4,38
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"@Transactional(value = ""blTransactionManager"", rollbackFor = {ServiceException.class})",1,2,0.4,39
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return fields == null ? null : fields.get(fieldName);,0,2,0.4,40
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"// Once the entity has been saved, we can utilize its id for the subsequent dynamic forms",1,2,0.4,41
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"String idProperty = (String) idMetadata.get(""name"");",1,2,0.4,42
+b389a4bff2a1d7b804e2c6068874684eb59f4313,//add all of the validation errors from the dynamic forms to the main entity,1,2,0.4,43
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Entity returnEntity = update(ppr);,1,2,0.4,44
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"protected void persistDynamicForms(EntityForm entityForm,",1,2,0.4,45
+b389a4bff2a1d7b804e2c6068874684eb59f4313,} catch (ClassNotFoundException e) {,1,2,0.4,46
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, List<String>> dynamicFormValidationErrors) throws ServiceException {",1,2,0.4,47
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* @param entityForm the main form that contains the dynamic forms,1,1,0.2,48
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},0,1,0.2,49
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (fmd.getAddMethodType().equals(AddMethodType.LOOKUP_FOR_UPDATE)) {,0,1,0.2,50
+b389a4bff2a1d7b804e2c6068874684eb59f4313,fmd.getAddMethodType().equals(AddMethodType.LOOKUP_FOR_UPDATE)) {,0,1,0.2,51
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.update(pkg);,1,1,0.2,52
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.add(pkg);,1,1,0.2,53
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (dynamicFormEntity.isValidationFailure()) {,1,1,0.2,54
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"PersistencePackageRequest ppr = getRequestForEntityForm(entry.getValue(), customCriteria);",1,1,0.2,55
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return response;,1,1,0.2,56
+b389a4bff2a1d7b804e2c6068874684eb59f4313,PersistenceResponse response = update(ppr);,1,1,0.2,57
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (pkg.getSectionCrumbs() != null && pkg.getSectionCrumbs().length > 0) {,0,1,0.2,58
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (MapUtils.isNotEmpty(response.getEntity().getValidationErrors())) {,1,1,0.2,59
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, List<String>> dynamicFormValidationErrors = new HashMap<String, List<String>>();",1,1,0.2,60
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, Object> idMetadata = dynamicDaoHelper.getIdMetadata(entityClass, (HibernateEntityManager) em);",1,1,0.2,61
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},1,1,0.2,62
+b389a4bff2a1d7b804e2c6068874684eb59f4313,entityClass = Class.forName(entityForm.getEntityType());,1,1,0.2,63
+b389a4bff2a1d7b804e2c6068874684eb59f4313,try {,1,1,0.2,64
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Class<?> entityClass;,1,1,0.2,65
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (request.isUpdateLookupType()) {,0,1,0.2,66
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.update(pkg);,0,1,0.2,67
+b389a4bff2a1d7b804e2c6068874684eb59f4313,SectionCrumb sc = pkg.getSectionCrumbs()[0];,0,1,0.2,68
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, Field> fields = getFields();",0,1,0.2,69
+b389a4bff2a1d7b804e2c6068874684eb59f4313,PersistenceResponse response = add(ppr);,1,1,0.2,70
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},1,1,0.2,71
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},1,1,0.2,72
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return field;,1,1,0.2,73
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (field.getName().equals(fieldName)) {,1,1,0.2,74
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"LOG.info(""Excluding dynamic field "" + dynamicField.getKey() + "" as there is already an occurrance in"" +",1,1,0.2,75
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return fields.get(fieldName);,0,1,0.2,76
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"LOG.info(""Excluding dynamic field "" + dynamicField.getKey() + "" as there is already an occurrence in"" +",0,1,0.2,77
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (StringUtils.isNotBlank(sc.getSectionIdentifier())) {,0,1,0.2,78
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return null;,1,1,0.2,79
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.remove(pkg);,1,1,0.2,80
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.add(pkg);,1,1,0.2,81
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return new PersistenceResponse().withEntity(e.getEntity());,0,1,0.2,82
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.remove(pkg);,0,1,0.2,83
+b389a4bff2a1d7b804e2c6068874684eb59f4313,try {,0,1,0.2,84
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.add(pkg);,0,1,0.2,85
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (fmd.getAddMethodType().equals(AddMethodType.LOOKUP)) {,1,1,0.2,86
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.update(pkg);,0,1,0.2,87
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},0,1,0.2,88
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.add(pkg);,0,1,0.2,89
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},1,1,0.2,90
+b389a4bff2a1d7b804e2c6068874684eb59f4313,entityClass = Class.forName(entityForm.getEntityType());,1,1,0.2,91
+b389a4bff2a1d7b804e2c6068874684eb59f4313,try {,1,1,0.2,92
+b389a4bff2a1d7b804e2c6068874684eb59f4313,Class<?> entityClass;,1,1,0.2,93
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.update(pkg);,0,1,0.2,94
+b389a4bff2a1d7b804e2c6068874684eb59f4313,},0,1,0.2,95
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return e.getEntity();,0,1,0.2,96
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return update(ppr);,0,1,0.2,97
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, List<String>> dynamicFormValidationErrors = new HashMap<String, List<String>>();",1,1,0.2,98
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return add(ppr);,0,1,0.2,99
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"PersistencePackageRequest subRequest = getRequestForEntityForm(entry.getValue(), customCriteria);",0,1,0.2,100
+b389a4bff2a1d7b804e2c6068874684eb59f4313,customCriteria = new String[] {info.getCriteriaName()};,0,1,0.2,101
+b389a4bff2a1d7b804e2c6068874684eb59f4313,DynamicEntityFormInfo info = entityForm.getDynamicFormInfo(entry.getKey());,0,1,0.2,102
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"// They are typically done in their own custom persistence handlers, which will get triggered",0,1,0.2,103
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"// If the entity form has dynamic forms inside of it, we need to persist those as well.",0,1,0.2,104
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return e.getEntity();,0,1,0.2,105
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"Map<String, Object> idMetadata = dynamicDaoHelper.getIdMetadata(entityClass, (HibernateEntityManager) em);",1,1,0.2,106
+b389a4bff2a1d7b804e2c6068874684eb59f4313,try {,0,1,0.2,107
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (MapUtils.isNotEmpty(returnEntity.getValidationErrors())) {,1,1,0.2,108
+b389a4bff2a1d7b804e2c6068874684eb59f4313,DynamicEntityFormInfo info = entityForm.getDynamicFormInfo(entry.getKey());,0,1,0.2,109
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.add(pkg);,0,1,0.2,110
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return returnEntity;,1,1,0.2,111
+b389a4bff2a1d7b804e2c6068874684eb59f4313,try {,0,1,0.2,112
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return update(ppr);,0,1,0.2,113
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public PersistenceResponse updateEntity(EntityForm entityForm, String[] customCriteria)",0,1,0.2,114
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"PersistencePackageRequest subRequest = getRequestForEntityForm(entry.getValue(), customCriteria);",0,1,0.2,115
+b389a4bff2a1d7b804e2c6068874684eb59f4313,customCriteria = new String[] {info.getCriteriaName()};,0,1,0.2,116
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return add(ppr);,0,1,0.2,117
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"// If the entity form has dynamic forms inside of it, we need to persist those as well.",0,1,0.2,118
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"public PersistenceResponse addEntity(EntityForm entityForm, String[] customCriteria)",0,1,0.2,119
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.update(pkg);,1,1,0.2,120
+b389a4bff2a1d7b804e2c6068874684eb59f4313,return service.add(pkg);,1,1,0.2,121
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (dynamicFormEntity.isValidationFailure()) {,1,1,0.2,122
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"// They are typically done in their own custom persistence handlers, which will get triggered",0,1,0.2,123
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"PersistencePackageRequest ppr = getRequestForEntityForm(entry.getValue(), customCriteria);",1,1,0.2,124
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* @param entityForm the main form that contains the dynamic forms,1,1,0.2,125
+b389a4bff2a1d7b804e2c6068874684eb59f4313,/**,1,0,0.0,126
+b389a4bff2a1d7b804e2c6068874684eb59f4313,entityForm.setId(response.getEntity().findProperty(idProperty).getValue());,1,0,0.0,127
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"throw new ValidationException(response.getEntity(), ""Validation Exception"");",1,0,0.0,128
+b389a4bff2a1d7b804e2c6068874684eb59f4313,response.getEntity().getValidationErrors().putAll(dynamicFormValidationErrors);,1,0,0.0,129
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"persistDynamicForms(entityForm, dynamicFormValidationErrors);",1,0,0.0,130
+b389a4bff2a1d7b804e2c6068874684eb59f4313,*/,1,0,0.0,131
+b389a4bff2a1d7b804e2c6068874684eb59f4313,throw new ServiceException(e);,1,0,0.0,132
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* approach and roll back when any ServiceExceptions have been thrown in any of the saves.,1,0,0.0,133
+b389a4bff2a1d7b804e2c6068874684eb59f4313,*,1,0,0.0,134
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"//If there are any validation exceptions, throw a validation exception to ensure that the entire transaction is rolled back",1,0,0.0,135
+b389a4bff2a1d7b804e2c6068874684eb59f4313,pkg.setSecurityCeilingEntityFullyQualifiedClassname(sc.getSectionIdentifier());,0,0,0.0,136
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* @param dynamicFormValidationErrors object to store validation errors that appear on dynamic forms,1,0,0.0,137
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* @throws ServiceException,1,0,0.0,138
+b389a4bff2a1d7b804e2c6068874684eb59f4313,String[] customCriteria;,1,0,0.0,139
+b389a4bff2a1d7b804e2c6068874684eb59f4313,//errors and keyed properly,1,0,0.0,140
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"dynamicFormValidationErrors.put(info.getPropertyName() + DynamicEntityFormInfo.FIELD_SEPARATOR + error.getKey(), error.getValue());",1,0,0.0,141
+b389a4bff2a1d7b804e2c6068874684eb59f4313,if (fmd.getAddMethodType().equals(AddMethodType.LOOKUP) ||,0,0,0.0,142
+b389a4bff2a1d7b804e2c6068874684eb59f4313,ppr.setUpdateLookupType(true);,0,0,0.0,143
+b389a4bff2a1d7b804e2c6068874684eb59f4313,p.setName(entry.getKey());,1,0,0.0,144
+b389a4bff2a1d7b804e2c6068874684eb59f4313,p.setValue(entry.getValue().getValue());,1,0,0.0,145
+b389a4bff2a1d7b804e2c6068874684eb59f4313,import org.hibernate.ejb.HibernateEntityManager;,1,0,0.0,146
+b389a4bff2a1d7b804e2c6068874684eb59f4313,import org.springframework.transaction.annotation.Transactional;,1,0,0.0,147
+b389a4bff2a1d7b804e2c6068874684eb59f4313,import org.hibernate.ejb.HibernateEntityManager;,1,0,0.0,148
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"ppr.addSubRequest(info.getPropertyName(), subRequest);",0,0,0.0,149
+b389a4bff2a1d7b804e2c6068874684eb59f4313,// based on the criteria specific in the PersistencePackage.,0,0,0.0,150
+b389a4bff2a1d7b804e2c6068874684eb59f4313,// based on the criteria specific in the PersistencePackage.,0,0,0.0,151
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"ppr.addSubRequest(info.getPropertyName(), subRequest);",0,0,0.0,152
+b389a4bff2a1d7b804e2c6068874684eb59f4313,import org.apache.commons.collections.MapUtils;,1,0,0.0,153
+b389a4bff2a1d7b804e2c6068874684eb59f4313,import org.springframework.transaction.annotation.Transactional;,1,0,0.0,154
+b389a4bff2a1d7b804e2c6068874684eb59f4313,/**,1,0,0.0,155
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* approach and roll back when any ServiceExceptions have been thrown in any of the saves.,1,0,0.0,156
+b389a4bff2a1d7b804e2c6068874684eb59f4313,*/,1,0,0.0,157
+b389a4bff2a1d7b804e2c6068874684eb59f4313,throw new ServiceException(e);,1,0,0.0,158
+b389a4bff2a1d7b804e2c6068874684eb59f4313,entityForm.setId(returnEntity.findProperty(idProperty).getValue());,1,0,0.0,159
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"persistDynamicForms(entityForm, dynamicFormValidationErrors);",1,0,0.0,160
+b389a4bff2a1d7b804e2c6068874684eb59f4313,returnEntity.getValidationErrors().putAll(dynamicFormValidationErrors);,1,0,0.0,161
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"throw new ValidationException(returnEntity, ""Validation Exception"");",1,0,0.0,162
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"//If there are any validation exceptions, throw a validation exception to ensure that the entire transaction is rolled back",1,0,0.0,163
+b389a4bff2a1d7b804e2c6068874684eb59f4313,*,1,0,0.0,164
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* @param dynamicFormValidationErrors object to store validation errors that appear on dynamic forms,1,0,0.0,165
+b389a4bff2a1d7b804e2c6068874684eb59f4313,* @throws ServiceException,1,0,0.0,166
+b389a4bff2a1d7b804e2c6068874684eb59f4313,String[] customCriteria;,1,0,0.0,167
+b389a4bff2a1d7b804e2c6068874684eb59f4313,//errors and keyed properly,1,0,0.0,168
+b389a4bff2a1d7b804e2c6068874684eb59f4313,"dynamicFormValidationErrors.put(info.getPropertyName() + DynamicEntityFormInfo.FIELD_SEPARATOR + error.getKey(), error.getValue());",1,0,0.0,169
+b389a4bff2a1d7b804e2c6068874684eb59f4313,properties.add(p);,1,0,0.0,170

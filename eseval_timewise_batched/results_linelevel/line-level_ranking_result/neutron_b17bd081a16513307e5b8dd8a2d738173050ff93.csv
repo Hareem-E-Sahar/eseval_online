@@ -1,0 +1,379 @@
+commit_id,line,line_level_label,count,line_score,row
+b17bd081a16513307e5b8dd8a2d738173050ff93,# Default controller cluster (to be used when nova zone id is unspecified),1,3,1.0,1
+b17bd081a16513307e5b8dd8a2d738173050ff93,"msg = _(""No cluster specified in NVP plugin configuration. """,1,3,1.0,2
+b17bd081a16513307e5b8dd8a2d738173050ff93,first_cluster = cluster,1,2,0.6666666666666666,3
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = self._find_target_cluster(gw_data),1,2,0.6666666666666666,4
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = self._find_target_cluster(fip),1,2,0.6666666666666666,5
+b17bd081a16513307e5b8dd8a2d738173050ff93,# TODO(salvatore-orlando): Usual thing about cluster selection,1,2,0.6666666666666666,6
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = self.default_cluster,1,2,0.6666666666666666,7
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = self._find_target_cluster(router),1,2,0.6666666666666666,8
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = self._find_target_cluster(network),1,2,0.6666666666666666,9
+b17bd081a16513307e5b8dd8a2d738173050ff93,# FIXME(salvatore-orlando): This is not going to work,1,2,0.6666666666666666,10
+b17bd081a16513307e5b8dd8a2d738173050ff93,# FIXME(salvatore-orlando): Failures here might lead NVP,1,2,0.6666666666666666,11
+b17bd081a16513307e5b8dd8a2d738173050ff93,return x,1,2,0.6666666666666666,12
+b17bd081a16513307e5b8dd8a2d738173050ff93,self.novazone_cluster_map[x.zone] = x,1,2,0.6666666666666666,13
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = self._find_target_cluster(port_data),1,2,0.6666666666666666,14
+b17bd081a16513307e5b8dd8a2d738173050ff93,if not self.clusters_opts:,1,2,0.6666666666666666,15
+b17bd081a16513307e5b8dd8a2d738173050ff93,clusters[c_opts['name']] = cluster,1,2,0.6666666666666666,16
+b17bd081a16513307e5b8dd8a2d738173050ff93,if not pairs:,1,2,0.6666666666666666,17
+b17bd081a16513307e5b8dd8a2d738173050ff93,if not clusters:,1,2,0.6666666666666666,18
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = nvp_cluster.NVPCluster(**cluster_opts),0,2,0.6666666666666666,19
+b17bd081a16513307e5b8dd8a2d738173050ff93,"msg = _(""No controller connection specified in cluster """,1,2,0.6666666666666666,20
+b17bd081a16513307e5b8dd8a2d738173050ff93,from quantum.plugins.nicira.nicira_nvp_plugin import NvpApiClient,0,2,0.6666666666666666,21
+b17bd081a16513307e5b8dd8a2d738173050ff93,from quantum.plugins.nicira.nicira_nvp_plugin import NvpApiClient,1,2,0.6666666666666666,22
+b17bd081a16513307e5b8dd8a2d738173050ff93,import quantum.plugins.nicira.nicira_nvp_plugin as nvp_plugin,1,2,0.6666666666666666,23
+b17bd081a16513307e5b8dd8a2d738173050ff93,from quantum.plugins.nicira.common import config  # noqa,0,2,0.6666666666666666,24
+b17bd081a16513307e5b8dd8a2d738173050ff93,# want to support deprecated options in the nvp config file,0,2,0.6666666666666666,25
+b17bd081a16513307e5b8dd8a2d738173050ff93,import quantum.plugins.nicira.nicira_nvp_plugin as nvp_plugin,0,2,0.6666666666666666,26
+b17bd081a16513307e5b8dd8a2d738173050ff93,return cluster,0,2,0.6666666666666666,27
+b17bd081a16513307e5b8dd8a2d738173050ff93,if not cfg.CONF.api_extensions_path:,1,2,0.6666666666666666,28
+b17bd081a16513307e5b8dd8a2d738173050ff93,# Will store the first cluster in case is needed for default,1,2,0.6666666666666666,29
+b17bd081a16513307e5b8dd8a2d738173050ff93,# cluster assignment,1,2,0.6666666666666666,30
+b17bd081a16513307e5b8dd8a2d738173050ff93,# in the same NVP cluster.,1,2,0.6666666666666666,31
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster = nvp_cluster.NVPCluster(c_opts['name']),1,2,0.6666666666666666,32
+b17bd081a16513307e5b8dd8a2d738173050ff93,"pairs = self._get_lswitch_cluster_pairs(id, context.tenant_id)",1,1,0.3333333333333333,33
+b17bd081a16513307e5b8dd8a2d738173050ff93,return self.default_cluster,1,1,0.3333333333333333,34
+b17bd081a16513307e5b8dd8a2d738173050ff93,# TODO(savatore-orlando) Find main_ls too!,1,1,0.3333333333333333,35
+b17bd081a16513307e5b8dd8a2d738173050ff93,networks = [],1,1,0.3333333333333333,36
+b17bd081a16513307e5b8dd8a2d738173050ff93,return networks,1,1,0.3333333333333333,37
+b17bd081a16513307e5b8dd8a2d738173050ff93,target_cluster = self._find_target_cluster(net_data),1,1,0.3333333333333333,38
+b17bd081a16513307e5b8dd8a2d738173050ff93,# and quantum state to diverge,1,1,0.3333333333333333,39
+b17bd081a16513307e5b8dd8a2d738173050ff93,pairs = [],1,1,0.3333333333333333,40
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""""""Figure out the set of lswitches on each cluster that maps to this",1,1,0.3333333333333333,41
+b17bd081a16513307e5b8dd8a2d738173050ff93,network id,1,1,0.3333333333333333,42
+b17bd081a16513307e5b8dd8a2d738173050ff93,if 'nova_id' in resource:,1,1,0.3333333333333333,43
+b17bd081a16513307e5b8dd8a2d738173050ff93,lswitches = [],1,1,0.3333333333333333,44
+b17bd081a16513307e5b8dd8a2d738173050ff93,"results = nvplib.get_lswitches(c, netw_id)",1,1,0.3333333333333333,45
+b17bd081a16513307e5b8dd8a2d738173050ff93,return pairs,1,1,0.3333333333333333,46
+b17bd081a16513307e5b8dd8a2d738173050ff93,# unless we store the nova_id in the database once we'll,1,1,0.3333333333333333,47
+b17bd081a16513307e5b8dd8a2d738173050ff93,return self._novazone_to_cluster(resource['nova_id']),1,1,0.3333333333333333,48
+b17bd081a16513307e5b8dd8a2d738173050ff93,def_l2_gw_uuid = self.default_cluster.default_l2_gw_service_uuid,1,1,0.3333333333333333,49
+b17bd081a16513307e5b8dd8a2d738173050ff93,otherwise return default cluster.,1,1,0.3333333333333333,50
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id,",1,1,0.3333333333333333,51
+b17bd081a16513307e5b8dd8a2d738173050ff93,res = nvplib.get_all_query_pages(,1,1,0.3333333333333333,52
+b17bd081a16513307e5b8dd8a2d738173050ff93,return self._handle_lswitch_selection(,1,1,0.3333333333333333,53
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lport = self._nvp_create_port_helper(cluster,",1,1,0.3333333333333333,54
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_port_id = self._nvp_get_port_id(context, self.default_cluster,",1,1,0.3333333333333333,55
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lr_port = nvplib.find_router_gw_port(context, cluster, router_id)",1,1,0.3333333333333333,56
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, context, router_id, port_data,",1,1,0.3333333333333333,57
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id, ""SourceNatRule"",",1,1,0.3333333333333333,58
+b17bd081a16513307e5b8dd8a2d738173050ff93,"the zone id (nova_id), then select corresponding cluster,",1,1,0.3333333333333333,59
+b17bd081a16513307e5b8dd8a2d738173050ff93,if novazone_id in self.novazone_cluster_map:,1,1,0.3333333333333333,60
+b17bd081a16513307e5b8dd8a2d738173050ff93,return self.novazone_cluster_map[novazone_id],1,1,0.3333333333333333,61
+b17bd081a16513307e5b8dd8a2d738173050ff93,for x in self.clusters:,1,1,0.3333333333333333,62
+b17bd081a16513307e5b8dd8a2d738173050ff93,if x.zone == str(novazone_id):,1,1,0.3333333333333333,63
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.error(_(""Unable to find cluster config entry for nova zone: %s""),",1,1,0.3333333333333333,64
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""""""Return cluster where configuration should be applied",1,1,0.3333333333333333,65
+b17bd081a16513307e5b8dd8a2d738173050ff93,# enable multiple clusters,1,1,0.3333333333333333,66
+b17bd081a16513307e5b8dd8a2d738173050ff93,# find the appropriate cluster!,1,1,0.3333333333333333,67
+b17bd081a16513307e5b8dd8a2d738173050ff93,# Issue a second query for fetching shared networks.,1,1,0.3333333333333333,68
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id, internal_ip,",1,1,0.3333333333333333,69
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, context, router_id, port,",1,1,0.3333333333333333,70
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id, snat_ip, snat_ip,",1,1,0.3333333333333333,71
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id, ""NoSourceNatRule"",",1,1,0.3333333333333333,72
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_router_lport(cluster, router_id, lrouter_port_id)",1,1,0.3333333333333333,73
+b17bd081a16513307e5b8dd8a2d738173050ff93,#TODO(salvatore-orlando): Multiple cluster support,1,1,0.3333333333333333,74
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id, ""DestinationNatRule"",",1,1,0.3333333333333333,75
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, router_id, floating_ip, floating_ip,",1,1,0.3333333333333333,76
+b17bd081a16513307e5b8dd8a2d738173050ff93,"# TODO(salvatore-orlando): Identify the appropriate cluster, instead",1,1,0.3333333333333333,77
+b17bd081a16513307e5b8dd8a2d738173050ff93,device['interface_name'] = cluster.default_interface_name,1,1,0.3333333333333333,78
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_res = nvplib.create_l2_gw_service(cluster, tenant_id,",1,1,0.3333333333333333,79
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_secgroup = nvplib.create_security_profile(self.default_cluster,",1,1,0.3333333333333333,80
+b17bd081a16513307e5b8dd8a2d738173050ff93,"q['id'] = nvplib.create_lqueue(self.default_cluster,",1,1,0.3333333333333333,81
+b17bd081a16513307e5b8dd8a2d738173050ff93,self.fake_cluster = nvp_cluster.NVPCluster(,0,1,0.3333333333333333,82
+b17bd081a16513307e5b8dd8a2d738173050ff93,self.fake_cluster = nvp_cluster.NVPCluster('fake-cluster'),1,1,0.3333333333333333,83
+b17bd081a16513307e5b8dd8a2d738173050ff93,# of always defaulting to self.default_cluster,1,1,0.3333333333333333,84
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_lrouters = nvplib.get_lrouters(self.default_cluster,",1,1,0.3333333333333333,85
+b17bd081a16513307e5b8dd8a2d738173050ff93,# We cannot unfortunately use just a single query because tags,1,1,0.3333333333333333,86
+b17bd081a16513307e5b8dd8a2d738173050ff93,if ports:,1,1,0.3333333333333333,87
+b17bd081a16513307e5b8dd8a2d738173050ff93,# cannot be or-ed,1,1,0.3333333333333333,88
+b17bd081a16513307e5b8dd8a2d738173050ff93,res_shared = nvplib.get_all_query_pages(,1,1,0.3333333333333333,89
+b17bd081a16513307e5b8dd8a2d738173050ff93,lport_query_path = (,1,1,0.3333333333333333,90
+b17bd081a16513307e5b8dd8a2d738173050ff93,"ports = nvplib.get_all_query_pages(lport_query_path, c)",1,1,0.3333333333333333,91
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.warn(_(""Lswitch %s not found in NVP""), lswitch)",1,1,0.3333333333333333,92
+b17bd081a16513307e5b8dd8a2d738173050ff93,ports = None,1,1,0.3333333333333333,93
+b17bd081a16513307e5b8dd8a2d738173050ff93,"if tag[""scope""] == ""q_port_id"":",1,1,0.3333333333333333,94
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lrouter = nvplib.get_lrouter(cluster, id)",1,1,0.3333333333333333,95
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_lports[tag[""tag""]] = port",1,1,0.3333333333333333,96
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_id = self._nvp_get_port_id(context, self.default_cluster,",1,1,0.3333333333333333,97
+b17bd081a16513307e5b8dd8a2d738173050ff93,#TODO(salvatore-orlando): pass the appropriate cluster here,1,1,0.3333333333333333,98
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lrouter = nvplib.create_lrouter(cluster, tenant_id,",1,1,0.3333333333333333,99
+b17bd081a16513307e5b8dd8a2d738173050ff93,# FIXME(salvatore-orlando): We need to,1,1,0.3333333333333333,100
+b17bd081a16513307e5b8dd8a2d738173050ff93,# Extend the fault map,1,1,0.3333333333333333,101
+b17bd081a16513307e5b8dd8a2d738173050ff93,# TODO(salvatore-orlando): Handle default gateways in multiple clusters,1,1,0.3333333333333333,102
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lswitches = nvplib.get_lswitches(cluster, id)",1,1,0.3333333333333333,103
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.clusters, self.default_cluster = parse_clusters_opts(",1,1,0.3333333333333333,104
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, context, router_id, port,",0,1,0.3333333333333333,105
+b17bd081a16513307e5b8dd8a2d738173050ff93,"res = nvplib.get_all_query_pages(lswitch_url_path_1, self.cluster)",0,1,0.3333333333333333,106
+b17bd081a16513307e5b8dd8a2d738173050ff93,# Issue a second query for fetching shared networks.,0,1,0.3333333333333333,107
+b17bd081a16513307e5b8dd8a2d738173050ff93,# We cannot unfortunately use just a single query because tags,0,1,0.3333333333333333,108
+b17bd081a16513307e5b8dd8a2d738173050ff93,# cannot be or-ed,0,1,0.3333333333333333,109
+b17bd081a16513307e5b8dd8a2d738173050ff93,"res_shared = nvplib.get_all_query_pages(lswitch_url_path_2,",0,1,0.3333333333333333,110
+b17bd081a16513307e5b8dd8a2d738173050ff93,lport_query_path = (,0,1,0.3333333333333333,111
+b17bd081a16513307e5b8dd8a2d738173050ff93,"ports = nvplib.get_all_query_pages(lport_query_path,",0,1,0.3333333333333333,112
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.warn(_(""Lswitch %s not found in NVP""), lswitch)",0,1,0.3333333333333333,113
+b17bd081a16513307e5b8dd8a2d738173050ff93,ports = None,0,1,0.3333333333333333,114
+b17bd081a16513307e5b8dd8a2d738173050ff93,if ports:,0,1,0.3333333333333333,115
+b17bd081a16513307e5b8dd8a2d738173050ff93,"if tag[""scope""] == ""q_port_id"":",0,1,0.3333333333333333,116
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_lports[tag[""tag""]] = port",0,1,0.3333333333333333,117
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_id = self._nvp_get_port_id(context, self.cluster,",0,1,0.3333333333333333,118
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lrouter = nvplib.create_lrouter(self.cluster, tenant_id,",0,1,0.3333333333333333,119
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lrouter = nvplib.get_lrouter(self.cluster, id)",0,1,0.3333333333333333,120
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lswitches = nvplib.get_lswitches(self.cluster, id)",0,1,0.3333333333333333,121
+b17bd081a16513307e5b8dd8a2d738173050ff93,lswitch_ids = [ls['uuid'] for ls in,0,1,0.3333333333333333,122
+b17bd081a16513307e5b8dd8a2d738173050ff93,# TODO(salvatore-orlando) find main_ls too!,0,1,0.3333333333333333,123
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster = create_nvp_cluster(cfg.CONF,",0,1,0.3333333333333333,124
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""the NVP Plugin configuration file."")",1,1,0.3333333333333333,125
+b17bd081a16513307e5b8dd8a2d738173050ff93,# ### BEGIN,0,1,0.3333333333333333,126
+b17bd081a16513307e5b8dd8a2d738173050ff93,# ### END,0,1,0.3333333333333333,127
+b17bd081a16513307e5b8dd8a2d738173050ff93,api_providers = [ctrl.split(':') + [True],0,1,0.3333333333333333,128
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster.api_client = NvpApiClient.NVPApiHelper(,0,1,0.3333333333333333,129
+b17bd081a16513307e5b8dd8a2d738173050ff93,self.nvp_opts = cfg.CONF.NVP,0,1,0.3333333333333333,130
+b17bd081a16513307e5b8dd8a2d738173050ff93,def_l2_gw_uuid = self.cluster.default_l2_gw_service_uuid,0,1,0.3333333333333333,131
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id, ""SourceNatRule"",",0,1,0.3333333333333333,132
+b17bd081a16513307e5b8dd8a2d738173050ff93,"return self._handle_lswitch_selection(self.cluster, network,",0,1,0.3333333333333333,133
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lport = self._nvp_create_port_helper(self.cluster,",0,1,0.3333333333333333,134
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_port_id = self._nvp_get_port_id(context, self.cluster,",0,1,0.3333333333333333,135
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lr_port = nvplib.find_router_gw_port(context, self.cluster, router_id)",0,1,0.3333333333333333,136
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, context, router_id, port_data,",0,1,0.3333333333333333,137
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id,",0,1,0.3333333333333333,138
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_lrouters = nvplib.get_lrouters(self.cluster,",0,1,0.3333333333333333,139
+b17bd081a16513307e5b8dd8a2d738173050ff93,# NOTE(armando-migliaccio): remove this block once we no longer,0,1,0.3333333333333333,140
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id, snat_ip, snat_ip,",0,1,0.3333333333333333,141
+b17bd081a16513307e5b8dd8a2d738173050ff93,"api_providers = [(x['ip'], x['port'], True)",1,1,0.3333333333333333,142
+b17bd081a16513307e5b8dd8a2d738173050ff93,"return cfg.CONF.NVP, clusters_options",1,1,0.3333333333333333,143
+b17bd081a16513307e5b8dd8a2d738173050ff93,clusters = {},1,1,0.3333333333333333,144
+b17bd081a16513307e5b8dd8a2d738173050ff93,first_cluster = None,1,1,0.3333333333333333,145
+b17bd081a16513307e5b8dd8a2d738173050ff93,# Password is guaranteed to be the same across all controllers,1,1,0.3333333333333333,146
+b17bd081a16513307e5b8dd8a2d738173050ff93,args = ctrl_conn.split(':'),1,1,0.3333333333333333,147
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""configuration. Please ensure at least a value for """,1,1,0.3333333333333333,148
+b17bd081a16513307e5b8dd8a2d738173050ff93,for x in cluster.controllers],1,1,0.3333333333333333,149
+b17bd081a16513307e5b8dd8a2d738173050ff93,not cfg.CONF.allow_overlapping_ips):,1,1,0.3333333333333333,150
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster.api_client = NvpApiClient.NVPApiHelper(,1,1,0.3333333333333333,151
+b17bd081a16513307e5b8dd8a2d738173050ff93,default_cluster = clusters[default_cluster_name],1,1,0.3333333333333333,152
+b17bd081a16513307e5b8dd8a2d738173050ff93,default_cluster = first_cluster,1,1,0.3333333333333333,153
+b17bd081a16513307e5b8dd8a2d738173050ff93,"return (clusters, default_cluster)",1,1,0.3333333333333333,154
+b17bd081a16513307e5b8dd8a2d738173050ff93,default_cluster = None,1,1,0.3333333333333333,155
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.nvp_opts, self.clusters_opts = parse_config()",1,1,0.3333333333333333,156
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""routed mode will not work with this configuration""))",1,1,0.3333333333333333,157
+b17bd081a16513307e5b8dd8a2d738173050ff93,if default_cluster_name and default_cluster_name in clusters:,1,1,0.3333333333333333,158
+b17bd081a16513307e5b8dd8a2d738173050ff93,"if (cfg.CONF.NVP.metadata_mode == ""access_network"" and",1,1,0.3333333333333333,159
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_res = nvplib.create_l2_gw_service(self.cluster, tenant_id,",0,1,0.3333333333333333,160
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id, ""NoSourceNatRule"",",0,1,0.3333333333333333,161
+b17bd081a16513307e5b8dd8a2d738173050ff93,# If no api_extensions_path is provided set the following,1,1,0.3333333333333333,162
+b17bd081a16513307e5b8dd8a2d738173050ff93,"router_id, lrouter_port_id)",0,1,0.3333333333333333,163
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id, internal_ip,",0,1,0.3333333333333333,164
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id, floating_ip, floating_ip,",0,1,0.3333333333333333,165
+b17bd081a16513307e5b8dd8a2d738173050ff93,device['interface_name'] = self.cluster.default_interface_name,0,1,0.3333333333333333,166
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, router_id, ""DestinationNatRule"",",0,1,0.3333333333333333,167
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_secgroup = nvplib.create_security_profile(self.cluster,",0,1,0.3333333333333333,168
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster_names = config.register_cluster_groups(nvp_conf),1,1,0.3333333333333333,169
+b17bd081a16513307e5b8dd8a2d738173050ff93,"q['id'] = nvplib.create_lqueue(self.cluster,",0,1,0.3333333333333333,170
+b17bd081a16513307e5b8dd8a2d738173050ff93,from quantum.plugins.nicira.common import config,1,1,0.3333333333333333,171
+b17bd081a16513307e5b8dd8a2d738173050ff93,nvp_conf = config.ClusterConfigOptions(cfg.CONF),1,1,0.3333333333333333,172
+b17bd081a16513307e5b8dd8a2d738173050ff93,clusters_options = [],1,1,0.3333333333333333,173
+b17bd081a16513307e5b8dd8a2d738173050ff93,novazone_id),1,0,0.0,174
+b17bd081a16513307e5b8dd8a2d738173050ff93,"{'novazone_id': novazone_id, 'x': x})",1,0,0.0,175
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""cluster: %(x)s""),",1,0,0.0,176
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.debug(_(""Looking for nova zone %(novazone_id)s in """,1,0,0.0,177
+b17bd081a16513307e5b8dd8a2d738173050ff93,"def _novazone_to_cluster(self, novazone_id):",1,0,0.0,178
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.debug(_(""Looking for nova zone: %s""), novazone_id)",1,0,0.0,179
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_router_lport(cluster,",1,0,0.0,180
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster,",1,0,0.0,181
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.default_cluster.default_l3_gw_service_uuid,",1,0,0.0,182
+b17bd081a16513307e5b8dd8a2d738173050ff93,"def _find_target_cluster(self, resource):",1,0,0.0,183
+b17bd081a16513307e5b8dd8a2d738173050ff93,raise nvp_exc.NvpInvalidNovaZone(nova_zone=novazone_id),1,0,0.0,184
+b17bd081a16513307e5b8dd8a2d738173050ff93,"{'tenant_id': tenant_id, 'networks': networks})",1,0,0.0,185
+b17bd081a16513307e5b8dd8a2d738173050ff93,If the resource being configured has a paremeter expressing,1,0,0.0,186
+b17bd081a16513307e5b8dd8a2d738173050ff93,"def get_all_networks(self, tenant_id, **kwargs):",1,0,0.0,187
+b17bd081a16513307e5b8dd8a2d738173050ff93,for c in self.clusters:,1,0,0.0,188
+b17bd081a16513307e5b8dd8a2d738173050ff93,"networks.extend(nvplib.get_all_networks(c, tenant_id, networks))",1,0,0.0,189
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.debug(_(""get_all_networks() completed for tenant """,1,0,0.0,190
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""%(tenant_id)s: %(networks)s""),",1,0,0.0,191
+b17bd081a16513307e5b8dd8a2d738173050ff93,"target_cluster, tenant_id, net_data.get('name'),",1,0,0.0,192
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_binding_type,",1,0,0.0,193
+b17bd081a16513307e5b8dd8a2d738173050ff93,"net_data.get(pnet.PHYSICAL_NETWORK),",1,0,0.0,194
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context, self.default_cluster, port)",1,0,0.0,195
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_port(self.default_cluster,",1,0,0.0,196
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_peer_router_lport(self.default_cluster,",1,0,0.0,197
+b17bd081a16513307e5b8dd8a2d738173050ff93,"api_providers, cluster.user, cluster.password,",1,0,0.0,198
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.plug_interface(cluster, selected_lswitch['uuid'],",1,0,0.0,199
+b17bd081a16513307e5b8dd8a2d738173050ff93,"http_timeout=cluster.http_timeout,",1,0,0.0,200
+b17bd081a16513307e5b8dd8a2d738173050ff93,'cluster': c_opts['name']}),1,0,0.0,201
+b17bd081a16513307e5b8dd8a2d738173050ff93,raise nvp_exc.NvpInvalidConnection(,1,0,0.0,202
+b17bd081a16513307e5b8dd8a2d738173050ff93,conn_params=ctrl_conn),1,0,0.0,203
+b17bd081a16513307e5b8dd8a2d738173050ff93,except TypeError:,1,0,0.0,204
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""'nvp_controller_connection' is specified in the """,1,0,0.0,205
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""[CLUSTER:%s] section"") % c_opts['name']",1,0,0.0,206
+b17bd081a16513307e5b8dd8a2d738173050ff93,LOG.exception(msg),1,0,0.0,207
+b17bd081a16513307e5b8dd8a2d738173050ff93,raise nvp_exc.NvpPluginException(err_msg=msg),1,0,0.0,208
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_networks(cluster, id, switches)",1,0,0.0,209
+b17bd081a16513307e5b8dd8a2d738173050ff93,"request_timeout=cluster.request_timeout,",1,0,0.0,210
+b17bd081a16513307e5b8dd8a2d738173050ff93,"retries=cluster.retries,",1,0,0.0,211
+b17bd081a16513307e5b8dd8a2d738173050ff93,allow_extra_lswitches),1,0,0.0,212
+b17bd081a16513307e5b8dd8a2d738173050ff93,"redirects=cluster.redirects,",1,0,0.0,213
+b17bd081a16513307e5b8dd8a2d738173050ff93,"concurrent_connections=concurrent_connections,",1,0,0.0,214
+b17bd081a16513307e5b8dd8a2d738173050ff93,nvp_gen_timeout=nvp_gen_timeout),1,0,0.0,215
+b17bd081a16513307e5b8dd8a2d738173050ff93,else:,1,0,0.0,216
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""Unable to start. Please ensure at least a """,1,0,0.0,217
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""[CLUSTER:<cluster_name>] section is specified in """,1,0,0.0,218
+b17bd081a16513307e5b8dd8a2d738173050ff93,LOG.error(msg),1,0,0.0,219
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.clusters_opts, self.nvp_opts.concurrent_connections,",1,0,0.0,220
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.nvp_opts.nvp_gen_timeout, self.nvp_opts.default_cluster_name)",1,0,0.0,221
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, network, network_binding, max_ports,",1,0,0.0,222
+b17bd081a16513307e5b8dd8a2d738173050ff93,"for (cluster, switches) in pairs:",1,0,0.0,223
+b17bd081a16513307e5b8dd8a2d738173050ff93,except q_exc.NotFound:,1,0,0.0,224
+b17bd081a16513307e5b8dd8a2d738173050ff93,"def _get_lswitch_cluster_pairs(self, netw_id, tenant_id):",1,0,0.0,225
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_l2_gw_service(self.default_cluster, id)",1,0,0.0,226
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster.default_l3_gw_service_uuid),1,0,0.0,227
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_lrouter(cluster, id,",1,0,0.0,228
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_lrouter(self.default_cluster, id)",1,0,0.0,229
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, '*',",1,0,0.0,230
+b17bd081a16513307e5b8dd8a2d738173050ff93,"cluster, '*', relations=""LogicalPortAttachment"",",1,0,0.0,231
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context, self.default_cluster, router_id)['uuid']",1,0,0.0,232
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_lrouter_port_ips(self.default_cluster,",1,0,0.0,233
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_lrouter_port_ips(cluster,",1,0,0.0,234
+b17bd081a16513307e5b8dd8a2d738173050ff93,"gw_data['name'],",1,0,0.0,235
+b17bd081a16513307e5b8dd8a2d738173050ff93,devices),1,0,0.0,236
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_security_profile(self.default_cluster,",1,0,0.0,237
+b17bd081a16513307e5b8dd8a2d738173050ff93,"{'fake_ext_gw': True},",1,0,0.0,238
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_security_group_rules(self.default_cluster,",1,0,0.0,239
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.default_cluster, sgid, current_rules)",1,0,0.0,240
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_lqueue(self.default_cluster, id)",1,0,0.0,241
+b17bd081a16513307e5b8dd8a2d738173050ff93,"name='fake-cluster', nvp_controllers=['1.1.1.1:999'],",0,0,0.0,242
+b17bd081a16513307e5b8dd8a2d738173050ff93,"default_tz_uuid=_uuid(), nvp_user='foo', nvp_password='bar')",0,0,0.0,243
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.fake_cluster.nvp_user, self.fake_cluster.nvp_password,",0,0,0.0,244
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.fake_cluster.req_timeout, self.fake_cluster.http_timeout,",0,0,0.0,245
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.fake_cluster.add_controller('1.1.1.1', '999', 'foo', 'bar',",1,0,0.0,246
+b17bd081a16513307e5b8dd8a2d738173050ff93,"9, 9, 9, 9, _uuid())",1,0,0.0,247
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.fake_cluster.user, self.fake_cluster.password,",1,0,0.0,248
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""L3GatewayAttachment"",",1,0,0.0,249
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lrouter['uuid'],",1,0,0.0,250
+b17bd081a16513307e5b8dd8a2d738173050ff93,for c in self.clusters.itervalues():,1,0,0.0,251
+b17bd081a16513307e5b8dd8a2d738173050ff93,"(ls['uuid'], ls) for ls in res_shared))",1,0,0.0,252
+b17bd081a16513307e5b8dd8a2d738173050ff93,lswitches.extend([ls['uuid'] for ls in results]),1,0,0.0,253
+b17bd081a16513307e5b8dd8a2d738173050ff93,except q_exc.NetworkNotFound:,1,0,0.0,254
+b17bd081a16513307e5b8dd8a2d738173050ff93,continue,1,0,0.0,255
+b17bd081a16513307e5b8dd8a2d738173050ff93,"pairs.append((c, lswitches))",1,0,0.0,256
+b17bd081a16513307e5b8dd8a2d738173050ff93,raise q_exc.NetworkNotFound(net_id=netw_id),1,0,0.0,257
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.debug(_(""Returning pairs for network: %s""), pairs)",1,0,0.0,258
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lswitch_url_path_1, c)",1,0,0.0,259
+b17bd081a16513307e5b8dd8a2d738173050ff93,nvp_lswitches.update(dict(,1,0,0.0,260
+b17bd081a16513307e5b8dd8a2d738173050ff93,"(ls['uuid'], ls) for ls in res))",1,0,0.0,261
+b17bd081a16513307e5b8dd8a2d738173050ff93,"lswitch_url_path_2, c)",1,0,0.0,262
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""/ws.v1/lswitch/%s/lport?fields=%s&%s%stag_scope=q_port_id""",1,0,0.0,263
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context,",1,0,0.0,264
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""&relations=LogicalPortStatus"" %",1,0,0.0,265
+b17bd081a16513307e5b8dd8a2d738173050ff93,"(lswitch, lport_fields_str, vm_filter, tenant_filter))",1,0,0.0,266
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""cluster %(cluster)s""),",1,0,0.0,267
+b17bd081a16513307e5b8dd8a2d738173050ff93,for port in ports:,1,0,0.0,268
+b17bd081a16513307e5b8dd8a2d738173050ff93,"for tag in port[""tags""]:",1,0,0.0,269
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context, self.default_cluster, ret_port)",1,0,0.0,270
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_port(self.default_cluster,",1,0,0.0,271
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.default_cluster, ret_port['network_id'], nvp_port_id)",1,0,0.0,272
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.default_cluster, quantum_db_port['network_id'],",1,0,0.0,273
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self._create_and_attach_router_port(cluster,",1,0,0.0,274
+b17bd081a16513307e5b8dd8a2d738173050ff93,"{'ctrl': ctrl_conn,",1,0,0.0,275
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_port(self.cluster,",0,0,0.0,276
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""controller %(ctrl)s in """,1,0,0.0,277
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_port(self.cluster,",0,0,0.0,278
+b17bd081a16513307e5b8dd8a2d738173050ff93,self.cluster),0,0,0.0,279
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_lswitches.update(dict((ls['uuid'], ls) for ls in res_shared))",0,0,0.0,280
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""/ws.v1/lswitch/%s/lport?fields=%s&%s%stag_scope=q_port_id""",0,0,0.0,281
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""&relations=LogicalPortStatus"" %",0,0,0.0,282
+b17bd081a16513307e5b8dd8a2d738173050ff93,"(lswitch, lport_fields_str, vm_filter, tenant_filter))",0,0,0.0,283
+b17bd081a16513307e5b8dd8a2d738173050ff93,try:,0,0,0.0,284
+b17bd081a16513307e5b8dd8a2d738173050ff93,except q_exc.NotFound:,0,0,0.0,285
+b17bd081a16513307e5b8dd8a2d738173050ff93,for port in ports:,0,0,0.0,286
+b17bd081a16513307e5b8dd8a2d738173050ff93,"for tag in port[""tags""]:",0,0,0.0,287
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context, self.cluster, ret_port)",0,0,0.0,288
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, ret_port['network_id'], nvp_port_id)",0,0,0.0,289
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_networks(self.cluster, id, lswitch_ids)",0,0,0.0,290
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, quantum_db_port['network_id'],",0,0,0.0,291
+b17bd081a16513307e5b8dd8a2d738173050ff93,self._create_and_attach_router_port(,0,0,0.0,292
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, context, lrouter['uuid'], {'fake_ext_gw': True},",0,0,0.0,293
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""L3GatewayAttachment"", self.cluster.default_l3_gw_service_uuid)",0,0,0.0,294
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_lrouter(self.cluster, id,",0,0,0.0,295
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_lrouter(self.cluster, id)",0,0,0.0,296
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, '*',",0,0,0.0,297
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, '*', relations=""LogicalPortAttachment"",",0,0,0.0,298
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_router_lport(self.cluster,",0,0,0.0,299
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context, self.cluster, router_id)['uuid']",0,0,0.0,300
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_lswitches.update(dict((ls['uuid'], ls) for ls in res))",0,0,0.0,301
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.get_lswitches(self.cluster, id)]",0,0,0.0,302
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.exception(_(""Invalid connection parameters for """,1,0,0.0,303
+b17bd081a16513307e5b8dd8a2d738173050ff93,nvp_gen_timeout=nvp_gen_timeout),0,0,0.0,304
+b17bd081a16513307e5b8dd8a2d738173050ff93,"def create_nvp_cluster(cluster_opts, concurrent_connections,",0,0,0.0,305
+b17bd081a16513307e5b8dd8a2d738173050ff93,nvp_gen_timeout):,0,0,0.0,306
+b17bd081a16513307e5b8dd8a2d738173050ff93,config.register_deprecated(cfg.CONF),0,0,0.0,307
+b17bd081a16513307e5b8dd8a2d738173050ff93,for ctrl in cluster.nvp_controllers],0,0,0.0,308
+b17bd081a16513307e5b8dd8a2d738173050ff93,"api_providers, cluster.nvp_user, cluster.nvp_password,",0,0,0.0,309
+b17bd081a16513307e5b8dd8a2d738173050ff93,"request_timeout=cluster.req_timeout,",0,0,0.0,310
+b17bd081a16513307e5b8dd8a2d738173050ff93,"http_timeout=cluster.http_timeout,",0,0,0.0,311
+b17bd081a16513307e5b8dd8a2d738173050ff93,"retries=cluster.retries,",0,0,0.0,312
+b17bd081a16513307e5b8dd8a2d738173050ff93,"redirects=cluster.redirects,",0,0,0.0,313
+b17bd081a16513307e5b8dd8a2d738173050ff93,"concurrent_connections=concurrent_connections,",0,0,0.0,314
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.nvp_opts.concurrent_connections,",0,0,0.0,315
+b17bd081a16513307e5b8dd8a2d738173050ff93,"context, self.cluster, port)",0,0,0.0,316
+b17bd081a16513307e5b8dd8a2d738173050ff93,self.nvp_opts.nvp_gen_timeout),0,0,0.0,317
+b17bd081a16513307e5b8dd8a2d738173050ff93,"network_binding, max_ports,",0,0,0.0,318
+b17bd081a16513307e5b8dd8a2d738173050ff93,allow_extra_lswitches),0,0,0.0,319
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.plug_interface(self.cluster, selected_lswitch['uuid'],",0,0,0.0,320
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_peer_router_lport(self.cluster,",0,0,0.0,321
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_router_lport(self.cluster,",0,0,0.0,322
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster.default_l3_gw_service_uuid,",0,0,0.0,323
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster,",0,0,0.0,324
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, tenant_id, net_data.get('name'),",0,0,0.0,325
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_binding_type, net_data.get(pnet.PHYSICAL_NETWORK),",0,0,0.0,326
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_lrouter_port_ips(self.cluster,",0,0,0.0,327
+b17bd081a16513307e5b8dd8a2d738173050ff93,"gw_data['name'], devices)",0,0,0.0,328
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_l2_gw_service(self.cluster, id)",0,0,0.0,329
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_gen_timeout, default_cluster_name):",1,0,0.0,330
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf[cluster_name].default_l2_gw_service_uuid,",1,0,0.0,331
+b17bd081a16513307e5b8dd8a2d738173050ff93,'default_interface_name':,1,0,0.0,332
+b17bd081a16513307e5b8dd8a2d738173050ff93,nvp_conf[cluster_name].default_interface_name}),1,0,0.0,333
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.debug(_(""Cluster options:%s""), clusters_options)",1,0,0.0,334
+b17bd081a16513307e5b8dd8a2d738173050ff93,cfg.CONF.set_override(,1,0,0.0,335
+b17bd081a16513307e5b8dd8a2d738173050ff93,"'api_extensions_path',",1,0,0.0,336
+b17bd081a16513307e5b8dd8a2d738173050ff93,'quantum/plugins/nicira/extensions'),1,0,0.0,337
+b17bd081a16513307e5b8dd8a2d738173050ff93,"LOG.warn(_(""Overlapping IPs must be enabled in order to setup """,1,0,0.0,338
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""the metadata access network. Metadata access in """,1,0,0.0,339
+b17bd081a16513307e5b8dd8a2d738173050ff93,"def parse_clusters_opts(clusters_opts, concurrent_connections,",1,0,0.0,340
+b17bd081a16513307e5b8dd8a2d738173050ff93,for c_opts in clusters_opts:,1,0,0.0,341
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_security_profile(self.cluster,",0,0,0.0,342
+b17bd081a16513307e5b8dd8a2d738173050ff93,try:,1,0,0.0,343
+b17bd081a16513307e5b8dd8a2d738173050ff93,for ctrl_conn in c_opts['nvp_controller_connection']:,1,0,0.0,344
+b17bd081a16513307e5b8dd8a2d738173050ff93,"args.extend([c_opts['default_tz_uuid'],",1,0,0.0,345
+b17bd081a16513307e5b8dd8a2d738173050ff93,"c_opts['nvp_cluster_uuid'],",1,0,0.0,346
+b17bd081a16513307e5b8dd8a2d738173050ff93,"c_opts['nova_zone_id'],",1,0,0.0,347
+b17bd081a16513307e5b8dd8a2d738173050ff93,"c_opts['default_l3_gw_service_uuid'],",1,0,0.0,348
+b17bd081a16513307e5b8dd8a2d738173050ff93,"c_opts['default_l2_gw_service_uuid'],",1,0,0.0,349
+b17bd081a16513307e5b8dd8a2d738173050ff93,c_opts['default_interface_name']]),1,0,0.0,350
+b17bd081a16513307e5b8dd8a2d738173050ff93,cluster.add_controller(*args),1,0,0.0,351
+b17bd081a16513307e5b8dd8a2d738173050ff93,except Exception:,1,0,0.0,352
+b17bd081a16513307e5b8dd8a2d738173050ff93,'default_l2_gw_service_uuid':,1,0,0.0,353
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf[cluster_name].default_l3_gw_service_uuid,",1,0,0.0,354
+b17bd081a16513307e5b8dd8a2d738173050ff93,'default_l3_gw_service_uuid':,1,0,0.0,355
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf[cluster_name].nvp_controller_connection,",1,0,0.0,356
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.update_security_group_rules(self.cluster,",0,0,0.0,357
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.cluster, sgid, current_rules)",0,0,0.0,358
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvplib.delete_lqueue(self.cluster, id)",0,0,0.0,359
+b17bd081a16513307e5b8dd8a2d738173050ff93,def parse_config():,1,0,0.0,360
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""""""Parse the supplied plugin configuration.",1,0,0.0,361
+b17bd081a16513307e5b8dd8a2d738173050ff93,:param config: a ConfigParser() object encapsulating nvp.ini.,1,0,0.0,362
+b17bd081a16513307e5b8dd8a2d738173050ff93,":returns: A tuple: (clusters, plugin_config). 'clusters' is a list of",1,0,0.0,363
+b17bd081a16513307e5b8dd8a2d738173050ff93,"NVPCluster objects, 'plugin_config' is a dictionary with plugin",1,0,0.0,364
+b17bd081a16513307e5b8dd8a2d738173050ff93,parameters (currently only 'max_lp_per_bridged_ls').,1,0,0.0,365
+b17bd081a16513307e5b8dd8a2d738173050ff93,"""""""",1,0,0.0,366
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf.log_opt_values(LOG, logging.DEBUG)",1,0,0.0,367
+b17bd081a16513307e5b8dd8a2d738173050ff93,for cluster_name in cluster_names:,1,0,0.0,368
+b17bd081a16513307e5b8dd8a2d738173050ff93,clusters_options.append(,1,0,0.0,369
+b17bd081a16513307e5b8dd8a2d738173050ff93,"{'name': cluster_name,",1,0,0.0,370
+b17bd081a16513307e5b8dd8a2d738173050ff93,'default_tz_uuid':,1,0,0.0,371
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf[cluster_name].default_tz_uuid,",1,0,0.0,372
+b17bd081a16513307e5b8dd8a2d738173050ff93,'nvp_cluster_uuid':,1,0,0.0,373
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf[cluster_name].nvp_cluster_uuid,",1,0,0.0,374
+b17bd081a16513307e5b8dd8a2d738173050ff93,'nova_zone_id':,1,0,0.0,375
+b17bd081a16513307e5b8dd8a2d738173050ff93,"nvp_conf[cluster_name].nova_zone_id,",1,0,0.0,376
+b17bd081a16513307e5b8dd8a2d738173050ff93,'nvp_controller_connection':,1,0,0.0,377
+b17bd081a16513307e5b8dd8a2d738173050ff93,"self.fake_cluster.request_timeout, self.fake_cluster.http_timeout,",1,0,0.0,378

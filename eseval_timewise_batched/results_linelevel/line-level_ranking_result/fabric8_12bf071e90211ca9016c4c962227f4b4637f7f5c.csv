@@ -1,0 +1,14 @@
+commit_id,line,line_level_label,count,line_score,row
+12bf071e90211ca9016c4c962227f4b4637f7f5c,String specificServiceType = getServiceType(serviceName);,0,0,0.0,1
+12bf071e90211ca9016c4c962227f4b4637f7f5c,if (Strings.isNotBlank(specificServiceType)) {,0,0,0.0,2
+12bf071e90211ca9016c4c962227f4b4637f7f5c,serviceSpecBuilder.withType(specificServiceType);,0,0,0.0,3
+12bf071e90211ca9016c4c962227f4b4637f7f5c,private String getServiceType(String serviceName) throws MojoExecutionException {,0,0,0.0,4
+12bf071e90211ca9016c4c962227f4b4637f7f5c,"String serviceSpecificTypeName = buildServicePrefix(serviceName, ""fabric8.service"", ""type"");",0,0,0.0,5
+12bf071e90211ca9016c4c962227f4b4637f7f5c,Properties properties = getProjectAndFabric8Properties(getProject());,0,0,0.0,6
+12bf071e90211ca9016c4c962227f4b4637f7f5c,String serviceSpecificType = properties.getProperty(serviceSpecificTypeName);,0,0,0.0,7
+12bf071e90211ca9016c4c962227f4b4637f7f5c,if (Strings.isNullOrBlank(serviceSpecificType)) {,0,0,0.0,8
+12bf071e90211ca9016c4c962227f4b4637f7f5c,serviceSpecificType = this.serviceType;,0,0,0.0,9
+12bf071e90211ca9016c4c962227f4b4637f7f5c,},0,0,0.0,10
+12bf071e90211ca9016c4c962227f4b4637f7f5c,return serviceSpecificType;,0,0,0.0,11
+12bf071e90211ca9016c4c962227f4b4637f7f5c,if (Strings.isNotBlank(serviceType)) {,1,0,0.0,12
+12bf071e90211ca9016c4c962227f4b4637f7f5c,serviceSpecBuilder.withType(serviceType);,1,0,0.0,13

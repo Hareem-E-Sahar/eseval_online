@@ -1,0 +1,273 @@
+commit_id,line,line_level_label,count,line_score,row
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"col, k, op, ovsdb.py_to_val(v)) for k, v in val.items()]",1,6,1.0,1
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"""""""Convert python value to ovs-vsctl value argument""""""",1,5,0.8333333333333333,2
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# op. Will try to find a better way to default this op to '=',1,4,0.6666666666666666,3
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args.append(""%s%s%s"" % (col, op, ""[]""))",1,4,0.6666666666666666,4
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"""%s%s%s"" % (col, op, "","".join(map(ovsdb.py_to_val, val))))",1,4,0.6666666666666666,5
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args.append(""%s%s%s"" % (col, op, ovsdb.py_to_val(val)))",1,4,0.6666666666666666,6
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,elif pyval == '':,1,3,0.5,7
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"col, op, val = entry[0], '=', entry[1]",1,3,0.5,8
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"col, op, val = entry",1,3,0.5,9
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self._result = uuid.UUID(val) if val else val,1,2,0.3333333333333333,10
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"if isinstance(val, collections.Sequence) and len(val) == 2:",1,2,0.3333333333333333,11
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"elif (isinstance(val, collections.Sequence) and",1,2,0.3333333333333333,12
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args += [""%s:%s%s%s"" % (",1,2,0.3333333333333333,13
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# NOTE: openvswitch can return a single atomic value for fields that,1,2,0.3333333333333333,14
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"for k, v in value.items()]",1,2,0.3333333333333333,15
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return args,1,2,0.3333333333333333,16
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.args = [] if args is None else args,1,2,0.3333333333333333,17
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return '""""'",1,2,0.3333333333333333,18
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return 'true' if pyval is True else 'false',1,2,0.3333333333333333,19
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return pyval,1,2,0.3333333333333333,20
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# NOTE(twilson) If a Command object, return its record_id as a value",0,2,0.3333333333333333,21
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# NOTE(twilson) If a Command object, return its record_id as a value",1,2,0.3333333333333333,22
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args = [table, record]",1,1,0.16666666666666666,23
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'clear', args=[table, record,",1,1,0.16666666666666666,24
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'add', args=args)",1,1,0.16666666666666666,25
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args += [""{}={}"".format(ovsdb.py_to_val(k), ovsdb.py_to_val(v))",1,1,0.16666666666666666,26
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,for value in values:,1,1,0.16666666666666666,27
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args = [table, record, column]",1,1,0.16666666666666666,28
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'set', args=args)",1,1,0.16666666666666666,29
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args += _set_colval_args(*col_values),1,1,0.16666666666666666,30
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'destroy', args=args)",1,1,0.16666666666666666,31
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args = [table],1,1,0.16666666666666666,32
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return DbCreateCommand(self.context, args=args)",1,1,0.16666666666666666,33
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args += _set_colval_args(*col_values.items()),1,1,0.16666666666666666,34
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'br-get-external-id',",1,1,0.16666666666666666,35
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return MultiLineCommand(self.context, 'list-br')",1,1,0.16666666666666666,36
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'iface-to-br', args=[name])",1,1,0.16666666666666666,37
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'port-to-br', args=[name])",1,1,0.16666666666666666,38
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BrExistsCommand(self.context, 'list', args=['Bridge', name])",1,1,0.16666666666666666,39
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# we can get real return types instead of treating everything as string,1,1,0.16666666666666666,40
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# Use the 'list' command as it can return json and 'get' cannot so that,1,1,0.16666666666666666,41
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'del-port', opts, args)",1,1,0.16666666666666666,42
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return DbGetCommand(self.context, 'list', args=[table, record],",1,1,0.16666666666666666,43
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args += records,1,1,0.16666666666666666,44
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,import collections,1,1,0.16666666666666666,45
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"if isinstance(val, abc.Sequence) and len(val) == 2:",0,1,0.16666666666666666,46
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from collections import abc,0,1,0.16666666666666666,47
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if len(val) == 0:,1,1,0.16666666666666666,48
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if len(entry) == 2:,1,1,0.16666666666666666,49
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# TODO(twilson) This is ugly, but set/find args are very similar except for",1,1,0.16666666666666666,50
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return MultiLineCommand(self.context, 'list-ifaces', args=[bridge])",1,1,0.16666666666666666,51
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return MultiLineCommand(self.context, 'list-ports', args=[bridge])",1,1,0.16666666666666666,52
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'add-br', opts, params)",1,1,0.16666666666666666,53
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args = filter(None, [bridge, port])",1,1,0.16666666666666666,54
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'set-fail-mode', args=[bridge, mode])",1,1,0.16666666666666666,55
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return MultiLineCommand(self.context, 'get-controller', args=[bridge])",1,1,0.16666666666666666,56
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'del-controller', args=[bridge])",1,1,0.16666666666666666,57
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'set-controller',",1,1,0.16666666666666666,58
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return DbCommand(self.context, 'find', args=args, columns=columns)",1,1,0.16666666666666666,59
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args = itertools.chain([table],",1,1,0.16666666666666666,60
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return DbCommand(self.context, 'list', opts=opts, args=args,",1,1,0.16666666666666666,61
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'del-br', opts, [name])",1,1,0.16666666666666666,62
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, 'add-port', opts, [bridge, port])",1,1,0.16666666666666666,63
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,'datapath_type=%s' % datapath_type],1,1,0.16666666666666666,64
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"self.opts = [""--timeout=%d"" % self.context.vsctl_timeout,",1,1,0.16666666666666666,65
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"full_args = [""ovs-vsctl""] + self.opts + args",1,1,0.16666666666666666,66
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.commands[i].result = record,1,1,0.16666666666666666,67
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"for i, record in enumerate(res):",1,1,0.16666666666666666,68
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return,1,1,0.16666666666666666,69
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args += cmd.vsctl_args(),1,1,0.16666666666666666,70
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args = [],1,1,0.16666666666666666,71
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args = ['get', 'Manager', connection_uri, '--', 'remove',",1,1,0.16666666666666666,72
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return command,1,1,0.16666666666666666,73
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return OvsdbVsctl(context),1,1,0.16666666666666666,74
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"LOG.error(""Unable to execute %(cmd)s. """,1,1,0.16666666666666666,75
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from neutron.agent.ovsdb import api as ovsdb,1,1,0.16666666666666666,76
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,import uuid,1,1,0.16666666666666666,77
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,import collections,1,1,0.16666666666666666,78
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,79
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return getattr(pyval, ""record_id"", pyval)",1,1,0.16666666666666666,80
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"if isinstance(pyval, bool):",1,1,0.16666666666666666,81
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return iface.api_factory(context),1,1,0.16666666666666666,82
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return getattr(pyval, ""record_id"", pyval)",0,1,0.16666666666666666,83
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return utils.execute(full_args, run_as_root=True,",1,1,0.16666666666666666,84
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return [cmd.result for cmd in self.commands],1,1,0.16666666666666666,85
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return self.result,1,1,0.16666666666666666,86
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"self.record_id = ""@%s"" % uuidutils.generate_uuid()",1,1,0.16666666666666666,87
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return MultiLineCommand(self.context, 'get-manager')",1,1,0.16666666666666666,88
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return BaseCommand(self.context, '--id=@manager', args=args)",1,1,0.16666666666666666,89
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args = ['create', 'Manager', conn_uri, '--', 'add', 'Open_vSwitch',",1,1,0.16666666666666666,90
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"conn_uri = 'target=""%s""' % connection_uri",1,1,0.16666666666666666,91
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return Transaction(self.context, check_error, log_errors, **kwargs)",1,1,0.16666666666666666,92
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return super(BrExistsCommand, self).execute(check_error=False,",1,1,0.16666666666666666,93
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"return itertools.chain(('--',), self.opts, (self.cmd,), self.args)",1,1,0.16666666666666666,94
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"self.opts.append(""--id=%s"" % self.record_id)",1,1,0.16666666666666666,95
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self._result = val is not None,1,1,0.16666666666666666,96
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# DbCommand will return [{'column': value}] and we just want value.,1,1,0.16666666666666666,97
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,obj[heading] = ovsdb.val_to_py(record[pos]),1,1,0.16666666666666666,98
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"for pos, heading in enumerate(headings):",1,1,0.16666666666666666,99
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,for record in data:,1,1,0.16666666666666666,100
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# If check_error=False, run_vsctl can return None",1,1,0.16666666666666666,101
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"opts += ['--columns=%s' % "","".join(columns)]",1,1,0.16666666666666666,102
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,return self._result,1,1,0.16666666666666666,103
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"""""""Command for ovs-vsctl commands that return multiple lines""""""",1,1,0.16666666666666666,104
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class OvsdbVsctl(ovsdb_api.API):,1,0,0.0,105
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def __init__(self, context):",1,0,0.0,106
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"super(OvsdbVsctl, self).__init__()",1,0,0.0,107
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def create_transaction(self, check_error=False, log_errors=True, **kwargs):",1,0,0.0,108
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def add_manager(self, connection_uri):",1,0,0.0,109
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# This will add a new manager without overriding existing ones.,1,0,0.0,110
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def get_manager(self):,1,0,0.0,111
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"'.', 'manager_options', '@manager']",1,0,0.0,112
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,opts = ['--if-exists'] if if_exists else None,1,0,0.0,113
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def remove_manager(self, connection_uri):",1,0,0.0,114
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"'Open_vSwitch', '.', 'manager_options', '@manager']",1,0,0.0,115
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def add_br(self, name, may_exist=True, datapath_type=None):",1,0,0.0,116
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,opts = ['--may-exist'] if may_exist else None,1,0,0.0,117
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,params = [name],1,0,0.0,118
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if datapath_type:,1,0,0.0,119
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"params += ['--', 'set', 'Bridge', name,",1,0,0.0,120
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def del_br(self, name, if_exists=True):",1,0,0.0,121
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def execute(self):,1,0,0.0,122
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,log_errors=False),1,0,0.0,123
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"{'raw_result': raw_result, 'exception': e})",1,0,0.0,124
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class BrExistsCommand(DbCommand):,1,0,0.0,125
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class DbGetCommand(DbCommand):,1,0,0.0,126
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"LOG.error(""Could not parse: %(raw_result)s. """,1,0,0.0,127
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def port_to_br(self, name):",1,0,0.0,128
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,headings = json['headings'],1,0,0.0,129
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,data = json['data'],1,0,0.0,130
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,results = [],1,0,0.0,131
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,obj = {},1,0,0.0,132
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,results.append(obj),1,0,0.0,133
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self._result = results,1,0,0.0,134
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,@DbCommand.result.setter,1,0,0.0,135
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# NOTE(twilson) pre-commit result used for intra-transaction reference,1,0,0.0,136
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def result(self, val):",1,0,0.0,137
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# super()'s never worked for setters http://bugs.python.org/issue14965,1,0,0.0,138
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"DbCommand.result.fset(self, val)",1,0,0.0,139
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if self._result:,1,0,0.0,140
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self._result = list(self._result[0].values())[0],1,0,0.0,141
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class DbCreateCommand(BaseCommand):,1,0,0.0,142
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def __init__(self, context, opts=None, args=None):",1,0,0.0,143
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"super(DbCreateCommand, self).__init__(context, ""create"", opts, args)",1,0,0.0,144
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def br_exists(self, name):",1,0,0.0,145
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if records:,1,0,0.0,146
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def iface_to_br(self, name):",1,0,0.0,147
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,*[_set_colval_args(c) for c in conditions]),1,0,0.0,148
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args=[bridge] + list(controllers)),1,0,0.0,149
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def del_controller(self, bridge):",1,0,0.0,150
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def get_controller(self, bridge):",1,0,0.0,151
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def set_fail_mode(self, bridge, mode):",1,0,0.0,152
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def add_port(self, bridge, port, may_exist=True):",1,0,0.0,153
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def del_port(self, port, bridge=None, if_exists=True):",1,0,0.0,154
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def list_ports(self, bridge):",1,0,0.0,155
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def list_ifaces(self, bridge):",1,0,0.0,156
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_remove(self, table, record, column, *values, **keyvalues):",1,0,0.0,157
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,raise NotImplementedError(),1,0,0.0,158
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_find_rows(self, table, *conditions, **kwargs):",1,0,0.0,159
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_list_rows(self, table, record=None, if_exists=False):",1,0,0.0,160
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def _set_colval_args(*col_values):,1,0,0.0,161
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,for entry in col_values:,1,0,0.0,162
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"if isinstance(val, collections.Mapping):",1,0,0.0,163
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"not isinstance(val, six.string_types)):",1,0,0.0,164
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# log and raise.,1,0,0.0,165
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def set_controller(self, bridge, controllers):",1,0,0.0,166
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"columns = kwargs.pop('columns', None)",1,0,0.0,167
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def list_br(self):,1,0,0.0,168
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_find(self, table, *conditions, **kwargs):",1,0,0.0,169
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def br_get_external_id(self, name, field):",1,0,0.0,170
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"args=[name, field])",1,0,0.0,171
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_create(self, table, **col_values):",1,0,0.0,172
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_destroy(self, table, record):",1,0,0.0,173
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_set(self, table, record, *col_values):",1,0,0.0,174
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_add(self, table, record, column, *values):",1,0,0.0,175
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"if isinstance(value, collections.Mapping):",1,0,0.0,176
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,else:,1,0,0.0,177
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args.append(ovsdb.py_to_val(value)),1,0,0.0,178
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_clear(self, table, record, column):",1,0,0.0,179
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,column]),1,0,0.0,180
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_get(self, table, record, column):",1,0,0.0,181
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# are sets, but only have one value. This makes directly iterating over",1,0,0.0,182
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# the result of a db_get() call unsafe.,1,0,0.0,183
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,columns=[column]),1,0,0.0,184
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def db_list(self, table, records=None, columns=None, if_exists=False):",1,0,0.0,185
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,columns=columns),1,0,0.0,186
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,with excutils.save_and_reraise_exception():,1,0,0.0,187
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.context = context,1,0,0.0,188
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# This shouldn't happen, but if it does and we check_errors",1,0,0.0,189
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def api_factory(context):,1,0,0.0,190
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from oslo_log import log as logging,1,0,0.0,191
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from oslo_serialization import jsonutils,1,0,0.0,192
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from oslo_utils import excutils,1,0,0.0,193
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from oslo_utils import uuidutils,1,0,0.0,194
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from ovsdbapp import api as ovsdb_api,1,0,0.0,195
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,import six,1,0,0.0,196
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from neutron.agent.common import utils,1,0,0.0,197
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,LOG = logging.getLogger(__name__),1,0,0.0,198
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class Transaction(ovsdb_api.Transaction):,1,0,0.0,199
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"except (ValueError, TypeError) as e:",1,0,0.0,200
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def __init__(self, context, check_error=False, log_errors=True, opts=None):",1,0,0.0,201
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.check_error = check_error,1,0,0.0,202
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.log_errors = log_errors,1,0,0.0,203
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"'--oneline', '--format=json']",1,0,0.0,204
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if opts:,1,0,0.0,205
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.opts += opts,1,0,0.0,206
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.commands = [],1,0,0.0,207
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def add(self, command):",1,0,0.0,208
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,import itertools,1,0,0.0,209
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,#    under the License.,1,0,0.0,210
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,#    License for the specific language governing permissions and limitations,1,0,0.0,211
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,0,0.0,212
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from oslo_config import cfg,1,0,0.0,213
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from oslo_utils import importutils,1,0,0.0,214
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,from neutron.conf.agent import ovsdb_api,1,0,0.0,215
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,ovsdb_api.register_ovsdb_api_opts(),1,0,0.0,216
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def from_config(context, iface_name=None):",1,0,0.0,217
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"""""""Return the configured OVSDB API implementation""""""",1,0,0.0,218
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,iface = importutils.import_module(,1,0,0.0,219
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,ovsdb_api.interface_map[iface_name or cfg.CONF.OVS.ovsdb_interface]),1,0,0.0,220
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def py_to_val(pyval):,1,0,0.0,221
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,else:,1,0,0.0,222
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,# Copyright (c) 2014 OpenStack Foundation,1,0,0.0,223
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,#,1,0,0.0,224
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,0,0.0,225
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,#    not use this file except in compliance with the License. You may obtain,1,0,0.0,226
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,#    a copy of the License at,1,0,0.0,227
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,228
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,0,0.0,229
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.commands.append(command),1,0,0.0,230
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def commit(self):,1,0,0.0,231
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,for cmd in self.commands:,1,0,0.0,232
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"with Transaction(self.context, check_error=check_error,",1,0,0.0,233
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,txn.add(self),1,0,0.0,234
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def vsctl_args(self):,1,0,0.0,235
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class MultiLineCommand(BaseCommand):,1,0,0.0,236
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,@property,1,0,0.0,237
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,def result(self):,1,0,0.0,238
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,@result.setter,1,0,0.0,239
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def result(self, raw_result):",1,0,0.0,240
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self._result = raw_result.split(r'\n') if raw_result else [],1,0,0.0,241
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class DbCommand(BaseCommand):,1,0,0.0,242
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def __init__(self, context, cmd, opts=None, args=None, columns=None):",1,0,0.0,243
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if opts is None:,1,0,0.0,244
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,opts = [],1,0,0.0,245
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if columns:,1,0,0.0,246
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"super(DbCommand, self).__init__(context, cmd, opts, args)",1,0,0.0,247
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if not raw_result:,1,0,0.0,248
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self._result = None,1,0,0.0,249
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,json = jsonutils.loads(raw_result),1,0,0.0,250
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,log_errors=log_errors) as txn:,1,0,0.0,251
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def execute(self, check_error=False, log_errors=True):",1,0,0.0,252
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,cmd.result = None,1,0,0.0,253
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.opts = [] if opts is None else opts,1,0,0.0,254
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,res = self.run_vsctl(args),1,0,0.0,255
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if res is None:,1,0,0.0,256
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"res = res.replace(r'\\', '\\').splitlines()",1,0,0.0,257
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def run_vsctl(self, args):",1,0,0.0,258
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,try:,1,0,0.0,259
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"# We log our own errors, so never have utils.execute do it",1,0,0.0,260
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,log_fail_as_error=False).rstrip(),1,0,0.0,261
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,except Exception as e:,1,0,0.0,262
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,with excutils.save_and_reraise_exception() as ctxt:,1,0,0.0,263
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if self.log_errors:,1,0,0.0,264
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"""Exception: %(exception)s"",",1,0,0.0,265
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"{'cmd': full_args, 'exception': e})",1,0,0.0,266
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,if not self.check_error:,1,0,0.0,267
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,ctxt.reraise = False,1,0,0.0,268
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,class BaseCommand(ovsdb_api.Command):,1,0,0.0,269
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,"def __init__(self, context, cmd, opts=None, args=None):",1,0,0.0,270
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,self.cmd = cmd,1,0,0.0,271
+62d37f91872aaaefdee50e5cd1ed87456b8a6532,args.append(,1,0,0.0,272

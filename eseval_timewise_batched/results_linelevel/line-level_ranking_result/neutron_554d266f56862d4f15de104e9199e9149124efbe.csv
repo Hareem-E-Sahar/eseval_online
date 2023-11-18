@@ -1,0 +1,322 @@
+commit_id,line,line_level_label,count,line_score,row
+554d266f56862d4f15de104e9199e9149124efbe,'WHERE id NOT IN (SELECT network_id FROM ',0,6,1.0,1
+554d266f56862d4f15de104e9199e9149124efbe,'WHERE id NOT IN (SELECT network_id FROM ',1,6,1.0,2
+554d266f56862d4f15de104e9199e9149124efbe,'WHERE id NOT IN (SELECT port_id FROM ',1,6,1.0,3
+554d266f56862d4f15de104e9199e9149124efbe,'WHERE id NOT IN (SELECT network_id FROM ',1,6,1.0,4
+554d266f56862d4f15de104e9199e9149124efbe,'WHERE id NOT IN (SELECT port_id FROM ',1,6,1.0,5
+554d266f56862d4f15de104e9199e9149124efbe,# security extension was enabled; create the binding model,0,6,1.0,6
+554d266f56862d4f15de104e9199e9149124efbe,# security extension was enabled; create the binding model,0,6,1.0,7
+554d266f56862d4f15de104e9199e9149124efbe,'WHERE id NOT IN (SELECT port_id FROM ',0,6,1.0,8
+554d266f56862d4f15de104e9199e9149124efbe,# another apply should be a NOOP if the right rule was removed,1,5,0.8333333333333333,9
+554d266f56862d4f15de104e9199e9149124efbe,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.8333333333333333,10
+554d266f56862d4f15de104e9199e9149124efbe,# update the port's port_security_enabled value and test again,1,5,0.8333333333333333,11
+554d266f56862d4f15de104e9199e9149124efbe,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.8333333333333333,12
+554d266f56862d4f15de104e9199e9149124efbe,# quick sanity check to make sure the insert was for the,1,4,0.6666666666666666,13
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, True FROM ports '",1,4,0.6666666666666666,14
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, 1 FROM ports '",1,4,0.6666666666666666,15
+554d266f56862d4f15de104e9199e9149124efbe,"op.execute('INSERT INTO portsecuritybindings (port_id, '",1,4,0.6666666666666666,16
+554d266f56862d4f15de104e9199e9149124efbe,"op.execute('INSERT INTO networksecuritybindings (network_id, '",1,4,0.6666666666666666,17
+554d266f56862d4f15de104e9199e9149124efbe,# we want to ensure the rules went in in the same order we sent,1,4,0.6666666666666666,18
+554d266f56862d4f15de104e9199e9149124efbe,# reverse all of the rules (requires lots of deletes and inserts),1,4,0.6666666666666666,19
+554d266f56862d4f15de104e9199e9149124efbe,# remove a rule and add a new one,1,4,0.6666666666666666,20
+554d266f56862d4f15de104e9199e9149124efbe,# remove one rule and add another to make sure it results in,1,4,0.6666666666666666,21
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, True FROM ports '",1,4,0.6666666666666666,22
+554d266f56862d4f15de104e9199e9149124efbe,"op.execute('INSERT INTO portsecuritybindings (port_id, '",1,4,0.6666666666666666,23
+554d266f56862d4f15de104e9199e9149124efbe,"op.execute('INSERT INTO networksecuritybindings (network_id, '",1,4,0.6666666666666666,24
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, True FROM ports '",0,4,0.6666666666666666,25
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, 1 FROM ports '",0,4,0.6666666666666666,26
+554d266f56862d4f15de104e9199e9149124efbe,"op.execute('INSERT INTO portsecuritybindings (port_id, '",0,4,0.6666666666666666,27
+554d266f56862d4f15de104e9199e9149124efbe,"op.execute('INSERT INTO networksecuritybindings (network_id, '",0,4,0.6666666666666666,28
+554d266f56862d4f15de104e9199e9149124efbe,#    under the License.,1,3,0.5,29
+554d266f56862d4f15de104e9199e9149124efbe,# and the new one was inserted in the correct position,1,3,0.5,30
+554d266f56862d4f15de104e9199e9149124efbe,# all indexes should be in order with no unexpected rules in between,1,3,0.5,31
+554d266f56862d4f15de104e9199e9149124efbe,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,3,0.5,32
+554d266f56862d4f15de104e9199e9149124efbe,#    a copy of the License at,1,3,0.5,33
+554d266f56862d4f15de104e9199e9149124efbe,#    License for the specific language governing permissions and limitations,1,3,0.5,34
+554d266f56862d4f15de104e9199e9149124efbe,# security extension was enabled; return default value,0,3,0.5,35
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, 1 FROM networks '",1,3,0.5,36
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, True FROM networks '",1,3,0.5,37
+554d266f56862d4f15de104e9199e9149124efbe,# NOTE(ihrachys) the resource may have been created before port,0,3,0.5,38
+554d266f56862d4f15de104e9199e9149124efbe,deletes = [r for r in result if r.startswith('-D ')],1,3,0.5,39
+554d266f56862d4f15de104e9199e9149124efbe,# NOTE(ihrachys) the resource may have been created before port,0,3,0.5,40
+554d266f56862d4f15de104e9199e9149124efbe,# security extension was enabled; return default value,0,3,0.5,41
+554d266f56862d4f15de104e9199e9149124efbe,creates = [r for r in result if r.startswith('-I ')],1,3,0.5,42
+554d266f56862d4f15de104e9199e9149124efbe,# modify the src_veth's MAC and test again,1,3,0.5,43
+554d266f56862d4f15de104e9199e9149124efbe,# make sure firewall is in converged state,1,3,0.5,44
+554d266f56862d4f15de104e9199e9149124efbe,#    License for the specific language governing permissions and limitations,1,3,0.5,45
+554d266f56862d4f15de104e9199e9149124efbe,"# after one prepare call, another apply should be a NOOP",1,3,0.5,46
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, 1 FROM networks '",0,3,0.5,47
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, True FROM networks '",0,3,0.5,48
+554d266f56862d4f15de104e9199e9149124efbe,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,3,0.5,49
+554d266f56862d4f15de104e9199e9149124efbe,#    a copy of the License at,1,3,0.5,50
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled) SELECT id, True FROM networks '",1,3,0.5,51
+554d266f56862d4f15de104e9199e9149124efbe,#    under the License.,1,3,0.5,52
+554d266f56862d4f15de104e9199e9149124efbe,# setup firewall on bridge and send packet from src_veth and observe,1,3,0.5,53
+554d266f56862d4f15de104e9199e9149124efbe,# update the sg_group to make ping pass,1,3,0.5,54
+554d266f56862d4f15de104e9199e9149124efbe,# make sure port ranges converge on all protocols with and without,1,3,0.5,55
+554d266f56862d4f15de104e9199e9149124efbe,# add some single-host rules to prevent regression of bug 1502917,1,3,0.5,56
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY not in port_req:,0,2,0.3333333333333333,57
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY not in network_req:,0,2,0.3333333333333333,58
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = network_req[psec.PORTSECURITY],0,2,0.3333333333333333,59
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY in port_req:,1,2,0.3333333333333333,60
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = port_req[psec.PORTSECURITY],1,2,0.3333333333333333,61
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY in network_req:,1,2,0.3333333333333333,62
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = network_req[psec.PORTSECURITY],1,2,0.3333333333333333,63
+554d266f56862d4f15de104e9199e9149124efbe,if db_data.get('port_security') is None:,1,2,0.3333333333333333,64
+554d266f56862d4f15de104e9199e9149124efbe,if db_data.get('port_security') is None:,0,2,0.3333333333333333,65
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY in network_req:,1,2,0.3333333333333333,66
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = port_req[psec.PORTSECURITY],0,2,0.3333333333333333,67
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY not in network_req:,0,2,0.3333333333333333,68
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = network_req[psec.PORTSECURITY],0,2,0.3333333333333333,69
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY in port_req:,1,2,0.3333333333333333,70
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = port_req[psec.PORTSECURITY],1,2,0.3333333333333333,71
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = network_req[psec.PORTSECURITY],1,2,0.3333333333333333,72
+554d266f56862d4f15de104e9199e9149124efbe,if db_data.get('port_security') is None:,1,2,0.3333333333333333,73
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY not in port_req:,0,2,0.3333333333333333,74
+554d266f56862d4f15de104e9199e9149124efbe,port_security_enabled = port_req[psec.PORTSECURITY],0,2,0.3333333333333333,75
+554d266f56862d4f15de104e9199e9149124efbe,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,76
+554d266f56862d4f15de104e9199e9149124efbe,if db_data.get('port_security') is None:,0,2,0.3333333333333333,77
+554d266f56862d4f15de104e9199e9149124efbe,# if sent packet can be observed on dst_veth,1,2,0.3333333333333333,78
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.extensions import portsecurity as psec,1,2,0.3333333333333333,79
+554d266f56862d4f15de104e9199e9149124efbe,context = op.get_context(),0,2,0.3333333333333333,80
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY not in data:,0,2,0.3333333333333333,81
+554d266f56862d4f15de104e9199e9149124efbe,"self._process_network_port_security_create(context, data, result)",0,2,0.3333333333333333,82
+554d266f56862d4f15de104e9199e9149124efbe,if db_data.get('port_security') is None:,0,2,0.3333333333333333,83
+554d266f56862d4f15de104e9199e9149124efbe,if psec.PORTSECURITY in data:,1,2,0.3333333333333333,84
+554d266f56862d4f15de104e9199e9149124efbe,#    not use this file except in compliance with the License. You may obtain,1,2,0.3333333333333333,85
+554d266f56862d4f15de104e9199e9149124efbe,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,86
+554d266f56862d4f15de104e9199e9149124efbe,"self._process_network_port_security_create(context, data, result)",1,2,0.3333333333333333,87
+554d266f56862d4f15de104e9199e9149124efbe,# port ranges (prevents regression of bug 1502924),1,2,0.3333333333333333,88
+554d266f56862d4f15de104e9199e9149124efbe,result = self.firewall.update_port_filter(self.src_port_desc),1,2,0.3333333333333333,89
+554d266f56862d4f15de104e9199e9149124efbe,rules = [,1,2,0.3333333333333333,90
+554d266f56862d4f15de104e9199e9149124efbe,#    not use this file except in compliance with the License. You may obtain,1,2,0.3333333333333333,91
+554d266f56862d4f15de104e9199e9149124efbe,context = op.get_context(),1,2,0.3333333333333333,92
+554d266f56862d4f15de104e9199e9149124efbe,"# revision identifiers, used by Alembic.",1,2,0.3333333333333333,93
+554d266f56862d4f15de104e9199e9149124efbe,"base = {'ethertype': version, 'direction': 'ingress',",1,2,0.3333333333333333,94
+554d266f56862d4f15de104e9199e9149124efbe,revision = '35a0f3365720',1,2,0.3333333333333333,95
+554d266f56862d4f15de104e9199e9149124efbe,direction_ip_prefix = firewall.DIRECTION_IP_PREFIX[,0,1,0.16666666666666666,96
+554d266f56862d4f15de104e9199e9149124efbe,# NOTE(junxie): DB2 stores booleans as 0 and 1.,1,1,0.16666666666666666,97
+554d266f56862d4f15de104e9199e9149124efbe,if not firewall.port_sec_enabled(port):,0,1,0.16666666666666666,98
+554d266f56862d4f15de104e9199e9149124efbe,direction_ip_prefix = DIRECTION_IP_PREFIX[direction],1,1,0.16666666666666666,99
+554d266f56862d4f15de104e9199e9149124efbe,"DIRECTION_IP_PREFIX = {firewall.INGRESS_DIRECTION: 'source_ip_prefix',",1,1,0.16666666666666666,100
+554d266f56862d4f15de104e9199e9149124efbe,if not self._ps_enabled(port):,1,1,0.16666666666666666,101
+554d266f56862d4f15de104e9199e9149124efbe,"def _extend_port_security_dict(self, response_data, db_data):",0,1,0.16666666666666666,102
+554d266f56862d4f15de104e9199e9149124efbe,def upgrade():,1,1,0.16666666666666666,103
+554d266f56862d4f15de104e9199e9149124efbe,if context.bind.dialect.name == 'ibm_db_sa':,1,1,0.16666666666666666,104
+554d266f56862d4f15de104e9199e9149124efbe,if r.startswith(outgoing_rule_pref),1,1,0.16666666666666666,105
+554d266f56862d4f15de104e9199e9149124efbe,from alembic import op,1,1,0.16666666666666666,106
+554d266f56862d4f15de104e9199e9149124efbe,down_revision = '341ee8a4ccb5',1,1,0.16666666666666666,107
+554d266f56862d4f15de104e9199e9149124efbe,"""""""add port-security in ml2",1,1,0.16666666666666666,108
+554d266f56862d4f15de104e9199e9149124efbe,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,109
+554d266f56862d4f15de104e9199e9149124efbe,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,110
+554d266f56862d4f15de104e9199e9149124efbe,#,1,1,0.16666666666666666,111
+554d266f56862d4f15de104e9199e9149124efbe,# Copyright 2015 OpenStack Foundation,1,1,0.16666666666666666,112
+554d266f56862d4f15de104e9199e9149124efbe,indexes = [rules.index('%s -p tcp -m tcp --dport %s -j RETURN' %,1,1,0.16666666666666666,113
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = (,0,1,0.16666666666666666,114
+554d266f56862d4f15de104e9199e9149124efbe,"outgoing_rule_pref = '-A %s-o%s' % (self.firewall.iptables.wrap_name,",1,1,0.16666666666666666,115
+554d266f56862d4f15de104e9199e9149124efbe,"def _assert_sg_out_tcp_rules_appear_in_order(self, sg_rules):",1,1,0.16666666666666666,116
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = psec.DEFAULT_PORT_SECURITY,0,1,0.16666666666666666,117
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = psec.DEFAULT_PORT_SECURITY,0,1,0.16666666666666666,118
+554d266f56862d4f15de104e9199e9149124efbe,"context, port_req, port_res)",0,1,0.16666666666666666,119
+554d266f56862d4f15de104e9199e9149124efbe,data[psec.PORTSECURITY] = psec.DEFAULT_PORT_SECURITY,0,1,0.16666666666666666,120
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules = [,1,1,0.16666666666666666,121
+554d266f56862d4f15de104e9199e9149124efbe,group='ml2'),1,1,0.16666666666666666,122
+554d266f56862d4f15de104e9199e9149124efbe,"self._extension_drivers,",1,1,0.16666666666666666,123
+554d266f56862d4f15de104e9199e9149124efbe,"config.cfg.CONF.set_override('extension_drivers',",1,1,0.16666666666666666,124
+554d266f56862d4f15de104e9199e9149124efbe,group='ml2'),0,1,0.16666666666666666,125
+554d266f56862d4f15de104e9199e9149124efbe,"self._extension_drivers,",0,1,0.16666666666666666,126
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = (,1,1,0.16666666666666666,127
+554d266f56862d4f15de104e9199e9149124efbe,"def _extend_port_security_dict(self, response_data, db_data):",1,1,0.16666666666666666,128
+554d266f56862d4f15de104e9199e9149124efbe,data[psec.PORTSECURITY] = (psec.EXTENDED_ATTRIBUTES_2_0['networks'],1,1,0.16666666666666666,129
+554d266f56862d4f15de104e9199e9149124efbe,raise psec.PortSecurityBindingNotFound(),1,1,0.16666666666666666,130
+554d266f56862d4f15de104e9199e9149124efbe,"context, network_req, network_res)",0,1,0.16666666666666666,131
+554d266f56862d4f15de104e9199e9149124efbe,"context, network_req, network_res)",0,1,0.16666666666666666,132
+554d266f56862d4f15de104e9199e9149124efbe,"context, port_req, port_res)",0,1,0.16666666666666666,133
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = (,0,1,0.16666666666666666,134
+554d266f56862d4f15de104e9199e9149124efbe,"def _extend_port_security_dict(self, response_data, db_data):",0,1,0.16666666666666666,135
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = (,1,1,0.16666666666666666,136
+554d266f56862d4f15de104e9199e9149124efbe,"def _extend_port_security_dict(self, response_data, db_data):",1,1,0.16666666666666666,137
+554d266f56862d4f15de104e9199e9149124efbe,data[psec.PORTSECURITY] = (psec.EXTENDED_ATTRIBUTES_2_0['networks'],1,1,0.16666666666666666,138
+554d266f56862d4f15de104e9199e9149124efbe,data[psec.PORTSECURITY] = psec.DEFAULT_PORT_SECURITY,0,1,0.16666666666666666,139
+554d266f56862d4f15de104e9199e9149124efbe,raise psec.PortSecurityBindingNotFound(),1,1,0.16666666666666666,140
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules = list(reversed(sg_rules)),1,1,0.16666666666666666,141
+554d266f56862d4f15de104e9199e9149124efbe,"def _ps_enabled(self, port):",1,1,0.16666666666666666,142
+554d266f56862d4f15de104e9199e9149124efbe,def test_rule_ordering_correct(self):,1,1,0.16666666666666666,143
+554d266f56862d4f15de104e9199e9149124efbe,#                               <isaku.yamahata at gmail com>,1,1,0.16666666666666666,144
+554d266f56862d4f15de104e9199e9149124efbe,"FAKE_SECURITY_GROUP_ID = ""fake_sg_id""",1,1,0.16666666666666666,145
+554d266f56862d4f15de104e9199e9149124efbe,"MAC_SPOOFED = ""fa:16:3e:9a:2f:48""",1,1,0.16666666666666666,146
+554d266f56862d4f15de104e9199e9149124efbe,"MAC_REAL = ""fa:16:3e:9a:2f:49""",1,1,0.16666666666666666,147
+554d266f56862d4f15de104e9199e9149124efbe,DEVICE_OWNER_COMPUTE = constants.DEVICE_OWNER_COMPUTE_PREFIX + 'fake',1,1,0.16666666666666666,148
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.tests.functional import base,1,1,0.16666666666666666,149
+554d266f56862d4f15de104e9199e9149124efbe,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,150
+554d266f56862d4f15de104e9199e9149124efbe,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,151
+554d266f56862d4f15de104e9199e9149124efbe,#,1,1,0.16666666666666666,152
+554d266f56862d4f15de104e9199e9149124efbe,# All Rights Reserved.,1,1,0.16666666666666666,153
+554d266f56862d4f15de104e9199e9149124efbe,# Copyright 2015 Isaku Yamahata <isaku.yamahata at intel com>,1,1,0.16666666666666666,154
+554d266f56862d4f15de104e9199e9149124efbe,def setUp(self):,1,1,0.16666666666666666,155
+554d266f56862d4f15de104e9199e9149124efbe,# Copyright 2015 Intel Corporation.,1,1,0.16666666666666666,156
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = (,1,1,0.16666666666666666,157
+554d266f56862d4f15de104e9199e9149124efbe,data[psec.PORTSECURITY] = (psec.EXTENDED_ATTRIBUTES_2_0['networks'],0,1,0.16666666666666666,158
+554d266f56862d4f15de104e9199e9149124efbe,if attributes.is_attr_set(attrs.get(addr_pair.ADDRESS_PAIRS)):,1,1,0.16666666666666666,159
+554d266f56862d4f15de104e9199e9149124efbe,if self._check_update_has_allowed_address_pairs(port):,0,1,0.16666666666666666,160
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.tests.unit.plugins.ml2 import test_ml2_plugin,1,1,0.16666666666666666,161
+554d266f56862d4f15de104e9199e9149124efbe,# NOTE(junxie): DB2 stores booleans as 0 and 1.,0,1,0.16666666666666666,162
+554d266f56862d4f15de104e9199e9149124efbe,if context.bind.dialect.name == 'ibm_db_sa':,0,1,0.16666666666666666,163
+554d266f56862d4f15de104e9199e9149124efbe,# correct proto,1,1,0.16666666666666666,164
+554d266f56862d4f15de104e9199e9149124efbe,"def _set_src_mac(self, mac):",1,1,0.16666666666666666,165
+554d266f56862d4f15de104e9199e9149124efbe,response_data[psec.PORTSECURITY] = (,0,1,0.16666666666666666,166
+554d266f56862d4f15de104e9199e9149124efbe,bridge = self.useFixture(net_helpers.LinuxBridgeFixture()).bridge,1,1,0.16666666666666666,167
+554d266f56862d4f15de104e9199e9149124efbe,base['port_range_min'] = 50,1,1,0.16666666666666666,168
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules.pop(0 if version == 'IPv4' else 1),1,1,0.16666666666666666,169
+554d266f56862d4f15de104e9199e9149124efbe,"self.client, self.server = self.useFixture(",1,1,0.16666666666666666,170
+554d266f56862d4f15de104e9199e9149124efbe,# exactly one delete and insert,1,1,0.16666666666666666,171
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules = copy.copy(orig_sg_rules),1,1,0.16666666666666666,172
+554d266f56862d4f15de104e9199e9149124efbe,orig_sg_rules = copy.copy(sg_rules),1,1,0.16666666666666666,173
+554d266f56862d4f15de104e9199e9149124efbe,base['source_port_range_max'] = 60,1,1,0.16666666666666666,174
+554d266f56862d4f15de104e9199e9149124efbe,base['source_port_range_min'] = 60,1,1,0.16666666666666666,175
+554d266f56862d4f15de104e9199e9149124efbe,base['port_range_max'] = 55,1,1,0.16666666666666666,176
+554d266f56862d4f15de104e9199e9149124efbe,base['port_range_max'] = 50,1,1,0.16666666666666666,177
+554d266f56862d4f15de104e9199e9149124efbe,base['source_port_range_max'] = 65,1,1,0.16666666666666666,178
+554d266f56862d4f15de104e9199e9149124efbe,proto = 'ipv6-icmp',1,1,0.16666666666666666,179
+554d266f56862d4f15de104e9199e9149124efbe,"sg_rules = [{'ethertype': 'IPv4', 'direction': 'egress'},",1,1,0.16666666666666666,180
+554d266f56862d4f15de104e9199e9149124efbe,def test_rule_application_converges(self):,1,1,0.16666666666666666,181
+554d266f56862d4f15de104e9199e9149124efbe,self.src_port_desc['port_security_enabled'] = False,1,1,0.16666666666666666,182
+554d266f56862d4f15de104e9199e9149124efbe,"sg_rules = [{'ethertype': 'IPv4', 'direction': 'ingress',",1,1,0.16666666666666666,183
+554d266f56862d4f15de104e9199e9149124efbe,def test_port_sec_within_firewall(self):,1,1,0.16666666666666666,184
+554d266f56862d4f15de104e9199e9149124efbe,"self.src_port_desc = {'admin_state_up': True,",1,1,0.16666666666666666,185
+554d266f56862d4f15de104e9199e9149124efbe,if proto == 'icmp' and version == 'IPv6':,1,1,0.16666666666666666,186
+554d266f56862d4f15de104e9199e9149124efbe,self.firewall = iptables_firewall.IptablesFirewallDriver(,1,1,0.16666666666666666,187
+554d266f56862d4f15de104e9199e9149124efbe,client_br_port_name = net_helpers.VethFixture.get_peer_name(,1,1,0.16666666666666666,188
+554d266f56862d4f15de104e9199e9149124efbe,'portsecuritybindings);'),1,0,0.0,189
+554d266f56862d4f15de104e9199e9149124efbe,Revision ID: 35a0f3365720,1,0,0.0,190
+554d266f56862d4f15de104e9199e9149124efbe,Revises: 341ee8a4ccb5,1,0,0.0,191
+554d266f56862d4f15de104e9199e9149124efbe,Create Date: 2014-09-30 09:41:14.146519,1,0,0.0,192
+554d266f56862d4f15de104e9199e9149124efbe,"""""""",1,0,0.0,193
+554d266f56862d4f15de104e9199e9149124efbe,'networksecuritybindings);'),1,0,0.0,194
+554d266f56862d4f15de104e9199e9149124efbe,direction],0,0,0.0,195
+554d266f56862d4f15de104e9199e9149124efbe,else:,1,0,0.0,196
+554d266f56862d4f15de104e9199e9149124efbe,from oslo_log import log as logging,0,0,0.0,197
+554d266f56862d4f15de104e9199e9149124efbe,from oslo_log import log as logging,1,0,0.0,198
+554d266f56862d4f15de104e9199e9149124efbe,firewall.EGRESS_DIRECTION: 'dest_ip_prefix'},1,0,0.0,199
+554d266f56862d4f15de104e9199e9149124efbe,"return port.get(psec.PORTSECURITY, True)",1,0,0.0,200
+554d266f56862d4f15de104e9199e9149124efbe,for i in sg_rules],1,0,0.0,201
+554d266f56862d4f15de104e9199e9149124efbe,else:,0,0,0.0,202
+554d266f56862d4f15de104e9199e9149124efbe,"self.assertEqual(range(indexes[0], indexes[-1] + 1), indexes)",1,0,0.0,203
+554d266f56862d4f15de104e9199e9149124efbe,"for i in range(50, 61)",1,0,0.0,204
+554d266f56862d4f15de104e9199e9149124efbe,"(outgoing_rule_pref, i['port_range_min']))",1,0,0.0,205
+554d266f56862d4f15de104e9199e9149124efbe,r for r in self.firewall.iptables.get_rules_for_table('filter'),1,0,0.0,206
+554d266f56862d4f15de104e9199e9149124efbe,self.src_port_desc['device'][3:13]),1,0,0.0,207
+554d266f56862d4f15de104e9199e9149124efbe,'port_range_max': 400}),1,0,0.0,208
+554d266f56862d4f15de104e9199e9149124efbe,"'protocol': 'tcp', 'port_range_min': 400,",1,0,0.0,209
+554d266f56862d4f15de104e9199e9149124efbe,"sg_rules.insert(8, {'ethertype': 'IPv4', 'direction': 'egress',",1,0,0.0,210
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules.pop(5),1,0,0.0,211
+554d266f56862d4f15de104e9199e9149124efbe,self._assert_sg_out_tcp_rules_appear_in_order(sg_rules),1,0,0.0,212
+554d266f56862d4f15de104e9199e9149124efbe,],1,0,0.0,213
+554d266f56862d4f15de104e9199e9149124efbe,"'port_range_min': i, 'port_range_max': i}",1,0,0.0,214
+554d266f56862d4f15de104e9199e9149124efbe,"{'ethertype': 'IPv4', 'direction': 'egress', 'protocol': 'tcp',",1,0,0.0,215
+554d266f56862d4f15de104e9199e9149124efbe,"self.assertIn('-p %s' % proto, creates[0])",1,0,0.0,216
+554d266f56862d4f15de104e9199e9149124efbe,"self.assertEqual(1, len(creates))",1,0,0.0,217
+554d266f56862d4f15de104e9199e9149124efbe,"self.assertEqual(1, len(deletes))",1,0,0.0,218
+554d266f56862d4f15de104e9199e9149124efbe,return binding.port_security_enabled,0,0,0.0,219
+554d266f56862d4f15de104e9199e9149124efbe,db_data['port_security'][psec.PORTSECURITY]),0,0,0.0,220
+554d266f56862d4f15de104e9199e9149124efbe,chain_applies.assert_has_calls([,0,0,0.0,221
+554d266f56862d4f15de104e9199e9149124efbe,return psec.DEFAULT_PORT_SECURITY,0,0,0.0,222
+554d266f56862d4f15de104e9199e9149124efbe,[psec.PORTSECURITY]['default']),1,0,0.0,223
+554d266f56862d4f15de104e9199e9149124efbe,"ps_db_common.PortSecurityDbCommon,",1,0,0.0,224
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.db import common_db_mixin,1,0,0.0,225
+554d266f56862d4f15de104e9199e9149124efbe,ps_db_common.PortSecurityDbCommon):,0,0,0.0,226
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.plugins.ml2 import config,1,0,0.0,227
+554d266f56862d4f15de104e9199e9149124efbe,"cfg.CONF.set_override('extension_drivers',",0,0,0.0,228
+554d266f56862d4f15de104e9199e9149124efbe,from oslo_config import cfg,0,0,0.0,229
+554d266f56862d4f15de104e9199e9149124efbe,"mock.call.setup(device2port, {}),",1,0,0.0,230
+554d266f56862d4f15de104e9199e9149124efbe,"chain_applies.assert_has_calls([mock.call.remove({}, {}),",1,0,0.0,231
+554d266f56862d4f15de104e9199e9149124efbe,"mock.call.remove_chain('sg-chain'),",1,0,0.0,232
+554d266f56862d4f15de104e9199e9149124efbe,"chain_applies.assert_has_calls([mock.call.setup(device2port, {}),",0,0,0.0,233
+554d266f56862d4f15de104e9199e9149124efbe,"sg_rules.append({'ethertype': version, 'direction': 'egress',",1,0,0.0,234
+554d266f56862d4f15de104e9199e9149124efbe,db_data['port_security'][psec.PORTSECURITY]),1,0,0.0,235
+554d266f56862d4f15de104e9199e9149124efbe,else:,1,0,0.0,236
+554d266f56862d4f15de104e9199e9149124efbe,psec.EXTENDED_ATTRIBUTES_2_0['networks'],1,0,0.0,237
+554d266f56862d4f15de104e9199e9149124efbe,else:,1,0,0.0,238
+554d266f56862d4f15de104e9199e9149124efbe,self._process_port_port_security_create(,0,0,0.0,239
+554d266f56862d4f15de104e9199e9149124efbe,return binding.port_security_enabled,1,0,0.0,240
+554d266f56862d4f15de104e9199e9149124efbe,self._process_network_port_security_create(,0,0,0.0,241
+554d266f56862d4f15de104e9199e9149124efbe,self._process_port_port_security_create(,0,0,0.0,242
+554d266f56862d4f15de104e9199e9149124efbe,return psec.DEFAULT_PORT_SECURITY,0,0,0.0,243
+554d266f56862d4f15de104e9199e9149124efbe,return binding.port_security_enabled,0,0,0.0,244
+554d266f56862d4f15de104e9199e9149124efbe,db_data['port_security'][psec.PORTSECURITY]),0,0,0.0,245
+554d266f56862d4f15de104e9199e9149124efbe,else:,0,0,0.0,246
+554d266f56862d4f15de104e9199e9149124efbe,db_data['port_security'][psec.PORTSECURITY]),1,0,0.0,247
+554d266f56862d4f15de104e9199e9149124efbe,else:,1,0,0.0,248
+554d266f56862d4f15de104e9199e9149124efbe,psec.EXTENDED_ATTRIBUTES_2_0['networks'],1,0,0.0,249
+554d266f56862d4f15de104e9199e9149124efbe,[psec.PORTSECURITY]['default']),1,0,0.0,250
+554d266f56862d4f15de104e9199e9149124efbe,else:,1,0,0.0,251
+554d266f56862d4f15de104e9199e9149124efbe,return binding.port_security_enabled,1,0,0.0,252
+554d266f56862d4f15de104e9199e9149124efbe,self._process_network_port_security_create(,0,0,0.0,253
+554d266f56862d4f15de104e9199e9149124efbe,'protocol': proto}),1,0,0.0,254
+554d266f56862d4f15de104e9199e9149124efbe,self.firewall.update_security_group_rules(,1,0,0.0,255
+554d266f56862d4f15de104e9199e9149124efbe,"self.FAKE_SECURITY_GROUP_ID, orig_sg_rules)",1,0,0.0,256
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.i18n import _LI,1,0,0.0,257
+554d266f56862d4f15de104e9199e9149124efbe,machine_fixtures.PeerMachines(bridge)).machines,1,0,0.0,258
+554d266f56862d4f15de104e9199e9149124efbe,"super(IptablesFirewallTestCase, self).setUp()",1,0,0.0,259
+554d266f56862d4f15de104e9199e9149124efbe,"cfg.CONF.register_opts(sg_cfg.security_group_opts, 'SECURITYGROUP')",1,0,0.0,260
+554d266f56862d4f15de104e9199e9149124efbe,self.client.port.link.set_up(),1,0,0.0,261
+554d266f56862d4f15de104e9199e9149124efbe,self.client.port.link.set_address(mac),1,0,0.0,262
+554d266f56862d4f15de104e9199e9149124efbe,self.client.port.link.set_down(),1,0,0.0,263
+554d266f56862d4f15de104e9199e9149124efbe,class IptablesFirewallTestCase(base.BaseSudoTestCase):,1,0,0.0,264
+554d266f56862d4f15de104e9199e9149124efbe,from oslo_config import cfg,1,0,0.0,265
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.tests.common import net_helpers,1,0,0.0,266
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.tests.common import machine_fixtures,1,0,0.0,267
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.common import constants,1,0,0.0,268
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.agent import securitygroups_rpc as sg_cfg,1,0,0.0,269
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.agent.linux import iptables_firewall,1,0,0.0,270
+554d266f56862d4f15de104e9199e9149124efbe,import copy,1,0,0.0,271
+554d266f56862d4f15de104e9199e9149124efbe,from neutron._i18n import _LI,0,0,0.0,272
+554d266f56862d4f15de104e9199e9149124efbe,"self.assertEqual([], self.firewall.iptables._apply())",1,0,0.0,273
+554d266f56862d4f15de104e9199e9149124efbe,else:,0,0,0.0,274
+554d266f56862d4f15de104e9199e9149124efbe,psec.EXTENDED_ATTRIBUTES_2_0['networks'],0,0,0.0,275
+554d266f56862d4f15de104e9199e9149124efbe,[psec.PORTSECURITY]['default']),0,0,0.0,276
+554d266f56862d4f15de104e9199e9149124efbe,elif attributes.is_attr_set(attrs.get(ext_sg.SECURITYGROUPS)):,1,0,0.0,277
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.extensions import securitygroup as ext_sg,1,0,0.0,278
+554d266f56862d4f15de104e9199e9149124efbe,elif self._check_update_has_security_groups(port):,0,0,0.0,279
+554d266f56862d4f15de104e9199e9149124efbe,"class PSExtDriverTestCase(test_ml2_plugin.Ml2PluginV2TestCase,",1,0,0.0,280
+554d266f56862d4f15de104e9199e9149124efbe,"class PSExtDriverTestCase(test_plugin.Ml2PluginV2TestCase,",0,0,0.0,281
+554d266f56862d4f15de104e9199e9149124efbe,from neutron.tests.unit.plugins.ml2 import test_plugin,0,0,0.0,282
+554d266f56862d4f15de104e9199e9149124efbe,'portsecuritybindings);'),1,0,0.0,283
+554d266f56862d4f15de104e9199e9149124efbe,'networksecuritybindings);'),1,0,0.0,284
+554d266f56862d4f15de104e9199e9149124efbe,else:,0,0,0.0,285
+554d266f56862d4f15de104e9199e9149124efbe,'portsecuritybindings);'),0,0,0.0,286
+554d266f56862d4f15de104e9199e9149124efbe,'networksecuritybindings);'),0,0,0.0,287
+554d266f56862d4f15de104e9199e9149124efbe,namespace=bridge.namespace),1,0,0.0,288
+554d266f56862d4f15de104e9199e9149124efbe,self._set_src_mac(self.MAC_REAL),1,0,0.0,289
+554d266f56862d4f15de104e9199e9149124efbe,self.client.port.name),1,0,0.0,290
+554d266f56862d4f15de104e9199e9149124efbe,"'device': client_br_port_name,",1,0,0.0,291
+554d266f56862d4f15de104e9199e9149124efbe,"self.FAKE_SECURITY_GROUP_ID, sg_rules)",1,0,0.0,292
+554d266f56862d4f15de104e9199e9149124efbe,'source_ip_prefix': 'fe80::1/128'}),1,0,0.0,293
+554d266f56862d4f15de104e9199e9149124efbe,"sg_rules.append({'ethertype': 'IPv6', 'direction': 'ingress',",1,0,0.0,294
+554d266f56862d4f15de104e9199e9149124efbe,'source_ip_prefix': '77.77.77.77/32'}),1,0,0.0,295
+554d266f56862d4f15de104e9199e9149124efbe,"sg_rules.append({'ethertype': 'IPv4', 'direction': 'ingress',",1,0,0.0,296
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules.append(copy.copy(base)),1,0,0.0,297
+554d266f56862d4f15de104e9199e9149124efbe,'protocol': proto},1,0,0.0,298
+554d266f56862d4f15de104e9199e9149124efbe,"for version in ('IPv4', 'IPv6'):",1,0,0.0,299
+554d266f56862d4f15de104e9199e9149124efbe,"for proto in ('tcp', 'udp', 'icmp'):",1,0,0.0,300
+554d266f56862d4f15de104e9199e9149124efbe,"'source_ip_prefix': '0::0/0', 'protocol': 'ipv6-icmp'}]",1,0,0.0,301
+554d266f56862d4f15de104e9199e9149124efbe,"{'ethertype': 'IPv6', 'direction': 'ingress',",1,0,0.0,302
+554d266f56862d4f15de104e9199e9149124efbe,"{'ethertype': 'IPv4', 'direction': 'ingress',",1,0,0.0,303
+554d266f56862d4f15de104e9199e9149124efbe,"{'ethertype': 'IPv6', 'direction': 'egress'},",1,0,0.0,304
+554d266f56862d4f15de104e9199e9149124efbe,self.firewall.update_port_filter(self.src_port_desc),1,0,0.0,305
+554d266f56862d4f15de104e9199e9149124efbe,self.client.assert_no_ping(self.server.ip),1,0,0.0,306
+554d266f56862d4f15de104e9199e9149124efbe,self._set_src_mac(self.MAC_SPOOFED),1,0,0.0,307
+554d266f56862d4f15de104e9199e9149124efbe,self.client.assert_ping(self.server.ip),1,0,0.0,308
+554d266f56862d4f15de104e9199e9149124efbe,self.firewall.prepare_port_filter(self.src_port_desc),1,0,0.0,309
+554d266f56862d4f15de104e9199e9149124efbe,sg_rules),1,0,0.0,310
+554d266f56862d4f15de104e9199e9149124efbe,"self.FAKE_SECURITY_GROUP_ID,",1,0,0.0,311
+554d266f56862d4f15de104e9199e9149124efbe,with self.firewall.defer_apply():,1,0,0.0,312
+554d266f56862d4f15de104e9199e9149124efbe,"{'ethertype': 'IPv4', 'direction': 'egress'}]",1,0,0.0,313
+554d266f56862d4f15de104e9199e9149124efbe,"'source_ip_prefix': '0.0.0.0/0', 'protocol': 'icmp'},",1,0,0.0,314
+554d266f56862d4f15de104e9199e9149124efbe,'status': 'ACTIVE'},1,0,0.0,315
+554d266f56862d4f15de104e9199e9149124efbe,"'security_groups': [self.FAKE_SECURITY_GROUP_ID],",1,0,0.0,316
+554d266f56862d4f15de104e9199e9149124efbe,"'port_security_enabled': True,",1,0,0.0,317
+554d266f56862d4f15de104e9199e9149124efbe,"'mac_address': self.MAC_REAL,",1,0,0.0,318
+554d266f56862d4f15de104e9199e9149124efbe,"'fixed_ips': [self.client.ip],",1,0,0.0,319
+554d266f56862d4f15de104e9199e9149124efbe,"'device_owner': DEVICE_OWNER_COMPUTE,",1,0,0.0,320
+554d266f56862d4f15de104e9199e9149124efbe,common_db_mixin.CommonDbMixin):,1,0,0.0,321

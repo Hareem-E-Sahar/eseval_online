@@ -1,0 +1,32 @@
+commit_id,line,line_level_label,count,line_score,row
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,if (key instanceof CacheKey) {,1,2,1.0,1
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,"if (key.getClass().getName().equals(""org.hibernate.cache.internal.CacheKeyImplementation"")) {",0,2,1.0,2
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,key = keyPieces[1];,0,2,1.0,3
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,key = ((CacheKey) key).getKey();,1,2,1.0,4
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,"String[] keyPieces = key.toString().split(""#"");",0,1,0.5,5
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//key = ((CacheKey) key).getKey();,1,1,0.5,6
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//cacheName = ((CacheKey) key).getEntityOrRoleName();,1,1,0.5,7
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//if (key instanceof CacheKey) {,1,1,0.5,8
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.event.CacheEventListener;,1,1,0.5,9
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.Element;,1,1,0.5,10
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.Ehcache;,1,1,0.5,11
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.CacheException;,1,1,0.5,12
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,},0,1,0.5,13
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,cacheName = keyPieces[0];,0,1,0.5,14
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.event.CacheEventListener;,0,1,0.5,15
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import org.hibernate.cache.spi.CacheKey;,1,1,0.5,16
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//if (key instanceof CacheKey) {,0,1,0.5,17
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.Element;,0,1,0.5,18
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//key = ((CacheKey) key).getKey();,0,1,0.5,19
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//cacheName = ((CacheKey) key).getEntityOrRoleName();,0,1,0.5,20
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,cacheName = ((CacheKey) key).getEntityOrRoleName();,1,1,0.5,21
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,},1,1,0.5,22
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.CacheException;,0,1,0.5,23
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,import net.sf.ehcache.Ehcache;,0,1,0.5,24
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//},0,0,0.0,25
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//TODO 3064 what is this an instance of now?,0,0,0.0,26
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,@Override,0,0,0.0,27
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,// Since CacheKeyImplementation is a protected Class we can't cast it nor can we access the entityOrRoleName property,0,0,0.0,28
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,"// therefore, to match how this worked in pre Hibernate 5, we split the toString since it's comprised of the fields we need",0,0,0.0,29
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//},1,0,0.0,30
+b9113cc952405fc38bffc1a680d1ca93f4e2079c,//TODO 3064 what is this an instance of now?,1,0,0.0,31

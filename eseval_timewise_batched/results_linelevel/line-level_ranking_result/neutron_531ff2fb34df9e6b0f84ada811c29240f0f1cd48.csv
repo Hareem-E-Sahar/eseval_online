@@ -1,0 +1,378 @@
+commit_id,line,line_level_label,count,line_score,row
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m physdev --physdev-out tapfake_dev ',0,4,1.0,1
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m physdev --physdev-out tapfake_dev ',1,4,1.0,2
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m physdev --physdev-in tapfake_dev ',1,4,1.0,3
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-m state --state INVALID -j DROP'),",1,4,1.0,4
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m physdev --physdev-in tapfake_dev ',0,4,1.0,5
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state INVALID -j DROP'),",1,3,0.75,6
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m mac --mac-source ff:ff:ff:ff:ff:ff -j RETURN'),",1,3,0.75,7
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state INVALID -j DROP'),",1,3,0.75,8
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state RELATED,ESTABLISHED -j RETURN'),",1,3,0.75,9
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-m state --state INVALID -j DROP',",0,3,0.75,10
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-m state --state INVALID -j DROP'),",1,3,0.75,11
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state INVALID -j DROP'),",0,3,0.75,12
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m mac --mac-source ff:ff:ff:ff -j RETURN'),",1,3,0.75,13
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m mac --mac-source ff:ff:ff:ff -s 10.0.0.2 -j RETURN'),",1,3,0.75,14
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m mac --mac-source ff:ff:ff:ff -s 10.0.0.1 -j RETURN'),",1,3,0.75,15
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m mac --mac-source ff:ff:ff:ff:ff:ff -j RETURN'),",0,3,0.75,16
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s 10.0.0.1 -j RETURN'),",1,2,0.5,17
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-p tcp -m tcp -j RETURN', comment=None)",0,2,0.5,18
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-s %s -p icmp -j RETURN' % prefix,",0,2,0.5,19
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-p udp -m udp -j RETURN', comment=None)",0,2,0.5,20
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-p icmpv6 -j RETURN', comment=None)",0,2,0.5,21
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-s %s -p icmpv6 -j RETURN' % prefix,",0,2,0.5,22
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state INVALID -j DROP', comment=None",0,2,0.5,23
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m mac --mac-source ff:ff:ff:ff:ff:ff -j RETURN',",0,2,0.5,24
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sg-fallback', '-j DROP'),",1,2,0.5,25
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN'),",1,2,0.5,26
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sfake_dev', '-j DROP'),",1,2,0.5,27
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp --sport 68 --dport 67 -j RETURN'),",1,2,0.5,28
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-s %s -p icmp -j RETURN' % prefix)",1,2,0.5,29
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-s %s -p icmpv6 -j RETURN' % prefix)",1,2,0.5,30
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p icmpv6 -j RETURN'),",1,2,0.5,31
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state RELATED,ESTABLISHED -j RETURN')]",1,2,0.5,32
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev', '-j RETURN'),",1,2,0.5,33
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state INVALID -j DROP', comment=None),",0,2,0.5,34
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j RETURN'),",1,2,0.5,35
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev', '-s %s -j RETURN' % prefix, comment=None)",0,2,0.5,36
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp --sport 67 --dport 68 -j DROP'),",1,2,0.5,37
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state RELATED,ESTABLISHED -j RETURN',",0,2,0.5,38
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sfake_dev', '-j DROP'),",0,2,0.5,39
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state INVALID -j DROP',",0,2,0.5,40
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'sfake_dev', '-m mac --mac-source ff:ff:ff:ff:ff:ff '",0,2,0.5,41
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m mac --mac-source ff:ff:ff:ff:ff:ff -s 10.0.0.1 ',0,2,0.5,42
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN'),",0,2,0.5,43
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m mac --mac-source ff:ff:ff:ff:ff:ff -s 10.0.0.2 ',0,2,0.5,44
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'sfake_dev', '-m mac --mac-source ff:ff:ff:ff '",1,2,0.5,45
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m mac --mac-source ff:ff:ff:ff -s %s -j RETURN',1,2,0.5,46
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m mac --mac-source ff:ff:ff:ff -s 10.0.0.1 ',1,2,0.5,47
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sg-fallback', '-j DROP'),",0,2,0.5,48
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-m mac --mac-source ff:ff:ff:ff:ff:ff -s %s -j RETURN',0,2,0.5,49
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev', '-j RETURN'),",0,2,0.5,50
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j RETURN'),",0,2,0.5,51
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('sg-fallback', '-j DROP'),",1,2,0.5,52
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('sfake_dev', '-j DROP'),",1,2,0.5,53
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ifake_dev', '-j RETURN'),",1,2,0.5,54
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ofake_dev', '-j RETURN'),",1,2,0.5,55
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"iptables_rules += [comment_rule('-m state --state ' 'INVALID -j DROP',",0,2,0.5,56
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,iptables_rules += ['-m state --state ' 'INVALID -j DROP'],1,2,0.5,57
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-m state --state RELATED,ESTABLISHED -j RETURN',",0,2,0.5,58
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p icmpv6 --icmpv6-type 8 -j RETURN' % prefix,",0,1,0.25,59
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p icmpv6 --icmpv6-type 8/0 -j RETURN' % prefix,",0,1,0.25,60
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p icmpv6 --icmpv6-type echo-request -j RETURN' % prefix,",0,1,0.25,61
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p icmp --icmp-type 8/0 -j RETURN' % prefix,",0,1,0.25,62
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-s %s -p icmpv6 -j RETURN' % prefix,",0,1,0.25,63
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-p icmpv6 -j RETURN', comment=None)",0,1,0.25,64
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN', comment=None)]",0,1,0.25,65
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p icmp --icmp-type echo-request -j RETURN' % prefix,",0,1,0.25,66
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p icmpv6 -j RETURN',",0,1,0.25,67
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'--physdev-is-bridged -j $sg-chain',",0,1,0.25,68
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j DROP',",0,1,0.25,69
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls.append(mock.call.add_rule('ofake_dev', '-j $sfake_dev',",0,1,0.25,70
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp --sport 547 --dport 546 -j DROP',",0,1,0.25,71
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sg-fallback',",0,1,0.25,72
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'--physdev-is-bridged -j $ifake_dev',",0,1,0.25,73
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev', '-j RETURN',",0,1,0.25,74
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN',",0,1,0.25,75
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev', '-j $sg-fallback',",0,1,0.25,76
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p icmp -j RETURN',",0,1,0.25,77
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p icmp --icmp-type 8 -j RETURN' % prefix,",0,1,0.25,78
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p icmp -j RETURN',",0,1,0.25,79
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-j RETURN', comment=None)",0,1,0.25,80
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp -m multiport --dports 10:100 -j RETURN',",0,1,0.25,81
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ifake_dev'),",1,1,0.25,82
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s 10.0.0.1 -j RETURN',",0,1,0.25,83
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'sfake_dev', '-j DROP',",0,1,0.25,84
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp --sport 68 --dport 67 -j RETURN',",0,1,0.25,85
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sfake_dev',",0,1,0.25,86
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp --sport 67 --dport 68 -j DROP',",0,1,0.25,87
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev',",0,1,0.25,88
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $sg-fallback',",0,1,0.25,89
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-j RETURN',",0,1,0.25,90
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-s %s -j RETURN' % prefix, comment=None)",0,1,0.25,91
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-p tcp -m tcp -j RETURN', comment=None)",0,1,0.25,92
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p tcp -m tcp -j RETURN' % prefix,",0,1,0.25,93
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-s %s -p icmp -j RETURN' % prefix,",0,1,0.25,94
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p tcp -m tcp --dport 10 -j RETURN',",0,1,0.25,95
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p tcp -m tcp -m multiport --dports 10:100 -j RETURN',",0,1,0.25,96
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN' % prefix, comment=None)",0,1,0.25,97
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-p udp -m udp -j RETURN', comment=None)",0,1,0.25,98
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-s %s -p udp -m udp -j RETURN' % prefix,",0,1,0.25,99
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-p udp -m udp --dport 10 -j RETURN',",0,1,0.25,100
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $sg-chain'),",1,1,0.25,101
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p icmpv6 -j RETURN')",1,1,0.25,102
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev', '-j $sg-fallback'),",1,1,0.25,103
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p icmp --icmp-type echo-request -j RETURN' % prefix),1,1,0.25,104
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p udp -m udp -j RETURN')",1,1,0.25,105
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p icmpv6 -j RETURN')",1,1,0.25,106
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-s %s -p icmpv6 -j RETURN' % prefix)",1,1,0.25,107
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $sg-fallback', comment=None),",0,1,0.25,108
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p icmpv6 --icmpv6-type 8 -j RETURN' % prefix),1,1,0.25,109
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p icmpv6 --icmpv6-type echo-request -j RETURN' % prefix),1,1,0.25,110
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p icmpv6 --icmpv6-type 8/0 -j RETURN' % prefix),1,1,0.25,111
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp --sport 68 --dport 67 -j RETURN')],1,1,0.25,112
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-j RETURN')],1,1,0.25,113
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ifake_dev', '-j $sg-fallback'),",1,1,0.25,114
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sfake_dev', '-j DROP')]",1,1,0.25,115
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls.append(mock.call.add_rule('ofake_dev', '-j $sfake_dev'))",1,1,0.25,116
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp --sport 67 --dport 68 -j DROP')),1,1,0.25,117
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp --sport 547 --dport 546 -j DROP')),1,1,0.25,118
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ofake_dev',",1,1,0.25,119
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ofake_dev', '-j $sg-fallback'),",1,1,0.25,120
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'--physdev-is-bridged -j $sg-chain'),",1,1,0.25,121
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'--physdev-is-bridged -j $ifake_dev'),",1,1,0.25,122
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'--physdev-is-bridged -j $ofake_dev'),",1,1,0.25,123
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p icmp --icmp-type 8/0 -j RETURN' % prefix),1,1,0.25,124
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p icmp --icmp-type 8 -j RETURN' % prefix),1,1,0.25,125
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'--physdev-is-bridged ',1,1,0.25,126
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p icmp -j RETURN')",1,1,0.25,127
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ofake_dev'),",1,1,0.25,128
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sfake_dev'),",1,1,0.25,129
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sg-fallback'),",1,1,0.25,130
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-j RETURN')",1,1,0.25,131
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-s %s -j RETURN' % prefix)",1,1,0.25,132
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p tcp -m tcp -j RETURN')",1,1,0.25,133
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p tcp -m tcp -j RETURN' % prefix),1,1,0.25,134
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p icmp -j RETURN')",1,1,0.25,135
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev', '-s %s -p icmp -j RETURN' % prefix)",1,1,0.25,136
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p tcp -m tcp --dport 10 -j RETURN'),1,1,0.25,137
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p tcp -m tcp -m multiport --dports 10:100 -j RETURN'),1,1,0.25,138
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-j RETURN' % prefix),1,1,0.25,139
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p udp -m udp -j RETURN')",1,1,0.25,140
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p udp -m udp -j RETURN' % prefix),1,1,0.25,141
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp --dport 10 -j RETURN'),1,1,0.25,142
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp -m multiport --dports 10:100 -j RETURN'),1,1,0.25,143
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-j RETURN')",1,1,0.25,144
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-s %s -j RETURN' % prefix)",1,1,0.25,145
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p tcp -m tcp -j RETURN')",1,1,0.25,146
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'--physdev-is-bridged -j $ofake_dev',",0,1,0.25,147
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j RETURN',",0,1,0.25,148
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ifake_dev',",0,1,0.25,149
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p udp -m udp -j RETURN')",0,1,0.25,150
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p icmpv6 -j RETURN')",0,1,0.25,151
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"dhcp_rule = mock.call.add_rule('ofake_dev', '-p icmpv6 -j RETURN')",0,1,0.25,152
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p icmpv6 --icmpv6-type %s -j RETURN' %,0,1,0.25,153
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ifake_dev', '-j $sg-fallback'),",0,1,0.25,154
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sfake_dev')]",0,1,0.25,155
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ofake_dev', '-j $sg-fallback'),",0,1,0.25,156
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sg-chain', '-j ACCEPT'),",0,1,0.25,157
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,from mock import call,1,1,0.25,158
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'--physdev-is-bridged ',1,1,0.25,159
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $sg-chain'),",1,1,0.25,160
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ifake_dev'),",1,1,0.25,161
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,call.add_rule(,1,1,0.25,162
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ifake_dev', '-j $sg-fallback'),",1,1,0.25,163
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ofake_dev'),",1,1,0.25,164
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ofake_dev', '-j $sfake_dev'),",1,1,0.25,165
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ofake_dev', '-j $sg-fallback'),",1,1,0.25,166
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('sg-chain', '-j ACCEPT')]",1,1,0.25,167
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev', '-j RETURN')",1,1,0.25,168
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev', '-s %s -j RETURN' % prefix)",1,1,0.25,169
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p icmpv6 -j RETURN')",0,1,0.25,170
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p icmp -j RETURN')",0,1,0.25,171
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p tcp -m tcp -j RETURN' % prefix),1,1,0.25,172
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-p tcp -m tcp -j RETURN')",0,1,0.25,173
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $sg-chain', comment=ic.VM_INT_SG),",0,1,0.25,174
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'--physdev-is-bridged ',0,1,0.25,175
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $sg-chain'),",0,1,0.25,176
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ifake_dev'),",0,1,0.25,177
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev', '-j $sg-fallback'),",0,1,0.25,178
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j $ofake_dev'),",0,1,0.25,179
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sfake_dev'),",0,1,0.25,180
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev', '-j $sg-fallback'),",0,1,0.25,181
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sg-chain', '-j ACCEPT')]",0,1,0.25,182
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-j RETURN')",0,1,0.25,183
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p tcp -m tcp -j RETURN')",0,1,0.25,184
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p tcp -m tcp -j RETURN' % prefix),0,1,0.25,185
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p icmp -j RETURN')",0,1,0.25,186
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p tcp -m tcp --dport 10 -j RETURN'),0,1,0.25,187
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-p udp -m udp -j RETURN')",0,1,0.25,188
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p udp -m udp -j RETURN' % prefix),0,1,0.25,189
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp --dport 10 -j RETURN'),0,1,0.25,190
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-j RETURN')",0,1,0.25,191
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev', '-s %s -j RETURN' % prefix)",0,1,0.25,192
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev', '-p tcp -m tcp -j RETURN')",1,1,0.25,193
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev', '-s %s -j RETURN' % prefix)",0,1,0.25,194
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev', '-p icmp -j RETURN')",1,1,0.25,195
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv6['filter'].add_rule('sg-fallback', '-j DROP',",0,1,0.25,196
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv4_rules += [comment_rule('-p udp -m udp --sport 68 --dport 67 ',0,1,0.25,197
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN', comment=ic.DHCP_CLIENT)]",0,1,0.25,198
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ipv6_rules += [comment_rule('-p icmpv6 -j RETURN',",0,1,0.25,199
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv6_rules += [comment_rule('-p udp -m udp --sport 546 --dport 547 ',0,1,0.25,200
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j RETURN', comment=None)]",0,1,0.25,201
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv4_rules += [comment_rule('-p udp -m udp --sport 67 --dport 68 ',0,1,0.25,202
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j DROP', comment=ic.DHCP_SPOOF)]",0,1,0.25,203
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv6_rules += [comment_rule('-p udp -m udp --sport 547 --dport 546 ',0,1,0.25,204
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'-j DROP', comment=None)]",0,1,0.25,205
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv4['filter'].add_rule('sg-fallback', '-j DROP')",1,1,0.25,206
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv6['filter'].add_rule('sg-fallback', '-j DROP')",1,1,0.25,207
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"table.add_rule(chain_name, '-j DROP')",1,1,0.25,208
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv4_rules += ['-p udp -m udp --sport 68 --dport 67 -j RETURN'],1,1,0.25,209
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv6_rules += ['-p udp -m udp --sport 546 --dport 547 -j RETURN'],1,1,0.25,210
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv4_rules += ['-p udp -m udp --sport 67 --dport 68 -j DROP'],1,1,0.25,211
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv6_rules += ['-p udp -m udp --sport 547 --dport 546 -j DROP'],1,1,0.25,212
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"iptables_rules += ['-m state --state RELATED,ESTABLISHED -j RETURN']",1,1,0.25,213
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ingress = call.add_rule(,1,1,0.25,214
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'sg-fallback', '-j DROP',",0,1,0.25,215
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"table.add_rule(chain_name, '-j DROP', comment=ic.PAIR_DROP)",0,1,0.25,216
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ipv6_rules += ['-p icmpv6 -j RETURN'],1,1,0.25,217
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv4['filter'].add_rule('sg-fallback', '-j DROP',",0,1,0.25,218
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev', '-p udp -m udp -j RETURN')",1,1,0.25,219
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev', '-p udp -m udp -j RETURN')",1,1,0.25,220
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('sg-chain', '-j ACCEPT'),",1,1,0.25,221
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p tcp -m tcp --dport 10 -j RETURN'),1,1,0.25,222
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-s %s -p udp -m udp -j RETURN' % prefix),1,1,0.25,223
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev', '-j RETURN')",1,1,0.25,224
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev', '-s %s -j RETURN' % prefix)",1,1,0.25,225
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev', '-p tcp -m tcp -j RETURN')",1,1,0.25,226
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev', '-p icmp -j RETURN')",1,1,0.25,227
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,egress = call.add_rule(,1,1,0.25,228
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p udp -m udp --dport 10 -j RETURN'),1,1,0.25,229
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ofake_dev', '-j $sfake_dev')]",1,1,0.25,230
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev', '-p icmpv6 -j RETURN')",1,1,0.25,231
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,dhcp_rule = call.add_rule(,1,1,0.25,232
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"dhcp_rule = call.add_rule('ofake_dev', '-p icmpv6 -j RETURN')",1,1,0.25,233
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [call.add_rule('ofake_dev', '-j $sg-fallback'),",1,1,0.25,234
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,'-p icmpv6 --icmpv6-type %s -j RETURN' %,1,1,0.25,235
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev', '-p icmpv6 -j RETURN')",1,1,0.25,236
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [call.add_rule('ifake_dev', '-j $sg-fallback'),",1,1,0.25,237
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,iptables_rules += ['-j $sg-fallback'],1,0,0.0,238
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"iptables_rules += [comment_rule('-j $sg-fallback',",0,0,0.0,239
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.UNMATCHED)],0,0,0.0,240
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.STATELESS_DROP)],0,0,0.0,241
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,iptables_rules += [comment_rule(,0,0,0.0,242
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.ALLOW_ASSOC)],0,0,0.0,243
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"def _add_rule_to_chain_v4v6(self, chain_name, ipv4_rules, ipv6_rules):",1,0,0.0,244
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv6['filter'].add_rule(chain_name, rule)",1,0,0.0,245
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv4['filter'].add_rule(chain_name, rule)",1,0,0.0,246
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self._add_rule_to_chain_v4v6('FORWARD', jump_rule, jump_rule)",1,0,0.0,247
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self._add_rule_to_chain_v4v6(SG_CHAIN, jump_rule, jump_rule)",1,0,0.0,248
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self._add_rule_to_chain_v4v6('INPUT', jump_rule, jump_rule)",1,0,0.0,249
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,% mac),1,0,0.0,250
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"% (mac, ip), comment=ic.PAIR_ALLOW)",0,0,0.0,251
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"% (mac, ip))",1,0,0.0,252
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.IPV6_RA_ALLOW)],0,0,0.0,253
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv6['filter'].add_rule(chain_name, rule,",0,0,0.0,254
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"% mac, comment=ic.PAIR_ALLOW)",0,0,0.0,255
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=None):,0,0,0.0,256
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,call.setup(device2port)]),1,0,0.0,257
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"cfg.CONF.register_opts(a_cfg.IPTABLES_OPTS, 'AGENT')",0,0,0.0,258
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,from neutron.agent.linux import iptables_comments as ic,0,0,0.0,259
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment_rule = iptables_manager.comment_rule,0,0,0.0,260
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.UNMATCH_DROP),0,0,0.0,261
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"def _add_rule_to_chain_v4v6(self, chain_name, ipv4_rules, ipv6_rules,",0,0,0.0,262
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables.ipv4['filter'].add_rule(chain_name, rule,",0,0,0.0,263
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.INPUT_TO_SG),0,0,0.0,264
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=comment),0,0,0.0,265
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self._add_rule_to_chain_v4v6('FORWARD', jump_rule, jump_rule,",0,0,0.0,266
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.VM_INT_SG),0,0,0.0,267
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self._add_rule_to_chain_v4v6(SG_CHAIN, jump_rule, jump_rule,",0,0,0.0,268
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.SG_TO_VM_SG),0,0,0.0,269
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self._add_rule_to_chain_v4v6('INPUT', jump_rule, jump_rule,",0,0,0.0,270
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,from neutron.agent.linux import iptables_comments as ic,0,0,0.0,271
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,],0,0,0.0,272
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"cfg.CONF.set_override('comment_iptables_rules', False, 'AGENT')",0,0,0.0,273
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ofake_dev',",0,0,0.0,274
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ifake_dev',",0,0,0.0,275
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"% prefix,",0,0,0.0,276
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=ic.PAIR_DROP)],0,0,0.0,277
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=None)),0,0,0.0,278
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ofake_dev',",0,0,0.0,279
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=ic.VM_INT_SG),",0,0,0.0,280
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev',",0,0,0.0,281
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.add_rule(,0,0,0.0,282
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,icmp6_type)),1,0,0.0,283
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ifake_dev',",1,0,0.0,284
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.add_rule(,1,0,0.0,285
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev',",1,0,0.0,286
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"% prefix),",1,0,0.0,287
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.remove(device2port),",1,0,0.0,288
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,),0,0,0.0,289
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=None,0,0,0.0,290
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"),",0,0,0.0,291
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,calls += [,0,0,0.0,292
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"icmp6_type, comment=None))",0,0,0.0,293
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'sg-fallback',",0,0,0.0,294
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=None)],0,0,0.0,295
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,egress = mock.call.add_rule(,0,0,0.0,296
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ingress = mock.call.add_rule(,0,0,0.0,297
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,comment=None),0,0,0.0,298
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=ic.PAIR_DROP),",0,0,0.0,299
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=ic.PAIR_ALLOW),",0,0,0.0,300
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=ic.INPUT_TO_SG),",0,0,0.0,301
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=None),",0,0,0.0,302
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'ifake_dev',",0,0,0.0,303
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=ic.SG_TO_VM_SG),",0,0,0.0,304
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"comment=ic.UNMATCH_DROP),",0,0,0.0,305
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"chain_applies.assert_has_calls([call.remove({}), call.setup({})])",1,0,0.0,306
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.ensure_remove_chain('ofake_dev'),",0,0,0.0,307
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.setup(device2port),",1,0,0.0,308
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.ensure_remove_chain('ifake_dev'),",0,0,0.0,309
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,dhcp_rule = mock.call.add_rule(,0,0,0.0,310
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('ifake_dev',",0,0,0.0,311
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,icmp6_type)),0,0,0.0,312
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [mock.call.add_rule('ifake_dev',",0,0,0.0,313
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,calls.append(mock.call.add_rule(,0,0,0.0,314
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,calls += [mock.call.add_rule(,0,0,0.0,315
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.ensure_remove_chain('sfake_dev'),",0,0,0.0,316
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = mock.call.add_rule('ofake_dev',",0,0,0.0,317
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.add_chain('sg-chain')],0,0,0.0,318
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables_inst.assert_has_calls([mock.call.defer_apply_on(),",0,0,0.0,319
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.defer_apply_off()]),0,0,0.0,320
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"chain_applies.assert_has_calls([mock.call.remove({}),",0,0,0.0,321
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.setup({'d1': port_prepare}),",0,0,0.0,322
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.remove({'d1': port_prepare}),",0,0,0.0,323
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,egress = mock.call.add_rule(,0,0,0.0,324
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,ingress = mock.call.add_rule(,0,0,0.0,325
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,call.setup({})]),1,0,0.0,326
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_chain('sg-chain'),",0,0,0.0,327
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'mac_address': 'ff:ff:ff:ff:ff:ff',",0,0,0.0,328
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"'mac_address': 'ff:ff:ff:ff',",1,0,0.0,329
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,from neutron.agent.linux import iptables_firewall,0,0,0.0,330
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,self.firewall = iptables_firewall.IptablesFirewallDriver(),0,0,0.0,331
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls = [mock.call.add_chain('sg-fallback'),",0,0,0.0,332
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.ensure_remove_chain('sg-chain'),",0,0,0.0,333
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_chain('ifake_dev'),",0,0,0.0,334
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = mock.call.add_rule('ifake_dev',",0,0,0.0,335
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('FORWARD',",0,0,0.0,336
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('sg-chain',",0,0,0.0,337
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.add_rule(,0,0,0.0,338
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_chain('ofake_dev'),",0,0,0.0,339
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_rule('INPUT',",0,0,0.0,340
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.add_chain('sfake_dev'),",0,0,0.0,341
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.setup({'d1': port_update}),",0,0,0.0,342
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.remove({'d1': port_update}),",0,0,0.0,343
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.setup({})]),0,0,0.0,344
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,call.add_chain('sg-chain')],1,0,0.0,345
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls += [call.add_rule('ifake_dev',",1,0,0.0,346
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,calls.append(call.add_rule(,1,0,0.0,347
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,calls += [call.add_rule(,1,0,0.0,348
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.ensure_remove_chain('ifake_dev'),",1,0,0.0,349
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.ensure_remove_chain('ofake_dev'),",1,0,0.0,350
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.ensure_remove_chain('sfake_dev'),",1,0,0.0,351
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"self.iptables_inst.assert_has_calls([call.defer_apply_on(),",1,0,0.0,352
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.setup(device2port),",0,0,0.0,353
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,call.defer_apply_off()]),1,0,0.0,354
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"chain_applies.assert_has_calls([call.remove({}),",1,0,0.0,355
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.setup({'d1': port_prepare}),",1,0,0.0,356
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.remove({'d1': port_prepare}),",1,0,0.0,357
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.setup({'d1': port_update}),",1,0,0.0,358
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.remove({'d1': port_update}),",1,0,0.0,359
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,icmp6_type)),1,0,0.0,360
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('ifake_dev',",1,0,0.0,361
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"egress = call.add_rule('ofake_dev',",1,0,0.0,362
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"ingress = call.add_rule('ifake_dev',",1,0,0.0,363
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_chain('sfake_dev'),",1,0,0.0,364
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('INPUT',",1,0,0.0,365
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_chain('ofake_dev'),",1,0,0.0,366
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('sg-chain',",1,0,0.0,367
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_rule('FORWARD',",1,0,0.0,368
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_chain('ifake_dev'),",1,0,0.0,369
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.add_chain('sg-chain'),",1,0,0.0,370
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"call.ensure_remove_chain('sg-chain'),",1,0,0.0,371
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"calls = [call.add_chain('sg-fallback'),",1,0,0.0,372
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,self.firewall = IptablesFirewallDriver(),1,0,0.0,373
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,from neutron.agent.linux.iptables_firewall import IptablesFirewallDriver,1,0,0.0,374
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,mock.call.setup(device2port)]),0,0,0.0,375
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,"mock.call.remove(device2port),",0,0,0.0,376
+531ff2fb34df9e6b0f84ada811c29240f0f1cd48,calls += [mock.call.add_rule(,1,0,0.0,377

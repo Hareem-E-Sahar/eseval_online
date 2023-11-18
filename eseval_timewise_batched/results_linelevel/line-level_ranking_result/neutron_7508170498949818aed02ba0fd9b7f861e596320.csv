@@ -1,0 +1,104 @@
+commit_id,line,line_level_label,count,line_score,row
+7508170498949818aed02ba0fd9b7f861e596320,"item = self.func(target_self, *args, **kwargs)",1,4,1.0,1
+7508170498949818aed02ba0fd9b7f861e596320,kwargs = {'foo': 'bar'},1,4,1.0,2
+7508170498949818aed02ba0fd9b7f861e596320,"key = (func_name,) + args",1,3,0.75,3
+7508170498949818aed02ba0fd9b7f861e596320,"return self.func(target_self, *args, **kwargs)",1,3,0.75,4
+7508170498949818aed02ba0fd9b7f861e596320,"return self._get_from_cache(target_self, *args, **kwargs)",1,3,0.75,5
+7508170498949818aed02ba0fd9b7f861e596320,"args = (1, 2)",1,3,0.75,6
+7508170498949818aed02ba0fd9b7f861e596320,"expected_key = (self.func_name, 1, 2, ('foo', 'bar'))",1,2,0.5,7
+7508170498949818aed02ba0fd9b7f861e596320,"retval = self.decor.func([1], 2)",1,2,0.5,8
+7508170498949818aed02ba0fd9b7f861e596320,"expected_key = (self.func_name, [1], 2)",1,2,0.5,9
+7508170498949818aed02ba0fd9b7f861e596320,"retval = self.decor.func(*args, **kwargs)",1,2,0.5,10
+7508170498949818aed02ba0fd9b7f861e596320,return item,1,2,0.5,11
+7508170498949818aed02ba0fd9b7f861e596320,"item = target_self._cache.get(key, self._not_cached)",1,2,0.5,12
+7508170498949818aed02ba0fd9b7f861e596320,self.func = func,1,2,0.5,13
+7508170498949818aed02ba0fd9b7f861e596320,class TestCachingDecorator(base.BaseTestCase):,1,1,0.25,14
+7508170498949818aed02ba0fd9b7f861e596320,"""cannot be cached for %(func_name)s."",",1,1,0.25,15
+7508170498949818aed02ba0fd9b7f861e596320,self._first_call = False,1,1,0.25,16
+7508170498949818aed02ba0fd9b7f861e596320,"return functools.partial(self.__call__, obj)",1,1,0.25,17
+7508170498949818aed02ba0fd9b7f861e596320,class _CachingDecorator(object):,1,1,0.25,18
+7508170498949818aed02ba0fd9b7f861e596320,self._cache = mock.Mock(),1,1,0.25,19
+7508170498949818aed02ba0fd9b7f861e596320,"def func(self, *args, **kwargs):",1,1,0.25,20
+7508170498949818aed02ba0fd9b7f861e596320,return self.func_retval,1,1,0.25,21
+7508170498949818aed02ba0fd9b7f861e596320,self.decor._cache = False,1,1,0.25,22
+7508170498949818aed02ba0fd9b7f861e596320,self.decor = _CachingDecorator(),1,1,0.25,23
+7508170498949818aed02ba0fd9b7f861e596320,self.func_name = '%(module)s._CachingDecorator.func' % {,1,1,0.25,24
+7508170498949818aed02ba0fd9b7f861e596320,self.not_cached = self.decor.func.func.__self__._not_cached,1,1,0.25,25
+7508170498949818aed02ba0fd9b7f861e596320,self.decor._cache.get.return_value = self.not_cached,1,1,0.25,26
+7508170498949818aed02ba0fd9b7f861e596320,self.decor._cache.get.side_effect = TypeError,1,1,0.25,27
+7508170498949818aed02ba0fd9b7f861e596320,"_(""Instance of class %(module)s.%(class)s must contain _cache """,1,1,0.25,28
+7508170498949818aed02ba0fd9b7f861e596320,"retval = self.decor.func((1, 2))",1,1,0.25,29
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(""Instance of class %(module)s.%(class)s doesn't """,1,1,0.25,30
+7508170498949818aed02ba0fd9b7f861e596320,self.func_retval = 'bar',1,1,0.25,31
+7508170498949818aed02ba0fd9b7f861e596320,"def __call__(self, target_self, *args, **kwargs):",1,1,0.25,32
+7508170498949818aed02ba0fd9b7f861e596320,class cache_method_results(object):,1,1,0.25,33
+7508170498949818aed02ba0fd9b7f861e596320,if item is self._not_cached:,1,1,0.25,34
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(""Method %(func_name)s cannot be cached due to """,0,1,0.25,35
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(""Instance of class %(module)s.%(class)s doesn't """,0,1,0.25,36
+7508170498949818aed02ba0fd9b7f861e596320,"""cannot be cached for %(func_name)s."",",0,1,0.25,37
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(_(""Method %(func_name)s cannot be cached due to """,1,1,0.25,38
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(_(""Instance of class %(module)s.%(class)s doesn't """,1,1,0.25,39
+7508170498949818aed02ba0fd9b7f861e596320,"""cannot be cached for %(func_name)s.""),",1,1,0.25,40
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(_(""Reloading cached file %s""), filename)",1,1,0.25,41
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(""Reloading cached file %s"", filename)",0,1,0.25,42
+7508170498949818aed02ba0fd9b7f861e596320,self._first_call = True,1,1,0.25,43
+7508170498949818aed02ba0fd9b7f861e596320,"target_self_cls_name = reflection.get_class_name(target_self,",1,1,0.25,44
+7508170498949818aed02ba0fd9b7f861e596320,"LOG.debug(""Method %(func_name)s cannot be cached due to """,1,1,0.25,45
+7508170498949818aed02ba0fd9b7f861e596320,self._not_cached = object(),1,1,0.25,46
+7508170498949818aed02ba0fd9b7f861e596320,"func_name = ""%(module)s.%(class)s.%(func_name)s"" % {",1,1,0.25,47
+7508170498949818aed02ba0fd9b7f861e596320,key += dict2tuple(kwargs),1,1,0.25,48
+7508170498949818aed02ba0fd9b7f861e596320,"def _get_from_cache(self, target_self, *args, **kwargs):",1,1,0.25,49
+7508170498949818aed02ba0fd9b7f861e596320,def test_cache_miss(self):,1,0,0.0,50
+7508170498949818aed02ba0fd9b7f861e596320,"""contain attribute _cache therefore results """,1,0,0.0,51
+7508170498949818aed02ba0fd9b7f861e596320,"{'module': target_self.__module__,",1,0,0.0,52
+7508170498949818aed02ba0fd9b7f861e596320,if self._first_call:,1,0,0.0,53
+7508170498949818aed02ba0fd9b7f861e596320,'func_name': self.func.__name__}),1,0,0.0,54
+7508170498949818aed02ba0fd9b7f861e596320,"def __get__(self, obj, objtype):",1,0,0.0,55
+7508170498949818aed02ba0fd9b7f861e596320,def __init__(self):,1,0,0.0,56
+7508170498949818aed02ba0fd9b7f861e596320,@utils.cache_method_results,1,0,0.0,57
+7508170498949818aed02ba0fd9b7f861e596320,def setUp(self):,1,0,0.0,58
+7508170498949818aed02ba0fd9b7f861e596320,"super(TestCachingDecorator, self).setUp()",1,0,0.0,59
+7508170498949818aed02ba0fd9b7f861e596320,'module': self.__module__,1,0,0.0,60
+7508170498949818aed02ba0fd9b7f861e596320,},1,0,0.0,61
+7508170498949818aed02ba0fd9b7f861e596320,def test_get_unhashable(self):,1,0,0.0,62
+7508170498949818aed02ba0fd9b7f861e596320,self.decor._cache.set.assert_called_once_with(,1,0,0.0,63
+7508170498949818aed02ba0fd9b7f861e596320,"expected_key, self.decor.func_retval, None)",1,0,0.0,64
+7508170498949818aed02ba0fd9b7f861e596320,"self.assertEqual(self.decor.func_retval, retval)",1,0,0.0,65
+7508170498949818aed02ba0fd9b7f861e596320,def test_cache_hit(self):,1,0,0.0,66
+7508170498949818aed02ba0fd9b7f861e596320,self.assertFalse(self.decor._cache.set.called),1,0,0.0,67
+7508170498949818aed02ba0fd9b7f861e596320,"self.assertEqual(self.decor._cache.get.return_value, retval)",1,0,0.0,68
+7508170498949818aed02ba0fd9b7f861e596320,"self.decor._cache.get.assert_called_once_with(expected_key,",1,0,0.0,69
+7508170498949818aed02ba0fd9b7f861e596320,self.not_cached),1,0,0.0,70
+7508170498949818aed02ba0fd9b7f861e596320,def test_missing_cache(self):,1,0,0.0,71
+7508170498949818aed02ba0fd9b7f861e596320,"delattr(self.decor, '_cache')",1,0,0.0,72
+7508170498949818aed02ba0fd9b7f861e596320,"self.assertRaises(NotImplementedError, self.decor.func, (1, 2))",1,0,0.0,73
+7508170498949818aed02ba0fd9b7f861e596320,'class': target_self_cls_name}),1,0,0.0,74
+7508170498949818aed02ba0fd9b7f861e596320,if not target_self._cache:,1,0,0.0,75
+7508170498949818aed02ba0fd9b7f861e596320,"""contain attribute _cache therefore results """,0,0,0.0,76
+7508170498949818aed02ba0fd9b7f861e596320,"""attribute"") % {",1,0,0.0,77
+7508170498949818aed02ba0fd9b7f861e596320,"'class': target_self_cls_name,",1,0,0.0,78
+7508170498949818aed02ba0fd9b7f861e596320,"""unhashable parameters: args: %(args)s, kwargs: """,0,0,0.0,79
+7508170498949818aed02ba0fd9b7f861e596320,"""%(kwargs)s"",",0,0,0.0,80
+7508170498949818aed02ba0fd9b7f861e596320,"""unhashable parameters: args: %(args)s, kwargs: """,1,0,0.0,81
+7508170498949818aed02ba0fd9b7f861e596320,"""%(kwargs)s""),",1,0,0.0,82
+7508170498949818aed02ba0fd9b7f861e596320,"""contain attribute _cache therefore results """,1,0,0.0,83
+7508170498949818aed02ba0fd9b7f861e596320,from oslo_utils import reflection,1,0,0.0,84
+7508170498949818aed02ba0fd9b7f861e596320,"""""""This decorator is intended for object methods only.""""""",1,0,0.0,85
+7508170498949818aed02ba0fd9b7f861e596320,"def __init__(self, func):",1,0,0.0,86
+7508170498949818aed02ba0fd9b7f861e596320,"functools.update_wrapper(self, func)",1,0,0.0,87
+7508170498949818aed02ba0fd9b7f861e596320,fully_qualified=False),1,0,0.0,88
+7508170498949818aed02ba0fd9b7f861e596320,"'module': target_self.__module__,",1,0,0.0,89
+7508170498949818aed02ba0fd9b7f861e596320,"'func_name': self.func.__name__,",1,0,0.0,90
+7508170498949818aed02ba0fd9b7f861e596320,raise NotImplementedError(,1,0,0.0,91
+7508170498949818aed02ba0fd9b7f861e596320,},1,0,0.0,92
+7508170498949818aed02ba0fd9b7f861e596320,if kwargs:,1,0,0.0,93
+7508170498949818aed02ba0fd9b7f861e596320,try:,1,0,0.0,94
+7508170498949818aed02ba0fd9b7f861e596320,except TypeError:,1,0,0.0,95
+7508170498949818aed02ba0fd9b7f861e596320,"""unhashable parameters: args: %(args)s, kwargs: """,1,0,0.0,96
+7508170498949818aed02ba0fd9b7f861e596320,"""%(kwargs)s"",",1,0,0.0,97
+7508170498949818aed02ba0fd9b7f861e596320,"{'func_name': func_name,",1,0,0.0,98
+7508170498949818aed02ba0fd9b7f861e596320,"'args': args,",1,0,0.0,99
+7508170498949818aed02ba0fd9b7f861e596320,'kwargs': kwargs}),1,0,0.0,100
+7508170498949818aed02ba0fd9b7f861e596320,"target_self._cache.set(key, item, None)",1,0,0.0,101
+7508170498949818aed02ba0fd9b7f861e596320,"if not hasattr(target_self, '_cache'):",1,0,0.0,102
+7508170498949818aed02ba0fd9b7f861e596320,def test_no_cache(self):,1,0,0.0,103

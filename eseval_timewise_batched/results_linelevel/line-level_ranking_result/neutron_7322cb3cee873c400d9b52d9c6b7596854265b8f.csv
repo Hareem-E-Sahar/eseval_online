@@ -1,0 +1,504 @@
+commit_id,line,line_level_label,count,line_score,row
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"def packet_filter_on_network(self, network=None, fmt=None, **kwargs):",1,5,1.0,1
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Check the packet filter on the port is deleted.,1,4,0.8,2
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Check the packet filter on the network is not deleted.,1,4,0.8,3
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network(admin_state_up=False) as pf:,1,4,0.8,4
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_port(admin_state_up=False) as pf:,1,3,0.6000000000000001,5
+7322cb3cee873c400d9b52d9c6b7596854265b8f,excluded) as label_rule:,1,3,0.6000000000000001,6
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.port() as port,\",0,3,0.6000000000000001,7
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network(admin_state_up=True) as pf:,1,3,0.6000000000000001,8
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_port(set_portinfo=False) as pf:,1,3,0.6000000000000001,9
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.port() as port:,1,3,0.6000000000000001,10
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_port(**kwargs) as pf:,1,3,0.6000000000000001,11
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network(**kwargs) as pf:,1,3,0.6000000000000001,12
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network(protocol='TCP') as pf:,1,3,0.6000000000000001,13
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network(protocol=protocol) as pf:,1,3,0.6000000000000001,14
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_port() as pf:,1,3,0.6000000000000001,15
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network() as pf:,1,3,0.6000000000000001,16
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.packet_filter_on_port(port=port,",1,2,0.4,17
+7322cb3cee873c400d9b52d9c6b7596854265b8f,excluded) as v2:,1,2,0.4,18
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded) as v1,\",1,2,0.4,19
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"direction, remote_ip_prefix) as label_rule:",1,2,0.4,20
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remote_ip_prefix=remote_ip_prefix) as label_rule:,0,2,0.4,21
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with mock.patch.object(ml2_plugin.Ml2Plugin, '__init__') as init,\",0,2,0.4,22
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.network() as net,\",0,2,0.4,23
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.metering_label_rule(l['id'],",1,2,0.4,24
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded=False, fmt=None, **kwargs):",0,2,0.4,25
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.packet_filter_on_network(network=network) as pfn:,1,2,0.4,26
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.network() as net:,1,2,0.4,27
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._delete('packet_filters', pf_id)",1,2,0.4,28
+7322cb3cee873c400d9b52d9c6b7596854265b8f,set_portinfo=False) as pf:,1,2,0.4,29
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with test_plugin.optional_ctx(port, self.port) as port_to_use:",1,2,0.4,30
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"def packet_filter_on_port(self, port=None, fmt=None, set_portinfo=True,",1,2,0.4,31
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with test_plugin.optional_ctx(network, self.network) as network_to_use:",1,2,0.4,32
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"# Then, self._delete('packet_filters', pf_id) will success.",1,2,0.4,33
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'security_groups_provider_updated') as p_upd:,0,1,0.2,34
+7322cb3cee873c400d9b52d9c6b7596854265b8f,direction='egress') as rule:,1,1,0.2,35
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._delete('metering-label-rules',",1,1,0.2,36
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'security_groups_member_updated') as m_upd,\",0,1,0.2,37
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(registry, 'notify') as notify:",0,1,0.2,38
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.subnet(net,",0,1,0.2,39
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"ip_version=6) as snet_v6,\",0,1,0.2,40
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'disassociate_floatingips') as disassociate_floatingips,\",0,1,0.2,41
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._delete('metering-label-rules', second_uuid)",0,1,0.2,42
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with mock.patch.object(manager.NeutronManager,",0,1,0.2,43
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_update_metering_label_rules_rpc_call(self):,1,1,0.2,44
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_update_pf_on_network_with_validation_error(self):,1,1,0.2,45
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_add_and_remove_metering_label_rule_rpc_call(self):,0,1,0.2,46
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_update_pf_change_field(self):,1,1,0.2,47
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_update_pf_toggle_admin_state(self):,1,1,0.2,48
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_on_network_with_validation_error(self):,1,1,0.2,49
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_on_network(self):,1,1,0.2,50
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_no_pf_activation_while_port_operations(self):,1,1,0.2,51
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"network = self._show('networks', port['port']['network_id'])",1,1,0.2,52
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_auto_delete_pf_in_port_deletion(self):,1,1,0.2,53
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_auto_delete_pf_in_network_deletion(self):,1,1,0.2,54
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._delete('packet_filters', pf_id,",1,1,0.2,55
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(registry, 'notify') as notify,\",0,1,0.2,56
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.port(device_owner=device_owner) as port,\",0,1,0.2,57
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remote_ip_prefix=remote_ip_prefix) as v2:,0,1,0.2,58
+7322cb3cee873c400d9b52d9c6b7596854265b8f,return_value=[ns_to_delete]) as dvr_delns_ifno_port:,0,1,0.2,59
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded, **kwargs):",0,1,0.2,60
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.metering_label_rule(metering_label_id1,",1,1,0.2,61
+7322cb3cee873c400d9b52d9c6b7596854265b8f,False) as v2:,1,1,0.2,62
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.metering_label_rule(metering_label_id,",1,1,0.2,63
+7322cb3cee873c400d9b52d9c6b7596854265b8f,excluded),1,1,0.2,64
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded='false', fmt=None):",1,1,0.2,65
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"remote_ip_prefix, excluded, **kwargs):",1,1,0.2,66
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remote_ip_prefix=n_consts.IPv4_ANY) as v2:,0,1,0.2,67
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_deactivate_pf_with_ofc_deletion_failure(self):,1,1,0.2,68
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"remote_ip_prefix=remote_ip_prefix) as v1,\",0,1,0.2,69
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with self.metering_label_rule(,0,1,0.2,70
+7322cb3cee873c400d9b52d9c6b7596854265b8f,**kwargs):,0,1,0.2,71
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with mock.patch(,0,1,0.2,72
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (init, super_update_port):",1,1,0.2,73
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (init, super_create_port):",1,1,0.2,74
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (glpab_mock, mpd_mock):",1,1,0.2,75
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (get_service_plugin, port, notify, disassociate_floatingips,",1,1,0.2,76
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (port, disassociate_floatingips, notify):",1,1,0.2,77
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (snet_v6, m_upd, p_upd):",1,1,0.2,78
+7322cb3cee873c400d9b52d9c6b7596854265b8f,") as (net, m_upd, p_upd):",1,1,0.2,79
+7322cb3cee873c400d9b52d9c6b7596854265b8f,with contextlib.nested(,1,1,0.2,80
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with mock.patch.object(ml2_plugin.Ml2Plugin,",0,1,0.2,81
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=(None, None)) as glpab_mock,\",0,1,0.2,82
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_delete_pf_with_ofc_deletion_failure(self):,1,1,0.2,83
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'_make_port_dict') as mpd_mock:,0,1,0.2,84
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# This update request will make plugin reactivate pf.,1,1,0.2,85
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"arg_list=None, **kwargs):",1,1,0.2,86
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_on_port_no_ofc_creation(self):,1,1,0.2,87
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_on_network_no_ofc_creation(self):,1,1,0.2,88
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_list_packet_filters(self):,1,1,0.2,89
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"portinfo = {'id': port_id,",1,1,0.2,90
+7322cb3cee873c400d9b52d9c6b7596854265b8f,yield pf,1,1,0.2,91
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"pf = self._make_packet_filter(fmt or self.fmt, net_id, **kwargs)",1,1,0.2,92
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Things can go wrong - raise HTTP exc with res code only,1,1,0.2,93
+7322cb3cee873c400d9b52d9c6b7596854265b8f,**kwargs):,1,1,0.2,94
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"def _make_packet_filter(self, fmt, net_id, expected_res_status=None,",1,1,0.2,95
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# create a specific auth context for this request,1,1,0.2,96
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"def _create_packet_filter(self, fmt, net_id, expected_res_status=None,",1,1,0.2,97
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_on_network_with_ofc_creation(self):,1,1,0.2,98
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def setUp(self):,1,1,0.2,99
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# This is done here as the setup process won't,1,1,0.2,100
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def get_resources(cls):,1,1,0.2,101
+7322cb3cee873c400d9b52d9c6b7596854265b8f,enable_packet_filter = True,1,1,0.2,102
+7322cb3cee873c400d9b52d9c6b7596854265b8f,from neutron.tests.unit import test_db_plugin as test_plugin,1,1,0.2,103
+7322cb3cee873c400d9b52d9c6b7596854265b8f,from neutron.plugins.nec.extensions import packetfilter as ext_pf,1,1,0.2,104
+7322cb3cee873c400d9b52d9c6b7596854265b8f,from neutron import context,1,1,0.2,105
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"# distributed under the License is distributed on an ""AS IS"" BASIS,",1,1,0.2,106
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_activate_pf_while_exists_on_ofc(self):,1,1,0.2,107
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# you may not use this file except in compliance with the License.,1,1,0.2,108
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"with self.packet_filter_on_port(admin_state_up=False,",1,1,0.2,109
+7322cb3cee873c400d9b52d9c6b7596854265b8f,from neutron.plugins.nec.common import exceptions as nexc,1,1,0.2,110
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_on_port_with_ofc_creation(self):,1,1,0.2,111
+7322cb3cee873c400d9b52d9c6b7596854265b8f,kwargs = {,1,1,0.2,112
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Ensure pf was created before in_port has activated.,1,1,0.2,113
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"def _test_create_pf_with_protocol(self, protocol, expected_eth_type):",1,1,0.2,114
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_activate_pf_on_port_triggered_by_update_port(self):,1,1,0.2,115
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_update_pf_on_port(self):,1,1,0.2,116
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"ctx, pf_id)",1,1,0.2,117
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_update_pf_on_network(self):,1,1,0.2,118
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_show_pf_not_found(self):,1,1,0.2,119
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# wildcard field is None in a response.,1,1,0.2,120
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_show_pf_on_port(self):,1,1,0.2,121
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_show_pf_on_network_with_wildcards(self):,1,1,0.2,122
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_delete_pf_with_error_status(self):,1,1,0.2,123
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_show_pf_on_network(self):,1,1,0.2,124
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_protocol_arp(self):,1,1,0.2,125
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_protocol_tcp(self):,1,1,0.2,126
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"pf_ref = self._show('packet_filters', pf_id)",1,1,0.2,127
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_protocol_udp(self):,1,1,0.2,128
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_protocol_icmp(self):,1,1,0.2,129
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"portinfo = {'id': in_port_id, 'port_no': 123}",1,1,0.2,130
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_inconsistent_protocol_and_eth_type(self):,1,1,0.2,131
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_ofc_creation_failure(self):,1,1,0.2,132
+7322cb3cee873c400d9b52d9c6b7596854265b8f,def test_create_pf_with_invalid_priority(self):,1,1,0.2,133
+7322cb3cee873c400d9b52d9c6b7596854265b8f,kwargs = {'priority': 'high'},1,1,0.2,134
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'id': self.uuid}],",1,0,0.0,135
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'id': second_uuid}],",1,0,0.0,136
+7322cb3cee873c400d9b52d9c6b7596854265b8f,{'rule': {,0,0,0.0,137
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'direction': 'egress',",1,0,0.0,138
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'id': self.uuid},",1,0,0.0,139
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'excluded': False,",1,0,0.0,140
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'metering_label_id': self.uuid,",1,0,0.0,141
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'direction': 'ingress',",1,0,0.0,142
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"{'remote_ip_prefix': '10.0.0.0/24',",1,0,0.0,143
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_del),0,0,0.0,144
+7322cb3cee873c400d9b52d9c6b7596854265b8f,{'rules': [,1,0,0.0,145
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'remote_ip_prefix': '10.0.0.0/24',",0,0,0.0,146
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.mock_remove_rule.assert_called_with(self.ctx,",0,0,0.0,147
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_add),0,0,0.0,148
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.mock_uuid.return_value = second_uuid,0,0,0.0,149
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'id': second_uuid},",0,0,0.0,150
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'excluded': False,",0,0,0.0,151
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'metering_label_id': self.uuid,",0,0,0.0,152
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'direction': 'ingress',",0,0,0.0,153
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.mock_uuid.return_value = second_uuid,1,0,0.0,154
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.mock_add_rule.assert_called_with(self.ctx,",0,0,0.0,155
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"l3plugin,",0,0,0.0,156
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.mock_update.assert_called_with(self.ctx,",1,0,0.0,157
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_add),1,0,0.0,158
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'create_port'):,0,0,0.0,159
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.remove_rule_patch = mock.patch(remove_rule),0,0,0.0,160
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(base_plugin.NeutronDbPluginV2,",0,0,0.0,161
+7322cb3cee873c400d9b52d9c6b7596854265b8f,mock.patch('neutron.plugins.ml2.plugin.Ml2Plugin.',0,0,0.0,162
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'neutron.plugins.ml2.plugin.' 'db.get_locked_port_and_binding',",0,0,0.0,163
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'dvr_deletens_if_no_port',",0,0,0.0,164
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.l3plugin,",0,0,0.0,165
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=fip_set),\",0,0,0.0,166
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'disassociate_floatingips',",0,0,0.0,167
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(self.l3plugin,",0,0,0.0,168
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=self.service_plugins),\",0,0,0.0,169
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'get_service_plugins',",0,0,0.0,170
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"plugin.notifier,",0,0,0.0,171
+7322cb3cee873c400d9b52d9c6b7596854265b8f,mock.patch.object(,0,0,0.0,172
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"cidr=fake_prefix,",0,0,0.0,173
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"gateway_ip=fake_gateway,",0,0,0.0,174
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(plugin.notifier,",0,0,0.0,175
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_del),1,0,0.0,176
+7322cb3cee873c400d9b52d9c6b7596854265b8f,rule['metering_label_rule']['id']),1,0,0.0,177
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.mock_remove_rule = self.remove_rule_patch.start(),0,0,0.0,178
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"min=1, max=65535)",1,0,0.0,179
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'.remove_metering_label_rule'),0,0,0.0,180
+7322cb3cee873c400d9b52d9c6b7596854265b8f,class TestNecPluginPacketFilterWithValidate(TestNecPluginPacketFilterBase):,1,0,0.0,181
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"2, self.ofc.driver.validate_filter_update.call_count)",1,0,0.0,182
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.assertEqual(,1,0,0.0,183
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"ctx, data['packet_filter'])",1,0,0.0,184
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.ofc.driver.validate_filter_update.assert_called_once_with(,1,0,0.0,185
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.driver.validate_filter_create(ctx, pf_dict),",1,0,0.0,186
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.validate_update = self.ofc.driver.validate_filter_update,1,0,0.0,187
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.validate_create = self.ofc.driver.validate_filter_create,1,0,0.0,188
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# a case where there are no update_filter.,1,0,0.0,189
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"super(TestNecPluginPacketFilterWithValidate, self).setUp()",1,0,0.0,190
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'port': {'admin_state_up': True}},1,0,0.0,191
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remove_rule = ('neutron.api.rpc.agentnotifiers.' +,0,0,0.0,192
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._update('ports', in_port_id, data)",1,0,0.0,193
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'port': {'admin_state_up': False}},1,0,0.0,194
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(self.ofc.delete_ofc_packet_filter.call_count, 0)",1,0,0.0,195
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._show('packet_filters', pfn['packet_filter']['id'])",1,0,0.0,196
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._delete('ports', in_port_id)",1,0,0.0,197
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf_ref['packet_filter']['status'], 'DOWN')",1,0,0.0,198
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(self.ofc.delete_ofc_packet_filter.call_count, 2)",1,0,0.0,199
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.ofc.set_raise_exc('delete_ofc_packet_filter', None)",1,0,0.0,200
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'__init__',",0,0,0.0,201
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.validate_create.side_effect = ext_pf.PacketFilterInvalidPriority(,1,0,0.0,202
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"e = self.assertRaises(webob.exc.HTTPClientError,",1,0,0.0,203
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._make_packet_filter,",1,0,0.0,204
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.fmt, net_id, expected_res_status=400)",1,0,0.0,205
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.mock_add_rule = self.add_rule_patch.start(),0,0,0.0,206
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.add_rule_patch = mock.patch(add_rule),0,0,0.0,207
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'.add_metering_label_rule'),0,0,0.0,208
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'metering_rpc_agent_api.MeteringAgentNotifyAPI' +,0,0,0.0,209
+7322cb3cee873c400d9b52d9c6b7596854265b8f,add_rule = ('neutron.api.rpc.agentnotifiers.' +,0,0,0.0,210
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(2, self.ofc.update_ofc_packet_filter.call_count)",1,0,0.0,211
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'src_mac': '66:55:44:33:22:11'}},1,0,0.0,212
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'src_mac': '11:22:33:44:55:66'}},1,0,0.0,213
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(1, self.ofc.update_ofc_packet_filter.call_count)",1,0,0.0,214
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"ctx, pf_id, data['packet_filter'])",1,0,0.0,215
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.ofc.update_ofc_packet_filter.assert_called_once_with(,1,0,0.0,216
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'src_mac': '12:34:56:78:9a:bc'}},1,0,0.0,217
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.assertTrue(self.ofc.create_ofc_packet_filter.called),1,0,0.0,218
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"super(TestNecPluginPacketFilterWithFilterUpdate, self).setUp()",1,0,0.0,219
+7322cb3cee873c400d9b52d9c6b7596854265b8f,class TestNecPluginPacketFilterWithFilterUpdate(TestNecPluginPacketFilterBase):,1,0,0.0,220
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_code=400),1,0,0.0,221
+7322cb3cee873c400d9b52d9c6b7596854265b8f,ext_pf.PacketFilterUpdateNotSupported(field='priority')),1,0,0.0,222
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.validate_update.side_effect = (,1,0,0.0,223
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(400, e.status_int)",1,0,0.0,224
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'update_port'):,0,0,0.0,225
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remote_ip_prefix=remote_ip_prefix1):,0,0,0.0,226
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=None),\",0,0,0.0,227
+7322cb3cee873c400d9b52d9c6b7596854265b8f,res = self._create_metering_label_rule(,0,0,0.0,228
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remote_ip_prefix=remote_ip_prefix2),0,0,0.0,229
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.fmt, metering_label_id, direction, excluded,",0,0,0.0,230
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'priority': 1000}},1,0,0.0,231
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label_id, direction, False,",0,0,0.0,232
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label_id, 'ingress', excluded,",0,0,0.0,233
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.metering_label_rule(,0,0,0.0,234
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label['metering_label']['id'], direction,",0,0,0.0,235
+7322cb3cee873c400d9b52d9c6b7596854265b8f,remote_ip_prefix=remote_ip_prefix),0,0,0.0,236
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.fmt, _fake_uuid(), direction, excluded,",0,0,0.0,237
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label_id, direction, excluded,",0,0,0.0,238
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(manager.NeutronManager,",0,0,0.0,239
+7322cb3cee873c400d9b52d9c6b7596854265b8f,**kwargs),0,0,0.0,240
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded,",0,0,0.0,241
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"direction, excluded, **kwargs)",0,0,0.0,242
+7322cb3cee873c400d9b52d9c6b7596854265b8f,destination_ip_prefix,0,0,0.0,243
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data['metering_label_rule']['destination_ip_prefix'] =\,0,0,0.0,244
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if destination_ip_prefix:,0,0,0.0,245
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data['metering_label_rule']['source_ip_prefix'] = source_ip_prefix,0,0,0.0,246
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if source_ip_prefix:,0,0,0.0,247
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data['metering_label_rule']['remote_ip_prefix'] = remote_ip_prefix,0,0,0.0,248
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label_id1, direction, excluded,",0,0,0.0,249
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label_id2, direction, excluded,",0,0,0.0,250
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'metering_label_rule':,1,0,0.0,251
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"{'metering_label_id': metering_label_id,",1,0,0.0,252
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"remote_ip_prefix2,",1,0,0.0,253
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label_id,",1,0,0.0,254
+7322cb3cee873c400d9b52d9c6b7596854265b8f,excluded):,1,0,0.0,255
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"remote_ip_prefix1,",1,0,0.0,256
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"n_consts.IPv4_ANY,",1,0,0.0,257
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'ingress',",1,0,0.0,258
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.metering_label_rule(metering_label_id,",1,0,0.0,259
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"metering_label['metering_label']['id'],",1,0,0.0,260
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"_fake_uuid(),",1,0,0.0,261
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"res = self._create_metering_label_rule(self.fmt,",1,0,0.0,262
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"direction,",1,0,0.0,263
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"remote_ip_prefix,",1,0,0.0,264
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"remote_ip_prefix='10.0.0.0/24',",1,0,0.0,265
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded, **kwargs)",1,0,0.0,266
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"direction, remote_ip_prefix,",1,0,0.0,267
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'remote_ip_prefix': remote_ip_prefix}},1,0,0.0,268
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'excluded': excluded,",1,0,0.0,269
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'direction': direction,",1,0,0.0,270
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'tenant_id': kwargs.get('tenant_id', 'test-tenant'),",1,0,0.0,271
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if remote_ip_prefix:,0,0,0.0,272
+7322cb3cee873c400d9b52d9c6b7596854265b8f,},0,0,0.0,273
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'excluded': excluded,",0,0,0.0,274
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=fip_set),",1,0,0.0,275
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(registry, 'notify'),",1,0,0.0,276
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.port(device_owner=device_owner),",1,0,0.0,277
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=self.service_plugins),",1,0,0.0,278
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'get_service_plugins',",1,0,0.0,279
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(manager.NeutronManager,",1,0,0.0,280
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(registry, 'notify')",1,0,0.0,281
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(l3plugin, 'disassociate_floatingips'),",1,0,0.0,282
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.port(),",1,0,0.0,283
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"plugin.notifier, 'security_groups_provider_updated')",1,0,0.0,284
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"plugin.notifier, 'security_groups_member_updated'),",1,0,0.0,285
+7322cb3cee873c400d9b52d9c6b7596854265b8f,mock.patch.object(,1,0,0.0,286
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"cidr=fake_prefix, ip_version=6),",1,0,0.0,287
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.subnet(net, gateway_ip=fake_gateway,",1,0,0.0,288
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'security_groups_provider_updated'),1,0,0.0,289
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'security_groups_member_updated'),",1,0,0.0,290
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(plugin.notifier,",1,0,0.0,291
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.network(),",1,0,0.0,292
+7322cb3cee873c400d9b52d9c6b7596854265b8f,import contextlib,1,0,0.0,293
+7322cb3cee873c400d9b52d9c6b7596854265b8f,return_value={'L3_ROUTER_NAT': l3plugin}):,0,0,0.0,294
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(self.l3plugin, 'disassociate_floatingips',",1,0,0.0,295
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(self.l3plugin, 'dvr_deletens_if_no_port',",1,0,0.0,296
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'direction': direction,",0,0,0.0,297
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=[ns_to_delete]),",1,0,0.0,298
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'tenant_id': kwargs.get('tenant_id', 'test-tenant'),",0,0,0.0,299
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'metering_label_id': metering_label_id,",0,0,0.0,300
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'metering_label_rule': {,0,0,0.0,301
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {,0,0,0.0,302
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"destination_ip_prefix=None,",0,0,0.0,303
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"source_ip_prefix=None,",0,0,0.0,304
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"excluded, remote_ip_prefix=None,",0,0,0.0,305
+7322cb3cee873c400d9b52d9c6b7596854265b8f,):,1,0,0.0,306
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value={'L3_ROUTER_NAT': l3plugin}),",1,0,0.0,307
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=None),",1,0,0.0,308
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(ml2_plugin.Ml2Plugin, '__init__',",1,0,0.0,309
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(base_plugin.NeutronDbPluginV2, 'update_port'),",1,0,0.0,310
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(base_plugin.NeutronDbPluginV2, 'create_port'),",1,0,0.0,311
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.patch.object(ml2_plugin.Ml2Plugin, '__init__'),",1,0,0.0,312
+7322cb3cee873c400d9b52d9c6b7596854265b8f,mock.patch('neutron.plugins.ml2.plugin.Ml2Plugin._make_port_dict'),1,0,0.0,313
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return_value=(None, None)),",1,0,0.0,314
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'db.get_locked_port_and_binding',",1,0,0.0,315
+7322cb3cee873c400d9b52d9c6b7596854265b8f,mock.patch('neutron.plugins.ml2.plugin.',1,0,0.0,316
+7322cb3cee873c400d9b52d9c6b7596854265b8f,dvr_delns_ifno_port):,1,0,0.0,317
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_code=webob.exc.HTTPInternalServerError.code),1,0,0.0,318
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._update('packet_filters', pf_id, data)",1,0,0.0,319
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.ofc.set_raise_exc('delete_ofc_packet_filter',",1,0,0.0,320
+7322cb3cee873c400d9b52d9c6b7596854265b8f,raise webob.exc.HTTPClientError(code=res.status_int),1,0,0.0,321
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'port_no': kwargs.get('port_no', 123)}",1,0,0.0,322
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if set_portinfo:,1,0,0.0,323
+7322cb3cee873c400d9b52d9c6b7596854265b8f,port_id = port_to_use['port']['id'],1,0,0.0,324
+7322cb3cee873c400d9b52d9c6b7596854265b8f,net_id = port_to_use['port']['network_id'],1,0,0.0,325
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._delete('networks', network_to_use['network']['id'])",1,0,0.0,326
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if not network:,1,0,0.0,327
+7322cb3cee873c400d9b52d9c6b7596854265b8f,net_id = network_to_use['network']['id'],1,0,0.0,328
+7322cb3cee873c400d9b52d9c6b7596854265b8f,@contextlib.contextmanager,1,0,0.0,329
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return self.deserialize(fmt, res)",1,0,0.0,330
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if res.status_int >= 400:,1,0,0.0,331
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(1, self.ofc.delete_ofc_packet_filter.call_count)",1,0,0.0,332
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# so it can be caught by unit tests,1,0,0.0,333
+7322cb3cee873c400d9b52d9c6b7596854265b8f,**kwargs),1,0,0.0,334
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"res = self._create_packet_filter(fmt, net_id, expected_res_status,",1,0,0.0,335
+7322cb3cee873c400d9b52d9c6b7596854265b8f,return pf_res,1,0,0.0,336
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf_res.status_int, expected_res_status)",1,0,0.0,337
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if expected_res_status:,1,0,0.0,338
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_res = pf_req.get_response(self.ext_api),1,0,0.0,339
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'', kwargs['tenant_id'])",1,0,0.0,340
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_req.environ['neutron.context'] = context.Context(,1,0,0.0,341
+7322cb3cee873c400d9b52d9c6b7596854265b8f,kw = {'added': [portinfo]},1,0,0.0,342
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if 'datapath_id' in kwargs:,1,0,0.0,343
+7322cb3cee873c400d9b52d9c6b7596854265b8f,kw['datapath_id'] = kwargs['datapath_id'],1,0,0.0,344
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.rpcapi_update_ports(**kw),1,0,0.0,345
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.exists_ofc_packet_filter(ctx, pf_id),",1,0,0.0,346
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected = [,1,0,0.0,347
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_dict = mock.ANY,1,0,0.0,348
+7322cb3cee873c400d9b52d9c6b7596854265b8f,ctx = mock.ANY,1,0,0.0,349
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf['packet_filter']['status'], 'ACTIVE')",1,0,0.0,350
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_id = pf['packet_filter']['id'],1,0,0.0,351
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.assertFalse(self.ofc.delete_ofc_packet_filter.called),1,0,0.0,352
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.assertFalse(self.ofc.create_ofc_packet_filter.called),1,0,0.0,353
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf['packet_filter']['status'], 'DOWN')",1,0,0.0,354
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self._list('packet_filters'),1,0,0.0,355
+7322cb3cee873c400d9b52d9c6b7596854265b8f,del self.ofc.driver.validate_filter_update,1,0,0.0,356
+7322cb3cee873c400d9b52d9c6b7596854265b8f,del self.ofc.driver.validate_filter_create,1,0,0.0,357
+7322cb3cee873c400d9b52d9c6b7596854265b8f,del self.ofc.driver.update_filter,1,0,0.0,358
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# a case where there are no update_filter and validate_*.,1,0,0.0,359
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Remove attributes explicitly from mock object to check,1,0,0.0,360
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"super(TestNecPluginPacketFilter, self).setUp()",1,0,0.0,361
+7322cb3cee873c400d9b52d9c6b7596854265b8f,class TestNecPluginPacketFilter(TestNecPluginPacketFilterBase):,1,0,0.0,362
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(port_id, pf['packet_filter']['in_port'])",1,0,0.0,363
+7322cb3cee873c400d9b52d9c6b7596854265b8f,kwargs['in_port'] = port_id,1,0,0.0,364
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if (kwargs.get('set_context') and 'tenant_id' in kwargs):,1,0,0.0,365
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"pf_req = self.new_create_request('packet_filters', data, fmt)",1,0,0.0,366
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data['packet_filter'][arg] = kwargs[arg],1,0,0.0,367
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"""""""",1,0,0.0,368
+7322cb3cee873c400d9b52d9c6b7596854265b8f,[OFC],1,0,0.0,369
+7322cb3cee873c400d9b52d9c6b7596854265b8f,api_extensions_path = neutron/plugins/nec/extensions,1,0,0.0,370
+7322cb3cee873c400d9b52d9c6b7596854265b8f,[DEFAULT],1,0,0.0,371
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"NEC_PLUGIN_PF_INI = """"""",1,0,0.0,372
+7322cb3cee873c400d9b52d9c6b7596854265b8f,from neutron.tests.unit.nec import test_nec_plugin,1,0,0.0,373
+7322cb3cee873c400d9b52d9c6b7596854265b8f,from neutron.api.v2 import attributes,1,0,0.0,374
+7322cb3cee873c400d9b52d9c6b7596854265b8f,import webob.exc,1,0,0.0,375
+7322cb3cee873c400d9b52d9c6b7596854265b8f,import mock,1,0,0.0,376
+7322cb3cee873c400d9b52d9c6b7596854265b8f,import contextlib,1,0,0.0,377
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# limitations under the License.,1,0,0.0,378
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# See the License for the specific language governing permissions and,1,0,0.0,379
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# implied.,1,0,0.0,380
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,381
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"# Unless required by applicable law or agreed to in writing, software",1,0,0.0,382
+7322cb3cee873c400d9b52d9c6b7596854265b8f,#    http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,383
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# You may obtain a copy of the License at,1,0,0.0,384
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"# Licensed under the Apache License, Version 2.0 (the ""License"");",1,0,0.0,385
+7322cb3cee873c400d9b52d9c6b7596854265b8f,#,1,0,0.0,386
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Copyright (c) 2013 OpenStack Foundation.,1,0,0.0,387
+7322cb3cee873c400d9b52d9c6b7596854265b8f,driver = neutron.tests.unit.nec.stub_ofc_driver.StubOFCDriver,1,0,0.0,388
+7322cb3cee873c400d9b52d9c6b7596854265b8f,class PacketfilterExtensionManager(ext_pf.Packetfilter):,1,0,0.0,389
+7322cb3cee873c400d9b52d9c6b7596854265b8f,if arg in kwargs:,1,0,0.0,390
+7322cb3cee873c400d9b52d9c6b7596854265b8f,@classmethod,1,0,0.0,391
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Arg must be present,1,0,0.0,392
+7322cb3cee873c400d9b52d9c6b7596854265b8f,(arg_list or ())):,1,0,0.0,393
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'protocol', 'src_port', 'dst_port') +",1,0,0.0,394
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_mac', 'dst_mac', 'eth_type', 'src_cidr', 'dst_cidr',",1,0,0.0,395
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"for arg in (('name', 'admin_state_up', 'action', 'priority', 'in_port',",1,0,0.0,396
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'action': 'ALLOW'}},1,0,0.0,397
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'priority': '1',",1,0,0.0,398
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'tenant_id': self._tenant_id,",1,0,0.0,399
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"data = {'packet_filter': {'network_id': net_id,",1,0,0.0,400
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"super(TestNecPluginPacketFilterBase, self).setUp(ext_mgr=ext_mgr)",1,0,0.0,401
+7322cb3cee873c400d9b52d9c6b7596854265b8f,ext_mgr = PacketfilterExtensionManager(),1,0,0.0,402
+7322cb3cee873c400d9b52d9c6b7596854265b8f,_nec_ini = NEC_PLUGIN_PF_INI,1,0,0.0,403
+7322cb3cee873c400d9b52d9c6b7596854265b8f,class TestNecPluginPacketFilterBase(test_nec_plugin.NecPluginV2TestCase):,1,0,0.0,404
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"return super(PacketfilterExtensionManager, cls).get_resources()",1,0,0.0,405
+7322cb3cee873c400d9b52d9c6b7596854265b8f,{'packet_filters': ext_pf.PACKET_FILTER_ATTR_MAP}),1,0,0.0,406
+7322cb3cee873c400d9b52d9c6b7596854265b8f,attributes.RESOURCE_ATTRIBUTE_MAP.update(,1,0,0.0,407
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# the global attribute map,1,0,0.0,408
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# initialize the main API router which extends,1,0,0.0,409
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Add the resources to the global attribute map,1,0,0.0,410
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.create_ofc_packet_filter(ctx, pf_id, pf_dict),",1,0,0.0,411
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.delete_ofc_packet_filter(ctx, pf_id),",1,0,0.0,412
+7322cb3cee873c400d9b52d9c6b7596854265b8f,],1,0,0.0,413
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_code=webob.exc.HTTPNotFound.code),1,0,0.0,414
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_id = '00000000-ffff-ffff-ffff-000000000000',1,0,0.0,415
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.assertTrue(pf_ref['packet_filter']['in_port']),1,0,0.0,416
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'src_port': None}),1,0,0.0,417
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'dst_port': 80,",1,0,0.0,418
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"kwargs.update({'priority': 103, 'eth_type': 2048,",1,0,0.0,419
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'dst_port': '0x50',1,0,0.0,420
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'eth_type': 2048,",1,0,0.0,421
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'priority': '0o147',",1,0,0.0,422
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'name': 'test-pf-port',",1,0,0.0,423
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'dst_port': None}),1,0,0.0,424
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_port': None,",1,0,0.0,425
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'protocol': None,",1,0,0.0,426
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'dst_cidr': None,",1,0,0.0,427
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_cidr': None,",1,0,0.0,428
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'eth_type': None,",1,0,0.0,429
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'dst_mac': None,",1,0,0.0,430
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_mac': None,",1,0,0.0,431
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'in_port': None,",1,0,0.0,432
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"kwargs.update({'priority': 102,",1,0,0.0,433
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._show('packet_filters', pf_id,",1,0,0.0,434
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'admin_state_up': True}},1,0,0.0,435
+7322cb3cee873c400d9b52d9c6b7596854265b8f,for key in kwargs:,1,0,0.0,436
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.ofc.create_ofc_packet_filter.assert_called_once_with(,1,0,0.0,437
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.delete_ofc_port(ctx, in_port_id, port_dict),",1,0,0.0,438
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.create_ofc_port(ctx, in_port_id, port_dict),",1,0,0.0,439
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"mock.call.exists_ofc_port(ctx, in_port_id),",1,0,0.0,440
+7322cb3cee873c400d9b52d9c6b7596854265b8f,port_dict = mock.ANY,1,0,0.0,441
+7322cb3cee873c400d9b52d9c6b7596854265b8f,kw = {'removed': [in_port_id]},1,0,0.0,442
+7322cb3cee873c400d9b52d9c6b7596854265b8f,]),1,0,0.0,443
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.ofc.assert_has_calls([,1,0,0.0,444
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(2, self.ofc.create_ofc_packet_filter.call_count)",1,0,0.0,445
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# PortInfoNotFound exception is raised.,1,0,0.0,446
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# in_port does not exists yet. In this case,1,0,0.0,447
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# create_ofc_packet_filter is now called even when,1,0,0.0,448
+7322cb3cee873c400d9b52d9c6b7596854265b8f,in_port_id = pf['packet_filter']['in_port'],1,0,0.0,449
+7322cb3cee873c400d9b52d9c6b7596854265b8f,nexc.PortInfoNotFound(id='fake_id')),1,0,0.0,450
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(0, self.ofc.delete_ofc_packet_filter.call_count)",1,0,0.0,451
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(1, self.ofc.create_ofc_packet_filter.call_count)",1,0,0.0,452
+7322cb3cee873c400d9b52d9c6b7596854265b8f,nexc.OFCException(reason='fake')),1,0,0.0,453
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.ofc.delete_ofc_packet_filter.assert_called_once_with(,1,0,0.0,454
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'admin_state_up': False}},1,0,0.0,455
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"ctx, pf_id, pf_dict)",1,0,0.0,456
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(kwargs[key], pf_ref['packet_filter'][key])",1,0,0.0,457
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf_id, pf_ref['packet_filter']['id'])",1,0,0.0,458
+7322cb3cee873c400d9b52d9c6b7596854265b8f,self.ofc.assert_has_calls(expected),1,0,0.0,459
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf_ref['packet_filter']['status'], 'ERROR')",1,0,0.0,460
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.ofc.set_raise_exc('create_ofc_packet_filter',",1,0,0.0,461
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"webob.exc.HTTPBadRequest.code,",1,0,0.0,462
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._create_packet_filter(self.fmt, net_id,",1,0,0.0,463
+7322cb3cee873c400d9b52d9c6b7596854265b8f,net_id = net['network']['id'],1,0,0.0,464
+7322cb3cee873c400d9b52d9c6b7596854265b8f,expected_code=409),1,0,0.0,465
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._update('packet_filters', pf_id, data,",1,0,0.0,466
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {'eth_type': 0x806}},1,0,0.0,467
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(0x800, pf_data['eth_type'])",1,0,0.0,468
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual('TCP', pf_data['protocol'])",1,0,0.0,469
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_id = pf_data['id'],1,0,0.0,470
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._test_create_pf_with_protocol('ARP', 0x806)",1,0,0.0,471
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._test_create_pf_with_protocol('ICMP', 0x800)",1,0,0.0,472
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._test_create_pf_with_protocol('UDP', 0x800)",1,0,0.0,473
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self._test_create_pf_with_protocol('TCP', 0x800)",1,0,0.0,474
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(expected_eth_type, pf_data['eth_type'])",1,0,0.0,475
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(protocol, pf_data['protocol'])",1,0,0.0,476
+7322cb3cee873c400d9b52d9c6b7596854265b8f,pf_data = pf['packet_filter'],1,0,0.0,477
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(self.ofc.delete_ofc_packet_filter.call_count, 1)",1,0,0.0,478
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(self.ofc.create_ofc_packet_filter.call_count, 1)",1,0,0.0,479
+7322cb3cee873c400d9b52d9c6b7596854265b8f,nexc.OFCException(reason='hoge')),1,0,0.0,480
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.ofc.set_raise_exc('create_ofc_packet_filter', None)",1,0,0.0,481
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'in_port': None}),1,0,0.0,482
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# Retry activate packet_filter (even if there is no change).,1,0,0.0,483
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_port': 35001, 'dst_port': 22,",1,0,0.0,484
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"kwargs.update({'priority': 102, 'eth_type': 2048,",1,0,0.0,485
+7322cb3cee873c400d9b52d9c6b7596854265b8f,# convert string to int.,1,0,0.0,486
+7322cb3cee873c400d9b52d9c6b7596854265b8f,},1,0,0.0,487
+7322cb3cee873c400d9b52d9c6b7596854265b8f,'dst_port': '22',1,0,0.0,488
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_port': '35001',",1,0,0.0,489
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'protocol': 'TCP',",1,0,0.0,490
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'dst_cidr': '192.168.2.0/24',",1,0,0.0,491
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_cidr': '192.168.1.0/24',",1,0,0.0,492
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'eth_type': '2048',",1,0,0.0,493
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'dst_mac': '66:77:88:99:aa:bb',",1,0,0.0,494
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'src_mac': '00:11:22:33:44:55',",1,0,0.0,495
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'priority': '102',",1,0,0.0,496
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'action': 'DENY',",1,0,0.0,497
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'admin_state_up': False,",1,0,0.0,498
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"'name': 'test-pf-net',",1,0,0.0,499
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(self.ofc.create_ofc_packet_filter.call_count, 2)",1,0,0.0,500
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.assertEqual(pf_ref['packet_filter']['status'], 'ACTIVE')",1,0,0.0,501
+7322cb3cee873c400d9b52d9c6b7596854265b8f,data = {'packet_filter': {}},1,0,0.0,502
+7322cb3cee873c400d9b52d9c6b7596854265b8f,"self.metering_label_rule(metering_label_id2,",1,0,0.0,503

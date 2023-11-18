@@ -1,0 +1,305 @@
+commit_id,line,line_level_label,count,line_score,row
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dh = dhcp.DeviceManager(cfg.CONF, None)",1,4,1.0,1
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dh = dhcp.DeviceManager(cfg.CONF, None)",1,4,1.0,2
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dh = dhcp.DeviceManager(cfg.CONF, mock.Mock())",0,3,0.75,3
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"network = dhcp.NetModel(False, {'id': 'foo'})",1,2,0.5,4
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def destroy(self, network, device_name):",1,2,0.5,5
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def destroy(self, network, device_name, segment=None):",0,2,0.5,6
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def setup(self, network, segment=None):",0,2,0.5,7
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,segmentation_id = segment.segmentation_id if segment else None,0,2,0.5,8
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def get_device_id(self, network, segment=None):",0,2,0.5,9
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# NOTE(sahid): Path of dhcp conf will be /<segid>/<netid>. We,0,2,0.5,10
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"result = processutils.execute(*cmd, check_exit_code=False,",0,2,0.5,11
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"network = dhcp.NetModel(None, {'id': 'foo'})",1,2,0.5,12
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def setup_dhcp_port(self, network, segment=None):",0,2,0.5,13
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"network = dhcp.NetModel(True, {'id': 'foo'})",1,2,0.5,14
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"LOG.error(_LE(""Exception during stale dhcp device cleanup""))",0,2,0.5,15
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"network = dhcp.NetModel(True, dict(id='net-id',",1,2,0.5,16
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,network = FakeDualNetwork(),1,2,0.5,17
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.mock_mgr.assert_has_calls([mock.call(self.conf, None),",1,2,0.5,18
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def __init__(self, d):",0,2,0.5,19
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def __init__(self, use_namespaces, d):",1,2,0.5,20
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,device = ip_lib.IPDevice(interface_name),1,2,0.5,21
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"LOG.error(_LE(""Exception during stale dhcp device cleanup""))",1,2,0.5,22
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"network = dhcp.NetModel(dict(id='net-id',",0,2,0.5,23
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.network_conf_dir = os.path.join(self.confs_dir, network.id)",0,1,0.25,24
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._IS_DHCP_RELEASE6_SUPPORTED = checks.dhcp_release6_supported(),1,1,0.25,25
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.network_conf_dir = os.path.join(,0,1,0.25,26
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.segment = segment,0,1,0.25,27
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ip_wrapper = ip_lib.IPWrapper(namespace=self.network.namespace),1,1,0.25,28
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cmd = ['dhcp_release', self.interface_name, ip, mac_address]",1,1,0.25,29
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cmd = ['dhcp_release6', '--iface', self.interface_name,",1,1,0.25,30
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,cmd = [],0,1,0.25,31
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cmd = ['dhcp_release6', '--help']",0,1,0.25,32
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def dhcp_release6_supported():,0,1,0.25,33
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def dhcp_release6(interface_name, ip_address, client_id, server_id, iaid,",0,1,0.25,34
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,log_errors = processutils.LOG_FINAL_ERROR,0,1,0.25,35
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def dhcp_release(interface_name, ip_address, mac_address, client_id,",0,1,0.25,36
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"params = {'interface_name': self.interface_name,",0,1,0.25,37
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def _del_running_interface(cls, interface):",0,1,0.25,38
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def _add_running_interface(cls, interface):",0,1,0.25,39
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def get_device_id(self, network):",1,1,0.25,40
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def _has_running_interfaces(cls):,0,1,0.25,41
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def get_process_uuid(self):,0,1,0.25,42
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,interface_name = self.device_manager.setup(,0,1,0.25,43
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,segmentation_id = (,0,1,0.25,44
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.segment.segmentation_id if self.segment else None),0,1,0.25,45
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"device_id = self.get_device_id(network, segment)",0,1,0.25,46
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"port = self.setup_dhcp_port(network, segment)",0,1,0.25,47
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"version, plugin)",1,1,0.25,48
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.network_conf_dir = os.path.join(self.confs_dir, network.id)",1,1,0.25,49
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,interface_name = self.device_manager.setup(self.network),1,1,0.25,50
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,from neutron.privileged.agent.linux import dhcp as priv_dhcp,0,1,0.25,51
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def setup_dhcp_port(self, network):",1,1,0.25,52
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,device_id = self.get_device_id(network),1,1,0.25,53
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def setup(self, network):",1,1,0.25,54
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,port = self.setup_dhcp_port(network),1,1,0.25,55
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._IS_DHCP_RELEASE6_SUPPORTED = (,0,1,0.25,56
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,_interfaces = set(),0,1,0.25,57
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF, None)",1,1,0.25,58
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"prev_state = dhcp.NetModel(dict(id=fake_network.id,",0,1,0.25,59
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,fake_meta_dvr_network = dhcp.NetModel(fake_meta_network.copy()),0,1,0.25,60
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,fake_network_ipv6_ipv4 = dhcp.NetModel(dict(,0,1,0.25,61
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,fake_network_ipv6 = dhcp.NetModel(dict(,0,1,0.25,62
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"fake_network = dhcp.NetModel(dict(id=FAKE_NETWORK_UUID,",0,1,0.25,63
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# ensure that the dhcp interface is first in the list,1,1,0.25,64
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ns_ip = ip_lib.IPWrapper(namespace=self.network.namespace),1,1,0.25,65
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"""%s%s"" % (NS_PREFIX, self.id) or None)",1,1,0.25,66
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._ns_name = (use_namespaces and,1,1,0.25,67
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ns_ip = ip_lib.IPWrapper(namespace=self.network.namespace),0,1,0.25,68
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def test_disable_delete_ns(self):,1,1,0.25,69
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"lp = LocalChild(self.conf, network)",1,1,0.25,70
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,mocks['interface_name'].__get__ = mock.Mock(return_value='tap0'),1,1,0.25,71
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,mocks['active'].__get__ = mock.Mock(return_value=True),1,1,0.25,72
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"attrs_to_mock = dict([(a, mock.DEFAULT) for a in",1,1,0.25,73
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"agent = l3_agent.L3NATAgent(HOSTNAME, self.conf)",0,1,0.25,74
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"new_state = dhcp.NetModel(dict(id=fake_network.id,",0,1,0.25,75
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._ns_name = ""%s%s"" % (NS_PREFIX, self.id)",0,1,0.25,76
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"proxy = dhcp_agent.DhcpPluginApi('foo', ctxt, host='foo')",0,1,0.25,77
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,dh._set_default_route = mock.Mock(),1,1,0.25,78
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"def test_interface_driver_init(self, load_driver_mock, funct_partial_mock):",0,1,0.25,79
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ns_ip = ip_lib.IPWrapper(namespace=self.network.namespace),1,1,0.25,80
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"fake_network = dhcp.NetModel(True, dict(id=FAKE_NETWORK_UUID,",1,1,0.25,81
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"agent = l3_agent.L3NATAgent(HOSTNAME, self.conf)",1,1,0.25,82
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def test_ns_name_false_namespace(self):,1,1,0.25,83
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def test_ns_name(self):,1,1,0.25,84
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,def test_ns_name_none_namespace(self):,1,1,0.25,85
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"proxy = dhcp_agent.DhcpPluginApi('foo', ctxt, None, host='foo')",1,1,0.25,86
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"fake_network_ipv6_ipv4 = dhcp.NetModel(True, dict(",1,1,0.25,87
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"prev_state = dhcp.NetModel(True, dict(id=fake_network.id,",1,1,0.25,88
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"new_state = dhcp.NetModel(True, dict(id=fake_network.id,",1,1,0.25,89
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"fake_meta_dvr_network = dhcp.NetModel(True, fake_meta_network.copy())",1,1,0.25,90
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"fake_network_ipv6 = dhcp.NetModel(True, dict(",1,1,0.25,91
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"return processutils.execute(*cmd, log_errors=log_errors)",0,0,0.0,92
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,cmd += client_id,0,0,0.0,93
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if client_id:,0,0,0.0,94
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# under the License.,0,0,0.0,95
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cmd += ['ip', 'netns', 'exec', namespace]",0,0,0.0,96
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cmd += ['dhcp_release', interface_name, ip_address, mac_address]",0,0,0.0,97
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,from neutron import privileged,0,0,0.0,98
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if namespace:,0,0,0.0,99
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,namespace=None):,0,0,0.0,100
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,@privileged.dhcp_release_cmd.entrypoint,0,0,0.0,101
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'--client-id', client_id, '--server-id', server_id, '--iaid', iaid]",0,0,0.0,102
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cmd += ['dhcp_release6', '--iface', interface_name, '--ip', ip_address,",0,0,0.0,103
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,return,1,0,0.0,104
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,env_variables={'LC_ALL': 'C'}),0,0,0.0,105
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,return not bool(result[1]),0,0,0.0,106
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if ip_version == constants.IP_VERSION_6:,1,0,0.0,107
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not self._is_dhcp_release6_supported():,1,0,0.0,108
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'--ip', ip, '--client-id', client_id,",1,0,0.0,109
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'--server-id', server_id, '--iaid', iaid]",1,0,0.0,110
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,else:,1,0,0.0,111
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if client_id:,1,0,0.0,112
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,cmd.append(client_id),1,0,0.0,113
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",0,0,0.0,114
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"ip_wrapper.netns.execute(cmd, run_as_root=True)",1,0,0.0,115
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# License for the specific language governing permissions and limitations,0,0,0.0,116
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,'namespace': self.network.namespace},0,0,0.0,117
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"# distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",0,0,0.0,118
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"# Unless required by applicable law or agreed to in writing, software",0,0,0.0,119
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,LOG.warning('DHCP release failed for %(cmd)s. ',1,0,0.0,120
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.plugin_api.get_networks, agent.context)",0,0,0.0,121
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,dvr_cls.assert_called_once_with(cfg.CONF),1,0,0.0,122
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,from oslo_concurrency import processutils,0,0,0.0,123
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,priv_dhcp.dhcp_release6_supported()),0,0,0.0,124
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if ip_version == constants.IP_VERSION_6:,0,0,0.0,125
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not self._is_dhcp_release6_supported():,0,0,0.0,126
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,return,0,0,0.0,127
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'ip_address': ip, 'client_id': client_id,",0,0,0.0,128
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'server_id': server_id, 'iaid': iaid,",0,0,0.0,129
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,priv_dhcp.dhcp_release6(**params),0,0,0.0,130
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,else:,0,0,0.0,131
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'ip_address': ip, 'mac_address': mac_address,",0,0,0.0,132
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'client_id': client_id,",0,0,0.0,133
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,priv_dhcp.dhcp_release(**params),0,0,0.0,134
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"except (processutils.ProcessExecutionError, OSError) as e:",0,0,0.0,135
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,LOG.warning('DHCP release failed for params %(params)s. ',0,0,0.0,136
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'Reason: %(e)s', {'params': params, 'e': e})",0,0,0.0,137
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"# Licensed under the Apache License, Version 2.0 (the ""License""); you may",0,0,0.0,138
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# not use this file except in compliance with the License. You may obtain,0,0,0.0,139
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# a copy of the License at,0,0,0.0,140
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,#,0,0,0.0,141
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,#      http://www.apache.org/licenses/LICENSE-2.0,0,0,0.0,142
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except RuntimeError as e:,1,0,0.0,143
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.device_manager.destroy(self.network, self.interface_name)",1,0,0.0,144
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"'Reason: %(e)s', {'cmd': cmd, 'e': e})",1,0,0.0,145
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._del_running_interface(self.interface_name),0,0,0.0,146
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.network, self.interface_name, segmentation_id)",0,0,0.0,147
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not self._has_running_interfaces():,0,0,0.0,148
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# Delete nm only if we don't serve different segmentation id.,0,0,0.0,149
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,try:,0,0,0.0,150
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ip_lib.delete_network_namespace(self.network.namespace),0,0,0.0,151
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except RuntimeError:,0,0,0.0,152
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"LOG.warning('Failed trying to delete namespace: %s',",0,0,0.0,153
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.network.namespace),0,0,0.0,154
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.process_monitor.register(uuid=self.get_process_uuid(),",0,0,0.0,155
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.conf.host,",0,0,0.0,156
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,segmentation_id),0,0,0.0,157
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.get_device_id(network, segment))",0,0,0.0,158
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"version=None, plugin=None):",1,0,0.0,159
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,plugin=None):,1,0,0.0,160
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"uuid=self.network.id,",1,0,0.0,161
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.conf, get_networks_callback=mock.ANY)",0,0,0.0,162
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,try:,1,0,0.0,163
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ip_lib.delete_network_namespace(self.network.namespace),1,0,0.0,164
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except RuntimeError:,1,0,0.0,165
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"LOG.warning('Failed trying to delete namespace: %s',",1,0,0.0,166
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.network.namespace),1,0,0.0,167
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.process_monitor.register(uuid=self.network.id,",1,0,0.0,168
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.conf.host),1,0,0.0,169
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.device_manager.destroy(,0,0,0.0,170
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"uuid=self.get_process_uuid(),",0,0,0.0,171
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"version=None, plugin=None, segment=None):",0,0,0.0,172
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._add_running_interface(self.interface_name),0,0,0.0,173
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# Track running interfaces.,0,0,0.0,174
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"plugin=None, segment=None):",0,0,0.0,175
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"version, plugin, segment)",0,0,0.0,176
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if self.segment:,0,0,0.0,177
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# In case of multi-segments support we want a dns process per vlan.,0,0,0.0,178
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# don't do the opposite so we can clean /<netid>* when calling,0,0,0.0,179
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# disable of the legacy port that is not taking care of,0,0,0.0,180
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# segmentation.,0,0,0.0,181
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.confs_dir, str(self.segment.segmentation_id), network.id)",0,0,0.0,182
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,else:,0,0,0.0,183
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,@classmethod,0,0,0.0,184
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"""""""Safe method that add running interface""""""",0,0,0.0,185
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,cls._interfaces.add(interface),0,0,0.0,186
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"""""""Safe method that remove given interface""""""",0,0,0.0,187
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if interface in cls._interfaces:,0,0,0.0,188
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,cls._interfaces.remove(interface),0,0,0.0,189
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,return bool(cls._interfaces),0,0,0.0,190
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# NOTE(sahid): Keep the order to match directory path. This is used,0,0,0.0,191
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# by external_process.ProcessManager to check whether the process,0,0,0.0,192
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# is active.,0,0,0.0,193
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"return ""%s/%s"" % (self.segment.segmentation_id, self.network.id)",0,0,0.0,194
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,return self.network.id,0,0,0.0,195
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.network, self.segment)",0,0,0.0,196
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,funct_partial_mock.assert_called_once_with(,0,0,0.0,197
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"subnets=[fake_meta_subnet],",1,0,0.0,198
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,load_driver_mock.assert_called_once_with(,0,0,0.0,199
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"LOG.warning(_LW('Failed trying to delete namespace: %s'),",1,0,0.0,200
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not conf.use_namespaces or not conf.enable_isolated_metadata:,1,0,0.0,201
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if (self.conf.enable_isolated_metadata and,1,0,0.0,202
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.conf.use_namespaces):,1,0,0.0,203
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if network.namespace is None:,1,0,0.0,204
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"device.route.pullup_route(interface_name,",1,0,0.0,205
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ip_version=constants.IP_VERSION_4),1,0,0.0,206
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if self.conf.use_namespaces:,1,0,0.0,207
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._set_default_route(network, interface_name)",1,0,0.0,208
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._cleanup_stale_devices(network, port)",1,0,0.0,209
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except Exception:,1,0,0.0,210
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# catch everything as we don't want to fail because of,1,0,0.0,211
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# cleanup step,1,0,0.0,212
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._set_default_route(network, device_name)",1,0,0.0,213
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,dict(,0,0,0.0,214
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dict(id='12345678-1234-5678-1234567890ab',",0,0,0.0,215
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"tenant_id='aaaaaaaa-aaaa-aaaa-aaaaaaaaaaaa',",0,0,0.0,216
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"admin_state_up=True,",0,0,0.0,217
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"subnets=[fake_meta_subnet],",0,0,0.0,218
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ports=[fake_meta_port])),0,0,0.0,219
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"ports=[fake_meta_port, fake_dist_port]))",0,0,0.0,220
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dict(id='12345678-dddd-dddd-1234567890ab',",0,0,0.0,221
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"admin_state_up=False,",0,0,0.0,222
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"subnets=[],",0,0,0.0,223
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.network.namespace),1,0,0.0,224
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except RuntimeError:,1,0,0.0,225
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"@mock.patch.object(common_utils, 'load_interface_driver')",0,0,0.0,226
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ns_ip.netns.delete(self.network.namespace),1,0,0.0,227
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.conf.set_override('dhcp_delete_namespaces', False)",1,0,0.0,228
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"['active', 'interface_name']])",1,0,0.0,229
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"with mock.patch.multiple(LocalChild, **attrs_to_mock) as mocks:",1,0,0.0,230
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,with mock.patch('neutron.agent.linux.ip_lib.IPWrapper') as ip:,1,0,0.0,231
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,lp.disable(),1,0,0.0,232
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._assert_disabled(lp),1,0,0.0,233
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"mock.call().destroy(network, 'tap0')])",1,0,0.0,234
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.assertEqual(ip.return_value.netns.delete.call_count, 0)",1,0,0.0,235
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,try:,0,0,0.0,236
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ns_ip.netns.delete(self.network.namespace),0,0,0.0,237
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except RuntimeError:,0,0,0.0,238
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"LOG.warning(_LW('Failed trying to delete namespace: %s'),",0,0,0.0,239
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.network.namespace),0,0,0.0,240
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not conf.enable_isolated_metadata:,0,0,0.0,241
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if self.conf.enable_isolated_metadata:,0,0,0.0,242
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._set_default_route(network, interface_name)",0,0,0.0,243
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._cleanup_stale_devices(network, port)",0,0,0.0,244
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,except Exception:,0,0,0.0,245
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# catch everything as we don't want to fail because of,0,0,0.0,246
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# cleanup step,0,0,0.0,247
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self._set_default_route(network, device_name)",0,0,0.0,248
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if self.network.namespace:,1,0,0.0,249
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,try:,1,0,0.0,250
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ports=[])),0,0,0.0,251
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"subnets=[fake_subnet1],",0,0,0.0,252
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ports=[fake_port1])),0,0,0.0,253
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"ports=[fake_port1, fake_port2]))",0,0,0.0,254
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF.set_override('enable_metadata_network', True)",1,0,0.0,255
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dh.update(FakeV4Network(), 'ns-12345678-12')",1,0,0.0,256
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,class TestNetModel(base.BaseTestCase):,1,0,0.0,257
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.assertEqual(network.namespace, 'qdhcp-foo')",1,0,0.0,258
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.assertIsNone(network.namespace),1,0,0.0,259
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,agent_config.register_use_namespaces_opts_helper(self.conf),1,0,0.0,260
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.conf.set_override('router_id', 'fake_id')",1,0,0.0,261
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.conf.set_override('use_namespaces', False)",1,0,0.0,262
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.conf.set_override('router_id', '')",1,0,0.0,263
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.assertRaises(SystemExit, l3_agent.L3NATAgent,",1,0,0.0,264
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"HOSTNAME, self.conf)",1,0,0.0,265
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"self.assertEqual('1234', agent.conf.router_id)",1,0,0.0,266
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.assertFalse(agent.namespaces_manager._clean_stale),1,0,0.0,267
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not ip_lib.network_namespace_exists(self.network.namespace):,0,0,0.0,268
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ip_lib.delete_network_namespace(self.network.namespace),0,0,0.0,269
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,if not ns_ip.netns.exists(self.network.namespace):,1,0,0.0,270
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ns_ip.netns.delete(self.network.namespace),1,0,0.0,271
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF, mock.Mock())",0,0,0.0,272
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,dvr_cls.assert_called_once_with(,0,0,0.0,273
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF, get_networks_callback=plugin.get_networks)",0,0,0.0,274
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,import functools,0,0,0.0,275
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,from neutron.agent.common import utils as common_utils,0,0,0.0,276
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"@mock.patch.object(functools, 'partial')",0,0,0.0,277
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,# For completeness,1,0,0.0,278
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.assertFalse(dh._set_default_route.called),1,0,0.0,279
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dh.update(FakeV4Network(), 'tap12345678-12')",1,0,0.0,280
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"admin_state_up=False,",1,0,0.0,281
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"dict(id=FAKE_NETWORK_UUID,",0,0,0.0,282
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,tenant_id='aaaaaaaa-aaaa-aaaa-aaaaaaaaaaaa')),0,0,0.0,283
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self._configure_metadata_proxy(),0,0,0.0,284
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"True, dict(",1,0,0.0,285
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"True, dict(id='12345678-1234-5678-1234567890ab',",1,0,0.0,286
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"tenant_id='aaaaaaaa-aaaa-aaaa-aaaaaaaaaaaa',",1,0,0.0,287
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"admin_state_up=True,",1,0,0.0,288
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ports=[fake_meta_port])),1,0,0.0,289
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"ports=[fake_meta_port, fake_dist_port]))",1,0,0.0,290
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"True, dict(id='12345678-dddd-dddd-1234567890ab',",1,0,0.0,291
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"subnets=[],",1,0,0.0,292
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF.set_override('enable_metadata_network', False)",1,0,0.0,293
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ports=[])),1,0,0.0,294
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"subnets=[fake_subnet1],",1,0,0.0,295
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,ports=[fake_port1])),1,0,0.0,296
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"ports=[fake_port1, fake_port2]))",1,0,0.0,297
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,config.register_use_namespaces_opts_helper(cfg.CONF),1,0,0.0,298
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF.set_override('use_namespaces', True)",1,0,0.0,299
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"True, dict(id=FAKE_NETWORK_UUID,",1,0,0.0,300
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,tenant_id='aaaaaaaa-aaaa-aaaa-aaaaaaaaaaaa')),1,0,0.0,301
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"# No namespaces, shouldn't set default route.",1,0,0.0,302
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,"cfg.CONF.set_override('use_namespaces', False)",1,0,0.0,303
+9310a3b76a8f1415e3cbcc876d1cc54a24053b2a,self.get_device_id(network)),1,0,0.0,304

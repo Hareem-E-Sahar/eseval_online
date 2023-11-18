@@ -1,0 +1,182 @@
+commit_id,line,line_level_label,count,line_score,row
+3d6969a8370862494ea29ad677ee254d23efb689,private Trigger trigger = new PeriodicTrigger(10);,0,4,1.0,1
+3d6969a8370862494ea29ad677ee254d23efb689,private Trigger trigger = new PeriodicTrigger(10);,1,4,1.0,2
+3d6969a8370862494ea29ad677ee254d23efb689,public void run() {,1,3,0.75,3
+3d6969a8370862494ea29ad677ee254d23efb689,private Message<?> doPoll() {,0,2,0.5,4
+3d6969a8370862494ea29ad677ee254d23efb689,private final class Poller implements Runnable {,1,2,0.5,5
+3d6969a8370862494ea29ad677ee254d23efb689,private boolean doPoll() {,1,2,0.5,6
+3d6969a8370862494ea29ad677ee254d23efb689,protected void doStart() {,1,2,0.5,7
+3d6969a8370862494ea29ad677ee254d23efb689,private Runnable createPoller() throws Exception {,1,2,0.5,8
+3d6969a8370862494ea29ad677ee254d23efb689,private volatile Runnable poller;,1,2,0.5,9
+3d6969a8370862494ea29ad677ee254d23efb689,private volatile ScheduledFuture<?> runningTask;,1,2,0.5,10
+3d6969a8370862494ea29ad677ee254d23efb689,private long maxMessagesPerPoll = -1;,1,2,0.5,11
+3d6969a8370862494ea29ad677ee254d23efb689,private ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();,1,2,0.5,12
+3d6969a8370862494ea29ad677ee254d23efb689,protected void doStop() {,0,2,0.5,13
+3d6969a8370862494ea29ad677ee254d23efb689,protected void doStop() {,1,2,0.5,14
+3d6969a8370862494ea29ad677ee254d23efb689,private Message<?> pollForMessage() {,0,2,0.5,15
+3d6969a8370862494ea29ad677ee254d23efb689,private volatile Subscription subscription;,0,2,0.5,16
+3d6969a8370862494ea29ad677ee254d23efb689,private Flux<Message<?>> createFluxGenerator() {,0,2,0.5,17
+3d6969a8370862494ea29ad677ee254d23efb689,private ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();,0,2,0.5,18
+3d6969a8370862494ea29ad677ee254d23efb689,private long maxMessagesPerPoll = -1;,0,2,0.5,19
+3d6969a8370862494ea29ad677ee254d23efb689,private volatile Flux<Message<?>> pollingFlux;,0,2,0.5,20
+3d6969a8370862494ea29ad677ee254d23efb689,private volatile Callable<Message<?>> pollingTask;,0,2,0.5,21
+3d6969a8370862494ea29ad677ee254d23efb689,private volatile ScheduledFuture<?> runningTask;,0,2,0.5,22
+3d6969a8370862494ea29ad677ee254d23efb689,protected void doStart() {,0,2,0.5,23
+3d6969a8370862494ea29ad677ee254d23efb689,private Callable<Message<?>> createPollingTask() {,0,2,0.5,24
+3d6969a8370862494ea29ad677ee254d23efb689,private Runnable createPoller() {,0,2,0.5,25
+3d6969a8370862494ea29ad677ee254d23efb689,message = this.receiveMessage();,1,1,0.25,26
+3d6969a8370862494ea29ad677ee254d23efb689,this.poller = createPoller();,1,1,0.25,27
+3d6969a8370862494ea29ad677ee254d23efb689,Message<?> message = null;,1,1,0.25,28
+3d6969a8370862494ea29ad677ee254d23efb689,IntegrationResourceHolder holder = this.bindResourceHolderIfNecessary(,1,1,0.25,29
+3d6969a8370862494ea29ad677ee254d23efb689,this.runningTask = null;,1,1,0.25,30
+3d6969a8370862494ea29ad677ee254d23efb689,if (this.runningTask != null) {,1,1,0.25,31
+3d6969a8370862494ea29ad677ee254d23efb689,"this.runningTask = this.getTaskScheduler().schedule(this.poller, this.trigger);",1,1,0.25,32
+3d6969a8370862494ea29ad677ee254d23efb689,this.initialized = false;,1,1,0.25,33
+3d6969a8370862494ea29ad677ee254d23efb689,pollingTask = (Callable<Boolean>) proxyFactory.getProxy(this.beanClassLoader);,1,1,0.25,34
+3d6969a8370862494ea29ad677ee254d23efb689,},1,1,0.25,35
+3d6969a8370862494ea29ad677ee254d23efb689,if (!this.initialized) {,1,1,0.25,36
+3d6969a8370862494ea29ad677ee254d23efb689,@Override // guarded by super#lifecycleLock,1,1,0.25,37
+3d6969a8370862494ea29ad677ee254d23efb689,// LifecycleSupport implementation,1,1,0.25,38
+3d6969a8370862494ea29ad677ee254d23efb689,Callable<Boolean> pollingTask = this::doPoll;,1,1,0.25,39
+3d6969a8370862494ea29ad677ee254d23efb689,private TransactionSynchronizationFactory transactionSynchronizationFactory;,1,1,0.25,40
+3d6969a8370862494ea29ad677ee254d23efb689,if (this.subscription != null) {,0,1,0.25,41
+3d6969a8370862494ea29ad677ee254d23efb689,this.runningTask = null;,0,1,0.25,42
+3d6969a8370862494ea29ad677ee254d23efb689,try {,1,1,0.25,43
+3d6969a8370862494ea29ad677ee254d23efb689,result = false;,1,1,0.25,44
+3d6969a8370862494ea29ad677ee254d23efb689,Message<?> failedMessage = null;,1,1,0.25,45
+3d6969a8370862494ea29ad677ee254d23efb689,catch (Exception e) {,1,1,0.25,46
+3d6969a8370862494ea29ad677ee254d23efb689,if (e instanceof MessagingException) {,1,1,0.25,47
+3d6969a8370862494ea29ad677ee254d23efb689,if (TransactionSynchronizationManager.hasResource(resource)) {,1,1,0.25,48
+3d6969a8370862494ea29ad677ee254d23efb689,Object resource = getResourceToBind();,1,1,0.25,49
+3d6969a8370862494ea29ad677ee254d23efb689,finally {,1,1,0.25,50
+3d6969a8370862494ea29ad677ee254d23efb689,failedMessage = ((IntegrationResourceHolder) resource).getMessage();,1,1,0.25,51
+3d6969a8370862494ea29ad677ee254d23efb689,if (resource instanceof IntegrationResourceHolder) {,1,1,0.25,52
+3d6969a8370862494ea29ad677ee254d23efb689,Object resource = TransactionSynchronizationManager.getResource(getResourceToBind());,1,1,0.25,53
+3d6969a8370862494ea29ad677ee254d23efb689,if (AbstractPollingEndpoint.this.transactionSynchronizationFactory != null) {,1,1,0.25,54
+3d6969a8370862494ea29ad677ee254d23efb689,catch (Exception e) {,0,1,0.25,55
+3d6969a8370862494ea29ad677ee254d23efb689,if (!Poller.this.pollingTask.call()) {,1,1,0.25,56
+3d6969a8370862494ea29ad677ee254d23efb689,|| count < AbstractPollingEndpoint.this.maxMessagesPerPoll)) {,1,1,0.25,57
+3d6969a8370862494ea29ad677ee254d23efb689,int count = 0;,1,1,0.25,58
+3d6969a8370862494ea29ad677ee254d23efb689,AbstractPollingEndpoint.this.taskExecutor.execute(() -> {,1,1,0.25,59
+3d6969a8370862494ea29ad677ee254d23efb689,this.pollingTask = pollingTask;,1,1,0.25,60
+3d6969a8370862494ea29ad677ee254d23efb689,Poller(Callable<Boolean> pollingTask) {,1,1,0.25,61
+3d6969a8370862494ea29ad677ee254d23efb689,private final Callable<Boolean> pollingTask;,1,1,0.25,62
+3d6969a8370862494ea29ad677ee254d23efb689,result = true;,1,1,0.25,63
+3d6969a8370862494ea29ad677ee254d23efb689,else {,1,1,0.25,64
+3d6969a8370862494ea29ad677ee254d23efb689,if (this.runningTask != null) {,0,1,0.25,65
+3d6969a8370862494ea29ad677ee254d23efb689,* Default Poller implementation,1,1,0.25,66
+3d6969a8370862494ea29ad677ee254d23efb689,try {,0,1,0.25,67
+3d6969a8370862494ea29ad677ee254d23efb689,SimpleTriggerContext triggerContext = new SimpleTriggerContext();,0,1,0.25,68
+3d6969a8370862494ea29ad677ee254d23efb689,while (this.initialized && (this.maxMessagesPerPoll <= 0 || count < this.maxMessagesPerPoll)) {,0,1,0.25,69
+3d6969a8370862494ea29ad677ee254d23efb689,int count = 0;,0,1,0.25,70
+3d6969a8370862494ea29ad677ee254d23efb689,this.taskExecutor.execute(() -> {,0,1,0.25,71
+3d6969a8370862494ea29ad677ee254d23efb689,pollingTask = (Callable<Message<?>>) proxyFactory.getProxy(this.beanClassLoader);,0,1,0.25,72
+3d6969a8370862494ea29ad677ee254d23efb689,Callable<Message<?>> pollingTask = this::doPoll;,0,1,0.25,73
+3d6969a8370862494ea29ad677ee254d23efb689,this.runningTask =,0,1,0.25,74
+3d6969a8370862494ea29ad677ee254d23efb689,else {,0,1,0.25,75
+3d6969a8370862494ea29ad677ee254d23efb689,this.pollingFlux = createFluxGenerator();,0,1,0.25,76
+3d6969a8370862494ea29ad677ee254d23efb689,if (isReactive()) {,0,1,0.25,77
+3d6969a8370862494ea29ad677ee254d23efb689,this.pollingTask = createPollingTask();,0,1,0.25,78
+3d6969a8370862494ea29ad677ee254d23efb689,if (!this.initialized) {,0,1,0.25,79
+3d6969a8370862494ea29ad677ee254d23efb689,@Override // guarded by super#lifecycleLock,0,1,0.25,80
+3d6969a8370862494ea29ad677ee254d23efb689,// LifecycleSupport implementation,0,1,0.25,81
+3d6969a8370862494ea29ad677ee254d23efb689,protected Flux<Message<?>> getPollingFlux() {,0,1,0.25,82
+3d6969a8370862494ea29ad677ee254d23efb689,},0,1,0.25,83
+3d6969a8370862494ea29ad677ee254d23efb689,private TransactionSynchronizationFactory transactionSynchronizationFactory;,0,1,0.25,84
+3d6969a8370862494ea29ad677ee254d23efb689,if (!isReactive()) {,0,1,0.25,85
+3d6969a8370862494ea29ad677ee254d23efb689,if (pollForMessage() == null) {,0,1,0.25,86
+3d6969a8370862494ea29ad677ee254d23efb689,protected boolean isReactive() {,0,1,0.25,87
+3d6969a8370862494ea29ad677ee254d23efb689,.<Duration>generate(sink -> {,0,1,0.25,88
+3d6969a8370862494ea29ad677ee254d23efb689,if (this.transactionSynchronizationFactory != null) {,0,1,0.25,89
+3d6969a8370862494ea29ad677ee254d23efb689,Date date = this.trigger.nextExecutionTime(triggerContext);,0,1,0.25,90
+3d6969a8370862494ea29ad677ee254d23efb689,if (TransactionSynchronizationManager.hasResource(resource)) {,0,1,0.25,91
+3d6969a8370862494ea29ad677ee254d23efb689,Object resource = getResourceToBind();,0,1,0.25,92
+3d6969a8370862494ea29ad677ee254d23efb689,finally {,0,1,0.25,93
+3d6969a8370862494ea29ad677ee254d23efb689,failedMessage = ((IntegrationResourceHolder) resource).getMessage();,0,1,0.25,94
+3d6969a8370862494ea29ad677ee254d23efb689,if (resource instanceof IntegrationResourceHolder) {,0,1,0.25,95
+3d6969a8370862494ea29ad677ee254d23efb689,Object resource = TransactionSynchronizationManager.getResource(getResourceToBind());,0,1,0.25,96
+3d6969a8370862494ea29ad677ee254d23efb689,"IntegrationResourceHolder holder = bindResourceHolderIfNecessary(getResourceKey(), getResourceToBind());",0,1,0.25,97
+3d6969a8370862494ea29ad677ee254d23efb689,Message<?> failedMessage = null;,0,1,0.25,98
+3d6969a8370862494ea29ad677ee254d23efb689,.<Message<?>>generate(fluxSink -> {,0,1,0.25,99
+3d6969a8370862494ea29ad677ee254d23efb689,if (date != null) {,0,1,0.25,100
+3d6969a8370862494ea29ad677ee254d23efb689,if (e instanceof MessagingException) {,0,1,0.25,101
+3d6969a8370862494ea29ad677ee254d23efb689,long millis = date.getTime() - System.currentTimeMillis();,0,1,0.25,102
+3d6969a8370862494ea29ad677ee254d23efb689,message = receiveMessage();,0,1,0.25,103
+3d6969a8370862494ea29ad677ee254d23efb689,Message<?> message = pollForMessage();,0,1,0.25,104
+3d6969a8370862494ea29ad677ee254d23efb689,if (message != null) {,0,1,0.25,105
+3d6969a8370862494ea29ad677ee254d23efb689,.doOnSubscribe(subscription -> this.subscription = subscription);,0,1,0.25,106
+3d6969a8370862494ea29ad677ee254d23efb689,return message;,0,0,0.0,107
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingException(""Failed to create Poller"", e);",1,0,0.0,108
+3d6969a8370862494ea29ad677ee254d23efb689,"""unable to start polling, no taskScheduler available"");",1,0,0.0,109
+3d6969a8370862494ea29ad677ee254d23efb689,"Assert.state(this.getTaskScheduler() != null,",1,0,0.0,110
+3d6969a8370862494ea29ad677ee254d23efb689,this.onInit();,1,0,0.0,111
+3d6969a8370862494ea29ad677ee254d23efb689,return new Poller(pollingTask);,1,0,0.0,112
+3d6969a8370862494ea29ad677ee254d23efb689,this.subscription.cancel();,0,0,0.0,113
+3d6969a8370862494ea29ad677ee254d23efb689,this.runningTask.cancel(true);,0,0,0.0,114
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingException(message, e);",0,0,0.0,115
+3d6969a8370862494ea29ad677ee254d23efb689,return this.pollingTask.call();,0,0,0.0,116
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingExceptionWrapper(message, (MessagingException) e);",0,0,0.0,117
+3d6969a8370862494ea29ad677ee254d23efb689,handleMessage(message);,0,0,0.0,118
+3d6969a8370862494ea29ad677ee254d23efb689,Message<?> message;,0,0,0.0,119
+3d6969a8370862494ea29ad677ee254d23efb689,TransactionSynchronizationManager.unbindResource(resource);,0,0,0.0,120
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingException(failedMessage, e);",0,0,0.0,121
+3d6969a8370862494ea29ad677ee254d23efb689,throw (MessagingException) e;,0,0,0.0,122
+3d6969a8370862494ea29ad677ee254d23efb689,this.runningTask.cancel(true);,1,0,0.0,123
+3d6969a8370862494ea29ad677ee254d23efb689,return null;,0,0,0.0,124
+3d6969a8370862494ea29ad677ee254d23efb689,/**,1,0,0.0,125
+3d6969a8370862494ea29ad677ee254d23efb689,"this.getResourceKey(), this.getResourceToBind());",1,0,0.0,126
+3d6969a8370862494ea29ad677ee254d23efb689,return false;,1,0,0.0,127
+3d6969a8370862494ea29ad677ee254d23efb689,")), 1)",0,0,0.0,128
+3d6969a8370862494ea29ad677ee254d23efb689,TransactionSynchronizationManager.unbindResource(resource);,1,0,0.0,129
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingException(failedMessage, e);",1,0,0.0,130
+3d6969a8370862494ea29ad677ee254d23efb689,throw (MessagingException) e;,1,0,0.0,131
+3d6969a8370862494ea29ad677ee254d23efb689,count++;,1,0,0.0,132
+3d6969a8370862494ea29ad677ee254d23efb689,break;,1,0,0.0,133
+3d6969a8370862494ea29ad677ee254d23efb689,&& (AbstractPollingEndpoint.this.maxMessagesPerPoll <= 0,1,0,0.0,134
+3d6969a8370862494ea29ad677ee254d23efb689,while (AbstractPollingEndpoint.this.initialized,1,0,0.0,135
+3d6969a8370862494ea29ad677ee254d23efb689,@Override,1,0,0.0,136
+3d6969a8370862494ea29ad677ee254d23efb689,*/,1,0,0.0,137
+3d6969a8370862494ea29ad677ee254d23efb689,return result;,1,0,0.0,138
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingException(message, e);",1,0,0.0,139
+3d6969a8370862494ea29ad677ee254d23efb689,"throw new MessagingExceptionWrapper(message, (MessagingException) e);",1,0,0.0,140
+3d6969a8370862494ea29ad677ee254d23efb689,this.handleMessage(message);,1,0,0.0,141
+3d6969a8370862494ea29ad677ee254d23efb689,boolean result;,1,0,0.0,142
+3d6969a8370862494ea29ad677ee254d23efb689,.repeat(this::isRunning),0,0,0.0,143
+3d6969a8370862494ea29ad677ee254d23efb689,});,0,0,0.0,144
+3d6969a8370862494ea29ad677ee254d23efb689,new Date()),0,0,0.0,145
+3d6969a8370862494ea29ad677ee254d23efb689,count++;,0,0,0.0,146
+3d6969a8370862494ea29ad677ee254d23efb689,return () ->,0,0,0.0,147
+3d6969a8370862494ea29ad677ee254d23efb689,return pollingTask;,0,0,0.0,148
+3d6969a8370862494ea29ad677ee254d23efb689,".schedule(createPoller(), this.trigger);",0,0,0.0,149
+3d6969a8370862494ea29ad677ee254d23efb689,getTaskScheduler(),0,0,0.0,150
+3d6969a8370862494ea29ad677ee254d23efb689,"Assert.state(getTaskScheduler() != null, ""unable to start polling, no taskScheduler available"");",0,0,0.0,151
+3d6969a8370862494ea29ad677ee254d23efb689,onInit();,0,0,0.0,152
+3d6969a8370862494ea29ad677ee254d23efb689,return this.pollingFlux;,0,0,0.0,153
+3d6969a8370862494ea29ad677ee254d23efb689,return false;,0,0,0.0,154
+3d6969a8370862494ea29ad677ee254d23efb689,import reactor.core.scheduler.Schedulers;,0,0,0.0,155
+3d6969a8370862494ea29ad677ee254d23efb689,import reactor.core.publisher.Mono;,0,0,0.0,156
+3d6969a8370862494ea29ad677ee254d23efb689,import reactor.core.publisher.Flux;,0,0,0.0,157
+3d6969a8370862494ea29ad677ee254d23efb689,import org.springframework.scheduling.support.SimpleTriggerContext;,0,0,0.0,158
+3d6969a8370862494ea29ad677ee254d23efb689,import org.reactivestreams.Subscription;,0,0,0.0,159
+3d6969a8370862494ea29ad677ee254d23efb689,import java.util.Date;,0,0,0.0,160
+3d6969a8370862494ea29ad677ee254d23efb689,import java.time.Duration;,0,0,0.0,161
+3d6969a8370862494ea29ad677ee254d23efb689,break;,0,0,0.0,162
+3d6969a8370862494ea29ad677ee254d23efb689,return Flux,0,0,0.0,163
+3d6969a8370862494ea29ad677ee254d23efb689,"triggerContext.lastActualExecutionTime(),",0,0,0.0,164
+3d6969a8370862494ea29ad677ee254d23efb689,"triggerContext.update(date, null, null);",0,0,0.0,165
+3d6969a8370862494ea29ad677ee254d23efb689,.doOnComplete(() ->,0,0,0.0,166
+3d6969a8370862494ea29ad677ee254d23efb689,.subscribeOn(Schedulers.fromExecutor(this.taskExecutor)),0,0,0.0,167
+3d6969a8370862494ea29ad677ee254d23efb689,.take(this.maxMessagesPerPoll),0,0,0.0,168
+3d6969a8370862494ea29ad677ee254d23efb689,fluxSink.complete();,0,0,0.0,169
+3d6969a8370862494ea29ad677ee254d23efb689,fluxSink.next(message);,0,0,0.0,170
+3d6969a8370862494ea29ad677ee254d23efb689,Flux,0,0,0.0,171
+3d6969a8370862494ea29ad677ee254d23efb689,.flatMapMany(l ->,0,0,0.0,172
+3d6969a8370862494ea29ad677ee254d23efb689,"new Date(), null))",0,0,0.0,173
+3d6969a8370862494ea29ad677ee254d23efb689,"triggerContext.update(triggerContext.lastScheduledExecutionTime(),",0,0,0.0,174
+3d6969a8370862494ea29ad677ee254d23efb689,.doOnNext(l ->,0,0,0.0,175
+3d6969a8370862494ea29ad677ee254d23efb689,Mono.delay(duration),0,0,0.0,176
+3d6969a8370862494ea29ad677ee254d23efb689,.concatMap(duration ->,0,0,0.0,177
+3d6969a8370862494ea29ad677ee254d23efb689,}),0,0,0.0,178
+3d6969a8370862494ea29ad677ee254d23efb689,sink.complete();,0,0,0.0,179
+3d6969a8370862494ea29ad677ee254d23efb689,sink.next(Duration.ofMillis(millis));,0,0,0.0,180
+3d6969a8370862494ea29ad677ee254d23efb689,});,1,0,0.0,181

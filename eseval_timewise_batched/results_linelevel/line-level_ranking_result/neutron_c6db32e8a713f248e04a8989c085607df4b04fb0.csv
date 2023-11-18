@@ -1,0 +1,65 @@
+commit_id,line,line_level_label,count,line_score,row
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""Device %s not defined on plugin or binding failed"",",0,7,1.0,1
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""Device %s not defined on plugin or binding failed"",",1,7,1.0,2
+c6db32e8a713f248e04a8989c085607df4b04fb0,"LOG.debug(""Port %(pid)s on network %(network)s not bound, """,0,6,0.8571428571428571,3
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""no agent of type %(at)s registered on host %(host)s"",",0,6,0.8571428571428571,4
+c6db32e8a713f248e04a8989c085607df4b04fb0,"LOG.warning(_LW(""Port %(pid)s on network %(network)s not bound, """,1,6,0.8571428571428571,5
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""no agent registered on host %(host)s""),",1,6,0.8571428571428571,6
+c6db32e8a713f248e04a8989c085607df4b04fb0,# Stores the port IDs whose binding has been activated,0,2,0.2857142857142857,7
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""Skipped %(num_skipped)d and no activated binding """,0,2,0.2857142857142857,8
+c6db32e8a713f248e04a8989c085607df4b04fb0,"LOG.debug(""Device %s has no active binding in host"",",0,2,0.2857142857142857,9
+c6db32e8a713f248e04a8989c085607df4b04fb0,'host': context.host}),1,2,0.2857142857142857,10
+c6db32e8a713f248e04a8989c085607df4b04fb0,"{'pid': context.current['id'],",1,2,0.2857142857142857,11
+c6db32e8a713f248e04a8989c085607df4b04fb0,'host': context.host}),0,2,0.2857142857142857,12
+c6db32e8a713f248e04a8989c085607df4b04fb0,"{'pid': context.current['id'],",0,2,0.2857142857142857,13
+c6db32e8a713f248e04a8989c085607df4b04fb0,device),0,1,0.14285714285714285,14
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""%(num_current)d devices currently available. """,1,1,0.14285714285714285,15
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""Skipped %(num_skipped)d devices of """,1,1,0.14285714285714285,16
+c6db32e8a713f248e04a8989c085607df4b04fb0,device),1,1,0.14285714285714285,17
+c6db32e8a713f248e04a8989c085607df4b04fb0,self.activated_bindings or,0,1,0.14285714285714285,18
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""devices %(num_no_active_binding)d of %(num_current)d """,0,1,0.14285714285714285,19
+c6db32e8a713f248e04a8989c085607df4b04fb0,"""devices currently available. """,0,1,0.14285714285714285,20
+c6db32e8a713f248e04a8989c085607df4b04fb0,# added when binding is activated,0,1,0.14285714285714285,21
+c6db32e8a713f248e04a8989c085607df4b04fb0,port_id = kwargs.get('port_id'),0,1,0.14285714285714285,22
+c6db32e8a713f248e04a8989c085607df4b04fb0,# agent hasn't been activated yet. It will be treated as,0,1,0.14285714285714285,23
+c6db32e8a713f248e04a8989c085607df4b04fb0,"'network': context.network.current['id'],",1,1,0.14285714285714285,24
+c6db32e8a713f248e04a8989c085607df4b04fb0,"'network': context.network.current['id'],",0,1,0.14285714285714285,25
+c6db32e8a713f248e04a8989c085607df4b04fb0,# Compute which ports for activated bindings are still present...,0,1,0.14285714285714285,26
+c6db32e8a713f248e04a8989c085607df4b04fb0,"# Port was added to the bridge, but its binding in this",0,1,0.14285714285714285,27
+c6db32e8a713f248e04a8989c085607df4b04fb0,"need_binding_devices, failed_devices['added']) = (",0,0,0.0,28
+c6db32e8a713f248e04a8989c085607df4b04fb0,'num_no_active_binding':,0,0,0.0,29
+c6db32e8a713f248e04a8989c085607df4b04fb0,"len(binding_no_activated_devices),",0,0,0.0,30
+c6db32e8a713f248e04a8989c085607df4b04fb0,"added_ports = (port_info.get('added', set()) - skipped_devices -",0,0,0.0,31
+c6db32e8a713f248e04a8989c085607df4b04fb0,binding_no_activated_devices),0,0,0.0,32
+c6db32e8a713f248e04a8989c085607df4b04fb0,activated_bindings_copy = set(),0,0,0.0,33
+c6db32e8a713f248e04a8989c085607df4b04fb0,activated_bindings_copy = self.activated_bindings,0,0,0.0,34
+c6db32e8a713f248e04a8989c085607df4b04fb0,"self.process_activated_bindings(port_info,",0,0,0.0,35
+c6db32e8a713f248e04a8989c085607df4b04fb0,activated_bindings_copy),0,0,0.0,36
+c6db32e8a713f248e04a8989c085607df4b04fb0,self.activated_bindings |= activated_bindings_copy,0,0,0.0,37
+c6db32e8a713f248e04a8989c085607df4b04fb0,#   1.5 Added binding_deactivate,1,0,0.0,38
+c6db32e8a713f248e04a8989c085607df4b04fb0,"need_binding_devices, failed_devices)",0,0,0.0,39
+c6db32e8a713f248e04a8989c085607df4b04fb0,LOG.warning(,1,0,0.0,40
+c6db32e8a713f248e04a8989c085607df4b04fb0,"return (skipped_devices, need_binding_devices,",1,0,0.0,41
+c6db32e8a713f248e04a8989c085607df4b04fb0,failed_devices),1,0,0.0,42
+c6db32e8a713f248e04a8989c085607df4b04fb0,"(skipped_devices, need_binding_devices,",1,0,0.0,43
+c6db32e8a713f248e04a8989c085607df4b04fb0,failed_devices['added']) = (,1,0,0.0,44
+c6db32e8a713f248e04a8989c085607df4b04fb0,"(skipped_devices, binding_no_activated_devices,",0,0,0.0,45
+c6db32e8a713f248e04a8989c085607df4b04fb0,if kwargs.get('host') != self.conf.host:,0,0,0.0,46
+c6db32e8a713f248e04a8989c085607df4b04fb0,"return (skipped_devices, binding_no_activated_devices,",0,0,0.0,47
+c6db32e8a713f248e04a8989c085607df4b04fb0,LOG.warning(,0,0,0.0,48
+c6db32e8a713f248e04a8989c085607df4b04fb0,"'at': self.agent_type,",0,0,0.0,49
+c6db32e8a713f248e04a8989c085607df4b04fb0,from neutron.common import constants as c_const,0,0,0.0,50
+c6db32e8a713f248e04a8989c085607df4b04fb0,#   1.5 Added binding_activate and binding_deactivate,0,0,0.0,51
+c6db32e8a713f248e04a8989c085607df4b04fb0,self.activated_bindings = set(),0,0,0.0,52
+c6db32e8a713f248e04a8989c085607df4b04fb0,"def binding_activate(self, context, **kwargs):",0,0,0.0,53
+c6db32e8a713f248e04a8989c085607df4b04fb0,return,0,0,0.0,54
+c6db32e8a713f248e04a8989c085607df4b04fb0,self.activated_bindings.add(port_id),0,0,0.0,55
+c6db32e8a713f248e04a8989c085607df4b04fb0,"def process_activated_bindings(self, port_info, activated_bindings_copy):",0,0,0.0,56
+c6db32e8a713f248e04a8989c085607df4b04fb0,activated_bindings_copy &= port_info['current'],0,0,0.0,57
+c6db32e8a713f248e04a8989c085607df4b04fb0,# ...and treat them as just added,0,0,0.0,58
+c6db32e8a713f248e04a8989c085607df4b04fb0,port_info['added'] |= activated_bindings_copy,0,0,0.0,59
+c6db32e8a713f248e04a8989c085607df4b04fb0,binding_no_activated_devices = set(),0,0,0.0,60
+c6db32e8a713f248e04a8989c085607df4b04fb0,if c_const.NO_ACTIVE_BINDING in details:,0,0,0.0,61
+c6db32e8a713f248e04a8989c085607df4b04fb0,binding_no_activated_devices.add(device),0,0,0.0,62
+c6db32e8a713f248e04a8989c085607df4b04fb0,else:,0,0,0.0,63
+c6db32e8a713f248e04a8989c085607df4b04fb0,"added_ports = port_info.get('added', set()) - skipped_devices",1,0,0.0,64

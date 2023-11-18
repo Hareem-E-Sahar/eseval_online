@@ -1,0 +1,38 @@
+commit_id,line,line_level_label,count,line_score,row
+efb505f64bb50d08b082c0bf7d85bdcea945c940,rightOffset = $(document.body).outerWidth() - (scrollerLeft + hostScroller.clientWidth);,0,3,1.0,1
+efb505f64bb50d08b082c0bf7d85bdcea945c940,var rightOffset = $(document.body).outerWidth() - ($(hostScroller).offset().left + $(hostScroller).get(0).clientWidth);,1,3,1.0,2
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"scrollerBottom = scrollerTop + hostScroller.clientHeight,",0,2,0.6666666666666666,3
+efb505f64bb50d08b082c0bf7d85bdcea945c940,scrollerBottom = scrollerTop + hostScroller.clientHeight;,1,2,0.6666666666666666,4
+efb505f64bb50d08b082c0bf7d85bdcea945c940,this._relatedContainerDefaultWidth = relatedContainerWidth;,0,1,0.3333333333333333,5
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"this.$relatedContainer.css(""right"", rightOffset + ""px"");",1,1,0.3333333333333333,6
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"hostScroller = hostEditor._codeMirror.getScrollerElement(),",1,1,0.3333333333333333,7
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"this.$relatedContainer.css(""right"", rightOffset + ""px"");",0,1,0.3333333333333333,8
+efb505f64bb50d08b082c0bf7d85bdcea945c940,relatedContainerWidth = this._relatedContainerDefaultWidth;,0,1,0.3333333333333333,9
+efb505f64bb50d08b082c0bf7d85bdcea945c940,var halfWidth = hostScroller.clientWidth / 2;,0,1,0.3333333333333333,10
+efb505f64bb50d08b082c0bf7d85bdcea945c940,relatedContainerWidth = halfWidth;,0,1,0.3333333333333333,11
+efb505f64bb50d08b082c0bf7d85bdcea945c940,var relatedContainerWidth = this.$relatedContainer.width();,0,1,0.3333333333333333,12
+efb505f64bb50d08b082c0bf7d85bdcea945c940,// Constrain relatedContainer width to half of the scroller width,0,1,0.3333333333333333,13
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"scrollerLeft = $(hostScroller).offset().left,",0,1,0.3333333333333333,14
+efb505f64bb50d08b082c0bf7d85bdcea945c940,this._relatedContainerInserted = true;,0,1,0.3333333333333333,15
+efb505f64bb50d08b082c0bf7d85bdcea945c940,CSSInlineEditor.prototype._relatedContainerInsertedHandler = function () {,0,1,0.3333333333333333,16
+efb505f64bb50d08b082c0bf7d85bdcea945c940,this._relatedContainerInsertedHandler = this._relatedContainerInsertedHandler.bind(this);,0,1,0.3333333333333333,17
+efb505f64bb50d08b082c0bf7d85bdcea945c940,this._relatedContainerInserted = false;,0,1,0.3333333333333333,18
+efb505f64bb50d08b082c0bf7d85bdcea945c940,*/,0,0,0.0,19
+efb505f64bb50d08b082c0bf7d85bdcea945c940,// Position immediately to the left of the main editor's scrollbar.,0,0,0.0,20
+efb505f64bb50d08b082c0bf7d85bdcea945c940,this.$relatedContainer.width(Math.floor(relatedContainerWidth));,0,0,0.0,21
+efb505f64bb50d08b082c0bf7d85bdcea945c940,} else {,0,0,0.0,22
+efb505f64bb50d08b082c0bf7d85bdcea945c940,if (this._relatedContainerDefaultWidth >= halfWidth) {,0,0,0.0,23
+efb505f64bb50d08b082c0bf7d85bdcea945c940,},0,0,0.0,24
+efb505f64bb50d08b082c0bf7d85bdcea945c940,if (this._relatedContainerDefaultWidth === undefined) {,0,0,0.0,25
+efb505f64bb50d08b082c0bf7d85bdcea945c940,if (this._relatedContainerInserted) {,0,0,0.0,26
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"this.$relatedContainer.off(""DOMNodeInserted"", this._relatedContainerInsertedHandler);",0,0,0.0,27
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"this.$relatedContainer.on(""DOMNodeInserted"", this._relatedContainerInsertedHandler);",0,0,0.0,28
+efb505f64bb50d08b082c0bf7d85bdcea945c940,* Set _relatedContainerInserted flag once the $relatedContainer is inserted in the DOM.,0,0,0.0,29
+efb505f64bb50d08b082c0bf7d85bdcea945c940,* @private,0,0,0.0,30
+efb505f64bb50d08b082c0bf7d85bdcea945c940,/**,0,0,0.0,31
+efb505f64bb50d08b082c0bf7d85bdcea945c940,};,0,0,0.0,32
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"$(window).off(""resize"", this._updateRelatedContainer);",0,0,0.0,33
+efb505f64bb50d08b082c0bf7d85bdcea945c940,"$(window).on(""resize"", this._updateRelatedContainer);",0,0,0.0,34
+efb505f64bb50d08b082c0bf7d85bdcea945c940,// when the hostEditor's scrollbars visibility changes,0,0,0.0,35
+efb505f64bb50d08b082c0bf7d85bdcea945c940,// Listen to the window resize event to reposition the relatedContainer,0,0,0.0,36
+efb505f64bb50d08b082c0bf7d85bdcea945c940,// Position immediately to the left of the main editor's scrollbar.,1,0,0.0,37

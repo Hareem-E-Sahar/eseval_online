@@ -1,0 +1,110 @@
+commit_id,line,line_level_label,count,line_score,row
+307bd55696a80098185962749cc689f93bdf34ad,"String fullName = ""src"" + File.separator + ""main"" + File.separator + ""resources"" + File.separator + fileName;",1,7,1.0,1
+307bd55696a80098185962749cc689f93bdf34ad,"@WithAttributes(label = ""File Name"", required = true, description = ""Name of XML file"")",1,3,0.42857142857142855,2
+307bd55696a80098185962749cc689f93bdf34ad,String fileName = directory.getValue() != null ? directory.getValue() + File.separator + name.getValue() : name.getValue();,1,3,0.42857142857142855,3
+307bd55696a80098185962749cc689f93bdf34ad,// this will get a file in the src/main/resources directory where we want to store the spring xml file,1,3,0.42857142857142855,4
+307bd55696a80098185962749cc689f93bdf34ad,"return Results.fail(""Blueprint XML file "" + fullName + "" already exists"");",1,3,0.42857142857142855,5
+307bd55696a80098185962749cc689f93bdf34ad,"return Results.success(""Created new Blueprint XML file "" + fullName);",1,3,0.42857142857142855,6
+307bd55696a80098185962749cc689f93bdf34ad,"@WithAttributes(label = ""Directory"", required = false, defaultValue = ""OSGI-INF/blueprint"",",1,3,0.42857142857142855,7
+307bd55696a80098185962749cc689f93bdf34ad,Project project = getSelectedProject(context);,1,2,0.2857142857142857,8
+307bd55696a80098185962749cc689f93bdf34ad,".description(""Creates a new Blueprint XML file with CamelContext"");",1,2,0.2857142857142857,9
+307bd55696a80098185962749cc689f93bdf34ad,"Template template = factory.create(xml, FreemarkerTemplate.class);",1,2,0.2857142857142857,10
+307bd55696a80098185962749cc689f93bdf34ad,".description(""Adds a Blueprint XML file with CamelContext included to your project"");",1,2,0.2857142857142857,11
+307bd55696a80098185962749cc689f93bdf34ad,".description(""Adds a new Blueprint XML file with CamelContext to your project"");",0,2,0.2857142857142857,12
+307bd55696a80098185962749cc689f93bdf34ad,boolean cdi = CamelCommandsHelper.isCdiProject(project);,1,1,0.14285714285714285,13
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.14285714285714285,14
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,1,0.14285714285714285,15
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.14285714285714285,16
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.result.Result;,1,1,0.14285714285714285,17
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.result.Results;,1,1,0.14285714285714285,18
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.util.Categories;,1,1,0.14285714285714285,19
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.util.Metadata;,1,1,0.14285714285714285,20
+307bd55696a80098185962749cc689f93bdf34ad,@Inject,1,1,0.14285714285714285,21
+307bd55696a80098185962749cc689f93bdf34ad,"description = ""The directory name where this type will be created"")",1,1,0.14285714285714285,22
+307bd55696a80098185962749cc689f93bdf34ad,boolean enabled = super.isEnabled(context);,1,1,0.14285714285714285,23
+307bd55696a80098185962749cc689f93bdf34ad,Dependency core = findCamelCoreDependency(project);,1,1,0.14285714285714285,24
+307bd55696a80098185962749cc689f93bdf34ad,boolean spring = CamelCommandsHelper.isSpringProject(project);,1,1,0.14285714285714285,25
+307bd55696a80098185962749cc689f93bdf34ad,String projectName = project.getRoot().getName();,1,1,0.14285714285714285,26
+307bd55696a80098185962749cc689f93bdf34ad,ResourcesFacet facet = project.getFacet(ResourcesFacet.class);,1,1,0.14285714285714285,27
+307bd55696a80098185962749cc689f93bdf34ad,FileResource<?> fileResource = facet.getResource(fileName);,1,1,0.14285714285714285,28
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,1,0.14285714285714285,29
+307bd55696a80098185962749cc689f93bdf34ad,"return Results.fail(""The project does not include camel-core"");",1,1,0.14285714285714285,30
+307bd55696a80098185962749cc689f93bdf34ad,"DependencyBuilder spring = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,1,0.14285714285714285,31
+307bd55696a80098185962749cc689f93bdf34ad,"Resource<URL> xml = resourceFactory.create(getClass().getResource(""/templates/camel-blueprint.ftl"")).reify(URLResource.class);",1,1,0.14285714285714285,32
+307bd55696a80098185962749cc689f93bdf34ad,"Map<String, Object> params = new HashMap<String, Object>();",1,1,0.14285714285714285,33
+307bd55696a80098185962749cc689f93bdf34ad,String output = template.process(params);,1,1,0.14285714285714285,34
+307bd55696a80098185962749cc689f93bdf34ad,// create the new file and set the content,1,1,0.14285714285714285,35
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.hints.InputType;,1,1,0.14285714285714285,36
+307bd55696a80098185962749cc689f93bdf34ad,// does the project already have camel?,1,1,0.14285714285714285,37
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.14285714285714285,38
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,1,0.14285714285714285,39
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.14285714285714285,40
+307bd55696a80098185962749cc689f93bdf34ad,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.14285714285714285,41
+307bd55696a80098185962749cc689f93bdf34ad,import java.io.File;,1,1,0.14285714285714285,42
+307bd55696a80098185962749cc689f93bdf34ad,import java.net.URL;,1,1,0.14285714285714285,43
+307bd55696a80098185962749cc689f93bdf34ad,import java.util.HashMap;,1,1,0.14285714285714285,44
+307bd55696a80098185962749cc689f93bdf34ad,import java.util.Map;,1,1,0.14285714285714285,45
+307bd55696a80098185962749cc689f93bdf34ad,import javax.inject.Inject;,1,1,0.14285714285714285,46
+307bd55696a80098185962749cc689f93bdf34ad,import io.fabric8.forge.addon.utils.validator.ResourceNameValidator;,1,1,0.14285714285714285,47
+307bd55696a80098185962749cc689f93bdf34ad,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,1,0.14285714285714285,48
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.dependencies.Dependency;,1,1,0.14285714285714285,49
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,1,0.14285714285714285,50
+307bd55696a80098185962749cc689f93bdf34ad,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.14285714285714285,51
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.projects.Project;,1,1,0.14285714285714285,52
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,1,0.14285714285714285,53
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.resource.FileResource;,1,1,0.14285714285714285,54
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.resource.Resource;,1,1,0.14285714285714285,55
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.resource.ResourceFactory;,1,1,0.14285714285714285,56
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.resource.URLResource;,1,1,0.14285714285714285,57
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.templates.Template;,1,1,0.14285714285714285,58
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.templates.TemplateFactory;,1,1,0.14285714285714285,59
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.templates.freemarker.FreemarkerTemplate;,1,1,0.14285714285714285,60
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.14285714285714285,61
+307bd55696a80098185962749cc689f93bdf34ad,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,1,0.14285714285714285,62
+307bd55696a80098185962749cc689f93bdf34ad,"""Camel: New XML blueprint"").category(Categories.create(CATEGORY))",1,0,0.0,63
+307bd55696a80098185962749cc689f93bdf34ad,"name.addValidator(new ResourceNameValidator(""xml""));",1,0,0.0,64
+307bd55696a80098185962749cc689f93bdf34ad,directory.getFacet(HintsFacet.class).setInputType(InputType.DIRECTORY_PICKER);,1,0,0.0,65
+307bd55696a80098185962749cc689f93bdf34ad,public void initializeUI(UIBuilder builder) throws Exception {,1,0,0.0,66
+307bd55696a80098185962749cc689f93bdf34ad,return !cdi && !spring;,1,0,0.0,67
+307bd55696a80098185962749cc689f93bdf34ad,return Metadata.forCommand(CamelNewRouteBuilderCommand.class).name(,1,0,0.0,68
+307bd55696a80098185962749cc689f93bdf34ad,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,69
+307bd55696a80098185962749cc689f93bdf34ad,return false;,1,0,0.0,70
+307bd55696a80098185962749cc689f93bdf34ad,},1,0,0.0,71
+307bd55696a80098185962749cc689f93bdf34ad,name.getFacet(HintsFacet.class).setInputType(InputType.FILE_PICKER);,1,0,0.0,72
+307bd55696a80098185962749cc689f93bdf34ad,".setArtifactId(""camel-blueprint"").setVersion(core.getCoordinate().getVersion());",1,0,0.0,73
+307bd55696a80098185962749cc689f93bdf34ad,builder.add(directory).add(name);,1,0,0.0,74
+307bd55696a80098185962749cc689f93bdf34ad,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,75
+307bd55696a80098185962749cc689f93bdf34ad,if (fileResource.exists()) {,1,0,0.0,76
+307bd55696a80098185962749cc689f93bdf34ad,if (core == null) {,1,0,0.0,77
+307bd55696a80098185962749cc689f93bdf34ad,// install camel-blueprint if missing,1,0,0.0,78
+307bd55696a80098185962749cc689f93bdf34ad,"if (!dependencyInstaller.isManaged(project, spring)) {",1,0,0.0,79
+307bd55696a80098185962749cc689f93bdf34ad,"dependencyInstaller.install(project, spring);",1,0,0.0,80
+307bd55696a80098185962749cc689f93bdf34ad,// any dynamic options goes into the params map,1,0,0.0,81
+307bd55696a80098185962749cc689f93bdf34ad,"params.put(""projectName"", projectName);",1,0,0.0,82
+307bd55696a80098185962749cc689f93bdf34ad,fileResource.createNewFile();,1,0,0.0,83
+307bd55696a80098185962749cc689f93bdf34ad,if (enabled) {,1,0,0.0,84
+307bd55696a80098185962749cc689f93bdf34ad,// not enable for cdi or spring projects,1,0,0.0,85
+307bd55696a80098185962749cc689f93bdf34ad,*  permissions and limitations under the License.,1,0,0.0,86
+307bd55696a80098185962749cc689f93bdf34ad,public boolean isEnabled(UIContext context) {,1,0,0.0,87
+307bd55696a80098185962749cc689f93bdf34ad,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,88
+307bd55696a80098185962749cc689f93bdf34ad,"""Camel: New XML blueprint"").category(Categories.create(CATEGORY))",0,0,0.0,89
+307bd55696a80098185962749cc689f93bdf34ad,"""project-camel-add-blueprint-xml"").category(Categories.create(CATEGORY))",1,0,0.0,90
+307bd55696a80098185962749cc689f93bdf34ad,/**,1,0,0.0,91
+307bd55696a80098185962749cc689f93bdf34ad,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,92
+307bd55696a80098185962749cc689f93bdf34ad,*,1,0,0.0,93
+307bd55696a80098185962749cc689f93bdf34ad,*  with the License.  You may obtain a copy of the License at,1,0,0.0,94
+307bd55696a80098185962749cc689f93bdf34ad,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,95
+307bd55696a80098185962749cc689f93bdf34ad,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,96
+307bd55696a80098185962749cc689f93bdf34ad,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,97
+307bd55696a80098185962749cc689f93bdf34ad,*  implied.  See the License for the specific language governing,1,0,0.0,98
+307bd55696a80098185962749cc689f93bdf34ad,@Override,1,0,0.0,99
+307bd55696a80098185962749cc689f93bdf34ad,*/,1,0,0.0,100
+307bd55696a80098185962749cc689f93bdf34ad,package io.fabric8.forge.camel.commands.project;,1,0,0.0,101
+307bd55696a80098185962749cc689f93bdf34ad,@FacetConstraint({ResourcesFacet.class}),1,0,0.0,102
+307bd55696a80098185962749cc689f93bdf34ad,public class CamelNewBlueprintXmlCommand extends AbstractCamelProjectCommand {,1,0,0.0,103
+307bd55696a80098185962749cc689f93bdf34ad,private UIInput<String> directory;,1,0,0.0,104
+307bd55696a80098185962749cc689f93bdf34ad,private UIInput<String> name;,1,0,0.0,105
+307bd55696a80098185962749cc689f93bdf34ad,private DependencyInstaller dependencyInstaller;,1,0,0.0,106
+307bd55696a80098185962749cc689f93bdf34ad,private TemplateFactory factory;,1,0,0.0,107
+307bd55696a80098185962749cc689f93bdf34ad,ResourceFactory resourceFactory;,1,0,0.0,108
+307bd55696a80098185962749cc689f93bdf34ad,fileResource.setContents(output);,1,0,0.0,109

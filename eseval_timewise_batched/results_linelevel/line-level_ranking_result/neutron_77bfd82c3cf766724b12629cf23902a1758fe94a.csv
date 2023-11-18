@@ -1,0 +1,163 @@
+commit_id,line,line_level_label,count,line_score,row
+77bfd82c3cf766724b12629cf23902a1758fe94a,# Test to get agent hosting dvr snat port,0,5,1.0,1
+77bfd82c3cf766724b12629cf23902a1758fe94a,# Register a L2 agent + A bunch of other agents on the same host,1,5,1.0,2
+77bfd82c3cf766724b12629cf23902a1758fe94a,# test to get HA agents hosting HA+DVR snat port,0,5,1.0,3
+77bfd82c3cf766724b12629cf23902a1758fe94a,"# Register l3 agent on host3, which doesn't host any HA router.",0,4,0.8,4
+77bfd82c3cf766724b12629cf23902a1758fe94a,# Register a bunch of non-L2 agents on the same host,1,4,0.8,5
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = query.filter(agent_model.Agent.host == agent_host),0,4,0.8,6
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = query.filter(agents_db.Agent.host == agent_host),1,4,0.8,7
+77bfd82c3cf766724b12629cf23902a1758fe94a,# setup DVR snat port,0,3,0.6000000000000001,8
+77bfd82c3cf766724b12629cf23902a1758fe94a,"query = session.query(ml2_models.PortBinding, agents_db.Agent)",1,3,0.6000000000000001,9
+77bfd82c3cf766724b12629cf23902a1758fe94a,# setup HA snat port,0,3,0.6000000000000001,10
+77bfd82c3cf766724b12629cf23902a1758fe94a,# create DVR router,0,3,0.6000000000000001,11
+77bfd82c3cf766724b12629cf23902a1758fe94a,# Tests should test that host3 is not a HA agent host.,0,3,0.6000000000000001,12
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = session.query(agent_model.Agent),0,2,0.4,13
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = query.join(agents_db.Agent),1,2,0.4,14
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = session.query(agents_db.Agent.host).distinct(),1,2,0.4,15
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = session.query(agents_db.Agent),1,2,0.4,16
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = query.join(agent_model.Agent),0,2,0.4,17
+77bfd82c3cf766724b12629cf23902a1758fe94a,query = session.query(agent_model.Agent.host).distinct(),0,2,0.4,18
+77bfd82c3cf766724b12629cf23902a1758fe94a,"query = query.join(agent_model.Agent,",0,2,0.4,19
+77bfd82c3cf766724b12629cf23902a1758fe94a,"query = session.query(ml2_models.PortBinding, agent_model.Agent)",0,2,0.4,20
+77bfd82c3cf766724b12629cf23902a1758fe94a,"query = query.join(agents_db.Agent,",1,2,0.4,21
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.db.models import agent as agent_model,0,2,0.4,22
+77bfd82c3cf766724b12629cf23902a1758fe94a,device_owner = constants.DEVICE_OWNER_DVR_INTERFACE if dvr else '',1,2,0.4,23
+77bfd82c3cf766724b12629cf23902a1758fe94a,ha_agents = [agent.host for agent in agents],0,2,0.4,24
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents = l2pop_db.get_ha_agents_by_router_id(,0,2,0.4,25
+77bfd82c3cf766724b12629cf23902a1758fe94a,# create HA+DVR router,0,2,0.4,26
+77bfd82c3cf766724b12629cf23902a1758fe94a,agent = self.get_l3_agent_by_host(host),0,2,0.4,27
+77bfd82c3cf766724b12629cf23902a1758fe94a,"host = kwargs.get('host', helpers.HOST)",0,2,0.4,28
+77bfd82c3cf766724b12629cf23902a1758fe94a,port_binding_cls = (models.DistributedPortBinding if dvr,1,2,0.4,29
+77bfd82c3cf766724b12629cf23902a1758fe94a,ha_iface_ids = l2pop_db._get_ha_router_interface_ids(,0,1,0.2,30
+77bfd82c3cf766724b12629cf23902a1758fe94a,port_count = l2pop_db.get_agent_network_active_port_count(,0,1,0.2,31
+77bfd82c3cf766724b12629cf23902a1758fe94a,ha_ports = l2pop_db.get_ha_active_network_ports(,0,1,0.2,32
+77bfd82c3cf766724b12629cf23902a1758fe94a,fdb_network_ports = l2pop_db.get_nondistributed_active_network_ports(,0,1,0.2,33
+77bfd82c3cf766724b12629cf23902a1758fe94a,port_binding_cls = models.DistributedPortBinding,0,1,0.2,34
+77bfd82c3cf766724b12629cf23902a1758fe94a,"habinding_kwarg = {'port_id': port_id,",0,1,0.2,35
+77bfd82c3cf766724b12629cf23902a1758fe94a,if network_id == TEST_HA_NETWORK_ID:,0,1,0.2,36
+77bfd82c3cf766724b12629cf23902a1758fe94a,binding_kwarg['router_id'] = TEST_ROUTER_ID,0,1,0.2,37
+77bfd82c3cf766724b12629cf23902a1758fe94a,binding_kwarg['router_id'] = 'router_id',1,1,0.2,38
+77bfd82c3cf766724b12629cf23902a1758fe94a,if device_owner == constants.DEVICE_OWNER_DVR_INTERFACE:,0,1,0.2,39
+77bfd82c3cf766724b12629cf23902a1758fe94a,binding_kwarg = {,1,1,0.2,40
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_query = agents_query.filter(agent_model.Agent.host.in_(query)),0,1,0.2,41
+77bfd82c3cf766724b12629cf23902a1758fe94a,agent_model.Agent.host == ml2_models.PortBinding.host),0,1,0.2,42
+77bfd82c3cf766724b12629cf23902a1758fe94a,agent_model.Agent.host ==,0,1,0.2,43
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_query = session.query(agent_model.Agent),0,1,0.2,44
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.db import agents_db,1,1,0.2,45
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_db.Agent.host == ml2_models.PortBinding.host),1,1,0.2,46
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_db.Agent),1,1,0.2,47
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_db.Agent.host ==,1,1,0.2,48
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_query = session.query(agents_db.Agent),1,1,0.2,49
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_query = agents_query.filter(agents_db.Agent.host.in_(query)),1,1,0.2,50
+77bfd82c3cf766724b12629cf23902a1758fe94a,port_binding_cls = models.PortBinding,0,1,0.2,51
+77bfd82c3cf766724b12629cf23902a1758fe94a,"binding_kwarg = {'port_id': port_id,",0,1,0.2,52
+77bfd82c3cf766724b12629cf23902a1758fe94a,haport_bindings_cls = l3_hamode_db.L3HARouterAgentPortBinding,0,1,0.2,53
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_id = kwargs.get('device_id', '')",0,1,0.2,54
+77bfd82c3cf766724b12629cf23902a1758fe94a,HOST_3_TUNNELING_IP = '20.0.0.3',0,1,0.2,55
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_owner = kwargs.get('device_owner', '')",0,1,0.2,56
+77bfd82c3cf766724b12629cf23902a1758fe94a,from oslo_utils import uuidutils,0,1,0.2,57
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.common import constants as n_const,0,1,0.2,58
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.db import l3_attrs_db,0,1,0.2,59
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.db import l3_db,0,1,0.2,60
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.db import l3_hamode_db,0,1,0.2,61
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.tests import tools,0,1,0.2,62
+77bfd82c3cf766724b12629cf23902a1758fe94a,HOST = helpers.HOST,0,1,0.2,63
+77bfd82c3cf766724b12629cf23902a1758fe94a,HOST_2 = 'HOST_2',0,1,0.2,64
+77bfd82c3cf766724b12629cf23902a1758fe94a,HOST_3 = 'HOST_3',0,1,0.2,65
+77bfd82c3cf766724b12629cf23902a1758fe94a,HOST_2_TUNNELING_IP = '20.0.0.2',0,1,0.2,66
+77bfd82c3cf766724b12629cf23902a1758fe94a,from neutron.common import utils,0,1,0.2,67
+77bfd82c3cf766724b12629cf23902a1758fe94a,TEST_ROUTER_ID = 'router_id',0,1,0.2,68
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.ctx, constants.AGENT_TYPE_L3, agent_host)",0,1,0.2,69
+77bfd82c3cf766724b12629cf23902a1758fe94a,TEST_NETWORK_ID = 'network_id',0,1,0.2,70
+77bfd82c3cf766724b12629cf23902a1758fe94a,port_id = uuidutils.generate_uuid(),0,1,0.2,71
+77bfd82c3cf766724b12629cf23902a1758fe94a,"network_id = kwargs.get('network_id', TEST_NETWORK_ID)",0,1,0.2,72
+77bfd82c3cf766724b12629cf23902a1758fe94a,mac = utils.get_random_mac('fa:16:3e:00:00:00'.split(':')),0,1,0.2,73
+77bfd82c3cf766724b12629cf23902a1758fe94a,plugin = helpers.FakePlugin(),0,1,0.2,74
+77bfd82c3cf766724b12629cf23902a1758fe94a,"for state, host in [(n_const.HA_ROUTER_STATE_ACTIVE, HOST),",0,1,0.2,75
+77bfd82c3cf766724b12629cf23902a1758fe94a,with self.ctx.session.begin(subtransactions=True):,0,1,0.2,76
+77bfd82c3cf766724b12629cf23902a1758fe94a,TEST_HA_NETWORK_ID = 'ha_network_id',0,1,0.2,77
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test_get_ha_agents_by_router_id(self):,0,0,0.0,78
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test_active_port_count_with_ha_dvr_snat_port(self):,0,0,0.0,79
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(0, port_count)",0,0,0.0,80
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.ctx.session, HOST_2, TEST_NETWORK_ID)",0,0,0.0,81
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(1, port_count)",0,0,0.0,82
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.ctx.session, HOST, TEST_NETWORK_ID)",0,0,0.0,83
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test_active_port_count_with_dvr_snat_port(self):,0,0,0.0,84
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(2, len(ha_ports))",0,0,0.0,85
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(0, len(fdb_network_ports))",0,0,0.0,86
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(0, len(list(ha_iface_ids)))",0,0,0.0,87
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test_active_network_ports_with_ha_dvr_snat_port(self):,0,0,0.0,88
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(1, len(fdb_network_ports))",0,0,0.0,89
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test_active_network_ports_with_dvr_snat_port(self):,0,0,0.0,90
+77bfd82c3cf766724b12629cf23902a1758fe94a,self._create_router(),0,0,0.0,91
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test__get_ha_router_interface_ids_with_no_ha_port(self):,0,0,0.0,92
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_owner=constants.DEVICE_OWNER_HA_REPLICATED_INT,",0,0,0.0,93
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test__get_ha_router_interface_ids_with_ha_replicated_port(self):,0,0,0.0,94
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(tools.UnorderedList([HOST, HOST_2]), ha_agents)",0,0,0.0,95
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.assertEqual(1, len(list(ha_iface_ids)))",0,0,0.0,96
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.ctx.session, TEST_ROUTER_ID)",0,0,0.0,97
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'host': helpers.HOST,",1,0,0.0,98
+77bfd82c3cf766724b12629cf23902a1758fe94a,"def _setup_port_binding(self, network_id='network_id', dvr=True):",1,0,0.0,99
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'vif_type': portbindings.VIF_TYPE_UNBOUND,",1,0,0.0,100
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_owner=constants.DEVICE_OWNER_ROUTER_SNAT,",0,0,0.0,101
+77bfd82c3cf766724b12629cf23902a1758fe94a,agent_model.Agent.id),0,0,0.0,102
+77bfd82c3cf766724b12629cf23902a1758fe94a,agent_model.Agent),0,0,0.0,103
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.ctx.session, 'network_id')",1,0,0.0,104
+77bfd82c3cf766724b12629cf23902a1758fe94a,self._setup_port_binding(),1,0,0.0,105
+77bfd82c3cf766724b12629cf23902a1758fe94a,if dvr:,1,0,0.0,106
+77bfd82c3cf766724b12629cf23902a1758fe94a,},1,0,0.0,107
+77bfd82c3cf766724b12629cf23902a1758fe94a,'vnic_type': portbindings.VNIC_NORMAL,1,0,0.0,108
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'port_id': 'port_id',",1,0,0.0,109
+77bfd82c3cf766724b12629cf23902a1758fe94a,self.ctx.session.add(models_v2.Network(id=network_id)),1,0,0.0,110
+77bfd82c3cf766724b12629cf23902a1758fe94a,else models.PortBinding),1,0,0.0,111
+77bfd82c3cf766724b12629cf23902a1758fe94a,device_owner=device_owner)),1,0,0.0,112
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_id='',",1,0,0.0,113
+77bfd82c3cf766724b12629cf23902a1758fe94a,"status=constants.PORT_STATUS_ACTIVE,",1,0,0.0,114
+77bfd82c3cf766724b12629cf23902a1758fe94a,"admin_state_up=True,",1,0,0.0,115
+77bfd82c3cf766724b12629cf23902a1758fe94a,"mac_address='00:11:22:33:44:55',",1,0,0.0,116
+77bfd82c3cf766724b12629cf23902a1758fe94a,"network_id=network_id,",1,0,0.0,117
+77bfd82c3cf766724b12629cf23902a1758fe94a,"id='port_id',",1,0,0.0,118
+77bfd82c3cf766724b12629cf23902a1758fe94a,device_id=TEST_ROUTER_ID),0,0,0.0,119
+77bfd82c3cf766724b12629cf23902a1758fe94a,self.ctx.session.add(l3_db.Router(id=TEST_ROUTER_ID)),0,0,0.0,120
+77bfd82c3cf766724b12629cf23902a1758fe94a,self._create_ha_router(),0,0,0.0,121
+77bfd82c3cf766724b12629cf23902a1758fe94a,helpers.register_l3_agent(HOST_3),0,0,0.0,122
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_id=TEST_ROUTER_ID,",0,0,0.0,123
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_owner=constants.DEVICE_OWNER_ROUTER_HA_INTF,",0,0,0.0,124
+77bfd82c3cf766724b12629cf23902a1758fe94a,"network_id=TEST_HA_NETWORK_ID,",0,0,0.0,125
+77bfd82c3cf766724b12629cf23902a1758fe94a,self._setup_port_binding(,0,0,0.0,126
+77bfd82c3cf766724b12629cf23902a1758fe94a,"(n_const.HA_ROUTER_STATE_STANDBY, HOST_2)]:",0,0,0.0,127
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self._create_router(distributed=distributed, ha=True)",0,0,0.0,128
+77bfd82c3cf766724b12629cf23902a1758fe94a,self.ctx.session.add(models_v2.Network(id=TEST_HA_NETWORK_ID)),0,0,0.0,129
+77bfd82c3cf766724b12629cf23902a1758fe94a,"helpers.register_ovs_agent(HOST_3, tunneling_ip=HOST_3_TUNNELING_IP)",0,0,0.0,130
+77bfd82c3cf766724b12629cf23902a1758fe94a,"helpers.register_ovs_agent(HOST_2, tunneling_ip=HOST_2_TUNNELING_IP)",0,0,0.0,131
+77bfd82c3cf766724b12629cf23902a1758fe94a,helpers.register_ovs_agent(),0,0,0.0,132
+77bfd82c3cf766724b12629cf23902a1758fe94a,helpers.register_l3_agent(HOST_2),0,0,0.0,133
+77bfd82c3cf766724b12629cf23902a1758fe94a,"def _create_ha_router(self, distributed=False):",0,0,0.0,134
+77bfd82c3cf766724b12629cf23902a1758fe94a,"router_id=TEST_ROUTER_ID, distributed=distributed, ha=ha))",0,0,0.0,135
+77bfd82c3cf766724b12629cf23902a1758fe94a,self.ctx.session.add(l3_attrs_db.RouterExtraAttributes(,0,0,0.0,136
+77bfd82c3cf766724b12629cf23902a1758fe94a,"def _create_router(self, distributed=True, ha=False):",0,0,0.0,137
+77bfd82c3cf766724b12629cf23902a1758fe94a,self.ctx.session.add(models_v2.Network(id=network_id)),0,0,0.0,138
+77bfd82c3cf766724b12629cf23902a1758fe94a,"def _create_network(self, network_id=TEST_NETWORK_ID):",0,0,0.0,139
+77bfd82c3cf766724b12629cf23902a1758fe94a,self._create_network(),0,0,0.0,140
+77bfd82c3cf766724b12629cf23902a1758fe94a,"host_state=state,",0,0,0.0,141
+77bfd82c3cf766724b12629cf23902a1758fe94a,host=host),0,0,0.0,142
+77bfd82c3cf766724b12629cf23902a1758fe94a,"def get_l3_agent_by_host(self, agent_host):",0,0,0.0,143
+77bfd82c3cf766724b12629cf23902a1758fe94a,return plugin._get_agent_by_type_and_host(,0,0,0.0,144
+77bfd82c3cf766724b12629cf23902a1758fe94a,helpers.register_l3_agent(),0,0,0.0,145
+77bfd82c3cf766724b12629cf23902a1758fe94a,helpers.register_dhcp_agent(),0,0,0.0,146
+77bfd82c3cf766724b12629cf23902a1758fe94a,def test__get_ha_router_interface_ids_with_ha_dvr_snat_port(self):,0,0,0.0,147
+77bfd82c3cf766724b12629cf23902a1758fe94a,"self.ctx.session, TEST_NETWORK_ID)",0,0,0.0,148
+77bfd82c3cf766724b12629cf23902a1758fe94a,device_owner=constants.DEVICE_OWNER_DVR_INTERFACE),0,0,0.0,149
+77bfd82c3cf766724b12629cf23902a1758fe94a,self.ctx.session.add(haport_bindings_cls(**habinding_kwarg)),0,0,0.0,150
+77bfd82c3cf766724b12629cf23902a1758fe94a,n_const.HA_ROUTER_STATE_ACTIVE)},0,0,0.0,151
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'state': kwargs.get('host_state',",0,0,0.0,152
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'l3_agent_id': agent['id'],",0,0,0.0,153
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'router_id': device_id,",0,0,0.0,154
+77bfd82c3cf766724b12629cf23902a1758fe94a,'vnic_type': portbindings.VNIC_NORMAL},0,0,0.0,155
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'vif_type': portbindings.VIF_TYPE_UNBOUND,",0,0,0.0,156
+77bfd82c3cf766724b12629cf23902a1758fe94a,"'host': host,",0,0,0.0,157
+77bfd82c3cf766724b12629cf23902a1758fe94a,"device_id=device_id, device_owner=device_owner))",0,0,0.0,158
+77bfd82c3cf766724b12629cf23902a1758fe94a,"admin_state_up=True, status=constants.PORT_STATUS_ACTIVE,",0,0,0.0,159
+77bfd82c3cf766724b12629cf23902a1758fe94a,"id=port_id, network_id=network_id, mac_address=mac,",0,0,0.0,160
+77bfd82c3cf766724b12629cf23902a1758fe94a,"def _setup_port_binding(self, **kwargs):",0,0,0.0,161
+77bfd82c3cf766724b12629cf23902a1758fe94a,agents_db.Agent.id),1,0,0.0,162

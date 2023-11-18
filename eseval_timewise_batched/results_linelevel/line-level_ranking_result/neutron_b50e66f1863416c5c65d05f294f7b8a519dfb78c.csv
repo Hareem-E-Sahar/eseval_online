@@ -1,0 +1,33 @@
+commit_id,line,line_level_label,count,line_score,row
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"with self.router() as router1, self.router() as router2:",1,4,1.0,1
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,AUTO_DELETE_PORT_OWNERS = ['network:dhcp'],1,2,0.5,2
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"with self.router() as router1,\",1,2,0.5,3
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self.router() as router2,\",1,2,0.5,4
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,# safe cleanup,1,2,0.5,5
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,AUTO_DELETE_PORT_OWNERS = [constants.DEVICE_OWNER_DHCP],0,2,0.5,6
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self.subnet() as subnet1,\",1,1,0.25,7
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self._router_interface_action('remove',",1,1,0.25,8
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"subnet2['subnet']['id'],",1,1,0.25,9
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"router2['router']['id'],",1,1,0.25,10
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,None),1,1,0.25,11
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"subnet1['subnet']['id'],",1,1,0.25,12
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"router1['router']['id'],",1,1,0.25,13
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,self.subnet(cidr='10.0.3.0/24') as subnet2:,1,1,0.25,14
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self._router_interface_action('add',",1,1,0.25,15
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,# L3 agent will host only the compatible router.,1,1,0.25,16
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,l3_agents_1 = self._list_l3_agents_hosting_router(,1,1,0.25,17
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,num_hosta_routers = len(hosta_routers['routers']),1,1,0.25,18
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,hosta_routers = self._list_routers_hosted_by_l3_agent(agent.id),1,1,0.25,19
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,agent = helpers.register_l3_agent(,1,1,0.25,20
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,l3_rpc_cb = l3_rpc.L3RpcCallback(),1,1,0.25,21
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,AGENT_OWNER_PREFIX = 'network:',1,1,0.25,22
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,l3_agents_2 = self._list_l3_agents_hosting_router(,1,1,0.25,23
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,router2['router']['id']),1,0,0.0,24
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self.assertEqual(0, len(l3_agents_2['agents']))",1,0,0.0,25
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self.assertEqual(1, len(l3_agents_1['agents']))",1,0,0.0,26
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"self.assertEqual(1, num_hosta_routers)",1,0,0.0,27
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,def test_router_auto_schedule_with_candidates(self):,1,0,0.0,28
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,router1['router']['id']),1,0,0.0,29
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"l3_rpc_cb.get_router_ids(self.adminContext, host=L3_HOSTA)",1,0,0.0,30
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,"host=L3_HOSTA, router_id=router1['router']['id'])",1,0,0.0,31
+b50e66f1863416c5c65d05f294f7b8a519dfb78c,def test_router_schedule_with_candidates(self):,1,0,0.0,32

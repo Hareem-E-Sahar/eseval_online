@@ -1,0 +1,159 @@
+commit_id,line,line_level_label,count,line_score,row
+913298da04a52f31182c8849efe77b2310b4c2e1,"def _validate_security_group_rules(self, context, security_group_rules):",0,4,1.0,1
+913298da04a52f31182c8849efe77b2310b4c2e1,"def _validate_security_group_rules(self, context, security_group_rules):",1,4,1.0,2
+913298da04a52f31182c8849efe77b2310b4c2e1,for rule_dict in rules:,0,3,0.75,3
+913298da04a52f31182c8849efe77b2310b4c2e1,"""""""Check that all rules belong to the same security group and tenant",0,3,0.75,4
+913298da04a52f31182c8849efe77b2310b4c2e1,for rule in security_group_rules['security_group_rules']:,0,3,0.75,5
+913298da04a52f31182c8849efe77b2310b4c2e1,# all security group rules regardless of their value of,0,3,0.75,6
+913298da04a52f31182c8849efe77b2310b4c2e1,for rule_dict in r:,1,3,0.75,7
+913298da04a52f31182c8849efe77b2310b4c2e1,# all security group rules regardless of their value of,1,3,0.75,8
+913298da04a52f31182c8849efe77b2310b4c2e1,# Check in database if rule exists,0,2,0.5,9
+913298da04a52f31182c8849efe77b2310b4c2e1,# Check in database if rule exists,1,2,0.5,10
+913298da04a52f31182c8849efe77b2310b4c2e1,for tenant_id in tenant_ids:,1,2,0.5,11
+913298da04a52f31182c8849efe77b2310b4c2e1,rule = rule_dict.get('security_group_rule'),1,2,0.5,12
+913298da04a52f31182c8849efe77b2310b4c2e1,Check that all rules belong to the same security,1,2,0.5,13
+913298da04a52f31182c8849efe77b2310b4c2e1,rule = rule_dict['security_group_rule'],1,2,0.5,14
+913298da04a52f31182c8849efe77b2310b4c2e1,for db_rule in db_rules:,0,2,0.5,15
+913298da04a52f31182c8849efe77b2310b4c2e1,for db_rule in db_rules:,1,2,0.5,16
+913298da04a52f31182c8849efe77b2310b4c2e1,"def _check_for_duplicate_rules_in_db(self, context, security_group_rule):",0,2,0.5,17
+913298da04a52f31182c8849efe77b2310b4c2e1,"def _validate_security_group_rule(self, context, security_group_rule):",0,2,0.5,18
+913298da04a52f31182c8849efe77b2310b4c2e1,rule = rule_dict['security_group_rule'],0,2,0.5,19
+913298da04a52f31182c8849efe77b2310b4c2e1,"def _validate_single_tenant_and_group(self, security_group_rules):",0,2,0.5,20
+913298da04a52f31182c8849efe77b2310b4c2e1,rule_dict = security_group_rule['security_group_rule'],0,2,0.5,21
+913298da04a52f31182c8849efe77b2310b4c2e1,"def _create_security_group_rule(self, context, security_group_rule,",0,2,0.5,22
+913298da04a52f31182c8849efe77b2310b4c2e1,rules = security_group_rules['security_group_rules'],0,2,0.5,23
+913298da04a52f31182c8849efe77b2310b4c2e1,rule = security_group_rule['security_group_rule'],0,2,0.5,24
+913298da04a52f31182c8849efe77b2310b4c2e1,"context, bulk_rule)[0]",1,1,0.25,25
+913298da04a52f31182c8849efe77b2310b4c2e1,and rules are valid.,1,1,0.25,26
+913298da04a52f31182c8849efe77b2310b4c2e1,"""""""Check that rules being installed.",1,1,0.25,27
+913298da04a52f31182c8849efe77b2310b4c2e1,kwargs['security_group_rule'] = sg_rule_dict,1,1,0.25,28
+913298da04a52f31182c8849efe77b2310b4c2e1,db = SecurityGroupRule(,1,1,0.25,29
+913298da04a52f31182c8849efe77b2310b4c2e1,sg_rule_dict = self.create_security_group_rule_bulk_native(,1,1,0.25,30
+913298da04a52f31182c8849efe77b2310b4c2e1,bulk_rule = {'security_group_rules': [security_group_rule]},1,1,0.25,31
+913298da04a52f31182c8849efe77b2310b4c2e1,if rule['tenant_id'] not in tenant_ids:,1,1,0.25,32
+913298da04a52f31182c8849efe77b2310b4c2e1,"tenant_id = self._get_tenant_id_for_create(context, rule)",1,1,0.25,33
+913298da04a52f31182c8849efe77b2310b4c2e1,tenant_ids = set(),1,1,0.25,34
+913298da04a52f31182c8849efe77b2310b4c2e1,filters = self._make_security_group_rule_filter_dict(i),1,1,0.25,35
+913298da04a52f31182c8849efe77b2310b4c2e1,remote_group_id = rule.get('remote_group_id'),1,1,0.25,36
+913298da04a52f31182c8849efe77b2310b4c2e1,# Check that remote_group_id exists for tenant,1,1,0.25,37
+913298da04a52f31182c8849efe77b2310b4c2e1,security_group_id = new_rules.pop(),1,1,0.25,38
+913298da04a52f31182c8849efe77b2310b4c2e1,"db_rules = self.get_security_group_rules(context, filters)",1,1,0.25,39
+913298da04a52f31182c8849efe77b2310b4c2e1,# values in the filter that have a value of [None]. For,1,1,0.25,40
+913298da04a52f31182c8849efe77b2310b4c2e1,"# example, filters = {'remote_group_id': [None]} will return",1,1,0.25,41
+913298da04a52f31182c8849efe77b2310b4c2e1,# below to check for these corner cases.,1,1,0.25,42
+913298da04a52f31182c8849efe77b2310b4c2e1,# need to remove id from db_rule for matching,1,1,0.25,43
+913298da04a52f31182c8849efe77b2310b4c2e1,id = db_rule.pop('id'),1,1,0.25,44
+913298da04a52f31182c8849efe77b2310b4c2e1,r = security_group_rule['security_group_rules'],1,1,0.25,45
+913298da04a52f31182c8849efe77b2310b4c2e1,"context, security_group_rule)",1,1,0.25,46
+913298da04a52f31182c8849efe77b2310b4c2e1,new_rules = set(),1,1,0.25,47
+913298da04a52f31182c8849efe77b2310b4c2e1,id = db_rule.pop('id'),0,1,0.25,48
+913298da04a52f31182c8849efe77b2310b4c2e1,tenants = set(),0,1,0.25,49
+913298da04a52f31182c8849efe77b2310b4c2e1,# need to remove id from db_rule for matching,0,1,0.25,50
+913298da04a52f31182c8849efe77b2310b4c2e1,security_group_rules):,0,1,0.25,51
+913298da04a52f31182c8849efe77b2310b4c2e1,res_rule_dict = self._create_security_group_rule(,0,1,0.25,52
+913298da04a52f31182c8849efe77b2310b4c2e1,"context, rule_dict, validate=False)",0,1,0.25,53
+913298da04a52f31182c8849efe77b2310b4c2e1,'security_group_rule': rule_dict,0,1,0.25,54
+913298da04a52f31182c8849efe77b2310b4c2e1,"tenant_id = self._get_tenant_id_for_create(context, rule_dict)",0,1,0.25,55
+913298da04a52f31182c8849efe77b2310b4c2e1,db = SecurityGroupRule(,0,1,0.25,56
+913298da04a52f31182c8849efe77b2310b4c2e1,res_rule_dict = self._make_security_group_rule_dict(db),0,1,0.25,57
+913298da04a52f31182c8849efe77b2310b4c2e1,kwargs['security_group_rule'] = res_rule_dict,0,1,0.25,58
+913298da04a52f31182c8849efe77b2310b4c2e1,sg_groups = set(),0,1,0.25,59
+913298da04a52f31182c8849efe77b2310b4c2e1,"context, security_group_rules)",0,1,0.25,60
+913298da04a52f31182c8849efe77b2310b4c2e1,remote_group_id = rule['remote_group_id'],0,1,0.25,61
+913298da04a52f31182c8849efe77b2310b4c2e1,"db_rules = self.get_security_group_rules(context, filters)",0,1,0.25,62
+913298da04a52f31182c8849efe77b2310b4c2e1,# below to check for these corner cases.,0,1,0.25,63
+913298da04a52f31182c8849efe77b2310b4c2e1,# Check that remote_group_id exists for tenant,0,1,0.25,64
+913298da04a52f31182c8849efe77b2310b4c2e1,# values in the filter that have a value of [None]. For,0,1,0.25,65
+913298da04a52f31182c8849efe77b2310b4c2e1,"# example, filters = {'remote_group_id': [None]} will return",0,1,0.25,66
+913298da04a52f31182c8849efe77b2310b4c2e1,filters = self._make_security_group_rule_filter_dict(,0,1,0.25,67
+913298da04a52f31182c8849efe77b2310b4c2e1,sg_id = self._validate_single_tenant_and_group(security_group_rules),0,1,0.25,68
+913298da04a52f31182c8849efe77b2310b4c2e1,security_group_id = rule['security_group_id'],0,1,0.25,69
+913298da04a52f31182c8849efe77b2310b4c2e1,"'security_group_rule': security_group_rule,",1,0,0.0,70
+913298da04a52f31182c8849efe77b2310b4c2e1,"protocol=rule['protocol'],",1,0,0.0,71
+913298da04a52f31182c8849efe77b2310b4c2e1,ret.append(self._make_security_group_rule_dict(db)),1,0,0.0,72
+913298da04a52f31182c8849efe77b2310b4c2e1,context.session.add(db),1,0,0.0,73
+913298da04a52f31182c8849efe77b2310b4c2e1,remote_ip_prefix=rule.get('remote_ip_prefix')),1,0,0.0,74
+913298da04a52f31182c8849efe77b2310b4c2e1,"port_range_max=rule['port_range_max'],",1,0,0.0,75
+913298da04a52f31182c8849efe77b2310b4c2e1,"port_range_min=rule['port_range_min'],",1,0,0.0,76
+913298da04a52f31182c8849efe77b2310b4c2e1,return sg_rule_dict,1,0,0.0,77
+913298da04a52f31182c8849efe77b2310b4c2e1,return ret,1,0,0.0,78
+913298da04a52f31182c8849efe77b2310b4c2e1,"direction=rule['direction'],",1,0,0.0,79
+913298da04a52f31182c8849efe77b2310b4c2e1,"ethertype=rule['ethertype'],",1,0,0.0,80
+913298da04a52f31182c8849efe77b2310b4c2e1,"remote_group_id=rule.get('remote_group_id'),",1,0,0.0,81
+913298da04a52f31182c8849efe77b2310b4c2e1,"security_group_id=rule['security_group_id'],",1,0,0.0,82
+913298da04a52f31182c8849efe77b2310b4c2e1,"tenant_id=tenant_id,",1,0,0.0,83
+913298da04a52f31182c8849efe77b2310b4c2e1,"id=(rule.get('id') or uuidutils.generate_uuid()),",1,0,0.0,84
+913298da04a52f31182c8849efe77b2310b4c2e1,"self._check_for_duplicate_rules(context, r)",1,0,0.0,85
+913298da04a52f31182c8849efe77b2310b4c2e1,security_group_rule):,1,0,0.0,86
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupRuleExists(id=id),0,0,0.0,87
+913298da04a52f31182c8849efe77b2310b4c2e1,new_rules.add(rule['security_group_id']),1,0,0.0,88
+913298da04a52f31182c8849efe77b2310b4c2e1,if (security_group_rule['security_group_rule'] == db_rule):,0,0,0.0,89
+913298da04a52f31182c8849efe77b2310b4c2e1,"group, remote_group_id/security_group_id belong to the same tenant,",1,0,0.0,90
+913298da04a52f31182c8849efe77b2310b4c2e1,# Confirm single tenant and that the tenant has permission,1,0,0.0,91
+913298da04a52f31182c8849efe77b2310b4c2e1,self._validate_port_range(rule),1,0,0.0,92
+913298da04a52f31182c8849efe77b2310b4c2e1,self._validate_ip_prefix(rule),1,0,0.0,93
+913298da04a52f31182c8849efe77b2310b4c2e1,# is changed which cannot be because other methods are already,0,0,0.0,94
+913298da04a52f31182c8849efe77b2310b4c2e1,if (i['security_group_rule'] == db_rule):,1,0,0.0,95
+913298da04a52f31182c8849efe77b2310b4c2e1,"# relying on this behavior. Therefore, we do the filtering",1,0,0.0,96
+913298da04a52f31182c8849efe77b2310b4c2e1,# is changed which cannot be because other methods are already,1,0,0.0,97
+913298da04a52f31182c8849efe77b2310b4c2e1,# query unless the behavior of _get_collection(),1,0,0.0,98
+913298da04a52f31182c8849efe77b2310b4c2e1,# remote_group_id. Therefore it is not possible to do this,1,0,0.0,99
+913298da04a52f31182c8849efe77b2310b4c2e1,# Note(arosen): the call to get_security_group_rules wildcards,1,0,0.0,100
+913298da04a52f31182c8849efe77b2310b4c2e1,tenant_id=tenant_id),1,0,0.0,101
+913298da04a52f31182c8849efe77b2310b4c2e1,"self.get_security_group(context, security_group_id,",1,0,0.0,102
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupRulesNotSingleTenant(),1,0,0.0,103
+913298da04a52f31182c8849efe77b2310b4c2e1,if len(tenant_ids) > 1:,1,0,0.0,104
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupNotSingleGroupRules(),1,0,0.0,105
+913298da04a52f31182c8849efe77b2310b4c2e1,if len(new_rules) > 1:,1,0,0.0,106
+913298da04a52f31182c8849efe77b2310b4c2e1,tenant_id=rule['tenant_id']),1,0,0.0,107
+913298da04a52f31182c8849efe77b2310b4c2e1,"self.get_security_group(context, remote_group_id,",1,0,0.0,108
+913298da04a52f31182c8849efe77b2310b4c2e1,if remote_group_id:,1,0,0.0,109
+913298da04a52f31182c8849efe77b2310b4c2e1,tenant_ids.add(rule['tenant_id']),1,0,0.0,110
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupRemoteGroupAndRemoteIpPrefix(),1,0,0.0,111
+913298da04a52f31182c8849efe77b2310b4c2e1,if rule['remote_ip_prefix'] and rule['remote_group_id']:,1,0,0.0,112
+913298da04a52f31182c8849efe77b2310b4c2e1,"# relying on this behavior. Therefore, we do the filtering",0,0,0.0,113
+913298da04a52f31182c8849efe77b2310b4c2e1,"tenant_id=tenant_id,",0,0,0.0,114
+913298da04a52f31182c8849efe77b2310b4c2e1,# query unless the behavior of _get_collection(),0,0,0.0,115
+913298da04a52f31182c8849efe77b2310b4c2e1,# remote_group_id. Therefore it is not possible to do this,0,0,0.0,116
+913298da04a52f31182c8849efe77b2310b4c2e1,context.session.add(db),0,0,0.0,117
+913298da04a52f31182c8849efe77b2310b4c2e1,remote_ip_prefix=rule_dict.get('remote_ip_prefix')),0,0,0.0,118
+913298da04a52f31182c8849efe77b2310b4c2e1,"port_range_max=rule_dict['port_range_max'],",0,0,0.0,119
+913298da04a52f31182c8849efe77b2310b4c2e1,"port_range_min=rule_dict['port_range_min'],",0,0,0.0,120
+913298da04a52f31182c8849efe77b2310b4c2e1,"protocol=rule_dict['protocol'],",0,0,0.0,121
+913298da04a52f31182c8849efe77b2310b4c2e1,"ethertype=rule_dict['ethertype'],",0,0,0.0,122
+913298da04a52f31182c8849efe77b2310b4c2e1,"remote_group_id=rule_dict.get('remote_group_id'),",0,0,0.0,123
+913298da04a52f31182c8849efe77b2310b4c2e1,"direction=rule_dict['direction'],",0,0,0.0,124
+913298da04a52f31182c8849efe77b2310b4c2e1,"security_group_id=rule_dict['security_group_id'],",0,0,0.0,125
+913298da04a52f31182c8849efe77b2310b4c2e1,"id=(rule_dict.get('id') or uuidutils.generate_uuid()),",0,0,0.0,126
+913298da04a52f31182c8849efe77b2310b4c2e1,with context.session.begin(subtransactions=True):,0,0,0.0,127
+913298da04a52f31182c8849efe77b2310b4c2e1,"self._check_for_duplicate_rules_in_db(context, security_group_rule)",0,0,0.0,128
+913298da04a52f31182c8849efe77b2310b4c2e1,"self._validate_security_group_rule(context, security_group_rule)",0,0,0.0,129
+913298da04a52f31182c8849efe77b2310b4c2e1,if validate:,0,0,0.0,130
+913298da04a52f31182c8849efe77b2310b4c2e1,validate=True):,0,0,0.0,131
+913298da04a52f31182c8849efe77b2310b4c2e1,"return self._create_security_group_rule(context, security_group_rule)",0,0,0.0,132
+913298da04a52f31182c8849efe77b2310b4c2e1,return ret,0,0,0.0,133
+913298da04a52f31182c8849efe77b2310b4c2e1,ret.append(res_rule_dict),0,0,0.0,134
+913298da04a52f31182c8849efe77b2310b4c2e1,"self._check_for_duplicate_rules(context, rules)",0,0,0.0,135
+913298da04a52f31182c8849efe77b2310b4c2e1,return res_rule_dict,0,0,0.0,136
+913298da04a52f31182c8849efe77b2310b4c2e1,sg_groups.add(rule['security_group_id']),0,0,0.0,137
+913298da04a52f31182c8849efe77b2310b4c2e1,if len(sg_groups) > 1:,0,0,0.0,138
+913298da04a52f31182c8849efe77b2310b4c2e1,"self.get_security_group(context, remote_group_id,",0,0,0.0,139
+913298da04a52f31182c8849efe77b2310b4c2e1,# Note(arosen): the call to get_security_group_rules wildcards,0,0,0.0,140
+913298da04a52f31182c8849efe77b2310b4c2e1,security_group_rule),0,0,0.0,141
+913298da04a52f31182c8849efe77b2310b4c2e1,"self._check_for_duplicate_rules_in_db(context, i)",0,0,0.0,142
+913298da04a52f31182c8849efe77b2310b4c2e1,return sg_id,0,0,0.0,143
+913298da04a52f31182c8849efe77b2310b4c2e1,"self._validate_security_group_rule(context, rule)",0,0,0.0,144
+913298da04a52f31182c8849efe77b2310b4c2e1,"self.get_security_group(context, security_group_id,",0,0,0.0,145
+913298da04a52f31182c8849efe77b2310b4c2e1,# Confirm that the tenant has permission,0,0,0.0,146
+913298da04a52f31182c8849efe77b2310b4c2e1,tenant_id=rule['tenant_id']),0,0,0.0,147
+913298da04a52f31182c8849efe77b2310b4c2e1,if remote_group_id:,0,0,0.0,148
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupNotSingleGroupRules(),0,0,0.0,149
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupRemoteGroupAndRemoteIpPrefix(),0,0,0.0,150
+913298da04a52f31182c8849efe77b2310b4c2e1,if rule['remote_ip_prefix'] and rule['remote_group_id']:,0,0,0.0,151
+913298da04a52f31182c8849efe77b2310b4c2e1,self._validate_ip_prefix(rule),0,0,0.0,152
+913298da04a52f31182c8849efe77b2310b4c2e1,self._validate_port_range(rule),0,0,0.0,153
+913298da04a52f31182c8849efe77b2310b4c2e1,return sg_groups.pop(),0,0,0.0,154
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupRulesNotSingleTenant(),0,0,0.0,155
+913298da04a52f31182c8849efe77b2310b4c2e1,if len(tenants) > 1:,0,0,0.0,156
+913298da04a52f31182c8849efe77b2310b4c2e1,tenants.add(rule['tenant_id']),0,0,0.0,157
+913298da04a52f31182c8849efe77b2310b4c2e1,raise ext_sg.SecurityGroupRuleExists(id=id),1,0,0.0,158

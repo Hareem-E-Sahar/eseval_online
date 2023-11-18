@@ -1,0 +1,549 @@
+commit_id,line,line_level_label,count,line_score,row
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We need to make sure that this item is either a parent, child, or the same as the qualifier root",0,8,1.0,1
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We need to make sure that this item is either a parent, child, or the same as the qualifier root",1,8,1.0,2
+8352a0815cde294e891c3b46a0c12366e71d2352,* Return false if a totalitarian offer has already been applied and this order already has,1,8,1.0,3
+8352a0815cde294e891c3b46a0c12366e71d2352,// item offer. There could be other order offers that are not totalitarian that also qualify.,0,7,0.875,4
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotableOrder promotableOrder = new PromotableOrderImpl(order, new PromotableItemFactoryImpl(), false);",1,7,0.875,5
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotableOrder promotableOrder = new PromotableOrderImpl(order, new PromotableItemFactoryImpl(promotableOfferUtility), false);",0,7,0.875,6
+8352a0815cde294e891c3b46a0c12366e71d2352,"* If either adjustment is greater than the item value, it will be set to the",1,7,0.875,7
+8352a0815cde294e891c3b46a0c12366e71d2352,"LOG.trace(""Non-Combinable Order Offer Applied with id=["" + orderOffer.getOffer().getId() +""].  No other order offers can be applied"");",1,7,0.875,8
+8352a0815cde294e891c3b46a0c12366e71d2352,// item offer. There could be other order offers that are not totalitarian that also qualify.,1,7,0.875,9
+8352a0815cde294e891c3b46a0c12366e71d2352,"LOG.trace(""Non-Combinable Order Offer Applied with id=["" + orderOffer.getOffer().getId() + ""].  No other order offers can be applied"");",0,7,0.875,10
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We continue because this could be the first offer and marked as totalitarian, but not as good as an",1,7,0.875,11
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We continue because this could be the first offer and marked as totalitarian, but not as good as an",0,7,0.875,12
+8352a0815cde294e891c3b46a0c12366e71d2352,// We found a target. Let's save this related order item used as the qualifier in case,1,7,0.875,13
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We have found a qualifier that meets this offer criteria. First, we'll save some state that we",1,7,0.875,14
+8352a0815cde294e891c3b46a0c12366e71d2352,// item offer. There could be other order offers that are not totalitarian that also qualify.,0,7,0.875,15
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We continue because this could be the first offer and marked as totalitarian, but not as good as an",0,7,0.875,16
+8352a0815cde294e891c3b46a0c12366e71d2352,"// We have found a qualifier that meets this offer criteria. First, we'll save some state that we",0,7,0.875,17
+8352a0815cde294e891c3b46a0c12366e71d2352,// We want to find the root of the related qualifier so we can appropriately walk the tree later,0,7,0.875,18
+8352a0815cde294e891c3b46a0c12366e71d2352,"// Now, we need to see if there exists a target(s) that is suitable for this qualifier due to",1,6,0.75,19
+8352a0815cde294e891c3b46a0c12366e71d2352,* Calculates the value of the adjustment for both retail and sale prices.,1,6,0.75,20
+8352a0815cde294e891c3b46a0c12366e71d2352,// Remove nonCombinable offers that aren't the first offer,1,6,0.75,21
+8352a0815cde294e891c3b46a0c12366e71d2352,* items can be paired with lower-valued items. This also ensures that you will <b>not</b> have the scenario where 2,1,6,0.75,22
+8352a0815cde294e891c3b46a0c12366e71d2352,* sorting for which target items the promotion should be attempted to be applied to first. Default behavior is to,1,6,0.75,23
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param applyToSalePrice - whether or not the Comparator should use the sale price for comparison,1,6,0.75,24
+8352a0815cde294e891c3b46a0c12366e71d2352,* will be used as the tie-breaker to determine the order to apply promotions.,1,6,0.75,25
+8352a0815cde294e891c3b46a0c12366e71d2352,// A nonCombinable offer has been applied or this is a non-combinable offer,1,6,0.75,26
+8352a0815cde294e891c3b46a0c12366e71d2352,// We've decided to apply this adjustment but if it doesn't actually reduce,1,6,0.75,27
+8352a0815cde294e891c3b46a0c12366e71d2352,"// If the extensionHandler added a quantity element to the map, then return it",0,6,0.75,28
+8352a0815cde294e891c3b46a0c12366e71d2352,"// If the extensionHandler added a savings element to the map, then return it",0,6,0.75,29
+8352a0815cde294e891c3b46a0c12366e71d2352,"* If two promotions have the same priority, the one with the highest potential savings",1,6,0.75,30
+8352a0815cde294e891c3b46a0c12366e71d2352,"// Now, we need to see if there exists a target(s) that is suitable for this qualifier due to",0,6,0.75,31
+8352a0815cde294e891c3b46a0c12366e71d2352,"// actually go ahead and mark the target that we'll be using. Otherwise, we just want to check",1,5,0.625,32
+8352a0815cde294e891c3b46a0c12366e71d2352,"LOG.trace(""Totalitarian Order Offer Applied.   Comparing order and item offers for best outcome."");",1,5,0.625,33
+8352a0815cde294e891c3b46a0c12366e71d2352,"LOG.trace(""Totalitarian Order Offer Applied.   Comparing order and item offers for best outcome."");",0,5,0.625,34
+8352a0815cde294e891c3b46a0c12366e71d2352,// Remove Totalitarian offers that aren't the first offer.,1,5,0.625,35
+8352a0815cde294e891c3b46a0c12366e71d2352,* Gets rid of totalitarian and nonCombinable item offers that can't possibly be applied.,1,5,0.625,36
+8352a0815cde294e891c3b46a0c12366e71d2352,* lower-valued items can be used to qualify a higher-valued target.,1,5,0.625,37
+8352a0815cde294e891c3b46a0c12366e71d2352,* in descending order.  This means that higher-valued items can be paired with higher-valued items and lower-valued,1,5,0.625,38
+8352a0815cde294e891c3b46a0c12366e71d2352,* sorting for which qualifier items should be attempted to be used first for a promotion. Default behavior,1,5,0.625,39
+8352a0815cde294e891c3b46a0c12366e71d2352,"// If we didn't find a target, we need to roll back how we marked this item as a qualifier.",1,5,0.625,40
+8352a0815cde294e891c3b46a0c12366e71d2352,"* sort descending, so higher-value items get the promotion over lesser-valued items.",1,5,0.625,41
+8352a0815cde294e891c3b46a0c12366e71d2352,"// the relationship flag. If we are on the last qualifier required for this offer, we want to",1,5,0.625,42
+8352a0815cde294e891c3b46a0c12366e71d2352,* Returns true if the core processing should still be performed for the passed in offer.,0,5,0.625,43
+8352a0815cde294e891c3b46a0c12366e71d2352,// Go ahead and mark this item as a qualifier,1,5,0.625,44
+8352a0815cde294e891c3b46a0c12366e71d2352,"// If we didn't find a target, we need to roll back how we marked this item as a qualifier.",0,5,0.625,45
+8352a0815cde294e891c3b46a0c12366e71d2352,* This method determines how much the customer might save using this promotion for the,1,5,0.625,46
+8352a0815cde294e891c3b46a0c12366e71d2352,* This method makes a good approximation of the promotion value as determining the exact value,1,5,0.625,47
+8352a0815cde294e891c3b46a0c12366e71d2352,// Go ahead and mark this item as a qualifier,0,5,0.625,48
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param orderOffer a CandidateOrderOffer to apply to an Order,1,5,0.625,49
+8352a0815cde294e891c3b46a0c12366e71d2352,* The adjustment might not be better than the sale price.,1,5,0.625,50
+8352a0815cde294e891c3b46a0c12366e71d2352,// A totalitarian offer has already been applied or this offer is totalitarian,1,5,0.625,51
+8352a0815cde294e891c3b46a0c12366e71d2352,// the value of the item,1,4,0.5,52
+8352a0815cde294e891c3b46a0c12366e71d2352,* currentItemValue (e.g. no adjustment can cause a negative value).,1,4,0.5,53
+8352a0815cde294e891c3b46a0c12366e71d2352,Money savings = new Money(promotableOrder.getOrderCurrency());,1,4,0.5,54
+8352a0815cde294e891c3b46a0c12366e71d2352,"* is to sort descending, so higher-value items are attempted to be qualified first.",1,4,0.5,55
+8352a0815cde294e891c3b46a0c12366e71d2352,// Calculate the number of qualifiers needed that will not receive the promotion.,1,4,0.5,56
+8352a0815cde294e891c3b46a0c12366e71d2352,} else if (!adjustment.isCombinable() || !itemOffer.getOffer().isCombinableWithOtherOffers()) {,1,4,0.5,57
+8352a0815cde294e891c3b46a0c12366e71d2352,"public Money calculateSavingsForOrderItem(PromotableOrderItem orderItem, int qtyToReceiveSavings) {",1,4,0.5,58
+8352a0815cde294e891c3b46a0c12366e71d2352,//        when a targetItemCriteria has a quantity > 1.,1,4,0.5,59
+8352a0815cde294e891c3b46a0c12366e71d2352,Money savings = new Money(0D);,1,4,0.5,60
+8352a0815cde294e891c3b46a0c12366e71d2352,* purpose of sorting promotions with the same priority. The assumption is that any possible,1,4,0.5,61
+8352a0815cde294e891c3b46a0c12366e71d2352,// Calculate the number of qualifiers needed that will not receive the promotion.,0,4,0.5,62
+8352a0815cde294e891c3b46a0c12366e71d2352,"* When the {@link Offer#getRequiresRelatedTargetAndQualifiers()} flag is set to true, we must make sure that we",0,4,0.5,63
+8352a0815cde294e891c3b46a0c12366e71d2352,// TODO:  BCP - Transferred the original logic but it looks like there is a bug here,1,4,0.5,64
+8352a0815cde294e891c3b46a0c12366e71d2352,if (orderOffer.isTotalitarian() || promotableOrder.isTotalitarianItemOfferApplied()) {,1,3,0.375,65
+8352a0815cde294e891c3b46a0c12366e71d2352,public PromotableOrder createBasicPromotableOrder(PromotableOfferUtility promotableOfferUtility) {,0,3,0.375,66
+8352a0815cde294e891c3b46a0c12366e71d2352,if (offer.getApplyDiscountToSalePrice() == true) {,1,3,0.375,67
+8352a0815cde294e891c3b46a0c12366e71d2352,if (currentPriceDetailSalesValue == null) {,1,3,0.375,68
+8352a0815cde294e891c3b46a0c12366e71d2352,"public void setCandidateFixedTargetsMap(HashMap<OfferPriceData, List<PromotableOrderItem>> candidateFixedTargetsMap) {",0,3,0.375,69
+8352a0815cde294e891c3b46a0c12366e71d2352,"public int compare(PromotableOrderItemPriceDetail o1, PromotableOrderItemPriceDetail o2) {",1,3,0.375,70
+8352a0815cde294e891c3b46a0c12366e71d2352,if (pq.getQuantity() == qtyToMarkAsQualifier) {,1,3,0.375,71
+8352a0815cde294e891c3b46a0c12366e71d2352,"* Note: By default, both the {@link #getQualifierItemComparator(boolean)} and this target comparator are sorted",1,3,0.375,72
+8352a0815cde294e891c3b46a0c12366e71d2352,return new Comparator<PromotableOrderItemPriceDetail>() {,1,3,0.375,73
+8352a0815cde294e891c3b46a0c12366e71d2352,Order order = dataProvider.createBasicPromotableOrder(promotableOfferUtility).getOrder();,0,3,0.375,74
+8352a0815cde294e891c3b46a0c12366e71d2352,public PromotableOrder createBasicPromotableOrder() {,1,3,0.375,75
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder order = dataProvider.createBasicPromotableOrder();,1,3,0.375,76
+8352a0815cde294e891c3b46a0c12366e71d2352,Order order = dataProvider.createBasicPromotableOrder().getOrder();,1,3,0.375,77
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder order = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,3,0.375,78
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder promotableOrder = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,3,0.375,79
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder order = dataProvider.createBasicPromotableOrder();,1,3,0.375,80
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder promotableOrder = dataProvider.createBasicPromotableOrder();,1,3,0.375,81
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder order = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,3,0.375,82
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder promotableOrder = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,3,0.375,83
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder promotableOrder = dataProvider.createBasicPromotableOrder();,1,3,0.375,84
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder order = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,3,0.375,85
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrder order = dataProvider.createBasicPromotableOrder();,1,3,0.375,86
+8352a0815cde294e891c3b46a0c12366e71d2352,if (targetQtyNeeded == 0) {,1,3,0.375,87
+8352a0815cde294e891c3b46a0c12366e71d2352,// that there is an eligible target(s) and continue on.,1,3,0.375,88
+8352a0815cde294e891c3b46a0c12366e71d2352,if (orderOffer.isTotalitarian() || promotableOrder.isTotalitarianItemOfferApplied()) {,0,3,0.375,89
+8352a0815cde294e891c3b46a0c12366e71d2352,if (promotion.isUnlimitedUsePerOrder() || (itemOffer.getUses() < promotion.getMaxUsesPerOrder())) {,1,3,0.375,90
+8352a0815cde294e891c3b46a0c12366e71d2352,public Money calculatePotentialSavings() {,1,3,0.375,91
+8352a0815cde294e891c3b46a0c12366e71d2352,if (qualifierQtyNeeded == 0) {,1,3,0.375,92
+8352a0815cde294e891c3b46a0c12366e71d2352,"* identify qualifiers and targets together, as they must be related to each other based on the",0,3,0.375,93
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param order,0,3,0.375,94
+8352a0815cde294e891c3b46a0c12366e71d2352,* @return whether or not a suitable qualifier/target pair was found and marked,0,3,0.375,95
+8352a0815cde294e891c3b46a0c12366e71d2352,// These will be reserved first before the target is assigned.,0,3,0.375,96
+8352a0815cde294e891c3b46a0c12366e71d2352,if (qualifierQtyNeeded == 0) {,0,3,0.375,97
+8352a0815cde294e891c3b46a0c12366e71d2352,if (orderOffer.isTotalitarian() || promotableOrder.isTotalitarianItemOfferApplied()) {,0,3,0.375,98
+8352a0815cde294e891c3b46a0c12366e71d2352,"public void setCandidateTargetsMap(HashMap<OfferItemCriteria, List<PromotableOrderItem>> candidateItemsMap) {",0,3,0.375,99
+8352a0815cde294e891c3b46a0c12366e71d2352,public void setLegacyCandidateTargets(List<PromotableOrderItem> candidateTargets) {,0,3,0.375,100
+8352a0815cde294e891c3b46a0c12366e71d2352,* a calculation based on the qualifiers here strictly for rough comparative purposes.,1,3,0.375,101
+8352a0815cde294e891c3b46a0c12366e71d2352,* would require all permutations of promotions to be run resulting in a costly,1,3,0.375,102
+8352a0815cde294e891c3b46a0c12366e71d2352,if (pq.getQuantity() == qtyToMarkAsQualifier) {,0,3,0.375,103
+8352a0815cde294e891c3b46a0c12366e71d2352,public void setCandidateTargets(List<PromotableOrderItem> candidateTargets) {,1,3,0.375,104
+8352a0815cde294e891c3b46a0c12366e71d2352,"Money savings = itemOffer.calculateSavingsForOrderItem(detail.getPromotableOrderItem(), 1);",1,3,0.375,105
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param item,0,3,0.375,106
+8352a0815cde294e891c3b46a0c12366e71d2352,} else if (itemOffer.isLegacyOffer()) {,1,3,0.375,107
+8352a0815cde294e891c3b46a0c12366e71d2352,if (adjustment.isTotalitarian() || itemOffer.getOffer().isTotalitarianOffer()) {,1,3,0.375,108
+8352a0815cde294e891c3b46a0c12366e71d2352,// These will be reserved first before the target is assigned.,1,3,0.375,109
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemOffer.getOffer().isTotalitarianOffer() || !itemOffer.getOffer().isCombinableWithOtherOffers()) {,1,3,0.375,110
+8352a0815cde294e891c3b46a0c12366e71d2352,* and associates the OrderItemAdjustment to the OrderItem.,1,3,0.375,111
+8352a0815cde294e891c3b46a0c12366e71d2352,* Private method used by applyAdjustments to create an OrderItemAdjustment from a CandidateOrderOffer,1,3,0.375,112
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param quantity,0,3,0.375,113
+8352a0815cde294e891c3b46a0c12366e71d2352,private void removeTrailingNonCombinableOrTotalitarianOffers(List<PromotableCandidateItemOffer> qualifiedItemOffers) {,1,2,0.25,114
+8352a0815cde294e891c3b46a0c12366e71d2352,if (LOG.isTraceEnabled()) {,0,2,0.25,115
+8352a0815cde294e891c3b46a0c12366e71d2352,// ignore the first one.,1,2,0.25,116
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemOffer.getOffer().isTotalitarianOffer()) {,1,2,0.25,117
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!itemOffer.isLegacyOffer() && !itemOffer.getOffer().isCombinableWithOtherOffers()) {,1,2,0.25,118
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (orderMeetsQualifyingSubtotalRequirements(promotableOrder, orderOffer) && orderMeetsSubtotalRequirements(promotableOrder, orderOffer)) {",0,2,0.25,119
+8352a0815cde294e891c3b46a0c12366e71d2352,if (offerIterator.hasNext()) {,1,2,0.25,120
+8352a0815cde294e891c3b46a0c12366e71d2352,"public HashMap<OfferPriceData, List<PromotableOrderItem>> getCandidateFixedTargetsMap() {",0,2,0.25,121
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!orderOffer.isCombinable()) {,0,2,0.25,122
+8352a0815cde294e891c3b46a0c12366e71d2352,if (LOG.isTraceEnabled()) {,1,2,0.25,123
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!orderOffer.isCombinable()) {,1,2,0.25,124
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected HashMap<OfferPriceData, List<PromotableOrderItem>> candidateFixedTargetsMap = new HashMap<>();",0,2,0.25,125
+8352a0815cde294e891c3b46a0c12366e71d2352,"savings = PromotableOfferUtility.computeAdjustmentValue(originalPrice, offerUnitValue, this, this);",1,2,0.25,126
+8352a0815cde294e891c3b46a0c12366e71d2352,Money saleAdjustmentValue) {,0,2,0.25,127
+8352a0815cde294e891c3b46a0c12366e71d2352,protected void computeAdjustmentValues() {,1,2,0.25,128
+8352a0815cde294e891c3b46a0c12366e71d2352,Money price2 = o2.getPromotableOrderItem().getPriceBeforeAdjustments(applyToSalePrice);,1,2,0.25,129
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param qualifiedItemOffers,1,2,0.25,130
+8352a0815cde294e891c3b46a0c12366e71d2352,"int qtyToMarkAsQualifier = Math.min(qualifierQtyNeeded, itemQtyAvailableToBeUsedAsQualifier);",1,2,0.25,131
+8352a0815cde294e891c3b46a0c12366e71d2352,Money price = o1.getPromotableOrderItem().getPriceBeforeAdjustments(applyToSalePrice);,1,2,0.25,132
+8352a0815cde294e891c3b46a0c12366e71d2352,if (relatedQualifier != null) {,1,2,0.25,133
+8352a0815cde294e891c3b46a0c12366e71d2352,} else {,1,2,0.25,134
+8352a0815cde294e891c3b46a0c12366e71d2352,int qualifierQtyNeeded = itemCriteria.getQuantity();,1,2,0.25,135
+8352a0815cde294e891c3b46a0c12366e71d2352,// Mark Qualifiers,1,2,0.25,136
+8352a0815cde294e891c3b46a0c12366e71d2352,if (qualifierQtyNeeded > 0) {,1,2,0.25,137
+8352a0815cde294e891c3b46a0c12366e71d2352,int itemQtyAvailableToBeUsedAsQualifier = detail.getQuantityAvailableToBeUsedAsQualifier(itemOffer);,1,2,0.25,138
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemQtyAvailableToBeUsedAsQualifier > 0) {,1,2,0.25,139
+8352a0815cde294e891c3b46a0c12366e71d2352,retailAdjustmentValue = new Money(getCurrency());,1,2,0.25,140
+8352a0815cde294e891c3b46a0c12366e71d2352,int itemQtyAvailableToBeUsedAsTarget = priceDetail.getQuantityAvailableToBeUsedAsTarget(itemOffer);,1,2,0.25,141
+8352a0815cde294e891c3b46a0c12366e71d2352,"* Used in {@link #applyItemQualifiersAndTargets(PromotableCandidateItemOffer, PromotableOrder)} allow for customized",1,2,0.25,142
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemQtyAvailableToBeUsedAsTarget > 0) {,1,2,0.25,143
+8352a0815cde294e891c3b46a0c12366e71d2352,"int qtyToMarkAsTarget = Math.min(targetQtyNeeded, itemQtyAvailableToBeUsedAsTarget);",1,2,0.25,144
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!checkOnly) {,1,2,0.25,145
+8352a0815cde294e891c3b46a0c12366e71d2352,// might need in the future.,1,2,0.25,146
+8352a0815cde294e891c3b46a0c12366e71d2352,if (possibleQualifier.getPromotion().equals(itemOffer.getOffer())) {,1,2,0.25,147
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (markTargets(itemOffer, order, oi, true)) {",1,2,0.25,148
+8352a0815cde294e891c3b46a0c12366e71d2352,"return markTargets(itemOffer, order, relatedOrderItem, false);",1,2,0.25,149
+8352a0815cde294e891c3b46a0c12366e71d2352,saleAdjustmentValue = new Money(getCurrency());,1,2,0.25,150
+8352a0815cde294e891c3b46a0c12366e71d2352,FulfillmentGroupOfferProcessor fgProcessor = new FulfillmentGroupOfferProcessorImpl();,1,2,0.25,151
+8352a0815cde294e891c3b46a0c12366e71d2352,Money currentPriceDetailRetailValue = promotableOrderItemPriceDetail.calculateItemUnitPriceWithAdjustments(false);,1,2,0.25,152
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor = new ItemOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,153
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferServiceUtilitiesImpl offerServiceUtilities = new OfferServiceUtilitiesImpl();,1,2,0.25,154
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderOfferProcessorImpl orderProcessor = new OrderOfferProcessorImpl();,1,2,0.25,155
+8352a0815cde294e891c3b46a0c12366e71d2352,ItemOfferProcessorImpl itemProcessor = new ItemOfferProcessorImpl();,1,2,0.25,156
+8352a0815cde294e891c3b46a0c12366e71d2352,promotableOrder = dataProvider.createBasicPromotableOrder();,1,2,0.25,157
+8352a0815cde294e891c3b46a0c12366e71d2352,order = dataProvider.createBasicPromotableOrder();,1,2,0.25,158
+8352a0815cde294e891c3b46a0c12366e71d2352,promotableOfferUtility = new PromotableOfferUtilityImpl();,0,2,0.25,159
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferServiceUtilitiesImpl offerServiceUtilities = new OfferServiceUtilitiesImpl(promotableOfferUtility);,0,2,0.25,160
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderOfferProcessorImpl orderProcessor = new OrderOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,161
+8352a0815cde294e891c3b46a0c12366e71d2352,Money currentPriceDetailSalesValue = promotableOrderItemPriceDetail.calculateItemUnitPriceWithAdjustments(true);,1,2,0.25,162
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferServiceUtilitiesImpl offerServiceUtilities = new OfferServiceUtilitiesImpl();,1,2,0.25,163
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor = new ItemOfferProcessorImpl();,1,2,0.25,164
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderOfferProcessorImpl orderProcessor = new OrderOfferProcessorImpl();,1,2,0.25,165
+8352a0815cde294e891c3b46a0c12366e71d2352,promotableOfferUtility = new PromotableOfferUtilityImpl();,0,2,0.25,166
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor = new OrderOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,167
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor = new OrderOfferProcessorImpl();,1,2,0.25,168
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (itemOfferCanBeApplied(order, itemOffer)) {",1,2,0.25,169
+8352a0815cde294e891c3b46a0c12366e71d2352,fgProcessor = new TestableFulfillmentGroupOfferProcessor();,1,2,0.25,170
+8352a0815cde294e891c3b46a0c12366e71d2352,order = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,2,0.25,171
+8352a0815cde294e891c3b46a0c12366e71d2352,promotableOrder = dataProvider.createBasicPromotableOrder(promotableOfferUtility);,0,2,0.25,172
+8352a0815cde294e891c3b46a0c12366e71d2352,ItemOfferProcessorImpl itemProcessor = new ItemOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,173
+8352a0815cde294e891c3b46a0c12366e71d2352,promotableOfferUtility = new PromotableOfferUtilityImpl();,0,2,0.25,174
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferServiceUtilitiesImpl offerServiceUtilities = new OfferServiceUtilitiesImpl(promotableOfferUtility);,0,2,0.25,175
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderOfferProcessorImpl orderProcessor = new OrderOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,176
+8352a0815cde294e891c3b46a0c12366e71d2352,ItemOfferProcessorImpl itemProcessor = new ItemOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,177
+8352a0815cde294e891c3b46a0c12366e71d2352,FulfillmentGroupOfferProcessor fgProcessor = new FulfillmentGroupOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,178
+8352a0815cde294e891c3b46a0c12366e71d2352,order = dataProvider.createBasicPromotableOrder(promotableOfferUtility).getOrder();,0,2,0.25,179
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferServiceUtilitiesImpl offerServiceUtilities = new OfferServiceUtilitiesImpl();,1,2,0.25,180
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderOfferProcessorImpl orderProcessor = new OrderOfferProcessorImpl();,1,2,0.25,181
+8352a0815cde294e891c3b46a0c12366e71d2352,ItemOfferProcessorImpl itemProcessor = new ItemOfferProcessorImpl();,1,2,0.25,182
+8352a0815cde294e891c3b46a0c12366e71d2352,order = dataProvider.createBasicPromotableOrder().getOrder();,1,2,0.25,183
+8352a0815cde294e891c3b46a0c12366e71d2352,public TestableFulfillmentGroupOfferProcessor(PromotableOfferUtility promotableOfferUtility) {,0,2,0.25,184
+8352a0815cde294e891c3b46a0c12366e71d2352,promotableOfferUtility = new PromotableOfferUtilityImpl();,0,2,0.25,185
+8352a0815cde294e891c3b46a0c12366e71d2352,fgProcessor = new TestableFulfillmentGroupOfferProcessor(promotableOfferUtility);,0,2,0.25,186
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferServiceUtilitiesImpl offerServiceUtilities = new OfferServiceUtilitiesImpl(promotableOfferUtility);,0,2,0.25,187
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderOfferProcessorImpl orderProcessor = new OrderOfferProcessorImpl(promotableOfferUtility);,0,2,0.25,188
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemOffer.isLegacyOffer()) {,1,2,0.25,189
+8352a0815cde294e891c3b46a0c12366e71d2352,if (discount.getPromotion().equals(itemOffer.getOffer())) {,1,2,0.25,190
+8352a0815cde294e891c3b46a0c12366e71d2352,// and another offer was already applied.,1,2,0.25,191
+8352a0815cde294e891c3b46a0c12366e71d2352,* target specified for BOGO style offers are of equal or lesser value. We are using,1,2,0.25,192
+8352a0815cde294e891c3b46a0c12366e71d2352,"boolean targetsFound = markTargets(itemOffer, order);",1,2,0.25,193
+8352a0815cde294e891c3b46a0c12366e71d2352,if (orderOffer.isTotalitarian()) {,1,2,0.25,194
+8352a0815cde294e891c3b46a0c12366e71d2352,protected List<PromotableOrderItem> legacyCandidateTargets = new ArrayList<PromotableOrderItem>();,0,2,0.25,195
+8352a0815cde294e891c3b46a0c12366e71d2352,"public HashMap<OfferItemCriteria, List<PromotableOrderItem>> getCandidateTargetsMap() {",0,2,0.25,196
+8352a0815cde294e891c3b46a0c12366e71d2352,public List<PromotableOrderItem> getLegacyCandidateTargets() {,0,2,0.25,197
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected HashMap<OfferItemCriteria, List<PromotableOrderItem>> candidateQualifiersMap = new HashMap<OfferItemCriteria, List<PromotableOrderItem>>();",1,2,0.25,198
+8352a0815cde294e891c3b46a0c12366e71d2352,protected List<PromotableOrderItem> candidateTargets = new ArrayList<PromotableOrderItem>();,1,2,0.25,199
+8352a0815cde294e891c3b46a0c12366e71d2352,* @return,1,2,0.25,200
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean markTargets(PromotableCandidateItemOffer itemOffer, PromotableOrder order) {",1,2,0.25,201
+8352a0815cde294e891c3b46a0c12366e71d2352,int maxUses = calculateMaximumNumberOfUses();,1,2,0.25,202
+8352a0815cde294e891c3b46a0c12366e71d2352,int appliedCount = 0;,1,2,0.25,203
+8352a0815cde294e891c3b46a0c12366e71d2352,"int qtyToReceiveSavings = Math.min(chgItem.getQuantity(), maxUses);",1,2,0.25,204
+8352a0815cde294e891c3b46a0c12366e71d2352,"savings = savings.add(calculateSavingsForOrderItem(chgItem, qtyToReceiveSavings));",1,2,0.25,205
+8352a0815cde294e891c3b46a0c12366e71d2352,if (appliedCount >= maxUses) {,1,2,0.25,206
+8352a0815cde294e891c3b46a0c12366e71d2352,public List<PromotableOrderItem> getCandidateTargets() {,1,2,0.25,207
+8352a0815cde294e891c3b46a0c12366e71d2352,"public class ItemOfferProcessorImpl extends OrderOfferProcessorImpl implements ItemOfferProcessor, ItemOfferMarkTargets {",0,2,0.25,208
+8352a0815cde294e891c3b46a0c12366e71d2352,"boolean qualifiersFound = markQualifiers(itemOffer, order);",1,2,0.25,209
+8352a0815cde294e891c3b46a0c12366e71d2352,"boolean qualifiersAndTargetsFound = markRelatedQualifiersAndTargets(itemOffer, order);",0,2,0.25,210
+8352a0815cde294e891c3b46a0c12366e71d2352,if (extensionManager != null) {,0,2,0.25,211
+8352a0815cde294e891c3b46a0c12366e71d2352,int itemQtyAvailableToBeUsedAsQualifier = detail.getQuantityAvailableToBeUsedAsQualifier(itemOffer);,0,2,0.25,212
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean markTargets(PromotableCandidateItemOffer itemOffer, PromotableOrder order, OrderItem relatedQualifier) {",0,2,0.25,213
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItemPriceDetailAdjustment adjustment : detail.getCandidateItemAdjustments()) {,1,2,0.25,214
+8352a0815cde294e891c3b46a0c12366e71d2352,if (relatedQualifier != null) {,0,2,0.25,215
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param itemOffer,0,2,0.25,216
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean markRelatedQualifiersAndTargets(PromotableCandidateItemOffer itemOffer, PromotableOrder order) {",0,2,0.25,217
+8352a0815cde294e891c3b46a0c12366e71d2352,int qualifierQtyNeeded = itemCriteria.getQuantity();,0,2,0.25,218
+8352a0815cde294e891c3b46a0c12366e71d2352,if (qualifierQtyNeeded > 0) {,0,2,0.25,219
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemQtyAvailableToBeUsedAsQualifier > 0) {,0,2,0.25,220
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemOffer.getOffer().getRequiresRelatedTargetAndQualifiers()) {,0,2,0.25,221
+8352a0815cde294e891c3b46a0c12366e71d2352,// might need in the future.,0,2,0.25,222
+8352a0815cde294e891c3b46a0c12366e71d2352,if (possibleQualifier.getPromotion().equals(itemOffer.getOffer())) {,0,2,0.25,223
+8352a0815cde294e891c3b46a0c12366e71d2352,"int qtyToMarkAsQualifier = Math.min(qualifierQtyNeeded, itemQtyAvailableToBeUsedAsQualifier);",0,2,0.25,224
+8352a0815cde294e891c3b46a0c12366e71d2352,// the relationship flag.,0,2,0.25,225
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (!markTargets(itemOffer, order, oi)) {",0,2,0.25,226
+8352a0815cde294e891c3b46a0c12366e71d2352,} else {,0,2,0.25,227
+8352a0815cde294e891c3b46a0c12366e71d2352,if (qualifierQtyNeeded != 0) {,0,2,0.25,228
+8352a0815cde294e891c3b46a0c12366e71d2352,"Map<String, Object> contextMap = new HashMap<String, Object>();",0,2,0.25,229
+8352a0815cde294e891c3b46a0c12366e71d2352,"qualifiersFound = markQualifiers(itemOffer, order);",0,2,0.25,230
+8352a0815cde294e891c3b46a0c12366e71d2352,if (contextMap.get(OfferServiceExtensionManager.STOP_PROCESSING) != null) {,0,2,0.25,231
+8352a0815cde294e891c3b46a0c12366e71d2352,quantity = ((Integer) o).intValue();,0,2,0.25,232
+8352a0815cde294e891c3b46a0c12366e71d2352,protected void restPriceDetails(PromotableOrderItem item) {,0,2,0.25,233
+8352a0815cde294e891c3b46a0c12366e71d2352,import java.util.Comparator;,1,2,0.25,234
+8352a0815cde294e891c3b46a0c12366e71d2352,public class ItemOfferProcessorImpl extends OrderOfferProcessorImpl implements ItemOfferProcessor {,1,2,0.25,235
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected void applyOrderItemAdjustment(PromotableCandidateItemOffer itemOffer, PromotableOrderItemPriceDetail itemPriceDetail) {",1,2,0.25,236
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotionDiscount discount : itemPriceDetail.getPromotionDiscounts()) {,1,2,0.25,237
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param itemOffer,1,2,0.25,238
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param detail,1,2,0.25,239
+8352a0815cde294e891c3b46a0c12366e71d2352,* @return,1,2,0.25,240
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!itemOffer.getOffer().getApplyDiscountToSalePrice()) {,1,2,0.25,241
+8352a0815cde294e891c3b46a0c12366e71d2352,Money salePrice = detail.getPromotableOrderItem().getSalePriceBeforeAdjustments();,1,2,0.25,242
+8352a0815cde294e891c3b46a0c12366e71d2352,Money retailPrice = detail.getPromotableOrderItem().getRetailPriceBeforeAdjustments();,1,2,0.25,243
+8352a0815cde294e891c3b46a0c12366e71d2352,if (salePrice != null) {,1,2,0.25,244
+8352a0815cde294e891c3b46a0c12366e71d2352,// Returning false,0,2,0.25,245
+8352a0815cde294e891c3b46a0c12366e71d2352,if (salePrice.lessThan(retailPrice.subtract(savings))) {,1,2,0.25,246
+8352a0815cde294e891c3b46a0c12366e71d2352,* item adjustments.,1,2,0.25,247
+8352a0815cde294e891c3b46a0c12366e71d2352,"Money itemSavings = calculatePotentialSavingsForOrderItem(itemOffer, item, discount.getQuantity());",0,2,0.25,248
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (adjustmentIsNotGoodEnoughToBeApplied(itemOffer, itemPriceDetail)) {",1,2,0.25,249
+8352a0815cde294e891c3b46a0c12366e71d2352,"targetQtyNeeded = offerServiceUtilities.markTargetsForCriteria(itemOffer, relatedQualifier, checkOnly, promotion, relatedQualifierRoot, itemCriteria, priceDetails, targetQtyNeeded);",0,2,0.25,250
+8352a0815cde294e891c3b46a0c12366e71d2352,if (itemOffer.isLegacyOffer()) {,0,2,0.25,251
+8352a0815cde294e891c3b46a0c12366e71d2352,} else {,0,2,0.25,252
+8352a0815cde294e891c3b46a0c12366e71d2352,"int qualifierQtyNeeded = offerServiceUtilities.markQualifiersForCriteria(itemOffer, itemCriteria, priceDetails);",0,2,0.25,253
+8352a0815cde294e891c3b46a0c12366e71d2352,"public boolean markTargets(PromotableCandidateItemOffer itemOffer, PromotableOrder order, OrderItem relatedQualifier,",0,2,0.25,254
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (offerServiceUtilities.itemOfferCanBeApplied(itemOffer, order.getAllPromotableOrderItemPriceDetails())) {",0,2,0.25,255
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItemHolder orderItemHolder = new OrderItemHolder(null);,0,2,0.25,256
+8352a0815cde294e891c3b46a0c12366e71d2352,"int qualifierQtyNeeded = offerServiceUtilities.markRelatedQualifiersAndTargetsForItemCriteria(itemOffer, order,",0,2,0.25,257
+8352a0815cde294e891c3b46a0c12366e71d2352,"return markTargets(itemOffer, order, orderItemHolder.getOrderItem(), false);",0,2,0.25,258
+8352a0815cde294e891c3b46a0c12366e71d2352,"if (applyItemOfferExtension(order, itemOffer)) {",0,2,0.25,259
+8352a0815cde294e891c3b46a0c12366e71d2352,* Provide an opportunity to for modules to override the potentialSavingsCalculation,0,2,0.25,260
+8352a0815cde294e891c3b46a0c12366e71d2352,* @param itemOffer,0,2,0.25,261
+8352a0815cde294e891c3b46a0c12366e71d2352,* @return,0,2,0.25,262
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotableOrderItem item, int quantity) {",0,2,0.25,263
+8352a0815cde294e891c3b46a0c12366e71d2352,"Map<String,Object> contextMap = new HashMap<String,Object>();",0,2,0.25,264
+8352a0815cde294e891c3b46a0c12366e71d2352,if (o != null && o instanceof Money) {,0,2,0.25,265
+8352a0815cde294e891c3b46a0c12366e71d2352,if (o != null && o instanceof Integer) {,0,2,0.25,266
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableCandidateItemOffer itemOffer = offerIterator.next();,1,1,0.125,267
+8352a0815cde294e891c3b46a0c12366e71d2352,while (offerIterator.hasNext()) {,1,1,0.125,268
+8352a0815cde294e891c3b46a0c12366e71d2352,Iterator<PromotableCandidateItemOffer> offerIterator = qualifiedItemOffers.iterator();,1,1,0.125,269
+8352a0815cde294e891c3b46a0c12366e71d2352,},0,1,0.125,270
+8352a0815cde294e891c3b46a0c12366e71d2352,boolean first = true;,1,1,0.125,271
+8352a0815cde294e891c3b46a0c12366e71d2352,//qualifiedOrderOffers = removeTrailingNotCombinableOrderOffers(qualifiedOrderOffers);,1,1,0.125,272
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyAndSaveOffersToOrder(offerListWithOneOffer, order);",0,1,0.125,273
+8352a0815cde294e891c3b46a0c12366e71d2352,potentialSavings = potentialSavings.add(,1,1,0.125,274
+8352a0815cde294e891c3b46a0c12366e71d2352,protected Comparator<PromotableOrderItemPriceDetail> getTargetItemComparator(final boolean applyToSalePrice) {,1,1,0.125,275
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyAndSaveOffersToOrder(offers, order);",0,1,0.125,276
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyOffersToOrder(offerList, order);",1,1,0.125,277
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyAndSaveOffersToOrder(offerListWithTwoOffers, order);",0,1,0.125,278
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyAndSaveOffersToOrder(offerList, order);",0,1,0.125,279
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyOffersToOrder(offers, order);",1,1,0.125,280
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyOffersToOrder(offerListWithOneOffer, order);",1,1,0.125,281
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerService.applyOffersToOrder(offerListWithTwoOffers, order);",1,1,0.125,282
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.order.domain.DiscreteOrderItem;,0,1,0.125,283
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.domain.OfferItemCriteria;,0,1,0.125,284
+8352a0815cde294e891c3b46a0c12366e71d2352,* <p>,1,1,0.125,285
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableCandidateItemOffer;,0,1,0.125,286
+8352a0815cde294e891c3b46a0c12366e71d2352,* </p>,1,1,0.125,287
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItemPriceDetail priceDetail : priceDetails) {,1,1,0.125,288
+8352a0815cde294e891c3b46a0c12366e71d2352,return price2.compareTo(price);,1,1,0.125,289
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem relatedOrderItem = null;,1,1,0.125,290
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean orderMeetsQualifyingSubtotalRequirements(PromotableOrder order, PromotableCandidateOrderOffer orderOffer) {",0,1,0.125,291
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem relatedQualifierRoot = null;,1,1,0.125,292
+8352a0815cde294e891c3b46a0c12366e71d2352,relatedQualifierRoot = relatedQualifier;,1,1,0.125,293
+8352a0815cde294e891c3b46a0c12366e71d2352,while (relatedQualifierRoot.getParentOrderItem() != null) {,1,1,0.125,294
+8352a0815cde294e891c3b46a0c12366e71d2352,relatedQualifierRoot = relatedQualifierRoot.getParentOrderItem();,1,1,0.125,295
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem thisItem = priceDetail.getPromotableOrderItem().getOrderItem();,1,1,0.125,296
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!relatedQualifierRoot.isAParentOf(thisItem) && !thisItem.isAParentOf(relatedQualifierRoot) &&,1,1,0.125,297
+8352a0815cde294e891c3b46a0c12366e71d2352,!thisItem.equals(relatedQualifierRoot)) {,1,1,0.125,298
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem oi = detail.getPromotableOrderItem().getOrderItem();,1,1,0.125,299
+8352a0815cde294e891c3b46a0c12366e71d2352,// highest amount first,1,1,0.125,300
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferItemCriteria previousQualifierCriteria = null;,1,1,0.125,301
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotionQualifier possibleQualifier : detail.getPromotionQualifiers()) {,1,1,0.125,302
+8352a0815cde294e891c3b46a0c12366e71d2352,previousQualifierCriteria = possibleQualifier.getItemCriteria();,1,1,0.125,303
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotionQualifier pq = detail.addPromotionQualifier(itemOffer, itemCriteria, qtyToMarkAsQualifier);",1,1,0.125,304
+8352a0815cde294e891c3b46a0c12366e71d2352,// we succeed,1,1,0.125,305
+8352a0815cde294e891c3b46a0c12366e71d2352,relatedOrderItem = oi;,1,1,0.125,306
+8352a0815cde294e891c3b46a0c12366e71d2352,protected Comparator<PromotableOrderItemPriceDetail> getQualifierItemComparator(final boolean applyToSalePrice) {,1,1,0.125,307
+8352a0815cde294e891c3b46a0c12366e71d2352,@Override,1,1,0.125,308
+8352a0815cde294e891c3b46a0c12366e71d2352,continue;,0,1,0.125,309
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtility;,0,1,0.125,310
+8352a0815cde294e891c3b46a0c12366e71d2352,"return offerServiceUtilities.orderMeetsQualifyingSubtotalRequirements(order, orderOffer.getOffer(), orderOffer.getCandidateQualifiersMap());",0,1,0.125,311
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean orderMeetsSubtotalRequirements(PromotableOrder order, PromotableCandidateOrderOffer orderOffer) {",0,1,0.125,312
+8352a0815cde294e891c3b46a0c12366e71d2352,"saleAdjustmentValue = PromotableOfferUtility.computeAdjustmentValue(currentPriceDetailSalesValue, offerUnitValue, this, this);",1,1,0.125,313
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtility;,0,1,0.125,314
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,0,1,0.125,315
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtility;,0,1,0.125,316
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtilityImpl;,0,1,0.125,317
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,1,1,0.125,318
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,0,1,0.125,319
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtility;,0,1,0.125,320
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtilityImpl;,0,1,0.125,321
+8352a0815cde294e891c3b46a0c12366e71d2352,},0,1,0.125,322
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,1,1,0.125,323
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,0,1,0.125,324
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtilityImpl;,0,1,0.125,325
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,1,1,0.125,326
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,0,1,0.125,327
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtility;,0,1,0.125,328
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOfferUtilityImpl;,0,1,0.125,329
+8352a0815cde294e891c3b46a0c12366e71d2352,import junit.framework.TestCase;,1,1,0.125,330
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItemPriceDetail detail : priceDetails) {,1,1,0.125,331
+8352a0815cde294e891c3b46a0c12366e71d2352,"retailAdjustmentValue = PromotableOfferUtility.computeAdjustmentValue(currentPriceDetailRetailValue, offerUnitValue, this, this);",1,1,0.125,332
+8352a0815cde294e891c3b46a0c12366e71d2352,"BigDecimal offerUnitValue = PromotableOfferUtility.determineOfferUnitValue(offer, promotableCandidateItemOffer);",1,1,0.125,333
+8352a0815cde294e891c3b46a0c12366e71d2352,},1,1,0.125,334
+8352a0815cde294e891c3b46a0c12366e71d2352,@Override,1,1,0.125,335
+8352a0815cde294e891c3b46a0c12366e71d2352,"return offerServiceUtilities.orderMeetsSubtotalRequirements(order, orderOffer.getOffer());",0,1,0.125,336
+8352a0815cde294e891c3b46a0c12366e71d2352,continue;,1,1,0.125,337
+8352a0815cde294e891c3b46a0c12366e71d2352,},1,1,0.125,338
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.domain.OfferPriceData;,0,1,0.125,339
+8352a0815cde294e891c3b46a0c12366e71d2352,@Override,0,1,0.125,340
+8352a0815cde294e891c3b46a0c12366e71d2352,return candidateFixedTargetsMap;,0,1,0.125,341
+8352a0815cde294e891c3b46a0c12366e71d2352,},0,1,0.125,342
+8352a0815cde294e891c3b46a0c12366e71d2352,this.candidateFixedTargetsMap = candidateFixedTargetsMap;,0,1,0.125,343
+8352a0815cde294e891c3b46a0c12366e71d2352,originalPrice = orderItem.getPriceBeforeAdjustments(getOffer().getApplyDiscountToSalePrice());,1,1,0.125,344
+8352a0815cde294e891c3b46a0c12366e71d2352,currentPriceDetailSalesValue = currentPriceDetailRetailValue;,1,1,0.125,345
+8352a0815cde294e891c3b46a0c12366e71d2352,"BigDecimal offerUnitValue = PromotableOfferUtility.determineOfferUnitValue(offer, this);",1,1,0.125,346
+8352a0815cde294e891c3b46a0c12366e71d2352,return savings.multiply(qtyToReceiveSavings);,1,1,0.125,347
+8352a0815cde294e891c3b46a0c12366e71d2352,},1,1,0.125,348
+8352a0815cde294e891c3b46a0c12366e71d2352,"Money retailAdjustmentValue,",0,1,0.125,349
+8352a0815cde294e891c3b46a0c12366e71d2352,this.retailAdjustmentValue = retailAdjustmentValue;,0,1,0.125,350
+8352a0815cde294e891c3b46a0c12366e71d2352,this.saleAdjustmentValue = saleAdjustmentValue;,0,1,0.125,351
+8352a0815cde294e891c3b46a0c12366e71d2352,import java.math.BigDecimal;,1,1,0.125,352
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrderItemPriceDetail orderItemPriceDetail) {,1,1,0.125,353
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean markTargets(PromotableCandidateItemOffer itemOffer, PromotableOrder order, OrderItem relatedQualifier,",1,1,0.125,354
+8352a0815cde294e891c3b46a0c12366e71d2352,},0,1,0.125,355
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyItemQualifiersAndTargets(itemOffer, order);",1,1,0.125,356
+8352a0815cde294e891c3b46a0c12366e71d2352,this.candidateTargetsMap = candidateItemsMap;,0,1,0.125,357
+8352a0815cde294e891c3b46a0c12366e71d2352,previousQualifierCriteria = possibleQualifier.getItemCriteria();,0,1,0.125,358
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotionQualifier pq = detail.addPromotionQualifier(itemOffer, itemCriteria, qtyToMarkAsQualifier);",0,1,0.125,359
+8352a0815cde294e891c3b46a0c12366e71d2352,return false;,0,1,0.125,360
+8352a0815cde294e891c3b46a0c12366e71d2352,return true;,0,1,0.125,361
+8352a0815cde294e891c3b46a0c12366e71d2352,boolean qualifiersFound = false;,0,1,0.125,362
+8352a0815cde294e891c3b46a0c12366e71d2352,boolean targetsFound = false;,0,1,0.125,363
+8352a0815cde294e891c3b46a0c12366e71d2352,qualifiersFound = qualifiersAndTargetsFound;,0,1,0.125,364
+8352a0815cde294e891c3b46a0c12366e71d2352,targetsFound = qualifiersAndTargetsFound;,0,1,0.125,365
+8352a0815cde294e891c3b46a0c12366e71d2352,"targetsFound = markTargets(itemOffer, order, null);",0,1,0.125,366
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.springframework.util.CollectionUtils;,1,1,0.125,367
+8352a0815cde294e891c3b46a0c12366e71d2352,continue;,0,1,0.125,368
+8352a0815cde294e891c3b46a0c12366e71d2352,continue;,1,1,0.125,369
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected HashMap<OfferItemCriteria, List<PromotableOrderItem>> candidateQualifiersMap =",0,1,0.125,370
+8352a0815cde294e891c3b46a0c12366e71d2352,"new HashMap<OfferItemCriteria, List<PromotableOrderItem>>();",0,1,0.125,371
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected HashMap<OfferItemCriteria, List<PromotableOrderItem>> candidateTargetsMap =",0,1,0.125,372
+8352a0815cde294e891c3b46a0c12366e71d2352,for (OfferItemCriteria itemCriteria : getCandidateQualifiersMap().keySet()) {,0,1,0.125,373
+8352a0815cde294e891c3b46a0c12366e71d2352,List<PromotableOrderItem> candidateTargets = getCandidateTargetsMap().get(itemCriteria);,0,1,0.125,374
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItem promotableOrderItem : candidateTargets) {,0,1,0.125,375
+8352a0815cde294e891c3b46a0c12366e71d2352,},0,1,0.125,376
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotionQualifier possibleQualifier : detail.getPromotionQualifiers()) {,0,1,0.125,377
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferItemCriteria previousQualifierCriteria = null;,0,1,0.125,378
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem oi = detail.getPromotableOrderItem().getOrderItem();,0,1,0.125,379
+8352a0815cde294e891c3b46a0c12366e71d2352,relatedQualifierRoot = relatedQualifierRoot.getParentOrderItem();,0,1,0.125,380
+8352a0815cde294e891c3b46a0c12366e71d2352,// and adjustments have already been applied.,1,1,0.125,381
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.apache.commons.collections.CollectionUtils;,0,1,0.125,382
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.PromotionQualifier;,0,1,0.125,383
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.order.domain.OrderItem;,0,1,0.125,384
+8352a0815cde294e891c3b46a0c12366e71d2352,import java.util.Map.Entry;,0,1,0.125,385
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem relatedQualifierRoot = null;,0,1,0.125,386
+8352a0815cde294e891c3b46a0c12366e71d2352,relatedQualifierRoot = relatedQualifier;,0,1,0.125,387
+8352a0815cde294e891c3b46a0c12366e71d2352,while (relatedQualifierRoot.getParentOrderItem() != null) {,0,1,0.125,388
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem thisItem = priceDetail.getPromotableOrderItem().getOrderItem();,0,1,0.125,389
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItemPriceDetail detail : priceDetails) {,0,1,0.125,390
+8352a0815cde294e891c3b46a0c12366e71d2352,if (!relatedQualifierRoot.isAParentOf(thisItem) && !thisItem.isAParentOf(relatedQualifierRoot) &&,0,1,0.125,391
+8352a0815cde294e891c3b46a0c12366e71d2352,!thisItem.equals(relatedQualifierRoot)) {,0,1,0.125,392
+8352a0815cde294e891c3b46a0c12366e71d2352,continue;,0,1,0.125,393
+8352a0815cde294e891c3b46a0c12366e71d2352,* {@link OrderItem#getParentOrderItem()} / {@link OrderItem#getChildOrderItems()} attributes.,0,1,0.125,394
+8352a0815cde294e891c3b46a0c12366e71d2352,*,0,1,0.125,395
+8352a0815cde294e891c3b46a0c12366e71d2352,"for (Entry<OfferItemCriteria, List<PromotableOrderItem>> entry : itemOffer.getCandidateQualifiersMap().entrySet()) {",0,1,0.125,396
+8352a0815cde294e891c3b46a0c12366e71d2352,OfferItemCriteria itemCriteria = entry.getKey();,0,1,0.125,397
+8352a0815cde294e891c3b46a0c12366e71d2352,List<PromotableOrderItem> promotableItems = entry.getValue();,0,1,0.125,398
+8352a0815cde294e891c3b46a0c12366e71d2352,return candidateTargetsMap;,0,1,0.125,399
+8352a0815cde294e891c3b46a0c12366e71d2352,List<PromotableOrderItemPriceDetail> priceDetails = buildPriceDetailListFromOrderItems(promotableItems);,0,1,0.125,400
+8352a0815cde294e891c3b46a0c12366e71d2352,@Override,0,1,0.125,401
+8352a0815cde294e891c3b46a0c12366e71d2352,},0,1,0.125,402
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected Money calculatePotentialSavingsForOrderItem(PromotableCandidateItemOffer itemOffer,",0,1,0.125,403
+8352a0815cde294e891c3b46a0c12366e71d2352,"Object o = contextMap.get(""savings"");",0,1,0.125,404
+8352a0815cde294e891c3b46a0c12366e71d2352,return (Money) o;,0,1,0.125,405
+8352a0815cde294e891c3b46a0c12366e71d2352,"o = contextMap.get(""quantity"");",0,1,0.125,406
+8352a0815cde294e891c3b46a0c12366e71d2352,"return itemOffer.calculateSavingsForOrderItem(item, quantity);",0,1,0.125,407
+8352a0815cde294e891c3b46a0c12366e71d2352,potentialSavings = potentialSavings.add(itemSavings);,0,1,0.125,408
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.PromotionQualifier;,1,1,0.125,409
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.discount.domain.PromotableOrderItemPriceDetailAdjustment;,1,1,0.125,410
+8352a0815cde294e891c3b46a0c12366e71d2352,*,1,1,0.125,411
+8352a0815cde294e891c3b46a0c12366e71d2352,},1,1,0.125,412
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItemPriceDetail itemPriceDetail : itemPriceDetails) {,1,1,0.125,413
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableOrderItemPriceDetail detail) {,1,1,0.125,414
+8352a0815cde294e891c3b46a0c12366e71d2352,// Not good enough,1,1,0.125,415
+8352a0815cde294e891c3b46a0c12366e71d2352,return true;,1,1,0.125,416
+8352a0815cde294e891c3b46a0c12366e71d2352,return false;,1,1,0.125,417
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean itemOfferCanBeApplied(PromotableOrder order, PromotableCandidateItemOffer itemOffer) {",1,1,0.125,418
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItemPriceDetail detail : order.getAllPromotableOrderItemPriceDetails()) {,1,1,0.125,419
+8352a0815cde294e891c3b46a0c12366e71d2352,return legacyCandidateTargets;,0,1,0.125,420
+8352a0815cde294e891c3b46a0c12366e71d2352,continue;,1,1,0.125,421
+8352a0815cde294e891c3b46a0c12366e71d2352,OrderItem relatedQualifierRoot = offerServiceUtilities.findRelatedQualifierRoot(relatedQualifier);,0,1,0.125,422
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotableOrderItemPriceDetailAdjustment promotableOrderItemPriceDetailAdjustment = promotableItemFactory.createPromotableOrderItemPriceDetailAdjustment(itemOffer, itemPriceDetail);",1,1,0.125,423
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyItemQualifiersAndTargets(itemOffer, order);",0,1,0.125,424
+8352a0815cde294e891c3b46a0c12366e71d2352,this.candidateTargets = candidateTargets;,1,1,0.125,425
+8352a0815cde294e891c3b46a0c12366e71d2352,this.legacyCandidateTargets = candidateTargets;,0,1,0.125,426
+8352a0815cde294e891c3b46a0c12366e71d2352,*,1,1,0.125,427
+8352a0815cde294e891c3b46a0c12366e71d2352,return Boolean.TRUE;,0,1,0.125,428
+8352a0815cde294e891c3b46a0c12366e71d2352,* operation.,1,1,0.125,429
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItem chgItem : candidateTargets) {,1,1,0.125,430
+8352a0815cde294e891c3b46a0c12366e71d2352,appliedCount = appliedCount + qtyToReceiveSavings;,1,1,0.125,431
+8352a0815cde294e891c3b46a0c12366e71d2352,},1,1,0.125,432
+8352a0815cde294e891c3b46a0c12366e71d2352,for (PromotableOrderItem promotableOrderItem : candidateTargets) {,1,1,0.125,433
+8352a0815cde294e891c3b46a0c12366e71d2352,return candidateTargets;,1,1,0.125,434
+8352a0815cde294e891c3b46a0c12366e71d2352,return savings;,1,1,0.125,435
+8352a0815cde294e891c3b46a0c12366e71d2352,PromotableCandidateItemOffer itemOffer) {,0,1,0.125,436
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.order.domain.dto.OrderItemHolder;,0,1,0.125,437
+8352a0815cde294e891c3b46a0c12366e71d2352,import java.util.HashMap;,0,1,0.125,438
+8352a0815cde294e891c3b46a0c12366e71d2352,import java.util.Map;,0,1,0.125,439
+8352a0815cde294e891c3b46a0c12366e71d2352,* Call out to extension managers.,0,1,0.125,440
+8352a0815cde294e891c3b46a0c12366e71d2352,*,0,1,0.125,441
+8352a0815cde294e891c3b46a0c12366e71d2352,import org.broadleafcommerce.core.offer.service.OfferServiceExtensionManager;,0,1,0.125,442
+8352a0815cde294e891c3b46a0c12366e71d2352,return !Boolean.TRUE.equals(contextMap.get(OfferServiceExtensionManager.STOP_PROCESSING));,0,1,0.125,443
+8352a0815cde294e891c3b46a0c12366e71d2352,protected PromotableOfferUtility promotableOfferUtility;,0,0,0.0,444
+8352a0815cde294e891c3b46a0c12366e71d2352,/*,1,0,0.0,445
+8352a0815cde294e891c3b46a0c12366e71d2352,*/,1,0,0.0,446
+8352a0815cde294e891c3b46a0c12366e71d2352,offerServiceUtilities.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,447
+8352a0815cde294e891c3b46a0c12366e71d2352,"promotableCandidateItemOffer, promotableOrderItemPriceDetail);",1,0,0.0,448
+8352a0815cde294e891c3b46a0c12366e71d2352,offerService.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,449
+8352a0815cde294e891c3b46a0c12366e71d2352,offerServiceUtilities.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,450
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,451
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,452
+8352a0815cde294e891c3b46a0c12366e71d2352,fgProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,453
+8352a0815cde294e891c3b46a0c12366e71d2352,"promotableCandidateItemOffer, promotableOrderItemPriceDetail, retailAdjustmentValue, saleAdjustmentValue);",0,0,0.0,454
+8352a0815cde294e891c3b46a0c12366e71d2352,computeAdjustmentValues();,1,0,0.0,455
+8352a0815cde294e891c3b46a0c12366e71d2352,order.getOrderItems().get(1).setSalePrice(null);,1,0,0.0,456
+8352a0815cde294e891c3b46a0c12366e71d2352,"PromotableOrderItemPriceDetail orderItemPriceDetail,",0,0,0.0,457
+8352a0815cde294e891c3b46a0c12366e71d2352,break;,1,0,0.0,458
+8352a0815cde294e891c3b46a0c12366e71d2352,compareAndAdjustOrderAndItemOffers(promotableOrder);,1,0,0.0,459
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyOrderOffer(promotableOrder, orderOffer);",1,0,0.0,460
+8352a0815cde294e891c3b46a0c12366e71d2352,break;,0,0,0.0,461
+8352a0815cde294e891c3b46a0c12366e71d2352,compareAndAdjustOrderAndItemOffers(promotableOrder);,0,0,0.0,462
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyOrderOffer(promotableOrder, orderOffer);",0,0,0.0,463
+8352a0815cde294e891c3b46a0c12366e71d2352,order.getOrderItems().get(1).setSalePrice(new Money(10D));,1,0,0.0,464
+8352a0815cde294e891c3b46a0c12366e71d2352,order.getOrderItems().get(1).setSalePrice(new Money(1D));,1,0,0.0,465
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,466
+8352a0815cde294e891c3b46a0c12366e71d2352,order.getOrderItems().get(0).setSalePrice(new Money(1D));,1,0,0.0,467
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,468
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,469
+8352a0815cde294e891c3b46a0c12366e71d2352,fgProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,470
+8352a0815cde294e891c3b46a0c12366e71d2352,offerService.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,471
+8352a0815cde294e891c3b46a0c12366e71d2352,((DiscreteOrderItem) order.getOrderItems().get(1)).getSku().setSalePrice(new Money(10D));,0,0,0.0,472
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,473
+8352a0815cde294e891c3b46a0c12366e71d2352,protected PromotableOfferUtility promotableOfferUtility;,0,0,0.0,474
+8352a0815cde294e891c3b46a0c12366e71d2352,offerService.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,475
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,476
+8352a0815cde294e891c3b46a0c12366e71d2352,offerServiceUtilities.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,477
+8352a0815cde294e891c3b46a0c12366e71d2352,offerService.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,478
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,479
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,480
+8352a0815cde294e891c3b46a0c12366e71d2352,offerServiceUtilities.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,481
+8352a0815cde294e891c3b46a0c12366e71d2352,protected PromotableOfferUtility promotableOfferUtility;,0,0,0.0,482
+8352a0815cde294e891c3b46a0c12366e71d2352,offerService.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,483
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,484
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,485
+8352a0815cde294e891c3b46a0c12366e71d2352,offerServiceUtilities.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,486
+8352a0815cde294e891c3b46a0c12366e71d2352,fgProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,487
+8352a0815cde294e891c3b46a0c12366e71d2352,offerService.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,488
+8352a0815cde294e891c3b46a0c12366e71d2352,itemProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,489
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,490
+8352a0815cde294e891c3b46a0c12366e71d2352,offerServiceUtilities.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,491
+8352a0815cde294e891c3b46a0c12366e71d2352,fgProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl(promotableOfferUtility));,0,0,0.0,492
+8352a0815cde294e891c3b46a0c12366e71d2352,super(promotableOfferUtility);,0,0,0.0,493
+8352a0815cde294e891c3b46a0c12366e71d2352,protected PromotableOfferUtility promotableOfferUtility;,0,0,0.0,494
+8352a0815cde294e891c3b46a0c12366e71d2352,((DiscreteOrderItem) order.getOrderItems().get(1)).getSku().setSalePrice(null);,0,0,0.0,495
+8352a0815cde294e891c3b46a0c12366e71d2352,pq.setQuantity(pq.getQuantity() - qtyToMarkAsQualifier);,0,0,0.0,496
+8352a0815cde294e891c3b46a0c12366e71d2352,((DiscreteOrderItem) order.getOrderItems().get(1)).getSku().setSalePrice(new Money(1D));,0,0,0.0,497
+8352a0815cde294e891c3b46a0c12366e71d2352,((DiscreteOrderItem) order.getOrderItems().get(0)).getSku().setSalePrice(new Money(1D));,0,0,0.0,498
+8352a0815cde294e891c3b46a0c12366e71d2352,"extensionManager.getProxy().calculatePotentialSavings(itemOffer, item, quantity, contextMap);",0,0,0.0,499
+8352a0815cde294e891c3b46a0c12366e71d2352,*/,0,0,0.0,500
+8352a0815cde294e891c3b46a0c12366e71d2352,/**,0,0,0.0,501
+8352a0815cde294e891c3b46a0c12366e71d2352,"orderItemHolder, itemCriteria, priceDetails, this);",0,0,0.0,502
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerServiceUtilities.sortTargetItemDetails(priceDetails, itemOffer.getOffer().getApplyDiscountToSalePrice());",0,0,0.0,503
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyAdjustments(order, itemOffer);",0,0,0.0,504
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyLegacyAdjustments(order, itemOffer);",0,0,0.0,505
+8352a0815cde294e891c3b46a0c12366e71d2352,"extensionManager.getProxy().applyItemOffer(order, itemOffer, contextMap);",0,0,0.0,506
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected Boolean applyItemOfferExtension(PromotableOrder order,",0,0,0.0,507
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerServiceUtilities.applyOrderItemAdjustment(itemOffer, itemPriceDetail);",0,0,0.0,508
+8352a0815cde294e891c3b46a0c12366e71d2352,"offerServiceUtilities.applyAdjustmentsForItemPriceDetails(itemOffer, itemPriceDetails);",0,0,0.0,509
+8352a0815cde294e891c3b46a0c12366e71d2352,returnQty += promotableOrderItem.getQuantity();,1,0,0.0,510
+8352a0815cde294e891c3b46a0c12366e71d2352,*/,1,0,0.0,511
+8352a0815cde294e891c3b46a0c12366e71d2352,/**,1,0,0.0,512
+8352a0815cde294e891c3b46a0c12366e71d2352,returnQty += promotableOrderItem.getQuantity();,0,0,0.0,513
+8352a0815cde294e891c3b46a0c12366e71d2352,pq.setItemCriteria(previousQualifierCriteria);,0,0,0.0,514
+8352a0815cde294e891c3b46a0c12366e71d2352,detail.getPromotionQualifiers().remove(pq);,0,0,0.0,515
+8352a0815cde294e891c3b46a0c12366e71d2352,qualifierQtyNeeded += qtyToMarkAsQualifier;,0,0,0.0,516
+8352a0815cde294e891c3b46a0c12366e71d2352,qualifierQtyNeeded -= qtyToMarkAsQualifier;,0,0,0.0,517
+8352a0815cde294e891c3b46a0c12366e71d2352,break;,0,0,0.0,518
+8352a0815cde294e891c3b46a0c12366e71d2352,"Collections.sort(priceDetails, getQualifierItemComparator(itemOffer.getOffer().getApplyDiscountToSalePrice()));",0,0,0.0,519
+8352a0815cde294e891c3b46a0c12366e71d2352,*/,0,0,0.0,520
+8352a0815cde294e891c3b46a0c12366e71d2352,/**,0,0,0.0,521
+8352a0815cde294e891c3b46a0c12366e71d2352,item.resetPriceDetails();,0,0,0.0,522
+8352a0815cde294e891c3b46a0c12366e71d2352,extensionManager.getProxy().resetPriceDetails(item);,0,0,0.0,523
+8352a0815cde294e891c3b46a0c12366e71d2352,extensionManager.getProxy().chooseSaleOrRetailAdjustments(order);,0,0,0.0,524
+8352a0815cde294e891c3b46a0c12366e71d2352,targetQtyNeeded -= qtyToMarkAsTarget;,1,0,0.0,525
+8352a0815cde294e891c3b46a0c12366e71d2352,order.updatePrices();,0,0,0.0,526
+8352a0815cde294e891c3b46a0c12366e71d2352,offerIterator.remove();,1,0,0.0,527
+8352a0815cde294e891c3b46a0c12366e71d2352,offerIterator.next();,1,0,0.0,528
+8352a0815cde294e891c3b46a0c12366e71d2352,"itemOffer.calculateSavingsForOrderItem(item, discount.getQuantity()));",1,0,0.0,529
+8352a0815cde294e891c3b46a0c12366e71d2352,};,1,0,0.0,530
+8352a0815cde294e891c3b46a0c12366e71d2352,pq.setQuantity(pq.getQuantity() - qtyToMarkAsQualifier);,1,0,0.0,531
+8352a0815cde294e891c3b46a0c12366e71d2352,pq.setItemCriteria(previousQualifierCriteria);,1,0,0.0,532
+8352a0815cde294e891c3b46a0c12366e71d2352,detail.getPromotionQualifiers().remove(pq);,1,0,0.0,533
+8352a0815cde294e891c3b46a0c12366e71d2352,qualifierQtyNeeded += qtyToMarkAsQualifier;,1,0,0.0,534
+8352a0815cde294e891c3b46a0c12366e71d2352,"priceDetail.addPromotionDiscount(itemOffer, itemCriteria, qtyToMarkAsTarget);",1,0,0.0,535
+8352a0815cde294e891c3b46a0c12366e71d2352,"Collections.sort(priceDetails, getTargetItemComparator(itemOffer.getOffer().getApplyDiscountToSalePrice()));",1,0,0.0,536
+8352a0815cde294e891c3b46a0c12366e71d2352,/**,1,0,0.0,537
+8352a0815cde294e891c3b46a0c12366e71d2352,"detail.addPromotionQualifier(itemOffer, itemCriteria, qtyToMarkAsQualifier);",1,0,0.0,538
+8352a0815cde294e891c3b46a0c12366e71d2352,qualifierQtyNeeded -= qtyToMarkAsQualifier;,1,0,0.0,539
+8352a0815cde294e891c3b46a0c12366e71d2352,"Collections.sort(priceDetails, getQualifierItemComparator(itemOffer.getOffer().getApplyDiscountToSalePrice()));",1,0,0.0,540
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyAdjustments(order, itemOffer);",1,0,0.0,541
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyLegacyAdjustments(order, itemOffer);",1,0,0.0,542
+8352a0815cde294e891c3b46a0c12366e71d2352,"protected boolean adjustmentIsNotGoodEnoughToBeApplied(PromotableCandidateItemOffer itemOffer,",1,0,0.0,543
+8352a0815cde294e891c3b46a0c12366e71d2352,"applyOrderItemAdjustment(itemOffer, itemPriceDetail);",1,0,0.0,544
+8352a0815cde294e891c3b46a0c12366e71d2352,break;,1,0,0.0,545
+8352a0815cde294e891c3b46a0c12366e71d2352,itemPriceDetail.addCandidateItemPriceDetailAdjustment(promotableOrderItemPriceDetailAdjustment);,1,0,0.0,546
+8352a0815cde294e891c3b46a0c12366e71d2352,*/,1,0,0.0,547
+8352a0815cde294e891c3b46a0c12366e71d2352,orderProcessor.setPromotableItemFactory(new PromotableItemFactoryImpl());,1,0,0.0,548

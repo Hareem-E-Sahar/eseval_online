@@ -1,0 +1,88 @@
+commit_id,line,line_level_label,count,line_score,row
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"if (fieldManager.getFieldValue(instance, property.getName()) != null && !entity.isPreAdd() && (metadata.getFieldType() != SupportedFieldType.ID || setId) && metadata.getFieldType() != SupportedFieldType.PASSWORD) {",1,5,1.0,1
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (MetadataProviderResponse.NOT_HANDLED != response) {,0,4,0.8,2
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (MetadataProviderResponse.HANDLED_BREAK == response) {,0,4,0.8,3
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if ((mutable == null || mutable) && (readOnly == null || !readOnly) && property.getEnabled()) {,1,4,0.8,4
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"MetadataProviderResponse response = fieldPersistenceProvider.populateValue(request, instance);",1,4,0.8,5
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (MetadataProviderResponse.NOT_HANDLED != response) {,1,4,0.8,6
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (MetadataProviderResponse.HANDLED_BREAK == response) {,1,4,0.8,7
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"MetadataProviderResponse response = fieldPersistenceProvider.populateValue(request, instance);",0,4,0.8,8
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"Boolean setId, BasicFieldMetadata metadata, Entity entity, String value) throws IllegalAccessException {",0,3,0.6000000000000001,9
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (generalConditionsMet && value == null) {,0,3,0.6000000000000001,10
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean generalConditionsMet = (mutable == null || mutable) && (readOnly == null || !readOnly) && property.getEnabled();,0,3,0.6000000000000001,11
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (value == null) {,0,3,0.6000000000000001,12
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (!isBreakDetected || fieldPersistenceProvider.alwaysRun() && (value != null || fieldPersistenceProvider.canHandlePopulateNull())) {,0,3,0.6000000000000001,13
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if ('Y' == ((Status) media).getArchived()) {,0,3,0.6000000000000001,14
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (!handled) {,0,2,0.4,15
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (!handled) {,1,2,0.4,16
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (!isBreakDetected || fieldPersistenceProvider.alwaysRun()) {,1,2,0.4,17
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean valueIsNotPassword = metadata.getFieldType() != SupportedFieldType.PASSWORD;,0,2,0.4,18
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean valueIsNotNullId = metadata.getFieldType() != SupportedFieldType.ID || setId;,0,2,0.4,19
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"currentValueIsNotNull = fieldManager.getFieldValue(instance, property.getName()) != null;",0,2,0.4,20
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (attemptToPopulate) {,1,2,0.4,21
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (isValid) {,0,2,0.4,22
+7259b229e290cceef18db8e5fab505f2fcb28bc6,response = MetadataProviderResponse.HANDLED_BREAK;,1,2,0.4,23
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (dirty) {,1,2,0.4,24
+7259b229e290cceef18db8e5fab505f2fcb28bc6,response = MetadataProviderResponse.HANDLED_BREAK;,0,2,0.4,25
+7259b229e290cceef18db8e5fab505f2fcb28bc6,if (update) {,0,2,0.4,26
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"if (attemptToPopulateValue(property, fieldManager, instance, setId, metadata, entity, value)) {",0,2,0.4,27
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean isBreakDetected = false;,1,1,0.2,28
+7259b229e290cceef18db8e5fab505f2fcb28bc6,return generalConditionsMet;,0,1,0.2,29
+7259b229e290cceef18db8e5fab505f2fcb28bc6,Boolean mutable = metadata.getMutable();,1,1,0.2,30
+7259b229e290cceef18db8e5fab505f2fcb28bc6,Boolean readOnly = metadata.getReadOnly();,1,1,0.2,31
+7259b229e290cceef18db8e5fab505f2fcb28bc6,handled = false;,1,1,0.2,32
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"PopulateValueRequest request = new PopulateValueRequest(setId,",1,1,0.2,33
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean attemptToPopulate = true;,1,1,0.2,34
+7259b229e290cceef18db8e5fab505f2fcb28bc6,attemptToPopulate = false;,1,1,0.2,35
+7259b229e290cceef18db8e5fab505f2fcb28bc6,try {,1,1,0.2,36
+7259b229e290cceef18db8e5fab505f2fcb28bc6,isBreakDetected = true;,1,1,0.2,37
+7259b229e290cceef18db8e5fab505f2fcb28bc6,for (FieldPersistenceProvider fieldPersistenceProvider : fieldPersistenceProviders) {,1,1,0.2,38
+7259b229e290cceef18db8e5fab505f2fcb28bc6,handled = true;,1,1,0.2,39
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"fieldManager, property, metadata, returnType, value, persistenceManager, this, entity.isPreAdd()), instance);",1,1,0.2,40
+7259b229e290cceef18db8e5fab505f2fcb28bc6,} catch (ParentEntityPersistenceException | javax.validation.ValidationException e) {,1,1,0.2,41
+7259b229e290cceef18db8e5fab505f2fcb28bc6,entityPersistenceException = e;,1,1,0.2,42
+7259b229e290cceef18db8e5fab505f2fcb28bc6,} else {,1,1,0.2,43
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"PopulateValueRequest request = new PopulateValueRequest(setId, fieldManager, property, metadata, returnType, value, persistenceManager, this, entity.isPreAdd());",1,1,0.2,44
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"defaultFieldPersistenceProvider.populateValue(request, instance);",1,1,0.2,45
+7259b229e290cceef18db8e5fab505f2fcb28bc6,} catch (FieldNotAvailableException e) {,1,1,0.2,46
+7259b229e290cceef18db8e5fab505f2fcb28bc6,} catch (FieldNotAvailableException e) {,0,1,0.2,47
+7259b229e290cceef18db8e5fab505f2fcb28bc6,return currentValueIsNotNull && !entity.isPreAdd() && valueIsNotNullId && valueIsNotPassword;,0,1,0.2,48
+7259b229e290cceef18db8e5fab505f2fcb28bc6,entityPersistenceException = e;,0,1,0.2,49
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean currentValueIsNotNull = false;,0,1,0.2,50
+7259b229e290cceef18db8e5fab505f2fcb28bc6,isValid = false;,0,1,0.2,51
+7259b229e290cceef18db8e5fab505f2fcb28bc6,Boolean readOnly = metadata.getReadOnly();,0,1,0.2,52
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean update = false;,0,1,0.2,53
+7259b229e290cceef18db8e5fab505f2fcb28bc6,update = false;,0,1,0.2,54
+7259b229e290cceef18db8e5fab505f2fcb28bc6,persist = true;,0,1,0.2,55
+7259b229e290cceef18db8e5fab505f2fcb28bc6,update = dirty;,0,1,0.2,56
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean isValid = true;,0,1,0.2,57
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"PopulateValueRequest request = new PopulateValueRequest(setId, fieldManager, property, metadata, returnType, value, persistenceManager, this, entity.isPreAdd());",0,1,0.2,58
+7259b229e290cceef18db8e5fab505f2fcb28bc6,handled = false;,0,1,0.2,59
+7259b229e290cceef18db8e5fab505f2fcb28bc6,import org.broadleafcommerce.common.persistence.Status;,0,1,0.2,60
+7259b229e290cceef18db8e5fab505f2fcb28bc6,try {,0,1,0.2,61
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"defaultFieldPersistenceProvider.populateValue(new PopulateValueRequest(setId, fieldManager, property, metadata, returnType, value, persistenceManager, this, entity.isPreAdd()), instance);",0,1,0.2,62
+7259b229e290cceef18db8e5fab505f2fcb28bc6,boolean isBreakDetected = false;,0,1,0.2,63
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"protected boolean attemptToPopulateValue(Property property, FieldManager fieldManager, Serializable instance,",0,1,0.2,64
+7259b229e290cceef18db8e5fab505f2fcb28bc6,} catch (ParentEntityPersistenceException | javax.validation.ValidationException e) {,0,1,0.2,65
+7259b229e290cceef18db8e5fab505f2fcb28bc6,Boolean mutable = metadata.getMutable();,0,1,0.2,66
+7259b229e290cceef18db8e5fab505f2fcb28bc6,isBreakDetected = true;,0,1,0.2,67
+7259b229e290cceef18db8e5fab505f2fcb28bc6,handled = true;,0,1,0.2,68
+7259b229e290cceef18db8e5fab505f2fcb28bc6,for (FieldPersistenceProvider fieldPersistenceProvider : fieldPersistenceProviders) {,0,1,0.2,69
+7259b229e290cceef18db8e5fab505f2fcb28bc6,throw new IllegalArgumentException(e);,0,0,0.0,70
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"fieldManager.setFieldValue(instance, property.getName(), null);",1,0,0.0,71
+7259b229e290cceef18db8e5fab505f2fcb28bc6,property.setIsDirty(true);,1,0,0.0,72
+7259b229e290cceef18db8e5fab505f2fcb28bc6,break;,1,0,0.0,73
+7259b229e290cceef18db8e5fab505f2fcb28bc6,cleanupFailedPersistenceAttempt(instance);,1,0,0.0,74
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"defaultFieldPersistenceProvider.populateValue(new PopulateValueRequest(setId,",1,0,0.0,75
+7259b229e290cceef18db8e5fab505f2fcb28bc6,},1,0,0.0,76
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"fieldManager, property, metadata, returnType, value, persistenceManager, this, entity.isPreAdd());",1,0,0.0,77
+7259b229e290cceef18db8e5fab505f2fcb28bc6,},0,0,0.0,78
+7259b229e290cceef18db8e5fab505f2fcb28bc6,break;,0,0,0.0,79
+7259b229e290cceef18db8e5fab505f2fcb28bc6,cleanupFailedPersistenceAttempt(instance);,0,0,0.0,80
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"fieldManager.setFieldValue(instance, property.getName(), null);",0,0,0.0,81
+7259b229e290cceef18db8e5fab505f2fcb28bc6,property.setIsDirty(true);,0,0,0.0,82
+7259b229e290cceef18db8e5fab505f2fcb28bc6,},1,0,0.0,83
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"updateMedia(populateValueRequest, newMedia, persist, media);",1,0,0.0,84
+7259b229e290cceef18db8e5fab505f2fcb28bc6,"updateMedia(populateValueRequest, newMedia, persist, media);",0,0,0.0,85
+7259b229e290cceef18db8e5fab505f2fcb28bc6,},0,0,0.0,86
+7259b229e290cceef18db8e5fab505f2fcb28bc6,throw new IllegalArgumentException(e);,1,0,0.0,87

@@ -1,0 +1,25 @@
+commit_id,line,line_level_label,count,line_score,row
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,if (Constants.IS_SECURITY_ENABLED) {,1,3,1.0,1
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,if (!running) {,1,2,0.6666666666666666,2
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,PrivilegedAction<Void> pa = new PrivilegedSetTccl(loader);,1,2,0.6666666666666666,3
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,if (!running) {,0,2,0.6666666666666666,4
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,PrivilegedAction<Void> pa =,1,1,0.3333333333333333,5
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,} finally {,1,1,0.3333333333333333,6
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,} else {,1,1,0.3333333333333333,7
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,new PrivilegedSetTccl(,1,1,0.3333333333333333,8
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,//threads should not be created by the webapp classloader,1,1,0.3333333333333333,9
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,try {,1,1,0.3333333333333333,10
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,ClassLoader loader = Thread.currentThread().getContextClassLoader();,1,1,0.3333333333333333,11
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,AccessController.doPrivileged(pa);,1,0,0.0,12
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,getExecutor().execute(proc);,1,0,0.0,13
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,return;,1,0,0.0,14
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,"// During shutdown, executor may be null - avoid NPE",1,0,0.0,15
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,},1,0,0.0,16
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,Thread.currentThread().setContextClassLoader(,1,0,0.0,17
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,return;,0,0,0.0,18
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,getClass().getClassLoader());,1,0,0.0,19
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,import java.security.PrivilegedAction;,1,0,0.0,20
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,import java.security.AccessController;,1,0,0.0,21
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,getExecutor().execute(proc);,0,0,0.0,22
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,"// During shutdown, executor may be null - avoid NPE",0,0,0.0,23
+4a8c4e78c91dee87ce113eb778f3dd064bed3c6e,Thread.currentThread().setContextClassLoader(loader);,1,0,0.0,24

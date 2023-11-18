@@ -1,0 +1,49 @@
+commit_id,line,line_level_label,count,line_score,row
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"fixed_ips = orm.relationship(IPAllocation, backref='ports', lazy='joined')",1,5,1.0,1
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"fixed_ips = orm.relationship(IPAllocation, backref='port', lazy='joined')",0,4,0.8,2
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"fixed_ips = orm.relationship(IPAllocation, backref='port', lazy='subquery',",0,3,0.6000000000000001,3
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"fixed_ips = orm.relationship(IPAllocation, backref='port', lazy='joined',",1,3,0.6000000000000001,4
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"req = self.new_update_request('subnets',",0,2,0.4,5
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"res = self.deserialize(self.fmt, req.get_response(self.api))",0,2,0.4,6
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"port = self._core_plugin.get_port(context, port_id)",0,2,0.4,7
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,fixed_ips = port['fixed_ips'],0,2,0.4,8
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,fixed_ips = port_db['fixed_ips'],1,2,0.4,9
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"internal_port = self._core_plugin._get_port(context, fip['port_id'])",1,1,0.2,10
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,reason = _('has device owner %s') % port_db['device_owner'],1,1,0.2,11
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"port_db = self._core_plugin._get_port(context, port_id)",1,1,0.2,12
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,lazy='joined'),1,1,0.2,13
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,reason = _('has device owner %s') % port['device_owner'],0,1,0.2,14
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"subnets = self._show('subnets', subnet['subnet']['id'],",0,1,0.2,15
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"data = {'subnet': {'dns_nameservers': ['2.2.2.2', '3.3.3.3',",0,1,0.2,16
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"internal_port = self._core_plugin.get_port(context, fip['port_id'])",0,1,0.2,17
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,sorted(dns_nameservers)),1,0,0.0,18
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,if port['device_owner'] in self.router_device_owners:,0,0,0.0,19
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"raise n_exc.ServicePortInUse(port_id=port['id'],",0,0,0.0,20
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"{'port_id': port['id'],",0,0,0.0,21
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,'port_owner': port['device_owner']}),0,0,0.0,22
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,if port_db['device_owner'] in self.router_device_owners:,1,0,0.0,23
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"{'port_id': port_db['id'],",1,0,0.0,24
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"raise n_exc.ServicePortInUse(port_id=port_db['id'],",1,0,0.0,25
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,'port_owner': port_db['device_owner']}),1,0,0.0,26
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"lazy=""subquery"",",0,0,0.0,27
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,lazy='subquery'),0,0,0.0,28
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"'Agent', lazy='subquery', viewonly=True,",0,0,0.0,29
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"lazy=""joined"",",1,0,0.0,30
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,res['subnet']['dns_nameservers']),0,0,0.0,31
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"self.assertEqual(sorted(res['subnet']['dns_nameservers']),",1,0,0.0,32
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,'3.3.3.3']) as subnet:,0,0,0.0,33
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"self.assertEqual(data['subnet']['dns_nameservers'],",0,0,0.0,34
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,subnet['subnet']['id']),0,0,0.0,35
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"data,",0,0,0.0,36
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,'1.1.1.1']}},0,0,0.0,37
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,subnets['subnet']['dns_nameservers']),0,0,0.0,38
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"self.assertEqual(['1.1.1.1', '2.2.2.2', '3.3.3.3'],",0,0,0.0,39
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,expected_code=webob.exc.HTTPOk.code),0,0,0.0,40
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"with self.subnet(dns_nameservers=['1.1.1.1', '2.2.2.2',",0,0,0.0,41
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"cfg.CONF.set_override('max_dns_nameservers', 3)",0,0,0.0,42
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,def test_subnet_lifecycle_dns_retains_order(self):,0,0,0.0,43
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,dns_nameservers),0,0,0.0,44
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"self.assertEqual(res['subnet']['dns_nameservers'],",0,0,0.0,45
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"lazy=""joined"",",1,0,0.0,46
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"lazy=""select"",",0,0,0.0,47
+6c510bce812900af1b69f346d8f46a2cc5a8fe8c,"'Agent', lazy='joined', viewonly=True,",1,0,0.0,48

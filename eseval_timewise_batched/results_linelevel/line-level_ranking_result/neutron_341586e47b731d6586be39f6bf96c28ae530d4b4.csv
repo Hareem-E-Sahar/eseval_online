@@ -1,0 +1,926 @@
+commit_id,line,line_level_label,count,line_score,row
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""version of OVS does not support tunnels or """,0,5,1.0,1
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""of OVS does not support tunnels or patch ports. """,1,5,1.0,2
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_type = cfg.CONF.OVS.tunnel_type or constants.TYPE_GRE,1,4,0.8,3
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""The type of tunnels to use when utilizing tunnels, """,1,4,0.8,4
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# If enable_tunneling is TRUE, set tunnel_type to default to GRE",1,4,0.8,5
+341586e47b731d6586be39f6bf96c28ae530d4b4,msg = _('Invalid tunnel type specified: %s') % tun,0,4,0.8,6
+341586e47b731d6586be39f6bf96c28ae530d4b4,"msg = _('Invalid tunnel type specified: %s'), tun",1,4,0.8,7
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Network types supported by the agent """,1,4,0.8,8
+341586e47b731d6586be39f6bf96c28ae530d4b4,if tun not in constants.TUNNEL_NETWORK_TYPES:,1,3,0.6000000000000001,9
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Set or un-set the tunnel header checksum  on """,1,3,0.6000000000000001,10
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""this flag set to True). Spoofing rules will not be """,1,3,0.6000000000000001,11
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""The number of seconds the agent will wait between """,1,3,0.6000000000000001,12
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Support kernel without Open vSwitch patch port """,1,3,0.6000000000000001,13
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Verify setting only enable_tunneling will default tunnel_type to GRE,1,3,0.6000000000000001,14
+341586e47b731d6586be39f6bf96c28ae530d4b4,# An ip address is required for tunneling but there is no default,1,3,0.6000000000000001,15
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""corresponds to the kernel datapath. To enable the """,1,3,0.6000000000000001,16
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param tunnel_types: A list of tunnel types to enable support for in,1,3,0.6000000000000001,17
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Verify setting only enable_tunneling will default tunnel_type to GRE,1,3,0.6000000000000001,18
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Network type for tenant networks """,1,3,0.6000000000000001,19
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_type = (cfg.CONF.OVS.tunnel_type or,0,3,0.6000000000000001,20
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_type = None,0,3,0.6000000000000001,21
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_type = tunnel_type,0,3,0.6000000000000001,22
+341586e47b731d6586be39f6bf96c28ae530d4b4,if tun not in constants.TUNNEL_NETWORK_TYPES:,0,3,0.6000000000000001,23
+341586e47b731d6586be39f6bf96c28ae530d4b4,:returns: a map of agent configuration parameters,1,2,0.4,24
+341586e47b731d6586be39f6bf96c28ae530d4b4,# verify this for both gre and vxlan tunnels.,1,2,0.4,25
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# An ip address is required for tunneling but there is no default,",1,2,0.4,26
+341586e47b731d6586be39f6bf96c28ae530d4b4,kwargs = self.mod_agent.create_agent_config_map(cfg.CONF),1,2,0.4,27
+341586e47b731d6586be39f6bf96c28ae530d4b4,"agent = OVSNeutronAgent(bridge_classes, **agent_config)",1,2,0.4,28
+341586e47b731d6586be39f6bf96c28ae530d4b4,if not kwargs['local_ip']:,1,2,0.4,29
+341586e47b731d6586be39f6bf96c28ae530d4b4,kwargs = dict(,1,2,0.4,30
+341586e47b731d6586be39f6bf96c28ae530d4b4,":param arp_responder: Optional, enable local ARP responder if it is",1,2,0.4,31
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""""""Create a map of agent config parameters.",1,2,0.4,32
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_types = tunnel_types or [],1,2,0.4,33
+341586e47b731d6586be39f6bf96c28ae530d4b4,"agent = OVSNeutronAgent(bridge_classes, cfg.CONF)",0,2,0.4,34
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Validation of tunnel types failed. %s""), e)",0,2,0.4,35
+341586e47b731d6586be39f6bf96c28ae530d4b4,if tunnel_types and not local_ip:,0,2,0.4,36
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""reason to. This is the name of the OVS integration """,1,2,0.4,37
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Do not change this parameter unless you have a good """,1,2,0.4,38
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""to this agent from spoofing, it doesn't protect them """,1,2,0.4,39
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Peer patch port in integration bridge for tunnel """,1,2,0.4,40
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Peer patch port in tunnel bridge for integration """,1,2,0.4,41
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Use either an IPv4 or IPv6 address that resides on one """,1,2,0.4,42
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""of the host network interfaces. The IP version of this """,1,2,0.4,43
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""node-specific Open vSwitch bridge names to be used """,1,2,0.4,44
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""OVS datapath to use. 'system' is the default value and """,1,2,0.4,45
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""The number of seconds to wait before respawning the """,1,2,0.4,46
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""The UDP port to use for VXLAN tunnels."")),",1,2,0.4,47
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Enable local ARP responder if it is supported. """,1,2,0.4,48
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Requires OVS 2.1 and ML2 l2population driver. """,1,2,0.4,49
+341586e47b731d6586be39f6bf96c28ae530d4b4,if self.enable_distributed_routing and not self.l2_pop:,1,2,0.4,50
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""(e.g. bare metal or VMs attached to agents without """,1,2,0.4,51
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Set or un-set the don't fragment (DF) bit on """,1,2,0.4,52
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""agent receives SIGTERM. If value is set to 0, rpc """,1,2,0.4,53
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_types = agent_conf.tunnel_types or [],0,2,0.4,54
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""requires a version that supports matching ARP """,1,2,0.4,55
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.enable_tunneling = False,1,2,0.4,56
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(physical_network)s does not exist. Agent """,0,2,0.4,57
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.enable_tunneling = True,1,2,0.4,58
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.VETH_MTU = None,0,2,0.4,59
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'sudo', 2, ['gre'],",0,2,0.4,60
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'sudo', 2, ['vxlan'],",0,2,0.4,61
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'sudo', 2, ['gre'])",1,2,0.4,62
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'sudo', 2, ['vxlan'])",1,2,0.4,63
+341586e47b731d6586be39f6bf96c28ae530d4b4,if vlan_mapping.network_type == tunnel_type:,0,2,0.4,64
+341586e47b731d6586be39f6bf96c28ae530d4b4,if self.enable_tunneling and lvm.network_type in (,1,2,0.4,65
+341586e47b731d6586be39f6bf96c28ae530d4b4,"if self.tenant_network_type not in [svc_constants.TYPE_LOCAL,",0,2,0.4,66
+341586e47b731d6586be39f6bf96c28ae530d4b4,"if self.tenant_network_type not in [constants.TYPE_LOCAL,",1,2,0.4,67
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Cannot provision unknown network type """,0,2,0.4,68
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Reclaiming vlan = %(vlan_id)s from """,0,2,0.4,69
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Cannot reclaim unknown network type """,0,2,0.4,70
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Failed to create OVS patch port. Cannot have """,0,2,0.4,71
+341586e47b731d6586be39f6bf96c28ae530d4b4,if self.enable_tunneling:,1,2,0.4,72
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Port %s was not found on the integration bridge """,0,2,0.4,73
+341586e47b731d6586be39f6bf96c28ae530d4b4,if (self.enable_distributed_routing and self.enable_tunneling,0,2,0.4,74
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.enable_tunneling = False,0,2,0.4,75
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.enable_tunneling = True,0,2,0.4,76
+341586e47b731d6586be39f6bf96c28ae530d4b4,if config.OVS.enable_tunneling and not kwargs['tunnel_types']:,1,2,0.4,77
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Port %s was not found on the integration bridge """,1,2,0.4,78
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warn(_(""VIF port: %s has no ofport configured, and might not """,1,2,0.4,79
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(physical_network)s does not exist. Agent """,1,2,0.4,80
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""tunneling enabled on this agent, since this version """,1,2,0.4,81
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Failed to create OVS patch port. Cannot have """,1,2,0.4,82
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Cannot reclaim unknown network type """,1,2,0.4,83
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Reclaiming vlan = %(vlan_id)s from net-id = %(net_uuid)s""),",1,2,0.4,84
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Cannot provision unknown network type """,1,2,0.4,85
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warn(_LW(""Unable to create tunnel port. """,0,2,0.4,86
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.int_br = self.br_int_cls(ovs_conf.integration_bridge),0,1,0.2,87
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.bridge_mappings = self._parse_bridge_mappings(,0,1,0.2,88
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.polling_interval = agent_conf.polling_interval,0,1,0.2,89
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.ovsdb_monitor_respawn_interval = (,0,1,0.2,90
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.minimize_polling = agent_conf.minimize_polling,0,1,0.2,91
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.prevent_arp_spoofing = agent_conf.prevent_arp_spoofing,0,1,0.2,92
+341586e47b731d6586be39f6bf96c28ae530d4b4,agent_conf.ovsdb_monitor_respawn_interval or,0,1,0.2,93
+341586e47b731d6586be39f6bf96c28ae530d4b4,if self.tunnel_types:,0,1,0.2,94
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovs_conf = self.conf.OVS,0,1,0.2,95
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.arp_responder_enabled = agent_conf.arp_responder and self.l2_pop,0,1,0.2,96
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.enable_distributed_routing = agent_conf.enable_distributed_routing,0,1,0.2,97
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.l2_pop = agent_conf.l2_population,0,1,0.2,98
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.veth_mtu = agent_conf.veth_mtu,0,1,0.2,99
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.use_veth_interconnection = ovs_conf.use_veth_interconnection,0,1,0.2,100
+341586e47b731d6586be39f6bf96c28ae530d4b4,agent_conf = self.conf.AGENT,0,1,0.2,101
+341586e47b731d6586be39f6bf96c28ae530d4b4,"raise ValueError(_(""DVR cannot be enabled without """,1,1,0.2,102
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.vxlan_udp_port = agent_conf.vxlan_udp_port,0,1,0.2,103
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.local_ip = ovs_conf.local_ip,0,1,0.2,104
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.enable_distributed_routing = enable_distributed_routing,1,1,0.2,105
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.dont_fragment = agent_conf.dont_fragment,0,1,0.2,106
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_csum = agent_conf.tunnel_csum,0,1,0.2,107
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.int_br = self.br_int_cls(integ_br),1,1,0.2,108
+341586e47b731d6586be39f6bf96c28ae530d4b4,if tunnel_types:,1,1,0.2,109
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.prevent_arp_spoofing = prevent_arp_spoofing,1,1,0.2,110
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.arp_responder_enabled = arp_responder and self.l2_pop,1,1,0.2,111
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""require L2-pop to be enabled, in both the """,0,1,0.2,112
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.l2_pop = l2_population,1,1,0.2,113
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.veth_mtu = veth_mtu,1,1,0.2,114
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.use_veth_interconnection = use_veth_interconnection,1,1,0.2,115
+341586e47b731d6586be39f6bf96c28ae530d4b4,to the ports. Spoofing rules will not be added to ports that,1,1,0.2,116
+341586e47b731d6586be39f6bf96c28ae530d4b4,":param prevent_arp_spoofing: Optional, enable suppression of any ARP",1,1,0.2,117
+341586e47b731d6586be39f6bf96c28ae530d4b4,"the agent. If set, will automatically set enable_tunneling to",1,1,0.2,118
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param tun_br: name of the tunnel bridge.,1,1,0.2,119
+341586e47b731d6586be39f6bf96c28ae530d4b4,for tun in tunnel_types:,0,1,0.2,120
+341586e47b731d6586be39f6bf96c28ae530d4b4,msg = _('Tunneling cannot be enabled without a valid local_ip.'),0,1,0.2,121
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.quitting_rpc_timeout = agent_conf.quitting_rpc_timeout,0,1,0.2,122
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.ancillary_brs = self.setup_ancillary_bridges(,0,1,0.2,123
+341586e47b731d6586be39f6bf96c28ae530d4b4,report_interval = agent_conf.report_interval,0,1,0.2,124
+341586e47b731d6586be39f6bf96c28ae530d4b4,if tunnel_types:,1,1,0.2,125
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Unable to sync tunnel IP %(local_ip)s: %(e)s""),",1,1,0.2,126
+341586e47b731d6586be39f6bf96c28ae530d4b4,"raise ValueError(_(""DVR deployments for VXLAN/GRE underlays """,0,1,0.2,127
+341586e47b731d6586be39f6bf96c28ae530d4b4,and not self.l2_pop):,0,1,0.2,128
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_(""process_network_ports - iteration:%d - """,1,1,0.2,129
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(num_current)d devices currently available. """,1,1,0.2,130
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Skipped %(num_skipped)d devices of """,1,1,0.2,131
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""treat_devices_added_or_updated completed. """,1,1,0.2,132
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Device %s not defined on plugin""), device)",1,1,0.2,133
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warn(_(""Device %s not defined on plugin""), device)",1,1,0.2,134
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""and will therefore not be processed""), device)",1,1,0.2,135
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Failed to set-up %(type)s tunnel port to %(ip)s""),",1,1,0.2,136
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_(""ofport should have a value that can be """,1,1,0.2,137
+341586e47b731d6586be39f6bf96c28ae530d4b4,"_(""Port '%(port_name)s' has lost """,1,1,0.2,138
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Bridge %(bridge)s for physical network """,1,1,0.2,139
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Mapping physical network %(physical_network)s to """,1,1,0.2,140
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(limit)d character limitation. It was shortened to """,1,1,0.2,141
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warning(_(""Creating an interface named %(name)s exceeds the """,1,1,0.2,142
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_('port_unbound(): net_uuid %s not in local_vlan_map'),",1,1,0.2,143
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Network %s not used on agent.""), net_uuid)",1,1,0.2,144
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.polling_interval = polling_interval,1,1,0.2,145
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""failure while retrieving port details """,1,1,0.2,146
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""process_ancillary_network_ports - iteration: """,1,1,0.2,147
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(iter_num)d - treat_ancillary_devices_added """,1,1,0.2,148
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Agent rpc_loop - iteration:%(iter_num)d """,1,1,0.2,149
+341586e47b731d6586be39f6bf96c28ae530d4b4,if tunnel_types:,0,1,0.2,150
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfgmap = ovs_neutron_agent.create_agent_config_map(cfg.CONF),1,1,0.2,151
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', None, group='AGENT')",1,1,0.2,152
+341586e47b731d6586be39f6bf96c28ae530d4b4,group='AGENT'),0,1,0.2,153
+341586e47b731d6586be39f6bf96c28ae530d4b4,kwargs['tunnel_types'] = [p_const.TYPE_GRE],1,1,0.2,154
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Loop iteration exceeded interval """,1,1,0.2,155
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""completed. Processed ports statistics: """,1,1,0.2,156
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(iter_num)d - ancillary ports """,1,1,0.2,157
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_(""process_ancillary_network_ports - """,1,1,0.2,158
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""ancillary port info retrieved. """,1,1,0.2,159
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""port information retrieved. """,1,1,0.2,160
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Agent rpc_loop - iteration:%(iter_num)d - """,1,1,0.2,161
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Agent tunnel out of sync with plugin!""))",1,1,0.2,162
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warn(_(""Unable to create tunnel port. Invalid remote IP: %s""),",1,1,0.2,163
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(iter_num)d - treat_ancillary_devices_removed """,1,1,0.2,164
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""iteration:%d - failure while retrieving """,1,1,0.2,165
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.bridge_mappings = bridge_mappings,1,1,0.2,166
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""for flat and VLAN networks. The length of bridge """,1,1,0.2,167
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.minimize_polling = minimize_polling,1,1,0.2,168
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.ovsdb_monitor_respawn_interval = ovsdb_monitor_respawn_interval,1,1,0.2,169
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""the local switch connecting the controller. """,1,1,0.2,170
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Timeout in seconds to wait for """,1,1,0.2,171
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Port to listen on for OpenFlow connections. """,1,1,0.2,172
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Address to listen on for OpenFlow connections. """,1,1,0.2,173
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""userspace datapath set this value to 'netdev'."")),",1,1,0.2,174
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""support so long as it is set to True."")),",1,1,0.2,175
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""integration bridge to physical networks. """,1,1,0.2,176
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Use veths instead of patch ports to interconnect the """,1,1,0.2,177
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""integration bridge as it won't be managed by the """,1,1,0.2,178
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""mapping, make sure to disconnect it from the """,1,1,0.2,179
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Note: If you remove a bridge from this """,1,1,0.2,180
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""appropriate bridges on each agent. """,1,1,0.2,181
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""configured on the server should have mappings to """,1,1,0.2,182
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""configured as a port. All physical networks """,1,1,0.2,183
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""exist, and should have a physical network interface """,1,1,0.2,184
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""names should be no more than 11. Each bridge must """,1,1,0.2,185
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id=%(net_uuid)s - no bridge for """,1,1,0.2,186
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Timeout in seconds to wait for a single """,1,1,0.2,187
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""OpenFlow request. """,1,1,0.2,188
+341586e47b731d6586be39f6bf96c28ae530d4b4,agent_opts = [,1,1,0.2,189
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""from other devices which have the capability to spoof """,1,1,0.2,190
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Reset flow table on start. Setting this to True will """,1,1,0.2,191
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Set new timeout in seconds for new rpc calls after """,1,1,0.2,192
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Make the l2 agent run in DVR mode."")),",1,1,0.2,193
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""the only way to disable protection will be via the """,1,1,0.2,194
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""headers. This option will be removed in Ocata so """,1,1,0.2,195
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""For LinuxBridge, this requires ebtables. For OVS, it """,1,1,0.2,196
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""added to any ports that have port security disabled. """,1,1,0.2,197
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""they originate. Note: This prevents the VMs attached """,1,1,0.2,198
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Minimize polling by monitoring ovsdb for interface """,1,1,0.2,199
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""an IP address that belongs to the port from which """,1,1,0.2,200
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Enable suppression of ARP responses that don't match """,1,1,0.2,201
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""to respond to an ARP request locally without """,1,1,0.2,202
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Allows the switch (when supporting an overlay) """,1,1,0.2,203
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""remote MAC and IPs and improve tunnel scalability."")),",1,1,0.2,204
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Use ML2 l2population mechanism driver to learn """,1,1,0.2,205
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""(gre and/or vxlan)."")),",1,1,0.2,206
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""tuples mapping physical network names to the agent's """,1,1,0.2,207
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Comma-separated list of <physical_network>:<bridge> """,1,1,0.2,208
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""option in the ML2 plug-in configuration file on the """,1,1,0.2,209
+341586e47b731d6586be39f6bf96c28ae530d4b4,for tun in kwargs['tunnel_types']:,1,1,0.2,210
+341586e47b731d6586be39f6bf96c28ae530d4b4,group='AGENT'),1,1,0.2,211
+341586e47b731d6586be39f6bf96c28ae530d4b4,# ValueError will not raise,0,1,0.2,212
+341586e47b731d6586be39f6bf96c28ae530d4b4,group='AGENT'),0,1,0.2,213
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""Agent failed to create agent config map""))",1,1,0.2,214
+341586e47b731d6586be39f6bf96c28ae530d4b4,agent_config = create_agent_config_map(cfg.CONF),1,1,0.2,215
+341586e47b731d6586be39f6bf96c28ae530d4b4,return kwargs,1,1,0.2,216
+341586e47b731d6586be39f6bf96c28ae530d4b4,msg = _('Tunneling cannot be enabled without a valid local_ip.'),1,1,0.2,217
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Verify the tunnel_types specified are valid,1,1,0.2,218
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfgmap = self.mod_agent.create_agent_config_map(cfg.CONF),1,1,0.2,219
+341586e47b731d6586be39f6bf96c28ae530d4b4,bridge_mappings = n_utils.parse_mappings(config.OVS.bridge_mappings),1,1,0.2,220
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.quitting_rpc_timeout = quitting_rpc_timeout,1,1,0.2,221
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.ancillary_brs = self.setup_ancillary_bridges(integ_br, tun_br)",1,1,0.2,222
+341586e47b731d6586be39f6bf96c28ae530d4b4,report_interval = self.conf.AGENT.report_interval,1,1,0.2,223
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tunnel_csum = cfg.CONF.AGENT.tunnel_csum,1,1,0.2,224
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.dont_fragment = self.conf.AGENT.dont_fragment,1,1,0.2,225
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.local_ip = local_ip,1,1,0.2,226
+341586e47b731d6586be39f6bf96c28ae530d4b4,"p_const.TYPE_VXLAN], group='AGENT')",1,1,0.2,227
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.kwargs = self.mod_agent.create_agent_config_map(cfg.CONF),1,1,0.2,228
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""value must match the value of the 'overlay_ip_version' """,1,1,0.2,229
+341586e47b731d6586be39f6bf96c28ae530d4b4,DEFAULT_BRIDGE_MAPPINGS = [],1,1,0.2,230
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""IP address of local overlay (tunnel) network endpoint. """,1,1,0.2,231
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""attached to this bridge and then 'patched' according """,1,1,0.2,232
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""bridge acts as a virtual 'patch bay'. All VM VIFs are """,1,1,0.2,233
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""bridge. There is one per hypervisor. The integration """,1,1,0.2,234
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Integration bridge to use. """,1,1,0.2,235
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovs_opts = [,1,1,0.2,236
+341586e47b731d6586be39f6bf96c28ae530d4b4,DEFAULT_TUNNEL_TYPES = [],1,1,0.2,237
+341586e47b731d6586be39f6bf96c28ae530d4b4,import constants,1,1,0.2,238
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.mock_validate_local_ip = mock.patch.object(,0,1,0.2,239
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron.plugins.common import constants as p_const,1,1,0.2,240
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron_lib import constants as n_const,1,1,0.2,241
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', ['vxlan'], group='AGENT')",1,1,0.2,242
+341586e47b731d6586be39f6bf96c28ae530d4b4,# The test will pass simply if no exception is raised by the next call:,1,1,0.2,243
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [], group='AGENT')",1,1,0.2,244
+341586e47b731d6586be39f6bf96c28ae530d4b4,group='AGENT'),1,1,0.2,245
+341586e47b731d6586be39f6bf96c28ae530d4b4,# ValueError will not raise,1,1,0.2,246
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Cannot provision VLAN network for """,1,1,0.2,247
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.vxlan_udp_port = self.conf.AGENT.vxlan_udp_port,1,1,0.2,248
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Cannot provision flat network for """,1,1,0.2,249
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif lvm.network_type == p_const.TYPE_FLAT:,0,1,0.2,250
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == svc_constants.TYPE_LOCAL:,0,1,0.2,251
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == svc_constants.TYPE_VLAN:,0,1,0.2,252
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == svc_constants.TYPE_FLAT:,0,1,0.2,253
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif binding.network_type == svc_constants.TYPE_LOCAL:,0,1,0.2,254
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif binding.network_type == svc_constants.TYPE_VLAN:,0,1,0.2,255
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif binding.network_type == svc_constants.TYPE_FLAT:,0,1,0.2,256
+341586e47b731d6586be39f6bf96c28ae530d4b4,kwargs['tunnel_types'] = [constants.TYPE_GRE],1,1,0.2,257
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif lvm.network_type == constants.TYPE_LOCAL:,1,1,0.2,258
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif lvm.network_type == constants.TYPE_VLAN:,1,1,0.2,259
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif lvm.network_type == constants.TYPE_FLAT:,1,1,0.2,260
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == constants.TYPE_LOCAL:,1,1,0.2,261
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == constants.TYPE_VLAN:,1,1,0.2,262
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == constants.TYPE_FLAT:,1,1,0.2,263
+341586e47b731d6586be39f6bf96c28ae530d4b4,if constants.TYPE_VXLAN in self.tunnel_types:,1,1,0.2,264
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br_ofports = {constants.TYPE_GRE: {},",1,1,0.2,265
+341586e47b731d6586be39f6bf96c28ae530d4b4,kwargs['tunnel_types'] = [p_const.TYPE_GRE],0,1,0.2,266
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif lvm.network_type == p_const.TYPE_LOCAL:,0,1,0.2,267
+341586e47b731d6586be39f6bf96c28ae530d4b4,"if network_type in [svc_constants.TYPE_VLAN, svc_constants.TYPE_FLAT]:",0,1,0.2,268
+341586e47b731d6586be39f6bf96c28ae530d4b4,if network_type == svc_constants.TYPE_NONE:,0,1,0.2,269
+341586e47b731d6586be39f6bf96c28ae530d4b4,"if network_type in [svc_constants.TYPE_VLAN,",0,1,0.2,270
+341586e47b731d6586be39f6bf96c28ae530d4b4,"elif binding.network_type in [constants.TYPE_VLAN,",1,1,0.2,271
+341586e47b731d6586be39f6bf96c28ae530d4b4,"TUN_OFPORTS = {constants.TYPE_GRE: {'ip1': '11', 'ip2': '12'}}",1,1,0.2,272
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ofports = ','.join(TUN_OFPORTS[p_const.TYPE_GRE].values())",0,1,0.2,273
+341586e47b731d6586be39f6bf96c28ae530d4b4,"TUN_OFPORTS = {p_const.TYPE_GRE: {'ip1': '11', 'ip2': '12'}}",0,1,0.2,274
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron.plugins.common import constants as p_const,0,1,0.2,275
+341586e47b731d6586be39f6bf96c28ae530d4b4,"constants.TYPE_VXLAN], group='AGENT')",1,1,0.2,276
+341586e47b731d6586be39f6bf96c28ae530d4b4,"p_const.TYPE_VXLAN], group='AGENT')",0,1,0.2,277
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron.plugins.common import constants as p_const,0,1,0.2,278
+341586e47b731d6586be39f6bf96c28ae530d4b4,if network_type == constants.TYPE_NONE:,1,1,0.2,279
+341586e47b731d6586be39f6bf96c28ae530d4b4,"elif binding.network_type in [svc_constants.TYPE_VLAN,",0,1,0.2,280
+341586e47b731d6586be39f6bf96c28ae530d4b4,"if network_type in [constants.TYPE_VLAN, constants.TYPE_FLAT]:",1,1,0.2,281
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == constants.TYPE_LOCAL:,1,1,0.2,282
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == constants.TYPE_VLAN:,1,1,0.2,283
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == constants.TYPE_FLAT:,1,1,0.2,284
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif binding.network_type == constants.TYPE_LOCAL:,1,1,0.2,285
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif binding.network_type == constants.TYPE_VLAN:,1,1,0.2,286
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif binding.network_type == constants.TYPE_FLAT:,1,1,0.2,287
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif lvm.network_type == p_const.TYPE_VLAN:,0,1,0.2,288
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == p_const.TYPE_LOCAL:,0,1,0.2,289
+341586e47b731d6586be39f6bf96c28ae530d4b4,"OVS_LINUX_KERN_VERS_WITHOUT_VXLAN = ""3.12.0""",0,1,0.2,290
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == p_const.TYPE_VLAN:,0,1,0.2,291
+341586e47b731d6586be39f6bf96c28ae530d4b4,# adresses (assumes that lvid has already been set by a previous flow),0,1,0.2,292
+341586e47b731d6586be39f6bf96c28ae530d4b4,for tunnel_type in constants.TUNNEL_NETWORK_TYPES:,0,1,0.2,293
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# for each tunnel type, and resubmit to table LEARN_FROM_TUN where",0,1,0.2,294
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Tables [tunnel_type]_TUN_TO_LV will set lvid depending on tun_id,0,1,0.2,295
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Table 0 (default) will sort incoming traffic depending on in_port,0,1,0.2,296
+341586e47b731d6586be39f6bf96c28ae530d4b4,lvm = self.local_vlan_map[net_uuid],0,1,0.2,297
+341586e47b731d6586be39f6bf96c28ae530d4b4,# inbound from tunnels: set lvid in the right table,0,1,0.2,298
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ofports = ','.join(self.tun_br_ofports[network_type])",0,1,0.2,299
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.setup_tunnel_port(tun_name, tunnel_ip, tunnel_type)",0,1,0.2,300
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br_ofports = {constants.TYPE_GRE: set(),",0,1,0.2,301
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.VETH_MTU = 1500,0,1,0.2,302
+341586e47b731d6586be39f6bf96c28ae530d4b4,# set up mtu size for veth interfaces,0,1,0.2,303
+341586e47b731d6586be39f6bf96c28ae530d4b4,if self.veth_mtu:,0,1,0.2,304
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.veth_mtu = veth_mtu,0,1,0.2,305
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.callbacks = OVSRpcCallbacks(self.notifier),1,1,0.2,306
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id=%(net_uuid)s - tunneling disabled""),",1,1,0.2,307
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.callbacks = OVSRpcCallbacks(self.notifier, self.tunnel_type)",0,1,0.2,308
+341586e47b731d6586be39f6bf96c28ae530d4b4,"learned_flow = (""table=%s,""",0,1,0.2,309
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# FLOOD_TO_TUN will handle flooding in tunnels based on lvid,",0,1,0.2,310
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# for now, add a default drop action",0,1,0.2,311
+341586e47b731d6586be39f6bf96c28ae530d4b4,lvm = self.local_vlan_map[net_uuid],1,1,0.2,312
+341586e47b731d6586be39f6bf96c28ae530d4b4,elif network_type == p_const.TYPE_FLAT:,0,1,0.2,313
+341586e47b731d6586be39f6bf96c28ae530d4b4,if p_const.TYPE_VXLAN in self.tunnel_types:,0,1,0.2,314
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br_ofports = {p_const.TYPE_GRE: {},",0,1,0.2,315
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron.plugins.common import constants as p_const,0,1,0.2,316
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_('port_unbound: vif_id %s not in local_vlan_map'),",1,1,0.2,317
+341586e47b731d6586be39f6bf96c28ae530d4b4,if vif_port:,1,1,0.2,318
+341586e47b731d6586be39f6bf96c28ae530d4b4,"vif_port = lvm.vif_ports.pop(vif_id, None)",1,1,0.2,319
+341586e47b731d6586be39f6bf96c28ae530d4b4,if network_type in constants.TUNNEL_NETWORK_TYPES:,1,1,0.2,320
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ofport = self.tun_br.add_tunnel_port(port_name,",0,1,0.2,321
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_tunnel_port(tun_name, tunnel_ip, self.local_ip,",1,1,0.2,322
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ofports = ','.join(self.tun_br_ofports[tunnel_type])",0,1,0.2,323
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Update flooding flows to include the new tunnel,0,1,0.2,324
+341586e47b731d6586be39f6bf96c28ae530d4b4,# tunelling table (lvid will be set in the latter),0,1,0.2,325
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Add flow in default table to resubmit to the right,0,1,0.2,326
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Failed to set-up %(type)s tunnel port to %(ip)s""),",0,1,0.2,327
+341586e47b731d6586be39f6bf96c28ae530d4b4,if ofport < 0:,0,1,0.2,328
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ofports = ','.join(TUN_OFPORTS[constants.TYPE_GRE].values())",1,1,0.2,329
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# mac adresses will be learned. For now, just add a default flow that",0,1,0.2,330
+341586e47b731d6586be39f6bf96c28ae530d4b4,klm_cmd.return_value = installed_klm_version,0,1,0.2,331
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""process_ancillary_network_ports - iteration: """,0,1,0.2,332
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""process_network_ports - iteration:%d - """,0,1,0.2,333
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(num_current)d devices currently available. """,0,1,0.2,334
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Skipped %(num_skipped)d devices of """,0,1,0.2,335
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""treat_devices_added_or_updated completed. """,0,1,0.2,336
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Device %s not defined on plugin"", device)",0,1,0.2,337
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warn(_LW(""Device %s not defined on plugin""), device)",0,1,0.2,338
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""and will therefore not be processed""), device)",0,1,0.2,339
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Failed to set-up %(type)s tunnel port to %(ip)s""),",0,1,0.2,340
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""ofport should have a value that can be """,0,1,0.2,341
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""and might not be able to transmit""), vif_port.vif_id)",0,1,0.2,342
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warn(_LW(""VIF port: %s has no ofport configured, """,0,1,0.2,343
+341586e47b731d6586be39f6bf96c28ae530d4b4,"_LI(""Port '%(port_name)s' has lost """,0,1,0.2,344
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Bridge %(bridge)s for physical network """,0,1,0.2,345
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Mapping physical network %(physical_network)s to """,0,1,0.2,346
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(limit)d character limitation. It was shortened to """,0,1,0.2,347
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warning(_LW(""Creating an interface named %(name)s exceeds the """,0,1,0.2,348
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""tunneling enabled on this agent, since this """,0,1,0.2,349
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""failure while retrieving port details """,0,1,0.2,350
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(iter_num)d - treat_ancillary_devices_added """,0,1,0.2,351
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id = %(net_uuid)s""),",0,1,0.2,352
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""process_ancillary_network_ports - """,0,1,0.2,353
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""Cannot provision %(network_type)s network for """,1,1,0.2,354
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Assigning %(vlan_id)s as local vlan for """,1,1,0.2,355
+341586e47b731d6586be39f6bf96c28ae530d4b4,usr_cmd.return_value = installed_usr_version,0,1,0.2,356
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warning(_('Action %s not supported'), action)",1,1,0.2,357
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""tunnel_type %s not supported by agent""), tunnel_type)",1,1,0.2,358
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""No tunnel_type specified, cannot create tunnels""))",1,1,0.2,359
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Network %s not used on agent.""), network_id)",1,1,0.2,360
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Loop iteration exceeded interval """,0,1,0.2,361
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""completed. Processed ports statistics: """,0,1,0.2,362
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Agent rpc_loop - iteration:%(iter_num)d """,0,1,0.2,363
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(iter_num)d - ancillary ports """,0,1,0.2,364
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""port information retrieved. """,0,1,0.2,365
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Agent rpc_loop - iteration:%(iter_num)d - """,0,1,0.2,366
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Agent tunnel out of sync with plugin!""))",0,1,0.2,367
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Unable to sync tunnel IP %(local_ip)s: %(e)s"",",0,1,0.2,368
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(iter_num)d - treat_ancillary_devices_removed """,0,1,0.2,369
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""iteration:%d - failure while retrieving """,0,1,0.2,370
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI('port_unbound(): net_uuid %s not in local_vlan_map'),",0,1,0.2,371
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""ancillary port info retrieved. """,0,1,0.2,372
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Network %s not used on agent."", net_uuid)",0,1,0.2,373
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.agent.tunnel_types = 'vxlan',1,1,0.2,374
+341586e47b731d6586be39f6bf96c28ae530d4b4,version_ok = True,1,1,0.2,375
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.agent.tunnel_types = 'vxlan',1,1,0.2,376
+341586e47b731d6586be39f6bf96c28ae530d4b4,kernel_cmd.return_value = installed_kernel_version,1,1,0.2,377
+341586e47b731d6586be39f6bf96c28ae530d4b4,usr_cmd.return_value = installed_usr_version,1,1,0.2,378
+341586e47b731d6586be39f6bf96c28ae530d4b4,klm_cmd.return_value = installed_klm_version,1,1,0.2,379
+341586e47b731d6586be39f6bf96c28ae530d4b4,version_ok = False,1,1,0.2,380
+341586e47b731d6586be39f6bf96c28ae530d4b4,version_ok = True,1,1,0.2,381
+341586e47b731d6586be39f6bf96c28ae530d4b4,usr_cmd.return_value = installed_usr_version,1,1,0.2,382
+341586e47b731d6586be39f6bf96c28ae530d4b4,min_vxlan_ver = constants.MINIMUM_OVS_VXLAN_VERSION,1,1,0.2,383
+341586e47b731d6586be39f6bf96c28ae530d4b4,klm_cmd.return_value = installed_klm_version,1,1,0.2,384
+341586e47b731d6586be39f6bf96c28ae530d4b4,min_kernel_ver = constants.MINIMUM_LINUX_KERNEL_OVS_VXLAN,0,1,0.2,385
+341586e47b731d6586be39f6bf96c28ae530d4b4,version_ok = False,0,1,0.2,386
+341586e47b731d6586be39f6bf96c28ae530d4b4,version_ok = True,0,1,0.2,387
+341586e47b731d6586be39f6bf96c28ae530d4b4,kernel_cmd.return_value = installed_kernel_version,0,1,0.2,388
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Cannot provision VLAN network for """,0,1,0.2,389
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.agent.tunnel_types = 'vxlan',0,1,0.2,390
+341586e47b731d6586be39f6bf96c28ae530d4b4,version_ok = False,1,1,0.2,391
+341586e47b731d6586be39f6bf96c28ae530d4b4,min_kernel_ver = OVS_LINUX_KERN_VERS_WITHOUT_VXLAN,0,1,0.2,392
+341586e47b731d6586be39f6bf96c28ae530d4b4,min_kernel_ver = constants.MINIMUM_LINUX_KERNEL_OVS_VXLAN,1,1,0.2,393
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""either 'gre' or 'vxlan'."")),",1,1,0.2,394
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Cannot provision flat network for """,0,1,0.2,395
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id=%(net_uuid)s - tunneling disabled""),",0,1,0.2,396
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id=%(net_uuid)s - no bridge for """,0,1,0.2,397
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""Cannot provision %(network_type)s network for """,0,1,0.2,398
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.warning(_LW('Action %s not supported'), action)",0,1,0.2,399
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""tunnel_type %s not supported by agent""),",0,1,0.2,400
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""No tunnel_type specified, cannot create tunnels""))",0,1,0.2,401
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Network %s not used on agent."", network_id)",0,1,0.2,402
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Assigning %(vlan_id)s as local vlan for """,0,1,0.2,403
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""List of <physical_network>:<vlan_min>:<vlan_max> """,1,1,0.2,404
+341586e47b731d6586be39f6bf96c28ae530d4b4,install_ver = str(float(constants.MINIMUM_OVS_VXLAN_VERSION) + 0.01),1,1,0.2,405
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""(local, vlan, gre, vxlan, or none)."")),",1,1,0.2,406
+341586e47b731d6586be39f6bf96c28ae530d4b4,install_ver = str(float(min_vxlan_ver) - 0.01),1,1,0.2,407
+341586e47b731d6586be39f6bf96c28ae530d4b4,min_kernel_ver = OVS_LINUX_KERN_VERS_WITHOUT_VXLAN,1,1,0.2,408
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('tunnel_type', default='',",1,1,0.2,409
+341586e47b731d6586be39f6bf96c28ae530d4b4,install_ver = str(float(constants.MINIMUM_OVS_VXLAN_VERSION) - 0.01),1,1,0.2,410
+341586e47b731d6586be39f6bf96c28ae530d4b4,"prevent_arp_spoofing=True,",1,0,0.0,411
+341586e47b731d6586be39f6bf96c28ae530d4b4,"bridge_mappings, polling_interval, tunnel_types=None,",1,0,0.0,412
+341586e47b731d6586be39f6bf96c28ae530d4b4,validate_local_ip(cfg.CONF.OVS.local_ip),0,0,0.0,413
+341586e47b731d6586be39f6bf96c28ae530d4b4,"validate_tunnel_types(cfg.CONF.AGENT.tunnel_types,",0,0,0.0,414
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfg.CONF.OVS.local_ip),0,0,0.0,415
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def __init__(self, bridge_classes, integ_br, tun_br, local_ip,",1,0,0.0,416
+341586e47b731d6586be39f6bf96c28ae530d4b4,"minimize_polling=False,",1,0,0.0,417
+341586e47b731d6586be39f6bf96c28ae530d4b4,"veth_mtu=None, l2_population=False,",1,0,0.0,418
+341586e47b731d6586be39f6bf96c28ae530d4b4,"enable_distributed_routing=False,",1,0,0.0,419
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovsdb_monitor_respawn_interval=(,1,0,0.0,420
+341586e47b731d6586be39f6bf96c28ae530d4b4,"constants.DEFAULT_OVSDBMON_RESPAWN),",1,0,0.0,421
+341586e47b731d6586be39f6bf96c28ae530d4b4,raise ValueError(msg),0,0,0.0,422
+341586e47b731d6586be39f6bf96c28ae530d4b4,"arp_responder=False,",1,0,0.0,423
+341586e47b731d6586be39f6bf96c28ae530d4b4,prepare_xen_compute(),0,0,0.0,424
+341586e47b731d6586be39f6bf96c28ae530d4b4,try:,0,0,0.0,425
+341586e47b731d6586be39f6bf96c28ae530d4b4,try:,1,0,0.0,426
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def validate_tunnel_types(tunnel_types, local_ip):",0,0,0.0,427
+341586e47b731d6586be39f6bf96c28ae530d4b4,"raise ValueError(_(""Parsing bridge_mappings failed: %s."") % e)",0,0,0.0,428
+341586e47b731d6586be39f6bf96c28ae530d4b4,except ValueError as e:,0,0,0.0,429
+341586e47b731d6586be39f6bf96c28ae530d4b4,return n_utils.parse_mappings(bridge_mappings),0,0,0.0,430
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'configurations': {'bridge_mappings': self.bridge_mappings,",0,0,0.0,431
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def _parse_bridge_mappings(self, bridge_mappings):",0,0,0.0,432
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ovs_conf.integration_bridge, ovs_conf.tunnel_bridge)",0,0,0.0,433
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'agent_type': agent_conf.agent_type,",0,0,0.0,434
+341586e47b731d6586be39f6bf96c28ae530d4b4,"ovs_conf.vhostuser_socket_dir},",0,0,0.0,435
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'datapath_type': ovs_conf.datapath_type,",0,0,0.0,436
+341586e47b731d6586be39f6bf96c28ae530d4b4,"agent_conf.log_agent_heartbeats,",0,0,0.0,437
+341586e47b731d6586be39f6bf96c28ae530d4b4,"quitting_rpc_timeout=None,",1,0,0.0,438
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'tunneling_ip': self.local_ip,",0,0,0.0,439
+341586e47b731d6586be39f6bf96c28ae530d4b4,"use_veth_interconnection=False,",1,0,0.0,440
+341586e47b731d6586be39f6bf96c28ae530d4b4,interconnect the integration bridge to physical bridges.,1,0,0.0,441
+341586e47b731d6586be39f6bf96c28ae530d4b4,conf=None):,1,0,0.0,442
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param integ_br: name of the integration bridge.,1,0,0.0,443
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""""""",1,0,0.0,444
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.DEFAULT_OVSDBMON_RESPAWN),0,0,0.0,445
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param config: an instance of cfg.CONF,1,0,0.0,446
+341586e47b731d6586be39f6bf96c28ae530d4b4,def create_agent_config_map(config):,1,0,0.0,447
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'agent_type': self.conf.AGENT.agent_type,",1,0,0.0,448
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.conf.OVS.vhostuser_socket_dir},",1,0,0.0,449
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'datapath_type': self.conf.OVS.datapath_type,",1,0,0.0,450
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.conf.AGENT.log_agent_heartbeats,",1,0,0.0,451
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'tunneling_ip': local_ip,",1,0,0.0,452
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'configurations': {'bridge_mappings': bridge_mappings,",1,0,0.0,453
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.setup_tunnel_br(tun_br),1,0,0.0,454
+341586e47b731d6586be39f6bf96c28ae530d4b4,datapath_type=self.conf.OVS.datapath_type),1,0,0.0,455
+341586e47b731d6586be39f6bf96c28ae530d4b4,SIGTERM is received,1,0,0.0,456
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param quitting_rpc_timeout: timeout in seconds for rpc calls after,1,0,0.0,457
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param use_veth_interconnection: use veths instead of patch ports to,1,0,0.0,458
+341586e47b731d6586be39f6bf96c28ae530d4b4,have port security disabled.,1,0,0.0,459
+341586e47b731d6586be39f6bf96c28ae530d4b4,responses from ports that don't match an IP address that belongs,1,0,0.0,460
+341586e47b731d6586be39f6bf96c28ae530d4b4,supported.,1,0,0.0,461
+341586e47b731d6586be39f6bf96c28ae530d4b4,the ovsdb monitor.,1,0,0.0,462
+341586e47b731d6586be39f6bf96c28ae530d4b4,"minimization, the number of seconds to wait before respawning",1,0,0.0,463
+341586e47b731d6586be39f6bf96c28ae530d4b4,":param ovsdb_monitor_respawn_interval: Optional, when using polling",1,0,0.0,464
+341586e47b731d6586be39f6bf96c28ae530d4b4,monitoring ovsdb for interface changes.,1,0,0.0,465
+341586e47b731d6586be39f6bf96c28ae530d4b4,":param minimize_polling: Optional, whether to minimize polling by",1,0,0.0,466
+341586e47b731d6586be39f6bf96c28ae530d4b4,":param l2_population: Optional, whether L2 population is turned on",1,0,0.0,467
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param veth_mtu: MTU size for veth interfaces.,1,0,0.0,468
+341586e47b731d6586be39f6bf96c28ae530d4b4,True.,1,0,0.0,469
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param polling_interval: interval (secs) to poll DB.,1,0,0.0,470
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param bridge_mappings: mappings from physical network name to bridge.,1,0,0.0,471
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param local_ip: local IP address of this hypervisor.,1,0,0.0,472
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.setup_tunnel_br(ovs_conf.tunnel_bridge),0,0,0.0,473
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Ancillary Port %s added""), device)",1,0,0.0,474
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovs_conf.bridge_mappings),0,0,0.0,475
+341586e47b731d6586be39f6bf96c28ae530d4b4,datapath_type=ovs_conf.datapath_type),0,0,0.0,476
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Port %s updated.""), device)",1,0,0.0,477
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""port_removed failed for %(device)s: %(e)s""),",1,0,0.0,478
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Attachment %s removed""), device)",1,0,0.0,479
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Configuration for device %s completed.""), device)",1,0,0.0,480
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Setting status for %s to DOWN""), device)",1,0,0.0,481
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Setting status for %s to UP""), device)",1,0,0.0,482
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Port %(device)s updated. Details: %(details)s""),",1,0,0.0,483
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""interpreted as an integer""))",1,0,0.0,484
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""No VIF port for port %s defined on agent.""), port_id)",1,0,0.0,485
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""be able to transmit""), vif_port.vif_id)",1,0,0.0,486
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""terminated!""),",1,0,0.0,487
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""bridge %(bridge)s""),",1,0,0.0,488
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(new_name)s to fit.""),",1,0,0.0,489
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Agent terminated!""))",1,0,0.0,490
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_('Adding %s to list of bridges.'), bridge)",1,0,0.0,491
+341586e47b731d6586be39f6bf96c28ae530d4b4,'net_uuid': net_uuid}),1,0,0.0,492
+341586e47b731d6586be39f6bf96c28ae530d4b4,"{'vlan_id': lvm.vlan,",1,0,0.0,493
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(network_type)s for net-id=%(net_uuid)s""),",1,0,0.0,494
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""physical_network %(physical_network)s""),",1,0,0.0,495
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id=%(net_uuid)s""),",1,0,0.0,496
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_(""No local VLAN available for net-id=%s""), net_uuid)",1,0,0.0,497
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""tunnel_update received""))",1,0,0.0,498
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""port_update message processed for port %s""), port['id'])",1,0,0.0,499
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Delete %s""), network_id)",1,0,0.0,500
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""network_delete received""))",1,0,0.0,501
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_(""Failed reporting state!""))",1,0,0.0,502
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Agent initialized successfully, now running... ""))",0,0,0.0,503
+341586e47b731d6586be39f6bf96c28ae530d4b4,"raise ValueError(_(""Parsing bridge_mappings failed: %s."") % e)",1,0,0.0,504
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE('%s Agent terminated!'), e)",0,0,0.0,505
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""process_network_ports - iteration:%(iter_num)d -""",1,0,0.0,506
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Time elapsed: %(elapsed).3f""),",1,0,0.0,507
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""from server""), self.iter_num)",1,0,0.0,508
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(port_stats)s. Elapsed:%(elapsed).3f""),",1,0,0.0,509
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def __init__(self, bridge_classes, conf=None):",0,0,0.0,510
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""L2 population.""))",1,0,0.0,511
+341586e47b731d6586be39f6bf96c28ae530d4b4,else:,1,0,0.0,512
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Agent and Server side.""))",0,0,0.0,513
+341586e47b731d6586be39f6bf96c28ae530d4b4,else:,0,0,0.0,514
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(cfgmap['tunnel_types'], [p_const.TYPE_GRE])",1,0,0.0,515
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('local_ip', '10.10.10.10', group='OVS')",1,0,0.0,516
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('enable_tunneling', True, group='OVS')",1,0,0.0,517
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_enable_tunneling(self):,1,0,0.0,518
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_VXLAN],",0,0,0.0,519
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Agent initialized successfully, now running... ""))",1,0,0.0,520
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_('%s Agent terminated!'), e)",1,0,0.0,521
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""(%(polling_interval)s vs. %(elapsed)s)!""),",1,0,0.0,522
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_(""Error while processing VIF ports""))",1,0,0.0,523
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""treat_devices_removed completed in %(elapsed).3f""),",1,0,0.0,524
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""processed. Elapsed:%(elapsed).3f""),",1,0,0.0,525
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Agent rpc_loop - iteration:""",1,0,0.0,526
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""ports processed. Elapsed:%(elapsed).3f""),",1,0,0.0,527
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Agent rpc_loop - iteration:%(iter_num)d -""",1,0,0.0,528
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Starting to process devices in:%s""),",1,0,0.0,529
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Elapsed:%(elapsed).3f""),",1,0,0.0,530
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""starting polling. Elapsed:%(elapsed).3f""),",1,0,0.0,531
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_(""Error while synchronizing tunnels""))",1,0,0.0,532
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_(""Agent out of sync with plugin!""))",1,0,0.0,533
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(_(""Agent rpc_loop - iteration:%d started""),",1,0,0.0,534
+341586e47b731d6586be39f6bf96c28ae530d4b4,ip_address),1,0,0.0,535
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""port details from server""), self.iter_num)",1,0,0.0,536
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""completed in %(elapsed).3f""),",1,0,0.0,537
+341586e47b731d6586be39f6bf96c28ae530d4b4,except ValueError as e:,1,0,0.0,538
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""neutron server node(s)."")),",1,0,0.0,539
+341586e47b731d6586be39f6bf96c28ae530d4b4,"integ_br=config.OVS.integration_bridge,",1,0,0.0,540
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tun_br=config.OVS.tunnel_bridge,",1,0,0.0,541
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IntOpt('of_connect_timeout', default=30,",1,0,0.0,542
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.PortOpt('of_listen_port', default=6633,",1,0,0.0,543
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Used only for 'native' driver."")),",1,0,0.0,544
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IPOpt('of_listen_address', default='127.0.0.1',",1,0,0.0,545
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""OVS vhost-user socket directory."")),",1,0,0.0,546
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('vhostuser_socket_dir', default=constants.VHOST_USER_SOCKET_DIR,",1,0,0.0,547
+341586e47b731d6586be39f6bf96c28ae530d4b4,"constants.OVS_DATAPATH_NETDEV],",1,0,0.0,548
+341586e47b731d6586be39f6bf96c28ae530d4b4,"choices=[constants.OVS_DATAPATH_SYSTEM,",1,0,0.0,549
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('datapath_type', default=constants.OVS_DATAPATH_SYSTEM,",1,0,0.0,550
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""OpenFlow interface to use."")),",1,0,0.0,551
+341586e47b731d6586be39f6bf96c28ae530d4b4,"choices=['ovs-ofctl', 'native'],",1,0,0.0,552
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('of_interface', default='native',",1,0,0.0,553
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('use_veth_interconnection', default=False,",1,0,0.0,554
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""agent anymore."")),",1,0,0.0,555
+341586e47b731d6586be39f6bf96c28ae530d4b4,"default=DEFAULT_BRIDGE_MAPPINGS,",1,0,0.0,556
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.ListOpt('bridge_mappings',",1,0,0.0,557
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IPOpt('local_ip',",1,0,0.0,558
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('tun_peer_patch_port', default='patch-int',",1,0,0.0,559
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""bridge."")),",1,0,0.0,560
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('int_peer_patch_port', default='patch-tun',",1,0,0.0,561
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Tunnel bridge to use."")),",1,0,0.0,562
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('tunnel_bridge', default='br-tun',",1,0,0.0,563
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""to their network connectivity."")),",1,0,0.0,564
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('integration_bridge', default='br-int',",1,0,0.0,565
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron.plugins.ml2.drivers.openvswitch.agent.common \,1,0,0.0,566
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron._i18n import _,1,0,0.0,567
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovs_conf.register_ovs_agent_opts(),0,0,0.0,568
+341586e47b731d6586be39f6bf96c28ae530d4b4,from neutron.conf.plugins.ml2.drivers import ovs_conf,0,0,0.0,569
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovs_agent.validate_local_ip(FAKE_IP1),1,0,0.0,570
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IntOpt('of_request_timeout', default=10,",1,0,0.0,571
+341586e47b731d6586be39f6bf96c28ae530d4b4,],1,0,0.0,572
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IntOpt('polling_interval', default=2,",1,0,0.0,573
+341586e47b731d6586be39f6bf96c28ae530d4b4,"deprecated_for_removal=True,",1,0,0.0,574
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(port_stats)s. Elapsed:%(elapsed).3f"",",0,0,0.0,575
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.register_opts(ovs_opts, ""OVS"")",1,0,0.0,576
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""Selects the Agent Type reported""))",1,0,0.0,577
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('agent_type', default=n_const.AGENT_TYPE_OVS,",1,0,0.0,578
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('tunnel_csum', default=False,",1,0,0.0,579
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""cause brief traffic interruption."")),",1,0,0.0,580
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('drop_flows_on_start', default=False,",1,0,0.0,581
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""timeout won't be changed"")),",1,0,0.0,582
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IntOpt('quitting_rpc_timeout', default=10,",1,0,0.0,583
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('enable_distributed_routing', default=False,",1,0,0.0,584
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""outgoing IP packet carrying GRE/VXLAN tunnel."")),",1,0,0.0,585
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('dont_fragment', default=True,",1,0,0.0,586
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""port security extension."")),",1,0,0.0,587
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('prevent_arp_spoofing', default=True,",1,0,0.0,588
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""polling for local device changes."")),",1,0,0.0,589
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""performing a costly ARP broadcast into the overlay."")),",1,0,0.0,590
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('arp_responder', default=False,",1,0,0.0,591
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('l2_population', default=False,",1,0,0.0,592
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""MTU size of veth interfaces"")),",1,0,0.0,593
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IntOpt('veth_mtu', default=9000,",1,0,0.0,594
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.PortOpt('vxlan_udp_port', default=p_const.VXLAN_UDP_PORT,",1,0,0.0,595
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.ListOpt('tunnel_types', default=DEFAULT_TUNNEL_TYPES,",1,0,0.0,596
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""ovsdb monitor after losing communication with it."")),",1,0,0.0,597
+341586e47b731d6586be39f6bf96c28ae530d4b4,"default=constants.DEFAULT_OVSDBMON_RESPAWN,",1,0,0.0,598
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.IntOpt('ovsdb_monitor_respawn_interval',",1,0,0.0,599
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""changes."")),",1,0,0.0,600
+341586e47b731d6586be39f6bf96c28ae530d4b4,"default=True,",1,0,0.0,601
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.BoolOpt('minimize_polling',",1,0,0.0,602
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_validate_local_ip_no_tunneling(self):,1,0,0.0,603
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_VXLAN],",1,0,0.0,604
+341586e47b731d6586be39f6bf96c28ae530d4b4,with testtools.ExpectedException(ValueError):,1,0,0.0,605
+341586e47b731d6586be39f6bf96c28ae530d4b4,except ValueError:,1,0,0.0,606
+341586e47b731d6586be39f6bf96c28ae530d4b4,class CreateAgentConfigMap(ovs_test_base.OVSAgentConfigTestBase):,1,0,0.0,607
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfg.CONF),0,0,0.0,608
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_validate_tunnel_types_fails_for_invalid_tunnel_type(self):,0,0,0.0,609
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('local_ip', None, group='OVS')",0,0,0.0,610
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_validate_tunnel_types_fails_for_invalid_tunnel_config(self):,0,0,0.0,611
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfg.CONF.OVS.local_ip),0,0,0.0,612
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.mod_agent.validate_tunnel_types(cfg.CONF.AGENT.tunnel_types,",0,0,0.0,613
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_GRE],",0,0,0.0,614
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('local_ip', '10.10.10.10', group='OVS')",0,0,0.0,615
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_validate_tunnel_types_succeeds(self):,0,0,0.0,616
+341586e47b731d6586be39f6bf96c28ae530d4b4,class ValidateTunnelTypes(ovs_test_base.OVSAgentConfigTestBase):,0,0,0.0,617
+341586e47b731d6586be39f6bf96c28ae530d4b4,validate_local_ip(agent_config['local_ip']),1,0,0.0,618
+341586e47b731d6586be39f6bf96c28ae530d4b4,prepare_xen_compute(),1,0,0.0,619
+341586e47b731d6586be39f6bf96c28ae530d4b4,raise ValueError(msg),1,0,0.0,620
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.assertTrue(self.mod_agent.create_agent_config_map(cfg.CONF)),1,0,0.0,621
+341586e47b731d6586be39f6bf96c28ae530d4b4,),1,0,0.0,622
+341586e47b731d6586be39f6bf96c28ae530d4b4,quitting_rpc_timeout=config.AGENT.quitting_rpc_timeout,1,0,0.0,623
+341586e47b731d6586be39f6bf96c28ae530d4b4,"use_veth_interconnection=config.OVS.use_veth_interconnection,",1,0,0.0,624
+341586e47b731d6586be39f6bf96c28ae530d4b4,"prevent_arp_spoofing=config.AGENT.prevent_arp_spoofing,",1,0,0.0,625
+341586e47b731d6586be39f6bf96c28ae530d4b4,"arp_responder=config.AGENT.arp_responder,",1,0,0.0,626
+341586e47b731d6586be39f6bf96c28ae530d4b4,"l2_population=config.AGENT.l2_population,",1,0,0.0,627
+341586e47b731d6586be39f6bf96c28ae530d4b4,"enable_distributed_routing=config.AGENT.enable_distributed_routing,",1,0,0.0,628
+341586e47b731d6586be39f6bf96c28ae530d4b4,"veth_mtu=config.AGENT.veth_mtu,",1,0,0.0,629
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel_types=config.AGENT.tunnel_types,",1,0,0.0,630
+341586e47b731d6586be39f6bf96c28ae530d4b4,"minimize_polling=config.AGENT.minimize_polling,",1,0,0.0,631
+341586e47b731d6586be39f6bf96c28ae530d4b4,"polling_interval=config.AGENT.polling_interval,",1,0,0.0,632
+341586e47b731d6586be39f6bf96c28ae530d4b4,"bridge_mappings=bridge_mappings,",1,0,0.0,633
+341586e47b731d6586be39f6bf96c28ae530d4b4,"local_ip=config.OVS.local_ip,",1,0,0.0,634
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_succeeds(self):,1,0,0.0,635
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_fails_for_invalid_tunnel_config(self):,1,0,0.0,636
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_GRE],",1,0,0.0,637
+341586e47b731d6586be39f6bf96c28ae530d4b4,**self.kwargs),1,0,0.0,638
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('local_ip', None, group='OVS')",1,0,0.0,639
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_validate_tunnel_types_fails_for_invalid_tunnel_config(self):,1,0,0.0,640
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfg.CONF.OVS.local_ip),1,0,0.0,641
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.mod_agent.validate_tunnel_types(cfg.CONF.AGENT.tunnel_types,",1,0,0.0,642
+341586e47b731d6586be39f6bf96c28ae530d4b4,ovs_agent.validate_local_ip(None),0,0,0.0,643
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_validate_local_ip_with_none_ip(self):,0,0,0.0,644
+341586e47b731d6586be39f6bf96c28ae530d4b4,with testtools.ExpectedException(SystemExit):,0,0,0.0,645
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.mock_validate_local_ip.assert_called_once_with('10.10.10.10'),0,0,0.0,646
+341586e47b731d6586be39f6bf96c28ae530d4b4,cfg.CONF.OVS.local_ip),0,0,0.0,647
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.mod_agent.validate_tunnel_config(cfg.CONF.AGENT.tunnel_types,",0,0,0.0,648
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.mod_agent, 'validate_local_ip').start()",0,0,0.0,649
+341586e47b731d6586be39f6bf96c28ae530d4b4,"super(ValidateTunnelTypes, self).setUp()",0,0,0.0,650
+341586e47b731d6586be39f6bf96c28ae530d4b4,def setUp(self):,0,0,0.0,651
+341586e47b731d6586be39f6bf96c28ae530d4b4,**kwargs),1,0,0.0,652
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.mod_agent.create_agent_config_map(cfg.CONF),1,0,0.0,653
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.assertTrue(cfgmap['enable_distributed_routing']),1,0,0.0,654
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('enable_distributed_routing', True,",1,0,0.0,655
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.addCleanup(cfg.CONF.reset),1,0,0.0,656
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_enable_distributed_routing(self):,1,0,0.0,657
+341586e47b731d6586be39f6bf96c28ae530d4b4,"[p_const.TYPE_GRE, p_const.TYPE_VXLAN])",1,0,0.0,658
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(cfgmap['tunnel_types'],",1,0,0.0,659
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_GRE,",1,0,0.0,660
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('local_ip', '10.10.10.10', group='OVS')",1,0,0.0,661
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_multiple_tunnel_types(self):,1,0,0.0,662
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_fails_for_invalid_tunnel_type(self):,1,0,0.0,663
+341586e47b731d6586be39f6bf96c28ae530d4b4,with testtools.ExpectedException(ValueError):,1,0,0.0,664
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_VXLAN],",1,0,0.0,665
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_create_agent_config_map_fails_no_local_ip(self):,1,0,0.0,666
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""(%(polling_interval)s vs. %(elapsed)s)!"",",0,0,0.0,667
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""hard_timeout=300,""",0,0,0.0,668
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""Error while processing VIF ports""))",0,0,0.0,669
+341586e47b731d6586be39f6bf96c28ae530d4b4,"constants.TYPE_VXLAN,",1,0,0.0,670
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tun_br.add_flow(,1,0,0.0,671
+341586e47b731d6586be39f6bf96c28ae530d4b4,# inbound bcast/mcast,1,0,0.0,672
+341586e47b731d6586be39f6bf96c28ae530d4b4,segmentation_id),1,0,0.0,673
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""set_tunnel:%s,normal"" %",1,0,0.0,674
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(priority=4, in_port=self.patch_int_ofport,",1,0,0.0,675
+341586e47b731d6586be39f6bf96c28ae530d4b4,# outbound,1,0,0.0,676
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel_type, self.vxlan_udp_port)",1,0,0.0,677
+341586e47b731d6586be39f6bf96c28ae530d4b4,tunnel_type),0,0,0.0,678
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel['ip_address'],",0,0,0.0,679
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.setup_tunnel_port(tun_name,",0,0,0.0,680
+341586e47b731d6586be39f6bf96c28ae530d4b4,ofports)),0,0,0.0,681
+341586e47b731d6586be39f6bf96c28ae530d4b4,"(vlan_mapping.segmentation_id,",0,0,0.0,682
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""set_tunnel:%s,output:%s"" %",0,0,0.0,683
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""strip_vlan,""",0,0,0.0,684
+341586e47b731d6586be39f6bf96c28ae530d4b4,"dl_vlan=vlan_mapping.vlan,",0,0,0.0,685
+341586e47b731d6586be39f6bf96c28ae530d4b4,"for network_id, vlan_mapping in self.local_vlan_map.iteritems():",0,0,0.0,686
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.TUN_TABLE[tunnel_type]),0,0,0.0,687
+341586e47b731d6586be39f6bf96c28ae530d4b4,"in_port=ofport,",0,0,0.0,688
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tun_br_ofports[tunnel_type].add(ofport),0,0,0.0,689
+341586e47b731d6586be39f6bf96c28ae530d4b4,else:,0,0,0.0,690
+341586e47b731d6586be39f6bf96c28ae530d4b4,"{'type': tunnel_type, 'ip': remote_ip})",0,0,0.0,691
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.vxlan_udp_port),0,0,0.0,692
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel_type,",0,0,0.0,693
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.local_ip,",0,0,0.0,694
+341586e47b731d6586be39f6bf96c28ae530d4b4,"remote_ip,",0,0,0.0,695
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def setup_tunnel_port(self, port_name, remote_ip, tunnel_type):",0,0,0.0,696
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(table=constants.FLOOD_TO_TUN,",0,0,0.0,697
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.FLOOD_TO_TUN),0,0,0.0,698
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(table=constants.UCAST_TO_TUN,",0,0,0.0,699
+341586e47b731d6586be39f6bf96c28ae530d4b4,"priority=3,",1,0,0.0,700
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tun_id=segmentation_id,",1,0,0.0,701
+341586e47b731d6586be39f6bf96c28ae530d4b4,"dl_dst=""01:00:00:00:00:00/01:00:00:00:00:00"",",1,0,0.0,702
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_tunnel_port(tun_name,",1,0,0.0,703
+341586e47b731d6586be39f6bf96c28ae530d4b4,"constants.TYPE_VLAN,",1,0,0.0,704
+341586e47b731d6586be39f6bf96c28ae530d4b4,svc_constants.TYPE_FLAT]:,0,0,0.0,705
+341586e47b731d6586be39f6bf96c28ae530d4b4,svc_constants.TYPE_GRE),0,0,0.0,706
+341586e47b731d6586be39f6bf96c28ae530d4b4,svc_constants.TYPE_NONE]:,0,0,0.0,707
+341586e47b731d6586be39f6bf96c28ae530d4b4,"svc_constants.TYPE_VXLAN,",0,0,0.0,708
+341586e47b731d6586be39f6bf96c28ae530d4b4,"svc_constants.TYPE_GRE,",0,0,0.0,709
+341586e47b731d6586be39f6bf96c28ae530d4b4,"svc_constants.TYPE_VLAN,",0,0,0.0,710
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.TYPE_VXLAN: {}},1,0,0.0,711
+341586e47b731d6586be39f6bf96c28ae530d4b4,p_const.TYPE_VXLAN: {}},0,0,0.0,712
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.vxlan_udp_port),1,0,0.0,713
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel_type,",1,0,0.0,714
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.local_ip,",1,0,0.0,715
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel['ip_address'],",1,0,0.0,716
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(priority=1, actions=""drop"")",1,0,0.0,717
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""mod_vlan_vid:%s,output:%s"" %",1,0,0.0,718
+341586e47b731d6586be39f6bf96c28ae530d4b4,vif_id),1,0,0.0,719
+341586e47b731d6586be39f6bf96c28ae530d4b4,else:,1,0,0.0,720
+341586e47b731d6586be39f6bf96c28ae530d4b4,dl_dst=vif_port.vif_mac),1,0,0.0,721
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.delete_flows(tun_id=lvm.segmentation_id,",1,0,0.0,722
+341586e47b731d6586be39f6bf96c28ae530d4b4,# remove inbound unicast flow,1,0,0.0,723
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.TUNNEL_NETWORK_TYPES):,1,0,0.0,724
+341586e47b731d6586be39f6bf96c28ae530d4b4,lvm.vlan),1,0,0.0,725
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""mod_vlan_vid:%s,normal"" %",1,0,0.0,726
+341586e47b731d6586be39f6bf96c28ae530d4b4,"dl_dst=port.vif_mac,",1,0,0.0,727
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(priority=3, tun_id=segmentation_id,",1,0,0.0,728
+341586e47b731d6586be39f6bf96c28ae530d4b4,# inbound unicast,1,0,0.0,729
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tun_br.delete_flows(tun_id=lvm.segmentation_id),1,0,0.0,730
+341586e47b731d6586be39f6bf96c28ae530d4b4,"(lvid, self.patch_int_ofport))",1,0,0.0,731
+341586e47b731d6586be39f6bf96c28ae530d4b4,# as broadcasts/multicasts,0,0,0.0,732
+341586e47b731d6586be39f6bf96c28ae530d4b4,# will resubmit unknown unicasts to table FLOOD_TO_TUN to treat them,0,0,0.0,733
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# Egress unicast will be handled in table UCAST_TO_TUN, where remote",0,0,0.0,734
+341586e47b731d6586be39f6bf96c28ae530d4b4,"super(TunnelTestWithMTU, self).setUp()",0,0,0.0,735
+341586e47b731d6586be39f6bf96c28ae530d4b4,"(lvid, constants.LEARN_FROM_TUN))",0,0,0.0,736
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""mod_vlan_vid:%s,resubmit(,%s)"" %",0,0,0.0,737
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tun_id=segmentation_id,",0,0,0.0,738
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(table=constants.TUN_TABLE[network_type],",0,0,0.0,739
+341586e47b731d6586be39f6bf96c28ae530d4b4,# and resubmit to Table LEARN_FROM_TUN for mac learning,0,0,0.0,740
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""output:%s"" % (segmentation_id, ofports))",0,0,0.0,741
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""strip_vlan,set_tunnel:%s,""",0,0,0.0,742
+341586e47b731d6586be39f6bf96c28ae530d4b4,"priority=1,",0,0,0.0,743
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.mod_flow(table=constants.FLOOD_TO_TUN,",0,0,0.0,744
+341586e47b731d6586be39f6bf96c28ae530d4b4,# outbound broadcast/multicast,0,0,0.0,745
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.TYPE_VXLAN: set()},0,0,0.0,746
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.intb.link.set_mtu(self.VETH_MTU),0,0,0.0,747
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.inta.link.set_mtu(self.VETH_MTU),0,0,0.0,748
+341586e47b731d6586be39f6bf96c28ae530d4b4,def setUp(self):,0,0,0.0,749
+341586e47b731d6586be39f6bf96c28ae530d4b4,"table=constants.TUN_TABLE[lvm.network_type],",0,0,0.0,750
+341586e47b731d6586be39f6bf96c28ae530d4b4,class TunnelTestWithMTU(TunnelTest):,0,0,0.0,751
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.VETH_MTU),0,0,0.0,752
+341586e47b731d6586be39f6bf96c28ae530d4b4,"polling_interval, tunnel_types=None):",1,0,0.0,753
+341586e47b731d6586be39f6bf96c28ae530d4b4,"veth_mtu=config.AGENT.veth_mtu,",0,0,0.0,754
+341586e47b731d6586be39f6bf96c28ae530d4b4,phys_veth.link.set_mtu(self.veth_mtu),0,0,0.0,755
+341586e47b731d6586be39f6bf96c28ae530d4b4,int_veth.link.set_mtu(self.veth_mtu),0,0,0.0,756
+341586e47b731d6586be39f6bf96c28ae530d4b4,:param veth_mtu: MTU size for veth interfaces.,0,0,0.0,757
+341586e47b731d6586be39f6bf96c28ae530d4b4,veth_mtu=None):,0,0,0.0,758
+341586e47b731d6586be39f6bf96c28ae530d4b4,"polling_interval, tunnel_types=None,",0,0,0.0,759
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel.id, cfg.CONF.OVS.tunnel_type)",1,0,0.0,760
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def __init__(self, notifier):",1,0,0.0,761
+341586e47b731d6586be39f6bf96c28ae530d4b4,"tunnel.id, self.tunnel_type)",0,0,0.0,762
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def __init__(self, notifier, tunnel_type):",0,0,0.0,763
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.tun_br.delete_flows(,0,0,0.0,764
+341586e47b731d6586be39f6bf96c28ae530d4b4,tun_id=lvm.segmentation_id),0,0,0.0,765
+341586e47b731d6586be39f6bf96c28ae530d4b4,"(learned_flow, self.patch_int_ofport))",0,0,0.0,766
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(table=constants.TUN_TABLE[tunnel_type],",0,0,0.0,767
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""learn(%s),output:%s"" %",0,0,0.0,768
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(table=constants.LEARN_FROM_TUN,",0,0,0.0,769
+341586e47b731d6586be39f6bf96c28ae530d4b4,"# Once remote mac adresses are learnt, packet is outputed to patch_int",0,0,0.0,770
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.UCAST_TO_TUN),0,0,0.0,771
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""output:NXM_OF_IN_PORT[]"" %",0,0,0.0,772
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""load:NXM_NX_TUN_ID[]->NXM_NX_TUN_ID[],""",0,0,0.0,773
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""load:0->NXM_OF_VLAN_TCI[],""",0,0,0.0,774
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""NXM_OF_VLAN_TCI[0..11],""",0,0,0.0,775
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""priority=1,""",0,0,0.0,776
+341586e47b731d6586be39f6bf96c28ae530d4b4,# dynamically set-up flows in UCAST_TO_TUN corresponding to remote mac,0,0,0.0,777
+341586e47b731d6586be39f6bf96c28ae530d4b4,# LEARN_FROM_TUN table will have a single flow using a learn action to,0,0,0.0,778
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""drop"")",0,0,0.0,779
+341586e47b731d6586be39f6bf96c28ae530d4b4,"priority=0,",0,0,0.0,780
+341586e47b731d6586be39f6bf96c28ae530d4b4,# remote mac adresses will be learnt,0,0,0.0,781
+341586e47b731d6586be39f6bf96c28ae530d4b4,"lvm.vif_ports.pop(vif_id, None)",0,0,0.0,782
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""resubmit(,%s)"" % constants.FLOOD_TO_TUN)",0,0,0.0,783
+341586e47b731d6586be39f6bf96c28ae530d4b4,"dl_dst=""01:00:00:00:00:00/01:00:00:00:00:00"",",0,0,0.0,784
+341586e47b731d6586be39f6bf96c28ae530d4b4,# Broadcasts/multicasts go to table FLOOD_TO_TUN that handles flooding,0,0,0.0,785
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""resubmit(,%s)"" % constants.UCAST_TO_TUN)",0,0,0.0,786
+341586e47b731d6586be39f6bf96c28ae530d4b4,"dl_dst=""00:00:00:00:00:00/01:00:00:00:00:00"",",0,0,0.0,787
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(table=constants.PATCH_LV_TO_TUN,",0,0,0.0,788
+341586e47b731d6586be39f6bf96c28ae530d4b4,# unicasts go to table UCAST_TO_TUN where remote adresses are learnt,0,0,0.0,789
+341586e47b731d6586be39f6bf96c28ae530d4b4,# PATCH_LV_TO_TUN table will handle packets coming from patch_int,0,0,0.0,790
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(priority=0, actions=""drop"")",0,0,0.0,791
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.PATCH_LV_TO_TUN),0,0,0.0,792
+341586e47b731d6586be39f6bf96c28ae530d4b4,"actions=""resubmit(,%s)"" %",0,0,0.0,793
+341586e47b731d6586be39f6bf96c28ae530d4b4,"in_port=self.patch_int_ofport,",0,0,0.0,794
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.tun_br.add_flow(priority=1,",0,0,0.0,795
+341586e47b731d6586be39f6bf96c28ae530d4b4,"constants.TYPE_GRE,",1,0,0.0,796
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.TYPE_NONE]:,1,0,0.0,797
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""processed. Elapsed:%(elapsed).3f"",",0,0,0.0,798
+341586e47b731d6586be39f6bf96c28ae530d4b4,constants.TYPE_FLAT]:,1,0,0.0,799
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(network_type)s for net-id=%(net_uuid)s""),",0,0,0.0,800
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""physical_network %(physical_network)s""),",0,0,0.0,801
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""net-id=%(net_uuid)s""),",0,0,0.0,802
+341586e47b731d6586be39f6bf96c28ae530d4b4,net_uuid),0,0,0.0,803
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.error(_LE(""No local VLAN available for net-id=%s""),",0,0,0.0,804
+341586e47b731d6586be39f6bf96c28ae530d4b4,tunnel_type),0,0,0.0,805
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""tunnel_update received"")",0,0,0.0,806
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""port_update message processed for port %s"", port['id'])",0,0,0.0,807
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Delete %s"", network_id)",0,0,0.0,808
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""network_delete received"")",0,0,0.0,809
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""Failed reporting state!""))",0,0,0.0,810
+341586e47b731d6586be39f6bf96c28ae530d4b4,"from neutron.openstack.common.gettextutils import _LE, _LI, _LW",0,0,0.0,811
+341586e47b731d6586be39f6bf96c28ae530d4b4,"help=_(""List of <tun_min>:<tun_max>."")),",1,0,0.0,812
+341586e47b731d6586be39f6bf96c28ae530d4b4,"default=DEFAULT_TUNNEL_RANGES,",1,0,0.0,813
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.ListOpt('tunnel_id_ranges',",1,0,0.0,814
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""or <physical_network>."")),",1,0,0.0,815
+341586e47b731d6586be39f6bf96c28ae530d4b4,"default=DEFAULT_VLAN_RANGES,",1,0,0.0,816
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.ListOpt('network_vlan_ranges',",1,0,0.0,817
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.StrOpt('tenant_network_type', default='local',",1,0,0.0,818
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self._check_ovs_vxlan_version(min_vxlan_ver, install_ver,",1,0,0.0,819
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_check_fail_klm_version(self):,1,0,0.0,820
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self._check_ovs_vxlan_version(None, None,",1,0,0.0,821
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_check_fail_no_version(self):,1,0,0.0,822
+341586e47b731d6586be39f6bf96c28ae530d4b4,"min_kernel_ver, expecting_ok=False)",1,0,0.0,823
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_check_fail_version(self):,1,0,0.0,824
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self._check_ovs_vxlan_version(install_ver, install_ver,",1,0,0.0,825
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_check_future_version(self):,1,0,0.0,826
+341586e47b731d6586be39f6bf96c28ae530d4b4,"min_kernel_ver, expecting_ok=True)",1,0,0.0,827
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self._check_ovs_vxlan_version(min_vxlan_ver, min_vxlan_ver,",1,0,0.0,828
+341586e47b731d6586be39f6bf96c28ae530d4b4,"{'vlan_id': lvm.vlan, 'net_uuid': net_uuid})",0,0,0.0,829
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI('Adding %s to list of bridges.'), bridge)",0,0,0.0,830
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""patch ports. Agent terminated!""))",0,0,0.0,831
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""from server""), self.iter_num)",0,0,0.0,832
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Agent rpc_loop - iteration:""",0,0,0.0,833
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""ports processed. Elapsed:%(elapsed).3f"",",0,0,0.0,834
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Agent rpc_loop - iteration:%(iter_num)d -""",0,0,0.0,835
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Starting to process devices in:%s"",",0,0,0.0,836
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Elapsed:%(elapsed).3f"",",0,0,0.0,837
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""starting polling. Elapsed:%(elapsed).3f"",",0,0,0.0,838
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.exception(_LE(""Error while synchronizing tunnels""))",0,0,0.0,839
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Agent out of sync with plugin!""))",0,0,0.0,840
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Agent rpc_loop - iteration:%d started"",",0,0,0.0,841
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Invalid remote IP: %s""), ip_address)",0,0,0.0,842
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""port details from server""), self.iter_num)",0,0,0.0,843
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""completed in %(elapsed).3f"",",0,0,0.0,844
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""treat_devices_removed completed in %(elapsed).3f"",",0,0,0.0,845
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""Time elapsed: %(elapsed).3f"",",0,0,0.0,846
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""%(new_name)s to fit.""),",0,0,0.0,847
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""process_network_ports - iteration:%(iter_num)d -""",0,0,0.0,848
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Port %s updated.""), device)",0,0,0.0,849
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""port_removed failed for %(device)s: %(e)s"",",0,0,0.0,850
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Attachment %s removed""), device)",0,0,0.0,851
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Ancillary Port %s added""), device)",0,0,0.0,852
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Configuration for device %s completed.""), device)",0,0,0.0,853
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Setting status for %s to DOWN"", device)",0,0,0.0,854
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""Setting status for %s to UP"", device)",0,0,0.0,855
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.info(_LI(""Port %(device)s updated. Details: %(details)s""),",0,0,0.0,856
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""interpreted as an integer""))",0,0,0.0,857
+341586e47b731d6586be39f6bf96c28ae530d4b4,"LOG.debug(""No VIF port for port %s defined on agent."", port_id)",0,0,0.0,858
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""terminated!""),",0,0,0.0,859
+341586e47b731d6586be39f6bf96c28ae530d4b4,"""bridge %(bridge)s""),",0,0,0.0,860
+341586e47b731d6586be39f6bf96c28ae530d4b4,def test_check_minimum_version(self):,1,0,0.0,861
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(version_ok, expecting_ok)",1,0,0.0,862
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(e.code, 1)",1,0,0.0,863
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'gre-1', 'remote_ip', self.agent.local_ip, constants.TYPE_GRE,",1,0,0.0,864
+341586e47b731d6586be39f6bf96c28ae530d4b4,tunnel_type=constants.TYPE_GRE),1,0,0.0,865
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, constants.TYPE_VLAN, 'net2', LS_ID)",1,0,0.0,866
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, constants.TYPE_VLAN, 'net1', LS_ID)",1,0,0.0,867
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, constants.TYPE_FLAT, 'net2', LS_ID)",1,0,0.0,868
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, constants.TYPE_FLAT, 'net1', LS_ID)",1,0,0.0,869
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, constants.TYPE_GRE, None, LS_ID)",1,0,0.0,870
+341586e47b731d6586be39f6bf96c28ae530d4b4,tunnel_type=p_const.TYPE_GRE),0,0,0.0,871
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, p_const.TYPE_VLAN, 'net2', LS_ID)",0,0,0.0,872
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, p_const.TYPE_VLAN, 'net1', LS_ID)",0,0,0.0,873
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, p_const.TYPE_FLAT, 'net2', LS_ID)",0,0,0.0,874
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, p_const.TYPE_FLAT, 'net1', LS_ID)",0,0,0.0,875
+341586e47b731d6586be39f6bf96c28ae530d4b4,"a.provision_local_vlan(NET_UUID, p_const.TYPE_GRE, None, LS_ID)",0,0,0.0,876
+341586e47b731d6586be39f6bf96c28ae530d4b4,"{'type': constants.TYPE_GRE, 'ip': 'remote_ip'})",1,0,0.0,877
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'gre-1', 'remote_ip', constants.TYPE_GRE)",1,0,0.0,878
+341586e47b731d6586be39f6bf96c28ae530d4b4,"installed_kernel_version,",0,0,0.0,879
+341586e47b731d6586be39f6bf96c28ae530d4b4,"[constants.TYPE_GRE, constants.TYPE_VXLAN])",1,0,0.0,880
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [constants.TYPE_GRE,",1,0,0.0,881
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(cfgmap['tunnel_types'], [constants.TYPE_GRE])",1,0,0.0,882
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [constants.TYPE_VXLAN],",1,0,0.0,883
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [constants.TYPE_GRE],",1,0,0.0,884
+341586e47b731d6586be39f6bf96c28ae530d4b4,"{'type': p_const.TYPE_GRE, 'ip': 'remote_ip'})",0,0,0.0,885
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'gre-1', 'remote_ip', self.agent.local_ip, p_const.TYPE_GRE,",0,0,0.0,886
+341586e47b731d6586be39f6bf96c28ae530d4b4,"'gre-1', 'remote_ip', p_const.TYPE_GRE)",0,0,0.0,887
+341586e47b731d6586be39f6bf96c28ae530d4b4,"[p_const.TYPE_GRE, p_const.TYPE_VXLAN])",0,0,0.0,888
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_GRE,",0,0,0.0,889
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(cfgmap['tunnel_types'], [p_const.TYPE_GRE])",0,0,0.0,890
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_VXLAN],",0,0,0.0,891
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.set_override('tunnel_types', [p_const.TYPE_GRE],",0,0,0.0,892
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.addCleanup(cfg.CONF.reset),1,0,0.0,893
+341586e47b731d6586be39f6bf96c28ae530d4b4,with mock.patch(,0,0,0.0,894
+341586e47b731d6586be39f6bf96c28ae530d4b4,except SystemExit as e:,1,0,0.0,895
+341586e47b731d6586be39f6bf96c28ae530d4b4,expecting_ok=False),1,0,0.0,896
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.agent._check_ovs_version(),1,0,0.0,897
+341586e47b731d6586be39f6bf96c28ae530d4b4,try:,1,0,0.0,898
+341586e47b731d6586be39f6bf96c28ae530d4b4,) as kernel_cmd:,1,0,0.0,899
+341586e47b731d6586be39f6bf96c28ae530d4b4,'neutron.agent.linux.ovs_lib.get_installed_kernel_version',1,0,0.0,900
+341586e47b731d6586be39f6bf96c28ae530d4b4,) as usr_cmd:,1,0,0.0,901
+341586e47b731d6586be39f6bf96c28ae530d4b4,'neutron.agent.linux.ovs_lib.get_installed_ovs_usr_version',1,0,0.0,902
+341586e47b731d6586be39f6bf96c28ae530d4b4,) as klm_cmd:,1,0,0.0,903
+341586e47b731d6586be39f6bf96c28ae530d4b4,'neutron.agent.linux.ovs_lib.get_installed_ovs_klm_version',1,0,0.0,904
+341586e47b731d6586be39f6bf96c28ae530d4b4,with mock.patch(,1,0,0.0,905
+341586e47b731d6586be39f6bf96c28ae530d4b4,expecting_ok):,1,0,0.0,906
+341586e47b731d6586be39f6bf96c28ae530d4b4,"installed_kernel_version,",1,0,0.0,907
+341586e47b731d6586be39f6bf96c28ae530d4b4,"installed_klm_version,",1,0,0.0,908
+341586e47b731d6586be39f6bf96c28ae530d4b4,"def _check_ovs_vxlan_version(self, installed_usr_version,",1,0,0.0,909
+341586e47b731d6586be39f6bf96c28ae530d4b4,expecting_ok=True),1,0,0.0,910
+341586e47b731d6586be39f6bf96c28ae530d4b4,'neutron.agent.linux.ovs_lib.get_installed_kernel_version',0,0,0.0,911
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(version_ok, expecting_ok)",1,0,0.0,912
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(e.code, 1)",1,0,0.0,913
+341586e47b731d6586be39f6bf96c28ae530d4b4,except SystemExit as e:,1,0,0.0,914
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.agent._check_ovs_version(),1,0,0.0,915
+341586e47b731d6586be39f6bf96c28ae530d4b4,try:,1,0,0.0,916
+341586e47b731d6586be39f6bf96c28ae530d4b4,"min_kernel_ver, expecting_ok=False)",0,0,0.0,917
+341586e47b731d6586be39f6bf96c28ae530d4b4,"min_kernel_ver, expecting_ok=True)",0,0,0.0,918
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(version_ok, expecting_ok)",0,0,0.0,919
+341586e47b731d6586be39f6bf96c28ae530d4b4,"self.assertEqual(e.code, 1)",0,0,0.0,920
+341586e47b731d6586be39f6bf96c28ae530d4b4,except SystemExit as e:,0,0,0.0,921
+341586e47b731d6586be39f6bf96c28ae530d4b4,self.agent._check_ovs_version(),0,0,0.0,922
+341586e47b731d6586be39f6bf96c28ae530d4b4,try:,0,0,0.0,923
+341586e47b731d6586be39f6bf96c28ae530d4b4,) as kernel_cmd:,0,0,0.0,924
+341586e47b731d6586be39f6bf96c28ae530d4b4,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,0,0.0,925

@@ -1,0 +1,881 @@
+commit_id,line,line_level_label,count,line_score,row
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Updating replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",0,8,1.0,1
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Updating replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",1,8,1.0,2
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.warn(""Creation disabled so not creating a replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",1,8,1.0,3
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Updating replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",0,8,1.0,4
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.warn(""Creation disabled so not creating a replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",0,8,1.0,5
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Updating replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",1,8,1.0,6
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.warn(""Creation disabled so not creating a replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",1,8,1.0,7
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.warn(""Creation disabled so not creating a replicationController from "" + sourceName + "" namespace "" + namespace + "" name "" + getName(replicationController));",0,8,1.0,8
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"onApplyError(""Failed to update replicationController from "" + sourceName + "". "" + e + "". "" + replicationController, e);",1,6,0.75,9
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"onApplyError(""Failed to update replicationController from "" + sourceName + "". "" + e + "". "" + replicationController, e);",0,6,0.75,10
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"onApplyError(""Failed to update replicationController from "" + sourceName + "". "" + e + "". "" + replicationController, e);",1,6,0.75,11
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"onApplyError(""Failed to update replicationController from "" + sourceName + "". "" + e + "". "" + replicationController, e);",0,6,0.75,12
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""START getCurrentSelectedProject: on "" + getProjectFactory() + "" selection: "" + selectedObject + "". This may result in mvn artifacts being downloaded to ~/.m2/repository"");",1,5,0.625,13
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"@WithAttributes(label = ""Replication Controller ID"", description = ""The ID of the replication controller to delete."", required = true)",1,5,0.625,14
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Rolling upgrade of the RC "" + namespace + ""/"" + id);",0,4,0.5,15
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"@WithAttributes(name = ""kubernetesUrl"", label = ""The URL where the kubernetes master is running"")",1,4,0.5,16
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private static String namespace = KubernetesHelper.defaultNamespace();,1,4,0.5,17
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"@WithAttributes(name = ""kubernetesUrl"", label = ""The URL where the kubernetes master is running"")",1,4,0.5,18
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Rolling upgrade of the RC "" + namespace + ""/"" + id);",1,4,0.5,19
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""rollingUpgradePreserveScale "" + rollingUpgradePreserveScale + "" new replicas is "" + newSpec.getReplicas());",0,4,0.5,20
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Rolling upgrade of the RC "" + namespace + ""/"" + id);",0,4,0.5,21
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"@WithAttributes(label = ""Service ID"", description = ""The ID of the service to delete."", required = true)",1,4,0.5,22
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try (Watch watch = kubernetes.adapt(OpenShiftClient.class).builds().inNamespace(namespace).watch(new Watcher<Build>() {,1,4,0.5,23
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"watcher = new BuildWatcher(client, buildListener, namespace, consoleLink);",1,4,0.5,24
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private OpenShiftClient client = new DefaultOpenShiftClient();,1,4,0.5,25
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String address = KubernetesHelper.getServiceURL(kubernetes, ServiceNames.JENKINS, namespace, ""http"", false);",1,4,0.5,26
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String address = getServiceUrl(ServiceNames.JENKINS, false, namespace, jenkinsNamespace);",0,4,0.5,27
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"protected boolean annotationLink(Map<String, String> annotations, String annotationPrefix, String issueTrackerUrl, String issueTrackerLabel) {",0,4,0.5,28
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public String trigger(String namespace, final String buildName) {",1,4,0.5,29
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetes = new DefaultKubernetesClient();,1,3,0.375,30
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (Exception e) {,1,3,0.375,31
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"protected String getOrFindGitUrl(UIExecutionContext context, String gitUrlText) {",1,3,0.375,32
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""END   getCurrentSelectedProject: on "" + getProjectFactory() + "" selection: "" + selectedObject);",1,3,0.375,33
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Controller controller = new Controller(getKubernetes());,1,3,0.375,34
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Warning not deleted any pods so they could well be running with the old configuration!"");",1,3,0.375,35
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetes = new DefaultKubernetesClient(new ConfigBuilder().withMasterUrl(kubernetesAddress).build());,1,3,0.375,36
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (Exception e) {,1,3,0.375,37
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetes = new DefaultKubernetesClient();,1,3,0.375,38
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting any pods for the replication controller to ensure they use the new configuration"");",1,3,0.375,39
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationController old = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).get();,1,3,0.375,40
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (Exception e) {,0,3,0.375,41
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetes = new DefaultKubernetesClient(new ConfigBuilder().withMasterUrl(kubernetesAddress).build());,1,3,0.375,42
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String id = KubernetesHelper.getName(item);,1,3,0.375,43
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* Base class for working with a pod,1,3,0.375,44
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<String> list = new ArrayList<String>();,1,3,0.375,45
+30ec2c8123f9a4e99aa476580f08f57a626b726a,KubernetesClient kubernetes = getKubernetes();,1,3,0.375,46
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Pod podInfo = getKubernetes().pods().inNamespace(getNamespace()).withName(podIdText).get();,1,3,0.375,47
+30ec2c8123f9a4e99aa476580f08f57a626b726a,".name(CATEGORY + "": Replication Controller Delete"")",1,3,0.375,48
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<String> list = new ArrayList<String>();,1,3,0.375,49
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String id = KubernetesHelper.getName(item);,1,3,0.375,50
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationController replicationController = getKubernetes().replicationControllers().inNamespace(getNamespace()).withName(idText).get();,1,3,0.375,51
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<String> list = new ArrayList<String>();,1,3,0.375,52
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String id = KubernetesHelper.getName(item);,1,3,0.375,53
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Service service = getKubernetes().services().inNamespace(getNamespace()).withName(idText).get();,1,3,0.375,54
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting any pods for the replication controller to ensure they use the new configuration"");",0,3,0.375,55
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Warning not deleted any pods so they could well be running with the old configuration!"");",0,3,0.375,56
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"@WithAttributes(label = ""Pod ID"", description = ""The ID of the pod."", required = true)",1,3,0.375,57
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationController old = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).get();,0,3,0.375,58
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"name = username + ""-"" + name;",1,3,0.375,59
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (Exception e) {,1,3,0.375,60
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String issueTrackerLabel = ""Issues"";",0,3,0.375,61
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String teamLabel = ""Team"";",0,3,0.375,62
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String releasesLabel = ""Releases"";",0,3,0.375,63
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String repositoryBrowseLabel = ""Repository"";",0,3,0.375,64
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String flowGitUrl = Systems.getEnvVar(""JENKINS_WORKFLOW_GIT_REPOSITORY"", ""https://github.com/fabric8io/jenkins-workflow-library.git"");",0,3,0.375,65
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String fabric8ConsoleNamespace = KubernetesHelper.defaultNamespace();,0,3,0.375,66
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String jenkinsNamespace = KubernetesHelper.defaultNamespace();,0,3,0.375,67
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String getServiceUrl(String serviceName, boolean serviceExternal, String... namespaces) {",0,3,0.375,68
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (Exception e) {,0,3,0.375,69
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetes = new DefaultKubernetesClient();,0,3,0.375,70
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"private String flowGitUrl = System.getenv(""JENKINS_WORKFLOW_GIT_REPOSITORY"");",1,3,0.375,71
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String consoleUrl = getServiceUrl(ServiceNames.FABRIC8_CONSOLE, namespace, fabric8ConsoleNamespace);",0,3,0.375,72
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Warning not deleted any pods so they could well be running with the old configuration!"");",0,3,0.375,73
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Warning not deleted any pods so they could well be running with the old configuration!"");",1,3,0.375,74
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* This service is a helper class to create a configured instance of a,1,3,0.375,75
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private Timer timer = new Timer();,1,3,0.375,76
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.client = client;,1,3,0.375,77
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (InterruptedException e) {,1,3,0.375,78
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationController old = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).get();,0,3,0.375,79
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting any pods for the replication controller to ensure they use the new configuration"");",0,3,0.375,80
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} catch (Exception e) {,0,3,0.375,81
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationController old = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).get();,1,3,0.375,82
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting any pods for the replication controller to ensure they use the new configuration"");",1,3,0.375,83
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String consoleUrl = KubernetesHelper.getServiceURL(kubernetes, ServiceNames.FABRIC8_CONSOLE, namespace, ""http"", true);",1,3,0.375,84
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String kubernetesAddress = kubernetesUrl.getValue();,1,2,0.25,85
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public KubernetesClient getKubernetes() {,1,2,0.25,86
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String connection = scm.getConnection();,1,2,0.25,87
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Controller createController() {,1,2,0.25,88
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private KubernetesClient kubernetes;,1,2,0.25,89
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,90
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String configText = config.getContents();,1,2,0.25,91
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try {,1,2,0.25,92
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} finally {,1,2,0.25,93
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Resource<?> root = project.getRoot();,1,2,0.25,94
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return new File(folder, ProjectConfigs.FILE_NAME);",1,2,0.25,95
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Resource<?> config = gitFolder.getChild(""config"");",1,2,0.25,96
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public abstract class AbstractDevOpsCommand extends AbstractProjectCommand implements UICommand {,1,2,0.25,97
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public static String CATEGORY = ""DevOps"";",1,2,0.25,98
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try {,0,2,0.25,99
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).replace(replicationController);,1,2,0.25,100
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try {,1,2,0.25,101
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,102
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).replace(replicationController);,0,2,0.25,103
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try {,0,2,0.25,104
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else if (isRecreateMode()) {,0,2,0.25,105
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,0,2,0.25,106
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private boolean rollingUpgradePreserveScale = true;,0,2,0.25,107
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).replace(replicationController);,1,2,0.25,108
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try {,1,2,0.25,109
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,110
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).replace(replicationController);,0,2,0.25,111
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public abstract class AbstractKubernetesCommand extends AbstractProjectCommand implements UICommand {,1,2,0.25,112
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,0,2,0.25,113
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* An abstract base class for kubernetes related commands,1,2,0.25,114
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,115
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public static String CATEGORY = ""Kubernetes"";",1,2,0.25,116
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private KubernetesClient kubernetes;,1,2,0.25,117
+30ec2c8123f9a4e99aa476580f08f57a626b726a,final BlockingQueue<String> uuid = new ArrayBlockingQueue<>(1);,1,2,0.25,118
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,119
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"System.out.println(""No service for id: "" + idText);",1,2,0.25,120
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String idText = serviceId.getValue();,1,2,0.25,121
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ServiceList services = getKubernetes().services().inNamespace(getNamespace()).list();,1,2,0.25,122
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public Iterable<String> getCompletionProposals(UIContext context, InputComponent<?, String> input, String value) {",1,2,0.25,123
+30ec2c8123f9a4e99aa476580f08f57a626b726a,".description(""Deletes the given service from the kubernetes cloud"");",1,2,0.25,124
+30ec2c8123f9a4e99aa476580f08f57a626b726a,".name(CATEGORY + "": Service Delete"")",1,2,0.25,125
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public class ServiceDelete extends AbstractKubernetesCommand {,1,2,0.25,126
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* Deletes a service from kubernetes,1,2,0.25,127
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,128
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"System.out.println(""No replicationController for id: "" + idText);",1,2,0.25,129
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String idText = replicationControllerId.getValue();,1,2,0.25,130
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public Iterable<String> getCompletionProposals(UIContext context, InputComponent<?, String> input, String value) {",1,2,0.25,131
+30ec2c8123f9a4e99aa476580f08f57a626b726a,".description(""Deletes the given replication controller from the kubernetes cloud"");",1,2,0.25,132
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public class ReplicationControllerDelete extends AbstractKubernetesCommand {,1,2,0.25,133
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* Deletes a replication controller from kubernetes,1,2,0.25,134
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"System.out.println(""No pod for id: "" + podIdText);",1,2,0.25,135
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String podIdText = podId.getValue();,1,2,0.25,136
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"System.out.println(""Completion list is "" + list);",1,2,0.25,137
+30ec2c8123f9a4e99aa476580f08f57a626b726a,PodList pods = getKubernetes().pods().list();,1,2,0.25,138
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public Iterable<String> getCompletionProposals(UIContext context, InputComponent<?, String> input, String value) {",1,2,0.25,139
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public abstract class AbstractPodCommand extends AbstractKubernetesCommand {,1,2,0.25,140
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getNamespace() {,1,2,0.25,141
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,142
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String kubernetesAddress = kubernetesUrl.getValue();,1,2,0.25,143
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public KubernetesClient getKubernetes() {,1,2,0.25,144
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public void eventReceived(Action action, Build build) {",1,2,0.25,145
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private static final transient Logger LOG = LoggerFactory.getLogger(AbstractDevOpsCommand.class);,1,2,0.25,146
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private final KubernetesClient kubernetes;,1,2,0.25,147
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).update(replicationController);,1,2,0.25,148
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String[] defaults = { KubernetesHelper.defaultNamespace(), ""default"" };",0,2,0.25,149
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<String> namespaceList = new ArrayList<>(Arrays.asList(namespaces));,0,2,0.25,150
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"protected String getServiceUrl(String serviceName, String... namespaces) {",0,2,0.25,151
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* Looks in the given namespaces for the given service or returns null if it could not be found,0,2,0.25,152
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return getServiceUrl(ServiceNames.JENKINS, namespace, jenkinsNamespace);",0,2,0.25,153
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected String getJenkinsServiceUrl() {,0,2,0.25,154
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String taigaTeamLink = getProjectPageLink(taiga, taigaProject, this.taigaTeamLinkPage);",0,2,0.25,155
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String taigaLink = getProjectPageLink(taiga, taigaProject, this.taigaProjectLinkPage);",0,2,0.25,156
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String repositoryBrowseLink;,0,2,0.25,157
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String releasesUrl;,0,2,0.25,158
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String teamUrl;,0,2,0.25,159
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String issueTrackerUrl;,0,2,0.25,160
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.pods().inNamespace(namespace).withName(id).update(pod);,1,2,0.25,161
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.services().inNamespace(namespace).withName(id).update(service);,1,2,0.25,162
+30ec2c8123f9a4e99aa476580f08f57a626b726a,try {,0,2,0.25,163
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = openShiftClient.buildConfigs().inNamespace(namespace).withName(id).update(entity);,1,2,0.25,164
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.secrets().inNamespace(namespace).withName(id).update(secret);,1,2,0.25,165
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.serviceAccounts().inNamespace(namespace).withName(id).update(serviceAccount);,1,2,0.25,166
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = openShiftClient.templates().inNamespace(namespace).withName(id).update(entity);,1,2,0.25,167
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = openShiftClient.oAuthClients().withName(id).update(entity);,1,2,0.25,168
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.pods().inNamespace(namespace).withName(id).replace(pod);,0,2,0.25,169
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).replace(replicationController);,0,2,0.25,170
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.services().inNamespace(namespace).withName(id).replace(service);,0,2,0.25,171
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = openShiftClient.buildConfigs().inNamespace(namespace).withName(id).replace(entity);,0,2,0.25,172
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.secrets().inNamespace(namespace).withName(id).replace(secret);,0,2,0.25,173
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = openShiftClient.templates().inNamespace(namespace).withName(id).replace(entity);,0,2,0.25,174
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = openShiftClient.oAuthClients().withName(id).replace(entity);,0,2,0.25,175
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public class DefaultBuildTrigger implements BuildTrigger {,1,2,0.25,176
+30ec2c8123f9a4e99aa476580f08f57a626b726a,for (String namespace : namespaceList) {,0,2,0.25,177
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object answer = kubernetesClient.serviceAccounts().inNamespace(namespace).withName(id).replace(serviceAccount);,0,2,0.25,178
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return KubernetesHelper.getServiceURL(getKubernetes(), serviceName, namespace, ""http"", serviceExternal);",0,2,0.25,179
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String taigaLink = getProjectPageLink(taiga, taigaProject, this.taigaProjectLinkPage);",1,2,0.25,180
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,0,2,0.25,181
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return client;,1,2,0.25,182
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getConsoleLink() {,1,2,0.25,183
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else {,1,2,0.25,184
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"BuildSignaller buildListener = new BuildSignaller(ksession, buildProcessCorrelator);",1,2,0.25,185
+30ec2c8123f9a4e99aa476580f08f57a626b726a,String consoleLink = getConsoleLink();,1,2,0.25,186
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public BuildSignallerService(KieSession ksession, String namespace) {",1,2,0.25,187
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private String consoleLink;,1,2,0.25,188
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private BuildProcessCorrelator buildProcessCorrelator = BuildProcessCorrelators.getSingleton();,1,2,0.25,189
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private final String namespace;,1,2,0.25,190
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public class BuildSignallerService {,1,2,0.25,191
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return new DefaultKubernetesClient();,1,2,0.25,192
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String taigaTeamLink = getProjectPageLink(taiga, taigaProject, this.taigaTeamLinkPage);",1,2,0.25,193
+30ec2c8123f9a4e99aa476580f08f57a626b726a,} else if (simulator != null) {,1,2,0.25,194
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getTeamUrl() {,0,2,0.25,195
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getReleasesUrl() {,0,2,0.25,196
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getJenkinsNamespace() {,0,2,0.25,197
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getFabric8ConsoleNamespace() {,0,2,0.25,198
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getIssueTrackerLabel() {,0,2,0.25,199
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getIssueTrackerUrl() {,0,2,0.25,200
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getTeamLabel() {,0,2,0.25,201
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String label = ""Job"";",1,2,0.25,202
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getReleasesLabel() {,0,2,0.25,203
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getRepositoryBrowseLabel() {,0,2,0.25,204
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public String getRepositoryBrowseLink() {,0,2,0.25,205
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String label = ""Monitor"";",1,2,0.25,206
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"String label = ""Pipeline"";",1,2,0.25,207
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (pipeline != null) {,1,1,0.125,208
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",1,1,0.125,209
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Object pipelineValue = attributeMap.get(""pipeline"");",1,1,0.125,210
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (pipelineValue instanceof PipelineDTO) {,1,1,0.125,211
+30ec2c8123f9a4e99aa476580f08f57a626b726a,PipelineDTO pipeline = (PipelineDTO) pipelineValue;,1,1,0.125,212
+30ec2c8123f9a4e99aa476580f08f57a626b726a,final Project project = getSelectedProject(context);,1,1,0.125,213
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.DefaultKubernetesClient;,1,1,0.125,214
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,215
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,216
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,217
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.KubernetesHelper;,1,1,0.125,218
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.KubernetesClient;,1,1,0.125,219
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"protected void updateConfiguration(UIExecutionContext context, ProjectConfig config) {",1,1,0.125,220
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (mavenModel != null) {,1,1,0.125,221
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return gitUrlText;,1,1,0.125,222
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"throw new IllegalArgumentException(""Could not find git URL"");",1,1,0.125,223
+30ec2c8123f9a4e99aa476580f08f57a626b726a,gitUrlText = connection;,1,1,0.125,224
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(connection)) {,1,1,0.125,225
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (scm != null) {,1,1,0.125,226
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Scm scm = mavenModel.getScm();,1,1,0.125,227
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Model mavenModel = getMavenModel(context);,1,1,0.125,228
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.debug(""Ignoring missing git folders: "" + e, e);",1,1,0.125,229
+30ec2c8123f9a4e99aa476580f08f57a626b726a,gitUrlText = GitHelpers.extractGitUrl(configText);,1,1,0.125,230
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (config != null) {,1,1,0.125,231
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (gitFolder != null) {,1,1,0.125,232
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Resource<?> gitFolder = root.getChild("".git"");",1,1,0.125,233
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (root != null) {,1,1,0.125,234
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.ConfigBuilder;,1,1,0.125,235
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import javax.inject.Inject;,1,1,0.125,236
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.Objects;,1,1,0.125,237
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected boolean isProjectRequired() {,1,1,0.125,238
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return getUiProvider().isGUI();,1,1,0.125,239
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return mavenFacet.getModel();,1,1,0.125,240
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public boolean isGUI() {,1,1,0.125,241
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.kubernetes = kubernetes;,1,1,0.125,242
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setKubernetes(KubernetesClient kubernetes) {,1,1,0.125,243
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return kubernetes;,1,1,0.125,244
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(kubernetesAddress)) {,1,1,0.125,245
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (kubernetes == null) {,1,1,0.125,246
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return projectFactory;,1,1,0.125,247
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected ProjectFactory getProjectFactory() {,1,1,0.125,248
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,249
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return false;,1,1,0.125,250
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private ProjectFactory projectFactory;,1,1,0.125,251
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.Strings;,1,1,0.125,252
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.io.PrintStream;,1,1,0.125,253
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Results;,1,1,0.125,254
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,255
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.output.UIOutput;,1,1,0.125,256
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.125,257
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.125,258
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.125,259
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.command.UICommand;,1,1,0.125,260
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.UIProvider;,1,1,0.125,261
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.projects.ui.AbstractProjectCommand;,1,1,0.125,262
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.projects.ProjectFactory;,1,1,0.125,263
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.TablePrinter;,1,1,0.125,264
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNullOrBlank(gitUrlText)) {,1,1,0.125,265
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UISelection<Object> selection = context.getSelection();,1,1,0.125,266
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (mavenFacet != null) {,1,1,0.125,267
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIProvider provider = getUiProvider();,1,1,0.125,268
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (object instanceof Project) {,1,1,0.125,269
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object object = attributeMap.get(Project.class);,1,1,0.125,270
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (attributeMap != null) {,1,1,0.125,271
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Map<Object, Object> attributeMap = context.getAttributeMap();",1,1,0.125,272
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Project project = null;,1,1,0.125,273
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Project getCurrentSelectedProject(UIContext context) {,1,1,0.125,274
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void initializeUI(UIBuilder uiBuilder) throws Exception {,1,1,0.125,275
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.uiProvider = uiProvider;,1,1,0.125,276
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setUiProvider(UIProvider uiProvider) {,1,1,0.125,277
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return uiProvider;,1,1,0.125,278
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public UIProvider getUiProvider() {,1,1,0.125,279
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return provider != null ? provider.getOutput() : null;,1,1,0.125,280
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public UIOutput getOutput() {,1,1,0.125,281
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return project;,1,1,0.125,282
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return getUiProvider().isGUI();,1,1,0.125,283
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public boolean isGUI() {,1,1,0.125,284
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.kubernetes = kubernetes;,1,1,0.125,285
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setKubernetes(KubernetesClient kubernetes) {,1,1,0.125,286
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return controller;,1,1,0.125,287
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return kubernetes;,1,1,0.125,288
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(kubernetesAddress)) {,1,1,0.125,289
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (kubernetes == null) {,1,1,0.125,290
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return projectFactory;,1,1,0.125,291
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected ProjectFactory getProjectFactory() {,1,1,0.125,292
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,293
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIProvider provider = getUiProvider();,1,1,0.125,294
+30ec2c8123f9a4e99aa476580f08f57a626b726a,project = (Project) object;,1,1,0.125,295
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object selectedObject = selection.get();,1,1,0.125,296
+30ec2c8123f9a4e99aa476580f08f57a626b726a,MavenFacet mavenFacet = getMavenFacet(builder);,1,1,0.125,297
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.125,298
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Model getMavenModel(UIContextProvider builder) {,1,1,0.125,299
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return maven;,1,1,0.125,300
+30ec2c8123f9a4e99aa476580f08f57a626b726a,MavenFacet maven = project.getFacet(MavenFacet.class);,1,1,0.125,301
+30ec2c8123f9a4e99aa476580f08f57a626b726a,final Project project = getSelectedProject(builder);,1,1,0.125,302
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public MavenFacet getMavenFacet(UIContextProvider builder) {,1,1,0.125,303
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return System.out;,1,1,0.125,304
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return output.out();,1,1,0.125,305
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (output != null) {,1,1,0.125,306
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIOutput output = getOutput();,1,1,0.125,307
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public PrintStream getOut() {,1,1,0.125,308
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected Result tableResults(TablePrinter table) {,1,1,0.125,309
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return Results.success();,1,1,0.125,310
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (folder != null && Files.isDirectory(folder)) {,1,1,0.125,311
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"project = Projects.getSelectedProject(getProjectFactory(), context);",1,1,0.125,312
+30ec2c8123f9a4e99aa476580f08f57a626b726a,File folder = ResourceUtil.getContextFile((Resource<?>) object);,1,1,0.125,313
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (object instanceof Resource) {,1,1,0.125,314
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Object object = selection.get();,1,1,0.125,315
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (selection != null) {,1,1,0.125,316
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return ResourceUtil.getContextFile(configFileResource);,1,1,0.125,317
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (configFileResource == null) {,1,1,0.125,318
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Resource<?> configFileResource = root.getChild(ProjectConfigs.FILE_NAME);,1,1,0.125,319
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return null;,1,1,0.125,320
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (root == null) {,1,1,0.125,321
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (project != null) {,1,1,0.125,322
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"public static File getProjectConfigFile(UIContext context, Project project) {",1,1,0.125,323
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (project != null && attributeMap != null) {,1,1,0.125,324
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public UIOutput getOutput() {,1,1,0.125,325
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Collections;,1,1,0.125,326
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return provider != null ? provider.getOutput() : null;,1,1,0.125,327
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public UIProvider getUiProvider() {,1,1,0.125,328
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.ServiceList;,1,1,0.125,329
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.Service;,1,1,0.125,330
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.KubernetesHelper;,1,1,0.125,331
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,332
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,333
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,334
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected void executeReplicationController(ReplicationController replicationController) throws Exception {,1,1,0.125,335
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return null;,1,1,0.125,336
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (replicationController == null) {,1,1,0.125,337
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.125,338
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return list;,1,1,0.125,339
+30ec2c8123f9a4e99aa476580f08f57a626b726a,for (ReplicationController item : items) {,1,1,0.125,340
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (items != null) {,1,1,0.125,341
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<ReplicationController> items = replicationControllers.getItems();,1,1,0.125,342
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (replicationControllers != null) {,1,1,0.125,343
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationControllerList replicationControllers = getKubernetes().replicationControllers().inNamespace(getNamespace()).list();,1,1,0.125,344
+30ec2c8123f9a4e99aa476580f08f57a626b726a,replicationControllerId.setCompleter(new UICompleter<String>() {,1,1,0.125,345
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.125,346
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,347
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return Metadata.from(super.getMetadata(context), getClass())",1,1,0.125,348
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.125,349
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.List;,1,1,0.125,350
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Collections;,1,1,0.125,351
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.ArrayList;,1,1,0.125,352
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import javax.inject.Inject;,1,1,0.125,353
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.util.Metadata;,1,1,0.125,354
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.util.Categories;,1,1,0.125,355
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.125,356
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.125,357
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.125,358
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return Metadata.from(super.getMetadata(context), getClass())",1,1,0.125,359
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected void executeService(Service service) throws Exception {,1,1,0.125,360
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return null;,1,1,0.125,361
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (service == null) {,1,1,0.125,362
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.125,363
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return list;,1,1,0.125,364
+30ec2c8123f9a4e99aa476580f08f57a626b726a,for (Service item : items) {,1,1,0.125,365
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (items != null) {,1,1,0.125,366
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<Service> items = services.getItems();,1,1,0.125,367
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (services != null) {,1,1,0.125,368
+30ec2c8123f9a4e99aa476580f08f57a626b726a,serviceId.setCompleter(new UICompleter<String>() {,1,1,0.125,369
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.125,370
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,371
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.125,372
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.InputComponent;,1,1,0.125,373
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import static io.fabric8.kubernetes.api.KubernetesHelper.getName;,1,1,0.125,374
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.List;,1,1,0.125,375
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected boolean isProjectRequired() {,1,1,0.125,376
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.ArrayList;,1,1,0.125,377
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import javax.inject.Inject;,1,1,0.125,378
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.util.Metadata;,1,1,0.125,379
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.util.Categories;,1,1,0.125,380
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,381
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.125,382
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,1,0.125,383
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.125,384
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UICompleter;,1,1,0.125,385
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,386
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.125,387
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,1,0.125,388
+30ec2c8123f9a4e99aa476580f08f57a626b726a,AbstractKubernetesCommand.namespace = namespace;,1,1,0.125,389
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UICompleter;,1,1,0.125,390
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.InputComponent;,1,1,0.125,391
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.125,392
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.125,393
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.125,394
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.KubernetesClient;,1,1,0.125,395
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.PodList;,1,1,0.125,396
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.Pod;,1,1,0.125,397
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.KubernetesHelper;,1,1,0.125,398
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,399
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,400
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,401
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setNamespace(String namespace) {,1,1,0.125,402
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.125,403
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return namespace;,1,1,0.125,404
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return System.out;,1,1,0.125,405
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return output.out();,1,1,0.125,406
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (output != null) {,1,1,0.125,407
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIOutput output = getOutput();,1,1,0.125,408
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public PrintStream getOut() {,1,1,0.125,409
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return Results.success();,1,1,0.125,410
+30ec2c8123f9a4e99aa476580f08f57a626b726a,protected Result tableResults(TablePrinter table) {,1,1,0.125,411
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void initializeUI(UIBuilder uiBuilder) throws Exception {,1,1,0.125,412
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.uiProvider = uiProvider;,1,1,0.125,413
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setUiProvider(UIProvider uiProvider) {,1,1,0.125,414
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return uiProvider;,1,1,0.125,415
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.125,416
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,417
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.125,418
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return null;,1,1,0.125,419
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UICompleter;,1,1,0.125,420
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.InputComponent;,1,1,0.125,421
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.125,422
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.125,423
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.125,424
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.ReplicationControllerList;,1,1,0.125,425
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.ReplicationController;,1,1,0.125,426
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.KubernetesHelper;,1,1,0.125,427
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,428
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,429
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,430
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"protected abstract void executePod(Pod pod, String podId) throws Exception;",1,1,0.125,431
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (podInfo == null) {,1,1,0.125,432
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import javax.inject.Inject;,1,1,0.125,433
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.125,434
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return list;,1,1,0.125,435
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,436
+30ec2c8123f9a4e99aa476580f08f57a626b726a,for (Pod item : items) {,1,1,0.125,437
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (items != null) {,1,1,0.125,438
+30ec2c8123f9a4e99aa476580f08f57a626b726a,List<Pod> items = pods.getItems();,1,1,0.125,439
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (pods != null) {,1,1,0.125,440
+30ec2c8123f9a4e99aa476580f08f57a626b726a,podId.setCompleter(new UICompleter<String>() {,1,1,0.125,441
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.125,442
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.List;,1,1,0.125,443
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Collections;,1,1,0.125,444
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.ArrayList;,1,1,0.125,445
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return false;,1,1,0.125,446
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import javax.inject.Inject;,1,1,0.125,447
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private ProjectFactory projectFactory;,1,1,0.125,448
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.workflow.build.simulator.BuildSimulator;,1,1,0.125,449
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private BuildWatcher watcher;,1,1,0.125,450
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private final KieSession ksession;,1,1,0.125,451
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* signals new processes to start.,1,1,0.125,452
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* the OpenShift build watcher and then signals the correlated jBPM process instances or,1,1,0.125,453
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* A service which listens to {@link io.fabric8.kubernetes.api.builds.BuildFinishedEvent} events from,1,1,0.125,454
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Timer;,1,1,0.125,455
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.kie.api.runtime.KieSession;,1,1,0.125,456
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.client.OpenShiftClient;,1,1,0.125,457
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.client.DefaultOpenShiftClient;,1,1,0.125,458
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.KubernetesClient;,1,1,0.125,459
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.builds.Links;,1,1,0.125,460
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.builds.BuildWatcher;,1,1,0.125,461
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.workflow.build.correlate.BuildProcessCorrelators;,1,1,0.125,462
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public BuildSignallerService(KieSession ksession) {,1,1,0.125,463
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.workflow.build.correlate.BuildProcessCorrelator;,1,1,0.125,464
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,465
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,466
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,467
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(chatRoomLink)) {,1,1,0.125,468
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(taigaTeamLink)) {,1,1,0.125,469
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(taigaLink)) {,1,1,0.125,470
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"jenkinsUrl = KubernetesHelper.getServiceURL(kubernetes, ServiceNames.JENKINS, KubernetesHelper.defaultNamespace(), ""http"", true);",1,1,0.125,471
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,472
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(username)) {,1,1,0.125,473
+30ec2c8123f9a4e99aa476580f08f57a626b726a,name = repoName;,1,1,0.125,474
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.*;,1,1,0.125,475
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private BuildSimulator simulator;,1,1,0.125,476
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,477
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.client.OpenShiftClient;,1,1,0.125,478
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public OpenShiftClient getClient() {,1,1,0.125,479
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,480
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,481
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.consoleLink = consoleLink;,1,1,0.125,482
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setConsoleLink(String consoleLink) {,1,1,0.125,483
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return consoleLink;,1,1,0.125,484
+30ec2c8123f9a4e99aa476580f08f57a626b726a,consoleLink = Links.getFabric8ConsoleLink();,1,1,0.125,485
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (consoleLink == null) {,1,1,0.125,486
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.timer = timer;,1,1,0.125,487
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setTimer(Timer timer) {,1,1,0.125,488
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return timer;,1,1,0.125,489
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public Timer getTimer() {,1,1,0.125,490
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setClient(OpenShiftClient client) {,1,1,0.125,491
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.buildProcessCorrelator = buildProcessCorrelator;,1,1,0.125,492
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.ksession = ksession;,1,1,0.125,493
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setBuildProcessCorrelator(BuildProcessCorrelator buildProcessCorrelator) {,1,1,0.125,494
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return buildProcessCorrelator;,1,1,0.125,495
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public BuildProcessCorrelator getBuildProcessCorrelator() {,1,1,0.125,496
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (watcher != null) {,1,1,0.125,497
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void join() {,1,1,0.125,498
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void stop() {,1,1,0.125,499
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"simulator.schedule(timer, pollTime, buildListener, consoleLink);",1,1,0.125,500
+30ec2c8123f9a4e99aa476580f08f57a626b726a,simulator = BuildSimulator.getSingleton();,1,1,0.125,501
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (BuildSimulator.isEnabled()) {,1,1,0.125,502
+30ec2c8123f9a4e99aa476580f08f57a626b726a,long pollTime = 3000;,1,1,0.125,503
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void start() {,1,1,0.125,504
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.namespace = namespace;,1,1,0.125,505
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.api.model.*;,1,1,0.125,506
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.EnvVar;,1,1,0.125,507
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.KubernetesHelper;,1,1,0.125,508
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"if (!annotationLink(annotations, ""fabric8.link.issues/"", issueTrackerUrl, issueTrackerLabel)) {",0,1,0.125,509
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (kubernetes == null) {,0,1,0.125,510
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return false;,0,1,0.125,511
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return true;,0,1,0.125,512
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(annotationPrefix + ""label"", issueTrackerLabel);",0,1,0.125,513
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* An abstract base class for DevOps related commands,1,1,0.125,514
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (Strings.isNotBlank(issueTrackerUrl)) {,0,1,0.125,515
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return null;,0,1,0.125,516
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (namespaceList.contains(defaultNamespace)) {,0,1,0.125,517
+30ec2c8123f9a4e99aa476580f08f57a626b726a,for (String defaultNamespace : defaults) {,0,1,0.125,518
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return getServiceUrl(serviceName, true, namespaces);",0,1,0.125,519
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},0,1,0.125,520
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"if (!annotationLink(annotations, ""fabric8.link.team/"", teamUrl, teamLabel)) {",0,1,0.125,521
+30ec2c8123f9a4e99aa476580f08f57a626b726a,jenkinsUrl = getJenkinsServiceUrl();,0,1,0.125,522
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return fabric8ConsoleNamespace;,0,1,0.125,523
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"name = ProjectRepositories.createBuildName(username, repoName);",0,1,0.125,524
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Set;,0,1,0.125,525
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Map;,0,1,0.125,526
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.List;,0,1,0.125,527
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.HashMap;,0,1,0.125,528
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Arrays;,0,1,0.125,529
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.ArrayList;,0,1,0.125,530
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.Systems;,0,1,0.125,531
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.api.model.BuildConfigFluent;,0,1,0.125,532
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.api.model.BuildConfigBuilder;,0,1,0.125,533
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.api.model.BuildConfig;,0,1,0.125,534
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.devops.ProjectRepositories;,0,1,0.125,535
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return kubernetes;,0,1,0.125,536
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setFabric8ConsoleNamespace(String fabric8ConsoleNamespace) {,0,1,0.125,537
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.repositoryBrowseLink = repositoryBrowseLink;,0,1,0.125,538
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setTeamLabel(String teamLabel) {,0,1,0.125,539
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setRepositoryBrowseLink(String repositoryBrowseLink) {,0,1,0.125,540
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return repositoryBrowseLink;,0,1,0.125,541
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.repositoryBrowseLabel = repositoryBrowseLabel;,0,1,0.125,542
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setRepositoryBrowseLabel(String repositoryBrowseLabel) {,0,1,0.125,543
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return repositoryBrowseLabel;,0,1,0.125,544
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.releasesLabel = releasesLabel;,0,1,0.125,545
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setReleasesLabel(String releasesLabel) {,0,1,0.125,546
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return releasesLabel;,0,1,0.125,547
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.releasesUrl = releasesUrl;,0,1,0.125,548
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setReleasesUrl(String releasesUrl) {,0,1,0.125,549
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return releasesUrl;,0,1,0.125,550
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.teamLabel = teamLabel;,0,1,0.125,551
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return teamLabel;,0,1,0.125,552
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.fabric8ConsoleNamespace = fabric8ConsoleNamespace;,0,1,0.125,553
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.teamUrl = teamUrl;,0,1,0.125,554
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setTeamUrl(String teamUrl) {,0,1,0.125,555
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return teamUrl;,0,1,0.125,556
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.issueTrackerUrl = issueTrackerUrl;,0,1,0.125,557
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setIssueTrackerUrl(String issueTrackerUrl) {,0,1,0.125,558
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return issueTrackerUrl;,0,1,0.125,559
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.issueTrackerLabel = issueTrackerLabel;,0,1,0.125,560
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setIssueTrackerLabel(String issueTrackerLabel) {,0,1,0.125,561
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return issueTrackerLabel;,0,1,0.125,562
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.jenkinsNamespace = jenkinsNamespace;,0,1,0.125,563
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setJenkinsNamespace(String jenkinsNamespace) {,0,1,0.125,564
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return jenkinsNamespace;,0,1,0.125,565
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,566
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(annotationPrefix + ""url"", issueTrackerUrl);",0,1,0.125,567
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.builds.Builds;,1,1,0.125,568
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,569
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.Files;,1,1,0.125,570
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.KubernetesClient;,1,1,0.125,571
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.DefaultKubernetesClient;,1,1,0.125,572
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.ConfigBuilder;,1,1,0.125,573
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.Controller;,1,1,0.125,574
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.forge.devops.dto.PipelineDTO;,1,1,0.125,575
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.devops.ProjectConfigs;,1,1,0.125,576
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.devops.ProjectConfig;,1,1,0.125,577
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.125,578
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  with the License.  You may obtain a copy of the License at,1,1,0.125,579
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.125,580
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (!isAllowCreate()) {,1,1,0.125,581
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (deletePodsOnReplicationControllerUpdate) {,1,1,0.125,582
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.Objects;,1,1,0.125,583
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"logGeneratedEntity(""Updated replicationController: "", namespace, replicationController, answer);",1,1,0.125,584
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"doCreateReplicationController(replicationController, namespace, sourceName);",1,1,0.125,585
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting ReplicationController: "" + id);",1,1,0.125,586
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRecreateMode()) {,1,1,0.125,587
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"if (UserConfigurationCompare.configEqual(replicationController, old)) {",1,1,0.125,588
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRunning(old)) {,1,1,0.125,589
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (rollingUpgrade) {,1,1,0.125,590
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.SecurityContextConstraints;,1,1,0.125,591
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.PersistentVolumeClaimList;,1,1,0.125,592
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.KubernetesResourceList;,1,1,0.125,593
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.DoneablePersistentVolumeClaim;,1,1,0.125,594
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.api.model.Doneable;,1,1,0.125,595
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.GitHelpers;,1,1,0.125,596
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.Strings;,1,1,0.125,597
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setRollingUpgradePreserveScale(boolean rollingUpgradePreserveScale) {,0,1,0.125,598
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIContextProvider;,1,1,0.125,599
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.DefaultKubernetesClient;,1,1,0.125,600
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.Map;,1,1,0.125,601
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.io.PrintStream;,1,1,0.125,602
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.io.File;,1,1,0.125,603
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.slf4j.LoggerFactory;,1,1,0.125,604
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.slf4j.Logger;,1,1,0.125,605
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Results;,1,1,0.125,606
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,607
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.output.UIOutput;,1,1,0.125,608
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.125,609
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.125,610
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.125,611
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.125,612
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.utils.TablePrinter;,1,1,0.125,613
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.125,614
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.command.UICommand;,1,1,0.125,615
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.UIProvider;,1,1,0.125,616
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.resource.util.ResourceUtil;,1,1,0.125,617
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.resource.Resource;,1,1,0.125,618
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.projects.ui.AbstractProjectCommand;,1,1,0.125,619
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.projects.Projects;,1,1,0.125,620
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.projects.ProjectFactory;,1,1,0.125,621
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.projects.Project;,1,1,0.125,622
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.maven.projects.MavenFacet;,1,1,0.125,623
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.apache.maven.model.Scm;,1,1,0.125,624
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.apache.maven.model.Model;,1,1,0.125,625
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.rollingUpgradePreserveScale = rollingUpgradePreserveScale;,0,1,0.125,626
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import org.jboss.forge.addon.ui.context.UISelection;,1,1,0.125,627
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return rollingUpgradePreserveScale;,0,1,0.125,628
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (action == Action.ADDED && KubernetesHelper.getName(build).equals(buildName)) {,1,1,0.125,629
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (deletePodsOnReplicationControllerUpdate) {,0,1,0.125,630
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"logGeneratedEntity(""Updated replicationController: "", namespace, replicationController, answer);",0,1,0.125,631
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"doCreateReplicationController(replicationController, namespace, sourceName);",0,1,0.125,632
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting ReplicationController: "" + id);",0,1,0.125,633
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRecreateMode()) {,0,1,0.125,634
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"if (UserConfigurationCompare.configEqual(replicationController, old)) {",0,1,0.125,635
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRunning(old)) {,0,1,0.125,636
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (rollingUpgrade) {,0,1,0.125,637
+30ec2c8123f9a4e99aa476580f08f57a626b726a,private boolean rollingUpgrade;,0,1,0.125,638
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"return uuid.poll(60, TimeUnit.SECONDS);",1,1,0.125,639
+30ec2c8123f9a4e99aa476580f08f57a626b726a,})) {,1,1,0.125,640
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void onClose(KubernetesClientException e) {,1,1,0.125,641
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.kubernetes = kubernetes;,1,1,0.125,642
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (!isAllowCreate()) {,0,1,0.125,643
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public DefaultBuildTrigger(KubernetesClient kubernetes) {,1,1,0.125,644
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,645
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public DefaultBuildTrigger() {,1,1,0.125,646
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.concurrent.TimeUnit;,1,1,0.125,647
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.concurrent.BlockingQueue;,1,1,0.125,648
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import java.util.concurrent.ArrayBlockingQueue;,1,1,0.125,649
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.api.model.Build;,1,1,0.125,650
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.Watcher;,1,1,0.125,651
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.Watch;,1,1,0.125,652
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.KubernetesClientException;,1,1,0.125,653
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public boolean isRollingUpgradePreserveScale() {,0,1,0.125,654
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.kubernetes.client.KubernetesClient;,1,1,0.125,655
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},0,1,0.125,656
+30ec2c8123f9a4e99aa476580f08f57a626b726a,import io.fabric8.openshift.client.OpenShiftClient;,1,1,0.125,657
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public boolean isRollingUpgrade() {,0,1,0.125,658
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationControllerSpec newSpec = replicationController.getSpec();,0,1,0.125,659
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (deletePodsOnReplicationControllerUpdate) {,0,1,0.125,660
+30ec2c8123f9a4e99aa476580f08f57a626b726a,return rollingUpgrade;,0,1,0.125,661
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (!isAllowCreate()) {,0,1,0.125,662
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"logGeneratedEntity(""Updated replicationController: "", namespace, replicationController, answer);",0,1,0.125,663
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"doCreateReplicationController(replicationController, namespace, sourceName);",0,1,0.125,664
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},0,1,0.125,665
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (replicas != null) {,0,1,0.125,666
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Integer replicas = oldSpec.getReplicas();,0,1,0.125,667
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (rollingUpgradePreserveScale && newSpec != null && oldSpec != null) {,0,1,0.125,668
+30ec2c8123f9a4e99aa476580f08f57a626b726a,// lets preserve the number of replicas currently running in the environment we are about to upgrade,0,1,0.125,669
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (rollingUpgrade) {,0,1,0.125,670
+30ec2c8123f9a4e99aa476580f08f57a626b726a,ReplicationControllerSpec oldSpec = old.getSpec();,0,1,0.125,671
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting ReplicationController: "" + id);",0,1,0.125,672
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"if (UserConfigurationCompare.configEqual(replicationController, old)) {",0,1,0.125,673
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""Deleting ReplicationController: "" + id);",1,1,0.125,674
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRunning(old)) {,1,1,0.125,675
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRunning(old)) {,0,1,0.125,676
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"if (UserConfigurationCompare.configEqual(replicationController, old)) {",1,1,0.125,677
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this.rollingUpgrade = rollingUpgrade;,0,1,0.125,678
+30ec2c8123f9a4e99aa476580f08f57a626b726a,public void setRollingUpgrade(boolean rollingUpgrade) {,0,1,0.125,679
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (isRecreateMode()) {,1,1,0.125,680
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"doCreateReplicationController(replicationController, namespace, sourceName);",1,1,0.125,681
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"logGeneratedEntity(""Updated replicationController: "", namespace, replicationController, answer);",1,1,0.125,682
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (deletePodsOnReplicationControllerUpdate) {,1,1,0.125,683
+30ec2c8123f9a4e99aa476580f08f57a626b726a,},1,1,0.125,684
+30ec2c8123f9a4e99aa476580f08f57a626b726a,if (!isAllowCreate()) {,1,1,0.125,685
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Objects.notNull(kubernetes, ""kubernetes"");",1,0,0.0,686
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* Prints the given table and returns success,1,0,0.0,687
+30ec2c8123f9a4e99aa476580f08f57a626b726a,table.print(getOut());,1,0,0.0,688
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,689
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,690
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,691
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Override,1,0,0.0,692
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,693
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,694
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,695
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,696
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,697
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,698
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,699
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.forge.kubernetes;,1,0,0.0,700
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Inject,1,0,0.0,701
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIInput<String> podId;,1,0,0.0,702
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Override,1,0,0.0,703
+30ec2c8123f9a4e99aa476580f08f57a626b726a,super.initializeUI(builder);,1,0,0.0,704
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIProvider uiProvider;,1,0,0.0,705
+30ec2c8123f9a4e99aa476580f08f57a626b726a,// populate autocompletion options,1,0,0.0,706
+30ec2c8123f9a4e99aa476580f08f57a626b726a,list.add(id);,1,0,0.0,707
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIInput<String> kubernetesUrl;,1,0,0.0,708
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,709
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/*,1,0,0.0,710
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Inject,1,0,0.0,711
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIProvider uiProvider;,1,0,0.0,712
+30ec2c8123f9a4e99aa476580f08f57a626b726a,});,1,0,0.0,713
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIInput<String> kubernetesUrl;,1,0,0.0,714
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Override,1,0,0.0,715
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"Objects.notNull(kubernetes, ""kubernetes"");",1,0,0.0,716
+30ec2c8123f9a4e99aa476580f08f57a626b726a,controller.setThrowExceptionOnError(true);,1,0,0.0,717
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"attributeMap.put(Project.class, project);",1,0,0.0,718
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* Prints the given table and returns success,1,0,0.0,719
+30ec2c8123f9a4e99aa476580f08f57a626b726a,table.print(getOut());,1,0,0.0,720
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"ProjectConfigs.configureProperties(config, attributeMap);",1,0,0.0,721
+30ec2c8123f9a4e99aa476580f08f57a626b726a,config.setPipeline(pipeline.getValue());,1,0,0.0,722
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,723
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,724
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,725
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,726
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,727
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,728
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,729
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,730
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,731
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.forge.kubernetes;,1,0,0.0,732
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Collections.sort(list);,1,0,0.0,733
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,734
+30ec2c8123f9a4e99aa476580f08f57a626b726a,builder.add(podId);,1,0,0.0,735
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"executePod(podInfo, podIdText);",1,0,0.0,736
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,737
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,738
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,739
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,740
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,741
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,742
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,743
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,744
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.forge.kubernetes;,1,0,0.0,745
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Inject,1,0,0.0,746
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIInput<String> serviceId;,1,0,0.0,747
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Override,1,0,0.0,748
+30ec2c8123f9a4e99aa476580f08f57a626b726a,.category(Categories.create(CATEGORY)),1,0,0.0,749
+30ec2c8123f9a4e99aa476580f08f57a626b726a,super.initializeUI(builder);,1,0,0.0,750
+30ec2c8123f9a4e99aa476580f08f57a626b726a,// populate autocompletion options,1,0,0.0,751
+30ec2c8123f9a4e99aa476580f08f57a626b726a,list.add(id);,1,0,0.0,752
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Collections.sort(list);,1,0,0.0,753
+30ec2c8123f9a4e99aa476580f08f57a626b726a,});,1,0,0.0,754
+30ec2c8123f9a4e99aa476580f08f57a626b726a,builder.add(serviceId);,1,0,0.0,755
+30ec2c8123f9a4e99aa476580f08f57a626b726a,executeService(service);,1,0,0.0,756
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Inject,1,0,0.0,757
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,758
+30ec2c8123f9a4e99aa476580f08f57a626b726a,getKubernetes().replicationControllers().inNamespace(getNamespace()).withName(KubernetesHelper.getName(replicationController)).delete();,1,0,0.0,759
+30ec2c8123f9a4e99aa476580f08f57a626b726a,executeReplicationController(replicationController);,1,0,0.0,760
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,761
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,762
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,763
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,764
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,765
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,766
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,767
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,768
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,769
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,770
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.forge.kubernetes;,1,0,0.0,771
+30ec2c8123f9a4e99aa476580f08f57a626b726a,builder.add(replicationControllerId);,1,0,0.0,772
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Inject,1,0,0.0,773
+30ec2c8123f9a4e99aa476580f08f57a626b726a,UIInput<String> replicationControllerId;,1,0,0.0,774
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Override,1,0,0.0,775
+30ec2c8123f9a4e99aa476580f08f57a626b726a,.category(Categories.create(CATEGORY)),1,0,0.0,776
+30ec2c8123f9a4e99aa476580f08f57a626b726a,super.initializeUI(builder);,1,0,0.0,777
+30ec2c8123f9a4e99aa476580f08f57a626b726a,// populate autocompletion options,1,0,0.0,778
+30ec2c8123f9a4e99aa476580f08f57a626b726a,list.add(id);,1,0,0.0,779
+30ec2c8123f9a4e99aa476580f08f57a626b726a,Collections.sort(list);,1,0,0.0,780
+30ec2c8123f9a4e99aa476580f08f57a626b726a,});,1,0,0.0,781
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/*,1,0,0.0,782
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,783
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.forge.devops;,1,0,0.0,784
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* {@link BuildSignaller} using the,1,0,0.0,785
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.taiga/label"", taigaProjectLinkLabel);",1,0,0.0,786
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"addLink(taigaProjectLinkLabel, taigaLink);",1,0,0.0,787
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.taiga.team/url"", taigaTeamLink);",1,0,0.0,788
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.taiga.team/label"", taigaTeamLinkLabel);",1,0,0.0,789
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"addLink(taigaTeamLinkLabel, taigaTeamLink);",1,0,0.0,790
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.letschat.room/url"", chatRoomLink);",1,0,0.0,791
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.letschat.room/label"", letschatRoomLinkLabel);",1,0,0.0,792
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"addLink(letschatRoomLinkLabel, chatRoomLink);",1,0,0.0,793
+30ec2c8123f9a4e99aa476580f08f57a626b726a,endStrategy();,1,0,0.0,794
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.pods().inNamespace(namespace).withLabels(replicationController.getSpec().getSelector()).delete();,0,0,0.0,795
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(KubernetesHelper.getName(replicationController)).delete();,1,0,0.0,796
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,797
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,798
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,799
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,800
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,801
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,802
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,803
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,804
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,805
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.workflow.build.signal;,1,0,0.0,806
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.taiga/url"", taigaLink);",1,0,0.0,807
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"addLink(label, jenkinsJobUrl);",1,0,0.0,808
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.jenkins.job/label"", label);",1,0,0.0,809
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,0,0,0.0,810
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.jenkins.monitor/"", url, ""Monitor"");",0,0,0.0,811
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.jenkins.pipeline/"", url, ""Pipeline"");",0,0,0.0,812
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.jenkins.job/"", jenkinsJobUrl, ""Job"");",0,0,0.0,813
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.taiga/"", taigaLink, taigaProjectLinkLabel);",0,0,0.0,814
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.taiga.team/"", taigaTeamLink, taigaTeamLinkLabel);",0,0,0.0,815
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.releases/"", releasesUrl, releasesLabel);",0,0,0.0,816
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.letschat.room/"", chatRoomLink, letschatRoomLinkLabel);",0,0,0.0,817
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotationLink(annotations, ""fabric8.link.repository.browse/"", repositoryBrowseLink, repositoryBrowseLabel);",0,0,0.0,818
+30ec2c8123f9a4e99aa476580f08f57a626b726a,endStrategy();,0,0,0.0,819
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,0,0,0.0,820
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.jenkins.job/url"", jenkinsJobUrl);",1,0,0.0,821
+30ec2c8123f9a4e99aa476580f08f57a626b726a,namespaceList.add(defaultNamespace);,0,0,0.0,822
+30ec2c8123f9a4e99aa476580f08f57a626b726a,// ignore,0,0,0.0,823
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"addLink(issueTrackerLabel, issueTrackerUrl);",0,0,0.0,824
+30ec2c8123f9a4e99aa476580f08f57a626b726a,controller.setNamespace(namespace);,0,0,0.0,825
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.jenkins.monitor/url"", url);",1,0,0.0,826
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.jenkins.monitor/label"", label);",1,0,0.0,827
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"addLink(label, url);",1,0,0.0,828
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.jenkins.pipeline/url"", url);",1,0,0.0,829
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"annotations.put(""fabric8.link.jenkins.pipeline/label"", label);",1,0,0.0,830
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* <p/>,1,0,0.0,831
+30ec2c8123f9a4e99aa476580f08f57a626b726a,* {@link io.fabric8.kubernetes.api.builds.BuildWatcher} helper class.,1,0,0.0,832
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,833
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"this(ksession, null);",1,0,0.0,834
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""ReplicationController hasn't changed so not doing anything"");",1,0,0.0,835
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).delete();,1,0,0.0,836
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.pods().inNamespace(namespace).withLabels(replicationController.getSpec().getSelector()).delete();,1,0,0.0,837
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""ReplicationController hasn't changed so not doing anything"");",0,0,0.0,838
+30ec2c8123f9a4e99aa476580f08f57a626b726a,newSpec.setReplicas(replicas);,0,0,0.0,839
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).rolling().replace(replicationController);,0,0,0.0,840
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).delete();,0,0,0.0,841
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.pods().inNamespace(namespace).withLabels(newSpec.getSelector()).delete();,0,0,0.0,842
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).rolling().replace(replicationController);,1,0,0.0,843
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""ReplicationController hasn't changed so not doing anything"");",1,0,0.0,844
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).delete();,1,0,0.0,845
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.pods().inNamespace(namespace).withLabels(replicationController.getSpec().getSelector()).delete();,1,0,0.0,846
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,847
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,848
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,849
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,850
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,851
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,852
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,853
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,854
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,855
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.pods().inNamespace(namespace).withLabels(replicationController.getSpec().getSelector()).delete();,0,0,0.0,856
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).delete();,0,0,0.0,857
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"LOG.info(""ReplicationController hasn't changed so not doing anything"");",0,0,0.0,858
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,859
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"watcher.schedule(timer, pollTime);",1,0,0.0,860
+30ec2c8123f9a4e99aa476580f08f57a626b726a,timer.cancel();,1,0,0.0,861
+30ec2c8123f9a4e99aa476580f08f57a626b726a,watcher.join();,1,0,0.0,862
+30ec2c8123f9a4e99aa476580f08f57a626b726a,simulator.join();,1,0,0.0,863
+30ec2c8123f9a4e99aa476580f08f57a626b726a,/**,1,0,0.0,864
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,865
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*,1,0,0.0,866
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,867
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,868
+30ec2c8123f9a4e99aa476580f08f57a626b726a,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,869
+30ec2c8123f9a4e99aa476580f08f57a626b726a,kubernetesClient.replicationControllers().inNamespace(namespace).withName(id).rolling().replace(replicationController);,0,0,0.0,870
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  implied.  See the License for the specific language governing,1,0,0.0,871
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*  permissions and limitations under the License.,1,0,0.0,872
+30ec2c8123f9a4e99aa476580f08f57a626b726a,*/,1,0,0.0,873
+30ec2c8123f9a4e99aa476580f08f57a626b726a,package io.fabric8.workflow.build.trigger;,1,0,0.0,874
+30ec2c8123f9a4e99aa476580f08f57a626b726a,this(new DefaultKubernetesClient());,1,0,0.0,875
+30ec2c8123f9a4e99aa476580f08f57a626b726a,@Override,1,0,0.0,876
+30ec2c8123f9a4e99aa476580f08f57a626b726a,uuid.add(Builds.getUid(build));,1,0,0.0,877
+30ec2c8123f9a4e99aa476580f08f57a626b726a,// ignore,1,0,0.0,878
+30ec2c8123f9a4e99aa476580f08f57a626b726a,throw KubernetesClientException.launderThrowable(e);,1,0,0.0,879
+30ec2c8123f9a4e99aa476580f08f57a626b726a,getKubernetes().services().inNamespace(getNamespace()).withName(KubernetesHelper.getName(service)).delete();,1,0,0.0,880

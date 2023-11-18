@@ -1,0 +1,47 @@
+commit_id,line,line_level_label,count,line_score,row
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* Sets whether or not entries should be sent individually or whether the entire feed should be sent as a single,0,9,1.0,1
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* Sets the timestamp to be used for filtering entries from the atom feeds. This options is only in conjunction with,0,9,1.0,2
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* Sets whether or not entries should be sent individually or whether the entire,1,8,0.8888888888888888,3
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* Sets the timestamp to be used for filtering entries from the atom feeds.,1,8,0.8888888888888888,4
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriParam(description = ""Sets the timestamp to be used for filtering entries from the """,0,7,0.7777777777777777,5
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriParam(description = ""Sets the timestamp to be used for filtering entries from the """,1,7,0.7777777777777777,6
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @param  entry the entry as the in body,0,6,0.6666666666666666,7
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriPath(description = ""The URI to the feed to poll."") @Metadata(required = true)",1,6,0.6666666666666666,8
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @param entry  the entry as the in body,1,6,0.6666666666666666,9
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriParam(defaultValue = ""true"", description = ""Sets whether all entries identified in a """,1,5,0.5555555555555556,10
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriParam(defaultValue = ""true"", description = ""Sets whether or not entries should be sent """,1,5,0.5555555555555556,11
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriParam(defaultValue = ""true"", description = ""Sets whether all entries identified in a """,0,5,0.5555555555555556,12
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriParam(defaultValue = ""true"", description = ""Sets whether or not entries should be sent """,0,5,0.5555555555555556,13
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"@UriPath(description = ""The URI to the feed to poll."")",0,5,0.5555555555555556,14
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""individually or whether the entire feed should be sent as a single message"")",0,4,0.4444444444444444,15
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @param  feed the atom feed,0,4,0.4444444444444444,16
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @param  feed  the feed,0,4,0.4444444444444444,17
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""individually or whether the entire feed should be sent as a single message"")",1,4,0.4444444444444444,18
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"protected abstract FeedPollingConsumer createEntryPollingConsumer(FeedEndpoint feedEndpoint, Processor processor, boolean filter, Date lastUpdate, boolean throttleEntries) throws Exception;",1,4,0.4444444444444444,19
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @param feed   the atom feed,1,4,0.4444444444444444,20
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @param feed   the feed,1,4,0.4444444444444444,21
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* This options is only in conjunction with the splitEntries.,1,3,0.3333333333333333,22
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""per delay. Only applicable when splitEntries = true."")",1,3,0.3333333333333333,23
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"FeedEndpoint feedEndpoint, Processor processor, boolean filter, Date lastUpdate, boolean throttleEntries)",0,3,0.3333333333333333,24
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""per delay. Only applicable when splitEntries = true."")",0,3,0.3333333333333333,25
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""atom feeds. This options is only in conjunction with the splitEntries."")",0,2,0.2222222222222222,26
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""single feed poll should be delivered immediately. If true, only one entry is processed """,0,2,0.2222222222222222,27
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @return      the created exchange,0,2,0.2222222222222222,28
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @return       the created exchange,0,2,0.2222222222222222,29
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* the splitEntries.,0,2,0.2222222222222222,30
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""atom feeds. This options is only in conjunction with the splitEntries."")",1,2,0.2222222222222222,31
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"+ ""single feed poll should be delivered immediately. If true, only one entry is processed """,1,2,0.2222222222222222,32
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* @return the created exchange,1,2,0.2222222222222222,33
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* feed should be sent as a single message,1,2,0.2222222222222222,34
+75afc7c150cdef080078d9b9f41d9372c2785b0e,},0,1,0.1111111111111111,35
+75afc7c150cdef080078d9b9f41d9372c2785b0e,},1,1,0.1111111111111111,36
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"protected abstract FeedPollingConsumer createPollingConsumer(FeedEndpoint feedEndpoint, Processor processor) throws Exception;",1,1,0.1111111111111111,37
+75afc7c150cdef080078d9b9f41d9372c2785b0e,* message,0,1,0.1111111111111111,38
+75afc7c150cdef080078d9b9f41d9372c2785b0e,import org.apache.camel.support.jndi.JndiContext;,0,1,0.1111111111111111,39
+75afc7c150cdef080078d9b9f41d9372c2785b0e,protected abstract FeedPollingConsumer createEntryPollingConsumer(,0,1,0.1111111111111111,40
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"protected abstract FeedPollingConsumer createPollingConsumer(FeedEndpoint feedEndpoint, Processor processor)",0,1,0.1111111111111111,41
+75afc7c150cdef080078d9b9f41d9372c2785b0e,@Metadata(required = true),0,1,0.1111111111111111,42
+75afc7c150cdef080078d9b9f41d9372c2785b0e,import org.apache.camel.util.jndi.JndiContext;,1,1,0.1111111111111111,43
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"mock.expectsAscending(ExpressionBuilder.beanExpression(""myBean?method=getPubDate""));",0,0,0.0,44
+75afc7c150cdef080078d9b9f41d9372c2785b0e,"mock.expectsAscending(ExpressionBuilder.beanExpression(""myBean"", ""getPubDate""));",1,0,0.0,45
+75afc7c150cdef080078d9b9f41d9372c2785b0e,throws Exception;,0,0,0.0,46

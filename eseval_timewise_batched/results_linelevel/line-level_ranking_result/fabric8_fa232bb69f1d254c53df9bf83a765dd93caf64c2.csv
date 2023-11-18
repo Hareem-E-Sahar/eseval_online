@@ -1,0 +1,26 @@
+commit_id,line,line_level_label,count,line_score,row
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,"String service = ""http://localhost:"" + spec.getPort() + ""/"" + getId(service1);",0,6,1.0,1
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,"String service = ""http://localhost:"" + schema.getPort() + ""/"" + schema.getId();",1,6,1.0,2
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,String contextPath = getId(service1);,0,2,0.3333333333333333,3
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,for (ServiceSchema schema : serviceListSchema.getItems()) {,1,2,0.3333333333333333,4
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,String contextPath = schema.getId();,1,2,0.3333333333333333,5
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,for (Service service1 : serviceList.getItems()) {,0,1,0.16666666666666666,6
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,if (selectorMatch(schema.getSelector())) {,1,1,0.16666666666666666,7
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,ServiceListSchema serviceListSchema = client.getServices();,1,1,0.16666666666666666,8
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,import io.fabric8.kubernetes.api.model.ServiceSchema;,1,1,0.16666666666666666,9
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,import io.fabric8.kubernetes.api.model.ServiceListSchema;,1,1,0.16666666666666666,10
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,if (spec != null && selectorMatch(spec.getSelector())) {,0,1,0.16666666666666666,11
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,ServiceSpec spec = service1.getSpec();,0,1,0.16666666666666666,12
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,ServiceList serviceList = client.getServices();,0,1,0.16666666666666666,13
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,* @param selector,0,1,0.16666666666666666,14
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,import io.fabric8.kubernetes.api.model.ServiceSpec;,0,1,0.16666666666666666,15
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,import io.fabric8.kubernetes.api.model.Service;,0,1,0.16666666666666666,16
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,import io.fabric8.kubernetes.api.model.ServiceList;,0,1,0.16666666666666666,17
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,import static io.fabric8.kubernetes.api.KubernetesHelper.getId;,0,1,0.16666666666666666,18
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,dto.setId(getId(service1));,0,0,0.0,19
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,"dto.setContainer(spec.getSelector().get(""container""));",0,0,0.0,20
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,"dto.setVersion(spec.getSelector().get(""version""));",0,0,0.0,21
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,* @param serviceSelector,1,0,0.0,22
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,dto.setId(schema.getId());,1,0,0.0,23
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,"dto.setContainer(schema.getSelector().get(""container""));",1,0,0.0,24
+fa232bb69f1d254c53df9bf83a765dd93caf64c2,"dto.setVersion(schema.getSelector().get(""version""));",1,0,0.0,25

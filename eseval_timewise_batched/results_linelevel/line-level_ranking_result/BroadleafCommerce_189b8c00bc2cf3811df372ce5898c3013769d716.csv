@@ -1,0 +1,27 @@
+commit_id,line,line_level_label,count,line_score,row
+189b8c00bc2cf3811df372ce5898c3013769d716,public Entity add(PersistencePackageRequest request) throws ServiceException;,0,2,1.0,1
+189b8c00bc2cf3811df372ce5898c3013769d716,public Entity update(PersistencePackageRequest request) throws ServiceException;,0,2,1.0,2
+189b8c00bc2cf3811df372ce5898c3013769d716,public DynamicResultSet inspect(PersistencePackageRequest request) throws ServiceException;,0,1,0.5,3
+189b8c00bc2cf3811df372ce5898c3013769d716,public void remove(PersistencePackageRequest request) throws ServiceException;,0,1,0.5,4
+189b8c00bc2cf3811df372ce5898c3013769d716,public DynamicResultSet fetch(PersistencePackageRequest request) throws ServiceException;,0,1,0.5,5
+189b8c00bc2cf3811df372ce5898c3013769d716,*/,0,0,0.0,6
+189b8c00bc2cf3811df372ce5898c3013769d716,},0,0,0.0,7
+189b8c00bc2cf3811df372ce5898c3013769d716,* to pass to {@link DynamicEntityService}.,0,0,0.0,8
+189b8c00bc2cf3811df372ce5898c3013769d716,* This will glean and create a {@link CriteriaTransferObject} from {@link PersistencePackageRequest#getFilterAndSortCriteria()},0,0,0.0,9
+189b8c00bc2cf3811df372ce5898c3013769d716,"* Thin layer on top of {@link DynamicEntityService#fetch(org.broadleafcommerce.openadmin.dto.PersistencePackage, org.broadleafcommerce.openadmin.dto.CriteriaTransferObject)}.",0,0,0.0,10
+189b8c00bc2cf3811df372ce5898c3013769d716,* Thin layer on top of {@link DynamicEntityService#remove(org.broadleafcommerce.openadmin.dto.PersistencePackage)},0,0,0.0,11
+189b8c00bc2cf3811df372ce5898c3013769d716,* @throws ServiceException,0,0,0.0,12
+189b8c00bc2cf3811df372ce5898c3013769d716,* Thin layer on top of {@link DynamicEntityService#inspect(org.broadleafcommerce.openadmin.dto.PersistencePackage)},0,0,0.0,13
+189b8c00bc2cf3811df372ce5898c3013769d716,* result of the attempted update,0,0,0.0,14
+189b8c00bc2cf3811df372ce5898c3013769d716,* Thin layer on top of {@link DynamicEntityService#update(org.broadleafcommerce.openadmin.dto.PersistencePackage)},0,0,0.0,15
+189b8c00bc2cf3811df372ce5898c3013769d716,* @throws ServiceException if there were exceptions other than a {@link ValidationException} that was thrown as a,0,0,0.0,16
+189b8c00bc2cf3811df372ce5898c3013769d716,* result of the attempted add,0,0,0.0,17
+189b8c00bc2cf3811df372ce5898c3013769d716,* @return,0,0,0.0,18
+189b8c00bc2cf3811df372ce5898c3013769d716,* @param request,0,0,0.0,19
+189b8c00bc2cf3811df372ce5898c3013769d716,*,0,0,0.0,20
+189b8c00bc2cf3811df372ce5898c3013769d716,* with the {@link Entity} that failed validation.,0,0,0.0,21
+189b8c00bc2cf3811df372ce5898c3013769d716,* swallows all {@link ValidationException}s that could be thrown and still just returns a {@link PersistenceResponse},0,0,0.0,22
+189b8c00bc2cf3811df372ce5898c3013769d716,* Thin layer on top of {@link DynamicEntityService#add(org.broadleafcommerce.openadmin.dto.PersistencePackage)} that,0,0,0.0,23
+189b8c00bc2cf3811df372ce5898c3013769d716,/**,0,0,0.0,24
+189b8c00bc2cf3811df372ce5898c3013769d716,import org.broadleafcommerce.openadmin.dto.CriteriaTransferObject;,0,0,0.0,25
+189b8c00bc2cf3811df372ce5898c3013769d716,},1,0,0.0,26

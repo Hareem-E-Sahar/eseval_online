@@ -1,0 +1,61 @@
+commit_id,line,line_level_label,count,line_score,row
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"res = self.api.delete(_get_path('lb/' + entity + 's', id=entity_id,",1,6,1.0,1
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"delete_entity = getattr(self.plugin.return_value, ""delete_"" + entity)",1,2,0.3333333333333333,2
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,entity_id = _uuid(),1,2,0.3333333333333333,3
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,ext_mgr = LoadBalancerTestExtensionManager(),1,1,0.16666666666666666,4
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"""""""Does the entity deletion based on naming convention.""""""",1,1,0.16666666666666666,5
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self.plugin = None,1,1,0.16666666666666666,6
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self.api = None,1,1,0.16666666666666666,7
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self.api = webtest.TestApp(self.ext_mdw),1,1,0.16666666666666666,8
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self.ext_mdw = test_extensions.setup_extensions_middleware(ext_mgr),1,1,0.16666666666666666,9
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,quota.QUOTAS._driver = None,1,1,0.16666666666666666,10
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,instance.get_plugin_type.return_value = constants.LOADBALANCER,1,1,0.16666666666666666,11
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,instance = self.plugin.return_value,1,1,0.16666666666666666,12
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self.plugin = self._plugin_patcher.start(),1,1,0.16666666666666666,13
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"self._plugin_patcher = mock.patch(plugin, autospec=True)",1,1,0.16666666666666666,14
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"args = ['--config-file', test_api_v2.etcdir('neutron.conf.test')]",1,1,0.16666666666666666,15
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,extensions.PluginAwareExtensionManager._instance = None,1,1,0.16666666666666666,16
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,plugin = 'neutron.extensions.loadbalancer.LoadBalancerPluginBase',1,1,0.16666666666666666,17
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"cfg.CONF.set_override('service_plugins', [plugin])",1,0,0.0,18
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,return [],1,0,0.0,19
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,def get_request_extensions(self):,1,0,0.0,20
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,class LoadBalancerExtensionTestCase(testlib_api.WebTestCase):,1,0,0.0,21
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,# Ensure existing ExtensionManager is not used,1,0,0.0,22
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,# Create the default configurations,1,0,0.0,23
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,config.parse(args),1,0,0.0,24
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,#just stubbing core plugin with LoadBalancer plugin,1,0,0.0,25
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self.setup_coreplugin(plugin),1,0,0.0,26
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"def _test_entity_delete(self, entity):",1,0,0.0,27
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"cfg.CONF.set_override('quota_driver', quota.QUOTA_CONF_DRIVER,",1,0,0.0,28
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,group='QUOTAS'),1,0,0.0,29
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"super(LoadBalancerExtensionTestCase, self).setUp()",1,0,0.0,30
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,def tearDown(self):,1,0,0.0,31
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self._plugin_patcher.stop(),1,0,0.0,32
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,cfg.CONF.reset(),1,0,0.0,33
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"super(LoadBalancerExtensionTestCase, self).tearDown()",1,0,0.0,34
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,return loadbalancer.Loadbalancer.get_resources(),1,0,0.0,35
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,fmt=self.fmt)),1,0,0.0,36
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"delete_entity.assert_called_with(mock.ANY, entity_id)",1,0,0.0,37
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,def get_actions(self):,1,0,0.0,38
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,class LoadBalancerTestExtensionManager(object):,1,0,0.0,39
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,loadbalancer.RESOURCE_ATTRIBUTE_MAP),1,0,0.0,40
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from neutron.api import extensions,1,0,0.0,41
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from neutron.tests.unit import test_api_v2_extension,0,0,0.0,42
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,class LoadBalancerExtensionTestCase(test_api_v2_extension.ExtensionTestCase):,0,0,0.0,43
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,self._setUpExtension(,0,0,0.0,44
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"'neutron.extensions.loadbalancer.LoadBalancerPluginBase',",0,0,0.0,45
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"constants.LOADBALANCER, loadbalancer.RESOURCE_ATTRIBUTE_MAP,",0,0,0.0,46
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"loadbalancer.Loadbalancer, 'lb', use_quota=True)",0,0,0.0,47
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from oslo.config import cfg,1,0,0.0,48
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,import webtest,1,0,0.0,49
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from neutron.common import config,1,0,0.0,50
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,attr.RESOURCE_ATTRIBUTE_MAP.update(,1,0,0.0,51
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from neutron import quota,1,0,0.0,52
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from neutron.tests.unit import test_extensions,1,0,0.0,53
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,from neutron.tests.unit import testlib_api,1,0,0.0,54
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,def get_resources(self):,1,0,0.0,55
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,# Add the resources to the global attribute map,1,0,0.0,56
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,# This is done here as the setup process won't,1,0,0.0,57
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,# initialize the main API router which extends,1,0,0.0,58
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,# the global attribute map,1,0,0.0,59
+66b7faeb7e6d5d2d1c4f767541796067c0bb60c7,"self.assertEqual(res.status_int, exc.HTTPNoContent.code)",1,0,0.0,60

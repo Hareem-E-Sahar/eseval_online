@@ -1,0 +1,585 @@
+commit_id,line,line_level_label,count,line_score,row
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""addPaymentToOrderLegacy"" }, dataProvider = ""basicPaymentInfo"", dataProviderClass = PaymentInfoDataProvider.class, dependsOnGroups = { ""checkOrderItemsLegacy"" })",1,12,1.0,1
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = ""addFulfillmentGroupToOrderFirstLegacy"", dataProvider = ""basicFulfillmentGroupLegacy"", dataProviderClass = FulfillmentGroupDataProvider.class, dependsOnGroups = { ""addPaymentToOrderLegacy"" })",1,10,0.8333333333333333,2
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with active DiscreteOrderItems, and active GiftWrapOrderItem inside a BundleOrderItem. Active OrderItems are also in the root of the order and the bundled GiftWrapOrderItem wraps the root OrderItems",1,9,0.75,3
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""createCartForCustomerLegacy"" }, dependsOnGroups = { ""readCustomer"", ""createPhone"" })",1,9,0.75,4
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""findCurrentCartForCustomerLegacy"" }, dependsOnGroups = { ""readCustomer"", ""createPhone"", ""createCartForCustomerLegacy"" })",1,9,0.75,5
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""removeItemFromOrderAfterDefaultFulfillmentGroupLegacy"" }, dependsOnGroups = { ""addFulfillmentGroupToOrderFirstLegacy"" })",1,8,0.6666666666666666,6
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testOrderFulfillmentGroupsLegacy"" }, dataProvider = ""basicShippingRates"", dataProviderClass = ShippingRateDataProvider.class)",1,8,0.6666666666666666,7
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testSubmitOrderLegacy"" }, dependsOnGroups = { ""findNamedOrderForCustomerLegacy"" })",1,8,0.6666666666666666,8
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testNamedOrderForCustomerLegacy"" }, dependsOnGroups = { ""testOrderPropertiesLegacy"" })",1,8,0.6666666666666666,9
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testOrderPropertiesLegacy"" }, dependsOnGroups = { ""testReadOrdersForCustomerLegacy"" })",1,8,0.6666666666666666,10
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testReadOrdersForCustomerLegacy"" }, dependsOnGroups = { ""findNamedOrderForCustomerLegacy"" })",1,8,0.6666666666666666,11
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""findNamedOrderForCustomerLegacy"" }, dependsOnGroups = { ""findOrderByOrderNumberLegacy"" })",1,8,0.6666666666666666,12
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""findOrderByOrderNumberLegacy"" }, dependsOnGroups = { ""findCartForAnonymousCustomerLegacy"" })",1,8,0.6666666666666666,13
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""findCartForAnonymousCustomerLegacy"" }, dependsOnGroups = { ""getOrdersForCustomerLegacy"" })",1,8,0.6666666666666666,14
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""getOrdersForCustomerLegacy"" }, dependsOnGroups = { ""readCustomer"", ""findCurrentCartForCustomerLegacy"" })",1,8,0.6666666666666666,15
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testOrderPaymentInfosLegacy"" }, dataProvider = ""basicPaymentInfo"", dataProviderClass = PaymentInfoDataProvider.class)",1,8,0.6666666666666666,16
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""findDefaultFulFillmentGroupForOrderLegacy"" }, dependsOnGroups = { ""findCurrentCartForCustomerLegacy"", ""addFulfillmentGroupToOrderFirstLegacy"" })",1,8,0.6666666666666666,17
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""findFulFillmentGroupForOrderFirstLegacy"" }, dependsOnGroups = { ""addFulfillmentGroupToOrderFirstLegacy"" })",1,8,0.6666666666666666,18
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""removeFulfillmentGroupFromOrderLegacy"" }, dependsOnGroups = { ""addFulfillmentGroupToOrderFirstLegacy"" })",1,8,0.6666666666666666,19
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""checkOrderItemsLegacy"" }, dependsOnGroups = { ""removeItemFromOrderLegacy"" })",1,8,0.6666666666666666,20
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""removeItemFromOrderLegacy"" }, dependsOnGroups = { ""getItemsForOrderLegacy"" })",1,8,0.6666666666666666,21
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""updateItemsInOrderLegacy"" }, dependsOnGroups = { ""getItemsForOrderLegacy"" })",1,8,0.6666666666666666,22
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""getItemsForOrderLegacy"" }, dependsOnGroups = { ""removeBundleFromOrderLegacy"" })",1,8,0.6666666666666666,23
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""removeBundleFromOrderLegacy"" }, dependsOnGroups = { ""addBundleToOrderLegacy"" })",1,8,0.6666666666666666,24
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""addItemToOrderLegacy"" }, dependsOnGroups = { ""findCurrentCartForCustomerLegacy"", ""createSku"", ""testCatalog"" })",1,8,0.6666666666666666,25
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""addBundleToOrderLegacy"" }, dependsOnGroups = { ""addAnotherItemToOrderLegacy"" })",1,8,0.6666666666666666,26
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""addAnotherItemToOrderLegacy"" }, dependsOnGroups = { ""addItemToOrderLegacy"" })",1,8,0.6666666666666666,27
+1b397c5267574a2aa47352245db66860acb1f75e,"* @Test(groups = { ""removeFulFillmentGroupForOrderFirst"" }, dependsOnGroups",1,6,0.5,28
+1b397c5267574a2aa47352245db66860acb1f75e,private static HydratedCacheManager manager = null;,1,5,0.41666666666666663,29
+1b397c5267574a2aa47352245db66860acb1f75e,"* the Broadleaf End User License Agreement (EULA), Version 1.1",1,5,0.41666666666666663,30
+1b397c5267574a2aa47352245db66860acb1f75e,"* Licensed under the Broadleaf Fair Use License Agreement, Version 1.0",1,5,0.41666666666666663,31
+1b397c5267574a2aa47352245db66860acb1f75e,"* @Test(groups = { ""removeDefaultFulFillmentGroupForOrder"" },",1,5,0.41666666666666663,32
+1b397c5267574a2aa47352245db66860acb1f75e,"* the Broadleaf End User License Agreement (EULA), Version 1.1",1,5,0.41666666666666663,33
+1b397c5267574a2aa47352245db66860acb1f75e,"* Licensed under the Broadleaf Fair Use License Agreement, Version 1.0",1,5,0.41666666666666663,34
+1b397c5267574a2aa47352245db66860acb1f75e,"* the Broadleaf End User License Agreement (EULA), Version 1.1",1,5,0.41666666666666663,35
+1b397c5267574a2aa47352245db66860acb1f75e,"* Licensed under the Broadleaf Fair Use License Agreement, Version 1.0",1,5,0.41666666666666663,36
+1b397c5267574a2aa47352245db66860acb1f75e,assert order != null;,1,4,0.3333333333333333,37
+1b397c5267574a2aa47352245db66860acb1f75e,* between you and Broadleaf Commerce. You may not use this file except in compliance with the applicable license.,1,4,0.3333333333333333,38
+1b397c5267574a2aa47352245db66860acb1f75e,"* Alternatively, the Commercial License may be replaced with a mutually agreed upon license (the ""Custom License"")",1,4,0.3333333333333333,39
+1b397c5267574a2aa47352245db66860acb1f75e,* unless the restrictions on use therein are violated and require payment to Broadleaf in which case,1,4,0.3333333333333333,40
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testCartAndNamedOrderLegacy"" })",1,4,0.3333333333333333,41
+1b397c5267574a2aa47352245db66860acb1f75e,Category category = new CategoryImpl();,1,4,0.3333333333333333,42
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testAddSkuToOrderLegacy"" })",1,4,0.3333333333333333,43
+1b397c5267574a2aa47352245db66860acb1f75e,assert order == null;,1,4,0.3333333333333333,44
+1b397c5267574a2aa47352245db66860acb1f75e,"* dependsOnGroups = { ""findCurrentCartForCustomer"",",1,4,0.3333333333333333,45
+1b397c5267574a2aa47352245db66860acb1f75e,"* ""addFulfillmentGroupToOrderFirst"" }) public void",1,4,0.3333333333333333,46
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups= {""addItemToFulfillmentGroupSecondLegacy""}, dependsOnGroups = { ""addFulfillmentGroupToOrderFirstLegacy"" })",1,4,0.3333333333333333,47
+1b397c5267574a2aa47352245db66860acb1f75e,assert items != null;,1,4,0.3333333333333333,48
+1b397c5267574a2aa47352245db66860acb1f75e,private Long userId = null;,0,4,0.3333333333333333,49
+1b397c5267574a2aa47352245db66860acb1f75e,private Long orderId = null;,1,4,0.3333333333333333,50
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testCartAndNamedOrderLegacy"" })",1,4,0.3333333333333333,51
+1b397c5267574a2aa47352245db66860acb1f75e,* between you and Broadleaf Commerce. You may not use this file except in compliance with the applicable license.,1,4,0.3333333333333333,52
+1b397c5267574a2aa47352245db66860acb1f75e,* unless the restrictions on use therein are violated and require payment to Broadleaf in which case,1,4,0.3333333333333333,53
+1b397c5267574a2aa47352245db66860acb1f75e,"* Alternatively, the Commercial License may be replaced with a mutually agreed upon license (the ""Custom License"")",1,4,0.3333333333333333,54
+1b397c5267574a2aa47352245db66860acb1f75e,* between you and Broadleaf Commerce. You may not use this file except in compliance with the applicable license.,1,4,0.3333333333333333,55
+1b397c5267574a2aa47352245db66860acb1f75e,if (toConvert != null) {,0,4,0.3333333333333333,56
+1b397c5267574a2aa47352245db66860acb1f75e,"@Test(groups = { ""testMergeCartLegacy"" })",1,4,0.3333333333333333,57
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.isMerged() == false;,1,4,0.3333333333333333,58
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with two BundleOrderItems, one of which has a GiftWrapOrderItem. The GiftWrapOrderItem wraps the DiscreteOrderItems from the other bundle, which makes its bundle inactive.",1,4,0.3333333333333333,59
+1b397c5267574a2aa47352245db66860acb1f75e,* unless the restrictions on use therein are violated and require payment to Broadleaf in which case,1,4,0.3333333333333333,60
+1b397c5267574a2aa47352245db66860acb1f75e,"* Alternatively, the Commercial License may be replaced with a mutually agreed upon license (the ""Custom License"")",1,4,0.3333333333333333,61
+1b397c5267574a2aa47352245db66860acb1f75e,public void testOrderProperties() throws PricingException {,1,3,0.25,62
+1b397c5267574a2aa47352245db66860acb1f75e,assert nullOrder == null;,1,3,0.25,63
+1b397c5267574a2aa47352245db66860acb1f75e,public void findNamedOrderForCustomer() throws PricingException {,1,3,0.25,64
+1b397c5267574a2aa47352245db66860acb1f75e,public void testReadOrdersForCustomer() throws PricingException {,1,3,0.25,65
+1b397c5267574a2aa47352245db66860acb1f75e,assert containsOrder == true;,1,3,0.25,66
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getTotal() == null;,1,3,0.25,67
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getSubTotal() == null;,1,3,0.25,68
+1b397c5267574a2aa47352245db66860acb1f75e,assert cartService.findOrderById(orderId) == null;,1,3,0.25,69
+1b397c5267574a2aa47352245db66860acb1f75e,public void testNamedOrderForCustomer() throws PricingException {,1,3,0.25,70
+1b397c5267574a2aa47352245db66860acb1f75e,"Order order = cartService.createNamedOrderForCustomer(""Birthday Order"", customer);",1,3,0.25,71
+1b397c5267574a2aa47352245db66860acb1f75e,assert newOrder.getCustomer() != null;,1,3,0.25,72
+1b397c5267574a2aa47352245db66860acb1f75e,public void findOrderByOrderNumber() throws PricingException {,1,3,0.25,73
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.readCustomerByUsername(username);,1,3,0.25,74
+1b397c5267574a2aa47352245db66860acb1f75e,assert newOrder != null;,1,3,0.25,75
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.createCustomerFromId(null);,1,3,0.25,76
+1b397c5267574a2aa47352245db66860acb1f75e,public void findCartForAnonymousCustomer() {,1,3,0.25,77
+1b397c5267574a2aa47352245db66860acb1f75e,assert orders != null;,1,3,0.25,78
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.saveCustomer(customerService.createCustomerFromId(null));,1,3,0.25,79
+1b397c5267574a2aa47352245db66860acb1f75e,public void getOrdersForCustomer() {,1,3,0.25,80
+1b397c5267574a2aa47352245db66860acb1f75e,public void removeItemFromOrderAfterFulfillmentGroups() {,1,3,0.25,81
+1b397c5267574a2aa47352245db66860acb1f75e,* removeDefaultFulFillmentGroupForOrder() { int beforeRemove =,1,3,0.25,82
+1b397c5267574a2aa47352245db66860acb1f75e,public void findDefaultFillmentGroupForOrder() {,1,3,0.25,83
+1b397c5267574a2aa47352245db66860acb1f75e,* (beforeRemove - afterRemove) == 1; },1,3,0.25,84
+1b397c5267574a2aa47352245db66860acb1f75e,* removeFulFillmentGroupForOrderFirst() { int beforeRemove =,1,3,0.25,85
+1b397c5267574a2aa47352245db66860acb1f75e,"* = { ""findCurrentCartForCustomer"",",1,3,0.25,86
+1b397c5267574a2aa47352245db66860acb1f75e,public void testAddSkuToOrder() throws PricingException {,1,3,0.25,87
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderNullOrderItem == null;,1,3,0.25,88
+1b397c5267574a2aa47352245db66860acb1f75e,Sku newDefaultSku = new SkuImpl();,1,3,0.25,89
+1b397c5267574a2aa47352245db66860acb1f75e,"Order order = cartService.createNamedOrderForCustomer(""Pants Order"", customer);",1,3,0.25,90
+1b397c5267574a2aa47352245db66860acb1f75e,public void findFillmentGroupForOrderFirst() {,1,3,0.25,91
+1b397c5267574a2aa47352245db66860acb1f75e,public void onEvent(CacheEvent cacheEvent) {,1,3,0.25,92
+1b397c5267574a2aa47352245db66860acb1f75e,public static HydratedCacheManager getConfiguredManager() {,1,3,0.25,93
+1b397c5267574a2aa47352245db66860acb1f75e,"public class HydratedCacheEventListenerFactory implements CacheEventListener, CacheEntryListener {",1,3,0.25,94
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.readCustomerById(userId);,1,3,0.25,95
+1b397c5267574a2aa47352245db66860acb1f75e,private final Long userId = 1L;,1,3,0.25,96
+1b397c5267574a2aa47352245db66860acb1f75e,"Customer customer = customerService.readCustomerByUsername(""customer1"");",0,3,0.25,97
+1b397c5267574a2aa47352245db66860acb1f75e,Order order = initializeExistingCart(customer);,1,3,0.25,98
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = createCustomerWithAddresses();,1,3,0.25,99
+1b397c5267574a2aa47352245db66860acb1f75e,public void testCreateNamedOrder() throws PricingException {,1,3,0.25,100
+1b397c5267574a2aa47352245db66860acb1f75e,assert cartService.findCartForCustomer(new CustomerImpl()) == null;,1,3,0.25,101
+1b397c5267574a2aa47352245db66860acb1f75e,public void findCartForNullCustomerId() {,1,3,0.25,102
+1b397c5267574a2aa47352245db66860acb1f75e,public void testSubmitOrder() throws PricingException {,1,3,0.25,103
+1b397c5267574a2aa47352245db66860acb1f75e,assert cartService.readPaymentInfosForOrder(order) != null;,1,3,0.25,104
+1b397c5267574a2aa47352245db66860acb1f75e,assert foundInfo == true;,1,3,0.25,105
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getPayments() != null;,1,3,0.25,106
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.saveCustomer(createNamedCustomer());,1,3,0.25,107
+1b397c5267574a2aa47352245db66860acb1f75e,public void testOrderPaymentInfos(OrderPayment info) throws PricingException {,1,3,0.25,108
+1b397c5267574a2aa47352245db66860acb1f75e,assert categoryNullOrderItem != null;,1,3,0.25,109
+1b397c5267574a2aa47352245db66860acb1f75e,assert productNullOrderItem != null;,1,3,0.25,110
+1b397c5267574a2aa47352245db66860acb1f75e,assert quantityNullOrderItem == null;,1,3,0.25,111
+1b397c5267574a2aa47352245db66860acb1f75e,assert skuNullOrderItem == null;,1,3,0.25,112
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderItem != null;,1,3,0.25,113
+1b397c5267574a2aa47352245db66860acb1f75e,public void addItemToFulfillmentgroupSecond() {,1,3,0.25,114
+1b397c5267574a2aa47352245db66860acb1f75e,assert payment != null;,1,3,0.25,115
+1b397c5267574a2aa47352245db66860acb1f75e,public void removeFulfillmentGroupFromOrder() throws PricingException {,1,3,0.25,116
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMoveItemToCartFromNamedOrder() throws PricingException {,1,3,0.25,117
+1b397c5267574a2aa47352245db66860acb1f75e,Order order = cartService.createNewCartForCustomer(customer);,1,3,0.25,118
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.readCustomerByUsername(userName);,1,3,0.25,119
+1b397c5267574a2aa47352245db66860acb1f75e,public void createCartForCustomer() {,1,3,0.25,120
+1b397c5267574a2aa47352245db66860acb1f75e,public class LegacyOrderTest extends LegacyOrderBaseTest {,1,3,0.25,121
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMergeToExistingCartWithGiftWrapOrderItems() throws PricingException {,1,3,0.25,122
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMergeToExistingCart() throws PricingException {,1,3,0.25,123
+1b397c5267574a2aa47352245db66860acb1f75e,Customer customer = customerService.saveCustomer(createNamedCustomer());,1,3,0.25,124
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMergeToEmptyCart() throws PricingException {,1,3,0.25,125
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMoveItemToCartFromNamedOrderByIds() throws PricingException {,1,3,0.25,126
+1b397c5267574a2aa47352245db66860acb1f75e,Order cart = cartService.findCartForCustomer(namedOrder.getCustomer());,1,3,0.25,127
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMoveItemToCartFromNamedOrderWithoutExistingCart() throws PricingException {,1,3,0.25,128
+1b397c5267574a2aa47352245db66860acb1f75e,assert movedItem != null;,1,3,0.25,129
+1b397c5267574a2aa47352245db66860acb1f75e,public void findCurrentCartForCustomer() {,1,3,0.25,130
+1b397c5267574a2aa47352245db66860acb1f75e,public void testAddItemToCartFromNamedOrder() throws PricingException {,1,3,0.25,131
+1b397c5267574a2aa47352245db66860acb1f75e,Order cart = cartService.addAllItemsToCartFromNamedOrder(namedOrder);,1,3,0.25,132
+1b397c5267574a2aa47352245db66860acb1f75e,public void testAddAllItemsToCartFromNamedOrderWithoutExistingCart() throws PricingException {,1,3,0.25,133
+1b397c5267574a2aa47352245db66860acb1f75e,public void testAddAllItemsToCartFromNamedOrder() throws PricingException {,1,3,0.25,134
+1b397c5267574a2aa47352245db66860acb1f75e,Order cart = cartService.createNewCartForCustomer(namedOrder.getCustomer());,1,3,0.25,135
+1b397c5267574a2aa47352245db66860acb1f75e,public void testMoveAllItemsToCartFromNamedOrder() throws PricingException {,1,3,0.25,136
+1b397c5267574a2aa47352245db66860acb1f75e,public class LegacyCartTest extends LegacyOrderBaseTest {,1,3,0.25,137
+1b397c5267574a2aa47352245db66860acb1f75e,} else {,1,3,0.25,138
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg.getId() != null;,1,3,0.25,139
+1b397c5267574a2aa47352245db66860acb1f75e,} else {,0,3,0.25,140
+1b397c5267574a2aa47352245db66860acb1f75e,//uncapitalizes the first letter of the url key,0,3,0.25,141
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getId() != null;,1,3,0.25,142
+1b397c5267574a2aa47352245db66860acb1f75e,//uncapitalizes the first letter of the url key,1,3,0.25,143
+1b397c5267574a2aa47352245db66860acb1f75e,Order order = cartService.findCartForCustomer(customer);,1,3,0.25,144
+1b397c5267574a2aa47352245db66860acb1f75e,assert bundleOrderItem.getDiscreteOrderItems() != null;,1,3,0.25,145
+1b397c5267574a2aa47352245db66860acb1f75e,public void addItemToOrder() throws PricingException {,1,3,0.25,146
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg != null;,1,3,0.25,147
+1b397c5267574a2aa47352245db66860acb1f75e,assert payment.getOrder() != null;,1,3,0.25,148
+1b397c5267574a2aa47352245db66860acb1f75e,public void addPaymentToOrder(OrderPayment paymentInfo) {,1,3,0.25,149
+1b397c5267574a2aa47352245db66860acb1f75e,assert bundleOrderItem == null;,1,3,0.25,150
+1b397c5267574a2aa47352245db66860acb1f75e,public void checkOrderItems() throws PricingException {,1,3,0.25,151
+1b397c5267574a2aa47352245db66860acb1f75e,public void removeItemFromOrder() throws PricingException {,1,3,0.25,152
+1b397c5267574a2aa47352245db66860acb1f75e,assert updatedItem != null;,1,3,0.25,153
+1b397c5267574a2aa47352245db66860acb1f75e,"public void updateItemsInOrder() throws ItemNotFoundException, PricingException {",1,3,0.25,154
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderItems != null;,1,3,0.25,155
+1b397c5267574a2aa47352245db66860acb1f75e,public void getItemsForOrder() {,1,3,0.25,156
+1b397c5267574a2aa47352245db66860acb1f75e,public void addFulfillmentGroupToOrderFirst(FulfillmentGroup fulfillmentGroup) throws PricingException {,1,3,0.25,157
+1b397c5267574a2aa47352245db66860acb1f75e,assert bundleOrderItem != null;,1,3,0.25,158
+1b397c5267574a2aa47352245db66860acb1f75e,public void addAnotherItemToOrder() throws PricingException {,1,3,0.25,159
+1b397c5267574a2aa47352245db66860acb1f75e,public void removeBundleFromOrder() throws PricingException {,1,3,0.25,160
+1b397c5267574a2aa47352245db66860acb1f75e,assert item != null;,1,3,0.25,161
+1b397c5267574a2aa47352245db66860acb1f75e,assert item.getSku() != null;,1,3,0.25,162
+1b397c5267574a2aa47352245db66860acb1f75e,assert sku.getId() != null;,1,3,0.25,163
+1b397c5267574a2aa47352245db66860acb1f75e,assert item.getQuantity() == 2;  // item-was merged with prior item.,1,3,0.25,164
+1b397c5267574a2aa47352245db66860acb1f75e,"This test is currently not supported, as the order service only supports like item merging",1,3,0.25,165
+1b397c5267574a2aa47352245db66860acb1f75e,assert item2.getSku() != null;,1,3,0.25,166
+1b397c5267574a2aa47352245db66860acb1f75e,public void addBundleToOrder() throws PricingException {,1,3,0.25,167
+1b397c5267574a2aa47352245db66860acb1f75e,Order order = cartService.findOrderById(orderId);,1,3,0.25,168
+1b397c5267574a2aa47352245db66860acb1f75e,"Order newOrder = cartService.findNamedOrderForCustomer(""COOL ORDER"", customer);",1,2,0.16666666666666666,169
+1b397c5267574a2aa47352245db66860acb1f75e,Order nullOrder = cartService.findOrderByOrderNumber(null);,1,2,0.16666666666666666,170
+1b397c5267574a2aa47352245db66860acb1f75e,* cartService.findFulfillmentGroupsForOrder(order).size(); assert,1,2,0.16666666666666666,171
+1b397c5267574a2aa47352245db66860acb1f75e,"Order newOrder = cartService.findOrderByOrderNumber(""3456"");",1,2,0.16666666666666666,172
+1b397c5267574a2aa47352245db66860acb1f75e,"order = cartService.save(order, false);",1,2,0.16666666666666666,173
+1b397c5267574a2aa47352245db66860acb1f75e,Order newOrder = cartService.findOrderById(orderId);,1,2,0.16666666666666666,174
+1b397c5267574a2aa47352245db66860acb1f75e,Long orderId = order.getId();,1,2,0.16666666666666666,175
+1b397c5267574a2aa47352245db66860acb1f75e,order = cartService.createNewCartForCustomer(customer);,1,2,0.16666666666666666,176
+1b397c5267574a2aa47352245db66860acb1f75e,assert orders.size() > 0;,1,2,0.16666666666666666,177
+1b397c5267574a2aa47352245db66860acb1f75e,"String username = ""customer1"";",1,2,0.16666666666666666,178
+1b397c5267574a2aa47352245db66860acb1f75e,* int afterRemove =,1,2,0.16666666666666666,179
+1b397c5267574a2aa47352245db66860acb1f75e,assert(orderItems.size() > 0);,1,2,0.16666666666666666,180
+1b397c5267574a2aa47352245db66860acb1f75e,* fulfillmentGroup); int afterRemove =,1,2,0.16666666666666666,181
+1b397c5267574a2aa47352245db66860acb1f75e,"* FulfillmentGroup fulfillmentGroup = entityManager.find(FulfillmentGroupImpl.class,",1,2,0.16666666666666666,182
+1b397c5267574a2aa47352245db66860acb1f75e,} catch (PricingException e) {,1,2,0.16666666666666666,183
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroup newFg = new FulfillmentGroupImpl();,1,2,0.16666666666666666,184
+1b397c5267574a2aa47352245db66860acb1f75e,List<FulfillmentGroup> items = order.getFulfillmentGroups();,1,2,0.16666666666666666,185
+1b397c5267574a2aa47352245db66860acb1f75e,assert fgItems.size() > 0;,1,2,0.16666666666666666,186
+1b397c5267574a2aa47352245db66860acb1f75e,Address address = customerAddressService.readActiveCustomerAddressesByCustomerId(customer.getId()).get(0).getAddress();,1,2,0.16666666666666666,187
+1b397c5267574a2aa47352245db66860acb1f75e,//assert payment.getId() != null;,1,2,0.16666666666666666,188
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getOrderItems().size() == 1;,1,2,0.16666666666666666,189
+1b397c5267574a2aa47352245db66860acb1f75e,containsOrder = true;,1,2,0.16666666666666666,190
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getOrderItems().get(0).getQuantity() == 15;,1,2,0.16666666666666666,191
+1b397c5267574a2aa47352245db66860acb1f75e,boolean containsOrder = false;,1,2,0.16666666666666666,192
+1b397c5267574a2aa47352245db66860acb1f75e,List<FulfillmentGroupItemRequest> fgiRequests = new ArrayList<FulfillmentGroupItemRequest>();,1,2,0.16666666666666666,193
+1b397c5267574a2aa47352245db66860acb1f75e,containsOrder = false;,1,2,0.16666666666666666,194
+1b397c5267574a2aa47352245db66860acb1f75e,Order resultOrder = cartService.findOrderById(order.getId());,1,2,0.16666666666666666,195
+1b397c5267574a2aa47352245db66860acb1f75e,assert updatedItem.getQuantity() == 10;,1,2,0.16666666666666666,196
+1b397c5267574a2aa47352245db66860acb1f75e,manager = hydratedCacheManager;,1,2,0.16666666666666666,197
+1b397c5267574a2aa47352245db66860acb1f75e,"Cache<?,?> cache = cacheManager.getCache(cacheName);",1,2,0.16666666666666666,198
+1b397c5267574a2aa47352245db66860acb1f75e,//todo what should be actually here for new ehcache ??,1,2,0.16666666666666666,199
+1b397c5267574a2aa47352245db66860acb1f75e,public HydratedCacheEventListenerFactory() {,1,2,0.16666666666666666,200
+1b397c5267574a2aa47352245db66860acb1f75e,protected void setupCustomerId(Method testMethod) throws Exception {,0,2,0.16666666666666666,201
+1b397c5267574a2aa47352245db66860acb1f75e,"@BeforeMethod(alwaysRun = true, dependsOnMethods = ""springTestContextBeforeTestMethod"")",0,2,0.16666666666666666,202
+1b397c5267574a2aa47352245db66860acb1f75e,assert resultOrder.getFulfillmentGroups().size() == 0;,1,2,0.16666666666666666,203
+1b397c5267574a2aa47352245db66860acb1f75e,assert resultOrder.getFulfillmentGroups().get(0).getFulfillmentGroupItems().size() == 2;,1,2,0.16666666666666666,204
+1b397c5267574a2aa47352245db66860acb1f75e,assert resultOrder.getFulfillmentGroups().size() == 1;,1,2,0.16666666666666666,205
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroupItemRequest fgiRequest = new FulfillmentGroupItemRequest();,1,2,0.16666666666666666,206
+1b397c5267574a2aa47352245db66860acb1f75e,Calendar testCalendar = Calendar.getInstance();,1,2,0.16666666666666666,207
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroupRequest fgRequest = new FulfillmentGroupRequest();,1,2,0.16666666666666666,208
+1b397c5267574a2aa47352245db66860acb1f75e,"public void testAddFulfillmentGroupToOrder(ShippingRate shippingRate, ShippingRate sr2) throws PricingException, ItemNotFoundException{",1,2,0.16666666666666666,209
+1b397c5267574a2aa47352245db66860acb1f75e,Long confirmedOrderId = confirmedOrder.getId();,1,2,0.16666666666666666,210
+1b397c5267574a2aa47352245db66860acb1f75e,Order confirmedOrder = cartService.confirmOrder(order);,1,2,0.16666666666666666,211
+1b397c5267574a2aa47352245db66860acb1f75e,foundInfo = true;,1,2,0.16666666666666666,212
+1b397c5267574a2aa47352245db66860acb1f75e,boolean foundInfo = false;,1,2,0.16666666666666666,213
+1b397c5267574a2aa47352245db66860acb1f75e,Product newProduct = new ProductImpl();,1,2,0.16666666666666666,214
+1b397c5267574a2aa47352245db66860acb1f75e,Calendar activeStartCal = Calendar.getInstance();,1,2,0.16666666666666666,215
+1b397c5267574a2aa47352245db66860acb1f75e,category = catalogService.saveCategory(category);,1,2,0.16666666666666666,216
+1b397c5267574a2aa47352245db66860acb1f75e,customer = customerService.saveCustomer(customer);,1,2,0.16666666666666666,217
+1b397c5267574a2aa47352245db66860acb1f75e,List<OrderItem> updateItems = new ArrayList<OrderItem> (order.getOrderItems());,1,2,0.16666666666666666,218
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getAddedItems().size() == 3;,1,2,0.16666666666666666,219
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderItems.size() > 0;,1,2,0.16666666666666666,220
+1b397c5267574a2aa47352245db66860acb1f75e,assert cart.getOrderItems().size() == 1;,1,2,0.16666666666666666,221
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getRemovedItems().size() == 0;,1,2,0.16666666666666666,222
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getOrder().getOrderItems().size() == 5;,1,2,0.16666666666666666,223
+1b397c5267574a2aa47352245db66860acb1f75e,Order anonymousCart = setUpAnonymousCartWithGiftWrap();,1,2,0.16666666666666666,224
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getRemovedItems().size() == 4;,1,2,0.16666666666666666,225
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getOrder().getOrderItems().size() == 4;,1,2,0.16666666666666666,226
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getRemovedItems().size() == 2;,1,2,0.16666666666666666,227
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getOrder().getOrderItems().size() == 2;,1,2,0.16666666666666666,228
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getAddedItems().size() == 2;,1,2,0.16666666666666666,229
+1b397c5267574a2aa47352245db66860acb1f75e,Order anonymousCart = setUpAnonymousCartWithInactiveSku();,1,2,0.16666666666666666,230
+1b397c5267574a2aa47352245db66860acb1f75e,assert customerNamedOrders.size() == 0;,1,2,0.16666666666666666,231
+1b397c5267574a2aa47352245db66860acb1f75e,cart = cartService.addAllItemsToCartFromNamedOrder(namedOrder);,1,2,0.16666666666666666,232
+1b397c5267574a2aa47352245db66860acb1f75e,customer = customerService.saveCustomer(createNamedCustomer());,1,2,0.16666666666666666,233
+1b397c5267574a2aa47352245db66860acb1f75e,assert namedOrder.getOrderItems().size() == 0;,1,2,0.16666666666666666,234
+1b397c5267574a2aa47352245db66860acb1f75e,cart = cartService.moveAllItemsToCartFromNamedOrder(namedOrder);,1,2,0.16666666666666666,235
+1b397c5267574a2aa47352245db66860acb1f75e,List<OrderItem> namedOrderItems = new ArrayList<OrderItem>();,1,2,0.16666666666666666,236
+1b397c5267574a2aa47352245db66860acb1f75e,Order namedOrder = setUpNamedOrder();,1,2,0.16666666666666666,237
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.transaction.annotation.Transactional;,1,2,0.16666666666666666,238
+1b397c5267574a2aa47352245db66860acb1f75e,"String result = toConvert.replaceAll(""\\W"","""");",1,2,0.16666666666666666,239
+1b397c5267574a2aa47352245db66860acb1f75e,"if (toConvert.matches("".*?\\W.*?"")) {",1,2,0.16666666666666666,240
+1b397c5267574a2aa47352245db66860acb1f75e,"String result = toConvert.replaceAll(""[^\\w-]+"", """");",0,2,0.16666666666666666,241
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderItems.size() == numOrderItems - 1;,1,2,0.16666666666666666,242
+1b397c5267574a2aa47352245db66860acb1f75e,"if (toConvert.matches("".*?\\W.*?"")) {",0,2,0.16666666666666666,243
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with a DiscreteOrderItem, inactive DiscreteOrderItem and inactive GiftWrapOrderItem (due to inactive wrapped item)",1,2,0.16666666666666666,244
+1b397c5267574a2aa47352245db66860acb1f75e,"MergeCartResponse response = cartService.mergeCart(customer, anonymousCart);",1,2,0.16666666666666666,245
+1b397c5267574a2aa47352245db66860acb1f75e,"response = cartService.mergeCart(customer, anonymousCart);",1,2,0.16666666666666666,246
+1b397c5267574a2aa47352245db66860acb1f75e,Sku sku = skuDao.readFirstSku();,1,2,0.16666666666666666,247
+1b397c5267574a2aa47352245db66860acb1f75e,List<OrderItem> items = order.getOrderItems();,1,2,0.16666666666666666,248
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getAddedItems().size() == 1;,1,2,0.16666666666666666,249
+1b397c5267574a2aa47352245db66860acb1f75e,assert bundleOrderItem.getDiscreteOrderItems().size() == 1;,1,2,0.16666666666666666,250
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderItems.size() == numOrderItems;,1,2,0.16666666666666666,251
+1b397c5267574a2aa47352245db66860acb1f75e,assert item.getQuantity() == 1;,1,2,0.16666666666666666,252
+1b397c5267574a2aa47352245db66860acb1f75e,BundleOrderItemRequest bundleRequest = new BundleOrderItemRequest();,1,2,0.16666666666666666,253
+1b397c5267574a2aa47352245db66860acb1f75e,assert item2.getQuantity() == 1;  // item-was not auto-merged with prior items.,1,2,0.16666666666666666,254
+1b397c5267574a2aa47352245db66860acb1f75e,DiscreteOrderItemRequest itemRequest2 = new DiscreteOrderItemRequest();,1,2,0.16666666666666666,255
+1b397c5267574a2aa47352245db66860acb1f75e,order = cartService.findOrderById(orderId);,1,2,0.16666666666666666,256
+1b397c5267574a2aa47352245db66860acb1f75e,assert item.getQuantity() == numOrderItems;,1,2,0.16666666666666666,257
+1b397c5267574a2aa47352245db66860acb1f75e,DiscreteOrderItemRequest itemRequest = new DiscreteOrderItemRequest();,1,2,0.16666666666666666,258
+1b397c5267574a2aa47352245db66860acb1f75e,// re-price the order without automatically merging.,1,2,0.16666666666666666,259
+1b397c5267574a2aa47352245db66860acb1f75e,"String userName = ""customer1"";",1,2,0.16666666666666666,260
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.transaction.annotation.Transactional;,1,2,0.16666666666666666,261
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getOrder().getOrderItems().size() == 3;,1,2,0.16666666666666666,262
+1b397c5267574a2aa47352245db66860acb1f75e,assert items.size() == startingSize - 1;,1,2,0.16666666666666666,263
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getAddedItems().size() == 0;,1,2,0.16666666666666666,264
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.getRemovedItems().size() == 1;,1,2,0.16666666666666666,265
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with a DiscreteOrderItem, inactive DiscreteOrderItem and inactive GiftWrapOrderItem (due to inactive wrapped item) inside a BundleOrderItem",1,2,0.16666666666666666,266
+1b397c5267574a2aa47352245db66860acb1f75e,private int numOrderItems = 0;,1,2,0.16666666666666666,267
+1b397c5267574a2aa47352245db66860acb1f75e,private Long fulfillmentGroupId;,1,2,0.16666666666666666,268
+1b397c5267574a2aa47352245db66860acb1f75e,private Long bundleOrderItemId;,1,2,0.16666666666666666,269
+1b397c5267574a2aa47352245db66860acb1f75e,"newOrders = cartService.findOrdersForCustomer(customer, null);",1,1,0.08333333333333333,270
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroup fg = cartService.findDefaultFulfillmentGroupForOrder(order);,1,1,0.08333333333333333,271
+1b397c5267574a2aa47352245db66860acb1f75e,"* cartService.removeFulfillmentGroupFromOrder(order, fulfillmentGroup);",1,1,0.08333333333333333,272
+1b397c5267574a2aa47352245db66860acb1f75e,for (FulfillmentGroupItem fulfillmentGroupItem : fg.getFulfillmentGroupItems()) {,1,1,0.08333333333333333,273
+1b397c5267574a2aa47352245db66860acb1f75e,assert !fulfillmentGroupItem.getOrderItem().equals(item);,1,1,0.08333333333333333,274
+1b397c5267574a2aa47352245db66860acb1f75e,List<Order> orders = cartService.findOrdersForCustomer(customer);,1,1,0.08333333333333333,275
+1b397c5267574a2aa47352245db66860acb1f75e,assert newOrder.getId().equals(orderId);,1,1,0.08333333333333333,276
+1b397c5267574a2aa47352245db66860acb1f75e,"nullOrder = cartService.findOrderByOrderNumber("""");",1,1,0.08333333333333333,277
+1b397c5267574a2aa47352245db66860acb1f75e,"List<Order> newOrders = cartService.findOrdersForCustomer(customer, OrderStatus.IN_PROCESS);",1,1,0.08333333333333333,278
+1b397c5267574a2aa47352245db66860acb1f75e,if (newOrders.contains(order)),1,1,0.08333333333333333,279
+1b397c5267574a2aa47352245db66860acb1f75e,{,1,1,0.08333333333333333,280
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem categoryNullOrderItem = cartService.addSkuToOrder(order.getId(), newDefaultSku.getId(),",1,1,0.08333333333333333,281
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getSubmitDate().equals(testCalendar.getTime());,1,1,0.08333333333333333,282
+1b397c5267574a2aa47352245db66860acb1f75e,"assert order.getName().equals(""Birthday Order"");",1,1,0.08333333333333333,283
+1b397c5267574a2aa47352245db66860acb1f75e,assert order.getCustomer().equals(customer);,1,1,0.08333333333333333,284
+1b397c5267574a2aa47352245db66860acb1f75e,newDefaultSku = catalogService.saveSku(newDefaultSku);,1,1,0.08333333333333333,285
+1b397c5267574a2aa47352245db66860acb1f75e,newProduct = catalogService.saveProduct(newProduct);,1,1,0.08333333333333333,286
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem orderItem = cartService.addSkuToOrder(order.getId(), newDefaultSku.getId(),",1,1,0.08333333333333333,287
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem quantityNullOrderItem = cartService.addSkuToOrder(order.getId(), newDefaultSku.getId(),",1,1,0.08333333333333333,288
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem skuNullOrderItem = cartService.addSkuToOrder(order.getId(), null,",1,1,0.08333333333333333,289
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem orderNullOrderItem = cartService.addSkuToOrder(null, newDefaultSku.getId(),",1,1,0.08333333333333333,290
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem productNullOrderItem = cartService.addSkuToOrder(order.getId(), newDefaultSku.getId(),",1,1,0.08333333333333333,291
+1b397c5267574a2aa47352245db66860acb1f75e,* cartService.findFulfillmentGroupsForOrder(order).size();,1,1,0.08333333333333333,292
+1b397c5267574a2aa47352245db66860acb1f75e,if (testInfo.equals(info)),1,1,0.08333333333333333,293
+1b397c5267574a2aa47352245db66860acb1f75e,"* fulfillmentGroupId); cartService.removeFulfillmentGroupFromOrder(order,",1,1,0.08333333333333333,294
+1b397c5267574a2aa47352245db66860acb1f75e,BundleOrderItem bundleOrderItem = (BundleOrderItem) orderItemService.readOrderItemById(bundleOrderItemId);,1,1,0.08333333333333333,295
+1b397c5267574a2aa47352245db66860acb1f75e,assert(newNewFg.getFulfillmentGroupItems().size() == 1);,1,1,0.08333333333333333,296
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg.getOrder().equals(order);,1,1,0.08333333333333333,297
+1b397c5267574a2aa47352245db66860acb1f75e,List<OrderItem> orderItems = order.getOrderItems();,1,1,0.08333333333333333,298
+1b397c5267574a2aa47352245db66860acb1f75e,int startingSize = orderItems.size();,1,1,0.08333333333333333,299
+1b397c5267574a2aa47352245db66860acb1f75e,confirmedOrder = cartService.findOrderById(confirmedOrder.getId());,1,1,0.08333333333333333,300
+1b397c5267574a2aa47352245db66860acb1f75e,OrderItem item = orderItems.get(0);,1,1,0.08333333333333333,301
+1b397c5267574a2aa47352245db66860acb1f75e,OrderItem updatedItem = orderItemService.readOrderItemById(item.getId());,1,1,0.08333333333333333,302
+1b397c5267574a2aa47352245db66860acb1f75e,assert updatedItem.getPrice().equals(new Money(BigDecimal.valueOf(10000)));,1,1,0.08333333333333333,303
+1b397c5267574a2aa47352245db66860acb1f75e,//the removal from the previous test was rolled back,1,1,0.08333333333333333,304
+1b397c5267574a2aa47352245db66860acb1f75e,OrderPayment payment = order.getPayments().get(order.getPayments().indexOf(paymentInfo));,1,1,0.08333333333333333,305
+1b397c5267574a2aa47352245db66860acb1f75e,assert payment.getOrder().equals(order);,1,1,0.08333333333333333,306
+1b397c5267574a2aa47352245db66860acb1f75e,"FulfillmentGroup fg = cartService.addFulfillmentGroupToOrder(order, fulfillmentGroup);",1,1,0.08333333333333333,307
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg.getAddress().equals(fulfillmentGroup.getAddress());,1,1,0.08333333333333333,308
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg.getMethod().equals(fulfillmentGroup.getMethod());,1,1,0.08333333333333333,309
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroup newNewFg = order.getFulfillmentGroups().get(order.getFulfillmentGroups().indexOf(newFg));,1,1,0.08333333333333333,310
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg.getReferenceNumber().equals(fulfillmentGroup.getReferenceNumber());,1,1,0.08333333333333333,311
+1b397c5267574a2aa47352245db66860acb1f75e,this.fulfillmentGroupId = fg.getId();,1,1,0.08333333333333333,312
+1b397c5267574a2aa47352245db66860acb1f75e,List<FulfillmentGroup> fgItems = order.getFulfillmentGroups();,1,1,0.08333333333333333,313
+1b397c5267574a2aa47352245db66860acb1f75e,int startingSize = fgItems.size();,1,1,0.08333333333333333,314
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroup item = fgItems.get(0);,1,1,0.08333333333333333,315
+1b397c5267574a2aa47352245db66860acb1f75e,FulfillmentGroup fg = order.getFulfillmentGroups().get(0);,1,1,0.08333333333333333,316
+1b397c5267574a2aa47352245db66860acb1f75e,"FulfillmentGroup fulfillmentGroup = em.find(FulfillmentGroupImpl.class, fulfillmentGroupId);",1,1,0.08333333333333333,317
+1b397c5267574a2aa47352245db66860acb1f75e,assert fg.getAddress().getId().equals(fulfillmentGroup.getAddress().getId());,1,1,0.08333333333333333,318
+1b397c5267574a2aa47352245db66860acb1f75e,try {,1,1,0.08333333333333333,319
+1b397c5267574a2aa47352245db66860acb1f75e,"newFg = cartService.addItemToFulfillmentGroup(orderItems.get(0), newFg, 1);",1,1,0.08333333333333333,320
+1b397c5267574a2aa47352245db66860acb1f75e,throw new RuntimeException(e);,1,1,0.08333333333333333,321
+1b397c5267574a2aa47352245db66860acb1f75e,//assert order.getPaymentInfos().size() == 0;,1,1,0.08333333333333333,322
+1b397c5267574a2aa47352245db66860acb1f75e,@Transactional,1,1,0.08333333333333333,323
+1b397c5267574a2aa47352245db66860acb1f75e,assert orderId.equals(confirmedOrderId);,1,1,0.08333333333333333,324
+1b397c5267574a2aa47352245db66860acb1f75e,import java.util.List;,1,1,0.08333333333333333,325
+1b397c5267574a2aa47352245db66860acb1f75e,"* (the ""Fair Use License"" located  at http://license.broadleafcommerce.org/fair_use_license-1.0.txt)",1,1,0.08333333333333333,326
+1b397c5267574a2aa47352245db66860acb1f75e,"* (the ""Commercial License"" located at http://license.broadleafcommerce.org/commercial_license-1.1.txt)",1,1,0.08333333333333333,327
+1b397c5267574a2aa47352245db66860acb1f75e,* shall apply.,1,1,0.08333333333333333,328
+1b397c5267574a2aa47352245db66860acb1f75e,*,1,1,0.08333333333333333,329
+1b397c5267574a2aa47352245db66860acb1f75e,* #L%,1,1,0.08333333333333333,330
+1b397c5267574a2aa47352245db66860acb1f75e,import org.ehcache.event.CacheEvent;,1,1,0.08333333333333333,331
+1b397c5267574a2aa47352245db66860acb1f75e,import org.ehcache.event.CacheEventListener;,1,1,0.08333333333333333,332
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.beans.factory.annotation.Autowired;,1,1,0.08333333333333333,333
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.beans.factory.annotation.Qualifier;,1,1,0.08333333333333333,334
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.beans.factory.annotation.Value;,1,1,0.08333333333333333,335
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.stereotype.Component;,1,1,0.08333333333333333,336
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.cache.Cache;,1,1,0.08333333333333333,337
+1b397c5267574a2aa47352245db66860acb1f75e,assert confirmedOrder.getStatus().equals(OrderStatus.SUBMITTED);,1,1,0.08333333333333333,338
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.cache.CacheManager;,1,1,0.08333333333333333,339
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.cache.configuration.FactoryBuilder;,1,1,0.08333333333333333,340
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.cache.configuration.MutableCacheEntryListenerConfiguration;,1,1,0.08333333333333333,341
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.cache.event.CacheEntryListener;,1,1,0.08333333333333333,342
+1b397c5267574a2aa47352245db66860acb1f75e,* @author jfischer,1,1,0.08333333333333333,343
+1b397c5267574a2aa47352245db66860acb1f75e,},1,1,0.08333333333333333,344
+1b397c5267574a2aa47352245db66860acb1f75e,"public HydratedCacheEventListenerFactory(@Qualifier(""blHydratedCacheMangager"") HydratedCacheManager hydratedCacheManager,",1,1,0.08333333333333333,345
+1b397c5267574a2aa47352245db66860acb1f75e,"@Value(""${cache.hydratedCache.require.synchronous:true}"") Boolean synchronous) {",1,1,0.08333333333333333,346
+1b397c5267574a2aa47352245db66860acb1f75e,for (String cacheName : cacheNames) {,1,1,0.08333333333333333,347
+1b397c5267574a2aa47352245db66860acb1f75e,return manager;,1,1,0.08333333333333333,348
+1b397c5267574a2aa47352245db66860acb1f75e,"BundleOrderItem item = (BundleOrderItem) cartService.addBundleItemToOrder(order, bundleRequest);",1,1,0.08333333333333333,349
+1b397c5267574a2aa47352245db66860acb1f75e,* Copyright (C) 2009 - 2016 Broadleaf Commerce,1,1,0.08333333333333333,350
+1b397c5267574a2aa47352245db66860acb1f75e,* %%,1,1,0.08333333333333333,351
+1b397c5267574a2aa47352245db66860acb1f75e,* BroadleafCommerce Common Libraries,1,1,0.08333333333333333,352
+1b397c5267574a2aa47352245db66860acb1f75e,* #%L,1,1,0.08333333333333333,353
+1b397c5267574a2aa47352245db66860acb1f75e,shippingRate = shippingRateService.save(shippingRate);,1,1,0.08333333333333333,354
+1b397c5267574a2aa47352245db66860acb1f75e,sr2 = shippingRateService.save(sr2);,1,1,0.08333333333333333,355
+1b397c5267574a2aa47352245db66860acb1f75e,CustomerAddress customerAddress = customerAddressService.readActiveCustomerAddressesByCustomerId(customer.getId()).get(0);,1,1,0.08333333333333333,356
+1b397c5267574a2aa47352245db66860acb1f75e,for (OrderItem orderItem : order.getOrderItems()) {,1,1,0.08333333333333333,357
+1b397c5267574a2aa47352245db66860acb1f75e,resultOrder = cartService.findOrderById(order.getId());,1,1,0.08333333333333333,358
+1b397c5267574a2aa47352245db66860acb1f75e,"FulfillmentGroup defaultFg = cartService.createDefaultFulfillmentGroup(order, customerAddress.getAddress());",1,1,0.08333333333333333,359
+1b397c5267574a2aa47352245db66860acb1f75e,assert defaultFg.isPrimary();,1,1,0.08333333333333333,360
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.test.annotation.Commit;,0,1,0.08333333333333333,361
+1b397c5267574a2aa47352245db66860acb1f75e,import org.testng.annotations.BeforeMethod;,0,1,0.08333333333333333,362
+1b397c5267574a2aa47352245db66860acb1f75e,import java.lang.reflect.Method;,0,1,0.08333333333333333,363
+1b397c5267574a2aa47352245db66860acb1f75e,"userId = customerService.readCustomerByUsername(""customer1"").getId();",0,1,0.08333333333333333,364
+1b397c5267574a2aa47352245db66860acb1f75e,},0,1,0.08333333333333333,365
+1b397c5267574a2aa47352245db66860acb1f75e,List<CustomerPhone> phones = customerPhoneService.readAllCustomerPhonesByCustomerId(userId);,0,1,0.08333333333333333,366
+1b397c5267574a2aa47352245db66860acb1f75e,List<CustomerPhone> phones_1 = customerPhoneService.readAllCustomerPhonesByCustomerId(userId);,0,1,0.08333333333333333,367
+1b397c5267574a2aa47352245db66860acb1f75e,List<CustomerPhone> phones_2 = customerPhoneService.readAllCustomerPhonesByCustomerId(userId);,0,1,0.08333333333333333,368
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.test.annotation.Rollback;,1,1,0.08333333333333333,369
+1b397c5267574a2aa47352245db66860acb1f75e,List<CustomerPhone> phones = customerPhoneService.readAllCustomerPhonesByCustomerId(1L);,1,1,0.08333333333333333,370
+1b397c5267574a2aa47352245db66860acb1f75e,List<CustomerPhone> phones_1 = customerPhoneService.readAllCustomerPhonesByCustomerId(1L);,1,1,0.08333333333333333,371
+1b397c5267574a2aa47352245db66860acb1f75e,List<CustomerPhone> phones_2 = customerPhoneService.readAllCustomerPhonesByCustomerId(1L);,1,1,0.08333333333333333,372
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.annotation.Resource;,0,1,0.08333333333333333,373
+1b397c5267574a2aa47352245db66860acb1f75e,CustomerAddress savedAddress = customerAddressService.saveCustomerAddress(ca);,0,1,0.08333333333333333,374
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.annotation.Resource;,1,1,0.08333333333333333,375
+1b397c5267574a2aa47352245db66860acb1f75e,CustomerAddress savedAddress = saveCustomerAddress(ca);,1,1,0.08333333333333333,376
+1b397c5267574a2aa47352245db66860acb1f75e,bundleOrderItemId = item.getId();,1,1,0.08333333333333333,377
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.profile.core.domain.Customer;,1,1,0.08333333333333333,378
+1b397c5267574a2aa47352245db66860acb1f75e,assert item2.getSku().equals(sku);,1,1,0.08333333333333333,379
+1b397c5267574a2aa47352245db66860acb1f75e,anonymousCart = setUpAnonymousCartWithInactiveGiftWrap();,1,1,0.08333333333333333,380
+1b397c5267574a2aa47352245db66860acb1f75e,assert namedOrderItems.equals(cart.getOrderItems());,1,1,0.08333333333333333,381
+1b397c5267574a2aa47352245db66860acb1f75e,},1,1,0.08333333333333333,382
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem movedItem = cartService.moveItemToCartFromNamedOrder(namedOrder, namedOrderItems.get(0));",1,1,0.08333333333333333,383
+1b397c5267574a2aa47352245db66860acb1f75e,"List<Order> customerNamedOrders = cartService.findOrdersForCustomer(namedOrder.getCustomer(), OrderStatus.NAMED);",1,1,0.08333333333333333,384
+1b397c5267574a2aa47352245db66860acb1f75e,"OrderItem movedItem = cartService.moveItemToCartFromNamedOrder(namedOrder.getCustomer().getId(),",1,1,0.08333333333333333,385
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with a DiscreteOrderItem, inactive DiscreteOrderItem, BundleOrderItem, and inactive BundleOrderItem",1,1,0.08333333333333333,386
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up existing cart with a DiscreteOrderItem, inactive DiscreteOrderItem, BundleOrderItem, and inactive BundleOrderItem",1,1,0.08333333333333333,387
+1b397c5267574a2aa47352245db66860acb1f75e,assert response.isMerged();,1,1,0.08333333333333333,388
+1b397c5267574a2aa47352245db66860acb1f75e,//FIXME: This test needs to be fixed,1,1,0.08333333333333333,389
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with two DiscreteOrderItems, and a GiftWrapOrderItem",1,1,0.08333333333333333,390
+1b397c5267574a2aa47352245db66860acb1f75e,//sets up existing cart with two active DiscreteOrderItems,1,1,0.08333333333333333,391
+1b397c5267574a2aa47352245db66860acb1f75e,anonymousCart = setUpAnonymousCartWithInactiveBundleGiftWrap();,1,1,0.08333333333333333,392
+1b397c5267574a2aa47352245db66860acb1f75e,* #L%,1,1,0.08333333333333333,393
+1b397c5267574a2aa47352245db66860acb1f75e,"//sets up anonymous cart with active DiscreteOrderItems, and active GiftWrapOrderItem inside a BundleOrderItem",1,1,0.08333333333333333,394
+1b397c5267574a2aa47352245db66860acb1f75e,anonymousCart = setUpAnonymousCartWithBundleGiftWrap();,1,1,0.08333333333333333,395
+1b397c5267574a2aa47352245db66860acb1f75e,anonymousCart = setUpAnonymousCartWithBundleGiftWrapReferringToRootItems();,1,1,0.08333333333333333,396
+1b397c5267574a2aa47352245db66860acb1f75e,anonymousCart = setUpAnonymousCartWithBundleGiftWrapReferringItemsInAnotherBundle();,1,1,0.08333333333333333,397
+1b397c5267574a2aa47352245db66860acb1f75e,* #%L,1,1,0.08333333333333333,398
+1b397c5267574a2aa47352245db66860acb1f75e,* BroadleafCommerce Integration,1,1,0.08333333333333333,399
+1b397c5267574a2aa47352245db66860acb1f75e,* %%,1,1,0.08333333333333333,400
+1b397c5267574a2aa47352245db66860acb1f75e,* Copyright (C) 2009 - 2016 Broadleaf Commerce,1,1,0.08333333333333333,401
+1b397c5267574a2aa47352245db66860acb1f75e,"* (the ""Fair Use License"" located  at http://license.broadleafcommerce.org/fair_use_license-1.0.txt)",1,1,0.08333333333333333,402
+1b397c5267574a2aa47352245db66860acb1f75e,"* (the ""Commercial License"" located at http://license.broadleafcommerce.org/commercial_license-1.1.txt)",1,1,0.08333333333333333,403
+1b397c5267574a2aa47352245db66860acb1f75e,* shall apply.,1,1,0.08333333333333333,404
+1b397c5267574a2aa47352245db66860acb1f75e,@Transactional,1,1,0.08333333333333333,405
+1b397c5267574a2aa47352245db66860acb1f75e,import java.util.List;,1,1,0.08333333333333333,406
+1b397c5267574a2aa47352245db66860acb1f75e,import java.util.ArrayList;,1,1,0.08333333333333333,407
+1b397c5267574a2aa47352245db66860acb1f75e,import org.testng.annotations.Test;,1,1,0.08333333333333333,408
+1b397c5267574a2aa47352245db66860acb1f75e,"toConvert = toConvert.replaceAll("" "", ""-"");",0,1,0.08333333333333333,409
+1b397c5267574a2aa47352245db66860acb1f75e,//remove all non-word characters,0,1,0.08333333333333333,410
+1b397c5267574a2aa47352245db66860acb1f75e,return StringUtils.uncapitalize(result);,0,1,0.08333333333333333,411
+1b397c5267574a2aa47352245db66860acb1f75e,return StringUtils.uncapitalize(toConvert);,0,1,0.08333333333333333,412
+1b397c5267574a2aa47352245db66860acb1f75e,"DiscreteOrderItem item2 = (DiscreteOrderItem) cartService.addDiscreteItemToOrder(order, itemRequest2, true);",1,1,0.08333333333333333,413
+1b397c5267574a2aa47352245db66860acb1f75e,return toConvert;,0,1,0.08333333333333333,414
+1b397c5267574a2aa47352245db66860acb1f75e,//remove all non-word characters,1,1,0.08333333333333333,415
+1b397c5267574a2aa47352245db66860acb1f75e,return StringUtils.uncapitalize(result);,1,1,0.08333333333333333,416
+1b397c5267574a2aa47352245db66860acb1f75e,return StringUtils.uncapitalize(toConvert);,1,1,0.08333333333333333,417
+1b397c5267574a2aa47352245db66860acb1f75e,* #%L,1,1,0.08333333333333333,418
+1b397c5267574a2aa47352245db66860acb1f75e,* BroadleafCommerce Integration,1,1,0.08333333333333333,419
+1b397c5267574a2aa47352245db66860acb1f75e,* %%,1,1,0.08333333333333333,420
+1b397c5267574a2aa47352245db66860acb1f75e,* Copyright (C) 2009 - 2016 Broadleaf Commerce,1,1,0.08333333333333333,421
+1b397c5267574a2aa47352245db66860acb1f75e,"* (the ""Fair Use License"" located  at http://license.broadleafcommerce.org/fair_use_license-1.0.txt)",1,1,0.08333333333333333,422
+1b397c5267574a2aa47352245db66860acb1f75e,"* (the ""Commercial License"" located at http://license.broadleafcommerce.org/commercial_license-1.1.txt)",1,1,0.08333333333333333,423
+1b397c5267574a2aa47352245db66860acb1f75e,* shall apply.,1,1,0.08333333333333333,424
+1b397c5267574a2aa47352245db66860acb1f75e,*,1,1,0.08333333333333333,425
+1b397c5267574a2aa47352245db66860acb1f75e,* #L%,1,1,0.08333333333333333,426
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.Order;,1,1,0.08333333333333333,427
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.OrderItem;,1,1,0.08333333333333333,428
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.call.MergeCartResponse;,1,1,0.08333333333333333,429
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.type.OrderStatus;,1,1,0.08333333333333333,430
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.pricing.service.exception.PricingException;,1,1,0.08333333333333333,431
+1b397c5267574a2aa47352245db66860acb1f75e,*,1,1,0.08333333333333333,432
+1b397c5267574a2aa47352245db66860acb1f75e,},0,1,0.08333333333333333,433
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.common.money.Money;,1,1,0.08333333333333333,434
+1b397c5267574a2aa47352245db66860acb1f75e,import java.util.List;,1,1,0.08333333333333333,435
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.pricing.service.workflow.type.ShippingServiceType;,1,1,0.08333333333333333,436
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.profile.core.domain.Address;,1,1,0.08333333333333333,437
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.profile.core.domain.Customer;,1,1,0.08333333333333333,438
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.profile.core.domain.CustomerAddress;,1,1,0.08333333333333333,439
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.profile.core.domain.CustomerImpl;,1,1,0.08333333333333333,440
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.test.annotation.Rollback;,1,1,0.08333333333333333,441
+1b397c5267574a2aa47352245db66860acb1f75e,import org.springframework.transaction.annotation.Propagation;,1,1,0.08333333333333333,442
+1b397c5267574a2aa47352245db66860acb1f75e,import org.testng.annotations.Test;,1,1,0.08333333333333333,443
+1b397c5267574a2aa47352245db66860acb1f75e,import java.math.BigDecimal;,1,1,0.08333333333333333,444
+1b397c5267574a2aa47352245db66860acb1f75e,import java.util.ArrayList;,1,1,0.08333333333333333,445
+1b397c5267574a2aa47352245db66860acb1f75e,import java.util.Calendar;,1,1,0.08333333333333333,446
+1b397c5267574a2aa47352245db66860acb1f75e,import javax.annotation.Resource;,1,1,0.08333333333333333,447
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.pricing.service.ShippingRateService;,1,1,0.08333333333333333,448
+1b397c5267574a2aa47352245db66860acb1f75e,"@Resource(name = ""blOrderItemService"")",1,1,0.08333333333333333,449
+1b397c5267574a2aa47352245db66860acb1f75e,private OrderItemService orderItemService;,1,1,0.08333333333333333,450
+1b397c5267574a2aa47352245db66860acb1f75e,private SkuDao skuDao;,1,1,0.08333333333333333,451
+1b397c5267574a2aa47352245db66860acb1f75e,private ShippingRateService shippingRateService;,1,1,0.08333333333333333,452
+1b397c5267574a2aa47352245db66860acb1f75e,@Transactional,1,1,0.08333333333333333,453
+1b397c5267574a2aa47352245db66860acb1f75e,this.orderId = order.getId();,1,1,0.08333333333333333,454
+1b397c5267574a2aa47352245db66860acb1f75e,},1,1,0.08333333333333333,455
+1b397c5267574a2aa47352245db66860acb1f75e,@Transactional(propagation = Propagation.REQUIRES_NEW),1,1,0.08333333333333333,456
+1b397c5267574a2aa47352245db66860acb1f75e,assert item.getSku().equals(sku);,1,1,0.08333333333333333,457
+1b397c5267574a2aa47352245db66860acb1f75e,"DiscreteOrderItem item = (DiscreteOrderItem) cartService.addDiscreteItemToOrder(order, itemRequest, true);",1,1,0.08333333333333333,458
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.dao.SkuDao;,1,1,0.08333333333333333,459
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.pricing.service.exception.PricingException;,1,1,0.08333333333333333,460
+1b397c5267574a2aa47352245db66860acb1f75e,"DiscreteOrderItem item = (DiscreteOrderItem) cartService.addDiscreteItemToOrder(order, itemRequest);",1,1,0.08333333333333333,461
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.pricing.domain.ShippingRate;,1,1,0.08333333333333333,462
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.FulfillmentGroupItem;,1,1,0.08333333333333333,463
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.pricing.ShippingRateDataProvider;,1,1,0.08333333333333333,464
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.domain.Product;,1,1,0.08333333333333333,465
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.domain.ProductImpl;,1,1,0.08333333333333333,466
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.domain.Sku;,1,1,0.08333333333333333,467
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.domain.SkuImpl;,1,1,0.08333333333333333,468
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.FulfillmentGroupDataProvider;,1,1,0.08333333333333333,469
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.BundleOrderItem;,1,1,0.08333333333333333,470
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.DiscreteOrderItem;,1,1,0.08333333333333333,471
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.FulfillmentGroup;,1,1,0.08333333333333333,472
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.FulfillmentGroupImpl;,1,1,0.08333333333333333,473
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.domain.CategoryImpl;,1,1,0.08333333333333333,474
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.Order;,1,1,0.08333333333333333,475
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.exception.ItemNotFoundException;,1,1,0.08333333333333333,476
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.payment.domain.OrderPayment;,1,1,0.08333333333333333,477
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.domain.OrderItem;,1,1,0.08333333333333333,478
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.payment.PaymentInfoDataProvider;,1,1,0.08333333333333333,479
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.type.OrderStatus;,1,1,0.08333333333333333,480
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.catalog.domain.Category;,1,1,0.08333333333333333,481
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.call.FulfillmentGroupRequest;,1,1,0.08333333333333333,482
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.OrderItemService;,1,1,0.08333333333333333,483
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.call.DiscreteOrderItemRequest;,1,1,0.08333333333333333,484
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.call.BundleOrderItemRequest;,1,1,0.08333333333333333,485
+1b397c5267574a2aa47352245db66860acb1f75e,import org.broadleafcommerce.core.order.service.call.FulfillmentGroupItemRequest;,1,1,0.08333333333333333,486
+1b397c5267574a2aa47352245db66860acb1f75e,fgiRequests.add(fgiRequest);,1,0,0.0,487
+1b397c5267574a2aa47352245db66860acb1f75e,fgiRequest.setQuantity(1);,1,0,0.0,488
+1b397c5267574a2aa47352245db66860acb1f75e,fgiRequest.setOrderItem(orderItem);,1,0,0.0,489
+1b397c5267574a2aa47352245db66860acb1f75e,category.setActiveStartDate(activeStartCal.getTime());,1,0,0.0,490
+1b397c5267574a2aa47352245db66860acb1f75e,@Test,1,0,0.0,491
+1b397c5267574a2aa47352245db66860acb1f75e,//cartService.removeAllPaymentsFromOrder(order);,1,0,0.0,492
+1b397c5267574a2aa47352245db66860acb1f75e,for (OrderPayment testInfo : order.getPayments()),1,0,0.0,493
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.addPaymentToOrder(order, info);",1,0,0.0,494
+1b397c5267574a2aa47352245db66860acb1f75e,"newProduct.getId(), null, 2);",1,0,0.0,495
+1b397c5267574a2aa47352245db66860acb1f75e,"null, category.getId(), 2);",1,0,0.0,496
+1b397c5267574a2aa47352245db66860acb1f75e,"newProduct.getId(), category.getId(), 2);",1,0,0.0,497
+1b397c5267574a2aa47352245db66860acb1f75e,"newProduct.getId(), category.getId(), null);",1,0,0.0,498
+1b397c5267574a2aa47352245db66860acb1f75e,newProduct.setDefaultSku(newDefaultSku);,1,0,0.0,499
+1b397c5267574a2aa47352245db66860acb1f75e,newProduct.setDefaultCategory(category);,1,0,0.0,500
+1b397c5267574a2aa47352245db66860acb1f75e,newDefaultSku.setDiscountable(true);,1,0,0.0,501
+1b397c5267574a2aa47352245db66860acb1f75e,newDefaultSku.setRetailPrice(new Money(44.99));,1,0,0.0,502
+1b397c5267574a2aa47352245db66860acb1f75e,"newDefaultSku.setName(""Leather Pants"");",1,0,0.0,503
+1b397c5267574a2aa47352245db66860acb1f75e,"activeStartCal.add(Calendar.DAY_OF_YEAR, -2);",1,0,0.0,504
+1b397c5267574a2aa47352245db66860acb1f75e,"category.setName(""Pants"");",1,0,0.0,505
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.removeNamedOrderForCustomer(""Birthday Order"", customer);",1,0,0.0,506
+1b397c5267574a2aa47352245db66860acb1f75e,fgRequest.setAddress(customerAddress.getAddress());,1,0,0.0,507
+1b397c5267574a2aa47352245db66860acb1f75e,order.setSubmitDate(testCalendar.getTime());,1,0,0.0,508
+1b397c5267574a2aa47352245db66860acb1f75e,newDefaultSku.setActiveStartDate(activeStartCal.getTime());,1,0,0.0,509
+1b397c5267574a2aa47352245db66860acb1f75e,/*,1,0,0.0,510
+1b397c5267574a2aa47352245db66860acb1f75e,fgRequest.setFulfillmentGroupItemRequests(fgiRequests);,1,0,0.0,511
+1b397c5267574a2aa47352245db66860acb1f75e,fgRequest.setOrder(cartService.findCartForCustomer(customer));,1,0,0.0,512
+1b397c5267574a2aa47352245db66860acb1f75e,"order.setName(""COOL ORDER"");",1,0,0.0,513
+1b397c5267574a2aa47352245db66860acb1f75e,"cache.registerCacheEntryListener(new MutableCacheEntryListenerConfiguration(FactoryBuilder.factoryOf(hydratedCacheManager), null, oldValue, synchronous));",1,0,0.0,514
+1b397c5267574a2aa47352245db66860acb1f75e,continue;,1,0,0.0,515
+1b397c5267574a2aa47352245db66860acb1f75e,"if(cacheName.startsWith(""$"")){",1,0,0.0,516
+1b397c5267574a2aa47352245db66860acb1f75e,"@Value(""${cache.hydratedCache.require.old.value:false}"") Boolean oldValue,",1,0,0.0,517
+1b397c5267574a2aa47352245db66860acb1f75e,"@Value(""${cache.hydratedCache.names}"") List<String> cacheNames,",1,0,0.0,518
+1b397c5267574a2aa47352245db66860acb1f75e,"@Qualifier(""blCacheManager"") CacheManager cacheManager,",1,0,0.0,519
+1b397c5267574a2aa47352245db66860acb1f75e,@Autowired,1,0,0.0,520
+1b397c5267574a2aa47352245db66860acb1f75e,"@Component(""blHydratedCacheEventListenerFactory"")",1,0,0.0,521
+1b397c5267574a2aa47352245db66860acb1f75e,/**,1,0,0.0,522
+1b397c5267574a2aa47352245db66860acb1f75e,package org.broadleafcommerce.common.cache.engine;,1,0,0.0,523
+1b397c5267574a2aa47352245db66860acb1f75e,*/,1,0,0.0,524
+1b397c5267574a2aa47352245db66860acb1f75e,@Rollback(false),1,0,0.0,525
+1b397c5267574a2aa47352245db66860acb1f75e,@Commit,0,0,0.0,526
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.addFulfillmentGroupToOrder(order, defaultFg);",1,0,0.0,527
+1b397c5267574a2aa47352245db66860acb1f75e,defaultFg.setService(ShippingServiceType.BANDED_SHIPPING.getType());,1,0,0.0,528
+1b397c5267574a2aa47352245db66860acb1f75e,"defaultFg.setMethod(""standard"");",1,0,0.0,529
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.removeAllFulfillmentGroupsFromOrder(order, false);",1,0,0.0,530
+1b397c5267574a2aa47352245db66860acb1f75e,cartService.addFulfillmentGroupToOrder(fgRequest);,1,0,0.0,531
+1b397c5267574a2aa47352245db66860acb1f75e,fgRequest.setService(ShippingServiceType.BANDED_SHIPPING.getType());,1,0,0.0,532
+1b397c5267574a2aa47352245db66860acb1f75e,"fgRequest.setMethod(""standard"");",1,0,0.0,533
+1b397c5267574a2aa47352245db66860acb1f75e,order.setStatus(OrderStatus.IN_PROCESS);,1,0,0.0,534
+1b397c5267574a2aa47352245db66860acb1f75e,itemRequest2.setQuantity(1);,1,0,0.0,535
+1b397c5267574a2aa47352245db66860acb1f75e,order.setStatus(OrderStatus.NAMED);,1,0,0.0,536
+1b397c5267574a2aa47352245db66860acb1f75e,itemRequest2.setSku(sku);,1,0,0.0,537
+1b397c5267574a2aa47352245db66860acb1f75e,assert(order.getOrderItems().get(0).getQuantity()==2);,1,0,0.0,538
+1b397c5267574a2aa47352245db66860acb1f75e,assert(order.getOrderItems().size()==1);,1,0,0.0,539
+1b397c5267574a2aa47352245db66860acb1f75e,cartService.setAutomaticallyMergeLikeItems(true);,1,0,0.0,540
+1b397c5267574a2aa47352245db66860acb1f75e,itemRequest.setSku(sku);,1,0,0.0,541
+1b397c5267574a2aa47352245db66860acb1f75e,itemRequest.setQuantity(1);,1,0,0.0,542
+1b397c5267574a2aa47352245db66860acb1f75e,numOrderItems++;,1,0,0.0,543
+1b397c5267574a2aa47352245db66860acb1f75e,@Rollback(false),1,0,0.0,544
+1b397c5267574a2aa47352245db66860acb1f75e,@Resource,1,0,0.0,545
+1b397c5267574a2aa47352245db66860acb1f75e,"@SuppressWarnings(""deprecation"")",1,0,0.0,546
+1b397c5267574a2aa47352245db66860acb1f75e,package org.broadleafcommerce.core.order.service.legacy;,1,0,0.0,547
+1b397c5267574a2aa47352245db66860acb1f75e,*/,1,0,0.0,548
+1b397c5267574a2aa47352245db66860acb1f75e,/*,1,0,0.0,549
+1b397c5267574a2aa47352245db66860acb1f75e,initializeExistingCart(customer);,1,0,0.0,550
+1b397c5267574a2aa47352245db66860acb1f75e,initializeExistingCartWithInactiveSkuAndInactiveBundle(customer);,1,0,0.0,551
+1b397c5267574a2aa47352245db66860acb1f75e,"namedOrder.getName(), namedOrderItems.get(0).getId(), namedOrderItems.get(0).getQuantity());",1,0,0.0,552
+1b397c5267574a2aa47352245db66860acb1f75e,cartService.setMoveNamedOrderItems(true);,1,0,0.0,553
+1b397c5267574a2aa47352245db66860acb1f75e,cartService.setMoveNamedOrderItems(false);,1,0,0.0,554
+1b397c5267574a2aa47352245db66860acb1f75e,namedOrderItems.addAll(namedOrder.getOrderItems());,1,0,0.0,555
+1b397c5267574a2aa47352245db66860acb1f75e,package org.broadleafcommerce.core.order.service.legacy;,1,0,0.0,556
+1b397c5267574a2aa47352245db66860acb1f75e,*/,1,0,0.0,557
+1b397c5267574a2aa47352245db66860acb1f75e,/*,1,0,0.0,558
+1b397c5267574a2aa47352245db66860acb1f75e,cartService.setAutomaticallyMergeLikeItems(false);,1,0,0.0,559
+1b397c5267574a2aa47352245db66860acb1f75e,assert(order.getOrderItems().size()==2);,1,0,0.0,560
+1b397c5267574a2aa47352245db66860acb1f75e,"order.setOrderNumber(""3456"");",1,0,0.0,561
+1b397c5267574a2aa47352245db66860acb1f75e,assert(order.getOrderItems().get(1).getQuantity()==1);,1,0,0.0,562
+1b397c5267574a2aa47352245db66860acb1f75e,assert(newNewFg.getFulfillmentGroupItems().get(0).getOrderItem().equals(orderItems.get(0)));,1,0,0.0,563
+1b397c5267574a2aa47352245db66860acb1f75e,newFg.setService(ShippingServiceType.BANDED_SHIPPING.getType());,1,0,0.0,564
+1b397c5267574a2aa47352245db66860acb1f75e,"newFg.setMethod(""standard"");",1,0,0.0,565
+1b397c5267574a2aa47352245db66860acb1f75e,newFg.setAddress(address);,1,0,0.0,566
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.removeFulfillmentGroupFromOrder(order, item);",1,0,0.0,567
+1b397c5267574a2aa47352245db66860acb1f75e,fulfillmentGroup.setAddress(address);,1,0,0.0,568
+1b397c5267574a2aa47352245db66860acb1f75e,fulfillmentGroup.setOrder(order);,1,0,0.0,569
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.addPaymentToOrder(order, paymentInfo, null);",1,0,0.0,570
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.removeItemFromOrder(order, item);",1,0,0.0,571
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.updateItemQuantity(order, updatedItem);",1,0,0.0,572
+1b397c5267574a2aa47352245db66860acb1f75e,updateItems.get(0).setQuantity(15);,1,0,0.0,573
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.updateItemQuantity(order, item);",1,0,0.0,574
+1b397c5267574a2aa47352245db66860acb1f75e,item.setQuantity(10);,1,0,0.0,575
+1b397c5267574a2aa47352245db66860acb1f75e,((DiscreteOrderItem) item).getSku().setRetailPrice(new Money(BigDecimal.valueOf(10000)));,1,0,0.0,576
+1b397c5267574a2aa47352245db66860acb1f75e,((DiscreteOrderItem) item).getSku().setSalePrice(new Money(BigDecimal.valueOf(10000)));,1,0,0.0,577
+1b397c5267574a2aa47352245db66860acb1f75e,//item.setSalePrice(new Money(BigDecimal.valueOf(10000)));,1,0,0.0,578
+1b397c5267574a2aa47352245db66860acb1f75e,"cartService.removeItemFromOrder(order, bundleOrderItem);",1,0,0.0,579
+1b397c5267574a2aa47352245db66860acb1f75e,bundleRequest.getDiscreteOrderItems().add(itemRequest);,1,0,0.0,580
+1b397c5267574a2aa47352245db66860acb1f75e,"bundleRequest.setName(""myBundle"");",1,0,0.0,581
+1b397c5267574a2aa47352245db66860acb1f75e,bundleRequest.setQuantity(1);,1,0,0.0,582
+1b397c5267574a2aa47352245db66860acb1f75e,//numOrderItems++;,1,0,0.0,583
+1b397c5267574a2aa47352245db66860acb1f75e,@Override,1,0,0.0,584

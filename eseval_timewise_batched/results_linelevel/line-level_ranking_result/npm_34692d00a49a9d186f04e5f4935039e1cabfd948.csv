@@ -1,0 +1,33 @@
+commit_id,line,line_level_label,count,line_score,row
+34692d00a49a9d186f04e5f4935039e1cabfd948,function cleanup (data) {,0,2,1.0,1
+34692d00a49a9d186f04e5f4935039e1cabfd948,"if (typeof d === ""string"") return d",0,2,1.0,2
+34692d00a49a9d186f04e5f4935039e1cabfd948,function unparsePerson (d) {,0,2,1.0,3
+34692d00a49a9d186f04e5f4935039e1cabfd948,Object.keys(data).forEach(function (d) {,0,1,0.5,4
+34692d00a49a9d186f04e5f4935039e1cabfd948,switch (d) {,0,1,0.5,5
+34692d00a49a9d186f04e5f4935039e1cabfd948,}),0,1,0.5,6
+34692d00a49a9d186f04e5f4935039e1cabfd948,return data,0,1,0.5,7
+34692d00a49a9d186f04e5f4935039e1cabfd948,d[a] = data,1,1,0.5,8
+34692d00a49a9d186f04e5f4935039e1cabfd948,process.stdout.flush(),0,0,0.0,9
+34692d00a49a9d186f04e5f4935039e1cabfd948,"log(d.replace(/\//, '@'), ""view"")",0,0,0.0,10
+34692d00a49a9d186f04e5f4935039e1cabfd948,"process.stdout.write(sys.inspect(data[d],false,5,true))",0,0,0.0,11
+34692d00a49a9d186f04e5f4935039e1cabfd948,"process.stdout.write(""\n"")",0,0,0.0,12
+34692d00a49a9d186f04e5f4935039e1cabfd948,process.stdout.flush(),1,0,0.0,13
+34692d00a49a9d186f04e5f4935039e1cabfd948,"setTimeout(cb,100)",0,0,0.0,14
+34692d00a49a9d186f04e5f4935039e1cabfd948,"log(d.replace(/\//, '@'), ""view "")",1,0,0.0,15
+34692d00a49a9d186f04e5f4935039e1cabfd948,process.stdout.write(sys.inspect(data[d])),1,0,0.0,16
+34692d00a49a9d186f04e5f4935039e1cabfd948,"+ (d.email ? "" <""+d.email+"">"" : """")",0,0,0.0,17
+34692d00a49a9d186f04e5f4935039e1cabfd948,cb(),1,0,0.0,18
+34692d00a49a9d186f04e5f4935039e1cabfd948,"+ (d.url ? "" (""+d.url+"")"" : """")",0,0,0.0,19
+34692d00a49a9d186f04e5f4935039e1cabfd948,"if (d.charAt(0) === ""_"") delete data[d]",0,0,0.0,20
+34692d00a49a9d186f04e5f4935039e1cabfd948,return d.name,0,0,0.0,21
+34692d00a49a9d186f04e5f4935039e1cabfd948,},0,0,0.0,22
+34692d00a49a9d186f04e5f4935039e1cabfd948,"else if (typeof data[d] === ""object"") cleanup(data[d])",0,0,0.0,23
+34692d00a49a9d186f04e5f4935039e1cabfd948,default:,0,0,0.0,24
+34692d00a49a9d186f04e5f4935039e1cabfd948,data[d] = data[d].map(unparsePerson),0,0,0.0,25
+34692d00a49a9d186f04e5f4935039e1cabfd948,"case ""maintainers"":",0,0,0.0,26
+34692d00a49a9d186f04e5f4935039e1cabfd948,"case ""contributors"":",0,0,0.0,27
+34692d00a49a9d186f04e5f4935039e1cabfd948,break,0,0,0.0,28
+34692d00a49a9d186f04e5f4935039e1cabfd948,data[d] = unparsePerson(data[d]),0,0,0.0,29
+34692d00a49a9d186f04e5f4935039e1cabfd948,"case ""author"":",0,0,0.0,30
+34692d00a49a9d186f04e5f4935039e1cabfd948,d[a] = cleanup(data),0,0,0.0,31
+34692d00a49a9d186f04e5f4935039e1cabfd948,},1,0,0.0,32

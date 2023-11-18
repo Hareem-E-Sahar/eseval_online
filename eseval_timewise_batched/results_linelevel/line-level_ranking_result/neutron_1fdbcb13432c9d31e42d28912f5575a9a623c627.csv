@@ -1,0 +1,122 @@
+commit_id,line,line_level_label,count,line_score,row
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from neutron.common import config as common_config,1,5,1.0,1
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from neutron.plugins.nec import config as nec_config,1,5,1.0,2
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from neutron.plugins.nec import config as nec_config,1,5,1.0,3
+1fdbcb13432c9d31e42d28912f5575a9a623c627,# Copyright 2012 NEC Corporation.,1,4,0.8,4
+1fdbcb13432c9d31e42d28912f5575a9a623c627,# Copyright 2012 NEC Corporation.  All rights reserved.,1,4,0.8,5
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from oslo_config import cfg,1,3,0.6000000000000001,6
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from neutron.agent.common import config,1,3,0.6000000000000001,7
+1fdbcb13432c9d31e42d28912f5575a9a623c627,# Copyright 2012-2013 NEC Corporation.  All rights reserved.,1,3,0.6000000000000001,8
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from networking_nec.plugins.openflow import plugin,1,3,0.6000000000000001,9
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.CONF.register_opts(ofc_opts, ""OFC"")",1,2,0.4,10
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.CONF.register_opts(ovs_opts, ""OVS"")",1,2,0.4,11
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.CONF.register_opts(provider_opts, ""PROVIDER"")",1,2,0.4,12
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,2,0.4,13
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""NEC plugin retries API request to OFC """,1,2,0.4,14
+1fdbcb13432c9d31e42d28912f5575a9a623c627,def main():,1,2,0.4,15
+1fdbcb13432c9d31e42d28912f5575a9a623c627,from networking_nec.plugins.openflow.agent import l2_agent,1,2,0.4,16
+1fdbcb13432c9d31e42d28912f5575a9a623c627,import sys,1,2,0.4,17
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    a copy of the License at,1,1,0.2,18
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Maximum attempts per OFC API request. """,1,1,0.2,19
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""when OFC returns ServiceUnavailable (503). """,1,1,0.2,20
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_('Default router provider to use.')),",1,1,0.2,21
+1fdbcb13432c9d31e42d28912f5575a9a623c627,def register_plugin_opts():,1,1,0.2,22
+1fdbcb13432c9d31e42d28912f5575a9a623c627,def register_agent_opts():,1,1,0.2,23
+1fdbcb13432c9d31e42d28912f5575a9a623c627,config.register_agent_state_opts_helper(cfg.CONF),1,1,0.2,24
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#,1,1,0.2,25
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.2,26
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    not use this file except in compliance with the License. You may obtain,1,1,0.2,27
+1fdbcb13432c9d31e42d28912f5575a9a623c627,class NECPluginV2(plugin.NECPluginV2Impl):,1,1,0.2,28
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.2,29
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.2,30
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.2,31
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.2,32
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    License for the specific language governing permissions and limitations,1,1,0.2,33
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    under the License.,1,1,0.2,34
+1fdbcb13432c9d31e42d28912f5575a9a623c627,def supported_extension_aliases(self):,1,1,0.2,35
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Base URL of OFC REST API. """,1,1,0.2,36
+1fdbcb13432c9d31e42d28912f5575a9a623c627,self._aliases = aliases,1,1,0.2,37
+1fdbcb13432c9d31e42d28912f5575a9a623c627,def __init__(self):,1,1,0.2,38
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Support packet filter on OFC router interface."")),",1,1,0.2,39
+1fdbcb13432c9d31e42d28912f5575a9a623c627,aliases = self._supported_extension_aliases[:],1,1,0.2,40
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""The number of seconds the agent will wait between """,1,1,0.2,41
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    under the License.,1,1,0.2,42
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    under the License.,1,1,0.2,43
+1fdbcb13432c9d31e42d28912f5575a9a623c627,# All Rights Reserved.,1,1,0.2,44
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#,1,1,0.2,45
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.2,46
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    not use this file except in compliance with the License. You may obtain,1,1,0.2,47
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.2,48
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.2,49
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.2,50
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.2,51
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    License for the specific language governing permissions and limitations,1,1,0.2,52
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    a copy of the License at,1,1,0.2,53
+1fdbcb13432c9d31e42d28912f5575a9a623c627,common_config.init(sys.argv[1:]),1,1,0.2,54
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.2,55
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    not use this file except in compliance with the License. You may obtain,1,1,0.2,56
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    a copy of the License at,1,1,0.2,57
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.2,58
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.2,59
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.2,60
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.2,61
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#,1,1,0.2,62
+1fdbcb13432c9d31e42d28912f5575a9a623c627,#    License for the specific language governing permissions and limitations,1,1,0.2,63
+1fdbcb13432c9d31e42d28912f5575a9a623c627,help=_('List of enabled router providers.')),1,0,0.0,64
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""dhcp_agent_scheduler"",",1,0,0.0,65
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""binding"",",1,0,0.0,66
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""allowed-address-pairs"",",1,0,0.0,67
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"_supported_extension_aliases = [""agent"",",1,0,0.0,68
+1fdbcb13432c9d31e42d28912f5575a9a623c627,provider_opts = [,1,0,0.0,69
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"default=['l3-agent', 'openflow'],",1,0,0.0,70
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.ListOpt('router_providers',",1,0,0.0,71
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"default='l3-agent',",1,0,0.0,72
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('default_router_provider',",1,0,0.0,73
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""The value must be greater than 0."")),",1,0,0.0,74
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""ext-gw-mode"",",1,0,0.0,75
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""external-net"",",1,0,0.0,76
+1fdbcb13432c9d31e42d28912f5575a9a623c627,self.setup_extension_aliases(aliases),1,0,0.0,77
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""extraroute"",",1,0,0.0,78
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""l3_agent_scheduler"",",1,0,0.0,79
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""packet-filter"",",1,0,0.0,80
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""quotas"",",1,0,0.0,81
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""router"",",1,0,0.0,82
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""router_provider"",",1,0,0.0,83
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""security-group"",",1,0,0.0,84
+1fdbcb13432c9d31e42d28912f5575a9a623c627,],1,0,0.0,85
+1fdbcb13432c9d31e42d28912f5575a9a623c627,@property,1,0,0.0,86
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"if not hasattr(self, '_aliases'):",1,0,0.0,87
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Disable SSL certificate verification."")),",1,0,0.0,88
+1fdbcb13432c9d31e42d28912f5575a9a623c627,return self._aliases,1,0,0.0,89
+1fdbcb13432c9d31e42d28912f5575a9a623c627,nec_config.register_plugin_opts(),1,0,0.0,90
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.IntOpt('api_max_attempts', default=3,",1,0,0.0,91
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('driver', default='trema',",1,0,0.0,92
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.BoolOpt('insecure_ssl', default=False,",1,0,0.0,93
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Host to connect to."")),",1,0,0.0,94
+1fdbcb13432c9d31e42d28912f5575a9a623c627,nec_config.register_agent_opts(),1,0,0.0,95
+1fdbcb13432c9d31e42d28912f5575a9a623c627,common_config.setup_logging(),1,0,0.0,96
+1fdbcb13432c9d31e42d28912f5575a9a623c627,l2_agent.run(),1,0,0.0,97
+1fdbcb13432c9d31e42d28912f5575a9a623c627,ovs_opts = [,1,0,0.0,98
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('integration_bridge', default='br-int',",1,0,0.0,99
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Integration bridge to use."")),",1,0,0.0,100
+1fdbcb13432c9d31e42d28912f5575a9a623c627,],1,0,0.0,101
+1fdbcb13432c9d31e42d28912f5575a9a623c627,agent_opts = [,1,0,0.0,102
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.IntOpt('polling_interval', default=2,",1,0,0.0,103
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""polling for local device changes."")),",1,0,0.0,104
+1fdbcb13432c9d31e42d28912f5575a9a623c627,ofc_opts = [,1,0,0.0,105
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('host', default='127.0.0.1',",1,0,0.0,106
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('path_prefix', default='',",1,0,0.0,107
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Location of certificate file."")),",1,0,0.0,108
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"""It is prepended to each API request."")),",1,0,0.0,109
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('port', default='8888',",1,0,0.0,110
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Port to connect to."")),",1,0,0.0,111
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Driver to use."")),",1,0,0.0,112
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.BoolOpt('enable_packet_filter', default=True,",1,0,0.0,113
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Enable packet filter."")),",1,0,0.0,114
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.BoolOpt('support_packet_filter_on_ofc_router', default=True,",1,0,0.0,115
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.BoolOpt('use_ssl', default=False,",1,0,0.0,116
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Use SSL to connect."")),",1,0,0.0,117
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('key_file',",1,0,0.0,118
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"help=_(""Location of key file."")),",1,0,0.0,119
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"cfg.StrOpt('cert_file',",1,0,0.0,120
+1fdbcb13432c9d31e42d28912f5575a9a623c627,"super(NECPluginV2, self).__init__()",1,0,0.0,121

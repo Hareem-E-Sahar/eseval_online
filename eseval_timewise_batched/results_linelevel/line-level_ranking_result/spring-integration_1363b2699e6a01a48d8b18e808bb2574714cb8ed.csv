@@ -1,0 +1,45 @@
+commit_id,line,line_level_label,count,line_score,row
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,HttpRequestExecutingMessageHandler handler =,0,1,1.0,1
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"HttpRequestExecutingMessageHandler handler = (HttpRequestExecutingMessageHandler) endpointAccessor.getPropertyValue(""handler"");",1,1,1.0,2
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.junit.Test;,1,0,0.0,3
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.junit.runner.RunWith;,1,0,0.0,4
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.springframework.beans.BeansException;,1,0,0.0,5
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.springframework.test.context.ContextConfiguration;,1,0,0.0,6
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;,1,0,0.0,7
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,@RunWith(SpringJUnit4ClassRunner.class),1,0,0.0,8
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,@ContextConfiguration,1,0,0.0,9
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"assertThat(handlerAccessor.getPropertyValue(""charset"")).isEqualTo(Charset.forName(""UTF-8""));",1,0,0.0,10
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,public void fullConfig() throws Exception {,1,0,0.0,11
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"handler.handleMessage(new GenericMessage<String>(""foo""));",1,0,0.0,12
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,try {,1,0,0.0,13
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"new ClassPathXmlApplicationContext(""HttpOutboundGatewayWithinChainTests-fail-context.xml"", this.getClass())",1,0,0.0,14
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,.close();,1,0,0.0,15
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"fail(""Expected BeanDefinitionParsingException"");",1,0,0.0,16
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,},1,0,0.0,17
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,catch (BeansException e) {,1,0,0.0,18
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,assertThat(e instanceof BeanDefinitionParsingException).isTrue();,1,0,0.0,19
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"assertThat(e.getMessage().contains(""'request-channel' attribute isn't allowed for a nested"")).isTrue();",1,0,0.0,20
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,public boolean hasError(ClientHttpResponse response) throws IOException {,1,0,0.0,21
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import java.nio.charset.Charset;,1,0,0.0,22
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import java.io.IOException;,1,0,0.0,23
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import static org.assertj.core.api.Assertions.fail;,1,0,0.0,24
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"(HttpRequestExecutingMessageHandler) endpointAccessor.getPropertyValue(""handler"");",0,0,0.0,25
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,* Copyright 2002-2021 the original author or authors.,0,0,0.0,26
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import static org.assertj.core.api.Assertions.assertThatExceptionOfType;,0,0,0.0,27
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import java.nio.charset.StandardCharsets;,0,0,0.0,28
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.junit.jupiter.api.Test;,0,0,0.0,29
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;,0,0,0.0,30
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,@SpringJUnitConfig,0,0,0.0,31
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"assertThat(handlerAccessor.getPropertyValue(""charset"")).isEqualTo(StandardCharsets.UTF_8);",0,0,0.0,32
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,public void fullConfig() {,0,0,0.0,33
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"assertThat(handlerAccessor.getPropertyValue(""extractResponseBody"")).isEqualTo(false);",0,0,0.0,34
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,* Copyright 2002-2020 the original author or authors.,1,0,0.0,35
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"handler.handleMessage(new GenericMessage<>(""foo""));",0,0,0.0,36
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,assertThatExceptionOfType(BeanDefinitionParsingException.class),0,0,0.0,37
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,.isThrownBy(() ->,0,0,0.0,38
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,"new ClassPathXmlApplicationContext(""HttpOutboundGatewayWithinChainTests-fail-context.xml"",",0,0,0.0,39
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,getClass())),0,0,0.0,40
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,".withMessageContaining(""'request-channel' attribute isn't allowed for a nested"");",0,0,0.0,41
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,public boolean hasError(ClientHttpResponse response) {,0,0,0.0,42
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,public void handleError(ClientHttpResponse response) {,0,0,0.0,43
+1363b2699e6a01a48d8b18e808bb2574714cb8ed,public void handleError(ClientHttpResponse response) throws IOException {,1,0,0.0,44

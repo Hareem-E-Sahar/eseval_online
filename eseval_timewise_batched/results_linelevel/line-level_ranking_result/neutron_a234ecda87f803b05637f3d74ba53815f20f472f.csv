@@ -1,0 +1,69 @@
+commit_id,line,line_level_label,count,line_score,row
+a234ecda87f803b05637f3d74ba53815f20f472f,#    License for the specific language governing permissions and limitations,1,4,1.0,1
+a234ecda87f803b05637f3d74ba53815f20f472f,#    a copy of the License at,1,3,0.75,2
+a234ecda87f803b05637f3d74ba53815f20f472f,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,3,0.75,3
+a234ecda87f803b05637f3d74ba53815f20f472f,#    not use this file except in compliance with the License. You may obtain,1,3,0.75,4
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('epg_id', sa.String(length=64), nullable=False),",1,2,0.5,5
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('filter_id', sa.String(length=64), nullable=False),",1,2,0.5,6
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('contract_id', sa.String(length=64), nullable=False),",1,2,0.5,7
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('tenant_id', sa.String(length=255), nullable=False),",1,2,0.5,8
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('profile_id', sa.String(length=64), nullable=False),",1,2,0.5,9
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('node_id', sa.String(length=255), nullable=False),",1,2,0.5,10
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('segmentation_id', sa.String(length=64), nullable=False),",1,2,0.5,11
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('hpselc_id', sa.String(length=64), nullable=False),",1,2,0.5,12
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('network_id', sa.String(length=255), nullable=False),",1,2,0.5,13
+a234ecda87f803b05637f3d74ba53815f20f472f,"# revision identifiers, used by Alembic.",1,2,0.5,14
+a234ecda87f803b05637f3d74ba53815f20f472f,"provider = sa.Column(sa.Boolean, default=False, nullable=False)",1,2,0.5,15
+a234ecda87f803b05637f3d74ba53815f20f472f,#    under the License.,1,2,0.5,16
+a234ecda87f803b05637f3d74ba53815f20f472f,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.5,17
+a234ecda87f803b05637f3d74ba53815f20f472f,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.5,18
+a234ecda87f803b05637f3d74ba53815f20f472f,revision = '1b837a7125a9',1,2,0.5,19
+a234ecda87f803b05637f3d74ba53815f20f472f,def upgrade():,1,1,0.25,20
+a234ecda87f803b05637f3d74ba53815f20f472f,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.25,21
+a234ecda87f803b05637f3d74ba53815f20f472f,down_revision = '6be312499f9',1,1,0.25,22
+a234ecda87f803b05637f3d74ba53815f20f472f,from alembic import op,1,1,0.25,23
+a234ecda87f803b05637f3d74ba53815f20f472f,import sqlalchemy as sa,1,1,0.25,24
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('module', sa.String(length=10), nullable=False),",1,1,0.25,25
+a234ecda87f803b05637f3d74ba53815f20f472f,op.create_table(,1,1,0.25,26
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('provider', sa.Boolean(), default=False, nullable=False),",1,1,0.25,27
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('from_port', sa.Integer(), nullable=False),",1,1,0.25,28
+a234ecda87f803b05637f3d74ba53815f20f472f,"sa.Column('to_port', sa.Integer(), nullable=False),",1,1,0.25,29
+a234ecda87f803b05637f3d74ba53815f20f472f,# Copyright 2014 OpenStack Foundation,1,1,0.25,30
+a234ecda87f803b05637f3d74ba53815f20f472f,#,1,1,0.25,31
+a234ecda87f803b05637f3d74ba53815f20f472f,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.25,32
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo.config import cfg,1,1,0.25,33
+a234ecda87f803b05637f3d74ba53815f20f472f,"class TenantContract(model_base.BASEV2, models_v2.HasTenant):",1,1,0.25,34
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo_config import cfg,0,1,0.25,35
+a234ecda87f803b05637f3d74ba53815f20f472f,nullable=False),0,1,0.25,36
+a234ecda87f803b05637f3d74ba53815f20f472f,class TenantContract(model_base.BASEV2):,0,1,0.25,37
+a234ecda87f803b05637f3d74ba53815f20f472f,# Cannot use HasTenant since we need to set nullable=False,0,1,0.25,38
+a234ecda87f803b05637f3d74ba53815f20f472f,"tenant_id = sa.Column(sa.String(255), nullable=False, primary_key=True)",0,1,0.25,39
+a234ecda87f803b05637f3d74ba53815f20f472f,"provider = sa.Column(sa.Boolean, default=False, server_default=sql.false(),",0,1,0.25,40
+a234ecda87f803b05637f3d74ba53815f20f472f,"__table_args__ = (sa.PrimaryKeyConstraint('tenant_id'),)",1,1,0.25,41
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo_config import cfg,0,1,0.25,42
+a234ecda87f803b05637f3d74ba53815f20f472f,# oslo_config limits ${var} expansion to global variables,0,1,0.25,43
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo.config import cfg,1,1,0.25,44
+a234ecda87f803b05637f3d74ba53815f20f472f,# oslo.config limits ${var} expansion to global variables,1,1,0.25,45
+a234ecda87f803b05637f3d74ba53815f20f472f,messaging.set_transport_defaults(control_exchange='neutron'),1,0,0.0,46
+a234ecda87f803b05637f3d74ba53815f20f472f,"'cisco_ml2_apic_contracts',",1,0,0.0,47
+a234ecda87f803b05637f3d74ba53815f20f472f,sa.PrimaryKeyConstraint('node_id')),1,0,0.0,48
+a234ecda87f803b05637f3d74ba53815f20f472f,"'cisco_ml2_apic_port_profiles',",1,0,0.0,49
+a234ecda87f803b05637f3d74ba53815f20f472f,sa.PrimaryKeyConstraint('network_id')),1,0,0.0,50
+a234ecda87f803b05637f3d74ba53815f20f472f,"'cisco_ml2_apic_epgs',",1,0,0.0,51
+a234ecda87f803b05637f3d74ba53815f20f472f,"""""""",1,0,0.0,52
+a234ecda87f803b05637f3d74ba53815f20f472f,Create Date: 2014-02-13 09:35:19.147619,1,0,0.0,53
+a234ecda87f803b05637f3d74ba53815f20f472f,Revises: 6be312499f9,1,0,0.0,54
+a234ecda87f803b05637f3d74ba53815f20f472f,Revision ID: 1b837a7125a9,1,0,0.0,55
+a234ecda87f803b05637f3d74ba53815f20f472f,"""""""Cisco APIC Mechanism Driver",1,0,0.0,56
+a234ecda87f803b05637f3d74ba53815f20f472f,return json.dumps({key: {'attributes': attrs}}),1,0,0.0,57
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo import messaging,1,0,0.0,58
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo.db import options as db_options,1,0,0.0,59
+a234ecda87f803b05637f3d74ba53815f20f472f,oslo_messaging.set_transport_defaults(control_exchange='neutron'),0,0,0.0,60
+a234ecda87f803b05637f3d74ba53815f20f472f,import oslo_messaging,0,0,0.0,61
+a234ecda87f803b05637f3d74ba53815f20f472f,from oslo_db import options as db_options,0,0,0.0,62
+a234ecda87f803b05637f3d74ba53815f20f472f,from neutron.openstack.common import jsonutils as json,1,0,0.0,63
+a234ecda87f803b05637f3d74ba53815f20f472f,return jsonutils.dumps({key: {'attributes': attrs}}),0,0,0.0,64
+a234ecda87f803b05637f3d74ba53815f20f472f,from neutron.openstack.common import jsonutils,0,0,0.0,65
+a234ecda87f803b05637f3d74ba53815f20f472f,from neutron.db import models_v2,1,0,0.0,66
+a234ecda87f803b05637f3d74ba53815f20f472f,from sqlalchemy import sql,0,0,0.0,67
+a234ecda87f803b05637f3d74ba53815f20f472f,sa.PrimaryKeyConstraint('tenant_id')),1,0,0.0,68

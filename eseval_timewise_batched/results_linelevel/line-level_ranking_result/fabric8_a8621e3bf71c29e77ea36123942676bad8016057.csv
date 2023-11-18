@@ -1,0 +1,73 @@
+commit_id,line,line_level_label,count,line_score,row
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.ui.context.UIContext;,1,2,1.0,1
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.5,2
+a8621e3bf71c29e77ea36123942676bad8016057,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,1,0.5,3
+a8621e3bf71c29e77ea36123942676bad8016057,"return createCoordinate(""org.apache.camel"", artifactId, version);",1,1,0.5,4
+a8621e3bf71c29e77ea36123942676bad8016057,return builder;,1,1,0.5,5
+a8621e3bf71c29e77ea36123942676bad8016057,return CamelProjectHelper.findCamelArtifacts(project);,1,1,0.5,6
+a8621e3bf71c29e77ea36123942676bad8016057,return context.getUIContext().getProvider().getOutput().out();,1,1,0.5,7
+a8621e3bf71c29e77ea36123942676bad8016057,return camelCatalog;,1,1,0.5,8
+a8621e3bf71c29e77ea36123942676bad8016057,return converterFactory;,1,1,0.5,9
+a8621e3bf71c29e77ea36123942676bad8016057,return projectFactory;,1,1,0.5,10
+a8621e3bf71c29e77ea36123942676bad8016057,"return Projects.getSelectedProject(this.getProjectFactory(), context);",1,1,0.5,11
+a8621e3bf71c29e77ea36123942676bad8016057,return findCamelCoreDependency(project) != null;,1,1,0.5,12
+a8621e3bf71c29e77ea36123942676bad8016057,// requires camel is already setup,1,1,0.5,13
+a8621e3bf71c29e77ea36123942676bad8016057,return false;,1,1,0.5,14
+a8621e3bf71c29e77ea36123942676bad8016057,return true;,1,1,0.5,15
+a8621e3bf71c29e77ea36123942676bad8016057,return CamelProjectHelper.findCamelCoreDependency(project);,1,1,0.5,16
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.projects.ui.AbstractProjectCommand;,1,1,0.5,17
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.convert.ConverterFactory;,1,1,0.5,18
+a8621e3bf71c29e77ea36123942676bad8016057,import java.io.PrintStream;,1,1,0.5,19
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.projects.Projects;,1,1,0.5,20
+a8621e3bf71c29e77ea36123942676bad8016057,import java.util.Set;,1,1,0.5,21
+a8621e3bf71c29e77ea36123942676bad8016057,import io.fabric8.forge.addon.utils.CamelProjectHelper;,1,1,0.5,22
+a8621e3bf71c29e77ea36123942676bad8016057,import org.apache.camel.catalog.CamelCatalog;,1,1,0.5,23
+a8621e3bf71c29e77ea36123942676bad8016057,import javax.inject.Inject;,1,1,0.5,24
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.dependencies.Coordinate;,1,1,0.5,25
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.dependencies.Dependency;,1,1,0.5,26
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.dependencies.builder.CoordinateBuilder;,1,1,0.5,27
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.projects.Project;,1,1,0.5,28
+a8621e3bf71c29e77ea36123942676bad8016057,import org.jboss.forge.addon.projects.ProjectFactory;,1,1,0.5,29
+a8621e3bf71c29e77ea36123942676bad8016057,boolean enabled = super.isEnabled(context);,1,0,0.0,30
+a8621e3bf71c29e77ea36123942676bad8016057,protected CamelCatalog getCamelCatalog() {,1,0,0.0,31
+a8621e3bf71c29e77ea36123942676bad8016057,if (!enabled) {,1,0,0.0,32
+a8621e3bf71c29e77ea36123942676bad8016057,if (requiresCamelSetup()) {,1,0,0.0,33
+a8621e3bf71c29e77ea36123942676bad8016057,Project project = getSelectedProjectOrNull(context);,1,0,0.0,34
+a8621e3bf71c29e77ea36123942676bad8016057,if (project != null) {,1,0,0.0,35
+a8621e3bf71c29e77ea36123942676bad8016057,protected Project getSelectedProjectOrNull(UIContext context) {,1,0,0.0,36
+a8621e3bf71c29e77ea36123942676bad8016057,protected boolean requiresCamelSetup() {,1,0,0.0,37
+a8621e3bf71c29e77ea36123942676bad8016057,protected ProjectFactory getProjectFactory() {,1,0,0.0,38
+a8621e3bf71c29e77ea36123942676bad8016057,protected ConverterFactory getConverterFactory() {,1,0,0.0,39
+a8621e3bf71c29e77ea36123942676bad8016057,CoordinateBuilder builder = CoordinateBuilder.create(),1,0,0.0,40
+a8621e3bf71c29e77ea36123942676bad8016057,protected PrintStream getOutput(UIExecutionContext context) {,1,0,0.0,41
+a8621e3bf71c29e77ea36123942676bad8016057,protected Dependency findCamelCoreDependency(Project project) {,1,0,0.0,42
+a8621e3bf71c29e77ea36123942676bad8016057,protected Set<Dependency> findCamelArtifacts(Project project) {,1,0,0.0,43
+a8621e3bf71c29e77ea36123942676bad8016057,"protected Coordinate createCoordinate(String groupId, String artifactId, String version) {",1,0,0.0,44
+a8621e3bf71c29e77ea36123942676bad8016057,.setGroupId(groupId),1,0,0.0,45
+a8621e3bf71c29e77ea36123942676bad8016057,.setArtifactId(artifactId);,1,0,0.0,46
+a8621e3bf71c29e77ea36123942676bad8016057,if (version != null) {,1,0,0.0,47
+a8621e3bf71c29e77ea36123942676bad8016057,builder = builder.setVersion(version);,1,0,0.0,48
+a8621e3bf71c29e77ea36123942676bad8016057,},1,0,0.0,49
+a8621e3bf71c29e77ea36123942676bad8016057,public boolean isEnabled(UIContext context) {,1,0,0.0,50
+a8621e3bf71c29e77ea36123942676bad8016057,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,51
+a8621e3bf71c29e77ea36123942676bad8016057,protected boolean isProjectRequired() {,1,0,0.0,52
+a8621e3bf71c29e77ea36123942676bad8016057,*  implied.  See the License for the specific language governing,1,0,0.0,53
+a8621e3bf71c29e77ea36123942676bad8016057,/**,1,0,0.0,54
+a8621e3bf71c29e77ea36123942676bad8016057,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,55
+a8621e3bf71c29e77ea36123942676bad8016057,*,1,0,0.0,56
+a8621e3bf71c29e77ea36123942676bad8016057,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,57
+a8621e3bf71c29e77ea36123942676bad8016057,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,58
+a8621e3bf71c29e77ea36123942676bad8016057,*  with the License.  You may obtain a copy of the License at,1,0,0.0,59
+a8621e3bf71c29e77ea36123942676bad8016057,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,60
+a8621e3bf71c29e77ea36123942676bad8016057,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,61
+a8621e3bf71c29e77ea36123942676bad8016057,*  permissions and limitations under the License.,1,0,0.0,62
+a8621e3bf71c29e77ea36123942676bad8016057,@Override,1,0,0.0,63
+a8621e3bf71c29e77ea36123942676bad8016057,*/,1,0,0.0,64
+a8621e3bf71c29e77ea36123942676bad8016057,package io.fabric8.forge.camel.commands.project;,1,0,0.0,65
+a8621e3bf71c29e77ea36123942676bad8016057,public abstract class AbstractCamelProjectCommand extends AbstractProjectCommand {,1,0,0.0,66
+a8621e3bf71c29e77ea36123942676bad8016057,"public static String CATEGORY = ""Camel"";",1,0,0.0,67
+a8621e3bf71c29e77ea36123942676bad8016057,@Inject,1,0,0.0,68
+a8621e3bf71c29e77ea36123942676bad8016057,protected ProjectFactory projectFactory;,1,0,0.0,69
+a8621e3bf71c29e77ea36123942676bad8016057,protected ConverterFactory converterFactory;,1,0,0.0,70
+a8621e3bf71c29e77ea36123942676bad8016057,private CamelCatalog camelCatalog;,1,0,0.0,71
+a8621e3bf71c29e77ea36123942676bad8016057,"protected Coordinate createCamelCoordinate(String artifactId, String version) {",1,0,0.0,72

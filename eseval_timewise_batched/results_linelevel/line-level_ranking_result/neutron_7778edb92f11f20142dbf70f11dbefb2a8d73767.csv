@@ -1,0 +1,65 @@
+commit_id,line,line_level_label,count,line_score,row
+7778edb92f11f20142dbf70f11dbefb2a8d73767,return '#!/bin/sh\n%s' % script,1,3,1.0,1
+7778edb92f11f20142dbf70f11dbefb2a8d73767,return self._get_full_config_file_path('notify_%s.sh' % state),1,2,0.6666666666666666,2
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"return '%s\necho -n %s > %s' % (script, state, state_path)",1,2,0.6666666666666666,3
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"return itertools.chain(('    notify_%s ""%s""' % (state, path)",1,2,0.6666666666666666,4
+7778edb92f11f20142dbf70f11dbefb2a8d73767,return conf_dir,0,1,0.3333333333333333,5
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"return os.path.join(conf_dir, filename)",0,1,0.3333333333333333,6
+7778edb92f11f20142dbf70f11dbefb2a8d73767,return name,1,1,0.3333333333333333,7
+7778edb92f11f20142dbf70f11dbefb2a8d73767,return conf_dir,1,1,0.3333333333333333,8
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"return os.path.join(conf_dir, filename)",1,1,0.3333333333333333,9
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def _append_state(self, script, state):",1,0,0.0,10
+7778edb92f11f20142dbf70f11dbefb2a8d73767,These notifiers are executed when keepalived invokes a state,1,0,0.0,11
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"""""""Add a master, backup or fault notifier.",1,0,0.0,12
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def add_notifier(self, script, state, vrouter_id):",1,0,0.0,13
+7778edb92f11f20142dbf70f11dbefb2a8d73767,state_path = self._get_full_config_file_path('state'),1,0,0.0,14
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"utils.replace_file(name, script)",1,0,0.0,15
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def _prepend_shebang(self, script):",1,0,0.0,16
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"os.chmod(name, st.st_mode | stat.S_IEXEC)",1,0,0.0,17
+7778edb92f11f20142dbf70f11dbefb2a8d73767,st = os.stat(name),1,0,0.0,18
+7778edb92f11f20142dbf70f11dbefb2a8d73767,configuration.,1,0,0.0,19
+7778edb92f11f20142dbf70f11dbefb2a8d73767,name = self._get_notifier_path(state),1,0,0.0,20
+7778edb92f11f20142dbf70f11dbefb2a8d73767,transition. Write a notifier to disk and add it to the,1,0,0.0,21
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"self._write_notify_script(state, full_script)",1,0,0.0,22
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"""""""",1,0,0.0,23
+7778edb92f11f20142dbf70f11dbefb2a8d73767,script_with_prefix = self._prepend_shebang(' '.join(script)),1,0,0.0,24
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"full_script = self._append_state(script_with_prefix, state)",1,0,0.0,25
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def _get_notifier_path(self, state):",1,0,0.0,26
+7778edb92f11f20142dbf70f11dbefb2a8d73767,vr_instance = self.config.get_instance(vrouter_id),1,0,0.0,27
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"vr_instance.set_notify(state, self._get_notifier_path(state))",1,0,0.0,28
+7778edb92f11f20142dbf70f11dbefb2a8d73767,def get_conf_dir(self):,1,0,0.0,29
+7778edb92f11f20142dbf70f11dbefb2a8d73767,confs_dir = os.path.abspath(os.path.normpath(self.conf_path)),1,0,0.0,30
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"conf_dir = os.path.join(confs_dir, self.resource_id)",1,0,0.0,31
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def _get_full_config_file_path(self, filename, ensure_conf_dir=True):",1,0,0.0,32
+7778edb92f11f20142dbf70f11dbefb2a8d73767,conf_dir = self.get_conf_dir(),1,0,0.0,33
+7778edb92f11f20142dbf70f11dbefb2a8d73767,if ensure_conf_dir:,1,0,0.0,34
+7778edb92f11f20142dbf70f11dbefb2a8d73767,utils.ensure_dir(conf_dir),1,0,0.0,35
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def _write_notify_script(self, state, script):",1,0,0.0,36
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"for state, path in self.notifiers))",1,0,0.0,37
+7778edb92f11f20142dbf70f11dbefb2a8d73767,class KeepalivedNotifierMixin(object):,1,0,0.0,38
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"message = _('Invalid notify state: %(state)s, valid states are: '",1,0,0.0,39
+7778edb92f11f20142dbf70f11dbefb2a8d73767,class KeepalivedManager(object):,0,0,0.0,40
+7778edb92f11f20142dbf70f11dbefb2a8d73767,def get_conf_dir(self):,0,0,0.0,41
+7778edb92f11f20142dbf70f11dbefb2a8d73767,confs_dir = os.path.abspath(os.path.normpath(self.conf_path)),0,0,0.0,42
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"conf_dir = os.path.join(confs_dir, self.resource_id)",0,0,0.0,43
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def _get_full_config_file_path(self, filename, ensure_conf_dir=True):",0,0,0.0,44
+7778edb92f11f20142dbf70f11dbefb2a8d73767,conf_dir = self.get_conf_dir(),0,0,0.0,45
+7778edb92f11f20142dbf70f11dbefb2a8d73767,if ensure_conf_dir:,0,0,0.0,46
+7778edb92f11f20142dbf70f11dbefb2a8d73767,utils.ensure_dir(conf_dir),0,0,0.0,47
+7778edb92f11f20142dbf70f11dbefb2a8d73767,import stat,1,0,0.0,48
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"VALID_NOTIFY_STATES = ['master', 'backup', 'fault']",1,0,0.0,49
+7778edb92f11f20142dbf70f11dbefb2a8d73767,class InvalidNotifyStateException(exceptions.NeutronException):,1,0,0.0,50
+7778edb92f11f20142dbf70f11dbefb2a8d73767,'%(valid_notify_states)s'),1,0,0.0,51
+7778edb92f11f20142dbf70f11dbefb2a8d73767,config.extend(self._build_notify_scripts()),1,0,0.0,52
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def __init__(self, **kwargs):",1,0,0.0,53
+7778edb92f11f20142dbf70f11dbefb2a8d73767,if 'valid_notify_states' not in kwargs:,1,0,0.0,54
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"kwargs['valid_notify_states'] = ', '.join(VALID_NOTIFY_STATES)",1,0,0.0,55
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"super(InvalidNotifyStateException, self).__init__(**kwargs)",1,0,0.0,56
+7778edb92f11f20142dbf70f11dbefb2a8d73767,self.notifiers = [],1,0,0.0,57
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"def set_notify(self, state, path):",1,0,0.0,58
+7778edb92f11f20142dbf70f11dbefb2a8d73767,if state not in VALID_NOTIFY_STATES:,1,0,0.0,59
+7778edb92f11f20142dbf70f11dbefb2a8d73767,raise InvalidNotifyStateException(state=state),1,0,0.0,60
+7778edb92f11f20142dbf70f11dbefb2a8d73767,"self.notifiers.append((state, path))",1,0,0.0,61
+7778edb92f11f20142dbf70f11dbefb2a8d73767,def _build_notify_scripts(self):,1,0,0.0,62
+7778edb92f11f20142dbf70f11dbefb2a8d73767,if self.notifiers:,1,0,0.0,63
+7778edb92f11f20142dbf70f11dbefb2a8d73767,class KeepalivedManager(KeepalivedNotifierMixin):,1,0,0.0,64

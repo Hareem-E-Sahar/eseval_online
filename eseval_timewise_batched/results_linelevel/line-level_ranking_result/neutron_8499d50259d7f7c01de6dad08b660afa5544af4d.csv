@@ -1,0 +1,302 @@
+commit_id,line,line_level_label,count,line_score,row
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test serialize with content type json,1,4,1.0,1
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test Serializer.deserialize with content type json,1,4,1.0,2
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test deserialize with content type xml,1,4,1.0,3
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test deserialize with content type xml with meta,1,4,1.0,4
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test Serializer.serialize with content type xml with meta dict,1,4,1.0,5
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test serialize with content type xml with meta list,1,4,1.0,6
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test serialize with content type xml,1,4,1.0,7
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test deserialize with content type xml with meta.""""""",1,3,0.75,8
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test Serializer.serialize with content type xml with meta dict.""""""",1,3,0.75,9
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test serialize with content type xml with meta list.""""""",1,3,0.75,10
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test serialize with content type xml with meta list.""""""",0,3,0.75,11
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test Serializer.serialize with content type xml with meta dict.""""""",0,3,0.75,12
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test deserialize with content type xml with meta.""""""",0,3,0.75,13
+8499d50259d7f7c01de6dad08b660afa5544af4d,serializer = wsgi.XMLDictSerializer(metadata),1,2,0.5,14
+8499d50259d7f7c01de6dad08b660afa5544af4d,"result = result.replace('\n', '').replace(' ', '')",1,2,0.5,15
+8499d50259d7f7c01de6dad08b660afa5544af4d,"expected = ('create', {}, 'application/xml')",1,2,0.5,16
+8499d50259d7f7c01de6dad08b660afa5544af4d,"response = self.serializer.serialize({}, 'application/xml')",1,2,0.5,17
+8499d50259d7f7c01de6dad08b660afa5544af4d,request = wsgi.Request.blank('/tests/123'),1,2,0.5,18
+8499d50259d7f7c01de6dad08b660afa5544af4d,result = request.best_match_content_type(),1,2,0.5,19
+8499d50259d7f7c01de6dad08b660afa5544af4d,request = wsgi.Request.blank('/tests/123.xml'),1,2,0.5,20
+8499d50259d7f7c01de6dad08b660afa5544af4d,xml = '<a></a>',1,2,0.5,21
+8499d50259d7f7c01de6dad08b660afa5544af4d,deserializer = wsgi.XMLDeserializer(),1,2,0.5,22
+8499d50259d7f7c01de6dad08b660afa5544af4d,xml = '<a><b>test</b></a>',1,2,0.5,23
+8499d50259d7f7c01de6dad08b660afa5544af4d,xml = '<a>\xe7\xbd\x91\xe7\xbb\x9c</a>',1,2,0.5,24
+8499d50259d7f7c01de6dad08b660afa5544af4d,"servers = {'nodename': 'test',",1,2,0.5,25
+8499d50259d7f7c01de6dad08b660afa5544af4d,result = serializer.serialize(NETWORK),1,2,0.5,26
+8499d50259d7f7c01de6dad08b660afa5544af4d,deserializer = wsgi.XMLDeserializer(metadata),1,2,0.5,27
+8499d50259d7f7c01de6dad08b660afa5544af4d,result = serializer.serialize(data),1,2,0.5,28
+8499d50259d7f7c01de6dad08b660afa5544af4d,deserializer = wsgi.XMLDeserializer(attributes.get_attr_metadata()),1,2,0.5,29
+8499d50259d7f7c01de6dad08b660afa5544af4d,"serializer = wsgi.XMLDictSerializer(xmlns=""fake"")",1,2,0.5,30
+8499d50259d7f7c01de6dad08b660afa5544af4d,result = serializer.default(input_dict),1,2,0.5,31
+8499d50259d7f7c01de6dad08b660afa5544af4d,"result = result.replace('\n', '')",1,2,0.5,32
+8499d50259d7f7c01de6dad08b660afa5544af4d,"serializer = wsgi.XMLDictSerializer(xmlns=""fake"", metadata=metadata)",1,2,0.5,33
+8499d50259d7f7c01de6dad08b660afa5544af4d,servers = {'servers': {,1,2,0.5,34
+8499d50259d7f7c01de6dad08b660afa5544af4d,serializer = wsgi.XMLDictSerializer(),1,2,0.5,35
+8499d50259d7f7c01de6dad08b660afa5544af4d,result = serializer(data),1,2,0.5,36
+8499d50259d7f7c01de6dad08b660afa5544af4d,"result = serializer.serialize(input_dict, content_type)",1,2,0.5,37
+8499d50259d7f7c01de6dad08b660afa5544af4d,serializer = wsgi.XMLDictSerializer(attributes.get_attr_metadata()),1,2,0.5,38
+8499d50259d7f7c01de6dad08b660afa5544af4d,"result = serializer.serialize(data, content_type)",1,2,0.5,39
+8499d50259d7f7c01de6dad08b660afa5544af4d,serializer = wsgi.Serializer(),0,2,0.5,40
+8499d50259d7f7c01de6dad08b660afa5544af4d,"serializer = wsgi.Serializer(default_xmlns=""fake"", metadata=metadata)",1,2,0.5,41
+8499d50259d7f7c01de6dad08b660afa5544af4d,"expected = {'body': {'servers': [{'name': 's1', 'test': 'passed'}]}}",0,2,0.5,42
+8499d50259d7f7c01de6dad08b660afa5544af4d,expected = {'body': {'servers': ['passed']}},1,2,0.5,43
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test serialize with content type xml.""""""",0,2,0.5,44
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test Serializer.deserialize with content type json.""""""",0,2,0.5,45
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test deserialize with content type xml.""""""",0,2,0.5,46
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test get body deserializer verifies,1,2,0.5,47
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test get body serializer verifies,1,2,0.5,48
+8499d50259d7f7c01de6dad08b660afa5544af4d,response = 'Success',0,2,0.5,49
+8499d50259d7f7c01de6dad08b660afa5544af4d,response = 'Sucess',1,2,0.5,50
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test serialize with content type json.""""""",0,2,0.5,51
+8499d50259d7f7c01de6dad08b660afa5544af4d,"expected = ('create', {}, 'application/json')",0,2,0.5,52
+8499d50259d7f7c01de6dad08b660afa5544af4d,expected = (,1,2,0.5,53
+8499d50259d7f7c01de6dad08b660afa5544af4d,expected = {'body': {'servers': {'server': 'test=pass'}}},1,2,0.5,54
+8499d50259d7f7c01de6dad08b660afa5544af4d,"expected = {'body': {'servers': [{'name': 's1', 'test': 'passed'}]}}",1,2,0.5,55
+8499d50259d7f7c01de6dad08b660afa5544af4d,serializer = wsgi.Serializer(,1,2,0.5,56
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test deserialize with content type xml.""""""",1,2,0.5,57
+8499d50259d7f7c01de6dad08b660afa5544af4d,"result = serializer.deserialize(data_string, content_type)",1,2,0.5,58
+8499d50259d7f7c01de6dad08b660afa5544af4d,"result = serializer.serialize(input_data, content_type)",1,2,0.5,59
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test serialize with content type xml.""""""",1,2,0.5,60
+8499d50259d7f7c01de6dad08b660afa5544af4d,"serializer = wsgi.Serializer(default_xmlns=""fake"")",1,2,0.5,61
+8499d50259d7f7c01de6dad08b660afa5544af4d,request = wsgi.Request.blank('/tests/123.json'),0,2,0.5,62
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata['plurals'] = {'tests': 'test'},1,1,0.25,63
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata[constants.EXT_NS] = ns,1,1,0.25,64
+8499d50259d7f7c01de6dad08b660afa5544af4d,ns = {'prefix': 'http://xxxx.yy.com'},1,1,0.25,65
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata = attributes.get_attr_metadata(),1,1,0.25,66
+8499d50259d7f7c01de6dad08b660afa5544af4d,"NETWORK = {'network': {'test': None,",1,1,0.25,67
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml(self):,1,1,0.25,68
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.body = '{""Content-Type"": ""xml""}'",1,1,0.25,69
+8499d50259d7f7c01de6dad08b660afa5544af4d,as_dict = {'body': {'a': u'\u7f51\u7edc'}},1,1,0.25,70
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml_with_utf8(self):,1,1,0.25,71
+8499d50259d7f7c01de6dad08b660afa5544af4d,"request.headers[""Accept""] = (""application/json; q=0.3, """,1,1,0.25,72
+8499d50259d7f7c01de6dad08b660afa5544af4d,"data_string = """"",1,1,0.25,73
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_default_raise_Malformed_Exception(self):,1,1,0.25,74
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_initialization(self):,1,1,0.25,75
+8499d50259d7f7c01de6dad08b660afa5544af4d,as_dict = {'body': {'a': ''}},1,1,0.25,76
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_serialize_xml_response(self):,1,1,0.25,77
+8499d50259d7f7c01de6dad08b660afa5544af4d,"request.headers[""Accept""] = ""application/xml, application/json""",1,1,0.25,78
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(result, ""application/xml"")",1,1,0.25,79
+8499d50259d7f7c01de6dad08b660afa5544af4d,"request.headers[""Accept""] = ""application/xml""",1,1,0.25,80
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_None(self):,1,1,0.25,81
+8499d50259d7f7c01de6dad08b660afa5544af4d,new_net = deserializer.deserialize(result)['body'],1,1,0.25,82
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata = {'list_collections': {'servers': servers}},1,1,0.25,83
+8499d50259d7f7c01de6dad08b660afa5544af4d,data = None,1,1,0.25,84
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml_meta_contains_node_name_dict(self):,1,1,0.25,85
+8499d50259d7f7c01de6dad08b660afa5544af4d,"def serialize(self, data, action='default'):",1,1,0.25,86
+8499d50259d7f7c01de6dad08b660afa5544af4d,data = {'servers': u'\u7f51\u7edc'},1,1,0.25,87
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml_with_unicode(self):,1,1,0.25,88
+8499d50259d7f7c01de6dad08b660afa5544af4d,data = {'servers': '\xe7\xbd\x91\xe7\xbb\x9c'},1,1,0.25,89
+8499d50259d7f7c01de6dad08b660afa5544af4d,data = {'servers': {'a': {'2': '3'}}},1,1,0.25,90
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_call(self):,1,1,0.25,91
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata = {'dict_collections': servers},1,1,0.25,92
+8499d50259d7f7c01de6dad08b660afa5544af4d,input_dict = {'servers': {'a': {'2': '3'}}},1,1,0.25,93
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml_meta_contains_node_name_list(self):,1,1,0.25,94
+8499d50259d7f7c01de6dad08b660afa5544af4d,new_data = deserializer.deserialize(result)['body'],1,1,0.25,95
+8499d50259d7f7c01de6dad08b660afa5544af4d,input_dict = {'servers': ['test-pass']},1,1,0.25,96
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml_root_key_is_list(self):,1,1,0.25,97
+8499d50259d7f7c01de6dad08b660afa5544af4d,"data = {'test1': 1, 'test2': '2'}",1,1,0.25,98
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_non_root_two_items_dic_xml(self):,1,1,0.25,99
+8499d50259d7f7c01de6dad08b660afa5544af4d,data = {'test1': 1},1,1,0.25,100
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_non_root_one_item_dic_xml(self):,1,1,0.25,101
+8499d50259d7f7c01de6dad08b660afa5544af4d,data = {},1,1,0.25,102
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_empty_dic_xml(self):,1,1,0.25,103
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.body_serializers = {,1,1,0.25,104
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_xml_empty(self):,1,1,0.25,105
+8499d50259d7f7c01de6dad08b660afa5544af4d,request.headers['Accept'] = 'application/xml',1,1,0.25,106
+8499d50259d7f7c01de6dad08b660afa5544af4d,"request.headers[""Accept""] = (""application/json; q=0.3"")",0,1,0.25,107
+8499d50259d7f7c01de6dad08b660afa5544af4d,request.headers['Accept'] = 'application/json',0,1,0.25,108
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.body_deserializers = {'application/json': JSONDeserializer()},0,1,0.25,109
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_run_server(self):,1,1,0.25,110
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test verifies that exception MalformedRequestBody is raised,1,1,0.25,111
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test verifies JsonDeserializer.default,1,1,0.25,112
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test ActionDispatcher.dispatch with none action,1,1,0.25,113
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test ActionDispatcher.dispatch,1,1,0.25,114
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test ResponseSerializer.get_body_serializer,1,1,0.25,115
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test serialize verifies,1,1,0.25,116
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test RequestDeserializer.deserialize,1,1,0.25,117
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test RequestDeserializer.get_action_args,1,1,0.25,118
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test RequestDeserializer.get_expected_content_type,1,1,0.25,119
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test RequestDeserializer.get_body_deserializer,1,1,0.25,120
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test serialize verifies that exception is raises,1,1,0.25,121
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test get deserialize verifies,1,1,0.25,122
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test verifies JsonDeserializer.default raises exception,0,1,0.25,123
+8499d50259d7f7c01de6dad08b660afa5544af4d,"metadata = {'plurals': ['servers', 'test'], 'xmlns': 'fake'}",1,1,0.25,124
+8499d50259d7f7c01de6dad08b660afa5544af4d,"metadata = {'plurals': {'servers': 'server'}, 'xmlns': 'fake'}",0,1,0.25,125
+8499d50259d7f7c01de6dad08b660afa5544af4d,expected_xml_serializer = self.deserializer.get_body_deserializer(,1,1,0.25,126
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.body_serializers = {'application/json': JSONSerializer()},0,1,0.25,127
+8499d50259d7f7c01de6dad08b660afa5544af4d,Test serialize verifies that exception InvalidContentType is raised,1,1,0.25,128
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(result, ""application/json"")",0,1,0.25,129
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata = {'xmlns': 'fake'},1,1,0.25,130
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.body_deserializers = {,1,1,0.25,131
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.body = '{""Content-Type"": ""json""}'",0,1,0.25,132
+8499d50259d7f7c01de6dad08b660afa5544af4d,"def deserialize(self, data, action='default'):",1,1,0.25,133
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_serialize_xml_root_is_None(self):,1,1,0.25,134
+8499d50259d7f7c01de6dad08b660afa5544af4d,metadata = {'application/xml': {,1,1,0.25,135
+8499d50259d7f7c01de6dad08b660afa5544af4d,input_dict = {'servers': ['test=pass']},1,1,0.25,136
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_serialize_xml_root_key_is_list(self):,1,1,0.25,137
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(result, expected)",1,1,0.25,138
+8499d50259d7f7c01de6dad08b660afa5544af4d,input_dict = {'test': 'pass'},1,1,0.25,139
+8499d50259d7f7c01de6dad08b660afa5544af4d,"data = {'servers': {'network': (2, 3)}}",1,1,0.25,140
+8499d50259d7f7c01de6dad08b660afa5544af4d,input_data = {'servers': ['test=pass']},1,1,0.25,141
+8499d50259d7f7c01de6dad08b660afa5544af4d,"metadata = {'plurals': {'servers': 'server'}, 'xmlns': 'fake'}",1,1,0.25,142
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_deserialize_xml_content_type_with_meta(self):,1,1,0.25,143
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_serialize_content_type_xml(self):,1,1,0.25,144
+8499d50259d7f7c01de6dad08b660afa5544af4d,data_string = (,1,1,0.25,145
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_deserialize_xml_content_type(self):,1,1,0.25,146
+8499d50259d7f7c01de6dad08b660afa5544af4d,content_type = 'application/xml',1,1,0.25,147
+8499d50259d7f7c01de6dad08b660afa5544af4d,def test_serialize_xml_root_key_is_dict(self):,1,1,0.25,148
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# <network xmlns=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,149
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    xmlns:prefix=""http://xxxx.yy.com""",1,0,0.0,150
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    xmlns:quantum=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,151
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">",1,0,0.0,152
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <subnets quantum:type=""list"" />  # Empty List",1,0,0.0,153
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <int quantum:type=""int"">3</int>  # Integer text",1,0,0.0,154
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <int quantum:type=""long"">4</int>  # Long text",1,0,0.0,155
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <admin_state_up quantum:type=""bool"">True</admin_state_up> # Bool",1,0,0.0,156
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <int quantum:type=""float"">5.0</int>  # Float text",1,0,0.0,157
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <dict quantum:type=""dict"" />     # Empty Dict",1,0,0.0,158
+8499d50259d7f7c01de6dad08b660afa5544af4d,#    <name>net1</name>,1,0,0.0,159
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <test xsi:nil=""true"" />          # None",1,0,0.0,160
+8499d50259d7f7c01de6dad08b660afa5544af4d,#    <tenant_id>test-tenant</tenant_id>,1,0,0.0,161
+8499d50259d7f7c01de6dad08b660afa5544af4d,#    # We must have a namespace defined in root for prefix:external,1,0,0.0,162
+8499d50259d7f7c01de6dad08b660afa5544af4d,"{'test2': 2, 'test3': 3}]}}",1,0,0.0,163
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <prefix:external quantum:type=""bool"">True</prefix:external>",1,0,0.0,164
+8499d50259d7f7c01de6dad08b660afa5544af4d,#    <tests>                          # List,1,0,0.0,165
+8499d50259d7f7c01de6dad08b660afa5544af4d,# XML is:,1,0,0.0,166
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'name': 'net1',",1,0,0.0,167
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'tests': [{'test1': 'value1'},",1,0,0.0,168
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'prefix:external': True,",1,0,0.0,169
+8499d50259d7f7c01de6dad08b660afa5544af4d,"deserializer.deserialize(xml), as_dict)",1,0,0.0,170
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#       <test><test3 quantum:type=""int"">3</test3>",1,0,0.0,171
+8499d50259d7f7c01de6dad08b660afa5544af4d,"{'body': {u'a': {u'b': u'test'}}}, deserializer(xml))",1,0,0.0,172
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Verify that exception MalformedRequestBody is raised.""""""",1,0,0.0,173
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.assertRaises(,1,0,0.0,174
+8499d50259d7f7c01de6dad08b660afa5544af4d,"exception.MalformedRequestBody, deserializer.default, data_string)",1,0,0.0,175
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""/"", method='POST', headers={'Content-Type': ""xml""})",1,0,0.0,176
+8499d50259d7f7c01de6dad08b660afa5544af4d,class XMLDictSerializerTest(base.BaseTestCase):,1,0,0.0,177
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'tenant_id': 'test-tenant',",1,0,0.0,178
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'admin_state_up': True,",1,0,0.0,179
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'subnets': [],",1,0,0.0,180
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'dict': {},",1,0,0.0,181
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'int': 3,",1,0,0.0,182
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'long': 4L,",1,0,0.0,183
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'float': 5.0,",1,0,0.0,184
+8499d50259d7f7c01de6dad08b660afa5544af4d,#       <test><test1>value1</test1></test>,1,0,0.0,185
+8499d50259d7f7c01de6dad08b660afa5544af4d,# 1</test1>,1,0,0.0,186
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#             <test2 quantum:type=""int"">2</test2>",1,0,0.0,187
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<?xmlversion=\'1.0\'encoding=\'UTF-8\'?>',1,0,0.0,188
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# We have no root element in this data, We will use a virtual",1,0,0.0,189
+8499d50259d7f7c01de6dad08b660afa5544af4d,# root element _v_root to wrap the doct.,1,0,0.0,190
+8499d50259d7f7c01de6dad08b660afa5544af4d,# The XML is:,1,0,0.0,191
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# <_v_root xmlns=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,192
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#          xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">",1,0,0.0,193
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#    <test1 quantum:type=""int"">1</test1><test2>2</test2>",1,0,0.0,194
+8499d50259d7f7c01de6dad08b660afa5544af4d,# </_v_root>,1,0,0.0,195
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<serversxmlns=""fake""xmlns:quantum=""fake""'",1,0,0.0,196
+8499d50259d7f7c01de6dad08b660afa5544af4d,#       </test></tests>,1,0,0.0,197
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<server>test-pass</server></servers>',1,0,0.0,198
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'item_name': 'test',",1,0,0.0,199
+8499d50259d7f7c01de6dad08b660afa5544af4d,'item_key': 'test'},1,0,0.0,200
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'nodename': 'test',",1,0,0.0,201
+8499d50259d7f7c01de6dad08b660afa5544af4d,'item_key': 'test'}},1,0,0.0,202
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<a><2>3</2></a></servers>',1,0,0.0,203
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""application/xml; q=0.9"")",1,0,0.0,204
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#        xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">",1,0,0.0,205
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#        xmlns:quantum=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,206
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#        xmlns=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,207
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# <test1 quantum:type=""int""",1,0,0.0,208
+8499d50259d7f7c01de6dad08b660afa5544af4d,# </network>,1,0,0.0,209
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(NETWORK, new_net)",1,0,0.0,210
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# Since it is None, we use xsi:nil='true'.",1,0,0.0,211
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# In addition, we use an",1,0,0.0,212
+8499d50259d7f7c01de6dad08b660afa5544af4d,# virtual XML root _v_root to wrap the XML doc.,1,0,0.0,213
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# <_v_root xsi:nil=""true""",1,0,0.0,214
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#          xmlns=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,215
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#          xmlns:quantum=""http://openstack.org/quantum/api/v2.0""",1,0,0.0,216
+8499d50259d7f7c01de6dad08b660afa5544af4d,"#          xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" />",1,0,0.0,217
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.assertIsNone(new_data),1,0,0.0,218
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# Since it is an empty dict, we use quantum:type='dict' and",1,0,0.0,219
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# an empty XML element to represent it. In addition, we use an",1,0,0.0,220
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# <_v_root quantum:type=""dict""",1,0,0.0,221
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(data, new_data)",1,0,0.0,222
+8499d50259d7f7c01de6dad08b660afa5544af4d,"# We have a key in this dict, and its value is an integer.",1,0,0.0,223
+8499d50259d7f7c01de6dad08b660afa5544af4d,class XMLDeserializerTest(base.BaseTestCase):,1,0,0.0,224
+8499d50259d7f7c01de6dad08b660afa5544af4d,'</server>',0,0,0.0,225
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(response.status_int, 404)",1,0,0.0,226
+8499d50259d7f7c01de6dad08b660afa5544af4d,server.assert_called_once_with(,1,0,0.0,227
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual('Success', result)",0,0,0.0,228
+8499d50259d7f7c01de6dad08b660afa5544af4d,"deserializer.deserialize(req, 'nonExistant'), {})",1,0,0.0,229
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual('Sucess', result)",1,0,0.0,230
+8499d50259d7f7c01de6dad08b660afa5544af4d,class ServerTest(base.BaseTestCase):,1,0,0.0,231
+8499d50259d7f7c01de6dad08b660afa5544af4d,with mock.patch('eventlet.listen') as listen:,1,0,0.0,232
+8499d50259d7f7c01de6dad08b660afa5544af4d,with mock.patch('eventlet.wsgi.server') as server:,1,0,0.0,233
+8499d50259d7f7c01de6dad08b660afa5544af4d,"wsgi.run_server(mock.sentinel.application, mock.sentinel.port)",1,0,0.0,234
+8499d50259d7f7c01de6dad08b660afa5544af4d,"listen.return_value,",1,0,0.0,235
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(response.body, 'pew_xml')",1,0,0.0,236
+8499d50259d7f7c01de6dad08b660afa5544af4d,mock.sentinel.application,1,0,0.0,237
+8499d50259d7f7c01de6dad08b660afa5544af4d,),1,0,0.0,238
+8499d50259d7f7c01de6dad08b660afa5544af4d,"listen.assert_called_once_with(('0.0.0.0', mock.sentinel.port))",1,0,0.0,239
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""/"", method='POST', headers={'Content-Type': ""json""})",0,0,0.0,240
+8499d50259d7f7c01de6dad08b660afa5544af4d,from neutron.api.v2 import attributes,1,0,0.0,241
+8499d50259d7f7c01de6dad08b660afa5544af4d,from neutron.common import constants,1,0,0.0,242
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<?xml version=\'1.0\'',1,0,0.0,243
+8499d50259d7f7c01de6dad08b660afa5544af4d,"deserializer.deserialize(req, 'nonExistent'), {})",0,0,0.0,244
+8499d50259d7f7c01de6dad08b660afa5544af4d,raises exception MalformedRequestBody correctly,1,0,0.0,245
+8499d50259d7f7c01de6dad08b660afa5544af4d,that exception InvalidContentType is raised,1,0,0.0,246
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""",1,0,0.0,247
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<servers>',0,0,0.0,248
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<server name=""s1"">'",0,0,0.0,249
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<servers xmlns=""fake"">'",1,0,0.0,250
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Verify that exception InvalidContentType is raised.""""""",0,0,0.0,251
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test serialize verifies that exception is raises.""""""",0,0,0.0,252
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test RequestDeserializer.get_body_deserializer.""""""",0,0,0.0,253
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test RequestDeserializer.get_expected_content_type.""""""",0,0,0.0,254
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test RequestDeserializer.get_action_args.""""""",0,0,0.0,255
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test RequestDeserializer.deserialize.""""""",0,0,0.0,256
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test ResponseSerializer.get_body_serializer.""""""",0,0,0.0,257
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test ActionDispatcher.dispatch.""""""",0,0,0.0,258
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test ActionDispatcher.dispatch with none action.""""""",0,0,0.0,259
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Test JsonDeserializer.default.",0,0,0.0,260
+8499d50259d7f7c01de6dad08b660afa5544af4d,MalformedRequestBody correctly.,0,0,0.0,261
+8499d50259d7f7c01de6dad08b660afa5544af4d,"""""""Verify that exception MalformedRequestBody is raised.""""""",0,0,0.0,262
+8499d50259d7f7c01de6dad08b660afa5544af4d,' encoding=\'UTF-8\'?>\n',1,0,0.0,263
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<servers xmlns=""http://openstack.org/quantum/api/v2.0"" '",1,0,0.0,264
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'xmlns:quantum=""http://openstack.org/quantum/api/v2.0"" '",1,0,0.0,265
+8499d50259d7f7c01de6dad08b660afa5544af4d,'encoding=\'UTF-8\'?>',1,0,0.0,266
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'xmlns:quantum=""http://openstack.org/quantum/api/v2.0""'",1,0,0.0,267
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<testxmlns=""http://openstack.org/quantum/api/v2.0""'",1,0,0.0,268
+8499d50259d7f7c01de6dad08b660afa5544af4d,'pass</test>',1,0,0.0,269
+8499d50259d7f7c01de6dad08b660afa5544af4d,class XMLDeserializer(object):,1,0,0.0,270
+8499d50259d7f7c01de6dad08b660afa5544af4d,return 'pew_xml',1,0,0.0,271
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'application/json': JSONDeserializer(),",1,0,0.0,272
+8499d50259d7f7c01de6dad08b660afa5544af4d,'application/xml': XMLDeserializer()},1,0,0.0,273
+8499d50259d7f7c01de6dad08b660afa5544af4d,'application/xml'),1,0,0.0,274
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.assertEqual(,1,0,0.0,275
+8499d50259d7f7c01de6dad08b660afa5544af4d,"expected_xml_serializer,",1,0,0.0,276
+8499d50259d7f7c01de6dad08b660afa5544af4d,self.body_deserializers['application/xml']),1,0,0.0,277
+8499d50259d7f7c01de6dad08b660afa5544af4d,class XMLSerializer(object):,1,0,0.0,278
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'application/json': JSONSerializer(),",1,0,0.0,279
+8499d50259d7f7c01de6dad08b660afa5544af4d,'application/xml': XMLSerializer()},1,0,0.0,280
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(response.headers['Content-Type'], 'application/xml')",1,0,0.0,281
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<serversxmlns=""http://openstack.org/quantum/api/v2.0""'",1,0,0.0,282
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<?xmlversion=\'1.0\'',1,0,0.0,283
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">'",1,0,0.0,284
+8499d50259d7f7c01de6dad08b660afa5544af4d,'xmlns': 'fake'}},1,0,0.0,285
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<server>test=pass</server></servers>',1,0,0.0,286
+8499d50259d7f7c01de6dad08b660afa5544af4d,),1,0,0.0,287
+8499d50259d7f7c01de6dad08b660afa5544af4d,"self.assertEqual(expected, result)",1,0,0.0,288
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<servers xmlns=""fake"">'",1,0,0.0,289
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<server>test=pass</server>',1,0,0.0,290
+8499d50259d7f7c01de6dad08b660afa5544af4d,'</servers>',1,0,0.0,291
+8499d50259d7f7c01de6dad08b660afa5544af4d,"default_xmlns=""fake"", metadata={'xmlns': 'fake'})",1,0,0.0,292
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<servers>',1,0,0.0,293
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<server name=""s1"">'",1,0,0.0,294
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<test test=""a"">passed</test>'",1,0,0.0,295
+8499d50259d7f7c01de6dad08b660afa5544af4d,'</server>',1,0,0.0,296
+8499d50259d7f7c01de6dad08b660afa5544af4d,"default_xmlns=""fake"", metadata=metadata)",1,0,0.0,297
+8499d50259d7f7c01de6dad08b660afa5544af4d,'<?xml version=\'1.0\' encoding=\'UTF-8\'?>',1,0,0.0,298
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<servers xmlns=""fake"" xmlns:quantum=""fake"" '",1,0,0.0,299
+8499d50259d7f7c01de6dad08b660afa5544af4d,"'<network>(2, 3)</network></servers>'",1,0,0.0,300
+8499d50259d7f7c01de6dad08b660afa5544af4d,'\xe7\xbd\x91\xe7\xbb\x9c</servers>',1,0,0.0,301

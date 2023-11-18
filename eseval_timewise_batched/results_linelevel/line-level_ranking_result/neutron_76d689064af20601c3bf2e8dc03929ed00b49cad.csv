@@ -1,0 +1,294 @@
+commit_id,line,line_level_label,count,line_score,row
+76d689064af20601c3bf2e8dc03929ed00b49cad,"device = ip_lib.IPDevice(device_name, namespace=namespace)",1,4,1.0,1
+76d689064af20601c3bf2e8dc03929ed00b49cad,"device = ip_lib.IPDevice(device_name, namespace=namespace)",1,4,1.0,2
+76d689064af20601c3bf2e8dc03929ed00b49cad,"device = ip_lib.IPDevice(device_name, namespace=namespace)",1,4,1.0,3
+76d689064af20601c3bf2e8dc03929ed00b49cad,"expected = [mock.call('tap0', namespace=None),",1,3,0.75,4
+76d689064af20601c3bf2e8dc03929ed00b49cad,"expected = [mock.call('tap1', namespace='01234567-1234-1234-99'),",1,3,0.75,5
+76d689064af20601c3bf2e8dc03929ed00b49cad,"expected = [mock.call('tap0', namespace=None)]",1,3,0.75,6
+76d689064af20601c3bf2e8dc03929ed00b49cad,"expected = [mock.call('tap1', namespace='01234567-1234-1234-99')]",1,3,0.75,7
+76d689064af20601c3bf2e8dc03929ed00b49cad,"expected = [mock.call(), mock.call(),",1,3,0.75,8
+76d689064af20601c3bf2e8dc03929ed00b49cad,"expected = [mock.call(), mock.call().add_veth('tap0', devname),",1,3,0.75,9
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cmd = ['ivs-ctl', 'add-port', device_name]",1,2,0.5,10
+76d689064af20601c3bf2e8dc03929ed00b49cad,if not devname:,1,2,0.5,11
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cmd = ['ivs-ctl', 'del-port', tap_name]",1,2,0.5,12
+76d689064af20601c3bf2e8dc03929ed00b49cad,ip = ip_lib.IPWrapper(),1,2,0.5,13
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def device_exists(dev, namespace=None):",1,2,0.5,14
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cmd = ['mm-ctl', '--bind-port', self.port_id, 'tap0']",1,2,0.5,15
+76d689064af20601c3bf2e8dc03929ed00b49cad,# Create ns_dev in a namespace if one is configured.,1,2,0.5,16
+76d689064af20601c3bf2e8dc03929ed00b49cad,ip = ip_lib.IPWrapper(),1,2,0.5,17
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace = '01234567-1234-1234-99',1,2,0.5,18
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cmd = ['mm-ctl', '--bind-port', port_id, device_name]",1,2,0.5,19
+76d689064af20601c3bf2e8dc03929ed00b49cad,DEV_NAME_PREFIX = constants.TAP_DEVICE_PREFIX,1,1,0.25,20
+76d689064af20601c3bf2e8dc03929ed00b49cad,if namespace:,1,1,0.25,21
+76d689064af20601c3bf2e8dc03929ed00b49cad,if mtu:,1,1,0.25,22
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev = ip.device(device_name),1,1,0.25,23
+76d689064af20601c3bf2e8dc03929ed00b49cad,"tap_name = self._get_tap_name(device_name, prefix)",1,1,0.25,24
+76d689064af20601c3bf2e8dc03929ed00b49cad,"utils.execute(cmd, run_as_root=True)",1,1,0.25,25
+76d689064af20601c3bf2e8dc03929ed00b49cad,"dev_name = dev_name.replace(prefix or self.DEV_NAME_PREFIX,",1,1,0.25,26
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.DEV_NAME_PREFIX = 'ns-',1,1,0.25,27
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.ip().add_veth = mock.Mock(return_value=(root_dev, ns_dev))",1,1,0.25,28
+76d689064af20601c3bf2e8dc03929ed00b49cad,from neutron.agent.linux import utils,1,1,0.25,29
+76d689064af20601c3bf2e8dc03929ed00b49cad,"with mock.patch.object(utils, 'execute') as execute:",1,1,0.25,30
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev = mock.Mock(),1,1,0.25,31
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev = mock.Mock(),1,1,0.25,32
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.device_exists.return_value = False,1,1,0.25,33
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.namespace = ""ns-test""",1,1,0.25,34
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.bridge = ""br-test""",1,1,0.25,35
+76d689064af20601c3bf2e8dc03929ed00b49cad,from neutron.agent.linux import utils,1,1,0.25,36
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace_obj = ip.ensure_namespace(namespace),1,1,0.25,37
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev = mock.Mock(),1,1,0.25,38
+76d689064af20601c3bf2e8dc03929ed00b49cad,br = interface.IVSInterfaceDriver(self.conf),1,1,0.25,39
+76d689064af20601c3bf2e8dc03929ed00b49cad,device_name = br.get_device_name(FakePort()),1,1,0.25,40
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.ip_dev.assert_has_calls([mock.call('ns-0', namespace=None),",1,1,0.25,41
+76d689064af20601c3bf2e8dc03929ed00b49cad,"ivsctl_cmd = ['ivs-ctl', 'del-port', 'tap0']",1,1,0.25,42
+76d689064af20601c3bf2e8dc03929ed00b49cad,if namespace:,1,1,0.25,43
+76d689064af20601c3bf2e8dc03929ed00b49cad,"execute.assert_called_once_with(ivsctl_cmd, run_as_root=True)",1,1,0.25,44
+76d689064af20601c3bf2e8dc03929ed00b49cad,"with mock.patch.object(utils, 'execute') as execute:",1,1,0.25,45
+76d689064af20601c3bf2e8dc03929ed00b49cad,"ivsctl_cmd = ['ivs-ctl', 'add-port', 'tap0']",1,1,0.25,46
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.ip().device = mock.Mock(return_value=(ns_dev)),1,1,0.25,47
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.ip().add_veth = mock.Mock(return_value=(root_dev, _ns_dev))",1,1,0.25,48
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.device_name = ""tap0""",1,1,0.25,49
+76d689064af20601c3bf2e8dc03929ed00b49cad,_ns_dev = mock.Mock(),1,1,0.25,50
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev = mock.Mock(),1,1,0.25,51
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.device_exists.side_effect = device_exists,1,1,0.25,52
+76d689064af20601c3bf2e8dc03929ed00b49cad,ivs = interface.IVSInterfaceDriver(self.conf),1,1,0.25,53
+76d689064af20601c3bf2e8dc03929ed00b49cad,return dev == 'indigo',1,1,0.25,54
+76d689064af20601c3bf2e8dc03929ed00b49cad,devname = 'ns-0',1,1,0.25,55
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.mac_address = ""aa:bb:cc:dd:ee:ff""",1,1,0.25,56
+76d689064af20601c3bf2e8dc03929ed00b49cad,"root_dev, ns_dev = ip.add_veth(tap_name, device_name)",1,1,0.25,57
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.port_id = uuidutils.generate_uuid(),1,1,0.25,58
+76d689064af20601c3bf2e8dc03929ed00b49cad,driver = self._get_driver_by_network_id(port.network_id),1,1,0.25,59
+76d689064af20601c3bf2e8dc03929ed00b49cad,client_cls = self.client_cls_p.start(),1,1,0.25,60
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.client_cls_p = mock.patch('neutronclient.v2_0.client.Client'),1,1,0.25,61
+76d689064af20601c3bf2e8dc03929ed00b49cad,plugin_klass = importutils.import_class(driver_provider),1,1,0.25,62
+76d689064af20601c3bf2e8dc03929ed00b49cad,driver = self.flavor_driver_map[plugin_tag],1,1,0.25,63
+76d689064af20601c3bf2e8dc03929ed00b49cad,"plugin_tag = self._get_device_plugin_tag(device_name, namespace)",1,1,0.25,64
+76d689064af20601c3bf2e8dc03929ed00b49cad,"ret = driver.plug(network_id, port_id, device_name, mac_address,",1,1,0.25,65
+76d689064af20601c3bf2e8dc03929ed00b49cad,driver = self._get_driver_by_network_id(network_id),1,1,0.25,66
+76d689064af20601c3bf2e8dc03929ed00b49cad,plugin_tag = self._get_flavor_by_network_id(network_id),1,1,0.25,67
+76d689064af20601c3bf2e8dc03929ed00b49cad,client_cls.return_value = self.client_inst,1,1,0.25,68
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _set_device_plugin_tag(self, network_id, device_name, namespace=None):",1,1,0.25,69
+76d689064af20601c3bf2e8dc03929ed00b49cad,net_flavor = self._get_flavor_by_network_id(network_id),1,1,0.25,70
+76d689064af20601c3bf2e8dc03929ed00b49cad,network = self.neutron.show_network(network_id),1,1,0.25,71
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.flavor_driver_map[net_flavor] = self._load_driver(driver_name),1,1,0.25,72
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.flavor_driver_map = {},1,1,0.25,73
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.neutron = client.Client(,1,1,0.25,74
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.network_id = uuidutils.generate_uuid(),1,1,0.25,75
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.client_inst = mock.Mock(),1,1,0.25,76
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _get_device_plugin_tag(self, device_name, namespace=None):",1,1,0.25,77
+76d689064af20601c3bf2e8dc03929ed00b49cad,fake_network = {'network': {flavor.FLAVOR_NETWORK: 'fake1'}},1,1,0.25,78
+76d689064af20601c3bf2e8dc03929ed00b49cad,plugin_tag1 = meta_interface._get_device_plugin_tag(,1,1,0.25,79
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.driver = interface.MidonetInterfaceDriver(self.conf),1,1,0.25,80
+76d689064af20601c3bf2e8dc03929ed00b49cad,fake_port = {'ports':,1,1,0.25,81
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.conf = config.setup_conf(),1,1,0.25,82
+76d689064af20601c3bf2e8dc03929ed00b49cad,# the port will be deleted by the dhcp agent that will call the plugin,1,1,0.25,83
+76d689064af20601c3bf2e8dc03929ed00b49cad,"utils.execute(cmd, run_as_root=True)",1,1,0.25,84
+76d689064af20601c3bf2e8dc03929ed00b49cad,"root_dev, ns_dev = ip.add_veth(tap_name, device_name,",1,1,0.25,85
+76d689064af20601c3bf2e8dc03929ed00b49cad,"tap_name = device_name.replace(prefix or n_const.TAP_DEVICE_PREFIX,",1,1,0.25,86
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace_obj = ip.ensure_namespace(namespace),1,1,0.25,87
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.client_inst.list_ports.return_value = fake_port,1,1,0.25,88
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.ip_dev().link.alias = 'fake1',1,1,0.25,89
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace=namespace),1,1,0.25,90
+76d689064af20601c3bf2e8dc03929ed00b49cad,driver = meta_interface._get_driver_by_network_id('test'),1,1,0.25,91
+76d689064af20601c3bf2e8dc03929ed00b49cad,meta_interface = interface.MetaInterfaceDriver(self.conf),1,1,0.25,92
+76d689064af20601c3bf2e8dc03929ed00b49cad,"plugin_tag0 = meta_interface._get_device_plugin_tag('tap0',",1,1,0.25,93
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.client_inst.show_network.return_value = fake_network,1,1,0.25,94
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.assert_has_calls([mock.call.link.set_up()]),1,0,0.0,95
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.call().link.delete()]),1,0,0.0,96
+76d689064af20601c3bf2e8dc03929ed00b49cad,"mock.call(self.device_name, namespace=self.namespace),",1,0,0.0,97
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.ip_dev.assert_has_calls([,1,0,0.0,98
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.driver.unplug(self.device_name, self.bridge, self.namespace)",1,0,0.0,99
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.ip.assert_has_calls(expected, True)",1,0,0.0,100
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_unplug(self):,1,0,0.0,101
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.assert_has_calls([mock.call.link.set_up()]),1,0,0.0,102
+76d689064af20601c3bf2e8dc03929ed00b49cad,[mock.call.link.set_address(self.mac_address)]),1,0,0.0,103
+76d689064af20601c3bf2e8dc03929ed00b49cad,from oslo_log import versionutils,1,0,0.0,104
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.ip.assert_has_calls([mock.call().garbage_collect_namespace()]),1,0,0.0,105
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""removed in Rocky."")",1,0,0.0,106
+76d689064af20601c3bf2e8dc03929ed00b49cad,class IVSInterfaceDriver(LinuxInterfaceDriver):,1,0,0.0,107
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""""""Driver for creating an internal interface on an IVS bridge.""""""",1,0,0.0,108
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def __init__(self, conf):",1,0,0.0,109
+76d689064af20601c3bf2e8dc03929ed00b49cad,"super(IVSInterfaceDriver, self).__init__(conf)",1,0,0.0,110
+76d689064af20601c3bf2e8dc03929ed00b49cad,versionutils.report_deprecated_feature(,1,0,0.0,111
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG, ""IVS interface driver is deprecated in Queens and will be """,1,0,0.0,112
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _get_tap_name(self, dev_name, prefix=None):",1,0,0.0,113
+76d689064af20601c3bf2e8dc03929ed00b49cad,constants.TAP_DEVICE_PREFIX),1,0,0.0,114
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.ANY)],1,0,0.0,115
+76d689064af20601c3bf2e8dc03929ed00b49cad,return dev_name,1,0,0.0,116
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.assert_has_calls(,1,0,0.0,117
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG.debug(""Unplugged interface '%s'"", device_name)",1,0,0.0,118
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.call().ensure_namespace().add_device_to_namespace(,1,0,0.0,119
+76d689064af20601c3bf2e8dc03929ed00b49cad,"mock.call().ensure_namespace(self.namespace),",1,0,0.0,120
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def plug_new(self, network_id, port_id, device_name, mac_address,",1,0,0.0,121
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def unplug(self, device_name, bridge=None, namespace=None, prefix=None):",1,0,0.0,122
+76d689064af20601c3bf2e8dc03929ed00b49cad,try:,1,0,0.0,123
+76d689064af20601c3bf2e8dc03929ed00b49cad,device.link.delete(),1,0,0.0,124
+76d689064af20601c3bf2e8dc03929ed00b49cad,except RuntimeError:,1,0,0.0,125
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG.error(_LE(""Failed unplugging interface '%s'""), device_name)",1,0,0.0,126
+76d689064af20601c3bf2e8dc03929ed00b49cad,ip_lib.IPWrapper(namespace=namespace).garbage_collect_namespace(),1,0,0.0,127
+76d689064af20601c3bf2e8dc03929ed00b49cad,from oslo_utils import uuidutils,1,0,0.0,128
+76d689064af20601c3bf2e8dc03929ed00b49cad,class TestMidonetInterfaceDriver(TestBase):,1,0,0.0,129
+76d689064af20601c3bf2e8dc03929ed00b49cad,def setUp(self):,1,0,0.0,130
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.conf.register_opts(interface.OPTS),1,0,0.0,131
+76d689064af20601c3bf2e8dc03929ed00b49cad,"super(TestMidonetInterfaceDriver, self).setUp()",1,0,0.0,132
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_plug(self):,1,0,0.0,133
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.driver.plug(,1,0,0.0,134
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.network_id, self.port_id,",1,0,0.0,135
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.device_name, self.mac_address,",1,0,0.0,136
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.bridge, self.namespace)",1,0,0.0,137
+76d689064af20601c3bf2e8dc03929ed00b49cad,"execute.assert_called_once_with(cmd, run_as_root=True)",1,0,0.0,138
+76d689064af20601c3bf2e8dc03929ed00b49cad,"mock.call().add_veth(self.device_name,",1,0,0.0,139
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.device_name,",1,0,0.0,140
+76d689064af20601c3bf2e8dc03929ed00b49cad,"namespace2=self.namespace),",1,0,0.0,141
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _ivs_add_port(self, device_name, port_id, mac_address):",1,0,0.0,142
+76d689064af20601c3bf2e8dc03929ed00b49cad,self._test_plug(namespace='mynamespace'),1,0,0.0,143
+76d689064af20601c3bf2e8dc03929ed00b49cad,"bridge=None, namespace=None, prefix=None, mtu=None):",1,0,0.0,144
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.assert_has_calls([mock.call.link.set_mtu(9000)]),1,0,0.0,145
+76d689064af20601c3bf2e8dc03929ed00b49cad,"ivs.plug('01234567-1234-1234-99',",1,0,0.0,146
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'port-1234',",1,0,0.0,147
+76d689064af20601c3bf2e8dc03929ed00b49cad,"devname,",1,0,0.0,148
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'aa:bb:cc:dd:ee:ff',",1,0,0.0,149
+76d689064af20601c3bf2e8dc03929ed00b49cad,"namespace=namespace,",1,0,0.0,150
+76d689064af20601c3bf2e8dc03929ed00b49cad,"prefix=prefix,",1,0,0.0,151
+76d689064af20601c3bf2e8dc03929ed00b49cad,mtu=9000),1,0,0.0,152
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.assert_has_calls(,1,0,0.0,153
+76d689064af20601c3bf2e8dc03929ed00b49cad,[mock.call.link.set_address('aa:bb:cc:dd:ee:ff')]),1,0,0.0,154
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.assert_has_calls([mock.call.link.set_mtu(9000)]),1,0,0.0,155
+76d689064af20601c3bf2e8dc03929ed00b49cad,expected.extend(,1,0,0.0,156
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""""""Plug in the interface.""""""",1,0,0.0,157
+76d689064af20601c3bf2e8dc03929ed00b49cad,"[mock.call().ensure_namespace(namespace),",1,0,0.0,158
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.call().ensure_namespace().add_device_to_namespace(,1,0,0.0,159
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.ANY)]),1,0,0.0,160
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.ip.assert_has_calls(expected),1,0,0.0,161
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.assert_has_calls([mock.call.link.set_up()]),1,0,0.0,162
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.assert_has_calls([mock.call.link.set_up()]),1,0,0.0,163
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_plug_namespace(self):,1,0,0.0,164
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.link.set_up(),1,0,0.0,165
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_unplug(self):,1,0,0.0,166
+76d689064af20601c3bf2e8dc03929ed00b49cad,ivs.unplug('ns-0'),1,0,0.0,167
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.call().device(devname)],1,0,0.0,168
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _test_plug(self, devname=None, namespace=None, prefix=None):",1,0,0.0,169
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self._test_plug(devname='qr-0', prefix='qr-')",1,0,0.0,170
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_plug_with_prefix(self):,1,0,0.0,171
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.disable_ipv6(),1,0,0.0,172
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self._ivs_add_port(tap_name, port_id, mac_address)",1,0,0.0,173
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.link.set_address(mac_address),1,0,0.0,174
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.link.set_mtu(mtu),1,0,0.0,175
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.link.set_mtu(mtu),1,0,0.0,176
+76d689064af20601c3bf2e8dc03929ed00b49cad,else:,1,0,0.0,177
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG.warning(""No MTU configured for port %s"", port_id)",1,0,0.0,178
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace_obj.add_device_to_namespace(ns_dev),1,0,0.0,179
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.link.set_up(),1,0,0.0,180
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.link.set_up(),1,0,0.0,181
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def unplug(self, device_name, bridge=None, namespace=None, prefix=None):",1,0,0.0,182
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""""""Unplug the interface.""""""",1,0,0.0,183
+76d689064af20601c3bf2e8dc03929ed00b49cad,try:,1,0,0.0,184
+76d689064af20601c3bf2e8dc03929ed00b49cad,device.link.delete(),1,0,0.0,185
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG.debug(""Unplugged interface '%s'"", device_name)",1,0,0.0,186
+76d689064af20601c3bf2e8dc03929ed00b49cad,except RuntimeError:,1,0,0.0,187
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG.error(""Failed unplugging interface '%s'"",",1,0,0.0,188
+76d689064af20601c3bf2e8dc03929ed00b49cad,device_name),1,0,0.0,189
+76d689064af20601c3bf2e8dc03929ed00b49cad,class TestIVSInterfaceDriver(TestBase):,1,0,0.0,190
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_get_device_name(self):,1,0,0.0,191
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.assertEqual('ns-abcdef01-12', device_name)",1,0,0.0,192
+76d689064af20601c3bf2e8dc03929ed00b49cad,root_dev.link.set_up(),1,0,0.0,193
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self._set_device_plugin_tag(network_id, device_name, namespace)",1,0,0.0,194
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace_obj.add_device_to_namespace(ns_dev),1,0,0.0,195
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""Network service endpoint type to pull from """,1,0,0.0,196
+76d689064af20601c3bf2e8dc03929ed00b49cad,class MetaInterfaceDriver(LinuxInterfaceDriver):,1,0,0.0,197
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def __init__(self, conf):",1,0,0.0,198
+76d689064af20601c3bf2e8dc03929ed00b49cad,"super(MetaInterfaceDriver, self).__init__(conf)",1,0,0.0,199
+76d689064af20601c3bf2e8dc03929ed00b49cad,from neutronclient.v2_0 import client,1,0,0.0,200
+76d689064af20601c3bf2e8dc03929ed00b49cad,"username=self.conf.admin_user,",1,0,0.0,201
+76d689064af20601c3bf2e8dc03929ed00b49cad,"password=self.conf.admin_password,",1,0,0.0,202
+76d689064af20601c3bf2e8dc03929ed00b49cad,"tenant_name=self.conf.admin_tenant_name,",1,0,0.0,203
+76d689064af20601c3bf2e8dc03929ed00b49cad,"auth_url=self.conf.auth_url,",1,0,0.0,204
+76d689064af20601c3bf2e8dc03929ed00b49cad,"auth_strategy=self.conf.auth_strategy,",1,0,0.0,205
+76d689064af20601c3bf2e8dc03929ed00b49cad,"region_name=self.conf.auth_region,",1,0,0.0,206
+76d689064af20601c3bf2e8dc03929ed00b49cad,endpoint_type=self.conf.endpoint_type,1,0,0.0,207
+76d689064af20601c3bf2e8dc03929ed00b49cad,),1,0,0.0,208
+76d689064af20601c3bf2e8dc03929ed00b49cad,"for net_flavor, driver_name in [",1,0,0.0,209
+76d689064af20601c3bf2e8dc03929ed00b49cad,driver_set.split(':'),1,0,0.0,210
+76d689064af20601c3bf2e8dc03929ed00b49cad,for driver_set in,1,0,0.0,211
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.meta_flavor_driver_mappings.split(',')]:",1,0,0.0,212
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _get_flavor_by_network_id(self, network_id):",1,0,0.0,213
+76d689064af20601c3bf2e8dc03929ed00b49cad,return network['network'][flavor.FLAVOR_NETWORK],1,0,0.0,214
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _get_driver_by_network_id(self, network_id):",1,0,0.0,215
+76d689064af20601c3bf2e8dc03929ed00b49cad,return self.flavor_driver_map[net_flavor],1,0,0.0,216
+76d689064af20601c3bf2e8dc03929ed00b49cad,device.link.set_alias(plugin_tag),1,0,0.0,217
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""the keystone catalog"")),",1,0,0.0,218
+76d689064af20601c3bf2e8dc03929ed00b49cad,"default='publicURL',",1,0,0.0,219
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def get_device_name(self, port):",1,0,0.0,220
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('endpoint_type',",1,0,0.0,221
+76d689064af20601c3bf2e8dc03929ed00b49cad,from oslo_utils import importutils,1,0,0.0,222
+76d689064af20601c3bf2e8dc03929ed00b49cad,from neutron.extensions import flavor,1,0,0.0,223
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('meta_flavor_driver_mappings',",1,0,0.0,224
+76d689064af20601c3bf2e8dc03929ed00b49cad,help=_('Mapping between flavor and LinuxInterfaceDriver. ',1,0,0.0,225
+76d689064af20601c3bf2e8dc03929ed00b49cad,'It is specific to MetaInterfaceDriver used with ',1,0,0.0,226
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'admin_user, admin_password, admin_tenant_name, '",1,0,0.0,227
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'admin_url, auth_strategy, auth_region and '",1,0,0.0,228
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'endpoint_type.')),",1,0,0.0,229
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('admin_user',",1,0,0.0,230
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""Admin username"")),",1,0,0.0,231
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('admin_password',",1,0,0.0,232
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""Admin password""),",1,0,0.0,233
+76d689064af20601c3bf2e8dc03929ed00b49cad,"secret=True),",1,0,0.0,234
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('admin_tenant_name',",1,0,0.0,235
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""Admin tenant name"")),",1,0,0.0,236
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('auth_url',",1,0,0.0,237
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""Authentication URL"")),",1,0,0.0,238
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('auth_strategy', default='keystone',",1,0,0.0,239
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""The type of authentication to use"")),",1,0,0.0,240
+76d689064af20601c3bf2e8dc03929ed00b49cad,"cfg.StrOpt('auth_region',",1,0,0.0,241
+76d689064af20601c3bf2e8dc03929ed00b49cad,"help=_(""Authentication region"")),",1,0,0.0,242
+76d689064af20601c3bf2e8dc03929ed00b49cad,return device.link.alias,1,0,0.0,243
+76d689064af20601c3bf2e8dc03929ed00b49cad,return driver.get_device_name(port),1,0,0.0,244
+76d689064af20601c3bf2e8dc03929ed00b49cad,# Add an interface created by ovs to the namespace.,1,0,0.0,245
+76d689064af20601c3bf2e8dc03929ed00b49cad,'fake2:neutron.agent.linux.interface.BridgeInterfaceDriver'),1,0,0.0,246
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_get_driver_by_network_id(self):,1,0,0.0,247
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.assertIsInstance(driver, interface.OVSInterfaceDriver)",1,0,0.0,248
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_set_device_plugin_tag(self):,1,0,0.0,249
+76d689064af20601c3bf2e8dc03929ed00b49cad,"meta_interface._set_device_plugin_tag(driver,",1,0,0.0,250
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'tap0',",1,0,0.0,251
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace=None),1,0,0.0,252
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.call().link.set_alias('fake1')],1,0,0.0,253
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.ip_dev.assert_has_calls(expected),1,0,0.0,254
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'tap1',",1,0,0.0,255
+76d689064af20601c3bf2e8dc03929ed00b49cad,def test_get_device_plugin_tag(self):,1,0,0.0,256
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.assertEqual('fake1', plugin_tag0)",1,0,0.0,257
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.assertEqual('fake1', plugin_tag1)",1,0,0.0,258
+76d689064af20601c3bf2e8dc03929ed00b49cad,class MidonetInterfaceDriver(LinuxInterfaceDriver):,1,0,0.0,259
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def plug_new(self, network_id, port_id, device_name, mac_address,",1,0,0.0,260
+76d689064af20601c3bf2e8dc03929ed00b49cad,"bridge=None, namespace=None, prefix=None):",1,0,0.0,261
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""""""This method is called by the Dhcp agent or by the L3 agent",1,0,0.0,262
+76d689064af20601c3bf2e8dc03929ed00b49cad,when a new network is created,1,0,0.0,263
+76d689064af20601c3bf2e8dc03929ed00b49cad,"""""""",1,0,0.0,264
+76d689064af20601c3bf2e8dc03929ed00b49cad,n_const.TAP_DEVICE_PREFIX),1,0,0.0,265
+76d689064af20601c3bf2e8dc03929ed00b49cad,namespace2=namespace),1,0,0.0,266
+76d689064af20601c3bf2e8dc03929ed00b49cad,ns_dev.link.set_address(mac_address),1,0,0.0,267
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.set_override('endpoint_type', 'internalURL')",1,0,0.0,268
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'fake1:neutron.agent.linux.interface.OVSInterfaceDriver,'",1,0,0.0,269
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def plug_new(self, network_id, port_id, device_name, mac_address,",1,0,0.0,270
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'meta_flavor_driver_mappings',",1,0,0.0,271
+76d689064af20601c3bf2e8dc03929ed00b49cad,"bridge=None, namespace=None, prefix=None):",1,0,0.0,272
+76d689064af20601c3bf2e8dc03929ed00b49cad,"bridge=bridge, namespace=namespace, prefix=prefix)",1,0,0.0,273
+76d689064af20601c3bf2e8dc03929ed00b49cad,return ret,1,0,0.0,274
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def unplug(self, device_name, bridge=None, namespace=None, prefix=None):",1,0,0.0,275
+76d689064af20601c3bf2e8dc03929ed00b49cad,"return driver.unplug(device_name, bridge, namespace, prefix)",1,0,0.0,276
+76d689064af20601c3bf2e8dc03929ed00b49cad,"def _load_driver(self, driver_provider):",1,0,0.0,277
+76d689064af20601c3bf2e8dc03929ed00b49cad,"LOG.debug(""Driver location: %s"", driver_provider)",1,0,0.0,278
+76d689064af20601c3bf2e8dc03929ed00b49cad,return plugin_klass(self.conf),1,0,0.0,279
+76d689064af20601c3bf2e8dc03929ed00b49cad,from neutron.extensions import flavor,1,0,0.0,280
+76d689064af20601c3bf2e8dc03929ed00b49cad,class TestMetaInterfaceDriver(TestBase):,1,0,0.0,281
+76d689064af20601c3bf2e8dc03929ed00b49cad,def setUp(self):,1,0,0.0,282
+76d689064af20601c3bf2e8dc03929ed00b49cad,"super(TestMetaInterfaceDriver, self).setUp()",1,0,0.0,283
+76d689064af20601c3bf2e8dc03929ed00b49cad,config.register_interface_driver_opts_helper(self.conf),1,0,0.0,284
+76d689064af20601c3bf2e8dc03929ed00b49cad,[{'mac_address':,1,0,0.0,285
+76d689064af20601c3bf2e8dc03929ed00b49cad,"'aa:bb:cc:dd:ee:ffa', 'network_id': 'test'}]}",1,0,0.0,286
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.set_override('auth_url', 'http://localhost:35357/v2.0')",1,0,0.0,287
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.set_override('auth_region', 'RegionOne')",1,0,0.0,288
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.set_override('admin_user', 'neutron')",1,0,0.0,289
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.set_override('admin_password', 'password')",1,0,0.0,290
+76d689064af20601c3bf2e8dc03929ed00b49cad,"self.conf.set_override('admin_tenant_name', 'service')",1,0,0.0,291
+76d689064af20601c3bf2e8dc03929ed00b49cad,self.conf.set_override(,1,0,0.0,292
+76d689064af20601c3bf2e8dc03929ed00b49cad,mock.call().link.delete()]),1,0,0.0,293

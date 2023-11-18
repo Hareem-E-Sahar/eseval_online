@@ -1,0 +1,597 @@
+commit_id,line,line_level_label,count,line_score,row
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"* Set the reply channel name. If no reply channel is provided, this gateway will",0,10,1.0,1
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"* Set the error channel name. If no error channel is provided, this gateway will",0,8,0.8,2
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"protected MessageHandler createHandler(Object bean, Method method, Aggregator annotation) {",1,7,0.7000000000000001,3
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,while (this.initialized && (this.maxMessagesPerPoll <= 0 || count < this.maxMessagesPerPoll)) {,0,7,0.7000000000000001,4
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"protected String resolveId(Element element, AbstractBeanDefinition definition, ParserContext parserContext)",1,6,0.6000000000000001,5
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""Failed to send message to channel '"" + requestChannel +",0,6,0.6000000000000001,6
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private static class FutureReplyChannel implements MessageChannel {,0,6,0.6000000000000001,7
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private final class Poller implements Runnable {,1,6,0.6000000000000001,8
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(""No request channel available. Cannot send request message."");",0,5,0.5,9
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Trigger trigger = new PeriodicTrigger(10);,1,5,0.5,10
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Trigger trigger = new PeriodicTrigger(10);,0,5,0.5,11
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @param requestChannelName the channel bean name to which request messages will be sent,0,5,0.5,12
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"protected MessageHandler createHandler(Object bean, Method method, List<Annotation> annotations) {",0,5,0.5,13
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"protected MessageHandler createHandler(Object bean, Method method, List<Annotation> annotations) {",0,5,0.5,14
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private final HistoryWritingMessagePostProcessor historyWritingPostProcessor = new HistoryWritingMessagePostProcessor();,1,4,0.4,15
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private static final long DEFAULT_TIMEOUT = 1000L;,1,4,0.4,16
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,|| count < AbstractPollingEndpoint.this.maxMessagesPerPoll)) {,1,4,0.4,17
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Runnable createPoller() throws Exception {,1,4,0.4,18
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private final CompletableFuture<Message<?>> messageFuture = new CompletableFuture<>();,0,4,0.4,19
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else if (this.replyChannel instanceof PollableChannel) {,1,4,0.4,20
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.replyChannel != null && this.replyMessageCorrelator == null) {,1,4,0.4,21
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.replyChannel instanceof SubscribableChannel) {,1,4,0.4,22
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @param replyChannelName the channel bean name from which reply messages will be received,0,4,0.4,23
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* Set the request channel name.,0,4,0.4,24
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"MethodInvokingRouter router = new MethodInvokingRouter(bean, method);",1,4,0.4,25
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"protected MessageHandler createHandler(Object bean, Method method,",1,4,0.4,26
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"router = new MethodInvokingRouter(bean, method);",0,4,0.4,27
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"public void doWith(Method method) throws IllegalArgumentException, IllegalAccessException {",1,4,0.4,28
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String id = super.resolveId(element, definition, parserContext);",1,4,0.4,29
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (replyChannel instanceof SubscribableChannel) {,0,3,0.30000000000000004,30
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (replyChannel != null && this.replyMessageCorrelator == null) {,1,3,0.30000000000000004,31
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(""Unsupported 'replyChannel' type ["" + replyChannel.getClass() + ""].""",0,3,0.30000000000000004,32
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else if (replyChannel instanceof ReactiveStreamsSubscribableChannel) {,0,3,0.30000000000000004,33
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,correlator = endpoint;,0,3,0.30000000000000004,34
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"PollingConsumer endpoint = new PollingConsumer((PollableChannel) replyChannel, handler);",0,3,0.30000000000000004,35
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else if (replyChannel instanceof PollableChannel) {,0,3,0.30000000000000004,36
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"correlator = new EventDrivenConsumer((SubscribableChannel) replyChannel, handler);",0,3,0.30000000000000004,37
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"private RuntimeException wrapExceptionIfNecessary(Throwable t, String description) {",0,3,0.30000000000000004,38
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (replyChannel != null && this.replyMessageCorrelator == null) {,0,3,0.30000000000000004,39
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected void registerReplyMessageCorrelatorIfNecessary() {,0,3,0.30000000000000004,40
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (replyChannel instanceof SubscribableChannel) {,1,3,0.30000000000000004,41
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else if (headerValue instanceof String) {,0,3,0.30000000000000004,42
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (headerValue instanceof Number) {,0,3,0.30000000000000004,43
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Long headerToLong(@Nullable Object headerValue) {,0,3,0.30000000000000004,44
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"logger.debug(""failure occurred in gateway sendAndReceiveReactive: "" + exception.getMessage());",0,3,0.30000000000000004,45
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private void registerReplyMessageCorrelator() {,1,3,0.30000000000000004,46
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"correlator = new PollingConsumer((PollableChannel) replyChan, handler);",0,3,0.30000000000000004,47
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"correlator = new EventDrivenConsumer((SubscribableChannel) replyChannel, handler);",1,3,0.30000000000000004,48
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else if (replyChannel instanceof PollableChannel) {,1,3,0.30000000000000004,49
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,correlator = endpoint;,1,3,0.30000000000000004,50
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"PollingConsumer endpoint = new PollingConsumer((PollableChannel) replyChan, handler);",1,3,0.30000000000000004,51
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessageMappingException(""Cannot map to message: "" + object, e);",0,3,0.30000000000000004,52
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (resource instanceof IntegrationResourceHolder) {,1,3,0.30000000000000004,53
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,public void run() {,1,3,0.30000000000000004,54
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (e instanceof MessagingException) {,1,3,0.30000000000000004,55
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected void doStop() {,1,3,0.30000000000000004,56
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected void doStart() {,1,3,0.30000000000000004,57
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected void doStop() {,0,3,0.30000000000000004,58
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (resource instanceof IntegrationResourceHolder) {,0,3,0.30000000000000004,59
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (e instanceof MessagingException) {,0,3,0.30000000000000004,60
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected void doStart() {,0,3,0.30000000000000004,61
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.isRunning()) {,1,3,0.30000000000000004,62
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,correlator = endpoint;,1,3,0.30000000000000004,63
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"PollingConsumer endpoint = new PollingConsumer((PollableChannel) replyChannel, handler);",1,3,0.30000000000000004,64
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (requestChannel instanceof ReactiveStreamsSubscribableChannel) {,0,3,0.30000000000000004,65
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(""Unsupported 'replyChannel' type ["" + replyChannel.getClass() + ""].""",1,3,0.30000000000000004,66
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,message = object instanceof Message<?>,0,3,0.30000000000000004,67
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private MethodInvokingCorrelationStrategy getCorrelationStrategy(final Object bean) {,1,3,0.30000000000000004,68
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private final HistoryWritingMessagePostProcessor historyWritingPostProcessor =,0,3,0.30000000000000004,69
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.notNull(defaultOutputChannel, ""unable to resolve defaultOutputChannel '"" + defaultOutputChannelName + ""'"");",1,3,0.30000000000000004,70
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,|| StringUtils.hasText(prefix) || StringUtils.hasText(suffix) || StringUtils.hasText(resolutionRequired),0,3,0.30000000000000004,71
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,router = new MethodInvokingRouter(target);,0,3,0.30000000000000004,72
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (target instanceof MessageHandler) {,0,3,0.30000000000000004,73
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Annotation annotation = AnnotationUtils.getAnnotation(method, CorrelationStrategy.class);",1,3,0.30000000000000004,74
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,final AtomicReference<MethodInvokingCorrelationStrategy> reference = new AtomicReference<MethodInvokingCorrelationStrategy>();,1,3,0.30000000000000004,75
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Annotation annotation = AnnotationUtils.getAnnotation(method, ReleaseStrategy.class);",1,3,0.30000000000000004,76
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,public void setReplyChannelName(String replyChannelName) {,0,3,0.30000000000000004,77
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,final AtomicReference<MethodInvokingReleaseStrategy> reference = new AtomicReference<MethodInvokingReleaseStrategy>();,1,3,0.30000000000000004,78
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private MethodInvokingReleaseStrategy getReleaseStrategy(final Object bean) {,1,3,0.30000000000000004,79
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"AggregatingMessageHandler handler = new AggregatingMessageHandler(processor, new SimpleMessageStore(), correlationStrategy, releaseStrategy);",1,3,0.30000000000000004,80
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"AggregatingMessageHandler handler = new AggregatingMessageHandler(processor, new SimpleMessageStore(),",0,3,0.30000000000000004,81
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!StringUtils.hasText(id)) {,1,3,0.30000000000000004,82
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* Base class for url-based outbound gateway parsers.,1,3,0.30000000000000004,83
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,PollingConsumer endpoint = new PollingConsumer(,1,3,0.30000000000000004,84
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,public void setRequestChannelName(String requestChannelName) {,0,3,0.30000000000000004,85
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* Base class for url-based outbound gateway parsers.,0,3,0.30000000000000004,86
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @param errorChannelName The error channel bean name.,0,3,0.30000000000000004,87
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (replyChannel != null && this.replyMessageCorrelator == null) {,0,3,0.30000000000000004,88
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,public void setErrorChannelName(String errorChannelName) {,0,3,0.30000000000000004,89
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(this.replyChannel != null && (this.replyChannel instanceof PollableChannel),",1,3,0.30000000000000004,90
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(""Unsupported 'replyChannel' type ["" + replyChannel.getClass() + ""].""",0,3,0.30000000000000004,91
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"PollingConsumer endpoint = new PollingConsumer((PollableChannel) replyChannel, handler);",0,3,0.30000000000000004,92
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else if (replyChannel instanceof PollableChannel) {,0,3,0.30000000000000004,93
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"correlator = new EventDrivenConsumer((SubscribableChannel) replyChannel, handler);",0,3,0.30000000000000004,94
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (replyChannel instanceof SubscribableChannel) {,0,3,0.30000000000000004,95
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,correlator = new EventDrivenConsumer(,1,3,0.30000000000000004,96
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""A bean factory is required to resolve the errorChannel at runtime."");",0,3,0.30000000000000004,97
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""A bean factory is required to resolve the replyChannel at runtime."");",0,3,0.30000000000000004,98
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private MessageChannel getReplyChannel() {,0,3,0.30000000000000004,99
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new DestinationResolutionException(""Failed to look up MessageChannel with name '""",0,3,0.30000000000000004,100
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""A bean factory is required to resolve the requestChannel at runtime."");",0,3,0.30000000000000004,101
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private MessageChannel getRequestChannel() {,0,3,0.30000000000000004,102
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private MessageChannel getErrorChannel() {,0,3,0.30000000000000004,103
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.replyMessageCorrelator != null) {,1,2,0.2,104
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (getBeanFactory() != null) {,0,2,0.2,105
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,ReactiveStreamsConsumer endpoint =,0,2,0.2,106
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (shouldStartCorrelator && isRunning()) {,0,2,0.2,107
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (isRunning()) {,0,2,0.2,108
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"public boolean send(Message<?> message, long timeout) {",0,2,0.2,109
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel replyChannel = getReplyChannel();,1,2,0.2,110
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.getBeanFactory() != null) {,1,2,0.2,111
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,AbstractEndpoint correlator = null;,1,2,0.2,112
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,BridgeHandler handler = new BridgeHandler();,1,2,0.2,113
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();,0,2,0.2,114
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private long maxMessagesPerPoll = -1;,0,2,0.2,115
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected boolean isReactive() {,0,2,0.2,116
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected Flux<Message<?>> getPollingFlux() {,0,2,0.2,117
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,BridgeHandler handler = new BridgeHandler();,0,2,0.2,118
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (isReactive()) {,0,2,0.2,119
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!this.initialized) {,0,2,0.2,120
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(errorMessage, ""failure occurred in error-handling flow"", errorFlowFailure);",0,2,0.2,121
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.replyMessageCorrelator != null) {,0,2,0.2,122
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"private Mono<Message<?>> handleSendError(Message<?> requestMessage, Throwable exception) {",0,2,0.2,123
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object originalReplyChannelHeader = message.getHeaders().getReplyChannel();,0,2,0.2,124
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Runnable createPoller() {,0,2,0.2,125
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object originalErrorChannelHeader = message.getHeaders().getErrorChannel();,0,2,0.2,126
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,FutureReplyChannel replyChannel = new FutureReplyChannel();,0,2,0.2,127
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,boolean sent =,0,2,0.2,128
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!sent) {,0,2,0.2,129
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!error && this.countsEnabled) {,0,2,0.2,130
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (logger.isDebugEnabled()) {,0,2,0.2,131
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel replyChannel = getReplyChannel();,0,2,0.2,132
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel errorChannel = getErrorChannel();,0,2,0.2,133
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (errorChannel != null) {,0,2,0.2,134
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private long sendTimeout(Message<?> requestMessage) {,0,2,0.2,135
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return (sendTimeout != null ? sendTimeout : this.messagingTemplate.getSendTimeout());,0,2,0.2,136
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private long receiveTimeout(Message<?> requestMessage) {,0,2,0.2,137
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return (receiveTimeout != null ? receiveTimeout : this.messagingTemplate.getReceiveTimeout());,0,2,0.2,138
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"return new MessagingException(description, t);",0,2,0.2,139
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Callable<Message<?>> createPollingTask() {,0,2,0.2,140
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private long maxMessagesPerPoll = -1;,1,2,0.2,141
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,int count = 0;,0,2,0.2,142
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,&& (AbstractPollingEndpoint.this.maxMessagesPerPoll <= 0,1,2,0.2,143
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.runningTask != null) {,1,2,0.2,144
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private boolean doPoll() {,1,2,0.2,145
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> message = null;,1,2,0.2,146
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,message = this.receiveMessage();,1,2,0.2,147
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* Default Poller implementation,1,2,0.2,148
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private final Callable<Boolean> pollingTask;,1,2,0.2,149
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,int count = 0;,1,2,0.2,150
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!Poller.this.pollingTask.call()) {,1,2,0.2,151
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (pollForMessage() == null) {,0,2,0.2,152
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (AbstractPollingEndpoint.this.transactionSynchronizationFactory != null) {,1,2,0.2,153
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object resource = TransactionSynchronizationManager.getResource(getResourceToBind());,1,2,0.2,154
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object resource = getResourceToBind();,1,2,0.2,155
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (TransactionSynchronizationManager.hasResource(resource)) {,1,2,0.2,156
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private long replyTimeout = IntegrationContextUtils.DEFAULT_TIMEOUT;,0,2,0.2,157
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private long replyTimeout = DEFAULT_TIMEOUT;,1,2,0.2,158
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return Mono.defer(() -> {,0,2,0.2,159
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(""Failed to create Poller"", e);",1,2,0.2,160
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!this.initialized) {,1,2,0.2,161
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return new Poller(pollingTask);,1,2,0.2,162
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();,1,2,0.2,163
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Flux<Message<?>> createFluxGenerator() {,0,2,0.2,164
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,SimpleTriggerContext triggerContext = new SimpleTriggerContext();,0,2,0.2,165
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (date != null) {,0,2,0.2,166
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> message = pollForMessage();,0,2,0.2,167
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (message != null) {,0,2,0.2,168
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Message<?> pollForMessage() {,0,2,0.2,169
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.transactionSynchronizationFactory != null) {,0,2,0.2,170
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object resource = TransactionSynchronizationManager.getResource(getResourceToBind());,0,2,0.2,171
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object resource = getResourceToBind();,0,2,0.2,172
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (TransactionSynchronizationManager.hasResource(resource)) {,0,2,0.2,173
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private Message<?> doPoll() {,0,2,0.2,174
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,message = receiveMessage();,0,2,0.2,175
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!isReactive()) {,0,2,0.2,176
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.runningTask != null) {,0,2,0.2,177
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.subscription != null) {,0,2,0.2,178
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,message = this.historyWritingPostProcessor.postProcessMessage(message);,0,2,0.2,179
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (requestChannel == null) {,0,2,0.2,180
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"private Mono<Message<?>> doSendAndReceiveMessageReactive(MessageChannel requestChannel, Object object,",0,2,0.2,181
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.routerAttributesProvided(annotations)) {,0,2,0.2,182
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (router == null) {,0,2,0.2,183
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return router;,0,2,0.2,184
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String defaultOutputChannelName = MessagingAnnotationUtils.resolveAttribute(annotations,",0,2,0.2,185
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String applySequence = MessagingAnnotationUtils.resolveAttribute(annotations, ""applySequence"", String.class);",0,2,0.2,186
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(applySequence)) {,0,2,0.2,187
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String ignoreSendFailures = MessagingAnnotationUtils.resolveAttribute(annotations, ""ignoreSendFailures"",",0,2,0.2,188
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(ignoreSendFailures)) {,0,2,0.2,189
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MethodInvokingRouter methodInvokingRouter = (MethodInvokingRouter) router;,0,2,0.2,190
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (!ObjectUtils.isEmpty(channelMappings)) {,0,2,0.2,191
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String resolutionRequired = MessagingAnnotationUtils.resolveAttribute(annotations, ""resolutionRequired"",",0,2,0.2,192
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(resolutionRequired)) {,0,2,0.2,193
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,String resolutionRequiredValue = this.environment.resolvePlaceholders(resolutionRequired);,0,2,0.2,194
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(resolutionRequiredValue)) {,0,2,0.2,195
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String prefix = MessagingAnnotationUtils.resolveAttribute(annotations, ""prefix"", String.class);",0,2,0.2,196
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(prefix)) {,0,2,0.2,197
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String suffix = MessagingAnnotationUtils.resolveAttribute(annotations, ""suffix"", String.class);",0,2,0.2,198
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"router = this.extractTypeIfPossible(target, AbstractMessageRouter.class);",0,2,0.2,199
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Object target = this.resolveTargetBeanFromMethodWithBeanAnnotation(method);,0,2,0.2,200
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"if (AnnotatedElementUtils.isAnnotated(method, Bean.class.getName())) {",0,2,0.2,201
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (annotation != null) {,1,2,0.2,202
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,throws BeanDefinitionStoreException {,1,2,0.2,203
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"id = element.getAttribute(""name"");",1,2,0.2,204
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,id = parserContext.getReaderContext().generateBeanName(definition);,1,2,0.2,205
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Method releaseStrategyMethod = MessagingAnnotationUtils.findAnnotatedMethod(bean, ReleaseStrategy.class);",0,2,0.2,206
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (releaseStrategyMethod != null) {,0,2,0.2,207
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"releaseStrategy = new MethodInvokingReleaseStrategy(bean, releaseStrategyMethod);",0,2,0.2,208
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Method correlationStrategyMethod = MessagingAnnotationUtils.findAnnotatedMethod(bean, CorrelationStrategy.class);",0,2,0.2,209
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (correlationStrategyMethod != null) {,0,2,0.2,210
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"correlationStrategy = new MethodInvokingCorrelationStrategy(bean, correlationStrategyMethod);",0,2,0.2,211
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String discardChannelName = MessagingAnnotationUtils.resolveAttribute(annotations, ""discardChannel"", String.class);",0,2,0.2,212
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String outputChannelName = MessagingAnnotationUtils.resolveAttribute(annotations, ""outputChannel"", String.class);",0,2,0.2,213
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (sendTimeout != null) {,0,2,0.2,214
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (sendPartialResultsOnExpiry != null) {,0,2,0.2,215
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,String outputChannelName = annotation.outputChannel();,1,2,0.2,216
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"ReflectionUtils.doWithMethods(bean.getClass(), new ReflectionUtils.MethodCallback() {",1,2,0.2,217
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(suffix)) {,0,2,0.2,218
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,String discardChannelName = annotation.discardChannel();,1,2,0.2,219
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,StringBuilder mappings = new StringBuilder();,0,2,0.2,220
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(errorMessage, ""failure occurred in error-handling flow"",",0,2,0.2,221
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel errorChannel = getErrorChannel();,0,2,0.2,222
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (errorChannel != null) {,0,2,0.2,223
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel replyChannel = getReplyChannel();,0,2,0.2,224
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(replyChannel != null && (replyChannel instanceof PollableChannel),",0,2,0.2,225
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (requestChannel == null) {,0,2,0.2,226
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"reply = this.messagingTemplate.convertSendAndReceive(requestChannel, object, null,",0,2,0.2,227
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"reply = this.messagingTemplate.sendAndReceive(requestChannel, requestMessage);",0,2,0.2,228
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.requestChannel == null) {,1,2,0.2,229
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ this.errorChannelName + ""' in the BeanFactory."");",0,2,0.2,230
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"reply = this.messagingTemplate.convertSendAndReceive(this.requestChannel, object, null, this.historyWritingPostProcessor);",1,2,0.2,231
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"reply = this.messagingTemplate.sendAndReceive(this.requestChannel, requestMessage);",1,2,0.2,232
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(errorMessage, ""failure occurred in error-handling flow"", errorFlowFailure);",1,2,0.2,233
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,protected Mono<Message<?>> sendAndReceiveMessageReactive(Object object) {,0,2,0.2,234
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.notNull(object, ""request must not be null"");",0,2,0.2,235
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel requestChannel = getRequestChannel();,0,2,0.2,236
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Properties properties = (Properties) this.conversionService.convert(mappings.toString(),",0,2,0.2,237
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel requestChannel = getRequestChannel();,0,2,0.2,238
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.errorChannel != null) {,1,2,0.2,239
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.errorChannelName != null) {,0,2,0.2,240
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile String requestChannelName;,0,2,0.2,241
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private boolean routerAttributesProvided(List<Annotation> annotations) {,0,2,0.2,242
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String defaultOutputChannel = MessagingAnnotationUtils.resolveAttribute(annotations, ""defaultOutputChannel"",",0,2,0.2,243
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ this.replyChannelName + ""' in the BeanFactory."");",0,2,0.2,244
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return StringUtils.hasText(defaultOutputChannel) || !ObjectUtils.isEmpty(channelMappings),0,2,0.2,245
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,|| StringUtils.hasText(applySequence) || StringUtils.hasText(ignoreSendFailures);,0,2,0.2,246
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (StringUtils.hasText(defaultOutputChannelName)) {,1,2,0.2,247
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageChannel defaultOutputChannel = this.channelResolver.resolveDestination(defaultOutputChannelName);,1,2,0.2,248
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String defaultOutputChannelName = MessagingAnnotationUtils.resolveAttribute(annotations, ""defaultOutputChannel"",",1,2,0.2,249
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ this.requestChannelName + ""' in the BeanFactory."");",0,2,0.2,250
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile String errorChannelName;,0,2,0.2,251
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"* always use an anonymous, temporary channel for handling replies.",0,2,0.2,252
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"* propagate Exceptions to the caller. To completely suppress Exceptions, provide",0,2,0.2,253
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.requestChannelName != null) {,0,2,0.2,254
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile String replyChannelName;,0,2,0.2,255
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,if (this.replyChannelName != null) {,0,2,0.2,256
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import reactor.core.publisher.Flux;,0,1,0.1,257
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile ScheduledFuture<?> runningTask;,0,1,0.1,258
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile Subscription subscription;,0,1,0.1,259
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile Flux<Message<?>> pollingFlux;,0,1,0.1,260
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private TransactionSynchronizationFactory transactionSynchronizationFactory;,0,1,0.1,261
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile Callable<Message<?>> pollingTask;,0,1,0.1,262
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.scheduling.support.SimpleTriggerContext;,0,1,0.1,263
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import reactor.core.scheduler.Schedulers;,0,1,0.1,264
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import reactor.core.publisher.Mono;,0,1,0.1,265
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},0,1,0.1,266
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return false;,0,1,0.1,267
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Callable<Message<?>> pollingTask = this::doPoll;,0,1,0.1,268
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return this.pollingFlux;,0,1,0.1,269
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.pollingTask = createPollingTask();,0,1,0.1,270
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.pollingFlux = createFluxGenerator();,0,1,0.1,271
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else {,0,1,0.1,272
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(getTaskScheduler() != null, ""unable to start polling, no taskScheduler available"");",0,1,0.1,273
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.runningTask =,0,1,0.1,274
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,pollingTask = (Callable<Message<?>>) proxyFactory.getProxy(this.beanClassLoader);,0,1,0.1,275
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return pollingTask;,0,1,0.1,276
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return () ->,0,1,0.1,277
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import java.util.Date;,0,1,0.1,278
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.taskExecutor.execute(() -> {,0,1,0.1,279
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.reactivestreams.Subscription;,0,1,0.1,280
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return;,0,1,0.1,281
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import java.time.Duration;,0,1,0.1,282
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.replyMessageCorrelator = correlator;,0,1,0.1,283
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.<Duration>generate(sink -> {,0,1,0.1,284
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return ((Number) headerValue).longValue();,0,1,0.1,285
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return Long.parseLong((String) headerValue);,0,1,0.1,286
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return null;,0,1,0.1,287
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"return this.errorMessageStrategy.buildErrorMessage(throwable, getErrorMessageAttributes(requestMessage));",0,1,0.1,288
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return (RuntimeException) t;,0,1,0.1,289
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,synchronized (this.replyMessageCorrelatorMonitor) {,0,1,0.1,290
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.afterPropertiesSet();,0,1,0.1,291
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"new ReactiveStreamsConsumer(replyChannel, (Subscriber<Message<?>>) handler);",0,1,0.1,292
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ ""SubscribableChannel or PollableChannel type are supported."");",0,1,0.1,293
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,shouldStartCorrelator = true;,0,1,0.1,294
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.replyMessageCorrelator = correlator;,1,1,0.1,295
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return this.messageFuture.complete(message);,0,1,0.1,296
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},1,1,0.1,297
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"ErrorMessage errorMessage = this.errorMessageStrategy.buildErrorMessage(throwable,",1,1,0.1,298
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return errorMessage;,1,1,0.1,299
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(description, t);",1,1,0.1,300
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,synchronized (this.replyMessageCorrelatorMonitor) {,1,1,0.1,301
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return;,1,1,0.1,302
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.afterPropertiesSet();,1,1,0.1,303
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else {,1,1,0.1,304
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ ""SubscribableChannel or PollableChannel type are supported."");",1,1,0.1,305
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return Flux,0,1,0.1,306
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else {,1,1,0.1,307
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Date date = this.trigger.nextExecutionTime(triggerContext);,0,1,0.1,308
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(message, e);",1,1,0.1,309
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.initialized = false;,1,1,0.1,310
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.runningTask = this.getTaskScheduler().schedule(this.poller, this.trigger);",1,1,0.1,311
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.runningTask = null;,1,1,0.1,312
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,IntegrationResourceHolder holder = this.bindResourceHolderIfNecessary(,1,1,0.1,313
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return false;,1,1,0.1,314
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,result = false;,1,1,0.1,315
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,try {,1,1,0.1,316
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,catch (Exception e) {,1,1,0.1,317
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingExceptionWrapper(message, (MessagingException) e);",1,1,0.1,318
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Long sendTimeout = headerToLong(requestMessage.getHeaders(),0,1,0.1,319
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,result = true;,1,1,0.1,320
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,long millis = date.getTime() - System.currentTimeMillis();,0,1,0.1,321
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return result;,1,1,0.1,322
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Poller(Callable<Boolean> pollingTask) {,1,1,0.1,323
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.pollingTask = pollingTask;,1,1,0.1,324
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,AbstractPollingEndpoint.this.taskExecutor.execute(() -> {,1,1,0.1,325
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,while (AbstractPollingEndpoint.this.initialized,1,1,0.1,326
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> failedMessage = null;,1,1,0.1,327
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,failedMessage = ((IntegrationResourceHolder) resource).getMessage();,1,1,0.1,328
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(failedMessage, e);",1,1,0.1,329
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,finally {,1,1,0.1,330
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.integration.context.IntegrationContextUtils;,0,1,0.1,331
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.poller = createPoller();,1,1,0.1,332
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""unable to start polling, no taskScheduler available"");",1,1,0.1,333
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},1,1,0.1,334
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,pollingTask = (Callable<Boolean>) proxyFactory.getProxy(this.beanClassLoader);,1,1,0.1,335
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"new Date(), null))",0,1,0.1,336
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.<Message<?>>generate(fluxSink -> {,0,1,0.1,337
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,new Date()),0,1,0.1,338
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.doOnSubscribe(subscription -> this.subscription = subscription);,0,1,0.1,339
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return this.pollingTask.call();,0,1,0.1,340
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> failedMessage = null;,0,1,0.1,341
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,failedMessage = ((IntegrationResourceHolder) resource).getMessage();,0,1,0.1,342
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(failedMessage, e);",0,1,0.1,343
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,finally {,0,1,0.1,344
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"IntegrationResourceHolder holder = bindResourceHolderIfNecessary(getResourceKey(), getResourceToBind());",0,1,0.1,345
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return null;,0,1,0.1,346
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,try {,0,1,0.1,347
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,catch (Exception e) {,0,1,0.1,348
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingExceptionWrapper(message, (MessagingException) e);",0,1,0.1,349
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessagingException(message, e);",0,1,0.1,350
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return message;,0,1,0.1,351
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.runningTask = null;,0,1,0.1,352
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private TransactionSynchronizationFactory transactionSynchronizationFactory;,1,1,0.1,353
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile ScheduledFuture<?> runningTask;,1,1,0.1,354
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,private volatile Runnable poller;,1,1,0.1,355
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Callable<Boolean> pollingTask = this::doPoll;,1,1,0.1,356
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Long receiveTimeout = headerToLong(requestMessage.getHeaders(),0,1,0.1,357
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @since 4.1,0,1,0.1,358
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,catch (Exception errorFlowFailure) {,0,1,0.1,359
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,for (String channelMapping : channelMappings) {,0,1,0.1,360
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.util.ObjectUtils;,0,1,0.1,361
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @author Artem Bilan,0,1,0.1,362
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,AbstractMessageRouter router;,0,1,0.1,363
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ ""'applySequence', 'ignoreSendFailures', 'resolutionRequired' and 'channelMappings' """,0,1,0.1,364
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ ""can be applied to 'AbstractMessageRouter' implementations, but target handler is: """,0,1,0.1,365
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,+ target.getClass());,0,1,0.1,366
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return (MessageHandler) target;,0,1,0.1,367
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},0,1,0.1,368
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else {,0,1,0.1,369
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"String[] channelMappings = MessagingAnnotationUtils.resolveAttribute(annotations, ""channelMappings"",",0,1,0.1,370
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.messaging.MessageChannel;,1,1,0.1,371
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.core.convert.TypeDescriptor;,0,1,0.1,372
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,List<Annotation> annotations) {,1,1,0.1,373
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.beans.BeansException;,0,1,0.1,374
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.messaging.core.DestinationResolutionException;,0,1,0.1,375
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,new HistoryWritingMessagePostProcessor();,0,1,0.1,376
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.hasText(requestChannelName, ""'requestChannelName' must not be empty"");",0,1,0.1,377
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.requestChannelName = requestChannelName;,0,1,0.1,378
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},0,1,0.1,379
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.hasText(replyChannelName, ""'replyChannelName' must not be empty"");",0,1,0.1,380
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.replyChannelName = replyChannelName;,0,1,0.1,381
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"* a reference to the ""nullChannel"" here.",0,1,0.1,382
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.integration.router.AbstractMessageRouter;,0,1,0.1,383
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.core.annotation.AnnotatedElementUtils;,0,1,0.1,384
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.errorChannelName = errorChannelName;,0,1,0.1,385
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MethodInvokingReleaseStrategy releaseStrategy = null;,0,1,0.1,386
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"return doSendAndReceiveMessageReactive(errorChannel, errorMessage, true);",0,1,0.1,387
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* Copyright 2002-2012 the original author or authors.,0,1,0.1,388
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,*,0,1,0.1,389
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* Copyright 2002-2010 the original author or authors.,1,1,0.1,390
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,*,1,1,0.1,391
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},1,1,0.1,392
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return id;,1,1,0.1,393
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import java.util.List;,0,1,0.1,394
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @author Gary Russell,0,1,0.1,395
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,* @author Artem Bilan,0,1,0.1,396
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},0,1,0.1,397
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.context.annotation.Bean;,0,1,0.1,398
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MethodInvokingCorrelationStrategy correlationStrategy = null;,0,1,0.1,399
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Long sendTimeout = MessagingAnnotationUtils.resolveAttribute(annotations, ""sendTimeout"", Long.class);",0,1,0.1,400
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Boolean sendPartialResultsOnExpiry = MessagingAnnotationUtils.resolveAttribute(annotations,",0,1,0.1,401
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import java.util.concurrent.atomic.AtomicReference;,1,1,0.1,402
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.core.annotation.AnnotationUtils;,1,1,0.1,403
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MethodInvokingReleaseStrategy releaseStrategy = getReleaseStrategy(bean);,1,1,0.1,404
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MethodInvokingCorrelationStrategy correlationStrategy = getCorrelationStrategy(bean);,1,1,0.1,405
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},1,1,0.1,406
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return reference.get();,1,1,0.1,407
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import java.util.Properties;,0,1,0.1,408
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.hasText(errorChannelName, ""'errorChannelName' must not be empty"");",0,1,0.1,409
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.util.ReflectionUtils;,1,1,0.1,410
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(!(this.requestChannelName != null && this.requestChannel != null),",0,1,0.1,411
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,boolean error) {,0,1,0.1,412
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.integration.endpoint.ReactiveStreamsConsumer;,0,1,0.1,413
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.integration.mapping.MessageMappingException;,0,1,0.1,414
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.integration.support.MutableMessageBuilder;,0,1,0.1,415
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.lang.Nullable;,0,1,0.1,416
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.messaging.MessageDeliveryException;,0,1,0.1,417
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.messaging.MessageHeaders;,0,1,0.1,418
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.messaging.support.MessageBuilder;,0,1,0.1,419
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import reactor.core.publisher.Mono;,0,1,0.1,420
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,},0,1,0.1,421
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"return doSendAndReceiveMessageReactive(requestChannel, object, false);",0,1,0.1,422
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,try {,0,1,0.1,423
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.reactivestreams.Subscriber;,0,1,0.1,424
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,catch (Exception e) {,0,1,0.1,425
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else {,0,1,0.1,426
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,long sendTimeout = sendTimeout(requestMessage);,0,1,0.1,427
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,sendTimeout >= 0,0,1,0.1,428
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw new MessageDeliveryException(requestMessage,",0,1,0.1,429
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""' within timeout: "" + sendTimeout);",0,1,0.1,430
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return Mono.fromFuture(replyChannel.messageFuture),0,1,0.1,431
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.doOnSubscribe(s -> {,0,1,0.1,432
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(!(this.replyChannelName != null && this.replyChannel != null),",0,1,0.1,433
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"ErrorMessage errorMessage = buildErrorMessage(requestMessage, exception);",0,1,0.1,434
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import org.springframework.integration.channel.ReactiveStreamsSubscribableChannel;,0,1,0.1,435
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> requestMessage = MutableMessageBuilder.fromMessage(message),0,1,0.1,436
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,import java.util.concurrent.CompletableFuture;,0,1,0.1,437
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.errorChannel = getBeanFactory().getBean(this.errorChannelName, MessageChannel.class);",0,1,0.1,438
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(!(this.errorChannelName != null && this.errorChannel != null),",0,1,0.1,439
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,synchronized (this) {,0,1,0.1,440
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"errorFlowReply = this.messagingTemplate.sendAndReceive(this.errorChannel, errorMessage);",1,1,0.1,441
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,try {,0,1,0.1,442
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.requestChannel = getBeanFactory().getBean(this.requestChannelName, MessageChannel.class);",0,1,0.1,443
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.requestChannelName = null;,0,1,0.1,444
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return this.requestChannel;,0,1,0.1,445
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.replyChannel = getBeanFactory().getBean(this.replyChannelName, MessageChannel.class);",0,1,0.1,446
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.replyChannelName = null;,0,1,0.1,447
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return this.replyChannel;,0,1,0.1,448
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,catch (BeansException e) {,0,1,0.1,449
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.errorChannelName = null;,0,1,0.1,450
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"return this.messagingTemplate.receiveAndConvert((PollableChannel) this.replyChannel, null);",1,1,0.1,451
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.messagingTemplate.send(errorChannel, new ErrorMessage(e));",0,1,0.1,452
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"return this.messagingTemplate.receiveAndConvert(replyChannel, null);",0,1,0.1,453
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"errorFlowReply = this.messagingTemplate.sendAndReceive(errorChannel, errorMessage);",0,1,0.1,454
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,else {,0,1,0.1,455
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"+ ""SubscribableChannel or PollableChannel type are supported."");",0,1,0.1,456
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.messagingTemplate.send(this.errorChannel, new ErrorMessage(e));",1,1,0.1,457
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,return this.errorChannel;,0,1,0.1,458
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,*,1,1,0.1,459
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,});,0,0,0.0,460
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,onInit();,0,0,0.0,461
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,getTaskScheduler(),0,0,0.0,462
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,".schedule(createPoller(), this.trigger);",0,0,0.0,463
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,break;,0,0,0.0,464
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,count++;,0,0,0.0,465
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,sink.complete();,0,0,0.0,466
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"triggerContext.update(date, null, null);",0,0,0.0,467
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,sink.next(Duration.ofMillis(millis));,0,0,0.0,468
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,}),0,0,0.0,469
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.concatMap(duration ->,0,0,0.0,470
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.doOnNext(l ->,0,0,0.0,471
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,// LifecycleSupport implementation,0,0,0.0,472
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Mono.delay(duration),0,0,0.0,473
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Override // guarded by super#lifecycleLock,0,0,0.0,474
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.replyMessageCorrelator.start();,0,0,0.0,475
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,correlator.start();,1,0,0.0,476
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.setReceiveTimeout(this.replyTimeout);,0,0,0.0,477
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,boolean shouldStartCorrelator;,0,0,0.0,478
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.flatMapMany(l ->,0,0,0.0,479
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,AbstractEndpoint correlator;,0,0,0.0,480
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.setBeanFactory(getBeanFactory());,0,0,0.0,481
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.afterPropertiesSet();,0,0,0.0,482
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.setBeanFactory(getBeanFactory());,0,0,0.0,483
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Override,0,0,0.0,484
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.setReceiveTimeout(this.replyTimeout);,1,0,0.0,485
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.registerReplyMessageCorrelator();,1,0,0.0,486
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,getErrorMessageAttributes(requestMessage));,1,0,0.0,487
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,throw (RuntimeException) t;,1,0,0.0,488
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.setBeanFactory(this.getBeanFactory());,1,0,0.0,489
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.afterPropertiesSet();,1,0,0.0,490
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.setBeanFactory(this.getBeanFactory());,1,0,0.0,491
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"triggerContext.update(triggerContext.lastScheduledExecutionTime(),",0,0,0.0,492
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,/**,1,0,0.0,493
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Flux,0,0,0.0,494
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,break;,1,0,0.0,495
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.runningTask.cancel(true);,1,0,0.0,496
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.getResourceKey(), this.getResourceToBind());",1,0,0.0,497
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,boolean result;,1,0,0.0,498
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.handleMessage(message);,1,0,0.0,499
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,*/,1,0,0.0,500
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Override,1,0,0.0,501
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,count++;,1,0,0.0,502
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,fluxSink.next(message);,0,0,0.0,503
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,throw (MessagingException) e;,1,0,0.0,504
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,TransactionSynchronizationManager.unbindResource(resource);,1,0,0.0,505
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,});,1,0,0.0,506
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,template.setSendTimeout(IntegrationContextUtils.DEFAULT_TIMEOUT);,0,0,0.0,507
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,template.setSendTimeout(DEFAULT_TIMEOUT);,1,0,0.0,508
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Nullable,0,0,0.0,509
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(this.getTaskScheduler() != null,",1,0,0.0,510
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.onInit();,1,0,0.0,511
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Override // guarded by super#lifecycleLock,1,0,0.0,512
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,// LifecycleSupport implementation,1,0,0.0,513
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.subscription.cancel();,0,0,0.0,514
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.runningTask.cancel(true);,0,0,0.0,515
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handleMessage(message);,0,0,0.0,516
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> message;,0,0,0.0,517
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,TransactionSynchronizationManager.unbindResource(resource);,0,0,0.0,518
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,throw (MessagingException) e;,0,0,0.0,519
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.repeat(this::isRunning),0,0,0.0,520
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,")), 1)",0,0,0.0,521
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"triggerContext.lastActualExecutionTime(),",0,0,0.0,522
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.doOnComplete(() ->,0,0,0.0,523
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.subscribeOn(Schedulers.fromExecutor(this.taskExecutor)),0,0,0.0,524
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.take(this.maxMessagesPerPoll),0,0,0.0,525
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,fluxSink.complete();,0,0,0.0,526
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw wrapExceptionIfNecessary(t, description);",0,0,0.0,527
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,methodInvokingRouter.setPrefix(this.environment.resolvePlaceholders(prefix));,0,0,0.0,528
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.get(this.messagingTemplate.getReceiveTimeoutHeader()));,0,0,0.0,529
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,router.setBeanFactory(this.beanFactory);,1,0,0.0,530
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,methodInvokingRouter.setResolutionRequired(Boolean.parseBoolean(resolutionRequiredValue));,0,0,0.0,531
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,methodInvokingRouter.setSuffix(this.environment.resolvePlaceholders(suffix));,0,0,0.0,532
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,String[].class);,0,0,0.0,533
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"mappings.append(channelMapping).append(""\n"");",0,0,0.0,534
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"TypeDescriptor.valueOf(String.class), TypeDescriptor.valueOf(Properties.class));",0,0,0.0,535
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,methodInvokingRouter.replaceChannelMappings(properties);,0,0,0.0,536
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,router.setDefaultOutputChannel(defaultOutputChannel);,1,0,0.0,537
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.get(this.messagingTemplate.getSendTimeoutHeader()));,0,0,0.0,538
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,/**,0,0,0.0,539
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,*/,0,0,0.0,540
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""'requestChannelName' and 'requestChannel' are mutually exclusive."");",0,0,0.0,541
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""'replyChannelName' and 'replyChannel' are mutually exclusive."");",0,0,0.0,542
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""'errorChannelName' and 'errorChannel' are mutually exclusive."");",0,0,0.0,543
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(getBeanFactory() != null,",0,0,0.0,544
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,String.class);,0,0,0.0,545
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,router.setIgnoreSendFailures(Boolean.parseBoolean(this.environment.resolvePlaceholders(ignoreSendFailures)));,0,0,0.0,546
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,router.setApplySequence(Boolean.parseBoolean(this.environment.resolvePlaceholders(applySequence)));,0,0,0.0,547
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,router.setDefaultOutputChannelName(defaultOutputChannelName);,0,0,0.0,548
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""defaultOutputChannel"", String.class);",0,0,0.0,549
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.isTrue(this.routerAttributesProvided(annotations), ""'defaultOutputChannel', """,0,0,0.0,550
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"reference.set(new MethodInvokingCorrelationStrategy(bean, method));",1,0,0.0,551
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,});,1,0,0.0,552
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"reference.set(new MethodInvokingReleaseStrategy(bean, method));",1,0,0.0,553
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Override,1,0,0.0,554
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.setSendPartialResultOnExpiry(annotation.sendPartialResultsOnExpiry());,1,0,0.0,555
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.setSendTimeout(annotation.sendTimeout());,1,0,0.0,556
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.setSendPartialResultOnExpiry(sendPartialResultsOnExpiry);,0,0,0.0,557
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"""sendPartialResultsOnExpiry"", Boolean.class);",0,0,0.0,558
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,handler.setSendTimeout(sendTimeout);,0,0,0.0,559
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"correlationStrategy, releaseStrategy);",0,0,0.0,560
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,@Override,1,0,0.0,561
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(requestChannel != null,",0,0,0.0,562
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.messagingTemplate.convertAndSend(requestChannel, object, this.historyWritingPostProcessor);",0,0,0.0,563
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.historyWritingPostProcessor);,0,0,0.0,564
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,((ReactiveStreamsSubscribableChannel) requestChannel),0,0,0.0,565
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"throw wrapExceptionIfNecessary(exception, ""gateway received checked Exception"");",0,0,0.0,566
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,// no errorChannel so we'll propagate,0,0,0.0,567
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,});,0,0,0.0,568
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,".onErrorResume(t -> error ? Mono.error(t) : handleSendError(requestMessage, t));",0,0,0.0,569
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.build()),0,0,0.0,570
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,".setHeader(MessageHeaders.ERROR_CHANNEL, originalErrorChannelHeader)",0,0,0.0,571
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,".setHeader(MessageHeaders.REPLY_CHANNEL, originalReplyChannelHeader)",0,0,0.0,572
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,MessageBuilder.fromMessage(replyMessage),0,0,0.0,573
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.<Message<?>>map(replyMessage ->,0,0,0.0,574
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,}),0,0,0.0,575
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,this.messageCount.incrementAndGet();,0,0,0.0,576
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,: requestChannel.send(requestMessage);,0,0,0.0,577
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"? requestChannel.send(requestMessage, sendTimeout)",0,0,0.0,578
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.subscribeTo(Mono.just(requestMessage));,0,0,0.0,579
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.build();,0,0,0.0,580
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,errorFlowFailure);,0,0,0.0,581
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.setErrorChannel(replyChannel),0,0,0.0,582
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,".setHeader(this.messagingTemplate.getReceiveTimeoutHeader(), null)",0,0,0.0,583
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,".setHeader(this.messagingTemplate.getSendTimeoutHeader(), null)",0,0,0.0,584
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,.setReplyChannel(replyChannel),0,0,0.0,585
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,: this.requestMapper.toMessage(object);,0,0,0.0,586
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,? (Message<?>) object,0,0,0.0,587
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,Message<?> message;,0,0,0.0,588
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"@SuppressWarnings(""unchecked"")",0,0,0.0,589
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,initializeIfNecessary();,0,0,0.0,590
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,registerReplyMessageCorrelatorIfNecessary();,0,0,0.0,591
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"(PollableChannel) this.replyChannel, handler);",1,0,0.0,592
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"(SubscribableChannel) this.replyChannel, handler);",1,0,0.0,593
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"this.messagingTemplate.convertAndSend(this.requestChannel, object, this.historyWritingPostProcessor);",1,0,0.0,594
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,"Assert.state(this.requestChannel != null,",1,0,0.0,595
+27e288be08d4ccdf4bbb3e6a5bb3776963b1dfed,endpoint.setReceiveTimeout(this.replyTimeout);,1,0,0.0,596

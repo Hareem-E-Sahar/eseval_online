@@ -1,0 +1,119 @@
+commit_id,line,line_level_label,count,line_score,row
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!Array.<string>} filter,0,3,1.0,1
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var newFilter = $editField.val().split(""\n"");",0,3,1.0,2
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var filter = getValue();,0,3,1.0,3
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* @param {?{label:string, promise:$.Promise}} context Info on files filter will apply to - see editFilter()",0,3,1.0,4
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!Array.<string>} filter,1,3,1.0,5
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var newFilter = dialog.getElement().find("".exclusions-editor"").val().split(""\n"");",1,3,1.0,6
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,newFilter = newFilter.filter(function (glob) {,1,3,1.0,7
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* @param {?{label:string, promise:$.Promise}} context Info on which files the filter will be applied to. If specified,",0,3,1.0,8
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var dialog = Dialogs.showModalDialog(DefaultDialogs.DIALOG_ID_INFO, Strings.FILE_FILTER_DIALOG, html, buttons);",1,2,0.6666666666666666,9
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var filtered = filterFileList(compile(getValue()), files);",0,2,0.6666666666666666,10
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",1,2,0.6666666666666666,11
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var lastFocus = window.document.activeElement;,1,2,0.6666666666666666,12
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var html = StringUtils.format(Strings.FILE_FILTER_INSTRUCTIONS, brackets.config.glob_help_url) +",1,2,0.6666666666666666,13
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var buttons = [,1,2,0.6666666666666666,14
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var re = new RegExp(compiledFilter);,1,2,0.6666666666666666,15
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return glob.trim().length;,1,2,0.6666666666666666,16
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!string} compiledFilter  'Compiled' filter object as returned by compile(),1,2,0.6666666666666666,17
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @return {boolean},1,2,0.6666666666666666,18
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return glob.trim().length;,0,2,0.6666666666666666,19
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!Array.<File>} files,1,2,0.6666666666666666,20
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @return {!Array.<File>},1,2,0.6666666666666666,21
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var $fileCount = dialog.getElement().find("".exclusions-filecount"");",0,2,0.6666666666666666,22
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @return {!$.Promise} Dialog box promise,1,2,0.6666666666666666,23
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return newFilter.filter(function (glob) {,0,2,0.6666666666666666,24
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"*          editing UI will indicate how many files are excluded by the filter. Label should be of the form ""in ...""",0,2,0.6666666666666666,25
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!string} compiledFilter  'Compiled' filter object as returned by compile(),0,2,0.6666666666666666,26
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var $editField = dialog.getElement().find("".exclusions-editor"");",0,2,0.6666666666666666,27
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @return {boolean},0,2,0.6666666666666666,28
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var re = new RegExp(compiledFilter);,0,2,0.6666666666666666,29
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!Array.<File>} files,0,2,0.6666666666666666,30
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",0,2,0.6666666666666666,31
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @return {!Array.<File>},0,2,0.6666666666666666,32
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @return {!$.Promise} Dialog box promise,0,2,0.6666666666666666,33
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var lastFocus = window.document.activeElement;,0,2,0.6666666666666666,34
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var html = StringUtils.format(Strings.FILE_FILTER_INSTRUCTIONS, brackets.config.glob_help_url) +",0,2,0.6666666666666666,35
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,var buttons = [,0,2,0.6666666666666666,36
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"var dialog = Dialogs.showModalDialog(DefaultDialogs.DIALOG_ID_INFO, Strings.FILE_FILTER_DIALOG, html, buttons);",0,2,0.6666666666666666,37
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,*,1,1,0.3333333333333333,38
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"{ className : Dialogs.DIALOG_BTN_CLASS_PRIMARY, id: Dialogs.DIALOG_BTN_OK, text: Strings.OK }",1,1,0.3333333333333333,39
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"{ className : Dialogs.DIALOG_BTN_CLASS_NORMAL, id: Dialogs.DIALOG_BTN_CANCEL, text: Strings.CANCEL },",1,1,0.3333333333333333,40
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,// Update saved filter preference,1,1,0.3333333333333333,41
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return dialog.getPromise();,1,1,0.3333333333333333,42
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* if the path does not match any of the globs. If filtering many paths at once, use filterFileList()",1,1,0.3333333333333333,43
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* for much better performance.,1,1,0.3333333333333333,44
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return files.filter(function (f) {,1,1,0.3333333333333333,45
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!string} fullPath,1,1,0.3333333333333333,46
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return true;,1,1,0.3333333333333333,47
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return !fullPath.match(re);,1,1,0.3333333333333333,48
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* Returns a copy of 'files' filtered to just those that don't match any of the exclusion globs in the filter.,1,1,0.3333333333333333,49
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return files;,1,1,0.3333333333333333,50
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return !f.fullPath.match(re);,1,1,0.3333333333333333,51
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return dialog.getPromise();,0,1,0.3333333333333333,52
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",1,1,0.3333333333333333,53
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* Returns false if the given path matches any of the exclusion globs in the given filter. Returns true,1,1,0.3333333333333333,54
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,// Update saved filter preference,0,1,0.3333333333333333,55
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return true;,0,1,0.3333333333333333,56
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"{ className : Dialogs.DIALOG_BTN_CLASS_PRIMARY, id: Dialogs.DIALOG_BTN_OK, text: Strings.OK }",0,1,0.3333333333333333,57
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"ProjectManager      = require(""project/ProjectManager""),",0,1,0.3333333333333333,58
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* Returns false if the given path matches any of the exclusion globs in the given filter. Returns true,0,1,0.3333333333333333,59
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* for much better performance.,0,1,0.3333333333333333,60
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,*,0,1,0.3333333333333333,61
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* @param {!string} fullPath,0,1,0.3333333333333333,62
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* if the path does not match any of the globs. If filtering many paths at once, use filterFileList()",0,1,0.3333333333333333,63
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return !fullPath.match(re);,0,1,0.3333333333333333,64
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return files;,0,1,0.3333333333333333,65
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return files.filter(function (f) {,0,1,0.3333333333333333,66
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,return !f.fullPath.match(re);,0,1,0.3333333333333333,67
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",0,1,0.3333333333333333,68
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,* Returns a copy of 'files' filtered to just those that don't match any of the exclusion globs in the filter.,0,1,0.3333333333333333,69
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"{ className : Dialogs.DIALOG_BTN_CLASS_NORMAL, id: Dialogs.DIALOG_BTN_CANCEL, text: Strings.CANCEL },",0,1,0.3333333333333333,70
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,/**,1,0,0.0,71
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"""<textarea class='exclusions-editor'></textarea>"";",1,0,0.0,72
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,function editFilter(filter) {,1,0,0.0,73
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,*/,1,0,0.0,74
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,$fileCount.hide();,0,0,0.0,75
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"editFilter(getLastFilter(), contextPromise)",0,0,0.0,76
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,function createFilterPicker(contextPromise) {,0,0,0.0,77
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,updateFileCount();,0,0,0.0,78
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"dialog.getElement().find("".exclusions-editor"").val(filter.join(""\n"")).focus();",1,0,0.0,79
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,];,1,0,0.0,80
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,function createFilterPicker() {,1,0,0.0,81
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,dialog.done(function (buttonId) {,1,0,0.0,82
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,if (buttonId === Dialogs.DIALOG_BTN_OK) {,1,0,0.0,83
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,// Remove blank lines,1,0,0.0,84
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,});,1,0,0.0,85
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,setLastFilter(newFilter);,1,0,0.0,86
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,},1,0,0.0,87
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,lastFocus.focus();  // restore focus to old pos,1,0,0.0,88
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,if (context) {,0,0,0.0,89
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,editFilter(getLastFilter()),1,0,0.0,90
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"function filterPath(compiledFilter, fullPath) {",1,0,0.0,91
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,if (!compiledFilter) {,1,0,0.0,92
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"$editField.on(""input"", _.debounce(updateFileCount, 400));",0,0,0.0,93
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,lastFocus.focus();  // restore focus to old pos,0,0,0.0,94
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"$fileCount.html(StringUtils.format(Strings.FILTER_FILE_COUNT_ALL, files.length, context.label));",0,0,0.0,95
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,} else {,0,0,0.0,96
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,/**,0,0,0.0,97
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,*/,0,0,0.0,98
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"function filterPath(compiledFilter, fullPath) {",0,0,0.0,99
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,if (!compiledFilter) {,0,0,0.0,100
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,},0,0,0.0,101
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"function filterFileList(compiledFilter, files) {",0,0,0.0,102
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,});,0,0,0.0,103
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"function editFilter(filter, context) {",0,0,0.0,104
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"""<textarea class='exclusions-editor'></textarea><div class='exclusions-filecount'>"" + Strings.FILTER_COUNTING_FILES + ""</div>"";",0,0,0.0,105
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,];,0,0,0.0,106
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"$editField.val(filter.join(""\n"")).focus();",0,0,0.0,107
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,function getValue() {,0,0,0.0,108
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,// Remove blank lines,0,0,0.0,109
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,dialog.done(function (buttonId) {,0,0,0.0,110
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,if (buttonId === Dialogs.DIALOG_BTN_OK) {,0,0,0.0,111
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,setLastFilter(getValue());,0,0,0.0,112
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,// Code to update the file count readout at bottom of dialog (if context provided),0,0,0.0,113
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,function updateFileCount() {,0,0,0.0,114
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,context.promise.done(function (files) {,0,0,0.0,115
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,if (filter.length) {,0,0,0.0,116
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"$fileCount.html(StringUtils.format(Strings.FILTER_FILE_COUNT, filtered.length, files.length, context.label));",0,0,0.0,117
+b0ea1541b32b0e71b4e8ec21304f7fe89f64146d,"function filterFileList(compiledFilter, files) {",1,0,0.0,118

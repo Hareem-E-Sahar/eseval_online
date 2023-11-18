@@ -1,0 +1,55 @@
+commit_id,line,line_level_label,count,line_score,row
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,from neutron.api.rpc.handlers import securitygroups_rpc,0,1,1.0,1
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# TODO(shiv): need to extend the db model to include device owners,1,1,1.0,2
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"sg_db_rpc.SecurityGroupServerRpcMixin,",1,1,1.0,3
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,return port,1,1,1.0,4
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"""""""Get port from the brocade specific db.""""""",0,1,1.0,5
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"""""""Get port from the brocade specific db.""""""",1,1,1.0,6
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,return port,0,1,1.0,7
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# TODO(shiv): need to extend the db model to include device owners,0,1,1.0,8
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,sg_db_rpc.SecurityGroupServerRpcCallbackMixin):,1,0,0.0,9
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# function: securitygroup_rules_for_devices(),1,0,0.0,10
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,TAP_PREFIX_LEN = 3,1,0,0.0,11
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,@classmethod,1,0,0.0,12
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"def get_port_from_device(cls, device):",1,0,0.0,13
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# TODO(shh) context is not being passed as,1,0,0.0,14
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# an argument to this function;,1,0,0.0,15
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,#,1,0,0.0,16
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# need to be fixed in:,1,0,0.0,17
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# file: neutron/db/securtygroups_rpc_base.py,1,0,0.0,18
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,session = db.get_session(),1,0,0.0,19
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# which needs to pass context to us,1,0,0.0,20
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# Doing what other plugins are doing,1,0,0.0,21
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"securitygroups_rpc.SecurityGroupServerRpcCallback(),",0,0,0.0,22
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port = brocade_db.get_port_from_device(,1,0,0.0,23
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"session, device[cls.TAP_PREFIX_LEN:])",1,0,0.0,24
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# make it appears that the device owner is of type network,1,0,0.0,25
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,if port:,1,0,0.0,26
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port['device'] = device,1,0,0.0,27
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port['device_owner'] = AGENT_OWNER_PREFIX,1,0,0.0,28
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port['binding:vif_type'] = 'bridge',1,0,0.0,29
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"class BridgeRpcCallbacks(n_rpc.RpcCallback,",1,0,0.0,30
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port['device'] = device,0,0,0.0,31
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"SecurityGroupServerRpcMixin,",0,0,0.0,32
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# need to be fixed in:,0,0,0.0,33
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,TAP_PREFIX_LEN = 3,0,0,0.0,34
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,class BridgeRpcCallbacks(n_rpc.RpcCallback):,0,0,0.0,35
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"port = brocade_db.get_port(rpc_context, device[TAP_PREFIX_LEN:])",0,0,0.0,36
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,class SecurityGroupServerRpcMixin(sg_db_rpc.SecurityGroupServerRpcMixin):,0,0,0.0,37
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,@classmethod,0,0,0.0,38
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"def get_port_from_device(cls, device):",0,0,0.0,39
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# TODO(shh) context is not being passed as,0,0,0.0,40
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# an argument to this function;,0,0,0.0,41
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,#,0,0,0.0,42
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# file: neutron/db/securtygroups_rpc_base.py,0,0,0.0,43
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port['binding:vif_type'] = 'bridge',0,0,0.0,44
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# function: securitygroup_rules_for_devices(),0,0,0.0,45
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# which needs to pass context to us,0,0,0.0,46
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# Doing what other plugins are doing,0,0,0.0,47
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,session = db.get_session(),0,0,0.0,48
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port = brocade_db.get_port_from_device(,0,0,0.0,49
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"session, device[TAP_PREFIX_LEN:])",0,0,0.0,50
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,# make it appears that the device owner is of type network,0,0,0.0,51
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,if port:,0,0,0.0,52
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,port['device_owner'] = AGENT_OWNER_PREFIX,0,0,0.0,53
+4ee4e75321cc163c9f5a9e0d3e159211357ca3a0,"port = brocade_db.get_port(rpc_context, device[self.TAP_PREFIX_LEN:])",1,0,0.0,54

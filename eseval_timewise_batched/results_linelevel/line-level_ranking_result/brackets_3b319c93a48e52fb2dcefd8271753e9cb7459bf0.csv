@@ -1,0 +1,100 @@
+commit_id,line,line_level_label,count,line_score,row
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"// If widget has focus, return it to the hostEditor & move the cursor to where the inline used to be",0,6,1.0,1
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// Check if the widget is attached to the host editor,0,5,0.8333333333333333,2
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"function closeInlineWidget(hostEditor, inlineWidget, moveFocus) {",1,4,0.6666666666666666,3
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// Callback to widget once parented to the editor,0,4,0.6666666666666666,4
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// FIXME (issue #2491): widget height is not set initially if widget is outside viewport,1,4,0.6666666666666666,5
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"* Given a host editor, return a list of all Editors in all its open inline widgets. (Ignoring",0,3,0.5,6
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,".append('<div class=""shadow bottom""/>');",1,3,0.5,7
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"function closeInlineWidget(hostEditor, inlineWidget) {",0,3,0.5,8
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"* Returns the focused Editor within an inline text editor, or null if something else has focus",0,3,0.5,9
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"result = { widget: widget, editor: editor };",1,3,0.5,10
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"var offset = $(node).offset(), // offset relative to document",0,2,0.3333333333333333,11
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// verify cursor position in inline editor,1,2,0.3333333333333333,12
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"node = inlineWidget.htmlContent,",0,2,0.3333333333333333,13
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (!inlineWidget.info) {,0,2,0.3333333333333333,14
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// position if the widget is above the viewport.,0,2,0.3333333333333333,15
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,window.setTimeout(function () {,0,2,0.3333333333333333,16
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"var node = inlineWidget.htmlContent,",1,2,0.3333333333333333,17
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// Use scrollLineIntoView=true to force widget into viewport.,1,2,0.3333333333333333,18
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (scrollLineIntoView) {,1,2,0.3333333333333333,19
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// FIXME (issue #2491): Scroll the line into view again if the,1,2,0.3333333333333333,20
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// height of the widget forces the line out of view,1,2,0.3333333333333333,21
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"var offset = $(node).offset(), // offset relative to document",1,2,0.3333333333333333,22
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// verify cursor position & focus in inline editor,0,2,0.3333333333333333,23
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,inlineWidget = focusedWidgetResult.widget;,1,2,0.3333333333333333,24
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (focusedWidgetResult) {,1,2,0.3333333333333333,25
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (focusedWidget instanceof InlineTextEditor) {,0,2,0.3333333333333333,26
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"* Given a host editor, return a list of all its open inline Editors. (Ignoring any other",1,2,0.3333333333333333,27
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"var inlineWidget = null,",1,2,0.3333333333333333,28
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (inlineWidget.hasFocus()) {,0,2,0.3333333333333333,29
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"* Returns the currently focused inline widget, if any.",0,2,0.3333333333333333,30
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (widget.hasFocus()) {,0,2,0.3333333333333333,31
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"this.$htmlContent.append('<div class=""shadow top""/>')",1,2,0.3333333333333333,32
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,var inlineWidget = getFocusedInlineWidget();,0,2,0.3333333333333333,33
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (moveFocus) {,1,2,0.3333333333333333,34
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (widget instanceof InlineTextEditor) {,1,2,0.3333333333333333,35
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,widget.editors.forEach(function (editor) {,1,2,0.3333333333333333,36
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (editor.hasFocus()) {,1,2,0.3333333333333333,37
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,if (focusedInline) {,1,2,0.3333333333333333,38
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,bottom: offset.top + height - scrollerTop,1,1,0.16666666666666666,39
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"right: position.left, // don't try to make the right edge visible",1,1,0.16666666666666666,40
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"top: offset.top - scrollerTop,",1,1,0.16666666666666666,41
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,scrollerTop = this.getVirtualScrollAreaTop();,1,1,0.16666666666666666,42
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"position = $(node).position(), // position within parent linespace",1,1,0.16666666666666666,43
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,bottom: offset.top + height - scrollerTop,0,1,0.16666666666666666,44
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"right: position.left, // don't try to make the right edge visible",0,1,0.16666666666666666,45
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"top: offset.top - scrollerTop,",0,1,0.16666666666666666,46
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,scrollerTop = self.getVirtualScrollAreaTop();,0,1,0.16666666666666666,47
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"position = $(node).position(), // position within parent linespace",0,1,0.16666666666666666,48
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"var self = this,",0,1,0.16666666666666666,49
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// verify full editor cursor restored,1,1,0.16666666666666666,50
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,var focusedWidget = getFocusedInlineWidget();,0,1,0.16666666666666666,51
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"EditorManager.closeInlineWidget(hostEditor, inlineWidget, true);",1,1,0.16666666666666666,52
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* any other inline widgets that might be open but don't contain Editors).,0,1,0.16666666666666666,53
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* inline widgets that might be open).,1,1,0.16666666666666666,54
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,result = widget;,0,1,0.16666666666666666,55
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,inlineEditors = inlineEditors.concat(widget.editors);,0,1,0.16666666666666666,56
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* Returns the currently focused inline widget.,1,1,0.16666666666666666,57
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,var focusedInline = getFocusedInlineWidget();,1,1,0.16666666666666666,58
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,focusedWidgetResult = getFocusedInlineWidget();,1,1,0.16666666666666666,59
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// verify full editor cursor & focus restored,0,1,0.16666666666666666,60
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,self._codeMirror.scrollIntoView({,0,0,0.0,61
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,expect(hostEditor.hasFocus()).toEqual(true);,0,0,0.0,62
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,inlineWidget.onAdded();,0,0,0.0,63
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,return;,0,0,0.0,64
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,},0,0,0.0,65
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// notify CodeMirror for the height change,0,0,0.0,66
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,inlineWidget.info.changed();,0,0,0.0,67
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,// FIXME (issue #2491): addLineWidget() async updates the scroll,0,0,0.0,68
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,this._codeMirror.scrollIntoView(pos);,1,0,0.0,69
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"left: position.left,",0,0,0.0,70
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,});,0,0,0.0,71
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"}, 0);",0,0,0.0,72
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,inlineWidget.onAdded();,1,0,0.0,73
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,expect(hostEditor.hasFocus()).toEqual(false);,0,0,0.0,74
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,},1,0,0.0,75
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,this.refresh();,1,0,0.0,76
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,this._codeMirror.scrollIntoView({,1,0,0.0,77
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"left: position.left,",1,0,0.0,78
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"EditorManager.closeInlineWidget(hostEditor, inlineWidget);",0,0,0.0,79
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,},1,0,0.0,80
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,expect(inlineWidget.hasFocus()).toEqual(true);,0,0,0.0,81
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* @return {?Editor},0,0,0.0,82
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,inlineEditors.concat(widget.editors);,1,0,0.0,83
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"""use strict"";",0,0,0.0,84
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"this.$htmlContent.append(""<div class='shadow top' />"")",0,0,0.0,85
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,".append(""<div class='shadow bottom' />"");",0,0,0.0,86
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,'use strict';,1,0,0.0,87
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* @return {?InlineWidget},0,0,0.0,88
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,/**,0,0,0.0,89
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,*/,0,0,0.0,90
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* @returns {Editor},1,0,0.0,91
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,return focusedWidget.getFocusedEditor();,0,0,0.0,92
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,* @returns {?Editor},0,0,0.0,93
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"* @param {!boolean} moveFocus  If true, focuses hostEditor and ensures the cursor position lies",1,0,0.0,94
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,*      near the inline's location.,1,0,0.0,95
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,"* @returns {?{widget:!InlineTextEditor, editor:!Editor}}",1,0,0.0,96
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,});,1,0,0.0,97
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,return focusedInline.editor;,1,0,0.0,98
+3b319c93a48e52fb2dcefd8271753e9cb7459bf0,});,1,0,0.0,99

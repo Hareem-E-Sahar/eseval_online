@@ -1,0 +1,213 @@
+commit_id,line,line_level_label,count,line_score,row
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"public String updateNamespace(@NotNull String namespaceId, Namespace entity) throws Exception {",0,5,1.0,1
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"public String updateTemplate(@NotNull String name, Template entity, String namespace) throws Exception {",0,5,1.0,2
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"public String deleteTemplate(@NotNull String name, String namespace) throws Exception {",0,5,1.0,3
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String homeDir = System.getProperty(""user.home"", ""."");",1,5,1.0,4
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"protected static String yamlValue(String prefix, String text) {",1,4,0.8,5
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"public Template getTemplate(final @NotNull String name, final String namespace) {",0,4,0.8,6
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"public String processTemplate(Template entity, String namespace) throws Exception {",0,4,0.8,7
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return new File(homeDir, "".config/openshift/config"");",1,4,0.8,8
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"public static final String OPENSHIFT_CONFIG_FILE_PROPERTY = ""openshift.config.file"";",1,4,0.8,9
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public static File getOpenShiftConfigFile() {,1,4,0.8,10
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"protected static String yamlValue(String prefix, String text) {",0,4,0.8,11
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public static String findDefaultOpenShiftNamespace() {,0,4,0.8,12
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public static String defaultNamespace() {,0,4,0.8,13
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public String deleteNamespace(@NotNull String name) throws Exception {,0,4,0.8,14
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public Namespace getNamespace(@NotNull String name) {,0,4,0.8,15
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,File file = getOpenShiftConfigFile();,1,3,0.6000000000000001,16
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String file = System.getProperty(OPENSHIFT_CONFIG_FILE_PROPERTY);,1,3,0.6000000000000001,17
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} else {,1,3,0.6000000000000001,18
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,try (BufferedReader reader = new BufferedReader(new FileReader(file))) {,1,3,0.6000000000000001,19
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,File file = getOpenShiftConfigFile();,1,3,0.6000000000000001,20
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,Config config = Configs.parseConfigs();,0,3,0.6000000000000001,21
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,protected static String findDefaultOpenShiftContext(File file) {,1,3,0.6000000000000001,22
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} else {,1,3,0.6000000000000001,23
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,try (BufferedReader reader = new BufferedReader(new FileReader(file))) {,1,3,0.6000000000000001,24
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,Config config = Configs.parseConfigs();,0,3,0.6000000000000001,25
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,protected static String findDefaultOpenShiftContext(File file) {,0,3,0.6000000000000001,26
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} else {,0,3,0.6000000000000001,27
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,try (BufferedReader reader = new BufferedReader(new FileReader(file))) {,0,3,0.6000000000000001,28
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} else {,0,3,0.6000000000000001,29
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public String createNamespace(Namespace entity) throws Exception {,0,3,0.6000000000000001,30
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,protected static String defaultNamespace() {,1,3,0.6000000000000001,31
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,try (BufferedReader reader = new BufferedReader(new FileReader(file))) {,1,3,0.6000000000000001,32
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,private static String findDefaultOpenShiftContext() {,1,3,0.6000000000000001,33
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(value)) {,1,2,0.4,34
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String answer = null;,1,2,0.4,35
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (context != null) {,0,2,0.4,36
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (config != null) {,0,2,0.4,37
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(token)) {,1,2,0.4,38
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String token = line.substring(tokenPrefix.length()).trim();,1,2,0.4,39
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line.startsWith(tokenPrefix)) {,1,2,0.4,40
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String tokenPrefix = ""current-context:"";",1,2,0.4,41
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (text.startsWith(prefix)) {,1,2,0.4,42
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String value = text.substring(prefix.length());,1,2,0.4,43
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} catch (Exception e) {,1,2,0.4,44
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (nameValue != null && nameValue.equals(context)) {,1,2,0.4,45
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String tokenPrefix = ""token:"";",1,2,0.4,46
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String nameValue = yamlValue(namePrefix, line);",1,2,0.4,47
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (namespaceValue != null) {,1,2,0.4,48
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String namespaceValue = yamlValue(namespacePrefix, line);",1,2,0.4,49
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line == null) {,1,2,0.4,50
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (file.exists() && file.isFile()) {,1,2,0.4,51
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (oldEntity == null) {,0,2,0.4,52
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String line = reader.readLine();,1,2,0.4,53
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} catch (Exception e) {,1,2,0.4,54
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String resourceVersion = KubernetesHelper.getResourceVersion(oldEntity);,0,2,0.4,55
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,// no entity exists so lets create a new one,0,2,0.4,56
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(context)) {,1,2,0.4,57
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (!KubernetesHelper.hasResourceVersion(entity)) {,0,2,0.4,58
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return handle404ByReturningNull(new Callable<Template>() {,0,2,0.4,59
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return new File(file);,1,2,0.4,60
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (file != null) {,1,2,0.4,61
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(token)) {,1,2,0.4,62
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line == null) {,1,2,0.4,63
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String token = text.substring(tokenPrefix.length()).trim();,1,2,0.4,64
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (text.startsWith(tokenPrefix)) {,1,2,0.4,65
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String text = line.trim();,1,2,0.4,66
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (inUsers) {,1,2,0.4,67
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Character.isWhitespace(ch) || ch == '-') {,1,2,0.4,68
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"if (line.startsWith(""users:"")) {",1,2,0.4,69
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line.isEmpty()) {,1,2,0.4,70
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String line = reader.readLine();,1,2,0.4,71
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,public Template call() throws Exception {,0,2,0.4,72
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String context = findDefaultOpenShiftContext(file);,1,2,0.4,73
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String line = reader.readLine();,0,2,0.4,74
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (text.startsWith(prefix)) {,0,2,0.4,75
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} catch (Exception e) {,0,2,0.4,76
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (nameValue != null && nameValue.equals(context)) {,0,2,0.4,77
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String nameValue = yamlValue(namePrefix, line);",0,2,0.4,78
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (namespaceValue != null) {,0,2,0.4,79
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String namespaceValue = yamlValue(namespacePrefix, line);",0,2,0.4,80
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line == null) {,0,2,0.4,81
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(context)) {,0,2,0.4,82
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(value)) {,0,2,0.4,83
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String context = findDefaultOpenShiftContext(file);,0,2,0.4,84
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String namespacePrefix = ""namespace:"";",0,2,0.4,85
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String namePrefix = ""name:"";",0,2,0.4,86
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,namespace = findDefaultOpenShiftNamespace();,0,2,0.4,87
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (e.getResponse().getStatus() == 404) {,0,2,0.4,88
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} catch (WebApplicationException e) {,0,2,0.4,89
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetes().updateNamespace(namespaceId, entity);",0,2,0.4,90
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String value = text.substring(prefix.length());,0,2,0.4,91
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,Endpoints answer = new Endpoints();,0,2,0.4,92
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String tokenPrefix = ""current-context:"";",0,2,0.4,93
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(token)) {,1,2,0.4,94
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line.startsWith(tokenPrefix)) {,0,2,0.4,95
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String answer = null;,1,2,0.4,96
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String namespacePrefix = ""namespace:"";",1,2,0.4,97
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String namePrefix = ""name:"";",1,2,0.4,98
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import static io.fabric8.kubernetes.api.KubernetesFactory.getOpenShiftConfigFile;,1,2,0.4,99
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (context != null) {,0,2,0.4,100
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (config != null) {,0,2,0.4,101
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,} catch (Exception e) {,1,2,0.4,102
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (file.exists() && file.isFile()) {,1,2,0.4,103
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String token = line.substring(tokenPrefix.length()).trim();,1,2,0.4,104
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String token = line.substring(tokenPrefix.length()).trim();,0,2,0.4,105
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line == null) {,1,2,0.4,106
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,String line = reader.readLine();,1,2,0.4,107
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"String tokenPrefix = ""current-context:"";",1,2,0.4,108
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,namespace = findDefaultOpenShiftContext();,1,2,0.4,109
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (Strings.isNotBlank(token)) {,0,2,0.4,110
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,if (line.startsWith(tokenPrefix)) {,1,2,0.4,111
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,boolean inUsers = false;,1,1,0.2,112
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return null;,0,1,0.2,113
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return Configs.getUserToken(config, context);",0,1,0.2,114
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,Context context = Configs.getCurrentContext(config);,0,1,0.2,115
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.model.config.Context;,0,1,0.2,116
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.model.config.Config;,0,1,0.2,117
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return token;,1,1,0.2,118
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.extensions.Configs;,0,1,0.2,119
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return null;,1,1,0.2,120
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,},1,1,0.2,121
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return value;,1,1,0.2,122
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,value = value.trim();,1,1,0.2,123
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return answer;,1,1,0.2,124
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,answer = namespaceValue;,1,1,0.2,125
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,while (true) {,1,1,0.2,126
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,inUsers = false;,1,1,0.2,127
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,inUsers = true;,1,1,0.2,128
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,char ch = line.charAt(0);,1,1,0.2,129
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,answer = token;,1,1,0.2,130
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return answer;,1,1,0.2,131
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"validateNamespace(namespace, entity);",0,1,0.2,132
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetesExtensions().processTemplate(entity, namespace);",0,1,0.2,133
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,},0,1,0.2,134
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetesExtensions().getTemplate(name, namespace);",0,1,0.2,135
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return createTemplate(entity, namespace);",0,1,0.2,136
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetesExtensions().updateTemplate(name, entity, namespace);",0,1,0.2,137
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetesExtensions().deleteTemplate(name, namespace);",0,1,0.2,138
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import java.io.BufferedReader;,1,1,0.2,139
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import java.io.File;,1,1,0.2,140
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import java.io.FileReader;,1,1,0.2,141
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,line = line.trim();,1,1,0.2,142
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"ReplicationController oldEntity = getReplicationController(name, namespace);",0,1,0.2,143
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,},1,1,0.2,144
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,while (true) {,1,1,0.2,145
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return answer;,0,1,0.2,146
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,boolean inUsers = false;,1,1,0.2,147
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.model.EndpointSubset;,0,1,0.2,148
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return getKubernetes().createNamespace(entity);,0,1,0.2,149
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,},0,1,0.2,150
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return getKubernetes().getNamespace(name);,0,1,0.2,151
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return getKubernetes().deleteNamespace(name);,0,1,0.2,152
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,try {,0,1,0.2,153
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return answer;,0,1,0.2,154
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetes().endpointsForService(serviceId, namespace);",1,1,0.2,155
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,boolean inUsers = false;,0,1,0.2,156
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,while (true) {,0,1,0.2,157
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,},0,1,0.2,158
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,line = line.trim();,0,1,0.2,159
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,answer = namespaceValue;,0,1,0.2,160
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"return getKubernetes().endpointsForService(serviceId, namespace);",0,1,0.2,161
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,value = value.trim();,0,1,0.2,162
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return token;,1,1,0.2,163
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.model.ObjectMeta;,1,1,0.2,164
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return value;,0,1,0.2,165
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return context.getNamespace();,0,1,0.2,166
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,Context context = Configs.getCurrentContext(config);,0,1,0.2,167
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.model.config.Config;,0,1,0.2,168
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.extensions.Configs;,0,1,0.2,169
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,import io.fabric8.kubernetes.api.model.config.Context;,0,1,0.2,170
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,},1,1,0.2,171
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,while (true) {,1,1,0.2,172
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,boolean inUsers = false;,1,1,0.2,173
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return token;,0,1,0.2,174
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,return null;,0,1,0.2,175
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,break;,1,0,0.0,176
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@GET,0,0,0.0,177
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,continue;,1,0,0.0,178
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"log.warn(""Could not parse OpenShift configuration file: "" + file);",1,0,0.0,179
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Path(""templates"")",0,0,0.0,180
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Consumes(""application/json"")",0,0,0.0,181
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@Override,0,0,0.0,182
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@POST,0,0,0.0,183
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,KubernetesHelper.getOrCreateMetadata(entity).setResourceVersion(resourceVersion);,0,0,0.0,184
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Path(""templates/{name}"")",0,0,0.0,185
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Produces(""application/json"")",0,0,0.0,186
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,});,0,0,0.0,187
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@PUT,0,0,0.0,188
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,// lets load it from the oldEntity,0,0,0.0,189
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@DELETE,0,0,0.0,190
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Consumes(""text/plain"")",0,0,0.0,191
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"LOG.warn(""Could not parse OpenShift configuration file: "" + file);",1,0,0.0,192
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"log.debug(""Parsing OpenShift configuration: "" + file);",1,0,0.0,193
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@PUT,0,0,0.0,194
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,break;,1,0,0.0,195
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"LOG.debug(""Parsing OpenShift configuration: "" + file);",1,0,0.0,196
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@Override,0,0,0.0,197
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@GET,0,0,0.0,198
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Path(""namespaces/{name}"")",0,0,0.0,199
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Consumes(""application/json"")",0,0,0.0,200
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,@DELETE,0,0,0.0,201
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Consumes(""text/plain"")",0,0,0.0,202
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"validateNamespace(namespace, serviceId);",0,0,0.0,203
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,// does not exist,0,0,0.0,204
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,answer.setSubsets(new ArrayList<EndpointSubset>());,0,0,0.0,205
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,throw e;,0,0,0.0,206
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"validateNamespace(namespace, serviceId);",1,0,0.0,207
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,break;,0,0,0.0,208
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"LOG.warn(""Could not parse OpenShift configuration file: "" + file);",0,0,0.0,209
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,break;,1,0,0.0,210
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"LOG.warn(""Could not parse OpenShift configuration file: "" + file);",1,0,0.0,211
+906e9b4df21e4e420f51cc93c13fb5f37d52fac7,"@Path(""templateConfigs"")",1,0,0.0,212

@@ -1,0 +1,72 @@
+commit_id,line,line_level_label,count,line_score,row
+4090905770bae7dd4621443b46c7766624aa5a10,if (len < 0) {,0,4,1.0,1
+4090905770bae7dd4621443b46c7766624aa5a10,if (len < 0) {,1,4,1.0,2
+4090905770bae7dd4621443b46c7766624aa5a10,} else {,1,3,0.75,3
+4090905770bae7dd4621443b46c7766624aa5a10,else { // should never happen,0,3,0.75,4
+4090905770bae7dd4621443b46c7766624aa5a10,if (this.channelInputStream.available() <= 0) {,0,3,0.75,5
+4090905770bae7dd4621443b46c7766624aa5a10,if (logger.isTraceEnabled()) {,1,2,0.5,6
+4090905770bae7dd4621443b46c7766624aa5a10,if (!dataAvailable()) {,1,2,0.5,7
+4090905770bae7dd4621443b46c7766624aa5a10,return this.channelInputStream.available() > 0 || writingToPipe;,1,2,0.5,8
+4090905770bae7dd4621443b46c7766624aa5a10,TcpNioConnection.this.writingLatch = new CountDownLatch(1);,0,2,0.5,9
+4090905770bae7dd4621443b46c7766624aa5a10,if (TcpNioConnection.this.writingLatch != null) {,0,2,0.5,10
+4090905770bae7dd4621443b46c7766624aa5a10,this.writingLatch = new CountDownLatch(1);,0,2,0.5,11
+4090905770bae7dd4621443b46c7766624aa5a10,catch (InterruptedException e) {,0,2,0.5,12
+4090905770bae7dd4621443b46c7766624aa5a10,"if (this.writingLatch.await(60, TimeUnit.SECONDS)) {",0,2,0.5,13
+4090905770bae7dd4621443b46c7766624aa5a10,try {,0,2,0.5,14
+4090905770bae7dd4621443b46c7766624aa5a10,return writingToPipe || this.channelInputStream.available() > 0;,0,2,0.5,15
+4090905770bae7dd4621443b46c7766624aa5a10,int len = this.socketChannel.read(this.rawBuffer);,1,2,0.5,16
+4090905770bae7dd4621443b46c7766624aa5a10,if (logger.isTraceEnabled()) {,0,2,0.5,17
+4090905770bae7dd4621443b46c7766624aa5a10,if (checkForAssembler()) {,1,2,0.5,18
+4090905770bae7dd4621443b46c7766624aa5a10,int len = this.socketChannel.read(this.rawBuffer);,0,2,0.5,19
+4090905770bae7dd4621443b46c7766624aa5a10,"""increasing this task executor pool size; data avail: "" + this.channelInputStream.available());",0,2,0.5,20
+4090905770bae7dd4621443b46c7766624aa5a10,if (dataAvailable()) {,0,2,0.5,21
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(this.getConnectionId() + "" Nio message assembler exiting... avail: "" + this.channelInputStream.available());",0,2,0.5,22
+4090905770bae7dd4621443b46c7766624aa5a10,if (logger.isTraceEnabled()) {,0,2,0.5,23
+4090905770bae7dd4621443b46c7766624aa5a10,else {,0,2,0.5,24
+4090905770bae7dd4621443b46c7766624aa5a10,if (logger.isDebugEnabled()) {,0,2,0.5,25
+4090905770bae7dd4621443b46c7766624aa5a10,private void checkForAssembler() {,0,2,0.5,26
+4090905770bae7dd4621443b46c7766624aa5a10,if (this.isOpen() && dataAvailable()) {,1,2,0.5,27
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(this.getConnectionId() + "" Nio message assembler exiting..."");",1,2,0.5,28
+4090905770bae7dd4621443b46c7766624aa5a10,if (logger.isDebugEnabled()) {,1,2,0.5,29
+4090905770bae7dd4621443b46c7766624aa5a10,this.writingToPipe = false;,1,1,0.25,30
+4090905770bae7dd4621443b46c7766624aa5a10,"throw new IOException(""Interrupted waiting for IO"");",0,1,0.25,31
+4090905770bae7dd4621443b46c7766624aa5a10,"throw new IOException(""Timed out waiting for IO"");",0,1,0.25,32
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(getConnectionId() + "" checking data avail (convert): "" + this.channelInputStream.available() +",0,1,0.25,33
+4090905770bae7dd4621443b46c7766624aa5a10,},0,1,0.25,34
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(getConnectionId() + "" checking data avail: "" + this.channelInputStream.available() +",0,1,0.25,35
+4090905770bae7dd4621443b46c7766624aa5a10,private boolean checkForAssembler() {,1,1,0.25,36
+4090905770bae7dd4621443b46c7766624aa5a10,},1,1,0.25,37
+4090905770bae7dd4621443b46c7766624aa5a10,"""increasing this task executor pool size"");",1,1,0.25,38
+4090905770bae7dd4621443b46c7766624aa5a10,catch (RejectedExecutionException e) {,0,1,0.25,39
+4090905770bae7dd4621443b46c7766624aa5a10,this.writingToPipe = false;,0,1,0.25,40
+4090905770bae7dd4621443b46c7766624aa5a10,},0,1,0.25,41
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.info(getConnectionId() + "" Insufficient threads in the assembler fixed thread pool; consider "" +",0,1,0.25,42
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.info(""Insufficient threads in the assembler fixed thread pool; consider "" +",1,1,0.25,43
+4090905770bae7dd4621443b46c7766624aa5a10,import java.util.concurrent.CountDownLatch;,0,0,0.0,44
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.debug(""Read "" + rawBuffer.limit() + "" into raw buffer"");",1,0,0.0,45
+4090905770bae7dd4621443b46c7766624aa5a10,this.sendToPipe(rawBuffer);,1,0,0.0,46
+4090905770bae7dd4621443b46c7766624aa5a10,return false;,1,0,0.0,47
+4090905770bae7dd4621443b46c7766624aa5a10,return true;,1,0,0.0,48
+4090905770bae7dd4621443b46c7766624aa5a10,return null;,0,0,0.0,49
+4090905770bae7dd4621443b46c7766624aa5a10,private volatile CountDownLatch writingLatch;,0,0,0.0,50
+4090905770bae7dd4621443b46c7766624aa5a10,""" pending: "" + (this.writingToPipe));",0,0,0.0,51
+4090905770bae7dd4621443b46c7766624aa5a10,this.rawBuffer.flip();,1,0,0.0,52
+4090905770bae7dd4621443b46c7766624aa5a10,Thread.currentThread().interrupt();,0,0,0.0,53
+4090905770bae7dd4621443b46c7766624aa5a10,this.writingLatch.countDown();,0,0,0.0,54
+4090905770bae7dd4621443b46c7766624aa5a10,TcpNioConnection.this.writingLatch.countDown();,0,0,0.0,55
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(""After flip:"" + this.rawBuffer.position() + ""/"" + this.rawBuffer.limit());",1,0,0.0,56
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(""Before read:"" + this.rawBuffer.position() + ""/"" + this.rawBuffer.limit());",1,0,0.0,57
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(""After read:"" + this.rawBuffer.position() + ""/"" + this.rawBuffer.limit());",1,0,0.0,58
+4090905770bae7dd4621443b46c7766624aa5a10,this.closeConnection(true);,1,0,0.0,59
+4090905770bae7dd4621443b46c7766624aa5a10,Thread.yield();,1,0,0.0,60
+4090905770bae7dd4621443b46c7766624aa5a10,throw e;,0,0,0.0,61
+4090905770bae7dd4621443b46c7766624aa5a10,this.sendToPipe(rawBuffer);,0,0,0.0,62
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.debug(""Read "" + rawBuffer.limit() + "" into raw buffer"");",0,0,0.0,63
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(""After flip:"" + this.rawBuffer.position() + ""/"" + this.rawBuffer.limit());",0,0,0.0,64
+4090905770bae7dd4621443b46c7766624aa5a10,this.rawBuffer.flip();,0,0,0.0,65
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(""After read:"" + this.rawBuffer.position() + ""/"" + this.rawBuffer.limit());",0,0,0.0,66
+4090905770bae7dd4621443b46c7766624aa5a10,this.closeConnection(true);,0,0,0.0,67
+4090905770bae7dd4621443b46c7766624aa5a10,"logger.trace(""Before read:"" + this.rawBuffer.position() + ""/"" + this.rawBuffer.limit());",0,0,0.0,68
+4090905770bae7dd4621443b46c7766624aa5a10,checkForAssembler();,0,0,0.0,69
+4090905770bae7dd4621443b46c7766624aa5a10,* @author John Anderson,0,0,0.0,70
+4090905770bae7dd4621443b46c7766624aa5a10,return null;,1,0,0.0,71

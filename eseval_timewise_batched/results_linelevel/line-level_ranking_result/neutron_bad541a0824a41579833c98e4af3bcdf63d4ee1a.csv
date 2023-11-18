@@ -1,0 +1,619 @@
+commit_id,line,line_level_label,count,line_score,row
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# A VM port is deleted, but the router can't be unscheduled from the",1,7,1.0,1
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# by the admin will be unscheduled on the compute node,1,6,0.8571428571428571,2
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# Delete a vm port, the port subnet has no router interface.",1,5,0.7142857142857142,3
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# router will be unscheduled on the compute node,1,5,0.7142857142857142,4
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,In case dvr serviceable port is about to be deleted we need to check,1,5,0.7142857142857142,5
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self, context, port, router_ids, removed_routers, bound_mech_contexts):",1,5,0.7142857142857142,6
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# inherit from l3_db and may need the callbacks to be processed. Having,0,5,0.7142857142857142,7
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"message=""This will be removed in the P cycle. """,0,5,0.7142857142857142,8
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# from l3_db and may need the callbacks to be processed. Having an implicit,1,5,0.7142857142857142,9
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# inherit from l3_db and may need the callbacks to be processed. Having,1,5,0.7142857142857142,10
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# Otherwise it's a stale port that can be removed,1,4,0.5714285714285714,11
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.db import l3_db,1,4,0.5714285714285714,12
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context, port, router_ids, removed_routers, bound_mech_contexts)",1,4,0.5714285714285714,13
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""""""Returns info about which routers should be removed from <port_host>",1,4,0.5714285714285714,14
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,In case dvr serviceable port was deleted we need to check,0,4,0.5714285714285714,15
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self, context, port, router_ids, bound_mech_contexts):",0,4,0.5714285714285714,16
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# Raise port in use only if the port has IP addresses,1,4,0.5714285714285714,17
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# Otherwise it's a stale port that can be removed,0,4,0.5714285714285714,18
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# Raise port in use only if the port has IP addresses,0,4,0.5714285714285714,19
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# we need admin context in case a tenant removes the last dvr,0,4,0.5714285714285714,20
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# to remain after the router is deleted if they encounter an,0,4,0.5714285714285714,21
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import registry,1,3,0.42857142857142855,22
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# NOTE(armax): multiple l3 service plugins (potentially out of tree),1,3,0.42857142857142855,23
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import events,0,3,0.42857142857142855,24
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import exceptions,0,3,0.42857142857142855,25
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import registry,0,3,0.42857142857142855,26
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import events,1,3,0.42857142857142855,27
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import exceptions,1,3,0.42857142857142855,28
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import exceptions as c_exc,0,3,0.42857142857142855,29
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import events,0,3,0.42857142857142855,30
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import registry,0,3,0.42857142857142855,31
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import events,1,3,0.42857142857142855,32
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import exceptions as c_exc,1,3,0.42857142857142855,33
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import registry,1,3,0.42857142857142855,34
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# harm in registering the same callback multiple times.,1,3,0.42857142857142855,35
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.db.models import l3 as l3_models,0,3,0.42857142857142855,36
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# an implicit subscription (through the __new__ method) preserves the,1,3,0.42857142857142855,37
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# and at the same time it avoids fixing it manually in each and every l3 plugin,1,3,0.42857142857142855,38
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""""""Returns info about which routers should be removed",0,3,0.42857142857142855,39
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# subscription (through the module import) preserves the existing behavior,",1,3,0.42857142857142855,40
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# serviceable port on a shared network owned by admin, where router",0,3,0.42857142857142855,41
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context, router['agent_id'], router['router_id'])",1,3,0.42857142857142855,42
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# NOTE(kevinbenton): we also check to make sure that the,0,3,0.42857142857142855,43
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# router still exists. It's possible for HA router interfaces,0,3,0.42857142857142855,44
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# Elevated context in case router is owned by another tenant,0,3,0.42857142857142855,45
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# test to see whether the last VM using a router created,1,3,0.42857142857142855,46
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context, port, router_ids, bound_mech_contexts)",0,3,0.42857142857142855,47
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"removed_routers = [{'agent_id': 'foo_agent',",0,3,0.42857142857142855,48
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# NOTE(armax): multiple l3 service plugins (potentially out of tree),0,3,0.42857142857142855,49
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# an implicit subscription (through the __new__ method) preserves the,0,3,0.42857142857142855,50
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# NOTE(armax): multiple l3 service plugins (potentially out of tree) inherit,1,3,0.42857142857142855,51
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import events,0,3,0.42857142857142855,52
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# reference l3 plugin. The subscription operation is idempotent so there is no,1,2,0.2857142857142857,53
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _notify_routers_callback(resource, event, trigger, **kwargs):",0,2,0.2857142857142857,54
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin = directory.get_plugin(constants.L3),0,2,0.2857142857142857,55
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,context = kwargs['context'],0,2,0.2857142857142857,56
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _prevent_l3_port_delete_callback(resource, event, trigger, **kwargs):",0,2,0.2857142857142857,57
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# existing behavior, and at the same time it avoids fixing it manually",0,2,0.2857142857142857,58
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port = kwargs.get('port'),0,2,0.2857142857142857,59
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# out there. That said, The subscription is also made explicit in the",1,2,0.2857142857142857,60
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from debtcollector import removals,0,2,0.2857142857142857,61
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port = {,0,2,0.2857142857142857,62
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = set(port['device_id'] for port in query),0,2,0.2857142857142857,63
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _notify_subnet_gateway_ip_update(resource, event, trigger, **kwargs):",0,2,0.2857142857142857,64
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = set(port['device_id'] for port in query),1,2,0.2857142857142857,65
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"# existing behavior, and at the same time it avoids fixing it manually",1,2,0.2857142857142857,66
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# in each and every l3 plugin out there.,1,2,0.2857142857142857,67
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _prevent_l3_port_delete_callback(resource, event, trigger, **kwargs):",1,2,0.2857142857142857,68
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,context = kwargs['context'],1,2,0.2857142857142857,69
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin = directory.get_plugin(constants.L3),1,2,0.2857142857142857,70
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _notify_routers_callback(resource, event, trigger, **kwargs):",1,2,0.2857142857142857,71
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _notify_subnet_gateway_ip_update(resource, event, trigger, **kwargs):",1,2,0.2857142857142857,72
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import resources,0,2,0.2857142857142857,73
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import resources,1,2,0.2857142857142857,74
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron_lib.callbacks import resources,0,2,0.2857142857142857,75
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import resources,1,2,0.2857142857142857,76
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port = kwargs.get('original_port'),0,2,0.2857142857142857,77
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin = mock.Mock(),0,2,0.2857142857142857,78
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# in each and every l3 plugin out there.,0,2,0.2857142857142857,79
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,kwargs = {,0,2,0.2857142857142857,80
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug(""Port %(port_id)s has owner %(port_owner)s, but """,0,2,0.2857142857142857,81
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.get_dvr_routers_to_remove.return_value = removed_routers,0,2,0.2857142857142857,82
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port = self._core_plugin.get_port(context, port_id)",0,2,0.2857142857142857,83
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,reason = _('has device owner %s') % port['device_owner'],0,2,0.2857142857142857,84
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,reason = _('has device owner %s') % port_db['device_owner'],1,2,0.2857142857142857,85
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# is also owned by admin,0,2,0.2857142857142857,86
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context.elevated(), router['agent_id'], router['router_id'])",0,2,0.2857142857142857,87
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.ANY, 'foo_agent', 'foo_id')",0,2,0.2857142857142857,88
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"routers = self.dut.dvr_deletens_if_no_port(my_context, vm_port_id)",1,2,0.2857142857142857,89
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# compute node because there is another VM port present.,1,2,0.2857142857142857,90
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,routers = self.dut.dvr_deletens_if_no_port(,1,2,0.2857142857142857,91
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.id = id,1,2,0.2857142857142857,92
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# test to see whether the last VM using a tenant's private,1,2,0.2857142857142857,93
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.adminContext, 'foo_agent', 'foo_id')",1,2,0.2857142857142857,94
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug(""Floating IP %(f_id)s corresponding to port """,0,2,0.2857142857142857,95
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,removed_routers = kwargs['removed_routers'],1,2,0.2857142857142857,96
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug(""Router %(router_id)s corresponding to port """,0,2,0.2857142857142857,97
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,from neutron.callbacks import resources,0,2,0.2857142857142857,98
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,removed_routers = l3plugin.get_dvr_routers_to_remove(,1,2,0.2857142857142857,99
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# needed for a full match in the assertion below,0,2,0.2857142857142857,100
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,removed_routers = [],1,2,0.2857142857142857,101
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"removed_routers = l3plugin.get_dvr_routers_to_remove(context, port)",0,2,0.2857142857142857,102
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug(""Port %(port_id)s has owner %(port_owner)s, but """,1,2,0.2857142857142857,103
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,reason = _('has device owner %s') % port['device_owner'],1,2,0.2857142857142857,104
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,reason = _('has device owner %s') % port['device_owner'],0,2,0.2857142857142857,105
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_routers_callback, resources.PORT, events.AFTER_DELETE)",0,1,0.14285714285714285,106
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port,",0,1,0.14285714285714285,107
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'port': port,",0,1,0.14285714285714285,108
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'agent_id': 'foo_agent', 'router_id': 'foo_id'},",0,1,0.14285714285714285,109
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'port': mock.ANY,",1,1,0.14285714285714285,110
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_prevent_l3_port_delete_callback, resources.PORT,",0,1,0.14285714285714285,111
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_check = kwargs['port_check'],0,1,0.14285714285714285,112
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""Subscriptions are now registered during object creation.""",0,1,0.14285714285714285,113
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_prevent_l3_port_delete_callback, resources.PORT, events.BEFORE_DELETE)",1,1,0.14285714285714285,114
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_routers_callback, resources.PORT, events.AFTER_DELETE)",1,1,0.14285714285714285,115
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_id = kwargs['port_id'],0,1,0.14285714285714285,116
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if l3plugin and port_check:,0,1,0.14285714285714285,117
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin._get_allowed_address_pair_fixed_ips.return_value = (,0,1,0.14285714285714285,118
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.adminContext,",0,1,0.14285714285714285,119
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"expected = [mock.call(resources.PORT, events.BEFORE_DELETE,",0,1,0.14285714285714285,120
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'port', 'after_update', mock.ANY, **kwargs)",0,1,0.14285714285714285,121
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value={'L3_ROUTER_NAT': l3plugin}):,0,1,0.14285714285714285,122
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_addr_pairs = port['allowed_address_pairs'],0,1,0.14285714285714285,123
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'context': self.adminContext,",0,1,0.14285714285714285,124
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_id = str(uuid.uuid4()),0,1,0.14285714285714285,125
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"router_id = self.dut.get_dvr_routers_by_portid(self.adminContext,",1,1,0.14285714285714285,126
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'agent_id': 'foo_agent',",1,1,0.14285714285714285,127
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.adminContext, [subnet_id])",0,1,0.14285714285714285,128
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_id = self.dut.get_dvr_routers_by_subnet_ids(,0,1,0.14285714285714285,129
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_id = '80947d4a-fbc8-484b-9f92-623a6bfcf3e0',0,1,0.14285714285714285,130
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fip_set = set(),1,1,0.14285714285714285,131
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.ANY, context=self.context,",0,1,0.14285714285714285,132
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,network_id = kwargs['network_id'],0,1,0.14285714285714285,133
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port['port']['extra_dhcp_opts'] = [],0,1,0.14285714285714285,134
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = set(),0,1,0.14285714285714285,135
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = kwargs['router_ids'],0,1,0.14285714285714285,136
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_routers_callback, resources.PORT, events.AFTER_DELETE)",1,1,0.14285714285714285,137
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_id = kwargs['subnet_id'],0,1,0.14285714285714285,138
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,network_id = kwargs['network_id'],1,1,0.14285714285714285,139
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context, id)",1,1,0.14285714285714285,140
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = [r[0] for r in query],1,1,0.14285714285714285,141
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.distinct(),1,1,0.14285714285714285,142
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.filter(,1,1,0.14285714285714285,143
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.join(,1,1,0.14285714285714285,144
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.join(models_v2.Port),1,1,0.14285714285714285,145
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = context.session.query(l3_models.RouterPort.router_id),1,1,0.14285714285714285,146
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnetpool_id = kwargs['subnetpool_id'],1,1,0.14285714285714285,147
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"trigger, **kwargs):",1,1,0.14285714285714285,148
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _notify_subnetpool_address_scope_update(resource, event,",1,1,0.14285714285714285,149
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.join(models_v2.Port.fixed_ips).filter(,1,1,0.14285714285714285,150
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = context.session.query(models_v2.Port).filter_by(,1,1,0.14285714285714285,151
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_id = kwargs['subnet_id'],1,1,0.14285714285714285,152
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = kwargs['router_ids'],1,1,0.14285714285714285,153
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = context.session.query(models_v2.Port).filter_by(,0,1,0.14285714285714285,154
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if l3plugin and port_check:,1,1,0.14285714285714285,155
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_check = kwargs['port_check'],1,1,0.14285714285714285,156
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_id = kwargs['port_id'],1,1,0.14285714285714285,157
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_prevent_l3_port_delete_callback, resources.PORT,",1,1,0.14285714285714285,158
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids = [r[0] for r in query],0,1,0.14285714285714285,159
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.filter(,0,1,0.14285714285714285,160
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.join(,0,1,0.14285714285714285,161
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.join(models_v2.Port),0,1,0.14285714285714285,162
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = context.session.query(l3_models.RouterPort.router_id),0,1,0.14285714285714285,163
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnetpool_id = kwargs['subnetpool_id'],0,1,0.14285714285714285,164
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"trigger, **kwargs):",0,1,0.14285714285714285,165
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _notify_subnetpool_address_scope_update(resource, event,",0,1,0.14285714285714285,166
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.join(models_v2.Port.fixed_ips).filter(,0,1,0.14285714285714285,167
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'removed_routers': removed_routers,1,1,0.14285714285714285,168
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,query = query.distinct(),0,1,0.14285714285714285,169
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,is_dvr_enabled = utils.is_extension_supported(,1,1,0.14285714285714285,170
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3_agent_on_vm_host = FakeAgent(agent_id,",1,1,0.14285714285714285,171
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,dvr_port_binding = {,1,1,0.14285714285714285,172
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"fakePortDB = FakePortDB([dvr_port, deleted_vm_port])",1,1,0.14285714285714285,173
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,dvr_port_id = dvr_port['id'],1,1,0.14285714285714285,174
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_id = 'dvr-router',1,1,0.14285714285714285,175
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"my_context = n_context.Context('user-1', vm_tenant, is_admin=False)",1,1,0.14285714285714285,176
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.agent_type = agent_type,1,1,0.14285714285714285,177
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.host = host,1,1,0.14285714285714285,178
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,class FakeAgent(object):,1,1,0.14285714285714285,179
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,vm_port_binding = {,1,1,0.14285714285714285,180
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"fakePortDB = FakePortDB([deleted_vm_port, dvr_port])",1,1,0.14285714285714285,181
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,deleted_vm_port_id = deleted_vm_port['id'],1,1,0.14285714285714285,182
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,deleted_vm_port = self._create_port(,1,1,0.14285714285714285,183
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,dvr_port = self._create_port(,1,1,0.14285714285714285,184
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"shared_subnet_id = '80947d4a-fbc8-484b-9f92-623a6bfcf3e0',",1,1,0.14285714285714285,185
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fakePortDB = FakePortDB([vm_port]),1,1,0.14285714285714285,186
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,vm_port_id = vm_port['id'],1,1,0.14285714285714285,187
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,vm_port = self._create_port(,1,1,0.14285714285714285,188
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,vm_port_host = 'compute-node-1',1,1,0.14285714285714285,189
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"my_context = n_context.Context('user-1', vm_tenant_id, is_admin=False)",1,1,0.14285714285714285,190
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fixed_ips = port_db['fixed_ips'],1,1,0.14285714285714285,191
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port_db = self._core_plugin._get_port(context, port_id)",1,1,0.14285714285714285,192
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"internal_port = self._core_plugin._get_port(context, fip['port_id'])",1,1,0.14285714285714285,193
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fixed_ips = port['fixed_ips'],0,1,0.14285714285714285,194
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"internal_port = self._core_plugin.get_port(context, fip['port_id'])",0,1,0.14285714285714285,195
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value={'L3_ROUTER_NAT': l3plugin}),",1,1,0.14285714285714285,196
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (get_service_plugin, port, notify, disassociate_floatingips,",1,1,0.14285714285714285,197
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,import contextlib,1,1,0.14285714285714285,198
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value={'L3_ROUTER_NAT': l3plugin}):,0,1,0.14285714285714285,199
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug('Host name not found for port %s', port_id)",1,1,0.14285714285714285,200
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,agent_id = 'l3-agent-on-compute-node-1',1,1,0.14285714285714285,201
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,vm_tenant_id = 'tenant-1',1,1,0.14285714285714285,202
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,expected_router = {,1,1,0.14285714285714285,203
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_host = deleted_port[portbindings.HOST_ID],0,1,0.14285714285714285,204
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"router_ids = self.get_dvr_routers_by_portid(admin_context, port_id)",1,1,0.14285714285714285,205
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port_host = ml2_db.get_port_binding_host(admin_context.session,",1,1,0.14285714285714285,206
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _router_exists(self, context, router_id):",0,1,0.14285714285714285,207
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def get_dvr_routers_to_remove(self, context, port_id, port_host=None):",1,1,0.14285714285714285,208
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context, filters=filter_sub)",1,1,0.14285714285714285,209
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_ports = self._core_plugin.get_ports(,1,1,0.14285714285714285,210
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"filter_sub = {'fixed_ips': {'subnet_id': [vm_subnet]},",1,1,0.14285714285714285,211
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fixed_ips = port_dict['fixed_ips'],1,1,0.14285714285714285,212
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port_dict = self._core_plugin.get_port(context, port_id)",1,1,0.14285714285714285,213
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def get_dvr_routers_by_portid(self, context, port_id, fixed_ips=None):",1,1,0.14285714285714285,214
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"router_ids = self.get_dvr_routers_by_portid(context, port['id'], ips)",1,1,0.14285714285714285,215
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,ips = port['fixed_ips'],1,1,0.14285714285714285,216
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"router_ids = self.get_dvr_routers_by_subnet_ids(admin_context,",0,1,0.14285714285714285,217
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_ids = [ip['subnet_id'] for ip in deleted_port['fixed_ips']],0,1,0.14285714285714285,218
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,vm_subnet = fixedip['subnet_id'],1,1,0.14285714285714285,219
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def get_dvr_routers_to_remove(self, context, deleted_port):",0,1,0.14285714285714285,220
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""no IP address, so it can be deleted"",",1,1,0.14285714285714285,221
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fixed_ips = port['fixed_ips'],0,1,0.14285714285714285,222
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"context, filters=filter_sub)",0,1,0.14285714285714285,223
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _floating_ip_exists(self, context, floating_ip_id):",0,1,0.14285714285714285,224
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return True,0,1,0.14285714285714285,225
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""no IP address, so it can be deleted"",",0,1,0.14285714285714285,226
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,# error during deletion.,0,1,0.14285714285714285,227
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fixed_ips = port['fixed_ips'],1,1,0.14285714285714285,228
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_ids = [ip['subnet_id'] for ip in port['fixed_ips']],0,1,0.14285714285714285,229
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"router_ids = self.get_dvr_routers_by_subnet_ids(context, subnet_ids)",0,1,0.14285714285714285,230
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def get_dvr_routers_by_subnet_ids(self, context, subnet_ids):",0,1,0.14285714285714285,231
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"filter_sub = {'fixed_ips': {'subnet_id': subnet_ids},",0,1,0.14285714285714285,232
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_ports = self._core_plugin.get_ports(,0,1,0.14285714285714285,233
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_get_dvr_routers_by_portid(self):,1,0,0.0,234
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_get_dvr_routers_by_subnet_ids(self):,0,0,0.0,235
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'subnet_id': '80947d4a-fbc8-484b-9f92-623a6bfcf3e0',",1,0,0.0,236
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"],",1,0,0.0,237
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,dvr_port['id']),1,0,0.0,238
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'host': 'foo_host'},",1,0,0.0,239
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'router_id': 'foo_id',",1,0,0.0,240
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'removed_routers': [,1,0,0.0,241
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'subnet_id': subnet_id,",0,0,0.0,242
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,device_owner=constants.DEVICE_OWNER_LOADBALANCER),1,0,0.0,243
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'host': 'foo_host'}],0,0,0.0,244
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'router_id': 'foo_id',",0,0,0.0,245
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,device_owner=constants.DEVICE_OWNER_LOADBALANCERV2),1,0,0.0,246
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_delete_lbaasv2_vip_port(self):,1,0,0.0,247
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self._test_delete_dvr_serviced_port(,1,0,0.0,248
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_delete_lbaas_vip_port(self):,1,0,0.0,249
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,floating_ip=True),1,0,0.0,250
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self._test_delete_dvr_serviced_port(device_owner=DEVICE_OWNER_COMPUTE,",1,0,0.0,251
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self):,0,0,0.0,252
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self._test_delete_dvr_serviced_port(device_owner=DEVICE_OWNER_COMPUTE),1,0,0.0,253
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_delete_last_vm_port_with_floatingip(self):,1,0,0.0,254
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test__notify_l3_agent_update_port_with_allowed_address_pairs_revert(,0,0,0.0,255
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with mock.patch.object(manager.NeutronManager,",0,0,0.0,256
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'port': {,0,0,0.0,257
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,},0,0,0.0,258
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,assert_called_once_with(,0,0,0.0,259
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.context, port['port']['id'])",1,0,0.0,260
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.remove_unbound_allowed_address_pair_port_binding.\,0,0,0.0,261
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,called),0,0,0.0,262
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.remove_unbound_allowed_address_pair_port_binding.,0,0,0.0,263
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertTrue(,0,0,0.0,264
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,['10.1.0.21']),0,0,0.0,265
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3_dvrscheduler_db._notify_l3_agent_port_update(,0,0,0.0,266
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_service_plugins',",0,0,0.0,267
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'admin_state_up': True,",0,0,0.0,268
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'id': port_id,",0,0,0.0,269
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'original_port': {,0,0,0.0,270
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"},",0,0,0.0,271
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'device_owner': DEVICE_OWNER_COMPUTE,",0,0,0.0,272
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'mac_address': 'aa:bb:cc:dd:ee:ff'}],",0,0,0.0,273
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'ip_address': '10.1.0.201',",0,0,0.0,274
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'allowed_address_pairs': [,0,0,0.0,275
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'device_id': 'vm-id',",0,0,0.0,276
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"portbindings.HOST_ID: 'vm-host',",0,0,0.0,277
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'admin_state_up': False,",0,0,0.0,278
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_delete_last_vm_port(self):,1,0,0.0,279
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if not port_host:,1,0,0.0,280
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,get_dvr_routers_to_remove.assert_called_once_with(,1,0,0.0,281
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertTrue(notify.call_count),1,0,0.0,282
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"admin_context, port_host, subnet_ids, except_port=port_id):",1,0,0.0,283
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'on host %(host)s', {'port': port_id,",1,0,0.0,284
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return [],1,0,0.0,285
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_id),1,0,0.0,286
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertFalse(,0,0,0.0,287
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids.add(subnet_port['device_id']),1,0,0.0,288
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,for subnet_port in subnet_ports:,1,0,0.0,289
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,[n_const.DEVICE_OWNER_DVR_INTERFACE]},1,0,0.0,290
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'device_owner':,1,0,0.0,291
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,for fixedip in fixed_ips:,1,0,0.0,292
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if fixed_ips is None:,1,0,0.0,293
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,original_port),0,0,0.0,294
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"admin_context, port_host, subnet_ids):",0,0,0.0,295
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'on host %(host)s', {'port': deleted_port['id'],",0,0,0.0,296
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subnet_ids),0,0,0.0,297
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return [],0,0,0.0,298
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if not n_utils.is_dvr_serviced(deleted_port['device_owner']):,0,0,0.0,299
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids.add(subnet_port['device_id']),0,0,0.0,300
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,for subnet_port in subnet_ports:,0,0,0.0,301
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,[n_const.DEVICE_OWNER_DVR_INTERFACE]},0,0,0.0,302
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'device_owner':,0,0,0.0,303
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"original_port['id'],",1,0,0.0,304
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_host=original_port[portbindings.HOST_ID]),1,0,0.0,305
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin, const.L3_DISTRIBUTED_EXT_ALIAS)",1,0,0.0,306
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_delete_port_with_floatingip_notifies_l3_plugin(self):,0,0,0.0,307
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=[ns_to_delete]) as get_dvr_routers_to_remove:,1,0,0.0,308
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_dvr_routers_to_remove',",1,0,0.0,309
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.l3plugin,",1,0,0.0,310
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch.object(,1,0,0.0,311
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=fip_set),\",1,0,0.0,312
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.port(device_owner=device_owner) as port,\",1,0,0.0,313
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fip_set.add(ns_to_delete['router_id']),1,0,0.0,314
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _test_delete_dvr_serviced_port(self, device_owner, floating_ip=False):",1,0,0.0,315
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.test_delete_port_notifies_l3_plugin(floating_ip=True),0,0,0.0,316
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,notify.assert_has_calls(expected),0,0,0.0,317
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if is_dvr_enabled and utils.is_dvr_serviced(device_owner):,1,0,0.0,318
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids=router_ids)],0,0,0.0,319
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port=port['port'],",0,0,0.0,320
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.call(resources.PORT, events.AFTER_DELETE,",0,0,0.0,321
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"port_id=port['port']['id'], port_check=True),",0,0,0.0,322
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.assertEqual(2, notify.call_count)",0,0,0.0,323
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=router_ids):,0,0,0.0,324
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.port() as port,\",0,0,0.0,325
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_ids.add(ns_to_delete['router_id']),0,0,0.0,326
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def test_delete_port_notifies_l3_plugin(self, floating_ip=False):",0,0,0.0,327
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,port_addr_pairs[0]),0,0,0.0,328
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,registry.subscribe(,1,0,0.0,329
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.update_arp_entry_for_dvr_service_port.called),0,0,0.0,330
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.delete_arp_entry_for_dvr_service_port.\,0,0,0.0,331
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,registry.subscribe(,1,0,0.0,332
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def _subscribe_callbacks():,1,0,0.0,333
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,L3_NAT_dbonly_mixin._subscribe_callbacks(),1,0,0.0,334
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3_models.RouterPort.port_type.in_(n_const.ROUTER_PORT_OWNERS)),0,0,0.0,335
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"models_v2.Subnet.subnetpool_id == subnetpool_id,",0,0,0.0,336
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,models_v2.Subnet.network_id == models_v2.Port.network_id),0,0,0.0,337
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"models_v2.Subnet,",0,0,0.0,338
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,[events.AFTER_UPDATE]),0,0,0.0,339
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"@registry.receives(resources.SUBNETPOOL_ADDRESS_SCOPE,",0,0,0.0,340
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.notify_router_updated(context, router_id)",0,0,0.0,341
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,for router_id in router_ids:,0,0,0.0,342
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,models_v2.IPAllocation.subnet_id == subnet_id),0,0,0.0,343
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,device_owner=constants.DEVICE_OWNER_ROUTER_GW),0,0,0.0,344
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"network_id=network_id,",0,0,0.0,345
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return,0,0,0.0,346
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if not l3plugin:,0,0,0.0,347
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"@registry.receives(resources.SUBNET_GATEWAY, [events.AFTER_UPDATE])",0,0,0.0,348
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug('%s not configured', constants.L3)",0,0,0.0,349
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,else:,0,0,0.0,350
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.notify_routers_updated(context, router_ids)",0,0,0.0,351
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if l3plugin:,0,0,0.0,352
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,events.BEFORE_DELETE),1,0,0.0,353
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def __new__(cls):,1,0,0.0,354
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,L3RpcNotifierMixin._subscribe_callbacks(),1,0,0.0,355
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return,1,0,0.0,356
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if not subnet_ids:,0,0,0.0,357
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"models_v2.Subnet.subnetpool_id == subnetpool_id,",1,0,0.0,358
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,models_v2.Subnet.network_id == models_v2.Port.network_id),1,0,0.0,359
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"models_v2.Subnet,",1,0,0.0,360
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.notify_router_updated(context, router_id)",1,0,0.0,361
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,for router_id in router_ids:,1,0,0.0,362
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,models_v2.IPAllocation.subnet_id == subnet_id),1,0,0.0,363
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,device_owner=constants.DEVICE_OWNER_ROUTER_GW),1,0,0.0,364
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"network_id=network_id,",1,0,0.0,365
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if not l3plugin:,1,0,0.0,366
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return super(L3RpcNotifierMixin, cls).__new__(cls)",1,0,0.0,367
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug('%s not configured', constants.L3)",1,0,0.0,368
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,else:,1,0,0.0,369
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.notify_routers_updated(context, router_ids)",1,0,0.0,370
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if l3plugin:,1,0,0.0,371
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.prevent_l3_port_deletion(context, port_id)",1,0,0.0,372
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"resources.SUBNETPOOL_ADDRESS_SCOPE,",1,0,0.0,373
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_subnetpool_address_scope_update,",1,0,0.0,374
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,events.AFTER_UPDATE),1,0,0.0,375
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_subnet_gateway_ip_update, resources.SUBNET_GATEWAY,",1,0,0.0,376
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"@registry.receives(resources.PORT, [events.AFTER_DELETE])",0,0,0.0,377
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,@staticmethod,0,0,0.0,378
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.prevent_l3_port_deletion(context, port_id)",0,0,0.0,379
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'removed_routers': [,0,0,0.0,380
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,L3RpcNotifierMixin._subscribe_callbacks(),0,0,0.0,381
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,events.BEFORE_DELETE),0,0,0.0,382
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,registry.subscribe(,0,0,0.0,383
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def _subscribe_callbacks():,0,0,0.0,384
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,@staticmethod,0,0,0.0,385
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return super(L3_NAT_dbonly_mixin, cls).__new__(cls)",0,0,0.0,386
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,L3_NAT_dbonly_mixin._subscribe_callbacks(),0,0,0.0,387
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def __new__(cls):,0,0,0.0,388
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"],",0,0,0.0,389
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"portbindings.HOST_ID: 'host1',",0,0,0.0,390
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_subnet_gateway_ip_update, resources.SUBNET_GATEWAY,",0,0,0.0,391
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'device_owner': DEVICE_OWNER_COMPUTE_NOVA,",0,0,0.0,392
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'device_id': 'abcd',",0,0,0.0,393
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'id': str(uuid.uuid4()),",0,0,0.0,394
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertTrue(l3plugin.dvr_handle_new_service_port.called),0,0,0.0,395
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.update_unbound_allowed_address_pair_port_binding.\,0,0,0.0,396
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3plugin.update_unbound_allowed_address_pair_port_binding.,0,0,0.0,397
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test__notify_l3_agent_update_port_with_allowed_address_pairs(self):,0,0,0.0,398
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertFalse(l3plugin.dvr_handle_new_service_port.called),0,0,0.0,399
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,fixed_ips_to_delete=mock.ANY),0,0,0.0,400
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return object.__new__(cls),0,0,0.0,401
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,events.AFTER_UPDATE),0,0,0.0,402
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"@registry.receives(resources.PORT, [events.BEFORE_DELETE])",0,0,0.0,403
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"@resource_registry.tracked_resources(router=l3_models.Router,",0,0,0.0,404
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,@registry.has_registry_receivers,0,0,0.0,405
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.notify_routers_updated(context, router_ids)",1,0,0.0,406
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"LOG.debug('%s not configured', constants.L3)",0,0,0.0,407
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,else:,0,0,0.0,408
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin.notify_routers_updated(context, router_ids)",0,0,0.0,409
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if l3plugin:,0,0,0.0,410
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,floatingip=l3_db.FloatingIP),1,0,0.0,411
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"@resource_registry.tracked_resources(router=l3_db.Router,",1,0,0.0,412
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,floatingip=l3_models.FloatingIP),0,0,0.0,413
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3_db.subscribe(),1,0,0.0,414
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_subnetpool_address_scope_update,",0,0,0.0,415
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,subscribe(),1,0,0.0,416
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"resources.SUBNETPOOL_ADDRESS_SCOPE,",1,0,0.0,417
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_subnetpool_address_scope_update,",1,0,0.0,418
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,events.AFTER_UPDATE),1,0,0.0,419
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"_notify_subnet_gateway_ip_update, resources.SUBNET_GATEWAY,",1,0,0.0,420
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,pass,0,0,0.0,421
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,),0,0,0.0,422
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,@removals.remove(,0,0,0.0,423
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"resources.SUBNETPOOL_ADDRESS_SCOPE,",0,0,0.0,424
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return set(),0,0,0.0,425
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,):,1,0,0.0,426
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'port_owner': port['device_owner']}),1,0,0.0,427
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'port_id': port['id'],",1,0,0.0,428
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (glpab_mock, mpd_mock):",1,0,0.0,429
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch('neutron.plugins.ml2.plugin.Ml2Plugin._make_port_dict'),1,0,0.0,430
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=(None, None)),",1,0,0.0,431
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'db.get_locked_port_and_binding',",1,0,0.0,432
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch('neutron.plugins.ml2.plugin.',1,0,0.0,433
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,dvr_delns_ifno_port):,1,0,0.0,434
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=[ns_to_delete]),",1,0,0.0,435
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(self.l3plugin, 'dvr_deletens_if_no_port',",1,0,0.0,436
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=fip_set),",1,0,0.0,437
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(self.l3plugin, 'disassociate_floatingips',",1,0,0.0,438
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(registry, 'notify'),",1,0,0.0,439
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.port(device_owner=device_owner),",1,0,0.0,440
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=self.service_plugins),",1,0,0.0,441
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_service_plugins',",1,0,0.0,442
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(manager.NeutronManager,",1,0,0.0,443
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (port, disassociate_floatingips, notify):",1,0,0.0,444
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(registry, 'notify')",1,0,0.0,445
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(l3plugin, 'disassociate_floatingips'),",1,0,0.0,446
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.port(),",1,0,0.0,447
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (snet_v6, m_upd, p_upd):",1,0,0.0,448
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"plugin.notifier, 'security_groups_provider_updated')",1,0,0.0,449
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(ml2_plugin.Ml2Plugin, '__init__'),",1,0,0.0,450
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(base_plugin.NeutronDbPluginV2, 'create_port'),",1,0,0.0,451
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (init, super_create_port):",1,0,0.0,452
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'port_owner': port_db['device_owner']}),1,0,0.0,453
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'status': status,",1,0,0.0,454
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'device_owner': device_owner,",1,0,0.0,455
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'device_id': port_name,",1,0,0.0,456
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'tenant_id': tenant_id,",1,0,0.0,457
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'id': port_name + '-port-id',",1,0,0.0,458
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return {,1,0,0.0,459
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,device_owner=DEVICE_OWNER_COMPUTE_NOVA):,1,0,0.0,460
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"status='ACTIVE',",1,0,0.0,461
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _create_port(self, port_name, tenant_id, host, subnet_id, ip_address,",1,0,0.0,462
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'port_id': port_db['id'],",1,0,0.0,463
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(base_plugin.NeutronDbPluginV2, 'update_port'),",1,0,0.0,464
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"raise n_exc.ServicePortInUse(port_id=port_db['id'],",1,0,0.0,465
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if port_db['device_owner'] in self.router_device_owners:,1,0,0.0,466
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'port_owner': port['device_owner']}),0,0,0.0,467
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'port_id': port['id'],",0,0,0.0,468
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"raise n_exc.ServicePortInUse(port_id=port['id'],",0,0,0.0,469
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if port['device_owner'] in self.router_device_owners:,0,0,0.0,470
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=None),",1,0,0.0,471
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(ml2_plugin.Ml2Plugin, '__init__',",1,0,0.0,472
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (init, super_update_port):",1,0,0.0,473
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"plugin.notifier, 'security_groups_member_updated'),",1,0,0.0,474
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch.object(,1,0,0.0,475
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"cidr=fake_prefix, ip_version=6),",1,0,0.0,476
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with self.port() as port,\",0,0,0.0,477
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(self.l3plugin,",0,0,0.0,478
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(registry, 'notify') as notify,\",0,0,0.0,479
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.port(device_owner=device_owner) as port,\",0,0,0.0,480
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=self.service_plugins),\",0,0,0.0,481
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_service_plugins',",0,0,0.0,482
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with mock.patch.object(manager.NeutronManager,",0,0,0.0,483
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(registry, 'notify') as notify:",0,0,0.0,484
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'disassociate_floatingips') as disassociate_floatingips,\",0,0,0.0,485
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"l3plugin,",0,0,0.0,486
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"plugin.notifier,",0,0,0.0,487
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=fip_set),\",0,0,0.0,488
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch.object(,0,0,0.0,489
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"ip_version=6) as snet_v6,\",0,0,0.0,490
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"cidr=fake_prefix,",0,0,0.0,491
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"gateway_ip=fake_gateway,",0,0,0.0,492
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with self.subnet(net,",0,0,0.0,493
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'security_groups_provider_updated') as p_upd:,0,0,0.0,494
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'security_groups_member_updated') as m_upd,\",0,0,0.0,495
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(plugin.notifier,",0,0,0.0,496
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with self.network() as net,\",0,0,0.0,497
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'disassociate_floatingips',",0,0,0.0,498
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.l3plugin,",0,0,0.0,499
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.subnet(net, gateway_ip=fake_gateway,",1,0,0.0,500
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with mock.patch.object(ml2_plugin.Ml2Plugin,",0,0,0.0,501
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,") as (net, m_upd, p_upd):",1,0,0.0,502
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'security_groups_provider_updated'),1,0,0.0,503
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'security_groups_member_updated'),",1,0,0.0,504
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(plugin.notifier,",1,0,0.0,505
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.network(),",1,0,0.0,506
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,with contextlib.nested(,1,0,0.0,507
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(manager.NeutronManager,",0,0,0.0,508
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=None),\",0,0,0.0,509
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'__init__',",0,0,0.0,510
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'update_port'):,0,0,0.0,511
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'dvr_deletens_if_no_port',",0,0,0.0,512
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'create_port'):,0,0,0.0,513
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(base_plugin.NeutronDbPluginV2,",0,0,0.0,514
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with mock.patch.object(ml2_plugin.Ml2Plugin, '__init__') as init,\",0,0,0.0,515
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'_make_port_dict') as mpd_mock:,0,0,0.0,516
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch('neutron.plugins.ml2.plugin.Ml2Plugin.',0,0,0.0,517
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=(None, None)) as glpab_mock,\",0,0,0.0,518
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'neutron.plugins.ml2.plugin.' 'db.get_locked_port_and_binding',",0,0,0.0,519
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,with mock.patch(,0,0,0.0,520
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=[ns_to_delete]) as dvr_delns_ifno_port:,0,0,0.0,521
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"portbindings.HOST_ID: host,",1,0,0.0,522
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'fixed_ips': [,1,0,0.0,523
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,{,1,0,0.0,524
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.assertEqual([expected_router], routers)",1,0,0.0,525
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.get_router(context.elevated(), router_id)",0,0,0.0,526
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,try:,0,0,0.0,527
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'tenant-1', 'tenant-1')",1,0,0.0,528
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_dvr_deletens_if_no_ports_delete_tenant_routers(self):,1,0,0.0,529
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'tenant-1', 'admin-tenant')",1,0,0.0,530
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self._test_dvr_deletens_if_no_ports_delete_routers(,1,0,0.0,531
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_dvr_deletens_if_no_ports_delete_admin_routers(self):,1,0,0.0,532
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"my_context.session, dvr_port_id, vm_port_host)",1,0,0.0,533
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock_get_dvr_port_binding_by_host.assert_called_once_with(,1,0,0.0,534
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'agent_id': agent_id,1,0,0.0,535
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return False,0,0,0.0,536
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'host': vm_port_host,",1,0,0.0,537
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'router_id': router_id,",1,0,0.0,538
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=False):,1,0,0.0,539
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=l3_agent_on_vm_host),\",1,0,0.0,540
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'_get_agent_by_type_and_host',",1,0,0.0,541
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch('neutron.db.agents_db.AgentDbMixin.',1,0,0.0,542
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=dvr_port_binding) as\,1,0,0.0,543
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,constants.AGENT_TYPE_L3),1,0,0.0,544
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"vm_port_host,",1,0,0.0,545
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,except l3.RouterNotFound:,0,0,0.0,546
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.get_floatingip(context, floating_ip_id)",0,0,0.0,547
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'deleted-vm', vm_tenant, vm_port_host,",1,0,0.0,548
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""%(port_id)s  no longer exists, allowing deletion."",",0,0,0.0,549
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,else:,1,0,0.0,550
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,reason=reason),1,0,0.0,551
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"raise n_exc.ServicePortInUse(port_id=port['id'],",1,0,0.0,552
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if fixed_ips:,1,0,0.0,553
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if port['device_owner'] in self.router_device_owners:,1,0,0.0,554
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,reason=reason),0,0,0.0,555
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"raise n_exc.ServicePortInUse(port_id=port['id'],",0,0,0.0,556
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'port_id': port['id']}),0,0,0.0,557
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'router_id': port['device_id'],",0,0,0.0,558
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"elif not self._router_exists(context, port['device_id']):",0,0,0.0,559
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,except l3.FloatingIPNotFound:,0,0,0.0,560
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'f_id': port['device_id'], 'port_id': port['id']})",0,0,0.0,561
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"""%(port_id)s no longer exists, allowing deletion."",",0,0,0.0,562
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"if not self._floating_ip_exists(context, port['device_id']):",0,0,0.0,563
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if port['device_owner'] == DEVICE_OWNER_FLOATINGIP:,0,0,0.0,564
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'port_owner': port['device_owner']}),0,0,0.0,565
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"{'port_id': port['id'],",0,0,0.0,566
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if not fixed_ips:,0,0,0.0,567
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return,0,0,0.0,568
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,if port['device_owner'] not in self.router_device_owners:,0,0,0.0,569
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'port_id': dvr_port_id, 'host': vm_port_host",1,0,0.0,570
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"router_id, router_tenant, vm_port_host,",1,0,0.0,571
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'subnet_id': subnet_id,",1,0,0.0,572
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch(,1,0,0.0,573
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_dvr_deletens_if_no_ports_no_removeable_routers(self):,1,0,0.0,574
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.adminContext.session, vm_port_id)",1,0,0.0,575
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock_get_port_binding_host.assert_called_once_with(,1,0,0.0,576
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.assertEqual([], routers)",1,0,0.0,577
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_port', return_value=vm_port):",1,0,0.0,578
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_ports', side_effect=fakePortDB.get_ports),\",1,0,0.0,579
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch('neutron.db.db_base_plugin_v2.NeutronDbPluginV2.',1,0,0.0,580
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=vm_port_host) as mock_get_port_binding_host,\",1,0,0.0,581
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'neutron.plugins.ml2.db.get_port_binding_host',",1,0,0.0,582
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"return_value=self.adminContext),\",1,0,0.0,583
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"shared_subnet_id, '10.10.10.1',",1,0,0.0,584
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'elevated',",1,0,0.0,585
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"with mock.patch.object(my_context,",1,0,0.0,586
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,status='INACTIVE'),1,0,0.0,587
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'shared-subnet', '10.10.10.3',",1,0,0.0,588
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'deleted-vm', vm_tenant_id, vm_port_host,",1,0,0.0,589
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,def test_dvr_deletens_if_no_port_no_routers(self):,1,0,0.0,590
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,],1,0,0.0,591
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,},1,0,0.0,592
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'ip_address': ip_address,1,0,0.0,593
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'dvr-router', 'admin-tenant', vm_port_host,",1,0,0.0,594
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,device_owner=constants.DEVICE_OWNER_DVR_INTERFACE),1,0,0.0,595
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def __init__(self, id, host, agent_type):",1,0,0.0,596
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock.patch.object(self.dut,",1,0,0.0,597
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,router_tenant):,1,0,0.0,598
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"vm_tenant,",1,0,0.0,599
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"def _test_dvr_deletens_if_no_ports_delete_routers(self,",1,0,0.0,600
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertFalse(mock_get_dvr_port_binding_by_host.called),1,0,0.0,601
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,self.assertTrue(mock_get_ports.called),1,0,0.0,602
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"self.adminContext.session, deleted_vm_port_id)",1,0,0.0,603
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"my_context, deleted_vm_port_id)",1,0,0.0,604
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=True):,1,0,0.0,605
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'check_dvr_serviceable_ports_on_host',",1,0,0.0,606
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock_get_dvr_port_binding_by_host,\",1,0,0.0,607
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"shared_subnet_id, '10.10.10.3',",1,0,0.0,608
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,return_value=vm_port_binding) as\,1,0,0.0,609
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_dvr_port_binding_by_host',",1,0,0.0,610
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,mock.patch('neutron.plugins.ml2.db.',1,0,0.0,611
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'_get_ports_query'),\",1,0,0.0,612
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"mock_get_ports,\",1,0,0.0,613
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_ports', side_effect=fakePortDB.get_ports) as\",1,0,0.0,614
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'get_port', side_effect=fakePortDB.get_port),\",1,0,0.0,615
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,'host': vm_port_host,1,0,0.0,616
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,"'port_id': deleted_vm_port_id,",1,0,0.0,617
+bad541a0824a41579833c98e4af3bcdf63d4ee1a,l3_models.RouterPort.port_type.in_(n_const.ROUTER_PORT_OWNERS)),1,0,0.0,618

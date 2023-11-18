@@ -1,0 +1,892 @@
+commit_id,line,line_level_label,count,line_score,row
+375535e20cddefd751aea608d4f18ff7bb8e0c50,elif remote_group_id is not None:  # security group as a source,0,7,1.0,1
+375535e20cddefd751aea608d4f18ff7bb8e0c50,elif not remote_group_id is None:  # security group as a srouce,1,7,1.0,2
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# all security group rules regardless of their value of,0,4,0.5714285714285714,3
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# all security group rules regardless of their value of,1,4,0.5714285714285714,4
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ip_list = [ip[0] for ip in ips[remote_group_id]],0,4,0.5714285714285714,5
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"# Since port mac will not be used further, but in order to align",0,4,0.5714285714285714,6
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_rule = [r for r in sg_rule if r['direction'] == 'ingress'],1,4,0.5714285714285714,7
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if rule['tenant_id'] not in tenant_ids:,1,3,0.42857142857142855,8
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for ip in ips[remote_group_id]:,1,3,0.42857142857142855,9
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for ip in ip_list:,0,3,0.42857142857142855,10
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if 'remote_ip_prefix' not in fields:,0,3,0.42857142857142855,11
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Represents a v2 neutron security group rule.""""""",1,3,0.42857142857142855,12
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# values in the filter that have a value of [None]. For,1,3,0.42857142857142855,13
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Check in database if rule exists,1,3,0.42857142857142855,14
+375535e20cddefd751aea608d4f18ff7bb8e0c50,elif ip_prefix in all_address and other_ip_prefix in all_address:,0,3,0.42857142857142855,15
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# values in the filter that have a value of [None]. For,0,3,0.42857142857142855,16
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for rule in security_group_rules['security_group_rules']:,0,3,0.42857142857142855,17
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Check that all rules belong to the same security group and tenant",0,3,0.42857142857142855,18
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# will have a duplicate regular IP in the query response since,0,3,0.42857142857142855,19
+375535e20cddefd751aea608d4f18ff7bb8e0c50,also convert remote_group_id rule,1,3,0.42857142857142855,20
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Return security group rules for each port.",1,3,0.42857142857142855,21
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"For example, it is a port ID in OVS agent and netdev name in Linux",0,3,0.42857142857142855,22
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Check in database if rule exists,0,3,0.42857142857142855,23
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# eagerly load security group bindings,1,2,0.2857142857142857,24
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ethertype = 'IPv%d' % netaddr.IPNetwork(ip[0]).version,0,2,0.2857142857142857,25
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg = query.filter(SecurityGroup.id == id).one(),1,2,0.2857142857142857,26
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix = sa.Column(sa.String(255)),1,2,0.2857142857142857,27
+375535e20cddefd751aea608d4f18ff7bb8e0c50,protocol = sa.Column(sa.String(40)),1,2,0.2857142857142857,28
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ethertype = sa.Column(sa.String(40)),1,2,0.2857142857142857,29
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction = sa.Column(sa.Enum('ingress', 'egress',",1,2,0.2857142857142857,30
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports = orm.relationship(,1,2,0.2857142857142857,31
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg = query.filter(sg_models.SecurityGroup.id == id).one(),0,2,0.2857142857142857,32
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Add a relationship to the Port model in order to instruct SQLAlchemy to,1,2,0.2857142857142857,33
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Represents binding between neutron ports and security profiles.""""""",1,2,0.2857142857142857,34
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Represents a v2 neutron security group.""""""",1,2,0.2857142857142857,35
+375535e20cddefd751aea608d4f18ff7bb8e0c50,id = db_rule.pop('id'),1,2,0.2857142857142857,36
+375535e20cddefd751aea608d4f18ff7bb8e0c50,id = db_rule.pop('id'),1,2,0.2857142857142857,37
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# need to remove id from db_rule for matching,1,2,0.2857142857142857,38
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ethertype = 'IPv%d' % netaddr.IPNetwork(ip).version,1,2,0.2857142857142857,39
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"for security_group_id, ip_address, allowed_addr_ip, mac in query:",0,2,0.2857142857142857,40
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_id = sg['security_group']['id'],1,2,0.2857142857142857,41
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule_dict[direction_ip_prefix] = rule_in_db[key],1,2,0.2857142857142857,42
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"for k, v, in keys:",0,2,0.2857142857142857,43
+375535e20cddefd751aea608d4f18ff7bb8e0c50,group = self.deserialize(,1,2,0.2857142857142857,44
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"keys = [('remote_ip_prefix', remote_ip_prefix),",1,2,0.2857142857142857,45
+375535e20cddefd751aea608d4f18ff7bb8e0c50,protocol = const.PROTO_NAME_TCP,1,2,0.2857142857142857,46
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_ip_prefix = ""10.0.0.0/24""",1,2,0.2857142857142857,47
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction = ""ingress""",1,2,0.2857142857142857,48
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"# example, filters = {'remote_group_id': [None]} will return",1,2,0.2857142857142857,49
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_group_id = sg['security_group']['id'],1,2,0.2857142857142857,50
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"for k, v, in keys:",1,2,0.2857142857142857,51
+375535e20cddefd751aea608d4f18ff7bb8e0c50,group = self.deserialize(,0,2,0.2857142857142857,52
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"keys = [('remote_ip_prefix', remote_ip_prefix),",0,2,0.2857142857142857,53
+375535e20cddefd751aea608d4f18ff7bb8e0c50,protocol = const.PROTO_NAME_TCP,0,2,0.2857142857142857,54
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_ip_prefix = ""10.0.0.0/24""",0,2,0.2857142857142857,55
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction = ""ingress""",0,2,0.2857142857142857,56
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_id = sg['security_group']['id'],0,2,0.2857142857142857,57
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_group_id = sg['security_group']['id'],0,2,0.2857142857142857,58
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for db_rule in db_rules:,1,2,0.2857142857142857,59
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"for security_group_id, ip_address, allowed_addr_ip in query:",1,2,0.2857142857142857,60
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for tenant_id in tenant_ids:,1,2,0.2857142857142857,61
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if not port:,1,2,0.2857142857142857,62
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg2_id = sg2['security_group']['id'],0,2,0.2857142857142857,63
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for address_pair in port.allowed_address_pairs:,1,2,0.2857142857142857,64
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"for security_group_id, port, ip_address in query:",1,2,0.2857142857142857,65
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"for security_group_id, ip_address, allowed_addr_ip in query:",0,2,0.2857142857142857,66
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Each allowed address pair IP record for a port beyond the 1st,0,2,0.2857142857142857,67
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Join the security group binding table directly to the IP allocation,0,2,0.2857142857142857,68
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _security_group_rules_for_ports(self, context, ports):",1,2,0.2857142857142857,69
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for device in devices:,1,2,0.2857142857142857,70
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"source_port, dest_port, ethertype = sg_db_rpc.DHCP_RULE_PORT[6]",0,2,0.2857142857142857,71
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports = {},1,2,0.2857142857142857,72
+375535e20cddefd751aea608d4f18ff7bb8e0c50,:returns: port correspond to the devices with security group rules,1,2,0.2857142857142857,73
+375535e20cddefd751aea608d4f18ff7bb8e0c50,to source_ip_prefix and dest_ip_prefix rule,1,2,0.2857142857142857,74
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def security_group_rules_for_ports(self, context, ports):",0,2,0.2857142857142857,75
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"What is specified in ""device"" depends on a plugin agent implementation.",0,2,0.2857142857142857,76
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Mixin class to add agent-based security group implementation.""""""",0,2,0.2857142857142857,77
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule = rule_dict.get('security_group_rule'),1,2,0.2857142857142857,78
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': sg2_id,",0,2,0.2857142857142857,79
+375535e20cddefd751aea608d4f18ff7bb8e0c50,:params devices: list of devices,1,2,0.2857142857142857,80
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule = rule_dict['security_group_rule'],1,2,0.2857142857142857,81
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"# example, filters = {'remote_group_id': [None]} will return",0,2,0.2857142857142857,82
+375535e20cddefd751aea608d4f18ff7bb8e0c50,Check that all rules belong to the same security,1,2,0.2857142857142857,83
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for rule_dict in r:,1,2,0.2857142857142857,84
+375535e20cddefd751aea608d4f18ff7bb8e0c50,id = db_rule.pop('id'),0,2,0.2857142857142857,85
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"group, remote_group_id/security_group_id belong to the same tenant,",1,2,0.2857142857142857,86
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# need to remove id from db_rule for matching,0,2,0.2857142857142857,87
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# deletion will be prevented.,0,2,0.2857142857142857,88
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for db_rule in db_rules:,0,2,0.2857142857142857,89
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule = security_group_rule['security_group_rule'],0,2,0.2857142857142857,90
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule = rule_dict['security_group_rule'],0,2,0.2857142857142857,91
+375535e20cddefd751aea608d4f18ff7bb8e0c50,for rule_dict in rules:,0,2,0.2857142857142857,92
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# deletion will be prevented.,1,2,0.2857142857142857,93
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"source_port, dest_port, ethertype = sg_db_rpc.DHCP_RULE_PORT[6]",1,2,0.2857142857142857,94
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': sg2_id,",1,2,0.2857142857142857,95
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg2_id = sg2['security_group']['id'],1,2,0.2857142857142857,96
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, sg_models.SecurityGroupPortBinding)",0,1,0.14285714285714285,97
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"db = sg_models.SecurityGroupPortBinding(port_id=port_id,",0,1,0.14285714285714285,98
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, sg_models.SecurityGroup)",0,1,0.14285714285714285,99
+375535e20cddefd751aea608d4f18ff7bb8e0c50,egress_rule = sg_models.SecurityGroupRule(,0,1,0.14285714285714285,100
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ingress_rule = sg_models.SecurityGroupRule(,0,1,0.14285714285714285,101
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"revises_on_change = ('security_group', )",1,1,0.14285714285714285,102
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_db = sg_models.SecurityGroup(id=s.get('id') or (,0,1,0.14285714285714285,103
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"db_rules = self.get_security_group_rules(context, filters)",1,1,0.14285714285714285,104
+375535e20cddefd751aea608d4f18ff7bb8e0c50,description = sa.Column(sa.String(attributes.DESCRIPTION_MAX_LEN)),1,1,0.14285714285714285,105
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"context, filters,",0,1,0.14285714285714285,106
+375535e20cddefd751aea608d4f18ff7bb8e0c50,db_rules = self.get_security_group_rules(,0,1,0.14285714285714285,107
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, sg_models.SecurityGroupRule)",0,1,0.14285714285714285,108
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if (i['security_group_rule'] == db_rule):,1,1,0.14285714285714285,109
+375535e20cddefd751aea608d4f18ff7bb8e0c50,db = sg_models.SecurityGroupRule(,0,1,0.14285714285714285,110
+375535e20cddefd751aea608d4f18ff7bb8e0c50,__tablename__ = 'default_security_group',1,1,0.14285714285714285,111
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sgr = query.filter(sg_models.SecurityGroupRule.id == id).one(),0,1,0.14285714285714285,112
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context,",0,1,0.14285714285714285,113
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, sg_models.DefaultSecurityGroup)",0,1,0.14285714285714285,114
+375535e20cddefd751aea608d4f18ff7bb8e0c50,_OLD_REF = sys.modules[__name__],0,1,0.14285714285714285,115
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sys.modules[__name__] = _deprecate._DeprecateSubset(globals(), sg_models)",0,1,0.14285714285714285,116
+375535e20cddefd751aea608d4f18ff7bb8e0c50,import sqlalchemy as sa,1,1,0.14285714285714285,117
+375535e20cddefd751aea608d4f18ff7bb8e0c50,name = sa.Column(sa.String(attributes.NAME_MAX_LEN)),1,1,0.14285714285714285,118
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_group_id = sa.Column(sa.String(36),",1,1,0.14285714285714285,119
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group = orm.relationship(,1,1,0.14285714285714285,120
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_id = sa.Column(sa.String(36),",1,1,0.14285714285714285,121
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"revises_on_change = ('ports', )",1,1,0.14285714285714285,122
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_group_id = sa.Column(sa.String(36),",1,1,0.14285714285714285,123
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# is changed which cannot be because other methods are already,1,1,0.14285714285714285,124
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# below to check for these corner cases.,1,1,0.14285714285714285,125
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"context, bulk_rule)[0]",1,1,0.14285714285714285,126
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# query unless the behavior of _get_collection(),1,1,0.14285714285714285,127
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# remote_group_id. Therefore it is not possible to do this,1,1,0.14285714285714285,128
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_range_max = sa.Column(sa.Integer),1,1,0.14285714285714285,129
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# remote_group_id. Therefore it is not possible to do this,0,1,0.14285714285714285,130
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# query unless the behavior of _get_collection(),0,1,0.14285714285714285,131
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# is changed which cannot be because other methods are already,0,1,0.14285714285714285,132
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# below to check for these corner cases.,0,1,0.14285714285714285,133
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if (security_group_rule['security_group_rule'] == db_rule):,0,1,0.14285714285714285,134
+375535e20cddefd751aea608d4f18ff7bb8e0c50,r = security_group_rule['security_group_rules'],1,1,0.14285714285714285,135
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"context, security_group_rule)",1,1,0.14285714285714285,136
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"tenant_id = self._get_tenant_id_for_create(context, rule)",1,1,0.14285714285714285,137
+375535e20cddefd751aea608d4f18ff7bb8e0c50,db = SecurityGroupRule(,1,1,0.14285714285714285,138
+375535e20cddefd751aea608d4f18ff7bb8e0c50,bulk_rule = {'security_group_rules': [security_group_rule]},1,1,0.14285714285714285,139
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_rule_dict = self.create_security_group_rule_bulk_native(,1,1,0.14285714285714285,140
+375535e20cddefd751aea608d4f18ff7bb8e0c50,kwargs['security_group_rule'] = sg_rule_dict,1,1,0.14285714285714285,141
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _validate_security_group_rules(self, context, security_group_rules):",1,1,0.14285714285714285,142
+375535e20cddefd751aea608d4f18ff7bb8e0c50,new_rules = set(),1,1,0.14285714285714285,143
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenant_ids = set(),1,1,0.14285714285714285,144
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if rule['remote_ip_prefix'] and rule['remote_group_id']:,1,1,0.14285714285714285,145
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_group_id = rule.get('remote_group_id'),1,1,0.14285714285714285,146
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Check that remote_group_id exists for tenant,1,1,0.14285714285714285,147
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if remote_group_id:,1,1,0.14285714285714285,148
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.get_security_group(context, remote_group_id,",1,1,0.14285714285714285,149
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if len(new_rules) > 1:,1,1,0.14285714285714285,150
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_id = new_rules.pop(),1,1,0.14285714285714285,151
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if len(tenant_ids) > 1:,1,1,0.14285714285714285,152
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.get_security_group(context, security_group_id,",1,1,0.14285714285714285,153
+375535e20cddefd751aea608d4f18ff7bb8e0c50,filters = self._make_security_group_rule_filter_dict(i),1,1,0.14285714285714285,154
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"db_rules = self.get_security_group_rules(context, filters)",1,1,0.14285714285714285,155
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_range_min = sa.Column(sa.Integer),1,1,0.14285714285714285,156
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'used_in_non_default_sg': True,0,1,0.14285714285714285,157
+375535e20cddefd751aea608d4f18ff7bb8e0c50,source_group = orm.relationship(,1,1,0.14285714285714285,158
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"if isinstance(security_group_rule, base_obj.NeutronDbObject):",0,1,0.14285714285714285,159
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_rule_db = security_group_rule,0,1,0.14285714285714285,160
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"res = {'id': sg_rule_db.id,",0,1,0.14285714285714285,161
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_ip_prefix': sg_rule_db.remote_ip_prefix,",0,1,0.14285714285714285,162
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': sg_rule_db.remote_group_id,",0,1,0.14285714285714285,163
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix = rule.remote_ip_prefix,0,1,0.14285714285714285,164
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res_rule_dict = self._make_security_group_rule_dict(sg_rule.db_obj),1,1,0.14285714285714285,165
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"res = {'id': security_group_rule['id'],",1,1,0.14285714285714285,166
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_ip_prefix': security_group_rule['remote_ip_prefix'],",1,1,0.14285714285714285,167
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': security_group_rule['remote_group_id'],",1,1,0.14285714285714285,168
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix = rule.get('remote_ip_prefix'),1,1,0.14285714285714285,169
+375535e20cddefd751aea608d4f18ff7bb8e0c50,RULES_TEMPLATE_FOR_CUSTOM_SG = [,0,1,0.14285714285714285,170
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': None,",0,1,0.14285714285714285,171
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_ip_prefix': None,",0,1,0.14285714285714285,172
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'used_in_default_sg': True,",0,1,0.14285714285714285,173
+375535e20cddefd751aea608d4f18ff7bb8e0c50,filters = self._make_security_group_rule_filter_dict(,0,1,0.14285714285714285,174
+375535e20cddefd751aea608d4f18ff7bb8e0c50,RULES_TEMPLATE_FOR_DEFAULT_SG = RULES_TEMPLATE_FOR_CUSTOM_SG + [,0,1,0.14285714285714285,175
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': ext_sg_default_rules.PARENT_SG,",0,1,0.14285714285714285,176
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'used_in_non_default_sg': False,0,1,0.14285714285714285,177
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Verify that egress rules have been created as defined in the template,0,1,0.14285714285714285,178
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"res = self.new_show_request('security-groups', remote_group_id)",0,1,0.14285714285714285,179
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_range_min = 22,0,1,0.14285714285714285,180
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_range_max = 22,0,1,0.14285714285714285,181
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_rules = group['security_group']['security_group_rules'],0,1,0.14285714285714285,182
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"res = self.new_show_request('security-groups', remote_group_id)",1,1,0.14285714285714285,183
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_range_min = 22,1,1,0.14285714285714285,184
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_range_max = 22,1,1,0.14285714285714285,185
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_rule = group['security_group']['security_group_rules'],1,1,0.14285714285714285,186
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_rule_db = security_group_rule.db_obj,0,1,0.14285714285714285,187
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res_rule_dict = self._make_security_group_rule_dict(sg_rule),0,1,0.14285714285714285,188
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_db = SecurityGroup(id=s.get('id') or (,1,1,0.14285714285714285,189
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule_dict[direction_ip_prefix] = (,0,1,0.14285714285714285,190
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ingress_rule = SecurityGroupRule(,1,1,0.14285714285714285,191
+375535e20cddefd751aea608d4f18ff7bb8e0c50,egress_rule = SecurityGroupRule(,1,1,0.14285714285714285,192
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, SecurityGroup)",1,1,0.14285714285714285,193
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"db = SecurityGroupPortBinding(port_id=port_id,",1,1,0.14285714285714285,194
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, SecurityGroupPortBinding)",1,1,0.14285714285714285,195
+375535e20cddefd751aea608d4f18ff7bb8e0c50,db = SecurityGroupRule(,1,1,0.14285714285714285,196
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, SecurityGroupRule)",1,1,0.14285714285714285,197
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sgr = query.filter(SecurityGroupRule.id == id).one(),1,1,0.14285714285714285,198
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, SecurityGroupRule).filter(",1,1,0.14285714285714285,199
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = self._model_query(context, DefaultSecurityGroup)",1,1,0.14285714285714285,200
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype', 'remote_group_id']",0,1,0.14285714285714285,201
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_ip_prefix = rule_dict.pop('remote_ip_prefix', None)",0,1,0.14285714285714285,202
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"db_remote_ip_prefix = db_rule.pop('remote_ip_prefix', None)",0,1,0.14285714285714285,203
+375535e20cddefd751aea608d4f18ff7bb8e0c50,duplicate_ip_prefix = self._validate_duplicate_ip_prefix(,0,1,0.14285714285714285,204
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if (is_protocol_matching and duplicate_ip_prefix and,0,1,0.14285714285714285,205
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"all_address = ['0.0.0.0/0', '::/0', None]",0,1,0.14285714285714285,206
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if ip_prefix == other_ip_prefix:,0,1,0.14285714285714285,207
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return True,0,1,0.14285714285714285,208
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return False,0,1,0.14285714285714285,209
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype', 'remote_ip_prefix',",1,1,0.14285714285714285,210
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if (is_protocol_matching and rule_dict == db_rule):,1,1,0.14285714285714285,211
+375535e20cddefd751aea608d4f18ff7bb8e0c50,query = context.session.query(,0,1,0.14285714285714285,212
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# the data structure we directly set None to it to avoid bother,0,1,0.14285714285714285,213
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# the ports table.,0,1,0.14285714285714285,214
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = context.session.query(sg_binding_sgid,",1,1,0.14285714285714285,215
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id': security_group_rule['remote_group_id']},1,1,0.14285714285714285,216
+375535e20cddefd751aea608d4f18ff7bb8e0c50,normalized_cidr = rule_in_db.get('normalized_cidr'),0,1,0.14285714285714285,217
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"db_rules = self.get_security_group_rules(context, filters)",0,1,0.14285714285714285,218
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id': security_group_rule['remote_group_id'],",0,1,0.14285714285714285,219
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _check_for_duplicate_rules_in_db(self, context, security_group_rule):",0,1,0.14285714285714285,220
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_lla_ip = str(ipv6.get_ipv6_addr_by_EUI64(,0,1,0.14285714285714285,221
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_rpc = ports_rpc[port_id1],0,1,0.14285714285714285,222
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"expected = [{'direction': 'egress', 'ethertype': const.IPv4,",0,1,0.14285714285714285,223
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"address_pairs = [{'mac_address': '00:00:00:00:00:01',",0,1,0.14285714285714285,224
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'25', remote_group_id=sg2['security_group']['id'])",0,1,0.14285714285714285,225
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res2 = self._create_port(,0,1,0.14285714285714285,226
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ports_rest2 = self.deserialize(self.fmt, res2)",0,1,0.14285714285714285,227
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_id2 = ports_rest2['port']['id'],0,1,0.14285714285714285,228
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc = self.rpc.security_group_info_for_devices(,0,1,0.14285714285714285,229
+375535e20cddefd751aea608d4f18ff7bb8e0c50,expected = {,0,1,0.14285714285714285,230
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id': sg2_id},0,1,0.14285714285714285,231
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_port = self._create_port(,0,1,0.14285714285714285,232
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"dhcp_rest = self.deserialize(self.fmt, dhcp_port)",0,1,0.14285714285714285,233
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_mac = dhcp_rest['port']['mac_address'],0,1,0.14285714285714285,234
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id': sg1_id},0,1,0.14285714285714285,235
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule2 = self._build_security_group_rule(,1,1,0.14285714285714285,236
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_res = self._make_port(,0,1,0.14285714285714285,237
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_mac = gateway_res['port']['mac_address'],0,1,0.14285714285714285,238
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_port_id = gateway_res['port']['id'],0,1,0.14285714285714285,239
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_lla_ip = str(ipv6.get_ipv6_addr_by_EUI64(,0,1,0.14285714285714285,240
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rest1 = self._make_port(,0,1,0.14285714285714285,241
+375535e20cddefd751aea608d4f18ff7bb8e0c50,data = {'port': {'fixed_ips': []}},0,1,0.14285714285714285,242
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"req = self.new_update_request('ports', data, gateway_port_id)",0,1,0.14285714285714285,243
+375535e20cddefd751aea608d4f18ff7bb8e0c50,interface_res = self._make_port(,0,1,0.14285714285714285,244
+375535e20cddefd751aea608d4f18ff7bb8e0c50,interface_port_id = interface_res['port']['id'],0,1,0.14285714285714285,245
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"req = self.new_update_request('ports', data, interface_port_id)",0,1,0.14285714285714285,246
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'25',",0,1,0.14285714285714285,247
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rest2 = self._make_port(,0,1,0.14285714285714285,248
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg1_id = sg1['security_group']['id'],1,1,0.14285714285714285,249
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc = self.rpc.security_group_rules_for_devices(,0,1,0.14285714285714285,250
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"devices = [port_id1, 'no_exist_device']",0,1,0.14285714285714285,251
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self.rpc.devices = {port_id1: ports_rest1['port']},0,1,0.14285714285714285,252
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_id1 = ports_rest1['port']['id'],0,1,0.14285714285714285,253
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_id = self._validate_single_tenant_and_group(security_group_rules),0,1,0.14285714285714285,254
+375535e20cddefd751aea608d4f18ff7bb8e0c50,:param device: device name which identifies a port on the agent side.,0,1,0.14285714285714285,255
+375535e20cddefd751aea608d4f18ff7bb8e0c50,it must contain the following fields in the port dict returned.,0,1,0.14285714285714285,256
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""A mix-in that enable SecurityGroup agent support in plugin",1,1,0.14285714285714285,257
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def security_group_rules_for_devices(self, context, **kwargs):",1,1,0.14285714285714285,258
+375535e20cddefd751aea608d4f18ff7bb8e0c50,devices = kwargs.get('devices'),1,1,0.14285714285714285,259
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port = self.get_port_from_device(device),1,1,0.14285714285714285,260
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if port['device_owner'].startswith('network:'):,1,1,0.14285714285714285,261
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports[port['id']] = port,1,1,0.14285714285714285,262
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[remote_group_id] = set(),0,1,0.14285714285714285,263
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# table instead of via the Port table skip an unnecessary intermediary,0,1,0.14285714285714285,264
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Outerjoin because address pairs may be null and we still want the,0,1,0.14285714285714285,265
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# IP for the port.,0,1,0.14285714285714285,266
+375535e20cddefd751aea608d4f18ff7bb8e0c50,query = query.outerjoin(,0,1,0.14285714285714285,267
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# the relationship is 1-to-many. Dedup with a set,0,1,0.14285714285714285,268
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if allowed_addr_ip:,0,1,0.14285714285714285,269
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[remote_group_id] = [],1,1,0.14285714285714285,270
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"query = query.join(models_v2.Port,",1,1,0.14285714285714285,271
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# if there are allowed_address_pairs add them,1,1,0.14285714285714285,272
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"if getattr(port, 'allowed_address_pairs', None):",1,1,0.14285714285714285,273
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg1_id = sg1['security_group']['id'],0,1,0.14285714285714285,274
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule1 = self._build_security_group_rule(,0,1,0.14285714285714285,275
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule2 = self._build_security_group_rule(,0,1,0.14285714285714285,276
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rules = {,0,1,0.14285714285714285,277
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"res = self._create_security_group_rule(self.fmt, rules)",0,1,0.14285714285714285,278
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res1 = self._create_port(,0,1,0.14285714285714285,279
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ports_rest1 = self.deserialize(self.fmt, res1)",0,1,0.14285714285714285,280
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule1 = self._build_security_group_rule(,1,1,0.14285714285714285,281
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ctx = context.get_admin_context(),0,1,0.14285714285714285,282
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rules = {,1,1,0.14285714285714285,283
+375535e20cddefd751aea608d4f18ff7bb8e0c50,kwargs['security_group_rule'] = res_rule_dict,0,1,0.14285714285714285,284
+375535e20cddefd751aea608d4f18ff7bb8e0c50,interface_port_id = interface_res['port']['id'],1,1,0.14285714285714285,285
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"req = self.new_update_request('ports', data, interface_port_id)",1,1,0.14285714285714285,286
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'25',",1,1,0.14285714285714285,287
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rest2 = self._make_port(,1,1,0.14285714285714285,288
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rules = security_group_rules['security_group_rules'],0,1,0.14285714285714285,289
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"context, security_group_rules)",0,1,0.14285714285714285,290
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res_rule_dict = self._create_security_group_rule(,0,1,0.14285714285714285,291
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"context, rule_dict, validate=False)",0,1,0.14285714285714285,292
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _create_security_group_rule(self, context, security_group_rule,",0,1,0.14285714285714285,293
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if validate:,0,1,0.14285714285714285,294
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule_dict = security_group_rule['security_group_rule'],0,1,0.14285714285714285,295
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"tenant_id = self._get_tenant_id_for_create(context, rule_dict)",0,1,0.14285714285714285,296
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res_rule_dict = self._make_security_group_rule_dict(db),0,1,0.14285714285714285,297
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_groups = set(),0,1,0.14285714285714285,298
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"req = self.new_update_request('ports', data, gateway_port_id)",1,1,0.14285714285714285,299
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenants = set(),0,1,0.14285714285714285,300
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if len(sg_groups) > 1:,0,1,0.14285714285714285,301
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if len(tenants) > 1:,0,1,0.14285714285714285,302
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _validate_security_group_rule(self, context, security_group_rule):",0,1,0.14285714285714285,303
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if rule['remote_ip_prefix'] and rule['remote_group_id']:,0,1,0.14285714285714285,304
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_group_id = rule['remote_group_id'],0,1,0.14285714285714285,305
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Check that remote_group_id exists for tenant,0,1,0.14285714285714285,306
+375535e20cddefd751aea608d4f18ff7bb8e0c50,if remote_group_id:,0,1,0.14285714285714285,307
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.get_security_group(context, remote_group_id,",0,1,0.14285714285714285,308
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_id = rule['security_group_id'],0,1,0.14285714285714285,309
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"res = self._create_security_group_rule(self.fmt, rules)",1,1,0.14285714285714285,310
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _validate_security_group_rules(self, context, security_group_rules):",0,1,0.14285714285714285,311
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.get_security_group(context, security_group_id,",0,1,0.14285714285714285,312
+375535e20cddefd751aea608d4f18ff7bb8e0c50,interface_res = self._make_port(,1,1,0.14285714285714285,313
+375535e20cddefd751aea608d4f18ff7bb8e0c50,db = SecurityGroupRule(,0,1,0.14285714285714285,314
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"address_pairs = [{'mac_address': '00:00:00:00:00:01',",1,1,0.14285714285714285,315
+375535e20cddefd751aea608d4f18ff7bb8e0c50,expected = {,1,1,0.14285714285714285,316
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ports_rest1 = self.deserialize(self.fmt, res1)",1,1,0.14285714285714285,317
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_id1 = ports_rest1['port']['id'],1,1,0.14285714285714285,318
+375535e20cddefd751aea608d4f18ff7bb8e0c50,data = {'port': {'fixed_ips': []}},1,1,0.14285714285714285,319
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self.rpc.devices = {port_id1: ports_rest1['port']},1,1,0.14285714285714285,320
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"devices = [port_id1, 'no_exist_device']",1,1,0.14285714285714285,321
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ctx = context.get_admin_context(),1,1,0.14285714285714285,322
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc = self.rpc.security_group_rules_for_devices(,1,1,0.14285714285714285,323
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_rpc = ports_rpc[port_id1],1,1,0.14285714285714285,324
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"expected = [{'direction': 'egress', 'ethertype': const.IPv4,",1,1,0.14285714285714285,325
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'25', remote_group_id=sg2['security_group']['id'])",1,1,0.14285714285714285,326
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res2 = self._create_port(,1,1,0.14285714285714285,327
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ports_rest2 = self.deserialize(self.fmt, res2)",1,1,0.14285714285714285,328
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc = self.rpc.security_group_info_for_devices(,1,1,0.14285714285714285,329
+375535e20cddefd751aea608d4f18ff7bb8e0c50,port_id2 = ports_rest2['port']['id'],1,1,0.14285714285714285,330
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_res = self._make_port(,1,1,0.14285714285714285,331
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_port_id = gateway_res['port']['id'],1,1,0.14285714285714285,332
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id': sg2_id},1,1,0.14285714285714285,333
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_port = self._create_port(,1,1,0.14285714285714285,334
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"dhcp_rest = self.deserialize(self.fmt, dhcp_port)",1,1,0.14285714285714285,335
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rest1 = self._make_port(,1,1,0.14285714285714285,336
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_mac = dhcp_rest['port']['mac_address'],1,1,0.14285714285714285,337
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_lla_ip = str(ipv6.get_ipv6_addr_by_EUI64(,1,1,0.14285714285714285,338
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id': sg1_id},1,1,0.14285714285714285,339
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_mac = gateway_res['port']['mac_address'],1,1,0.14285714285714285,340
+375535e20cddefd751aea608d4f18ff7bb8e0c50,res1 = self._create_port(,1,1,0.14285714285714285,341
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_lla_ip = str(ipv6.get_ipv6_addr_by_EUI64(,1,1,0.14285714285714285,342
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupRuleExists(id=id),1,0,0.0,343
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupRulesNotSingleTenant(),1,0,0.0,344
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"# relying on this behavior. Therefore, we do the filtering",1,0,0.0,345
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Note(arosen): the call to get_security_group_rules wildcards,1,0,0.0,346
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group),0,0,0.0,347
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenant_id=tenant_id),1,0,0.0,348
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._apply_dict_extend_functions(ext_sg.SECURITYGROUPS, res,",0,0,0.0,349
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_max=rule['port_range_max'],",1,0,0.0,350
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_ip_prefix=rule_dict.get('remote_ip_prefix'),",0,0,0.0,351
+375535e20cddefd751aea608d4f18ff7bb8e0c50,description=rule_dict.get('description'),0,0,0.0,352
+375535e20cddefd751aea608d4f18ff7bb8e0c50,),0,0,0.0,353
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._apply_dict_extend_functions(ext_sg.SECURITYGROUPRULES, res,",0,0,0.0,354
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupNotSingleGroupRules(),1,0,0.0,355
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_rule),0,0,0.0,356
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Confirm single tenant and that the tenant has permission,1,0,0.0,357
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ret.append(self._make_security_group_rule_dict(db)),1,0,0.0,358
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenant_id=rule['tenant_id']),1,0,0.0,359
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenant_ids.add(rule['tenant_id']),1,0,0.0,360
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupRemoteGroupAndRemoteIpPrefix(),1,0,0.0,361
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self._validate_ip_prefix(rule),1,0,0.0,362
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self._validate_port_range(rule),1,0,0.0,363
+375535e20cddefd751aea608d4f18ff7bb8e0c50,new_rules.add(rule['security_group_id']),1,0,0.0,364
+375535e20cddefd751aea608d4f18ff7bb8e0c50,and rules are valid.,1,0,0.0,365
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Check that rules being installed.",1,0,0.0,366
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return sg_rule_dict,1,0,0.0,367
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_rule': security_group_rule,",1,0,0.0,368
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return ret,1,0,0.0,369
+375535e20cddefd751aea608d4f18ff7bb8e0c50,context.session.add(db),1,0,0.0,370
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix=rule.get('remote_ip_prefix')),1,0,0.0,371
+375535e20cddefd751aea608d4f18ff7bb8e0c50,fields=security_group_rule['security_group_rule'].keys()),0,0,0.0,372
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_min=rule['port_range_min'],",1,0,0.0,373
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_group_id', 'description']",0,0,0.0,374
+375535e20cddefd751aea608d4f18ff7bb8e0c50,),1,0,0.0,375
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix=rule_dict.get('remote_ip_prefix')),1,0,0.0,376
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from neutron.db import models_v2,1,0,0.0,377
+375535e20cddefd751aea608d4f18ff7bb8e0c50,primary_key=True),1,0,0.0,378
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ethertype=rule['ethertype'],",1,0,0.0,379
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ondelete='CASCADE'),",1,0,0.0,380
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sa.ForeignKey(""ports.id"",",1,0,0.0,381
+375535e20cddefd751aea608d4f18ff7bb8e0c50,class SecurityGroupPortBinding(model_base.BASEV2):,1,0,0.0,382
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"primaryjoin=""SecurityGroup.id==DefaultSecurityGroup.security_group_id"",",1,0,0.0,383
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"backref=orm.backref('default_security_group', cascade='all,delete'),",1,0,0.0,384
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"SecurityGroup, lazy='joined',",1,0,0.0,385
+375535e20cddefd751aea608d4f18ff7bb8e0c50,nullable=False),1,0,0.0,386
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ondelete=""CASCADE""),",1,0,0.0,387
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sa.ForeignKey(""securitygroups.id"",",1,0,0.0,388
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"class DefaultSecurityGroup(model_base.BASEV2, model_base.HasProjectPrimaryKey):",1,0,0.0,389
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"model_base.HasId, model_base.HasProject):",1,0,0.0,390
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"class SecurityGroup(model_base.HasStandardAttributes, model_base.BASEV2,",1,0,0.0,391
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from neutron.db import model_base,1,0,0.0,392
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id'],1,0,0.0,393
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from sqlalchemy import orm,1,0,0.0,394
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# WARNING: THESE MUST BE THE LAST TWO LINES IN THIS MODULE,0,0,0.0,395
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_models.SecurityGroupRule.id == id),0,0,0.0,396
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_models.SecurityGroupRule).filter(,0,0,0.0,397
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._get_collection_count(context, sg_models.SecurityGroupRule,",0,0,0.0,398
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg_models.SecurityGroupRule,",0,0,0.0,399
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_models.SecurityGroupPortBinding.port_id == port_id),0,0,0.0,400
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg_models.SecurityGroupPortBinding,",0,0,0.0,401
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._get_collection_count(context, sg_models.SecurityGroup,",0,0,0.0,402
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg_models.SecurityGroup,",0,0,0.0,403
+375535e20cddefd751aea608d4f18ff7bb8e0c50,context.session.add(sg_models.DefaultSecurityGroup(,0,0,0.0,404
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from neutron.db.models import securitygroup as sg_models,0,0,0.0,405
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from neutron.common import _deprecate,0,0,0.0,406
+375535e20cddefd751aea608d4f18ff7bb8e0c50,import sys,0,0,0.0,407
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"protocol=rule['protocol'],",1,0,0.0,408
+375535e20cddefd751aea608d4f18ff7bb8e0c50,device_owner='network:router_interface'),1,0,0.0,409
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_group_id=rule.get('remote_group_id'),",1,0,0.0,410
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ret.append(res_rule_dict),0,0,0.0,411
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"gateway_ip=None,",1,0,0.0,412
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ethertype=const.IPv6,",1,0,0.0,413
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_group_id=sg2['security_group']['id']),1,0,0.0,414
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': '2001:db8::2/128',",1,0,0.0,415
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_rules):,0,0,0.0,416
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._check_for_duplicate_rules(context, rules)",0,0,0.0,417
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return ret,0,0,0.0,418
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"tenant_id=tenant_id,",0,0,0.0,419
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._create_security_group_rule(context, security_group_rule)",0,0,0.0,420
+375535e20cddefd751aea608d4f18ff7bb8e0c50,validate=True):,0,0,0.0,421
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._validate_security_group_rule(context, security_group_rule)",0,0,0.0,422
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._check_for_duplicate_rules_in_db(context, security_group_rule)",0,0,0.0,423
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'security_group_rule': rule_dict,0,0,0.0,424
+375535e20cddefd751aea608d4f18ff7bb8e0c50,with context.session.begin(subtransactions=True):,0,0,0.0,425
+375535e20cddefd751aea608d4f18ff7bb8e0c50,device_owner=const.DEVICE_OWNER_DVR_INTERFACE),1,0,0.0,426
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Create DVR router interface port,1,0,0.0,427
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', interface_port_id)",1,0,0.0,428
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Create another router interface port,1,0,0.0,429
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', gateway_port_id)",1,0,0.0,430
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.deserialize(self.fmt, req.get_response(self.api))",1,0,0.0,431
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Note(xuhanp): remove gateway port's fixed_ips or gateway port,1,0,0.0,432
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': gateway_lla_ip,",1,0,0.0,433
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_mac)),1,0,0.0,434
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"models_v2.Port,",1,0,0.0,435
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ip_address': fake_gateway}],",1,0,0.0,436
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Create gateway port,1,0,0.0,437
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ipv6_ra_mode=const.IPV6_SLAAC),",1,0,0.0,438
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ip_version=6,",1,0,0.0,439
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc['sg_member_ips'][sg1_id]['IPv6']),1,0,0.0,440
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(expected['sg_member_ips'][sg1_id]['IPv6'],",1,0,0.0,441
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'sg_member_ips': {sg1_id: {,1,0,0.0,442
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"id=(rule_dict.get('id') or uuidutils.generate_uuid()),",0,0,0.0,443
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_group_id=rule_dict['security_group_id'],",0,0,0.0,444
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction=rule['direction'],",1,0,0.0,445
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Note(arosen): the call to get_security_group_rules wildcards,0,0,0.0,446
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenant_id=rule['tenant_id']),0,0,0.0,447
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Confirm that the tenant has permission,0,0,0.0,448
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._validate_security_group_rule(context, rule)",0,0,0.0,449
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return sg_id,0,0,0.0,450
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._check_for_duplicate_rules_in_db(context, i)",0,0,0.0,451
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_rule),0,0,0.0,452
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"# relying on this behavior. Therefore, we do the filtering",0,0,0.0,453
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction=rule_dict['direction'],",0,0,0.0,454
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupRuleExists(id=id),0,0,0.0,455
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_rule):,1,0,0.0,456
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._check_for_duplicate_rules(context, r)",1,0,0.0,457
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"id=(rule.get('id') or uuidutils.generate_uuid()),",1,0,0.0,458
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"tenant_id=tenant_id,",1,0,0.0,459
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_group_id=rule['security_group_id'],",1,0,0.0,460
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupRemoteGroupAndRemoteIpPrefix(),0,0,0.0,461
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self._validate_ip_prefix(rule),0,0,0.0,462
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self._validate_port_range(rule),0,0,0.0,463
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return sg_groups.pop(),0,0,0.0,464
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupRulesNotSingleTenant(),0,0,0.0,465
+375535e20cddefd751aea608d4f18ff7bb8e0c50,tenants.add(rule['tenant_id']),0,0,0.0,466
+375535e20cddefd751aea608d4f18ff7bb8e0c50,raise ext_sg.SecurityGroupNotSingleGroupRules(),0,0,0.0,467
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_groups.add(rule['security_group_id']),0,0,0.0,468
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _validate_single_tenant_and_group(self, security_group_rules):",0,0,0.0,469
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return res_rule_dict,0,0,0.0,470
+375535e20cddefd751aea608d4f18ff7bb8e0c50,context.session.add(db),0,0,0.0,471
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix=rule_dict.get('remote_ip_prefix')),0,0,0.0,472
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_max=rule_dict['port_range_max'],",0,0,0.0,473
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_min=rule_dict['port_range_min'],",0,0,0.0,474
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"protocol=rule_dict['protocol'],",0,0,0.0,475
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ethertype=rule_dict['ethertype'],",0,0,0.0,476
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_group_id=rule_dict.get('remote_group_id'),",0,0,0.0,477
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sa.ForeignKey(""securitygroups.id""),",1,0,0.0,478
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': security_group_rule['port_range_min'],",1,0,0.0,479
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"backref=orm.backref(""security_groups"",",1,0,0.0,480
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('port_range_min', port_range_min),",0,0,0.0,481
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# above,0,0,0.0,482
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'get_default_security_group_rules', return_value=[]):",0,0,0.0,483
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with self.security_group(name, description) as sg:",0,0,0.0,484
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('security_group_id', security_group_id),",0,0,0.0,485
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('direction', direction),",0,0,0.0,486
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('protocol', protocol),",0,0,0.0,487
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('port_range_max', port_range_max)]",0,0,0.0,488
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from neutron.extensions import security_groups_default_rules as \,0,0,0.0,489
+375535e20cddefd751aea608d4f18ff7bb8e0c50,with self.security_group_rule(,0,0,0.0,490
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_group_id,",0,0,0.0,491
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction=direction,",0,0,0.0,492
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"protocol=protocol,",0,0,0.0,493
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_min=port_range_min,",0,0,0.0,494
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_max=port_range_max,",0,0,0.0,495
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(v, security_group['security_group'][k])",0,0,0.0,496
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with self.security_group(name, description) as security_group:",0,0,0.0,497
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return_value=RULES_TEMPLATE_FOR_CUSTOM_SG):,0,0,0.0,498
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'get_default_security_group_rules',",0,0,0.0,499
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"SecurityGroupTestPlugin,",0,0,0.0,500
+375535e20cddefd751aea608d4f18ff7bb8e0c50,with mock.patch.object(,0,0,0.0,501
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'direction': 'ingress',",0,0,0.0,502
+375535e20cddefd751aea608d4f18ff7bb8e0c50,],0,0,0.0,503
+375535e20cddefd751aea608d4f18ff7bb8e0c50,},0,0,0.0,504
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': const.IPv6,",0,0,0.0,505
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"}, {",0,0,0.0,506
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': None,",0,0,0.0,507
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': None,",0,0,0.0,508
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': None,",0,0,0.0,509
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': const.IPv4,",0,0,0.0,510
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'direction': 'egress',",0,0,0.0,511
+375535e20cddefd751aea608d4f18ff7bb8e0c50,{,0,0,0.0,512
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix=remote_ip_prefix):,0,0,0.0,513
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.fmt, res.get_response(self.ext_api))",0,0,0.0,514
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(remote_group_id,",0,0,0.0,515
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with self.security_group_rule(security_group_id,",1,0,0.0,516
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._make_security_group_rule(self.fmt, rules)",1,0,0.0,517
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual('admin-tenant', rules[4]['tenant_id'])",1,0,0.0,518
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertNotEqual('admin-tenant', rules[3]['tenant_id'])",1,0,0.0,519
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(5, len(rules))",1,0,0.0,520
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(v, sg_rule[0][k])",1,0,0.0,521
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(3, len(sg_rule))",1,0,0.0,522
+375535e20cddefd751aea608d4f18ff7bb8e0c50,group['security_group']['id']),1,0,0.0,523
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(remote_group_id,",1,0,0.0,524
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.fmt, res.get_response(self.ext_api))",1,0,0.0,525
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_ip_prefix=remote_ip_prefix):,1,0,0.0,526
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_max=port_range_max,",1,0,0.0,527
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"port_range_min=port_range_min,",1,0,0.0,528
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"protocol=protocol,",1,0,0.0,529
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"direction=direction,",1,0,0.0,530
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('port_range_max', port_range_max)]",1,0,0.0,531
+375535e20cddefd751aea608d4f18ff7bb8e0c50,group['security_group']['id']),0,0,0.0,532
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('port_range_min', port_range_min),",1,0,0.0,533
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('protocol', protocol),",1,0,0.0,534
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('direction', direction),",1,0,0.0,535
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"('security_group_id', security_group_id),",1,0,0.0,536
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with self.security_group(name, description) as sg:",1,0,0.0,537
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Verify that default egress rules have been created,1,0,0.0,538
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(v, security_group['security_group'][k])",1,0,0.0,539
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with self.security_group(name, description) as security_group:",1,0,0.0,540
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return_value=copy.deepcopy(RULES_TEMPLATE_FOR_DEFAULT_SG)):,0,0,0.0,541
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual('admin-tenant', rules[2]['tenant_id'])",0,0,0.0,542
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertNotEqual('admin-tenant', rules[1]['tenant_id'])",0,0,0.0,543
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(3, len(rules))",0,0,0.0,544
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(v, sg_rules[0][k])",0,0,0.0,545
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(1, len(sg_rules))",0,0,0.0,546
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ext_sg_default_rules,0,0,0.0,547
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_group_rule.db_obj, fields)",1,0,0.0,548
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"lazy='joined', cascade='delete'))",1,0,0.0,549
+375535e20cddefd751aea608d4f18ff7bb8e0c50,aap_models.AllowedAddressPair.mac_address),0,0,0.0,550
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule_dict == db_rule):,0,0,0.0,551
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def _validate_duplicate_ip_prefix(self, ip_prefix, other_ip_prefix):",0,0,0.0,552
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_group_id'],1,0,0.0,553
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg_binding_sgid,",0,0,0.0,554
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"models_v2.IPAllocation.ip_address,",0,0,0.0,555
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"aap_models.AllowedAddressPair.ip_address,",0,0,0.0,556
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ips_by_group[security_group_id].add((ip_address, None))",0,0,0.0,557
+375535e20cddefd751aea608d4f18ff7bb8e0c50,return self._make_security_group_rule_dict(,1,0,0.0,558
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].add(,0,0,0.0,559
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"(allowed_addr_ip, mac))",0,0,0.0,560
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"models_v2.IPAllocation.ip_address,",1,0,0.0,561
+375535e20cddefd751aea608d4f18ff7bb8e0c50,aap_models.AllowedAddressPair.ip_address),1,0,0.0,562
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].add(ip_address),1,0,0.0,563
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].add(allowed_addr_ip),1,0,0.0,564
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"remote_ip_prefix, db_remote_ip_prefix)",0,0,0.0,565
+375535e20cddefd751aea608d4f18ff7bb8e0c50,fields += ['remote_ip_prefix'],0,0,0.0,566
+375535e20cddefd751aea608d4f18ff7bb8e0c50,SecurityGroupRule.id == id),1,0,0.0,567
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._get_collection_count(context, SecurityGroupRule,",1,0,0.0,568
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"SecurityGroupRule,",1,0,0.0,569
+375535e20cddefd751aea608d4f18ff7bb8e0c50,SecurityGroupPortBinding.port_id == port_id),1,0,0.0,570
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"SecurityGroupPortBinding,",1,0,0.0,571
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._get_collection_count(context, SecurityGroup,",1,0,0.0,572
+375535e20cddefd751aea608d4f18ff7bb8e0c50,context.session.add(DefaultSecurityGroup(,1,0,0.0,573
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"primaryjoin=""SecurityGroup.id==SecurityGroupRule.remote_group_id"")",1,0,0.0,574
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"backref=orm.backref('source_rules', cascade='all,delete'),",1,0,0.0,575
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"primaryjoin=""SecurityGroup.id==SecurityGroupRule.security_group_id"")",1,0,0.0,576
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"backref=orm.backref('rules', cascade='all,delete', lazy='joined'),",1,0,0.0,577
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"SecurityGroup,",1,0,0.0,578
+375535e20cddefd751aea608d4f18ff7bb8e0c50,name='securitygrouprules_direction')),1,0,0.0,579
+375535e20cddefd751aea608d4f18ff7bb8e0c50,nullable=True),1,0,0.0,580
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"class SecurityGroupRule(model_base.HasStandardAttributes, model_base.BASEV2,",1,0,0.0,581
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'description': security_group['description'],",0,0,0.0,582
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'standard_attr_id': security_group.db_obj.standard_attr.id,",0,0,0.0,583
+375535e20cddefd751aea608d4f18ff7bb8e0c50,},0,0,0.0,584
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"resource_extend.apply_funcs(ext_sg.SECURITYGROUPRULES, res, sg_rule_db)",0,0,0.0,585
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_group_rule),1,0,0.0,586
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"resource_extend.apply_funcs(ext_sg.SECURITYGROUPRULES, res,",1,0,0.0,587
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'standard_attr_id': security_group_rule.standard_attr.id,",1,0,0.0,588
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_group_rule),",1,0,0.0,589
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_address_group_id'],",1,0,0.0,590
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'remote_address_group_id': security_group_rule[,1,0,0.0,591
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': security_group_rule['port_range_max'],",1,0,0.0,592
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': security_group_rule['protocol'],",1,0,0.0,593
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'direction': security_group_rule['direction'],",1,0,0.0,594
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': security_group_rule['ethertype'],",1,0,0.0,595
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': security_group_rule['security_group_id'],",1,0,0.0,596
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'tenant_id': security_group_rule['tenant_id'],",1,0,0.0,597
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self._make_security_group_rule_dict(r.db_obj),1,0,0.0,598
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._make_security_group_rule_dict(security_group_rule, fields)",0,0,0.0,599
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'standard_attr_id': sg_rule_db.standard_attr.id,",0,0,0.0,600
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'standard_attr_id': security_group_rule.standard_attr.id,",0,0,0.0,601
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg_rule_db),",0,0,0.0,602
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'remote_address_group_id': sg_rule_db.remote_address_group_id,",0,0,0.0,603
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': sg_rule_db.port_range_max,",0,0,0.0,604
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': sg_rule_db.port_range_min,",0,0,0.0,605
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': sg_rule_db.protocol,",0,0,0.0,606
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'direction': sg_rule_db.direction,",0,0,0.0,607
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': sg_rule_db.ethertype,",0,0,0.0,608
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg_rule_db.security_group_id,",0,0,0.0,609
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'tenant_id': sg_rule_db.project_id,",0,0,0.0,610
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'project_id': sg_rule_db.project_id,",0,0,0.0,611
+375535e20cddefd751aea608d4f18ff7bb8e0c50,else:,0,0,0.0,612
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self._make_security_group_rule_dict(r),0,0,0.0,613
+375535e20cddefd751aea608d4f18ff7bb8e0c50,normalized_cidr or rule_in_db[key]),0,0,0.0,614
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'description': security_group['description']},1,0,0.0,615
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 22, 'port_range_min': 22,",1,0,0.0,616
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': u'ingress',",0,0,0.0,617
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'22', remote_group_id=sg1_id,",1,0,0.0,618
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg2_id]),0,0,0.0,619
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'dest_ip_prefix': fake_prefix},",0,0,0.0,620
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.security_group() as sg1,\",0,0,0.0,621
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self.security_group() as sg2:,0,0,0.0,622
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_TCP, '24',",0,0,0.0,623
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'security_group_rules': [rule1['security_group_rule']]},0,0,0.0,624
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_groups=[sg1_id,",0,0,0.0,625
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_groups=[sg2_id]),0,0,0.0,626
+375535e20cddefd751aea608d4f18ff7bb8e0c50,],0,0,0.0,627
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv4,",0,0,0.0,628
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg2_id},",0,0,0.0,629
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': u'10.0.0.3/32',",0,0,0.0,630
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', port_id2)",0,0,0.0,631
+375535e20cddefd751aea608d4f18ff7bb8e0c50,def test_security_group_info_for_devices_ipv4_source_group(self):,0,0,0.0,632
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(webob.exc.HTTPCreated.code, res.status_int)",0,0,0.0,633
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': const.PROTO_NAME_UDP,",0,0,0.0,634
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress',",0,0,0.0,635
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'egress', const.PROTO_NAME_UDP, '23',",0,0,0.0,636
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'egress', const.PROTO_NAME_TCP, '22',",0,0,0.0,637
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"yield self.deserialize(self.fmt, res1)",0,0,0.0,638
+375535e20cddefd751aea608d4f18ff7bb8e0c50,allowed_address_pairs=address_pairs),0,0,0.0,639
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"arg_list=(addr_pair.ADDRESS_PAIRS,),",0,0,0.0,640
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_groups=[sg1_id],",0,0,0.0,641
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'ip_address': '11.0.0.1'}],0,0,0.0,642
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'mac_address': '00:00:00:00:00:01',",0,0,0.0,643
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ip_address': '10.0.1.0/24'},",0,0,0.0,644
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(res.status_int, 201)",0,0,0.0,645
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', 'tcp', '23',",0,0,0.0,646
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'22', remote_group_id=sg1_id)",0,0,0.0,647
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', 'tcp', '22',",0,0,0.0,648
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', port_id1)",0,0,0.0,649
+375535e20cddefd751aea608d4f18ff7bb8e0c50,expected),0,0,0.0,650
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'security_groups': {sg1_id: [,0,0,0.0,651
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv4},",0,0,0.0,652
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv6},",0,0,0.0,653
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_UDP, '23',",0,0,0.0,654
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': dest_port,",0,0,0.0,655
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': ethertype,",0,0,0.0,656
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_port_range_min': const.ICMPV6_TYPE_RA},",0,0,0.0,657
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': fake_gateway,",0,0,0.0,658
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': const.PROTO_NAME_ICMP_V6,",0,0,0.0,659
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 23,",0,0,0.0,660
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': const.IPv6,",0,0,0.0,661
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"fixed_ips=[{'subnet_id': subnet_v6['subnet']['id']}],",0,0,0.0,662
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_mac)),0,0,0.0,663
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"const.IPV6_LLA_PREFIX,",0,0,0.0,664
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"device_owner=const.DEVICE_OWNER_DHCP,",0,0,0.0,665
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ip_address': FAKE_IP['IPv6_DHCP']}],",0,0,0.0,666
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"fixed_ips=[{'subnet_id': subnet_v6['subnet']['id'],",0,0,0.0,667
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'23', fake_prefix,",0,0,0.0,668
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ethertype=const.IPv6),0,0,0.0,669
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 25, 'port_range_min': 24,",0,0,0.0,670
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'22',",0,0,0.0,671
+375535e20cddefd751aea608d4f18ff7bb8e0c50,") as subnet_v6,\",0,0,0.0,672
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"cidr=fake_prefix, ip_version=6",0,0,0.0,673
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.subnet(n, gateway_ip=fake_gateway,",0,0,0.0,674
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc['sg_member_ips'][sg2_id]['IPv4']),0,0,0.0,675
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(expected['sg_member_ips'][sg2_id]['IPv4'],",0,0,0.0,676
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc['security_groups']),0,0,0.0,677
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(expected['security_groups'],",0,0,0.0,678
+375535e20cddefd751aea608d4f18ff7bb8e0c50,},0,0,0.0,679
+375535e20cddefd751aea608d4f18ff7bb8e0c50,}},0,0,0.0,680
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'IPv6': set(),",0,0,0.0,681
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'IPv4': set([u'10.0.0.3']),",0,0,0.0,682
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'sg_member_ips': {sg2_id: {,0,0,0.0,683
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"]},",0,0,0.0,684
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(port_rpc['security_group_rules'],",0,0,0.0,685
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': fake_prefix},",0,0,0.0,686
+375535e20cddefd751aea608d4f18ff7bb8e0c50,def test_security_group_info_for_devices_only_ipv6_rule(self):,1,0,0.0,687
+375535e20cddefd751aea608d4f18ff7bb8e0c50,class SecurityGroupServerRpcCallbackMixin(object):,1,0,0.0,688
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"- security_group_rules,",0,0,0.0,689
+375535e20cddefd751aea608d4f18ff7bb8e0c50,- security_group_source_groups,0,0,0.0,690
+375535e20cddefd751aea608d4f18ff7bb8e0c50,- fixed_ips,0,0,0.0,691
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""",0,0,0.0,692
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"raise NotImplementedError(_(""%s must implement get_port_from_device."")",0,0,0.0,693
+375535e20cddefd751aea608d4f18ff7bb8e0c50,% self.__class__.__name__),0,0,0.0,694
+375535e20cddefd751aea608d4f18ff7bb8e0c50,implementations.,1,0,0.0,695
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': 23,",0,0,0.0,696
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""",1,0,0.0,697
+375535e20cddefd751aea608d4f18ff7bb8e0c50,continue,1,0,0.0,698
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"return self._security_group_rules_for_ports(context, ports)",1,0,0.0,699
+375535e20cddefd751aea608d4f18ff7bb8e0c50,from neutron.db import allowedaddresspairs_db as addr_pair,0,0,0.0,700
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"models_v2.IPAllocation.ip_address,",0,0,0.0,701
+375535e20cddefd751aea608d4f18ff7bb8e0c50,addr_pair.AllowedAddressPair.ip_address),0,0,0.0,702
+375535e20cddefd751aea608d4f18ff7bb8e0c50,- security_groups,0,0,0.0,703
+375535e20cddefd751aea608d4f18ff7bb8e0c50,- device,0,0,0.0,704
+375535e20cddefd751aea608d4f18ff7bb8e0c50,":return: port dict returned by DB plugin get_port(). In addition,",0,0,0.0,705
+375535e20cddefd751aea608d4f18ff7bb8e0c50,Bridge agent.,0,0,0.0,706
+375535e20cddefd751aea608d4f18ff7bb8e0c50,Subclass must provide this method.,0,0,0.0,707
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""""""Get port dict from device name on an agent.",0,0,0.0,708
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"def get_port_from_device(self, device):",0,0,0.0,709
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""snat_ip=%s(snat_ip)s)""),",1,0,0.0,710
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"LOG.debug(_(""MidoClient.delete_dhcp called: bridge=%s(bridge), ""),",1,0,0.0,711
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""bridge_id=%s(bridge_id), ip=%(ip)s, mac=%(mac)s""),",1,0,0.0,712
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"LOG.debug(_(""MidoClient.create_dhcp_hosts called: bridge=%s(bridge), """,1,0,0.0,713
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"LOG.debug(_(""MidoClient.create_dhcp called: bridge=%s(bridge)s, """,1,0,0.0,714
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""snat_ip=%(snat_ip)s)""),",0,0,0.0,715
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"LOG.debug(_(""MidoClient.delete_dhcp called: bridge=%(bridge)s, ""),",0,0,0.0,716
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"""bridge_id=%(bridge_id)s, ip=%(ip)s, mac=%(mac)s""),",0,0,0.0,717
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"LOG.debug(_(""MidoClient.create_dhcp_hosts called: bridge=%(bridge)s, """,0,0,0.0,718
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"LOG.debug(_(""MidoClient.create_dhcp called: bridge=%(bridge)s, """,0,0,0.0,719
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"addr_pair.AllowedAddressPair,",0,0,0.0,720
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg_binding_port == addr_pair.AllowedAddressPair.port_id),0,0,0.0,721
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].add(ip_address),0,0,0.0,722
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule2['security_group_rule']]},0,0,0.0,723
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 23, 'security_group_id': sg1_id,",0,0,0.0,724
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': 22},",0,0,0.0,725
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg1_id,",0,0,0.0,726
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 22,",0,0,0.0,727
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': const.IPv4,",0,0,0.0,728
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': const.PROTO_NAME_TCP,",0,0,0.0,729
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'ingress',",0,0,0.0,730
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv6,",0,0,0.0,731
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg1_id},",0,0,0.0,732
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ctx, devices=devices)",0,0,0.0,733
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_groups=[sg1_id]),0,0,0.0,734
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.fmt, n['network']['id'],",0,0,0.0,735
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(res.status_int, webob.exc.HTTPCreated.code)",0,0,0.0,736
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.deserialize(self.fmt, res)",0,0,0.0,737
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_rules': [rule1['security_group_rule'],",0,0,0.0,738
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].add(allowed_addr_ip),0,0,0.0,739
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'23', fake_prefix)",0,0,0.0,740
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_TCP, '23',",0,0,0.0,741
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'22'),0,0,0.0,742
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_TCP, '22',",0,0,0.0,743
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg1_id,",0,0,0.0,744
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self.security_group() as sg1:,0,0,0.0,745
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.subnet(n),\",0,0,0.0,746
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with self.network() as n,\",0,0,0.0,747
+375535e20cddefd751aea608d4f18ff7bb8e0c50,address_pair['ip_address']),1,0,0.0,748
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].append(,1,0,0.0,749
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ips_by_group[security_group_id].append(ip_address),1,0,0.0,750
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ip_port == models_v2.Port.id),1,0,0.0,751
+375535e20cddefd751aea608d4f18ff7bb8e0c50,models_v2.IPAllocation.ip_address),1,0,0.0,752
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"models_v2.Port,",1,0,0.0,753
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': dest_port,",0,0,0.0,754
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': dhcp_lla_ip,",0,0,0.0,755
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_port_range_max': source_port,",0,0,0.0,756
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', port_id2)",1,0,0.0,757
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_groups=[sg2_id]),1,0,0.0,758
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv4,",1,0,0.0,759
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg2_id},",1,0,0.0,760
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': u'ingress',",1,0,0.0,761
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': u'10.0.0.3/32',",1,0,0.0,762
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 25, 'port_range_min': 24,",1,0,0.0,763
+375535e20cddefd751aea608d4f18ff7bb8e0c50,def test_security_group_info_for_devices_ipv4_source_group(self):,1,0,0.0,764
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'source_port_range_min': source_port},0,0,0.0,765
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(webob.exc.HTTPCreated.code, res.status_int)",1,0,0.0,766
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'security_groups': {sg1_id: [,1,0,0.0,767
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv4},",1,0,0.0,768
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv6},",1,0,0.0,769
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"]},",1,0,0.0,770
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'sg_member_ips': {sg2_id: {,1,0,0.0,771
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg2_id]),1,0,0.0,772
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_groups=[sg1_id,",1,0,0.0,773
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'security_group_rules': [rule1['security_group_rule']]},1,0,0.0,774
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_TCP, '24',",1,0,0.0,775
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg2):,1,0,0.0,776
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg1,",1,0,0.0,777
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.security_group(),",1,0,0.0,778
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'dest_ip_prefix': fake_prefix},",1,0,0.0,779
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': const.PROTO_NAME_UDP,",1,0,0.0,780
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress',",1,0,0.0,781
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'egress', const.PROTO_NAME_UDP, '23',",1,0,0.0,782
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'egress', const.PROTO_NAME_TCP, '22',",1,0,0.0,783
+375535e20cddefd751aea608d4f18ff7bb8e0c50,sg1):,1,0,0.0,784
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.security_group()) as (subnet_v4,",1,0,0.0,785
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with contextlib.nested(self.subnet(n),",1,0,0.0,786
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"yield self.deserialize(self.fmt, res1)",1,0,0.0,787
+375535e20cddefd751aea608d4f18ff7bb8e0c50,allowed_address_pairs=address_pairs),1,0,0.0,788
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'IPv4': set([u'10.0.0.3']),",1,0,0.0,789
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'IPv6': set(),",1,0,0.0,790
+375535e20cddefd751aea608d4f18ff7bb8e0c50,}},1,0,0.0,791
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"device_owner=const.DEVICE_OWNER_DHCP,",1,0,0.0,792
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'source_port_range_min': source_port},1,0,0.0,793
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_port_range_max': source_port,",1,0,0.0,794
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': dhcp_lla_ip,",1,0,0.0,795
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': dest_port,",1,0,0.0,796
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': dest_port,",1,0,0.0,797
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': ethertype,",1,0,0.0,798
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_port_range_min': const.ICMPV6_TYPE_RA},",1,0,0.0,799
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': fake_gateway,",1,0,0.0,800
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': const.PROTO_NAME_ICMP_V6,",1,0,0.0,801
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 23,",1,0,0.0,802
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': const.IPv6,",1,0,0.0,803
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"fixed_ips=[{'subnet_id': subnet_v6['subnet']['id']}],",1,0,0.0,804
+375535e20cddefd751aea608d4f18ff7bb8e0c50,dhcp_mac)),1,0,0.0,805
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"const.IPV6_LLA_PREFIX,",1,0,0.0,806
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ip_address': FAKE_IP['IPv6_DHCP']}],",1,0,0.0,807
+375535e20cddefd751aea608d4f18ff7bb8e0c50,},1,0,0.0,808
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"fixed_ips=[{'subnet_id': subnet_v6['subnet']['id'],",1,0,0.0,809
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'23', fake_prefix,",1,0,0.0,810
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_UDP, '23',",1,0,0.0,811
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ethertype=const.IPv6),1,0,0.0,812
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'22',",1,0,0.0,813
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.security_group()) as (subnet_v6,",1,0,0.0,814
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ip_version=6),",1,0,0.0,815
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"cidr=fake_prefix,",1,0,0.0,816
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"gateway_ip=fake_gateway,",1,0,0.0,817
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"with contextlib.nested(self.subnet(n,",1,0,0.0,818
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc['sg_member_ips'][sg2_id]['IPv4']),1,0,0.0,819
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(expected['sg_member_ips'][sg2_id]['IPv4'],",1,0,0.0,820
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc['security_groups']),1,0,0.0,821
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(expected['security_groups'],",1,0,0.0,822
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"arg_list=(addr_pair.ADDRESS_PAIRS,),",1,0,0.0,823
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"security_groups=[sg1_id],",1,0,0.0,824
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'ip_address': '11.0.0.1'}],1,0,0.0,825
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.deserialize(self.fmt, req.get_response(self.api))",0,0,0.0,826
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.security_group()) as (subnet_v4, sg1):",1,0,0.0,827
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.subnet(n),",1,0,0.0,828
+375535e20cddefd751aea608d4f18ff7bb8e0c50,with contextlib.nested(,1,0,0.0,829
+375535e20cddefd751aea608d4f18ff7bb8e0c50,with self.network() as n:,1,0,0.0,830
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': '2001:db8::2/128',",0,0,0.0,831
+375535e20cddefd751aea608d4f18ff7bb8e0c50,remote_group_id=sg2['security_group']['id']),0,0,0.0,832
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ethertype=const.IPv6,",0,0,0.0,833
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ip_version=6, ipv6_ra_mode=const.IPV6_SLAAC",0,0,0.0,834
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.subnet(n, gateway_ip=None, cidr=fake_prefix,",0,0,0.0,835
+375535e20cddefd751aea608d4f18ff7bb8e0c50,device_owner=const.DEVICE_OWNER_DVR_INTERFACE),0,0,0.0,836
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Create DVR router interface port,0,0,0.0,837
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', interface_port_id)",0,0,0.0,838
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Create another router interface port,0,0,0.0,839
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', gateway_port_id)",0,0,0.0,840
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Note(xuhanp): remove gateway port's fixed_ips or gateway port,0,0,0.0,841
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_TCP, '22',",1,0,0.0,842
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': gateway_lla_ip,",0,0,0.0,843
+375535e20cddefd751aea608d4f18ff7bb8e0c50,gateway_mac)),0,0,0.0,844
+375535e20cddefd751aea608d4f18ff7bb8e0c50,device_owner='network:router_interface'),0,0,0.0,845
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ip_address': fake_gateway}],",0,0,0.0,846
+375535e20cddefd751aea608d4f18ff7bb8e0c50,# Create gateway port,0,0,0.0,847
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ipv6_ra_mode=const.IPV6_SLAAC,0,0,0.0,848
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"cidr=fake_prefix, ip_version=6,",0,0,0.0,849
+375535e20cddefd751aea608d4f18ff7bb8e0c50,ports_rpc['sg_member_ips'][sg1_id]['IPv6']),0,0,0.0,850
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(expected['sg_member_ips'][sg1_id]['IPv6'],",0,0,0.0,851
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'sg_member_ips': {sg1_id: {,0,0,0.0,852
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 22, 'port_range_min': 22,",0,0,0.0,853
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._make_security_group_rule(self.fmt, rules)",0,0,0.0,854
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'22', remote_group_id=sg1_id,",0,0,0.0,855
+375535e20cddefd751aea608d4f18ff7bb8e0c50,def test_security_group_info_for_devices_only_ipv6_rule(self):,0,0,0.0,856
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"sg1_id,",1,0,0.0,857
+375535e20cddefd751aea608d4f18ff7bb8e0c50,'22'),1,0,0.0,858
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'mac_address': '00:00:00:00:00:01',",1,0,0.0,859
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': 22},",1,0,0.0,860
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ip_address': '10.0.1.0/24'},",1,0,0.0,861
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(res.status_int, 201)",1,0,0.0,862
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', 'tcp', '23',",1,0,0.0,863
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'22', remote_group_id=sg1_id)",1,0,0.0,864
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', 'tcp', '22',",1,0,0.0,865
+375535e20cddefd751aea608d4f18ff7bb8e0c50,") as (subnet_v4, sg1):",1,0,0.0,866
+375535e20cddefd751aea608d4f18ff7bb8e0c50,self.security_group(),1,0,0.0,867
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self._delete('ports', port_id1)",1,0,0.0,868
+375535e20cddefd751aea608d4f18ff7bb8e0c50,expected),1,0,0.0,869
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(port_rpc['security_group_rules'],",1,0,0.0,870
+375535e20cddefd751aea608d4f18ff7bb8e0c50,],1,0,0.0,871
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'source_ip_prefix': fake_prefix},",1,0,0.0,872
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_min': 23,",1,0,0.0,873
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 23, 'security_group_id': sg1_id,",1,0,0.0,874
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg1_id,",1,0,0.0,875
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ingress', const.PROTO_NAME_TCP, '23',",1,0,0.0,876
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'port_range_max': 22,",1,0,0.0,877
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'ethertype': const.IPv4,",1,0,0.0,878
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'protocol': const.PROTO_NAME_TCP,",1,0,0.0,879
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'ingress',",1,0,0.0,880
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"{'direction': 'egress', 'ethertype': const.IPv6,",1,0,0.0,881
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_id': sg1_id},",1,0,0.0,882
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"ctx, devices=devices)",1,0,0.0,883
+375535e20cddefd751aea608d4f18ff7bb8e0c50,security_groups=[sg1_id]),1,0,0.0,884
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.fmt, n['network']['id'],",1,0,0.0,885
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.assertEqual(res.status_int, webob.exc.HTTPCreated.code)",1,0,0.0,886
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"self.deserialize(self.fmt, res)",1,0,0.0,887
+375535e20cddefd751aea608d4f18ff7bb8e0c50,rule2['security_group_rule']]},1,0,0.0,888
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'security_group_rules': [rule1['security_group_rule'],",1,0,0.0,889
+375535e20cddefd751aea608d4f18ff7bb8e0c50,"'23', fake_prefix)",1,0,0.0,890
+375535e20cddefd751aea608d4f18ff7bb8e0c50,with self.network():,1,0,0.0,891

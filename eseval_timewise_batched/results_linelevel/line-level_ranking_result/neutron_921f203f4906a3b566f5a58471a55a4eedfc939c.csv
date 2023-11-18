@@ -1,0 +1,77 @@
+commit_id,line,line_level_label,count,line_score,row
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""no IP address, so it can be deleted""),",1,5,1.0,1
+921f203f4906a3b566f5a58471a55a4eedfc939c,# Raise port in use only if the port has IP addresses,0,4,0.8,2
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""no IP address, so it can be deleted"",",0,4,0.8,3
+921f203f4906a3b566f5a58471a55a4eedfc939c,# Raise port in use only if the port has IP addresses,1,4,0.8,4
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""no IP address, so it can be deleted"",",1,4,0.8,5
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""no IP address, so it can be deleted"",",0,4,0.8,6
+921f203f4906a3b566f5a58471a55a4eedfc939c,# Otherwise it's a stale port that can be removed,1,3,0.6000000000000001,7
+921f203f4906a3b566f5a58471a55a4eedfc939c,# Otherwise it's a stale port that can be removed,0,3,0.6000000000000001,8
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.info(_(""Skipping port %s as no IP is configure on it""),",1,3,0.6000000000000001,9
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.info(_LI(""Skipping port %s as no IP is configure on """,0,3,0.6000000000000001,10
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.debug(""Port %(port_id)s has owner %(port_owner)s, but """,0,2,0.4,11
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.debug(""Port %(port_id)s has owner %(port_owner)s, but """,1,2,0.4,12
+921f203f4906a3b566f5a58471a55a4eedfc939c,reason = _('has device owner %s') % port['device_owner'],1,2,0.4,13
+921f203f4906a3b566f5a58471a55a4eedfc939c,reason = _('has device owner %s') % port['device_owner'],0,2,0.4,14
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.debug(""Floating IP %(f_id)s corresponding to port """,0,2,0.4,15
+921f203f4906a3b566f5a58471a55a4eedfc939c,# to remain after the router is deleted if they encounter an,0,2,0.4,16
+921f203f4906a3b566f5a58471a55a4eedfc939c,# router still exists. It's possible for HA router interfaces,0,2,0.4,17
+921f203f4906a3b566f5a58471a55a4eedfc939c,reason = _('has device owner %s') % port['device_owner'],0,2,0.4,18
+921f203f4906a3b566f5a58471a55a4eedfc939c,"{'port_id': port_db['id'],",1,2,0.4,19
+921f203f4906a3b566f5a58471a55a4eedfc939c,reason = _('has device owner %s') % port_db['device_owner'],1,2,0.4,20
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.info(_(""Ignoring multiple IPs on router port %s""),",1,2,0.4,21
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.debug(_(""Port %(port_id)s has owner %(port_owner)s, but """,1,2,0.4,22
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.info(_LI(""Ignoring multiple IPs on router port %s""),",0,2,0.4,23
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.debug(""Port %(port_id)s has owner %(port_owner)s, but """,0,2,0.4,24
+921f203f4906a3b566f5a58471a55a4eedfc939c,# Elevated context in case router is owned by another tenant,0,1,0.2,25
+921f203f4906a3b566f5a58471a55a4eedfc939c,"{'port_id': port['id'],",1,1,0.2,26
+921f203f4906a3b566f5a58471a55a4eedfc939c,if fixed_ips:,1,1,0.2,27
+921f203f4906a3b566f5a58471a55a4eedfc939c,"LOG.debug(""Router %(router_id)s corresponding to port """,0,1,0.2,28
+921f203f4906a3b566f5a58471a55a4eedfc939c,if not fixed_ips:,0,1,0.2,29
+921f203f4906a3b566f5a58471a55a4eedfc939c,"{'port_id': port['id'],",0,1,0.2,30
+921f203f4906a3b566f5a58471a55a4eedfc939c,"{'port_id': port['id'],",0,1,0.2,31
+921f203f4906a3b566f5a58471a55a4eedfc939c,"port = self._core_plugin.get_port(context, port_id)",0,1,0.2,32
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""%(port_id)s  no longer exists, allowing deletion."",",0,0,0.0,33
+921f203f4906a3b566f5a58471a55a4eedfc939c,fixed_ips = port['fixed_ips'],0,0,0.0,34
+921f203f4906a3b566f5a58471a55a4eedfc939c,'port_owner': port['device_owner']}),0,0,0.0,35
+921f203f4906a3b566f5a58471a55a4eedfc939c,# NOTE(kevinbenton): we also check to make sure that the,0,0,0.0,36
+921f203f4906a3b566f5a58471a55a4eedfc939c,# error during deletion.,0,0,0.0,37
+921f203f4906a3b566f5a58471a55a4eedfc939c,if port['device_owner'] == DEVICE_OWNER_FLOATINGIP:,0,0,0.0,38
+921f203f4906a3b566f5a58471a55a4eedfc939c,"if not self._floating_ip_exists(context, port['device_id']):",0,0,0.0,39
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""%(port_id)s no longer exists, allowing deletion."",",0,0,0.0,40
+921f203f4906a3b566f5a58471a55a4eedfc939c,"{'f_id': port['device_id'], 'port_id': port['id']})",0,0,0.0,41
+921f203f4906a3b566f5a58471a55a4eedfc939c,"elif not self._router_exists(context, port['device_id']):",0,0,0.0,42
+921f203f4906a3b566f5a58471a55a4eedfc939c,"{'router_id': port['device_id'],",0,0,0.0,43
+921f203f4906a3b566f5a58471a55a4eedfc939c,if port['device_owner'] not in self.router_device_owners:,0,0,0.0,44
+921f203f4906a3b566f5a58471a55a4eedfc939c,'port_id': port['id']}),0,0,0.0,45
+921f203f4906a3b566f5a58471a55a4eedfc939c,"raise n_exc.ServicePortInUse(port_id=port['id'],",0,0,0.0,46
+921f203f4906a3b566f5a58471a55a4eedfc939c,reason=reason),0,0,0.0,47
+921f203f4906a3b566f5a58471a55a4eedfc939c,if port['device_owner'] in self.router_device_owners:,1,0,0.0,48
+921f203f4906a3b566f5a58471a55a4eedfc939c,fixed_ips = port['fixed_ips'],1,0,0.0,49
+921f203f4906a3b566f5a58471a55a4eedfc939c,"raise n_exc.ServicePortInUse(port_id=port['id'],",1,0,0.0,50
+921f203f4906a3b566f5a58471a55a4eedfc939c,reason=reason),1,0,0.0,51
+921f203f4906a3b566f5a58471a55a4eedfc939c,else:,1,0,0.0,52
+921f203f4906a3b566f5a58471a55a4eedfc939c,return,0,0,0.0,53
+921f203f4906a3b566f5a58471a55a4eedfc939c,'port_owner': port['device_owner']}),0,0,0.0,54
+921f203f4906a3b566f5a58471a55a4eedfc939c,except l3.FloatingIPNotFound:,0,0,0.0,55
+921f203f4906a3b566f5a58471a55a4eedfc939c,"self.get_floatingip(context, floating_ip_id)",0,0,0.0,56
+921f203f4906a3b566f5a58471a55a4eedfc939c,from neutron.openstack.common.gettextutils import _LI,0,0,0.0,57
+921f203f4906a3b566f5a58471a55a4eedfc939c,"""it""),",0,0,0.0,58
+921f203f4906a3b566f5a58471a55a4eedfc939c,"internal_port = self._core_plugin.get_port(context, fip['port_id'])",0,0,0.0,59
+921f203f4906a3b566f5a58471a55a4eedfc939c,if port['device_owner'] in self.router_device_owners:,0,0,0.0,60
+921f203f4906a3b566f5a58471a55a4eedfc939c,fixed_ips = port['fixed_ips'],0,0,0.0,61
+921f203f4906a3b566f5a58471a55a4eedfc939c,"raise n_exc.ServicePortInUse(port_id=port['id'],",0,0,0.0,62
+921f203f4906a3b566f5a58471a55a4eedfc939c,"internal_port = self._core_plugin._get_port(context, fip['port_id'])",1,0,0.0,63
+921f203f4906a3b566f5a58471a55a4eedfc939c,"port_db = self._core_plugin._get_port(context, port_id)",1,0,0.0,64
+921f203f4906a3b566f5a58471a55a4eedfc939c,if port_db['device_owner'] in self.router_device_owners:,1,0,0.0,65
+921f203f4906a3b566f5a58471a55a4eedfc939c,fixed_ips = port_db['fixed_ips'],1,0,0.0,66
+921f203f4906a3b566f5a58471a55a4eedfc939c,"raise n_exc.ServicePortInUse(port_id=port_db['id'],",1,0,0.0,67
+921f203f4906a3b566f5a58471a55a4eedfc939c,'port_owner': port_db['device_owner']}),1,0,0.0,68
+921f203f4906a3b566f5a58471a55a4eedfc939c,"def _router_exists(self, context, router_id):",0,0,0.0,69
+921f203f4906a3b566f5a58471a55a4eedfc939c,try:,0,0,0.0,70
+921f203f4906a3b566f5a58471a55a4eedfc939c,"self.get_router(context.elevated(), router_id)",0,0,0.0,71
+921f203f4906a3b566f5a58471a55a4eedfc939c,return True,0,0,0.0,72
+921f203f4906a3b566f5a58471a55a4eedfc939c,except l3.RouterNotFound:,0,0,0.0,73
+921f203f4906a3b566f5a58471a55a4eedfc939c,return False,0,0,0.0,74
+921f203f4906a3b566f5a58471a55a4eedfc939c,"def _floating_ip_exists(self, context, floating_ip_id):",0,0,0.0,75
+921f203f4906a3b566f5a58471a55a4eedfc939c,'port_owner': port['device_owner']}),1,0,0.0,76

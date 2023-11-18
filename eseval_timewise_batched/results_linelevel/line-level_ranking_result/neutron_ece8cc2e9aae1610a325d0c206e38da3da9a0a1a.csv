@@ -1,0 +1,83 @@
+commit_id,line,line_level_label,count,line_score,row
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,from neutron.db import common_db_mixin,1,3,1.0,1
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,from neutron.ipam import utils as ipam_utils,1,2,0.6666666666666666,2
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"# Call auxiliary extend functions, if any",1,1,0.3333333333333333,3
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,for subnet in network['subnets']]},1,1,0.3333333333333333,4
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,port_data = port,1,1,0.3333333333333333,5
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,port_data = port,0,1,0.3333333333333333,6
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"for ip in port[""fixed_ips""]],",1,1,0.3333333333333333,7
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"ip[""ip_address""])} for ip in port[""fixed_ips""]]",0,1,0.3333333333333333,8
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,class DbBasePluginCommon(common_db_mixin.CommonDbMixin):,1,1,0.3333333333333333,9
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,class DbBasePluginCommon(object):,0,1,0.3333333333333333,10
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,# See bug 1556178 for details.,1,1,0.3333333333333333,11
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,# added to the session that will interfere with retry operations.,1,1,0.3333333333333333,12
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,# fixed_ips relationship is referenced a new persistent object will be,1,1,0.3333333333333333,13
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,# object isn't immediately garbage collected. Otherwise when the,1,1,0.3333333333333333,14
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,# NOTE(kevinbenton): We add this to the session info so the sqlalchemy,1,1,0.3333333333333333,15
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"return self._fields(res, fields)",1,1,0.3333333333333333,16
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"for subnet in network['subnets']],",0,1,0.3333333333333333,17
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,res['shared'] = shared,1,1,0.3333333333333333,18
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,return dns_qry.filter_by(subnet_id=subnet_id).order_by(,0,1,0.3333333333333333,19
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,import netaddr,1,1,0.3333333333333333,20
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,shared = True,1,1,0.3333333333333333,21
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,ip = netaddr.IPAddress(gateway),1,1,0.3333333333333333,22
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"return ipam_utils.check_subnet_ip(cidr, gateway)",1,1,0.3333333333333333,23
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,return True,1,1,0.3333333333333333,24
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"""""""Validate that the gateway is on the subnet.""""""",1,1,0.3333333333333333,25
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,return dns_qry.filter_by(subnet_id=subnet_id).all(),1,1,0.3333333333333333,26
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,return False,0,1,0.3333333333333333,27
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"return self._fields(res, fields)",0,1,0.3333333333333333,28
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,shared = False,1,1,0.3333333333333333,29
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,return True,0,1,0.3333333333333333,30
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"# Call auxiliary extend functions, if any",0,1,0.3333333333333333,31
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"if isinstance(subnet, subnet_obj.Subnet):",0,0,0.0,32
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"'ip_address': str(ip[""ip_address""])}",1,0,0.0,33
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"""fixed_ips"": [{'subnet_id': ip[""subnet_id""],",1,0,0.0,34
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,process_extensions=True):,1,0,0.0,35
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"{'subnet_id': ip[""subnet_id""],",0,0,0.0,36
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,'ip_address': str(,0,0,0.0,37
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"res[""fixed_ips""] = [",0,0,0.0,38
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,if with_fixed_ips:,0,0,0.0,39
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,with_fixed_ips=True):,0,0,0.0,40
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,else:,0,0,0.0,41
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"process_extensions=True,",0,0,0.0,42
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,standard_attr_id = subnet.db_obj.standard_attr.id,0,0,0.0,43
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,standard_attr_id = port.standard_attr.id,0,0,0.0,44
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,standard_attr_id = subnet.standard_attr.id,0,0,0.0,45
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"'standard_attr_id': standard_attr_id,",0,0,0.0,46
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"if isinstance(port, port_obj.Port):",0,0,0.0,47
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,port_data = port.db_obj,0,0,0.0,48
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,standard_attr_id = port.db_obj.standard_attr.id,0,0,0.0,49
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"""device_owner"": port[""device_owner""],",0,0,0.0,50
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,},0,0,0.0,51
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,'standard_attr_id': network.standard_attr.id},0,0,0.0,52
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"""device_owner"": port[""device_owner""]}",1,0,0.0,53
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"if isinstance(port, port_obj.Port):",1,0,0.0,54
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"'ip_address': str(ip[""ip_address""])}",0,0,0.0,55
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"'ip_address': ip[""ip_address""]}",1,0,0.0,56
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"res['shared'] = self._make_network_dict(subnet.networks,",1,0,0.0,57
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"context.session.info.setdefault('allocated_ips', []).append(allocated)",1,0,0.0,58
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,context=context)['shared'],1,0,0.0,59
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,@classmethod,1,0,0.0,60
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"def _check_gateway_in_subnet(cls, cidr, gateway):",1,0,0.0,61
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,if ip.version == 4 or (ip.version == 6 and not ip.is_link_local()):,1,0,0.0,62
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,models_v2.DNSNameServer.order).all(),0,0,0.0,63
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"res['shared'] = self._is_network_shared(context, subnet.networks)",0,0,0.0,64
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"res['shared'] = self._is_network_shared(context, network)",0,0,0.0,65
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,if process_extensions:,0,0,0.0,66
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,self._apply_dict_extend_functions(,0,0,0.0,67
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"attributes.NETWORKS, res, network)",0,0,0.0,68
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"def _is_network_shared(self, context, network):",0,0,0.0,69
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,break,1,0,0.0,70
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,context.session.add(allocated),1,0,0.0,71
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,if process_extensions:,1,0,0.0,72
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,self._apply_dict_extend_functions(,1,0,0.0,73
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"attributes.NETWORKS, res, network)",1,0,0.0,74
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"'prefixes': [prefix.cidr for prefix in subnetpool['prefixes']],",0,0,0.0,75
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,'prefixes': [str(prefix),1,0,0.0,76
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"for prefix in subnetpool['prefixes']],",1,0,0.0,77
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,port_db = context.session.query(models_v2.Port).get(port_id),0,0,0.0,78
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,port_db.fixed_ips.append(allocated),0,0,0.0,79
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,"port_db.fixed_ips.sort(key=lambda fip: (fip['ip_address'],",0,0,0.0,80
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,fip['subnet_id'])),0,0,0.0,81
+ece8cc2e9aae1610a325d0c206e38da3da9a0a1a,port_data = port.db_obj,1,0,0.0,82

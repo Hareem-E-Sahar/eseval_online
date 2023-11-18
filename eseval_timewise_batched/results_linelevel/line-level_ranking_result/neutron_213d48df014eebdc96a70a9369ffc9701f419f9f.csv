@@ -1,0 +1,146 @@
+commit_id,line,line_level_label,count,line_score,row
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""vif_port was not found. It seems that port is already """,0,6,1.0,1
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""vif_port was not found. It seems that port is already """,1,6,1.0,2
+213d48df014eebdc96a70a9369ffc9701f419f9f,"LOG.debug(""update_dscp_marking was received for port %s but """,0,5,0.8333333333333333,3
+213d48df014eebdc96a70a9369ffc9701f419f9f,"LOG.debug(""delete_dscp_marking was received for port %s but """,0,5,0.8333333333333333,4
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""for port %s but vif_port was not found. """,0,5,0.8333333333333333,5
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""for port %s but port was not found. """,0,5,0.8333333333333333,6
+213d48df014eebdc96a70a9369ffc9701f419f9f,"LOG.debug(""delete_bandwidth_limit was received for port %s but """,1,5,0.8333333333333333,7
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""for port %s but vif_port was not found. """,1,5,0.8333333333333333,8
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""It seems that port is already deleted"", port_id)",1,3,0.5,9
+213d48df014eebdc96a70a9369ffc9701f419f9f,"LOG.debug(""delete_bandwidth_limit was received """,0,3,0.5,10
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""It seems that port is already deleted"", port_id)",0,3,0.5,11
+213d48df014eebdc96a70a9369ffc9701f419f9f,"LOG.debug(""delete_bandwidth_limit_ingress was received """,0,3,0.5,12
+213d48df014eebdc96a70a9369ffc9701f419f9f,if not vif_port:,0,2,0.3333333333333333,13
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_id = port.get('port_id'),1,2,0.3333333333333333,14
+213d48df014eebdc96a70a9369ffc9701f419f9f,if not vif_port:,1,2,0.3333333333333333,15
+213d48df014eebdc96a70a9369ffc9701f419f9f,vif_port = port.get('vif_port'),0,2,0.3333333333333333,16
+213d48df014eebdc96a70a9369ffc9701f419f9f,"port = self.ports[port_id].pop((qos_consts.RULE_TYPE_BANDWIDTH_LIMIT,",0,2,0.3333333333333333,17
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_id = port.get('port_id'),0,2,0.3333333333333333,18
+213d48df014eebdc96a70a9369ffc9701f419f9f,rule.direction)] = port,0,2,0.3333333333333333,19
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_id = port.get('port_id'),0,2,0.3333333333333333,20
+213d48df014eebdc96a70a9369ffc9701f419f9f,vif_port = port.get('vif_port'),1,2,0.3333333333333333,21
+213d48df014eebdc96a70a9369ffc9701f419f9f,vif_port = port.get('vif_port'),0,2,0.3333333333333333,22
+213d48df014eebdc96a70a9369ffc9701f419f9f,"port_id = port.get('port_id', None)",1,2,0.3333333333333333,23
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""no port information was stored to be deleted"",",0,2,0.3333333333333333,24
+213d48df014eebdc96a70a9369ffc9701f419f9f,if not vif_port:,0,2,0.3333333333333333,25
+213d48df014eebdc96a70a9369ffc9701f419f9f,vif_port = port.get('vif_port'),0,2,0.3333333333333333,26
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.ports[port['port_id']][qos_consts.RULE_TYPE_DSCP_MARKING] = port,0,2,0.3333333333333333,27
+213d48df014eebdc96a70a9369ffc9701f419f9f,port = self.br_int.get_port_ofport(port_name),1,2,0.3333333333333333,28
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_id = port.get('port_id'),0,2,0.3333333333333333,29
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.br_int.get_ingress_bw_limit_for_port = mock.Mock(,0,1,0.16666666666666666,30
+213d48df014eebdc96a70a9369ffc9701f419f9f,def _assert_rules_create_updated(self):,0,1,0.16666666666666666,31
+213d48df014eebdc96a70a9369ffc9701f419f9f,def test_delete_rules_no_policy(self):,0,1,0.16666666666666666,32
+213d48df014eebdc96a70a9369ffc9701f419f9f,"def _test_delete_rules(self, policy):",0,1,0.16666666666666666,33
+213d48df014eebdc96a70a9369ffc9701f419f9f,"def _create_bw_limit_rule_obj(self, direction):",0,1,0.16666666666666666,34
+213d48df014eebdc96a70a9369ffc9701f419f9f,def test_create_new_rules(self):,0,1,0.16666666666666666,35
+213d48df014eebdc96a70a9369ffc9701f419f9f,rule_obj.direction = direction,0,1,0.16666666666666666,36
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete = self.qos_driver.br_int.delete_egress_bw_limit_for_port,1,1,0.16666666666666666,37
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.rules = [,0,1,0.16666666666666666,38
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.update_ingress = (,0,1,0.16666666666666666,39
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.get = self.qos_driver.br_int.get_egress_bw_limit_for_port,1,1,0.16666666666666666,40
+213d48df014eebdc96a70a9369ffc9701f419f9f,def test_create_new_rule(self):,1,1,0.16666666666666666,41
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.create = self.qos_driver.br_int.create_egress_bw_limit_for_port,1,1,0.16666666666666666,42
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.rules = [self._create_bw_limit_rule_obj(),",1,1,0.16666666666666666,43
+213d48df014eebdc96a70a9369ffc9701f419f9f,def _create_bw_limit_rule_obj(self):,1,1,0.16666666666666666,44
+213d48df014eebdc96a70a9369ffc9701f419f9f,# Assert create is the last call,1,1,0.16666666666666666,45
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.qos_driver.delete(self.port, self.qos_policy)",1,1,0.16666666666666666,46
+213d48df014eebdc96a70a9369ffc9701f419f9f,def _assert_bw_rule_create_updated(self):,1,1,0.16666666666666666,47
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""It seems that bandwidth_limit is already deleted"",",0,1,0.16666666666666666,48
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_id),0,1,0.16666666666666666,49
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""deleted"", port_id)",1,1,0.16666666666666666,50
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete_ingress = (,0,1,0.16666666666666666,51
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.create_egress = (,0,1,0.16666666666666666,52
+213d48df014eebdc96a70a9369ffc9701f419f9f,if not port:,0,1,0.16666666666666666,53
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete_egress = (,0,1,0.16666666666666666,54
+213d48df014eebdc96a70a9369ffc9701f419f9f,"def _update_egress_bandwidth_limit(self, vif_port, rule):",0,1,0.16666666666666666,55
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.get_ingress = self.qos_driver.br_int.get_ingress_bw_limit_for_port,0,1,0.16666666666666666,56
+213d48df014eebdc96a70a9369ffc9701f419f9f,import collections,0,1,0.16666666666666666,57
+213d48df014eebdc96a70a9369ffc9701f419f9f,from neutron.services.qos import qos_consts,0,1,0.16666666666666666,58
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.ports = collections.defaultdict(dict),0,1,0.16666666666666666,59
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_name = vif_port.port_name,0,1,0.16666666666666666,60
+213d48df014eebdc96a70a9369ffc9701f419f9f,dscp_port = self.ports[port['port_id']].pop(qos_consts.,0,1,0.16666666666666666,61
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_num = dscp_port['vif_port'].ofport,0,1,0.16666666666666666,62
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_name = port['vif_port'].port_name,1,1,0.16666666666666666,63
+213d48df014eebdc96a70a9369ffc9701f419f9f,from neutron.common import constants,0,1,0.16666666666666666,64
+213d48df014eebdc96a70a9369ffc9701f419f9f,"def delete_bandwidth_limit_ingress(self, port):",0,1,0.16666666666666666,65
+213d48df014eebdc96a70a9369ffc9701f419f9f,"""deleted"", port_id)",0,1,0.16666666666666666,66
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_kbps = rule.max_kbps,0,1,0.16666666666666666,67
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_kbps = rule.max_kbps,1,1,0.16666666666666666,68
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.get_egress = self.qos_driver.br_int.get_egress_bw_limit_for_port,0,1,0.16666666666666666,69
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_burst_kbps = int(self._get_egress_burst_value(rule)),0,1,0.16666666666666666,70
+213d48df014eebdc96a70a9369ffc9701f419f9f,from neutron.common import constants,0,1,0.16666666666666666,71
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_burst_kbps = int(self._get_egress_burst_value(rule)),1,1,0.16666666666666666,72
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_burst_kbps = rule.max_burst_kbps or 0,0,1,0.16666666666666666,73
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_kbps = rule.max_kbps or 0,0,1,0.16666666666666666,74
+213d48df014eebdc96a70a9369ffc9701f419f9f,port_name = vif_port.port_name,0,1,0.16666666666666666,75
+213d48df014eebdc96a70a9369ffc9701f419f9f,"def _update_ingress_bandwidth_limit(self, vif_port, rule):",0,1,0.16666666666666666,76
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete_egress.assert_called_once_with(self.port_name),0,0,0.0,77
+213d48df014eebdc96a70a9369ffc9701f419f9f,self._assert_rules_create_updated(),0,0,0.0,78
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.delete(self.port),0,0,0.0,79
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.rules[1].max_burst_kbps)),0,0,0.0,80
+213d48df014eebdc96a70a9369ffc9701f419f9f,"return_value=(self.rules[1].max_kbps,",0,0,0.0,81
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.update_ingress.assert_not_called(),0,0,0.0,82
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.create_egress.assert_not_called(),0,0,0.0,83
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.create_egress.assert_called_once_with(,0,0,0.0,84
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.rules[1].max_burst_kbps),0,0,0.0,85
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.port_name, self.rules[1].max_kbps,",0,0,0.0,86
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.update_ingress.assert_called_once_with(,0,0,0.0,87
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.assertEqual(0, self.delete_ingress.call_count)",0,0,0.0,88
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.assertEqual(0, self.delete_egress.call_count)",0,0,0.0,89
+213d48df014eebdc96a70a9369ffc9701f419f9f,"return_value=(None, None))",0,0,0.0,90
+213d48df014eebdc96a70a9369ffc9701f419f9f,self._test_delete_rules(self.qos_policy),0,0,0.0,91
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete_ingress.assert_called_once_with(self.port_name),0,0,0.0,92
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.create.assert_not_called(),1,0,0.0,93
+213d48df014eebdc96a70a9369ffc9701f419f9f,self._test_delete_rules(None),0,0,0.0,94
+213d48df014eebdc96a70a9369ffc9701f419f9f,self._assert_bw_rule_create_updated(),1,0,0.0,95
+213d48df014eebdc96a70a9369ffc9701f419f9f,None),0,0,0.0,96
+213d48df014eebdc96a70a9369ffc9701f419f9f,"constants.EGRESS_DIRECTION),",0,0,0.0,97
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.ports[port['port_id']][(qos_consts.RULE_TYPE_BANDWIDTH_LIMIT,",0,0,0.0,98
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete.assert_not_called(),1,0,0.0,99
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete.assert_called_once_with(self.port_name),1,0,0.0,100
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self._create_bw_limit_rule_obj(constants.INGRESS_DIRECTION),",0,0,0.0,101
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.create.assert_called_once_with(,1,0,0.0,102
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete_egress.assert_not_called(),0,0,0.0,103
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.assertEqual(0, self.delete.call_count)",1,0,0.0,104
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.br_int.method_calls[0][0]),1,0,0.0,105
+213d48df014eebdc96a70a9369ffc9701f419f9f,"'create_egress_bw_limit_for_port',",1,0,0.0,106
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.assertEqual(,1,0,0.0,107
+213d48df014eebdc96a70a9369ffc9701f419f9f,self._create_dscp_marking_rule_obj()],1,0,0.0,108
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.delete_ingress.assert_not_called(),0,0,0.0,109
+213d48df014eebdc96a70a9369ffc9701f419f9f,self._create_dscp_marking_rule_obj()],0,0,0.0,110
+213d48df014eebdc96a70a9369ffc9701f419f9f,# NOTE(slaweq): According to ovs docs:,1,0,0.0,111
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self._create_bw_limit_rule_obj(constants.EGRESS_DIRECTION),",0,0,0.0,112
+213d48df014eebdc96a70a9369ffc9701f419f9f,if rule.direction == constants.INGRESS_DIRECTION:,0,0,0.0,113
+213d48df014eebdc96a70a9369ffc9701f419f9f,# NOTE(slaweq): According to ovs docs:,0,0,0.0,114
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.br_int.delete_ingress_bw_limit_for_port(vif_port.port_name),0,0,0.0,115
+213d48df014eebdc96a70a9369ffc9701f419f9f,return,0,0,0.0,116
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self._update_egress_bandwidth_limit(vif_port, rule)",0,0,0.0,117
+213d48df014eebdc96a70a9369ffc9701f419f9f,else:,0,0,0.0,118
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self._update_ingress_bandwidth_limit(vif_port, rule)",0,0,0.0,119
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.br_int.delete_flows(in_port=port, table=0, reg2=0)",1,0,0.0,120
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.br_int.update_ingress_bw_limit_for_port),0,0,0.0,121
+213d48df014eebdc96a70a9369ffc9701f419f9f,port['port_id']),0,0,0.0,122
+213d48df014eebdc96a70a9369ffc9701f419f9f,else:,0,0,0.0,123
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.br_int.delete_flows(in_port=port_num, table=0, reg2=0)",0,0,0.0,124
+213d48df014eebdc96a70a9369ffc9701f419f9f,if dscp_port:,0,0,0.0,125
+213d48df014eebdc96a70a9369ffc9701f419f9f,"RULE_TYPE_DSCP_MARKING, 0)",0,0,0.0,126
+213d48df014eebdc96a70a9369ffc9701f419f9f,return,0,0,0.0,127
+213d48df014eebdc96a70a9369ffc9701f419f9f,# http://openvswitch.org/support/dist-docs/ovs-vswitchd.conf.db.5.html,0,0,0.0,128
+213d48df014eebdc96a70a9369ffc9701f419f9f,# ovs accepts only integer values of burst:,0,0,0.0,129
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.br_int.create_egress_bw_limit_for_port(vif_port.port_name,",0,0,0.0,130
+213d48df014eebdc96a70a9369ffc9701f419f9f,"max_kbps,",0,0,0.0,131
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_burst_kbps),0,0,0.0,132
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.br_int.update_ingress_bw_limit_for_port(,0,0,0.0,133
+213d48df014eebdc96a70a9369ffc9701f419f9f,"port_name,",0,0,0.0,134
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_burst_kbps,0,0,0.0,135
+213d48df014eebdc96a70a9369ffc9701f419f9f,),0,0,0.0,136
+213d48df014eebdc96a70a9369ffc9701f419f9f,# http://openvswitch.org/support/dist-docs/ovs-vswitchd.conf.db.5.html,1,0,0.0,137
+213d48df014eebdc96a70a9369ffc9701f419f9f,# ovs accepts only integer values of burst:,1,0,0.0,138
+213d48df014eebdc96a70a9369ffc9701f419f9f,"self.br_int.create_egress_bw_limit_for_port(vif_port.port_name,",1,0,0.0,139
+213d48df014eebdc96a70a9369ffc9701f419f9f,"max_kbps,",1,0,0.0,140
+213d48df014eebdc96a70a9369ffc9701f419f9f,max_burst_kbps),1,0,0.0,141
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.br_int.delete_egress_bw_limit_for_port),0,0,0.0,142
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.br_int.delete_ingress_bw_limit_for_port),0,0,0.0,143
+213d48df014eebdc96a70a9369ffc9701f419f9f,self.qos_driver.br_int.create_egress_bw_limit_for_port),0,0,0.0,144
+213d48df014eebdc96a70a9369ffc9701f419f9f,"constants.INGRESS_DIRECTION),",0,0,0.0,145

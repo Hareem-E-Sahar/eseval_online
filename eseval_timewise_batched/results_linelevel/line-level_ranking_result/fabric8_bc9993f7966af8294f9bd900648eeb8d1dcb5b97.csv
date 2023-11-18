@@ -1,0 +1,249 @@
+commit_id,line,line_level_label,count,line_score,row
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,".description(""Adds a Camel component to your project dependencies"");",1,7,1.0,1
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,".description(""Adds a Camel language to your project dependencies"");",1,7,1.0,2
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,".description(""Adds a Camel dataformat to your project dependencies"");",1,7,1.0,3
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"@WithAttributes(label = ""Name"", required = true, description = ""Name of component type to add"")",1,3,0.42857142857142855,4
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.success(""Added Camel component "" + dto.getScheme() + "" ("" + dto.getArtifactId() + "") to the project"");",1,3,0.42857142857142855,5
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"@WithAttributes(label = ""Name"", required = true, description = ""Name of dataformat to add"")",1,3,0.42857142857142855,6
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.success(""Added Camel dataformat "" + dto.getName() + "" ("" + dto.getArtifactId() + "") to the project"");",1,3,0.42857142857142855,7
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"@WithAttributes(label = ""Name"", required = true, description = ""Name of language to add"")",1,3,0.42857142857142855,8
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.success(""Added Camel language "" + dto.getName() + "" ("" + dto.getArtifactId() + "") to the project"");",1,3,0.42857142857142855,9
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// we want to use same version as camel-core if its a camel component,1,3,0.42857142857142855,10
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.fail(""Unknown Camel dataformat"");",1,1,0.14285714285714285,11
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.14285714285714285,12
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  with the License.  You may obtain a copy of the License at,1,1,0.14285714285714285,13
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.14285714285714285,14
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.fail(""The project does not include camel-core"");",1,1,0.14285714285714285,15
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// install the component,1,1,0.14285714285714285,16
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,DependencyBuilder component = DependencyBuilder.create().setGroupId(dto.getGroupId()),1,1,0.14285714285714285,17
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// we want to use same version as camel-core,1,1,0.14285714285714285,18
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Project project = getSelectedProject(builder);,1,1,0.14285714285714285,19
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  implied.  See the License for the specific language governing,1,1,0.14285714285714285,20
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Project project = getSelectedProject(context);,1,1,0.14285714285714285,21
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// show note about the chosen language,1,1,0.14285714285714285,22
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,LanguageDto language = (LanguageDto) event.getNewValue();,1,1,0.14285714285714285,23
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,String description = language.getDescription();,1,1,0.14285714285714285,24
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setNote(description != null ? description : """");",1,1,0.14285714285714285,25
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Project project = getSelectedProject(context);,1,1,0.14285714285714285,26
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// does the project already have camel?,1,1,0.14285714285714285,27
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// we want to use same version as camel-core,1,1,0.14285714285714285,28
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,DependencyBuilder component = DependencyBuilder.create().setGroupId(dto.getGroupId()),1,1,0.14285714285714285,29
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// install the component,1,1,0.14285714285714285,30
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.fail(""Unknown Camel language"");",1,1,0.14285714285714285,31
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// does the project already have camel?,1,1,0.14285714285714285,32
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.fail(""The project does not include camel-core"");",1,1,0.14285714285714285,33
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setNote(description != null ? description : """");",1,1,0.14285714285714285,34
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Project project = getSelectedProject(context);,1,1,0.14285714285714285,35
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.14285714285714285,36
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,String description = dataFormat.getDescription();,1,1,0.14285714285714285,37
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.14285714285714285,38
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  implied.  See the License for the specific language governing,1,1,0.14285714285714285,39
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"@WithAttributes(label = ""Filter"", required = false, description = ""To filter components"")",1,1,0.14285714285714285,40
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,final Project project = getSelectedProject(builder);,1,1,0.14285714285714285,41
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// show note about the chosen component,1,1,0.14285714285714285,42
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,ComponentDto component = (ComponentDto) event.getNewValue();,1,1,0.14285714285714285,43
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,String description = component.getDescription();,1,1,0.14285714285714285,44
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setNote(description != null ? description : """");",1,1,0.14285714285714285,45
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  with the License.  You may obtain a copy of the License at,1,1,0.14285714285714285,46
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// does the project already have camel?,1,1,0.14285714285714285,47
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.14285714285714285,48
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.fail(""The project does not include camel-core"");",1,1,0.14285714285714285,49
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.14285714285714285,50
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  with the License.  You may obtain a copy of the License at,1,1,0.14285714285714285,51
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Project project = getSelectedProject(builder);,1,1,0.14285714285714285,52
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return Results.fail(""Unknown Camel component"");",1,1,0.14285714285714285,53
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// install the component,1,1,0.14285714285714285,54
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,DependencyBuilder component = DependencyBuilder.create().setGroupId(dto.getGroupId()),1,1,0.14285714285714285,55
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  implied.  See the License for the specific language governing,1,1,0.14285714285714285,56
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setNote("""");",1,0,0.0,57
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"dependencyInstaller.install(project, component);",1,0,0.0,58
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,builder.add(name);,1,0,0.0,59
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,60
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Dependency core = findCamelCoreDependency(project);,1,0,0.0,61
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (core == null) {,1,0,0.0,62
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,DataFormatDto dto = name.getValue();,1,0,0.0,63
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (dto != null) {,1,0,0.0,64
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,.setArtifactId(dto.getArtifactId()).setVersion(core.getCoordinate().getVersion());,1,0,0.0,65
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,66
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,/**,1,0,0.0,67
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,68
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*,1,0,0.0,69
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,70
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,71
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,72
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  permissions and limitations under the License.,1,0,0.0,73
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*/,1,0,0.0,74
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,package io.fabric8.forge.camel.commands.project;,1,0,0.0,75
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (dataFormat != null) {,1,0,0.0,76
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import javax.inject.Inject;,1,0,0.0,77
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,} else {,1,0,0.0,78
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// use value choices instead of completer as that works better in web console,1,0,0.0,79
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,DataFormatDto dataFormat = (DataFormatDto) event.getNewValue();,1,0,0.0,80
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"""Camel: Add DataFormat"").category(Categories.create(CATEGORY))",1,0,0.0,81
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import io.fabric8.forge.camel.commands.project.dto.LanguageDto;,1,0,0.0,82
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createDataFormatDto;,1,0,0.0,83
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public class CamelAddDataFormatCommand extends AbstractCamelProjectCommand {,1,0,0.0,84
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,@Inject,1,0,0.0,85
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private UISelectOne<DataFormatDto> name;,1,0,0.0,86
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private DependencyInstaller dependencyInstaller;,1,0,0.0,87
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,@Override,1,0,0.0,88
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,89
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,return Metadata.forCommand(CamelAddDataFormatCommand.class).name(,1,0,0.0,90
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,},1,0,0.0,91
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public void valueChanged(ValueChangeEvent event) {,1,0,0.0,92
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public void initializeUI(UIBuilder builder) throws Exception {,1,0,0.0,93
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setValueChoices(new CamelDataFormatsCompleter(project, getCamelCatalog()).getValueChoices());",1,0,0.0,94
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// include converter from string->dto,1,0,0.0,95
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setValueConverter(new Converter<String, DataFormatDto>() {",1,0,0.0,96
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public DataFormatDto convert(String text) {,1,0,0.0,97
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return createDataFormatDto(getCamelCatalog(), text);",1,0,0.0,98
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,});,1,0,0.0,99
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// show note about the chosen data format,1,0,0.0,100
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,name.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,101
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import io.fabric8.forge.camel.commands.project.completer.CamelLanguagesCompleter;,1,0,0.0,102
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public void initializeUI(UIBuilder builder) throws Exception {,1,0,0.0,103
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,104
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,105
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,},1,0,0.0,106
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,107
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// use value choices instead of completer as that works better in web console,1,0,0.0,108
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setValueChoices(new CamelLanguagesCompleter(project, getCamelCatalog()).getValueChoices());",1,0,0.0,109
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// include converter from string->dto,1,0,0.0,110
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setValueConverter(new Converter<String, LanguageDto>() {",1,0,0.0,111
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public LanguageDto convert(String text) {,1,0,0.0,112
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return createLanguageDto(getCamelCatalog(), text);",1,0,0.0,113
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,});,1,0,0.0,114
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,name.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,115
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public void valueChanged(ValueChangeEvent event) {,1,0,0.0,116
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (language != null) {,1,0,0.0,117
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,} else {,1,0,0.0,118
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setNote("""");",1,0,0.0,119
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,builder.add(name);,1,0,0.0,120
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,121
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Dependency core = findCamelCoreDependency(project);,1,0,0.0,122
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (core == null) {,1,0,0.0,123
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,LanguageDto dto = name.getValue();,1,0,0.0,124
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (dto != null) {,1,0,0.0,125
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,.setArtifactId(dto.getArtifactId()).setVersion(core.getCoordinate().getVersion());,1,0,0.0,126
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"""Camel: Add Language"").category(Categories.create(CATEGORY))",1,0,0.0,127
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,return Metadata.forCommand(CamelAddLanguageCommand.class).name(,1,0,0.0,128
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,129
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,130
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,131
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.projects.Project;,1,0,0.0,132
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,133
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,134
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,135
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,136
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,137
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,138
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,139
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,140
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,@Override,1,0,0.0,141
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,142
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,143
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,144
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,145
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createLanguageDto;,1,0,0.0,146
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public class CamelAddLanguageCommand extends AbstractCamelProjectCommand {,1,0,0.0,147
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,@Inject,1,0,0.0,148
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private UISelectOne<LanguageDto> name;,1,0,0.0,149
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private DependencyInstaller dependencyInstaller;,1,0,0.0,150
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,151
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,/**,1,0,0.0,152
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,153
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,154
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,155
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,156
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,157
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,158
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,159
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,160
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createComponentDto;,1,0,0.0,161
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public class CamelAddComponentCommand extends AbstractCamelProjectCommand {,1,0,0.0,162
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,@Inject,1,0,0.0,163
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private UISelectOne<String> filter;,1,0,0.0,164
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private UISelectOne<ComponentDto> name;,1,0,0.0,165
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,private DependencyInstaller dependencyInstaller;,1,0,0.0,166
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,@Override,1,0,0.0,167
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,168
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,return Metadata.forCommand(CamelAddComponentCommand.class).name(,1,0,0.0,169
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"""Camel: Add Component"").category(Categories.create(CATEGORY))",1,0,0.0,170
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,},1,0,0.0,171
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public void initializeUI(UIBuilder builder) throws Exception {,1,0,0.0,172
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"filter.setValueChoices(CamelCommandsHelper.createComponentLabelValues(project, getCamelCatalog()));",1,0,0.0,173
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"filter.setDefaultValue(""<all>"");",1,0,0.0,174
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setValueChoices(CamelCommandsHelper.createComponentDtoValues(project, getCamelCatalog(), filter, false));",1,0,0.0,175
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,176
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,177
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,178
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,package io.fabric8.forge.camel.commands.project;,1,0,0.0,179
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,/**,1,0,0.0,180
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,181
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*,1,0,0.0,182
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,183
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,184
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,185
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,186
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  permissions and limitations under the License.,1,0,0.0,187
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*/,1,0,0.0,188
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import javax.inject.Inject;,1,0,0.0,189
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,190
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,1,0,0.0,191
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,0,0.0,192
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,193
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,194
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,195
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.projects.Project;,1,0,0.0,196
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,197
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,198
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,199
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// include converter from string->dto,1,0,0.0,200
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setValueConverter(new Converter<String, ComponentDto>() {",1,0,0.0,201
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public ComponentDto convert(String text) {,1,0,0.0,202
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,203
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,204
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*  permissions and limitations under the License.,1,0,0.0,205
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*/,1,0,0.0,206
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,package io.fabric8.forge.camel.commands.project;,1,0,0.0,207
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import javax.inject.Inject;,1,0,0.0,208
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import io.fabric8.forge.camel.commands.project.completer.CamelDataFormatsCompleter;,1,0,0.0,209
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import io.fabric8.forge.camel.commands.project.dto.DataFormatDto;,1,0,0.0,210
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.convert.Converter;,1,0,0.0,211
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,212
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.projects.Project;,1,0,0.0,213
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,214
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,215
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,216
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,217
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,218
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,219
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,220
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,221
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,222
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,223
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,224
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,225
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"return createComponentDto(getCamelCatalog(), text);",1,0,0.0,226
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (core == null) {,1,0,0.0,227
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,});,1,0,0.0,228
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,name.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,229
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public void valueChanged(ValueChangeEvent event) {,1,0,0.0,230
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (component != null) {,1,0,0.0,231
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,} else {,1,0,0.0,232
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"name.setNote("""");",1,0,0.0,233
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,builder.add(filter).add(name);,1,0,0.0,234
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,235
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,Dependency core = findCamelCoreDependency(project);,1,0,0.0,236
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,ComponentDto dto = name.getValue();,1,0,0.0,237
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,*,1,0,0.0,238
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,if (dto != null) {,1,0,0.0,239
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,// otherwise use the version from the dto,1,0,0.0,240
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,String version;,1,0,0.0,241
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"if (""org.apache.camel"".equals(dto.getGroupId())) {",1,0,0.0,242
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,version = core.getCoordinate().getVersion();,1,0,0.0,243
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,version = dto.getVersion();,1,0,0.0,244
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,.setArtifactId(dto.getArtifactId()).setVersion(version);,1,0,0.0,245
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"dependencyInstaller.install(project, component);",1,0,0.0,246
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,247
+bc9993f7966af8294f9bd900648eeb8d1dcb5b97,"dependencyInstaller.install(project, component);",1,0,0.0,248

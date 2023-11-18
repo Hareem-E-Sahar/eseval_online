@@ -1,0 +1,28 @@
+commit_id,line,line_level_label,count,line_score,row
+b6d091279fffe441f6d28e687313ad031a24a3ec,# latest db model for the extension functions,1,6,1.0,1
+b6d091279fffe441f6d28e687313ad031a24a3ec,# NOTE(kevinbenton): this extra lookup is necessary to get the,1,5,0.8333333333333333,2
+b6d091279fffe441f6d28e687313ad031a24a3ec,"net_model = self._get_network(context, result['id'])",1,2,0.3333333333333333,3
+b6d091279fffe441f6d28e687313ad031a24a3ec,"port_model = self._get_port(context, result['id'])",1,2,0.3333333333333333,4
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result = super(Ml2Plugin, self).create_network(context, network)",1,1,0.16666666666666666,5
+b6d091279fffe441f6d28e687313ad031a24a3ec,"self._apply_dict_extend_functions('ports', result, port_model)",1,1,0.16666666666666666,6
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result = super(Ml2Plugin, self).create_port(context, port)",1,1,0.16666666666666666,7
+b6d091279fffe441f6d28e687313ad031a24a3ec,"self._apply_dict_extend_functions('networks', result, net_model)",1,1,0.16666666666666666,8
+b6d091279fffe441f6d28e687313ad031a24a3ec,"self._apply_dict_extend_functions('ports', result, port_db)",0,1,0.16666666666666666,9
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result = self._make_port_dict(port_db, process_extensions=False)",0,1,0.16666666666666666,10
+b6d091279fffe441f6d28e687313ad031a24a3ec,"self._apply_dict_extend_functions('networks', result, net_db)",0,1,0.16666666666666666,11
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result = self._make_network_dict(net_db, process_extensions=False,",0,1,0.16666666666666666,12
+b6d091279fffe441f6d28e687313ad031a24a3ec,"port_db = self.create_port_db(context, port)",0,0,0.0,13
+b6d091279fffe441f6d28e687313ad031a24a3ec,"super(Ml2Plugin, self).update_network(context,",1,0,0.0,14
+b6d091279fffe441f6d28e687313ad031a24a3ec,result[az_ext.AZ_HINTS] = res[az_ext.AZ_HINTS],1,0,0.0,15
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result['id'], {'network': {az_ext.AZ_HINTS: az_hints}})",1,0,0.0,16
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result[api.MTU] = res.get(api.MTU, 0)",1,0,0.0,17
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result['id'], {'network': {api.MTU: net_data[api.MTU]}})",1,0,0.0,18
+b6d091279fffe441f6d28e687313ad031a24a3ec,"res = super(Ml2Plugin, self).update_network(context,",1,0,0.0,19
+b6d091279fffe441f6d28e687313ad031a24a3ec,context=context),0,0,0.0,20
+b6d091279fffe441f6d28e687313ad031a24a3ec,net_db['vlan_transparent'] = vlt,0,0,0.0,21
+b6d091279fffe441f6d28e687313ad031a24a3ec,result[az_ext.AZ_HINTS] = az_hints,0,0,0.0,22
+b6d091279fffe441f6d28e687313ad031a24a3ec,net_db[az_ext.AZ_HINTS] = az_hints,0,0,0.0,23
+b6d091279fffe441f6d28e687313ad031a24a3ec,result[api.MTU] = net_data[api.MTU],0,0,0.0,24
+b6d091279fffe441f6d28e687313ad031a24a3ec,net_db[api.MTU] = net_data[api.MTU],0,0,0.0,25
+b6d091279fffe441f6d28e687313ad031a24a3ec,"net_db = self.create_network_db(context, network)",0,0,0.0,26
+b6d091279fffe441f6d28e687313ad031a24a3ec,"result['id'], {'network': {'vlan_transparent': vlt}})",1,0,0.0,27

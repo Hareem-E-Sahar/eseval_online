@@ -1,0 +1,193 @@
+commit_id,line,line_level_label,count,line_score,row
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# profile on the UCS manager. So no need to update the DB.,1,6,1.0,1
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# Port profile created on UCS, record that in the DB.",1,6,1.0,2
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.8333333333333333,3
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# Ask the UCS Manager driver to create the above Port Profile.,1,5,0.8333333333333333,4
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# Check if this is a Cisco VM-FEX port or Intel SR_IOV port,1,5,0.8333333333333333,5
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.8333333333333333,6
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Port profiles created on the UCS Manager.""""""",1,5,0.8333333333333333,7
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.8333333333333333,8
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# Create a new port profile entry in the db,1,4,0.6666666666666666,9
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# under the License.,1,4,0.6666666666666666,10
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"profile_id = sa.Column(sa.String(64), nullable=False)",1,4,0.6666666666666666,11
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,the port is from a supported vendor. While binding port set it,1,4,0.6666666666666666,12
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# Connection to the UCS Manager is managed from within the driver.,1,4,0.6666666666666666,13
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    under the License.,1,4,0.6666666666666666,14
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,2. Check if a port profile already exists for this vlan_id,1,4,0.6666666666666666,15
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Adds port profile and vlan information to the DB.",1,4,0.6666666666666666,16
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    under the License.,1,4,0.6666666666666666,17
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from neutron.plugins.ml2.drivers.cisco.ucsm import ucsm_model  # noqa,1,4,0.6666666666666666,18
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,1. Get the vlan_id associated with the bound segment,1,4,0.6666666666666666,19
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,3,0.5,20
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    a copy of the License at,1,3,0.5,21
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    License for the specific language governing permissions and limitations,1,3,0.5,22
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"vlan_id = sa.Column(sa.Integer(), nullable=False, primary_key=True)",1,3,0.5,23
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"created_on_ucs = sa.Column(sa.Boolean(), nullable=False)",1,3,0.5,24
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# Copyright 2015 Cisco Systems, Inc.",1,3,0.5,25
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# License for the specific language governing permissions and limitations,1,3,0.5,26
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# not use this file except in compliance with the License. You may obtain,1,3,0.5,27
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# a copy of the License at,1,3,0.5,28
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from alembic import op,1,3,0.5,29
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"sa.Column('vlan_id', sa.Integer(), nullable=False),",1,3,0.5,30
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"sa.Column('profile_id', sa.String(length=64), nullable=False),",1,3,0.5,31
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,3,0.5,32
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    not use this file except in compliance with the License. You may obtain,1,3,0.5,33
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,Binds port only if the vnic_type is direct or macvtap and,1,3,0.5,34
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# Copyright 2015 Cisco Systems, Inc.",1,3,0.5,35
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"4. If no, create a new port profile with this vlan_id and",1,3,0.5,36
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# Copyright 2015 Cisco Systems, Inc.",1,3,0.5,37
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,3,0.5,38
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    not use this file except in compliance with the License. You may obtain,1,3,0.5,39
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    a copy of the License at,1,3,0.5,40
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from neutron.extensions import portbindings,1,3,0.5,41
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#    License for the specific language governing permissions and limitations,1,3,0.5,42
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Creates a port profile on UCS Manager.",1,3,0.5,43
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# Check if UCS Manager needs to create a Port Profile.,1,3,0.5,44
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# 1. Make sure this is a vm_fex_port.(Port profiles are created,1,3,0.5,45
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# for this port profile,1,3,0.5,46
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# 3. Make sure that the Port Profile hasn't already been created.,1,3,0.5,47
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Binds port to current network segment.",1,3,0.5,48
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,49
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# 2. Make sure update_port_precommit added an entry in the DB,1,2,0.3333333333333333,50
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,vlan_id = segments[0]['segmentation_id'],1,2,0.3333333333333333,51
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,in ACTIVE state and provide the Port Profile or Vlan Id as part,1,2,0.3333333333333333,52
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""%(vnic_type)s on network %(network)s"",",1,2,0.3333333333333333,53
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,vlan_id = segment[api.SEGMENTATION_ID],1,2,0.3333333333333333,54
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""on any segment of network %(network)s""),",1,2,0.3333333333333333,55
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"sa.Column('created_on_ucs', sa.Boolean(), nullable=False),",1,2,0.3333333333333333,56
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,import sqlalchemy as sa,1,2,0.3333333333333333,57
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from neutron.db import model_base,1,2,0.3333333333333333,58
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,59
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# revision identifiers, used by Alembic.",1,2,0.3333333333333333,60
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,revision = '20b99fd19d4f',1,2,0.3333333333333333,61
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,import sqlalchemy as sa,1,2,0.3333333333333333,62
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,vlan_id = self._get_vlanid(context),1,2,0.3333333333333333,63
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,Creates a Port Profile for this VLAN if it does not already,1,2,0.3333333333333333,64
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from neutron.common import constants,1,2,0.3333333333333333,65
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# If this is an Intel SR-IOV vnic, then no need to create port",1,2,0.3333333333333333,66
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from neutron.plugins.common import constants as p_const,1,2,0.3333333333333333,67
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,68
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"profile = context.current.get(portbindings.PROFILE, {})",1,2,0.3333333333333333,69
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from networking_cisco.plugins.ml2.drivers.cisco.ucsm import constants as const,1,2,0.3333333333333333,70
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from networking_cisco.plugins.ml2.drivers.cisco.ucsm import ucsm_network_driver,1,2,0.3333333333333333,71
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from oslo_log import log as logging,1,2,0.3333333333333333,72
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"from neutron.i18n import _LE, _LW",1,2,0.3333333333333333,73
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from networking_cisco.plugins.ml2.drivers.cisco.ucsm import ucsm_db,1,2,0.3333333333333333,74
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,from neutron.plugins.ml2 import driver_api as api,1,2,0.3333333333333333,75
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,LOG = logging.getLogger(__name__),1,2,0.3333333333333333,76
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,segment = context.bottom_bound_segment,1,2,0.3333333333333333,77
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if segment and self.check_segment(segment):,1,2,0.3333333333333333,78
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"3. If yes, associate that port profile with this port.",1,2,0.3333333333333333,79
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,Assign a port profile to this port. To do that:,1,2,0.3333333333333333,80
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if self.driver.is_vmfex_port(profile):,1,1,0.16666666666666666,81
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,portbindings.VIF_DETAILS_VLAN] = str(vlan_id),1,1,0.16666666666666666,82
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,const.VIF_DETAILS_PROFILEID] = profile_name,1,1,0.16666666666666666,83
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,profile_name = self.make_profile_name(vlan_id),1,1,0.16666666666666666,84
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if self.check_segment(segment):,1,1,0.16666666666666666,85
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.warn(_LW(""Bind port: vlan_id is None.""))",1,1,0.16666666666666666,86
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Delete all configuration added to UCS Manager for the vlan_id.""""""",1,1,0.16666666666666666,87
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,for segment in context.network.network_segments:,1,1,0.16666666666666666,88
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""Attempting to bind port %(port)s with vnic_type """,1,1,0.16666666666666666,89
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,port_profile = self.make_profile_name(vlan_id),1,1,0.16666666666666666,90
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,network_type = segment[api.NETWORK_TYPE],1,1,0.16666666666666666,91
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.error(_LE(""UCS Mech Driver: Failed binding port ID %(id)s """,1,1,0.16666666666666666,92
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# All rights reserved.,1,1,0.16666666666666666,93
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# All rights reserved.,1,1,0.16666666666666666,94
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#,1,1,0.16666666666666666,95
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,96
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,97
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,class PortProfile(model_base.BASEV2):,1,1,0.16666666666666666,98
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,__tablename__ = 'ml2_ucsm_port_profiles',1,1,0.16666666666666666,99
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#,1,1,0.16666666666666666,100
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,101
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"# Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,102
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Cisco UCS Manager Mechanism Driver",1,1,0.16666666666666666,103
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,down_revision = '589f9237ca0e',1,1,0.16666666666666666,104
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,sa.PrimaryKeyConstraint('vlan_id'),1,1,0.16666666666666666,105
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,segments = context.network_segments,1,1,0.16666666666666666,106
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if vlan_id:,1,1,0.16666666666666666,107
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,p_profile_name = self.make_profile_name(vlan_id),1,1,0.16666666666666666,108
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Delete entry corresponding to Network's VLAN in the DB.""""""",1,1,0.16666666666666666,109
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"if not self.driver.check_vnic_type_and_vendor_info(vnic_type,",1,1,0.16666666666666666,110
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,host_id = context.current.get(portbindings.HOST_ID),1,1,0.16666666666666666,111
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# All rights reserved.,1,1,0.16666666666666666,112
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#,1,1,0.16666666666666666,113
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,114
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,115
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""ML2 Mechanism Driver for Cisco UCS Manager.""""""",1,1,0.16666666666666666,116
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.vif_type = portbindings.VIF_TYPE_802_QBH,1,1,0.16666666666666666,117
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.driver = ucsm_network_driver.CiscoUcsmDriver(),1,1,0.16666666666666666,118
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.ucsm_db = ucsm_db.UcsmDbModel(),1,1,0.16666666666666666,119
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""Returns vlan_id associated with a bound VLAN segment.""""""",1,1,0.16666666666666666,120
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,associate with this port,1,1,0.16666666666666666,121
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"vnic_type = context.current.get(portbindings.VNIC_TYPE,",1,1,0.16666666666666666,122
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.vif_details = {portbindings.CAP_PORT_FILTER: False},1,1,0.16666666666666666,123
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if not self.driver.is_vmfex_port(profile):,1,1,0.16666666666666666,124
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""update_port_postcommit: VM-FEX port updated for """,1,1,0.16666666666666666,125
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if not vlan_id:,1,1,0.16666666666666666,126
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"if self.driver.create_portprofile(profile_name, vlan_id,",1,1,0.16666666666666666,127
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""update_port_postcommit: Port Profile %s for """,1,1,0.16666666666666666,128
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,if self.ucsm_db.is_port_profile_created(vlan_id):,1,1,0.16666666666666666,129
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,profile_name = self.ucsm_db.get_port_profile_for_vlan(vlan_id),1,1,0.16666666666666666,130
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"if (self.driver.check_vnic_type_and_vendor_info(vnic_type, profile) and",1,1,0.16666666666666666,131
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# Enable vlan-id for this regular Neutron virtual port.,1,1,0.16666666666666666,132
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,# only for VM-FEX ports.),1,1,0.16666666666666666,133
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.warn(_LW(""update_port_postcommit: vlan_id is None.""))",1,1,0.16666666666666666,134
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.warn(_LW(""update_port_precommit: vlan_id is None.""))",1,1,0.16666666666666666,135
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,'network': context.network.current['id']}),1,0,0.0,136
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"self.vif_type,",1,0,0.0,137
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"context.set_binding(segment[api.ID],",1,0,0.0,138
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.vif_details[,1,0,0.0,139
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""Port binding to Vlan_id: %s"", str(vlan_id))",1,0,0.0,140
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"def delete_network_postcommit(self, context):",1,0,0.0,141
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"'vnic_type': vnic_type,",1,0,0.0,142
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"{'port': context.current['id'],",1,0,0.0,143
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,vif_details.,1,0,0.0,144
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"def bind_port(self, context):",1,0,0.0,145
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"self.driver.delete_all_config_for_vlan(vlan_id, port_profile)",1,0,0.0,146
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,constants.PORT_STATUS_ACTIVE),1,0,0.0,147
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"self.vif_details,",1,0,0.0,148
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"'ml2_ucsm_port_profiles',",1,0,0.0,149
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"{'id': context.current['id'],",1,0,0.0,150
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,@staticmethod,1,0,0.0,151
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,def check_segment(segment):,1,0,0.0,152
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,return network_type == p_const.TYPE_VLAN,1,0,0.0,153
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,def make_profile_name(vlan_id):,1,0,0.0,154
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,return const.PORT_PROFILE_NAME_PREFIX + str(vlan_id),1,0,0.0,155
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,Revision ID: 20b99fd19d4f,1,0,0.0,156
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,Revises: 589f9237ca0e,1,0,0.0,157
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,Create Date: 2014-07-30 21:01:13.754637,1,0,0.0,158
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""",1,0,0.0,159
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,def upgrade():,1,0,0.0,160
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,op.create_table(,1,0,0.0,161
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"def delete_network_precommit(self, context):",1,0,0.0,162
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.ucsm_db.delete_vlan_entry(vlan_id),1,0,0.0,163
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"self.ucsm_db.add_port_profile(p_profile_name, vlan_id)",1,0,0.0,164
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"self.driver.update_serviceprofile(host_id, vlan_id)",1,0,0.0,165
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""update_port_postcommit: Host_id is %s"", host_id)",1,0,0.0,166
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,class CiscoUcsmMechanismDriver(api.MechanismDriver):,1,0,0.0,167
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,def initialize(self):,1,0,0.0,168
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"def _get_vlanid(self, context):",1,0,0.0,169
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,return segment.get(api.SEGMENTATION_ID),1,0,0.0,170
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"def update_port_precommit(self, context):",1,0,0.0,171
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""""""",1,0,0.0,172
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""Inside update_port_precommit"")",1,0,0.0,173
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,portbindings.VNIC_NORMAL),1,0,0.0,174
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,profile):,1,0,0.0,175
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""update_port_precommit encountered a non-SR-IOV port"")",1,0,0.0,176
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,return,1,0,0.0,177
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""update_port_precommit has nothing to do for this """,1,0,0.0,178
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""sr-iov port"")",1,0,0.0,179
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""update_port_precommit: Profile: %s, VLAN_id: %d"",",1,0,0.0,180
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"p_profile_name, vlan_id)",1,0,0.0,181
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"def update_port_postcommit(self, context):",1,0,0.0,182
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,exist.,1,0,0.0,183
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"LOG.debug(""Inside update_port_postcommit"")",1,0,0.0,184
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,self.driver.is_vmfex_port(profile)):,1,0,0.0,185
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""vlan_id %d"", vlan_id)",1,0,0.0,186
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"""vlan_id %d already exists. Nothing to do."",",1,0,0.0,187
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"profile_name, vlan_id)",1,0,0.0,188
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,vnic_type):,1,0,0.0,189
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,"self.ucsm_db.set_port_profile_created(vlan_id, profile_name)",1,0,0.0,190
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,else:,1,0,0.0,191
+c96b4f0f6e4e18842bb738cdd688a3129d24a71d,),1,0,0.0,192

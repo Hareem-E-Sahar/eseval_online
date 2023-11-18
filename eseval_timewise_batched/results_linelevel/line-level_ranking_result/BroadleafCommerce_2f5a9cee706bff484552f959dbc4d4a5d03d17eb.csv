@@ -1,0 +1,20 @@
+commit_id,line,line_level_label,count,line_score,row
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"protected String getSolrRangeFunctionString(BigDecimal minValue, BigDecimal maxValue) {",0,1,1.0,1
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"protected String getSolrRangeFunctionString(BigDecimal minValue, BigDecimal maxValue) {",1,1,1.0,2
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,StringBuilder sb = new StringBuilder();,1,0,0.0,3
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,return sb.toString();,1,0,0.0,4
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"sb.append("" u="").append(maxValue.toPlainString());",1,0,0.0,5
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"sb.append("" ""+getSolrRangeFunctionString(range.getMinValue(), range.getMaxValue()));",1,0,0.0,6
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,else,1,0,0.0,7
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,if (range.getMaxValue() != null),1,0,0.0,8
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,query.addFilterQuery(sb.toString());,1,0,0.0,9
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"sb.append(""("").append(valueString).append("")"");",1,0,0.0,10
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,return sb.toString();,0,0,0.0,11
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"sb.append("" u="").append(maxValue.toPlainString());",0,0,0.0,12
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,StringBuilder sb = new StringBuilder();,0,0,0.0,13
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,"sb.append("" "" + getSolrRangeFunctionString(range.getMinValue(), range.getMaxValue()));",0,0,0.0,14
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,},0,0,0.0,15
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,} else {,0,0,0.0,16
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,if (range.getMaxValue() != null) {,0,0,0.0,17
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,query.addFilterQuery(valueString);,0,0,0.0,18
+2f5a9cee706bff484552f959dbc4d4a5d03d17eb,},1,0,0.0,19

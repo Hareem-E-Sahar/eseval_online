@@ -1,0 +1,197 @@
+commit_id,line,line_level_label,count,line_score,row
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,with self.subnet(cidr='200.0.0.0/24') as public_sub:,0,2,1.0,1
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"# add gateway, add interface, associate, deletion of floatingip",0,2,1.0,2
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# remove interface so test can exit without errors,1,2,1.0,3
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# remove properly to clean-up,1,2,1.0,4
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# remove correct interface to cleanup,1,2,1.0,5
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# remove extra port created,1,2,1.0,6
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"floatingip = self.deserialize(self.fmt, res)",1,2,1.0,7
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,with self.subnet(cidr='200.0.0.1/24') as public_sub:,1,2,1.0,8
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"for fip in [fip1, fip2]:",1,1,0.5,9
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,body = self._router_interface_action(,1,1,0.5,10
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# clean-up,1,1,0.5,11
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,def test_router_add_gateway(self):,1,1,0.5,12
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,def test_router_add_gateway_tenant_ctx(self):,1,1,0.5,13
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,#remove properly to clean-up,1,1,0.5,14
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# Cleanup,1,1,0.5,15
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"# add gateway, add interface, associate, deletion of floatingip,",1,1,0.5,16
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,private_sub,1,1,0.5,17
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,# cleanup,1,1,0.5,18
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"fp1 = self._make_floatingip(self.fmt, network_id,",1,1,0.5,19
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,tdict.return_value = admin_context,1,1,0.5,20
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"# delete gateway, delete interface",1,1,0.5,21
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,createport.return_value = {'fixed_ips': []},1,1,0.5,22
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"body = self._router_interface_action('remove',",1,1,0.5,23
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"createport.return_value = {'fixed_ips': [], 'id': '44'}",0,1,0.5,24
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"private_sub['subnet']['id'],",1,1,0.5,25
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,pl.side_effect = q_exc.BadRequest(,1,1,0.5,26
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._router_interface_action('remove', r['router']['id'],",1,1,0.5,27
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,from neutron.common import exceptions as q_exc,1,1,0.5,28
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,from neutron.common import exceptions as n_exc,0,1,0.5,29
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,pl.side_effect = n_exc.BadRequest(,0,1,0.5,30
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,pl.side_effect = n_exc.IpAddressGenerationFailure(,0,1,0.5,31
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,from neutron.common import exceptions as q_exc,1,1,0.5,32
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,from neutron.common import exceptions as n_exc,0,1,0.5,33
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,pl.side_effect = q_exc.IpAddressGenerationFailure(,1,1,0.5,34
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,def test_router_add_and_remove_gateway_tenant_ctx(self):,0,1,0.5,35
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"'remove', r['router']['id'],",1,1,0.5,36
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"private_sub['subnet']['id'], None)",1,1,0.5,37
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"r['router']['id'],",1,1,0.5,38
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,def test_router_add_and_remove_gateway(self):,0,1,0.5,39
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,public_sub['subnet']['network_id']),1,1,0.5,40
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(0, len(res['floatingips']))",0,0,0.0,41
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(port_id,",0,0,0.0,42
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,body['floatingip']['port_id']),0,0,0.0,43
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"ip_address,",0,0,0.0,44
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(exc.HTTPConflict.code, res.status_int)",0,0,0.0,45
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(exc.HTTPBadRequest.code, res.status_int)",0,0,0.0,46
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(exc.HTTPNotFound.code, res.status_int)",0,0,0.0,47
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(1, len(res['floatingips']))",0,0,0.0,48
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual('10.0.0.30',",0,0,0.0,49
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual('10.0.0.10',",0,0,0.0,50
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,fp['floatingip']['floating_ip_address']),0,0,0.0,51
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(router_req['router']['id'], result['id'])",0,0,0.0,52
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual('192.168.1.2',",0,0,0.0,53
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,fip['floatingip']['floating_ip_address']),0,0,0.0,54
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,body['floatingip']['fixed_ip_address']),0,0,0.0,55
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(4, floating_ip.version)",0,0,0.0,56
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(data['subnet']['gateway_ip'],",0,0,0.0,57
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(2, len(p['port']['fixed_ips']))",0,0,0.0,58
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(1, len(body['floatingips']))",0,0,0.0,59
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(ip_address,",0,0,0.0,60
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(port_id, body['floatingip']['port_id'])",0,0,0.0,61
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(1, len(agents))",0,0,0.0,62
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(exc.HTTPCreated.code, res.status_int)",0,0,0.0,63
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(router_id, router['id'])",0,0,0.0,64
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(""ACTIVE"", router['status'])",0,0,0.0,65
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(exc.HTTPOk.code, res.status_int)",0,0,0.0,66
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(exc.HTTPNoContent.code, res.status_int)",0,0,0.0,67
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(port_id, res['port_id'])",0,0,0.0,68
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(subnet_id, res['subnet_id'])",0,0,0.0,69
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(expected_code, res.status_int, msg)",0,0,0.0,70
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(expected_body, response, msg)",0,0,0.0,71
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(http_status, res.status_int)",0,0,0.0,72
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(404, res.status_int)",0,0,0.0,73
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(0, len(body['floatingips']))",0,0,0.0,74
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(400, res.status_int)",0,0,0.0,75
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(expected_status, body['floatingip']['status'])",0,0,0.0,76
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,res['subnet']['gateway_ip']),0,0,0.0,77
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,port_id),1,0,0.0,78
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, exc.HTTPCreated.code)",1,0,0.0,79
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'10.0.0.10'),1,0,0.0,80
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int,",1,0,0.0,81
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,exc.HTTPBadRequest.code),1,0,0.0,82
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, exc.HTTPBadRequest.code)",1,0,0.0,83
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, exc.HTTPNotFound.code)",1,0,0.0,84
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(len(res['floatingips']), 1)",1,0,0.0,85
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(len(res['floatingips']), 0)",1,0,0.0,86
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(fp['floatingip']['floating_ip_address'],",1,0,0.0,87
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'10.0.0.30'),1,0,0.0,88
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"body['floatingip']['fixed_ip_address'],",1,0,0.0,89
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(result['id'], router_req['router']['id'])",1,0,0.0,90
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(fip['floatingip']['floating_ip_address'],",1,0,0.0,91
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'192.168.1.2'),1,0,0.0,92
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(len(p['port']['fixed_ips']), 2)",1,0,0.0,93
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(floating_ip.version, 4)",1,0,0.0,94
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res['subnet']['gateway_ip'],",1,0,0.0,95
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,data['subnet']['gateway_ip']),1,0,0.0,96
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, exc.HTTPConflict.code)",1,0,0.0,97
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(6, notifyApi.routers_updated.call_count)",1,0,0.0,98
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(router['id'], router_id)",1,0,0.0,99
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, http_status)",1,0,0.0,100
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(router['status'], ""ACTIVE"")",1,0,0.0,101
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, exc.HTTPOk.code)",1,0,0.0,102
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, exc.HTTPNoContent.code)",1,0,0.0,103
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res['port_id'], port_id)",1,0,0.0,104
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res['subnet_id'], subnet_id)",1,0,0.0,105
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, expected_code, msg)",1,0,0.0,106
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(response, expected_body, msg)",1,0,0.0,107
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(len(body['floatingips']), 1)",1,0,0.0,108
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(body['floatingip']['port_id'],",1,0,0.0,109
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, 404)",1,0,0.0,110
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(len(body['floatingips']), 0)",1,0,0.0,111
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(res.status_int, 400)",1,0,0.0,112
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(body['floatingip']['status'], expected_status)",1,0,0.0,113
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(body['floatingip']['port_id'], port_id)",1,0,0.0,114
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(body['floatingip']['fixed_ip_address'],",1,0,0.0,115
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,ip_address),1,0,0.0,116
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,s2['subnet']['network_id']),1,0,0.0,117
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"['subnet']['id'],",1,0,0.0,118
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,http_status=exc.HTTPConflict.code),1,0,0.0,119
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"floating_ip='10.0.0.10',",0,0,0.0,120
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"('floating_ip_address', 'asc'), 2, 2)",0,0,0.0,121
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,self._test_list_with_pagination_reverse(,0,0,0.0,122
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(fp['floatingip']['floating_ip_address'],",0,0,0.0,123
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'10.0.0.10'),0,0,0.0,124
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'10.0.0.30'),0,0,0.0,125
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._make_floatingip(self.fmt, network_id,",0,0,0.0,126
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,floating_ip='10.0.0.10'),0,0,0.0,127
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,http_status=exc.HTTPConflict.code),0,0,0.0,128
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,self._test_list_with_pagination(,0,0,0.0,129
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(4, notifyApi.routers_updated.call_count)",0,0,0.0,130
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"no_delete=False,",1,0,0.0,131
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,if not no_delete:,1,0,0.0,132
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('routers', router['router']['id'])",1,0,0.0,133
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,self._router_interface_action(,1,0,0.0,134
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,self._remove_external_gateway_from_router(,1,0,0.0,135
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,None),1,0,0.0,136
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"'floatingip', (fp1, fp2, fp3),",0,0,0.0,137
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"[('floating_ip_address', 'desc')])",0,0,0.0,138
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"floating_ip='10.0.0.10',",1,0,0.0,139
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,raise q_exc.SubnetMismatchForPort(,1,0,0.0,140
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"raise n_exc.BadRequest(resource='router', msg=msg)",0,0,0.0,141
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"raise n_exc.PortInUse(net_id=port['network_id'],",0,0,0.0,142
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,raise n_exc.SubnetMismatchForPort(,0,0,0.0,143
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"raise n_exc.BadRequest(resource='floatingip', msg=msg)",0,0,0.0,144
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,raise n_exc.ExternalIpAddressExhausted(net_id=f_net_id),0,0,0.0,145
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"raise q_exc.BadRequest(resource='router', msg=msg)",1,0,0.0,146
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"raise q_exc.PortInUse(net_id=port['network_id'],",1,0,0.0,147
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"raise q_exc.BadRequest(resource='floatingip', msg=msg)",1,0,0.0,148
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._test_list_with_sort('floatingip', (fp3, fp2, fp1),",0,0,0.0,149
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,raise q_exc.ExternalIpAddressExhausted(net_id=f_net_id),1,0,0.0,150
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,if (p['device_owner'] ==,0,0,0.0,151
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,l3_constants.DEVICE_OWNER_FLOATINGIP):,0,0,0.0,152
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,if p['device_owner'] == l3_constants.DEVICE_OWNER_FLOATINGIP:,0,0,0.0,153
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,if p['device_owner'] == l3_constants.DEVICE_OWNER_ROUTER_INTF:,0,0,0.0,154
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,if p['device_owner'] == 'network:floatingip':,1,0,0.0,155
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,if p['device_owner'] == 'network:router_interface':,1,0,0.0,156
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('subnets', s['subnet']['id'])",1,0,0.0,157
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"s['subnet']['id'],",1,0,0.0,158
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"'remove',",1,0,0.0,159
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"'floatingip', (fp1, fp2, fp3),",1,0,0.0,160
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._test_list_with_sort('floatingip', (fp3, fp2, fp1),",1,0,0.0,161
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"[('floating_ip_address', 'desc')])",1,0,0.0,162
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,finally:,1,0,0.0,163
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('floatingips', fp1['floatingip']['id'])",1,0,0.0,164
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('floatingips', fp2['floatingip']['id'])",1,0,0.0,165
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('floatingips', fp3['floatingip']['id'])",1,0,0.0,166
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,self._test_list_with_pagination(,1,0,0.0,167
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"('floating_ip_address', 'asc'), 2, 2)",1,0,0.0,168
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"s1['subnet']['id'],",1,0,0.0,169
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,self._test_list_with_pagination_reverse(,1,0,0.0,170
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(fp['floatingip']['floating_ip_address'],",1,0,0.0,171
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'10.0.0.10'),1,0,0.0,172
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('floatingips', fp['floatingip']['id'])",1,0,0.0,173
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,'10.0.0.30'),1,0,0.0,174
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,floating_ip='10.0.0.10'),1,0,0.0,175
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._make_floatingip(self.fmt, network_id,",1,0,0.0,176
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,try:,1,0,0.0,177
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,fip['floatingip']['id']),1,0,0.0,178
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('floatingips',",1,0,0.0,179
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,s1['subnet']['network_id']),1,0,0.0,180
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"None,",1,0,0.0,181
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,tenant_id=tenant_id),1,0,0.0,182
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"s2['subnet']['id'],",1,0,0.0,183
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._router_interface_action('remove',",1,0,0.0,184
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,p['port']['id']),1,0,0.0,185
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,p1['port']['id']),1,0,0.0,186
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,s['subnet']['network_id']),1,0,0.0,187
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('ports', port['port']['id'])",1,0,0.0,188
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"'remove', tenant_router['router']['id'],",1,0,0.0,189
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"s['subnet']['id'], None, tenant_id='tenant_a')",1,0,0.0,190
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('ports', p2['port']['id'])",1,0,0.0,191
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"router['router']['id'],",1,0,0.0,192
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"subnet['subnet']['id'],",1,0,0.0,193
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('floatingips', floatingip['floatingip']['id'])",1,0,0.0,194
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self._delete('routers', r['router']['id'])",1,0,0.0,195
+d735ccaf2c99c66ed050cd7cfa44c3e73bc7d8ab,"self.assertEqual(len(agents), 1)",1,0,0.0,196

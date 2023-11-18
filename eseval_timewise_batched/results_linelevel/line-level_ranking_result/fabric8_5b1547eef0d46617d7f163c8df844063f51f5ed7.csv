@@ -1,0 +1,110 @@
+commit_id,line,line_level_label,count,line_score,row
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"String fullName = ""src"" + File.separator + ""main"" + File.separator + ""resources"" + File.separator + fileName;",1,10,1.0,1
+5b1547eef0d46617d7f163c8df844063f51f5ed7,String fileName = directory.getValue() != null ? directory.getValue() + File.separator + name.getValue() : name.getValue();,1,4,0.4,2
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"@WithAttributes(label = ""XML File Name"", required = true, description = ""Name of XML file"")",1,4,0.4,3
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"@WithAttributes(label = ""Directory"", required = false, defaultValue = ""META-INF/spring"",",1,3,0.30000000000000004,4
+5b1547eef0d46617d7f163c8df844063f51f5ed7,// this will get a file in the src/main/resources directory where we want to store the spring xml file,1,3,0.30000000000000004,5
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"return Results.fail(""Spring XML file "" + fullName + "" already exists"");",1,3,0.30000000000000004,6
+5b1547eef0d46617d7f163c8df844063f51f5ed7,Project project = getSelectedProject(context);,1,2,0.2,7
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"Template template = factory.create(xml, FreemarkerTemplate.class);",1,2,0.2,8
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"return Results.success(""Created new Spring XML file "" + fullName);",1,2,0.2,9
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.result.Results;,1,1,0.1,10
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"description = ""The directory name where this type will be created"")",1,1,0.1,11
+5b1547eef0d46617d7f163c8df844063f51f5ed7,@Inject,1,1,0.1,12
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.util.Metadata;,1,1,0.1,13
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.util.Categories;,1,1,0.1,14
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.1,15
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.result.Result;,1,1,0.1,16
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.1,17
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,1,0.1,18
+5b1547eef0d46617d7f163c8df844063f51f5ed7,boolean cdi = CamelCommandsHelper.isCdiProject(project);,1,1,0.1,19
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.hints.InputType;,1,1,0.1,20
+5b1547eef0d46617d7f163c8df844063f51f5ed7,boolean enabled = super.isEnabled(context);,1,1,0.1,21
+5b1547eef0d46617d7f163c8df844063f51f5ed7,FileResource<?> fileResource = facet.getResource(fileName);,1,1,0.1,22
+5b1547eef0d46617d7f163c8df844063f51f5ed7,boolean blueprint = CamelCommandsHelper.isBlueprintProject(project);,1,1,0.1,23
+5b1547eef0d46617d7f163c8df844063f51f5ed7,".description(""Creates a new Spring XML file with CamelContext to your project"");",1,1,0.1,24
+5b1547eef0d46617d7f163c8df844063f51f5ed7,String projectName = project.getRoot().getName();,1,1,0.1,25
+5b1547eef0d46617d7f163c8df844063f51f5ed7,ResourcesFacet facet = project.getFacet(ResourcesFacet.class);,1,1,0.1,26
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.1,27
+5b1547eef0d46617d7f163c8df844063f51f5ed7,Dependency core = findCamelCoreDependency(project);,1,1,0.1,28
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"return Results.fail(""The project does not include camel-core"");",1,1,0.1,29
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"DependencyBuilder spring = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,1,0.1,30
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"Resource<URL> xml = resourceFactory.create(getClass().getResource(""/templates/camel-spring.ftl"")).reify(URLResource.class);",1,1,0.1,31
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"Map<String, Object> params = new HashMap<String, Object>();",1,1,0.1,32
+5b1547eef0d46617d7f163c8df844063f51f5ed7,String output = template.process(params);,1,1,0.1,33
+5b1547eef0d46617d7f163c8df844063f51f5ed7,// create the new file and set the content,1,1,0.1,34
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,1,0.1,35
+5b1547eef0d46617d7f163c8df844063f51f5ed7,// does the project already have camel?,1,1,0.1,36
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.1,37
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.dependencies.Dependency;,1,1,0.1,38
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.1,39
+5b1547eef0d46617d7f163c8df844063f51f5ed7,".description(""Adds a new Spring XML file with CamelContext to your project"");",0,1,0.1,40
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.1,41
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"*  2.0 (the ""License""); you may not use this file except in compliance",1,1,0.1,42
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import java.io.File;,1,1,0.1,43
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import java.net.URL;,1,1,0.1,44
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import java.util.HashMap;,1,1,0.1,45
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import java.util.Map;,1,1,0.1,46
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import javax.inject.Inject;,1,1,0.1,47
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import io.fabric8.forge.addon.utils.validator.ResourceNameValidator;,1,1,0.1,48
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,1,0.1,49
+5b1547eef0d46617d7f163c8df844063f51f5ed7,".description(""Adds a Spring XML file with CamelContext included to your project"");",1,1,0.1,50
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,1,0.1,51
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.resource.Resource;,1,1,0.1,52
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,1,0.1,53
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.templates.Template;,1,1,0.1,54
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.resource.URLResource;,1,1,0.1,55
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.resource.ResourceFactory;,1,1,0.1,56
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.templates.TemplateFactory;,1,1,0.1,57
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.resource.FileResource;,1,1,0.1,58
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,1,0.1,59
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,1,0.1,60
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.projects.Project;,1,1,0.1,61
+5b1547eef0d46617d7f163c8df844063f51f5ed7,import org.jboss.forge.addon.templates.freemarker.FreemarkerTemplate;,1,1,0.1,62
+5b1547eef0d46617d7f163c8df844063f51f5ed7,return !cdi && !blueprint;,1,0,0.0,63
+5b1547eef0d46617d7f163c8df844063f51f5ed7,builder.add(directory).add(name);,1,0,0.0,64
+5b1547eef0d46617d7f163c8df844063f51f5ed7,},1,0,0.0,65
+5b1547eef0d46617d7f163c8df844063f51f5ed7,return false;,1,0,0.0,66
+5b1547eef0d46617d7f163c8df844063f51f5ed7,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,67
+5b1547eef0d46617d7f163c8df844063f51f5ed7,return Metadata.forCommand(CamelNewRouteBuilderCommand.class).name(,1,0,0.0,68
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"""Camel: New XML spring"").category(Categories.create(CATEGORY))",1,0,0.0,69
+5b1547eef0d46617d7f163c8df844063f51f5ed7,public void initializeUI(UIBuilder builder) throws Exception {,1,0,0.0,70
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"name.addValidator(new ResourceNameValidator(""xml""));",1,0,0.0,71
+5b1547eef0d46617d7f163c8df844063f51f5ed7,name.getFacet(HintsFacet.class).setInputType(InputType.FILE_PICKER);,1,0,0.0,72
+5b1547eef0d46617d7f163c8df844063f51f5ed7,directory.getFacet(HintsFacet.class).setInputType(InputType.DIRECTORY_PICKER);,1,0,0.0,73
+5b1547eef0d46617d7f163c8df844063f51f5ed7,// install camel-spring if missing,1,0,0.0,74
+5b1547eef0d46617d7f163c8df844063f51f5ed7,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,75
+5b1547eef0d46617d7f163c8df844063f51f5ed7,if (fileResource.exists()) {,1,0,0.0,76
+5b1547eef0d46617d7f163c8df844063f51f5ed7,if (core == null) {,1,0,0.0,77
+5b1547eef0d46617d7f163c8df844063f51f5ed7,".setArtifactId(""camel-spring"").setVersion(core.getCoordinate().getVersion());",1,0,0.0,78
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"if (!dependencyInstaller.isManaged(project, spring)) {",1,0,0.0,79
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"dependencyInstaller.install(project, spring);",1,0,0.0,80
+5b1547eef0d46617d7f163c8df844063f51f5ed7,// any dynamic options goes into the params map,1,0,0.0,81
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"params.put(""projectName"", projectName);",1,0,0.0,82
+5b1547eef0d46617d7f163c8df844063f51f5ed7,fileResource.createNewFile();,1,0,0.0,83
+5b1547eef0d46617d7f163c8df844063f51f5ed7,if (enabled) {,1,0,0.0,84
+5b1547eef0d46617d7f163c8df844063f51f5ed7,// not enable for cdi or blueprint projects,1,0,0.0,85
+5b1547eef0d46617d7f163c8df844063f51f5ed7,*  implied.  See the License for the specific language governing,1,0,0.0,86
+5b1547eef0d46617d7f163c8df844063f51f5ed7,public boolean isEnabled(UIContext context) {,1,0,0.0,87
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,88
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"""Camel: New XML spring"").category(Categories.create(CATEGORY))",0,0,0.0,89
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"""project-camel-add-spring-xml"").category(Categories.create(CATEGORY))",1,0,0.0,90
+5b1547eef0d46617d7f163c8df844063f51f5ed7,/**,1,0,0.0,91
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,92
+5b1547eef0d46617d7f163c8df844063f51f5ed7,*,1,0,0.0,93
+5b1547eef0d46617d7f163c8df844063f51f5ed7,*  with the License.  You may obtain a copy of the License at,1,0,0.0,94
+5b1547eef0d46617d7f163c8df844063f51f5ed7,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,95
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,96
+5b1547eef0d46617d7f163c8df844063f51f5ed7,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,97
+5b1547eef0d46617d7f163c8df844063f51f5ed7,*  permissions and limitations under the License.,1,0,0.0,98
+5b1547eef0d46617d7f163c8df844063f51f5ed7,@Override,1,0,0.0,99
+5b1547eef0d46617d7f163c8df844063f51f5ed7,*/,1,0,0.0,100
+5b1547eef0d46617d7f163c8df844063f51f5ed7,package io.fabric8.forge.camel.commands.project;,1,0,0.0,101
+5b1547eef0d46617d7f163c8df844063f51f5ed7,@FacetConstraint({ResourcesFacet.class}),1,0,0.0,102
+5b1547eef0d46617d7f163c8df844063f51f5ed7,public class CamelNewSpringXmlCommand extends AbstractCamelProjectCommand {,1,0,0.0,103
+5b1547eef0d46617d7f163c8df844063f51f5ed7,private UIInput<String> directory;,1,0,0.0,104
+5b1547eef0d46617d7f163c8df844063f51f5ed7,private UIInput<String> name;,1,0,0.0,105
+5b1547eef0d46617d7f163c8df844063f51f5ed7,private DependencyInstaller dependencyInstaller;,1,0,0.0,106
+5b1547eef0d46617d7f163c8df844063f51f5ed7,private TemplateFactory factory;,1,0,0.0,107
+5b1547eef0d46617d7f163c8df844063f51f5ed7,ResourceFactory resourceFactory;,1,0,0.0,108
+5b1547eef0d46617d7f163c8df844063f51f5ed7,fileResource.setContents(output);,1,0,0.0,109

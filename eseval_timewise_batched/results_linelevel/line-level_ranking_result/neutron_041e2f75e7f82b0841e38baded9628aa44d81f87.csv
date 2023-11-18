@@ -1,0 +1,673 @@
+commit_id,line,line_level_label,count,line_score,row
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The number of seconds the agent will wait between """,1,9,1.0,1
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The number of seconds the agent will wait between """,0,9,1.0,2
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The number of seconds the agent will wait between """,1,9,1.0,3
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The number of seconds the agent will wait between """,1,9,1.0,4
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The number of seconds the agent will wait between """,1,9,1.0,5
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The number of seconds to wait before respawning the """,1,7,0.7777777777777777,6
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Timeout in seconds to wait for """,1,5,0.5555555555555556,7
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Timeout in seconds to wait for a single """,1,5,0.5555555555555556,8
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Minimize polling by monitoring ovsdb for interface """,1,5,0.5555555555555556,9
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""reason to. This is the name of the OVS integration """,1,5,0.5555555555555556,10
+041e2f75e7f82b0841e38baded9628aa44d81f87,# Check if the name of the group maps to something else in,1,5,0.5555555555555556,11
+041e2f75e7f82b0841e38baded9628aa44d81f87,# and the Linuxbridge agent to make it easy to back-port. These shared opts,1,4,0.4444444444444444,12
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""corresponds to the kernel datapath. To enable the """,1,4,0.4444444444444444,13
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OVS datapath to use. 'system' is the default value and """,1,4,0.4444444444444444,14
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Use veths instead of patch ports to interconnect the """,1,4,0.4444444444444444,15
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""for flat and VLAN networks. The length of bridge """,1,4,0.4444444444444444,16
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""value must match the value of the 'overlay_ip_version' """,1,4,0.4444444444444444,17
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""of the host network interfaces. The IP version of this """,1,4,0.4444444444444444,18
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Peer patch port in tunnel bridge for integration """,1,4,0.4444444444444444,19
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Peer patch port in integration bridge for tunnel """,1,4,0.4444444444444444,20
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""the only way to disable protection will be via the """,1,4,0.4444444444444444,21
+041e2f75e7f82b0841e38baded9628aa44d81f87,# TODO(kevinbenton): The following opt is duplicated between the OVS agent,1,4,0.4444444444444444,22
+041e2f75e7f82b0841e38baded9628aa44d81f87,# TODO(kevinbenton): The following opt is duplicated between the OVS agent,0,4,0.4444444444444444,23
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of flavor:neutron_plugin for L3 """,1,4,0.4444444444444444,24
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of flavor:neutron_plugin for L3 """,0,4,0.4444444444444444,25
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Optional paramter identifying the UUID of the cluster """,1,4,0.4444444444444444,26
+041e2f75e7f82b0841e38baded9628aa44d81f87,name = name if group is None else group.name + '_' + name,1,4,0.4444444444444444,27
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enables dedicated connection to the metadata proxy """,0,4,0.4444444444444444,28
+041e2f75e7f82b0841e38baded9628aa44d81f87,""" State report for this agent will be disabled.""))",0,4,0.4444444444444444,29
+041e2f75e7f82b0841e38baded9628aa44d81f87,# and the Linuxbridge agent to make it easy to back-port. These shared opts,0,4,0.4444444444444444,30
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""IP address of local overlay (tunnel) network endpoint. """,1,3,0.3333333333333333,31
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""configured on the server should have mappings to """,1,3,0.3333333333333333,32
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""node-specific Open vSwitch bridge names to be used """,1,3,0.3333333333333333,33
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""tuples mapping physical network names to the agent's """,1,3,0.3333333333333333,34
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""option in the ML2 plug-in configuration file on the """,1,3,0.3333333333333333,35
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""an IP address that belongs to the port from which """,1,3,0.3333333333333333,36
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""attached to this bridge and then 'patched' according """,1,3,0.3333333333333333,37
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Integration bridge to use. """,1,3,0.3333333333333333,38
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""from other devices which have the capability to spoof """,1,3,0.3333333333333333,39
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""integration bridge as it won't be managed by the """,1,3,0.3333333333333333,40
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Set new timeout in seconds for new rpc calls after """,1,3,0.3333333333333333,41
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""polling for local device changes."")),",1,3,0.3333333333333333,42
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""mapping, make sure to disconnect it from the """,1,3,0.3333333333333333,43
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""polling for local device changes."")),",1,3,0.3333333333333333,44
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""integration bridge to physical networks. """,1,3,0.3333333333333333,45
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Address to listen on for OpenFlow connections. """,1,3,0.3333333333333333,46
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Port to listen on for OpenFlow connections. """,1,3,0.3333333333333333,47
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""the local switch connecting the controller. """,1,3,0.3333333333333333,48
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Network types supported by the agent """,1,3,0.3333333333333333,49
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The UDP port to use for VXLAN tunnels."")),",1,3,0.3333333333333333,50
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""an IP address that belongs to the port from which """,1,3,0.3333333333333333,51
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""from other devices which have the capability to spoof """,1,3,0.3333333333333333,52
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""this flag set to True). Spoofing rules will not be """,1,3,0.3333333333333333,53
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Set new timeout in seconds for new rpc calls after """,1,3,0.3333333333333333,54
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Reset flow table on start. Setting this to True will """,1,3,0.3333333333333333,55
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Set or un-set the tunnel header checksum  on """,1,3,0.3333333333333333,56
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""from other devices which have the capability to spoof """,0,3,0.3333333333333333,57
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""this flag set to True). Spoofing rules will not be """,0,3,0.3333333333333333,58
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""this flag set to True). Spoofing rules will not be """,1,3,0.3333333333333333,59
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""an IP address that belongs to the port from which """,0,3,0.3333333333333333,60
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OVSDB interface to connect to."")),",1,3,0.3333333333333333,61
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Set new timeout in seconds for new rpc calls after """,0,3,0.3333333333333333,62
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OpenFlow controller to connect to"")),",1,3,0.3333333333333333,63
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The Quantum L3 Agent manager."")),",1,3,0.3333333333333333,64
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""for each controller in the cluster """,0,3,0.3333333333333333,65
+041e2f75e7f82b0841e38baded9628aa44d81f87,# the conf file.Otherwise leave the section name unchanged,1,3,0.3333333333333333,66
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of flavor:neutron_plugin for """,0,3,0.3333333333333333,67
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""plugins to load. Extension method is searched in the """,0,3,0.3333333333333333,68
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""service plugins to load. This is intended for specifying """,0,3,0.3333333333333333,69
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""L2 plugins which support L3 functions. If you use a router """,0,3,0.3333333333333333,70
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default L3 flavor to use, when flavor:router is not """,0,3,0.3333333333333333,71
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of method:flavor to select specific """,0,3,0.3333333333333333,72
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Specifies flavor for plugin to handle 'q-plugin' RPC """,0,3,0.3333333333333333,73
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""List of L3 plugins to load"")),",1,3,0.3333333333333333,74
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The driver used to manage the virtual """,1,3,0.3333333333333333,75
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""polling for local device changes."")),",1,3,0.3333333333333333,76
+041e2f75e7f82b0841e38baded9628aa44d81f87,help=_('Number of backlog requests to configure the ',1,3,0.3333333333333333,77
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of flavor:neutron_plugin for """,1,3,0.3333333333333333,78
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""plugins to load. Extension method is searched in the """,1,3,0.3333333333333333,79
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""service plugins to load. This is intended for specifying """,1,3,0.3333333333333333,80
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""L2 plugins which support L3 functions. If you use a router """,1,3,0.3333333333333333,81
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default L3 flavor to use, when flavor:router is not """,1,3,0.3333333333333333,82
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""polling for local device changes."")),",0,3,0.3333333333333333,83
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of method:flavor to select specific """,1,3,0.3333333333333333,84
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Specifies flavor for plugin to handle 'q-plugin' RPC """,1,3,0.3333333333333333,85
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""polling for local device changes."")),",1,3,0.3333333333333333,86
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Allow to perform insecure SSL (https) requests to """,1,3,0.3333333333333333,87
+041e2f75e7f82b0841e38baded9628aa44d81f87,# should be moved into a common agent config options location as part of,1,2,0.2222222222222222,88
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""added to any ports that have port security disabled. """,0,2,0.2222222222222222,89
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""agent receives SIGTERM. If value is set to 0, rpc """,1,2,0.2222222222222222,90
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""to this agent from spoofing, it doesn't protect them """,1,2,0.2222222222222222,91
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enable suppression of ARP responses that don't match """,1,2,0.2222222222222222,92
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""they originate. Note: This prevents the VMs attached """,1,2,0.2222222222222222,93
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""to this agent from spoofing, it doesn't protect them """,0,2,0.2222222222222222,94
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""(e.g. bare metal or VMs attached to agents without """,1,2,0.2222222222222222,95
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""(e.g. bare metal or VMs attached to agents without """,0,2,0.2222222222222222,96
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    License for the specific language governing permissions and limitations,0,2,0.2222222222222222,97
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""they originate. Note: This prevents the VMs attached """,0,2,0.2222222222222222,98
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enable suppression of ARP responses that don't match """,0,2,0.2222222222222222,99
+041e2f75e7f82b0841e38baded9628aa44d81f87,# should be moved into a common agent config options location as part of,0,2,0.2222222222222222,100
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""agent receives SIGTERM. If value is set to 0, rpc """,0,2,0.2222222222222222,101
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    a copy of the License at,0,2,0.2222222222222222,102
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    not use this file except in compliance with the License. You may obtain,0,2,0.2222222222222222,103
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""NEC plugin retries API request to OFC """,1,2,0.2222222222222222,104
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Port to connect to."")),",1,2,0.2222222222222222,105
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""bridge. There is one per hypervisor. The integration """,1,2,0.2222222222222222,106
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""added to any ports that have port security disabled. """,1,2,0.2222222222222222,107
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""(e.g. bare metal or VMs attached to agents without """,1,2,0.2222222222222222,108
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Tunnel bridge to use."")),",1,2,0.2222222222222222,109
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""they originate. Note: This prevents the VMs attached """,1,2,0.2222222222222222,110
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Host to connect to."")),",1,2,0.2222222222222222,111
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Selects the Agent Type reported""))",1,2,0.2222222222222222,112
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""agent receives SIGTERM. If value is set to 0, rpc """,1,2,0.2222222222222222,113
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Make the l2 agent run in DVR mode."")),",1,2,0.2222222222222222,114
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Set or un-set the don't fragment (DF) bit on """,1,2,0.2222222222222222,115
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""headers. This option will be removed in Ocata so """,1,2,0.2222222222222222,116
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""added to any ports that have port security disabled. """,1,2,0.2222222222222222,117
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""to this agent from spoofing, it doesn't protect them """,1,2,0.2222222222222222,118
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enable suppression of ARP responses that don't match """,1,2,0.2222222222222222,119
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma-separated list of <physical_network>:<bridge> """,1,2,0.2222222222222222,120
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""to respond to an ARP request locally without """,1,2,0.2222222222222222,121
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Allows the switch (when supporting an overlay) """,1,2,0.2222222222222222,122
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enable local ARP responder if it is supported. """,1,2,0.2222222222222222,123
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Use ML2 l2population mechanism driver to learn """,1,2,0.2222222222222222,124
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OpenFlow interface to use."")),",1,2,0.2222222222222222,125
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Note: If you remove a bridge from this """,1,2,0.2222222222222222,126
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""exist, and should have a physical network interface """,1,2,0.2222222222222222,127
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""names should be no more than 11. Each bridge must """,1,2,0.2222222222222222,128
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Base URL of OFC REST API. """,1,2,0.2222222222222222,129
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Turn off verification of the certificate for""",1,2,0.2222222222222222,130
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Integration bridge to use."")),",1,2,0.2222222222222222,131
+041e2f75e7f82b0841e38baded9628aa44d81f87,if group is None and name in self._groups:,1,2,0.2222222222222222,132
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Local IP address of tunnel endpoint."")),",0,2,0.2222222222222222,133
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""A list of extensions, per plugin, to load."")),",1,2,0.2222222222222222,134
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default L3 flavor to use"")),",1,2,0.2222222222222222,135
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""List of plugins to load"")),",1,2,0.2222222222222222,136
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""plugin for a method. This has priority over method search """,0,2,0.2222222222222222,137
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default flavor to use, when flavor:network is not """,0,2,0.2222222222222222,138
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('use_namespaces', default=True,",1,2,0.2222222222222222,139
+041e2f75e7f82b0841e38baded9628aa44d81f87,# No need to continue since the last value wins,1,2,0.2222222222222222,140
+041e2f75e7f82b0841e38baded9628aa44d81f87,":param name: the opt name (or 'dest', more precisely)",1,2,0.2222222222222222,141
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    not use this file except in compliance with the License. You may obtain,1,2,0.2222222222222222,142
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""controller in the cluster can be specified; """,1,2,0.2222222222222222,143
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Describes a connection to a single NVP """,1,2,0.2222222222222222,144
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Optional parameter identifying the Nova \""zone\"" that """,1,2,0.2222222222222222,145
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Describes a connection to a single """,0,2,0.2222222222222222,146
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('User name for NVP controllers in this cluster')),",0,2,0.2222222222222222,147
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The type of authentication to use"")),",1,2,0.2222222222222222,148
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The type of authentication to use"")),",1,2,0.2222222222222222,149
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    License for the specific language governing permissions and limitations,1,2,0.2222222222222222,150
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Local IP address of GRE tunnel endpoints."")),",1,2,0.2222222222222222,151
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""controller. A different connection for each """,1,2,0.2222222222222222,152
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    a copy of the License at,1,2,0.2222222222222222,153
+041e2f75e7f82b0841e38baded9628aa44d81f87,help=_('Number of separate worker processes for metadata ',1,2,0.2222222222222222,154
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    a copy of the License at,1,2,0.2222222222222222,155
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    License for the specific language governing permissions and limitations,1,2,0.2222222222222222,156
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    not use this file except in compliance with the License. You may obtain,1,2,0.2222222222222222,157
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The type of authentication to use"")),",1,2,0.2222222222222222,158
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""plugin for a method. This has priority over method search """,1,2,0.2222222222222222,159
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    License for the specific language governing permissions and limitations,1,2,0.2222222222222222,160
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    a copy of the License at,1,2,0.2222222222222222,161
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    not use this file except in compliance with the License. You may obtain,1,2,0.2222222222222222,162
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default flavor to use, when flavor:network is not """,1,2,0.2222222222222222,163
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Network service endpoint type to pull from """,1,2,0.2222222222222222,164
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""The type of authentication to use"")),",1,2,0.2222222222222222,165
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OVSDB IP to connect to."")),",1,2,0.2222222222222222,166
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OVSDB port to connect to."")),",1,2,0.2222222222222222,167
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Tunnel interface to use."")),",1,2,0.2222222222222222,168
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Maximum tunnel ID to use."")),",1,2,0.2222222222222222,169
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Integration bridge to use."")),",1,2,0.2222222222222222,170
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Minimum tunnel ID to use."")),",1,2,0.2222222222222222,171
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",0,1,0.1111111111111111,172
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Default router provider to use.')),",1,1,0.1111111111111111,173
+041e2f75e7f82b0841e38baded9628aa44d81f87,help=_('List of enabled router providers.')),1,1,0.1111111111111111,174
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",0,1,0.1111111111111111,175
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Unless required by applicable law or agreed to in writing, software",0,1,0.1111111111111111,176
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",0,1,0.1111111111111111,177
+041e2f75e7f82b0841e38baded9628aa44d81f87,from oslo_config import cfg,0,1,0.1111111111111111,178
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    under the License.,0,1,0.1111111111111111,179
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""For LinuxBridge, this requires ebtables. For OVS, it """,0,1,0.1111111111111111,180
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('polling_interval', default=2,",0,1,0.1111111111111111,181
+041e2f75e7f82b0841e38baded9628aa44d81f87,# the deduplication work.,0,1,0.1111111111111111,182
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Maximum attempts per OFC API request. """,1,1,0.1111111111111111,183
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('prevent_arp_spoofing', default=True,",0,1,0.1111111111111111,184
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""when OFC returns ServiceUnavailable (503). """,1,1,0.1111111111111111,185
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('polling_interval', default=2,",1,1,0.1111111111111111,186
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('insecure_ssl', default=False,",1,1,0.1111111111111111,187
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Location of certificate file."")),",1,1,0.1111111111111111,188
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Location of key file."")),",1,1,0.1111111111111111,189
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Use SSL to connect."")),",1,1,0.1111111111111111,190
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('use_ssl', default=False,",1,1,0.1111111111111111,191
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('support_packet_filter_on_ofc_router', default=True,",1,1,0.1111111111111111,192
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('enable_packet_filter', default=True,",1,1,0.1111111111111111,193
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Driver to use."")),",1,1,0.1111111111111111,194
+041e2f75e7f82b0841e38baded9628aa44d81f87,from oslo_config import cfg,1,1,0.1111111111111111,195
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    under the License.,1,1,0.1111111111111111,196
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.1111111111111111,197
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.1111111111111111,198
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('polling_interval', default=2,",1,1,0.1111111111111111,199
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.1111111111111111,200
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""requires a version that supports matching ARP """,0,1,0.1111111111111111,201
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('arp_responder', default=False,",1,1,0.1111111111111111,202
+041e2f75e7f82b0841e38baded9628aa44d81f87,# the deduplication work.,1,1,0.1111111111111111,203
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=True,",1,1,0.1111111111111111,204
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin tenant name"")),",1,1,0.1111111111111111,205
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('tunnel_csum', default=False,",1,1,0.1111111111111111,206
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('drop_flows_on_start', default=False,",1,1,0.1111111111111111,207
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('enable_distributed_routing', default=False,",1,1,0.1111111111111111,208
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('dont_fragment', default=True,",1,1,0.1111111111111111,209
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""requires a version that supports matching ARP """,1,1,0.1111111111111111,210
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""For LinuxBridge, this requires ebtables. For OVS, it """,1,1,0.1111111111111111,211
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('prevent_arp_spoofing', default=True,",1,1,0.1111111111111111,212
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""performing a costly ARP broadcast into the overlay."")),",1,1,0.1111111111111111,213
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Requires OVS 2.1 and ML2 l2population driver. """,1,1,0.1111111111111111,214
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""remote MAC and IPs and improve tunnel scalability."")),",1,1,0.1111111111111111,215
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('l2_population', default=False,",1,1,0.1111111111111111,216
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""MTU size of veth interfaces"")),",1,1,0.1111111111111111,217
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('polling_interval', default=2,",1,1,0.1111111111111111,218
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('prevent_arp_spoofing', default=True,",1,1,0.1111111111111111,219
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""OpenFlow request. """,1,1,0.1111111111111111,220
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Used only for 'native' driver."")),",1,1,0.1111111111111111,221
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""userspace datapath set this value to 'netdev'."")),",1,1,0.1111111111111111,222
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""support so long as it is set to True."")),",1,1,0.1111111111111111,223
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Support kernel without Open vSwitch patch port """,1,1,0.1111111111111111,224
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('use_veth_interconnection', default=False,",1,1,0.1111111111111111,225
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""appropriate bridges on each agent. """,1,1,0.1111111111111111,226
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""configured as a port. All physical networks """,1,1,0.1111111111111111,227
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Use either an IPv4 or IPv6 address that resides on one """,1,1,0.1111111111111111,228
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""bridge acts as a virtual 'patch bay'. All VM VIFs are """,1,1,0.1111111111111111,229
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""Do not change this parameter unless you have a good """,1,1,0.1111111111111111,230
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""requires a version that supports matching ARP """,1,1,0.1111111111111111,231
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""For LinuxBridge, this requires ebtables. For OVS, it """,1,1,0.1111111111111111,232
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.1111111111111111,233
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""It is prepended to each API request."")),",1,1,0.1111111111111111,234
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of supported extension aliases."")),",1,1,0.1111111111111111,235
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default flavor to use"")),",1,1,0.1111111111111111,236
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""specified at router creation. Ignored if 'l3_plugin_list' """,0,1,0.1111111111111111,237
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""list order and the first one is used."")),",0,1,0.1111111111111111,238
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Use Linux network namespaces"")),",1,1,0.1111111111111111,239
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""in NVP.  This can be retrieved from NVP management """,1,1,0.1111111111111111,240
+041e2f75e7f82b0841e38baded9628aa44d81f87,for tag in cluster_tags:,1,1,0.1111111111111111,241
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""""""retrieve configuration groups for nvp clusters.""""""",1,1,0.1111111111111111,242
+041e2f75e7f82b0841e38baded9628aa44d81f87,for parsed_item in parsed_file.keys():,1,1,0.1111111111111111,243
+041e2f75e7f82b0841e38baded9628aa44d81f87,for parsed_file in cfg.CONF._cparser.parsed:,1,1,0.1111111111111111,244
+041e2f75e7f82b0841e38baded9628aa44d81f87,for opt in opts:,1,1,0.1111111111111111,245
+041e2f75e7f82b0841e38baded9628aa44d81f87,section = group.name if group is not None else 'DEFAULT',1,1,0.1111111111111111,246
+041e2f75e7f82b0841e38baded9628aa44d81f87,":returns: the option value, or a GroupAttr object",1,1,0.1111111111111111,247
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""there must be at least one connection per """,1,1,0.1111111111111111,248
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""maps to this NVP cluster."")),",1,1,0.1111111111111111,249
+041e2f75e7f82b0841e38baded9628aa44d81f87,for section in parsed_file.keys():,0,1,0.1111111111111111,250
+041e2f75e7f82b0841e38baded9628aa44d81f87,for parsed_file in multi_parser.parsed:,0,1,0.1111111111111111,251
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""can be specified; there must be at """,0,1,0.1111111111111111,252
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""controller. A different connection """,0,1,0.1111111111111111,253
+041e2f75e7f82b0841e38baded9628aa44d81f87,# NOTE(armando-migliaccio): keep the following code until we support,0,1,0.1111111111111111,254
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Lists the NVP controllers in this cluster"")),",0,1,0.1111111111111111,255
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Number of time a request should be retried')),",0,1,0.1111111111111111,256
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Total time limit for a cluster request')),",0,1,0.1111111111111111,257
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Password for NVP controllers in this cluster')),",0,1,0.1111111111111111,258
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""for metadata server access via Quantum router"")),",0,1,0.1111111111111111,259
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('enable_metadata_access_network', default=True,",0,1,0.1111111111111111,260
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin tenant name"")),",1,1,0.1111111111111111,261
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin tenant name"")),",1,1,0.1111111111111111,262
+041e2f75e7f82b0841e38baded9628aa44d81f87,# This means the server does not support report_state,0,1,0.1111111111111111,263
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""specified at router creation. Ignored if 'l3_plugin_list' """,1,1,0.1111111111111111,264
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('openflow_controller', default='127.0.0.1:6633',",1,1,0.1111111111111111,265
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Comma separated list of supported extension aliases."")),",0,1,0.1111111111111111,266
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Number of times a redirect should be followed')),",0,1,0.1111111111111111,267
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Flavor of which plugin handles RPC"")),",1,1,0.1111111111111111,268
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Shared secret to sign instance-id request'),",1,1,0.1111111111111111,269
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.1111111111111111,270
+041e2f75e7f82b0841e38baded9628aa44d81f87,from oslo_config import cfg,1,1,0.1111111111111111,271
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""list order and the first one is used."")),",1,1,0.1111111111111111,272
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    under the License.,1,1,0.1111111111111111,273
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.1111111111111111,274
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.1111111111111111,275
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.1111111111111111,276
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.1111111111111111,277
+041e2f75e7f82b0841e38baded9628aa44d81f87,proxy = UnixDomainMetadataProxy(cfg.CONF),1,1,0.1111111111111111,278
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Location for Metadata Proxy UNIX domain socket')),",1,1,0.1111111111111111,279
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Private key of client certificate.""))",1,1,0.1111111111111111,280
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('nova_metadata_insecure', default=False,",1,1,0.1111111111111111,281
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Protocol to access nova metadata, http or https"")),",1,1,0.1111111111111111,282
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Client certificate for nova metadata api server."")),",1,1,0.1111111111111111,283
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""file for ssl"")),",1,1,0.1111111111111111,284
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Tunnel IP to use."")),",1,1,0.1111111111111111,285
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.1111111111111111,286
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.1111111111111111,287
+041e2f75e7f82b0841e38baded9628aa44d81f87,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.1111111111111111,288
+041e2f75e7f82b0841e38baded9628aa44d81f87,#    under the License.,1,1,0.1111111111111111,289
+041e2f75e7f82b0841e38baded9628aa44d81f87,from oslo.config import cfg,1,1,0.1111111111111111,290
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Certificate Authority public key (CA cert) """,1,1,0.1111111111111111,291
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('openflow_rest_api', default='127.0.0.1:8080',",1,1,0.1111111111111111,292
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('polling_interval', default=2,",1,1,0.1111111111111111,293
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('enable_tunneling', default=False,",1,1,0.1111111111111111,294
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin tenant name"")),",1,1,0.1111111111111111,295
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=False,",1,1,0.1111111111111111,296
+041e2f75e7f82b0841e38baded9628aa44d81f87,""" ssl"")),",1,1,0.1111111111111111,297
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'rpc_flavor',",1,0,0.0,298
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""requests."")),",1,0,0.0,299
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""order based on 'plugin_list'."")),",1,0,0.0,300
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'extension_map',",1,0,0.0,301
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'supported_extension_aliases',",1,0,0.0,302
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'default_flavor',",1,0,0.0,303
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""is blank."")),",1,0,0.0,304
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'default_l3_flavor',",1,0,0.0,305
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""specified at network creation."")),",1,0,0.0,306
+041e2f75e7f82b0841e38baded9628aa44d81f87,# All Rights Reserved.,1,0,0.0,307
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""service plugin, set this blank."")),",1,0,0.0,308
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'l3_plugin_list',",1,0,0.0,309
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='',",1,0,0.0,310
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'plugin_list',",1,0,0.0,311
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.StrOpt(,1,0,0.0,312
+041e2f75e7f82b0841e38baded9628aa44d81f87,meta_plugin_opts = [,1,0,0.0,313
+041e2f75e7f82b0841e38baded9628aa44d81f87,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,314
+041e2f75e7f82b0841e38baded9628aa44d81f87,#,1,0,0.0,315
+041e2f75e7f82b0841e38baded9628aa44d81f87,proxy_plugin_opts = [,1,0,0.0,316
+041e2f75e7f82b0841e38baded9628aa44d81f87,"# Copyright 2012, Nachi Ueno, NTT MCL, Inc.",1,0,0.0,317
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,318
+041e2f75e7f82b0841e38baded9628aa44d81f87,# Copyright 2012 NEC Corporation.  All rights reserved.,1,0,0.0,319
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_user',",1,0,0.0,320
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(proxy_plugin_opts, ""PROXY"")",1,0,0.0,321
+041e2f75e7f82b0841e38baded9628aa44d81f87,utils.log_opt_values(LOG),1,0,0.0,322
+041e2f75e7f82b0841e38baded9628aa44d81f87,ofc_opts = [,1,0,0.0,323
+041e2f75e7f82b0841e38baded9628aa44d81f87,agent_opts = [,1,0,0.0,324
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,325
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('integration_bridge', default='br-int',",1,0,0.0,326
+041e2f75e7f82b0841e38baded9628aa44d81f87,ovs_opts = [,1,0,0.0,327
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.agent.common import config,1,0,0.0,328
+041e2f75e7f82b0841e38baded9628aa44d81f87,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,329
+041e2f75e7f82b0841e38baded9628aa44d81f87,#,1,0,0.0,330
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(meta_plugin_opts, ""META"")",1,0,0.0,331
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin user"")),",1,0,0.0,332
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication region"")),",1,0,0.0,333
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_region',",1,0,0.0,334
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_strategy', default='keystone',",1,0,0.0,335
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication URL"")),",1,0,0.0,336
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_url',",1,0,0.0,337
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_tenant_name',",1,0,0.0,338
+041e2f75e7f82b0841e38baded9628aa44d81f87,"secret=True),",1,0,0.0,339
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin password""),",1,0,0.0,340
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_password',",1,0,0.0,341
+041e2f75e7f82b0841e38baded9628aa44d81f87,proxy.run(),1,0,0.0,342
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nova_metadata_ip', default='127.0.0.1',",1,0,0.0,343
+041e2f75e7f82b0841e38baded9628aa44d81f87,config.setup_logging(),1,0,0.0,344
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication region"")),",1,0,0.0,345
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=8775,",1,0,0.0,346
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('nova_metadata_port',",1,0,0.0,347
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""IP address used by Nova metadata server."")),",1,0,0.0,348
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('path_prefix', default='',",1,0,0.0,349
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""the keystone catalog"")),",1,0,0.0,350
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='adminURL',",1,0,0.0,351
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('endpoint_type',",1,0,0.0,352
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_ca_cert',",1,0,0.0,353
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('auth_insecure',",1,0,0.0,354
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_region',",1,0,0.0,355
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('metadata_proxy_shared_secret',",1,0,0.0,356
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_strategy', default='keystone',",1,0,0.0,357
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication URL"")),",1,0,0.0,358
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_url',",1,0,0.0,359
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_tenant_name',",1,0,0.0,360
+041e2f75e7f82b0841e38baded9628aa44d81f87,"secret=True),",1,0,0.0,361
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin password""),",1,0,0.0,362
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_password',",1,0,0.0,363
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin user"")),",1,0,0.0,364
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_user',",1,0,0.0,365
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""TCP Port used by Nova metadata server."")),",1,0,0.0,366
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='',",1,0,0.0,367
+041e2f75e7f82b0841e38baded9628aa44d81f87,config.init(sys.argv[1:]),1,0,0.0,368
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'server')),",1,0,0.0,369
+041e2f75e7f82b0841e38baded9628aa44d81f87,agent_conf.register_agent_state_opts_helper(cfg.CONF),1,0,0.0,370
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.set_default(name='cache_url', default='memory://?default_ttl=5')",1,0,0.0,371
+041e2f75e7f82b0841e38baded9628aa44d81f87,cache.register_oslo_configs(cfg.CONF),1,0,0.0,372
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.CONF.register_opts(MetadataProxyHandler.OPTS),1,0,0.0,373
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.CONF.register_opts(UnixDomainMetadataProxy.OPTS),1,0,0.0,374
+041e2f75e7f82b0841e38baded9628aa44d81f87,def main():,1,0,0.0,375
+041e2f75e7f82b0841e38baded9628aa44d81f87,'metadata server socket with')),1,0,0.0,376
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=4096,",1,0,0.0,377
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('metadata_backlog',",1,0,0.0,378
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=utils.cpu_count() // 2,",1,0,0.0,379
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nova_metadata_protocol',",1,0,0.0,380
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('metadata_workers',",1,0,0.0,381
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='$state_path/metadata_proxy',",1,0,0.0,382
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('metadata_proxy_socket',",1,0,0.0,383
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,384
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nova_client_priv_key',",1,0,0.0,385
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nova_client_cert',",1,0,0.0,386
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""nova metadata"")),",1,0,0.0,387
+041e2f75e7f82b0841e38baded9628aa44d81f87,"choices=['http', 'https'],",1,0,0.0,388
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='http',",1,0,0.0,389
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('host', default='127.0.0.1',",1,0,0.0,390
+041e2f75e7f82b0841e38baded9628aa44d81f87,],0,0,0.0,391
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('port', default='8888',",1,0,0.0,392
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=DEFAULT_BRIDGE_MAPPINGS,",1,0,0.0,393
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IPOpt('of_listen_address', default='127.0.0.1',",1,0,0.0,394
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OVS vhost-user socket directory."")),",1,0,0.0,395
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('vhostuser_socket_dir', default=constants.VHOST_USER_SOCKET_DIR,",1,0,0.0,396
+041e2f75e7f82b0841e38baded9628aa44d81f87,"constants.OVS_DATAPATH_NETDEV],",1,0,0.0,397
+041e2f75e7f82b0841e38baded9628aa44d81f87,"choices=[constants.OVS_DATAPATH_SYSTEM,",1,0,0.0,398
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('datapath_type', default=constants.OVS_DATAPATH_SYSTEM,",1,0,0.0,399
+041e2f75e7f82b0841e38baded9628aa44d81f87,"choices=['ovs-ofctl', 'native'],",1,0,0.0,400
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('of_interface', default='native',",1,0,0.0,401
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""agent anymore."")),",1,0,0.0,402
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.ListOpt('bridge_mappings',",1,0,0.0,403
+041e2f75e7f82b0841e38baded9628aa44d81f87,DEFAULT_BRIDGE_MAPPINGS = [],1,0,0.0,404
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""neutron server node(s)."")),",1,0,0.0,405
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IPOpt('local_ip',",1,0,0.0,406
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('tun_peer_patch_port', default='patch-int',",1,0,0.0,407
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""bridge."")),",1,0,0.0,408
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('int_peer_patch_port', default='patch-tun',",1,0,0.0,409
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('tunnel_bridge', default='br-tun',",1,0,0.0,410
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""to their network connectivity."")),",1,0,0.0,411
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('integration_bridge', default='br-int',",1,0,0.0,412
+041e2f75e7f82b0841e38baded9628aa44d81f87,ovs_opts = [,1,0,0.0,413
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.PortOpt('of_listen_port', default=6633,",1,0,0.0,414
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('of_connect_timeout', default=30,",1,0,0.0,415
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('of_request_timeout', default=10,",1,0,0.0,416
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,417
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.common import config,1,0,0.0,418
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(ovs_opts, ""OVS"")",1,0,0.0,419
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('agent_type', default=n_const.AGENT_TYPE_OVS,",1,0,0.0,420
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""cause brief traffic interruption."")),",1,0,0.0,421
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""timeout won't be changed"")),",1,0,0.0,422
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('quitting_rpc_timeout', default=10,",1,0,0.0,423
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""outgoing IP packet carrying GRE/VXLAN tunnel."")),",1,0,0.0,424
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""port security extension."")),",1,0,0.0,425
+041e2f75e7f82b0841e38baded9628aa44d81f87,"deprecated_for_removal=True,",1,0,0.0,426
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('veth_mtu', default=9000,",1,0,0.0,427
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.PortOpt('vxlan_udp_port', default=p_const.VXLAN_UDP_PORT,",1,0,0.0,428
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""(gre and/or vxlan)."")),",1,0,0.0,429
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.ListOpt('tunnel_types', default=DEFAULT_TUNNEL_TYPES,",1,0,0.0,430
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""ovsdb monitor after losing communication with it."")),",1,0,0.0,431
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=constants.DEFAULT_OVSDBMON_RESPAWN,",1,0,0.0,432
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('ovsdb_monitor_respawn_interval',",1,0,0.0,433
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""changes."")),",1,0,0.0,434
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('minimize_polling',",1,0,0.0,435
+041e2f75e7f82b0841e38baded9628aa44d81f87,agent_opts = [,1,0,0.0,436
+041e2f75e7f82b0841e38baded9628aa44d81f87,DEFAULT_TUNNEL_TYPES = [],1,0,0.0,437
+041e2f75e7f82b0841e38baded9628aa44d81f87,import constants,1,0,0.0,438
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('driver', default='trema',",1,0,0.0,439
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.ListOpt('router_providers',",1,0,0.0,440
+041e2f75e7f82b0841e38baded9628aa44d81f87,# Copyright (c) 2016 IBM Corp.,0,0,0.0,441
+041e2f75e7f82b0841e38baded9628aa44d81f87,config.register_agent_state_opts_helper(cfg.CONF),1,0,0.0,442
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(ovs_opts, ""OVS"")",1,0,0.0,443
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,0,0.0,444
+041e2f75e7f82b0841e38baded9628aa44d81f87,def register_agent_opts():,1,0,0.0,445
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(provider_opts, ""PROVIDER"")",1,0,0.0,446
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(ofc_opts, ""OFC"")",1,0,0.0,447
+041e2f75e7f82b0841e38baded9628aa44d81f87,def register_plugin_opts():,1,0,0.0,448
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=['l3-agent', 'openflow'],",1,0,0.0,449
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='l3-agent',",1,0,0.0,450
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.plugins.ml2.drivers.openvswitch.agent.common \,1,0,0.0,451
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('default_router_provider',",1,0,0.0,452
+041e2f75e7f82b0841e38baded9628aa44d81f87,provider_opts = [,1,0,0.0,453
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""The value must be greater than 0."")),",1,0,0.0,454
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('api_max_attempts', default=3,",1,0,0.0,455
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Disable SSL certificate verification."")),",1,0,0.0,456
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('cert_file',",1,0,0.0,457
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('key_file',",1,0,0.0,458
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Support packet filter on OFC router interface."")),",1,0,0.0,459
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enable packet filter."")),",1,0,0.0,460
+041e2f75e7f82b0841e38baded9628aa44d81f87,#,0,0,0.0,461
+041e2f75e7f82b0841e38baded9628aa44d81f87,# All Rights Reserved.,0,0,0.0,462
+041e2f75e7f82b0841e38baded9628aa44d81f87,#         http://www.apache.org/licenses/LICENSE-2.0,0,0,0.0,463
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.agent.common import config,0,0,0.0,464
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.plugins.common import constants as p_const,1,0,0.0,465
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron._i18n import _,1,0,0.0,466
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron_lib import constants as n_const,1,0,0.0,467
+041e2f75e7f82b0841e38baded9628aa44d81f87,ovs_conf.register_ovs_agent_opts(),0,0,0.0,468
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.conf.plugins.ml2.drivers import ovs_conf,0,0,0.0,469
+041e2f75e7f82b0841e38baded9628aa44d81f87,config.register_agent_state_opts_helper(cfg.CONF),1,0,0.0,470
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,0,0.0,471
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,472
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""headers.""))",1,0,0.0,473
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""timeout won't be changed"")),",1,0,0.0,474
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('quitting_rpc_timeout', default=10,",1,0,0.0,475
+041e2f75e7f82b0841e38baded9628aa44d81f87,agent_opts = [,1,0,0.0,476
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.agent.common import config,1,0,0.0,477
+041e2f75e7f82b0841e38baded9628aa44d81f87,config.register_agent_state_opts_helper(cfg.CONF),0,0,0.0,478
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",0,0,0.0,479
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""headers.""))",0,0,0.0,480
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""timeout won't be changed"")),",0,0,0.0,481
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('quitting_rpc_timeout', default=10,",0,0,0.0,482
+041e2f75e7f82b0841e38baded9628aa44d81f87,agent_opts = [,0,0,0.0,483
+041e2f75e7f82b0841e38baded9628aa44d81f87,OPTS = [,1,0,0.0,484
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nvp_password',",0,0,0.0,485
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.agent.common import config as agent_conf,1,0,0.0,486
+041e2f75e7f82b0841e38baded9628aa44d81f87,conf.register_opts([host_route_depr]),0,0,0.0,487
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.BoolOpt('metadata_dhcp_host_route', default=False),",1,0,0.0,488
+041e2f75e7f82b0841e38baded9628aa44d81f87,core_opts = [,1,0,0.0,489
+041e2f75e7f82b0841e38baded9628aa44d81f87,# ### END,0,0,0.0,490
+041e2f75e7f82b0841e38baded9628aa44d81f87,"conf.register_opts(cluster_opts + [controller_depr], section)",0,0,0.0,491
+041e2f75e7f82b0841e38baded9628aa44d81f87,"if section not in conf and section.startswith(""CLUSTER:""):",0,0,0.0,492
+041e2f75e7f82b0841e38baded9628aa44d81f87,"raise cfg.Error(""Some config files were not parsed properly"")",0,0,0.0,493
+041e2f75e7f82b0841e38baded9628aa44d81f87,if len(read_ok) != len(conf.config_file):,0,0,0.0,494
+041e2f75e7f82b0841e38baded9628aa44d81f87,read_ok = multi_parser.read(conf.config_file),0,0,0.0,495
+041e2f75e7f82b0841e38baded9628aa44d81f87,multi_parser = cfg.MultiConfigParser(),0,0,0.0,496
+041e2f75e7f82b0841e38baded9628aa44d81f87,def register_deprecated(conf):,0,0,0.0,497
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('retries',",0,0,0.0,498
+041e2f75e7f82b0841e38baded9628aa44d81f87,"host_route_depr = cfg.BoolOpt('metadata_dhcp_host_route', default=None)",0,0,0.0,499
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""least one connection per cluster.""))",0,0,0.0,500
+041e2f75e7f82b0841e38baded9628aa44d81f87,"controller_depr = cfg.MultiStrOpt('nvp_controller_connection',",0,0,0.0,501
+041e2f75e7f82b0841e38baded9628aa44d81f87,# ### BEGIN,0,0,0.0,502
+041e2f75e7f82b0841e38baded9628aa44d81f87,# NVP configuration files in older format (Grizzly or older).,0,0,0.0,503
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.CONF.register_opts(cluster_opts),0,0,0.0,504
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.CONF.register_opts(connection_opts),0,0,0.0,505
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.ListOpt('nvp_controllers',",0,0,0.0,506
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('redirects',",0,0,0.0,507
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,508
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('default_cluster_name',",1,0,0.0,509
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Default cluster name"")),",1,0,0.0,510
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nova_zone_id',",1,0,0.0,511
+041e2f75e7f82b0841e38baded9628aa44d81f87,"info = self._get_opt_info(name, group)",1,0,0.0,512
+041e2f75e7f82b0841e38baded9628aa44d81f87,"return self.GroupAttr(self, self._get_group(name))",1,0,0.0,513
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""""""",1,0,0.0,514
+041e2f75e7f82b0841e38baded9628aa44d81f87,TemplateSubstitutionError,1,0,0.0,515
+041e2f75e7f82b0841e38baded9628aa44d81f87,":raises: NoSuchOptError, NoSuchGroupError, ConfigFileValueError,",1,0,0.0,516
+041e2f75e7f82b0841e38baded9628aa44d81f87,:param group: an OptGroup,1,0,0.0,517
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""""""Look up an option value.",1,0,0.0,518
+041e2f75e7f82b0841e38baded9628aa44d81f87,"def _do_get(self, name, group=None):",1,0,0.0,519
+041e2f75e7f82b0841e38baded9628aa44d81f87,self.register_cli_opts(self._config_opts),1,0,0.0,520
+041e2f75e7f82b0841e38baded9628aa44d81f87,self._oparser = config_options._oparser,1,0,0.0,521
+041e2f75e7f82b0841e38baded9628aa44d81f87,self._cparser = config_options._cparser,1,0,0.0,522
+041e2f75e7f82b0841e38baded9628aa44d81f87,self._config_opts = config_options._config_opts,1,0,0.0,523
+041e2f75e7f82b0841e38baded9628aa44d81f87,self._group_mappings = {},1,0,0.0,524
+041e2f75e7f82b0841e38baded9628aa44d81f87,"super(ClusterConfigOptions, self).__init__()",1,0,0.0,525
+041e2f75e7f82b0841e38baded9628aa44d81f87,"def __init__(self, config_options):",1,0,0.0,526
+041e2f75e7f82b0841e38baded9628aa44d81f87,class ClusterConfigOptions(cfg.ConfigOpts):,1,0,0.0,527
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.CONF.register_opts(core_opts),1,0,0.0,528
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""cluster."")),",1,0,0.0,529
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.MultiStrOpt('nvp_controller_connection',",1,0,0.0,530
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=2,",0,0,0.0,531
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_('Time before aborting a request')),",0,0,0.0,532
+041e2f75e7f82b0841e38baded9628aa44d81f87,if 'override' in info:,1,0,0.0,533
+041e2f75e7f82b0841e38baded9628aa44d81f87,heartbeat = loopingcall.LoopingCall(self._report_state),1,0,0.0,534
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_url',",1,0,0.0,535
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_tenant_name',",1,0,0.0,536
+041e2f75e7f82b0841e38baded9628aa44d81f87,"secret=True),",1,0,0.0,537
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin password""),",1,0,0.0,538
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_password',",1,0,0.0,539
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin username"")),",1,0,0.0,540
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_user',",1,0,0.0,541
+041e2f75e7f82b0841e38baded9628aa44d81f87,report_interval=cfg.CONF.AGENT.report_interval),1,0,0.0,542
+041e2f75e7f82b0841e38baded9628aa44d81f87,heartbeat.start(interval=report_interval),1,0,0.0,543
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='quantum.agent.l3_agent.L3NATAgent',",1,0,0.0,544
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=10,",0,0,0.0,545
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('l3_agent_manager',",1,0,0.0,546
+041e2f75e7f82b0841e38baded9628aa44d81f87,manager='quantum.agent.l3_agent.L3NATAgentWithStateReport'),0,0,0.0,547
+041e2f75e7f82b0841e38baded9628aa44d81f87,"report_interval=cfg.CONF.AGENT.report_interval,",0,0,0.0,548
+041e2f75e7f82b0841e38baded9628aa44d81f87,return,0,0,0.0,549
+041e2f75e7f82b0841e38baded9628aa44d81f87,self.heartbeat.stop(),0,0,0.0,550
+041e2f75e7f82b0841e38baded9628aa44d81f87,"LOG.warn(_(""Quantum server does not support state report.""",0,0,0.0,551
+041e2f75e7f82b0841e38baded9628aa44d81f87,except AttributeError:,0,0,0.0,552
+041e2f75e7f82b0841e38baded9628aa44d81f87,self.heartbeat.start(interval=report_interval),0,0,0.0,553
+041e2f75e7f82b0841e38baded9628aa44d81f87,self.heartbeat = loopingcall.LoopingCall(self._report_state),0,0,0.0,554
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication URL"")),",1,0,0.0,555
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_strategy', default='keystone',",1,0,0.0,556
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_region',",1,0,0.0,557
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication region"")),",1,0,0.0,558
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('http_timeout',",0,0,0.0,559
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default=30,",0,0,0.0,560
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('req_timeout',",0,0,0.0,561
+041e2f75e7f82b0841e38baded9628aa44d81f87,"secret=True,",0,0,0.0,562
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='admin',",0,0,0.0,563
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nvp_user',",0,0,0.0,564
+041e2f75e7f82b0841e38baded9628aa44d81f87,connection_opts = [,0,0,0.0,565
+041e2f75e7f82b0841e38baded9628aa44d81f87,],0,0,0.0,566
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication region"")),",1,0,0.0,567
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_region',",1,0,0.0,568
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_strategy', default='keystone',",1,0,0.0,569
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Authentication URL"")),",1,0,0.0,570
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('auth_url',",1,0,0.0,571
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_tenant_name',",1,0,0.0,572
+041e2f75e7f82b0841e38baded9628aa44d81f87,"secret=True),",1,0,0.0,573
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin password""),",1,0,0.0,574
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_password',",1,0,0.0,575
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Admin user"")),",1,0,0.0,576
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('admin_user',",1,0,0.0,577
+041e2f75e7f82b0841e38baded9628aa44d81f87,opt = info['opt'],1,0,0.0,578
+041e2f75e7f82b0841e38baded9628aa44d81f87,return info['override'],1,0,0.0,579
+041e2f75e7f82b0841e38baded9628aa44d81f87,import sys,1,0,0.0,580
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'rpc_flavor',",0,0,0.0,581
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('rpc_flavor', default='',",1,0,0.0,582
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('extension_map', default='',",1,0,0.0,583
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Supported extension aliases"")),",1,0,0.0,584
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('supported_extension_aliases', default='',",1,0,0.0,585
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('default_l3_flavor', default='',",1,0,0.0,586
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('default_flavor', default='',",1,0,0.0,587
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('l3_plugin_list', default='',",1,0,0.0,588
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('plugin_list', default='',",1,0,0.0,589
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""requests."")),",0,0,0.0,590
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""order based on 'plugin_list'."")),",0,0,0.0,591
+041e2f75e7f82b0841e38baded9628aa44d81f87,cfg.StrOpt(,0,0,0.0,592
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'extension_map',",0,0,0.0,593
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'supported_extension_aliases',",0,0,0.0,594
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""is blank."")),",0,0,0.0,595
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'default_l3_flavor',",0,0,0.0,596
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""specified at network creation."")),",0,0,0.0,597
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'default_flavor',",0,0,0.0,598
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""service plugin, set this blank."")),",0,0,0.0,599
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'l3_plugin_list',",0,0,0.0,600
+041e2f75e7f82b0841e38baded9628aa44d81f87,"default='',",0,0,0.0,601
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IPOpt('local_ip', version=4,",0,0,0.0,602
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('local_ip', default='',",1,0,0.0,603
+041e2f75e7f82b0841e38baded9628aa44d81f87,"# Copyright 2012 Red Hat, Inc.",1,0,0.0,604
+041e2f75e7f82b0841e38baded9628aa44d81f87,#,1,0,0.0,605
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""Enable tunneling support."")),",1,0,0.0,606
+041e2f75e7f82b0841e38baded9628aa44d81f87,config.register_root_helper(cfg.CONF),1,0,0.0,607
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,0,0.0,608
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(ovs_opts, ""OVS"")",1,0,0.0,609
+041e2f75e7f82b0841e38baded9628aa44d81f87,agent_opts = [,1,0,0.0,610
+041e2f75e7f82b0841e38baded9628aa44d81f87,],1,0,0.0,611
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('ovsdb_interface',",1,0,0.0,612
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('ovsdb_ip',",1,0,0.0,613
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('ovsdb_port', default=6634,",1,0,0.0,614
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('tunnel_interface',",1,0,0.0,615
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('tunnel_ip',",1,0,0.0,616
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('tunnel_key_max', default=0xffffff,",1,0,0.0,617
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.IntOpt('tunnel_key_min', default=1,",1,0,0.0,618
+041e2f75e7f82b0841e38baded9628aa44d81f87,"help=_(""OpenFlow REST API location."")),",1,0,0.0,619
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('integration_bridge', default='br-int',",1,0,0.0,620
+041e2f75e7f82b0841e38baded9628aa44d81f87,ovs_opts = [,1,0,0.0,621
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.agent.linux import ovs_lib  # noqa,1,0,0.0,622
+041e2f75e7f82b0841e38baded9628aa44d81f87,from neutron.agent.common import config,1,0,0.0,623
+041e2f75e7f82b0841e38baded9628aa44d81f87,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,624
+041e2f75e7f82b0841e38baded9628aa44d81f87,"'plugin_list',",0,0,0.0,625
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""interface."")),",1,0,0.0,626
+041e2f75e7f82b0841e38baded9628aa44d81f87,values = [],1,0,0.0,627
+041e2f75e7f82b0841e38baded9628aa44d81f87,return value[-1],1,0,0.0,628
+041e2f75e7f82b0841e38baded9628aa44d81f87,return info['default'],1,0,0.0,629
+041e2f75e7f82b0841e38baded9628aa44d81f87,if 'default' in info:,1,0,0.0,630
+041e2f75e7f82b0841e38baded9628aa44d81f87,return values,1,0,0.0,631
+041e2f75e7f82b0841e38baded9628aa44d81f87,if values:,1,0,0.0,632
+041e2f75e7f82b0841e38baded9628aa44d81f87,return value + values,1,0,0.0,633
+041e2f75e7f82b0841e38baded9628aa44d81f87,return value,1,0,0.0,634
+041e2f75e7f82b0841e38baded9628aa44d81f87,if value is not None:,1,0,0.0,635
+041e2f75e7f82b0841e38baded9628aa44d81f87,value = self._cli_values.get(name),1,0,0.0,636
+041e2f75e7f82b0841e38baded9628aa44d81f87,values.extend(value),1,0,0.0,637
+041e2f75e7f82b0841e38baded9628aa44d81f87,if not opt.multi:,1,0,0.0,638
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('interface_driver',",1,0,0.0,639
+041e2f75e7f82b0841e38baded9628aa44d81f87,else:,1,0,0.0,640
+041e2f75e7f82b0841e38baded9628aa44d81f87,raise cfg.ConfigFileValueError(str(ve)),1,0,0.0,641
+041e2f75e7f82b0841e38baded9628aa44d81f87,except ValueError as ve:,1,0,0.0,642
+041e2f75e7f82b0841e38baded9628aa44d81f87,pass,1,0,0.0,643
+041e2f75e7f82b0841e38baded9628aa44d81f87,except KeyError:,1,0,0.0,644
+041e2f75e7f82b0841e38baded9628aa44d81f87,"value = opt._get_from_config_parser(self._cparser, section)",1,0,0.0,645
+041e2f75e7f82b0841e38baded9628aa44d81f87,try:,1,0,0.0,646
+041e2f75e7f82b0841e38baded9628aa44d81f87,"section = self._group_mappings.get(section, section)",1,0,0.0,647
+041e2f75e7f82b0841e38baded9628aa44d81f87,if self._cparser is not None:,1,0,0.0,648
+041e2f75e7f82b0841e38baded9628aa44d81f87,return opt.default,1,0,0.0,649
+041e2f75e7f82b0841e38baded9628aa44d81f87,"def register_opts(self, opts, group_internal_name=None, group=None):",1,0,0.0,650
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""""""Register multiple option schemas at once.""""""",1,0,0.0,651
+041e2f75e7f82b0841e38baded9628aa44d81f87,if group_internal_name:,1,0,0.0,652
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""console \""admin\"" section."")),",1,0,0.0,653
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.StrOpt('nvp_cluster_uuid',",1,0,0.0,654
+041e2f75e7f82b0841e38baded9628aa44d81f87,return cluster_names,1,0,0.0,655
+041e2f75e7f82b0841e38baded9628aa44d81f87,cluster_names.append(cluster_name),1,0,0.0,656
+041e2f75e7f82b0841e38baded9628aa44d81f87,"conf.register_opts(cluster_opts, tag, cluster_name)",1,0,0.0,657
+041e2f75e7f82b0841e38baded9628aa44d81f87,cluster_name = tag.split(':')[1],1,0,0.0,658
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cluster_tags = _retrieve_extra_groups(conf, ""CLUSTER"")",1,0,0.0,659
+041e2f75e7f82b0841e38baded9628aa44d81f87,cluster_names = [],1,0,0.0,660
+041e2f75e7f82b0841e38baded9628aa44d81f87,def register_cluster_groups(conf):,1,0,0.0,661
+041e2f75e7f82b0841e38baded9628aa44d81f87,return results,1,0,0.0,662
+041e2f75e7f82b0841e38baded9628aa44d81f87,results.append(parsed_item),1,0,0.0,663
+041e2f75e7f82b0841e38baded9628aa44d81f87,if not key or key == items[0]:,1,0,0.0,664
+041e2f75e7f82b0841e38baded9628aa44d81f87,items = key and parsed_item.split(delimiter),1,0,0.0,665
+041e2f75e7f82b0841e38baded9628aa44d81f87,if parsed_item not in cfg.CONF:,1,0,0.0,666
+041e2f75e7f82b0841e38baded9628aa44d81f87,results = [],1,0,0.0,667
+041e2f75e7f82b0841e38baded9628aa44d81f87,"""""""retrieve configuration groups not listed above.""""""",1,0,0.0,668
+041e2f75e7f82b0841e38baded9628aa44d81f87,"def _retrieve_extra_groups(conf, key=None, delimiter=':'):",1,0,0.0,669
+041e2f75e7f82b0841e38baded9628aa44d81f87,"self.register_opt(opt, group, clear_cache=False)",1,0,0.0,670
+041e2f75e7f82b0841e38baded9628aa44d81f87,self._group_mappings[group] = group_internal_name,1,0,0.0,671
+041e2f75e7f82b0841e38baded9628aa44d81f87,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,0,0.0,672

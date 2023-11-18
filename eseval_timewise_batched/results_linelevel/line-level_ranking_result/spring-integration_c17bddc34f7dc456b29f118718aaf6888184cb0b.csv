@@ -1,0 +1,36 @@
+commit_id,line,line_level_label,count,line_score,row
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"String result = processor.processMessage(new GenericMessage<>(""classpath*:*-test.xml""));",0,4,1.0,1
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"String result = (String) processor.processMessage(new GenericMessage<String>(""classpath*:*.properties""));",1,4,1.0,2
+c17bddc34f7dc456b29f118718aaf6888184cb0b,ExpressionEvaluatingMessageProcessor processor = new ExpressionEvaluatingMessageProcessor(expression);,1,4,1.0,3
+c17bddc34f7dc456b29f118718aaf6888184cb0b,ExpressionEvaluatingMessageProcessor<String> processor = new ExpressionEvaluatingMessageProcessor<>(expression);,0,3,0.75,4
+c17bddc34f7dc456b29f118718aaf6888184cb0b,ExpressionEvaluatingMessageProcessor<UUID> processor = new ExpressionEvaluatingMessageProcessor<>(expression);,0,3,0.75,5
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"private static final ExpressionParser expressionParser = new SpelExpressionParser(new SpelParserConfiguration(true, true));",1,2,0.5,6
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"GenericMessage<String> message = new GenericMessage<String>(""foo"");",1,2,0.5,7
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"GenericMessage<String> message = new GenericMessage<>(""foo"");",0,2,0.5,8
+c17bddc34f7dc456b29f118718aaf6888184cb0b,private static final ExpressionParser expressionParser = new SpelExpressionParser();,0,2,0.5,9
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(""foo"", processor.processMessage(new GenericMessage<TestPayload>(new TestPayload())));",1,1,0.25,10
+c17bddc34f7dc456b29f118718aaf6888184cb0b,return Arrays.asList(resources).toString();,1,1,0.25,11
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(null, processor.processMessage(new GenericMessage<String>(""2"")));",1,1,0.25,12
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(""2"", processor.processMessage(new GenericMessage<String>(""2"")));",1,1,0.25,13
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"EvaluationContext evaluationContext = TestUtils.getPropertyValue(processor, ""evaluationContext"", EvaluationContext.class);",1,1,0.25,14
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(""foo"", processor.processMessage(new GenericMessage<String>(""foo"")));",1,1,0.25,15
+c17bddc34f7dc456b29f118718aaf6888184cb0b,import org.springframework.expression.spel.SpelParserConfiguration;,1,1,0.25,16
+c17bddc34f7dc456b29f118718aaf6888184cb0b,* Copyright 2002-2016 the original author or authors.,1,1,0.25,17
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(""foo"", processor.processMessage(new GenericMessage<>(new TestPayload())));",0,1,0.25,18
+c17bddc34f7dc456b29f118718aaf6888184cb0b,return Arrays.toString(resources);,0,1,0.25,19
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(""2"", processor.processMessage(new GenericMessage<>(""2"")));",0,1,0.25,20
+c17bddc34f7dc456b29f118718aaf6888184cb0b,EvaluationContext evaluationContext =,0,1,0.25,21
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(""foo"", processor.processMessage(new GenericMessage<>(""foo"")));",0,1,0.25,22
+c17bddc34f7dc456b29f118718aaf6888184cb0b,*,0,1,0.25,23
+c17bddc34f7dc456b29f118718aaf6888184cb0b,import java.util.UUID;,0,1,0.25,24
+c17bddc34f7dc456b29f118718aaf6888184cb0b,* Copyright 2002-2018 the original author or authors.,0,1,0.25,25
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertEquals(null, processor.processMessage(new GenericMessage<>(""2"")));",0,1,0.25,26
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertTrue(""Wrong result: "" + result, result.contains(""log4j2-test.xml""));",0,0,0.0,27
+c17bddc34f7dc456b29f118718aaf6888184cb0b,factoryBean.getObject());,1,0,0.0,28
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"applicationContext.getBeanFactory().registerSingleton(IntegrationContextUtils.INTEGRATION_EVALUATION_CONTEXT_BEAN_NAME,",1,0,0.0,29
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"@SuppressWarnings({ ""rawtypes"", ""unchecked"" })",1,0,0.0,30
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"TestUtils.getPropertyValue(processor, ""evaluationContext"", EvaluationContext.class);",0,0,0.0,31
+c17bddc34f7dc456b29f118718aaf6888184cb0b,factoryBean.getObject());,0,0,0.0,32
+c17bddc34f7dc456b29f118718aaf6888184cb0b,".registerSingleton(IntegrationContextUtils.INTEGRATION_EVALUATION_CONTEXT_BEAN_NAME,",0,0,0.0,33
+c17bddc34f7dc456b29f118718aaf6888184cb0b,applicationContext.getBeanFactory(),0,0,0.0,34
+c17bddc34f7dc456b29f118718aaf6888184cb0b,"assertTrue(""Wrong result: "" + result, result.contains(""log4j.properties""));",1,0,0.0,35

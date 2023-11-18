@@ -1,0 +1,166 @@
+commit_id,line,line_level_label,count,line_score,row
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""""""Parses ip link help output, and gets vf block""""""",1,8,1.0,1
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,Note: ip link help return error and writes its output to stderr,1,5,0.625,2
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,Runs ip link help command and stores its output,1,5,0.625,3
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""""""Gets the output of the ip link help command",1,4,0.5,4
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"so we get the output from there. however, if this issue",1,2,0.25,5
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,'Please ensure that the version of ip link ',1,2,0.25,6
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,result = checks.vf_management_supported(),1,2,0.25,7
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,vf_section = ip_link_support.IpLinkSupport.get_vf_mgmt_section(),1,2,0.25,8
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,will get the output from there too.,1,2,0.25,9
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,result = checks.vf_extended_management_supported(),1,2,0.25,10
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,:param vf_section: vf Num block content,1,2,0.25,11
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"VF_BLOCK_REGEX = r""\[ vf NUM(?P<vf_block>.*) \] \]""",1,2,0.25,12
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"message = _(""ip link capability %(capability)s is not supported"")",1,2,0.25,13
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"message = _(""ip link command is not supported: %(reason)s"")",1,2,0.25,14
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,output = cls._get_ip_link_output(),1,2,0.25,15
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_cmd,",1,1,0.125,16
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"LOG.debug(""ip link command does not support """,1,1,0.125,17
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,is_supported = False,1,1,0.125,18
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,is_supported = True,1,1,0.125,19
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def _vf_management_support(required_caps):,1,1,0.125,20
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"LOG.exception(""Failed executing ip command"")",1,1,0.125,21
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_cmd = ['ip', 'link', 'help']",1,1,0.125,22
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"_stdout, _stderr = utils.execute(",1,1,0.125,23
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"will be solved and the command will write to stdout, we",1,1,0.125,24
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def _get_ip_link_output(cls):,1,1,0.125,25
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"pattern_match = re.search(regex, vf_section,",1,1,0.125,26
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""ip link command"")",1,1,0.125,27
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"LOG.exception(""Unexpected exception while checking supported """,1,1,0.125,28
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"help=_('Check for VF management support')),",1,1,0.125,29
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def vf_management_supported():,1,1,0.125,30
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def vf_extended_management_supported():,1,1,0.125,31
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def check_vf_management():,1,1,0.125,32
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,LOG.error('Check for VF management support failed. ',1,1,0.125,33
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return result,1,1,0.125,34
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def check_vf_extended_management():,1,1,0.125,35
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,LOG.error('Check for VF extended management support failed. ',1,1,0.125,36
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"regex = cls.SUB_CAPABILITY_REGEX % {""cap"": capability,",1,1,0.125,37
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"help=_('Check for VF extended management support')),",1,1,0.125,38
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def test_vf_management_runs(self):,1,1,0.125,39
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def test_vf_extended_management_runs(self):,1,1,0.125,40
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"agent_utils.execute(full_args, run_as_root=True,",0,1,0.125,41
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"agent_utils.execute(full_args, run_as_root=True)",1,1,0.125,42
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,regex = cls.CAPABILITY_REGEX % capability,1,1,0.125,43
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,required_caps = (,1,1,0.125,44
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,if given) supported,1,1,0.125,45
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,LOG = logging.getLogger(__name__),1,1,0.125,46
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def _vf_management_support(required_caps):,0,1,0.125,47
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,Checks if given vf capability (and sub capability,1,1,0.125,48
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def vf_management_supported():,0,1,0.125,49
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,required_caps = (,0,1,0.125,50
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def vf_management_supported():,1,1,0.125,51
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,required_caps = (,1,1,0.125,52
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,exists = ip_lib.network_namespace_exists(nsname),0,1,0.125,53
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw = ip_lib.IPWrapper(),1,1,0.125,54
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw_nohelp = ip_lib.IPWrapper(),1,1,0.125,55
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,exists = ipw_nohelp.netns.exists(nsname),1,1,0.125,56
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"# Unless required by applicable law or agreed to in writing, software",1,1,0.125,57
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,# See the License for the specific language governing permissions and,1,1,0.125,58
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def vf_extended_management_supported():,0,1,0.125,59
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"output,",1,1,0.125,60
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"CAPABILITY_REGEX = r""\[ %s (.*)""",1,1,0.125,61
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"def vf_mgmt_capability_supported(cls, vf_section, capability,",1,1,0.125,62
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"IP_LINK_CAPABILITY_STATE = ""state""",1,1,0.125,63
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"vf_block_pattern = re.search(cls.VF_BLOCK_REGEX,",1,1,0.125,64
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,def get_vf_mgmt_section(cls):,1,1,0.125,65
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"SUB_CAPABILITY_REGEX = r""\[ %(cap)s (.*) \[ %(subcap)s (.*)""",1,1,0.125,66
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""""""Validate vf capability support",1,1,0.125,67
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"IP_LINK_SUB_CAPABILITY_QOS = ""qos""",1,1,0.125,68
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"IP_LINK_CAPABILITY_SPOOFCHK = ""spoofchk""",1,1,0.125,69
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"IP_LINK_CAPABILITY_MIN_TX_RATE = ""min_tx_rate""",1,1,0.125,70
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"IP_LINK_CAPABILITY_RATE = ""rate""",1,1,0.125,71
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"IP_LINK_CAPABILITY_VLAN = ""vlan""",1,1,0.125,72
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return _stdout or _stderr,1,0,0.0,73
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""subcap"": subcapability}",1,0,0.0,74
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,raise UnsupportedIpLinkCommand(reason=e),1,0,0.0,75
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,except Exception as e:,1,0,0.0,76
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,log_fail_as_error=False),1,0,0.0,77
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"return_stderr=True,",1,0,0.0,78
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"check_exit_code=False,",1,0,0.0,79
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,try:,1,0,0.0,80
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return pattern_match is not None,1,0,0.0,81
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,else:,1,0,0.0,82
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,re.DOTALL | re.MULTILINE),1,0,0.0,83
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,:param subcapability: for example: qos,1,0,0.0,84
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,if subcapability:,1,0,0.0,85
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return False,1,0,0.0,86
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,if not vf_section:,1,0,0.0,87
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""""""",1,0,0.0,88
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,":param capability: for example: vlan, rate, spoofchk, state",1,0,0.0,89
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,subcapability=None):,1,0,0.0,90
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"return vf_block_pattern.group(""vf_block"")",1,0,0.0,91
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,if vf_block_pattern:,1,0,0.0,92
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,try:,1,0,0.0,93
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,from neutron.agent.linux import ip_link_support,1,0,0.0,94
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_MIN_TX_RATE,",1,0,0.0,95
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,for cap in required_caps:,1,0,0.0,96
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,),1,0,0.0,97
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,class IpLinkSupport(object):,1,0,0.0,98
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,checks.vf_extended_management_supported(),1,0,0.0,99
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,checks.vf_management_supported(),1,0,0.0,100
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"BoolOptCallback('vf_extended_management', check_vf_extended_management,",1,0,0.0,101
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"BoolOptCallback('vf_management', check_vf_management,",1,0,0.0,102
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"'""iproute2-ss140804"", git tag ""v3.16.0""')",1,0,0.0,103
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,'being used has VF extended support: version ',1,0,0.0,104
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,'being used has VF support.'),1,0,0.0,105
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,if not result:,1,0,0.0,106
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_RATE,",1,0,0.0,107
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,if not ip_link_support.IpLinkSupport.vf_mgmt_capability_supported(,1,0,0.0,108
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return _vf_management_support(required_caps),1,0,0.0,109
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_RATE),1,0,0.0,110
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_SPOOFCHK,",1,0,0.0,111
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_STATE,",1,0,0.0,112
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return is_supported,1,0,0.0,113
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return False,1,0,0.0,114
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,except ip_link_support.UnsupportedIpLinkCommand:,1,0,0.0,115
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"""vf capability '%(cap)s'"", {'cap': cap})",1,0,0.0,116
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"vf_section, cap):",1,0,0.0,117
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,@classmethod,1,0,0.0,118
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.create_network_namespace(nsname),0,0,0.0,119
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,class IpLinkConstants(object):,1,0,0.0,120
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.delete_network_namespace(nsname),0,0,0.0,121
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.IPWrapper().netns.add(self.nsname),1,0,0.0,122
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw.netns.delete(nsname),1,0,0.0,123
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw.netns.add(nsname),1,0,0.0,124
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.delete_network_namespace(nsname1),0,0,0.0,125
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.delete_network_namespace(nsname2),0,0,0.0,126
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.create_network_namespace(nsname2),0,0,0.0,127
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.create_network_namespace(nsname1),0,0,0.0,128
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.delete_network_namespace(self.nsname),0,0,0.0,129
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.create_network_namespace(self.nsname),0,0,0.0,130
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_RATE),1,0,0.0,131
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,class InvalidIpLinkCapability(IpLinkSupportError):,1,0,0.0,132
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_SPOOFCHK,",1,0,0.0,133
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_STATE,",1,0,0.0,134
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,),0,0,0.0,135
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_MIN_TX_RATE,",0,0,0.0,136
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_RATE,",0,0,0.0,137
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,return _vf_management_support(required_caps),0,0,0.0,138
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_RATE),0,0,0.0,139
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_SPOOFCHK,",0,0,0.0,140
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"ip_link_support.IpLinkConstants.IP_LINK_CAPABILITY_STATE,",0,0,0.0,141
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ip_lib.IPWrapper().netns.delete(self.nsname),1,0,0.0,142
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw.netns.add(nsname1),1,0,0.0,143
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw.netns.add(nsname2),1,0,0.0,144
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw.netns.delete(nsname2),1,0,0.0,145
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,class UnsupportedIpLinkCommand(IpLinkSupportError):,1,0,0.0,146
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,pass,1,0,0.0,147
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,class IpLinkSupportError(n_exc.NeutronException):,1,0,0.0,148
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,from neutron.agent.linux import utils,1,0,0.0,149
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,from neutron._i18n import _,1,0,0.0,150
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,from oslo_log import log as logging,1,0,0.0,151
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,from neutron_lib import exceptions as n_exc,1,0,0.0,152
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,import re,1,0,0.0,153
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,# limitations under the License.,1,0,0.0,154
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,# implied.,1,0,0.0,155
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,156
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"# distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,157
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,#    http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,158
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,# You may obtain a copy of the License at,1,0,0.0,159
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,# you may not use this file except in compliance with the License.,1,0,0.0,160
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"# Licensed under the Apache License, Version 2.0 (the ""License"");",1,0,0.0,161
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,#,1,0,0.0,162
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,"# Copyright 2014 Mellanox Technologies, Ltd",1,0,0.0,163
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,ipw.netns.delete(nsname1),1,0,0.0,164
+8d5b57c20dc34b0736ee16f66602eb7daa3d7cb5,privsep_exec=True),0,0,0.0,165

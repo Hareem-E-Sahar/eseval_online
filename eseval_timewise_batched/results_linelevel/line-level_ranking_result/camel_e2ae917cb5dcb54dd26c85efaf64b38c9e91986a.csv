@@ -1,0 +1,39 @@
+commit_id,line,line_level_label,count,line_score,row
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use the file component to read the CSV file,0,2,1.0,1
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use the file component to write the Arff file,0,2,1.0,2
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use the file component to read the CSV file,1,2,1.0,3
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Move the 'in_sf' attribute to the end,1,2,1.0,4
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use the file component to write the Arff file,1,2,1.0,5
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Move the 'in_sf' attribute to the end,0,2,1.0,6
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Convert the 'in_sf' attribute to nominal,1,1,0.5,7
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use weka to write the Arff file,1,1,0.5,8
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Rename the relation,1,1,0.5,9
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use weka to read the CSV file,1,1,0.5,10
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use weka to write the Arff file,0,1,0.5,11
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Use weka to read the CSV file,0,1,0.5,12
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Rename the relation,0,1,0.5,13
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,// Convert the 'in_sf' attribute to nominal,0,1,0.5,14
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"choice().when().ognl(""request.headers.foo == 'bar'"").",1,0,0.0,15
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"from(""direct:start"")",1,0,0.0,16
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""direct:end"");",1,0,0.0,17
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""file:target/data?fileName=sfny.arff"")",1,0,0.0,18
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:filter?apply=RenameRelation -modify sfny"")",1,0,0.0,19
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:filter?apply=Reorder -R 2-last,1"")",1,0,0.0,20
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:filter?apply=NumericToNominal -R first"")",1,0,0.0,21
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"from(""file:src/test/resources/data?fileName=sfny.csv&noop=true"")",1,0,0.0,22
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,*/,1,0,0.0,23
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,},1,0,0.0,24
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"to(""mock:result"");",1,0,0.0,25
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:filter?apply=Reorder -R 2-last,1"")",0,0,0.0,26
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"from(""direct:start"").",1,0,0.0,27
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:write?path=target/data/sfny.arff"");",0,0,0.0,28
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"from(""direct:start"")",0,0,0.0,29
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""direct:end"");",0,0,0.0,30
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""file:target/data?fileName=sfny.arff"")",0,0,0.0,31
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:filter?apply=RenameRelation -modify sfny"")",0,0,0.0,32
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:filter?apply=NumericToNominal -R first"")",0,0,0.0,33
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"from(""file:src/test/resources/data?fileName=sfny.csv&noop=true"")",0,0,0.0,34
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,*/,0,0,0.0,35
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,},0,0,0.0,36
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,"from(""direct:start"").choice().when().ognl(""request.headers.foo == 'bar'"").to(""mock:result"");",0,0,0.0,37
+e2ae917cb5dcb54dd26c85efaf64b38c9e91986a,".to(""weka:write?path=target/data/sfny.arff"");",1,0,0.0,38

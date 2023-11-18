@@ -1,0 +1,1022 @@
+commit_id,line,line_level_label,count,line_score,row
+12241987618a69a588beb6541750016ab25e9f9e,* Reference URI for the content to be signed. Only used in the enveloped case. If the reference URI contains an ID,0,17,1.0,1
+12241987618a69a588beb6541750016ab25e9f9e,* Sets the XPath to find the parent node in the enveloped case. Either you specify the parent node via this method,0,15,0.8823529411764706,2
+12241987618a69a588beb6541750016ab25e9f9e,* <code>null</code>. In this case the parent element must be contained in the XML document provided by the message body,0,15,0.8823529411764706,3
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloped XML signature case, the XML document without the signature part is returned in the message body.",0,15,0.8823529411764706,4
+12241987618a69a588beb6541750016ab25e9f9e,"* ID (default). If this parameter is set to """" (empty string) then no Id attribute is created in the signature",0,14,0.8235294117647058,5
+12241987618a69a588beb6541750016ab25e9f9e,* If <code>null</code> or an empty value is set then no prefix is used for the XML signature namespace.,0,13,0.7647058823529411,6
+12241987618a69a588beb6541750016ab25e9f9e,* Local name of the parent element to which the XML signature element will be added. Only relevant for enveloped,0,13,0.7647058823529411,7
+12241987618a69a588beb6541750016ab25e9f9e,* Sets the signature Id. If this parameter is not set (null value) then a unique ID is generated for the signature,0,13,0.7647058823529411,8
+12241987618a69a588beb6541750016ab25e9f9e,* Creates from the message body a XML signature element which is returned in the message body of the output message.,0,13,0.7647058823529411,9
+12241987618a69a588beb6541750016ab25e9f9e,* Detached signatures where the signature element is a sibling element to the signed element are supported. Those,0,13,0.7647058823529411,10
+12241987618a69a588beb6541750016ab25e9f9e,"* @param parentXpath xpath to the parent node, if the xpath returns several values then the first Element node is",0,12,0.7058823529411764,11
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent XPath //pre:root for an enveloped signature and the XPATHs to ID attributes for a detached signature are specified. You must not specify both parameters."",",1,12,0.7058823529411764,12
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent XPath //pre:root for an enveloped signature and the XPATHs to ID attributes for a detached signature are specified. You must not specify both parameters."",",0,12,0.7058823529411764,13
+12241987618a69a588beb6541750016ab25e9f9e,"* @param parentXpath xpath to the parent node, if the xpath returns several values then the first Element node is used",1,12,0.7058823529411764,14
+12241987618a69a588beb6541750016ab25e9f9e,* Either you specify the parent node via this method or the local name and namespace of the parent,1,12,0.7058823529411764,15
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""Value must have the form '{<namespace>}<element local name>' or '<element local name>' if no the element has no namespace."",",1,12,0.7058823529411764,16
+12241987618a69a588beb6541750016ab25e9f9e,* Type of the content reference. The default value is <code>null</code>. This value can be overwritten by the,0,12,0.7058823529411764,17
+12241987618a69a588beb6541750016ab25e9f9e,* @return           <code>true</code> if the root element of the xml signature document is the signature element;,0,12,0.7058823529411764,18
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""Value must have the form '{<namespace>}<element local name>' or '<element local name>' if no the element has no namespace."",",0,12,0.7058823529411764,19
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloping XML signature case, the message body is determined from a referenced Object element in the",0,12,0.7058823529411764,20
+12241987618a69a588beb6541750016ab25e9f9e,* Maps the XML signature to a camel message. A output node is determined from the XML signature document via a node,0,12,0.7058823529411764,21
+12241987618a69a588beb6541750016ab25e9f9e,* <code>null</code>. In this case the parent element must be contained in the,1,11,0.6470588235294118,22
+12241987618a69a588beb6541750016ab25e9f9e,"+ "". Either the configuration of the XML signature component is wrong or the incoming message has not the correct structure."",",1,11,0.6470588235294118,23
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" for an enveloped signature and the XPATHs to ID attributes for a detached signature are specified. You must not specify both parameters."",",1,11,0.6470588235294118,24
+12241987618a69a588beb6541750016ab25e9f9e,"+ "". Either the configuration of the XML signature component is wrong or the incoming message has not the correct structure."",",0,11,0.6470588235294118,25
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" for an enveloped signature and the XPATHs to ID attributes for a detached signature are specified. You must not specify both parameters."",",0,11,0.6470588235294118,26
+12241987618a69a588beb6541750016ab25e9f9e,"+ "". Either the configuration of the XML signature component is wrong or the incoming message has not the correct structure."");",1,11,0.6470588235294118,27
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" for an enveloped signature and the XPATHs to ID attributes for a detached signature are specified. You must not specify both parameters."");",1,11,0.6470588235294118,28
+12241987618a69a588beb6541750016ab25e9f9e,* Reference URI for the content to be signed. Only used in the enveloped,1,11,0.6470588235294118,29
+12241987618a69a588beb6541750016ab25e9f9e,"+ "". Either the configuration of the XML signature component is wrong or the incoming message has not the correct structure."");",0,11,0.6470588235294118,30
+12241987618a69a588beb6541750016ab25e9f9e,* and the signature element is added as last child element of the parent element. If a KeyInfo instance is provided by,0,11,0.6470588235294118,31
+12241987618a69a588beb6541750016ab25e9f9e,* Sets the XPath to find the parent node in the enveloped case.,1,11,0.6470588235294118,32
+12241987618a69a588beb6541750016ab25e9f9e,* type ID). For each element found via the XPATH expression a detached signature is created whose reference URI,0,11,0.6470588235294118,33
+12241987618a69a588beb6541750016ab25e9f9e,* the schema validator will then find out which attributes are ID attributes. Will be ignored in the enveloping or,0,11,0.6470588235294118,34
+12241987618a69a588beb6541750016ab25e9f9e,* Namespace of the parent element to which the XML signature element will be added.,0,11,0.6470588235294118,35
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" for an enveloped signature and the XPATHs to ID attributes for a detached signature are specified. You must not specify both parameters."");",0,11,0.6470588235294118,36
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureException(""The parent XPath "" + getConfiguration().getParentXpath().getXPath() + "" is wrongly configured: The XPath "" + xp.getXPath() + "" is invalid."", e);",1,10,0.5882352941176471,37
+12241987618a69a588beb6541750016ab25e9f9e,* If <code>null</code> or an empty value is set then no prefix is used for,1,10,0.5882352941176471,38
+12241987618a69a588beb6541750016ab25e9f9e,* Local name of the parent element to which the XML signature element will,1,10,0.5882352941176471,39
+12241987618a69a588beb6541750016ab25e9f9e,* Namespace of the parent element to which the XML signature element will,1,10,0.5882352941176471,40
+12241987618a69a588beb6541750016ab25e9f9e,"* is set to """" (empty string) then no Id attribute is created in the",1,10,0.5882352941176471,41
+12241987618a69a588beb6541750016ab25e9f9e,* Detached signatures where the signature element is a sibling element to the,1,10,0.5882352941176471,42
+12241987618a69a588beb6541750016ab25e9f9e,"""The configruation of the XML Signature component is wrong: No XML schema specified in the detached case"",",0,10,0.5882352941176471,43
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureException(""The parent XPath "" + xp.getXPath() + "" returned no result. Check the configuration of the XML signer component."");",1,10,0.5882352941176471,44
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureException(""The parent XPath "" + xp.getXPath() + "" returned no element. Check the configuration of the XML signer component."");",1,10,0.5882352941176471,45
+12241987618a69a588beb6541750016ab25e9f9e,"""The configruation of the XML Signature component is wrong: No XML schema specified in the detached case"", null);",1,10,0.5882352941176471,46
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" resulted in an attribute which is not of type ID. The attribute value is "" + value + ""."", null);",1,10,0.5882352941176471,47
+12241987618a69a588beb6541750016ab25e9f9e,* or the local name and namespace of the parent with the methods {@link #setParentLocalName(String)} and,0,10,0.5882352941176471,48
+12241987618a69a588beb6541750016ab25e9f9e,"* The ASF licenses this file to You under the Apache License, Version 2.0",1,10,0.5882352941176471,49
+12241987618a69a588beb6541750016ab25e9f9e,* reference to the signed info element so that it is protected via the,1,10,0.5882352941176471,50
+12241987618a69a588beb6541750016ab25e9f9e,* enveloped signature and this parameter for detached signature must not be set in the same configuration.,0,10,0.5882352941176471,51
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureException(String.format(""Cannot extract root node for the output document from the XML signature document. """,1,10,0.5882352941176471,52
+12241987618a69a588beb6541750016ab25e9f9e,"* <li>The ""ElementName"" search uses the local name and namespace specified in the search value to determine the output",0,10,0.5882352941176471,53
+12241987618a69a588beb6541750016ab25e9f9e,"* <li>The ""XPath"" search uses an XPath expression to evaluate the output node. In this case the output node can be of",0,10,0.5882352941176471,54
+12241987618a69a588beb6541750016ab25e9f9e,* signature elements should be removed from the resulting output document. This flag shall be used for enveloped XML,0,10,0.5882352941176471,55
+12241987618a69a588beb6541750016ab25e9f9e,* Returns the references whose referenced objects are taken into account for the message body. This message you can,0,10,0.5882352941176471,56
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloped XML signature case, the XML document without the signature",1,10,0.5882352941176471,57
+12241987618a69a588beb6541750016ab25e9f9e,* the signature elements should be removed from the resulting output document. This flag shall be used for enveloped,0,10,0.5882352941176471,58
+12241987618a69a588beb6541750016ab25e9f9e,"* The ASF licenses this file to You under the Apache License, Version 2.0",0,10,0.5882352941176471,59
+12241987618a69a588beb6541750016ab25e9f9e,* In order to protect the KeyInfo element from tampering you can add a reference to the signed info element so that,0,10,0.5882352941176471,60
+12241987618a69a588beb6541750016ab25e9f9e,* Default value is <code>null</code>. The value must be <code>null</code> for enveloping and detached XML,0,10,0.5882352941176471,61
+12241987618a69a588beb6541750016ab25e9f9e,* Define the elements which are signed in the detached case via XPATH expressions to ID attributes (attributes of,0,10,0.5882352941176471,62
+12241987618a69a588beb6541750016ab25e9f9e,* message. If this digest algorithm is not specified then the digest algorithm is calculated from the signature,0,10,0.5882352941176471,63
+12241987618a69a588beb6541750016ab25e9f9e,* XML document provided by the message body and the signature element is added,1,9,0.5294117647058824,64
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloping XML signature case, also message bodies containing plain text are supported. This must be indicated",0,9,0.5294117647058824,65
+12241987618a69a588beb6541750016ab25e9f9e,* elements can be signed which have ID attributes. The elements to be signed must be specified via xpath expressions,0,9,0.5294117647058824,66
+12241987618a69a588beb6541750016ab25e9f9e,"""Key accessor is missing for XML signature generation. Specify a key accessor in the configuration."");",0,9,0.5294117647058824,67
+12241987618a69a588beb6541750016ab25e9f9e,* Creates from the message body a XML signature element which is returned in,1,9,0.5294117647058824,68
+12241987618a69a588beb6541750016ab25e9f9e,"+ el.getLocalName() + ""{"" + el.getNamespaceURI() + ""} which is referenced by the reference URI "" + referenceUri",1,9,0.5294117647058824,69
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloping XML signature case, the generated XML signature has the",1,9,0.5294117647058824,70
+12241987618a69a588beb6541750016ab25e9f9e,"""Key accessor is missing for XML signature generation. Specify a key accessor in the configuration."");",1,9,0.5294117647058824,71
+12241987618a69a588beb6541750016ab25e9f9e,* KeySelector which retrieves the public key from the KeyValue element and returns it. NOTE: If the key algorithm,0,9,0.5294117647058824,72
+12241987618a69a588beb6541750016ab25e9f9e,"+ localName + ""{"" + namespaceURI + ""} which is referenced by the reference URI "" + referenceUri",1,9,0.5294117647058824,73
+12241987618a69a588beb6541750016ab25e9f9e,* Default value is <code>null</code>. The value must be <code>null</code> for enveloping and,1,9,0.5294117647058824,74
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloping XML signature case, the generated XML signature has the following structure:",0,9,0.5294117647058824,75
+12241987618a69a588beb6541750016ab25e9f9e,* reference to the KeyInfo element is added. The generated XML signature has the following structure:,0,9,0.5294117647058824,76
+12241987618a69a588beb6541750016ab25e9f9e,* Returns the DOM structure which is transformed to a byte array and set to the camel message body.,0,9,0.5294117647058824,77
+12241987618a69a588beb6541750016ab25e9f9e,* unique ID is generated for the signature ID (default). If this parameter,1,9,0.5294117647058824,78
+12241987618a69a588beb6541750016ab25e9f9e,"* For the signing process, a private key is necessary. You specify a key accessor bean which provides this private key.",1,9,0.5294117647058824,79
+12241987618a69a588beb6541750016ab25e9f9e,* Sets the content object Id attribute value. By default a UUID is generated. If you set the <code>null</code>,0,9,0.5294117647058824,80
+12241987618a69a588beb6541750016ab25e9f9e,"* For the signing process, a private key is necessary. You specify a key accessor bean which provides this private",0,9,0.5294117647058824,81
+12241987618a69a588beb6541750016ab25e9f9e,"* In this case the output node can be of type Element, TextNode, or Document.",1,9,0.5294117647058824,82
+12241987618a69a588beb6541750016ab25e9f9e,* the search value to determine the output element from the XML signature,1,9,0.5294117647058824,83
+12241987618a69a588beb6541750016ab25e9f9e,* the XML signature document via a node search and then serialized and set to,1,9,0.5294117647058824,84
+12241987618a69a588beb6541750016ab25e9f9e,* Returns the objects which must be taken into account for the mapping to the camel message.,0,9,0.5294117647058824,85
+12241987618a69a588beb6541750016ab25e9f9e,"String.format(""Cannot extract root node for the output document from the XML signature document. """,0,9,0.5294117647058824,86
+12241987618a69a588beb6541750016ab25e9f9e,* Search type 'XPath' for determining the output node. Search value must be of type,0,9,0.5294117647058824,87
+12241987618a69a588beb6541750016ab25e9f9e,"* case. If the reference URI contains an ID attribute value, then the",1,9,0.5294117647058824,88
+12241987618a69a588beb6541750016ab25e9f9e,"* By default, C14n is added and in the case of enveloped signature (see option parentLocalName) also http://www.w3.org/2000/09/xmldsig#enveloped-signature",1,8,0.47058823529411764,89
+12241987618a69a588beb6541750016ab25e9f9e,"// content object ID must always be set, because it is only used in enveloping case.",1,8,0.47058823529411764,90
+12241987618a69a588beb6541750016ab25e9f9e,* for calculating the digest of the input message. If this digest algorithm,1,8,0.47058823529411764,91
+12241987618a69a588beb6541750016ab25e9f9e,"// content object ID must always be set, because it is only used in enveloping case.",0,8,0.47058823529411764,92
+12241987618a69a588beb6541750016ab25e9f9e,* the License.  You may obtain a copy of the License at,1,8,0.47058823529411764,93
+12241987618a69a588beb6541750016ab25e9f9e,* ID attributes. Will be ignored in the enveloping or detached case.,1,8,0.47058823529411764,94
+12241987618a69a588beb6541750016ab25e9f9e,* Sets the signature Id. If this parameter is not set (null value) then a,1,8,0.47058823529411764,95
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent local name root and the parent XPath //pre:root are specified. You must not specify both parameters."", null);",1,8,0.47058823529411764,96
+12241987618a69a588beb6541750016ab25e9f9e,* Type of the content reference. The default value is <code>null</code>.,1,8,0.47058823529411764,97
+12241987618a69a588beb6541750016ab25e9f9e,* expressions to ID attributes (attributes of type ID). For each element,1,8,0.47058823529411764,98
+12241987618a69a588beb6541750016ab25e9f9e,* then also a reference to the KeyInfo element is added. The generated XML,1,8,0.47058823529411764,99
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" and the parent XPath "" + getConfiguration().getParentXpath().getXPath() + "" are specified. You must not specify both parameters."");",1,8,0.47058823529411764,100
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent local name root and the parent XPath //pre:root are specified. You must not specify both parameters."",",0,8,0.47058823529411764,101
+12241987618a69a588beb6541750016ab25e9f9e,"* value, then a new UUID will be generated. Only used in the enveloping case.",0,8,0.47058823529411764,102
+12241987618a69a588beb6541750016ab25e9f9e,"+ xp.getXPath() + "" resulted in an attribute which is not of type ID. The attribute value is """,1,8,0.47058823529411764,103
+12241987618a69a588beb6541750016ab25e9f9e,* If the parameters <tt>parentXpath</tt> and <tt>parentLocalName</tt> are specified in the same configuration then,0,8,0.47058823529411764,104
+12241987618a69a588beb6541750016ab25e9f9e,* Checks whether the XML document has as root element the signature,1,8,0.47058823529411764,105
+12241987618a69a588beb6541750016ab25e9f9e,* This parameter or the parameter {@link #setParentXpath(XPathFilterParameterSpec)} for enveloped signature and the,0,8,0.47058823529411764,106
+12241987618a69a588beb6541750016ab25e9f9e,"* element from the XML signature document. With the input parameter 'RemoveSignatureElements"", you can specify whether",0,8,0.47058823529411764,107
+12241987618a69a588beb6541750016ab25e9f9e,* support enveloped XML signature or enveloping XML signature.,0,8,0.47058823529411764,108
+12241987618a69a588beb6541750016ab25e9f9e,* Checks whether the XML document has as root element the signature element.,0,8,0.47058823529411764,109
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloping XML signature case, the message body is determined from a",1,8,0.47058823529411764,110
+12241987618a69a588beb6541750016ab25e9f9e,* <li>The node of the DOMStructure is serialized to a byte array and added as body to the message.,0,8,0.47058823529411764,111
+12241987618a69a588beb6541750016ab25e9f9e,* @return <code>true</code> if the root element of the xml signature,1,8,0.47058823529411764,112
+12241987618a69a588beb6541750016ab25e9f9e,* for the message body. This message you can use to filter the relevant,1,8,0.47058823529411764,113
+12241987618a69a588beb6541750016ab25e9f9e,* Returns the objects which must be taken into account for the mapping to,1,8,0.47058823529411764,114
+12241987618a69a588beb6541750016ab25e9f9e,* the License.  You may obtain a copy of the License at,0,8,0.47058823529411764,115
+12241987618a69a588beb6541750016ab25e9f9e,* Digest algorithm URI. Optional parameter. This digest algorithm is used for calculating the digest of the input,0,8,0.47058823529411764,116
+12241987618a69a588beb6541750016ab25e9f9e,"* Namespace prefix for the XML signature namespace ""http://www.w3.org/2000/09/xmldsig#"". Default value is ""ds"".",0,8,0.47058823529411764,117
+12241987618a69a588beb6541750016ab25e9f9e,* XML schema must be provided via the schema resource URI (see method,1,7,0.4117647058823529,118
+12241987618a69a588beb6541750016ab25e9f9e,"* generated. If you set the <code>null</code> value, then a new UUID will",1,7,0.4117647058823529,119
+12241987618a69a588beb6541750016ab25e9f9e,* Define the elements which are signed in the detached case via XPATH,1,7,0.4117647058823529,120
+12241987618a69a588beb6541750016ab25e9f9e,* for enveloped signature and this parameter for detached signature must not,1,7,0.4117647058823529,121
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloped XML signature case, the method {@link XmlSignerConfiguration#getParentLocalName()} must not return",0,7,0.4117647058823529,122
+12241987618a69a588beb6541750016ab25e9f9e,"* In all cases, you can add additional references and objects which contain properties for the XML signature, see",0,7,0.4117647058823529,123
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" has no parent element. The element must have a parent element in the configured detached case."");",0,7,0.4117647058823529,124
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" resulted in an attribute which is not of type ID. The attribute value is """,0,7,0.4117647058823529,125
+12241987618a69a588beb6541750016ab25e9f9e,* as last child element of the parent element. If a KeyInfo instance is,1,7,0.4117647058823529,126
+12241987618a69a588beb6541750016ab25e9f9e,* signed element are supported. Those elements can be signed which have ID,1,7,0.4117647058823529,127
+12241987618a69a588beb6541750016ab25e9f9e,"* doesn't match signature algorithm, then the public key will be ignored.",0,7,0.4117647058823529,128
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" has no parent element. The element must have a parent element in the configured detached case."");",1,7,0.4117647058823529,129
+12241987618a69a588beb6541750016ab25e9f9e,* XML signature verifier. Assumes that the input XML contains exactly one Signature element.,0,7,0.4117647058823529,130
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureFormatException(""Message has wrong format, it is not a XML signature document. Check the sent message."",",1,7,0.4117647058823529,131
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" resulted in an attribute which is not of type ID. The attribute value is """,0,7,0.4117647058823529,132
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" has no parent element. The element must have a parent element in the configured detached case."",",0,7,0.4117647058823529,133
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent XPath /pre:root/@ID returned no element. Check the configuration of the XML signer component."",",0,7,0.4117647058823529,134
+12241987618a69a588beb6541750016ab25e9f9e,* <code>null</code>. The value must be <code>null</code> for enveloping and,1,7,0.4117647058823529,135
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" has no parent element. The element must have a parent element in the configured detached case."", null);",1,7,0.4117647058823529,136
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent XPath /pre:root/@ID returned no element. Check the configuration of the XML signer component."", null);",1,7,0.4117647058823529,137
+12241987618a69a588beb6541750016ab25e9f9e,* for detached signature must not be set in the same configuration.,1,7,0.4117647058823529,138
+12241987618a69a588beb6541750016ab25e9f9e,* (see {@link XmlSignerConfiguration#setXpathsToIdAttributes(List)}) and the XML schema must be provided via the schema,0,7,0.4117647058823529,139
+12241987618a69a588beb6541750016ab25e9f9e,* is not specified then the digest algorithm is calculated from the,1,7,0.4117647058823529,140
+12241987618a69a588beb6541750016ab25e9f9e,"String.format(""Unsupported XML signature document: Content object not found in the enveloping XML signature.""));",1,7,0.4117647058823529,141
+12241987618a69a588beb6541750016ab25e9f9e,* This does mean that the enveloping XML signature must have either the structure,0,7,0.4117647058823529,142
+12241987618a69a588beb6541750016ab25e9f9e,* is added at position 0 of the list. Use methods in XmlSignatureHelper to create the transform methods.,1,7,0.4117647058823529,143
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""XPATH %s as specified in the output node search results into a node which has the wrong type."",",0,7,0.4117647058823529,144
+12241987618a69a588beb6541750016ab25e9f9e,"""Unsupported XML signature document: Content object not found in the enveloping XML signature.""));",0,7,0.4117647058823529,145
+12241987618a69a588beb6541750016ab25e9f9e,* Maps the XML signature to a camel message. A output node is determined from,1,7,0.4117647058823529,146
+12241987618a69a588beb6541750016ab25e9f9e,* document. This flag shall be used for enveloped XML signatures.,1,7,0.4117647058823529,147
+12241987618a69a588beb6541750016ab25e9f9e,* Search type 'XPath' for determining the output node. Search value must be,1,7,0.4117647058823529,148
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""XPATH %s as specified in the output node search results into a node which has the wrong type."", xpathFilter.getXPath()));",1,7,0.4117647058823529,149
+12241987618a69a588beb6541750016ab25e9f9e,* Returns the DOM structure which is transformed to a byte array and set to,1,7,0.4117647058823529,150
+12241987618a69a588beb6541750016ab25e9f9e,* This does mean that the enveloping XML signature must have either the,1,7,0.4117647058823529,151
+12241987618a69a588beb6541750016ab25e9f9e,"* distributed under the License is distributed on an ""AS IS"" BASIS,",0,7,0.4117647058823529,152
+12241987618a69a588beb6541750016ab25e9f9e,"* Transforms which are executed on the message body before the digest is calculated. By default, C14n is added and",0,7,0.4117647058823529,153
+12241987618a69a588beb6541750016ab25e9f9e,* in the case of enveloped signature (see option parentLocalName) also,0,7,0.4117647058823529,154
+12241987618a69a588beb6541750016ab25e9f9e,* it is protected via the signature value. The default value is <tt>true</tt>.,0,7,0.4117647058823529,155
+12241987618a69a588beb6541750016ab25e9f9e,* parameter {@link #setXpathsToIdAttributes(List)} for detached signature must not be set in the same,0,7,0.4117647058823529,156
+12241987618a69a588beb6541750016ab25e9f9e,"* attribute value, then the resource schema URI ( {@link #setSchemaResourceUri(String)}) must also be set because",0,7,0.4117647058823529,157
+12241987618a69a588beb6541750016ab25e9f9e,* Canonicalization method used to canonicalize the SignedInfo element before the digest is calculated. You can use,0,7,0.4117647058823529,158
+12241987618a69a588beb6541750016ab25e9f9e,* contains the corresponding attribute value (preceded by '#'). The signature becomes the last sibling of the,0,7,0.4117647058823529,159
+12241987618a69a588beb6541750016ab25e9f9e,"* distributed under the License is distributed on an ""AS IS"" BASIS,",1,7,0.4117647058823529,160
+12241987618a69a588beb6541750016ab25e9f9e,* '#'). The signature becomes the last sibling of the signed element.,1,6,0.3529411764705882,161
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" returned no result. Check the configuration of the XML signer component."");",0,6,0.3529411764705882,162
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" is wrongly configured: The XPath "" + xp.getXPath() + "" is invalid."",",0,6,0.3529411764705882,163
+12241987618a69a588beb6541750016ab25e9f9e,"""The configuration of the XML signer component is wrong. The parent local name """,0,6,0.3529411764705882,164
+12241987618a69a588beb6541750016ab25e9f9e,* level are signed first. This procedure can result in nested signatures.,0,6,0.3529411764705882,165
+12241987618a69a588beb6541750016ab25e9f9e,* set because the schema validator will then find out which attributes are,1,6,0.3529411764705882,166
+12241987618a69a588beb6541750016ab25e9f9e,"* For adding additional References and Objects to the XML signature which contain additional properties,",1,6,0.3529411764705882,167
+12241987618a69a588beb6541750016ab25e9f9e,* Encoding of the plain text. Only relevant if the message body is plain,1,6,0.3529411764705882,168
+12241987618a69a588beb6541750016ab25e9f9e,* be generated. Only used in the enveloping case.,1,6,0.3529411764705882,169
+12241987618a69a588beb6541750016ab25e9f9e,* be added. Only relevant for enveloped XML signature. Alternatively you can,1,6,0.3529411764705882,170
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""} which is referenced by the reference URI "" + referenceUri",0,6,0.3529411764705882,171
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" returned no element. Check the configuration of the XML signer component."");",0,6,0.3529411764705882,172
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""} which is referenced by the reference URI "" + referenceUri",0,6,0.3529411764705882,173
+12241987618a69a588beb6541750016ab25e9f9e,"* the message body of the output message. Enveloped, enveloping XML, and",1,6,0.3529411764705882,174
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloped XML signature case, the method",1,6,0.3529411764705882,175
+12241987618a69a588beb6541750016ab25e9f9e,"* In the enveloping XML signature case, also message bodies containing plain",1,6,0.3529411764705882,176
+12241987618a69a588beb6541750016ab25e9f9e,* attributes. The elements to be signed must be specified via xpath expressions,1,6,0.3529411764705882,177
+12241987618a69a588beb6541750016ab25e9f9e,* deeper hierarchy level are signed first. This procedure can result in nested,1,6,0.3529411764705882,178
+12241987618a69a588beb6541750016ab25e9f9e,"""The configuration of the XML signer component is wrong. The parent local name """,1,6,0.3529411764705882,179
+12241987618a69a588beb6541750016ab25e9f9e,"""Message has wrong format, it is not a XML signature document. Check the sent message."",",0,6,0.3529411764705882,180
+12241987618a69a588beb6541750016ab25e9f9e,* XML signature verifier. Assumes that the input XML contains exactly one,1,6,0.3529411764705882,181
+12241987618a69a588beb6541750016ab25e9f9e,* Checks that the processor sorts the xpath expressions in such a way that elements with deeper hierarchy level are,0,6,0.3529411764705882,182
+12241987618a69a588beb6541750016ab25e9f9e,* KeySelector which retrieves the public key from the KeyValue element and,1,6,0.3529411764705882,183
+12241987618a69a588beb6541750016ab25e9f9e,* then the public key will be ignored.,1,6,0.3529411764705882,184
+12241987618a69a588beb6541750016ab25e9f9e,* Transforms which are executed on the message body before the digest is calculated.,1,6,0.3529411764705882,185
+12241987618a69a588beb6541750016ab25e9f9e,* Namespace prefix for the XML signature namespace,1,6,0.3529411764705882,186
+12241987618a69a588beb6541750016ab25e9f9e,"* <li>The ""ElementName"" search uses the local name and namespace specified in",1,6,0.3529411764705882,187
+12241987618a69a588beb6541750016ab25e9f9e,* Canonicalization method used to canonicalize the SignedInfo element before the digest is calculated.,1,6,0.3529411764705882,188
+12241987618a69a588beb6541750016ab25e9f9e,* @return relevant references for the mapping to the camel message,1,6,0.3529411764705882,189
+12241987618a69a588beb6541750016ab25e9f9e,* search and then serialized and set to the output message body.,0,6,0.3529411764705882,190
+12241987618a69a588beb6541750016ab25e9f9e,"* type Element, TextNode, or Document. With the input parameter 'RemoveSignatureElements"", you can specify whether the",0,6,0.3529411764705882,191
+12241987618a69a588beb6541750016ab25e9f9e,* @param  input     XML signature input,0,6,0.3529411764705882,192
+12241987618a69a588beb6541750016ab25e9f9e,* See the License for the specific language governing permissions and,1,6,0.3529411764705882,193
+12241987618a69a588beb6541750016ab25e9f9e,* @return           relevant references for the mapping to the camel message,0,6,0.3529411764705882,194
+12241987618a69a588beb6541750016ab25e9f9e,* @return           relevant objects for the mapping to camel message,0,6,0.3529411764705882,195
+12241987618a69a588beb6541750016ab25e9f9e,* the signature elements should be removed from the resulting output document.,1,6,0.3529411764705882,196
+12241987618a69a588beb6541750016ab25e9f9e,* This flag shall be used for enveloped XML signatures.,1,6,0.3529411764705882,197
+12241987618a69a588beb6541750016ab25e9f9e,* part is returned in the message body.,1,6,0.3529411764705882,198
+12241987618a69a588beb6541750016ab25e9f9e,* <li>The node of the DOMStructure is serialized to a byte array and added as,1,6,0.3529411764705882,199
+12241987618a69a588beb6541750016ab25e9f9e,"""Wrong configuration: Search value is of class %s, the output node search %s requires class %s."", input",1,6,0.3529411764705882,200
+12241987618a69a588beb6541750016ab25e9f9e,* use to filter the relevant references from the references provided by the input parameter.,0,6,0.3529411764705882,201
+12241987618a69a588beb6541750016ab25e9f9e,* @return relevant objects for the mapping to camel message,1,6,0.3529411764705882,202
+12241987618a69a588beb6541750016ab25e9f9e,* Encoding of the plain text. Only relevant if the message body is plain text (see parameter {@link #plainText}.,0,6,0.3529411764705882,203
+12241987618a69a588beb6541750016ab25e9f9e,* Licensed to the Apache Software Foundation (ASF) under one or more,0,6,0.3529411764705882,204
+12241987618a69a588beb6541750016ab25e9f9e,"* (the ""License""); you may not use this file except in compliance with",1,6,0.3529411764705882,205
+12241987618a69a588beb6541750016ab25e9f9e,* Licensed to the Apache Software Foundation (ASF) under one or more,1,6,0.3529411764705882,206
+12241987618a69a588beb6541750016ab25e9f9e,"* For adding additional References and Objects to the XML signature which contain additional properties, you can",0,6,0.3529411764705882,207
+12241987618a69a588beb6541750016ab25e9f9e,* contributor license agreements.  See the NOTICE file distributed with,1,6,0.3529411764705882,208
+12241987618a69a588beb6541750016ab25e9f9e,* the message body contains XML. The value can be overwritten by the header,0,6,0.3529411764705882,209
+12241987618a69a588beb6541750016ab25e9f9e,* See the License for the specific language governing permissions and,0,6,0.3529411764705882,210
+12241987618a69a588beb6541750016ab25e9f9e,"* (the ""License""); you may not use this file except in compliance with",0,6,0.3529411764705882,211
+12241987618a69a588beb6541750016ab25e9f9e,* contributor license agreements.  See the NOTICE file distributed with,0,6,0.3529411764705882,212
+12241987618a69a588beb6541750016ab25e9f9e,"* In all cases, the digest algorithm is either read from the configuration",1,5,0.29411764705882354,213
+12241987618a69a588beb6541750016ab25e9f9e,* reference URI contains the corresponding attribute value (preceded by,1,5,0.29411764705882354,214
+12241987618a69a588beb6541750016ab25e9f9e,* You can also set the XPATH list dynamically via the header,1,5,0.29411764705882354,215
+12241987618a69a588beb6541750016ab25e9f9e,* be set in the same configuration.,1,5,0.29411764705882354,216
+12241987618a69a588beb6541750016ab25e9f9e,"* In all cases, the digest algorithm is either read from the configuration method",0,5,0.29411764705882354,217
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" and the parent XPath "" + getConfiguration().getParentXpath().getXPath()",0,5,0.29411764705882354,218
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" returned a node which was not of type Attribute."");",0,5,0.29411764705882354,219
+12241987618a69a588beb6541750016ab25e9f9e,* text are supported. This must be indicated via the header,1,5,0.29411764705882354,220
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" returned a node which was not of type Attribute."",",0,5,0.29411764705882354,221
+12241987618a69a588beb6541750016ab25e9f9e,"* properties for the XML signature, see",1,5,0.29411764705882354,222
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" returned a node which was not of type Attribute."");",1,5,0.29411764705882354,223
+12241987618a69a588beb6541750016ab25e9f9e,"protected Reference createKeyInfoReference(XMLSignatureFactory fac, String keyInfoId, String digestAlgorithm) throws Exception {",1,5,0.29411764705882354,224
+12241987618a69a588beb6541750016ab25e9f9e,return new RouteBuilder[] { new RouteBuilder() {,0,5,0.29411764705882354,225
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" returned a node which was not of type Attribute."", null);",1,5,0.29411764705882354,226
+12241987618a69a588beb6541750016ab25e9f9e,"* returns it. NOTE: If the key algorithm doesn't match signature algorithm,",1,5,0.29411764705882354,227
+12241987618a69a588beb6541750016ab25e9f9e,* This value can be overwritten by the header,1,5,0.29411764705882354,228
+12241987618a69a588beb6541750016ab25e9f9e,* found via the XPATH expression a detached signature is created whose,1,5,0.29411764705882354,229
+12241987618a69a588beb6541750016ab25e9f9e,"""Wrong configured xpath expression for ID attributes: The evaluation of the xpath expression "" + xp.getXPath()",1,5,0.29411764705882354,230
+12241987618a69a588beb6541750016ab25e9f9e,public void setContentObjectId(String contentObjectId) {,1,5,0.29411764705882354,231
+12241987618a69a588beb6541750016ab25e9f9e,"""Unsupported XML signature document: More than one content objects found. Object IDs: %s"", sb.toString()));",1,5,0.29411764705882354,232
+12241987618a69a588beb6541750016ab25e9f9e,* Sets the content object Id attribute value. By default a UUID is,1,5,0.29411764705882354,233
+12241987618a69a588beb6541750016ab25e9f9e,"""Unsupported XML signature document: More than one content objects found. Object IDs: %s"",",0,5,0.29411764705882354,234
+12241987618a69a588beb6541750016ab25e9f9e,"* and ""XPath"". All these search types support enveloped XML signature or",1,5,0.29411764705882354,235
+12241987618a69a588beb6541750016ab25e9f9e,* referenced Object element in the following way:,1,5,0.29411764705882354,236
+12241987618a69a588beb6541750016ab25e9f9e,*         document is the signature element; otherwise <code>false</code>,1,5,0.29411764705882354,237
+12241987618a69a588beb6541750016ab25e9f9e,* Returns the references whose referenced objects are taken into account,1,5,0.29411764705882354,238
+12241987618a69a588beb6541750016ab25e9f9e,"""Wrong configuration: Search value is of class %s, the output node search %s requires class %s."",",0,5,0.29411764705882354,239
+12241987618a69a588beb6541750016ab25e9f9e,* whether the signature elements should be removed from the resulting output,1,5,0.29411764705882354,240
+12241987618a69a588beb6541750016ab25e9f9e,* http://www.w3.org/2000/09/xmldsig#enveloped-signature is added at position 0 of the list. Use methods in,0,5,0.29411764705882354,241
+12241987618a69a588beb6541750016ab25e9f9e,"* Indicator whether the message body contains plain text. The default value is <code>false</code>, indicating that",0,5,0.29411764705882354,242
+12241987618a69a588beb6541750016ab25e9f9e,* signed element. Elements with deeper hierarchy level are signed first.,0,5,0.29411764705882354,243
+12241987618a69a588beb6541750016ab25e9f9e,* You can also set the XPATH list dynamically via the header,0,5,0.29411764705882354,244
+12241987618a69a588beb6541750016ab25e9f9e,* for enveloped signature and the parameter {@link #setXpathsToIdAttributes(List)},1,5,0.29411764705882354,245
+12241987618a69a588beb6541750016ab25e9f9e,* If the parameters <tt>parentXpath</tt> and <tt>parentLocalName</tt> are specified,1,5,0.29411764705882354,246
+12241987618a69a588beb6541750016ab25e9f9e,* in the same configuration then an exception is thrown.,1,5,0.29411764705882354,247
+12241987618a69a588beb6541750016ab25e9f9e,public void setContentObjectId(String contentObjectId) {,0,5,0.29411764705882354,248
+12241987618a69a588beb6541750016ab25e9f9e,* Elements with deeper hierarchy level are signed first.,1,4,0.23529411764705882,249
+12241987618a69a588beb6541750016ab25e9f9e,"private static final String HTTP_WWW_W3_ORG_2001_04_XMLDSIG_MORE_SHA224 = ""http://www.w3.org/2001/04/xmldsig-more#sha224""; // see RFC 4051",0,4,0.23529411764705882,250
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#getDigestAlgorithm()} or calculated from the signature algorithm (,0,4,0.23529411764705882,251
+12241987618a69a588beb6541750016ab25e9f9e,* via the header {@link XmlSignatureConstants#HEADER_MESSAGE_IS_PLAIN_TEXT} or via the configuration,0,4,0.23529411764705882,252
+12241987618a69a588beb6541750016ab25e9f9e,"* the {@link KeyAccessor} and {@link XmlSignerConfiguration#getAddKeyInfoReference()} is <code>true</code>, then also a",0,4,0.23529411764705882,253
+12241987618a69a588beb6541750016ab25e9f9e,"* Enveloped, enveloping XML, and detached signatures are supported.",0,4,0.23529411764705882,254
+12241987618a69a588beb6541750016ab25e9f9e,* resource schema URI ( {@link #setSchemaResourceUri(String)}) must also be,1,4,0.23529411764705882,255
+12241987618a69a588beb6541750016ab25e9f9e,* value can be overwritten by the header,1,4,0.23529411764705882,256
+12241987618a69a588beb6541750016ab25e9f9e,"* is <code>false</code>, indicating that the message body contains XML. The",1,4,0.23529411764705882,257
+12241987618a69a588beb6541750016ab25e9f9e,* Indicator whether the message body contains plain text. The default value,1,4,0.23529411764705882,258
+12241987618a69a588beb6541750016ab25e9f9e,public String getContentObjectId() {,1,4,0.23529411764705882,259
+12241987618a69a588beb6541750016ab25e9f9e,"LOG.warn(""No ID attribute found for xpath expression {}. Therfore this xpath expression will be ignored."",",0,4,0.23529411764705882,260
+12241987618a69a588beb6541750016ab25e9f9e,"private static final String HTTP_WWW_W3_ORG_2001_04_XMLDSIG_MORE_SHA384 = ""http://www.w3.org/2001/04/xmldsig-more#sha384""; // see RFC 4051",0,4,0.23529411764705882,261
+12241987618a69a588beb6541750016ab25e9f9e,* elements with deeper hierarchy level are signed first.,1,4,0.23529411764705882,262
+12241987618a69a588beb6541750016ab25e9f9e,"""Wrong configured xpath expression for ID attributes: The evaluation of the xpath expression """,0,4,0.23529411764705882,263
+12241987618a69a588beb6541750016ab25e9f9e,private static final String HTTP_WWW_W3_ORG_2001_04_XMLDSIG_MORE_SHA224 =,1,4,0.23529411764705882,264
+12241987618a69a588beb6541750016ab25e9f9e,private static final String HTTP_WWW_W3_ORG_2001_04_XMLDSIG_MORE_SHA384 =,1,4,0.23529411764705882,265
+12241987618a69a588beb6541750016ab25e9f9e,"protected Reference createReference(XMLSignatureFactory fac, String uri, String type, SignatureType sigType, String id, Message message)",1,4,0.23529411764705882,266
+12241987618a69a588beb6541750016ab25e9f9e,"LOG.warn(""No ID attribute found for xpath expression {}. Therfore this xpath expression will be ignored."", xp.getXPath());",1,4,0.23529411764705882,267
+12241987618a69a588beb6541750016ab25e9f9e,"private void map2Message(final List<Reference> refs, final List<XMLObject> objs, Message out, final Document messageBodyDocument)",1,4,0.23529411764705882,268
+12241987618a69a588beb6541750016ab25e9f9e,"String inputEncoding, String signerEncoding, String outputEncoding, String signerEndpointUri,",0,4,0.23529411764705882,269
+12241987618a69a588beb6541750016ab25e9f9e,* Checks that the processor sorts the xpath expressions in such a way that,1,4,0.23529411764705882,270
+12241987618a69a588beb6541750016ab25e9f9e,* <p> Default value is,1,4,0.23529411764705882,271
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\"" stringAttr=\"""" + value + ""\""><b>bValue</b></a></ns:root>"";",1,4,0.23529411764705882,272
+12241987618a69a588beb6541750016ab25e9f9e,"private void checkOutputEncoding(String inputEncoding, String signerEncoding, String outputEncoding, String signerEndpointUri,",1,4,0.23529411764705882,273
+12241987618a69a588beb6541750016ab25e9f9e,"fail(""Cause exception "" + expectedCauseClass.getName() + "" expected, but was "" + cause.getClass().getName() + "": """,1,4,0.23529411764705882,274
+12241987618a69a588beb6541750016ab25e9f9e,* This parameter or the parameter {@link #setParentXpath(XPathFilterParameterSpec)},1,4,0.23529411764705882,275
+12241987618a69a588beb6541750016ab25e9f9e,"final List<Reference> refs, final List<XMLObject> objs, Message out, final Document messageBodyDocument)",0,4,0.23529411764705882,276
+12241987618a69a588beb6541750016ab25e9f9e,* the XML signature namespace.,1,4,0.23529411764705882,277
+12241987618a69a588beb6541750016ab25e9f9e,* references from the references provided by the input parameter.,1,4,0.23529411764705882,278
+12241987618a69a588beb6541750016ab25e9f9e,* <li>Only same document references are taken into account (URI must start with '#').,0,4,0.23529411764705882,279
+12241987618a69a588beb6541750016ab25e9f9e,* <li>Also indirect same document references to an object via manifest are taken into account.,0,4,0.23529411764705882,280
+12241987618a69a588beb6541750016ab25e9f9e,* @param  input     references and objects,0,4,0.23529411764705882,281
+12241987618a69a588beb6541750016ab25e9f9e,* enveloping XML signature.,1,4,0.23529411764705882,282
+12241987618a69a588beb6541750016ab25e9f9e,"* document. With the input parameter 'RemoveSignatureElements"", you can specify",1,4,0.23529411764705882,283
+12241987618a69a588beb6541750016ab25e9f9e,"* <li>The ""XPath"" search uses an XPath expression to evaluate the output node.",1,4,0.23529411764705882,284
+12241987618a69a588beb6541750016ab25e9f9e,* <li>Only same document references are taken into account (URI must start with,1,4,0.23529411764705882,285
+12241987618a69a588beb6541750016ab25e9f9e,* <li>Also indirect same document references to an object via manifest are,1,4,0.23529411764705882,286
+12241987618a69a588beb6541750016ab25e9f9e,* signature value. The default value is <tt>true</tt>.,1,4,0.23529411764705882,287
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureException(String.format(""Wrong configuration: The output node search type %s is not supported."",",1,4,0.23529411764705882,288
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XMLSignatureException(String.format(""Wrong configuration: Value for output node search %s is empty."",",1,4,0.23529411764705882,289
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XMLSignatureException(String.format(""Wrong configuration: Value is missing for output node search %s."",",1,4,0.23529411764705882,290
+12241987618a69a588beb6541750016ab25e9f9e,*            XML signature input,1,4,0.23529411764705882,291
+12241987618a69a588beb6541750016ab25e9f9e,"throw new XmlSignatureException(""Unsupported XML signature: more than one structure elements in referenced content object."");",1,4,0.23529411764705882,292
+12241987618a69a588beb6541750016ab25e9f9e,public String getContentObjectId() {,0,4,0.23529411764705882,293
+12241987618a69a588beb6541750016ab25e9f9e,* In order to protect the KeyInfo element from tampering you can add a,1,4,0.23529411764705882,294
+12241987618a69a588beb6541750016ab25e9f9e,* Signature algorithm. Default value is,1,4,0.23529411764705882,295
+12241987618a69a588beb6541750016ab25e9f9e,* contains the default implementation class DefaultKeyAccessor which reads the private key from a Java keystore.,1,4,0.23529411764705882,296
+12241987618a69a588beb6541750016ab25e9f9e,* The key accessor bean must implement the KeyAccessor interface. The package org.apache.camel.component.xmlsecurity.api,1,4,0.23529411764705882,297
+12241987618a69a588beb6541750016ab25e9f9e,"* Unless required by applicable law or agreed to in writing, software",1,4,0.23529411764705882,298
+12241987618a69a588beb6541750016ab25e9f9e,* limitations under the License.,1,4,0.23529411764705882,299
+12241987618a69a588beb6541750016ab25e9f9e,* Only relevant when a KeyInfo is returned by {@link KeyAccessor}. and {@link KeyInfo#getId()} is not,0,4,0.23529411764705882,300
+12241987618a69a588beb6541750016ab25e9f9e,"* Signature algorithm. Default value is ""http://www.w3.org/2000/09/xmldsig#rsa-sha1"".",0,4,0.23529411764705882,301
+12241987618a69a588beb6541750016ab25e9f9e,* key. The key accessor bean must implement the KeyAccessor interface. The package,0,4,0.23529411764705882,302
+12241987618a69a588beb6541750016ab25e9f9e,* limitations under the License.,0,4,0.23529411764705882,303
+12241987618a69a588beb6541750016ab25e9f9e,"* Unless required by applicable law or agreed to in writing, software",0,4,0.23529411764705882,304
+12241987618a69a588beb6541750016ab25e9f9e,public void setPlainTextEncoding(String plainTextEncoding) {,1,3,0.1764705882352941,305
+12241987618a69a588beb6541750016ab25e9f9e,public void setContentReferenceType(String referenceType) {,1,3,0.1764705882352941,306
+12241987618a69a588beb6541750016ab25e9f9e,public void setPlainText(Boolean plainText) {,1,3,0.1764705882352941,307
+12241987618a69a588beb6541750016ab25e9f9e,public String getPlainTextEncoding() {,1,3,0.1764705882352941,308
+12241987618a69a588beb6541750016ab25e9f9e,"* text (see parameter {@link #plainText}. Default value is ""UTF-8"".",1,3,0.1764705882352941,309
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" are specified. You must not specify both parameters."");",0,3,0.1764705882352941,310
+12241987618a69a588beb6541750016ab25e9f9e,public void setProperties(XmlSignatureProperties properties) {,1,3,0.1764705882352941,311
+12241987618a69a588beb6541750016ab25e9f9e,public void setXpathsToIdAttributes(List<XPathFilterParameterSpec> xpathsToIdAttributes) {,1,3,0.1764705882352941,312
+12241987618a69a588beb6541750016ab25e9f9e,* with the methods {@link #setParentLocalName(String)} and {@link #setParentNamespace(String)}.,1,3,0.1764705882352941,313
+12241987618a69a588beb6541750016ab25e9f9e,public void setParentXpath(XPathFilterParameterSpec parentXpath) {,1,3,0.1764705882352941,314
+12241987618a69a588beb6541750016ab25e9f9e,* resource URI (see method {@link XmlSignerConfiguration#setSchemaResourceUri(String)}. Elements with deeper hierarchy,0,3,0.1764705882352941,315
+12241987618a69a588beb6541750016ab25e9f9e,public void setContentReferenceUri(String referenceUri) {,1,3,0.1764705882352941,316
+12241987618a69a588beb6541750016ab25e9f9e,public String getContentReferenceType() {,1,3,0.1764705882352941,317
+12241987618a69a588beb6541750016ab25e9f9e,public void setAddKeyInfoReference(Boolean addKeyInfoReference) {,1,3,0.1764705882352941,318
+12241987618a69a588beb6541750016ab25e9f9e,public String getContentReferenceUri() {,1,3,0.1764705882352941,319
+12241987618a69a588beb6541750016ab25e9f9e,public void setSignatureId(String signatureId) {,1,3,0.1764705882352941,320
+12241987618a69a588beb6541750016ab25e9f9e,public String getSignatureId() {,1,3,0.1764705882352941,321
+12241987618a69a588beb6541750016ab25e9f9e,public void setParentNamespace(String parentNamespace) {,1,3,0.1764705882352941,322
+12241987618a69a588beb6541750016ab25e9f9e,public String getParentNamespace() {,1,3,0.1764705882352941,323
+12241987618a69a588beb6541750016ab25e9f9e,public void setParentLocalName(String parentLocalName) {,1,3,0.1764705882352941,324
+12241987618a69a588beb6541750016ab25e9f9e,* detached XML signature.,1,3,0.1764705882352941,325
+12241987618a69a588beb6541750016ab25e9f9e,public String getParentLocalName() {,1,3,0.1764705882352941,326
+12241987618a69a588beb6541750016ab25e9f9e,public void setPrefixForXmlSignatureNamespace(String prefixForXmlSignatureNamespace) {,1,3,0.1764705882352941,327
+12241987618a69a588beb6541750016ab25e9f9e,"* ""http://www.w3.org/2000/09/xmldsig#"". Default value is ""ds"".",1,3,0.1764705882352941,328
+12241987618a69a588beb6541750016ab25e9f9e,public String getPrefixForXmlSignatureNamespace() {,1,3,0.1764705882352941,329
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent XPath "" + xp.getXPath()",0,3,0.1764705882352941,330
+12241987618a69a588beb6541750016ab25e9f9e,* {@link KeyInfo#getId()} is not <code>null</code>.,1,3,0.1764705882352941,331
+12241987618a69a588beb6541750016ab25e9f9e,"""The parent XPath "" + getConfiguration().getParentXpath().getXPath()",0,3,0.1764705882352941,332
+12241987618a69a588beb6541750016ab25e9f9e,"private Element getParentForDetachedCase(Document doc, Message inMessage, String referenceUri) throws XmlSignatureException {",1,3,0.1764705882352941,333
+12241987618a69a588beb6541750016ab25e9f9e,"+ el.getLocalName() + ""{"" + el.getNamespaceURI()",0,3,0.1764705882352941,334
+12241987618a69a588beb6541750016ab25e9f9e,"""The configured xpath expression "" + wrongXPath + "" is invalid."",",0,3,0.1764705882352941,335
+12241987618a69a588beb6541750016ab25e9f9e,public void setDigestAlgorithm(String digestAlgorithm) {,1,3,0.1764705882352941,336
+12241987618a69a588beb6541750016ab25e9f9e,"static void checkThrownException(MockEndpoint mock, Class<? extends Exception> cl, String expectedMessage,",1,3,0.1764705882352941,337
+12241987618a69a588beb6541750016ab25e9f9e,"String verifierEndpointUri, String directStart) throws InterruptedException, UnsupportedEncodingException {",1,3,0.1764705882352941,338
+12241987618a69a588beb6541750016ab25e9f9e,"endpoint.getConfiguration().setParentXpath(XmlSignatureHelper.getXpathFilter(""/pre:root/@ID"", Collections.singletonMap(""pre"", ""http://test""))); // xpath with no element result",1,3,0.1764705882352941,339
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignerEndpoint endpoint = (XmlSignerEndpoint) context().getEndpoint(""xmlsecurity-sign:signexceptions?keyAccessor=#accessor"" + //",1,3,0.1764705882352941,340
+12241987618a69a588beb6541750016ab25e9f9e,"checkThrownException(mock, XmlSignatureException.class, ""The configured xpath expression "" + wrongXPath + "" is invalid."",",1,3,0.1764705882352941,341
+12241987618a69a588beb6541750016ab25e9f9e,return new RouteBuilder[] {new RouteBuilder() {,1,3,0.1764705882352941,342
+12241987618a69a588beb6541750016ab25e9f9e,"fail(""Cause exception "" + expectedCauseClass.getName() + "" expected, but was "" + cause.getClass().getName()",0,3,0.1764705882352941,343
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignatureHelper.getXpathFilter(""/pre:root/@ID"", Collections.singletonMap(""pre"", ""http://test""))); // xpath with no element result",0,3,0.1764705882352941,344
+12241987618a69a588beb6541750016ab25e9f9e,"+ localName + ""{"" + namespaceURI",0,3,0.1764705882352941,345
+12241987618a69a588beb6541750016ab25e9f9e,"+ value + ""."",",0,3,0.1764705882352941,346
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\"" stringAttr=\"""" + value",0,3,0.1764705882352941,347
+12241987618a69a588beb6541750016ab25e9f9e,"+ value + ""."");",1,3,0.1764705882352941,348
+12241987618a69a588beb6541750016ab25e9f9e,int propsRefsSize = properties == null || properties.getReferences() == null || properties.getReferences().isEmpty(),0,3,0.1764705882352941,349
+12241987618a69a588beb6541750016ab25e9f9e,int propsRefsSize = properties == null || properties.getReferences() == null || properties.getReferences().isEmpty() ? 0,1,3,0.1764705882352941,350
+12241987618a69a588beb6541750016ab25e9f9e,String keyInfoId) throws Exception {,1,3,0.1764705882352941,351
+12241987618a69a588beb6541750016ab25e9f9e,"protected Element getParentOfSignature(Message inMessage, Node messageBodyNode, String contentReferenceURI, SignatureType sigType)",1,3,0.1764705882352941,352
+12241987618a69a588beb6541750016ab25e9f9e,XmlSignatureProperties.Input input = new InputBuilder().contentDigestAlgorithm(getDigestAlgorithmUri()).keyInfo(keyInfo),1,3,0.1764705882352941,353
+12241987618a69a588beb6541750016ab25e9f9e,"* In all cases, you can add additional references and objects which contain",1,3,0.1764705882352941,354
+12241987618a69a588beb6541750016ab25e9f9e,* the signature algorithm (,1,3,0.1764705882352941,355
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConstants#HEADER_MESSAGE_IS_PLAIN_TEXT} or via the,1,3,0.1764705882352941,356
+12241987618a69a588beb6541750016ab25e9f9e,* signature has the following structure:,1,3,0.1764705882352941,357
+12241987618a69a588beb6541750016ab25e9f9e,* detached signatures are supported.,1,3,0.1764705882352941,358
+12241987618a69a588beb6541750016ab25e9f9e,"protected Reference createKeyInfoReference(XMLSignatureFactory fac, String keyInfoId, String digestAlgorithm)",0,3,0.1764705882352941,359
+12241987618a69a588beb6541750016ab25e9f9e,"+ value + ""."");",0,3,0.1764705882352941,360
+12241987618a69a588beb6541750016ab25e9f9e,"XMLSignatureFactory fac, String uri, String type, SignatureType sigType, String id, Message message)",0,3,0.1764705882352941,361
+12241987618a69a588beb6541750016ab25e9f9e,* Only relevant when a KeyInfo is returned by {@link KeyAccessor}. and,1,3,0.1764705882352941,362
+12241987618a69a588beb6541750016ab25e9f9e,"* or getCanonicalizationMethod(String algorithm, List<String> inclusiveNamespacePrefixes) to create a canonicalization method.",1,3,0.1764705882352941,363
+12241987618a69a588beb6541750016ab25e9f9e,* Digest algorithm URI. Optional parameter. This digest algorithm is used,1,3,0.1764705882352941,364
+12241987618a69a588beb6541750016ab25e9f9e,* @param input,1,3,0.1764705882352941,365
+12241987618a69a588beb6541750016ab25e9f9e,public void setDigestAlgorithm(String digestAlgorithm) {,0,3,0.1764705882352941,366
+12241987618a69a588beb6541750016ab25e9f9e,public String getDigestAlgorithm() {,0,3,0.1764705882352941,367
+12241987618a69a588beb6541750016ab25e9f9e,public void setSignatureAlgorithm(String signatureAlgorithm) {,0,3,0.1764705882352941,368
+12241987618a69a588beb6541750016ab25e9f9e,public String getSignatureAlgorithm() {,0,3,0.1764705882352941,369
+12241987618a69a588beb6541750016ab25e9f9e,public void setTransformMethods(List<AlgorithmMethod> transformMethods) {,0,3,0.1764705882352941,370
+12241987618a69a588beb6541750016ab25e9f9e,* XmlSignatureHelper to create the transform methods.,0,3,0.1764705882352941,371
+12241987618a69a588beb6541750016ab25e9f9e,public void setCanonicalizationMethod(AlgorithmMethod canonicalizationMethod) {,0,3,0.1764705882352941,372
+12241987618a69a588beb6541750016ab25e9f9e,* the helper methods XmlSignatureHelper.getCanonicalizationMethod(String algorithm) or,0,3,0.1764705882352941,373
+12241987618a69a588beb6541750016ab25e9f9e,public void setKeyAccessor(KeyAccessor keyAccessor) {,0,3,0.1764705882352941,374
+12241987618a69a588beb6541750016ab25e9f9e,* reads the private key from a Java keystore.,0,3,0.1764705882352941,375
+12241987618a69a588beb6541750016ab25e9f9e,* this work for additional information regarding copyright ownership.,0,3,0.1764705882352941,376
+12241987618a69a588beb6541750016ab25e9f9e,"protected void addManifestReferencedObjects(List<XMLObject> allObjects, List<XMLObject> referencedObjects, String manifestId) {",1,3,0.1764705882352941,377
+12241987618a69a588beb6541750016ab25e9f9e,* of type {@link XPathFilterParameterSpec}.,1,3,0.1764705882352941,378
+12241987618a69a588beb6541750016ab25e9f9e,public String getPrefixForXmlSignatureNamespace() {,0,3,0.1764705882352941,379
+12241987618a69a588beb6541750016ab25e9f9e,* body to the message.,1,3,0.1764705882352941,380
+12241987618a69a588beb6541750016ab25e9f9e,"* With the input parameter 'RemoveSignatureElements"", you can specify whether",1,3,0.1764705882352941,381
+12241987618a69a588beb6541750016ab25e9f9e,"* There are three output node search types supported: ""Default"", ""ElementName"",",1,3,0.1764705882352941,382
+12241987618a69a588beb6541750016ab25e9f9e,* the output message body.,1,3,0.1764705882352941,383
+12241987618a69a588beb6541750016ab25e9f9e,"""Unsupported XML signature: more than one structure elements in referenced content object."");",0,3,0.1764705882352941,384
+12241987618a69a588beb6541750016ab25e9f9e,* @param  relevantObjects    input from method {@link #getObjectsForMessageMapping(ReferencesAndObjects)},0,3,0.1764705882352941,385
+12241987618a69a588beb6541750016ab25e9f9e,* @param  relevantReferences input from method {@link #getReferencesForMessageMapping(ReferencesAndObjects)},0,3,0.1764705882352941,386
+12241987618a69a588beb6541750016ab25e9f9e,"String.format(""Wrong configuration: Value is missing for output node search %s."",",0,3,0.1764705882352941,387
+12241987618a69a588beb6541750016ab25e9f9e,"String.format(""Wrong configuration: Value for output node search %s is empty."",",0,3,0.1764705882352941,388
+12241987618a69a588beb6541750016ab25e9f9e,"String.format(""Wrong configuration: The output node search type %s is not supported."",",0,3,0.1764705882352941,389
+12241987618a69a588beb6541750016ab25e9f9e,"* There are three output node search types supported: ""Default"", ""ElementName"", and ""XPath"". All these search types",0,3,0.1764705882352941,390
+12241987618a69a588beb6541750016ab25e9f9e,public String getDigestAlgorithm() {,1,3,0.1764705882352941,391
+12241987618a69a588beb6541750016ab25e9f9e,public void setAddKeyInfoReference(Boolean addKeyInfoReference) {,0,3,0.1764705882352941,392
+12241987618a69a588beb6541750016ab25e9f9e,* the camel message body.,1,3,0.1764705882352941,393
+12241987618a69a588beb6541750016ab25e9f9e,public void setPrefixForXmlSignatureNamespace(String prefixForXmlSignatureNamespace) {,0,3,0.1764705882352941,394
+12241987618a69a588beb6541750016ab25e9f9e,public String getPlainTextEncoding() {,0,3,0.1764705882352941,395
+12241987618a69a588beb6541750016ab25e9f9e,public String getParentLocalName() {,0,3,0.1764705882352941,396
+12241987618a69a588beb6541750016ab25e9f9e,public String getSignatureAlgorithm() {,1,3,0.1764705882352941,397
+12241987618a69a588beb6541750016ab25e9f9e,public void setTransformMethods(List<AlgorithmMethod> transformMethods) {,1,3,0.1764705882352941,398
+12241987618a69a588beb6541750016ab25e9f9e,public void setCanonicalizationMethod(AlgorithmMethod canonicalizationMethod) {,1,3,0.1764705882352941,399
+12241987618a69a588beb6541750016ab25e9f9e,* You can use the helper methods XmlSignatureHelper.getCanonicalizationMethod(String algorithm),1,3,0.1764705882352941,400
+12241987618a69a588beb6541750016ab25e9f9e,public void setKeyAccessor(KeyAccessor keyAccessor) {,1,3,0.1764705882352941,401
+12241987618a69a588beb6541750016ab25e9f9e,* this work for additional information regarding copyright ownership.,1,3,0.1764705882352941,402
+12241987618a69a588beb6541750016ab25e9f9e,public void setParentXpath(XPathFilterParameterSpec parentXpath) {,0,3,0.1764705882352941,403
+12241987618a69a588beb6541750016ab25e9f9e,public void setXpathsToIdAttributes(List<XPathFilterParameterSpec> xpathsToIdAttributes) {,0,3,0.1764705882352941,404
+12241987618a69a588beb6541750016ab25e9f9e,* The parameter {@link #setParentLocalName(String)} or {@link #setParentXpath(XPathFilterParameterSpec)} for,0,3,0.1764705882352941,405
+12241987618a69a588beb6541750016ab25e9f9e,public void setProperties(XmlSignatureProperties properties) {,0,3,0.1764705882352941,406
+12241987618a69a588beb6541750016ab25e9f9e,public void setPlainTextEncoding(String plainTextEncoding) {,0,3,0.1764705882352941,407
+12241987618a69a588beb6541750016ab25e9f9e,"* Default value is ""UTF-8"".",0,3,0.1764705882352941,408
+12241987618a69a588beb6541750016ab25e9f9e,public void setSignatureAlgorithm(String signatureAlgorithm) {,1,3,0.1764705882352941,409
+12241987618a69a588beb6541750016ab25e9f9e,* XML signature. Alternatively you can also use {@link #setParentXpath(XPathFilterParameterSpec)}.,0,3,0.1764705882352941,410
+12241987618a69a588beb6541750016ab25e9f9e,public String getSignatureId() {,0,3,0.1764705882352941,411
+12241987618a69a588beb6541750016ab25e9f9e,public void setPlainText(Boolean plainText) {,0,3,0.1764705882352941,412
+12241987618a69a588beb6541750016ab25e9f9e,* @param parentLocalName local name,0,3,0.1764705882352941,413
+12241987618a69a588beb6541750016ab25e9f9e,public void setParentLocalName(String parentLocalName) {,0,3,0.1764705882352941,414
+12241987618a69a588beb6541750016ab25e9f9e,public void setParentNamespace(String parentNamespace) {,0,3,0.1764705882352941,415
+12241987618a69a588beb6541750016ab25e9f9e,public String getParentNamespace() {,0,3,0.1764705882352941,416
+12241987618a69a588beb6541750016ab25e9f9e,public void setSignatureId(String signatureId) {,0,3,0.1764705882352941,417
+12241987618a69a588beb6541750016ab25e9f9e,public String getContentReferenceUri() {,0,3,0.1764705882352941,418
+12241987618a69a588beb6541750016ab25e9f9e,public void setContentReferenceUri(String referenceUri) {,0,3,0.1764705882352941,419
+12241987618a69a588beb6541750016ab25e9f9e,public String getContentReferenceType() {,0,3,0.1764705882352941,420
+12241987618a69a588beb6541750016ab25e9f9e,public void setContentReferenceType(String referenceType) {,0,3,0.1764705882352941,421
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,1,2,0.11764705882352941,422
+12241987618a69a588beb6541750016ab25e9f9e,"* {@link XmlSignerConfiguration#getAddKeyInfoReference()} is <code>true</code>,",1,2,0.11764705882352941,423
+12241987618a69a588beb6541750016ab25e9f9e,* (see {@link XmlSignerConfiguration#setXpathsToIdAttributes(List)}) and the,1,2,0.11764705882352941,424
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#setSchemaResourceUri(String)}. Elements with,1,2,0.11764705882352941,425
+12241987618a69a588beb6541750016ab25e9f9e,* method {@link XmlSignerConfiguration#getDigestAlgorithm()} or calculated from,1,2,0.11764705882352941,426
+12241987618a69a588beb6541750016ab25e9f9e,* transforms are read from {@link XmlSignerConfiguration#getTransformMethods()},1,2,0.11764705882352941,427
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" </ToBeSigned>                                                   "" + ""</Document>"";",0,2,0.11764705882352941,428
+12241987618a69a588beb6541750016ab25e9f9e,"Reference keyInfoRef = createKeyInfoReference(input.getSignatureFactory(), keyInfoId, input.getContentDigestAlgorithm());",1,2,0.11764705882352941,429
+12241987618a69a588beb6541750016ab25e9f9e,"private Node getTextNode(Message inMessage, InputStream is) throws IOException, ParserConfigurationException, XmlSignatureException {",1,2,0.11764705882352941,430
+12241987618a69a588beb6541750016ab25e9f9e,"LOG.debug(""Header {} with value '{}' found"", XmlSignatureConstants.HEADER_TRANSFORM_METHODS, transformMethodsHeaderValue);",1,2,0.11764705882352941,431
+12241987618a69a588beb6541750016ab25e9f9e,* be added.,1,2,0.11764705882352941,432
+12241987618a69a588beb6541750016ab25e9f9e,* Signature element.,1,2,0.11764705882352941,433
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#getParentLocalName()} must not return,1,2,0.11764705882352941,434
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,1,2,0.11764705882352941,435
+12241987618a69a588beb6541750016ab25e9f9e,* provided by the {@link KeyAccessor} and,1,2,0.11764705882352941,436
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#getSignatureAlgorithm()}. The optional transforms are read from,0,2,0.11764705882352941,437
+12241987618a69a588beb6541750016ab25e9f9e,"LOG.debug(""Header {} with value '{}' found"", XmlSignatureConstants.HEADER_TRANSFORM_METHODS,",0,2,0.11764705882352941,438
+12241987618a69a588beb6541750016ab25e9f9e,"new Object[] { referenceUri, el.getLocalName(), el.getNamespaceURI() });",0,2,0.11764705882352941,439
+12241987618a69a588beb6541750016ab25e9f9e,"private Element getParentForDetachedCase(Document doc, Message inMessage, String referenceUri)",0,2,0.11764705882352941,440
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,0,2,0.11764705882352941,441
+12241987618a69a588beb6541750016ab25e9f9e,"Message inMessage, Node messageBodyNode, String contentReferenceURI, SignatureType sigType)",0,2,0.11764705882352941,442
+12241987618a69a588beb6541750016ab25e9f9e,public XPathFilterParameterSpec getParentXpath() {,1,2,0.11764705882352941,443
+12241987618a69a588beb6541750016ab25e9f9e,} else {,1,2,0.11764705882352941,444
+12241987618a69a588beb6541750016ab25e9f9e,* The parameter {@link #setParentLocalName(String)} or {@link #setParentXpath(XPathFilterParameterSpec)},1,2,0.11764705882352941,445
+12241987618a69a588beb6541750016ab25e9f9e,public List<XPathFilterParameterSpec> getXpathsToIdAttributes() {,1,2,0.11764705882352941,446
+12241987618a69a588beb6541750016ab25e9f9e,* you can provide a bean which implements the XmlSignatureProperties interface.,1,2,0.11764705882352941,447
+12241987618a69a588beb6541750016ab25e9f9e,public XmlSignatureProperties getProperties() {,1,2,0.11764705882352941,448
+12241987618a69a588beb6541750016ab25e9f9e,public Boolean getPlainText() {,1,2,0.11764705882352941,449
+12241987618a69a588beb6541750016ab25e9f9e,* signature element.,1,2,0.11764705882352941,450
+12241987618a69a588beb6541750016ab25e9f9e,* The parameter can also be configured via {@link XmlSignatureConfiguration#setOmitXmlDeclaration(Boolean)},0,2,0.11764705882352941,451
+12241987618a69a588beb6541750016ab25e9f9e,for (XMLObject xo : (List<XMLObject>) signature.getObjects()) {,1,2,0.11764705882352941,452
+12241987618a69a588beb6541750016ab25e9f9e,XmlVerifierEndpoint endpoint = context,0,2,0.11764705882352941,453
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""\""src/test/resources/org/apache/camel/component/xmlsecurity/xmldsig-core-schema.dtd\"" [ <!ENTITY dsig """,0,2,0.11764705882352941,454
+12241987618a69a588beb6541750016ab25e9f9e,for (Reference ref : (List<Reference>) man.getReferences()) {,1,2,0.11764705882352941,455
+12241987618a69a588beb6541750016ab25e9f9e,for (Reference ref : (List<Reference>) signature.getSignedInfo().getReferences()) {,1,2,0.11764705882352941,456
+12241987618a69a588beb6541750016ab25e9f9e,for (Reference ref : man.getReferences()) {,0,2,0.11764705882352941,457
+12241987618a69a588beb6541750016ab25e9f9e,for (XMLObject xo : signature.getObjects()) {,0,2,0.11764705882352941,458
+12241987618a69a588beb6541750016ab25e9f9e,for (Reference ref : signature.getSignedInfo().getReferences()) {,0,2,0.11764705882352941,459
+12241987618a69a588beb6541750016ab25e9f9e,"new Object[] { referenceUri, el.getLocalName(), el.getNamespaceURI() });",1,2,0.11764705882352941,460
+12241987618a69a588beb6541750016ab25e9f9e,Class<? extends Exception> expectedCauseClass) throws Exception {,1,2,0.11764705882352941,461
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,1,2,0.11764705882352941,462
+12241987618a69a588beb6541750016ab25e9f9e,"throws XPathExpressionException, SAXException, IOException, ParserConfigurationException {",1,2,0.11764705882352941,463
+12241987618a69a588beb6541750016ab25e9f9e,"void testDetached2Xpaths(String xpath1exp, String xpath2exp) throws InterruptedException, XPathExpressionException, SAXException,",1,2,0.11764705882352941,464
+12241987618a69a588beb6541750016ab25e9f9e,"String detachedPayload = ""<?xml version=\""1.0\"" encoding=\""UTF-8\""?>""",1,2,0.11764705882352941,465
+12241987618a69a588beb6541750016ab25e9f9e,ParserConfigurationException {,1,2,0.11764705882352941,466
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""\""http://www.w3.org/2000/09/xmldsig#\""> ]>"" + ""<root xmlns=\""http://test/test\""><test>Test Message</test></root>"";",1,2,0.11764705882352941,467
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""\""src/test/resources/org/apache/camel/component/xmlsecurity/xmldsig-core-schema.dtd\"" [ <!ENTITY dsig """,1,2,0.11764705882352941,468
+12241987618a69a588beb6541750016ab25e9f9e,"XmlVerifierEndpoint endpoint = context.getEndpoint(""xmlsecurity-verify:outputnodesearchelementname?keySelector=#selectorKeyValue""",1,2,0.11764705882352941,469
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" </ToBeSigned>                                                   "" + ""</Document>"";",1,2,0.11764705882352941,470
+12241987618a69a588beb6541750016ab25e9f9e,* The parameter can also be configured via,1,2,0.11764705882352941,471
+12241987618a69a588beb6541750016ab25e9f9e,"String payload = ""<?xml version=\""1.0\"" encoding=\""UTF-8\""?><a xmlns=\""http://test/test\""><test>Test Message</test></a>"";",1,2,0.11764705882352941,472
+12241987618a69a588beb6541750016ab25e9f9e,static void checkThrownException(,0,2,0.11764705882352941,473
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,0,2,0.11764705882352941,474
+12241987618a69a588beb6541750016ab25e9f9e,"throws XPathExpressionException, SAXException, IOException, ParserConfigurationException {",0,2,0.11764705882352941,475
+12241987618a69a588beb6541750016ab25e9f9e,"String verifierEndpointUri, String directStart)",0,2,0.11764705882352941,476
+12241987618a69a588beb6541750016ab25e9f9e,XmlSignerEndpoint endpoint = (XmlSignerEndpoint) context(),0,2,0.11764705882352941,477
+12241987618a69a588beb6541750016ab25e9f9e,"void testDetached2Xpaths(String xpath1exp, String xpath2exp)",0,2,0.11764705882352941,478
+12241987618a69a588beb6541750016ab25e9f9e,* signed first.,0,2,0.11764705882352941,479
+12241987618a69a588beb6541750016ab25e9f9e,"String detachedPayload = ""<?xml version=\""1.0\"" encoding=\""UTF-8\""?>""",0,2,0.11764705882352941,480
+12241987618a69a588beb6541750016ab25e9f9e,ParserConfigurationException {,0,2,0.11764705882352941,481
+12241987618a69a588beb6541750016ab25e9f9e,"contentObjectId = ""_"" + UUID.randomUUID().toString();",1,2,0.11764705882352941,482
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,0,2,0.11764705882352941,483
+12241987618a69a588beb6541750016ab25e9f9e,*            local name,1,2,0.11764705882352941,484
+12241987618a69a588beb6541750016ab25e9f9e,public class XmlSignerConfiguration extends XmlSignatureConfiguration {,0,2,0.11764705882352941,485
+12241987618a69a588beb6541750016ab25e9f9e,public Boolean getAddKeyInfoReference() {,0,2,0.11764705882352941,486
+12241987618a69a588beb6541750016ab25e9f9e,public List<AlgorithmMethod> getTransformMethods() {,0,2,0.11764705882352941,487
+12241987618a69a588beb6541750016ab25e9f9e,"* getCanonicalizationMethod(String algorithm, List<String> inclusiveNamespacePrefixes) to create a canonicalization",0,2,0.11764705882352941,488
+12241987618a69a588beb6541750016ab25e9f9e,public AlgorithmMethod getCanonicalizationMethod() {,0,2,0.11764705882352941,489
+12241987618a69a588beb6541750016ab25e9f9e,* org.apache.camel.component.xmlsecurity.api contains the default implementation class DefaultKeyAccessor which,0,2,0.11764705882352941,490
+12241987618a69a588beb6541750016ab25e9f9e,public KeyAccessor getKeyAccessor() {,0,2,0.11764705882352941,491
+12241987618a69a588beb6541750016ab25e9f9e,} catch (CloneNotSupportedException e) {,0,2,0.11764705882352941,492
+12241987618a69a588beb6541750016ab25e9f9e,public XmlSignerConfiguration copy() {,0,2,0.11764705882352941,493
+12241987618a69a588beb6541750016ab25e9f9e,public XmlSignerConfiguration() {,0,2,0.11764705882352941,494
+12241987618a69a588beb6541750016ab25e9f9e,"private String plainTextEncoding = ""UTF-8"";",0,2,0.11764705882352941,495
+12241987618a69a588beb6541750016ab25e9f9e,"private String prefixForXmlSignatureNamespace = ""ds"";",0,2,0.11764705882352941,496
+12241987618a69a588beb6541750016ab25e9f9e,"private String signatureAlgorithm = ""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"";",0,2,0.11764705882352941,497
+12241987618a69a588beb6541750016ab25e9f9e,private AlgorithmMethod canonicalizationMethod = new XmlSignatureTransform(CanonicalizationMethod.INCLUSIVE);,0,2,0.11764705882352941,498
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.dsig.spec.XPathFilterParameterSpec;,0,2,0.11764705882352941,499
+12241987618a69a588beb6541750016ab25e9f9e,* <code>null</code>.,0,2,0.11764705882352941,500
+12241987618a69a588beb6541750016ab25e9f9e,"* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",0,2,0.11764705882352941,501
+12241987618a69a588beb6541750016ab25e9f9e,* @param relevantObjects,1,2,0.11764705882352941,502
+12241987618a69a588beb6541750016ab25e9f9e,* @param relevantReferences,1,2,0.11764705882352941,503
+12241987618a69a588beb6541750016ab25e9f9e,* the camel message.,1,2,0.11764705882352941,504
+12241987618a69a588beb6541750016ab25e9f9e,* @throws Exception,1,2,0.11764705882352941,505
+12241987618a69a588beb6541750016ab25e9f9e,*            references and objects,1,2,0.11764705882352941,506
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,1,2,0.11764705882352941,507
+12241987618a69a588beb6541750016ab25e9f9e,"List<XMLObject> allObjects, List<XMLObject> referencedObjects, String manifestId) {",0,2,0.11764705882352941,508
+12241987618a69a588beb6541750016ab25e9f9e,* @throws Exception          if an error occurs,0,2,0.11764705882352941,509
+12241987618a69a588beb6541750016ab25e9f9e,* @throws Exception if an error occurs,0,2,0.11764705882352941,510
+12241987618a69a588beb6541750016ab25e9f9e,throws Exception {,0,2,0.11764705882352941,511
+12241987618a69a588beb6541750016ab25e9f9e,* XML signatures.,0,2,0.11764705882352941,512
+12241987618a69a588beb6541750016ab25e9f9e,* @param parentLocalName,1,2,0.11764705882352941,513
+12241987618a69a588beb6541750016ab25e9f9e,* <p>,0,2,0.11764705882352941,514
+12241987618a69a588beb6541750016ab25e9f9e,*            input from method,1,2,0.11764705882352941,515
+12241987618a69a588beb6541750016ab25e9f9e,* See best practice http://www.w3.org/TR/xmldsig-bestpractices/#signing-xml- without-namespaces,0,2,0.11764705882352941,516
+12241987618a69a588beb6541750016ab25e9f9e,"private String signatureAlgorithm = ""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"";",1,2,0.11764705882352941,517
+12241987618a69a588beb6541750016ab25e9f9e,* @param prefixForXmlSignatureNamespace prefix,0,2,0.11764705882352941,518
+12241987618a69a588beb6541750016ab25e9f9e,* @param prefixForXmlSignatureNamespace,1,2,0.11764705882352941,519
+12241987618a69a588beb6541750016ab25e9f9e,* See best practice,1,2,0.11764705882352941,520
+12241987618a69a588beb6541750016ab25e9f9e,* <p>,1,2,0.11764705882352941,521
+12241987618a69a588beb6541750016ab25e9f9e,public Boolean getAddKeyInfoReference() {,1,2,0.11764705882352941,522
+12241987618a69a588beb6541750016ab25e9f9e,"* signature algorithm. Example: ""http://www.w3.org/2001/04/xmlenc#sha256""",1,2,0.11764705882352941,523
+12241987618a69a588beb6541750016ab25e9f9e,public List<AlgorithmMethod> getTransformMethods() {,1,2,0.11764705882352941,524
+12241987618a69a588beb6541750016ab25e9f9e,public KeyAccessor getKeyAccessor() {,1,2,0.11764705882352941,525
+12241987618a69a588beb6541750016ab25e9f9e,} catch (CloneNotSupportedException e) {,1,2,0.11764705882352941,526
+12241987618a69a588beb6541750016ab25e9f9e,public XmlSignerConfiguration copy() {,1,2,0.11764705882352941,527
+12241987618a69a588beb6541750016ab25e9f9e,public XmlSignerConfiguration() {,1,2,0.11764705882352941,528
+12241987618a69a588beb6541750016ab25e9f9e,"private String plainTextEncoding = ""UTF-8"";",1,2,0.11764705882352941,529
+12241987618a69a588beb6541750016ab25e9f9e,"private String prefixForXmlSignatureNamespace = ""ds"";",1,2,0.11764705882352941,530
+12241987618a69a588beb6541750016ab25e9f9e,public AlgorithmMethod getCanonicalizationMethod() {,1,2,0.11764705882352941,531
+12241987618a69a588beb6541750016ab25e9f9e,private AlgorithmMethod canonicalizationMethod = new XmlSignatureTransform(CanonicalizationMethod.INCLUSIVE);,1,2,0.11764705882352941,532
+12241987618a69a588beb6541750016ab25e9f9e,* provide a bean which implements the XmlSignatureProperties interface.,0,2,0.11764705882352941,533
+12241987618a69a588beb6541750016ab25e9f9e,* signature.,0,2,0.11764705882352941,534
+12241987618a69a588beb6541750016ab25e9f9e,public class XmlSignerConfiguration extends XmlSignatureConfiguration {,1,2,0.11764705882352941,535
+12241987618a69a588beb6541750016ab25e9f9e,* an exception is thrown.,0,2,0.11764705882352941,536
+12241987618a69a588beb6541750016ab25e9f9e,"contentObjectId = ""_"" + UUID.randomUUID().toString();",0,2,0.11764705882352941,537
+12241987618a69a588beb6541750016ab25e9f9e,* detached case.,0,2,0.11764705882352941,538
+12241987618a69a588beb6541750016ab25e9f9e,public XmlSignatureProperties getProperties() {,0,2,0.11764705882352941,539
+12241987618a69a588beb6541750016ab25e9f9e,public Boolean getPlainText() {,0,2,0.11764705882352941,540
+12241987618a69a588beb6541750016ab25e9f9e,public List<XPathFilterParameterSpec> getXpathsToIdAttributes() {,0,2,0.11764705882352941,541
+12241987618a69a588beb6541750016ab25e9f9e,} else {,0,2,0.11764705882352941,542
+12241987618a69a588beb6541750016ab25e9f9e,public XPathFilterParameterSpec getParentXpath() {,0,2,0.11764705882352941,543
+12241987618a69a588beb6541750016ab25e9f9e,"* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",1,2,0.11764705882352941,544
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.dsig.spec.XPathFilterParameterSpec;,1,2,0.11764705882352941,545
+12241987618a69a588beb6541750016ab25e9f9e,"protected Schema getSchemaForSigner(Message message, ValidatorErrorHandler errorHandler) throws XmlSignatureException, SAXException,",1,1,0.058823529411764705,546
+12241987618a69a588beb6541750016ab25e9f9e,* following structure:,1,1,0.058823529411764705,547
+12241987618a69a588beb6541750016ab25e9f9e,+ getConfiguration().getParentXpath().getXPath(),1,1,0.058823529411764705,548
+12241987618a69a588beb6541750016ab25e9f9e,return (Element)node;,1,1,0.058823529411764705,549
+12241987618a69a588beb6541750016ab25e9f9e,+ getConfiguration().getParentLocalName(),1,1,0.058823529411764705,550
+12241987618a69a588beb6541750016ab25e9f9e,* .,1,1,0.058823529411764705,551
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#getSignatureAlgorithm()}. The optional,1,1,0.058823529411764705,552
+12241987618a69a588beb6541750016ab25e9f9e,* signatures.,1,1,0.058823529411764705,553
+12241987618a69a588beb6541750016ab25e9f9e,* configuration {@link XmlSignerConfiguration#getPlainText()}.,1,1,0.058823529411764705,554
+12241987618a69a588beb6541750016ab25e9f9e,protected Reference createReference(,0,1,0.058823529411764705,555
+12241987618a69a588beb6541750016ab25e9f9e,+ toString(xpathsToIdAttributes),0,1,0.058823529411764705,556
+12241987618a69a588beb6541750016ab25e9f9e,+ xp.getXPath(),0,1,0.058823529411764705,557
+12241987618a69a588beb6541750016ab25e9f9e,"private List<String> getContentReferenceUrisForDetachedCase(Message message, Node messageBodyNode)",0,1,0.058823529411764705,558
+12241987618a69a588beb6541750016ab25e9f9e,"throws XmlSignatureException, XPathExpressionException {",0,1,0.058823529411764705,559
+12241987618a69a588beb6541750016ab25e9f9e,"throws InvalidAlgorithmParameterException, XmlSignatureException {",0,1,0.058823529411764705,560
+12241987618a69a588beb6541750016ab25e9f9e,"throws ParserConfigurationException, IOException, XmlSignatureFormatException {",0,1,0.058823529411764705,561
+12241987618a69a588beb6541750016ab25e9f9e,"new Object[] {referenceUri, el.getLocalName(), el.getNamespaceURI() });",1,1,0.058823529411764705,562
+12241987618a69a588beb6541750016ab25e9f9e,"throws IOException, ParserConfigurationException, XmlSignatureException {",0,1,0.058823529411764705,563
+12241987618a69a588beb6541750016ab25e9f9e,"NodeList parents = doc.getElementsByTagNameNS(getConfiguration().getParentNamespace(), getConfiguration().getParentLocalName());",1,1,0.058823529411764705,564
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""schemaResourceUri=org/apache/camel/component/xmlsecurity/Test.xsd&signatureId=&clearHeaders=false"")",0,1,0.058823529411764705,565
+12241987618a69a588beb6541750016ab25e9f9e,"throws ParserConfigurationException, IOException, XmlSignatureFormatException {",1,1,0.058823529411764705,566
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<root xmlns=\""http://test/test\""><test>Test Message</test></root>"";",0,1,0.058823529411764705,567
+12241987618a69a588beb6541750016ab25e9f9e,"= createKeyInfoReference(input.getSignatureFactory(), keyInfoId, input.getContentDigestAlgorithm());",0,1,0.058823529411764705,568
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <!-- comment -->                                              """,0,1,0.058823529411764705,569
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ToBeSigned>                                                     """,0,1,0.058823529411764705,570
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<Document xmlns=\""http://test/test\"">                             """,0,1,0.058823529411764705,571
+12241987618a69a588beb6541750016ab25e9f9e,"= ""<?xml version=\""1.0\"" encoding=\""UTF-8\""?><a xmlns=\""http://test/test\""><test>Test Message</test></a>"";",0,1,0.058823529411764705,572
+12241987618a69a588beb6541750016ab25e9f9e,String payload,0,1,0.058823529411764705,573
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""&outputNodeSearchType=ElementName&outputNodeSearch={http://test/test}root&removeSignatureElements=true"")",0,1,0.058823529411764705,574
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""&signatureAlgorithm=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512&digestAlgorithm=http://www.w3.org/2001/04/xmlenc#sha512"",",0,1,0.058823529411764705,575
+12241987618a69a588beb6541750016ab25e9f9e,"+ (includeNewLine ? ""\n"" : """")",0,1,0.058823529411764705,576
+12241987618a69a588beb6541750016ab25e9f9e,"throws InvalidAlgorithmParameterException, XmlSignatureException {",1,1,0.058823529411764705,577
+12241987618a69a588beb6541750016ab25e9f9e,|| TestSupport.isJava18_261_later()) {,0,1,0.058823529411764705,578
+12241987618a69a588beb6541750016ab25e9f9e,"private NodeList getSignatureNodes(Document doc) throws IOException, ParserConfigurationException, XmlSignatureFormatException {",1,1,0.058823529411764705,579
+12241987618a69a588beb6541750016ab25e9f9e,throw new XmlSignatureFormatException(,0,1,0.058823529411764705,580
+12241987618a69a588beb6541750016ab25e9f9e,"throws IOException, ParserConfigurationException, XmlSignatureFormatException {",0,1,0.058823529411764705,581
+12241987618a69a588beb6541750016ab25e9f9e,private void map2Message(,0,1,0.058823529411764705,582
+12241987618a69a588beb6541750016ab25e9f9e,+ toString(xpathsToIdAttributes),1,1,0.058823529411764705,583
+12241987618a69a588beb6541750016ab25e9f9e,"private List<String> getContentReferenceUrisForDetachedCase(Message message, Node messageBodyNode) throws XmlSignatureException,",1,1,0.058823529411764705,584
+12241987618a69a588beb6541750016ab25e9f9e,"throws XmlSignatureException, XPathExpressionException {",1,1,0.058823529411764705,585
+12241987618a69a588beb6541750016ab25e9f9e,"private Node getTextNode(Message inMessage, InputStream is)",0,1,0.058823529411764705,586
+12241987618a69a588beb6541750016ab25e9f9e,this.contentReferenceUri = referenceUri;,1,1,0.058823529411764705,587
+12241987618a69a588beb6541750016ab25e9f9e,Reference keyInfoRef,0,1,0.058823529411764705,588
+12241987618a69a588beb6541750016ab25e9f9e,this.plainTextEncoding = plainTextEncoding;,1,1,0.058823529411764705,589
+12241987618a69a588beb6541750016ab25e9f9e,this.plainText = plainText;,1,1,0.058823529411764705,590
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConstants#HEADER_MESSAGE_IS_PLAIN_TEXT}.,1,1,0.058823529411764705,591
+12241987618a69a588beb6541750016ab25e9f9e,return plainText;,1,1,0.058823529411764705,592
+12241987618a69a588beb6541750016ab25e9f9e,this.contentReferenceType = referenceType;,1,1,0.058823529411764705,593
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConstants#HEADER_CONTENT_REFERENCE_TYPE}.,1,1,0.058823529411764705,594
+12241987618a69a588beb6541750016ab25e9f9e,return contentReferenceType;,1,1,0.058823529411764705,595
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <NotToBeSigned>                                               """,0,1,0.058823529411764705,596
+12241987618a69a588beb6541750016ab25e9f9e,return contentReferenceUri;,1,1,0.058823529411764705,597
+12241987618a69a588beb6541750016ab25e9f9e,this.signatureId = signatureId;,1,1,0.058823529411764705,598
+12241987618a69a588beb6541750016ab25e9f9e,return signatureId;,1,1,0.058823529411764705,599
+12241987618a69a588beb6541750016ab25e9f9e,this.contentObjectId = contentObjectId;,1,1,0.058823529411764705,600
+12241987618a69a588beb6541750016ab25e9f9e,return contentObjectId;,1,1,0.058823529411764705,601
+12241987618a69a588beb6541750016ab25e9f9e,if (contentObjectId == null) {,1,1,0.058823529411764705,602
+12241987618a69a588beb6541750016ab25e9f9e,this.parentNamespace = parentNamespace;,1,1,0.058823529411764705,603
+12241987618a69a588beb6541750016ab25e9f9e,return parentNamespace;,1,1,0.058823529411764705,604
+12241987618a69a588beb6541750016ab25e9f9e,this.parentLocalName = parentLocalName;,1,1,0.058823529411764705,605
+12241987618a69a588beb6541750016ab25e9f9e,* also use {@link #setParentXpath(XPathFilterParameterSpec)}.,1,1,0.058823529411764705,606
+12241987618a69a588beb6541750016ab25e9f9e,return plainTextEncoding;,1,1,0.058823529411764705,607
+12241987618a69a588beb6541750016ab25e9f9e,return properties;,1,1,0.058823529411764705,608
+12241987618a69a588beb6541750016ab25e9f9e,String keyInfoId),0,1,0.058823529411764705,609
+12241987618a69a588beb6541750016ab25e9f9e,this.properties = properties;,1,1,0.058823529411764705,610
+12241987618a69a588beb6541750016ab25e9f9e,throws XmlSignatureException {,0,1,0.058823529411764705,611
+12241987618a69a588beb6541750016ab25e9f9e,return (Element) node;,0,1,0.058823529411764705,612
+12241987618a69a588beb6541750016ab25e9f9e,throw new XmlSignatureException(,0,1,0.058823529411764705,613
+12241987618a69a588beb6541750016ab25e9f9e,protected Element getParentOfSignature(,0,1,0.058823529411764705,614
+12241987618a69a588beb6541750016ab25e9f9e,"protected Schema getSchemaForSigner(Message message, ValidatorErrorHandler errorHandler)",0,1,0.058823529411764705,615
+12241987618a69a588beb6541750016ab25e9f9e,+ getConfiguration().getParentXpath().getXPath(),0,1,0.058823529411764705,616
+12241987618a69a588beb6541750016ab25e9f9e,+ getConfiguration().getParentLocalName(),0,1,0.058823529411764705,617
+12241987618a69a588beb6541750016ab25e9f9e,XmlSignatureProperties.Input input,0,1,0.058823529411764705,618
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#getTransformMethods()} .,0,1,0.058823529411764705,619
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignerConfiguration#getPlainText()}.,0,1,0.058823529411764705,620
+12241987618a69a588beb6541750016ab25e9f9e,this.parentXpath = parentXpath;,1,1,0.058823529411764705,621
+12241987618a69a588beb6541750016ab25e9f9e,return parentXpath;,1,1,0.058823529411764705,622
+12241987618a69a588beb6541750016ab25e9f9e,this.xpathsToIdAttributes = Collections.unmodifiableList(xpathsToIdAttributes);,1,1,0.058823529411764705,623
+12241987618a69a588beb6541750016ab25e9f9e,this.xpathsToIdAttributes = Collections.emptyList();,1,1,0.058823529411764705,624
+12241987618a69a588beb6541750016ab25e9f9e,if (xpathsToIdAttributes == null) {,1,1,0.058823529411764705,625
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConstants#HEADER_XPATHS_TO_ID_ATTRIBUTES}.,1,1,0.058823529411764705,626
+12241987618a69a588beb6541750016ab25e9f9e,return xpathsToIdAttributes;,1,1,0.058823529411764705,627
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <Data>1</Data>                                                """,0,1,0.058823529411764705,628
+12241987618a69a588beb6541750016ab25e9f9e,private void checkThrownException(,0,1,0.058823529411764705,629
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""     <ReallyToBeSigned>                                          """,0,1,0.058823529411764705,630
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" </ToBeSigned>                                                   """,1,1,0.058823529411764705,631
+12241987618a69a588beb6541750016ab25e9f9e,"return testDetachedSignatureInternal(Collections.<String, Object>emptyMap());",1,1,0.058823529411764705,632
+12241987618a69a588beb6541750016ab25e9f9e,"private Element testDetachedSignatureInternal() throws InterruptedException, XPathExpressionException, SAXException, IOException,",1,1,0.058823529411764705,633
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\""><b>bValue</b></a></ns:root>"";",1,1,0.058823529411764705,634
+12241987618a69a588beb6541750016ab25e9f9e,"InputStream payload = XmlSignatureTest.class.getResourceAsStream(""/org/apache/camel/component/xmlsecurity/ExampleDetached.xml"");",1,1,0.058823529411764705,635
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""&outputNodeSearchType=ElementName&outputNodeSearch={http://test/test}root&removeSignatureElements=true"",",1,1,0.058823529411764705,636
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""     <Data>4</Data>                                              """,1,1,0.058823529411764705,637
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <Data>3</Data>                                                """,1,1,0.058823529411764705,638
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" <ToBeSigned>                                                    """,1,1,0.058823529411764705,639
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   </NotToBeSigned>                                              """,1,1,0.058823529411764705,640
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""       <!-- comment -->                                          """,0,1,0.058823529411764705,641
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""     </ReallyToBeSigned>                                         """,1,1,0.058823529411764705,642
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""       <Data>2</Data>                                            """,1,1,0.058823529411764705,643
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""       <!-- comment -->                                          """,1,1,0.058823529411764705,644
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""     <ReallyToBeSigned>                                          """,1,1,0.058823529411764705,645
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <NotToBeSigned>                                               """,1,1,0.058823529411764705,646
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <Data>1</Data>                                                """,1,1,0.058823529411764705,647
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <!-- comment -->                                              """,1,1,0.058823529411764705,648
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ToBeSigned>                                                     """,1,1,0.058823529411764705,649
+12241987618a69a588beb6541750016ab25e9f9e,"private Element testDetachedSignatureInternal(Map<String, Object> headers) throws InterruptedException, XPathExpressionException, SAXException, IOException,",1,1,0.058823529411764705,650
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><test ID=\""myID\""><b>bValue</b><ts:B xmlns:ts=\""http://testB\""><C ID=\""cID\""><D>dvalue</D></C></ts:B></test></ns:root>"";",1,1,0.058823529411764705,651
+12241987618a69a588beb6541750016ab25e9f9e,+ parentLocalName,1,1,0.058823529411764705,652
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\""><error>bValue</error></a></ns:root>"";",1,1,0.058823529411764705,653
+12241987618a69a588beb6541750016ab25e9f9e,if (configuredTrafos.size() > 0) {,1,1,0.058823529411764705,654
+12241987618a69a588beb6541750016ab25e9f9e,if (result.size() == 0) {,1,1,0.058823529411764705,655
+12241987618a69a588beb6541750016ab25e9f9e,boolean isDetached = getXpathToIdAttributes(message).size() > 0;,1,1,0.058823529411764705,656
+12241987618a69a588beb6541750016ab25e9f9e,if (!configuredTrafos.isEmpty()) {,0,1,0.058823529411764705,657
+12241987618a69a588beb6541750016ab25e9f9e,if (result.isEmpty()) {,0,1,0.058823529411764705,658
+12241987618a69a588beb6541750016ab25e9f9e,boolean isDetached = !getXpathToIdAttributes(message).isEmpty();,0,1,0.058823529411764705,659
+12241987618a69a588beb6541750016ab25e9f9e,throws KeySelectorException {,1,1,0.058823529411764705,660
+12241987618a69a588beb6541750016ab25e9f9e,"public KeySelectorResult select(KeyInfo keyInfo, KeySelector.Purpose purpose, AlgorithmMethod method, XMLCryptoContext context)",1,1,0.058823529411764705,661
+12241987618a69a588beb6541750016ab25e9f9e,"AlgorithmMethod transformXslt = XmlSignatureHelper.getXslTransform(""/org/apache/camel/component/xmlsecurity/xslt_test.xsl"");",1,1,0.058823529411764705,662
+12241987618a69a588beb6541750016ab25e9f9e,+ getStrackTrace(e));,1,1,0.058823529411764705,663
+12241987618a69a588beb6541750016ab25e9f9e,"private void checkThrownException(MockEndpoint mock, Class<? extends Exception> cl, Class<? extends Exception> expectedCauseClass)",1,1,0.058823529411764705,664
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""schemaResourceUri=org/apache/camel/component/xmlsecurity/Test.xsd&signatureId=&clearHeaders=false"");",1,1,0.058823529411764705,665
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a>a1</a><a/><test>Test Message</test></ns:root>"";",1,1,0.058823529411764705,666
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root ID=\""rootId\"" xmlns:ns=\""http://test\""></ns:root>"";",1,1,0.058823529411764705,667
+12241987618a69a588beb6541750016ab25e9f9e,"List<XPathFilterParameterSpec> xpaths = Collections.singletonList(XmlSignatureHelper.getXpathFilter(""/ns:root/a/@ID"", null));",1,1,0.058823529411764705,668
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root ID=\""rootId\"" xmlns:ns=\""http://test\""><a ID=\""myID\""><b>bValue</b></a></ns:root>"";",1,1,0.058823529411764705,669
+12241987618a69a588beb6541750016ab25e9f9e,+ xPath,1,1,0.058823529411764705,670
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<Document xmlns=\""http://test/test\"">                             """,1,1,0.058823529411764705,671
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConfiguration#setOmitXmlDeclaration(Boolean)},1,1,0.058823529411764705,672
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""schemaResourceUri=org/apache/camel/component/xmlsecurity/Test.xsd&signatureId=&clearHeaders=false"")",1,1,0.058823529411764705,673
+12241987618a69a588beb6541750016ab25e9f9e,+ xPath,0,1,0.058823529411764705,674
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\""><error>bValue</error></a></ns:root>"";",0,1,0.058823529411764705,675
+12241987618a69a588beb6541750016ab25e9f9e,+ parentLocalName,0,1,0.058823529411764705,676
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><test ID=\""myID\""><b>bValue</b><ts:B xmlns:ts=\""http://testB\""><C ID=\""cID\""><D>dvalue</D></C></ts:B></test></ns:root>"";",0,1,0.058823529411764705,677
+12241987618a69a588beb6541750016ab25e9f9e,"private Element testDetachedSignatureInternal(Map<String, Object> headers)",0,1,0.058823529411764705,678
+12241987618a69a588beb6541750016ab25e9f9e,"return testDetachedSignatureInternal(Collections.<String, Object> emptyMap());",0,1,0.058823529411764705,679
+12241987618a69a588beb6541750016ab25e9f9e,private Element testDetachedSignatureInternal(),0,1,0.058823529411764705,680
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\""><b>bValue</b></a></ns:root>"";",0,1,0.058823529411764705,681
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""\""http://www.w3.org/2000/09/xmldsig#\""> ]>""",0,1,0.058823529411764705,682
+12241987618a69a588beb6541750016ab25e9f9e,"= XmlSignatureTest.class.getResourceAsStream(""/org/apache/camel/component/xmlsecurity/ExampleDetached.xml"");",0,1,0.058823529411764705,683
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""&outputNodeSearchType=ElementName&outputNodeSearch={http://test/test}root&removeSignatureElements=true"",",0,1,0.058823529411764705,684
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""     <Data>4</Data>                                              """,0,1,0.058823529411764705,685
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   <Data>3</Data>                                                """,0,1,0.058823529411764705,686
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" <ToBeSigned>                                                    """,0,1,0.058823529411764705,687
+12241987618a69a588beb6541750016ab25e9f9e,"+ "" </ToBeSigned>                                                   """,0,1,0.058823529411764705,688
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""   </NotToBeSigned>                                              """,0,1,0.058823529411764705,689
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""     </ReallyToBeSigned>                                         """,0,1,0.058823529411764705,690
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""       <Data>2</Data>                                            """,0,1,0.058823529411764705,691
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""\""><b>bValue</b></a></ns:root>"";",0,1,0.058823529411764705,692
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root ID=\""rootId\"" xmlns:ns=\""http://test\""><a ID=\""myID\""><b>bValue</b></a></ns:root>"";",0,1,0.058823529411764705,693
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""&outputNodeSearchType=ElementName&outputNodeSearch={http://test/test}root&removeSignatureElements=true"")",1,1,0.058823529411764705,694
+12241987618a69a588beb6541750016ab25e9f9e,"= Collections.singletonList(XmlSignatureHelper.getXpathFilter(""/ns:root/a/@ID"", null));",0,1,0.058823529411764705,695
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""&signatureAlgorithm=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512&digestAlgorithm=http://www.w3.org/2001/04/xmlenc#sha512"",",1,1,0.058823529411764705,696
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<root xmlns=\""http://test/test\""><test>Test Message</test></root>"";",1,1,0.058823529411764705,697
+12241987618a69a588beb6541750016ab25e9f9e,"+ (includeNewLine ? ""\n"" : """")",1,1,0.058823529411764705,698
+12241987618a69a588beb6541750016ab25e9f9e,|| TestSupport.isJava18_261_later()) {,1,1,0.058823529411764705,699
+12241987618a69a588beb6541750016ab25e9f9e,throws KeySelectorException {,0,1,0.058823529411764705,700
+12241987618a69a588beb6541750016ab25e9f9e,public KeySelectorResult select(,0,1,0.058823529411764705,701
+12241987618a69a588beb6541750016ab25e9f9e,"= XmlSignatureHelper.getXslTransform(""/org/apache/camel/component/xmlsecurity/xslt_test.xsl"");",0,1,0.058823529411764705,702
+12241987618a69a588beb6541750016ab25e9f9e,+ getStrackTrace(e));,0,1,0.058823529411764705,703
+12241987618a69a588beb6541750016ab25e9f9e,"+ "": """,0,1,0.058823529411764705,704
+12241987618a69a588beb6541750016ab25e9f9e,"MockEndpoint mock, Class<? extends Exception> cl, String expectedMessage,",0,1,0.058823529411764705,705
+12241987618a69a588beb6541750016ab25e9f9e,this.prefixForXmlSignatureNamespace = prefixForXmlSignatureNamespace;,1,1,0.058823529411764705,706
+12241987618a69a588beb6541750016ab25e9f9e,"throws InterruptedException, UnsupportedEncodingException {",0,1,0.058823529411764705,707
+12241987618a69a588beb6541750016ab25e9f9e,private void checkOutputEncoding(,0,1,0.058823529411764705,708
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""schemaResourceUri=org/apache/camel/component/xmlsecurity/Test.xsd&signatureId=&clearHeaders=false"");",0,1,0.058823529411764705,709
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root xmlns:ns=\""http://test\""><a>a1</a><a/><test>Test Message</test></ns:root>"";",0,1,0.058823529411764705,710
+12241987618a69a588beb6541750016ab25e9f9e,"+ ""<ns:root ID=\""rootId\"" xmlns:ns=\""http://test\""></ns:root>"";",0,1,0.058823529411764705,711
+12241987618a69a588beb6541750016ab25e9f9e,".getEndpoint(""xmlsecurity-sign:signexceptions?keyAccessor=#accessor"" + //",0,1,0.058823529411764705,712
+12241987618a69a588beb6541750016ab25e9f9e,return parentLocalName;,1,1,0.058823529411764705,713
+12241987618a69a588beb6541750016ab25e9f9e,"NodeList parents = doc.getElementsByTagNameNS(getConfiguration().getParentNamespace(),",0,1,0.058823529411764705,714
+12241987618a69a588beb6541750016ab25e9f9e,*            prefix,1,1,0.058823529411764705,715
+12241987618a69a588beb6541750016ab25e9f9e,private String signatureId;,0,1,0.058823529411764705,716
+12241987618a69a588beb6541750016ab25e9f9e,},0,1,0.058823529411764705,717
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""UTF-8"")",0,1,0.058823529411764705,718
+12241987618a69a588beb6541750016ab25e9f9e,private Boolean plainText = Boolean.FALSE;,0,1,0.058823529411764705,719
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""false"")",0,1,0.058823529411764705,720
+12241987618a69a588beb6541750016ab25e9f9e,private String parentNamespace;,0,1,0.058823529411764705,721
+12241987618a69a588beb6541750016ab25e9f9e,private String parentLocalName;,0,1,0.058823529411764705,722
+12241987618a69a588beb6541750016ab25e9f9e,private String contentReferenceType;,0,1,0.058823529411764705,723
+12241987618a69a588beb6541750016ab25e9f9e,private String contentReferenceUri;,0,1,0.058823529411764705,724
+12241987618a69a588beb6541750016ab25e9f9e,private String contentObjectId;,0,1,0.058823529411764705,725
+12241987618a69a588beb6541750016ab25e9f9e,this.parentLocalName = parentLocalName;,0,1,0.058823529411764705,726
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""ds"")",0,1,0.058823529411764705,727
+12241987618a69a588beb6541750016ab25e9f9e,private Boolean addKeyInfoReference = Boolean.TRUE;,0,1,0.058823529411764705,728
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""true"")",0,1,0.058823529411764705,729
+12241987618a69a588beb6541750016ab25e9f9e,private String digestAlgorithm;,0,1,0.058823529411764705,730
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"")",0,1,0.058823529411764705,731
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""http://www.w3.org/TR/2001/REC-xml-c14n-20010315"")",0,1,0.058823529411764705,732
+12241987618a69a588beb6541750016ab25e9f9e,private List<AlgorithmMethod> transformMethods = Collections.singletonList(XmlSignatureHelper,0,1,0.058823529411764705,733
+12241987618a69a588beb6541750016ab25e9f9e,private List<XPathFilterParameterSpec> xpathsToIdAttributes = Collections.emptyList();,0,1,0.058823529411764705,734
+12241987618a69a588beb6541750016ab25e9f9e,try {,0,1,0.058823529411764705,735
+12241987618a69a588beb6541750016ab25e9f9e,return (XmlSignerConfiguration) clone();,0,1,0.058823529411764705,736
+12241987618a69a588beb6541750016ab25e9f9e,throw new RuntimeCamelException(e);,0,1,0.058823529411764705,737
+12241987618a69a588beb6541750016ab25e9f9e,return keyAccessor;,0,1,0.058823529411764705,738
+12241987618a69a588beb6541750016ab25e9f9e,return parentLocalName;,0,1,0.058823529411764705,739
+12241987618a69a588beb6541750016ab25e9f9e,this.prefixForXmlSignatureNamespace = prefixForXmlSignatureNamespace;,0,1,0.058823529411764705,740
+12241987618a69a588beb6541750016ab25e9f9e,return prefixForXmlSignatureNamespace;,0,1,0.058823529411764705,741
+12241987618a69a588beb6541750016ab25e9f9e,this.addKeyInfoReference = addKeyInfoReference;,0,1,0.058823529411764705,742
+12241987618a69a588beb6541750016ab25e9f9e,return addKeyInfoReference;,0,1,0.058823529411764705,743
+12241987618a69a588beb6541750016ab25e9f9e,this.digestAlgorithm = digestAlgorithm;,0,1,0.058823529411764705,744
+12241987618a69a588beb6541750016ab25e9f9e,"* algorithm. Example: ""http://www.w3.org/2001/04/xmlenc#sha256""",0,1,0.058823529411764705,745
+12241987618a69a588beb6541750016ab25e9f9e,return digestAlgorithm;,0,1,0.058823529411764705,746
+12241987618a69a588beb6541750016ab25e9f9e,this.signatureAlgorithm = signatureAlgorithm;,0,1,0.058823529411764705,747
+12241987618a69a588beb6541750016ab25e9f9e,return signatureAlgorithm;,0,1,0.058823529411764705,748
+12241987618a69a588beb6541750016ab25e9f9e,this.transformMethods = transformMethods;,0,1,0.058823529411764705,749
+12241987618a69a588beb6541750016ab25e9f9e,return transformMethods;,0,1,0.058823529411764705,750
+12241987618a69a588beb6541750016ab25e9f9e,this.canonicalizationMethod = canonicalizationMethod;,0,1,0.058823529411764705,751
+12241987618a69a588beb6541750016ab25e9f9e,* method.,0,1,0.058823529411764705,752
+12241987618a69a588beb6541750016ab25e9f9e,return canonicalizationMethod;,0,1,0.058823529411764705,753
+12241987618a69a588beb6541750016ab25e9f9e,this.keyAccessor = keyAccessor;,0,1,0.058823529411764705,754
+12241987618a69a588beb6541750016ab25e9f9e,/**,0,1,0.058823529411764705,755
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.spi.UriParams;,0,1,0.058823529411764705,756
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.spi.UriParam;,0,1,0.058823529411764705,757
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureTransform;,0,1,0.058823529411764705,758
+12241987618a69a588beb6541750016ab25e9f9e,*            {@link #getReferencesForMessageMapping(ReferencesAndObjects)},1,1,0.058823529411764705,759
+12241987618a69a588beb6541750016ab25e9f9e,* element.,1,1,0.058823529411764705,760
+12241987618a69a588beb6541750016ab25e9f9e,throw new XMLSignatureException(String.format(,1,1,0.058823529411764705,761
+12241987618a69a588beb6541750016ab25e9f9e,* without-namespaces,1,1,0.058823529411764705,762
+12241987618a69a588beb6541750016ab25e9f9e,* taken into account.,1,1,0.058823529411764705,763
+12241987618a69a588beb6541750016ab25e9f9e,* '#').,1,1,0.058823529411764705,764
+12241987618a69a588beb6541750016ab25e9f9e,protected void addManifestReferencedObjects(,0,1,0.058823529411764705,765
+12241987618a69a588beb6541750016ab25e9f9e,"List<Reference> relevantReferences, List<XMLObject> relevantObjects) {",0,1,0.058823529411764705,766
+12241987618a69a588beb6541750016ab25e9f9e,* @return                    dom structure,0,1,0.058823529411764705,767
+12241987618a69a588beb6541750016ab25e9f9e,*                   otherwise <code>false</code>,0,1,0.058823529411764705,768
+12241987618a69a588beb6541750016ab25e9f9e,input,0,1,0.058823529411764705,769
+12241987618a69a588beb6541750016ab25e9f9e,throw new XMLSignatureException(,0,1,0.058823529411764705,770
+12241987618a69a588beb6541750016ab25e9f9e,throw new XmlSignatureException(,0,1,0.058823529411764705,771
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XPathFilterParameterSpec}.,0,1,0.058823529411764705,772
+12241987618a69a588beb6541750016ab25e9f9e,* following way:,0,1,0.058823529411764705,773
+12241987618a69a588beb6541750016ab25e9f9e,* signatures.,0,1,0.058823529411764705,774
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.util.ResourceHelper;,1,1,0.058823529411764705,775
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.support.ResourceHelper;,0,1,0.058823529411764705,776
+12241987618a69a588beb6541750016ab25e9f9e,*             if an error occurs,1,1,0.058823529411764705,777
+12241987618a69a588beb6541750016ab25e9f9e,*            {@link #getObjectsForMessageMapping(ReferencesAndObjects)},1,1,0.058823529411764705,778
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureProperties;,0,1,0.058823529411764705,779
+12241987618a69a588beb6541750016ab25e9f9e,* @return dom structure,1,1,0.058823529411764705,780
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureHelper;,0,1,0.058823529411764705,781
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureConstants;,0,1,0.058823529411764705,782
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.KeyAccessor;,0,1,0.058823529411764705,783
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.RuntimeCamelException;,0,1,0.058823529411764705,784
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.dsig.keyinfo.KeyInfo;,0,1,0.058823529411764705,785
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.dsig.CanonicalizationMethod;,0,1,0.058823529411764705,786
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.AlgorithmMethod;,0,1,0.058823529411764705,787
+12241987618a69a588beb6541750016ab25e9f9e,import java.util.UUID;,0,1,0.058823529411764705,788
+12241987618a69a588beb6541750016ab25e9f9e,import java.util.List;,0,1,0.058823529411764705,789
+12241987618a69a588beb6541750016ab25e9f9e,import java.util.Collections;,0,1,0.058823529411764705,790
+12241987618a69a588beb6541750016ab25e9f9e,*/,0,1,0.058823529411764705,791
+12241987618a69a588beb6541750016ab25e9f9e,*      http://www.apache.org/licenses/LICENSE-2.0,0,1,0.058823529411764705,792
+12241987618a69a588beb6541750016ab25e9f9e,*,0,1,0.058823529411764705,793
+12241987618a69a588beb6541750016ab25e9f9e,+ schemaResourceUri);,1,1,0.058823529411764705,794
+12241987618a69a588beb6541750016ab25e9f9e,+ schemaResourceUri);,0,1,0.058823529411764705,795
+12241987618a69a588beb6541750016ab25e9f9e,"protected List<XMLObject> getReferencedSameDocumentObjects(List<Reference> relevantReferences, List<XMLObject> relevantObjects) {",1,1,0.058823529411764705,796
+12241987618a69a588beb6541750016ab25e9f9e,throw new XmlSignatureException(String.format(,1,1,0.058823529411764705,797
+12241987618a69a588beb6541750016ab25e9f9e,* configuration.,0,1,0.058823529411764705,798
+12241987618a69a588beb6541750016ab25e9f9e,* structure,1,1,0.058823529411764705,799
+12241987618a69a588beb6541750016ab25e9f9e,return parentNamespace;,0,1,0.058823529411764705,800
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""ds"")",1,1,0.058823529411764705,801
+12241987618a69a588beb6541750016ab25e9f9e,private Boolean plainText = Boolean.FALSE;,1,1,0.058823529411764705,802
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""false"")",1,1,0.058823529411764705,803
+12241987618a69a588beb6541750016ab25e9f9e,private String parentNamespace;,1,1,0.058823529411764705,804
+12241987618a69a588beb6541750016ab25e9f9e,private String parentLocalName;,1,1,0.058823529411764705,805
+12241987618a69a588beb6541750016ab25e9f9e,private String contentReferenceType;,1,1,0.058823529411764705,806
+12241987618a69a588beb6541750016ab25e9f9e,private String contentReferenceUri;,1,1,0.058823529411764705,807
+12241987618a69a588beb6541750016ab25e9f9e,private String signatureId;,1,1,0.058823529411764705,808
+12241987618a69a588beb6541750016ab25e9f9e,private String contentObjectId;,1,1,0.058823529411764705,809
+12241987618a69a588beb6541750016ab25e9f9e,private Boolean addKeyInfoReference = Boolean.TRUE;,1,1,0.058823529411764705,810
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureProperties;,1,1,0.058823529411764705,811
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""true"")",1,1,0.058823529411764705,812
+12241987618a69a588beb6541750016ab25e9f9e,private String digestAlgorithm;,1,1,0.058823529411764705,813
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"")",1,1,0.058823529411764705,814
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""http://www.w3.org/TR/2001/REC-xml-c14n-20010315"")",1,1,0.058823529411764705,815
+12241987618a69a588beb6541750016ab25e9f9e,private List<AlgorithmMethod> transformMethods = Collections.singletonList(XmlSignatureHelper,1,1,0.058823529411764705,816
+12241987618a69a588beb6541750016ab25e9f9e,private List<XPathFilterParameterSpec> xpathsToIdAttributes = Collections.emptyList();,1,1,0.058823529411764705,817
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.spi.UriParams;,1,1,0.058823529411764705,818
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.spi.UriParam;,1,1,0.058823529411764705,819
+12241987618a69a588beb6541750016ab25e9f9e,"@UriParam(defaultValue = ""UTF-8"")",1,1,0.058823529411764705,820
+12241987618a69a588beb6541750016ab25e9f9e,},1,1,0.058823529411764705,821
+12241987618a69a588beb6541750016ab25e9f9e,try {,1,1,0.058823529411764705,822
+12241987618a69a588beb6541750016ab25e9f9e,return (XmlSignerConfiguration) clone();,1,1,0.058823529411764705,823
+12241987618a69a588beb6541750016ab25e9f9e,this.parentNamespace = parentNamespace;,0,1,0.058823529411764705,824
+12241987618a69a588beb6541750016ab25e9f9e,* http://www.w3.org/TR/xmldsig-bestpractices/#signing-xml-,1,1,0.058823529411764705,825
+12241987618a69a588beb6541750016ab25e9f9e,return prefixForXmlSignatureNamespace;,1,1,0.058823529411764705,826
+12241987618a69a588beb6541750016ab25e9f9e,this.addKeyInfoReference = addKeyInfoReference;,1,1,0.058823529411764705,827
+12241987618a69a588beb6541750016ab25e9f9e,return addKeyInfoReference;,1,1,0.058823529411764705,828
+12241987618a69a588beb6541750016ab25e9f9e,this.digestAlgorithm = digestAlgorithm;,1,1,0.058823529411764705,829
+12241987618a69a588beb6541750016ab25e9f9e,return digestAlgorithm;,1,1,0.058823529411764705,830
+12241987618a69a588beb6541750016ab25e9f9e,"* ""http://www.w3.org/2000/09/xmldsig#rsa-sha1"".",1,1,0.058823529411764705,831
+12241987618a69a588beb6541750016ab25e9f9e,return signatureAlgorithm;,1,1,0.058823529411764705,832
+12241987618a69a588beb6541750016ab25e9f9e,this.transformMethods = transformMethods;,1,1,0.058823529411764705,833
+12241987618a69a588beb6541750016ab25e9f9e,return transformMethods;,1,1,0.058823529411764705,834
+12241987618a69a588beb6541750016ab25e9f9e,this.canonicalizationMethod = canonicalizationMethod;,1,1,0.058823529411764705,835
+12241987618a69a588beb6541750016ab25e9f9e,return canonicalizationMethod;,1,1,0.058823529411764705,836
+12241987618a69a588beb6541750016ab25e9f9e,this.keyAccessor = keyAccessor;,1,1,0.058823529411764705,837
+12241987618a69a588beb6541750016ab25e9f9e,/**,1,1,0.058823529411764705,838
+12241987618a69a588beb6541750016ab25e9f9e,return keyAccessor;,1,1,0.058823529411764705,839
+12241987618a69a588beb6541750016ab25e9f9e,throw new RuntimeCamelException(e);,1,1,0.058823529411764705,840
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureTransform;,1,1,0.058823529411764705,841
+12241987618a69a588beb6541750016ab25e9f9e,this.signatureAlgorithm = signatureAlgorithm;,1,1,0.058823529411764705,842
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureHelper;,1,1,0.058823529411764705,843
+12241987618a69a588beb6541750016ab25e9f9e,return xpathsToIdAttributes;,0,1,0.058823529411764705,844
+12241987618a69a588beb6541750016ab25e9f9e,return properties;,0,1,0.058823529411764705,845
+12241987618a69a588beb6541750016ab25e9f9e,this.plainTextEncoding = plainTextEncoding;,0,1,0.058823529411764705,846
+12241987618a69a588beb6541750016ab25e9f9e,return plainTextEncoding;,0,1,0.058823529411764705,847
+12241987618a69a588beb6541750016ab25e9f9e,this.plainText = plainText;,0,1,0.058823529411764705,848
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConstants#HEADER_MESSAGE_IS_PLAIN_TEXT}.,0,1,0.058823529411764705,849
+12241987618a69a588beb6541750016ab25e9f9e,return plainText;,0,1,0.058823529411764705,850
+12241987618a69a588beb6541750016ab25e9f9e,this.contentReferenceType = referenceType;,0,1,0.058823529411764705,851
+12241987618a69a588beb6541750016ab25e9f9e,* header {@link XmlSignatureConstants#HEADER_CONTENT_REFERENCE_TYPE}.,0,1,0.058823529411764705,852
+12241987618a69a588beb6541750016ab25e9f9e,return contentReferenceType;,0,1,0.058823529411764705,853
+12241987618a69a588beb6541750016ab25e9f9e,this.contentReferenceUri = referenceUri;,0,1,0.058823529411764705,854
+12241987618a69a588beb6541750016ab25e9f9e,return contentReferenceUri;,0,1,0.058823529411764705,855
+12241987618a69a588beb6541750016ab25e9f9e,this.signatureId = signatureId;,0,1,0.058823529411764705,856
+12241987618a69a588beb6541750016ab25e9f9e,* element.,0,1,0.058823529411764705,857
+12241987618a69a588beb6541750016ab25e9f9e,this.contentObjectId = contentObjectId;,0,1,0.058823529411764705,858
+12241987618a69a588beb6541750016ab25e9f9e,return contentObjectId;,0,1,0.058823529411764705,859
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.XmlSignatureConstants;,1,1,0.058823529411764705,860
+12241987618a69a588beb6541750016ab25e9f9e,if (contentObjectId == null) {,0,1,0.058823529411764705,861
+12241987618a69a588beb6541750016ab25e9f9e,this.properties = properties;,0,1,0.058823529411764705,862
+12241987618a69a588beb6541750016ab25e9f9e,return signatureId;,0,1,0.058823529411764705,863
+12241987618a69a588beb6541750016ab25e9f9e,* {@link XmlSignatureConstants#HEADER_XPATHS_TO_ID_ATTRIBUTES}.,0,1,0.058823529411764705,864
+12241987618a69a588beb6541750016ab25e9f9e,*/,1,1,0.058823529411764705,865
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.RuntimeCamelException;,1,1,0.058823529411764705,866
+12241987618a69a588beb6541750016ab25e9f9e,if (xpathsToIdAttributes == null) {,0,1,0.058823529411764705,867
+12241987618a69a588beb6541750016ab25e9f9e,import org.apache.camel.component.xmlsecurity.api.KeyAccessor;,1,1,0.058823529411764705,868
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.dsig.keyinfo.KeyInfo;,1,1,0.058823529411764705,869
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.AlgorithmMethod;,1,1,0.058823529411764705,870
+12241987618a69a588beb6541750016ab25e9f9e,import java.util.UUID;,1,1,0.058823529411764705,871
+12241987618a69a588beb6541750016ab25e9f9e,import java.util.List;,1,1,0.058823529411764705,872
+12241987618a69a588beb6541750016ab25e9f9e,import java.util.Collections;,1,1,0.058823529411764705,873
+12241987618a69a588beb6541750016ab25e9f9e,import javax.xml.crypto.dsig.CanonicalizationMethod;,1,1,0.058823529411764705,874
+12241987618a69a588beb6541750016ab25e9f9e,*      http://www.apache.org/licenses/LICENSE-2.0,1,1,0.058823529411764705,875
+12241987618a69a588beb6541750016ab25e9f9e,this.xpathsToIdAttributes = Collections.unmodifiableList(xpathsToIdAttributes);,0,1,0.058823529411764705,876
+12241987618a69a588beb6541750016ab25e9f9e,*,1,1,0.058823529411764705,877
+12241987618a69a588beb6541750016ab25e9f9e,this.parentXpath = parentXpath;,0,1,0.058823529411764705,878
+12241987618a69a588beb6541750016ab25e9f9e,*                    used,0,1,0.058823529411764705,879
+12241987618a69a588beb6541750016ab25e9f9e,this.xpathsToIdAttributes = Collections.emptyList();,0,1,0.058823529411764705,880
+12241987618a69a588beb6541750016ab25e9f9e,* {@link #setParentNamespace(String)}.,0,1,0.058823529411764705,881
+12241987618a69a588beb6541750016ab25e9f9e,return parentXpath;,0,1,0.058823529411764705,882
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-verify:verifyInvalidKeyException?keySelector=#selector"").to(",0,0,0.0,883
+12241987618a69a588beb6541750016ab25e9f9e,"""mock:result"");",0,0,0.0,884
+12241987618a69a588beb6541750016ab25e9f9e,"""xmlsecurity-verify:invalidhash?keySelector=#selectorKeyValue&baseUri=#baseUri&secureValidation=false"")",0,0,0.0,885
+12241987618a69a588beb6541750016ab25e9f9e,.to(,0,0,0.0,886
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:envelopedParentXpath"")",0,0,0.0,887
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-sign:enveloped?keyAccessor=#accessor&parentXpath=#parentXpathBean"")",0,0,0.0,888
+12241987618a69a588beb6541750016ab25e9f9e,".getEndpoint(""xmlsecurity-verify:outputnodesearchelementname?keySelector=#selectorKeyValue""",0,0,0.0,889
+12241987618a69a588beb6541750016ab25e9f9e,"sendBody(""direct:enveloped"", payload, Collections.<String, Object> singletonMap(",0,0,0.0,890
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignatureConstants.HEADER_TRANSFORM_METHODS,",0,0,0.0,891
+12241987618a69a588beb6541750016ab25e9f9e,"testDetachedSignatureInternal(Collections.singletonMap(XmlSignatureConstants.HEADER_TRANSFORM_METHODS,",0,0,0.0,892
+12241987618a69a588beb6541750016ab25e9f9e,XmlVerifierEndpoint.class);,0,0,0.0,893
+12241987618a69a588beb6541750016ab25e9f9e,.getResourceAsStream(,0,0,0.0,894
+12241987618a69a588beb6541750016ab25e9f9e,"""/org/apache/camel/component/xmlsecurity/ExampleEnvelopingDigSigWithSeveralElementsWithNameRoot.xml"");",0,0,0.0,895
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:verifyexceptions"").to(""xmlsecurity-verify:verifyexceptions?keySelector=#selector"")",0,0,0.0,896
+12241987618a69a588beb6541750016ab25e9f9e,InputStream payload,0,0,0.0,897
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:verifyInvalidKeyException"")",0,0,0.0,898
+12241987618a69a588beb6541750016ab25e9f9e,.setKeySelector(,0,0,0.0,899
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-verify:bfurtherparams?keySelector=#selector&disallowDoctypeDecl=false"")",0,0,0.0,900
+12241987618a69a588beb6541750016ab25e9f9e,XmlSignerEndpoint.class).getConfiguration(),0,0,0.0,901
+12241987618a69a588beb6541750016ab25e9f9e,.to(getVerifierEndpointURIEnveloping()),0,0,0.0,902
+12241987618a69a588beb6541750016ab25e9f9e,"throws InterruptedException, XPathExpressionException, SAXException, IOException,",0,0,0.0,903
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:plaintext"")",0,0,0.0,904
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-sign:plaintext?keyAccessor=#accessor&plainText=true&plainTextEncoding=UTF-8"")",0,0,0.0,905
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:enveloped"").to(getSignerEndpointURIEnveloped()).to(""mock:signed"")",0,0,0.0,906
+12241987618a69a588beb6541750016ab25e9f9e,.to(getVerifierEndpointURIEnveloped()),0,0,0.0,907
+12241987618a69a588beb6541750016ab25e9f9e,".setSignatureAlgorithm(""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"");",0,0,0.0,908
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-verify:keyAccessorKeySelectorDefault?keySelector=#keySelectorDefault"")",0,0,0.0,909
+12241987618a69a588beb6541750016ab25e9f9e,"context.getEndpoint(""xmlsecurity-verify:canonicalization"", XmlVerifierEndpoint.class).getConfiguration()",0,0,0.0,910
+12241987618a69a588beb6541750016ab25e9f9e,KeySelector.singletonKeySelector(keyPair.getPublic()));,0,0,0.0,911
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:canonicalization"").to(",0,0,0.0,912
+12241987618a69a588beb6541750016ab25e9f9e,"""xmlsecurity-sign:canonicalization?canonicalizationMethod=#canonicalizationMethod1"",",0,0,0.0,913
+12241987618a69a588beb6541750016ab25e9f9e,"""xmlsecurity-verify:signaturedigestalgorithm?keySelector=#selector"")",0,0,0.0,914
+12241987618a69a588beb6541750016ab25e9f9e,".to(""mock:result"");",0,0,0.0,915
+12241987618a69a588beb6541750016ab25e9f9e,"(Object) ""http://www.w3.org/2000/09/xmldsig#enveloped-signature,http://www.w3.org/TR/2001/REC-xml-c14n-20010315""));",0,0,0.0,916
+12241987618a69a588beb6541750016ab25e9f9e,"""xmlsecurity-verify:signaturedigestalgorithm?keySelector=#selector"").to(""mock:result"");",1,0,0.0,917
+12241987618a69a588beb6541750016ab25e9f9e,"throws InterruptedException, XPathExpressionException, SAXException,",0,0,0.0,918
+12241987618a69a588beb6541750016ab25e9f9e,"sendBody(""direct:enveloped"", payload, Collections.<String, Object>singletonMap(XmlSignatureConstants.HEADER_TRANSFORM_METHODS,",1,0,0.0,919
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-verify:bfurtherparams?keySelector=#selector&disallowDoctypeDecl=false"").to(""mock:result"");",1,0,0.0,920
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:verifyexceptions"").to(""xmlsecurity-verify:verifyexceptions?keySelector=#selector"").to(""mock:result"");",1,0,0.0,921
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:verifyInvalidKeyException"").to(""xmlsecurity-verify:verifyInvalidKeyException?keySelector=#selector"").to(",1,0,0.0,922
+12241987618a69a588beb6541750016ab25e9f9e,"""mock:result"");",1,0,0.0,923
+12241987618a69a588beb6541750016ab25e9f9e,"""xmlsecurity-verify:invalidhash?keySelector=#selectorKeyValue&baseUri=#baseUri&secureValidation=false"").to(",1,0,0.0,924
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:envelopedParentXpath"").to(""xmlsecurity-sign:enveloped?keyAccessor=#accessor&parentXpath=#parentXpathBean"")",1,0,0.0,925
+12241987618a69a588beb6541750016ab25e9f9e,XmlVerifierEndpoint.class);,1,0,0.0,926
+12241987618a69a588beb6541750016ab25e9f9e,"""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\""><b>bValue</b></a></ns:root>"";",0,0,0.0,927
+12241987618a69a588beb6541750016ab25e9f9e,".getResourceAsStream(""/org/apache/camel/component/xmlsecurity/ExampleEnvelopingDigSigWithSeveralElementsWithNameRoot.xml"");",1,0,0.0,928
+12241987618a69a588beb6541750016ab25e9f9e,"testDetachedSignatureInternal(Collections.singletonMap(XmlSignatureConstants.HEADER_TRANSFORM_METHODS,",1,0,0.0,929
+12241987618a69a588beb6541750016ab25e9f9e,"(Object)""http://www.w3.org/2000/09/xmldsig#enveloped-signature,http://www.w3.org/TR/2001/REC-xml-c14n-20010315""));",1,0,0.0,930
+12241987618a69a588beb6541750016ab25e9f9e,"""<ns:root xmlns:ns=\""http://test\""><a ID=\""myID\""><b>bValue</b></a></ns:root>"";",1,0,0.0,931
+12241987618a69a588beb6541750016ab25e9f9e,"""&signatureAlgorithm=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"");",1,0,0.0,932
+12241987618a69a588beb6541750016ab25e9f9e,private NodeList getSignatureNodes(Document doc),0,0,0.0,933
+12241987618a69a588beb6541750016ab25e9f9e,".to(""xmlsecurity-verify:keyAccessorKeySelectorDefault?keySelector=#keySelectorDefault"").to(""mock:result"");",1,0,0.0,934
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:canonicalization"").to(""xmlsecurity-sign:canonicalization?canonicalizationMethod=#canonicalizationMethod1"",",1,0,0.0,935
+12241987618a69a588beb6541750016ab25e9f9e,KeySelector.singletonKeySelector(keyPair.getPublic()));,1,0,0.0,936
+12241987618a69a588beb6541750016ab25e9f9e,"context.getEndpoint(""xmlsecurity-verify:canonicalization"", XmlVerifierEndpoint.class).getConfiguration().setKeySelector(",1,0,0.0,937
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignerEndpoint.class).getConfiguration().setSignatureAlgorithm(""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"");",1,0,0.0,938
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:enveloped"").to(getSignerEndpointURIEnveloped()).to(""mock:signed"").to(getVerifierEndpointURIEnveloped())",1,0,0.0,939
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:plaintext"").to(""xmlsecurity-sign:plaintext?keyAccessor=#accessor&plainText=true&plainTextEncoding=UTF-8"")",1,0,0.0,940
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:enveloping"").to(getSignerEndpointURIEnveloping()).to(""mock:signed"").to(getVerifierEndpointURIEnveloping())",1,0,0.0,941
+12241987618a69a588beb6541750016ab25e9f9e,"KeyInfo keyInfo, KeySelector.Purpose purpose, AlgorithmMethod method, XMLCryptoContext context)",0,0,0.0,942
+12241987618a69a588beb6541750016ab25e9f9e,AlgorithmMethod transformXslt,0,0,0.0,943
+12241987618a69a588beb6541750016ab25e9f9e,Class<? extends Exception> expectedCauseClass),0,0,0.0,944
+12241987618a69a588beb6541750016ab25e9f9e,"MockEndpoint mock, Class<? extends Exception> cl, Class<? extends Exception> expectedCauseClass)",0,0,0.0,945
+12241987618a69a588beb6541750016ab25e9f9e,endpoint.getConfiguration().setParentXpath(,0,0,0.0,946
+12241987618a69a588beb6541750016ab25e9f9e,"""&signatureAlgorithm=http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"");",0,0,0.0,947
+12241987618a69a588beb6541750016ab25e9f9e,List<XPathFilterParameterSpec> xpaths,0,0,0.0,948
+12241987618a69a588beb6541750016ab25e9f9e,"checkThrownException(mock, XmlSignatureException.class,",0,0,0.0,949
+12241987618a69a588beb6541750016ab25e9f9e,null);,0,0,0.0,950
+12241987618a69a588beb6541750016ab25e9f9e,"from(""direct:enveloping"").to(getSignerEndpointURIEnveloping()).to(""mock:signed"")",0,0,0.0,951
+12241987618a69a588beb6541750016ab25e9f9e,/*,1,0,0.0,952
+12241987618a69a588beb6541750016ab25e9f9e,"private List<Transform> getTransforms(XMLSignatureFactory fac, SignatureType sigType, Message message) throws NoSuchAlgorithmException,",1,0,0.0,953
+12241987618a69a588beb6541750016ab25e9f9e,@UriParam,0,0,0.0,954
+12241987618a69a588beb6541750016ab25e9f9e,.getSchemaResourceUri()));,0,0,0.0,955
+12241987618a69a588beb6541750016ab25e9f9e,"schemaFactory.setResourceResolver(new DefaultLSResourceResolver(getCamelContext(), getConfiguration()",1,0,0.0,956
+12241987618a69a588beb6541750016ab25e9f9e,.getSchemaResourceUri()));,1,0,0.0,957
+12241987618a69a588beb6541750016ab25e9f9e,/*,0,0,0.0,958
+12241987618a69a588beb6541750016ab25e9f9e,package org.apache.camel.component.xmlsecurity.processor;,0,0,0.0,959
+12241987618a69a588beb6541750016ab25e9f9e,@UriParams,0,0,0.0,960
+12241987618a69a588beb6541750016ab25e9f9e,private XPathFilterParameterSpec parentXpath;,0,0,0.0,961
+12241987618a69a588beb6541750016ab25e9f9e,.getCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE));,1,0,0.0,962
+12241987618a69a588beb6541750016ab25e9f9e,.getCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE));,0,0,0.0,963
+12241987618a69a588beb6541750016ab25e9f9e,private KeyAccessor keyAccessor;,0,0,0.0,964
+12241987618a69a588beb6541750016ab25e9f9e,private XmlSignatureProperties properties;,0,0,0.0,965
+12241987618a69a588beb6541750016ab25e9f9e,package org.apache.camel.component.xmlsecurity.processor;,1,0,0.0,966
+12241987618a69a588beb6541750016ab25e9f9e,@UriParams,1,0,0.0,967
+12241987618a69a588beb6541750016ab25e9f9e,@UriParam,1,0,0.0,968
+12241987618a69a588beb6541750016ab25e9f9e,"getCamelContext(), getConfiguration()",0,0,0.0,969
+12241987618a69a588beb6541750016ab25e9f9e,schemaFactory.setResourceResolver(new DefaultLSResourceResolver(,0,0,0.0,970
+12241987618a69a588beb6541750016ab25e9f9e,"enveloping, enveloped, detached",1,0,0.0,971
+12241987618a69a588beb6541750016ab25e9f9e,detached,0,0,0.0,972
+12241987618a69a588beb6541750016ab25e9f9e,"enveloped,",0,0,0.0,973
+12241987618a69a588beb6541750016ab25e9f9e,"enveloping,",0,0,0.0,974
+12241987618a69a588beb6541750016ab25e9f9e,outputNodeSearchType));,1,0,0.0,975
+12241987618a69a588beb6541750016ab25e9f9e,".getOutputNodeSearch().getClass().getName(), input.getOutputNodeSearchType(), cl.getName()));",1,0,0.0,976
+12241987618a69a588beb6541750016ab25e9f9e,input.getOutputNodeSearchType()));,1,0,0.0,977
+12241987618a69a588beb6541750016ab25e9f9e,protected List<XMLObject> getReferencedSameDocumentObjects(,0,0,0.0,978
+12241987618a69a588beb6541750016ab25e9f9e,sb.toString()));,0,0,0.0,979
+12241987618a69a588beb6541750016ab25e9f9e,outputNodeSearchType));,0,0,0.0,980
+12241987618a69a588beb6541750016ab25e9f9e,"input.getOutputNodeSearchType(), cl.getName()));",0,0,0.0,981
+12241987618a69a588beb6541750016ab25e9f9e,".getOutputNodeSearch().getClass().getName(),",0,0,0.0,982
+12241987618a69a588beb6541750016ab25e9f9e,String.format(,0,0,0.0,983
+12241987618a69a588beb6541750016ab25e9f9e,xpathFilter.getXPath()));,0,0,0.0,984
+12241987618a69a588beb6541750016ab25e9f9e,input.getOutputNodeSearchType()));,0,0,0.0,985
+12241987618a69a588beb6541750016ab25e9f9e,private XPathFilterParameterSpec parentXpath;,1,0,0.0,986
+12241987618a69a588beb6541750016ab25e9f9e,private KeyAccessor keyAccessor;,1,0,0.0,987
+12241987618a69a588beb6541750016ab25e9f9e,"protected List<? extends Reference> getReferences(XmlSignatureProperties.Input input, XmlSignatureProperties.Output properties,",1,0,0.0,988
+12241987618a69a588beb6541750016ab25e9f9e,"""http://www.w3.org/2001/04/xmldsig-more#sha384""; // see RFC 4051",1,0,0.0,989
+12241987618a69a588beb6541750016ab25e9f9e,? 0,0,0,0.0,990
+12241987618a69a588beb6541750016ab25e9f9e,"throws XmlSignatureException,",0,0,0.0,991
+12241987618a69a588beb6541750016ab25e9f9e,xp.getXPath());,0,0,0.0,992
+12241987618a69a588beb6541750016ab25e9f9e,"private List<Transform> getTransforms(XMLSignatureFactory fac, SignatureType sigType, Message message)",0,0,0.0,993
+12241987618a69a588beb6541750016ab25e9f9e,transformMethodsHeaderValue);,0,0,0.0,994
+12241987618a69a588beb6541750016ab25e9f9e,"""http://www.w3.org/2001/04/xmldsig-more#sha224""; // see RFC 4051",1,0,0.0,995
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignatureHelper.transformNonTextNodeToOutputStream(outputDoc, outStream, omitXmlDeclaration(out), getConfiguration().getOutputXmlEncoding());",1,0,0.0,996
+12241987618a69a588beb6541750016ab25e9f9e,private XmlSignatureProperties properties;,1,0,0.0,997
+12241987618a69a588beb6541750016ab25e9f9e,.message(out).messageBodyNode(node).parent(parent).signatureAlgorithm(getConfiguration().getSignatureAlgorithm()),1,0,0.0,998
+12241987618a69a588beb6541750016ab25e9f9e,.signatureFactory(fac).signatureId(signatureId).contentReferenceUri(contentReferenceUri),1,0,0.0,999
+12241987618a69a588beb6541750016ab25e9f9e,.signatureType(signatureType),1,0,0.0,1000
+12241987618a69a588beb6541750016ab25e9f9e,.prefixForXmlSignatureNamespace(getConfiguration().getPrefixForXmlSignatureNamespace()).build();,1,0,0.0,1001
+12241987618a69a588beb6541750016ab25e9f9e,"dsc.putNamespacePrefix(""http://www.w3.org/2000/09/xmldsig#"", getConfiguration().getPrefixForXmlSignatureNamespace());",1,0,0.0,1002
+12241987618a69a588beb6541750016ab25e9f9e,"private SignatureMethod getSignatureMethod(String signatureAlgorithm, XMLSignatureFactory fac) throws NoSuchAlgorithmException,",1,0,0.0,1003
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignatureProperties.Input input, XmlSignatureProperties.Output properties,",0,0,0.0,1004
+12241987618a69a588beb6541750016ab25e9f9e,protected List<? extends Reference> getReferences(,0,0,0.0,1005
+12241987618a69a588beb6541750016ab25e9f9e,getConfiguration().getParentLocalName());,0,0,0.0,1006
+12241987618a69a588beb6541750016ab25e9f9e,e);,0,0,0.0,1007
+12241987618a69a588beb6541750016ab25e9f9e,"throws XmlSignatureException, SAXException,",0,0,0.0,1008
+12241987618a69a588beb6541750016ab25e9f9e,"throws NoSuchAlgorithmException,",0,0,0.0,1009
+12241987618a69a588beb6541750016ab25e9f9e,"private SignatureMethod getSignatureMethod(String signatureAlgorithm, XMLSignatureFactory fac)",0,0,0.0,1010
+12241987618a69a588beb6541750016ab25e9f9e,getConfiguration().getPrefixForXmlSignatureNamespace());,0,0,0.0,1011
+12241987618a69a588beb6541750016ab25e9f9e,"dsc.putNamespacePrefix(""http://www.w3.org/2000/09/xmldsig#"",",0,0,0.0,1012
+12241987618a69a588beb6541750016ab25e9f9e,.prefixForXmlSignatureNamespace(getConfiguration().getPrefixForXmlSignatureNamespace()).build();,0,0,0.0,1013
+12241987618a69a588beb6541750016ab25e9f9e,.signatureType(signatureType),0,0,0.0,1014
+12241987618a69a588beb6541750016ab25e9f9e,.signatureFactory(fac).signatureId(signatureId).contentReferenceUri(contentReferenceUri),0,0,0.0,1015
+12241987618a69a588beb6541750016ab25e9f9e,.signatureAlgorithm(getConfiguration().getSignatureAlgorithm()),0,0,0.0,1016
+12241987618a69a588beb6541750016ab25e9f9e,.message(out).messageBodyNode(node).parent(parent),0,0,0.0,1017
+12241987618a69a588beb6541750016ab25e9f9e,Err:501,0,0,0.0,1018
+12241987618a69a588beb6541750016ab25e9f9e,getConfiguration().getOutputXmlEncoding());,0,0,0.0,1019
+12241987618a69a588beb6541750016ab25e9f9e,"XmlSignatureHelper.transformNonTextNodeToOutputStream(outputDoc, outStream, omitXmlDeclaration(out),",0,0,0.0,1020
+12241987618a69a588beb6541750016ab25e9f9e,"referenceUri, el.getLocalName(), el.getNamespaceURI());",0,0,0.0,1021

@@ -1,0 +1,39 @@
+commit_id,line,line_level_label,count,line_score,row
+23c3254ea1399aabd91b595298bee1f5a3e9029c,* Returns an array of attribute map field names that we need to do replacements for in,0,2,1.0,1
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"return MvelHelper.evaluateRule(expression, vars, EXPRESSION_CACHE, contextImports);",0,2,1.0,2
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"return MvelHelper.evaluateRule(expression, vars, EXPRESSION_CACHE, contextImports);",1,2,1.0,3
+23c3254ea1399aabd91b595298bee1f5a3e9029c,synchronized (EXPRESSION_CACHE) {,1,2,1.0,4
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"return MvelHelper.evaluateRule(expression, vars, expressionCache);",1,2,1.0,5
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"String modifiedRule = modifyExpression(rule, ruleParameters, context);",0,2,1.0,6
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"rule = modifyExpression(rule, ruleParameters, context);",1,2,1.0,7
+23c3254ea1399aabd91b595298bee1f5a3e9029c,* @param request,1,2,1.0,8
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"// intentionally left out pricing context getPricingContextAttributes because that's a Map<String, String>",0,2,1.0,9
+23c3254ea1399aabd91b595298bee1f5a3e9029c,expression = usePriceBeforeAdjustments(expression);,0,1,0.5,10
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"return MvelHelper.evaluateRule(expression, vars);",0,1,0.5,11
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"contextImports.put(""OfferType"", OfferType.class);",1,1,0.5,12
+23c3254ea1399aabd91b595298bee1f5a3e9029c,expression = usePriceBeforeAdjustments(expression);,1,1,0.5,13
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"contextImports.put(""OfferType"", OfferType.class);",0,1,0.5,14
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"protected Map<String, Serializable> expressionCache = new EfficientLRUMap<String, Serializable>(1000);",1,1,0.5,15
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"Map<String, Class<?>> contextImports = new HashMap<>();",1,1,0.5,16
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"// Map<String, AdminUserAttribute>",0,1,0.5,17
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"// Map<String, PageAttribute>",0,1,0.5,18
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"* {@link #modifyExpression(String, Map, ParserContext)}",0,1,0.5,19
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"Map<String, Class<?>> contextImports = new HashMap<>();",0,1,0.5,20
+23c3254ea1399aabd91b595298bee1f5a3e9029c,Serializable exp = null;,0,0,0.0,21
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"exp = MVEL.compileExpression(rule, context);",1,0,0.0,22
+23c3254ea1399aabd91b595298bee1f5a3e9029c,Serializable exp = expressionCache.get(rule);,1,0,0.0,23
+23c3254ea1399aabd91b595298bee1f5a3e9029c,if (!TEST_MODE && LOG.isInfoEnabled()) {,0,0,0.0,24
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"exp = MVEL.compileExpression(modifiedRule, context);",0,0,0.0,25
+23c3254ea1399aabd91b595298bee1f5a3e9029c,},0,0,0.0,26
+23c3254ea1399aabd91b595298bee1f5a3e9029c,exp = expressionCache.get(rule);,0,0,0.0,27
+23c3254ea1399aabd91b595298bee1f5a3e9029c,if (expressionCache != null) {,0,0,0.0,28
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"contextImports.put(""FulfillmentType"", FulfillmentType.class);",0,0,0.0,29
+23c3254ea1399aabd91b595298bee1f5a3e9029c,},1,0,0.0,30
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"contextImports.put(""FulfillmentType"", FulfillmentType.class);",1,0,0.0,31
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"""getPricingContextAttributes"",",1,0,0.0,32
+23c3254ea1399aabd91b595298bee1f5a3e9029c,*/,0,0,0.0,33
+23c3254ea1399aabd91b595298bee1f5a3e9029c,/**,0,0,0.0,34
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"rule.replaceAll(attributeMap + ""\\(\\)\\[(.*)\\](?!\\.\\?value)"", attributeMap + ""()[$1].?value"");",1,0,0.0,35
+23c3254ea1399aabd91b595298bee1f5a3e9029c,import org.springframework.stereotype.Component;,1,0,0.0,36
+23c3254ea1399aabd91b595298bee1f5a3e9029c,"modifiedExpression = modifiedExpression.replaceAll(attributeMap + ""\\(\\)\\[(.*)\\](?!\\.\\?value)"", attributeMap + ""()[$1].?value"");",0,0,0.0,37
+23c3254ea1399aabd91b595298bee1f5a3e9029c,if (!TEST_MODE) {,1,0,0.0,38

@@ -1,0 +1,111 @@
+commit_id,line,line_level_label,count,line_score,row
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"encodingSelect = new DropdownButton("""", [], function (item, index) {",0,2,1.0,1
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"encodingSelect, // this is a DropdownButton instance",0,1,0.5,2
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,// Show the current encoding as button title,0,1,0.5,3
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,// Show indicators for currently selected & default languages for the current file,0,1,0.5,4
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"Async.doSequentially(Object.keys(encoding), function (filePath, index) {",0,1,0.5,5
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"languageSelect.$button.css(""width"", ""auto"");",1,1,0.5,6
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"languageSelect.$button.prop(""disabled"", doc.isUntitled());",1,1,0.5,7
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"className: Dialogs.DIALOG_BTN_CLASS_LEFT,",0,0,0.0,8
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,),0,0,0.0,9
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"),",0,0,0.0,10
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,buttons = [,0,0,0.0,11
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,{,0,0,0.0,12
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"},",0,0,0.0,13
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"id:        Dialogs.DIALOG_BTN_DONTSAVE,",0,0,0.0,14
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,text:      Strings.IGNORE_RELOAD_FROM_DISK,0,0,0.0,15
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,StringUtils.breakableUrl(,0,0,0.0,16
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"className: Dialogs.DIALOG_BTN_CLASS_PRIMARY,",0,0,0.0,17
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,ProjectManager.makeProjectRelativeIfPossible(document.file.fullPath),0,0,0.0,18
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,if (!(document.file instanceof InMemoryFile) && document.isDirty) {,0,0,0.0,19
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"Strings.DIRTY_FILE_ENCODING_CHANGE_WARN,",0,0,0.0,20
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,message = StringUtils.format(,0,0,0.0,21
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"var dialogId = DefaultDialogs.DIALOG_ID_EXT_CHANGED,",0,0,0.0,22
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,text:      Strings.CANCEL,0,0,0.0,23
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,document.file._encoding = encoding;,0,0,0.0,24
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,fullPath = document.file.fullPath;,0,0,0.0,25
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"var document = EditorManager.getActiveEditor().document,",0,0,0.0,26
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"encodingSelect.on(""select"", function (e, encoding) {",0,0,0.0,27
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,// Encoding select change handler,0,0,0.0,28
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"encodingSelect.$button.attr(""title"", Strings.STATUSBAR_ENCODING_TOOLTIP);",0,0,0.0,29
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"$(""#status-encoding"").append(encodingSelect.$button);",0,0,0.0,30
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"id:        Dialogs.DIALOG_BTN_CANCEL,",0,0,0.0,31
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,.done(function (id) {,0,0,0.0,32
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,];,0,0,0.0,33
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"Dialogs.showModalDialog(dialogId, Strings.SAVE_FILE_ENCODING_CHANGE_WARN, message, buttons)",0,0,0.0,34
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,_populateEncodingDropdown();,0,0,0.0,35
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,.always(function () {,0,0,0.0,36
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"}, false)",0,0,0.0,37
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"return _checkFileExistance(filePath, index, encoding);",0,0,0.0,38
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"PreferencesManager.setViewState(""encoding"", {}, context);",0,0,0.0,39
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,if (!encoding) {,0,0,0.0,40
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"ProjectManager.on(""projectOpen"", function () {",0,0,0.0,41
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,return deferred.promise();,0,0,0.0,42
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,deferred.reject();,0,0,0.0,43
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,delete encoding[filePath];,0,0,0.0,44
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,} else {,0,0,0.0,45
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,deferred.resolve();,0,0,0.0,46
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,if (!err && exists) {,0,0,0.0,47
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"fileEntry.exists(function (err, exists) {",0,0,0.0,48
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,fileEntry = FileSystem.getFileForPath(filePath);,0,0,0.0,49
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"var deferred = new $.Deferred(),",0,0,0.0,50
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"function _checkFileExistance(filePath, index, encoding) {",0,0,0.0,51
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,} else if (!document.isDirty) {,0,0,0.0,52
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,encodingSelect.$button.text(encoding);,0,0,0.0,53
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,} else if (document.file instanceof InMemoryFile) {,0,0,0.0,54
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,_changeEncodingAndReloadDoc(document);,0,0,0.0,55
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,if (id === Dialogs.DIALOG_BTN_DONTSAVE) {,0,0,0.0,56
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"encodingSelect.dropdownExtraClasses = ""dropdown-status-bar"";",0,0,0.0,57
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"encodingSelect.$button.addClass(""btn-status-bar"");",0,0,0.0,58
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,if (item === document.file._encoding) {,0,0,0.0,59
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,return html;,0,0,0.0,60
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,* Update encoding,0,0,0.0,61
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,* Change the encoding and reload the current document.,0,0,0.0,62
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,_updateEncodingInfo(current);,0,0,0.0,63
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,encodingSelect.$button.text(doc.file._encoding);,0,0,0.0,64
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,},0,0,0.0,65
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"doc.file._encoding = ""UTF-8"";",0,0,0.0,66
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,if (!doc.file._encoding) {,0,0,0.0,67
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,var doc = editor.document;,0,0,0.0,68
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,function _updateEncodingInfo(editor) {,0,0,0.0,69
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,*/,0,0,0.0,70
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,* @param {Editor} editor Current editor,0,0,0.0,71
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,/**,0,0,0.0,72
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,function _changeEncodingAndReloadDoc(document) {,0,0,0.0,73
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,SupportedEncodings = JSON.parse(SupportedEncodingsText);,0,0,0.0,74
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"var SupportedEncodingsText = require(""text!supported-encodings.json""),",0,0,0.0,75
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"FileSystem           = require(""filesystem/FileSystem""),",0,0,0.0,76
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"Async                = require(""utils/Async""),",0,0,0.0,77
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"ProjectManager       = require(""project/ProjectManager""),",0,0,0.0,78
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"DefaultDialogs       = require(""widgets/DefaultDialogs""),",0,0,0.0,79
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"Dialogs              = require(""widgets/Dialogs""),",0,0,0.0,80
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"InMemoryFile         = require(""document/InMemoryFile""),",0,0,0.0,81
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"FileUtils            = require(""file/FileUtils""),",0,0,0.0,82
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"// Setting Untitled documents to non-text mode isn't supported yet, so disable the switcher in that case for now",1,0,0.0,83
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,* If passed then save the preferred encoding in state.,0,0,0.0,84
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,var promise = document.reload();,0,0,0.0,85
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"html = ""<span class='checked-language'></span>"" + html;",0,0,0.0,86
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"PreferencesManager.setViewState(""encoding"", encoding, context);",0,0,0.0,87
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"html += "" <span class='default-language'>"" + Strings.STATUSBAR_DEFAULT_LANG + ""</span>"";",0,0,0.0,88
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"if (item === ""UTF-8"") {",0,0,0.0,89
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,var html = _.escape(item);,0,0,0.0,90
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,var document = EditorManager.getActiveEditor().document;,0,0,0.0,91
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,encodingSelect.items = SupportedEncodings;,0,0,0.0,92
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,function _populateEncodingDropdown() {,0,0,0.0,93
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,* Populate the encodingSelect DropdownButton's menu with all registered encodings,0,0,0.0,94
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"console.log(""Error reloading contents of "" + document.file.fullPath, error);",0,0,0.0,95
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,promise.fail(function (error) {,0,0,0.0,96
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,});,0,0,0.0,97
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,encoding[document.file.fullPath] = document.file._encoding;,0,0,0.0,98
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"promise.done(function (text, readTimestamp) {",0,0,0.0,99
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"var encoding = PreferencesManager.getViewState(""encoding"", context);",0,0,0.0,100
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,};,0,0,0.0,101
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,layerID: projectRoot.fullPath,0,0,0.0,102
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"layer: ""project"",",0,0,0.0,103
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"scope: ""user"",",0,0,0.0,104
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,location : {,0,0,0.0,105
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,context = {,0,0,0.0,106
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"var projectRoot = ProjectManager.getProjectRoot(),",0,0,0.0,107
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,// Store the preferred encoding in the state,0,0,0.0,108
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,encodingSelect.$button.text(document.file._encoding);,0,0,0.0,109
+6544c9702ce2cd325fb6241fe53efcfc84cfe9ed,"// Ensure width isn't left locked by a previous click of the dropdown (which may not have resulted in a ""change"" event at the time)",1,0,0.0,110

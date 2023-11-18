@@ -1,0 +1,1075 @@
+commit_id,line,line_level_label,count,line_score,row
+1663f5c19756fee984f0aeea9befc3a823387c8e,:return: dict from resource name to dict of name and limit,0,7,1.0,1
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Check the quotas and construct a list of the resources that,1,7,1.0,2
+1663f5c19756fee984f0aeea9befc3a823387c8e,:return dict: from resource name to dict of name and limit,1,7,1.0,3
+1663f5c19756fee984f0aeea9befc3a823387c8e,help=_('Keep in track in the database of current resource ',1,5,0.7142857142857142,4
+1663f5c19756fee984f0aeea9befc3a823387c8e,# would be put over limit by the desired values,1,5,0.7142857142857142,5
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param values: A dictionary of the values to check against the,1,5,0.7142857142857142,6
+1663f5c19756fee984f0aeea9befc3a823387c8e,OverQuota exception will be raised with the sorted list of the,1,5,0.7142857142857142,7
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db.quota import driver  # noqa,1,5,0.7142857142857142,8
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Set the default policy profile id for ports if no id is set,1,5,0.7142857142857142,9
+1663f5c19756fee984f0aeea9befc3a823387c8e,iterable containing values that will be used for an,1,5,0.7142857142857142,10
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param vm_network_name: string representing the name of the VM,1,5,0.7142857142857142,11
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve all the policy profiles from the VSM when the plugin,1,5,0.7142857142857142,12
+1663f5c19756fee984f0aeea9befc3a823387c8e,Driver to perform necessary checks to enforce quotas and obtain,1,4,0.5714285714285714,13
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron import quota,0,4,0.5714285714285714,14
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""be used in its place""))",1,4,0.5714285714285714,15
+1663f5c19756fee984f0aeea9befc3a823387c8e,This routine is provided for backward compatibility purposes with,1,4,0.5714285714285714,16
+1663f5c19756fee984f0aeea9befc3a823387c8e,"overs = [key for key, val in values.items()",1,4,0.5714285714285714,17
+1663f5c19756fee984f0aeea9befc3a823387c8e,"unders = [key for key, val in values.items() if val < 0]",1,4,0.5714285714285714,18
+1663f5c19756fee984f0aeea9befc3a823387c8e,"If any of the proposed values is over the defined quota, an",1,4,0.5714285714285714,19
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param resources: A dictionary of the registered resources.,1,4,0.5714285714285714,20
+1663f5c19756fee984f0aeea9befc3a823387c8e,A helper method which retrieves the quotas for the specific,1,4,0.5714285714285714,21
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota information. The default driver utilizes the default values,1,4,0.5714285714285714,22
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.info(""ConfDriver is used as quota_driver because the """,1,4,0.5714285714285714,23
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_DB_DRIVER = '%s.DbQuotaDriver' % QUOTA_DB_MODULE,1,4,0.5714285714285714,24
+1663f5c19756fee984f0aeea9befc3a823387c8e,and router interface. Default policy profile name is configured in the,1,4,0.5714285714285714,25
+1663f5c19756fee984f0aeea9befc3a823387c8e,values for each key in filters,1,4,0.5714285714285714,26
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param port_count: integer representing the number of ports in one,1,4,0.5714285714285714,27
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param segment: id of the segment being populated,1,4,0.5714285714285714,28
+1663f5c19756fee984f0aeea9befc3a823387c8e,is instantiated for the first time and then continue to poll for,1,4,0.5714285714285714,29
+1663f5c19756fee984f0aeea9befc3a823387c8e,# This attribute specifies whether the plugin supports or not,1,4,0.5714285714285714,30
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db.quota import driver,1,4,0.5714285714285714,31
+1663f5c19756fee984f0aeea9befc3a823387c8e,#    License for the specific language governing permissions and limitations,1,4,0.5714285714285714,32
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Set the network policy profile id for auto generated L3/DHCP ports,1,4,0.5714285714285714,33
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param fields: a list of strings that are valid keys in a port,1,3,0.42857142857142855,34
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.conf import quota,0,3,0.42857142857142855,35
+1663f5c19756fee984f0aeea9befc3a823387c8e,"tenant. If no limits are found for the specified tenant, the operation",0,3,0.42857142857142855,36
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param net_profile_id: UUID of the network profile to update,1,3,0.42857142857142855,37
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID of the network profile to delete,1,3,0.42857142857142855,38
+1663f5c19756fee984f0aeea9befc3a823387c8e,returned by this function will have matched one of the,1,3,0.42857142857142855,39
+1663f5c19756fee984f0aeea9befc3a823387c8e,"# and l3-router.  If so, we should prevent deletion.",1,3,0.42857142857142855,40
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Extract policy profile for VM network create in VSM.,1,3,0.42857142857142855,41
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Update port count of the VM network.,1,3,0.42857142857142855,42
+1663f5c19756fee984f0aeea9befc3a823387c8e,if ('device_id' in port['port'] and port['port']['device_owner'] in,1,3,0.42857142857142855,43
+1663f5c19756fee984f0aeea9befc3a823387c8e,"help=_('Default driver to use for quota checks')),",1,3,0.42857142857142855,44
+1663f5c19756fee984f0aeea9befc3a823387c8e,# the network_binding record is deleted via cascade from,1,3,0.42857142857142855,45
+1663f5c19756fee984f0aeea9befc3a823387c8e,'features. This option is now deprecated for ',1,3,0.42857142857142855,46
+1663f5c19756fee984f0aeea9befc3a823387c8e,for resource in resources.values():,1,3,0.42857142857142855,47
+1663f5c19756fee984f0aeea9befc3a823387c8e,":return: quotas list of dict of tenant_id:, resourcekey1:",0,3,0.42857142857142855,48
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db.quota import driver_nolock,0,3,0.42857142857142855,49
+1663f5c19756fee984f0aeea9befc3a823387c8e,"resources identified by keys, and which apply to the current",1,3,0.42857142857142855,50
+1663f5c19756fee984f0aeea9befc3a823387c8e,":param context: The request context, for access checks.",1,3,0.42857142857142855,51
+1663f5c19756fee984f0aeea9befc3a823387c8e,proposed values are permitted by the limit restriction.,1,3,0.42857142857142855,52
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Get the applicable quotas,1,3,0.42857142857142855,53
+1663f5c19756fee984f0aeea9befc3a823387c8e,"sub_resources = dict((k, v) for k, v in resources.items())",1,3,0.42857142857142855,54
+1663f5c19756fee984f0aeea9befc3a823387c8e,for resource in sub_resources.values():,1,3,0.42857142857142855,55
+1663f5c19756fee984f0aeea9befc3a823387c8e,for resource in deltas.keys():,1,3,0.42857142857142855,56
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_DB_MODULE not in sys.modules):,1,3,0.42857142857142855,57
+1663f5c19756fee984f0aeea9befc3a823387c8e,"# If quotas table is not loaded, force config quota driver.",1,3,0.42857142857142855,58
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG, (""The quota driver neutron.quota.ConfDriver is """,1,3,0.42857142857142855,59
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID of the network,1,3,0.42857142857142855,60
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Cannot delete network '%s' that is a member of a """,1,3,0.42857142857142855,61
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db.quota import api as quota_api,1,3,0.42857142857142855,62
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param vm_network_name: VM network name to which the port is bound,1,3,0.42857142857142855,63
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param segment2: UUID of segment to be mapped,1,3,0.42857142857142855,64
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param tenant_id: UUID representing the tenant,1,3,0.42857142857142855,65
+1663f5c19756fee984f0aeea9befc3a823387c8e,#    not use this file except in compliance with the License. You may obtain,1,3,0.42857142857142855,66
+1663f5c19756fee984f0aeea9befc3a823387c8e,#    a copy of the License at,1,3,0.42857142857142855,67
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron import manager,1,3,0.42857142857142855,68
+1663f5c19756fee984f0aeea9befc3a823387c8e,"Refer README file for the architecture, new features, and",1,3,0.42857142857142855,69
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Consume from all consumers in threads,1,3,0.42857142857142855,70
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Poll VSM for create/delete of policy profile.,1,3,0.42857142857142855,71
+1663f5c19756fee984f0aeea9befc3a823387c8e,The tenant id is not available when the policy profiles are polled,1,3,0.42857142857142855,72
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Add profiles in database if new profiles were created in VSM,1,3,0.42857142857142855,73
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Delete profiles from database if profiles were deleted in VSM,1,3,0.42857142857142855,74
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""provider:segmentation_id out of range """,1,3,0.42857142857142855,75
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""provider:physical_network specified for Overlay """,1,3,0.42857142857142855,76
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param segment1: UUID of segment to be mapped,1,3,0.42857142857142855,77
+1663f5c19756fee984f0aeea9befc3a823387c8e,from the VSM. Hence we associate the policy profiles with fake,1,3,0.42857142857142855,78
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param context: neutron api request context,1,3,0.42857142857142855,79
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param physical_network: Physical network of the trunk segment,1,3,0.42857142857142855,80
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Vlan tag '%s' is out of range"") % dot1qtag",1,3,0.42857142857142855,81
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Cannot add vxlan segment '%s' as a member of """,1,3,0.42857142857142855,82
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Cannot add vlan segment '%s' as a member of """,1,3,0.42857142857142855,83
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Cannot add a trunk segment '%s' as a member of """,1,3,0.42857142857142855,84
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: List of segment UUIDs and dot1qtag (for vxlan) in set pairs,1,3,0.42857142857142855,85
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param sub_type: Sub-type of the trunk segment,1,3,0.42857142857142855,86
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param attrs: Attributes of the network,1,3,0.42857142857142855,87
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param segment_pairs: List of segments that need to be bridged,1,3,0.42857142857142855,88
+1663f5c19756fee984f0aeea9befc3a823387c8e,Get the list of segments in encapsulation profile format.,1,3,0.42857142857142855,89
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param segment_pairs: List of segments in UUID pairs,1,3,0.42857142857142855,90
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param net_id: UUID of the multi-segment network,1,3,0.42857142857142855,91
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create a port. Use a default policy profile for ports created for dhcp,1,2,0.2857142857142857,92
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing the network to fetch,1,2,0.2857142857142857,93
+1663f5c19756fee984f0aeea9befc3a823387c8e,:params fields: a list of strings that are valid keys in a network,1,2,0.2857142857142857,94
+1663f5c19756fee984f0aeea9befc3a823387c8e,dictionary. Only these fields will be returned.,1,2,0.2857142857142857,95
+1663f5c19756fee984f0aeea9befc3a823387c8e,for net in nets:,1,2,0.2857142857142857,96
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return [self._fields(net, fields) for net in nets]",1,2,0.2857142857142857,97
+1663f5c19756fee984f0aeea9befc3a823387c8e,for port in ports:,1,2,0.2857142857142857,98
+1663f5c19756fee984f0aeea9befc3a823387c8e,"vm_network_name = ""%s%s_%s"" % (c_const.VM_NETWORK_NAME_PREFIX,",1,2,0.2857142857142857,99
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing the port to update,1,2,0.2857142857142857,100
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing the port to delete,1,2,0.2857142857142857,101
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing the port to retrieve,1,2,0.2857142857142857,102
+1663f5c19756fee984f0aeea9befc3a823387c8e,:params fields: a list of strings that are valid keys in a port,1,2,0.2857142857142857,103
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return [self._fields(port, fields) for port in ports]",1,2,0.2857142857142857,104
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""that is member of a trunk segment"") % network['name']",1,2,0.2857142857142857,105
+1663f5c19756fee984f0aeea9befc3a823387c8e,"# the network record, so explicit removal is not necessary",1,2,0.2857142857142857,106
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create a VM network for a network and policy profile combination.,1,2,0.2857142857142857,107
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Cannot delete network '%s' """,1,2,0.2857142857142857,108
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete the port on the VSM.,1,2,0.2857142857142857,109
+1663f5c19756fee984f0aeea9befc3a823387c8e,name = network['id'] + c_const.BRIDGE_DOMAIN_SUFFIX,1,2,0.2857142857142857,110
+1663f5c19756fee984f0aeea9befc3a823387c8e,for segment_pair in encap_dict[profile]:,1,2,0.2857142857142857,111
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: list of dictionaries of subnets,1,2,0.2857142857142857,112
+1663f5c19756fee984f0aeea9befc3a823387c8e,"If the VM network already exists, bind this port to the existing",1,2,0.2857142857142857,113
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param policy_profile: object of type policy profile,1,2,0.2857142857142857,114
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param mac_address: string representing the mac address,1,2,0.2857142857142857,115
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param port: port object which is to be deleted,1,2,0.2857142857142857,116
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""delete the associated subnet first"") % network['name']",1,2,0.2857142857142857,117
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param vm_network: VM network object with which the port is associated,1,2,0.2857142857142857,118
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: segmentation ID for the network,1,2,0.2857142857142857,119
+1663f5c19756fee984f0aeea9befc3a823387c8e,# tenant network,1,2,0.2857142857142857,120
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing the network to update,1,2,0.2857142857142857,121
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing the network to delete,1,2,0.2857142857142857,122
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Cannot delete network '%s', """,1,2,0.2857142857142857,123
+1663f5c19756fee984f0aeea9befc3a823387c8e,:params fields: a list of strings that are valid keys in a subnet,1,2,0.2857142857142857,124
+1663f5c19756fee984f0aeea9befc3a823387c8e,'neutron.db.quota.driver' in sys.modules):,1,2,0.2857142857142857,125
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return [self._fields(subnet, fields) for subnet in subnets]",1,2,0.2857142857142857,126
+1663f5c19756fee984f0aeea9befc3a823387c8e,rather than counting resources and checking limits - as this,1,2,0.2857142857142857,127
+1663f5c19756fee984f0aeea9befc3a823387c8e,For limits--those quotas for which there is no usage,1,2,0.2857142857142857,128
+1663f5c19756fee984f0aeea9befc3a823387c8e,synchronization function--this method checks that a set of,1,2,0.2857142857142857,129
+1663f5c19756fee984f0aeea9befc3a823387c8e,"resources which are too high.  Otherwise, the method returns",1,2,0.2857142857142857,130
+1663f5c19756fee984f0aeea9befc3a823387c8e,"quotas = self._get_quotas(context, resources)",1,2,0.2857142857142857,131
+1663f5c19756fee984f0aeea9befc3a823387c8e,msg = _('Access to this resource was denied.'),1,2,0.2857142857142857,132
+1663f5c19756fee984f0aeea9befc3a823387c8e,the API controllers which have now been adapted to make reservations,1,2,0.2857142857142857,133
+1663f5c19756fee984f0aeea9befc3a823387c8e,# return a fake reservation - the REST controller expects it,1,2,0.2857142857142857,134
+1663f5c19756fee984f0aeea9befc3a823387c8e,the previously stored fake tenant-id in tenant-profile bindings.,1,2,0.2857142857142857,135
+1663f5c19756fee984f0aeea9befc3a823387c8e,if (_driver_class == QUOTA_DB_DRIVER and,1,2,0.2857142857142857,136
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""deprecated as of Liberty. """,1,2,0.2857142857142857,137
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""neutron.db.quota.driver.DbQuotaDriver should """,1,2,0.2857142857142857,138
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for klass in (driver.DbQuotaDriver,",0,2,0.2857142857142857,139
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for klass in (quota.ConfDriver, driver.DbQuotaDriver,",1,2,0.2857142857142857,140
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param add_segments: List of segments bindings,1,2,0.2857142857142857,141
+1663f5c19756fee984f0aeea9befc3a823387c8e,quotas = {},1,2,0.2857142857142857,142
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron._i18n import _,1,2,0.2857142857142857,143
+1663f5c19756fee984f0aeea9befc3a823387c8e,from oslo_log import versionutils,1,2,0.2857142857142857,144
+1663f5c19756fee984f0aeea9befc3a823387c8e,import sys,1,2,0.2857142857142857,145
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Quotas for instances, volumes, and floating ips.""""""",1,2,0.2857142857142857,146
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Make sure QuotaEngine is reinitialized in each test.,1,2,0.2857142857142857,147
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for klass in (quota.ConfDriver, driver.DbQuotaDriver,",0,2,0.2857142857142857,148
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota.QUOTA_DB_MODULE in sys.modules):,0,2,0.2857142857142857,149
+1663f5c19756fee984f0aeea9befc3a823387c8e,DB_QUOTA_DRIVER = 'neutron.db.quota.driver.DbQuotaDriver',1,2,0.2857142857142857,150
+1663f5c19756fee984f0aeea9befc3a823387c8e,DB_QUOTA_DRIVER = cfg.CONF.QUOTAS.quota_driver,0,2,0.2857142857142857,151
+1663f5c19756fee984f0aeea9befc3a823387c8e,":return quotas: list of dict of tenant_id:, resourcekey1:",1,2,0.2857142857142857,152
+1663f5c19756fee984f0aeea9befc3a823387c8e,help=_('Default number of resource allowed per tenant. ',1,2,0.2857142857142857,153
+1663f5c19756fee984f0aeea9befc3a823387c8e,help=_('Resource name(s) that are supported in quota ',1,2,0.2857142857142857,154
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_DB_MODULE = 'neutron.db.quota.driver',1,2,0.2857142857142857,155
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_DB_DRIVER = quota.QUOTA_DB_DRIVER,0,2,0.2857142857142857,156
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_DB_MODULE = quota.QUOTA_DB_MODULE,0,2,0.2857142857142857,157
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db import common_db_mixin as common_db,0,2,0.2857142857142857,158
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param del_segments: List of segments bindings,1,2,0.2857142857142857,159
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param filters: a dictionary with keys that are valid keys for a,1,2,0.2857142857142857,160
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create a bridge domain for network of type Overlay.,1,2,0.2857142857142857,161
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.extensions import providernet,1,2,0.2857142857142857,162
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db import agents_db,1,2,0.2857142857142857,163
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db import agentschedulers_db,1,2,0.2857142857142857,164
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db import db_base_plugin_v2,1,2,0.2857142857142857,165
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db import external_net_db,1,2,0.2857142857142857,166
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.db import portbindings_db,1,2,0.2857142857142857,167
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.extensions import portbindings,1,2,0.2857142857142857,168
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.i18n import _LW,1,2,0.2857142857142857,169
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.common import rpc as n_rpc,1,2,0.2857142857142857,170
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.common import cisco_constants as c_const,1,2,0.2857142857142857,171
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.common import cisco_credentials_v2 as c_cred,1,2,0.2857142857142857,172
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.common import cisco_exceptions,1,2,0.2857142857142857,173
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.common import config as c_conf,1,2,0.2857142857142857,174
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.db import n1kv_db_v2,1,2,0.2857142857142857,175
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.db import network_db_v2,1,2,0.2857142857142857,176
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.common import topics,1,2,0.2857142857142857,177
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.common import exceptions as n_exc,1,2,0.2857142857142857,178
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.n1kv import n1kv_client,1,2,0.2857142857142857,179
+1663f5c19756fee984f0aeea9befc3a823387c8e,from oslo_log import log as logging,1,2,0.2857142857142857,180
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Add the extended parameter port profile to the port.""""""",1,2,0.2857142857142857,181
+1663f5c19756fee984f0aeea9befc3a823387c8e,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.2857142857142857,182
+1663f5c19756fee984f0aeea9befc3a823387c8e,"#    Unless required by applicable law or agreed to in writing, software",1,2,0.2857142857142857,183
+1663f5c19756fee984f0aeea9befc3a823387c8e,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.2857142857142857,184
+1663f5c19756fee984f0aeea9befc3a823387c8e,#    under the License.,1,2,0.2857142857142857,185
+1663f5c19756fee984f0aeea9befc3a823387c8e,from oslo_config import cfg as o_conf,1,2,0.2857142857142857,186
+1663f5c19756fee984f0aeea9befc3a823387c8e,from oslo_utils import excutils,1,2,0.2857142857142857,187
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.common import constants,1,2,0.2857142857142857,188
+1663f5c19756fee984f0aeea9befc3a823387c8e,from oslo_utils import importutils,1,2,0.2857142857142857,189
+1663f5c19756fee984f0aeea9befc3a823387c8e,from oslo_utils import uuidutils,1,2,0.2857142857142857,190
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.api.rpc.agentnotifiers import dhcp_rpc_agent_api,1,2,0.2857142857142857,191
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.api.rpc.handlers import dhcp_rpc,1,2,0.2857142857142857,192
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.api.rpc.handlers import metadata_rpc,1,2,0.2857142857142857,193
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.api.v2 import attributes,1,2,0.2857142857142857,194
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.cisco.extensions import n1kv,1,2,0.2857142857142857,195
+1663f5c19756fee984f0aeea9befc3a823387c8e,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,2,0.2857142857142857,196
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.common import constants as svc_constants,1,2,0.2857142857142857,197
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for (segment, dot1qtag) in segment_pairs:",1,2,0.2857142857142857,198
+1663f5c19756fee984f0aeea9befc3a823387c8e,for cluster in clusters['body'][c_const.SET]:,1,2,0.2857142857142857,199
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for (segment1, segment2) in segment_pairs:",1,2,0.2857142857142857,200
+1663f5c19756fee984f0aeea9befc3a823387c8e,for profile in encap_dict:,1,2,0.2857142857142857,201
+1663f5c19756fee984f0aeea9befc3a823387c8e,for pair in segment_pairs:,1,2,0.2857142857142857,202
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param network: Dictionary containing the trunk network information,1,2,0.2857142857142857,203
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param oper: Operation to be performed,1,2,0.2857142857142857,204
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: List of segment UUIDs in set pairs,1,2,0.2857142857142857,205
+1663f5c19756fee984f0aeea9befc3a823387c8e,if segment1 in segment or segment2 in segment:,1,2,0.2857142857142857,206
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for pair in segments.split(','):",1,2,0.2857142857142857,207
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Network UUID '%s' belongs to a different """,1,2,0.2857142857142857,208
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Vlan tag '%s' is not an integer """,1,2,0.2857142857142857,209
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Add the extended parameter network profile to the network.""""""",1,2,0.2857142857142857,210
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Add the extended parameter member segments to the network.""""""",1,2,0.2857142857142857,211
+1663f5c19756fee984f0aeea9befc3a823387c8e,from neutron.plugins.common import utils,1,2,0.2857142857142857,212
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param mapping_dict: dictionary to populate values,1,2,0.2857142857142857,213
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""'%s' is not a valid UUID"") % segment",1,2,0.2857142857142857,214
+1663f5c19756fee984f0aeea9befc3a823387c8e,for segment in mapping[c_const.SEGMENTS]:,1,2,0.2857142857142857,215
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Update database if the profile sets differ.,1,2,0.2857142857142857,216
+1663f5c19756fee984f0aeea9befc3a823387c8e,for mapping in cluster[c_const.MAPPINGS]:,1,2,0.2857142857142857,217
+1663f5c19756fee984f0aeea9befc3a823387c8e,for svc_topic in self.service_topics.values():,1,2,0.2857142857142857,218
+1663f5c19756fee984f0aeea9befc3a823387c8e,Populate all the policy profiles from VSM.,1,2,0.2857142857142857,219
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Fetch policy profiles from VSM,1,2,0.2857142857142857,220
+1663f5c19756fee984f0aeea9befc3a823387c8e,for profile_name in policy_profiles:,1,2,0.2857142857142857,221
+1663f5c19756fee984f0aeea9befc3a823387c8e,for profile in n1kv_db_v2.get_policy_profiles():,1,2,0.2857142857142857,222
+1663f5c19756fee984f0aeea9befc3a823387c8e,3. Initialize Nexus1000v and Credential DB,1,2,0.2857142857142857,223
+1663f5c19756fee984f0aeea9befc3a823387c8e,for pid in vsm_profiles_set - plugin_profiles_set:,1,2,0.2857142857142857,224
+1663f5c19756fee984f0aeea9befc3a823387c8e,for pid in plugin_profiles_set - vsm_profiles_set:,1,2,0.2857142857142857,225
+1663f5c19756fee984f0aeea9befc3a823387c8e,"for cluster in sorted(clusters, key=lambda k: k['size']):",1,2,0.2857142857142857,226
+1663f5c19756fee984f0aeea9befc3a823387c8e,Implement the Neutron abstractions using Cisco Nexus1000V.,1,2,0.2857142857142857,227
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param clusters: List of clusters,1,2,0.2857142857142857,228
+1663f5c19756fee984f0aeea9befc3a823387c8e,for network_profile in network_profiles:,1,2,0.2857142857142857,229
+1663f5c19756fee984f0aeea9befc3a823387c8e,"network = self.get_network(context, id)",1,1,0.14285714285714285,230
+1663f5c19756fee984f0aeea9befc3a823387c8e,"nets = super(N1kvNeutronPluginV2, self).get_networks(context, filters,",1,1,0.14285714285714285,231
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network_name = None,1,1,0.14285714285714285,232
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network = None,1,1,0.14285714285714285,233
+1663f5c19756fee984f0aeea9befc3a823387c8e,port_count = None,1,1,0.14285714285714285,234
+1663f5c19756fee984f0aeea9befc3a823387c8e,p_profile = None,1,1,0.14285714285714285,235
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create neutron port.,1,1,0.14285714285714285,236
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: list of network dictionaries.,1,1,0.14285714285714285,237
+1663f5c19756fee984f0aeea9befc3a823387c8e,del_segments = (,1,1,0.14285714285714285,238
+1663f5c19756fee984f0aeea9befc3a823387c8e,exact match comparison for that value. Each result,1,1,0.14285714285714285,239
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve a list of networks.,1,1,0.14285714285714285,240
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net = super(N1kvNeutronPluginV2, self).get_network(context, id, None)",1,1,0.14285714285714285,241
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""multi-segment network"") % network['name']",1,1,0.14285714285714285,242
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id_set = False,1,1,0.14285714285714285,243
+1663f5c19756fee984f0aeea9befc3a823387c8e,network object. Values in this dictiontary are an,1,1,0.14285714285714285,244
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id_set = True,1,1,0.14285714285714285,245
+1663f5c19756fee984f0aeea9befc3a823387c8e,p_profile_name = c_conf.CISCO_N1K.network_node_policy_profile,1,1,0.14285714285714285,246
+1663f5c19756fee984f0aeea9befc3a823387c8e,p_profile = self._get_policy_profile_by_name(p_profile_name),1,1,0.14285714285714285,247
+1663f5c19756fee984f0aeea9befc3a823387c8e,port['port']['n1kv:profile_id'] = p_profile['id'],1,1,0.14285714285714285,248
+1663f5c19756fee984f0aeea9befc3a823387c8e,if n1kv.PROFILE_ID in port['port']:,1,1,0.14285714285714285,249
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id = port['port'].get(n1kv.PROFILE_ID),1,1,0.14285714285714285,250
+1663f5c19756fee984f0aeea9befc3a823387c8e,p_profile_name = c_conf.CISCO_N1K.default_policy_profile,1,1,0.14285714285714285,251
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile_id = self._process_policy_profile(context,",1,1,0.14285714285714285,252
+1663f5c19756fee984f0aeea9befc3a823387c8e,"pt = super(N1kvNeutronPluginV2, self).create_port(context,",1,1,0.14285714285714285,253
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network = n1kv_db_v2.get_vm_network(,1,1,0.14285714285714285,254
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Create a VM Network if no VM network exists.,1,1,0.14285714285714285,255
+1663f5c19756fee984f0aeea9befc3a823387c8e,port_count = 1,1,1,0.14285714285714285,256
+1663f5c19756fee984f0aeea9befc3a823387c8e,"vm_network = n1kv_db_v2.add_vm_network(context.session,",1,1,0.14285714285714285,257
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network_name = vm_network['name'],1,1,0.14285714285714285,258
+1663f5c19756fee984f0aeea9befc3a823387c8e,port_count = vm_network['port_count'] + 1,1,1,0.14285714285714285,259
+1663f5c19756fee984f0aeea9befc3a823387c8e,"p_profile = n1kv_db_v2.get_policy_profile(session, profile_id)",1,1,0.14285714285714285,260
+1663f5c19756fee984f0aeea9befc3a823387c8e,add_segments = (,1,1,0.14285714285714285,261
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param port_id: UUID representing port to update,1,1,0.14285714285714285,262
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net = super(N1kvNeutronPluginV2, self).update_network(context, id,",1,1,0.14285714285714285,263
+1663f5c19756fee984f0aeea9befc3a823387c8e,"body = {'ipPool': subnet['id'], 'deleteSubnet': True}",1,1,0.14285714285714285,264
+1663f5c19756fee984f0aeea9befc3a823387c8e,body['segmentType'] = profile['sub_type'],1,1,0.14285714285714285,265
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._l3plugin = manager.NeutronManager.get_service_plugins().get(,1,1,0.14285714285714285,266
+1663f5c19756fee984f0aeea9befc3a823387c8e,body['addSegments'] = network['add_segment_list'],1,1,0.14285714285714285,267
+1663f5c19756fee984f0aeea9befc3a823387c8e,body['delSegments'] = network['del_segment_list'],1,1,0.14285714285714285,268
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_profile = (network['id'] +,1,1,0.14285714285714285,269
+1663f5c19756fee984f0aeea9befc3a823387c8e,"encap_dict = {'name': encap_profile,",1,1,0.14285714285714285,270
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete bridge domain if network is of type Overlay.,1,1,0.14285714285714285,271
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete encapsulation profile if network is of type OVERLAY Trunk.,1,1,0.14285714285714285,272
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile = self.get_network_profile(,1,1,0.14285714285714285,273
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_name = (network['id'] +,1,1,0.14285714285714285,274
+1663f5c19756fee984f0aeea9befc3a823387c8e,"encap_dict = n1kv_db_v2.get_multi_segment_encap_dict(session,",1,1,0.14285714285714285,275
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile_dict = {'name': profile,",1,1,0.14285714285714285,276
+1663f5c19756fee984f0aeea9befc3a823387c8e,"(segment1, segment2) = segment_pair",1,1,0.14285714285714285,277
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param subnet: subnet dictionary,1,1,0.14285714285714285,278
+1663f5c19756fee984f0aeea9befc3a823387c8e,VM network on the VSM.,1,1,0.14285714285714285,279
+1663f5c19756fee984f0aeea9befc3a823387c8e,del_segments = [],1,1,0.14285714285714285,280
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param port: port dictionary,1,1,0.14285714285714285,281
+1663f5c19756fee984f0aeea9befc3a823387c8e,"body = {'portId': port_id,",1,1,0.14285714285714285,282
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve segmentation ID for a given network.,1,1,0.14285714285714285,283
+1663f5c19756fee984f0aeea9befc3a823387c8e,"binding = n1kv_db_v2.get_network_binding(session, id)",1,1,0.14285714285714285,284
+1663f5c19756fee984f0aeea9befc3a823387c8e,"segmentation_id) = self._process_provider_create(context,",1,1,0.14285714285714285,285
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile_id = self._process_network_profile(context, network['network'])",1,1,0.14285714285714285,286
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment_pairs = None,1,1,0.14285714285714285,287
+1663f5c19756fee984f0aeea9befc3a823387c8e,"multicast_ip) = n1kv_db_v2.alloc_network(session,",1,1,0.14285714285714285,288
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment_pairs = (,1,1,0.14285714285714285,289
+1663f5c19756fee984f0aeea9befc3a823387c8e,"network_profile = self.get_network_profile(context,",1,1,0.14285714285714285,290
+1663f5c19756fee984f0aeea9befc3a823387c8e,# provider network,1,1,0.14285714285714285,291
+1663f5c19756fee984f0aeea9befc3a823387c8e,"multicast_ip = ""0.0.0.0""",1,1,0.14285714285714285,292
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net = super(N1kvNeutronPluginV2, self).create_network(context,",1,1,0.14285714285714285,293
+1663f5c19756fee984f0aeea9befc3a823387c8e,add_segments = [],1,1,0.14285714285714285,294
+1663f5c19756fee984f0aeea9befc3a823387c8e,"updated_port = super(N1kvNeutronPluginV2,",1,1,0.14285714285714285,295
+1663f5c19756fee984f0aeea9befc3a823387c8e,help=_('Number of networks allowed per tenant. ',1,1,0.14285714285714285,296
+1663f5c19756fee984f0aeea9befc3a823387c8e,"# if needed, check to see if this is a port owned by",1,1,0.14285714285714285,297
+1663f5c19756fee984f0aeea9befc3a823387c8e,"resources, values):",1,1,0.14285714285714285,298
+1663f5c19756fee984f0aeea9befc3a823387c8e,'quota usage. Plugins which do not leverage the ',1,1,0.14285714285714285,299
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'neutron database should set this flag to False')),",1,1,0.14285714285714285,300
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota.QUOTAS._driver = None,0,1,0.14285714285714285,301
+1663f5c19756fee984f0aeea9befc3a823387c8e,del sys.modules[quota.QUOTA_DB_MODULE],0,1,0.14285714285714285,302
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota.QUOTAS._driver = None,1,1,0.14285714285714285,303
+1663f5c19756fee984f0aeea9befc3a823387c8e,del sys.modules['neutron.db.quota.driver'],1,1,0.14285714285714285,304
+1663f5c19756fee984f0aeea9befc3a823387c8e,class DbQuotaDriver(quota_api.QuotaDriverAPI):,0,1,0.14285714285714285,305
+1663f5c19756fee984f0aeea9befc3a823387c8e,class DbQuotaDriver(object):,1,1,0.14285714285714285,306
+1663f5c19756fee984f0aeea9befc3a823387c8e,import webob,1,1,0.14285714285714285,307
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_CONF_DRIVER = quota.QUOTA_CONF_DRIVER,1,1,0.14285714285714285,308
+1663f5c19756fee984f0aeea9befc3a823387c8e,class ConfDriver(object):,1,1,0.14285714285714285,309
+1663f5c19756fee984f0aeea9befc3a823387c8e,in neutron.conf.,1,1,0.14285714285714285,310
+1663f5c19756fee984f0aeea9befc3a823387c8e,quotas[resource.name] = resource.default,1,1,0.14285714285714285,311
+1663f5c19756fee984f0aeea9befc3a823387c8e,return quotas,1,1,0.14285714285714285,312
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Check simple quota limits.",1,1,0.14285714285714285,313
+1663f5c19756fee984f0aeea9befc3a823387c8e,"help=_('Number of subnets allowed per tenant, '",1,1,0.14285714285714285,314
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param tenant_id: The tenant_id to check quota.,1,1,0.14285714285714285,315
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Ensure no value is less than zero,1,1,0.14285714285714285,316
+1663f5c19756fee984f0aeea9befc3a823387c8e,if quotas[key] >= 0 and quotas[key] < val],1,1,0.14285714285714285,317
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_tenant_quotas(context, resources, tenant_id):",1,1,0.14285714285714285,318
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def make_reservation(self, context, tenant_id, resources, deltas, plugin):",1,1,0.14285714285714285,319
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""This driver does not support reservations.",1,1,0.14285714285714285,320
+1663f5c19756fee984f0aeea9befc3a823387c8e,"count = QUOTAS.count(context, resource, plugin, tenant_id)",1,1,0.14285714285714285,321
+1663f5c19756fee984f0aeea9befc3a823387c8e,"total_use = deltas.get(resource, 0) + count",1,1,0.14285714285714285,322
+1663f5c19756fee984f0aeea9befc3a823387c8e,deltas[resource] = total_use,1,1,0.14285714285714285,323
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""This is a noop as this driver does not support reservations.""""""",1,1,0.14285714285714285,324
+1663f5c19756fee984f0aeea9befc3a823387c8e,_driver_class = QUOTA_CONF_DRIVER,1,1,0.14285714285714285,325
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""loaded plugin does not support 'quotas' table."")",1,1,0.14285714285714285,326
+1663f5c19756fee984f0aeea9befc3a823387c8e,workers = quota.QUOTAS.get_driver().get_workers(),0,1,0.14285714285714285,327
+1663f5c19756fee984f0aeea9befc3a823387c8e,"body = {'description': network['name'],",1,1,0.14285714285714285,328
+1663f5c19756fee984f0aeea9befc3a823387c8e,help=_('Number of ports allowed per tenant. ',1,1,0.14285714285714285,329
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota_opts = [,1,1,0.14285714285714285,330
+1663f5c19756fee984f0aeea9befc3a823387c8e,if self.l3plugin and l3_port_check:,1,1,0.14285714285714285,331
+1663f5c19756fee984f0aeea9befc3a823387c8e,"subnet = super(N1kvNeutronPluginV2, self).get_subnet(context, id,",1,1,0.14285714285714285,332
+1663f5c19756fee984f0aeea9befc3a823387c8e,"port = self.get_port(context, id)",1,1,0.14285714285714285,333
+1663f5c19756fee984f0aeea9befc3a823387c8e,"vm_network = n1kv_db_v2.get_vm_network(context.session,",1,1,0.14285714285714285,334
+1663f5c19756fee984f0aeea9befc3a823387c8e,"port = super(N1kvNeutronPluginV2, self).get_port(context, id, None)",1,1,0.14285714285714285,335
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve a list of ports.,1,1,0.14285714285714285,336
+1663f5c19756fee984f0aeea9befc3a823387c8e,port object. Values in this dictiontary are an,1,1,0.14285714285714285,337
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: list of port dictionaries,1,1,0.14285714285714285,338
+1663f5c19756fee984f0aeea9befc3a823387c8e,"ports = super(N1kvNeutronPluginV2, self).get_ports(context, filters,",1,1,0.14285714285714285,339
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create subnet for a given network.,1,1,0.14285714285714285,340
+1663f5c19756fee984f0aeea9befc3a823387c8e,"sub = super(N1kvNeutronPluginV2, self).create_subnet(context, subnet)",1,1,0.14285714285714285,341
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing subnet to update,1,1,0.14285714285714285,342
+1663f5c19756fee984f0aeea9befc3a823387c8e,"sub = super(N1kvNeutronPluginV2, self).update_subnet(context,",1,1,0.14285714285714285,343
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing subnet to delete,1,1,0.14285714285714285,344
+1663f5c19756fee984f0aeea9befc3a823387c8e,"subnet = self.get_subnet(context, id)",1,1,0.14285714285714285,345
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param id: UUID representing subnet to retrieve,1,1,0.14285714285714285,346
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve a list of subnets.,1,1,0.14285714285714285,347
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default_quota_items = ['network', 'subnet', 'port']",1,1,0.14285714285714285,348
+1663f5c19756fee984f0aeea9befc3a823387c8e,subnet object. Values in this dictiontary are an,1,1,0.14285714285714285,349
+1663f5c19756fee984f0aeea9befc3a823387c8e,"subnets = super(N1kvNeutronPluginV2, self).get_subnets(context,",1,1,0.14285714285714285,350
+1663f5c19756fee984f0aeea9befc3a823387c8e,"Create a network profile, which represents a pool of networks",1,1,0.14285714285714285,351
+1663f5c19756fee984f0aeea9befc3a823387c8e,belonging to one type (VLAN or Overlay). On creation of network,1,1,0.14285714285714285,352
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile, we retrieve the admin tenant-id which we use to replace",1,1,0.14285714285714285,353
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net_p = super(N1kvNeutronPluginV2,",1,1,0.14285714285714285,354
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param network_profile: dictionary containing network profile object,1,1,0.14285714285714285,355
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net_p = (super(N1kvNeutronPluginV2, self).",1,1,0.14285714285714285,356
+1663f5c19756fee984f0aeea9befc3a823387c8e,returns the default limits.,0,1,0.14285714285714285,357
+1663f5c19756fee984f0aeea9befc3a823387c8e,"q_qry = common_db.model_query(context, quota_models.Quota).filter_by(",0,1,0.14285714285714285,358
+1663f5c19756fee984f0aeea9befc3a823387c8e,q_qry = context.session.query(quota_models.Quota).filter_by(,1,1,0.14285714285714285,359
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_CONF_DRIVER = quota.QUOTA_CONF_DRIVER,0,1,0.14285714285714285,360
+1663f5c19756fee984f0aeea9befc3a823387c8e,default_quota_items = quota.default_quota_items,0,1,0.14285714285714285,361
+1663f5c19756fee984f0aeea9befc3a823387c8e,QUOTA_CONF_DRIVER = 'neutron.quota.ConfDriver',1,1,0.14285714285714285,362
+1663f5c19756fee984f0aeea9befc3a823387c8e,body['mode'] = c_const.NETWORK_TYPE_TRUNK,1,1,0.14285714285714285,363
+1663f5c19756fee984f0aeea9befc3a823387c8e,"seg_min, seg_max = self._get_segment_range(",1,1,0.14285714285714285,364
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile = n1kv_db_v2.get_network_profile(,1,1,0.14285714285714285,365
+1663f5c19756fee984f0aeea9befc3a823387c8e,segmentation_id = attrs.get(providernet.SEGMENTATION_ID),1,1,0.14285714285714285,366
+1663f5c19756fee984f0aeea9befc3a823387c8e,physical_network = None,1,1,0.14285714285714285,367
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""provider:segmentation_id required"")",1,1,0.14285714285714285,368
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""provider:network_type required"")",1,1,0.14285714285714285,369
+1663f5c19756fee984f0aeea9befc3a823387c8e,segmentation_id_set = attributes.is_attr_set(segmentation_id),1,1,0.14285714285714285,370
+1663f5c19756fee984f0aeea9befc3a823387c8e,physical_network_set = attributes.is_attr_set(physical_network),1,1,0.14285714285714285,371
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_type_set = attributes.is_attr_set(network_type),1,1,0.14285714285714285,372
+1663f5c19756fee984f0aeea9befc3a823387c8e,physical_network = attrs.get(providernet.PHYSICAL_NETWORK),1,1,0.14285714285714285,373
+1663f5c19756fee984f0aeea9befc3a823387c8e,"encap_profile = self._get_cluster(segment1, segment2,",1,1,0.14285714285714285,374
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_type = attrs.get(providernet.NETWORK_TYPE),1,1,0.14285714285714285,375
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[n1kv.MULTICAST_IP] = None,1,1,0.14285714285714285,376
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[providernet.SEGMENTATION_ID] = None,1,1,0.14285714285714285,377
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[providernet.PHYSICAL_NETWORK] = binding.physical_network,1,1,0.14285714285714285,378
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[n1kv.MULTICAST_IP] = binding.multicast_ip,1,1,0.14285714285714285,379
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[providernet.SEGMENTATION_ID] = binding.segmentation_id,1,1,0.14285714285714285,380
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""provider:network_type %s not supported""), network_type",1,1,0.14285714285714285,381
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_profiles = n1kv_db_v2.get_network_profiles(),1,1,0.14285714285714285,382
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = (_(""Unknown provider:physical_network %s""),",1,1,0.14285714285714285,383
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""provider:physical_network required"")",1,1,0.14285714285714285,384
+1663f5c19756fee984f0aeea9befc3a823387c8e,# TBD : Need to handle provider network updates,1,1,0.14285714285714285,385
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Plugin does not support updating provider attributes"")",1,1,0.14285714285714285,386
+1663f5c19756fee984f0aeea9befc3a823387c8e,Returns a cluster to apply the segment mapping,1,1,0.14285714285714285,387
+1663f5c19756fee984f0aeea9befc3a823387c8e,Extend a mapping dictionary with dot1q tag and bridge-domain name.,1,1,0.14285714285714285,388
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net = self.get_network(context, segment)",1,1,0.14285714285714285,389
+1663f5c19756fee984f0aeea9befc3a823387c8e,mapping_dict['dot1q'] = str(net[providernet.SEGMENTATION_ID]),1,1,0.14285714285714285,390
+1663f5c19756fee984f0aeea9befc3a823387c8e,mapping_dict['bridgeDomain'] = (net['name'] +,1,1,0.14285714285714285,391
+1663f5c19756fee984f0aeea9befc3a823387c8e,that need to be bridged,1,1,0.14285714285714285,392
+1663f5c19756fee984f0aeea9befc3a823387c8e,session = context.session,1,1,0.14285714285714285,393
+1663f5c19756fee984f0aeea9befc3a823387c8e,clusters = n1kvclient.get_clusters(),1,1,0.14285714285714285,394
+1663f5c19756fee984f0aeea9befc3a823387c8e,online_clusters = [],1,1,0.14285714285714285,395
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_dict = {},1,1,0.14285714285714285,396
+1663f5c19756fee984f0aeea9befc3a823387c8e,cluster = cluster[c_const.PROPERTIES],1,1,0.14285714285714285,397
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[providernet.PHYSICAL_NETWORK] = None,1,1,0.14285714285714285,398
+1663f5c19756fee984f0aeea9befc3a823387c8e,"binding = n1kv_db_v2.get_network_binding(context.session,",1,1,0.14285714285714285,399
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.warning(_LW('No policy profile populated from VSM')),1,1,0.14285714285714285,400
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.network_scheduler = importutils.import_object(,1,1,0.14285714285714285,401
+1663f5c19756fee984f0aeea9befc3a823387c8e,db_session = context.session,1,1,0.14285714285714285,402
+1663f5c19756fee984f0aeea9befc3a823387c8e,"# Copyright 2013 Cisco Systems, Inc.",1,1,0.14285714285714285,403
+1663f5c19756fee984f0aeea9befc3a823387c8e,#,1,1,0.14285714285714285,404
+1663f5c19756fee984f0aeea9befc3a823387c8e,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.14285714285714285,405
+1663f5c19756fee984f0aeea9befc3a823387c8e,import eventlet,1,1,0.14285714285714285,406
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG = logging.getLogger(__name__),1,1,0.14285714285714285,407
+1663f5c19756fee984f0aeea9befc3a823387c8e,"class N1kvNeutronPluginV2(db_base_plugin_v2.NeutronDbPluginV2,",1,1,0.14285714285714285,408
+1663f5c19756fee984f0aeea9befc3a823387c8e,# bulk operations.,1,1,0.14285714285714285,409
+1663f5c19756fee984f0aeea9befc3a823387c8e,__native_bulk_support = False,1,1,0.14285714285714285,410
+1663f5c19756fee984f0aeea9befc3a823387c8e,"supported_extension_aliases = [""provider"", ""agent"",",1,1,0.14285714285714285,411
+1663f5c19756fee984f0aeea9befc3a823387c8e,Initialize Nexus1000V Neutron plugin.,1,1,0.14285714285714285,412
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.base_binding_dict = {,1,1,0.14285714285714285,413
+1663f5c19756fee984f0aeea9befc3a823387c8e,# TODO(rkukura): Replace with new VIF security details,1,1,0.14285714285714285,414
+1663f5c19756fee984f0aeea9befc3a823387c8e,'security-group' in self.supported_extension_aliases}},1,1,0.14285714285714285,415
+1663f5c19756fee984f0aeea9befc3a823387c8e,# RPC support,1,1,0.14285714285714285,416
+1663f5c19756fee984f0aeea9befc3a823387c8e,vsm_profiles_set = set(vsm_profiles),1,1,0.14285714285714285,417
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.service_topics = {svc_constants.CORE: topics.PLUGIN},1,1,0.14285714285714285,418
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.conn = n_rpc.create_connection(new=True),1,1,0.14285714285714285,419
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self.endpoints = [dhcp_rpc.DhcpRpcCallback(),",1,1,0.14285714285714285,420
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.dhcp_agent_notifier = dhcp_rpc_agent_api.DhcpAgentNotifyAPI(),1,1,0.14285714285714285,421
+1663f5c19756fee984f0aeea9befc3a823387c8e,Setup Cisco Nexus 1000V related parameters and pull policy profiles.,1,1,0.14285714285714285,422
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.agent_vsm = True,1,1,0.14285714285714285,423
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Start a green thread to pull policy profiles from VSM.""""""",1,1,0.14285714285714285,424
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient = n1kv_client.Client(),1,1,0.14285714285714285,425
+1663f5c19756fee984f0aeea9befc3a823387c8e,policy_profiles = n1kvclient.list_port_profiles(),1,1,0.14285714285714285,426
+1663f5c19756fee984f0aeea9befc3a823387c8e,vsm_profiles = {},1,1,0.14285714285714285,427
+1663f5c19756fee984f0aeea9befc3a823387c8e,plugin_profiles_set = set(),1,1,0.14285714285714285,428
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id = (policy_profiles,1,1,0.14285714285714285,429
+1663f5c19756fee984f0aeea9befc3a823387c8e,vsm_profiles[profile_id] = profile_name,1,1,0.14285714285714285,430
+1663f5c19756fee984f0aeea9befc3a823387c8e,# Fetch policy profiles previously populated,1,1,0.14285714285714285,431
+1663f5c19756fee984f0aeea9befc3a823387c8e,cluster['size'] = 0,1,1,0.14285714285714285,432
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[providernet.NETWORK_TYPE] = binding.network_type,1,1,0.14285714285714285,433
+1663f5c19756fee984f0aeea9befc3a823387c8e,if encap_profile in encap_dict:,1,1,0.14285714285714285,434
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id_set = attributes.is_attr_set(profile_id),1,1,0.14285714285714285,435
+1663f5c19756fee984f0aeea9befc3a823387c8e,dot1qtag = '',1,1,0.14285714285714285,436
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""another trunk segment"") % segment",1,1,0.14285714285714285,437
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""a vxlan trunk segment"") % segment",1,1,0.14285714285714285,438
+1663f5c19756fee984f0aeea9befc3a823387c8e,physical_network = binding.physical_network,1,1,0.14285714285714285,439
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""physical network"") % segment",1,1,0.14285714285714285,440
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""a vlan trunk segment"") % segment",1,1,0.14285714285714285,441
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""value"") % dot1qtag",1,1,0.14285714285714285,442
+1663f5c19756fee984f0aeea9befc3a823387c8e,members = [],1,1,0.14285714285714285,443
+1663f5c19756fee984f0aeea9befc3a823387c8e,"members = n1kv_db_v2.get_trunk_members(context.session,",1,1,0.14285714285714285,444
+1663f5c19756fee984f0aeea9befc3a823387c8e,"members = n1kv_db_v2.get_multi_segment_members(context.session,",1,1,0.14285714285714285,445
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[n1kv.MEMBER_SEGMENTS] = members,1,1,0.14285714285714285,446
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[n1kv.PROFILE_ID] = binding.profile_id,1,1,0.14285714285714285,447
+1663f5c19756fee984f0aeea9befc3a823387c8e,port[n1kv.PROFILE_ID] = binding.profile_id,1,1,0.14285714285714285,448
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id = network.get(n1kv.PROFILE_ID),1,1,0.14285714285714285,449
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_name = c_conf.CISCO_N1K.default_network_profile,1,1,0.14285714285714285,450
+1663f5c19756fee984f0aeea9befc3a823387c8e,Parse the trunk network attributes.,1,1,0.14285714285714285,451
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net_p = self._get_network_profile_by_name(context.session,",1,1,0.14285714285714285,452
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id = net_p['id'],1,1,0.14285714285714285,453
+1663f5c19756fee984f0aeea9befc3a823387c8e,network['n1kv:profile_id'] = profile_id,1,1,0.14285714285714285,454
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id = attrs.get(n1kv.PROFILE_ID),1,1,0.14285714285714285,455
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""n1kv:profile_id does not exist"")",1,1,0.14285714285714285,456
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param network_profile: network profile dictionary,1,1,0.14285714285714285,457
+1663f5c19756fee984f0aeea9befc3a823387c8e,logical_network_name = (network_profile['id'] +,1,1,0.14285714285714285,458
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param profile: network profile dictionary,1,1,0.14285714285714285,459
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param network: network dictionary,1,1,0.14285714285714285,460
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile = self.get_network_profile(context,",1,1,0.14285714285714285,461
+1663f5c19756fee984f0aeea9befc3a823387c8e,network['del_segment_list'] = [],1,1,0.14285714285714285,462
+1663f5c19756fee984f0aeea9befc3a823387c8e,that need to be deleted,1,1,0.14285714285714285,463
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_dict = encap_dict[encap_profile],1,1,0.14285714285714285,464
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_dict = {'name': (network['name'] +,1,1,0.14285714285714285,465
+1663f5c19756fee984f0aeea9befc3a823387c8e,"segment, sep, dot1qtag = pair.partition(':')",1,1,0.14285714285714285,466
+1663f5c19756fee984f0aeea9befc3a823387c8e,"binding = n1kv_db_v2.get_port_binding(context.session,",1,1,0.14285714285714285,467
+1663f5c19756fee984f0aeea9befc3a823387c8e,mapping_dict = {},1,1,0.14285714285714285,468
+1663f5c19756fee984f0aeea9befc3a823387c8e,"(segment, dot1qtag) = pair",1,1,0.14285714285714285,469
+1663f5c19756fee984f0aeea9befc3a823387c8e,network['add_segment_list'] = trunk_list,1,1,0.14285714285714285,470
+1663f5c19756fee984f0aeea9befc3a823387c8e,"member_dict = {'segment': net['name'],",1,1,0.14285714285714285,471
+1663f5c19756fee984f0aeea9befc3a823387c8e,trunk_list = [],1,1,0.14285714285714285,472
+1663f5c19756fee984f0aeea9befc3a823387c8e,that needs to be trunked,1,1,0.14285714285714285,473
+1663f5c19756fee984f0aeea9befc3a823387c8e,member_dict['bridgeDomain'] = (net['name'] +,1,1,0.14285714285714285,474
+1663f5c19756fee984f0aeea9befc3a823387c8e,member_dict = {},1,1,0.14285714285714285,475
+1663f5c19756fee984f0aeea9befc3a823387c8e,member_list = [],1,1,0.14285714285714285,476
+1663f5c19756fee984f0aeea9befc3a823387c8e,Parse the multi-segment network attributes.,1,1,0.14285714285714285,477
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_profile = binding['encap_profile_name'],1,1,0.14285714285714285,478
+1663f5c19756fee984f0aeea9befc3a823387c8e,binding = (,1,1,0.14285714285714285,479
+1663f5c19756fee984f0aeea9befc3a823387c8e,whose bridging needs to be removed,1,1,0.14285714285714285,480
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Invalid UUID supplied"")",1,1,0.14285714285714285,481
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_dict[encap_profile] = profile_dict,1,1,0.14285714285714285,482
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile_dict = {'name': encap_profile,",1,1,0.14285714285714285,483
+1663f5c19756fee984f0aeea9befc3a823387c8e,network['del_segment_list'] = trunk_list,1,1,0.14285714285714285,484
+1663f5c19756fee984f0aeea9befc3a823387c8e,member_dict['dot1q'] = dot1qtag,1,1,0.14285714285714285,485
+1663f5c19756fee984f0aeea9befc3a823387c8e,:param param: Additional parameter indicating an add,1,1,0.14285714285714285,486
+1663f5c19756fee984f0aeea9befc3a823387c8e,if (uuidutils.is_uuid_like(segment1) and,1,1,0.14285714285714285,487
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('Invalid UUID supplied in %s', pair)",1,1,0.14285714285714285,488
+1663f5c19756fee984f0aeea9befc3a823387c8e,"msg = _(""Invalid pairing supplied"")",1,1,0.14285714285714285,489
+1663f5c19756fee984f0aeea9befc3a823387c8e,if (binding1.network_type not in valid_seg_types or,1,1,0.14285714285714285,490
+1663f5c19756fee984f0aeea9befc3a823387c8e,"binding2 = n1kv_db_v2.get_network_binding(context.session,",1,1,0.14285714285714285,491
+1663f5c19756fee984f0aeea9befc3a823387c8e,"binding1 = n1kv_db_v2.get_network_binding(context.session,",1,1,0.14285714285714285,492
+1663f5c19756fee984f0aeea9befc3a823387c8e,binding2.network_type not in valid_seg_types or,1,1,0.14285714285714285,493
+1663f5c19756fee984f0aeea9befc3a823387c8e,"segment1, sep, segment2 = pair.partition(':')",1,1,0.14285714285714285,494
+1663f5c19756fee984f0aeea9befc3a823387c8e,"valid_seg_types = [c_const.NETWORK_TYPE_VLAN,",1,1,0.14285714285714285,495
+1663f5c19756fee984f0aeea9befc3a823387c8e,pair_list = [],1,1,0.14285714285714285,496
+1663f5c19756fee984f0aeea9befc3a823387c8e,or del operation,1,1,0.14285714285714285,497
+1663f5c19756fee984f0aeea9befc3a823387c8e,segments = attrs.get(param),1,1,0.14285714285714285,498
+1663f5c19756fee984f0aeea9befc3a823387c8e,port),1,0,0.0,499
+1663f5c19756fee984f0aeea9befc3a823387c8e,"[constants.DEVICE_OWNER_DHCP, constants.DEVICE_OWNER_ROUTER_INTF,",1,0,0.0,500
+1663f5c19756fee984f0aeea9befc3a823387c8e,"constants.DEVICE_OWNER_ROUTER_GW,",1,0,0.0,501
+1663f5c19756fee984f0aeea9befc3a823387c8e,constants.DEVICE_OWNER_FLOATINGIP]):,1,0,0.0,502
+1663f5c19756fee984f0aeea9befc3a823387c8e,if p_profile:,1,0,0.0,503
+1663f5c19756fee984f0aeea9befc3a823387c8e,port['port']),1,0,0.0,504
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('Create port: profile_id=%s', profile_id)",1,0,0.0,505
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_port_dict_profile(context, pt)",1,0,0.0,506
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.add_port_binding(session, pt['id'], profile_id)",1,0,0.0,507
+1663f5c19756fee984f0aeea9befc3a823387c8e,"context.session,",1,0,0.0,508
+1663f5c19756fee984f0aeea9befc3a823387c8e,except cisco_exceptions.VMNetworkNotFound:,1,0,0.0,509
+1663f5c19756fee984f0aeea9befc3a823387c8e,pt['network_id']),1,0,0.0,510
+1663f5c19756fee984f0aeea9befc3a823387c8e,"pt['network_id'],",1,0,0.0,511
+1663f5c19756fee984f0aeea9befc3a823387c8e,/etc/neutron/cisco_plugins.ini file.,1,0,0.0,512
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: port object,1,0,0.0,513
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Deleted network: %s"", id)",1,0,0.0,514
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def create_port(self, context, port):",1,0,0.0,515
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_network(self, context, id, fields=None):",1,0,0.0,516
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _delete_network_db(self, context, id):",1,0,0.0,517
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.update_vm_network_port_count(context.session,",1,0,0.0,518
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.release_vxlan(session, binding.segmentation_id)",1,0,0.0,519
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.release_vlan(session, binding.physical_network,",1,0,0.0,520
+1663f5c19756fee984f0aeea9befc3a823387c8e,binding.segmentation_id),1,0,0.0,521
+1663f5c19756fee984f0aeea9befc3a823387c8e,"super(N1kvNeutronPluginV2, self).delete_network(context, id)",1,0,0.0,522
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve a Network.,1,0,0.0,523
+1663f5c19756fee984f0aeea9befc3a823387c8e,None),1,0,0.0,524
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: requested network dictionary,1,0,0.0,525
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Get network: %s"", id)",1,0,0.0,526
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_network_dict_member_segments(context, net)",1,0,0.0,527
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return self._fields(net, fields)",1,0,0.0,528
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_networks(self, context, filters=None, fields=None):",1,0,0.0,529
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Get networks"")",1,0,0.0,530
+1663f5c19756fee984f0aeea9befc3a823387c8e,port_count),1,0,0.0,531
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self.l3plugin.disassociate_floatingips(context, id,",1,0,0.0,532
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._process_portbindings_create_and_update(context,",1,0,0.0,533
+1663f5c19756fee984f0aeea9befc3a823387c8e,"port['port'],",1,0,0.0,534
+1663f5c19756fee984f0aeea9befc3a823387c8e,@property,1,0,0.0,535
+1663f5c19756fee984f0aeea9befc3a823387c8e,def l3plugin(self):,1,0,0.0,536
+1663f5c19756fee984f0aeea9befc3a823387c8e,return self._l3plugin,1,0,0.0,537
+1663f5c19756fee984f0aeea9befc3a823387c8e,except AttributeError:,1,0,0.0,538
+1663f5c19756fee984f0aeea9befc3a823387c8e,svc_constants.L3_ROUTER_NAT),1,0,0.0,539
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def delete_port(self, context, id, l3_port_check=True):",1,0,0.0,540
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete a port.,1,0,0.0,541
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self.l3plugin.prevent_l3_port_deletion(context, id)",1,0,0.0,542
+1663f5c19756fee984f0aeea9befc3a823387c8e,"port[n1kv.PROFILE_ID],",1,0,0.0,543
+1663f5c19756fee984f0aeea9befc3a823387c8e,port['network_id']),1,0,0.0,544
+1663f5c19756fee984f0aeea9befc3a823387c8e,if self.l3plugin:,1,0,0.0,545
+1663f5c19756fee984f0aeea9befc3a823387c8e,do_notify=False),1,0,0.0,546
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._delete_port_db(context, port, vm_network)",1,0,0.0,547
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_delete_port_request(context, port, vm_network)",1,0,0.0,548
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._delete_network_db(context, id)",1,0,0.0,549
+1663f5c19756fee984f0aeea9befc3a823387c8e,return updated_port,1,0,0.0,550
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_port_dict_profile(context, updated_port)",1,0,0.0,551
+1663f5c19756fee984f0aeea9befc3a823387c8e,updated_port),1,0,0.0,552
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._delete_port_db(context, pt, vm_network)",1,0,0.0,553
+1663f5c19756fee984f0aeea9befc3a823387c8e,pt),1,0,0.0,554
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not p_profile:,1,0,0.0,555
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_create_port_request(context,",1,0,0.0,556
+1663f5c19756fee984f0aeea9befc3a823387c8e,"pt,",1,0,0.0,557
+1663f5c19756fee984f0aeea9befc3a823387c8e,"p_profile,",1,0,0.0,558
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network_name),1,0,0.0,559
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Created port: %s"", pt)",1,0,0.0,560
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self).update_port(context, id, port)",1,0,0.0,561
+1663f5c19756fee984f0aeea9befc3a823387c8e,return pt,1,0,0.0,562
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def update_port(self, context, id, port):",1,0,0.0,563
+1663f5c19756fee984f0aeea9befc3a823387c8e,Update port parameters.,1,0,0.0,564
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: updated port object,1,0,0.0,565
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Update port: %s"", id)",1,0,0.0,566
+1663f5c19756fee984f0aeea9befc3a823387c8e,with context.session.begin(subtransactions=True):,1,0,0.0,567
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_delete_network_request(context, network)",1,0,0.0,568
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'net_type': network_type,",1,0,0.0,569
+1663f5c19756fee984f0aeea9befc3a823387c8e,"if n1kv_db_v2.is_multi_segment_member(session, id):",1,0,0.0,570
+1663f5c19756fee984f0aeea9befc3a823387c8e,"if n1kv_db_v2.is_trunk_member(session, id):",1,0,0.0,571
+1663f5c19756fee984f0aeea9befc3a823387c8e,)),1,0,0.0,572
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not segmentation_id:,1,0,0.0,573
+1663f5c19756fee984f0aeea9befc3a823387c8e,raise n_exc.TenantNetworksDisabled(),1,0,0.0,574
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_profile['segment_range']),1,0,0.0,575
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not seg_min <= segmentation_id <= seg_max:,1,0,0.0,576
+1663f5c19756fee984f0aeea9befc3a823387c8e,raise cisco_exceptions.VlanIDOutsidePool(),1,0,0.0,577
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.reserve_specific_vlan(session,",1,0,0.0,578
+1663f5c19756fee984f0aeea9befc3a823387c8e,segmentation_id),1,0,0.0,579
+1663f5c19756fee984f0aeea9befc3a823387c8e,network),1,0,0.0,580
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.add_network_binding(session,",1,0,0.0,581
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net['id'],",1,0,0.0,582
+1663f5c19756fee984f0aeea9befc3a823387c8e,"network_type,",1,0,0.0,583
+1663f5c19756fee984f0aeea9befc3a823387c8e,"segmentation_id,",1,0,0.0,584
+1663f5c19756fee984f0aeea9befc3a823387c8e,"multicast_ip,",1,0,0.0,585
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment_pairs),1,0,0.0,586
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_profile['sub_type'],1,0,0.0,587
+1663f5c19756fee984f0aeea9befc3a823387c8e,"physical_network,",1,0,0.0,588
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv.SEGMENT_ADD,",1,0,0.0,589
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'seg_id': segmentation_id,",1,0,0.0,590
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('Physical_network %(phy_net)s, '",1,0,0.0,591
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'seg_type %(net_type)s, '",1,0,0.0,592
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'seg_id %(seg_id)s, '",1,0,0.0,593
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'multicast_ip %(multicast_ip)s',",1,0,0.0,594
+1663f5c19756fee984f0aeea9befc3a823387c8e,"{'phy_net': physical_network,",1,0,0.0,595
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network['port_count'] -= 1,1,0,0.0,596
+1663f5c19756fee984f0aeea9befc3a823387c8e,'multicast_ip': multicast_ip}),1,0,0.0,597
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._parse_trunk_segments(context, network['network'],",1,0,0.0,598
+1663f5c19756fee984f0aeea9befc3a823387c8e,if network_type == c_const.NETWORK_TYPE_MULTI_SEGMENT:,1,0,0.0,599
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._parse_multi_segments(context, network['network'],",1,0,0.0,600
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kv.SEGMENT_ADD)),1,0,0.0,601
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('Seg list %s ', segment_pairs)",1,0,0.0,602
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif network_type == c_const.NETWORK_TYPE_TRUNK:,1,0,0.0,603
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_id),1,0,0.0,604
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._process_l3_create(context, net, network['network'])",1,0,0.0,605
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_network_dict_provider(context, net)",1,0,0.0,606
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_network_dict_profile(context, net)",1,0,0.0,607
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv.SEGMENT_DEL,",1,0,0.0,608
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.del_multi_segment_binding(session,",1,0,0.0,609
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net['id'], del_segments)",1,0,0.0,610
+1663f5c19756fee984f0aeea9befc3a823387c8e,binding.profile_id),1,0,0.0,611
+1663f5c19756fee984f0aeea9befc3a823387c8e,"binding.physical_network,",1,0,0.0,612
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_profile['sub_type'])),1,0,0.0,613
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.add_trunk_segment_binding(session,",1,0,0.0,614
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.del_trunk_segment_binding(session,",1,0,0.0,615
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_del_multi_segment_request(context, net['id'],",1,0,0.0,616
+1663f5c19756fee984f0aeea9befc3a823387c8e,if binding.network_type != c_const.NETWORK_TYPE_MULTI_SEGMENT:,1,0,0.0,617
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_update_network_request(context, net, add_segments,",1,0,0.0,618
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Updated network: %s"", net['id'])",1,0,0.0,619
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def delete_network(self, context, id):",1,0,0.0,620
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete a network.,1,0,0.0,621
+1663f5c19756fee984f0aeea9befc3a823387c8e,if network['subnets']:,1,0,0.0,622
+1663f5c19756fee984f0aeea9befc3a823387c8e,del_segments),1,0,0.0,623
+1663f5c19756fee984f0aeea9befc3a823387c8e,add_segments),1,0,0.0,624
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_add_multi_segment_request(context, net['id'],",1,0,0.0,625
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def update_network(self, context, id, network):",1,0,0.0,626
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_create_network_request(context, net, segment_pairs)",1,0,0.0,627
+1663f5c19756fee984f0aeea9befc3a823387c8e,"except(cisco_exceptions.VSMError,",1,0,0.0,628
+1663f5c19756fee984f0aeea9befc3a823387c8e,with excutils.save_and_reraise_exception():,1,0,0.0,629
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._delete_network_db(context, net['id'])",1,0,0.0,630
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Created network: %s"", net['id'])",1,0,0.0,631
+1663f5c19756fee984f0aeea9befc3a823387c8e,return net,1,0,0.0,632
+1663f5c19756fee984f0aeea9befc3a823387c8e,Update network parameters.,1,0,0.0,633
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kv.SEGMENT_DEL)),1,0,0.0,634
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: updated network object,1,0,0.0,635
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._check_provider_update(context, network['network'])",1,0,0.0,636
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._process_l3_update(context, net, network['network'])",1,0,0.0,637
+1663f5c19756fee984f0aeea9befc3a823387c8e,if binding.network_type == c_const.NETWORK_TYPE_MULTI_SEGMENT:,1,0,0.0,638
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.add_multi_segment_binding(session,",1,0,0.0,639
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net['id'], add_segments)",1,0,0.0,640
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _delete_port_db(self, context, port, vm_network):",1,0,0.0,641
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default=default_quota_items,",1,0,0.0,642
+1663f5c19756fee984f0aeea9befc3a823387c8e,"vm_network['name'],",1,0,0.0,643
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'ConfDriver', True)",1,0,0.0,644
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._test_quota_driver('neutron.db.quota.driver.DbQuotaDriver',",1,0,0.0,645
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'DbQuotaDriver', True)",1,0,0.0,646
+1663f5c19756fee984f0aeea9befc3a823387c8e,def test_quota_db_driver_fallback_conf_driver(self):,1,0,0.0,647
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'ConfDriver', False)",1,0,0.0,648
+1663f5c19756fee984f0aeea9befc3a823387c8e,def test_quota_conf_driver(self):,1,0,0.0,649
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._test_quota_driver('neutron.quota.ConfDriver',",1,0,0.0,650
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Configuration driver.",1,0,0.0,651
+1663f5c19756fee984f0aeea9befc3a823387c8e,"super(TestQuotaDriverLoad, self).setUp()",1,0,0.0,652
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""",1,0,0.0,653
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _get_quotas(self, context, resources):",1,0,0.0,654
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Get quotas.",1,0,0.0,655
+1663f5c19756fee984f0aeea9befc3a823387c8e,context.,1,0,0.0,656
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def limit_check(self, context, tenant_id,",1,0,0.0,657
+1663f5c19756fee984f0aeea9befc3a823387c8e,nothing.,1,0,0.0,658
+1663f5c19756fee984f0aeea9befc3a823387c8e,def test_quota_db_driver_with_quotas_table(self):,1,0,0.0,659
+1663f5c19756fee984f0aeea9befc3a823387c8e,def setUp(self):,1,0,0.0,660
+1663f5c19756fee984f0aeea9befc3a823387c8e,if unders:,1,0,0.0,661
+1663f5c19756fee984f0aeea9befc3a823387c8e,],1,0,0.0,662
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.IntOpt('quota_port',",1,0,0.0,663
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default=50,",1,0,0.0,664
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.StrOpt('quota_driver',",1,0,0.0,665
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default=QUOTA_DB_DRIVER,",1,0,0.0,666
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.BoolOpt('track_quota_usage',",1,0,0.0,667
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default=True,",1,0,0.0,668
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.CONF.register_opts(quota_opts, 'QUOTAS')",1,0,0.0,669
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._test_quota_driver(quota.QUOTA_DB_DRIVER, 'ConfDriver', False)",0,0,0.0,670
+1663f5c19756fee984f0aeea9befc3a823387c8e,def test_quota_driver_load(self):,0,0,0.0,671
+1663f5c19756fee984f0aeea9befc3a823387c8e,driver_nolock.DbQuotaNoLockDriver):,0,0,0.0,672
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._test_quota_driver(,0,0,0.0,673
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'.'.join([klass.__module__, klass.__name__]),",0,0,0.0,674
+1663f5c19756fee984f0aeea9befc3a823387c8e,"klass.__name__, True)",0,0,0.0,675
+1663f5c19756fee984f0aeea9befc3a823387c8e,def test_quota_driver_fallback_conf_driver(self):,0,0,0.0,676
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota.,1,0,0.0,677
+1663f5c19756fee984f0aeea9befc3a823387c8e,raise exceptions.InvalidQuotaValue(unders=sorted(unders)),1,0,0.0,678
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default=10,",1,0,0.0,679
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'neutron.quota.ConfDriver',",1,0,0.0,680
+1663f5c19756fee984f0aeea9befc3a823387c8e,versionutils.report_deprecated_feature(,1,0,0.0,681
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'quota_driver', quota.QUOTA_DB_DRIVER, group='QUOTAS')",0,0,0.0,682
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self.assertEqual(200, res.status_int)",0,0,0.0,683
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'quota_driver',",1,0,0.0,684
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'neutron.db.quota.driver.DbQuotaDriver',",1,0,0.0,685
+1663f5c19756fee984f0aeea9befc3a823387c8e,group='QUOTAS'),1,0,0.0,686
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self.assertEqual(403, res.status_int)",1,0,0.0,687
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def cancel_reservation(self, context, reservation_id):",1,0,0.0,688
+1663f5c19756fee984f0aeea9befc3a823387c8e,def test_quota_driver_fallback_conf_driver(self):,1,0,0.0,689
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._test_quota_driver(quota.QUOTA_DB_DRIVER, 'ConfDriver', False)",1,0,0.0,690
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._quota_workers(),0,0,0.0,691
+1663f5c19756fee984f0aeea9befc3a823387c8e,def _quota_workers(self):,0,0,0.0,692
+1663f5c19756fee984f0aeea9befc3a823387c8e,if workers:,0,0,0.0,693
+1663f5c19756fee984f0aeea9befc3a823387c8e,"profile_id,",1,0,0.0,694
+1663f5c19756fee984f0aeea9befc3a823387c8e,"if isinstance(_driver_class, ConfDriver):",1,0,0.0,695
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def commit_reservation(self, context, reservation_id):",1,0,0.0,696
+1663f5c19756fee984f0aeea9befc3a823387c8e,if overs:,1,0,0.0,697
+1663f5c19756fee984f0aeea9befc3a823387c8e,raise webob.exc.HTTPForbidden(msg),1,0,0.0,698
+1663f5c19756fee984f0aeea9befc3a823387c8e,"raise exceptions.OverQuota(overs=sorted(overs), quotas=quotas,",1,0,0.0,699
+1663f5c19756fee984f0aeea9befc3a823387c8e,usages={}),1,0,0.0,700
+1663f5c19756fee984f0aeea9befc3a823387c8e,@staticmethod,1,0,0.0,701
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_all_quotas(context, resources):",1,0,0.0,702
+1663f5c19756fee984f0aeea9befc3a823387c8e,return [],1,0,0.0,703
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def delete_tenant_quota(context, tenant_id):",1,0,0.0,704
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def update_quota_limit(context, tenant_id, resource, limit):",1,0,0.0,705
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return quota_api.ReservationInfo('fake', None, None, None)",1,0,0.0,706
+1663f5c19756fee984f0aeea9befc3a823387c8e,routine ultimately does.,1,0,0.0,707
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.limit_check(,1,0,0.0,708
+1663f5c19756fee984f0aeea9befc3a823387c8e,"context,",1,0,0.0,709
+1663f5c19756fee984f0aeea9befc3a823387c8e,"tenant_id,",1,0,0.0,710
+1663f5c19756fee984f0aeea9befc3a823387c8e,"resource_registry.get_all_resources(),",1,0,0.0,711
+1663f5c19756fee984f0aeea9befc3a823387c8e,deltas),1,0,0.0,712
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.IntOpt('quota_subnet',",1,0,0.0,713
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.IntOpt('quota_network',",1,0,0.0,714
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network['port_count']),1,0,0.0,715
+1663f5c19756fee984f0aeea9befc3a823387c8e,subnet),1,0,0.0,716
+1663f5c19756fee984f0aeea9befc3a823387c8e,return sub,1,0,0.0,717
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def update_subnet(self, context, id, subnet):",1,0,0.0,718
+1663f5c19756fee984f0aeea9befc3a823387c8e,Update a subnet.,1,0,0.0,719
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: updated subnet object,1,0,0.0,720
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.debug('Update subnet'),1,0,0.0,721
+1663f5c19756fee984f0aeea9befc3a823387c8e,"id,",1,0,0.0,722
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._send_update_subnet_request(sub),1,0,0.0,723
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self).delete_subnet(context, sub['id'])",1,0,0.0,724
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def delete_subnet(self, context, id):",1,0,0.0,725
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete a subnet.,1,0,0.0,726
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: deleted subnet object,1,0,0.0,727
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('Delete subnet: %s', id)",1,0,0.0,728
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_delete_subnet_request(context, subnet)",1,0,0.0,729
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return super(N1kvNeutronPluginV2, self).delete_subnet(context, id)",1,0,0.0,730
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Created subnet: %s"", sub['id'])",1,0,0.0,731
+1663f5c19756fee984f0aeea9befc3a823387c8e,"super(N1kvNeutronPluginV2,",1,0,0.0,732
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve a subnet.,1,0,0.0,733
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Get port: %s"", id)",1,0,0.0,734
+1663f5c19756fee984f0aeea9befc3a823387c8e,if vm_network['port_count'] == 0:,1,0,0.0,735
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.delete_vm_network(context.session,",1,0,0.0,736
+1663f5c19756fee984f0aeea9befc3a823387c8e,"super(N1kvNeutronPluginV2, self).delete_port(context, port['id'])",1,0,0.0,737
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_port(self, context, id, fields=None):",1,0,0.0,738
+1663f5c19756fee984f0aeea9befc3a823387c8e,Retrieve a port.,1,0,0.0,739
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: port dictionary,1,0,0.0,740
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_port_dict_profile(context, port)",1,0,0.0,741
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_create_subnet_request(context, sub)",1,0,0.0,742
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return self._fields(port, fields)",1,0,0.0,743
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_ports(self, context, filters=None, fields=None):",1,0,0.0,744
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Get ports"")",1,0,0.0,745
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def create_subnet(self, context, subnet):",1,0,0.0,746
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: subnet object,1,0,0.0,747
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.debug('Create subnet'),1,0,0.0,748
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_subnet(self, context, id, fields=None):",1,0,0.0,749
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Get subnet: %s"", id)",1,0,0.0,750
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'A negative value means unlimited.')),",1,0,0.0,751
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._send_update_network_profile_request(net_p),1,0,0.0,752
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._send_delete_network_profile_request(net_p),1,0,0.0,753
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def update_network_profile(self, context, net_profile_id, network_profile):",1,0,0.0,754
+1663f5c19756fee984f0aeea9befc3a823387c8e,Update a network profile.,1,0,0.0,755
+1663f5c19756fee984f0aeea9befc3a823387c8e,"update_network_profile(context,",1,0,0.0,756
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net_profile_id,",1,0,0.0,757
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_profile)),1,0,0.0,758
+1663f5c19756fee984f0aeea9befc3a823387c8e,tenant.,1,0,0.0,759
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: deleted network profile object,1,0,0.0,760
+1663f5c19756fee984f0aeea9befc3a823387c8e,quota.register_quota_opts(quota.core_quota_opts),0,0,0.0,761
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.ListOpt('quota_items',",1,0,0.0,762
+1663f5c19756fee984f0aeea9befc3a823387c8e,"deprecated_for_removal=True,",1,0,0.0,763
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'removal.')),",1,0,0.0,764
+1663f5c19756fee984f0aeea9befc3a823387c8e,"cfg.IntOpt('default_quota',",1,0,0.0,765
+1663f5c19756fee984f0aeea9befc3a823387c8e,"default=-1,",1,0,0.0,766
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self).delete_network_profile(context, id)",1,0,0.0,767
+1663f5c19756fee984f0aeea9befc3a823387c8e,Delete a network profile.,1,0,0.0,768
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return self._fields(subnet, fields)",1,0,0.0,769
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._replace_fake_tenant_id_with_real(context),1,0,0.0,770
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def get_subnets(self, context, filters=None, fields=None):",1,0,0.0,771
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug(""Get subnets"")",1,0,0.0,772
+1663f5c19756fee984f0aeea9befc3a823387c8e,"filters,",1,0,0.0,773
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def create_network_profile(self, context, network_profile):",1,0,0.0,774
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create a network profile.,1,0,0.0,775
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: network profile object,1,0,0.0,776
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self).create_network_profile(context,",1,0,0.0,777
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def delete_network_profile(self, context, id):",1,0,0.0,778
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_profile),1,0,0.0,779
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_create_logical_network_request(net_p,",1,0,0.0,780
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self).delete_network_profile(context, net_p['id'])",1,0,0.0,781
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._send_create_network_profile_request(context, net_p)",1,0,0.0,782
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._send_delete_logical_network_request(net_p),1,0,0.0,783
+1663f5c19756fee984f0aeea9befc3a823387c8e,return net_p,1,0,0.0,784
+1663f5c19756fee984f0aeea9befc3a823387c8e,context.tenant_id),1,0,0.0,785
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._populate_policy_profiles(),1,0,0.0,786
+1663f5c19756fee984f0aeea9befc3a823387c8e,"(physical_network, network_type, segmentation_id,",1,0,0.0,787
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not network_type:,1,0,0.0,788
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_add_multi_segment_request(self, context, net_id, segment_pairs):",1,0,0.0,789
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send Add multi-segment network request to VSM.,1,0,0.0,790
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not segment_pairs:,1,0,0.0,791
+1663f5c19756fee984f0aeea9befc3a823387c8e,if cluster[c_const.STATE] == c_const.ONLINE:,1,0,0.0,792
+1663f5c19756fee984f0aeea9befc3a823387c8e,cluster['size'] += (,1,0,0.0,793
+1663f5c19756fee984f0aeea9befc3a823387c8e,len(mapping[c_const.SEGMENTS])),1,0,0.0,794
+1663f5c19756fee984f0aeea9befc3a823387c8e,online_clusters.append(cluster),1,0,0.0,795
+1663f5c19756fee984f0aeea9befc3a823387c8e,online_clusters),1,0,0.0,796
+1663f5c19756fee984f0aeea9befc3a823387c8e,if encap_profile is not None:,1,0,0.0,797
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'addMappings': [],",1,0,0.0,798
+1663f5c19756fee984f0aeea9befc3a823387c8e,'delMappings': []},1,0,0.0,799
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._extend_mapping_dict(context,",1,0,0.0,800
+1663f5c19756fee984f0aeea9befc3a823387c8e,"mapping_dict, segment1)",1,0,0.0,801
+1663f5c19756fee984f0aeea9befc3a823387c8e,"mapping_dict, segment2)",1,0,0.0,802
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_dict['addMappings'].append(mapping_dict),1,0,0.0,803
+1663f5c19756fee984f0aeea9befc3a823387c8e,c_const.BRIDGE_DOMAIN_SUFFIX),1,0,0.0,804
+1663f5c19756fee984f0aeea9befc3a823387c8e,if net[providernet.NETWORK_TYPE] == c_const.NETWORK_TYPE_VLAN:,1,0,0.0,805
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _extend_mapping_dict(self, context, mapping_dict, segment):",1,0,0.0,806
+1663f5c19756fee984f0aeea9befc3a823387c8e,break,1,0,0.0,807
+1663f5c19756fee984f0aeea9befc3a823387c8e,else:,1,0,0.0,808
+1663f5c19756fee984f0aeea9befc3a823387c8e,if segmentation_id < 5000:,1,0,0.0,809
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""(5000+)"")",1,0,0.0,810
+1663f5c19756fee984f0aeea9befc3a823387c8e,if network_type == c_const.NETWORK_TYPE_VLAN:,1,0,0.0,811
+1663f5c19756fee984f0aeea9befc3a823387c8e,if physical_network == network_profile[,1,0,0.0,812
+1663f5c19756fee984f0aeea9befc3a823387c8e,'physical_network']:,1,0,0.0,813
+1663f5c19756fee984f0aeea9befc3a823387c8e,physical_network),1,0,0.0,814
+1663f5c19756fee984f0aeea9befc3a823387c8e,return cluster['encapProfileName'],1,0,0.0,815
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return (network_type, physical_network, segmentation_id)",1,0,0.0,816
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _check_provider_update(self, context, attrs):",1,0,0.0,817
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Handle Provider network updates.""""""",1,0,0.0,818
+1663f5c19756fee984f0aeea9befc3a823387c8e,return,1,0,0.0,819
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _get_cluster(self, segment1, segment2, clusters):",1,0,0.0,820
+1663f5c19756fee984f0aeea9befc3a823387c8e,cluster['size'] += 2,1,0,0.0,821
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.add_multi_segment_encap_profile_name(session,",1,0,0.0,822
+1663f5c19756fee984f0aeea9befc3a823387c8e,"net_id,",1,0,0.0,823
+1663f5c19756fee984f0aeea9befc3a823387c8e,"(segment1,",1,0,0.0,824
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment1),1,0,0.0,825
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif oper == n1kv.SEGMENT_DEL:,1,0,0.0,826
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _parse_multi_segments(self, context, attrs, param):",1,0,0.0,827
+1663f5c19756fee984f0aeea9befc3a823387c8e,c_const.NETWORK_TYPE_OVERLAY],1,0,0.0,828
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not attributes.is_attr_set(segments):,1,0,0.0,829
+1663f5c19756fee984f0aeea9befc3a823387c8e,return pair_list,1,0,0.0,830
+1663f5c19756fee984f0aeea9befc3a823387c8e,uuidutils.is_uuid_like(segment2)):,1,0,0.0,831
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment2),1,0,0.0,832
+1663f5c19756fee984f0aeea9befc3a823387c8e,trunk_list.append(member_dict),1,0,0.0,833
+1663f5c19756fee984f0aeea9befc3a823387c8e,binding1.network_type == binding2.network_type):,1,0,0.0,834
+1663f5c19756fee984f0aeea9befc3a823387c8e,"pair_list.append((segment1, segment2))",1,0,0.0,835
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _parse_trunk_segments(self, context, attrs, param, physical_network,",1,0,0.0,836
+1663f5c19756fee984f0aeea9befc3a823387c8e,sub_type):,1,0,0.0,837
+1663f5c19756fee984f0aeea9befc3a823387c8e,if sub_type == c_const.NETWORK_TYPE_VLAN:,1,0,0.0,838
+1663f5c19756fee984f0aeea9befc3a823387c8e,if uuidutils.is_uuid_like(segment):,1,0,0.0,839
+1663f5c19756fee984f0aeea9befc3a823387c8e,if oper == n1kv.SEGMENT_ADD:,1,0,0.0,840
+1663f5c19756fee984f0aeea9befc3a823387c8e,'dot1qtag': dot1qtag},1,0,0.0,841
+1663f5c19756fee984f0aeea9befc3a823387c8e,"segment2),",1,0,0.0,842
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.get_multi_segment_network_binding(session, net_id,",1,0,0.0,843
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_profile),1,0,0.0,844
+1663f5c19756fee984f0aeea9befc3a823387c8e,raise cisco_exceptions.NoClusterFound(),1,0,0.0,845
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.update_encapsulation_profile(context, profile,",1,0,0.0,846
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_dict[profile]),1,0,0.0,847
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_del_multi_segment_request(self, context, net_id, segment_pairs):",1,0,0.0,848
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send Delete multi-segment network request to VSM.,1,0,0.0,849
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment2))),1,0,0.0,850
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_populate_member_segments %s', segment_pairs)",1,0,0.0,851
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_dict['delMappings'].append(mapping_dict),1,0,0.0,852
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _get_encap_segments(self, context, segment_pairs):",1,0,0.0,853
+1663f5c19756fee984f0aeea9befc3a823387c8e,member_list.append(member_dict),1,0,0.0,854
+1663f5c19756fee984f0aeea9befc3a823387c8e,return member_list,1,0,0.0,855
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _populate_member_segments(self, context, network, segment_pairs, oper):",1,0,0.0,856
+1663f5c19756fee984f0aeea9befc3a823387c8e,Populate trunk network dict with member segments.,1,0,0.0,857
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""network"")",1,0,0.0,858
+1663f5c19756fee984f0aeea9befc3a823387c8e,if physical_network_set:,1,0,0.0,859
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif network_type == c_const.NETWORK_TYPE_OVERLAY:,1,0,0.0,860
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._setup_rpc(),1,0,0.0,861
+1663f5c19756fee984f0aeea9befc3a823387c8e,"portbindings.VIF_TYPE: portbindings.VIF_TYPE_OVS,",1,0,0.0,862
+1663f5c19756fee984f0aeea9befc3a823387c8e,portbindings.VIF_DETAILS: {,1,0,0.0,863
+1663f5c19756fee984f0aeea9befc3a823387c8e,portbindings.CAP_PORT_FILTER:,1,0,0.0,864
+1663f5c19756fee984f0aeea9befc3a823387c8e,network_db_v2.delete_all_n1kv_credentials(),1,0,0.0,865
+1663f5c19756fee984f0aeea9befc3a823387c8e,c_cred.Store.initialize(),1,0,0.0,866
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._setup_vsm(),1,0,0.0,867
+1663f5c19756fee984f0aeea9befc3a823387c8e,o_conf.CONF.network_scheduler_driver,1,0,0.0,868
+1663f5c19756fee984f0aeea9befc3a823387c8e,4. Establish communication with Cisco Nexus1000V,1,0,0.0,869
+1663f5c19756fee984f0aeea9befc3a823387c8e,),1,0,0.0,870
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.start_periodic_dhcp_agent_status_check(),1,0,0.0,871
+1663f5c19756fee984f0aeea9befc3a823387c8e,def _setup_rpc(self):,1,0,0.0,872
+1663f5c19756fee984f0aeea9befc3a823387c8e,"agents_db.AgentExtRpcCallback(),",1,0,0.0,873
+1663f5c19756fee984f0aeea9befc3a823387c8e,metadata_rpc.MetadataRpcCallback()],1,0,0.0,874
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self.conn.create_consumer(svc_topic, self.endpoints, fanout=False)",1,0,0.0,875
+1663f5c19756fee984f0aeea9befc3a823387c8e,"super(N1kvNeutronPluginV2, self).__init__()",1,0,0.0,876
+1663f5c19756fee984f0aeea9befc3a823387c8e,2. clear N1kv credential,1,0,0.0,877
+1663f5c19756fee984f0aeea9befc3a823387c8e,def _setup_vsm(self):,1,0,0.0,878
+1663f5c19756fee984f0aeea9befc3a823387c8e,driver.DbQuotaDriver):,1,0,0.0,879
+1663f5c19756fee984f0aeea9befc3a823387c8e,"external_net_db.External_net_db_mixin,",1,0,0.0,880
+1663f5c19756fee984f0aeea9befc3a823387c8e,"portbindings_db.PortBindingMixin,",1,0,0.0,881
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.NetworkProfile_db_mixin,",1,0,0.0,882
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kv_db_v2.PolicyProfile_db_mixin,",1,0,0.0,883
+1663f5c19756fee984f0aeea9befc3a823387c8e,"network_db_v2.Credential_db_mixin,",1,0,0.0,884
+1663f5c19756fee984f0aeea9befc3a823387c8e,"agentschedulers_db.DhcpAgentSchedulerDbMixin,",1,0,0.0,885
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""",1,0,0.0,886
+1663f5c19756fee984f0aeea9befc3a823387c8e,1. Initialize VIF type to OVS,1,0,0.0,887
+1663f5c19756fee984f0aeea9befc3a823387c8e,workflow,1,0,0.0,888
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""n1kv"", ""network_profile"",",1,0,0.0,889
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""policy_profile"", ""external-net"",",1,0,0.0,890
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""binding"", ""credential"", ""quotas"",",1,0,0.0,891
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""dhcp_agent_scheduler""]",1,0,0.0,892
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def __init__(self, configfile=None):",1,0,0.0,893
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.conn.consume_in_threads(),1,0,0.0,894
+1663f5c19756fee984f0aeea9befc3a823387c8e,policy profile updates.,1,0,0.0,895
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""(1 through 4094)"")",1,0,0.0,896
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not (network_type_set or physical_network_set or,1,0,0.0,897
+1663f5c19756fee984f0aeea9befc3a823387c8e,network['id']),1,0,0.0,898
+1663f5c19756fee984f0aeea9befc3a823387c8e,if binding.network_type == c_const.NETWORK_TYPE_OVERLAY:,1,0,0.0,899
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif binding.network_type == c_const.NETWORK_TYPE_VLAN:,1,0,0.0,900
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif binding.network_type == c_const.NETWORK_TYPE_TRUNK:,1,0,0.0,901
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif binding.network_type == c_const.NETWORK_TYPE_MULTI_SEGMENT:,1,0,0.0,902
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _process_provider_create(self, context, attrs):",1,0,0.0,903
+1663f5c19756fee984f0aeea9befc3a823387c8e,segmentation_id_set):,1,0,0.0,904
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _extend_network_dict_provider(self, context, network):",1,0,0.0,905
+1663f5c19756fee984f0aeea9befc3a823387c8e,"return (None, None, None)",1,0,0.0,906
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not network_type_set:,1,0,0.0,907
+1663f5c19756fee984f0aeea9befc3a823387c8e,raise n_exc.InvalidInput(error_message=msg),1,0,0.0,908
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif network_type == c_const.NETWORK_TYPE_VLAN:,1,0,0.0,909
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not segmentation_id_set:,1,0,0.0,910
+1663f5c19756fee984f0aeea9befc3a823387c8e,if segmentation_id < 1 or segmentation_id > 4094:,1,0,0.0,911
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Add extended network parameters.""""""",1,0,0.0,912
+1663f5c19756fee984f0aeea9befc3a823387c8e,cisco_exceptions.VSMConnectionFailed):,1,0,0.0,913
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.debug('_setup_vsm'),1,0,0.0,914
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.debug('_populate_policy_profiles'),1,0,0.0,915
+1663f5c19756fee984f0aeea9befc3a823387c8e,eventlet.spawn(self._poll_policy_profiles),1,0,0.0,916
+1663f5c19756fee984f0aeea9befc3a823387c8e,def _poll_policy_profiles(self):,1,0,0.0,917
+1663f5c19756fee984f0aeea9befc3a823387c8e,while True:,1,0,0.0,918
+1663f5c19756fee984f0aeea9befc3a823387c8e,eventlet.sleep(c_conf.CISCO_N1K.poll_duration),1,0,0.0,919
+1663f5c19756fee984f0aeea9befc3a823387c8e,def _populate_policy_profiles(self):,1,0,0.0,920
+1663f5c19756fee984f0aeea9befc3a823387c8e,tenant-ids.,1,0,0.0,921
+1663f5c19756fee984f0aeea9befc3a823387c8e,try:,1,0,0.0,922
+1663f5c19756fee984f0aeea9befc3a823387c8e,"except (cisco_exceptions.VSMError,",1,0,0.0,923
+1663f5c19756fee984f0aeea9befc3a823387c8e,[profile_name][c_const.PROPERTIES][c_const.ID]),1,0,0.0,924
+1663f5c19756fee984f0aeea9befc3a823387c8e,plugin_profiles_set.add(profile.id),1,0,0.0,925
+1663f5c19756fee984f0aeea9befc3a823387c8e,if vsm_profiles_set ^ plugin_profiles_set:,1,0,0.0,926
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._add_policy_profile(vsm_profiles[pid], pid)",1,0,0.0,927
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._delete_policy_profile(pid),1,0,0.0,928
+1663f5c19756fee984f0aeea9befc3a823387c8e,self._remove_all_fake_policy_profiles(),1,0,0.0,929
+1663f5c19756fee984f0aeea9befc3a823387c8e,segment),1,0,0.0,930
+1663f5c19756fee984f0aeea9befc3a823387c8e,if binding.network_type == c_const.NETWORK_TYPE_TRUNK:,1,0,0.0,931
+1663f5c19756fee984f0aeea9befc3a823387c8e,if sub_type == c_const.NETWORK_TYPE_OVERLAY:,1,0,0.0,932
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_create_subnet_request: %s', subnet['id'])",1,0,0.0,933
+1663f5c19756fee984f0aeea9befc3a823387c8e,c_const.NETWORK_TYPE_MULTI_SEGMENT):,1,0,0.0,934
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_dict['delSegments'].append(mapping_dict),1,0,0.0,935
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_dict),1,0,0.0,936
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.delete_network_segment(network['id']),1,0,0.0,937
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_create_subnet_request(self, context, subnet):",1,0,0.0,938
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send create subnet request to VSM.,1,0,0.0,939
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.create_ip_pool(subnet),1,0,0.0,940
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.delete_encapsulation_profile(profile_name),1,0,0.0,941
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_update_subnet_request(self, subnet):",1,0,0.0,942
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send update subnet request to VSM.,1,0,0.0,943
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_update_subnet_request: %s', subnet['name'])",1,0,0.0,944
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.update_ip_pool(subnet),1,0,0.0,945
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_delete_subnet_request(self, context, subnet):",1,0,0.0,946
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send delete subnet request to VSM.,1,0,0.0,947
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif (network[providernet.NETWORK_TYPE] ==,1,0,0.0,948
+1663f5c19756fee984f0aeea9befc3a823387c8e,"context, network[n1kv.PROFILE_ID])",1,0,0.0,949
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.update_network_segment(subnet['network_id'], body=body)",1,0,0.0,950
+1663f5c19756fee984f0aeea9befc3a823387c8e,del_segments))},1,0,0.0,951
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('add_segments=%s', body['addSegments'])",1,0,0.0,952
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('del_segments=%s', body['delSegments'])",1,0,0.0,953
+1663f5c19756fee984f0aeea9befc3a823387c8e,c_const.ENCAPSULATION_PROFILE_SUFFIX),1,0,0.0,954
+1663f5c19756fee984f0aeea9befc3a823387c8e,'addMappings': (,1,0,0.0,955
+1663f5c19756fee984f0aeea9befc3a823387c8e,"add_segments)),",1,0,0.0,956
+1663f5c19756fee984f0aeea9befc3a823387c8e,'delMappings': (,1,0,0.0,957
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.update_encapsulation_profile(context, encap_profile,",1,0,0.0,958
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif network[providernet.NETWORK_TYPE] == c_const.NETWORK_TYPE_TRUNK:,1,0,0.0,959
+1663f5c19756fee984f0aeea9befc3a823387c8e,encap_dict),1,0,0.0,960
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.update_network_segment(network['id'], body)",1,0,0.0,961
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_delete_network_request(self, context, network):",1,0,0.0,962
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send delete network request to VSM.,1,0,0.0,963
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_delete_network_request: %s', network['id'])",1,0,0.0,964
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.delete_bridge_domain(name),1,0,0.0,965
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_delete_subnet_request: %s', subnet['name'])",1,0,0.0,966
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.delete_ip_pool(subnet['id']),1,0,0.0,967
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._populate_member_segments(context, network, del_segments,",1,0,0.0,968
+1663f5c19756fee984f0aeea9befc3a823387c8e,return binding.segmentation_id,1,0,0.0,969
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.update_n1kv_port(vm_network_name, port_id, body)",1,0,0.0,970
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_delete_port_request(self, context, port, vm_network):",1,0,0.0,971
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send delete port request to VSM.,1,0,0.0,972
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_delete_port_request: %s', port['id'])",1,0,0.0,973
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.delete_n1kv_port(vm_network['name'], port['id'])",1,0,0.0,974
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _get_segmentation_id(self, context, id):",1,0,0.0,975
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def create_network(self, context, network):",1,0,0.0,976
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_update_port_request: %s', port_id)",1,0,0.0,977
+1663f5c19756fee984f0aeea9befc3a823387c8e,Create network based on network profile.,1,0,0.0,978
+1663f5c19756fee984f0aeea9befc3a823387c8e,:returns: network object,1,0,0.0,979
+1663f5c19756fee984f0aeea9befc3a823387c8e,"(network_type, physical_network,",1,0,0.0,980
+1663f5c19756fee984f0aeea9befc3a823387c8e,network['network']),1,0,0.0,981
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('Create network: profile_id=%s', profile_id)",1,0,0.0,982
+1663f5c19756fee984f0aeea9befc3a823387c8e,with session.begin(subtransactions=True):,1,0,0.0,983
+1663f5c19756fee984f0aeea9befc3a823387c8e,'macAddress': mac_address},1,0,0.0,984
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send update port request to VSM.,1,0,0.0,985
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_create_port_request(self,",1,0,0.0,986
+1663f5c19756fee984f0aeea9befc3a823387c8e,VM Network,1,0,0.0,987
+1663f5c19756fee984f0aeea9befc3a823387c8e,"context,",1,0,0.0,988
+1663f5c19756fee984f0aeea9befc3a823387c8e,"port,",1,0,0.0,989
+1663f5c19756fee984f0aeea9befc3a823387c8e,"port_count,",1,0,0.0,990
+1663f5c19756fee984f0aeea9befc3a823387c8e,"policy_profile,",1,0,0.0,991
+1663f5c19756fee984f0aeea9befc3a823387c8e,vm_network_name):,1,0,0.0,992
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send create port request to VSM.,1,0,0.0,993
+1663f5c19756fee984f0aeea9befc3a823387c8e,network,1,0,0.0,994
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_update_port_request(self, port_id, mac_address, vm_network_name):",1,0,0.0,995
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_create_port_request: %s', port)",1,0,0.0,996
+1663f5c19756fee984f0aeea9befc3a823387c8e,if port_count == 1:,1,0,0.0,997
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.create_vm_network(port,",1,0,0.0,998
+1663f5c19756fee984f0aeea9befc3a823387c8e,"vm_network_name,",1,0,0.0,999
+1663f5c19756fee984f0aeea9befc3a823387c8e,policy_profile),1,0,0.0,1000
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.create_n1kv_port(port, vm_network_name)",1,0,0.0,1001
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kv.SEGMENT_DEL),1,0,0.0,1002
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._populate_member_segments(context, network, add_segments,",1,0,0.0,1003
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not physical_network:,1,0,0.0,1004
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.debug('_send_delete_logical_network'),1,0,0.0,1005
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_create_logical_network_request(self, network_profile, tenant_id):",1,0,0.0,1006
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send create logical network request to VSM.,1,0,0.0,1007
+1663f5c19756fee984f0aeea9befc3a823387c8e,LOG.debug('_send_create_logical_network'),1,0,0.0,1008
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.create_logical_network(network_profile, tenant_id)",1,0,0.0,1009
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_delete_logical_network_request(self, network_profile):",1,0,0.0,1010
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send delete logical network request to VSM.,1,0,0.0,1011
+1663f5c19756fee984f0aeea9befc3a823387c8e,c_const.LOGICAL_NETWORK_SUFFIX),1,0,0.0,1012
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Validates whether policy profile exists.""""""",1,0,0.0,1013
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.delete_logical_network(logical_network_name),1,0,0.0,1014
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_create_network_profile_request(self, context, profile):",1,0,0.0,1015
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send create network profile request to VSM.,1,0,0.0,1016
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_create_network_profile_request: %s', profile['id'])",1,0,0.0,1017
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.create_network_segment_pool(profile, context.tenant_id)",1,0,0.0,1018
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_update_network_profile_request(self, profile):",1,0,0.0,1019
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not self._policy_profile_exists(profile_id):,1,0,0.0,1020
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _process_policy_profile(self, context, attrs):",1,0,0.0,1021
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_update_network_profile_request: %s', profile['id'])",1,0,0.0,1022
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _extend_network_dict_member_segments(self, context, network):",1,0,0.0,1023
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif physical_network != binding.physical_network:,1,0,0.0,1024
+1663f5c19756fee984f0aeea9befc3a823387c8e,elif binding.network_type == c_const.NETWORK_TYPE_OVERLAY:,1,0,0.0,1025
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not utils.is_valid_vlan_tag(int(dot1qtag)):,1,0,0.0,1026
+1663f5c19756fee984f0aeea9befc3a823387c8e,except ValueError:,1,0,0.0,1027
+1663f5c19756fee984f0aeea9befc3a823387c8e,"pair_list.append((segment, dot1qtag))",1,0,0.0,1028
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('%s is not a valid uuid', segment)",1,0,0.0,1029
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _extend_network_dict_profile(self, context, network):",1,0,0.0,1030
+1663f5c19756fee984f0aeea9befc3a823387c8e,return profile_id,1,0,0.0,1031
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _extend_port_dict_profile(self, context, port):",1,0,0.0,1032
+1663f5c19756fee984f0aeea9befc3a823387c8e,port['id']),1,0,0.0,1033
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _process_network_profile(self, context, network):",1,0,0.0,1034
+1663f5c19756fee984f0aeea9befc3a823387c8e,"""""""Validate network profile exists.""""""",1,0,0.0,1035
+1663f5c19756fee984f0aeea9befc3a823387c8e,if not profile_id_set:,1,0,0.0,1036
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile_name),1,0,0.0,1037
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send update network profile request to VSM.,1,0,0.0,1038
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.update_network_segment_pool(profile),1,0,0.0,1039
+1663f5c19756fee984f0aeea9befc3a823387c8e,'delSegments': []},1,0,0.0,1040
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_update_network_request: %s', network['id'])",1,0,0.0,1041
+1663f5c19756fee984f0aeea9befc3a823387c8e,'del_segment_list': []},1,0,0.0,1042
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.create_encapsulation_profile(encap_dict),1,0,0.0,1043
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.create_network_segment(network, profile)",1,0,0.0,1044
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_update_network_request(self, context, network, add_segments,",1,0,0.0,1045
+1663f5c19756fee984f0aeea9befc3a823387c8e,del_segments):,1,0,0.0,1046
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send update network request to VSM.,1,0,0.0,1047
+1663f5c19756fee984f0aeea9befc3a823387c8e,"db_session, network[n1kv.PROFILE_ID], context.tenant_id)",1,0,0.0,1048
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._get_encap_segments(context,",1,0,0.0,1049
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'id': network['id'],",1,0,0.0,1050
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'networkSegmentPool': profile['id'],",1,0,0.0,1051
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'vlan': network[providernet.SEGMENTATION_ID],",1,0,0.0,1052
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'mode': 'access',",1,0,0.0,1053
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'segmentType': profile['segment_type'],",1,0,0.0,1054
+1663f5c19756fee984f0aeea9befc3a823387c8e,"'addSegments': [],",1,0,0.0,1055
+1663f5c19756fee984f0aeea9befc3a823387c8e,"segment_pairs)),",1,0,0.0,1056
+1663f5c19756fee984f0aeea9befc3a823387c8e,'add_segment_list': (,1,0,0.0,1057
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_delete_network_profile_request(self, profile):",1,0,0.0,1058
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_create_network_request: %s', network['id'])",1,0,0.0,1059
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send delete network profile request to VSM.,1,0,0.0,1060
+1663f5c19756fee984f0aeea9befc3a823387c8e,"LOG.debug('_send_delete_network_profile_request: %s',",1,0,0.0,1061
+1663f5c19756fee984f0aeea9befc3a823387c8e,profile['name']),1,0,0.0,1062
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kvclient.delete_network_segment_pool(profile['id']),1,0,0.0,1063
+1663f5c19756fee984f0aeea9befc3a823387c8e,"def _send_create_network_request(self, context, network, segment_pairs):",1,0,0.0,1064
+1663f5c19756fee984f0aeea9befc3a823387c8e,Send create network request to VSM.,1,0,0.0,1065
+1663f5c19756fee984f0aeea9befc3a823387c8e,network[n1kv.PROFILE_ID]),1,0,0.0,1066
+1663f5c19756fee984f0aeea9befc3a823387c8e,"c_const.ENCAPSULATION_PROFILE_SUFFIX),",1,0,0.0,1067
+1663f5c19756fee984f0aeea9befc3a823387c8e,if network[providernet.NETWORK_TYPE] == c_const.NETWORK_TYPE_OVERLAY:,1,0,0.0,1068
+1663f5c19756fee984f0aeea9befc3a823387c8e,"n1kvclient.create_bridge_domain(network, profile['sub_type'])",1,0,0.0,1069
+1663f5c19756fee984f0aeea9befc3a823387c8e,if network[providernet.NETWORK_TYPE] == c_const.NETWORK_TYPE_TRUNK:,1,0,0.0,1070
+1663f5c19756fee984f0aeea9befc3a823387c8e,"self._populate_member_segments(context, network, segment_pairs,",1,0,0.0,1071
+1663f5c19756fee984f0aeea9befc3a823387c8e,n1kv.SEGMENT_ADD),1,0,0.0,1072
+1663f5c19756fee984f0aeea9befc3a823387c8e,if profile['sub_type'] == c_const.NETWORK_TYPE_OVERLAY:,1,0,0.0,1073
+1663f5c19756fee984f0aeea9befc3a823387c8e,self.add_workers(workers),0,0,0.0,1074

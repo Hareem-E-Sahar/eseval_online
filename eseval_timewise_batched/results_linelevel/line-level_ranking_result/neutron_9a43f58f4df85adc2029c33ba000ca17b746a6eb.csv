@@ -1,0 +1,301 @@
+commit_id,line,line_level_label,count,line_score,row
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""""""Wraps oslo messaging contexts to set the timeout for calls.",1,5,1.0,1
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"# Try to shut the connection down, but if we get any sort of",1,5,1.0,2
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# set the timeout from the global method timeout tracker for this,1,5,1.0,3
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,This intercepts RPC calls and sets the timeout value to the globally,1,4,0.8,4
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""to %(new)s seconds. Restart the agent to """,1,4,0.8,5
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""server(s) may be overloaded and unable to """,1,4,0.8,6
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# Hook to allow the manager to do other initializations after,1,4,0.8,7
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,TRANSPORT = NOTIFICATION_TRANSPORT = NOTIFIER = None,1,4,0.8,8
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from neutron_lib import rpc as lib_rpc,0,4,0.8,9
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"# connections will be updated, this won't be needed",0,4,0.8,10
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"# oslo.messaging auto-creates the exchange, then just remove the",1,3,0.6000000000000001,11
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"# errors, go ahead and ignore them.. as we're shutting down anyway",1,3,0.6000000000000001,12
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# the rpc connection is created.,1,3,0.6000000000000001,13
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,A service enables rpc by listening to queues based on topic and host.,1,3,0.6000000000000001,14
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""""""This serializer is used to convert RPC common context into",1,3,0.6000000000000001,15
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"publisher_id = ""%s.%s"" % (service, host or cfg.CONF.host)",1,3,0.6000000000000001,16
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""rpc_response_timeout option as Neutron """,1,3,0.6000000000000001,17
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# two methods with the same name in different namespaces should,1,3,0.6000000000000001,18
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,There currently is no logic to reduce the timeout since busy Neutron,1,3,0.6000000000000001,19
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"if the timeout parameter is not specified, the _BackingOffContextWrapper",1,3,0.6000000000000001,20
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# bug/1705351 is resolved on the oslo.messaging side; if,1,3,0.6000000000000001,21
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from neutron_lib import exceptions as lib_exceptions,1,3,0.6000000000000001,22
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from neutron.common import exceptions,1,3,0.6000000000000001,23
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if (not _PROFILER_INITIALIZED and cfg.CONF.profiler.enabled and,0,3,0.6000000000000001,24
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from neutron_lib import rpc,0,3,0.6000000000000001,25
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from neutron_lib import context,1,3,0.6000000000000001,26
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# Don't need to do anything if an enginefacade hasn't been created,1,3,0.6000000000000001,27
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from oslo_config import cfg,1,3,0.6000000000000001,28
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from oslo_log import log as logging,1,3,0.6000000000000001,29
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from oslo_messaging import serializer as om_serializer,1,3,0.6000000000000001,30
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""server is not down, consider increasing the """,1,2,0.4,31
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self._base = base,1,2,0.4,32
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""restore it to the default value."",",1,2,0.4,33
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""""""An oslo messaging RPC Client that implements a timeout backoff.",1,2,0.4,34
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,This has all of the same interfaces as oslo_messaging.RPCClient but,1,2,0.4,35
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,returned will track when call timeout exceptions occur and exponentially,1,2,0.4,36
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,increase the timeout for the given call method.,1,2,0.4,37
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# don't back off contexts that explicitly set a timeout,1,2,0.4,38
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def __init__(self, base=None):",1,2,0.4,39
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.manager = self,1,2,0.4,40
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,trace_info = {,1,2,0.4,41
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"trace_info = rpc_ctxt_dict.pop(""trace_info"", None)",1,2,0.4,42
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def __init__(self, host, topic, manager=None, serializer=None):",1,2,0.4,43
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.host = host,1,2,0.4,44
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# Consume from all consumers in threads,1,2,0.4,45
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"server = get_server(target, endpoints)",1,2,0.4,46
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from neutron_lib import constants,0,2,0.4,47
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,cls._max_timeout = None,1,2,0.4,48
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# be tracked independently,1,2,0.4,49
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""%(wait)s seconds before next attempt. If the """,1,2,0.4,50
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# restore the original default timeout factory,1,2,0.4,51
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from osprofiler import profiler,1,2,0.4,52
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# TODO(akamyshnikova) this code should be in oslo.db,0,2,0.4,53
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_FACADE = None,1,2,0.4,54
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# TODO(boden): remove lib rpc shims,0,2,0.4,55
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,init = rpc.init,0,2,0.4,56
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,Service = rpc.Service,0,2,0.4,57
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from oslo_messaging.rpc import dispatcher,1,2,0.4,58
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from oslo_service import service,1,2,0.4,59
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,from oslo_utils import excutils,1,2,0.4,60
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if cfg.CONF.profiler.enabled and cfg.CONF.profiler.trace_sqlalchemy:,1,2,0.4,61
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,TRANSPORT = None,1,2,0.4,62
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,NOTIFIER = None,1,2,0.4,63
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def __init__(self, original_context):",1,2,0.4,64
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# TODO(kevinbenton): make catch specific to missing exchange once,1,2,0.4,65
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,adapting value for each method. An oslo messaging timeout results in,1,2,0.4,66
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,a doubling of the timeout value for the method on which it timed out.,1,2,0.4,67
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,NOTIFICATION_TRANSPORT = None,1,2,0.4,68
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_max_timeout = None,1,2,0.4,69
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def serialize_entity(self, ctxt, entity):",1,1,0.2,70
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return oslo_messaging.get_rpc_server(TRANSPORT, target, endpoints,",1,1,0.2,71
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def get_notifier(service=None, host=None, publisher_id=None):",1,1,0.2,72
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if not publisher_id:,1,1,0.2,73
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return NOTIFIER.prepare(publisher_id=publisher_id),1,1,0.2,74
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,class RequestContextSerializer(om_serializer.Serializer):,1,1,0.2,75
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,Neutron Context.,1,1,0.2,76
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return self._base.serialize_entity(ctxt, entity)",1,1,0.2,77
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if not self._base:,1,1,0.2,78
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return entity,1,1,0.2,79
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def deserialize_entity(self, ctxt, entity):",1,1,0.2,80
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return self._base.deserialize_entity(ctxt, entity)",1,1,0.2,81
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def serialize_context(self, ctxt):",1,1,0.2,82
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_context = ctxt.to_dict(),1,1,0.2,83
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def get_server(target, endpoints, serializer=None):",1,1,0.2,84
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,access_policy = dispatcher.DefaultRPCAccessPolicy,1,1,0.2,85
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,class BackingOffClient(oslo_messaging.RPCClient):,1,1,0.2,86
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return BackingOffClient(TRANSPORT,",1,1,0.2,87
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self._METHOD_TIMEOUTS[scoped_method] = new_timeout,1,1,0.2,88
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return self._original_context.call(ctxt, method, **kwargs)",1,1,0.2,89
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,wait = random.uniform(,1,1,0.2,90
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"LOG.error(""Timeout in RPC method %(method)s. Waiting for """,1,1,0.2,91
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,new_timeout = min(,1,1,0.2,92
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if new_timeout > self._METHOD_TIMEOUTS[scoped_method]:,1,1,0.2,93
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"LOG.warning(""Increasing timeout for %(method)s calls """,1,1,0.2,94
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if prof:,1,1,0.2,95
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,serializer = RequestContextSerializer(serializer),1,1,0.2,96
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"ctx = super(BackingOffClient, self).prepare(*args, **kwargs)",1,1,0.2,97
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if 'timeout' in kwargs:,1,1,0.2,98
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return _ContextWrapper(ctx),1,1,0.2,99
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return _BackingOffContextWrapper(ctx),1,1,0.2,100
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def set_max_timeout(max_timeout):,1,1,0.2,101
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def get_client(target, version_cap=None, serializer=None):",1,1,0.2,102
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,prof = profiler.get(),1,1,0.2,103
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"setup_profiler.setup(n_constants.AGENT_PROCESS_NIC_SWITCH, cfg.CONF.host)",0,1,0.2,104
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,},1,1,0.2,105
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_context['trace_info'] = trace_info,1,1,0.2,106
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def __init__(self):,1,1,0.2,107
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.servers = [],1,1,0.2,108
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def create_consumer(self, topic, endpoints, fanout=False):",1,1,0.2,109
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,target = oslo_messaging.Target(,1,1,0.2,110
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def consume_in_threads(self):,1,1,0.2,111
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,for server in self.servers:,1,1,0.2,112
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return self.servers,1,1,0.2,113
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def close(self):,1,1,0.2,114
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,import setproctitle,0,1,0.2,115
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"proctitle = ""%s (%s)"" % (",0,1,0.2,116
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"setup_profiler.setup(constants.AGENT_PROCESS_LINUXBRIDGE, cfg.CONF.host)",0,1,0.2,117
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,LB_AGENT_BINARY = 'neutron-linuxbridge-agent',1,1,0.2,118
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"setup_profiler.setup(""neutron-linuxbridge-agent"", cfg.CONF.host)",1,1,0.2,119
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# method,1,1,0.2,120
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"setup_profiler.setup(""neutron-sriov-nic-agent"", cfg.CONF.host)",1,1,0.2,121
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,class Connection(object):,1,1,0.2,122
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,except Exception:  # nosec,1,1,0.2,123
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def stop(self):,1,1,0.2,124
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.topic = topic,1,1,0.2,125
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return _context,1,1,0.2,126
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def deserialize_context(self, ctxt):",1,1,0.2,127
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,rpc_ctxt_dict = ctxt.copy(),1,1,0.2,128
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if trace_info:,1,1,0.2,129
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return context.Context.from_dict(rpc_ctxt_dict),1,1,0.2,130
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,class Service(service.Service):,1,1,0.2,131
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.serializer = serializer,1,1,0.2,132
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"if callable(getattr(self.manager, 'initialize_service_hook', None)):",1,1,0.2,133
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if manager is None:,1,1,0.2,134
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.manager = manager,1,1,0.2,135
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def start(self):,1,1,0.2,136
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.conn = Connection(),1,1,0.2,137
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"LOG.debug(""Creating Consumer connection for Service %s"",",1,1,0.2,138
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,endpoints = [self.manager],1,1,0.2,139
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self._original_context.timeout = self._METHOD_TIMEOUTS[scoped_method],1,1,0.2,140
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def prepare(self, *args, **kwargs):",1,1,0.2,141
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,scoped_method = method,1,1,0.2,142
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,TRANSPORT = oslo_messaging.get_rpc_transport(,1,1,0.2,143
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,BackingOffClient = rpc.BackingOffClient,0,1,0.2,144
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,get_client = rpc.get_client,0,1,0.2,145
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,get_server = rpc.get_server,0,1,0.2,146
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,get_notifier = rpc.get_notifier,0,1,0.2,147
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,RequestContextSerializer = rpc.RequestContextSerializer,0,1,0.2,148
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,Connection = rpc.Connection,0,1,0.2,149
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,import collections,1,1,0.2,150
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,import random,1,1,0.2,151
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,import time,1,1,0.2,152
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,import oslo_messaging,1,1,0.2,153
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,LOG = logging.getLogger(__name__),1,1,0.2,154
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_DFT_EXMODS = [,1,1,0.2,155
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def init(conf, rpc_ext_mods=None):",1,1,0.2,156
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if rpc_ext_mods is None:,1,1,0.2,157
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,rpc_ext_mods = _DFT_EXMODS,1,1,0.2,158
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,cleanup = rpc.cleanup,0,1,0.2,159
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,NOTIFIER = rpc.NOTIFIER,0,1,0.2,160
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,NOTIFICATION_TRANSPORT = rpc.NOTIFICATION_TRANSPORT,0,1,0.2,161
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return context_manager.get_legacy_facade().get_session(,0,1,0.2,162
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"scoped_method = '%s.%s' % (self._original_context.target.namespace,",1,1,0.2,163
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_PROFILER_INITIALIZED = False,0,1,0.2,164
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def _set_profiler():,0,1,0.2,165
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_PROFILER_INITIALIZED = True,0,1,0.2,166
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"#TODO(akamyshnikova): when all places in the code, which use sessions/",0,1,0.2,167
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return context_manager.get_legacy_facade().get_engine(),0,1,0.2,168
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def _create_facade_lazily():,1,1,0.2,169
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,TRANSPORT = rpc.TRANSPORT,0,1,0.2,170
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if _FACADE is None:,1,1,0.2,171
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_FACADE = context_manager._factory.get_legacy_facade(),1,1,0.2,172
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return _FACADE,1,1,0.2,173
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,facade = _create_facade_lazily(),1,1,0.2,174
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return facade.get_engine(),1,1,0.2,175
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if _FACADE is not None:,1,1,0.2,176
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,rpc_ext_mods = list(set(rpc_ext_mods + _DFT_EXMODS)),1,1,0.2,177
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return facade.get_session(autocommit=autocommit,",1,1,0.2,178
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,NOTIFICATION_TRANSPORT = oslo_messaging.get_notification_transport(,1,1,0.2,179
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return cls._max_timeout or _get_default_method_timeout() * 10,1,1,0.2,180
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,# code completely,1,1,0.2,181
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,class _BackingOffContextWrapper(_ContextWrapper):,1,1,0.2,182
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,servers are more frequently the cause of timeouts rather than lost,1,1,0.2,183
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_METHOD_TIMEOUTS = _get_default_method_timeouts(),1,1,0.2,184
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def reset_timeouts(cls):,1,1,0.2,185
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,cls._METHOD_TIMEOUTS = _get_default_method_timeouts(),1,1,0.2,186
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def set_max_timeout(cls, max_timeout):",1,1,0.2,187
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def cast(self, ctxt, method, **kwargs):",1,1,0.2,188
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if max_timeout < cls.get_max_timeout():,1,1,0.2,189
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,cls._METHOD_TIMEOUTS = collections.defaultdict(,1,1,0.2,190
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,cls._max_timeout = max_timeout,1,1,0.2,191
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def call(self, ctxt, method, **kwargs):",1,1,0.2,192
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,serializer = RequestContextSerializer(),1,1,0.2,193
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if self._original_context.target.namespace:,1,1,0.2,194
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,except Exception as e:,1,1,0.2,195
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def get_max_timeout(cls):,1,1,0.2,196
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"return getattr(self._original_context, name)",1,1,0.2,197
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"raise AssertionError(""'NOTIFIER' must not be None"")",1,1,0.2,198
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"NOTIFIER = oslo_messaging.Notifier(NOTIFICATION_TRANSPORT,",1,1,0.2,199
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def cleanup():,1,1,0.2,200
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"def __getattr__(self, name):",1,1,0.2,201
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if TRANSPORT is None:,1,1,0.2,202
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"raise AssertionError(""'TRANSPORT' must not be None"")",1,1,0.2,203
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"raise AssertionError(""'NOTIFICATION_TRANSPORT' must not be None"")",1,1,0.2,204
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if NOTIFIER is None:,1,1,0.2,205
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,if NOTIFICATION_TRANSPORT is None:,1,1,0.2,206
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def _get_default_method_timeout():,1,1,0.2,207
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return TRANSPORT.conf.rpc_response_timeout,1,1,0.2,208
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,def _get_default_method_timeouts():,1,1,0.2,209
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,return collections.defaultdict(_get_default_method_timeout),1,1,0.2,210
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,class _ContextWrapper(object):,1,1,0.2,211
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self._original_context = original_context,1,1,0.2,212
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"@profiler.trace_cls(""rpc"")",1,0,0.0,213
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"version_cap=version_cap,",1,0,0.0,214
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,profiler.init(**trace_info),1,0,0.0,215
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""parent_id"": prof.get_id()",1,0,0.0,216
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""base_id"": prof.get_base_id(),",1,0,0.0,217
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""hmac_key"": prof.hmac_key,",1,0,0.0,218
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"super(RequestContextSerializer, self).__init__()",1,0,0.0,219
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,access_policy=access_policy),1,0,0.0,220
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""""""Service object for binaries running on hosts.",1,0,0.0,221
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"'eventlet', serializer,",1,0,0.0,222
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"{'method': scoped_method, 'new': new_timeout})",1,0,0.0,223
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"target,",1,0,0.0,224
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_BackingOffContextWrapper.set_max_timeout(max_timeout),1,0,0.0,225
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,'''Set RPC timeout ceiling for all backing-off RPC clients.''',1,0,0.0,226
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,@staticmethod,1,0,0.0,227
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,time.sleep(wait),1,0,0.0,228
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"self._original_context.timeout * 2, self.get_max_timeout())",1,0,0.0,229
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"{'wait': int(round(wait)), 'method': scoped_method})",1,0,0.0,230
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"super(Service, self).start()",1,0,0.0,231
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""respond quickly enough."",",1,0,0.0,232
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"super(Service, self).__init__()",1,0,0.0,233
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"constants.AGENT_PROCESS_LINUXBRIDGE, setproctitle.getproctitle())",0,0,0.0,234
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.topic),1,0,0.0,235
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,server.stop(),1,0,0.0,236
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,TRANSPORT.conf.rpc_response_timeout),1,0,0.0,237
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"'binary': n_constants.AGENT_PROCESS_NIC_SWITCH,",0,0,0.0,238
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,LB_AGENT_BINARY),1,0,0.0,239
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,constants.AGENT_PROCESS_LINUXBRIDGE),0,0,0.0,240
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,setproctitle.setproctitle(proctitle),0,0,0.0,241
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"@profiler.trace_cls(""rpc"")",1,0,0.0,242
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"@profiler.trace(""rpc"")",0,0,0.0,243
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,server.wait(),1,0,0.0,244
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,server.start(),1,0,0.0,245
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"self.conn.create_consumer(self.topic, endpoints)",1,0,0.0,246
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.servers.append(server),1,0,0.0,247
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"topic=topic, server=cfg.CONF.host, fanout=fanout)",1,0,0.0,248
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"super(Connection, self).__init__()",1,0,0.0,249
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"super(Service, self).stop()",1,0,0.0,250
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,pass,1,0,0.0,251
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.conn.close(),1,0,0.0,252
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.conn.consume_in_threads(),1,0,0.0,253
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,self.manager.initialize_service_hook(self),1,0,0.0,254
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,),1,0,0.0,255
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,use_slave=use_slave),0,0,0.0,256
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"min(self._METHOD_TIMEOUTS[scoped_method],",1,0,0.0,257
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"0,",1,0,0.0,258
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"exceptions.__name__,",1,0,0.0,259
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,timeout=n_rpc.TRANSPORT.conf.rpc_response_timeout),1,0,0.0,260
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,timeout=lib_rpc.TRANSPORT.conf.rpc_response_timeout),0,0,0.0,261
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,use_slave=use_slave),1,0,0.0,262
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"expire_on_commit=expire_on_commit,",1,0,0.0,263
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,get_engine().pool.dispose(),1,0,0.0,264
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""db"")",1,0,0.0,265
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"_FACADE.get_engine(),",1,0,0.0,266
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"osprofiler.sqlalchemy.add_tracing(sqlalchemy,",1,0,0.0,267
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"context_manager.configure(sqlite_fk=True, **cfg.CONF.database)",1,0,0.0,268
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,global _FACADE,1,0,0.0,269
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"autocommit=autocommit, expire_on_commit=expire_on_commit,",0,0,0.0,270
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,get_engine().pool.dispose(),0,0,0.0,271
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_set_profiler(),0,0,0.0,272
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"sqlalchemy, context_manager.get_legacy_facade().get_engine(), ""db"")",0,0,0.0,273
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,osprofiler.sqlalchemy.add_tracing(,0,0,0.0,274
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,cfg.CONF.profiler.trace_sqlalchemy):,0,0,0.0,275
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,global _PROFILER_INITIALIZED,0,0,0.0,276
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,context_manager.configure(sqlite_fk=True),0,0,0.0,277
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"lib_exceptions.__name__,",1,0,0.0,278
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,],1,0,0.0,279
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"global TRANSPORT, NOTIFICATION_TRANSPORT, NOTIFIER",1,0,0.0,280
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"""""""",1,0,0.0,281
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,with excutils.save_and_reraise_exception():,1,0,0.0,282
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,except oslo_messaging.MessagingTimeout:,1,0,0.0,283
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,method),1,0,0.0,284
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,}),1,0,0.0,285
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"for k, v in cls._METHOD_TIMEOUTS.items()",1,0,0.0,286
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"k: min(v, max_timeout)",1,0,0.0,287
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"lambda: max_timeout, **{",1,0,0.0,288
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,@classmethod,1,0,0.0,289
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,messages.,1,0,0.0,290
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,else:,1,0,0.0,291
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"LOG.debug(""Ignored exception during cast: %e"", e)",1,0,0.0,292
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"self._original_context.cast(ctxt, method, **kwargs)",1,0,0.0,293
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,try:,1,0,0.0,294
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,_BackingOffContextWrapper.reset_timeouts(),1,0,0.0,295
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,NOTIFICATION_TRANSPORT.cleanup(),1,0,0.0,296
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,TRANSPORT.cleanup(),1,0,0.0,297
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,serializer=serializer),1,0,0.0,298
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"conf, allowed_remote_exmods=rpc_ext_mods)",1,0,0.0,299
+9a43f58f4df85adc2029c33ba000ca17b746a6eb,"'binary': 'neutron-sriov-nic-agent',",1,0,0.0,300

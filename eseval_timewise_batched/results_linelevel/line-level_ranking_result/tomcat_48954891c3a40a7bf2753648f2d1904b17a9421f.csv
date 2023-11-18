@@ -1,0 +1,55 @@
+commit_id,line,line_level_label,count,line_score,row
+48954891c3a40a7bf2753648f2d1904b17a9421f,"TaskThread t = new TaskThread(group, r, namePrefix + threadNumber.getAndIncrement());",0,9,1.0,1
+48954891c3a40a7bf2753648f2d1904b17a9421f,"TaskThread t = new TaskThread(group, r, namePrefix + threadNumber.getAndIncrement());",1,9,1.0,2
+48954891c3a40a7bf2753648f2d1904b17a9421f,* Simple task thread factory to use to create threads for an executor,0,8,0.8888888888888888,3
+48954891c3a40a7bf2753648f2d1904b17a9421f,* Simple task thread factory to use to create threads for an executor implementation.,1,8,0.8888888888888888,4
+48954891c3a40a7bf2753648f2d1904b17a9421f,"// I don't see why, but this hack allows to conform to this",1,5,0.5555555555555556,5
+48954891c3a40a7bf2753648f2d1904b17a9421f,// Threads should not be created by the webapp classloader,0,4,0.4444444444444444,6
+48954891c3a40a7bf2753648f2d1904b17a9421f,// remainingCapacity==0 to allow to interrupt idle threads,1,4,0.4444444444444444,7
+48954891c3a40a7bf2753648f2d1904b17a9421f,// No need to be volatile. This is written and read in a single thread,1,3,0.3333333333333333,8
+48954891c3a40a7bf2753648f2d1904b17a9421f,// (when stopping a context and firing the listeners),1,3,0.3333333333333333,9
+48954891c3a40a7bf2753648f2d1904b17a9421f,} finally {,0,2,0.2222222222222222,10
+48954891c3a40a7bf2753648f2d1904b17a9421f,PrivilegedAction<Void> pa = new PrivilegedSetTccl(loader);,0,2,0.2222222222222222,11
+48954891c3a40a7bf2753648f2d1904b17a9421f,} else {,0,2,0.2222222222222222,12
+48954891c3a40a7bf2753648f2d1904b17a9421f,PrivilegedAction<Void> pa = new PrivilegedSetTccl(,0,2,0.2222222222222222,13
+48954891c3a40a7bf2753648f2d1904b17a9421f,return t;,1,1,0.1111111111111111,14
+48954891c3a40a7bf2753648f2d1904b17a9421f,void resetForcedRemainingCapacity() {,1,1,0.1111111111111111,15
+48954891c3a40a7bf2753648f2d1904b17a9421f,this.forcedRemainingCapacity = forcedRemainingCapacity;,1,1,0.1111111111111111,16
+48954891c3a40a7bf2753648f2d1904b17a9421f,public void setForcedRemainingCapacity(int forcedRemainingCapacity) {,1,1,0.1111111111111111,17
+48954891c3a40a7bf2753648f2d1904b17a9421f,return super.remainingCapacity();,1,1,0.1111111111111111,18
+48954891c3a40a7bf2753648f2d1904b17a9421f,},1,1,0.1111111111111111,19
+48954891c3a40a7bf2753648f2d1904b17a9421f,return forcedRemainingCapacity;,1,1,0.1111111111111111,20
+48954891c3a40a7bf2753648f2d1904b17a9421f,"// ""requirement""",1,1,0.1111111111111111,21
+48954891c3a40a7bf2753648f2d1904b17a9421f,// ThreadPoolExecutor.setCorePoolSize checks that,1,1,0.1111111111111111,22
+48954891c3a40a7bf2753648f2d1904b17a9421f,if (forcedRemainingCapacity > DEFAULT_FORCED_REMAINING_CAPACITY) {,1,1,0.1111111111111111,23
+48954891c3a40a7bf2753648f2d1904b17a9421f,public int remainingCapacity() {,1,1,0.1111111111111111,24
+48954891c3a40a7bf2753648f2d1904b17a9421f,this.forcedRemainingCapacity = DEFAULT_FORCED_REMAINING_CAPACITY;,1,1,0.1111111111111111,25
+48954891c3a40a7bf2753648f2d1904b17a9421f,private int forcedRemainingCapacity = -1;,1,1,0.1111111111111111,26
+48954891c3a40a7bf2753648f2d1904b17a9421f,*,1,1,0.1111111111111111,27
+48954891c3a40a7bf2753648f2d1904b17a9421f,return t;,0,1,0.1111111111111111,28
+48954891c3a40a7bf2753648f2d1904b17a9421f,* @author fhanik,1,1,0.1111111111111111,29
+48954891c3a40a7bf2753648f2d1904b17a9421f,* implementation.,0,1,0.1111111111111111,30
+48954891c3a40a7bf2753648f2d1904b17a9421f,ClassLoader loader = Thread.currentThread().getContextClassLoader();,0,1,0.1111111111111111,31
+48954891c3a40a7bf2753648f2d1904b17a9421f,if (Constants.IS_SECURITY_ENABLED) {,0,1,0.1111111111111111,32
+48954891c3a40a7bf2753648f2d1904b17a9421f,},0,1,0.1111111111111111,33
+48954891c3a40a7bf2753648f2d1904b17a9421f,try {,0,1,0.1111111111111111,34
+48954891c3a40a7bf2753648f2d1904b17a9421f,private static class PrivilegedSetTccl implements PrivilegedAction<Void> {,0,1,0.1111111111111111,35
+48954891c3a40a7bf2753648f2d1904b17a9421f,PrivilegedSetTccl(ClassLoader cl) {,0,1,0.1111111111111111,36
+48954891c3a40a7bf2753648f2d1904b17a9421f,this.cl = cl;,0,1,0.1111111111111111,37
+48954891c3a40a7bf2753648f2d1904b17a9421f,public Void run() {,0,1,0.1111111111111111,38
+48954891c3a40a7bf2753648f2d1904b17a9421f,return null;,0,1,0.1111111111111111,39
+48954891c3a40a7bf2753648f2d1904b17a9421f,t.setPriority(threadPriority);,0,0,0.0,40
+48954891c3a40a7bf2753648f2d1904b17a9421f,t.setPriority(threadPriority);,1,0,0.0,41
+48954891c3a40a7bf2753648f2d1904b17a9421f,t.setDaemon(daemon);,1,0,0.0,42
+48954891c3a40a7bf2753648f2d1904b17a9421f,Thread.currentThread().setContextClassLoader(cl);,0,0,0.0,43
+48954891c3a40a7bf2753648f2d1904b17a9421f,@Override,0,0,0.0,44
+48954891c3a40a7bf2753648f2d1904b17a9421f,private ClassLoader cl;,0,0,0.0,45
+48954891c3a40a7bf2753648f2d1904b17a9421f,Thread.currentThread().setContextClassLoader(loader);,0,0,0.0,46
+48954891c3a40a7bf2753648f2d1904b17a9421f,import java.security.PrivilegedAction;,0,0,0.0,47
+48954891c3a40a7bf2753648f2d1904b17a9421f,t.setDaemon(daemon);,0,0,0.0,48
+48954891c3a40a7bf2753648f2d1904b17a9421f,Thread.currentThread().setContextClassLoader(,0,0,0.0,49
+48954891c3a40a7bf2753648f2d1904b17a9421f,AccessController.doPrivileged(pa);,0,0,0.0,50
+48954891c3a40a7bf2753648f2d1904b17a9421f,getClass().getClassLoader());,0,0,0.0,51
+48954891c3a40a7bf2753648f2d1904b17a9421f,import org.apache.tomcat.util.net.Constants;,0,0,0.0,52
+48954891c3a40a7bf2753648f2d1904b17a9421f,import java.security.AccessController;,0,0,0.0,53
+48954891c3a40a7bf2753648f2d1904b17a9421f,@Override,1,0,0.0,54

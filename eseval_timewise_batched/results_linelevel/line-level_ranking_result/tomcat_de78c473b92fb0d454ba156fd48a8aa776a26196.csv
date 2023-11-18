@@ -1,0 +1,131 @@
+commit_id,line,line_level_label,count,line_score,row
+de78c473b92fb0d454ba156fd48a8aa776a26196,"LogEntry entry = new LogEntry(record, this);",1,4,1.0,1
+de78c473b92fb0d454ba156fd48a8aa776a26196,"added = queue.offer(entry, 1000, TimeUnit.MILLISECONDS);",1,3,0.75,2
+de78c473b92fb0d454ba156fd48a8aa776a26196,"this.setName(""AsyncFileHandlerWriter-"" + System.identityHashCode(this));",1,3,0.75,3
+de78c473b92fb0d454ba156fd48a8aa776a26196,"if (executor.getQueue().offer(r, 1000, TimeUnit.MILLISECONDS)) {",0,3,0.75,4
+de78c473b92fb0d454ba156fd48a8aa776a26196,} catch (InterruptedException e) {,1,2,0.5,5
+de78c473b92fb0d454ba156fd48a8aa776a26196,} else {,1,2,0.5,6
+de78c473b92fb0d454ba156fd48a8aa776a26196,if (handler.closed) {,1,2,0.5,7
+de78c473b92fb0d454ba156fd48a8aa776a26196,protected static class LogEntry {,1,2,0.5,8
+de78c473b92fb0d454ba156fd48a8aa776a26196,LogEntry entry = queue.take();,1,2,0.5,9
+de78c473b92fb0d454ba156fd48a8aa776a26196,} catch (Exception x) {,1,2,0.5,10
+de78c473b92fb0d454ba156fd48a8aa776a26196,} catch (InterruptedException x) {,1,2,0.5,11
+de78c473b92fb0d454ba156fd48a8aa776a26196,if (!executor.isShutdown()) {,0,2,0.5,12
+de78c473b92fb0d454ba156fd48a8aa776a26196,if (executor.isShutdown()) {,0,2,0.5,13
+de78c473b92fb0d454ba156fd48a8aa776a26196,} catch (InterruptedException e) {,0,2,0.5,14
+de78c473b92fb0d454ba156fd48a8aa776a26196,if (!closed || loggerService.isTerminating()) {,0,2,0.5,15
+de78c473b92fb0d454ba156fd48a8aa776a26196,protected static class LoggerThread extends Thread {,1,1,0.25,16
+de78c473b92fb0d454ba156fd48a8aa776a26196,try {,1,1,0.25,17
+de78c473b92fb0d454ba156fd48a8aa776a26196,while (!added && !queue.offer(entry)) {,1,1,0.25,18
+de78c473b92fb0d454ba156fd48a8aa776a26196,switch (OVERFLOW_DROP_TYPE) {,1,1,0.25,19
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_LAST: {,1,1,0.25,20
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_FIRST: {,1,1,0.25,21
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_FLUSH: {,1,1,0.25,22
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_CURRENT: {,1,1,0.25,23
+de78c473b92fb0d454ba156fd48a8aa776a26196,public boolean flush() {,1,1,0.25,24
+de78c473b92fb0d454ba156fd48a8aa776a26196,public static void registerHandler() {,1,1,0.25,25
+de78c473b92fb0d454ba156fd48a8aa776a26196,public static void deregisterHandler() {,1,1,0.25,26
+de78c473b92fb0d454ba156fd48a8aa776a26196,public LoggerThread() {,1,1,0.25,27
+de78c473b92fb0d454ba156fd48a8aa776a26196,public void run() {,1,1,0.25,28
+de78c473b92fb0d454ba156fd48a8aa776a26196,entry.flush();,1,1,0.25,29
+de78c473b92fb0d454ba156fd48a8aa776a26196,"public LogEntry(LogRecord record, AsyncFileHandler handler) {",1,1,0.25,30
+de78c473b92fb0d454ba156fd48a8aa776a26196,static {,1,1,0.25,31
+de78c473b92fb0d454ba156fd48a8aa776a26196,},1,1,0.25,32
+de78c473b92fb0d454ba156fd48a8aa776a26196,while (!AsyncFileHandler.queue.isEmpty() && sleepCount < 10000) {,1,1,0.25,33
+de78c473b92fb0d454ba156fd48a8aa776a26196,private static class DropLastPolicy implements RejectedExecutionHandler {,0,1,0.25,34
+de78c473b92fb0d454ba156fd48a8aa776a26196,static class LoggerExecutorService extends ThreadPoolExecutor {,0,1,0.25,35
+de78c473b92fb0d454ba156fd48a8aa776a26196,"public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {",0,1,0.25,36
+de78c473b92fb0d454ba156fd48a8aa776a26196,},0,1,0.25,37
+de78c473b92fb0d454ba156fd48a8aa776a26196,LoggerExecutorService loggerService) {,0,1,0.25,38
+de78c473b92fb0d454ba156fd48a8aa776a26196,loggerService.execute(new Runnable() {,0,1,0.25,39
+de78c473b92fb0d454ba156fd48a8aa776a26196,public void run() {,0,1,0.25,40
+de78c473b92fb0d454ba156fd48a8aa776a26196,"* During Tomcat shutdown, the Handlers are closed before the",0,1,0.25,41
+de78c473b92fb0d454ba156fd48a8aa776a26196,* ignored if the executor is shutting down.,0,1,0.25,42
+de78c473b92fb0d454ba156fd48a8aa776a26196,* executor queue is flushed therefore the closed flag is,0,1,0.25,43
+de78c473b92fb0d454ba156fd48a8aa776a26196,"public LoggerExecutorService(final int overflowDropType, final int maxRecords) {",0,1,0.25,44
+de78c473b92fb0d454ba156fd48a8aa776a26196,switch (overflowDropType) {,0,1,0.25,45
+de78c473b92fb0d454ba156fd48a8aa776a26196,public LinkedBlockingDeque<Runnable> getQueue() {,0,1,0.25,46
+de78c473b92fb0d454ba156fd48a8aa776a26196,public void registerHandler() {,0,1,0.25,47
+de78c473b92fb0d454ba156fd48a8aa776a26196,public void deregisterHandler() {,0,1,0.25,48
+de78c473b92fb0d454ba156fd48a8aa776a26196,try {,0,1,0.25,49
+de78c473b92fb0d454ba156fd48a8aa776a26196,private static class DropFlushPolicy implements RejectedExecutionHandler {,0,1,0.25,50
+de78c473b92fb0d454ba156fd48a8aa776a26196,// Allow thread to be interrupted and back out of the publish,1,0,0.0,51
+de78c473b92fb0d454ba156fd48a8aa776a26196,queue.pollLast();,1,0,0.0,52
+de78c473b92fb0d454ba156fd48a8aa776a26196,}//while,1,0,0.0,53
+de78c473b92fb0d454ba156fd48a8aa776a26196,}//switch,1,0,0.0,54
+de78c473b92fb0d454ba156fd48a8aa776a26196,added = true;,1,0,0.0,55
+de78c473b92fb0d454ba156fd48a8aa776a26196,queue.pollFirst();,1,0,0.0,56
+de78c473b92fb0d454ba156fd48a8aa776a26196,//remove the first element in the queue,1,0,0.0,57
+de78c473b92fb0d454ba156fd48a8aa776a26196,break;,1,0,0.0,58
+de78c473b92fb0d454ba156fd48a8aa776a26196,new LinkedBlockingDeque<>(MAX_RECORDS);,1,0,0.0,59
+de78c473b92fb0d454ba156fd48a8aa776a26196,//remove the last added element,1,0,0.0,60
+de78c473b92fb0d454ba156fd48a8aa776a26196,boolean added = false;,1,0,0.0,61
+de78c473b92fb0d454ba156fd48a8aa776a26196,LoggerThread.registerHandler();,1,0,0.0,62
+de78c473b92fb0d454ba156fd48a8aa776a26196,LoggerThread.deregisterHandler();,1,0,0.0,63
+de78c473b92fb0d454ba156fd48a8aa776a26196,logger.start();,1,0,0.0,64
+de78c473b92fb0d454ba156fd48a8aa776a26196,protected static final LoggerThread logger = new LoggerThread();,1,0,0.0,65
+de78c473b92fb0d454ba156fd48a8aa776a26196,* start/stop the LoggerThread but that would require careful locking as,1,0,0.0,66
+de78c473b92fb0d454ba156fd48a8aa776a26196,protected static final LinkedBlockingDeque<LogEntry> queue =,1,0,0.0,67
+de78c473b92fb0d454ba156fd48a8aa776a26196,executor.execute(r);,0,0,0.0,68
+de78c473b92fb0d454ba156fd48a8aa776a26196,// operation. No further action required.,1,0,0.0,69
+de78c473b92fb0d454ba156fd48a8aa776a26196,// Ignore,1,0,0.0,70
+de78c473b92fb0d454ba156fd48a8aa776a26196,* the current size of the queue also needs to be taken into account and,1,0,0.0,71
+de78c473b92fb0d454ba156fd48a8aa776a26196,private final LogRecord record;,1,0,0.0,72
+de78c473b92fb0d454ba156fd48a8aa776a26196,"throw new RejectedExecutionException(""Interrupted"", e);",0,0,0.0,73
+de78c473b92fb0d454ba156fd48a8aa776a26196,handler.publishInternal(record);,1,0,0.0,74
+de78c473b92fb0d454ba156fd48a8aa776a26196,return false;,1,0,0.0,75
+de78c473b92fb0d454ba156fd48a8aa776a26196,this.handler = handler;,1,0,0.0,76
+de78c473b92fb0d454ba156fd48a8aa776a26196,this.record = record;,1,0,0.0,77
+de78c473b92fb0d454ba156fd48a8aa776a26196,super();,1,0,0.0,78
+de78c473b92fb0d454ba156fd48a8aa776a26196,private final AsyncFileHandler handler;,1,0,0.0,79
+de78c473b92fb0d454ba156fd48a8aa776a26196,x.printStackTrace();,1,0,0.0,80
+de78c473b92fb0d454ba156fd48a8aa776a26196,* there are lost of edge cases when rapidly starting and stopping,1,0,0.0,81
+de78c473b92fb0d454ba156fd48a8aa776a26196,// Ignore the attempt to interrupt the thread.,1,0,0.0,82
+de78c473b92fb0d454ba156fd48a8aa776a26196,this.setDaemon(true);,1,0,0.0,83
+de78c473b92fb0d454ba156fd48a8aa776a26196,sleepCount++;,1,0,0.0,84
+de78c473b92fb0d454ba156fd48a8aa776a26196,Thread.sleep(1);,1,0,0.0,85
+de78c473b92fb0d454ba156fd48a8aa776a26196,int sleepCount = 0;,1,0,0.0,86
+de78c473b92fb0d454ba156fd48a8aa776a26196,private static final AtomicInteger handlerCount = new AtomicInteger();,1,0,0.0,87
+de78c473b92fb0d454ba156fd48a8aa776a26196,* handlers.,1,0,0.0,88
+de78c473b92fb0d454ba156fd48a8aa776a26196,((LoggerExecutorService) executor).getQueue().pollLast();,0,0,0.0,89
+de78c473b92fb0d454ba156fd48a8aa776a26196,publishInternal(record);,0,0,0.0,90
+de78c473b92fb0d454ba156fd48a8aa776a26196,Thread.currentThread().interrupt();,0,0,0.0,91
+de78c473b92fb0d454ba156fd48a8aa776a26196,shutdownNow();,0,0,0.0,92
+de78c473b92fb0d454ba156fd48a8aa776a26196,private static final ThreadFactory THREAD_FACTORY = new ThreadFactory(THREAD_PREFIX);,0,0,0.0,93
+de78c473b92fb0d454ba156fd48a8aa776a26196,});,0,0,0.0,94
+de78c473b92fb0d454ba156fd48a8aa776a26196,*/,0,0,0.0,95
+de78c473b92fb0d454ba156fd48a8aa776a26196,/*,0,0,0.0,96
+de78c473b92fb0d454ba156fd48a8aa776a26196,@Override,0,0,0.0,97
+de78c473b92fb0d454ba156fd48a8aa776a26196,loggerService.deregisterHandler();,0,0,0.0,98
+de78c473b92fb0d454ba156fd48a8aa776a26196,this.loggerService = loggerService;,0,0,0.0,99
+de78c473b92fb0d454ba156fd48a8aa776a26196,loggerService.registerHandler();,0,0,0.0,100
+de78c473b92fb0d454ba156fd48a8aa776a26196,"AsyncFileHandler(String directory, String prefix, String suffix, Integer maxDays,",0,0,0.0,101
+de78c473b92fb0d454ba156fd48a8aa776a26196,"this(directory, prefix, suffix, maxDays, LOGGER_SERVICE);",0,0,0.0,102
+de78c473b92fb0d454ba156fd48a8aa776a26196,private final LoggerExecutorService loggerService;,0,0,0.0,103
+de78c473b92fb0d454ba156fd48a8aa776a26196,"new LoggerExecutorService(OVERFLOW_DROP_TYPE, MAX_RECORDS);",0,0,0.0,104
+de78c473b92fb0d454ba156fd48a8aa776a26196,private static final LoggerExecutorService LOGGER_SERVICE =,0,0,0.0,105
+de78c473b92fb0d454ba156fd48a8aa776a26196,"static final String THREAD_PREFIX = ""AsyncFileHandlerWriter-"";",0,0,0.0,106
+de78c473b92fb0d454ba156fd48a8aa776a26196,import java.util.concurrent.ThreadPoolExecutor;,0,0,0.0,107
+de78c473b92fb0d454ba156fd48a8aa776a26196,import java.util.concurrent.RejectedExecutionHandler;,0,0,0.0,108
+de78c473b92fb0d454ba156fd48a8aa776a26196,import java.util.concurrent.RejectedExecutionException;,0,0,0.0,109
+de78c473b92fb0d454ba156fd48a8aa776a26196,* start/stop the LoggerExecutorService but that would require careful,0,0,0.0,110
+de78c473b92fb0d454ba156fd48a8aa776a26196,* locking as the current size of the queue also needs to be taken into,0,0,0.0,111
+de78c473b92fb0d454ba156fd48a8aa776a26196,* account and there are lost of edge cases when rapidly starting and,0,0,0.0,112
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_FLUSH:,0,0,0.0,113
+de78c473b92fb0d454ba156fd48a8aa776a26196,// Ignore,0,0,0.0,114
+de78c473b92fb0d454ba156fd48a8aa776a26196,"awaitTermination(10, TimeUnit.SECONDS);",0,0,0.0,115
+de78c473b92fb0d454ba156fd48a8aa776a26196,shutdown();,0,0,0.0,116
+de78c473b92fb0d454ba156fd48a8aa776a26196,return (LinkedBlockingDeque<Runnable>) super.getQueue();,0,0,0.0,117
+de78c473b92fb0d454ba156fd48a8aa776a26196,setRejectedExecutionHandler(new DiscardPolicy());,0,0,0.0,118
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_CURRENT:,0,0,0.0,119
+de78c473b92fb0d454ba156fd48a8aa776a26196,setRejectedExecutionHandler(new DropFlushPolicy());,0,0,0.0,120
+de78c473b92fb0d454ba156fd48a8aa776a26196,setRejectedExecutionHandler(new DiscardOldestPolicy());,0,0,0.0,121
+de78c473b92fb0d454ba156fd48a8aa776a26196,* stopping handlers.,0,0,0.0,122
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_FIRST:,0,0,0.0,123
+de78c473b92fb0d454ba156fd48a8aa776a26196,break;,0,0,0.0,124
+de78c473b92fb0d454ba156fd48a8aa776a26196,setRejectedExecutionHandler(new DropLastPolicy());,0,0,0.0,125
+de78c473b92fb0d454ba156fd48a8aa776a26196,default:,0,0,0.0,126
+de78c473b92fb0d454ba156fd48a8aa776a26196,case OVERFLOW_DROP_LAST:,0,0,0.0,127
+de78c473b92fb0d454ba156fd48a8aa776a26196,"super(1, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(maxRecords), THREAD_FACTORY);",0,0,0.0,128
+de78c473b92fb0d454ba156fd48a8aa776a26196,private final AtomicInteger handlerCount = new AtomicInteger();,0,0,0.0,129
+de78c473b92fb0d454ba156fd48a8aa776a26196,return true;,1,0,0.0,130

@@ -1,0 +1,163 @@
+commit_id,line,line_level_label,count,line_score,row
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,* Returns true if this entity has a valid non blank resourceVersion in its metadata,0,2,1.0,1
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""namespace""));",1,2,1.0,2
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""name""),",1,2,1.0,3
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""id"")",1,2,1.0,4
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.kubernetes.api.model.Endpoints;,1,1,0.5,5
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.kubernetes.api.model.HasMetadata;,0,1,0.5,6
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.openshift.api.model.ImageStream;,1,1,0.5,7
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.openshift.api.model.DeploymentConfig;,1,1,0.5,8
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.openshift.api.model.BuildConfig;,1,1,0.5,9
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.openshift.api.model.Build;,1,1,0.5,10
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.kubernetes.api.model.Namespace;,1,1,0.5,11
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import io.fabric8.kubernetes.api.model.Node;,1,1,0.5,12
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,ObjectMeta metadata = getOrCreateMetadata(entity);,0,1,0.5,13
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;,0,1,0.5,14
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,metadata = new ObjectMeta();,1,1,0.5,15
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,ObjectMeta metadata = entity.getMetadata();,1,1,0.5,16
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,ObjectMeta metadata = getOrCreateMetadata(entity);,0,1,0.5,17
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,ObjectMeta metadata = entity.getMetadata();,0,1,0.5,18
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,* Returns the resource version for the entity or null if it does not have one,0,1,0.5,19
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(Template entity) {,1,0,0.0,20
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"return Strings.firstNonBlank(getNamespace(entity.getMetadata()),",1,0,0.0,21
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"getAdditionalPropertyText(entity.getAdditionalProperties(), ""namespace""),",1,0,0.0,22
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(ReplicationController entity) {,1,0,0.0,23
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(Service entity) {,1,0,0.0,24
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(OAuthClient entity) {,1,0,0.0,25
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(Route entity) {,1,0,0.0,26
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,for (int i = 0; i < lastIdx; i++) {,1,0,0.0,27
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"protected static Object getAdditionalProperty(Map<String, Object> additionalProperties, String name) {",1,0,0.0,28
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (additionalProperties != null) {,1,0,0.0,29
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return additionalProperties.get(name);,1,0,0.0,30
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"protected static String getAdditionalNestedPropertyText(Map<String, Object> additionalProperties, String... names) {",1,0,0.0,31
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,int lastIdx = names.length - 1;,1,0,0.0,32
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"Map<String, Object> map = additionalProperties;",1,0,0.0,33
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setNamespace(Template entity, String namespace) {",1,0,0.0,34
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(Pod entity) {,1,0,0.0,35
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(Service entity, String name) {",1,0,0.0,36
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(Template entity, String name) {",1,0,0.0,37
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(Endpoints entity) {,1,0,0.0,38
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(Service entity) {,1,0,0.0,39
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(OAuthClient entity) {,1,0,0.0,40
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(Route entity) {,1,0,0.0,41
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(Node entity) {,1,0,0.0,42
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(Template entity) {,1,0,0.0,43
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(ImageStream entity) {,1,0,0.0,44
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"map = getAdditionalPropertyMap(map, names[i]);",1,0,0.0,45
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,objectMeta.setName(name);,1,0,0.0,46
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(Pod entity, String name) {",1,0,0.0,47
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,getOrCreateMetadata(entity).setName(name);,1,0,0.0,48
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(ReplicationController entity, String name) {",1,0,0.0,49
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(Route entity, String namespace, String name) {",1,0,0.0,50
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,ObjectMeta objectMeta = getOrCreateMetadata(entity);,1,0,0.0,51
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,objectMeta.setNamespace(namespace);,1,0,0.0,52
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (map == null) {,1,0,0.0,53
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static void moveServicesToFrontOfArray(List<Object> list) {,1,0,0.0,54
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"return getAdditionalPropertyText(map, names[lastIdx]);",1,0,0.0,55
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static List<Object> toItemList(Object entity) throws IOException {,1,0,0.0,56
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,},0,0,0.0,57
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return answer;,0,0,0.0,58
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static Map<String, String> getOrCreateLabels(HasMetadata entity) {",0,0,0.0,59
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"Map<String, String> answer = metadata.getLabels();",0,0,0.0,60
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,metadata.setLabels(answer);,0,0,0.0,61
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,/**,0,0,0.0,62
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,* Loads the YAML file for the given DTO class,0,0,0.0,63
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,*/,0,0,0.0,64
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static <T> T loadYaml(InputStream in, Class<T> clazz) throws IOException {",0,0,0.0,65
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,byte[] data = Files.readBytes(in);,0,0,0.0,66
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"return loadYaml(data, clazz);",0,0,0.0,67
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static <T> T loadYaml(File file, Class<T> clazz) throws IOException {",0,0,0.0,68
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,byte[] data = Files.readBytes(file);,0,0,0.0,69
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static <T> T loadYaml(byte[] data, Class<T> clazz) throws IOException {",0,0,0.0,70
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,ObjectMapper mapper = new ObjectMapper(new YAMLFactory());,0,0,0.0,71
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,metadata.setAnnotations(answer);,0,0,0.0,72
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,answer = new HashMap<>();,0,0,0.0,73
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (answer == null) {,0,0,0.0,74
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,} else {,1,0,0.0,75
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return (List<Object>) entity;,1,0,0.0,76
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,} else if (entity instanceof Object[]) {,1,0,0.0,77
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,Object[] array = (Object[]) entity;,1,0,0.0,78
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<Object> answer = new ArrayList<>();,1,0,0.0,79
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,answer.add(answer);,1,0,0.0,80
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<Object> items = list.getItems();,1,0,0.0,81
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,Object item = list.get(i);,1,0,0.0,82
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"Map<String, String> answer = metadata.getAnnotations();",0,0,0.0,83
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,Object nonService = list.get(lastNonService);,1,0,0.0,84
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,protected static void removeDuplicates(List<Object> itemArray) {,1,0,0.0,85
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,Object item = itemArray.get(i);,1,0,0.0,86
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<Object> items = kubernetesList.getItems();,1,0,0.0,87
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<Object> items = toItemList(dto);,1,0,0.0,88
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static Map<String, String> getOrCreateAnnotations(HasMetadata entity) {",0,0,0.0,89
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return null;,1,0,0.0,90
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(ImageStream entity) {,1,0,0.0,91
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (entity != null) {,1,0,0.0,92
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static Map<String, String> getLabels(HasMetadata entity) {",0,0,0.0,93
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(HasMetadata entity, String namespace, String name) {",0,0,0.0,94
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,metadata.setNamespace(namespace);,0,0,0.0,95
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,metadata.setName(name);,0,0,0.0,96
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setNamespace(HasMetadata entity, String namespace) {",0,0,0.0,97
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getNamespace(HasMetadata entity) {,0,0,0.0,98
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getNamespace(entity.getMetadata());,0,0,0.0,99
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getLabels(entity.getMetadata());,0,0,0.0,100
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getName(entity.getMetadata());,0,0,0.0,101
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return Collections.EMPTY_MAP;,0,0,0.0,102
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static List<HasMetadata> toItemList(Object entity) throws IOException {,0,0,0.0,103
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return (List<HasMetadata>) entity;,0,0,0.0,104
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,} else if (entity instanceof HasMetadata[]) {,0,0,0.0,105
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,HasMetadata[] array = (HasMetadata[]) entity;,0,0,0.0,106
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<HasMetadata> answer = new ArrayList<>();,0,0,0.0,107
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"public static void setName(HasMetadata entity, String name) {",0,0,0.0,108
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(HasMetadata entity) {,0,0,0.0,109
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,answer.add((HasMetadata) entity);,0,0,0.0,110
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (entity != null) {,0,0,0.0,111
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (object instanceof HasMetadata) {,0,0,0.0,112
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getName((HasMetadata) object);,0,0,0.0,113
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(HasMetadata entity) {,0,0,0.0,114
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,/**,0,0,0.0,115
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,*/,0,0,0.0,116
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getResourceVersion(HasMetadata entity) {,0,0,0.0,117
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (metadata != null) {,0,0,0.0,118
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getResourceVersion(entity) != null;,0,0,0.0,119
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,String resourceVersion = metadata.getResourceVersion();,0,0,0.0,120
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (Strings.isNotBlank(resourceVersion)) {,0,0,0.0,121
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return resourceVersion;,0,0,0.0,122
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,},0,0,0.0,123
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return null;,0,0,0.0,124
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static boolean hasResourceVersion(HasMetadata entity) {,0,0,0.0,125
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (entity instanceof HasMetadata) {,0,0,0.0,126
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<HasMetadata> items = list.getItems();,0,0,0.0,127
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(ReplicationController entity) {,1,0,0.0,128
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(BuildConfig entity) {,1,0,0.0,129
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return metadata;,1,0,0.0,130
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(ReplicationController entity) {,1,0,0.0,131
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(Service entity) {,1,0,0.0,132
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(Namespace entity) {,1,0,0.0,133
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(Route entity) {,1,0,0.0,134
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(Build entity) {,1,0,0.0,135
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(DeploymentConfig entity) {,1,0,0.0,136
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,entity.setMetadata(metadata);,1,0,0.0,137
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(OAuthClient entity) {,1,0,0.0,138
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(Template entity) {,1,0,0.0,139
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static String getName(Pod entity) {,1,0,0.0,140
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"return Strings.firstNonBlank(getName(entity.getMetadata()),",1,0,0.0,141
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"getAdditionalPropertyText(entity.getAdditionalProperties(), ""name""),",1,0,0.0,142
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,);,1,0,0.0,143
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,},1,0,0.0,144
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (metadata == null) {,1,0,0.0,145
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static void moveServicesToFrontOfArray(List<HasMetadata> list) {,0,0,0.0,146
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,if (object instanceof Pod) {,1,0,0.0,147
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,HasMetadata item = list.get(i);,0,0,0.0,148
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,HasMetadata nonService = list.get(lastNonService);,0,0,0.0,149
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,protected static void removeDuplicates(List<HasMetadata> itemArray) {,0,0,0.0,150
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,HasMetadata item = itemArray.get(i);,0,0,0.0,151
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<HasMetadata> items = kubernetesList.getItems();,0,0,0.0,152
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,List<HasMetadata> items = toItemList(dto);,0,0,0.0,153
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getName((Pod) object);,1,0,0.0,154
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,public static ObjectMeta getOrCreateMetadata(Pod entity) {,1,0,0.0,155
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,} else if (object instanceof ReplicationController) {,1,0,0.0,156
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getName((ReplicationController) object);,1,0,0.0,157
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,} else if (object instanceof Service) {,1,0,0.0,158
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getName((Service) object);,1,0,0.0,159
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,} else if (object instanceof Route) {,1,0,0.0,160
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,return getName((Route) object);,1,0,0.0,161
+5e93e4b5de8ceda385c5700b0ffdbad89c32cbcf,"return mapper.readValue(data, clazz);",0,0,0.0,162

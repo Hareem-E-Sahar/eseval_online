@@ -1,0 +1,39 @@
+commit_id,line,line_level_label,count,line_score,row
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (!status.isRollbackOnly()) {,1,3,1.0,1
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (isActive) {,1,3,1.0,2
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,} catch (Exception e) {,1,2,0.6666666666666666,3
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (isError) {,1,2,0.6666666666666666,4
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,} else {,1,2,0.6666666666666666,5
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (!CollectionUtils.isEmpty(documents) && solrServer != null) {,0,2,0.6666666666666666,6
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (LOG.isDebugEnabled()) {,0,2,0.6666666666666666,7
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (!CollectionUtils.isEmpty(documents)) {,1,2,0.6666666666666666,8
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,if (LOG.isDebugEnabled()) {,1,2,0.6666666666666666,9
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,boolean isActive = false;,1,1,0.3333333333333333,10
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,},1,1,0.3333333333333333,11
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"public void buildIncrementalIndex(List<? extends Indexable> indexables, SolrServer solrServer) throws ServiceException {",1,1,0.3333333333333333,12
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,},0,1,0.3333333333333333,13
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"public Collection<SolrInputDocument> buildIncrementalIndex(List<? extends Indexable> indexables, SolrServer solrServer) throws ServiceException {",0,1,0.3333333333333333,14
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,},1,1,0.3333333333333333,15
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,try {,1,1,0.3333333333333333,16
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,isActive = true;,1,1,0.3333333333333333,17
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"protected void finalizeTransaction(TransactionStatus status, boolean isError) {",1,1,0.3333333333333333,18
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"def.setName(""saveOrder"");",1,1,0.3333333333333333,19
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,DefaultTransactionDefinition def = new DefaultTransactionDefinition();,1,1,0.3333333333333333,20
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,import org.springframework.transaction.support.DefaultTransactionDefinition;,1,1,0.3333333333333333,21
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,import org.broadleafcommerce.common.classloader.release.ThreadLocalManager;,1,1,0.3333333333333333,22
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"TransactionStatus status = TransactionUtils.createTransaction(""readProducts"",",0,1,0.3333333333333333,23
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,import org.broadleafcommerce.common.util.TransactionUtils;,0,1,0.3333333333333333,24
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,TransactionStatus status = transactionManager.getTransaction(def);,1,1,0.3333333333333333,25
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"finalizeTransaction(status, true);",1,0,0.0,26
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,return documents;,0,0,0.0,27
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"LOG.debug(String.format(""Built incremental product index - pageSize: [%s] in [%s]"", indexables.size(), s.toLapString()));",0,0,0.0,28
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,transactionManager.commit(status);,1,0,0.0,29
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,transactionManager.rollback(status);,1,0,0.0,30
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,//do nothing,1,0,0.0,31
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"TransactionUtils.finalizeTransaction(status, transactionManager, true);",0,0,0.0,32
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"finalizeTransaction(status, false);",1,0,0.0,33
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);,1,0,0.0,34
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,def.setReadOnly(true);,1,0,0.0,35
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"TransactionUtils.finalizeTransaction(status, transactionManager, false);",0,0,0.0,36
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"TransactionDefinition.PROPAGATION_REQUIRED, transactionManager, true);",0,0,0.0,37
+43a8dc6bed524e48c1dffdf94b069cc751e7cdac,"LOG.debug(String.format(""Built incremental product index - pageSize: [%s] in [%s]"", indexables.size(), s.toLapString()));",1,0,0.0,38

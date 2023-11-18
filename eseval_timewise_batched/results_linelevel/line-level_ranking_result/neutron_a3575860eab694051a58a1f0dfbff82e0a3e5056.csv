@@ -1,0 +1,37 @@
+commit_id,line,line_level_label,count,line_score,row
+a3575860eab694051a58a1f0dfbff82e0a3e5056,description = 'my webservers',0,4,1.0,1
+a3575860eab694051a58a1f0dfbff82e0a3e5056,security_group_id = sg['security_group']['id'],0,3,0.75,2
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"with self.security_group(name, description) as sg:",0,3,0.75,3
+a3575860eab694051a58a1f0dfbff82e0a3e5056,name = 'webservers',0,2,0.5,4
+a3575860eab694051a58a1f0dfbff82e0a3e5056,protocol = 6  # TCP,0,2,0.5,5
+a3575860eab694051a58a1f0dfbff82e0a3e5056,rule = self._build_security_group_rule(,0,2,0.5,6
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"res = self._create_security_group_rule(self.fmt, rule)",0,2,0.5,7
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"security_group_id, 'ingress', protocol, '22', '22',",1,2,0.5,8
+a3575860eab694051a58a1f0dfbff82e0a3e5056,data['security_group_rule']['port_range_min'] = port_range_min,0,1,0.25,9
+a3575860eab694051a58a1f0dfbff82e0a3e5056,data['security_group_rule']['port_range_max'] = port_range_max,0,1,0.25,10
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"security_group_id, 'ingress', protocol, '22', '22')",0,1,0.25,11
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"security_group_id, 'ingress', protocol)",0,0,0.0,12
+a3575860eab694051a58a1f0dfbff82e0a3e5056,if port_range_max:,0,0,0.0,13
+a3575860eab694051a58a1f0dfbff82e0a3e5056,def test_create_security_group_rule_tcp_protocol_as_number(self):,0,0,0.0,14
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.deserialize(self.fmt, res)",0,0,0.0,15
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEqual(res.status_int, 201)",0,0,0.0,16
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"'port_range_max': port_range_max,",1,0,0.0,17
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"def _build_security_group_rule(self, security_group_id, direction,",1,0,0.0,18
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"protocol, port_range_min, port_range_max,",1,0,0.0,19
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"'protocol': protocol,",1,0,0.0,20
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"'port_range_min': port_range_min,",1,0,0.0,21
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"'protocol': proto,",0,0,0.0,22
+a3575860eab694051a58a1f0dfbff82e0a3e5056,if port_range_min:,0,0,0.0,23
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEquals(rule['security_group_rule']['ethertype'],",1,0,0.0,24
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"port_range_min=None, port_range_max=None,",0,0,0.0,25
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"def _build_security_group_rule(self, security_group_id, direction, proto,",0,0,0.0,26
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEquals(len(port[ext_sg.SECURITYGROUPS]), 1)",1,0,0.0,27
+a3575860eab694051a58a1f0dfbff82e0a3e5056,'IPv4'),1,0,0.0,28
+a3575860eab694051a58a1f0dfbff82e0a3e5056,protocol.lower()),1,0,0.0,29
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEquals(rule['security_group_rule']['protocol'],",1,0,0.0,30
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEqual(len(port[ext_sg.SECURITYGROUPS]), 1)",0,0,0.0,31
+a3575860eab694051a58a1f0dfbff82e0a3e5056,'IPv4'),0,0,0.0,32
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEqual(rule['security_group_rule']['ethertype'],",0,0,0.0,33
+a3575860eab694051a58a1f0dfbff82e0a3e5056,protocol.lower()),0,0,0.0,34
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"self.assertEqual(rule['security_group_rule']['protocol'],",0,0,0.0,35
+a3575860eab694051a58a1f0dfbff82e0a3e5056,"None, None)",1,0,0.0,36

@@ -1,0 +1,1012 @@
+commit_id,line,line_level_label,count,line_score,row
+4a1a37ce9f8baf2078a1a44380895d144203a876,"#   A race could occur, if the lb agent removes the tap device",1,3,1.0,1
+4a1a37ce9f8baf2078a1a44380895d144203a876,sync = self.process_network_devices(device_info),1,3,1.0,2
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Only update devices that currently exist.,1,2,0.6666666666666666,3
+4a1a37ce9f8baf2078a1a44380895d144203a876,# set the tap device up again.,1,2,0.6666666666666666,4
+4a1a37ce9f8baf2078a1a44380895d144203a876,# no resync is needed,1,2,0.6666666666666666,5
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync = False,1,2,0.6666666666666666,6
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync = True,1,2,0.6666666666666666,7
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info = {},1,2,0.6666666666666666,8
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['current'] = current_devices,1,2,0.6666666666666666,9
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Retry cleaning devices that may not have been cleaned properly.,1,2,0.6666666666666666,10
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Retry updating devices that may not have been updated properly.,1,2,0.6666666666666666,11
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info = None,1,2,0.6666666666666666,12
+4a1a37ce9f8baf2078a1a44380895d144203a876,#   The race could occur if the lb-agent sets the taps device,1,2,0.6666666666666666,13
+4a1a37ce9f8baf2078a1a44380895d144203a876,sync = True,1,2,0.6666666666666666,14
+4a1a37ce9f8baf2078a1a44380895d144203a876,sync = False,1,2,0.6666666666666666,15
+4a1a37ce9f8baf2078a1a44380895d144203a876,"agent = CommonAgentLoop(manager, polling_interval, quitting_rpc_timeout,",1,2,0.6666666666666666,16
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent = self.agent,1,2,0.6666666666666666,17
+4a1a37ce9f8baf2078a1a44380895d144203a876,devices = [DEVICE_1],1,2,0.6666666666666666,18
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync = agent.treat_devices_removed(devices),1,2,0.6666666666666666,19
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device_info = {'current': set(),",1,2,0.6666666666666666,20
+4a1a37ce9f8baf2078a1a44380895d144203a876,# configured with admin_state_up = True. Libvirt would just,1,2,0.6666666666666666,21
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device_info = self.scan_devices(previous=device_info, sync=sync)",1,2,0.6666666666666666,22
+4a1a37ce9f8baf2078a1a44380895d144203a876,# with admin_state_up = False:,1,2,0.6666666666666666,23
+4a1a37ce9f8baf2078a1a44380895d144203a876,devices = len(self.mgr.get_all_devices()),1,2,0.6666666666666666,24
+4a1a37ce9f8baf2078a1a44380895d144203a876,# - admin_state_down: set tap device state to down,1,2,0.6666666666666666,25
+4a1a37ce9f8baf2078a1a44380895d144203a876,update_devices.side_effect = device_info,0,2,0.6666666666666666,26
+4a1a37ce9f8baf2078a1a44380895d144203a876,lbmgr_instance.update_devices.return_value = device_info,1,2,0.6666666666666666,27
+4a1a37ce9f8baf2078a1a44380895d144203a876,"msg = _(""Adding device %(tap_device_name)s to bridge """,1,2,0.6666666666666666,28
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_(""Error in agent loop. Devices info: %s""),",1,2,0.6666666666666666,29
+4a1a37ce9f8baf2078a1a44380895d144203a876,"agent = ca.CommonAgentLoop(manager, polling_interval, quitting_rpc_timeout,",0,2,0.6666666666666666,30
+4a1a37ce9f8baf2078a1a44380895d144203a876,# stores all configured ports on agent,1,2,0.6666666666666666,31
+4a1a37ce9f8baf2078a1a44380895d144203a876,# flag to do a sync after revival,1,2,0.6666666666666666,32
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Agent loop found changes! %s""), device_info)",1,2,0.6666666666666666,33
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent_state.get('configurations')['devices'] = devices,1,2,0.6666666666666666,34
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Define the listening consumers for the agent,1,2,0.6666666666666666,35
+4a1a37ce9f8baf2078a1a44380895d144203a876,"# Updated devices are processed the same as new ones, as their",1,2,0.6666666666666666,36
+4a1a37ce9f8baf2078a1a44380895d144203a876,# work when a device is new and updated in the same polling iteration.,1,2,0.6666666666666666,37
+4a1a37ce9f8baf2078a1a44380895d144203a876,# If one of the above operations fails => resync with plugin,1,2,0.6666666666666666,38
+4a1a37ce9f8baf2078a1a44380895d144203a876,# resync is needed,1,2,0.6666666666666666,39
+4a1a37ce9f8baf2078a1a44380895d144203a876,device = device_details['device'],1,2,0.6666666666666666,40
+4a1a37ce9f8baf2078a1a44380895d144203a876,# - admin_state_up: set tap device state to up,1,2,0.6666666666666666,41
+4a1a37ce9f8baf2078a1a44380895d144203a876,# This is the first iteration of daemon_loop().,1,1,0.3333333333333333,42
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Re-add all existing devices.,1,1,0.3333333333333333,43
+4a1a37ce9f8baf2078a1a44380895d144203a876,"# This is the first iteration, or the previous one had a problem.",1,1,0.3333333333333333,44
+4a1a37ce9f8baf2078a1a44380895d144203a876,# manually deleted),1,1,0.3333333333333333,45
+4a1a37ce9f8baf2078a1a44380895d144203a876,# clear any orphaned ARP spoofing rules (e.g. interface was,1,1,0.3333333333333333,46
+4a1a37ce9f8baf2078a1a44380895d144203a876,"previous = {'added': set(),",1,1,0.3333333333333333,47
+4a1a37ce9f8baf2078a1a44380895d144203a876,return resync,1,1,0.3333333333333333,48
+4a1a37ce9f8baf2078a1a44380895d144203a876,current_devices = self.mgr.get_all_devices(),1,1,0.3333333333333333,49
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated_devices = self.rpc_callbacks.get_and_clear_updated_devices(),1,1,0.3333333333333333,50
+4a1a37ce9f8baf2078a1a44380895d144203a876,"details = self.plugin_rpc.update_device_down(self.context,",1,1,0.3333333333333333,51
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_id = self._clean_network_ports(device),1,1,0.3333333333333333,52
+4a1a37ce9f8baf2078a1a44380895d144203a876,# And clean any that disappeared since the previous iteration.,1,1,0.3333333333333333,53
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['added'] = current_devices,1,1,0.3333333333333333,54
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Agent out of sync with plugin!""))",1,1,0.3333333333333333,55
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['removed'] = (previous['removed'] | previous['current'],1,1,0.3333333333333333,56
+4a1a37ce9f8baf2078a1a44380895d144203a876,# And any that were updated since the previous iteration.,1,1,0.3333333333333333,57
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['updated'] = (previous['updated'] | updated_devices,1,1,0.3333333333333333,58
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['added'] = current_devices - previous['current'],1,1,0.3333333333333333,59
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['removed'] = previous['current'] - current_devices,1,1,0.3333333333333333,60
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['updated'] = updated_devices & current_devices,1,1,0.3333333333333333,61
+4a1a37ce9f8baf2078a1a44380895d144203a876,return device_info,1,1,0.3333333333333333,62
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""LinuxBridge Agent RPC Daemon Started!""))",1,1,0.3333333333333333,63
+4a1a37ce9f8baf2078a1a44380895d144203a876,start = time.time(),1,1,0.3333333333333333,64
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Agent loop found changes! %s"", device_info)",1,1,0.3333333333333333,65
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_LE(""Error in agent loop. Devices info: %s""),",1,1,0.3333333333333333,66
+4a1a37ce9f8baf2078a1a44380895d144203a876,# sleep till end of polling interval,1,1,0.3333333333333333,67
+4a1a37ce9f8baf2078a1a44380895d144203a876,for device in devices:,1,1,0.3333333333333333,68
+4a1a37ce9f8baf2078a1a44380895d144203a876,details = None,1,1,0.3333333333333333,69
+4a1a37ce9f8baf2078a1a44380895d144203a876,# - admin_state_down: remove tap from bridge,1,1,0.3333333333333333,70
+4a1a37ce9f8baf2078a1a44380895d144203a876,# update plugin about port status if admin_state is up,1,1,0.3333333333333333,71
+4a1a37ce9f8baf2078a1a44380895d144203a876,# 2) The new code is much more readable,1,1,0.3333333333333333,72
+4a1a37ce9f8baf2078a1a44380895d144203a876,network_id = device_details['network_id'],1,1,0.3333333333333333,73
+4a1a37ce9f8baf2078a1a44380895d144203a876,interface_plugged = self.mgr.plug_interface(,1,1,0.3333333333333333,74
+4a1a37ce9f8baf2078a1a44380895d144203a876,# REVISIT(scheuran): Changed the way how ports admin_state_up,1,1,0.3333333333333333,75
+4a1a37ce9f8baf2078a1a44380895d144203a876,# is implemented.,1,1,0.3333333333333333,76
+4a1a37ce9f8baf2078a1a44380895d144203a876,#,1,1,0.3333333333333333,77
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Old lb implementation:,1,1,0.3333333333333333,78
+4a1a37ce9f8baf2078a1a44380895d144203a876,# - admin_state_up: ensure that tap is plugged into bridge,1,1,0.3333333333333333,79
+4a1a37ce9f8baf2078a1a44380895d144203a876,rpc_api.client.timeout = timeout,1,1,0.3333333333333333,80
+4a1a37ce9f8baf2078a1a44380895d144203a876,# New lb implementation:,1,1,0.3333333333333333,81
+4a1a37ce9f8baf2078a1a44380895d144203a876,# However both approaches could result in races with,1,1,0.3333333333333333,82
+4a1a37ce9f8baf2078a1a44380895d144203a876,# nova/libvirt and therefore to an invalid system state in the,1,1,0.3333333333333333,83
+4a1a37ce9f8baf2078a1a44380895d144203a876,"# scenario, where an instance is booted with a port configured",1,1,0.3333333333333333,84
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Libvirt does the following actions in exactly,1,1,0.3333333333333333,85
+4a1a37ce9f8baf2078a1a44380895d144203a876,# this order (see libvirt virnetdevtap.c),1,1,0.3333333333333333,86
+4a1a37ce9f8baf2078a1a44380895d144203a876,"#     1) Create the tap device, set its MAC and MTU",1,1,0.3333333333333333,87
+4a1a37ce9f8baf2078a1a44380895d144203a876,#     2) Plug the tap into the bridge,1,1,0.3333333333333333,88
+4a1a37ce9f8baf2078a1a44380895d144203a876,#     3) Set the tap online,1,1,0.3333333333333333,89
+4a1a37ce9f8baf2078a1a44380895d144203a876,#   right after step 1). Then libvirt will add it to the bridge,1,1,0.3333333333333333,90
+4a1a37ce9f8baf2078a1a44380895d144203a876,#   again in step 2).,1,1,0.3333333333333333,91
+4a1a37ce9f8baf2078a1a44380895d144203a876,#   state to down right after step 2). In step 3) libvirt,1,1,0.3333333333333333,92
+4a1a37ce9f8baf2078a1a44380895d144203a876,#   might set it to up again.,1,1,0.3333333333333333,93
+4a1a37ce9f8baf2078a1a44380895d144203a876,# This is not an issue if an instance is booted with a port,1,1,0.3333333333333333,94
+4a1a37ce9f8baf2078a1a44380895d144203a876,# This refactoring is recommended for the following reasons:,1,1,0.3333333333333333,95
+4a1a37ce9f8baf2078a1a44380895d144203a876,# 1) An existing race with libvirt caused by the behavior of,1,1,0.3333333333333333,96
+4a1a37ce9f8baf2078a1a44380895d144203a876,#    the old implementation. See Bug #1312016,1,1,0.3333333333333333,97
+4a1a37ce9f8baf2078a1a44380895d144203a876,elapsed = (time.time() - start),1,1,0.3333333333333333,98
+4a1a37ce9f8baf2078a1a44380895d144203a876,"expected = {'current': set([1, 2]),",1,1,0.3333333333333333,99
+4a1a37ce9f8baf2078a1a44380895d144203a876,# disable setting up periodic state reporting,1,1,0.3333333333333333,100
+4a1a37ce9f8baf2078a1a44380895d144203a876,previous = {,1,1,0.3333333333333333,101
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Device 2 got an concurrent update via network_update,1,1,0.3333333333333333,102
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated = set([2]),1,1,0.3333333333333333,103
+4a1a37ce9f8baf2078a1a44380895d144203a876,expected = {,1,1,0.3333333333333333,104
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.prevent_arp_spoofing = True,1,1,0.3333333333333333,105
+4a1a37ce9f8baf2078a1a44380895d144203a876,previous = None,1,1,0.3333333333333333,106
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.sg_agent.setup_port_filters = mock.Mock(),1,1,0.3333333333333333,107
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.treat_devices_added_updated = mock.Mock(return_value=False),1,1,0.3333333333333333,108
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.treat_devices_removed = mock.Mock(return_value=False),1,1,0.3333333333333333,109
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock_details = {'device': 'dev123',",1,1,0.3333333333333333,110
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.ext_manager = mock.Mock(),1,1,0.3333333333333333,111
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.plugin_rpc = mock.Mock(),1,1,0.3333333333333333,112
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.plugin_rpc.get_devices_details_list.return_value = [mock_details],1,1,0.3333333333333333,113
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr = mock.Mock(),1,1,0.3333333333333333,114
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.plug_interface.return_value = False,1,1,0.3333333333333333,115
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_port_data = {,1,1,0.3333333333333333,116
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.plug_interface.return_value = True,1,1,0.3333333333333333,117
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock_segment = amb.NetworkSegment(mock_details['network_type'],",1,1,0.3333333333333333,118
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_needed = agent.treat_devices_added_updated(set(['tap1'])),1,1,0.3333333333333333,119
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.quitting_rpc_timeout = None,1,1,0.3333333333333333,120
+4a1a37ce9f8baf2078a1a44380895d144203a876,report_st.return_value = constants.AGENT_REVIVED,1,1,0.3333333333333333,121
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_1_data = PORT_DATA,1,1,0.3333333333333333,122
+4a1a37ce9f8baf2078a1a44380895d144203a876,NETWORK_2_ID = 'fake_second_network',1,1,0.3333333333333333,123
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_2_data = {,1,1,0.3333333333333333,124
+4a1a37ce9f8baf2078a1a44380895d144203a876,cleaned_port_id = self.agent._clean_network_ports(DEVICE_1),1,1,0.3333333333333333,125
+4a1a37ce9f8baf2078a1a44380895d144203a876,cleaned_port_id = self.agent._clean_network_ports(,1,1,0.3333333333333333,126
+4a1a37ce9f8baf2078a1a44380895d144203a876,fake_current = set([1]),1,1,0.3333333333333333,127
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated = set([3]),1,1,0.3333333333333333,128
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.get_bridge_names_p = mock.patch.object(bridge_lib,",1,1,0.3333333333333333,129
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated = set([1]),1,1,0.3333333333333333,130
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.get_bridge_names = self.get_bridge_names_p.start(),1,1,0.3333333333333333,131
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.get_bridge_names.return_value = [""br-int"", ""brq1""]",1,1,0.3333333333333333,132
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager = mock.Mock(),1,1,0.3333333333333333,133
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager.get_all_devices.return_value = [],1,1,0.3333333333333333,134
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager.get_agent_configurations.return_value = {},1,1,0.3333333333333333,135
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager.get_rpc_consumers.return_value = [],1,1,0.3333333333333333,136
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent = linuxbridge_neutron_agent.CommonAgentLoop(,1,1,0.3333333333333333,137
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.ensure_port_admin_state = mock.Mock(),1,1,0.3333333333333333,138
+4a1a37ce9f8baf2078a1a44380895d144203a876,"fn_udd.return_value = {'device': DEVICE_1,",1,1,0.3333333333333333,139
+4a1a37ce9f8baf2078a1a44380895d144203a876,fn_udd.side_effect = Exception(),1,1,0.3333333333333333,140
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent._ensure_port_admin_state = mock.Mock(),1,1,0.3333333333333333,141
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.mgr = mock.Mock(),1,1,0.3333333333333333,142
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.mgr.get_all_devices.return_value = fake_current,1,1,0.3333333333333333,143
+4a1a37ce9f8baf2078a1a44380895d144203a876,"results = self.agent.scan_devices(previous, sync)",1,1,0.3333333333333333,144
+4a1a37ce9f8baf2078a1a44380895d144203a876,"previous = {'current': set([1, 2]),",1,1,0.3333333333333333,145
+4a1a37ce9f8baf2078a1a44380895d144203a876,"fake_current = set([1, 2])",1,1,0.3333333333333333,146
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated = set(),1,1,0.3333333333333333,147
+4a1a37ce9f8baf2078a1a44380895d144203a876,devices_details_list = self.plugin_rpc.get_devices_details_list(,1,1,0.3333333333333333,148
+4a1a37ce9f8baf2078a1a44380895d144203a876,"fake_current = set([2, 3])",1,1,0.3333333333333333,149
+4a1a37ce9f8baf2078a1a44380895d144203a876,"expected = {'current': set([2, 3]),",1,1,0.3333333333333333,150
+4a1a37ce9f8baf2078a1a44380895d144203a876,"previous = {'current': set([2, 3]),",1,1,0.3333333333333333,151
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Device 2 disappeared.,1,1,0.3333333333333333,152
+4a1a37ce9f8baf2078a1a44380895d144203a876,fake_current = set([3]),1,1,0.3333333333333333,153
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Device 1 should be retried.,1,1,0.3333333333333333,154
+4a1a37ce9f8baf2078a1a44380895d144203a876,"expected = {'current': set([3]),",1,1,0.3333333333333333,155
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment = amb.NetworkSegment(,1,1,0.3333333333333333,156
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.prevent_arp_spoofing = True,1,1,0.3333333333333333,157
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_b = self.treat_devices_removed(device_info['removed']),1,1,0.3333333333333333,158
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_id = 'fake_id',0,1,0.3333333333333333,159
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager.get_all_devices.return_value = [],0,1,0.3333333333333333,160
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager.get_agent_configurations.return_value = {},0,1,0.3333333333333333,161
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager.get_rpc_consumers.return_value = [],0,1,0.3333333333333333,162
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent = linuxbridge_neutron_agent.CommonAgentLoop(,0,1,0.3333333333333333,163
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.ensure_port_admin_state = mock.Mock(),0,1,0.3333333333333333,164
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.mgr = mock.Mock(),0,1,0.3333333333333333,165
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.mgr.get_all_devices.return_value = fake_current,0,1,0.3333333333333333,166
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr = mock.Mock(),0,1,0.3333333333333333,167
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.plug_interface.return_value = True,0,1,0.3333333333333333,168
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock_segment = amb.NetworkSegment(mock_details['network_type'],",0,1,0.3333333333333333,169
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_needed = agent.treat_devices_added_updated(set(['tap1'])),0,1,0.3333333333333333,170
+4a1a37ce9f8baf2078a1a44380895d144203a876,"segment = amb.NetworkSegment(p_const.TYPE_VLAN, ""physnet-1"", ""1"")",0,1,0.3333333333333333,171
+4a1a37ce9f8baf2078a1a44380895d144203a876,tap_name = self.lbm.get_tap_device_name(port_id),0,1,0.3333333333333333,172
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.get_mac.return_value = '00:00:00:00:00:01',1,1,0.3333333333333333,173
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.mgr = get_linuxbridge_manager(,0,1,0.3333333333333333,174
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.mgr.vxlan_mode = lconst.VXLAN_UCAST,0,1,0.3333333333333333,175
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment = mock.Mock(),0,1,0.3333333333333333,176
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment.network_type = 'vxlan',0,1,0.3333333333333333,177
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment.segmentation_id = 1,0,1,0.3333333333333333,178
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lb_rpc.network_map['net_id'] = segment,0,1,0.3333333333333333,179
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lb_rpc.network_map = {NETWORK_ID: mock_net},0,1,0.3333333333333333,180
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lb_rpc.network_map = {'123': mock_net},0,1,0.3333333333333333,181
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.get_devices_p = mock.patch.object(ip_lib.IPWrapper, 'get_devices')",1,1,0.3333333333333333,182
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.get_devices = self.get_devices_p.start(),1,1,0.3333333333333333,183
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.get_devices.return_value = [ip_lib.IPDevice('eth77')],1,1,0.3333333333333333,184
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.get_mac_p = mock.patch('neutron.agent.linux.utils.',1,1,0.3333333333333333,185
+4a1a37ce9f8baf2078a1a44380895d144203a876,manager = mock.Mock(),0,1,0.3333333333333333,186
+4a1a37ce9f8baf2078a1a44380895d144203a876,""" Agent terminated!""), e)",1,1,0.3333333333333333,187
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Agent out of sync with plugin!""))",1,1,0.3333333333333333,188
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""LinuxBridge Agent RPC Daemon Started!""))",1,1,0.3333333333333333,189
+4a1a37ce9f8baf2078a1a44380895d144203a876,update_devices.side_effect = RuntimeError,0,1,0.3333333333333333,190
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_a = self.treat_devices_added_updated(devices_added_updated),1,1,0.3333333333333333,191
+4a1a37ce9f8baf2078a1a44380895d144203a876,log.side_effect = info_mock,0,1,0.3333333333333333,192
+4a1a37ce9f8baf2078a1a44380895d144203a876,process_network_devices.side_effect = RuntimeError,0,1,0.3333333333333333,193
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lbmgr_patcher = mock.patch('neutron.plugins.linuxbridge.agent.',1,1,0.3333333333333333,194
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lbmgr_mock = self.lbmgr_patcher.start(),1,1,0.3333333333333333,195
+4a1a37ce9f8baf2078a1a44380895d144203a876,lbmgr_instance = self.lbmgr_mock.return_value,1,1,0.3333333333333333,196
+4a1a37ce9f8baf2078a1a44380895d144203a876,lbmgr_instance.update_devices.side_effect = RuntimeError,1,1,0.3333333333333333,197
+4a1a37ce9f8baf2078a1a44380895d144203a876,log.side_effect = info_mock,1,1,0.3333333333333333,198
+4a1a37ce9f8baf2078a1a44380895d144203a876,process_network_devices.side_effect = RuntimeError,1,1,0.3333333333333333,199
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""tap device name""))",0,1,0.3333333333333333,200
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""incorrect vxlan device name""), segmentation_id)",0,1,0.3333333333333333,201
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Adding device %(tap_device_name)s to bridge """,0,1,0.3333333333333333,202
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Removing device %(interface_name)s from bridge """,0,1,0.3333333333333333,203
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Cannot remove device %(interface_name)s bridge """,0,1,0.3333333333333333,204
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""LinuxBridge Agent RPC Daemon Started!""))",0,1,0.3333333333333333,205
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Agent out of sync with plugin!""))",0,1,0.3333333333333333,206
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Agent loop found changes! %s"", device_info)",0,1,0.3333333333333333,207
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_LE(""Error in agent loop. Devices info: %s""),",0,1,0.3333333333333333,208
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""tap device name""))",1,1,0.3333333333333333,209
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""incorrect vxlan device name""), segmentation_id)",1,1,0.3333333333333333,210
+4a1a37ce9f8baf2078a1a44380895d144203a876,"msg = _(""%(tap_device_name)s already exists on bridge """,1,1,0.3333333333333333,211
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Removing device %(interface_name)s from bridge """,1,1,0.3333333333333333,212
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done removing device %(interface_name)s from bridge """,1,1,0.3333333333333333,213
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Cannot remove device %(interface_name)s bridge """,1,1,0.3333333333333333,214
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.get_mac = self.get_mac_p.start(),1,1,0.3333333333333333,215
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done removing device %(interface_name)s from bridge """,0,1,0.3333333333333333,216
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent = linuxbridge_neutron_agent.LinuxBridgeNeutronAgentRPC(,1,1,0.3333333333333333,217
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.state_rpc = agent_rpc.PluginReportStateAPI(topics.REPORTS),1,1,0.3333333333333333,218
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.context = context.get_admin_context_without_session(),1,1,0.3333333333333333,219
+4a1a37ce9f8baf2078a1a44380895d144203a876,configurations = {'extensions': self.ext_manager.names()},1,1,0.3333333333333333,220
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent_state = {,1,1,0.3333333333333333,221
+4a1a37ce9f8baf2078a1a44380895d144203a876,report_interval = cfg.CONF.AGENT.report_interval,1,1,0.3333333333333333,222
+4a1a37ce9f8baf2078a1a44380895d144203a876,heartbeat = loopingcall.FixedIntervalLoopingCall(,1,1,0.3333333333333333,223
+4a1a37ce9f8baf2078a1a44380895d144203a876,"agent_status = self.state_rpc.report_state(self.context,",1,1,0.3333333333333333,224
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.fullsync = True,1,1,0.3333333333333333,225
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.plugin_rpc = agent_rpc.PluginApi(topics.PLUGIN),1,1,0.3333333333333333,226
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.sg_plugin_rpc = sg_rpc.SecurityGroupServerRpcApi(topics.PLUGIN),1,1,0.3333333333333333,227
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.sg_agent = sg_rpc.SecurityGroupAgentRpc(,1,1,0.3333333333333333,228
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent_id = self.mgr.get_agent_id(),1,1,0.3333333333333333,229
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.topic = topics.AGENT,1,1,0.3333333333333333,230
+4a1a37ce9f8baf2078a1a44380895d144203a876,# RPC network init,1,1,0.3333333333333333,231
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.network_ports = collections.defaultdict(list),1,1,0.3333333333333333,232
+4a1a37ce9f8baf2078a1a44380895d144203a876,# Handle updates from service,1,1,0.3333333333333333,233
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.rpc_callbacks = self.mgr.get_rpc_callbacks(self.context, self,",1,1,0.3333333333333333,234
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.endpoints = [self.rpc_callbacks],1,1,0.3333333333333333,235
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.connection = agent_rpc.create_consumers(self.endpoints,",1,1,0.3333333333333333,236
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.ext_manager = (,1,1,0.3333333333333333,237
+4a1a37ce9f8baf2078a1a44380895d144203a876,if device == port_data['device']:,1,1,0.3333333333333333,238
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""device"": device",1,1,0.3333333333333333,239
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_a = False,1,1,0.3333333333333333,240
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_b = False,1,1,0.3333333333333333,241
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent._ensure_port_admin_state = mock.Mock(),1,1,0.3333333333333333,242
+4a1a37ce9f8baf2078a1a44380895d144203a876,# admin_state_up may have changed. The set union prevents duplicating,1,1,0.3333333333333333,243
+4a1a37ce9f8baf2078a1a44380895d144203a876,devices_added_updated = (set(device_info.get('added')),1,1,0.3333333333333333,244
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.fullsync = False,1,1,0.3333333333333333,245
+4a1a37ce9f8baf2078a1a44380895d144203a876,consumers = self.mgr.get_rpc_consumers(),1,1,0.3333333333333333,246
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.prevent_arp_spoofing = cfg.CONF.AGENT.prevent_arp_spoofing,1,1,0.3333333333333333,247
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment = mock.Mock(),1,1,0.3333333333333333,248
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.updated_devices = updated,1,1,0.3333333333333333,249
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent_binary = agent_binary,1,1,0.3333333333333333,250
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.br_mgr.get_tap_devices.return_value = fake_current,1,1,0.3333333333333333,251
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.br_mgr = mock.Mock(),1,1,0.3333333333333333,252
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.br_mgr.add_interface.return_value = True,1,1,0.3333333333333333,253
+4a1a37ce9f8baf2078a1a44380895d144203a876,resync_needed = agent.treat_devices_added_updated(set(['tap1'])),1,1,0.3333333333333333,254
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.br_mgr.get_tap_device_name.return_value = tap_name,1,1,0.3333333333333333,255
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_id = 'fake_id',1,1,0.3333333333333333,256
+4a1a37ce9f8baf2078a1a44380895d144203a876,tap_name = self.agent.br_mgr.get_tap_device_name(port_id),1,1,0.3333333333333333,257
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.br_mgr = mock.Mock(),1,1,0.3333333333333333,258
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.br_mgr = get_linuxbridge_manager(,1,1,0.3333333333333333,259
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.br_mgr.vxlan_mode = lconst.VXLAN_UCAST,1,1,0.3333333333333333,260
+4a1a37ce9f8baf2078a1a44380895d144203a876,tap_name = constants.TAP_DEVICE_PREFIX + mock_details['port_id'],1,1,0.3333333333333333,261
+4a1a37ce9f8baf2078a1a44380895d144203a876,:param agent_binary: The agent binary string,1,1,0.3333333333333333,262
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lb_rpc.agent.br_mgr.network_map = {'123': mock_net},1,1,0.3333333333333333,263
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.polling_interval = polling_interval,1,1,0.3333333333333333,264
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment.network_type = 'vxlan',1,1,0.3333333333333333,265
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent_type = agent_type,1,1,0.3333333333333333,266
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.mgr = manager,1,1,0.3333333333333333,267
+4a1a37ce9f8baf2078a1a44380895d144203a876,:param agent_type: Specifies the type of the agent,1,1,0.3333333333333333,268
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.quitting_rpc_timeout = quitting_rpc_timeout,1,1,0.3333333333333333,269
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.lb_rpc.agent.br_mgr.network_map = {NETWORK_ID: mock_net},1,1,0.3333333333333333,270
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.updated_devices = set(),1,1,0.3333333333333333,271
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.br_mgr.network_map['net_id'] = segment,1,1,0.3333333333333333,272
+4a1a37ce9f8baf2078a1a44380895d144203a876,segment.segmentation_id = 1,1,1,0.3333333333333333,273
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""port_id"": port_id,",1,0,0.0,274
+4a1a37ce9f8baf2078a1a44380895d144203a876,if devices_added_updated:,1,0,0.0,275
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.network_ports[network_id].append({,1,0,0.0,276
+4a1a37ce9f8baf2078a1a44380895d144203a876,}),1,0,0.0,277
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def process_network_devices(self, device_info):",1,0,0.0,278
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.sg_agent.setup_port_filters(device_info.get('added'),",1,0,0.0,279
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info.get('updated')),1,0,0.0,280
+4a1a37ce9f8baf2078a1a44380895d144203a876,| set(device_info.get('updated'))),1,0,0.0,281
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Port %(device)s updated. Details: %(details)s""),",1,0,0.0,282
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.context, devices, self.agent_id)",1,0,0.0,283
+4a1a37ce9f8baf2078a1a44380895d144203a876,if device_info.get('removed'):,1,0,0.0,284
+4a1a37ce9f8baf2078a1a44380895d144203a876,return (resync_a | resync_b),1,0,0.0,285
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def treat_devices_added_updated(self, devices):",1,0,0.0,286
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_LE(""Unable to get port details for %s""), devices)",1,0,0.0,287
+4a1a37ce9f8baf2078a1a44380895d144203a876,return True,1,0,0.0,288
+4a1a37ce9f8baf2078a1a44380895d144203a876,for device_details in devices_details_list:,1,0,0.0,289
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Port %s added"", device)",1,0,0.0,290
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def _update_network_ports(self, network_id, port_id, device):",1,0,0.0,291
+4a1a37ce9f8baf2078a1a44380895d144203a876,if 'port_id' in device_details:,1,0,0.0,292
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._clean_network_ports(device),1,0,0.0,293
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def init_extension_manager(self, connection):",1,0,0.0,294
+4a1a37ce9f8baf2078a1a44380895d144203a876,return port_data['port_id'],1,0,0.0,295
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.topic,",1,0,0.0,296
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""CommonAgentManagerRpcCallBackBase to ensure """,1,0,0.0,297
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""RPC Callback class must inherit from """,1,0,0.0,298
+4a1a37ce9f8baf2078a1a44380895d144203a876,if self.prevent_arp_spoofing:,1,0,0.0,299
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""CommonAgent works properly.""))",1,0,0.0,300
+4a1a37ce9f8baf2078a1a44380895d144203a876,def setup_rpc(self):,1,0,0.0,301
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.context, self.sg_plugin_rpc, defer_refresh_firewall=True)",1,0,0.0,302
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""RPC agent_id: %s""), self.agent_id)",1,0,0.0,303
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.sg_agent),1,0,0.0,304
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._validate_rpc_endpoints(),1,0,0.0,305
+4a1a37ce9f8baf2078a1a44380895d144203a876,consumers),1,0,0.0,306
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.network_ports.pop(netid),1,0,0.0,307
+4a1a37ce9f8baf2078a1a44380895d144203a876,ext_manager.register_opts(cfg.CONF),1,0,0.0,308
+4a1a37ce9f8baf2078a1a44380895d144203a876,ext_manager.AgentExtensionsManager(cfg.CONF)),1,0,0.0,309
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.ext_manager.initialize(,1,0,0.0,310
+4a1a37ce9f8baf2078a1a44380895d144203a876,"connection, self.mgr.get_extension_driver_type())",1,0,0.0,311
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def _clean_network_ports(self, device):",1,0,0.0,312
+4a1a37ce9f8baf2078a1a44380895d144203a876,"for netid, ports_list in self.network_ports.items():",1,0,0.0,313
+4a1a37ce9f8baf2078a1a44380895d144203a876,for port_data in ports_list:,1,0,0.0,314
+4a1a37ce9f8baf2078a1a44380895d144203a876,ports_list.remove(port_data),1,0,0.0,315
+4a1a37ce9f8baf2078a1a44380895d144203a876,if ports_list == []:,1,0,0.0,316
+4a1a37ce9f8baf2078a1a44380895d144203a876,"{'device': device, 'details': device_details})",1,0,0.0,317
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.sg_agent.remove_devices_filter(devices),1,0,0.0,318
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.mgr.setup_arp_spoofing_protection(device,",1,0,0.0,319
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Device %s not defined on plugin""), device)",1,0,0.0,320
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def treat_devices_removed(self, devices):",1,0,0.0,321
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Attachment %s removed""), device)",1,0,0.0,322
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_LE(""Error occurred while removing port %s""),",1,0,0.0,323
+4a1a37ce9f8baf2078a1a44380895d144203a876,device),1,0,0.0,324
+4a1a37ce9f8baf2078a1a44380895d144203a876,if details and details['exists']:,1,0,0.0,325
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Port %s updated.""), device)",1,0,0.0,326
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Device %s not defined on plugin"", device)",1,0,0.0,327
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.ext_manager.delete_port(self.context,",1,0,0.0,328
+4a1a37ce9f8baf2078a1a44380895d144203a876,"{'device': device,",1,0,0.0,329
+4a1a37ce9f8baf2078a1a44380895d144203a876,'port_id': port_id}),1,0,0.0,330
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.mgr.delete_arp_spoofing_protection(devices),1,0,0.0,331
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def scan_devices(self, previous, sync):",1,0,0.0,332
+4a1a37ce9f8baf2078a1a44380895d144203a876,if previous is None:,1,0,0.0,333
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'current': set(),",1,0,0.0,334
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'updated': set(),",1,0,0.0,335
+4a1a37ce9f8baf2078a1a44380895d144203a876,'removed': set()},1,0,0.0,336
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.mgr.delete_unreferenced_arp_protection(current_devices),1,0,0.0,337
+4a1a37ce9f8baf2078a1a44380895d144203a876,"if not isinstance(self.endpoints[0],",1,0,0.0,338
+4a1a37ce9f8baf2078a1a44380895d144203a876,if sync:,1,0,0.0,339
+4a1a37ce9f8baf2078a1a44380895d144203a876,return False,1,0,0.0,340
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.ext_manager.handle_port(self.context, device_details)",1,0,0.0,341
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_details),1,0,0.0,342
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_details['device']),1,0,0.0,343
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device_details.get('network_type'),",1,0,0.0,344
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device_details['physical_network'],",1,0,0.0,345
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_details.get('segmentation_id'),1,0,0.0,346
+4a1a37ce9f8baf2078a1a44380895d144203a876,),1,0,0.0,347
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.rpc_callbacks.add_network(network_id, segment)",1,0,0.0,348
+4a1a37ce9f8baf2078a1a44380895d144203a876,"network_id, segment,",1,0,0.0,349
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device, device_details['device_owner'])",1,0,0.0,350
+4a1a37ce9f8baf2078a1a44380895d144203a876,if interface_plugged:,1,0,0.0,351
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.mgr.ensure_port_admin_state(,1,0,0.0,352
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device,",1,0,0.0,353
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_details['admin_state_up']),1,0,0.0,354
+4a1a37ce9f8baf2078a1a44380895d144203a876,if device_details['admin_state_up']:,1,0,0.0,355
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.plugin_rpc.update_device_up(self.context,",1,0,0.0,356
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.agent_id,",1,0,0.0,357
+4a1a37ce9f8baf2078a1a44380895d144203a876,cfg.CONF.host),1,0,0.0,358
+4a1a37ce9f8baf2078a1a44380895d144203a876,else:,1,0,0.0,359
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.plugin_rpc.update_device_down(self.context,",1,0,0.0,360
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self._update_network_ports(device_details['network_id'],",1,0,0.0,361
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device_details['port_id'],",1,0,0.0,362
+4a1a37ce9f8baf2078a1a44380895d144203a876,amb.CommonAgentManagerRpcCallBackBase):,1,0,0.0,363
+4a1a37ce9f8baf2078a1a44380895d144203a876,"constants.AGENT_TYPE_LINUXBRIDGE,",0,0,0.0,364
+4a1a37ce9f8baf2078a1a44380895d144203a876,def _validate_rpc_endpoints(self):,1,0,0.0,365
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(set([DEVICE_1]), self.lb_rpc.agent.updated_devices)",1,0,0.0,366
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_ensure_port_admin_state_up(self):,1,0,0.0,367
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._test_ensure_port_admin_state(True),1,0,0.0,368
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_ensure_port_admin_state_down(self):,1,0,0.0,369
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._test_ensure_port_admin_state(False),1,0,0.0,370
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_add_interface(self):,1,0,0.0,371
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.lbm.add_interface(""123"", p_const.TYPE_VLAN, ""physnet-1"",",1,0,0.0,372
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""1"", ""234"",",1,0,0.0,373
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lb_rpc.agent.br_mgr,",1,0,0.0,374
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lb_rpc.agent.br_mgr,",1,0,0.0,375
+4a1a37ce9f8baf2078a1a44380895d144203a876,from neutron.plugins.ml2.drivers.agent import _common_agent as ca,0,0,0.0,376
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_LE(""Failed reporting state!""))",1,0,0.0,377
+4a1a37ce9f8baf2078a1a44380895d144203a876,LB_AGENT_BINARY),0,0,0.0,378
+4a1a37ce9f8baf2078a1a44380895d144203a876,import collections,1,0,0.0,379
+4a1a37ce9f8baf2078a1a44380895d144203a876,import time,1,0,0.0,380
+4a1a37ce9f8baf2078a1a44380895d144203a876,from oslo_service import loopingcall,1,0,0.0,381
+4a1a37ce9f8baf2078a1a44380895d144203a876,from neutron.agent.l2.extensions import manager as ext_manager,1,0,0.0,382
+4a1a37ce9f8baf2078a1a44380895d144203a876,from neutron.agent import rpc as agent_rpc,1,0,0.0,383
+4a1a37ce9f8baf2078a1a44380895d144203a876,from neutron import context,1,0,0.0,384
+4a1a37ce9f8baf2078a1a44380895d144203a876,class CommonAgentLoop(service.Service):,1,0,0.0,385
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def __init__(self, manager, polling_interval,",1,0,0.0,386
+4a1a37ce9f8baf2078a1a44380895d144203a876,dev_mock(tap_name).link.set_down.called),1,0,0.0,387
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertNotEqual(admin_state,",1,0,0.0,388
+4a1a37ce9f8baf2078a1a44380895d144203a876,dev_mock(tap_name).link.set_up.called),1,0,0.0,389
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(admin_state,",1,0,0.0,390
+4a1a37ce9f8baf2078a1a44380895d144203a876,& current_devices),1,0,0.0,391
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(arp_protect,",1,0,0.0,392
+4a1a37ce9f8baf2078a1a44380895d144203a876,'delete_unreferenced_arp_protection') as de_arp:,1,0,0.0,393
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self._test_scan_devices(previous, updated, fake_current, expected,",1,0,0.0,394
+4a1a37ce9f8baf2078a1a44380895d144203a876,de_arp.assert_called_with(fake_current),1,0,0.0,395
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertFalse(resync_needed),1,0,0.0,396
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.br_mgr.add_interface.assert_called_with(,1,0,0.0,397
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'net123', 'vlan', 'physnet1',",1,0,0.0,398
+4a1a37ce9f8baf2078a1a44380895d144203a876,"100, 'port123',",1,0,0.0,399
+4a1a37ce9f8baf2078a1a44380895d144203a876,constants.DEVICE_OWNER_NETWORK_PREFIX),1,0,0.0,400
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(agent.plugin_rpc.update_device_up.called),1,0,0.0,401
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(agent.ext_manager.handle_port.called),1,0,0.0,402
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(,1,0,0.0,403
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_port_data in agent.network_ports[mock_details['network_id']],1,0,0.0,404
+4a1a37ce9f8baf2078a1a44380895d144203a876,),1,0,0.0,405
+4a1a37ce9f8baf2078a1a44380895d144203a876,"set_arp.assert_called_with(tap_name, mock_details)",1,0,0.0,406
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def _test_ensure_port_admin_state(self, admin_state):",1,0,0.0,407
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib, 'IPDevice') as dev_mock:",1,0,0.0,408
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.agent._ensure_port_admin_state(port_id, admin_state)",1,0,0.0,409
+4a1a37ce9f8baf2078a1a44380895d144203a876,"quitting_rpc_timeout, agent_type, agent_binary):",1,0,0.0,410
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""""""Constructor.",1,0,0.0,411
+4a1a37ce9f8baf2078a1a44380895d144203a876,:param manager: the manager object containing the impl specifics,1,0,0.0,412
+4a1a37ce9f8baf2078a1a44380895d144203a876,'start_flag': True},1,0,0.0,413
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._report_state),1,0,0.0,414
+4a1a37ce9f8baf2078a1a44380895d144203a876,heartbeat.start(interval=report_interval),1,0,0.0,415
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.daemon_loop(),1,0,0.0,416
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def stop(self, graceful=True):",1,0,0.0,417
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Stopping %s agent.""), self.agent_type)",1,0,0.0,418
+4a1a37ce9f8baf2078a1a44380895d144203a876,if graceful and self.quitting_rpc_timeout:,1,0,0.0,419
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.set_rpc_timeout(self.quitting_rpc_timeout),1,0,0.0,420
+4a1a37ce9f8baf2078a1a44380895d144203a876,"super(CommonAgentLoop, self).stop(graceful)",1,0,0.0,421
+4a1a37ce9f8baf2078a1a44380895d144203a876,def reset(self):,1,0,0.0,422
+4a1a37ce9f8baf2078a1a44380895d144203a876,common_config.setup_logging(),1,0,0.0,423
+4a1a37ce9f8baf2078a1a44380895d144203a876,def _report_state(self):,1,0,0.0,424
+4a1a37ce9f8baf2078a1a44380895d144203a876,try:,1,0,0.0,425
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.agent_state,",1,0,0.0,426
+4a1a37ce9f8baf2078a1a44380895d144203a876,True),1,0,0.0,427
+4a1a37ce9f8baf2078a1a44380895d144203a876,if agent_status == constants.AGENT_REVIVED:,1,0,0.0,428
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.info(_LI('Agent has just been revived. ',1,0,0.0,429
+4a1a37ce9f8baf2078a1a44380895d144203a876,'Doing a full sync.')),1,0,0.0,430
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.agent_state.pop('start_flag', None)",1,0,0.0,431
+4a1a37ce9f8baf2078a1a44380895d144203a876,except Exception:,1,0,0.0,432
+4a1a37ce9f8baf2078a1a44380895d144203a876,if report_interval:,1,0,0.0,433
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'agent_type': self.agent_type,",1,0,0.0,434
+4a1a37ce9f8baf2078a1a44380895d144203a876,:param polling_interval: interval (secs) to poll DB.,1,0,0.0,435
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'configurations': configurations,",1,0,0.0,436
+4a1a37ce9f8baf2078a1a44380895d144203a876,:param quitting_rpc_timeout: timeout in seconds for rpc calls after,1,0,0.0,437
+4a1a37ce9f8baf2078a1a44380895d144203a876,stop is called.,1,0,0.0,438
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""""""",1,0,0.0,439
+4a1a37ce9f8baf2078a1a44380895d144203a876,"super(CommonAgentLoop, self).__init__()",1,0,0.0,440
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._validate_manager_class(),1,0,0.0,441
+4a1a37ce9f8baf2078a1a44380895d144203a876,def _validate_manager_class(self):,1,0,0.0,442
+4a1a37ce9f8baf2078a1a44380895d144203a876,"if not isinstance(self.mgr,",1,0,0.0,443
+4a1a37ce9f8baf2078a1a44380895d144203a876,amb.CommonAgentManagerBase):,1,0,0.0,444
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Manager class must inherit from """,1,0,0.0,445
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""CommonAgentManagerBase to ensure CommonAgent """,1,0,0.0,446
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""works properly.""))",1,0,0.0,447
+4a1a37ce9f8baf2078a1a44380895d144203a876,sys.exit(1),1,0,0.0,448
+4a1a37ce9f8baf2078a1a44380895d144203a876,def start(self):,1,0,0.0,449
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.setup_rpc(),1,0,0.0,450
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.init_extension_manager(self.connection),1,0,0.0,451
+4a1a37ce9f8baf2078a1a44380895d144203a876,configurations.update(self.mgr.get_agent_configurations()),1,0,0.0,452
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'binary': self.agent_binary,",1,0,0.0,453
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'host': cfg.CONF.host,",1,0,0.0,454
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'topic': constants.L2_AGENT_TOPIC,",1,0,0.0,455
+4a1a37ce9f8baf2078a1a44380895d144203a876,- current_devices),1,0,0.0,456
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertFalse(resync_needed),1,0,0.0,457
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def _device_info_has_changes(self, device_info):",1,0,0.0,458
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertFalse(agent.mgr.ensure_port_admin_state.called),1,0,0.0,459
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_added_updated_no_local_interface(self):,1,0,0.0,460
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'port_id': 'port123',",1,0,0.0,461
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'network_id': 'net123',",1,0,0.0,462
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'admin_state_up': True,",1,0,0.0,463
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'network_type': 'vlan',",1,0,0.0,464
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'segmentation_id': 100,",1,0,0.0,465
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'physical_network': 'physnet1',",1,0,0.0,466
+4a1a37ce9f8baf2078a1a44380895d144203a876,'device_owner': constants.DEVICE_OWNER_NETWORK_PREFIX},1,0,0.0,467
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.treat_devices_added_updated(set(['tap1'])),1,0,0.0,468
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_added_updated_admin_state_up_true(self):,1,0,0.0,469
+4a1a37ce9f8baf2078a1a44380895d144203a876,return (device_info.get('added'),1,0,0.0,470
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'port_id': mock_details['port_id'],",1,0,0.0,471
+4a1a37ce9f8baf2078a1a44380895d144203a876,'device': mock_details['device'],1,0,0.0,472
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock_details['physical_network'],",1,0,0.0,473
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_details['segmentation_id']),1,0,0.0,474
+4a1a37ce9f8baf2078a1a44380895d144203a876,with mock.patch('neutron.plugins.ml2.drivers.agent.',1,0,0.0,475
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'_agent_manager_base.NetworkSegment',",1,0,0.0,476
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=mock_segment):,1,0,0.0,477
+4a1a37ce9f8baf2078a1a44380895d144203a876,"linuxbridge_neutron_agent.LinuxBridgeManager,",1,0,0.0,478
+4a1a37ce9f8baf2078a1a44380895d144203a876,"agent.rpc_callbacks.add_network.assert_called_with('net123',",1,0,0.0,479
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.treat_devices_removed.assert_called_with(set(['tap1'])),1,0,0.0,480
+4a1a37ce9f8baf2078a1a44380895d144203a876,'tap4'])),1,0,0.0,481
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'tap3',",1,0,0.0,482
+4a1a37ce9f8baf2078a1a44380895d144203a876,"agent.treat_devices_added_updated.assert_called_with(set(['tap2',",1,0,0.0,483
+4a1a37ce9f8baf2078a1a44380895d144203a876,},1,0,0.0,484
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'current': set([1]),",1,0,0.0,485
+4a1a37ce9f8baf2078a1a44380895d144203a876,'removed': set([2]),1,0,0.0,486
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._test_scan_devices(,1,0,0.0,487
+4a1a37ce9f8baf2078a1a44380895d144203a876,"previous, updated, fake_current, expected, sync=False",1,0,0.0,488
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_updated_on_sync(self):,1,0,0.0,489
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'updated': set([1, 2]),",1,0,0.0,490
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'added': set([1, 2]),",1,0,0.0,491
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_with_prevent_arp_spoofing_true(self):,1,0,0.0,492
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.mgr.delete_unreferenced_arp_protection.assert_called_with(,1,0,0.0,493
+4a1a37ce9f8baf2078a1a44380895d144203a876,fake_current),1,0,0.0,494
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_process_network_devices(self):,1,0,0.0,495
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'added': set(['tap3', 'tap4']),",1,0,0.0,496
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'updated': set(['tap2', 'tap3']),",1,0,0.0,497
+4a1a37ce9f8baf2078a1a44380895d144203a876,'removed': set(['tap1'])},1,0,0.0,498
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.process_network_devices(device_info),1,0,0.0,499
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.sg_agent.setup_port_filters.assert_called_with(,1,0,0.0,500
+4a1a37ce9f8baf2078a1a44380895d144203a876,"device_info['added'],",1,0,0.0,501
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info['updated']),1,0,0.0,502
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_segment),1,0,0.0,503
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.plug_interface.assert_called_with(,1,0,0.0,504
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'net123', mock_segment, 'dev123',",1,0,0.0,505
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(self.agent.fullsync),1,0,0.0,506
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'port_id': 'fake_port_2',",1,0,0.0,507
+4a1a37ce9f8baf2078a1a44380895d144203a876,'device': 'fake_port_2_device_name',1,0,0.0,508
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.network_ports[NETWORK_ID].append(,1,0,0.0,509
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_1_data,1,0,0.0,510
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_2_data,1,0,0.0,511
+4a1a37ce9f8baf2078a1a44380895d144203a876,#check update port:,1,0,0.0,512
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent._update_network_ports(,1,0,0.0,513
+4a1a37ce9f8baf2078a1a44380895d144203a876,"NETWORK_2_ID, port_2_data['port_id'], port_2_data['device']",1,0,0.0,514
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_2_data not in self.agent.network_ports[NETWORK_ID],1,0,0.0,515
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_2_data in self.agent.network_ports[NETWORK_2_ID],1,0,0.0,516
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_clean_network_ports(self):,1,0,0.0,517
+4a1a37ce9f8baf2078a1a44380895d144203a876,#check removing port from network when other ports are still there:,1,0,0.0,518
+4a1a37ce9f8baf2078a1a44380895d144203a876,NETWORK_ID in self.agent.network_ports.keys(),1,0,0.0,519
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_1_data not in self.agent.network_ports[NETWORK_ID],1,0,0.0,520
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_2_data in self.agent.network_ports[NETWORK_ID],1,0,0.0,521
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(PORT_1, cleaned_port_id)",1,0,0.0,522
+4a1a37ce9f8baf2078a1a44380895d144203a876,#and now remove last port from network:,1,0,0.0,523
+4a1a37ce9f8baf2078a1a44380895d144203a876,port_2_data['device'],1,0,0.0,524
+4a1a37ce9f8baf2078a1a44380895d144203a876,NETWORK_ID not in self.agent.network_ports.keys(),1,0,0.0,525
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_update_network_ports(self):,1,0,0.0,526
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent._report_state(),1,0,0.0,527
+4a1a37ce9f8baf2078a1a44380895d144203a876,constants.DEVICE_OWNER_NETWORK_PREFIX),1,0,0.0,528
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""report_state"") as report_st:",1,0,0.0,529
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(agent.plugin_rpc.update_device_up.called),1,0,0.0,530
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(agent.ext_manager.handle_port.called),1,0,0.0,531
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(mock_port_data in agent.network_ports[,1,0,0.0,532
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_details['network_id']],1,0,0.0,533
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_added_updated_prevent_arp_spoofing_true(self):,1,0,0.0,534
+4a1a37ce9f8baf2078a1a44380895d144203a876,'setup_arp_spoofing_protection') as set_arp:,1,0,0.0,535
+4a1a37ce9f8baf2078a1a44380895d144203a876,"set_arp.assert_called_with(mock_details['device'], mock_details)",1,0,0.0,536
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_set_rpc_timeout(self):,1,0,0.0,537
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.stop(),1,0,0.0,538
+4a1a37ce9f8baf2078a1a44380895d144203a876,"for rpc_client in (self.agent.plugin_rpc.client,",1,0,0.0,539
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.agent.sg_plugin_rpc.client,",1,0,0.0,540
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.state_rpc.client):,1,0,0.0,541
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(cfg.CONF.AGENT.quitting_rpc_timeout,",1,0,0.0,542
+4a1a37ce9f8baf2078a1a44380895d144203a876,rpc_client.timeout),1,0,0.0,543
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_set_rpc_timeout_no_value(self):,1,0,0.0,544
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.agent, 'set_rpc_timeout') as mock_set_rpc:",1,0,0.0,545
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertFalse(mock_set_rpc.called),1,0,0.0,546
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_report_state_revived(self):,1,0,0.0,547
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.agent.state_rpc,",1,0,0.0,548
+4a1a37ce9f8baf2078a1a44380895d144203a876,'removed': set(),1,0,0.0,549
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'current': set([1, 2]),",1,0,0.0,550
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_updated_deleted_concurrently(self):,1,0,0.0,551
+4a1a37ce9f8baf2078a1a44380895d144203a876,"super(TestCommonAgentLoop, self).setUp()",1,0,0.0,552
+4a1a37ce9f8baf2078a1a44380895d144203a876,"cfg.CONF.set_override('prevent_arp_spoofing', False, 'AGENT')",1,0,0.0,553
+4a1a37ce9f8baf2078a1a44380895d144203a876,"cfg.CONF.set_default('firewall_driver',",1,0,0.0,554
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'neutron.agent.firewall.NoopFirewallDriver',",1,0,0.0,555
+4a1a37ce9f8baf2078a1a44380895d144203a876,group='SECURITYGROUP'),1,0,0.0,556
+4a1a37ce9f8baf2078a1a44380895d144203a876,"cfg.CONF.set_override('local_ip', LOCAL_IP, 'VXLAN')",1,0,0.0,557
+4a1a37ce9f8baf2078a1a44380895d144203a876,'get_bridge_names'),1,0,0.0,558
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(linuxbridge_neutron_agent.CommonAgentLoop,",1,0,0.0,559
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'_validate_manager_class'), \",1,0,0.0,560
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(linuxbridge_neutron_agent.CommonAgentLoop,",1,0,0.0,561
+4a1a37ce9f8baf2078a1a44380895d144203a876,'_validate_rpc_endpoints'):,1,0,0.0,562
+4a1a37ce9f8baf2078a1a44380895d144203a876,"manager, 0, 10, 'fake_agent', 'foo-binary')",1,0,0.0,563
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.agent, ""daemon_loop""):",1,0,0.0,564
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.start(),1,0,0.0,565
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_removed_with_existed_device(self):,1,0,0.0,566
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.network_ports[NETWORK_ID].append(PORT_DATA),1,0,0.0,567
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(agent.plugin_rpc,",1,0,0.0,568
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""update_device_down"") as fn_udd,\",1,0,0.0,569
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent.sg_agent,",1,0,0.0,570
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""remove_devices_filter"") as fn_rdf,\",1,0,0.0,571
+4a1a37ce9f8baf2078a1a44380895d144203a876,"cfg.CONF.set_override('report_interval', 0, 'AGENT')",1,0,0.0,572
+4a1a37ce9f8baf2078a1a44380895d144203a876,def setUp(self):,1,0,0.0,573
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""delete_port"") as ext_mgr_delete_port:",1,0,0.0,574
+4a1a37ce9f8baf2078a1a44380895d144203a876,class TestCommonAgentLoop(base.BaseTestCase):,1,0,0.0,575
+4a1a37ce9f8baf2078a1a44380895d144203a876,or device_info.get('updated'),1,0,0.0,576
+4a1a37ce9f8baf2078a1a44380895d144203a876,or device_info.get('removed')),1,0,0.0,577
+4a1a37ce9f8baf2078a1a44380895d144203a876,def daemon_loop(self):,1,0,0.0,578
+4a1a37ce9f8baf2078a1a44380895d144203a876,while True:,1,0,0.0,579
+4a1a37ce9f8baf2078a1a44380895d144203a876,if self.fullsync:,1,0,0.0,580
+4a1a37ce9f8baf2078a1a44380895d144203a876,if (self._device_info_has_changes(device_info),1,0,0.0,581
+4a1a37ce9f8baf2078a1a44380895d144203a876,or self.sg_agent.firewall_refresh_needed()):,1,0,0.0,582
+4a1a37ce9f8baf2078a1a44380895d144203a876,device_info),1,0,0.0,583
+4a1a37ce9f8baf2078a1a44380895d144203a876,if (elapsed < self.polling_interval):,1,0,0.0,584
+4a1a37ce9f8baf2078a1a44380895d144203a876,time.sleep(self.polling_interval - elapsed),1,0,0.0,585
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Loop iteration exceeded interval """,1,0,0.0,586
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""(%(polling_interval)s vs. %(elapsed)s)!"",",1,0,0.0,587
+4a1a37ce9f8baf2078a1a44380895d144203a876,"{'polling_interval': self.polling_interval,",1,0,0.0,588
+4a1a37ce9f8baf2078a1a44380895d144203a876,'elapsed': elapsed}),1,0,0.0,589
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def set_rpc_timeout(self, timeout):",1,0,0.0,590
+4a1a37ce9f8baf2078a1a44380895d144203a876,"for rpc_api in (self.plugin_rpc, self.sg_plugin_rpc,",1,0,0.0,591
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.state_rpc):,1,0,0.0,592
+4a1a37ce9f8baf2078a1a44380895d144203a876,"constants.AGENT_TYPE_LINUXBRIDGE,",1,0,0.0,593
+4a1a37ce9f8baf2078a1a44380895d144203a876,LB_AGENT_BINARY),1,0,0.0,594
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent.ext_manager,",1,0,0.0,595
+4a1a37ce9f8baf2078a1a44380895d144203a876,'exists': True},1,0,0.0,596
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_updated_non_existing(self):,1,0,0.0,597
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def _test_scan_devices(self, previous, updated,",1,0,0.0,598
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.rpc_callbacks.get_and_clear_updated_devices.return_value =\,1,0,0.0,599
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated,1,0,0.0,600
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(expected, results)",1,0,0.0,601
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_no_changes(self):,1,0,0.0,602
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'updated': set(),",1,0,0.0,603
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'added': set(),",1,0,0.0,604
+4a1a37ce9f8baf2078a1a44380895d144203a876,'removed': set()},1,0,0.0,605
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self._test_scan_devices(previous, updated, fake_current, expected,",1,0,0.0,606
+4a1a37ce9f8baf2078a1a44380895d144203a876,sync=False),1,0,0.0,607
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_added_removed(self):,1,0,0.0,608
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'added': set([3]),",1,0,0.0,609
+4a1a37ce9f8baf2078a1a44380895d144203a876,'removed': set([1])},1,0,0.0,610
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_removed_retried_on_sync(self):,1,0,0.0,611
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'added': set([2, 3]),",1,0,0.0,612
+4a1a37ce9f8baf2078a1a44380895d144203a876,sync=True),1,0,0.0,613
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_vanished_removed_on_sync(self):,1,0,0.0,614
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'removed': set([1, 2])}",1,0,0.0,615
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_scan_devices_updated(self):,1,0,0.0,616
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'updated': set([1]),",1,0,0.0,617
+4a1a37ce9f8baf2078a1a44380895d144203a876,"fake_current, expected, sync):",1,0,0.0,618
+4a1a37ce9f8baf2078a1a44380895d144203a876,de_arp.assert_called_with(devices),1,0,0.0,619
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(linuxbridge_neutron_agent.LOG,",1,0,0.0,620
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.treat_devices_removed(devices),1,0,0.0,621
+4a1a37ce9f8baf2078a1a44380895d144203a876,'info') as log:,1,0,0.0,622
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(2, log.call_count)",1,0,0.0,623
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertFalse(resync),1,0,0.0,624
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(fn_udd.called),1,0,0.0,625
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(fn_rdf.called),1,0,0.0,626
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(ext_mgr_delete_port.called),1,0,0.0,627
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(,1,0,0.0,628
+4a1a37ce9f8baf2078a1a44380895d144203a876,PORT_DATA not in agent.network_ports[NETWORK_ID],1,0,0.0,629
+4a1a37ce9f8baf2078a1a44380895d144203a876,),1,0,0.0,630
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_removed_with_not_existed_device(self):,1,0,0.0,631
+4a1a37ce9f8baf2078a1a44380895d144203a876,'exists': False},1,0,0.0,632
+4a1a37ce9f8baf2078a1a44380895d144203a876,'debug') as log:,1,0,0.0,633
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(1, log.call_count)",1,0,0.0,634
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_removed_failed(self):,1,0,0.0,635
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(resync),1,0,0.0,636
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_treat_devices_removed_with_prevent_arp_spoofing_true(self):,1,0,0.0,637
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""remove_devices_filter""):",1,0,0.0,638
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(agent.mgr,",1,0,0.0,639
+4a1a37ce9f8baf2078a1a44380895d144203a876,'delete_arp_spoofing_protection') as de_arp:,1,0,0.0,640
+4a1a37ce9f8baf2078a1a44380895d144203a876,'check_vxlan_support'):,1,0,0.0,641
+4a1a37ce9f8baf2078a1a44380895d144203a876,import contextlib,1,0,0.0,642
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock.patch.object(,1,0,0.0,643
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.debug(msg),1,0,0.0,644
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Unable to add %(interface)s to %(bridge_name)s! """,1,0,0.0,645
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""Exception: %(e)s""),",1,0,0.0,646
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Unable to add vxlan interface for network %s""),",1,0,0.0,647
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""No mapping for physical network %s""),",1,0,0.0,648
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Unknown network_type %(network_type)s for network """,1,0,0.0,649
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(network_id)s.""), {network_type: network_type,",1,0,0.0,650
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Tap device: %s does not exist on """,1,0,0.0,651
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""this host, skipped""), tap_device_name)",1,0,0.0,652
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(bridge_name)s"") % data",1,0,0.0,653
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Deleting bridge %s""), bridge_name)",1,0,0.0,654
+4a1a37ce9f8baf2078a1a44380895d144203a876,'get_interface_details') as get_int_det_fn:,0,0,0.0,655
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done deleting bridge %s""), bridge_name)",1,0,0.0,656
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Cannot delete bridge %s, does not exist""),",1,0,0.0,657
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(bridge_name)s""),",1,0,0.0,658
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(bridge_name)s does not exist""),",1,0,0.0,659
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Deleting subinterface %s for vlan""), interface)",1,0,0.0,660
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done deleting subinterface %s""), interface)",1,0,0.0,661
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Deleting vxlan interface %s for vlan""),",1,0,0.0,662
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done deleting vxlan interface %s""), interface)",1,0,0.0,663
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_('Option ""%(option)s"" must be supported by command '",1,0,0.0,664
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""subinterface %(interface)s""),",1,0,0.0,665
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done starting bridge %(bridge_name)s for """,1,0,0.0,666
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(interface)s""),",1,0,0.0,667
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Starting bridge %(bridge_name)s for subinterface """,1,0,0.0,668
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Interface mappings: %s""), interface_mappings)",0,0,0.0,669
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Agent initialized successfully, now running... ""))",0,0,0.0,670
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_('VXLAN is enabled, a valid local_ip '",1,0,0.0,671
+4a1a37ce9f8baf2078a1a44380895d144203a876,'must be provided')),1,0,0.0,672
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_(""Invalid Network ID, will lead to incorrect bridge""",1,0,0.0,673
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""name""))",1,0,0.0,674
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_(""Invalid VLAN ID, will lead to incorrect """,1,0,0.0,675
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""subinterface name""))",1,0,0.0,676
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_(""Invalid Interface ID, will lead to incorrect """,1,0,0.0,677
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_(""Invalid Segmentation ID: %s, will lead to """,1,0,0.0,678
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Failed creating vxlan interface for """,1,0,0.0,679
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(segmentation_id)s""),",1,0,0.0,680
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Creating subinterface %(interface)s for """,1,0,0.0,681
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""VLAN %(vlan_id)s on interface """,1,0,0.0,682
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(physical_interface)s""),",1,0,0.0,683
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done creating subinterface %s""), interface)",1,0,0.0,684
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Creating vxlan interface %(interface)s for """,1,0,0.0,685
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""VNI %(segmentation_id)s""),",1,0,0.0,686
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Done creating vxlan interface %s""), interface)",1,0,0.0,687
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'""%(command)s"" to enable %(mode)s mode') %",1,0,0.0,688
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.error(_('No valid Segmentation ID to perform UCAST test.')),1,0,0.0,689
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.warning(_('VXLAN muticast group must be provided in ',1,0,0.0,690
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""(%(polling_interval)s vs. %(elapsed)s)!""),",1,0,0.0,691
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Interface mappings: %s""), interface_mappings)",1,0,0.0,692
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Agent initialized successfully, now running... ""))",1,0,0.0,693
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(agent.plugin_rpc,",0,0,0.0,694
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""update_device_down"") as fn_udd,\",0,0,0.0,695
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent.sg_agent,",0,0,0.0,696
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""remove_devices_filter"") as fn_rdf:",0,0,0.0,697
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(utils, 'execute'),\",0,0,0.0,698
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(os, 'listdir') as listdir_fn,\",0,0,0.0,699
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib, 'device_exists', return_value=True):",0,0,0.0,700
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib.IPWrapper, 'get_devices') as get_dev_fn,\",0,0,0.0,701
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpAddrCommand, 'list') as ip_list_fn:",0,0,0.0,702
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lbm,",0,0,0.0,703
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_all_neutron_bridges"") as get_all_qbr_fn,\",0,0,0.0,704
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm,",0,0,0.0,705
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_interfaces_on_bridge"") as get_if_fn:",0,0,0.0,706
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib.IpAddrCommand, 'list') as list_fn,\",0,0,0.0,707
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpRouteCommand,",0,0,0.0,708
+4a1a37ce9f8baf2078a1a44380895d144203a876,'get_gateway') as getgw_fn:,0,0,0.0,709
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lbm, 'ensure_vlan') as ens_vl_fn,\",0,0,0.0,710
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Parsing physical_interface_mappings failed: %s.""",1,0,0.0,711
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Loop iteration exceeded interval """,1,0,0.0,712
+4a1a37ce9f8baf2078a1a44380895d144203a876,'vxlan_group option to enable VXLAN MCAST mode')),1,0,0.0,713
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Device %s not defined on plugin""), device)",1,0,0.0,714
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.error(_('Linux kernel vxlan module and iproute2 3.8 or above ',1,0,0.0,715
+4a1a37ce9f8baf2078a1a44380895d144203a876,'are required to enable VXLAN.')),1,0,0.0,716
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_('Using %s VXLAN mode'), self.vxlan_mode)",1,0,0.0,717
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""network_delete received""))",1,0,0.0,718
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""Delete %s""), bridge_name)",1,0,0.0,719
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""port_update RPC received for port: %s""), port_id)",1,0,0.0,720
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""fdb_add received""))",1,0,0.0,721
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""fdb_remove received""))",1,0,0.0,722
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""update chg_ip received""))",1,0,0.0,723
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""fdb_update received""))",1,0,0.0,724
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_(""Failed reporting state!""))",1,0,0.0,725
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_(""Unable to obtain MAC address for unique ID. """,1,0,0.0,726
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""Agent terminated!""))",1,0,0.0,727
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""RPC agent_id: %s""), self.agent_id)",1,0,0.0,728
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Port %(device)s updated. Details: %(details)s""),",1,0,0.0,729
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Device %s not defined on plugin""), device)",1,0,0.0,730
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Attachment %s removed""), device)",1,0,0.0,731
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(_(""port_removed failed for %(device)s: %(e)s""),",1,0,0.0,732
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_(""Port %s updated.""), device)",1,0,0.0,733
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""Agent terminated!""), e)",0,0,0.0,734
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Parsing physical_interface_mappings failed: %s. """,0,0,0.0,735
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""(%(polling_interval)s vs. %(elapsed)s)!"",",0,0,0.0,736
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (log, process_network_devices):",1,0,0.0,737
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_LW('VXLAN is enabled, a valid local_ip '",0,0,0.0,738
+4a1a37ce9f8baf2078a1a44380895d144203a876,'must be provided')),0,0,0.0,739
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_LW(""Invalid Network ID, will lead to incorrect bridge""",0,0,0.0,740
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""name""))",0,0,0.0,741
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_LW(""Invalid VLAN ID, will lead to incorrect """,0,0,0.0,742
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""subinterface name""))",0,0,0.0,743
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_LW(""Invalid Interface ID, will lead to incorrect """,0,0,0.0,744
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_LW(""Invalid Segmentation ID: %s, will lead to """,0,0,0.0,745
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Failed creating vxlan interface for """,0,0,0.0,746
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(segmentation_id)s""),",0,0,0.0,747
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Creating subinterface %(interface)s for """,0,0,0.0,748
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""VLAN %(vlan_id)s on interface """,0,0,0.0,749
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(physical_interface)s"",",0,0,0.0,750
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done creating subinterface %s"", interface)",0,0,0.0,751
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Creating vxlan interface %(interface)s for """,0,0,0.0,752
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""VNI %(segmentation_id)s"",",0,0,0.0,753
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done creating vxlan interface %s"", interface)",0,0,0.0,754
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Starting bridge %(bridge_name)s for subinterface """,0,0,0.0,755
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(interface)s"",",0,0,0.0,756
+4a1a37ce9f8baf2078a1a44380895d144203a876,"from neutron.openstack.common.gettextutils import _LE, _LI, _LW",0,0,0.0,757
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent, 'process_network_devices')",1,0,0.0,758
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""subinterface %(interface)s"",",0,0,0.0,759
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(linuxbridge_neutron_agent.LOG, 'info'),",1,0,0.0,760
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(agent.br_mgr,",0,0,0.0,761
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""update_devices"") as update_devices:",0,0,0.0,762
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(linuxbridge_neutron_agent.LOG,",0,0,0.0,763
+4a1a37ce9f8baf2078a1a44380895d144203a876,'info') as log:,0,0,0.0,764
+4a1a37ce9f8baf2078a1a44380895d144203a876,with testtools.ExpectedException(RuntimeError):,0,0,0.0,765
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.daemon_loop(),0,0,0.0,766
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(3, log.call_count)",0,0,0.0,767
+4a1a37ce9f8baf2078a1a44380895d144203a876,with contextlib.nested(,0,0,0.0,768
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(linuxbridge_neutron_agent.LOG, 'info'),",0,0,0.0,769
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent, 'process_network_devices')",0,0,0.0,770
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (log, process_network_devices):",0,0,0.0,771
+4a1a37ce9f8baf2078a1a44380895d144203a876,'linuxbridge_neutron_agent.',1,0,0.0,772
+4a1a37ce9f8baf2078a1a44380895d144203a876,'LinuxBridgeManager'),1,0,0.0,773
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.addCleanup(self.lbmgr_patcher.stop),1,0,0.0,774
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(linuxbridge_neutron_agent.LOG, 'info') as log:",1,0,0.0,775
+4a1a37ce9f8baf2078a1a44380895d144203a876,with testtools.ExpectedException(RuntimeError):,1,0,0.0,776
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.daemon_loop(),1,0,0.0,777
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(3, log.call_count)",1,0,0.0,778
+4a1a37ce9f8baf2078a1a44380895d144203a876,with contextlib.nested(,1,0,0.0,779
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done starting bridge %(bridge_name)s for """,0,0,0.0,780
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Unable to add %(interface)s to %(bridge_name)s""",0,0,0.0,781
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Loop iteration exceeded interval """,0,0,0.0,782
+4a1a37ce9f8baf2078a1a44380895d144203a876,'vxlan_group option to enable VXLAN MCAST mode')),0,0,0.0,783
+4a1a37ce9f8baf2078a1a44380895d144203a876,'above are required to enable VXLAN.')),0,0,0.0,784
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug('Using %s VXLAN mode', self.vxlan_mode)",0,0,0.0,785
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""network_delete received"")",0,0,0.0,786
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Delete %s"", bridge_name)",0,0,0.0,787
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""port_update RPC received for port: %s"", port_id)",0,0,0.0,788
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""fdb_add received"")",0,0,0.0,789
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""fdb_remove received"")",0,0,0.0,790
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""update chg_ip received"")",0,0,0.0,791
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""fdb_update received"")",0,0,0.0,792
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.exception(_LE(""Failed reporting state!""))",0,0,0.0,793
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Unable to obtain MAC address for unique ID. """,0,0,0.0,794
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""Agent terminated!""))",0,0,0.0,795
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""RPC agent_id: %s""), self.agent_id)",0,0,0.0,796
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Port %(device)s updated. Details: %(details)s""),",0,0,0.0,797
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Device %s not defined on plugin""), device)",0,0,0.0,798
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Attachment %s removed""), device)",0,0,0.0,799
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""port_removed failed for %(device)s: %(e)s"",",0,0,0.0,800
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.info(_LI(""Port %s updated.""), device)",0,0,0.0,801
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Device %s not defined on plugin"", device)",0,0,0.0,802
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.error(_LE('Linux kernel vxlan module and iproute2 3.8 or ',0,0,0.0,803
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.warning(_LW('VXLAN muticast group must be provided in ',0,0,0.0,804
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""! Exception: %(e)s""),",0,0,0.0,805
+4a1a37ce9f8baf2078a1a44380895d144203a876,LOG.error(_LE('No valid Segmentation ID to perform UCAST test.')),0,0,0.0,806
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Unable to add vxlan interface for network %s""),",0,0,0.0,807
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""No mapping for physical network %s""),",0,0,0.0,808
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Unknown network_type %(network_type)s for network """,0,0,0.0,809
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(network_id)s.""), {network_type: network_type,",0,0,0.0,810
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Tap device: %s does not exist on """,0,0,0.0,811
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""this host, skipped"", tap_device_name)",0,0,0.0,812
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(bridge_name)s"", data)",0,0,0.0,813
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""%(tap_device_name)s already exists on bridge """,0,0,0.0,814
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Deleting bridge %s"", bridge_name)",0,0,0.0,815
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done deleting bridge %s"", bridge_name)",0,0,0.0,816
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.error(_LE(""Cannot delete bridge %s, does not exist""),",0,0,0.0,817
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(bridge_name)s"",",0,0,0.0,818
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""%(bridge_name)s does not exist"",",0,0,0.0,819
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Deleting subinterface %s for vlan"", interface)",0,0,0.0,820
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done deleting subinterface %s"", interface)",0,0,0.0,821
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Deleting vxlan interface %s for vlan"",",0,0,0.0,822
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.debug(""Done deleting vxlan interface %s"", interface)",0,0,0.0,823
+4a1a37ce9f8baf2078a1a44380895d144203a876,"LOG.warning(_LW('Option ""%(option)s"" must be supported by command '",0,0,0.0,824
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'""%(command)s"" to enable %(mode)s mode') %",0,0,0.0,825
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'ensure_bridge') as ens,\",0,0,0.0,826
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib.IpAddrCommand, 'add') as add_fn,\",0,0,0.0,827
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.agent, ""daemon_loop""),\",1,0,0.0,828
+4a1a37ce9f8baf2078a1a44380895d144203a876,from neutron.plugins.ml2.drivers.agent import _agent_manager_base as amb,0,0,0.0,829
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'ensure_vxlan', return_value=None),",1,0,0.0,830
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock.patch.object(,1,0,0.0,831
+4a1a37ce9f8baf2078a1a44380895d144203a876,"utils, 'execute',",1,0,0.0,832
+4a1a37ce9f8baf2078a1a44380895d144203a876,"side_effect=None if fdb_append else RuntimeError()),",1,0,0.0,833
+4a1a37ce9f8baf2078a1a44380895d144203a876,"ip_lib, 'iproute_arg_supported',",1,0,0.0,834
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=iproute_arg_supported)):,1,0,0.0,835
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lb_rpc.agent.br_mgr, ""get_bridge_name""),",1,0,0.0,836
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lb_rpc.agent.br_mgr, ""delete_vlan_bridge"")",1,0,0.0,837
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (get_br_fn, del_fn):",1,0,0.0,838
+4a1a37ce9f8baf2078a1a44380895d144203a876,class TestCommonAgentLoop(base.BaseTestCase):,0,0,0.0,839
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpAddrCommand, 'delete') as del_fn:",0,0,0.0,840
+4a1a37ce9f8baf2078a1a44380895d144203a876,"super(TestCommonAgentLoop, self).setUp()",0,0,0.0,841
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(linuxbridge_neutron_agent.CommonAgentLoop,",0,0,0.0,842
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'_validate_manager_class'), \",0,0,0.0,843
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(linuxbridge_neutron_agent.CommonAgentLoop,",0,0,0.0,844
+4a1a37ce9f8baf2078a1a44380895d144203a876,'_validate_rpc_endpoints'):,0,0,0.0,845
+4a1a37ce9f8baf2078a1a44380895d144203a876,"manager, 0, 10, 'fake_agent', 'foo-binary')",0,0,0.0,846
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.agent, ""daemon_loop""):",0,0,0.0,847
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(agent.mgr,",0,0,0.0,848
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.rpc_callbacks.get_and_clear_updated_devices.return_value =\,0,0,0.0,849
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'delete_vxlan', return_value=None),",1,0,0.0,850
+4a1a37ce9f8baf2078a1a44380895d144203a876,"ip_lib, 'device_exists', return_value=False),",1,0,0.0,851
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=vxlan_mcast_supported)):,1,0,0.0,852
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'vxlan_mcast_supported',",1,0,0.0,853
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""delete_vxlan""),",1,0,0.0,854
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(utils, ""execute"")",1,0,0.0,855
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (de_fn, getif_fn, remif_fn, if_det_fn,",1,0,0.0,856
+4a1a37ce9f8baf2078a1a44380895d144203a876,"updif_fn, del_vxlan, exec_fn):",1,0,0.0,857
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""delete_vlan""),",1,0,0.0,858
+4a1a37ce9f8baf2078a1a44380895d144203a876,"updif_fn, del_vlan, exec_fn):",1,0,0.0,859
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(lbm, ""get_interfaces_on_bridge""),",1,0,0.0,860
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(lbm, ""remove_interface""),",1,0,0.0,861
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(lbm, ""delete_vxlan""),",1,0,0.0,862
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (de_fn, getif_fn, remif_fn, del_vxlan, exec_fn):",1,0,0.0,863
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""delete_vlan_bridge""),",1,0,0.0,864
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""get_tap_devices_count"",",1,0,0.0,865
+4a1a37ce9f8baf2078a1a44380895d144203a876,"side_effect=tap_count_side_effect),",1,0,0.0,866
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (del_br_fn, count_tap_fn):",1,0,0.0,867
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""is_device_on_bridge""),",1,0,0.0,868
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (de_fn, isdev_fn, exec_fn):",1,0,0.0,869
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (de_fn, exec_fn):",1,0,0.0,870
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'vxlan_ucast_supported',",1,0,0.0,871
+4a1a37ce9f8baf2078a1a44380895d144203a876,"return_value=vxlan_ucast_supported),",1,0,0.0,872
+4a1a37ce9f8baf2078a1a44380895d144203a876,updated,0,0,0.0,873
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self._test_scan_devices(previous, updated, fake_current, expected,",0,0,0.0,874
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.agent.mgr.delete_unreferenced_arp_protection.assert_called_with(,0,0,0.0,875
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.lbm.ensure_port_admin_state(port_id, admin_state)",0,0,0.0,876
+4a1a37ce9f8baf2078a1a44380895d144203a876,dev_mock(tap_name).link.set_up.called),0,0,0.0,877
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertNotEqual(admin_state,",0,0,0.0,878
+4a1a37ce9f8baf2078a1a44380895d144203a876,dev_mock(tap_name).link.set_down.called),0,0,0.0,879
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_ensure_port_admin_state_up(self):,0,0,0.0,880
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._test_ensure_port_admin_state(True),0,0,0.0,881
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_ensure_port_admin_state_down(self):,0,0,0.0,882
+4a1a37ce9f8baf2078a1a44380895d144203a876,self._test_ensure_port_admin_state(False),0,0,0.0,883
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lb_rpc.agent.mgr,",0,0,0.0,884
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lb_rpc.agent.mgr,",0,0,0.0,885
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(set([DEVICE_1]), self.lb_rpc.updated_devices)",0,0,0.0,886
+4a1a37ce9f8baf2078a1a44380895d144203a876,from neutron.plugins.ml2.drivers.linuxbridge.agent import arp_protect,1,0,0.0,887
+4a1a37ce9f8baf2078a1a44380895d144203a876,class TestLinuxBridgeAgent(base.BaseTestCase):,1,0,0.0,888
+4a1a37ce9f8baf2078a1a44380895d144203a876,"super(TestLinuxBridgeAgent, self).setUp()",1,0,0.0,889
+4a1a37ce9f8baf2078a1a44380895d144203a876,"cfg.CONF.set_default('quitting_rpc_timeout', 10, 'AGENT')",1,0,0.0,890
+4a1a37ce9f8baf2078a1a44380895d144203a876,'get_interface_mac'),1,0,0.0,891
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib.IPWrapper,",1,0,0.0,892
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'get_device_by_ip',",1,0,0.0,893
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=FAKE_DEFAULT_DEV):,1,0,0.0,894
+4a1a37ce9f8baf2078a1a44380895d144203a876,"{}, {}, 0, cfg.CONF.AGENT.quitting_rpc_timeout)",1,0,0.0,895
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(admin_state,",0,0,0.0,896
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib, 'IPDevice') as dev_mock:",0,0,0.0,897
+4a1a37ce9f8baf2078a1a44380895d144203a876,fake_current),0,0,0.0,898
+4a1a37ce9f8baf2078a1a44380895d144203a876,"def _test_ensure_port_admin_state(self, admin_state):",0,0,0.0,899
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock_details['physical_network'],",0,0,0.0,900
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_details['segmentation_id']),0,0,0.0,901
+4a1a37ce9f8baf2078a1a44380895d144203a876,with mock.patch('neutron.plugins.ml2.drivers.agent.',0,0,0.0,902
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'_agent_manager_base.NetworkSegment',",0,0,0.0,903
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=mock_segment):,0,0,0.0,904
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertFalse(resync_needed),0,0,0.0,905
+4a1a37ce9f8baf2078a1a44380895d144203a876,"agent.rpc_callbacks.add_network.assert_called_with('net123',",0,0,0.0,906
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_segment),0,0,0.0,907
+4a1a37ce9f8baf2078a1a44380895d144203a876,agent.mgr.plug_interface.assert_called_with(,0,0,0.0,908
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'net123', mock_segment, 'dev123',",0,0,0.0,909
+4a1a37ce9f8baf2078a1a44380895d144203a876,constants.DEVICE_OWNER_NETWORK_PREFIX),0,0,0.0,910
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(agent.plugin_rpc.update_device_up.called),0,0,0.0,911
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(agent.ext_manager.handle_port.called),0,0,0.0,912
+4a1a37ce9f8baf2078a1a44380895d144203a876,self.assertTrue(mock_port_data in agent.network_ports[,0,0,0.0,913
+4a1a37ce9f8baf2078a1a44380895d144203a876,mock_details['network_id']],0,0,0.0,914
+4a1a37ce9f8baf2078a1a44380895d144203a876,),0,0,0.0,915
+4a1a37ce9f8baf2078a1a44380895d144203a876,"set_arp.assert_called_with(mock_details['device'], mock_details)",0,0,0.0,916
+4a1a37ce9f8baf2078a1a44380895d144203a876,def test_plug_interface(self):,0,0,0.0,917
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.lbm.plug_interface(""123"", segment, ""tap234"",",0,0,0.0,918
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""update_interface_ip_details""),",1,0,0.0,919
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""get_interface_details""),",1,0,0.0,920
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""remove_interface""),",1,0,0.0,921
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""delete_vlan"") as del_vlan,\",0,0,0.0,922
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(lbm, ""remove_interface""),\",0,0,0.0,923
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(lbm, ""delete_vxlan"") as del_vxlan,\",0,0,0.0,924
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lbm, ""delete_vlan_bridge"") as del_br_fn,\",0,0,0.0,925
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_tap_devices_count"",",0,0,0.0,926
+4a1a37ce9f8baf2078a1a44380895d144203a876,side_effect=tap_count_side_effect):,0,0,0.0,927
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""is_device_on_bridge"") as isdev_fn,\",0,0,0.0,928
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'vxlan_ucast_supported',",0,0,0.0,929
+4a1a37ce9f8baf2078a1a44380895d144203a876,"return_value=vxlan_ucast_supported),\",0,0,0.0,930
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'vxlan_mcast_supported',",0,0,0.0,931
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=vxlan_mcast_supported):,0,0,0.0,932
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib, 'device_exists', return_value=False),\",0,0,0.0,933
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'delete_vxlan',",0,0,0.0,934
+4a1a37ce9f8baf2078a1a44380895d144203a876,"return_value=None),\",0,0,0.0,935
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'ensure_vxlan',",0,0,0.0,936
+4a1a37ce9f8baf2078a1a44380895d144203a876,"utils,",0,0,0.0,937
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'execute',",0,0,0.0,938
+4a1a37ce9f8baf2078a1a44380895d144203a876,"side_effect=None if fdb_append else RuntimeError()),\",0,0,0.0,939
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib,",0,0,0.0,940
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'iproute_arg_supported',",0,0,0.0,941
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(lbm,",0,0,0.0,942
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(utils, ""execute"") as exec_fn:",0,0,0.0,943
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lb_rpc.agent.br_mgr,",0,0,0.0,944
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""delete_vxlan"") as del_vxlan,\",0,0,0.0,945
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib.IpRouteCommand,",0,0,0.0,946
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'add_gateway') as addgw_fn,\",0,0,0.0,947
+4a1a37ce9f8baf2078a1a44380895d144203a876,'delete_gateway') as delgw_fn:,0,0,0.0,948
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'_bridge_exists_and_ensure_up') as de_fn,\",0,0,0.0,949
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(utils, 'execute') as exec_fn,\",0,0,0.0,950
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'update_interface_ip_details') as upd_fn,\",0,0,0.0,951
+4a1a37ce9f8baf2078a1a44380895d144203a876,"'interface_exists_on_bridge') as ie_fn,\",0,0,0.0,952
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'is_device_on_bridge'),\",0,0,0.0,953
+4a1a37ce9f8baf2078a1a44380895d144203a876,'get_bridge_for_tap_device') as get_if_br_fn:,0,0,0.0,954
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(self.lbm, ""ensure_local_bridge"") as en_fn,\",0,0,0.0,955
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(utils, ""execute"") as exec_fn,\",0,0,0.0,956
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_bridge_for_tap_device"") as get_br:",0,0,0.0,957
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""ensure_physical_in_bridge"") as ens_fn,\",0,0,0.0,958
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""ensure_tap_mtu"") as en_mtu_fn,\",0,0,0.0,959
+4a1a37ce9f8baf2078a1a44380895d144203a876,"with mock.patch.object(ip_lib, ""device_exists"") as de_fn,\",0,0,0.0,960
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_interfaces_on_bridge"") as getif_fn,\",0,0,0.0,961
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""remove_interface""),\",0,0,0.0,962
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_interface_details"") as if_det_fn,\",0,0,0.0,963
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""update_interface_ip_details"") as updif_fn,\",0,0,0.0,964
+4a1a37ce9f8baf2078a1a44380895d144203a876,return_value=iproute_arg_supported):,0,0,0.0,965
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""get_bridge_name"") as get_br_fn,\",0,0,0.0,966
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""get_interfaces_on_bridge""),",1,0,0.0,967
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (ens_vl_fn, ens, get_int_det_fn):",1,0,0.0,968
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpAddrCommand, 'delete')",1,0,0.0,969
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (add_fn, del_fn):",1,0,0.0,970
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpRouteCommand, 'add_gateway'),",1,0,0.0,971
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpRouteCommand, 'delete_gateway')",1,0,0.0,972
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (addgw_fn, delgw_fn):",1,0,0.0,973
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, '_bridge_exists_and_ensure_up'),",1,0,0.0,974
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'update_interface_ip_details'),",1,0,0.0,975
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'interface_exists_on_bridge'),",1,0,0.0,976
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'is_device_on_bridge'),",1,0,0.0,977
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'get_bridge_for_tap_device'),",1,0,0.0,978
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (de_fn, exec_fn, upd_fn, ie_fn, if_br_fn, get_if_br_fn):",1,0,0.0,979
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""ensure_local_bridge""),",1,0,0.0,980
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(utils, ""execute""),",1,0,0.0,981
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""get_bridge_for_tap_device"")",1,0,0.0,982
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (en_fn, exec_fn, get_br):",1,0,0.0,983
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""ensure_physical_in_bridge""),",1,0,0.0,984
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""ensure_tap_mtu""),",1,0,0.0,985
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (ens_fn, en_mtu_fn, get_br):",1,0,0.0,986
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib, ""device_exists""),",1,0,0.0,987
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpAddrCommand, 'add'),",1,0,0.0,988
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'get_interface_details'),",1,0,0.0,989
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lb_rpc.agent.br_mgr,",0,0,0.0,990
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'ensure_bridge'),",1,0,0.0,991
+4a1a37ce9f8baf2078a1a44380895d144203a876,"""delete_vlan_bridge"") as del_fn:",0,0,0.0,992
+4a1a37ce9f8baf2078a1a44380895d144203a876,with contextlib.nested(,1,0,0.0,993
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent.plugin_rpc, ""update_device_down""),",1,0,0.0,994
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(agent.sg_agent, ""remove_devices_filter"")",1,0,0.0,995
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (fn_udd, fn_rdf):",1,0,0.0,996
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(utils, 'execute'),",1,0,0.0,997
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(os, 'listdir'),",1,0,0.0,998
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib, 'device_exists', return_value=True)",1,0,0.0,999
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (exec_fn, listdir_fn, dev_exists_fn):",1,0,0.0,1000
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IPWrapper, 'get_devices'),",1,0,0.0,1001
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpAddrCommand, 'list')",1,0,0.0,1002
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (get_dev_fn, ip_list_fn):",1,0,0.0,1003
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""get_all_neutron_bridges""),",1,0,0.0,1004
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, ""get_interfaces_on_bridge"")",1,0,0.0,1005
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (get_all_qbr_fn, get_if_fn):",1,0,0.0,1006
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpAddrCommand, 'list'),",1,0,0.0,1007
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(ip_lib.IpRouteCommand, 'get_gateway')",1,0,0.0,1008
+4a1a37ce9f8baf2078a1a44380895d144203a876,") as (list_fn, getgw_fn):",1,0,0.0,1009
+4a1a37ce9f8baf2078a1a44380895d144203a876,"mock.patch.object(self.lbm, 'ensure_vlan'),",1,0,0.0,1010
+4a1a37ce9f8baf2078a1a44380895d144203a876,"self.assertEqual(port_2_data['port_id'], cleaned_port_id)",1,0,0.0,1011

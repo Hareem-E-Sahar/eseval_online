@@ -1,0 +1,71 @@
+commit_id,line,line_level_label,count,line_score,row
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('tenant_id', sa.String(length=255), nullable=True),",1,3,1.0,1
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('router_id', sa.String(length=36), nullable=False),",0,2,0.6666666666666666,2
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('tenant_id', sa.String(length=255),",0,2,0.6666666666666666,3
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('port_id', sa.String(length=36), nullable=False),",0,2,0.6666666666666666,4
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('id', sa.String(length=36), nullable=False),",1,2,0.6666666666666666,5
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('tenant_id', sa.String(length=255), nullable=True,",0,2,0.6666666666666666,6
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.ForeignKeyConstraint(['floating_port_id'], ['ports.id'], ),",1,2,0.6666666666666666,7
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('last_known_router_id', sa.String(length=36), nullable=True),",0,2,0.6666666666666666,8
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('l3_agent_id', sa.String(length=36),",0,1,0.3333333333333333,9
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.ForeignKeyConstraint(['floating_port_id'], ['ports.id'],",0,1,0.3333333333333333,10
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"['ports.id'],",0,1,0.3333333333333333,11
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"),",0,1,0.3333333333333333,12
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('network_id', sa.String(length=36),",0,1,0.3333333333333333,13
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"nullable=True),",0,1,0.3333333333333333,14
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.ForeignKeyConstraint(['port_id'], ['ports.id'],",0,1,0.3333333333333333,15
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('router_id', sa.String(length=36),",0,1,0.3333333333333333,16
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"nullable=False),",0,1,0.3333333333333333,17
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('port_id', sa.String(length=36),",0,1,0.3333333333333333,18
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,op.create_table(,0,1,0.3333333333333333,19
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('status', sa.String(length=16), nullable=True),",0,1,0.3333333333333333,20
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"l3_ha_states = sa.Enum('active', 'standby', name='l3_ha_states')",0,1,0.3333333333333333,21
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,ondelete='CASCADE')),0,0,0.0,22
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"nullable=False,",0,0,0.0,23
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"nullable=False, primary_key=True),",0,0,0.0,24
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"op.create_table('ha_router_networks',",0,0,0.0,25
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"ondelete='CASCADE'),",0,0,0.0,26
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.ForeignKeyConstraint(['l3_agent_id'], ['agents.id'],",0,0,0.0,27
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.ForeignKeyConstraint(['router_id'], ['routers.id'],",0,0,0.0,28
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.ForeignKeyConstraint(['network_id'], ['networks.id'],",0,0,0.0,29
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.PrimaryKeyConstraint('port_id'),",0,0,0.0,30
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"server_default='standby'),",0,0,0.0,31
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"primary_key=True),",0,0,0.0,32
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,sa.PrimaryKeyConstraint('id')),1,0,0.0,33
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"op.create_table('ha_router_vrid_allocations',",0,0,0.0,34
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('vr_id', sa.Integer(),",0,0,0.0,35
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"'routerports',",0,0,0.0,36
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('port_type', sa.String(length=255)),",0,0,0.0,37
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.PrimaryKeyConstraint('router_id', 'port_id'),",0,0,0.0,38
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"['router_id'],",0,0,0.0,39
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"['routers.id'],",0,0,0.0,40
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,ondelete='CASCADE',0,0,0.0,41
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"['port_id'],",0,0,0.0,42
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"op.create_table('ha_router_agent_port_bindings',",0,0,0.0,43
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"index=True),",0,0,0.0,44
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('state', l3_ha_states,",0,0,0.0,45
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"'router_extra_attributes',",0,0,0.0,46
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,),0,0,0.0,47
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,sa.PrimaryKeyConstraint('router_id'),0,0,0.0,48
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,def upgrade_quota():,0,0,0.0,49
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,def downgrade_quota():,0,0,0.0,50
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,op.drop_table('quotas'),0,0,0.0,51
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,def upgrade_quota(options=None):,1,0,0.0,52
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,if not (options or {}).get('folsom_quota_db_enabled'):,1,0,0.0,53
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,return,1,0,0.0,54
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,def downgrade_quota(options=None):,1,0,0.0,55
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,if (options or {}).get('folsom_quota_db_enabled'):,1,0,0.0,56
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,op.drop_table('quotas'),1,0,0.0,57
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,common_ext_ops.upgrade_quota(),0,0,0.0,58
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,common_ext_ops.downgrade_quota(),0,0,0.0,59
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,common_ext_ops.upgrade_quota(options),1,0,0.0,60
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,common_ext_ops.downgrade_quota(options),1,0,0.0,61
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.PrimaryKeyConstraint('router_id', 'l3_agent_id'))",0,0,0.0,62
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('distributed', sa.Boolean(), nullable=False,",0,0,0.0,63
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"server_default=sa.sql.false()),",0,0,0.0,64
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('service_router', sa.Boolean(), nullable=False,",0,0,0.0,65
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('ha', sa.Boolean(), nullable=False,",0,0,0.0,66
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"sa.Column('ha_vr_id', sa.Integer()),",0,0,0.0,67
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,sa.ForeignKeyConstraint(,0,0,0.0,68
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"['router_id'], ['routers.id'], ondelete='CASCADE'),",0,0,0.0,69
+90abfc6b04f1acf61e8a8b3413a90d2a12de68b8,"ondelete='CASCADE'),",0,0,0.0,70

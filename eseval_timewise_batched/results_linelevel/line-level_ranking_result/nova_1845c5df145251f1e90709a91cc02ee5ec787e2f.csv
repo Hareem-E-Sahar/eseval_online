@@ -1,0 +1,241 @@
+commit_id,line,line_level_label,count,line_score,row
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"LOG.error(_(""Can't downgrade without losing data""))",1,4,1.0,1
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Stop the instance or raise if it does not exist.""""""",1,3,0.75,2
+1845c5df145251f1e90709a91cc02ee5ec787e2f,:param network_id: = network to retrieve vifs for,1,3,0.75,3
+1845c5df145251f1e90709a91cc02ee5ec787e2f,info['gateway6'] = network['gateway_v6'],1,3,0.75,4
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# bridge_interface column to add to networks table,1,2,0.5,5
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# Filters for exact matches that we can do along with the SQL query.,1,2,0.5,6
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Get all network services sorted by network count.",1,2,0.5,7
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# NOTE(francois.charlier): the instance may have been deleted already,0,2,0.5,8
+1845c5df145251f1e90709a91cc02ee5ec787e2f,raise Exception,1,2,0.5,9
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# NOTE(francois.charlier): in some cases the instance might be,0,2,0.5,10
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"mac_address = Column('mac_address',",0,2,0.5,11
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"networks = Table('networks', meta, autoload=True)",0,2,0.5,12
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# grab tables and (column for dropping later),0,2,0.5,13
+1845c5df145251f1e90709a91cc02ee5ec787e2f,info['gateway6'] = v6_subnet['gateway'],1,2,0.5,14
+1845c5df145251f1e90709a91cc02ee5ec787e2f,info['gateway_v6'] = network['gateway_v6'],0,2,0.5,15
+1845c5df145251f1e90709a91cc02ee5ec787e2f,def security_group_destroy_all(context):,1,1,0.25,16
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"subq = model_query(context, models.Network.host,",1,1,0.25,17
+1845c5df145251f1e90709a91cc02ee5ec787e2f,label = 'network_count',1,1,0.25,18
+1845c5df145251f1e90709a91cc02ee5ec787e2f,topic = 'network',1,1,0.25,19
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session = get_session(),1,1,0.25,20
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def bw_usage_get_all_by_filters(context, filters):",1,1,0.25,21
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def project_get_networks_v6(context, project_id):",1,1,0.25,22
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def provider_fw_rule_get_all_by_cidr(context, cidr):",1,1,0.25,23
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def virtual_interface_get_by_network(context, network_id):",1,1,0.25,24
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Disassociate all networks from projects.""""""",1,1,0.25,25
+1845c5df145251f1e90709a91cc02ee5ec787e2f,def network_disassociate_all(context):,1,1,0.25,26
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def network_count_available_ips(context, network_id):",1,1,0.25,27
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def network_count_allocated_ips(context, network_id):",1,1,0.25,28
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def instance_get_all_by_user(context, user_id):",1,1,0.25,29
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def instance_stop(context, instance_id):",1,1,0.25,30
+1845c5df145251f1e90709a91cc02ee5ec787e2f,if not session:,1,1,0.25,31
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def compute_node_get_by_service(context, service_id, session=None):",1,1,0.25,32
+1845c5df145251f1e90709a91cc02ee5ec787e2f,:param values: = values to update,1,1,0.25,33
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"result = model_query(context, models.ComputeNode, session=session).\",1,1,0.25,34
+1845c5df145251f1e90709a91cc02ee5ec787e2f,if not result:,1,1,0.25,35
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"query_prefix = exact_filter(query_prefix, models.BandwidthUsage,",1,1,0.25,36
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# Filter the query,1,1,0.25,37
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"exact_match_filter_names = [""instance_id"", ""mac"",",1,1,0.25,38
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filters = filters.copy(),1,1,0.25,39
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# be modifying it and we shouldn't affect the caller's use of it.,1,1,0.25,40
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"# Make a copy of the filters dictionary to use going forward, as we'll",1,1,0.25,41
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def security_group_destroy_all(context, session=None):",1,1,0.25,42
+1845c5df145251f1e90709a91cc02ee5ec787e2f,vif_refs = _virtual_interface_query(context).\,1,1,0.25,43
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"vif_ref = virtual_interface_get(context, vif_id, session=session)",1,1,0.25,44
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def compute_node_capacity_find(context, minimum_ram_mb, minimum_disk_gb):",1,1,0.25,45
+1845c5df145251f1e90709a91cc02ee5ec787e2f,:param vif_id: = id of virtual interface to update,1,1,0.25,46
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"# (postgres, mysql+innodb and above).",1,1,0.25,47
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# reliably with engines that support row-level locking,1,1,0.25,48
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# Note: these operations use with_lockmode() ... so this will only work,1,1,0.25,49
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"raise exception.ComputeHostNotFound(host=""ServiceID=%s"" % service_id)",1,1,0.25,50
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def virtual_interface_update(context, vif_id, values):",1,1,0.25,51
+1845c5df145251f1e90709a91cc02ee5ec787e2f,query_prefix = session.query(models.BandwidthUsage).\,1,1,0.25,52
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"def compute_node_get_for_service(context, service_id):",1,1,0.25,53
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('address',",0,1,0.25,54
+1845c5df145251f1e90709a91cc02ee5ec787e2f,meta = MetaData(),1,1,0.25,55
+1845c5df145251f1e90709a91cc02ee5ec787e2f,u = instances.update().values(mac_address=row['address']).\,0,1,0.25,56
+1845c5df145251f1e90709a91cc02ee5ec787e2f,for row in s.execute():,0,1,0.25,57
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"s = select([instances.c.id, virtual_interfaces.c.address],",0,1,0.25,58
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"virtual_interfaces = Table('virtual_interfaces', meta, autoload=True)",0,1,0.25,59
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"fixed_ips = Table('fixed_ips', meta, autoload=True)",0,1,0.25,60
+1845c5df145251f1e90709a91cc02ee5ec787e2f,meta.bind = migrate_engine,0,1,0.25,61
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"virtual_interfaces = Table('virtual_interfaces', meta,",0,1,0.25,62
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"virtual_interfaces = Table('virtual_interfaces', meta,",1,1,0.25,63
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# New Tables,0,1,0.25,64
+1845c5df145251f1e90709a91cc02ee5ec787e2f,#,0,1,0.25,65
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"virtual_interface_id = Column('virtual_interface_id',",0,1,0.25,66
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"interface = Column('bridge_interface',",0,1,0.25,67
+1845c5df145251f1e90709a91cc02ee5ec787e2f,meta = MetaData(),0,1,0.25,68
+1845c5df145251f1e90709a91cc02ee5ec787e2f,info['gateway_v6'] = v6_subnet['gateway'],0,1,0.25,69
+1845c5df145251f1e90709a91cc02ee5ec787e2f,def service_get_all_network_sorted(context):,1,1,0.25,70
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# virtual interface table to add to DB,1,1,0.25,71
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"instances = Table('instances', meta, autoload=True)",0,1,0.25,72
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('address',",1,1,0.25,73
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"fixed_ips = self.db.fixed_ip_get_by_instance(read_deleted_context,",0,1,0.25,74
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.deallocate_floating_ip(context, address,",1,1,0.25,75
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"interface = Column('bridge_interface',",1,1,0.25,76
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.disassociate_floating_ip(context, address,",1,1,0.25,77
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"fixed_ips = self.db.fixed_ip_get_by_instance(context, instance_id)",1,1,0.25,78
+1845c5df145251f1e90709a91cc02ee5ec787e2f,admin_context = context.get_admin_context(read_deleted='yes'),0,1,0.25,79
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# thus enabling `read_deleted`,0,1,0.25,80
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.disassociate_floating_ip(read_deleted_context, address,",0,1,0.25,81
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.deallocate_floating_ip(read_deleted_context, address,",0,1,0.25,82
+1845c5df145251f1e90709a91cc02ee5ec787e2f,read_deleted_context = context.elevated(read_deleted='yes'),0,1,0.25,83
+1845c5df145251f1e90709a91cc02ee5ec787e2f,admin_context = context.get_admin_context(),1,1,0.25,84
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# instances too,0,1,0.25,85
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"# deleted before the IPs are released, so we need to get deleted",0,1,0.25,86
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"virtual_interface_id = Column('virtual_interface_id',",1,1,0.25,87
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# foreignkey added in next migration,1,1,0.25,88
+1845c5df145251f1e90709a91cc02ee5ec787e2f,# virtual interface id column to add to fixed_ips table,1,1,0.25,89
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"session,",1,0,0.0,90
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return result,1,0,0.0,91
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"topic,",1,0,0.0,92
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"subq,",1,0,0.0,93
+1845c5df145251f1e90709a91cc02ee5ec787e2f,label),1,0,0.0,94
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(service_id=service_id).\,1,0,0.0,95
+1845c5df145251f1e90709a91cc02ee5ec787e2f,first(),1,0,0.0,96
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter(models.Service.disabled == False).\,1,0,0.0,97
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return model_query(context, models.ComputeNode).\",1,0,0.0,98
+1845c5df145251f1e90709a91cc02ee5ec787e2f,options(joinedload('service')).\,1,0,0.0,99
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Get all enabled hosts with enough ram and disk.""""""",1,0,0.0,100
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return session.query(models.ComputeNode).\,1,0,0.0,101
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter(models.ComputeNode.free_ram_mb >= minimum_ram_mb).\,1,0,0.0,102
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter(models.ComputeNode.free_disk_gb >= minimum_disk_gb).\,1,0,0.0,103
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(deleted=False).\,1,0,0.0,104
+1845c5df145251f1e90709a91cc02ee5ec787e2f,subquery(),1,0,0.0,105
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return _service_get_all_topic_subquery(context,",1,0,0.0,106
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Return the number of allocated non-reserved ips in the network.""""""",1,0,0.0,107
+1845c5df145251f1e90709a91cc02ee5ec787e2f,group_by(models.Network.host).\,1,0,0.0,108
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return IMPL.security_group_destroy_all(context),1,0,0.0,109
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.instance_get_all_by_user(context, user_id)",1,0,0.0,110
+1845c5df145251f1e90709a91cc02ee5ec787e2f,@require_context,1,0,0.0,111
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.network_count_allocated_ips(context, network_id)",1,0,0.0,112
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Return the number of available ips in the network.""""""",1,0,0.0,113
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.network_count_available_ips(context, network_id)",1,0,0.0,114
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return IMPL.network_disassociate_all(context),1,0,0.0,115
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Deletes a security group.""""""",1,0,0.0,116
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Get all provider-level firewall rules.""""""",1,0,0.0,117
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"session=session, read_deleted=""no"").\",1,0,0.0,118
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.provider_fw_rule_get_all_by_cidr(context, cidr)",1,0,0.0,119
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.project_get_networks_v6(context, project_id)",1,0,0.0,120
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Return bandwidth usage that matches all filters.""""""",1,0,0.0,121
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.bw_usage_get_all_by_filters(context, filters)",1,0,0.0,122
+1845c5df145251f1e90709a91cc02ee5ec787e2f,@require_admin_context,1,0,0.0,123
+1845c5df145251f1e90709a91cc02ee5ec787e2f,with session.begin():,1,0,0.0,124
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"func.count(models.Network.id).label(label),",1,0,0.0,125
+1845c5df145251f1e90709a91cc02ee5ec787e2f,with_lockmode('update').all(),1,0,0.0,126
+1845c5df145251f1e90709a91cc02ee5ec787e2f,update({'updated_at': literal_column('updated_at')}),1,0,0.0,127
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Update a virtual interface record in the database.",1,0,0.0,128
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(allocated=True).\,1,0,0.0,129
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(allocated=False).\,1,0,0.0,130
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(reserved=False).\,1,0,0.0,131
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session.query(models.Network).\,1,0,0.0,132
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"update({'project_id': None,",1,0,0.0,133
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session.query(models.SecurityGroup).\,1,0,0.0,134
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"update({'deleted': True,",1,0,0.0,135
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"'deleted_at': utils.utcnow(),",1,0,0.0,136
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session.query(models.SecurityGroupIngressRule).\,1,0,0.0,137
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return model_query(context, models.ProviderFirewallRule).\",1,0,0.0,138
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(cidr=cidr).\,1,0,0.0,139
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return project_get_networks(context, project_id)",1,0,0.0,140
+1845c5df145251f1e90709a91cc02ee5ec787e2f,order_by(desc(models.BandwidthUsage.created_at)),1,0,0.0,141
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""start_period"", ""last_refreshed"", ""bw_in"", ""bw_out""]",1,0,0.0,142
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"filters, exact_match_filter_names)",1,0,0.0,143
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.instance_stop(context, instance_id)",1,0,0.0,144
+1845c5df145251f1e90709a91cc02ee5ec787e2f,count(),1,0,0.0,145
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return _network_ips_query(context, network_id).\",1,0,0.0,146
+1845c5df145251f1e90709a91cc02ee5ec787e2f,vif_ref.update(values),1,0,0.0,147
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return _instance_get_all_query(context).filter_by(user_id=user_id).all(),1,0,0.0,148
+1845c5df145251f1e90709a91cc02ee5ec787e2f,vif_ref.save(session=session),1,0,0.0,149
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return vif_ref,1,0,0.0,150
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Gets all virtual_interface on network.",1,0,0.0,151
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(network_id=network_id).\,1,0,0.0,152
+1845c5df145251f1e90709a91cc02ee5ec787e2f,all(),1,0,0.0,153
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return vif_refs,1,0,0.0,154
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session.query(models.Instance).\,1,0,0.0,155
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(id=instance_id).\,1,0,0.0,156
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"update({'host': None,",1,0,0.0,157
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"'vm_state': vm_states.STOPPED,",1,0,0.0,158
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"'task_state': None,",1,0,0.0,159
+1845c5df145251f1e90709a91cc02ee5ec787e2f,'updated_at': literal_column('updated_at')}),1,0,0.0,160
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session.query(models.SecurityGroupInstanceAssociation).\,1,0,0.0,161
+1845c5df145251f1e90709a91cc02ee5ec787e2f,filter_by(instance_id=instance_id).\,1,0,0.0,162
+1845c5df145251f1e90709a91cc02ee5ec787e2f,session.query(models.InstanceMetadata).\,1,0,0.0,163
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Get all instances.""""""",1,0,0.0,164
+1845c5df145251f1e90709a91cc02ee5ec787e2f,from sqlalchemy import *,1,0,0.0,165
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.virtual_interface_get_by_network(context, network_id)",1,0,0.0,166
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('network_id',",0,0,0.0,167
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"ForeignKey('networks.id')),",0,0,0.0,168
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('instance_id',",0,0,0.0,169
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"ForeignKey('instances.id'),",0,0,0.0,170
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"nullable=False),",0,0,0.0,171
+1845c5df145251f1e90709a91cc02ee5ec787e2f,mysql_engine='InnoDB'),0,0,0.0,172
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"unicode_error=None, _warn_on_bytestring=False))",0,0,0.0,173
+1845c5df145251f1e90709a91cc02ee5ec787e2f,instances.create_column(mac_address),0,0,0.0,174
+1845c5df145251f1e90709a91cc02ee5ec787e2f,virtual_interfaces.c.instance_id == instances.c.id),0,0,0.0,175
+1845c5df145251f1e90709a91cc02ee5ec787e2f,where(instances.c.id == row['id']),0,0,0.0,176
+1845c5df145251f1e90709a91cc02ee5ec787e2f,networks.drop_column('bridge_interface'),0,0,0.0,177
+1845c5df145251f1e90709a91cc02ee5ec787e2f,virtual_interfaces.drop(),0,0,0.0,178
+1845c5df145251f1e90709a91cc02ee5ec787e2f,fixed_ips.drop_column('virtual_interface_id'),0,0,0.0,179
+1845c5df145251f1e90709a91cc02ee5ec787e2f,from migrate import *,1,0,0.0,180
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('created_at', DateTime(timezone=False),",1,0,0.0,181
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"default=utils.utcnow()),",1,0,0.0,182
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Integer(),",0,0,0.0,183
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"unique=True),",0,0,0.0,184
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"onupdate=utils.utcnow()),",1,0,0.0,185
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"unicode_error=None, _warn_on_bytestring=False),",0,0,0.0,186
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"from sqlalchemy import select, Boolean, Column, DateTime, ForeignKey",0,0,0.0,187
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"from sqlalchemy import Integer, MetaData, String",0,0,0.0,188
+1845c5df145251f1e90709a91cc02ee5ec787e2f,from sqlalchemy import Table,0,0,0.0,189
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"String(length=255, convert_unicode=False,",0,0,0.0,190
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"assert_unicode=None, unicode_error=None,",0,0,0.0,191
+1845c5df145251f1e90709a91cc02ee5ec787e2f,_warn_on_bytestring=False)),0,0,0.0,192
+1845c5df145251f1e90709a91cc02ee5ec787e2f,Integer()),0,0,0.0,193
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('created_at', DateTime(timezone=False),",0,0,0.0,194
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"default=utils.utcnow()),",0,0,0.0,195
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('updated_at', DateTime(timezone=False),",0,0,0.0,196
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"onupdate=utils.utcnow()),",0,0,0.0,197
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('deleted_at', DateTime(timezone=False)),",0,0,0.0,198
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('deleted', Boolean(create_constraint=True, name=None)),",0,0,0.0,199
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('id', Integer(), primary_key=True, nullable=False),",0,0,0.0,200
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"assert_unicode=None,",0,0,0.0,201
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('updated_at', DateTime(timezone=False),",1,0,0.0,202
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('deleted_at', DateTime(timezone=False)),",1,0,0.0,203
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Gets all virtual interfaces on network.""""""",1,0,0.0,204
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.db.fixed_ip_get_by_instance(read_deleted_context,",0,0,0.0,205
+1845c5df145251f1e90709a91cc02ee5ec787e2f,**kwargs),0,0,0.0,206
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.db.virtual_interface_delete_by_instance(read_deleted_context,",0,0,0.0,207
+1845c5df145251f1e90709a91cc02ee5ec787e2f,context=context),1,0,0.0,208
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.db.fixed_ip_get_by_instance(context,",1,0,0.0,209
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.deallocate_fixed_ip(context, fixed_ip['address'], **kwargs)",1,0,0.0,210
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.db.virtual_interface_delete_by_instance(context, instance_id)",1,0,0.0,211
+1845c5df145251f1e90709a91cc02ee5ec787e2f,":returns: a list of (Service, network_count) tuples.",1,0,0.0,212
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""",1,0,0.0,213
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return IMPL.service_get_all_network_sorted(context),1,0,0.0,214
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Get all computeNodes.""""""",1,0,0.0,215
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.compute_node_get_for_service(context, service_id)",1,0,0.0,216
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.compute_node_capacity_find(context, minimum_ram_mb,",1,0,0.0,217
+1845c5df145251f1e90709a91cc02ee5ec787e2f,minimum_disk_gb),1,0,0.0,218
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"""""""Update a virtual interface record in the database.""""""",1,0,0.0,219
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"return IMPL.virtual_interface_update(context, vif_id, values)",1,0,0.0,220
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"self.deallocate_fixed_ip(read_deleted_context, fixed_ip['address'],",0,0,0.0,221
+1845c5df145251f1e90709a91cc02ee5ec787e2f,instance_id),0,0,0.0,222
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('deleted', Boolean(create_constraint=True, name=None)),",1,0,0.0,223
+1845c5df145251f1e90709a91cc02ee5ec787e2f,context=read_deleted_context),0,0,0.0,224
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('id', Integer(), primary_key=True, nullable=False),",1,0,0.0,225
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"String(length=255, convert_unicode=False, assert_unicode=None,",1,0,0.0,226
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"unicode_error=None, _warn_on_bytestring=False),",1,0,0.0,227
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"unique=True),",1,0,0.0,228
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('network_id',",1,0,0.0,229
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Integer(),",1,0,0.0,230
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"ForeignKey('networks.id')),",1,0,0.0,231
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"Column('instance_id',",1,0,0.0,232
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"ForeignKey('instances.id'),",1,0,0.0,233
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"nullable=False),",1,0,0.0,234
+1845c5df145251f1e90709a91cc02ee5ec787e2f,mysql_engine='InnoDB'),1,0,0.0,235
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"String(length=255, convert_unicode=False,",1,0,0.0,236
+1845c5df145251f1e90709a91cc02ee5ec787e2f,"assert_unicode=None, unicode_error=None,",1,0,0.0,237
+1845c5df145251f1e90709a91cc02ee5ec787e2f,_warn_on_bytestring=False)),1,0,0.0,238
+1845c5df145251f1e90709a91cc02ee5ec787e2f,Integer()),1,0,0.0,239
+1845c5df145251f1e90709a91cc02ee5ec787e2f,return query_prefix.all(),1,0,0.0,240

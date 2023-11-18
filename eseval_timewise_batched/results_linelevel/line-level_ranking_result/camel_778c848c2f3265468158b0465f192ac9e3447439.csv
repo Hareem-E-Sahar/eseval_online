@@ -1,0 +1,38 @@
+commit_id,line,line_level_label,count,line_score,row
+778c848c2f3265468158b0465f192ac9e3447439,// setting the classloader here will allow the underlying elasticsearch-java,0,2,1.0,1
+778c848c2f3265468158b0465f192ac9e3447439,"LOG.info(""REMOTE ELASTICSEARCH: {}"", configuration.getIp());",1,2,1.0,2
+778c848c2f3265468158b0465f192ac9e3447439,// setting the classloader here will allow the underlying elasticsearch-java,1,2,1.0,3
+778c848c2f3265468158b0465f192ac9e3447439,// class to find its names.txt in an OSGi environment (otherwise the thread,1,2,1.0,4
+778c848c2f3265468158b0465f192ac9e3447439,// class to find its names.txt in an OSGi environment (otherwise the thread,0,2,1.0,5
+778c848c2f3265468158b0465f192ac9e3447439,private Settings getSettings() {,0,1,0.5,6
+778c848c2f3265468158b0465f192ac9e3447439,".put(""cluster.name"", configuration.getClusterName())",1,1,0.5,7
+778c848c2f3265468158b0465f192ac9e3447439,"// classloader is used, which won't be able to see the file causing a startup",1,1,0.5,8
+778c848c2f3265468158b0465f192ac9e3447439,"// classloader is used, which won't be able to see the file causing a startup",0,1,0.5,9
+778c848c2f3265468158b0465f192ac9e3447439,".put(""cluster.name"", configuration.getClusterName())",0,1,0.5,10
+778c848c2f3265468158b0465f192ac9e3447439,for (TransportAddress address : configuration.getTransportAddresses()) {,0,1,0.5,11
+778c848c2f3265468158b0465f192ac9e3447439,!configuration.getTransportAddresses().isEmpty()) {,0,1,0.5,12
+778c848c2f3265468158b0465f192ac9e3447439,import org.elasticsearch.common.transport.TransportAddress;,0,1,0.5,13
+778c848c2f3265468158b0465f192ac9e3447439,import java.util.List;,0,1,0.5,14
+778c848c2f3265468158b0465f192ac9e3447439,import java.util.ArrayList;,0,1,0.5,15
+778c848c2f3265468158b0465f192ac9e3447439,".put(""client.transport.sniff"", true)",0,0,0.0,16
+778c848c2f3265468158b0465f192ac9e3447439,Client client = new TransportClient(settings),1,0,0.0,17
+778c848c2f3265468158b0465f192ac9e3447439,.build();,1,0,0.0,18
+778c848c2f3265468158b0465f192ac9e3447439,".put(""client.transport.sniff"", true)",1,0,0.0,19
+778c848c2f3265468158b0465f192ac9e3447439,".put(""node.client"", true)",1,0,0.0,20
+778c848c2f3265468158b0465f192ac9e3447439,".put(""client.transport.ignore_cluster_name"", false)",1,0,0.0,21
+778c848c2f3265468158b0465f192ac9e3447439,.classLoader(Settings.class.getClassLoader()),1,0,0.0,22
+778c848c2f3265468158b0465f192ac9e3447439,// exception).,1,0,0.0,23
+778c848c2f3265468158b0465f192ac9e3447439,Settings settings = ImmutableSettings.settingsBuilder(),1,0,0.0,24
+778c848c2f3265468158b0465f192ac9e3447439,.build();,0,0,0.0,25
+778c848c2f3265468158b0465f192ac9e3447439,addresses.add(address);,0,0,0.0,26
+778c848c2f3265468158b0465f192ac9e3447439,".put(""node.client"", true)",0,0,0.0,27
+778c848c2f3265468158b0465f192ac9e3447439,".put(""client.transport.ignore_cluster_name"", false)",0,0,0.0,28
+778c848c2f3265468158b0465f192ac9e3447439,.classLoader(Settings.class.getClassLoader()),0,0,0.0,29
+778c848c2f3265468158b0465f192ac9e3447439,// exception).,0,0,0.0,30
+778c848c2f3265468158b0465f192ac9e3447439,return ImmutableSettings.settingsBuilder(),0,0,0.0,31
+778c848c2f3265468158b0465f192ac9e3447439,.addTransportAddresses(addresses.toArray(new TransportAddress[0]));,0,0,0.0,32
+778c848c2f3265468158b0465f192ac9e3447439,},0,0,0.0,33
+778c848c2f3265468158b0465f192ac9e3447439,List<TransportAddress> addresses = new ArrayList<>(configuration.getTransportAddresses().size());,0,0,0.0,34
+778c848c2f3265468158b0465f192ac9e3447439,} else if (configuration.getTransportAddresses() != null &&,0,0,0.0,35
+778c848c2f3265468158b0465f192ac9e3447439,this.client = new TransportClient(getSettings()),0,0,0.0,36
+778c848c2f3265468158b0465f192ac9e3447439,this.client = client;,1,0,0.0,37

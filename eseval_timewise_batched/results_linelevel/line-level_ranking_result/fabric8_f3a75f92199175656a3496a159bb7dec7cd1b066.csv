@@ -1,0 +1,51 @@
+commit_id,line,line_level_label,count,line_score,row
+f3a75f92199175656a3496a159bb7dec7cd1b066,"LOG.info(""Creating Route "" + namespace + "":"" + id + "" "" + KubernetesHelper.summaryText(entity));",0,13,1.0,1
+f3a75f92199175656a3496a159bb7dec7cd1b066,"LOG.info(""Creating Route "" + namespace + "":"" + id);",1,9,0.6923076923076923,2
+f3a75f92199175656a3496a159bb7dec7cd1b066,"onApplyError(""Failed to create config from "" + sourceName + "". "" + e, e);",1,6,0.46153846153846156,3
+f3a75f92199175656a3496a159bb7dec7cd1b066,"LOG.warn(""Unknown JSON type "" + kindNode + "". JSON: "" + tree);",1,5,0.38461538461538464,4
+f3a75f92199175656a3496a159bb7dec7cd1b066,"public void applyList(JsonNode entity, String sourceName) throws Exception {",1,5,0.38461538461538464,5
+f3a75f92199175656a3496a159bb7dec7cd1b066,"onApplyError(""Failed to process "" + json + "". "" + e, e);",1,5,0.38461538461538464,6
+f3a75f92199175656a3496a159bb7dec7cd1b066,"public void applyList(KubernetesList list, String sourceName) throws Exception {",0,5,0.38461538461538464,7
+f3a75f92199175656a3496a159bb7dec7cd1b066,for (Object entity : entities) {,0,2,0.15384615384615385,8
+f3a75f92199175656a3496a159bb7dec7cd1b066,"Template template = createObjectMapper().treeToValue(tree, Template.class);",1,2,0.15384615384615385,9
+f3a75f92199175656a3496a159bb7dec7cd1b066,"LOG.warn(""No JSON kind for: "" + tree);",1,2,0.15384615384615385,10
+f3a75f92199175656a3496a159bb7dec7cd1b066,String json = item.toString();,1,1,0.07692307692307693,11
+f3a75f92199175656a3496a159bb7dec7cd1b066,"applyTemplate(template, sourceName);",1,1,0.07692307692307693,12
+f3a75f92199175656a3496a159bb7dec7cd1b066,} else {,1,1,0.07692307692307693,13
+f3a75f92199175656a3496a159bb7dec7cd1b066,if (items != null) {,1,1,0.07692307692307693,14
+f3a75f92199175656a3496a159bb7dec7cd1b066,for (JsonNode item : items) {,1,1,0.07692307692307693,15
+f3a75f92199175656a3496a159bb7dec7cd1b066,// TODO the apply method should deal with the item direct?,1,1,0.07692307692307693,16
+f3a75f92199175656a3496a159bb7dec7cd1b066,if (dto != null) {,1,1,0.07692307692307693,17
+f3a75f92199175656a3496a159bb7dec7cd1b066,Object dto = null;,1,1,0.07692307692307693,18
+f3a75f92199175656a3496a159bb7dec7cd1b066,try {,1,1,0.07692307692307693,19
+f3a75f92199175656a3496a159bb7dec7cd1b066,} catch (IOException e) {,1,1,0.07692307692307693,20
+f3a75f92199175656a3496a159bb7dec7cd1b066,"applyList(tree, sourceName);",1,1,0.07692307692307693,21
+f3a75f92199175656a3496a159bb7dec7cd1b066,} catch (Exception e) {,1,1,0.07692307692307693,22
+f3a75f92199175656a3496a159bb7dec7cd1b066,import io.fabric8.openshift.api.model.RouteSpec;,0,1,0.07692307692307693,23
+f3a75f92199175656a3496a159bb7dec7cd1b066,"apply(dto, sourceName);",1,1,0.07692307692307693,24
+f3a75f92199175656a3496a159bb7dec7cd1b066,"} else if (Objects.equal(""Template"", kind)) {",1,1,0.07692307692307693,25
+f3a75f92199175656a3496a159bb7dec7cd1b066,"if (Objects.equal(""Config"", kind) || Objects.equal(""List"", kind)) {",1,1,0.07692307692307693,26
+f3a75f92199175656a3496a159bb7dec7cd1b066,import com.fasterxml.jackson.databind.JsonNode;,1,1,0.07692307692307693,27
+f3a75f92199175656a3496a159bb7dec7cd1b066,import io.fabric8.kubernetes.api.model.KubernetesList;,0,1,0.07692307692307693,28
+f3a75f92199175656a3496a159bb7dec7cd1b066,String kind = kindNode.asText();,1,1,0.07692307692307693,29
+f3a75f92199175656a3496a159bb7dec7cd1b066,"applyList((KubernetesList) dto, sourceName);",0,1,0.07692307692307693,30
+f3a75f92199175656a3496a159bb7dec7cd1b066,if (entities != null) {,0,1,0.07692307692307693,31
+f3a75f92199175656a3496a159bb7dec7cd1b066,"applyEntity(entity, sourceName);",0,1,0.07692307692307693,32
+f3a75f92199175656a3496a159bb7dec7cd1b066,} else if (dto instanceof KubernetesList) {,0,1,0.07692307692307693,33
+f3a75f92199175656a3496a159bb7dec7cd1b066,import io.fabric8.utils.Objects;,1,1,0.07692307692307693,34
+f3a75f92199175656a3496a159bb7dec7cd1b066,import static io.fabric8.kubernetes.api.KubernetesFactory.createObjectMapper;,1,1,0.07692307692307693,35
+f3a75f92199175656a3496a159bb7dec7cd1b066,} else if (dto instanceof JsonNode) {,1,1,0.07692307692307693,36
+f3a75f92199175656a3496a159bb7dec7cd1b066,JsonNode tree = (JsonNode) dto;,1,1,0.07692307692307693,37
+f3a75f92199175656a3496a159bb7dec7cd1b066,if (kindNode != null) {,1,1,0.07692307692307693,38
+f3a75f92199175656a3496a159bb7dec7cd1b066,import java.io.IOException;,1,1,0.07692307692307693,39
+f3a75f92199175656a3496a159bb7dec7cd1b066,// lets parse into a new object,1,0,0.0,40
+f3a75f92199175656a3496a159bb7dec7cd1b066,kubernetes.createConfig(entity);,1,0,0.0,41
+f3a75f92199175656a3496a159bb7dec7cd1b066,/*,1,0,0.0,42
+f3a75f92199175656a3496a159bb7dec7cd1b066,dto = loadJson(json);,1,0,0.0,43
+f3a75f92199175656a3496a159bb7dec7cd1b066,"LOG.debug(""Got item: {}"", json);",1,0,0.0,44
+f3a75f92199175656a3496a159bb7dec7cd1b066,"JsonNode kindNode = tree.get(""kind"");",1,0,0.0,45
+f3a75f92199175656a3496a159bb7dec7cd1b066,"JsonNode items = entity.get(""items"");",1,0,0.0,46
+f3a75f92199175656a3496a159bb7dec7cd1b066,},1,0,0.0,47
+f3a75f92199175656a3496a159bb7dec7cd1b066,},0,0,0.0,48
+f3a75f92199175656a3496a159bb7dec7cd1b066,List<Object> entities = list.getItems();,0,0,0.0,49
+f3a75f92199175656a3496a159bb7dec7cd1b066,*/,1,0,0.0,50

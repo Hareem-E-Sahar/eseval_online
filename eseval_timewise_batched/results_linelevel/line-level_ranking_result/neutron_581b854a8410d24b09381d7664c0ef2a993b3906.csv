@@ -1,0 +1,116 @@
+commit_id,line,line_level_label,count,line_score,row
+581b854a8410d24b09381d7664c0ef2a993b3906,"# captured the model, let's refresh it for the latest database",0,4,1.0,1
+581b854a8410d24b09381d7664c0ef2a993b3906,# detach db_obj right after object is loaded from the model,0,4,1.0,2
+581b854a8410d24b09381d7664c0ef2a993b3906,# detach the model so that consequent fetches don't reuse it,0,3,0.75,3
+581b854a8410d24b09381d7664c0ef2a993b3906,# generate unique_keys from the model,0,3,0.75,4
+581b854a8410d24b09381d7664c0ef2a993b3906,"v: k for (k, v) in cls.fields_need_translation.items()}",0,3,0.75,5
+581b854a8410d24b09381d7664c0ef2a993b3906,for key in model_unique_key],0,3,0.75,6
+581b854a8410d24b09381d7664c0ef2a993b3906,'''Return a database model that persists object data.''',0,3,0.75,7
+581b854a8410d24b09381d7664c0ef2a993b3906,for field in self._get_changed_persistent_fields():,0,3,0.75,8
+581b854a8410d24b09381d7664c0ef2a993b3906,# generate unique_keys from the model,1,3,0.75,9
+581b854a8410d24b09381d7664c0ef2a993b3906,"v: k for (k, v) in cls.fields_need_translation.items()}",1,3,0.75,10
+581b854a8410d24b09381d7664c0ef2a993b3906,for key in model_unique_key],1,3,0.75,11
+581b854a8410d24b09381d7664c0ef2a993b3906,return fields,0,2,0.5,12
+581b854a8410d24b09381d7664c0ef2a993b3906,but it uses Neutron's base registry class,0,2,0.5,13
+581b854a8410d24b09381d7664c0ef2a993b3906,"""""""Use a NeutronObjectRegistry as a temp registry pattern fixture.",0,2,0.5,14
+581b854a8410d24b09381d7664c0ef2a993b3906,cls.unique_keys = [],1,2,0.5,15
+581b854a8410d24b09381d7664c0ef2a993b3906,for model_unique_key in model_base.get_unique_keys(model):,1,2,0.5,16
+581b854a8410d24b09381d7664c0ef2a993b3906,if field in fields:,0,2,0.5,17
+581b854a8410d24b09381d7664c0ef2a993b3906,for model_unique_key in model_base.get_unique_keys(model):,0,2,0.5,18
+581b854a8410d24b09381d7664c0ef2a993b3906,cls.unique_keys = [],0,2,0.5,19
+581b854a8410d24b09381d7664c0ef2a993b3906,# some relationship based fields may be changed since we,0,2,0.5,20
+581b854a8410d24b09381d7664c0ef2a993b3906,fields = self.obj_get_changes(),0,2,0.5,21
+581b854a8410d24b09381d7664c0ef2a993b3906,"'id': obj_fields.UUIDField(),",1,1,0.25,22
+581b854a8410d24b09381d7664c0ef2a993b3906,model_to_obj_translation = {,1,1,0.25,23
+581b854a8410d24b09381d7664c0ef2a993b3906,"obj_unique_key = [model_to_obj_translation.get(key, key)",1,1,0.25,24
+581b854a8410d24b09381d7664c0ef2a993b3906,db_obj = obj_db_api.update_object(,1,1,0.25,25
+581b854a8410d24b09381d7664c0ef2a993b3906,"'field1': obj_fields.UUIDField(),",1,1,0.25,26
+581b854a8410d24b09381d7664c0ef2a993b3906,"'field2': obj_fields.UUIDField(),",1,1,0.25,27
+581b854a8410d24b09381d7664c0ef2a993b3906,"'field3': obj_fields.UUIDField(),",1,1,0.25,28
+581b854a8410d24b09381d7664c0ef2a993b3906,class NeutronObjectRegistryFixture(fixtures.Fixture):,0,1,0.25,29
+581b854a8410d24b09381d7664c0ef2a993b3906,"'weird_key': obj_fields.UUIDField(),",1,1,0.25,30
+581b854a8410d24b09381d7664c0ef2a993b3906,"'id2': obj_fields.UUIDField(),",1,1,0.25,31
+581b854a8410d24b09381d7664c0ef2a993b3906,self._base_test_obj_backup = copy.deepcopy(,0,1,0.25,32
+581b854a8410d24b09381d7664c0ef2a993b3906,base.NeutronObjectRegistry._registry._obj_classes = \,0,1,0.25,33
+581b854a8410d24b09381d7664c0ef2a993b3906,return base.NeutronObjectRegistry.obj_classes().get(name)[0],0,1,0.25,34
+581b854a8410d24b09381d7664c0ef2a993b3906,return obj_base.VersionedObjectRegistry.obj_classes().get(name)[0],1,1,0.25,35
+581b854a8410d24b09381d7664c0ef2a993b3906,"if model and not getattr(cls, 'unique_keys', None):",1,1,0.25,36
+581b854a8410d24b09381d7664c0ef2a993b3906,obj_field_names = set(cls.fields.keys()),1,1,0.25,37
+581b854a8410d24b09381d7664c0ef2a993b3906,"synth_objs = [objclass._load_object(self.obj_context,",1,1,0.25,38
+581b854a8410d24b09381d7664c0ef2a993b3906,db_obj = obj_db_api.update_object(,0,1,0.25,39
+581b854a8410d24b09381d7664c0ef2a993b3906,obj_field_names = set(cls.fields.keys()),0,1,0.25,40
+581b854a8410d24b09381d7664c0ef2a993b3906,"synth_objs = [objclass._load_object(self.obj_context, obj)",0,1,0.25,41
+581b854a8410d24b09381d7664c0ef2a993b3906,"""""""Decorator to detach db_obj from the session.""""""",0,1,0.25,42
+581b854a8410d24b09381d7664c0ef2a993b3906,synthetic_changed = bool(self._get_changed_synthetic_fields()),0,1,0.25,43
+581b854a8410d24b09381d7664c0ef2a993b3906,# state,0,1,0.25,44
+581b854a8410d24b09381d7664c0ef2a993b3906,# TODO(ihrachys) consider refreshing just changed attributes,0,1,0.25,45
+581b854a8410d24b09381d7664c0ef2a993b3906,return res,0,1,0.25,46
+581b854a8410d24b09381d7664c0ef2a993b3906,return decorator,0,1,0.25,47
+581b854a8410d24b09381d7664c0ef2a993b3906,"res = func(self, *args, **kwargs)",0,1,0.25,48
+581b854a8410d24b09381d7664c0ef2a993b3906,model_to_obj_translation = {,0,1,0.25,49
+581b854a8410d24b09381d7664c0ef2a993b3906,self._captured_db_model = db_obj,0,1,0.25,50
+581b854a8410d24b09381d7664c0ef2a993b3906,cls.create = _detach_db_obj(cls.create),0,1,0.25,51
+581b854a8410d24b09381d7664c0ef2a993b3906,cls.update = _detach_db_obj(cls.update),0,1,0.25,52
+581b854a8410d24b09381d7664c0ef2a993b3906,self._captured_db_model = None,0,1,0.25,53
+581b854a8410d24b09381d7664c0ef2a993b3906,return self._captured_db_model,0,1,0.25,54
+581b854a8410d24b09381d7664c0ef2a993b3906,"obj_unique_key = [model_to_obj_translation.get(key, key)",0,1,0.25,55
+581b854a8410d24b09381d7664c0ef2a993b3906,@base.NeutronObjectRegistry.register_if(False),0,0,0.0,56
+581b854a8410d24b09381d7664c0ef2a993b3906,import fixtures,0,0,0.0,57
+581b854a8410d24b09381d7664c0ef2a993b3906,"obj_fields.UUIDField: uuidutils.generate_uuid,",1,0,0.0,58
+581b854a8410d24b09381d7664c0ef2a993b3906,"common_types.UUIDField: uuidutils.generate_uuid,",0,0,0.0,59
+581b854a8410d24b09381d7664c0ef2a993b3906,"'id2': common_types.UUIDField(),",0,0,0.0,60
+581b854a8410d24b09381d7664c0ef2a993b3906,"'weird_key': common_types.UUIDField(),",0,0,0.0,61
+581b854a8410d24b09381d7664c0ef2a993b3906,"'field2': common_types.UUIDField(),",0,0,0.0,62
+581b854a8410d24b09381d7664c0ef2a993b3906,"'id': common_types.UUIDField(),",0,0,0.0,63
+581b854a8410d24b09381d7664c0ef2a993b3906,"'field3': common_types.UUIDField(),",0,0,0.0,64
+581b854a8410d24b09381d7664c0ef2a993b3906,"'field1': common_types.UUIDField(),",0,0,0.0,65
+581b854a8410d24b09381d7664c0ef2a993b3906,self.from_db_object(db_obj),1,0,0.0,66
+581b854a8410d24b09381d7664c0ef2a993b3906,self._get_composite_keys())),1,0,0.0,67
+581b854a8410d24b09381d7664c0ef2a993b3906,oslo_versionedobjects.fixture.VersionedObjectRegistryFixture,0,0,0.0,68
+581b854a8410d24b09381d7664c0ef2a993b3906,It is fixture similar to,0,0,0.0,69
+581b854a8410d24b09381d7664c0ef2a993b3906,base.NeutronObjectRegistry.register(cls_name),0,0,0.0,70
+581b854a8410d24b09381d7664c0ef2a993b3906,"""""""",0,0,0.0,71
+581b854a8410d24b09381d7664c0ef2a993b3906,def setUp(self):,0,0,0.0,72
+581b854a8410d24b09381d7664c0ef2a993b3906,"super(NeutronObjectRegistryFixture, self).setUp()",0,0,0.0,73
+581b854a8410d24b09381d7664c0ef2a993b3906,base.NeutronObjectRegistry._registry._obj_classes),0,0,0.0,74
+581b854a8410d24b09381d7664c0ef2a993b3906,self.addCleanup(self._restore_obj_registry),0,0,0.0,75
+581b854a8410d24b09381d7664c0ef2a993b3906,@staticmethod,0,0,0.0,76
+581b854a8410d24b09381d7664c0ef2a993b3906,def register(cls_name):,0,0,0.0,77
+581b854a8410d24b09381d7664c0ef2a993b3906,def _restore_obj_registry(self):,0,0,0.0,78
+581b854a8410d24b09381d7664c0ef2a993b3906,self._base_test_obj_backup,0,0,0.0,79
+581b854a8410d24b09381d7664c0ef2a993b3906,NeutronObjectRegistryFixture()),0,0,0.0,80
+581b854a8410d24b09381d7664c0ef2a993b3906,from oslo_versionedobjects import fixture,1,0,0.0,81
+581b854a8410d24b09381d7664c0ef2a993b3906,@obj_base.VersionedObjectRegistry.register_if(False),1,0,0.0,82
+581b854a8410d24b09381d7664c0ef2a993b3906,"self.modify_fields_to_db(updates),",1,0,0.0,83
+581b854a8410d24b09381d7664c0ef2a993b3906,**self.modify_fields_to_db(,1,0,0.0,84
+581b854a8410d24b09381d7664c0ef2a993b3906,@functools.wraps(func),0,0,0.0,85
+581b854a8410d24b09381d7664c0ef2a993b3906,"self.obj_context, self.db_model,",1,0,0.0,86
+581b854a8410d24b09381d7664c0ef2a993b3906,with db_api.autonested_transaction(self.obj_context.session):,1,0,0.0,87
+581b854a8410d24b09381d7664c0ef2a993b3906,import functools,0,0,0.0,88
+581b854a8410d24b09381d7664c0ef2a993b3906,def _detach_db_obj(func):,0,0,0.0,89
+581b854a8410d24b09381d7664c0ef2a993b3906,"def decorator(self, *args, **kwargs):",0,0,0.0,90
+581b854a8410d24b09381d7664c0ef2a993b3906,if synthetic_changed:,0,0,0.0,91
+581b854a8410d24b09381d7664c0ef2a993b3906,self.obj_context.session.refresh(self.db_obj),0,0,0.0,92
+581b854a8410d24b09381d7664c0ef2a993b3906,self.obj_context.session.expunge(self.db_obj),0,0,0.0,93
+581b854a8410d24b09381d7664c0ef2a993b3906,if model:,0,0,0.0,94
+581b854a8410d24b09381d7664c0ef2a993b3906,"if not getattr(cls, 'unique_keys', None):",0,0,0.0,95
+581b854a8410d24b09381d7664c0ef2a993b3906,if obj_field_names.issuperset(obj_unique_key):,0,0,0.0,96
+581b854a8410d24b09381d7664c0ef2a993b3906,cls.unique_keys.append(obj_unique_key),0,0,0.0,97
+581b854a8410d24b09381d7664c0ef2a993b3906,"def __init__(self, *args, **kwargs):",0,0,0.0,98
+581b854a8410d24b09381d7664c0ef2a993b3906,"super(NeutronDbObject, self).__init__(*args, **kwargs)",0,0,0.0,99
+581b854a8410d24b09381d7664c0ef2a993b3906,@property,0,0,0.0,100
+581b854a8410d24b09381d7664c0ef2a993b3906,def db_obj(self):,0,0,0.0,101
+581b854a8410d24b09381d7664c0ef2a993b3906,context.session.expunge(obj.db_obj),0,0,0.0,102
+581b854a8410d24b09381d7664c0ef2a993b3906,def _get_changed_synthetic_fields(self):,0,0,0.0,103
+581b854a8410d24b09381d7664c0ef2a993b3906,del fields[field],0,0,0.0,104
+581b854a8410d24b09381d7664c0ef2a993b3906,with db_api.autonested_transaction(self.obj_context.session):,0,0,0.0,105
+581b854a8410d24b09381d7664c0ef2a993b3906,"self.obj_context, self.db_model,",0,0,0.0,106
+581b854a8410d24b09381d7664c0ef2a993b3906,"self.modify_fields_to_db(updates),",0,0,0.0,107
+581b854a8410d24b09381d7664c0ef2a993b3906,**self.modify_fields_to_db(,0,0,0.0,108
+581b854a8410d24b09381d7664c0ef2a993b3906,self._get_composite_keys())),0,0,0.0,109
+581b854a8410d24b09381d7664c0ef2a993b3906,self.from_db_object(db_obj),0,0,0.0,110
+581b854a8410d24b09381d7664c0ef2a993b3906,if obj_field_names.issuperset(obj_unique_key):,1,0,0.0,111
+581b854a8410d24b09381d7664c0ef2a993b3906,cls.unique_keys.append(obj_unique_key),1,0,0.0,112
+581b854a8410d24b09381d7664c0ef2a993b3906,objclass.modify_fields_from_db(obj)),1,0,0.0,113
+581b854a8410d24b09381d7664c0ef2a993b3906,if updates:,1,0,0.0,114
+581b854a8410d24b09381d7664c0ef2a993b3906,fixture.VersionedObjectRegistryFixture()),1,0,0.0,115

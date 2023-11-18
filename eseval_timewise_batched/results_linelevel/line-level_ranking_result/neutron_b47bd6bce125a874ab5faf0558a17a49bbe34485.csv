@@ -1,0 +1,173 @@
+commit_id,line,line_level_label,count,line_score,row
+b47bd6bce125a874ab5faf0558a17a49bbe34485,# Make sure the second bind_router call didn't schedule the router to,0,2,1.0,1
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('HA router, partial scheduled, agent in specified AZ activated',",1,1,0.5,2
+b47bd6bce125a874ab5faf0558a17a49bbe34485,'Failed to schedule agent'),0,1,0.5,3
+b47bd6bce125a874ab5faf0558a17a49bbe34485,agent = {'id': 'foo_agent'},0,1,0.5,4
+b47bd6bce125a874ab5faf0558a17a49bbe34485,router = self._create_ha_router(tenant_id='foo_tenant'),0,1,0.5,5
+b47bd6bce125a874ab5faf0558a17a49bbe34485,network = external_net_db.ExternalNetwork(network_id=net_id),1,1,0.5,6
+b47bd6bce125a874ab5faf0558a17a49bbe34485,network = ext_net_models.ExternalNetwork(network_id=net_id),0,1,0.5,7
+b47bd6bce125a874ab5faf0558a17a49bbe34485,agent = agent_model.Agent(id='foo_agent'),0,1,0.5,8
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertTrue(did_it_schedule, 'Failed to schedule agent')",1,1,0.5,9
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"# Moreover, make sure that the agent that did get bound, only got bound",0,1,0.5,10
+b47bd6bce125a874ab5faf0558a17a49bbe34485,router = self._create_ha_router(ha=False),0,1,0.5,11
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"# Else, we already have 3 so -1 is the 'error' value.",0,1,0.5,12
+b47bd6bce125a874ab5faf0558a17a49bbe34485,router = self._create_ha_router(),0,1,0.5,13
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"expected_scheduled_agent_count=[1, 1, 0])),",1,0,0.0,14
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"router_az_hints=2,",1,0,0.0,15
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"agent_az='az1',",1,0,0.0,16
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"agent_count=[1, 1, 1],",1,0,0.0,17
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"max_l3_agents_per_router=2,",1,0,0.0,18
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"min_l3_agents_per_router=2,",1,0,0.0,19
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"down_agent_count=[0, 1, 0],",1,0,0.0,20
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduled_agent_count=[1, 0, 0],",1,0,0.0,21
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'Agent not scheduled, not expected')",1,0,0.0,22
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.l3_plugin, self.adminContext,",1,0,0.0,23
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"host, [self.router_to_schedule['id']])",1,0,0.0,24
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertFalse(did_it_schedule,",1,0,0.0,25
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'Agent pre scheduled, yet no binding found!')",1,0,0.0,26
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertTrue(did_it_schedule,",1,0,0.0,27
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertFalse(did_it_schedule, 'Agent scheduled, not expected')",1,0,0.0,28
+b47bd6bce125a874ab5faf0558a17a49bbe34485,'_get_routers_can_schedule') as gr:,1,0,0.0,29
+b47bd6bce125a874ab5faf0558a17a49bbe34485,result = self.scheduler.auto_schedule_routers(,1,0,0.0,30
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(az_count=3,",1,0,0.0,31
+b47bd6bce125a874ab5faf0558a17a49bbe34485,bindings = self.get_router_l3_agent_binding(,0,0,0.0,32
+b47bd6bce125a874ab5faf0558a17a49bbe34485,break,1,0,0.0,33
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"agents = self.plugin.get_l3_agents_hosting_routers(self.adminContext,",0,0,0.0,34
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding_indices),0,0,0.0,35
+b47bd6bce125a874ab5faf0558a17a49bbe34485,def test_bind_router_twice_for_non_ha(self):,0,0,0.0,36
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.plugin.router_scheduler.bind_router(self.adminContext,",0,0,0.0,37
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"router['id'],",0,0,0.0,38
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.agent1),0,0,0.0,39
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.agent2),0,0,0.0,40
+b47bd6bce125a874ab5faf0558a17a49bbe34485,# more agents than allowed.,0,0,0.0,41
+b47bd6bce125a874ab5faf0558a17a49bbe34485,[router['id']]),0,0,0.0,42
+b47bd6bce125a874ab5faf0558a17a49bbe34485,if did_it_schedule:,1,0,0.0,43
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(1, len(agents))",0,0,0.0,44
+b47bd6bce125a874ab5faf0558a17a49bbe34485,# once.,0,0,0.0,45
+b47bd6bce125a874ab5faf0558a17a49bbe34485,from neutron.db.models import external_net as ext_net_models,0,0,0.0,46
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.adminContext, router['id'], l3_agent_id=agents[0]['id'])",0,0,0.0,47
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(1, bindings.count())",0,0,0.0,48
+b47bd6bce125a874ab5faf0558a17a49bbe34485,did_it_schedule = False,1,0,0.0,49
+b47bd6bce125a874ab5faf0558a17a49bbe34485,did_it_schedule = self.scheduler.auto_schedule_routers(,1,0,0.0,50
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.assertTrue(result),1,0,0.0,51
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.l3_agents[0].id),0,0,0.0,52
+b47bd6bce125a874ab5faf0558a17a49bbe34485,from neutron.db import external_net_db,1,0,0.0,53
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduler.bind_router(self.l3_plugin, self.adminContext,",0,0,0.0,54
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.assertFalse(add_ha_port.called),0,0,0.0,55
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.plugin.router_scheduler.bind_router(self.plugin,",0,0,0.0,56
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.agent_id1),0,0,0.0,57
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.agent_id2),0,0,0.0,58
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduler.bind_router(self.adminContext, router['id'], agent)",1,0,0.0,59
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.scheduler.bind_router(self.adminContext,",1,0,0.0,60
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.l3_agents[0]),1,0,0.0,61
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.scheduler._bind_routers(mock.ANY, mock.ANY, routers, mock.ANY)",1,0,0.0,62
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"mock_bind.assert_called_once_with(mock.ANY, 'foo_router', mock.ANY)",1,0,0.0,63
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduler.bind_router(ctx, rid, agent)",1,0,0.0,64
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduler.bind_router(self.adminContext, ""dummyID"", self.agent1)",1,0,0.0,65
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.plugin.router_scheduler.bind_router(ctx, router_id, agent)",1,0,0.0,66
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"with mock.patch.object(self.plugin.router_scheduler,",1,0,0.0,67
+b47bd6bce125a874ab5faf0558a17a49bbe34485,'bind_router') as bind_router:,1,0,0.0,68
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.assertFalse(bind_router.called),1,0,0.0,69
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.plugin.router_scheduler.bind_router(self.adminContext,",1,0,0.0,70
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.agent1),1,0,0.0,71
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"router['id'], router['tenant_id'], agent)",0,0,0.0,72
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.plugin, self.adminContext,",0,0,0.0,73
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.plugin.router_scheduler.create_ha_port_and_bind(,0,0,0.0,74
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduler.bind_router(self.plugin, ctx, rid, agent.id)",0,0,0.0,75
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"router['id'], agent.id)",0,0,0.0,76
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.scheduler.bind_router(self.l3_plugin,",0,0,0.0,77
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.adminContext,",0,0,0.0,78
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding_indices = [binding.binding_index for binding in bindings],0,0,0.0,79
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.scheduler._bind_routers(mock.ANY, mock.ANY, routers, agent)",0,0,0.0,80
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"mock_bind.assert_called_once_with(mock.ANY, mock.ANY,",0,0,0.0,81
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'foo_router', agent.id)",0,0,0.0,82
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"scheduler.bind_router(self.plugin, self.adminContext,",0,0,0.0,83
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"with mock.patch.object(self.plugin, 'add_ha_port') as add_ha_port:",0,0,0.0,84
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"""dummyID"", self.agent_id1)",0,0,0.0,85
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.plugin.router_scheduler.bind_router(self.plugin, ctx,",0,0,0.0,86
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"router_id, agent.id)",0,0,0.0,87
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"with mock.patch.object(self.plugin.router_scheduler, 'bind_router'):",0,0,0.0,88
+b47bd6bce125a874ab5faf0558a17a49bbe34485,def test_create_ha_port_and_bind_bind_router_returns_None(self):,0,0,0.0,89
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"with mock.patch.object(self.plugin.router_scheduler, 'bind_router',",0,0,0.0,90
+b47bd6bce125a874ab5faf0558a17a49bbe34485,return_value=None):,0,0,0.0,91
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(list(range(1, cfg.CONF.max_l3_agents_per_router + 1)),",0,0,0.0,92
+b47bd6bce125a874ab5faf0558a17a49bbe34485,vacant_binding_index),0,0,0.0,93
+b47bd6bce125a874ab5faf0558a17a49bbe34485,router['id']).all(),0,0,0.0,94
+b47bd6bce125a874ab5faf0558a17a49bbe34485,class VacantBindingIndexTestCase(L3HATestCaseMixin):,0,0,0.0,95
+b47bd6bce125a874ab5faf0558a17a49bbe34485,query = context.session.query(model),0,0,0.0,96
+b47bd6bce125a874ab5faf0558a17a49bbe34485,query = query.filter(model.router_id == router_id),0,0,0.0,97
+b47bd6bce125a874ab5faf0558a17a49bbe34485,if l3_agent_id:,0,0,0.0,98
+b47bd6bce125a874ab5faf0558a17a49bbe34485,query = query.filter(model.l3_agent_id == l3_agent_id),0,0,0.0,99
+b47bd6bce125a874ab5faf0558a17a49bbe34485,if binding_index:,0,0,0.0,100
+b47bd6bce125a874ab5faf0558a17a49bbe34485,query = query.filter(model.binding_index == binding_index),0,0,0.0,101
+b47bd6bce125a874ab5faf0558a17a49bbe34485,return query,0,0,0.0,102
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"""""""Test various scenarios for get_vacant_binding_index().",0,0,0.0,103
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding_index=None):,0,0,0.0,104
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding_index,0,0,0.0,105
+b47bd6bce125a874ab5faf0558a17a49bbe34485,The binding_index we want to delete/unschedule.,0,0,0.0,106
+b47bd6bce125a874ab5faf0558a17a49bbe34485,is_manual_scheduling,0,0,0.0,107
+b47bd6bce125a874ab5faf0558a17a49bbe34485,Whether or not this is a scheduling requested by the user,0,0,0.0,108
+b47bd6bce125a874ab5faf0558a17a49bbe34485,(`neutron l3-agent-router-add`) or by some worker (scheduler or RPC,0,0,0.0,109
+b47bd6bce125a874ab5faf0558a17a49bbe34485,from agent). If this is a manual scheduling we should always,0,0,0.0,110
+b47bd6bce125a874ab5faf0558a17a49bbe34485,comply.,0,0,0.0,111
+b47bd6bce125a874ab5faf0558a17a49bbe34485,model = l3_agentschedulers_db.RouterL3AgentBinding,0,0,0.0,112
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"def get_router_l3_agent_binding(context, router_id, l3_agent_id=None,",0,0,0.0,113
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding_scenarios = [,0,0,0.0,114
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.adminContext, [self.router_to_schedule['id']])",0,0,0.0,115
+b47bd6bce125a874ab5faf0558a17a49bbe34485,hosting_before = self.l3_plugin.get_l3_agents_hosting_routers(,0,0,0.0,116
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.adminContext, router_ids)",0,0,0.0,117
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.scheduler.auto_schedule_routers(,0,0,0.0,118
+b47bd6bce125a874ab5faf0558a17a49bbe34485,hosting_after = self.l3_plugin.get_l3_agents_hosting_routers(,0,0,0.0,119
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertNotEqual(hosting_before, hosting_after,",0,0,0.0,120
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(hosting_before, hosting_after,",0,0,0.0,121
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'Agent scheduled, not expected')",0,0,0.0,122
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.l3_plugin, self.adminContext,",0,0,0.0,123
+b47bd6bce125a874ab5faf0558a17a49bbe34485,@staticmethod,0,0,0.0,124
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"host, [self.router_to_schedule['id']])",0,0,0.0,125
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'Agent pre scheduled, yet no binding found!')",0,0,0.0,126
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'Agent not scheduled, not expected')",0,0,0.0,127
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"'_get_routers_can_schedule',) as gr,\",0,0,0.0,128
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"mock.patch.object(self.scheduler,",0,0,0.0,129
+b47bd6bce125a874ab5faf0558a17a49bbe34485,'_bind_routers') as gb:,0,0,0.0,130
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.assertTrue(gb.called),0,0,0.0,131
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"""""""",0,0,0.0,132
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('Delete first binding_index',",0,0,0.0,133
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"bindings = self.get_router_l3_agent_binding(self.adminContext,",0,0,0.0,134
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(self.binding_index, vacant_binding_index)",0,0,0.0,135
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.adminContext, router['id'],",0,0,0.0,136
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding_index=self.binding_index),0,0,0.0,137
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(1, binding.count())",0,0,0.0,138
+b47bd6bce125a874ab5faf0558a17a49bbe34485,with self.adminContext.session.begin():,0,0,0.0,139
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.adminContext.session.delete(binding.first()),0,0,0.0,140
+b47bd6bce125a874ab5faf0558a17a49bbe34485,vacant_binding_index = self.plugin.get_vacant_binding_index(,0,0,0.0,141
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.adminContext, router['id'], self.is_manual_scheduling)",0,0,0.0,142
+b47bd6bce125a874ab5faf0558a17a49bbe34485,else:,0,0,0.0,143
+b47bd6bce125a874ab5faf0558a17a49bbe34485,if self.binding_index:,0,0,0.0,144
+b47bd6bce125a874ab5faf0558a17a49bbe34485,if self.is_manual_scheduling:,0,0,0.0,145
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"# If this is a manual scheduling, the user requested the",0,0,0.0,146
+b47bd6bce125a874ab5faf0558a17a49bbe34485,# binding so we should always provide a new one.,0,0,0.0,147
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(cfg.CONF.max_l3_agents_per_router + 1,",0,0,0.0,148
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"self.assertEqual(-1, vacant_binding_index)",0,0,0.0,149
+b47bd6bce125a874ab5faf0558a17a49bbe34485,def test_schedule_routers_unique_binding_indices(self):,0,0,0.0,150
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"cfg.CONF.set_override('max_l3_agents_per_router', 2)",0,0,0.0,151
+b47bd6bce125a874ab5faf0558a17a49bbe34485,binding = self.get_router_l3_agent_binding(,0,0,0.0,152
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"cfg.CONF.set_override('min_l3_agents_per_router', 3)",0,0,0.0,153
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(binding_index=1)),",0,0,0.0,154
+b47bd6bce125a874ab5faf0558a17a49bbe34485,manual_scheduling_scenarios = [,0,0,0.0,155
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('Delete middle binding_index',",0,0,0.0,156
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(binding_index=2)),",0,0,0.0,157
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('Delete last binding_index',",0,0,0.0,158
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(binding_index=3)),",0,0,0.0,159
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('Do not remove any bindings',",0,0,0.0,160
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(binding_index=None)),",0,0,0.0,161
+b47bd6bce125a874ab5faf0558a17a49bbe34485,],0,0,0.0,162
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('with manual scheduling',",0,0,0.0,163
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"cfg.CONF.set_override('max_l3_agents_per_router', 3)",0,0,0.0,164
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(is_manual_scheduling=True)),",0,0,0.0,165
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"('without manual scheduling',",0,0,0.0,166
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"dict(is_manual_scheduling=False)),",0,0,0.0,167
+b47bd6bce125a874ab5faf0558a17a49bbe34485,scenarios = testscenarios.multiply_scenarios(,0,0,0.0,168
+b47bd6bce125a874ab5faf0558a17a49bbe34485,"binding_scenarios, manual_scheduling_scenarios)",0,0,0.0,169
+b47bd6bce125a874ab5faf0558a17a49bbe34485,def test_get_vacant_binding_index(self):,0,0,0.0,170
+b47bd6bce125a874ab5faf0558a17a49bbe34485,helpers.register_l3_agent('host_3'),0,0,0.0,171
+b47bd6bce125a874ab5faf0558a17a49bbe34485,self.agent2),1,0,0.0,172

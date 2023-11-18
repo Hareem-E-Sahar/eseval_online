@@ -1,0 +1,42 @@
+commit_id,line,line_level_label,count,line_score,row
+3abc8562fe3aa51c5f537a464f09166752d7a869,"long minwait = Long.MAX_VALUE, maxwait = -1, totalwait=0, totalcmax=0, cmax = -1, nroffetch = 0, totalruntime = 0;",0,8,1.0,1
+3abc8562fe3aa51c5f537a464f09166752d7a869,"long max = -1, totalmax=0, totalcmax=0, cmax = -1, nroffetch = 0, totalruntime = 0;",1,7,0.875,2
+3abc8562fe3aa51c5f537a464f09166752d7a869,"long maxwait = 0, minwait = Long.MAX_VALUE, averagewait = 0, totalwait = 0;",0,5,0.625,3
+3abc8562fe3aa51c5f537a464f09166752d7a869,"protected long sleep = Long.getLong(""sleep"", 10);",0,3,0.375,4
+3abc8562fe3aa51c5f537a464f09166752d7a869,protected long sleep = 10;,1,3,0.375,5
+3abc8562fe3aa51c5f537a464f09166752d7a869,"protected long complete = Long.getLong(""complete"",20000);",0,2,0.25,6
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(t.getName()+"" : Nr-of-fetch:""+t.nroffetch+ "" Max fetch Time:""+(((float)t.maxwait)/1000000f)+""ms. :Max close time:""+(((float)t.cmax)/1000000f)+""ms."");",0,2,0.25,7
+3abc8562fe3aa51c5f537a464f09166752d7a869,protected long complete = 20000;,1,2,0.25,8
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(t.getName()+"" : Nr-of-fetch:""+t.nroffetch+ "" Max fetch Time:""+(((float)t.max)/1000000f)+""ms. :Max close time:""+(((float)t.cmax)/1000000f)+""ms."");",1,2,0.25,9
+3abc8562fe3aa51c5f537a464f09166752d7a869,"""\n\tTotal time to retrieve connection:""+(((float)totalwait)/1000f/1000f)+"" ms.""+",0,1,0.125,10
+3abc8562fe3aa51c5f537a464f09166752d7a869,"""\n\tTotal time to retrieve connection:""+(((float)totalmax)/1000f/1000f)+"" ms.""+",1,1,0.125,11
+3abc8562fe3aa51c5f537a464f09166752d7a869,"""\n\tMax time to retrieve connection:""+(((float)max)/1000f/1000f)+"" ms.""+",1,1,0.125,12
+3abc8562fe3aa51c5f537a464f09166752d7a869,"max = Math.max(delta, max);",1,1,0.125,13
+3abc8562fe3aa51c5f537a464f09166752d7a869,"""\n\tAverage time to retrieve connection:""+(((float)totalwait)/1000f/1000f)/(float)nroffetch+"" ms.""+",0,1,0.125,14
+3abc8562fe3aa51c5f537a464f09166752d7a869,"""\n\tAverage time to retrieve connection:""+(((float)totalmax)/1000f/1000f)/(float)nroffetch+"" ms.""+",1,1,0.125,15
+3abc8562fe3aa51c5f537a464f09166752d7a869,"""\n\tMax time to retrieve connection:""+(((float)maxwait)/1000f/1000f)+"" ms.""+",0,1,0.125,16
+3abc8562fe3aa51c5f537a464f09166752d7a869,"maxwait = Math.max(delta, maxwait);",0,1,0.125,17
+3abc8562fe3aa51c5f537a464f09166752d7a869,"minwait = Math.min(minwait, t.minwait);",0,1,0.125,18
+3abc8562fe3aa51c5f537a464f09166752d7a869,"maxwait = Math.max(maxwait,t.maxwait);",0,1,0.125,19
+3abc8562fe3aa51c5f537a464f09166752d7a869,"protected boolean printthread = Boolean.getBoolean(""printthread"");",0,1,0.125,20
+3abc8562fe3aa51c5f537a464f09166752d7a869,"minwait = Math.min(delta, minwait);",0,1,0.125,21
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Starting fairness - DBCP"");",1,0,0.0,22
+3abc8562fe3aa51c5f537a464f09166752d7a869,totalmax += delta;,1,0,0.0,23
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Completed fairness - Tomcat JDBC - Fair - Async"");",1,0,0.0,24
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Starting fairness - Tomcat JDBC - Fair - Async"");",1,0,0.0,25
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Completed fairness - Tomcat JDBC - Fair"");",1,0,0.0,26
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Starting fairness - Tomcat JDBC - Fair"");",1,0,0.0,27
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Completed fairness - Tomcat JDBC - Non Fair"");",1,0,0.0,28
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Starting fairness - Tomcat JDBC - Non Fair"");",1,0,0.0,29
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""Completed fairness - DBCP"");",1,0,0.0,30
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""[testPoolThreads20Connections10FairAsync] Starting fairness - Tomcat JDBC - Fair - Async"");",0,0,0.0,31
+3abc8562fe3aa51c5f537a464f09166752d7a869,if (FairnessTest.this.sleep>0) sleep(FairnessTest.this.sleep);,0,0,0.0,32
+3abc8562fe3aa51c5f537a464f09166752d7a869,totalwait += delta;,0,0,0.0,33
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""[testPoolThreads20Connections10Fair] Starting fairness - Tomcat JDBC - Fair"");",0,0,0.0,34
+3abc8562fe3aa51c5f537a464f09166752d7a869,this.datasource.getPoolProperties().setFairQueue(false);,0,0,0.0,35
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""[testPoolThreads20Connections10] Starting fairness - Tomcat JDBC - Non Fair"");",0,0,0.0,36
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""[testDBCPThreads20Connections10] Starting fairness - DBCP"");",0,0,0.0,37
+3abc8562fe3aa51c5f537a464f09166752d7a869,"System.out.println(""[""+name+""] Max wait:""+(((float)maxwait)/1000000f)+""ms. Min wait:""+(((float)minwait)/1000000f)+""ms. Average wait:""+(((((float)totalwait))/(float)totalfetch)/1000000f)+"" ms."");",0,0,0.0,38
+3abc8562fe3aa51c5f537a464f09166752d7a869,if (FairnessTest.this.printthread),0,0,0.0,39
+3abc8562fe3aa51c5f537a464f09166752d7a869,totalwait  += t.totalwait;,0,0,0.0,40
+3abc8562fe3aa51c5f537a464f09166752d7a869,sleep(FairnessTest.this.sleep);,1,0,0.0,41

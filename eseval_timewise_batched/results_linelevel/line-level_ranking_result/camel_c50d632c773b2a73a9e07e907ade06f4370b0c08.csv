@@ -1,0 +1,9 @@
+commit_id,line,line_level_label,count,line_score,row
+c50d632c773b2a73a9e07e907ade06f4370b0c08,import org.apache.camel.support.jndi.JndiContext;,0,1,1.0,1
+c50d632c773b2a73a9e07e907ade06f4370b0c08,import org.apache.camel.util.jndi.JndiContext;,1,1,1.0,2
+c50d632c773b2a73a9e07e907ade06f4370b0c08,"from(""rss:file:src/test/data/rss20.xml?splitEntries=true&delay=100"").filter()",0,0,0.0,3
+c50d632c773b2a73a9e07e907ade06f4370b0c08,".method(""myFilterBean"", ""titleContainsCamel"").to(""mock:result"");",0,0,0.0,4
+c50d632c773b2a73a9e07e907ade06f4370b0c08,"from(""rss:file:src/test/data/rss20.xml?splitEntries=true&delay=100"").",1,0,0.0,5
+c50d632c773b2a73a9e07e907ade06f4370b0c08,"filter().method(""myFilterBean"", ""titleContainsCamel"").to(""mock:result"");",1,0,0.0,6
+c50d632c773b2a73a9e07e907ade06f4370b0c08,".marshal().rss().filter().xpath(""//item/title[contains(.,'Camel')]"").to(""mock:result"");",0,0,0.0,7
+c50d632c773b2a73a9e07e907ade06f4370b0c08,".marshal().rss().filter().xpath(""//item/title[contains(.,'Camel')]"").to(""mock:result"");",1,0,0.0,8

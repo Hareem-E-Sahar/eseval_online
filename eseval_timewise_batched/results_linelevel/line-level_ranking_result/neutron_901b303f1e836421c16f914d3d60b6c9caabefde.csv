@@ -1,0 +1,132 @@
+commit_id,line,line_level_label,count,line_score,row
+901b303f1e836421c16f914d3d60b6c9caabefde,"# handle the get_device_details RPC, then remove the 'else' clause",0,3,1.0,1
+901b303f1e836421c16f914d3d60b6c9caabefde,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,3,1.0,2
+901b303f1e836421c16f914d3d60b6c9caabefde,#    License for the specific language governing permissions and limitations,1,3,1.0,3
+901b303f1e836421c16f914d3d60b6c9caabefde,#    a copy of the License at,1,3,1.0,4
+901b303f1e836421c16f914d3d60b6c9caabefde,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.6666666666666666,5
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Column('tenant_id', sa.String(length=255), nullable=True),",1,2,0.6666666666666666,6
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Column('tenant_id', sa.String(length=255), nullable=False),",0,2,0.6666666666666666,7
+901b303f1e836421c16f914d3d60b6c9caabefde,#    under the License.,1,2,0.6666666666666666,8
+901b303f1e836421c16f914d3d60b6c9caabefde,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.6666666666666666,9
+901b303f1e836421c16f914d3d60b6c9caabefde,#    not use this file except in compliance with the License. You may obtain,1,2,0.6666666666666666,10
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Column('security_group_id', sa.String(length=36), nullable=False),",0,2,0.6666666666666666,11
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo.config import cfg,1,2,0.6666666666666666,12
+901b303f1e836421c16f914d3d60b6c9caabefde,port = db.get_port_from_device_mac(device),0,2,0.6666666666666666,13
+901b303f1e836421c16f914d3d60b6c9caabefde,"# process device names, or having MechanismDrivers supply list",0,2,0.6666666666666666,14
+901b303f1e836421c16f914d3d60b6c9caabefde,port = db.get_port_and_sgs(port_id),0,2,0.6666666666666666,15
+901b303f1e836421c16f914d3d60b6c9caabefde,# prevent rpc callback dispatcher from being created,0,2,0.6666666666666666,16
+901b303f1e836421c16f914d3d60b6c9caabefde,# prevent the consistency watchdog from starting,0,2,0.6666666666666666,17
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo_config import cfg,0,2,0.6666666666666666,18
+901b303f1e836421c16f914d3d60b6c9caabefde,need_port_update_notify = self.update_security_group_on_port(,0,1,0.3333333333333333,19
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo.utils import importutils,0,1,0.3333333333333333,20
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.openstack.common import excutils,1,1,0.3333333333333333,21
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo.utils import excutils,0,1,0.3333333333333333,22
+901b303f1e836421c16f914d3d60b6c9caabefde,agent_update_required = self.update_security_group_on_port(,1,1,0.3333333333333333,23
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.notifier.port_update(context, new_port)",0,1,0.3333333333333333,24
+901b303f1e836421c16f914d3d60b6c9caabefde,RPC_API_VERSION = '1.1',1,1,0.3333333333333333,25
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.endpoints = [NVSDPluginRpcCallbacks(),",1,1,0.3333333333333333,26
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.endpoints = [RestProxyCallbacks(),",1,1,0.3333333333333333,27
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.db import securitygroups_rpc_base as sg_rpc_base,1,1,0.3333333333333333,28
+901b303f1e836421c16f914d3d60b6c9caabefde,# REVISIT(irenab): Consider calling into bound MD to,0,1,0.3333333333333333,29
+901b303f1e836421c16f914d3d60b6c9caabefde,# of device prefixes to strip.,0,1,0.3333333333333333,30
+901b303f1e836421c16f914d3d60b6c9caabefde,import oslo_messaging,0,1,0.3333333333333333,31
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.openstack.common import importutils,1,1,0.3333333333333333,32
+901b303f1e836421c16f914d3d60b6c9caabefde,"# Copyright 2011 VMware, Inc.",1,1,0.3333333333333333,33
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo_utils import excutils,0,1,0.3333333333333333,34
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo import messaging,1,1,0.3333333333333333,35
+901b303f1e836421c16f914d3d60b6c9caabefde,from oslo.utils import excutils,1,1,0.3333333333333333,36
+901b303f1e836421c16f914d3d60b6c9caabefde,target = messaging.Target(version='1.1'),1,1,0.3333333333333333,37
+901b303f1e836421c16f914d3d60b6c9caabefde,"# Copyright 2014 Big Switch Networks, Inc.",1,1,0.3333333333333333,38
+901b303f1e836421c16f914d3d60b6c9caabefde,# All Rights Reserved.,1,1,0.3333333333333333,39
+901b303f1e836421c16f914d3d60b6c9caabefde,#,1,1,0.3333333333333333,40
+901b303f1e836421c16f914d3d60b6c9caabefde,"def _device_to_port_id(self, device):",0,1,0.3333333333333333,41
+901b303f1e836421c16f914d3d60b6c9caabefde,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.3333333333333333,42
+901b303f1e836421c16f914d3d60b6c9caabefde,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.3333333333333333,43
+901b303f1e836421c16f914d3d60b6c9caabefde,import eventlet,1,1,0.3333333333333333,44
+901b303f1e836421c16f914d3d60b6c9caabefde,from bsnstacklib.plugins.bigswitch.agent import restproxy_agent,1,1,0.3333333333333333,45
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Column('tenant_id', sa.String(length=255), nullable=True,",0,1,0.3333333333333333,46
+901b303f1e836421c16f914d3d60b6c9caabefde,# REVISIT(rkukura): Consider calling into MechanismDrivers to,0,1,0.3333333333333333,47
+901b303f1e836421c16f914d3d60b6c9caabefde,target = oslo_messaging.Target(version='1.1'),0,1,0.3333333333333333,48
+901b303f1e836421c16f914d3d60b6c9caabefde,return port,0,1,0.3333333333333333,49
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Column('direction', securitygrouprules_direction, nullable=True),",0,1,0.3333333333333333,50
+901b303f1e836421c16f914d3d60b6c9caabefde,port['device'] = device,0,1,0.3333333333333333,51
+901b303f1e836421c16f914d3d60b6c9caabefde,import contextlib,0,1,0.3333333333333333,52
+901b303f1e836421c16f914d3d60b6c9caabefde,DISPATCHER = CALLBACKS + '.create_rpc_dispatcher',0,1,0.3333333333333333,53
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.callbacks_p = mock.patch(DISPATCHER,",0,1,0.3333333333333333,54
+901b303f1e836421c16f914d3d60b6c9caabefde,# prevent any greenthreads from spawning,0,1,0.3333333333333333,55
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.spawn_p = mock.patch(SPAWN, new=lambda *args, **kwargs: None)",0,1,0.3333333333333333,56
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.watch_p = mock.patch(CWATCH, new=lambda *args, **kwargs: None)",0,1,0.3333333333333333,57
+901b303f1e836421c16f914d3d60b6c9caabefde,self.callbacks_p = mock.patch(CALLBACKS),1,1,0.3333333333333333,58
+901b303f1e836421c16f914d3d60b6c9caabefde,self.spawn_p = mock.patch(SPAWN),1,1,0.3333333333333333,59
+901b303f1e836421c16f914d3d60b6c9caabefde,self.watch_p = mock.patch(CWATCH),1,1,0.3333333333333333,60
+901b303f1e836421c16f914d3d60b6c9caabefde,import eventlet,0,1,0.3333333333333333,61
+901b303f1e836421c16f914d3d60b6c9caabefde,import eventlet,1,1,0.3333333333333333,62
+901b303f1e836421c16f914d3d60b6c9caabefde,"securitygrouprules_direction = sa.Enum('ingress', 'egress',",0,1,0.3333333333333333,63
+901b303f1e836421c16f914d3d60b6c9caabefde,from contextlib import nested,1,1,0.3333333333333333,64
+901b303f1e836421c16f914d3d60b6c9caabefde,"nullable=True),",1,1,0.3333333333333333,65
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.db import securitygroups_rpc_base as sg_db_rpc,0,1,0.3333333333333333,66
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.api.rpc.handlers import dhcp_rpc,0,1,0.3333333333333333,67
+901b303f1e836421c16f914d3d60b6c9caabefde,TAP_DEVICE_PREFIX_LENGTH = 3,0,1,0.3333333333333333,68
+901b303f1e836421c16f914d3d60b6c9caabefde,TAP_DEVICE_PREFIX = 'tap',0,1,0.3333333333333333,69
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.openstack.common import uuidutils,0,1,0.3333333333333333,70
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.endpoints = [securitygroups_rpc.SecurityGroupServerRpcCallback(),",0,1,0.3333333333333333,71
+901b303f1e836421c16f914d3d60b6c9caabefde,"def get_port_from_device(self, device):",0,1,0.3333333333333333,72
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.api.rpc.handlers import securitygroups_rpc,0,1,0.3333333333333333,73
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.endpoints = [MidoRpcCallbacks(),",1,1,0.3333333333333333,74
+901b303f1e836421c16f914d3d60b6c9caabefde,"self.endpoints = [dhcp_rpc.DhcpRpcCallback(),",0,1,0.3333333333333333,75
+901b303f1e836421c16f914d3d60b6c9caabefde,port_id = self._device_to_port_id(device),0,1,0.3333333333333333,76
+901b303f1e836421c16f914d3d60b6c9caabefde,from neutron.db import dhcp_rpc_base,1,1,0.3333333333333333,77
+901b303f1e836421c16f914d3d60b6c9caabefde,RPC_API_VERSION = '1.1',1,1,0.3333333333333333,78
+901b303f1e836421c16f914d3d60b6c9caabefde,sg_rpc_base.SecurityGroupServerRpcCallbackMixin):,1,0,0.0,79
+901b303f1e836421c16f914d3d60b6c9caabefde,agent_update_required |= self.is_security_group_member_updated(,1,0,0.0,80
+901b303f1e836421c16f914d3d60b6c9caabefde,sg_rpc_base.SecurityGroupServerRpcMixin):,1,0,0.0,81
+901b303f1e836421c16f914d3d60b6c9caabefde,"class NVSDPluginRpcCallbacks(n_rpc.RpcCallback,",1,0,0.0,82
+901b303f1e836421c16f914d3d60b6c9caabefde,sg_db_rpc.SecurityGroupServerRpcCallbackMixin):,1,0,0.0,83
+901b303f1e836421c16f914d3d60b6c9caabefde,"class TestSecServerRpcCallBack(test_sg_rpc.SGServerRpcCallBackTestCase,",0,0,0.0,84
+901b303f1e836421c16f914d3d60b6c9caabefde,"class TestSecServerRpcCallBack(test_sg_rpc.SGServerRpcCallBackMixinTestCase,",1,0,0.0,85
+901b303f1e836421c16f914d3d60b6c9caabefde,config.setup_logging(),0,0,0.0,86
+901b303f1e836421c16f914d3d60b6c9caabefde,config.setup_logging(cfg.CONF),1,0,0.0,87
+901b303f1e836421c16f914d3d60b6c9caabefde,need_port_update_notify |= self.is_security_group_member_updated(,0,0,0.0,88
+901b303f1e836421c16f914d3d60b6c9caabefde,if need_port_update_notify:,0,0,0.0,89
+901b303f1e836421c16f914d3d60b6c9caabefde,sg_db_rpc.SecurityGroupServerRpcMixin):,1,0,0.0,90
+901b303f1e836421c16f914d3d60b6c9caabefde,restproxy_agent.main(),1,0,0.0,91
+901b303f1e836421c16f914d3d60b6c9caabefde,self.nuageclient.delete_port_security_group_bindings(id),0,0,0.0,92
+901b303f1e836421c16f914d3d60b6c9caabefde,"self._delete_port_security_group_bindings(context, port_id)",1,0,0.0,93
+901b303f1e836421c16f914d3d60b6c9caabefde,"self._delete_port_security_group_bindings(context, id)",1,0,0.0,94
+901b303f1e836421c16f914d3d60b6c9caabefde,eventlet.monkey_patch(),1,0,0.0,95
+901b303f1e836421c16f914d3d60b6c9caabefde,"if __name__ == ""__main__"":",1,0,0.0,96
+901b303f1e836421c16f914d3d60b6c9caabefde,"index=True),",0,0,0.0,97
+901b303f1e836421c16f914d3d60b6c9caabefde,op.create_table(,0,0,0.0,98
+901b303f1e836421c16f914d3d60b6c9caabefde,"'default_security_group',",0,0,0.0,99
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.PrimaryKeyConstraint('tenant_id'),",0,0,0.0,100
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.ForeignKeyConstraint(['security_group_id'],",0,0,0.0,101
+901b303f1e836421c16f914d3d60b6c9caabefde,"['securitygroups.id'],",0,0,0.0,102
+901b303f1e836421c16f914d3d60b6c9caabefde,return device,0,0,0.0,103
+901b303f1e836421c16f914d3d60b6c9caabefde,"class RestProxyCallbacks(n_rpc.RpcCallback,",1,0,0.0,104
+901b303f1e836421c16f914d3d60b6c9caabefde,sg_rpc_base.SecurityGroupServerRpcCallbackMixin):,0,0,0.0,105
+901b303f1e836421c16f914d3d60b6c9caabefde,return port.id,0,0,0.0,106
+901b303f1e836421c16f914d3d60b6c9caabefde,if not uuidutils.is_uuid_like(device):,0,0,0.0,107
+901b303f1e836421c16f914d3d60b6c9caabefde,self.addCleanup(mock.patch.stopall),1,0,0.0,108
+901b303f1e836421c16f914d3d60b6c9caabefde,with contextlib.nested(,0,0,0.0,109
+901b303f1e836421c16f914d3d60b6c9caabefde,with nested(,1,0,0.0,110
+901b303f1e836421c16f914d3d60b6c9caabefde,"new=lambda *args, **kwargs: None)",0,0,0.0,111
+901b303f1e836421c16f914d3d60b6c9caabefde,eventlet.monkey_patch(),0,0,0.0,112
+901b303f1e836421c16f914d3d60b6c9caabefde,eventlet.monkey_patch(),1,0,0.0,113
+901b303f1e836421c16f914d3d60b6c9caabefde,name='securitygrouprules_direction'),0,0,0.0,114
+901b303f1e836421c16f914d3d60b6c9caabefde,"securitygrouprules_direction.drop(op.get_bind(), checkfirst=False)",0,0,0.0,115
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Column('direction',",1,0,0.0,116
+901b303f1e836421c16f914d3d60b6c9caabefde,"sa.Enum('ingress', 'egress',",1,0,0.0,117
+901b303f1e836421c16f914d3d60b6c9caabefde,"name='securitygrouprules_direction'),",1,0,0.0,118
+901b303f1e836421c16f914d3d60b6c9caabefde,"dhcp_rpc.DhcpRpcCallback(),",0,0,0.0,119
+901b303f1e836421c16f914d3d60b6c9caabefde,"sg_rpc_base.SecurityGroupServerRpcCallbackMixin,",1,0,0.0,120
+901b303f1e836421c16f914d3d60b6c9caabefde,dhcp_rpc_base.DhcpRpcCallbackMixin):,1,0,0.0,121
+901b303f1e836421c16f914d3d60b6c9caabefde,"class MidoRpcCallbacks(n_rpc.RpcCallback,",1,0,0.0,122
+901b303f1e836421c16f914d3d60b6c9caabefde,"dhcp_rpc_base.DhcpRpcCallbackMixin,",1,0,0.0,123
+901b303f1e836421c16f914d3d60b6c9caabefde,class SecurityGroupServerRpcMixin(sg_db_rpc.SecurityGroupServerRpcMixin):,0,0,0.0,124
+901b303f1e836421c16f914d3d60b6c9caabefde,SecurityGroupServerRpcMixin):,0,0,0.0,125
+901b303f1e836421c16f914d3d60b6c9caabefde,"securitygroups_rpc.SecurityGroupServerRpcCallback(),",0,0,0.0,126
+901b303f1e836421c16f914d3d60b6c9caabefde,if port:,0,0,0.0,127
+901b303f1e836421c16f914d3d60b6c9caabefde,if device.startswith(TAP_DEVICE_PREFIX):,0,0,0.0,128
+901b303f1e836421c16f914d3d60b6c9caabefde,return device[TAP_DEVICE_PREFIX_LENGTH:],0,0,0.0,129
+901b303f1e836421c16f914d3d60b6c9caabefde,else:,0,0,0.0,130
+901b303f1e836421c16f914d3d60b6c9caabefde,"ondelete=""CASCADE""))",0,0,0.0,131

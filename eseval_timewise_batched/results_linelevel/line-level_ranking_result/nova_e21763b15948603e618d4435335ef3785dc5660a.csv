@@ -1,0 +1,245 @@
+commit_id,line,line_level_label,count,line_score,row
+e21763b15948603e618d4435335ef3785dc5660a,"# Copyright (c) 2012 VMware, Inc.",0,4,1.0,1
+e21763b15948603e618d4435335ef3785dc5660a,from nova.virt.vmwareapi import vmware_images,1,4,1.0,2
+e21763b15948603e618d4435335ef3785dc5660a,from nova.virt.vmwareapi import vm_util,0,3,0.75,3
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareESXDriver does not implement the pause method.,0,3,0.75,4
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareESXDriver does not implement the unpause method.,0,3,0.75,5
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareVCDriver does not implement the pause method.,0,3,0.75,6
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareVCDriver does not implement the unpause method.,0,3,0.75,7
+e21763b15948603e618d4435335ef3785dc5660a,from nova.virt.vmwareapi import fake,1,3,0.75,8
+e21763b15948603e618d4435335ef3785dc5660a,from nova.virt.vmwareapi import fake as vmwareapi_fake,1,3,0.75,9
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareESXDriver does not implement the pause method.,1,3,0.75,10
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareESXDriver does not implement the unpause method.,1,3,0.75,11
+e21763b15948603e618d4435335ef3785dc5660a,# assert that the mock Logout method was never called,1,3,0.75,12
+e21763b15948603e618d4435335ef3785dc5660a,"def fake_is_vim_object(arg, module):",1,3,0.75,13
+e21763b15948603e618d4435335ef3785dc5660a,# Simply tests that the VMwareESXDriver doesn't implement the,0,3,0.75,14
+e21763b15948603e618d4435335ef3785dc5660a,from nova.tests.virt.vmwareapi import fake,0,2,0.5,15
+e21763b15948603e618d4435335ef3785dc5660a,"info = self.conn.get_console_pool_info(""console_type"")",1,2,0.5,16
+e21763b15948603e618d4435335ef3785dc5660a,from nova.virt import fake,1,2,0.5,17
+e21763b15948603e618d4435335ef3785dc5660a,from nova.tests.virt.vmwareapi import fake as vmwareapi_fake,0,2,0.5,18
+e21763b15948603e618d4435335ef3785dc5660a,# Check calls for delete vmdk and -flat.vmdk pair,0,2,0.5,19
+e21763b15948603e618d4435335ef3785dc5660a,# Tests that the VMwareVCDriver doesn't implement get_diagnostics.,0,2,0.5,20
+e21763b15948603e618d4435335ef3785dc5660a,"self._check_vm_info(info, power_state.RUNNING)",0,2,0.5,21
+e21763b15948603e618d4435335ef3785dc5660a,info = self.conn.get_info({'name': 1}),0,2,0.5,22
+e21763b15948603e618d4435335ef3785dc5660a,def test_unpause(self):,1,1,0.25,23
+e21763b15948603e618d4435335ef3785dc5660a,def test_public_api_signatures(self):,1,1,0.25,24
+e21763b15948603e618d4435335ef3785dc5660a,self.conn = driver.VMwareESXDriver(False),1,1,0.25,25
+e21763b15948603e618d4435335ef3785dc5660a,def setUp(self):,1,1,0.25,26
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_ip_addr(self):,1,1,0.25,27
+e21763b15948603e618d4435335ef3785dc5660a,def test_get_console_pool_info(self):,1,1,0.25,28
+e21763b15948603e618d4435335ef3785dc5660a,def test_finish_revert_migration_power_off(self):,1,1,0.25,29
+e21763b15948603e618d4435335ef3785dc5660a,def test_finish_revert_migration_power_on(self):,1,1,0.25,30
+e21763b15948603e618d4435335ef3785dc5660a,self._create_vm(),1,1,0.25,31
+e21763b15948603e618d4435335ef3785dc5660a,def test_confirm_migration(self):,1,1,0.25,32
+e21763b15948603e618d4435335ef3785dc5660a,self.ds = 'ds1',0,1,0.25,33
+e21763b15948603e618d4435335ef3785dc5660a,def test_pause(self):,1,1,0.25,34
+e21763b15948603e618d4435335ef3785dc5660a,def test_spawn_attach_volume_vmdk_no_image_ref(self):,1,1,0.25,35
+e21763b15948603e618d4435335ef3785dc5660a,def test_spawn_attach_volume_vmdk(self):,1,1,0.25,36
+e21763b15948603e618d4435335ef3785dc5660a,self.vnc_host = 'test_url',1,1,0.25,37
+e21763b15948603e618d4435335ef3785dc5660a,self.conn = driver.VMwareESXDriver(fake.FakeVirtAPI),1,1,0.25,38
+e21763b15948603e618d4435335ef3785dc5660a,self.ds = 'ds1',1,1,0.25,39
+e21763b15948603e618d4435335ef3785dc5660a,self.node_name = 'test_url',1,1,0.25,40
+e21763b15948603e618d4435335ef3785dc5660a,self.vnc_host = 'ha-host',0,1,0.25,41
+e21763b15948603e618d4435335ef3785dc5660a,self.ds = 'ds2',0,1,0.25,42
+e21763b15948603e618d4435335ef3785dc5660a,stats = self.conn.get_host_stats(),1,1,0.25,43
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_state(self):,1,1,0.25,44
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual('Please refer to test_url for the uptime', result)",1,1,0.25,45
+e21763b15948603e618d4435335ef3785dc5660a,"supported_instances = [('i686', 'vmware', 'hvm'),",1,1,0.25,46
+e21763b15948603e618d4435335ef3785dc5660a,vcdriver = self._setup_mocks_for_session(mock_init),1,1,0.25,47
+e21763b15948603e618d4435335ef3785dc5660a,def fake_is_vim_object(module):,0,1,0.25,48
+e21763b15948603e618d4435335ef3785dc5660a,"stubs.Set(vmware_images, 'get_vmdk_size_and_properties',",1,1,0.25,49
+e21763b15948603e618d4435335ef3785dc5660a,vcdriver._session.vim.client.service.Logout.side_effect = web_fault,1,1,0.25,50
+e21763b15948603e618d4435335ef3785dc5660a,"web_fault = suds.WebFault(mock.Mock(), mock.Mock())",1,1,0.25,51
+e21763b15948603e618d4435335ef3785dc5660a,vcdriver._session.vim.retrieve_service_content.return_value = mock_sc,1,1,0.25,52
+e21763b15948603e618d4435335ef3785dc5660a,mock_sc = mock.Mock(),1,1,0.25,53
+e21763b15948603e618d4435335ef3785dc5660a,# observe that no exceptions were thrown,1,1,0.25,54
+e21763b15948603e618d4435335ef3785dc5660a,# Not logged in...,1,1,0.25,55
+e21763b15948603e618d4435335ef3785dc5660a,"def test_cleanup_host_with_no_login(self, mock_init, mock_logger):",1,1,0.25,56
+e21763b15948603e618d4435335ef3785dc5660a,"def test_init_host_and_cleanup_host(self, mock_init):",1,1,0.25,57
+e21763b15948603e618d4435335ef3785dc5660a,"def _test_host_action(self, method, action, expected=None):",1,1,0.25,58
+e21763b15948603e618d4435335ef3785dc5660a,self.node_name = self.conn._resources.keys()[0],0,1,0.25,59
+e21763b15948603e618d4435335ef3785dc5660a,result = self.conn.get_host_uptime('host'),1,1,0.25,60
+e21763b15948603e618d4435335ef3785dc5660a,def test_get_host_uptime(self):,1,1,0.25,61
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_maintenance_off(self):,1,1,0.25,62
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_maintenance_on(self):,1,1,0.25,63
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_startup(self):,1,1,0.25,64
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_shutdown(self):,1,1,0.25,65
+e21763b15948603e618d4435335ef3785dc5660a,def test_host_reboot(self):,1,1,0.25,66
+e21763b15948603e618d4435335ef3785dc5660a,"result = method('host', action)",1,1,0.25,67
+e21763b15948603e618d4435335ef3785dc5660a,self.node_name2 = self.conn._resources.keys()[1],0,1,0.25,68
+e21763b15948603e618d4435335ef3785dc5660a,def tearDown(self):,1,1,0.25,69
+e21763b15948603e618d4435335ef3785dc5660a,"self.conn = driver.VMwareVCDriver(None, False)",0,1,0.25,70
+e21763b15948603e618d4435335ef3785dc5660a,pass,1,1,0.25,71
+e21763b15948603e618d4435335ef3785dc5660a,vm_ref = fake_vm_ref(),0,1,0.25,72
+e21763b15948603e618d4435335ef3785dc5660a,"return ""console log""",0,1,0.25,73
+e21763b15948603e618d4435335ef3785dc5660a,def read(self):,0,1,0.25,74
+e21763b15948603e618d4435335ef3785dc5660a,self.code = 200,0,1,0.25,75
+e21763b15948603e618d4435335ef3785dc5660a,self._type = 'VirtualMachine',0,1,0.25,76
+e21763b15948603e618d4435335ef3785dc5660a,self.value = 4,0,1,0.25,77
+e21763b15948603e618d4435335ef3785dc5660a,def __init__(self):,0,1,0.25,78
+e21763b15948603e618d4435335ef3785dc5660a,import urllib2,0,1,0.25,79
+e21763b15948603e618d4435335ef3785dc5660a,import mox,0,1,0.25,80
+e21763b15948603e618d4435335ef3785dc5660a,"self._check_vm_info(info, power_state.PAUSED)",1,1,0.25,81
+e21763b15948603e618d4435335ef3785dc5660a,def test_power_off_suspended(self):,0,1,0.25,82
+e21763b15948603e618d4435335ef3785dc5660a,def test_power_off_non_existent(self):,0,1,0.25,83
+e21763b15948603e618d4435335ef3785dc5660a,def test_power_on_non_existent(self):,0,1,0.25,84
+e21763b15948603e618d4435335ef3785dc5660a,"self._check_vm_info(info, power_state.SHUTDOWN)",0,1,0.25,85
+e21763b15948603e618d4435335ef3785dc5660a,self._create_vm(),0,1,0.25,86
+e21763b15948603e618d4435335ef3785dc5660a,def test_power_on(self):,0,1,0.25,87
+e21763b15948603e618d4435335ef3785dc5660a,"self._check_vm_info(info, power_state.SUSPENDED)",0,1,0.25,88
+e21763b15948603e618d4435335ef3785dc5660a,FLAGS.vmwareapi_host_password = 'test_pass',1,1,0.25,89
+e21763b15948603e618d4435335ef3785dc5660a,FLAGS.vmwareapi_host_username = 'test_username',1,1,0.25,90
+e21763b15948603e618d4435335ef3785dc5660a,FLAGS.vmwareapi_host_ip = 'test_url',1,1,0.25,91
+e21763b15948603e618d4435335ef3785dc5660a,cluster_name2 = 'test_cluster2',0,1,0.25,92
+e21763b15948603e618d4435335ef3785dc5660a,result = fake_http_resp(),0,1,0.25,93
+e21763b15948603e618d4435335ef3785dc5660a,def test_power_off(self):,0,1,0.25,94
+e21763b15948603e618d4435335ef3785dc5660a,"values = {'name': 'fake_name',",0,1,0.25,95
+e21763b15948603e618d4435335ef3785dc5660a,pass,1,1,0.25,96
+e21763b15948603e618d4435335ef3785dc5660a,cluster_name = 'test_cluster',0,1,0.25,97
+e21763b15948603e618d4435335ef3785dc5660a,self._create_vm(),1,1,0.25,98
+e21763b15948603e618d4435335ef3785dc5660a,def test_instance_dir_disk_created(self):,0,1,0.25,99
+e21763b15948603e618d4435335ef3785dc5660a,uuid_str = uuidutils.generate_uuid(),0,1,0.25,100
+e21763b15948603e618d4435335ef3785dc5660a,def test_snapshot_using_file_manager(self):,0,1,0.25,101
+e21763b15948603e618d4435335ef3785dc5660a,pass,1,1,0.25,102
+e21763b15948603e618d4435335ef3785dc5660a,def test_unpause(self):,0,1,0.25,103
+e21763b15948603e618d4435335ef3785dc5660a,def test_pause(self):,0,1,0.25,104
+e21763b15948603e618d4435335ef3785dc5660a,def test_diagnostics_non_existent_vm(self):,1,1,0.25,105
+e21763b15948603e618d4435335ef3785dc5660a,self._create_vm(),0,1,0.25,106
+e21763b15948603e618d4435335ef3785dc5660a,def test_diagnostics(self):,1,1,0.25,107
+e21763b15948603e618d4435335ef3785dc5660a,# get_diagnostics API.,0,1,0.25,108
+e21763b15948603e618d4435335ef3785dc5660a,def test_get_diagnostics(self):,0,1,0.25,109
+e21763b15948603e618d4435335ef3785dc5660a,"values = {'name': '1',",1,1,0.25,110
+e21763b15948603e618d4435335ef3785dc5660a,file_path = '[fake-ds] vmware_base/fake_image_uuid.vmdk',0,1,0.25,111
+e21763b15948603e618d4435335ef3785dc5660a,def test_cache_dir_disk_created(self):,0,1,0.25,112
+e21763b15948603e618d4435335ef3785dc5660a,cache_file_path = '[fake-ds] vmware_base/fake_image_uuid.vmdk',0,1,0.25,113
+e21763b15948603e618d4435335ef3785dc5660a,self._create_vm(),0,1,0.25,114
+e21763b15948603e618d4435335ef3785dc5660a,inst_file_path = '[fake-ds] fake-uuid/fake_name.vmdk',0,1,0.25,115
+e21763b15948603e618d4435335ef3785dc5660a,vmwareapi_fake.reset(),1,0,0.0,116
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(info['address'], 'test_url')",1,0,0.0,117
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(info['username'], 'test_username')",1,0,0.0,118
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(info['password'], 'test_pass')",1,0,0.0,119
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(self.conn.get_host_ip_addr(), ""test_url"")",1,0,0.0,120
+e21763b15948603e618d4435335ef3785dc5660a,"class VMwareAPIHostTestCase(test.NoDBTestCase,",1,0,0.0,121
+e21763b15948603e618d4435335ef3785dc5660a,"super(VMwareAPIHostTestCase, self).setUp()",1,0,0.0,122
+e21763b15948603e618d4435335ef3785dc5660a,test_driver.DriverAPITestHelper):,1,0,0.0,123
+e21763b15948603e618d4435335ef3785dc5660a,"""""""Unit tests for Vmware API host calls.""""""",1,0,0.0,124
+e21763b15948603e618d4435335ef3785dc5660a,"host_password='test_pass', group='vmware')",1,0,0.0,125
+e21763b15948603e618d4435335ef3785dc5660a,self.flags(image_cache_subdirectory_name='vmware_base'),1,0,0.0,126
+e21763b15948603e618d4435335ef3785dc5660a,vm_util.vm_refs_cache_reset(),1,0,0.0,127
+e21763b15948603e618d4435335ef3785dc5660a,"host_username='test_username',",1,0,0.0,128
+e21763b15948603e618d4435335ef3785dc5660a,self._test_finish_revert_migration(power_on=True),1,0,0.0,129
+e21763b15948603e618d4435335ef3785dc5660a,self._test_finish_revert_migration(power_on=False),1,0,0.0,130
+e21763b15948603e618d4435335ef3785dc5660a,self._spawn_attach_volume_vmdk(),1,0,0.0,131
+e21763b15948603e618d4435335ef3785dc5660a,"self.instance, None)",1,0,0.0,132
+e21763b15948603e618d4435335ef3785dc5660a,"self.conn.confirm_migration, self.context,",1,0,0.0,133
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError,",1,0,0.0,134
+e21763b15948603e618d4435335ef3785dc5660a,instance=None),1,0,0.0,135
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError, self.conn.unpause,",1,0,0.0,136
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError, self.conn.pause, instance=None)",1,0,0.0,137
+e21763b15948603e618d4435335ef3785dc5660a,self._spawn_attach_volume_vmdk(set_image_ref=False),1,0,0.0,138
+e21763b15948603e618d4435335ef3785dc5660a,"datastore_regex='.*',",1,0,0.0,139
+e21763b15948603e618d4435335ef3785dc5660a,"self.flags(host_ip='test_url',",1,0,0.0,140
+e21763b15948603e618d4435335ef3785dc5660a,vmwareapi_fake.reset(),0,0,0.0,141
+e21763b15948603e618d4435335ef3785dc5660a,else:,0,0,0.0,142
+e21763b15948603e618d4435335ef3785dc5660a,if cluster_name2 in self.node_name2:,0,0,0.0,143
+e21763b15948603e618d4435335ef3785dc5660a,"super(VMwareAPIHostTestCase, self).tearDown()",1,0,0.0,144
+e21763b15948603e618d4435335ef3785dc5660a,"host_ip='test_url',",0,0,0.0,145
+e21763b15948603e618d4435335ef3785dc5660a,stubs.set_stubs(self.stubs),1,0,0.0,146
+e21763b15948603e618d4435335ef3785dc5660a,vcdriver._session.vim.client.service.Logout.assert_called_once_with(,1,0,0.0,147
+e21763b15948603e618d4435335ef3785dc5660a,vmwareapi_fake.cleanup(),1,0,0.0,148
+e21763b15948603e618d4435335ef3785dc5660a,self.assertPublicAPISignatures(self.conn),1,0,0.0,149
+e21763b15948603e618d4435335ef3785dc5660a,self.mox.ReplayAll(),0,0,0.0,150
+e21763b15948603e618d4435335ef3785dc5660a,"test.stub_out('nova.virt.vmwareapi.driver.VMwareAPISession.vim',",1,0,0.0,151
+e21763b15948603e618d4435335ef3785dc5660a,"'_is_vim_object',",0,0,0.0,152
+e21763b15948603e618d4435335ef3785dc5660a,test.stub_out('nova.virt.vmwareapi.session.VMwareAPISession.',0,0,0.0,153
+e21763b15948603e618d4435335ef3785dc5660a,"test.stub_out('nova.virt.vmwareapi.session.VMwareAPISession.vim',",0,0,0.0,154
+e21763b15948603e618d4435335ef3785dc5660a,fake.fake_get_vmdk_size_and_properties),1,0,0.0,155
+e21763b15948603e618d4435335ef3785dc5660a,mock_logger.debug.assert_called_once_with(mock.ANY),1,0,0.0,156
+e21763b15948603e618d4435335ef3785dc5660a,@mock.patch('nova.virt.vmwareapi.driver.LOG'),1,0,0.0,157
+e21763b15948603e618d4435335ef3785dc5660a,mock.ANY),1,0,0.0,158
+e21763b15948603e618d4435335ef3785dc5660a,"vcdriver.cleanup_host(""foo"")",1,0,0.0,159
+e21763b15948603e618d4435335ef3785dc5660a,vcdriver._session._create_session.assert_called_once_with(),1,0,0.0,160
+e21763b15948603e618d4435335ef3785dc5660a,"vcdriver.init_host(""foo"")",1,0,0.0,161
+e21763b15948603e618d4435335ef3785dc5660a,@mock.patch('nova.virt.vmwareapi.driver.VMwareVCDriver.__init__'),1,0,0.0,162
+e21763b15948603e618d4435335ef3785dc5660a,vmwareapi_fake.reset(vc=True),1,0,0.0,163
+e21763b15948603e618d4435335ef3785dc5660a,"self._test_host_action(self.conn.host_maintenance_mode, False)",1,0,0.0,164
+e21763b15948603e618d4435335ef3785dc5660a,"self._test_host_action(self.conn.host_maintenance_mode, True)",1,0,0.0,165
+e21763b15948603e618d4435335ef3785dc5660a,"self._test_host_action(self.conn.host_power_action, 'startup')",1,0,0.0,166
+e21763b15948603e618d4435335ef3785dc5660a,"self._test_host_action(self.conn.host_power_action, 'shutdown')",1,0,0.0,167
+e21763b15948603e618d4435335ef3785dc5660a,"self._test_host_action(self.conn.host_power_action, 'reboot')",1,0,0.0,168
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(result, expected)",1,0,0.0,169
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['supported_instances'], supported_instances)",1,0,0.0,170
+e21763b15948603e618d4435335ef3785dc5660a,"('x86_64', 'vmware', 'hvm')]",1,0,0.0,171
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['hypervisor_version'], 5000000)",1,0,0.0,172
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['host_memory_free'], 1024 - 500)",1,0,0.0,173
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['host_memory_total'], 1024)",1,0,0.0,174
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['disk_used'], 1024 - 500)",1,0,0.0,175
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['disk_available'], 500)",1,0,0.0,176
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['disk_total'], 1024)",1,0,0.0,177
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(stats['vcpus'], 16)",1,0,0.0,178
+e21763b15948603e618d4435335ef3785dc5660a,"self.flags(cluster_name=[cluster_name, cluster_name2],",0,0,0.0,179
+e21763b15948603e618d4435335ef3785dc5660a,self.conn.power_on(self.instance),0,0,0.0,180
+e21763b15948603e618d4435335ef3785dc5660a,"""[fake-ds] vmware-tmp/%s.vmdk"" % uuid_str,",0,0,0.0,181
+e21763b15948603e618d4435335ef3785dc5660a,mox.IgnoreArg()).AndReturn(None),0,0,0.0,182
+e21763b15948603e618d4435335ef3785dc5660a,"""""""Test image file isn't cached when use_linked_clone is False.""""""",0,0,0.0,183
+e21763b15948603e618d4435335ef3785dc5660a,"'ramdisk_id': ""fake_ramdisk_uuid"",",0,0,0.0,184
+e21763b15948603e618d4435335ef3785dc5660a,"'kernel_id': ""fake_kernel_uuid"",",0,0,0.0,185
+e21763b15948603e618d4435335ef3785dc5660a,"'image_ref': ""fake_image_uuid"",",0,0,0.0,186
+e21763b15948603e618d4435335ef3785dc5660a,self.conn.get_console_output(self.instance),0,0,0.0,187
+e21763b15948603e618d4435335ef3785dc5660a,self.mox.ReplayAll(),0,0,0.0,188
+e21763b15948603e618d4435335ef3785dc5660a,urllib2.urlopen(mox.IgnoreArg()).AndReturn(result),0,0,0.0,189
+e21763b15948603e618d4435335ef3785dc5660a,AndReturn(vm_ref),0,0,0.0,190
+e21763b15948603e618d4435335ef3785dc5660a,"vm_util.get_vm_ref_from_name(mox.IgnoreArg(), self.instance['name']).\",0,0,0.0,191
+e21763b15948603e618d4435335ef3785dc5660a,"self.mox.StubOutWithMock(urllib2, 'urlopen')",0,0,0.0,192
+e21763b15948603e618d4435335ef3785dc5660a,"self.mox.StubOutWithMock(vm_util, 'get_vm_ref_from_name')",0,0,0.0,193
+e21763b15948603e618d4435335ef3785dc5660a,self._create_instance_in_the_db(),0,0,0.0,194
+e21763b15948603e618d4435335ef3785dc5660a,class fake_http_resp(object):,0,0,0.0,195
+e21763b15948603e618d4435335ef3785dc5660a,class fake_vm_ref(object):,0,0,0.0,196
+e21763b15948603e618d4435335ef3785dc5660a,vmwareapi_host_password='test_pass'),1,0,0.0,197
+e21763b15948603e618d4435335ef3785dc5660a,"self.conn.power_off, self.instance)",0,0,0.0,198
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(exception.InstancePowerOffFailure,",0,0,0.0,199
+e21763b15948603e618d4435335ef3785dc5660a,self.conn.suspend(self.instance),0,0,0.0,200
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(exception.InstanceNotFound, self.conn.power_off,",0,0,0.0,201
+e21763b15948603e618d4435335ef3785dc5660a,self.instance),0,0,0.0,202
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(exception.InstanceNotFound, self.conn.power_on,",0,0,0.0,203
+e21763b15948603e618d4435335ef3785dc5660a,self._create_instance_in_the_db(),0,0,0.0,204
+e21763b15948603e618d4435335ef3785dc5660a,self.conn.power_off(self.instance),0,0,0.0,205
+e21763b15948603e618d4435335ef3785dc5660a,use_linked_clone=False),0,0,0.0,206
+e21763b15948603e618d4435335ef3785dc5660a,"vnc_enabled=False,",0,0,0.0,207
+e21763b15948603e618d4435335ef3785dc5660a,"vmwareapi_host_password='test_pass',",0,0,0.0,208
+e21763b15948603e618d4435335ef3785dc5660a,vmware_host_password='test_pass'),0,0,0.0,209
+e21763b15948603e618d4435335ef3785dc5660a,"vmwareapi_host_username='test_username',",0,0,0.0,210
+e21763b15948603e618d4435335ef3785dc5660a,"self.flags(vmwareapi_host_ip='test_url',",0,0,0.0,211
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(vmwareapi_fake.get_file(inst_file_path), True)",0,0,0.0,212
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(vmwareapi_fake.get_file(cache_file_path), False)",0,0,0.0,213
+e21763b15948603e618d4435335ef3785dc5660a,"""""""Test image disk is cached when use_linked_clone is True.""""""",0,0,0.0,214
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError, self.conn.unpause,",0,0,0.0,215
+e21763b15948603e618d4435335ef3785dc5660a,"""[fake-ds] vmware-tmp/%s-flat.vmdk"" % uuid_str,",0,0,0.0,216
+e21763b15948603e618d4435335ef3785dc5660a,"mox.IgnoreArg(),",0,0,0.0,217
+e21763b15948603e618d4435335ef3785dc5660a,self.conn._vmops._delete_datastore_file(,0,0,0.0,218
+e21763b15948603e618d4435335ef3785dc5660a,'_delete_datastore_file'),0,0,0.0,219
+e21763b15948603e618d4435335ef3785dc5660a,"self.mox.StubOutWithMock(vmops.VMwareVMOps,",0,0,0.0,220
+e21763b15948603e618d4435335ef3785dc5660a,uuidutils.generate_uuid().AndReturn(uuid_str),0,0,0.0,221
+e21763b15948603e618d4435335ef3785dc5660a,'generate_uuid'),0,0,0.0,222
+e21763b15948603e618d4435335ef3785dc5660a,"self.mox.StubOutWithMock(uuidutils,",0,0,0.0,223
+e21763b15948603e618d4435335ef3785dc5660a,self._test_snapshot(),0,0,0.0,224
+e21763b15948603e618d4435335ef3785dc5660a,self.instance),0,0,0.0,225
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError, self.conn.pause, self.instance)",0,0,0.0,226
+e21763b15948603e618d4435335ef3785dc5660a,self._create_instance_in_the_db(),0,0,0.0,227
+e21763b15948603e618d4435335ef3785dc5660a,instance=None),0,0,0.0,228
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError, self.conn.pause, instance=None)",0,0,0.0,229
+e21763b15948603e618d4435335ef3785dc5660a,"self.flags(use_linked_clone=True, group='vmware')",0,0,0.0,230
+e21763b15948603e618d4435335ef3785dc5660a,self.instance),1,0,0.0,231
+e21763b15948603e618d4435335ef3785dc5660a,"self.conn.get_diagnostics,",1,0,0.0,232
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(exception.InstanceNotFound,",1,0,0.0,233
+e21763b15948603e618d4435335ef3785dc5660a,self._create_instance_in_the_db(),1,0,0.0,234
+e21763b15948603e618d4435335ef3785dc5660a,self.instance),0,0,0.0,235
+e21763b15948603e618d4435335ef3785dc5660a,"self.conn.get_diagnostics,",0,0,0.0,236
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError,",0,0,0.0,237
+e21763b15948603e618d4435335ef3785dc5660a,self._create_instance_in_the_db(),0,0,0.0,238
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertRaises(NotImplementedError, self.conn.get_diagnostics, None)",0,0,0.0,239
+e21763b15948603e618d4435335ef3785dc5660a,"'ramdisk_id': ""1"",",1,0,0.0,240
+e21763b15948603e618d4435335ef3785dc5660a,"'kernel_id': ""1"",",1,0,0.0,241
+e21763b15948603e618d4435335ef3785dc5660a,"'image_ref': ""1"",",1,0,0.0,242
+e21763b15948603e618d4435335ef3785dc5660a,"self.assertEqual(vmwareapi_fake.get_file(file_path), True)",0,0,0.0,243
+e21763b15948603e618d4435335ef3785dc5660a,"test.stub_out('nova.virt.vmwareapi.driver.VMwareAPISession._is_vim_object',",1,0,0.0,244

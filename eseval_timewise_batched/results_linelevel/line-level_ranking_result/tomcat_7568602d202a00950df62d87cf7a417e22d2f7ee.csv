@@ -1,0 +1,25 @@
+commit_id,line,line_level_label,count,line_score,row
+7568602d202a00950df62d87cf7a417e22d2f7ee,"// During shutdown, executor may be null - avoid NPE",0,8,1.0,1
+7568602d202a00950df62d87cf7a417e22d2f7ee,"// During shutdown, executor may be null - avoid NPE",1,8,1.0,2
+7568602d202a00950df62d87cf7a417e22d2f7ee,if (!running) {,0,3,0.375,3
+7568602d202a00950df62d87cf7a417e22d2f7ee,if (!running) {,1,3,0.375,4
+7568602d202a00950df62d87cf7a417e22d2f7ee,if (Constants.IS_SECURITY_ENABLED) {,1,2,0.25,5
+7568602d202a00950df62d87cf7a417e22d2f7ee,try {,1,1,0.125,6
+7568602d202a00950df62d87cf7a417e22d2f7ee,//threads should not be created by the webapp classloader,1,1,0.125,7
+7568602d202a00950df62d87cf7a417e22d2f7ee,} else {,1,1,0.125,8
+7568602d202a00950df62d87cf7a417e22d2f7ee,} finally {,1,1,0.125,9
+7568602d202a00950df62d87cf7a417e22d2f7ee,getClass().getClassLoader());,1,0,0.0,10
+7568602d202a00950df62d87cf7a417e22d2f7ee,PrivilegedAction<Void> pa = new PrivilegedSetTccl(loader);,1,0,0.0,11
+7568602d202a00950df62d87cf7a417e22d2f7ee,getExecutor().execute(proc);,1,0,0.0,12
+7568602d202a00950df62d87cf7a417e22d2f7ee,return;,1,0,0.0,13
+7568602d202a00950df62d87cf7a417e22d2f7ee,},1,0,0.0,14
+7568602d202a00950df62d87cf7a417e22d2f7ee,Thread.currentThread().setContextClassLoader(,1,0,0.0,15
+7568602d202a00950df62d87cf7a417e22d2f7ee,AccessController.doPrivileged(pa);,1,0,0.0,16
+7568602d202a00950df62d87cf7a417e22d2f7ee,import java.security.PrivilegedAction;,1,0,0.0,17
+7568602d202a00950df62d87cf7a417e22d2f7ee,new PrivilegedSetTccl(,1,0,0.0,18
+7568602d202a00950df62d87cf7a417e22d2f7ee,PrivilegedAction<Void> pa =,1,0,0.0,19
+7568602d202a00950df62d87cf7a417e22d2f7ee,ClassLoader loader = Thread.currentThread().getContextClassLoader();,1,0,0.0,20
+7568602d202a00950df62d87cf7a417e22d2f7ee,import java.security.AccessController;,1,0,0.0,21
+7568602d202a00950df62d87cf7a417e22d2f7ee,getExecutor().execute(proc);,0,0,0.0,22
+7568602d202a00950df62d87cf7a417e22d2f7ee,return;,0,0,0.0,23
+7568602d202a00950df62d87cf7a417e22d2f7ee,Thread.currentThread().setContextClassLoader(loader);,1,0,0.0,24

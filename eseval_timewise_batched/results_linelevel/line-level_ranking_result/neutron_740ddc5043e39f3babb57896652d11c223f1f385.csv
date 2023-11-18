@@ -1,0 +1,90 @@
+commit_id,line,line_level_label,count,line_score,row
+740ddc5043e39f3babb57896652d11c223f1f385,# here inside the call to setup_tunnel_br(),0,2,1.0,1
+740ddc5043e39f3babb57896652d11c223f1f385,# Drop ports if the interface types doesn't match the,0,2,1.0,2
+740ddc5043e39f3babb57896652d11c223f1f385,# Drop ports if the interface type doesn't match the,0,2,1.0,3
+740ddc5043e39f3babb57896652d11c223f1f385,# here inside the call to reset_tunnel_br(),1,2,1.0,4
+740ddc5043e39f3babb57896652d11c223f1f385,def test_reset_bridge(self):,1,2,1.0,5
+740ddc5043e39f3babb57896652d11c223f1f385,"self.assertEqual(len(self.br.get_port_name_list()), 0)",1,2,1.0,6
+740ddc5043e39f3babb57896652d11c223f1f385,# Interface type of port for physical and integration bridges must,0,2,1.0,7
+740ddc5043e39f3babb57896652d11c223f1f385,"def reset_tunnel_br(self, tun_br_name=None):",1,1,0.5,8
+740ddc5043e39f3babb57896652d11c223f1f385,def cleanup_stale_flows(self):,0,1,0.5,9
+740ddc5043e39f3babb57896652d11c223f1f385,if self.iter_num == 0:,0,1,0.5,10
+740ddc5043e39f3babb57896652d11c223f1f385,bridges = [self.int_br],0,1,0.5,11
+740ddc5043e39f3babb57896652d11c223f1f385,if self.enable_tunneling:,0,1,0.5,12
+740ddc5043e39f3babb57896652d11c223f1f385,for bridge in bridges:,0,1,0.5,13
+740ddc5043e39f3babb57896652d11c223f1f385,self.create_ovs_port(),1,1,0.5,14
+740ddc5043e39f3babb57896652d11c223f1f385,self.patch_tun_ofport = self.int_br.add_patch_port(,1,1,0.5,15
+740ddc5043e39f3babb57896652d11c223f1f385,def setup_tunnel_br(self):,1,1,0.5,16
+740ddc5043e39f3babb57896652d11c223f1f385,# configuration value,0,1,0.5,17
+740ddc5043e39f3babb57896652d11c223f1f385,self.br.reset_bridge(),1,1,0.5,18
+740ddc5043e39f3babb57896652d11c223f1f385,def test_reset_bridge_secure_mode(self):,1,1,0.5,19
+740ddc5043e39f3babb57896652d11c223f1f385,if int_type == 'veth':,0,1,0.5,20
+740ddc5043e39f3babb57896652d11c223f1f385,self.patch_int_ofport = self.tun_br.add_patch_port(,1,1,0.5,21
+740ddc5043e39f3babb57896652d11c223f1f385,if int_type == 'patch':,0,1,0.5,22
+740ddc5043e39f3babb57896652d11c223f1f385,if (not self.int_br.port_exists(self.conf.OVS.int_peer_patch_port) or,0,1,0.5,23
+740ddc5043e39f3babb57896652d11c223f1f385,UINT64_BITMASK = (1 << 64) - 1,0,1,0.5,24
+740ddc5043e39f3babb57896652d11c223f1f385,# configuration value.,0,1,0.5,25
+740ddc5043e39f3babb57896652d11c223f1f385,if self.conf.AGENT.drop_flows_on_start:,0,1,0.5,26
+740ddc5043e39f3babb57896652d11c223f1f385,"def setup_tunnel_br(self, tun_br_name=None):",0,1,0.5,27
+740ddc5043e39f3babb57896652d11c223f1f385,if not self.tun_br.bridge_exists('br-tun'):,0,1,0.5,28
+740ddc5043e39f3babb57896652d11c223f1f385,self.agent_uuid_stamp = uuid.uuid4().int & UINT64_BITMASK,0,1,0.5,29
+740ddc5043e39f3babb57896652d11c223f1f385,self.patch_tun_ofport = self.int_br.add_patch_port(,0,1,0.5,30
+740ddc5043e39f3babb57896652d11c223f1f385,if (not self.tun_br.port_exists(self.conf.OVS.tun_peer_patch_port) or,0,1,0.5,31
+740ddc5043e39f3babb57896652d11c223f1f385,self.patch_int_ofport = self.tun_br.add_patch_port(,0,1,0.5,32
+740ddc5043e39f3babb57896652d11c223f1f385,def setup_tunnel_br_flows(self):,0,1,0.5,33
+740ddc5043e39f3babb57896652d11c223f1f385,"int_type = self.int_br.db_get_val(""Interface"", int_if_name, ""type"")",0,1,0.5,34
+740ddc5043e39f3babb57896652d11c223f1f385,"# be same, so check only one of them.",0,1,0.5,35
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.bridge_exists('br-tun'),",0,0,0.0,36
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.port_exists().__nonzero__(),",0,0,0.0,37
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.port_exists('patch-int'),",0,0,0.0,38
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.bridge_exists().__nonzero__(),",0,0,0.0,39
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.db_get_val('Interface', 'int-%s' % self.MAP_TUN_BRIDGE,",0,0,0.0,40
+740ddc5043e39f3babb57896652d11c223f1f385,"'type'),",0,0,0.0,41
+740ddc5043e39f3babb57896652d11c223f1f385,self.int_br.delete_port(int_if_name),1,0,0.0,42
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.set_agent_uuid_stamp(mock.ANY),",0,0,0.0,43
+740ddc5043e39f3babb57896652d11c223f1f385,self.reset_tunnel_br(),1,0,0.0,44
+740ddc5043e39f3babb57896652d11c223f1f385,br.delete_port(phys_if_name),1,0,0.0,45
+740ddc5043e39f3babb57896652d11c223f1f385,mock.patch.object(,0,0,0.0,46
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.port_exists('patch-tun'),",0,0,0.0,47
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.delete_port('int-%s' % self.MAP_TUN_BRIDGE),",1,0,0.0,48
+740ddc5043e39f3babb57896652d11c223f1f385,"self.mod_agent.OVSNeutronAgent,",0,0,0.0,49
+740ddc5043e39f3babb57896652d11c223f1f385,"'update_stale_ofport_rules') as update_stale,\",0,0,0.0,50
+740ddc5043e39f3babb57896652d11c223f1f385,'cleanup_stale_flows') as cleanup:,0,0,0.0,51
+740ddc5043e39f3babb57896652d11c223f1f385,cleanup.assert_called_once_with(),0,0,0.0,52
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.delete_port('phy-%s' % self.MAP_TUN_BRIDGE),",1,0,0.0,53
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.reset_bridge(secure_mode=True),",1,0,0.0,54
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.call.delete_flows(),",1,0,0.0,55
+740ddc5043e39f3babb57896652d11c223f1f385,"mock.patch.object(self.mod_agent.OVSNeutronAgent,",1,0,0.0,56
+740ddc5043e39f3babb57896652d11c223f1f385,'update_stale_ofport_rules') as update_stale:,1,0,0.0,57
+740ddc5043e39f3babb57896652d11c223f1f385,self._assert_br_fail_mode([]),1,0,0.0,58
+740ddc5043e39f3babb57896652d11c223f1f385,self.br.reset_bridge(secure_mode=True),1,0,0.0,59
+740ddc5043e39f3babb57896652d11c223f1f385,self.conf.OVS.int_peer_patch_port),1,0,0.0,60
+740ddc5043e39f3babb57896652d11c223f1f385,self.tun_br.delete_flows(),1,0,0.0,61
+740ddc5043e39f3babb57896652d11c223f1f385,self.conf.OVS.tun_peer_patch_port),0,0,0.0,62
+740ddc5043e39f3babb57896652d11c223f1f385,"self.conf.OVS.tun_peer_patch_port,",1,0,0.0,63
+740ddc5043e39f3babb57896652d11c223f1f385,self.conf.OVS.int_peer_patch_port),0,0,0.0,64
+740ddc5043e39f3babb57896652d11c223f1f385,import uuid,0,0,0.0,65
+740ddc5043e39f3babb57896652d11c223f1f385,self.setup_tunnel_br(tun_br),0,0,0.0,66
+740ddc5043e39f3babb57896652d11c223f1f385,self.setup_tunnel_br_flows(),0,0,0.0,67
+740ddc5043e39f3babb57896652d11c223f1f385,self.int_br.set_agent_uuid_stamp(self.agent_uuid_stamp),0,0,0.0,68
+740ddc5043e39f3babb57896652d11c223f1f385,self.int_br.delete_flows(),0,0,0.0,69
+740ddc5043e39f3babb57896652d11c223f1f385,self.tun_br.set_agent_uuid_stamp(self.agent_uuid_stamp),0,0,0.0,70
+740ddc5043e39f3babb57896652d11c223f1f385,self.tun_br.create(secure_mode=True),0,0,0.0,71
+740ddc5043e39f3babb57896652d11c223f1f385,self.patch_tun_ofport == ovs_lib.INVALID_OFPORT):,0,0,0.0,72
+740ddc5043e39f3babb57896652d11c223f1f385,"self.conf.OVS.int_peer_patch_port,",0,0,0.0,73
+740ddc5043e39f3babb57896652d11c223f1f385,self.patch_int_ofport == ovs_lib.INVALID_OFPORT):,0,0,0.0,74
+740ddc5043e39f3babb57896652d11c223f1f385,"self.conf.OVS.tun_peer_patch_port,",0,0,0.0,75
+740ddc5043e39f3babb57896652d11c223f1f385,self.tun_br.delete_flows(),0,0,0.0,76
+740ddc5043e39f3babb57896652d11c223f1f385,self.conf.OVS.tun_peer_patch_port),1,0,0.0,77
+740ddc5043e39f3babb57896652d11c223f1f385,self.int_br.delete_port(int_if_name),0,0,0.0,78
+740ddc5043e39f3babb57896652d11c223f1f385,br.delete_port(phys_if_name),0,0,0.0,79
+740ddc5043e39f3babb57896652d11c223f1f385,bridges.append(self.tun_br),0,0,0.0,80
+740ddc5043e39f3babb57896652d11c223f1f385,"LOG.info(_LI(""Cleaning stale %s flows""), bridge.br_name)",0,0,0.0,81
+740ddc5043e39f3babb57896652d11c223f1f385,bridge.cleanup_flows(),0,0,0.0,82
+740ddc5043e39f3babb57896652d11c223f1f385,self.cleanup_stale_flows(),0,0,0.0,83
+740ddc5043e39f3babb57896652d11c223f1f385,self.reset_tunnel_br(tun_br),1,0,0.0,84
+740ddc5043e39f3babb57896652d11c223f1f385,self.setup_tunnel_br(),1,0,0.0,85
+740ddc5043e39f3babb57896652d11c223f1f385,Delete patch ports and remove all existing flows.,1,0,0.0,86
+740ddc5043e39f3babb57896652d11c223f1f385,self.tun_br.reset_bridge(secure_mode=True),1,0,0.0,87
+740ddc5043e39f3babb57896652d11c223f1f385,"self.conf.OVS.int_peer_patch_port,",1,0,0.0,88
+740ddc5043e39f3babb57896652d11c223f1f385,self._assert_br_fail_mode(ovs_lib.FAILMODE_SECURE),1,0,0.0,89

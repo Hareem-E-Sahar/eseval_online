@@ -1,0 +1,99 @@
+commit_id,line,line_level_label,count,line_score,row
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.unsetSecurityToken(container, token);",0,2,1.0,1
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.unsetSecurityToken(container, token);",1,2,1.0,2
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.setSecurityToken(getName(), token);",1,1,0.5,3
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.unsetSecurityToken(getName(), token);",1,1,0.5,4
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.unbindContext(container, token);",1,1,0.5,5
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.setWritable(getName(), token);",1,1,0.5,6
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.bindContext(container, namingContext, token);",1,1,0.5,7
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.setSecurityToken(container, token);",1,1,0.5,8
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"log.debug(""Bound "" + container );",1,1,0.5,9
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.unsetSecurityToken(getName(), token);",0,1,0.5,10
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.unbindContext(container, token);",0,1,0.5,11
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.setWritable(getName(), token);",0,1,0.5,12
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"log.debug(""Bound "" + container );",0,1,0.5,13
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.bindContext(container, namingContext, token);",0,1,0.5,14
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.setSecurityToken(container, token);",0,1,0.5,15
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextAccessController.setSecurityToken(getName(), token);",0,1,0.5,16
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Setting the context in read/write mode,1,0,0.0,17
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Setting the context in read only mode,1,0,0.0,18
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if (container instanceof Context) {,1,0,0.0,19
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Binding the naming context to the class loader,1,0,0.0,20
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingResources.addPropertyChangeListener(this);,1,0,0.0,21
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"(sm.getString(""naming.namingContextCreationFailed"", e));",1,0,0.0,22
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,logger.error,1,0,0.0,23
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,createNamingContext();,1,0,0.0,24
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,try {,1,0,0.0,25
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,} catch (NamingException e) {,1,0,0.0,26
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,getExceptionOnFailedWrite());,1,0,0.0,27
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingContext.setExceptionOnFailedWrite(,1,0,0.0,28
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Configure write when read-only behaviour,1,0,0.0,29
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if( log.isDebugEnabled() ) {,1,0,0.0,30
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,},1,0,0.0,31
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Never happens,1,0,0.0,32
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.bindClassLoader(container, token,",1,0,0.0,33
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"namingContext = new NamingContext(contextEnv, getName());",1,0,0.0,34
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,ContextAccessController.setReadOnly(getName());,1,0,0.0,35
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if (container instanceof StandardServer) {,1,0,0.0,36
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,((Context) container).getLoader().getClassLoader());,1,0,0.0,37
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"logger.error(sm.getString(""naming.bindFailed"", e));",1,0,0.0,38
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,compCtx = null;,1,0,0.0,39
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,envCtx = null;,1,0,0.0,40
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingContext = null;,1,0,0.0,41
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,objectNames.clear();,1,0,0.0,42
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"Registry.getRegistry(null, null).unregisterComponent(objectName);",1,0,0.0,43
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,for (ObjectName objectName : names) {,1,0,0.0,44
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,Collection<ObjectName> names = objectNames.values();,1,0,0.0,45
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// unregister mbeans.,1,0,0.0,46
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingResources.removePropertyChangeListener(this);,1,0,0.0,47
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.unbindClassLoader(container, token,",1,0,0.0,48
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,initialized = true;,1,0,0.0,49
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,((StandardServer) container).setGlobalNamingContext,1,0,0.0,50
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,initialized = false;,0,0,0.0,51
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,this.getClass().getClassLoader());,1,0,0.0,52
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,(namingContext);,1,0,0.0,53
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,org.apache.naming.factory.ResourceLinkFactory.setGlobalContext,1,0,0.0,54
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if (container instanceof Server) {,1,0,0.0,55
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"Hashtable<String, Object> contextEnv = new Hashtable<>();",1,0,0.0,56
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// unregister mbeans.,0,0,0.0,57
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,compCtx = null;,0,0,0.0,58
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,ContextAccessController.setReadOnly(getName());,0,0,0.0,59
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if (container instanceof Context) {,0,0,0.0,60
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Binding the naming context to the class loader,0,0,0.0,61
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingResources.addPropertyChangeListener(this);,0,0,0.0,62
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"(sm.getString(""naming.namingContextCreationFailed"", e));",0,0,0.0,63
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,logger.error,0,0,0.0,64
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,createNamingContext();,0,0,0.0,65
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Setting the context in read/write mode,0,0,0.0,66
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,getExceptionOnFailedWrite());,0,0,0.0,67
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingContext.setExceptionOnFailedWrite(,0,0,0.0,68
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Configure write when read-only behaviour,0,0,0.0,69
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if( log.isDebugEnabled() ) {,0,0,0.0,70
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,},0,0,0.0,71
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Never happens,0,0,0.0,72
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,} catch (NamingException e) {,0,0,0.0,73
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"namingContext = new NamingContext(contextEnv, getName());",0,0,0.0,74
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,try {,0,0,0.0,75
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"Hashtable<String, Object> contextEnv = new Hashtable<>();",0,0,0.0,76
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,// Setting the context in read only mode,0,0,0.0,77
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.bindClassLoader(container, token,",0,0,0.0,78
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,envCtx = null;,0,0,0.0,79
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,((Context) container).getLoader().getClassLoader());,0,0,0.0,80
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingContext = null;,0,0,0.0,81
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,objectNames.clear();,0,0,0.0,82
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"Registry.getRegistry(null, null).unregisterComponent(objectName);",0,0,0.0,83
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,for (ObjectName objectName : names) {,0,0,0.0,84
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,Collection<ObjectName> names = objectNames.values();,0,0,0.0,85
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,namingResources.removePropertyChangeListener(this);,0,0,0.0,86
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"ContextBindings.unbindClassLoader(container, token,",0,0,0.0,87
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,initialized = true;,0,0,0.0,88
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"// Regardless of success, so that we can do cleanup on configure_stop",0,0,0.0,89
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,} finally {,0,0,0.0,90
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,(namingContext);,0,0,0.0,91
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,((StandardServer) container).setGlobalNamingContext,0,0,0.0,92
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if (container instanceof StandardServer) {,0,0,0.0,93
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,this.getClass().getClassLoader());,0,0,0.0,94
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,org.apache.naming.factory.ResourceLinkFactory.setGlobalContext,0,0,0.0,95
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,if (container instanceof Server) {,0,0,0.0,96
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,"logger.error(sm.getString(""naming.bindFailed"", e));",0,0,0.0,97
+09a6f97c46906a2490a3fbb6e1ab289e346aa3f6,initialized = false;,1,0,0.0,98

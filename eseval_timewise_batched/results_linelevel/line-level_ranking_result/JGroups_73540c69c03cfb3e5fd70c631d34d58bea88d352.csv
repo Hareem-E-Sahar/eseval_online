@@ -1,0 +1,251 @@
+commit_id,line,line_level_label,count,line_score,row
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// get the resulting message from the peer - should be a key request to peer2,1,8,1.0,1
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// set up peer2 with server as key server,1,7,0.875,2
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//	set the server up as key server,1,7,0.875,3
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// get the resulting message from the peer - should be a key request,1,7,0.875,4
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// set up the peer,1,5,0.625,5
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send to peer - which should have peer2 as its key server,1,5,0.625,6
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//	set the server up as keyserver,1,5,0.625,7
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// encrypt and send an initial message to peer,1,4,0.5,8
+73540c69c03cfb3e5fd70c631d34d58bea88d352,static class MockProtocol extends Protocol {,1,4,0.5,9
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send to peer - should set peer2 as keyserver,1,4,0.5,10
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send an encrypted message from the server,1,4,0.5,11
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// set up peer as if it has started but not recieved view change,1,4,0.5,12
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// make sure we have the events now in the up layers,1,4,0.5,13
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//assert that reply is the session key encrypted with peer's public key,1,4,0.5,14
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// set up peer,1,4,0.5,15
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// set up server,1,4,0.5,16
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// this should have changed us to the key server,1,4,0.5,17
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send a view change to trigger the become key server,1,4,0.5,18
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// assert that message is queued as we have no key,1,4,0.5,19
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// set in the observer,1,4,0.5,20
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// test the default symetric key,1,4,0.5,21
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// test the default asymetric key,1,4,0.5,22
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send another encrypted message to peer to test queue,1,3,0.375,23
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public Object up(Event evt) {,1,3,0.375,24
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public Object down(Event evt) {,1,3,0.375,25
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//	Update the view with new member,1,3,0.375,26
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// sent to peer encrypted - should be queued in encyption layer as we do not have a keyserver set,1,3,0.375,27
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// create peer and server,1,3,0.375,28
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//assert that message is queued as we have no key from server,1,3,0.375,29
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// assert that both now have same key,1,3,0.375,30
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// we use the fact that our address is now the controller one,1,3,0.375,31
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public class ENCRYPTAsymmetricTest {,1,3,0.375,32
+73540c69c03cfb3e5fd70c631d34d58bea88d352,* To change the template for this generated file go to,1,3,0.375,33
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// assert that peer\ keyserver address is now set,1,3,0.375,34
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// create peers and server,1,2,0.25,35
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testViewChangeNewKeyServerNewKey() throws Exception {,1,2,0.25,36
+73540c69c03cfb3e5fd70c631d34d58bea88d352,ENCRYPT peer2=new ENCRYPT();,1,2,0.25,37
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event serverEvent = new Event(Event.VIEW_CHANGE, View.create(server_addr, 1, server_addr));",1,2,0.25,38
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event event = new Event(Event.VIEW_CHANGE, View.create(peer2_addr, 2, peer2_addr));",1,2,0.25,39
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// ensure type and that request contains peers pub key,1,2,0.25,40
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public void testKeyChangesDuringKeyServerChange() throws Exception {,1,2,0.25,41
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event updatedView = new Event(Event.VIEW_CHANGE, View.create(server_addr, 2, peer_addr));",1,2,0.25,42
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event viewChange2 = new Event(Event.VIEW_CHANGE, View.create(peer2_addr, 2, peer2_addr));",1,2,0.25,43
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event initalView = new Event(Event.VIEW_CHANGE, View.create(server_addr, 1, server_addr));",1,2,0.25,44
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"private static void updateViewFor(ENCRYPT peer, ENCRYPT keyServer, MockProtocol serverObserver, Event serverEvent,",1,2,0.25,45
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public void up(MessageBatch batch) {,1,2,0.25,46
+73540c69c03cfb3e5fd70c631d34d58bea88d352,protected Event getLatestUpMessage() {,1,2,0.25,47
+73540c69c03cfb3e5fd70c631d34d58bea88d352,protected Event getLatestDownMessage() {,1,2,0.25,48
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send a view change where we are not the controller,1,2,0.25,49
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// now send back to peer,1,2,0.25,50
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send this event to server,1,2,0.25,51
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//Strangely this returns differently from the default provider for RSA which is also BC!,1,2,0.25,52
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testInitAESProperties() throws Exception {,1,2,0.25,53
+73540c69c03cfb3e5fd70c631d34d58bea88d352,* Window - Preferences - Java - Code Generation - Code and Comments,1,2,0.25,54
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.testng.annotations.Test;,1,2,0.25,55
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testInitNoProperties() throws Exception {,1,2,0.25,56
+73540c69c03cfb3e5fd70c631d34d58bea88d352,ENCRYPT encrypt=new ENCRYPT();,1,2,0.25,57
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testInitBCAsymProperties() throws Exception {,1,2,0.25,58
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testInitIDEAProperties() throws Exception {,1,2,0.25,59
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event viewChange = new Event(Event.VIEW_CHANGE, View.create(server_addr, 1, server_addr));",1,2,0.25,60
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testViewChangeBecomeKeyserver() throws Exception {,1,2,0.25,61
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// produce encrypted message,1,2,0.25,62
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// send another encrypted message,1,2,0.25,63
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// we should have three messages now in our observer that are decrypted,1,2,0.25,64
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testViewChangeNewKeyServer() throws Exception {,1,2,0.25,65
+73540c69c03cfb3e5fd70c631d34d58bea88d352,ENCRYPT peer=new ENCRYPT();,1,2,0.25,66
+73540c69c03cfb3e5fd70c631d34d58bea88d352,ENCRYPT server=new ENCRYPT();,1,2,0.25,67
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Cipher cipher=server.getSymEncodingCipher();,1,1,0.125,68
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event tempEvt=peerObserver.upMessages.get(""message2"");",1,1,0.125,69
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert !peer.getDesKey().equals(server.getDesKey());,1,1,0.125,70
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event reply=serverObserver.downMessages.get(""message1"");",1,1,0.125,71
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(new String(((Message)sent.getArg()).getBuffer()), new String(peer.getKpair().getPublic().getEncoded()));",1,1,0.125,72
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event sent=peerObserver.downMessages.get(""message0"");",1,1,0.125,73
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""AES"".equals(encrypt.getSymAlgorithm()) : ""expected AES but was "" + encrypt.getSymAlgorithm();",1,1,0.125,74
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Message msg=new Message().setBuffer(cipher.doFinal(""hello"".getBytes()))",1,1,0.125,75
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(""hello2"", new String(((Message)sent.getArg()).getBuffer()));",1,1,0.125,76
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(""hello"", new String(((Message)sent.getArg()).getBuffer()));",1,1,0.125,77
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event sent=observer.upMessages.get(""message1"");",1,1,0.125,78
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Message msg2=new Message().setBuffer(cipher.doFinal(""hello2"".getBytes()))",1,1,0.125,79
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event event=new Event(Event.VIEW_CHANGE, tempView);",1,1,0.125,80
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"View tempView=View.create(encrypt_addr,1,encrypt_addr);",1,1,0.125,81
+73540c69c03cfb3e5fd70c631d34d58bea88d352,".putHeader(ENCRYPT_ID, new EncryptHeader(EncryptHeader.ENCRYPT, symVersion));",1,1,0.125,82
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(""hello2"", new String(((Message)tempEvt.getArg()).getBuffer()));",1,1,0.125,83
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(""hello"", new String(((Message)tempEvt.getArg()).getBuffer()));",1,1,0.125,84
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Message msg2=new Message();,1,1,0.125,85
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//set the local address and view change to simulate a started instance,1,1,0.125,86
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Event tempEvt=peerObserver.getLatestUpMessage();,1,1,0.125,87
+73540c69c03cfb3e5fd70c631d34d58bea88d352,throw new UnsupportedOperationException();,1,1,0.125,88
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Event serverKeyToPeer=serverObserver.getLatestDownMessage();,1,1,0.125,89
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Event peerKeyRequest=peerObserver.getLatestDownMessage();,1,1,0.125,90
+73540c69c03cfb3e5fd70c631d34d58bea88d352,MockProtocol peerObserver) {,1,1,0.125,91
+73540c69c03cfb3e5fd70c631d34d58bea88d352,SecretKey key = server.getDesKey();,1,1,0.125,92
+73540c69c03cfb3e5fd70c631d34d58bea88d352,public static void testSymmetricKeyIsChangedOnViewChange() throws Exception{,1,1,0.125,93
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event evt3=peer2Observer.downMessages.get(""message2"");",1,1,0.125,94
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Message msg=new Message().setBuffer(""hello"".getBytes());",1,1,0.125,95
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event evt2=new Event(Event.MSG, msg2);",1,1,0.125,96
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert !server.getDesKey().equals(peer.getDesKey());,1,1,0.125,97
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert !server.getDesKey().equals(peer2.getDesKey());,1,1,0.125,98
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert !peer.getDesKey().equals(peer2.getDesKey());,1,1,0.125,99
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event encEvt=serverObserver.downMessages.get(""message1"");",1,1,0.125,100
+73540c69c03cfb3e5fd70c631d34d58bea88d352,// message0 is in response to view change,1,1,0.125,101
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Cipher cipher=encrypt.getSymEncodingCipher();,1,1,0.125,102
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Event reply=peer2Observer.downMessages.get(""message1"");",1,1,0.125,103
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getSymEncodingCipher() != null;,1,1,0.125,104
+73540c69c03cfb3e5fd70c631d34d58bea88d352,* @author Bela Ban,1,1,0.125,105
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import java.util.TreeMap;,1,1,0.125,106
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import java.security.Security;,1,1,0.125,107
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import java.security.MessageDigest;,1,1,0.125,108
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import javax.crypto.SecretKey;,1,1,0.125,109
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import javax.crypto.Cipher;,1,1,0.125,110
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.testng.annotations.BeforeClass;,1,1,0.125,111
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.testng.Assert;,1,1,0.125,112
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.jgroups.util.Util;,1,1,0.125,113
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.jgroups.util.MessageBatch;,1,1,0.125,114
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.jgroups.stack.Protocol;,1,1,0.125,115
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.jgroups.conf.ClassConfigurator;,1,1,0.125,116
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.jgroups.*;,1,1,0.125,117
+73540c69c03cfb3e5fd70c631d34d58bea88d352,*,1,1,0.125,118
+73540c69c03cfb3e5fd70c631d34d58bea88d352,* Created on 04-Jul-2004,1,1,0.125,119
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getSymDecodingCipher() != null;,1,1,0.125,120
+73540c69c03cfb3e5fd70c631d34d58bea88d352,* @author xenephon,1,1,0.125,121
+73540c69c03cfb3e5fd70c631d34d58bea88d352,import org.jgroups.protocols.ENCRYPT.EncryptHeader;,1,1,0.125,122
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"protected static final Address encrypt_addr=Util.createRandomAddress(""encrypt"");",1,1,0.125,123
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getKpair().getPublic().getEncoded() != null;,1,1,0.125,124
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getAsymCipher() != null;,1,1,0.125,125
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"protected static final Address server_addr=Util.createRandomAddress(""server"");",1,1,0.125,126
+73540c69c03cfb3e5fd70c631d34d58bea88d352,//test the resulting ciphers,1,1,0.125,127
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getDesKey().getEncoded() != null;,1,1,0.125,128
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""AES"".equals(encrypt.getDesKey().getAlgorithm());",1,1,0.125,129
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getSymInit() == 128;,1,1,0.125,130
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""AES"".equals(encrypt.getSymAlgorithm());",1,1,0.125,131
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""RAW"".equals(encrypt.getDesKey().getFormat());",1,1,0.125,132
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""X.509"".equals(encrypt.getKpair().getPublic().getFormat());",1,1,0.125,133
+73540c69c03cfb3e5fd70c631d34d58bea88d352,assert encrypt.getAsymInit() == 512;,1,1,0.125,134
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""RSA"".equals(encrypt.getAsymAlgorithm());",1,1,0.125,135
+73540c69c03cfb3e5fd70c631d34d58bea88d352,static void initProvider() {,1,1,0.125,136
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"protected static final Address peer_addr=Util.createRandomAddress(""peer"");",1,1,0.125,137
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"assert ""RSA"".equals(encrypt.getKpair().getPublic().getAlgorithm());",1,1,0.125,138
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"protected static final Address peer2_addr=Util.createRandomAddress(""peer2"");",1,1,0.125,139
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(event);,1,0,0.0,140
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"server.down(new Event(Event.MSG, msg));",1,0,0.0,141
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(encEvt);,1,0,0.0,142
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"updateViewFor(peer, server, serverObserver, serverEvent, peerObserver);",1,0,0.0,143
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertFalse(peerObserver.upMessages.isEmpty());,1,0,0.0,144
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.up(event);,1,0,0.0,145
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(peer2_addr, peer.getKeyServerAddr());",1,0,0.0,146
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.up(sent);,1,0,0.0,147
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(peer.getDesKey(), peer2.getDesKey());",1,0,0.0,148
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.keyServer=false;,1,0,0.0,149
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"msg2.setBuffer(""hello2"".getBytes());",1,0,0.0,150
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.setKeyServerAddr(server_addr);,1,0,0.0,151
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(3,peerObserver.upMessages.size());",1,0,0.0,152
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.setDownProtocol(peer2Observer);,1,0,0.0,153
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.setUpProtocol(peer2Observer);,1,0,0.0,154
+73540c69c03cfb3e5fd70c631d34d58bea88d352,MockProtocol peer2Observer=new MockProtocol();,1,0,0.0,155
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.setLocalAddress(peer2_addr);,1,0,0.0,156
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.up(serverEvent);,1,0,0.0,157
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.init();,1,0,0.0,158
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"tempEvt=peerObserver.upMessages.get(""message3"");",1,0,0.0,159
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"peer.up(new Event(Event.MSG, msg2));",1,0,0.0,160
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(peer.getDesKey(), server.getDesKey());",1,0,0.0,161
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(reply);,1,0,0.0,162
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(((EncryptHeader)((Message)reply.getArg()).getHeader(ENCRYPT_ID)).getType(), EncryptHeader.SECRETKEY);",1,0,0.0,163
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(evt3);,1,0,0.0,164
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.down(evt2);,1,0,0.0,165
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(serverEvent);,1,0,0.0,166
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(4, peerObserver.upMessages.size());",1,0,0.0,167
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"server.up(new Event(Event.TMP_VIEW, serverEvent.getArg()));",1,0,0.0,168
+73540c69c03cfb3e5fd70c631d34d58bea88d352,return upMessages.isEmpty()? null : upMessages.lastEntry().getValue();,1,0,0.0,169
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"upMessages.put(""message"" + counter++, evt);",1,0,0.0,170
+73540c69c03cfb3e5fd70c631d34d58bea88d352,return null;,1,0,0.0,171
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"downMessages.put(""message"" + counter++, evt);",1,0,0.0,172
+73540c69c03cfb3e5fd70c631d34d58bea88d352,private int counter;,1,0,0.0,173
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"private final TreeMap<String, Event> downMessages=new TreeMap<>();",1,0,0.0,174
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"private final TreeMap<String, Event> upMessages=new TreeMap<>();",1,0,0.0,175
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(serverKeyToPeer);,1,0,0.0,176
+73540c69c03cfb3e5fd70c631d34d58bea88d352,keyServer.up(peerKeyRequest);,1,0,0.0,177
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(((EncryptHeader)((Message)sent.getArg()).getHeader(ENCRYPT_ID)).getType(), EncryptHeader.KEY_REQUEST);",1,0,0.0,178
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertFalse(key.equals(keyAfterViewChange));,1,0,0.0,179
+73540c69c03cfb3e5fd70c631d34d58bea88d352,SecretKey keyAfterViewChange = server.getDesKey();,1,0,0.0,180
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.up(updatedView);,1,0,0.0,181
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"server.up(new Event(Event.TMP_VIEW, updatedView.getArg()));",1,0,0.0,182
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.up(initalView);,1,0,0.0,183
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"server.up(new Event(Event.TMP_VIEW, initalView.getArg()));",1,0,0.0,184
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.changeKeysOnViewChange=true;,1,0,0.0,185
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Assert.assertEquals(peer.getDesKey().getEncoded(), peer2.getDesKey().getEncoded());",1,0,0.0,186
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Assert.assertFalse(server.getDesKey().equals(peer.getDesKey()));,1,0,0.0,187
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"updateViewFor(peer, peer2, peer2Observer, viewChange2, peerObserver);",1,0,0.0,188
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer2.up(viewChange2);,1,0,0.0,189
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"peer2.up(new Event(Event.TMP_VIEW, viewChange2.getArg()));",1,0,0.0,190
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Assert.assertEquals(server.getDesKey().getEncoded(), peer2.getDesKey().getEncoded());",1,0,0.0,191
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Assert.assertEquals(server.getDesKey().getEncoded(), peer.getDesKey().getEncoded());",1,0,0.0,192
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"updateViewFor(peer2, server, serverObserver, serverEvent, peer2Observer);",1,0,0.0,193
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.up(sent);,1,0,0.0,194
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.init();,1,0,0.0,195
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(server_addr, peer.getKeyServerAddr());",1,0,0.0,196
+73540c69c03cfb3e5fd70c631d34d58bea88d352,@Test(expectedExceptions=Exception.class),1,0,0.0,197
+73540c69c03cfb3e5fd70c631d34d58bea88d352,MockProtocol observer=new MockProtocol();,1,0,0.0,198
+73540c69c03cfb3e5fd70c631d34d58bea88d352,encrypt.setLocalAddress(encrypt_addr);,1,0,0.0,199
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertNotNull(encrypt.getSymEncodingCipher());,1,0,0.0,200
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertNotNull(encrypt.getSymDecodingCipher());,1,0,0.0,201
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertNotNull(encrypt.getDesKey().getEncoded());,1,0,0.0,202
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(""RAW"", encrypt.getDesKey().getFormat());",1,0,0.0,203
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(""AES"", encrypt.getDesKey().getAlgorithm());",1,0,0.0,204
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(128, encrypt.getSymInit());",1,0,0.0,205
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"encrypt.symAlgorithm = ""AES"";",1,0,0.0,206
+73540c69c03cfb3e5fd70c631d34d58bea88d352,encrypt.symInit = 128;,1,0,0.0,207
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"encrypt.symAlgorithm =  ""IDEA"";",1,0,0.0,208
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"encrypt.asymAlgorithm = ""RSA"";",1,0,0.0,209
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"MessageDigest digest=MessageDigest.getInstance(""MD5"");",1,0,0.0,210
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"System.out.println(""Provider:"" + encrypt.getAsymCipher().getProvider());",1,0,0.0,211
+73540c69c03cfb3e5fd70c631d34d58bea88d352,encrypt.init();,1,0,0.0,212
+73540c69c03cfb3e5fd70c631d34d58bea88d352,},1,0,0.0,213
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());,1,0,0.0,214
+73540c69c03cfb3e5fd70c631d34d58bea88d352,@BeforeClass,1,0,0.0,215
+73540c69c03cfb3e5fd70c631d34d58bea88d352,protected static final short ENCRYPT_ID=ClassConfigurator.getProtocolId(ENCRYPT.class);,1,0,0.0,216
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"@Test(groups=Global.FUNCTIONAL, sequential=false)",1,0,0.0,217
+73540c69c03cfb3e5fd70c631d34d58bea88d352,/**,1,0,0.0,218
+73540c69c03cfb3e5fd70c631d34d58bea88d352,package org.jgroups.protocols;,1,0,0.0,219
+73540c69c03cfb3e5fd70c631d34d58bea88d352,*/,1,0,0.0,220
+73540c69c03cfb3e5fd70c631d34d58bea88d352,/*,1,0,0.0,221
+73540c69c03cfb3e5fd70c631d34d58bea88d352,encrypt.setUpProtocol(observer);,1,0,0.0,222
+73540c69c03cfb3e5fd70c631d34d58bea88d352,digest.reset();,1,0,0.0,223
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.up(viewChange);,1,0,0.0,224
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.setUpProtocol(serverObserver);,1,0,0.0,225
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertTrue(peerObserver.upMessages.isEmpty());,1,0,0.0,226
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"peer.up(new Event(Event.MSG, msg));",1,0,0.0,227
+73540c69c03cfb3e5fd70c631d34d58bea88d352,digest.update(server.getDesKey().getEncoded());,1,0,0.0,228
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.keyServer=false;,1,0,0.0,229
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.setDownProtocol(peerObserver);,1,0,0.0,230
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.setUpProtocol(peerObserver);,1,0,0.0,231
+73540c69c03cfb3e5fd70c631d34d58bea88d352,MockProtocol peerObserver=new MockProtocol();,1,0,0.0,232
+73540c69c03cfb3e5fd70c631d34d58bea88d352,peer.setLocalAddress(peer_addr);,1,0,0.0,233
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.up(viewChange);,1,0,0.0,234
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.setLocalAddress(server_addr);,1,0,0.0,235
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.setDownProtocol(serverObserver);,1,0,0.0,236
+73540c69c03cfb3e5fd70c631d34d58bea88d352,MockProtocol serverObserver=new MockProtocol();,1,0,0.0,237
+73540c69c03cfb3e5fd70c631d34d58bea88d352,digest.update(encrypt.getDesKey().getEncoded());,1,0,0.0,238
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.keyServer=true;,1,0,0.0,239
+73540c69c03cfb3e5fd70c631d34d58bea88d352,server.init();,1,0,0.0,240
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"sent=observer.upMessages.get(""message2"");",1,0,0.0,241
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"Util.assertEquals(3, observer.upMessages.size());",1,0,0.0,242
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"encrypt.up(new Event(Event.MSG, msg2));",1,0,0.0,243
+73540c69c03cfb3e5fd70c631d34d58bea88d352,".putHeader(ENCRYPT_ID,new EncryptHeader(EncryptHeader.ENCRYPT,symVersion));",1,0,0.0,244
+73540c69c03cfb3e5fd70c631d34d58bea88d352,encrypt.up(event);,1,0,0.0,245
+73540c69c03cfb3e5fd70c631d34d58bea88d352,Util.assertTrue(observer.upMessages.isEmpty());,1,0,0.0,246
+73540c69c03cfb3e5fd70c631d34d58bea88d352,"encrypt.up(new Event(Event.MSG, msg));",1,0,0.0,247
+73540c69c03cfb3e5fd70c631d34d58bea88d352,encrypt.keyServer=false;,1,0,0.0,248
+73540c69c03cfb3e5fd70c631d34d58bea88d352,byte[] symVersion=digest.digest();,1,0,0.0,249
+73540c69c03cfb3e5fd70c631d34d58bea88d352,return downMessages.isEmpty()? null : downMessages.lastEntry().getValue();,1,0,0.0,250

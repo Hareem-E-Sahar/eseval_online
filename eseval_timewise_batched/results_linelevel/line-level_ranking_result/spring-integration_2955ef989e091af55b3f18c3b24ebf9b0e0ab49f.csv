@@ -1,0 +1,41 @@
+commit_id,line,line_level_label,count,line_score,row
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,* Test for INT-3054: Do not break if there are extra uri variables defined in the http outbound gateway.,0,4,1.0,1
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,/** Test for INT-3054: Do not break if there are extra uri variables defined in the http outbound gateway. */,1,3,0.75,2
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"Map<String, Expression> multipleExpressions = new HashMap<String, Expression>();",1,3,0.75,3
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"Map<String, Expression> multipleExpressions = new HashMap<>();",0,3,0.75,4
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"Map<String, Object> expressions = new HashMap<>();",0,2,0.5,5
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"Map<String, Object> expressions = new HashMap<String, Object>();",1,2,0.5,6
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,* Copyright 2002-2019 the original author or authors.,0,2,0.5,7
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,* Copyright 2002-2018 the original author or authors.,1,2,0.5,8
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"Message<?> message = new GenericMessage<Object>(""bar"");",1,1,0.25,9
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,import org.springframework.http.client.SimpleClientHttpRequestFactory;,1,1,0.25,10
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,import org.springframework.http.client.ClientHttpRequest;,1,1,0.25,11
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,import org.springframework.http.HttpMethod;,1,1,0.25,12
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,final AtomicReference<URI> uriHolder = new AtomicReference<URI>();,1,1,0.25,13
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,import java.io.IOException;,1,1,0.25,14
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"Message<?> message = new GenericMessage<>(""bar"");",0,1,0.25,15
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,final AtomicReference<URI> uriHolder = new AtomicReference<>();,0,1,0.25,16
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"(uri, httpMethod) -> {",0,0,0.0,17
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,},1,0,0.0,18
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"throw new RuntimeException(""intentional"");",1,0,0.0,19
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,uriHolder.set(uri);,1,0,0.0,20
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"public ClientHttpRequest createRequest(URI uri, HttpMethod httpMethod) {",1,0,0.0,21
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,@Override,1,0,0.0,22
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,handler.setRequestFactory(new SimpleClientHttpRequestFactory() {,1,0,0.0,23
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,context.close();,0,0,0.0,24
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,});,0,0,0.0,25
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"throw new RuntimeException(""intentional"");",0,0,0.0,26
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,uriHolder.set(uri);,0,0,0.0,27
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,public void testFromMessageWithSuperfluousExpressionsInt3054() {,0,0,0.0,28
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,handler.setRequestFactory(,0,0,0.0,29
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,registrar.setBeanClassLoader(context.getClassLoader());,1,0,0.0,30
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,public void testInt3055UriVariablesExpression() throws Exception {,1,0,0.0,31
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,public void testFromMessageWithSuperfluousExpressionsInt3054() throws Exception {,1,0,0.0,32
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"public ClientHttpRequest createRequest(URI uri, HttpMethod httpMethod) throws IOException {",1,0,0.0,33
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,public void testFromMessageWithExpressions() throws Exception {,1,0,0.0,34
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,public void testInt3055UriVariablesExpression() {,0,0,0.0,35
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,*/,0,0,0.0,36
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,/**,0,0,0.0,37
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,"public ClientHttpRequest createRequest(URI uri, HttpMethod httpMethod) {",0,0,0.0,38
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,public void testFromMessageWithExpressions() {,0,0,0.0,39
+2955ef989e091af55b3f18c3b24ebf9b0e0ab49f,});,1,0,0.0,40

@@ -1,0 +1,670 @@
+commit_id,line,line_level_label,count,line_score,row
+2218cb025adca1ded3e6596acc182b88742e3a51,"def auth_token_create(context, token):",0,3,1.0,1
+2218cb025adca1ded3e6596acc182b88742e3a51,"def auth_token_create(_context, token):",1,3,1.0,2
+2218cb025adca1ded3e6596acc182b88742e3a51,query = session.query(models.Instance).\,1,1,0.3333333333333333,3
+2218cb025adca1ded3e6596acc182b88742e3a51,rv = session.query(models.FixedIp).\,1,1,0.3333333333333333,4
+2218cb025adca1ded3e6596acc182b88742e3a51,vif_ref = session.query(models.VirtualInterface).\,1,1,0.3333333333333333,5
+2218cb025adca1ded3e6596acc182b88742e3a51,vif_refs = session.query(models.VirtualInterface).\,1,1,0.3333333333333333,6
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = session.query(func.count(models.Instance.id),",1,1,0.3333333333333333,7
+2218cb025adca1ded3e6596acc182b88742e3a51,"partial = _build_instance_get(context, session=session)",1,1,0.3333333333333333,8
+2218cb025adca1ded3e6596acc182b88742e3a51,result = partial.filter_by(uuid=uuid),1,1,0.3333333333333333,9
+2218cb025adca1ded3e6596acc182b88742e3a51,result = result.first(),1,1,0.3333333333333333,10
+2218cb025adca1ded3e6596acc182b88742e3a51,result = partial.filter_by(id=instance_id),1,1,0.3333333333333333,11
+2218cb025adca1ded3e6596acc182b88742e3a51,partial = session.query(models.Instance).\,1,1,0.3333333333333333,12
+2218cb025adca1ded3e6596acc182b88742e3a51,partial = partial.filter_by(deleted=can_read_deleted(context)),1,1,0.3333333333333333,13
+2218cb025adca1ded3e6596acc182b88742e3a51,partial = partial.filter_by(project_id=context.project_id).\,1,1,0.3333333333333333,14
+2218cb025adca1ded3e6596acc182b88742e3a51,"def instance_get_all_by_user(context, user_id):",1,1,0.3333333333333333,15
+2218cb025adca1ded3e6596acc182b88742e3a51,read_deleted = can_read_deleted(context),1,1,0.3333333333333333,16
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.KeyPair).\,1,1,0.3333333333333333,17
+2218cb025adca1ded3e6596acc182b88742e3a51,inner_q = session.query(models.Network.id).\,1,1,0.3333333333333333,18
+2218cb025adca1ded3e6596acc182b88742e3a51,"network_ref = network_get(context, network_id=network_id, \",1,1,0.3333333333333333,19
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Network).\,1,1,0.3333333333333333,20
+2218cb025adca1ded3e6596acc182b88742e3a51,"def network_get_by_instance(_context, instance_id):",1,1,0.3333333333333333,21
+2218cb025adca1ded3e6596acc182b88742e3a51,rv = session.query(models.Network).\,1,1,0.3333333333333333,22
+2218cb025adca1ded3e6596acc182b88742e3a51,"def network_get_all_by_instance(_context, instance_id):",1,1,0.3333333333333333,23
+2218cb025adca1ded3e6596acc182b88742e3a51,"host_filter = or_(models.Network.host == host,",1,1,0.3333333333333333,24
+2218cb025adca1ded3e6596acc182b88742e3a51,network_ref = session.query(models.Network).\,1,1,0.3333333333333333,25
+2218cb025adca1ded3e6596acc182b88742e3a51,"def queue_get_for(_context, topic, physical_node_id):",1,1,0.3333333333333333,26
+2218cb025adca1ded3e6596acc182b88742e3a51,tk = session.query(models.AuthToken).\,1,1,0.3333333333333333,27
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Quota).\,1,1,0.3333333333333333,28
+2218cb025adca1ded3e6596acc182b88742e3a51,result = {'project_id': project_id},1,1,0.3333333333333333,29
+2218cb025adca1ded3e6596acc182b88742e3a51,rows = session.query(models.Quota).\,1,1,0.3333333333333333,30
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.FixedIp).\,1,1,0.3333333333333333,31
+2218cb025adca1ded3e6596acc182b88742e3a51,"def fixed_ip_disassociate_all_by_timeout(_context, host, time):",1,1,0.3333333333333333,32
+2218cb025adca1ded3e6596acc182b88742e3a51,iscsi_target_ref = session.query(models.IscsiTarget).\,1,1,0.3333333333333333,33
+2218cb025adca1ded3e6596acc182b88742e3a51,"def fixed_ip_bulk_create(_context, ips):",1,1,0.3333333333333333,34
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.S3Image, read_deleted=""yes"").\",0,1,0.3333333333333333,35
+2218cb025adca1ded3e6596acc182b88742e3a51,"backend_conf = model_query(context, models.SMBackendConf,",0,1,0.3333333333333333,36
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.SMBackendConf, read_deleted=""yes"").\",0,1,0.3333333333333333,37
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _sm_flavor_get_query(context, sm_flavor_label, session=None):",0,1,0.3333333333333333,38
+2218cb025adca1ded3e6596acc182b88742e3a51,"sm_flavor = sm_flavor_get(context, sm_flavor_label)",0,1,0.3333333333333333,39
+2218cb025adca1ded3e6596acc182b88742e3a51,"def sm_flavor_get(context, sm_flavor_label):",0,1,0.3333333333333333,40
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _sm_flavor_get_query(context, sm_flavor_label).first()",0,1,0.3333333333333333,41
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _sm_volume_get_query(context, volume_id, session=None):",0,1,0.3333333333333333,42
+2218cb025adca1ded3e6596acc182b88742e3a51,"sm_volume = sm_volume_get(context, volume_id)",0,1,0.3333333333333333,43
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _sm_volume_get_query(context, volume_id).first()",0,1,0.3333333333333333,44
+2218cb025adca1ded3e6596acc182b88742e3a51,def can_read_deleted(context):,1,1,0.3333333333333333,45
+2218cb025adca1ded3e6596acc182b88742e3a51,session = get_session(),1,1,0.3333333333333333,46
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Service).\,1,1,0.3333333333333333,47
+2218cb025adca1ded3e6596acc182b88742e3a51,query = session.query(models.Service).\,1,1,0.3333333333333333,48
+2218cb025adca1ded3e6596acc182b88742e3a51,topic = 'compute',1,1,0.3333333333333333,49
+2218cb025adca1ded3e6596acc182b88742e3a51,"subq = session.query(models.Instance.host,",1,1,0.3333333333333333,50
+2218cb025adca1ded3e6596acc182b88742e3a51,"subq = session.query(models.Network.host,",1,1,0.3333333333333333,51
+2218cb025adca1ded3e6596acc182b88742e3a51,"subq = session.query(models.Volume.host,",1,1,0.3333333333333333,52
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.ComputeNode).\,1,1,0.3333333333333333,53
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Certificate).\,1,1,0.3333333333333333,54
+2218cb025adca1ded3e6596acc182b88742e3a51,"def certificate_get_all_by_user_and_project(_context, user_id, project_id):",1,1,0.3333333333333333,55
+2218cb025adca1ded3e6596acc182b88742e3a51,result = None,1,1,0.3333333333333333,56
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.FloatingIp).\,1,1,0.3333333333333333,57
+2218cb025adca1ded3e6596acc182b88742e3a51,floating_ip_ref = session.query(models.FloatingIp).\,1,1,0.3333333333333333,58
+2218cb025adca1ded3e6596acc182b88742e3a51,floating_ip_refs = session.query(models.FloatingIp).\,1,1,0.3333333333333333,59
+2218cb025adca1ded3e6596acc182b88742e3a51,fixed_ip_ref = session.query(models.FixedIp).\,1,1,0.3333333333333333,60
+2218cb025adca1ded3e6596acc182b88742e3a51,"def fixed_ip_create(_context, values):",1,1,0.3333333333333333,61
+2218cb025adca1ded3e6596acc182b88742e3a51,quotas = session.query(models.Quota).\,1,1,0.3333333333333333,62
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = session.query(func.count(models.Volume.id),",1,1,0.3333333333333333,63
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _vsa_get_query(context, session=None, project_only=False):",0,1,0.3333333333333333,64
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Volume).\,1,1,0.3333333333333333,65
+2218cb025adca1ded3e6596acc182b88742e3a51,meta_results = session.query(models.InstanceMetadata).\,1,1,0.3333333333333333,66
+2218cb025adca1ded3e6596acc182b88742e3a51,meta_result = session.query(models.InstanceMetadata).\,1,1,0.3333333333333333,67
+2218cb025adca1ded3e6596acc182b88742e3a51,agent_build_ref = session.query(models.AgentBuild).\,1,1,0.3333333333333333,68
+2218cb025adca1ded3e6596acc182b88742e3a51,session = session if session else get_session(),1,1,0.3333333333333333,69
+2218cb025adca1ded3e6596acc182b88742e3a51,bwusage = session.query(models.BandwidthUsage).\,1,1,0.3333333333333333,70
+2218cb025adca1ded3e6596acc182b88742e3a51,spec_results = session.query(models.InstanceTypeExtraSpecs).\,1,1,0.3333333333333333,71
+2218cb025adca1ded3e6596acc182b88742e3a51,spec_dict = {},1,1,0.3333333333333333,72
+2218cb025adca1ded3e6596acc182b88742e3a51,spec_dict[i['key']] = i['value'],1,1,0.3333333333333333,73
+2218cb025adca1ded3e6596acc182b88742e3a51,spec_result = session.query(models.InstanceTypeExtraSpecs).\,1,1,0.3333333333333333,74
+2218cb025adca1ded3e6596acc182b88742e3a51,"def volume_type_create(_context, values):",1,1,0.3333333333333333,75
+2218cb025adca1ded3e6596acc182b88742e3a51,vol_types = session.query(models.VolumeTypes).\,1,1,0.3333333333333333,76
+2218cb025adca1ded3e6596acc182b88742e3a51,vol_dict = {},1,1,0.3333333333333333,77
+2218cb025adca1ded3e6596acc182b88742e3a51,vol_dict[i['name']] = _dict_with_extra_specs(i),1,1,0.3333333333333333,78
+2218cb025adca1ded3e6596acc182b88742e3a51,vol_type = session.query(models.VolumeTypes).\,1,1,0.3333333333333333,79
+2218cb025adca1ded3e6596acc182b88742e3a51,volume_type_ref = session.query(models.VolumeTypes).\,1,1,0.3333333333333333,80
+2218cb025adca1ded3e6596acc182b88742e3a51,spec_results = session.query(models.VolumeTypeExtraSpecs).\,1,1,0.3333333333333333,81
+2218cb025adca1ded3e6596acc182b88742e3a51,spec_result = session.query(models.VolumeTypeExtraSpecs).\,1,1,0.3333333333333333,82
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.VirtualStorageArray).\,1,1,0.3333333333333333,83
+2218cb025adca1ded3e6596acc182b88742e3a51,res = session.query(models.S3Image)\,1,1,0.3333333333333333,84
+2218cb025adca1ded3e6596acc182b88742e3a51,backend_conf = session.query(models.SMBackendConf).\,1,1,0.3333333333333333,85
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.SMBackendConf).\,1,1,0.3333333333333333,86
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.SMBackendConf).filter_by(sr_uuid=sr_uuid),1,1,0.3333333333333333,87
+2218cb025adca1ded3e6596acc182b88742e3a51,sm_flavor = session.query(models.SMFlavors).\,1,1,0.3333333333333333,88
+2218cb025adca1ded3e6596acc182b88742e3a51,"def sm_flavor_get(context, sm_flavor):",1,1,0.3333333333333333,89
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.SMFlavors).filter_by(label=sm_flavor),1,1,0.3333333333333333,90
+2218cb025adca1ded3e6596acc182b88742e3a51,sm_volume = session.query(models.SMVolume).filter_by(id=volume_id).first(),1,1,0.3333333333333333,91
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.SMVolume).filter_by(id=volume_id).first(),1,1,0.3333333333333333,92
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Zone).filter_by(id=zone_id).first(),1,1,0.3333333333333333,93
+2218cb025adca1ded3e6596acc182b88742e3a51,zone = session.query(models.Zone).filter_by(id=zone_id).first(),1,1,0.3333333333333333,94
+2218cb025adca1ded3e6596acc182b88742e3a51,instance_type_ref = session.query(models.InstanceTypes).\,1,1,0.3333333333333333,95
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Project).\,1,1,0.3333333333333333,96
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.IscsiTarget).\,1,1,0.3333333333333333,97
+2218cb025adca1ded3e6596acc182b88742e3a51,meta_results = session.query(models.VolumeMetadata).\,1,1,0.3333333333333333,98
+2218cb025adca1ded3e6596acc182b88742e3a51,meta_dict = {},1,1,0.3333333333333333,99
+2218cb025adca1ded3e6596acc182b88742e3a51,meta_dict[i['key']] = i['value'],1,1,0.3333333333333333,100
+2218cb025adca1ded3e6596acc182b88742e3a51,meta_result = session.query(models.VolumeMetadata).\,1,1,0.3333333333333333,101
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Snapshot).\,1,1,0.3333333333333333,102
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.BlockDeviceMapping).\,1,1,0.3333333333333333,103
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.SecurityGroup).\,1,1,0.3333333333333333,104
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.SecurityGroupIngressRule).\,1,1,0.3333333333333333,105
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.User).\,1,1,0.3333333333333333,106
+2218cb025adca1ded3e6596acc182b88742e3a51,"def user_create(_context, values):",1,1,0.3333333333333333,107
+2218cb025adca1ded3e6596acc182b88742e3a51,"def project_create(_context, values):",1,1,0.3333333333333333,108
+2218cb025adca1ded3e6596acc182b88742e3a51,user = session.query(models.User).\,1,1,0.3333333333333333,109
+2218cb025adca1ded3e6596acc182b88742e3a51,inst_type = session.query(models.InstanceTypes).\,1,1,0.3333333333333333,110
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Migration).\,1,1,0.3333333333333333,111
+2218cb025adca1ded3e6596acc182b88742e3a51,results = session.query(models.Migration).\,1,1,0.3333333333333333,112
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.ConsolePool).\,1,1,0.3333333333333333,113
+2218cb025adca1ded3e6596acc182b88742e3a51,result = session.query(models.Console).\,1,1,0.3333333333333333,114
+2218cb025adca1ded3e6596acc182b88742e3a51,results = session.query(models.Console).\,1,1,0.3333333333333333,115
+2218cb025adca1ded3e6596acc182b88742e3a51,query = session.query(models.Console).\,1,1,0.3333333333333333,116
+2218cb025adca1ded3e6596acc182b88742e3a51,result = query.options(joinedload('pool')).first(),1,1,0.3333333333333333,117
+2218cb025adca1ded3e6596acc182b88742e3a51,"def instance_type_create(_context, values):",1,1,0.3333333333333333,118
+2218cb025adca1ded3e6596acc182b88742e3a51,partial = session.query(models.InstanceTypes)\,1,1,0.3333333333333333,119
+2218cb025adca1ded3e6596acc182b88742e3a51,partial = partial.filter_by(deleted=False),1,1,0.3333333333333333,120
+2218cb025adca1ded3e6596acc182b88742e3a51,partial = partial.filter(,1,1,0.3333333333333333,121
+2218cb025adca1ded3e6596acc182b88742e3a51,"inst_types = partial.order_by(""name"").all()",1,1,0.3333333333333333,122
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _vsa_get_query(context, session=session, project_only=True).\",0,1,0.3333333333333333,123
+2218cb025adca1ded3e6596acc182b88742e3a51,"def volume_type_get_all(context, inactive=False, filters={}):",1,1,0.3333333333333333,124
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _volume_type_extra_specs_query(,0,1,0.3333333333333333,125
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.FixedIp, session=session,",0,1,0.3333333333333333,126
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.FixedIp, read_deleted=""yes"").\",0,1,0.3333333333333333,127
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.FixedIp, read_deleted=""no"").\",0,1,0.3333333333333333,128
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _virtual_interface_query(context, session=None):",0,1,0.3333333333333333,129
+2218cb025adca1ded3e6596acc182b88742e3a51,"vif_ref = _virtual_interface_query(context, session=session).\",0,1,0.3333333333333333,130
+2218cb025adca1ded3e6596acc182b88742e3a51,vif_ref = _virtual_interface_query(context).\,0,1,0.3333333333333333,131
+2218cb025adca1ded3e6596acc182b88742e3a51,vif_refs = _virtual_interface_query(context).\,0,1,0.3333333333333333,132
+2218cb025adca1ded3e6596acc182b88742e3a51,vif_refs = _virtual_interface_query(context).all(),0,1,0.3333333333333333,133
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context,",0,1,0.3333333333333333,134
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _build_instance_get(context, session=session).\",0,1,0.3333333333333333,135
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _instance_get_all_query(context, project_only=False):",0,1,0.3333333333333333,136
+2218cb025adca1ded3e6596acc182b88742e3a51,"def instance_get_all_by_user(context, user_id):",0,1,0.3333333333333333,137
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.KeyPair, session=session).\",0,1,0.3333333333333333,138
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _network_ips_query(context, network_id):",0,1,0.3333333333333333,139
+2218cb025adca1ded3e6596acc182b88742e3a51,"network_ref = network_get(context, network_id=network_id,",0,1,0.3333333333333333,140
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Network, session=session,",0,1,0.3333333333333333,141
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Network, read_deleted=""no"").all()",0,1,0.3333333333333333,142
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Network, read_deleted=""no"").\",0,1,0.3333333333333333,143
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _network_get_query(context, session=None):",0,1,0.3333333333333333,144
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _network_get_query(context).filter_by(bridge=bridge).first(),0,1,0.3333333333333333,145
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _network_get_query(context).filter_by(uuid=uuid).first(),0,1,0.3333333333333333,146
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _network_get_query(context).\,0,1,0.3333333333333333,147
+2218cb025adca1ded3e6596acc182b88742e3a51,"def network_get_by_instance(context, instance_id):",0,1,0.3333333333333333,148
+2218cb025adca1ded3e6596acc182b88742e3a51,"def network_get_all_by_instance(context, instance_id):",0,1,0.3333333333333333,149
+2218cb025adca1ded3e6596acc182b88742e3a51,"host_filter = or_(models.Network.host == host,",0,1,0.3333333333333333,150
+2218cb025adca1ded3e6596acc182b88742e3a51,"network_ref = _network_get_query(context, session=session).\",0,1,0.3333333333333333,151
+2218cb025adca1ded3e6596acc182b88742e3a51,"def queue_get_for(context, topic, physical_node_id):",0,1,0.3333333333333333,152
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.AuthToken, session=session).\",0,1,0.3333333333333333,153
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.FixedIp, session=session).\",0,1,0.3333333333333333,154
+2218cb025adca1ded3e6596acc182b88742e3a51,"inner_q = model_query(context, models.Network.id, session=session,",0,1,0.3333333333333333,155
+2218cb025adca1ded3e6596acc182b88742e3a51,"rows = model_query(context, models.Quota, read_deleted=""no"").\",0,1,0.3333333333333333,156
+2218cb025adca1ded3e6596acc182b88742e3a51,"def fixed_ip_disassociate_all_by_timeout(context, host, time):",0,1,0.3333333333333333,157
+2218cb025adca1ded3e6596acc182b88742e3a51,"def model_query(context, *args, **kwargs):",0,1,0.3333333333333333,158
+2218cb025adca1ded3e6596acc182b88742e3a51,"rows = _volume_type_extra_specs_query(context, volume_type_id).\",0,1,0.3333333333333333,159
+2218cb025adca1ded3e6596acc182b88742e3a51,session = kwargs.get('session') or get_session(),0,1,0.3333333333333333,160
+2218cb025adca1ded3e6596acc182b88742e3a51,read_deleted = kwargs.get('read_deleted') or context.read_deleted,0,1,0.3333333333333333,161
+2218cb025adca1ded3e6596acc182b88742e3a51,project_only = kwargs.get('project_only'),0,1,0.3333333333333333,162
+2218cb025adca1ded3e6596acc182b88742e3a51,query = session.query(*args),0,1,0.3333333333333333,163
+2218cb025adca1ded3e6596acc182b88742e3a51,query = query.filter_by(deleted=False),0,1,0.3333333333333333,164
+2218cb025adca1ded3e6596acc182b88742e3a51,query = query.filter_by(deleted=True),0,1,0.3333333333333333,165
+2218cb025adca1ded3e6596acc182b88742e3a51,query = query.filter_by(project_id=context.project_id),0,1,0.3333333333333333,166
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Service, session=session).\",0,1,0.3333333333333333,167
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Service, read_deleted=""no"").\",0,1,0.3333333333333333,168
+2218cb025adca1ded3e6596acc182b88742e3a51,"subq = model_query(context, models.Instance.host,",0,1,0.3333333333333333,169
+2218cb025adca1ded3e6596acc182b88742e3a51,"subq = model_query(context, models.Network.host,",0,1,0.3333333333333333,170
+2218cb025adca1ded3e6596acc182b88742e3a51,"subq = model_query(context, models.Volume.host,",0,1,0.3333333333333333,171
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Service).\",0,1,0.3333333333333333,172
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.ComputeNode, session=session).\",0,1,0.3333333333333333,173
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Certificate, session=session).\",0,1,0.3333333333333333,174
+2218cb025adca1ded3e6596acc182b88742e3a51,"def certificate_get_all_by_user_and_project(context, user_id, project_id):",0,1,0.3333333333333333,175
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.FloatingIp, project_only=True).\",0,1,0.3333333333333333,176
+2218cb025adca1ded3e6596acc182b88742e3a51,"floating_ip_ref = model_query(context, models.FloatingIp,",0,1,0.3333333333333333,177
+2218cb025adca1ded3e6596acc182b88742e3a51,def _floating_ip_get_all(context):,0,1,0.3333333333333333,178
+2218cb025adca1ded3e6596acc182b88742e3a51,floating_ip_refs = _floating_ip_get_all(context).all(),0,1,0.3333333333333333,179
+2218cb025adca1ded3e6596acc182b88742e3a51,floating_ip_refs = _floating_ip_get_all(context).\,0,1,0.3333333333333333,180
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.FloatingIp, session=session).\",0,1,0.3333333333333333,181
+2218cb025adca1ded3e6596acc182b88742e3a51,"fixed_ip_ref = model_query(context, models.FixedIp, session=session,",0,1,0.3333333333333333,182
+2218cb025adca1ded3e6596acc182b88742e3a51,"def fixed_ip_create(context, values):",0,1,0.3333333333333333,183
+2218cb025adca1ded3e6596acc182b88742e3a51,"def fixed_ip_bulk_create(context, ips):",0,1,0.3333333333333333,184
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Quota, session=session,",0,1,0.3333333333333333,185
+2218cb025adca1ded3e6596acc182b88742e3a51,"query = model_query(context, models.Service)",0,1,0.3333333333333333,186
+2218cb025adca1ded3e6596acc182b88742e3a51,result = {'project_id': project_id},0,1,0.3333333333333333,187
+2218cb025adca1ded3e6596acc182b88742e3a51,result = query.first(),0,1,0.3333333333333333,188
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _instance_type_get_query(context, session=None, read_deleted=None):",0,1,0.3333333333333333,189
+2218cb025adca1ded3e6596acc182b88742e3a51,"read_deleted = ""yes"" if inactive else ""no""",0,1,0.3333333333333333,190
+2218cb025adca1ded3e6596acc182b88742e3a51,"query = _instance_type_get_query(context, read_deleted=read_deleted)",0,1,0.3333333333333333,191
+2218cb025adca1ded3e6596acc182b88742e3a51,query = query.filter(,0,1,0.3333333333333333,192
+2218cb025adca1ded3e6596acc182b88742e3a51,"inst_types = query.order_by(""name"").all()",0,1,0.3333333333333333,193
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _instance_type_get_query(context, read_deleted=""yes"").\",0,1,0.3333333333333333,194
+2218cb025adca1ded3e6596acc182b88742e3a51,"instance_type_ref = model_query(context, models.InstanceTypes,",0,1,0.3333333333333333,195
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _zone_get_by_id_query(context, zone_id, session=None):",0,1,0.3333333333333333,196
+2218cb025adca1ded3e6596acc182b88742e3a51,"zone = zone_get(context, zone_id)",0,1,0.3333333333333333,197
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _zone_get_by_id_query(context, zone_id).first()",0,1,0.3333333333333333,198
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _instance_metadata_get_query(context, instance_id, session=None):",0,1,0.3333333333333333,199
+2218cb025adca1ded3e6596acc182b88742e3a51,"rows = _instance_metadata_get_query(context, instance_id).all()",0,1,0.3333333333333333,200
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _instance_metadata_get_query(,0,1,0.3333333333333333,201
+2218cb025adca1ded3e6596acc182b88742e3a51,"agent_build_ref = model_query(context, models.AgentBuild,",0,1,0.3333333333333333,202
+2218cb025adca1ded3e6596acc182b88742e3a51,session = get_session(),0,1,0.3333333333333333,203
+2218cb025adca1ded3e6596acc182b88742e3a51,"bwusage = model_query(context, models.BandwidthUsage,",0,1,0.3333333333333333,204
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _instance_type_extra_specs_get_query(context, instance_type_id,",0,1,0.3333333333333333,205
+2218cb025adca1ded3e6596acc182b88742e3a51,rows = _instance_type_extra_specs_get_query(,0,1,0.3333333333333333,206
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _instance_type_extra_specs_get_query(,0,1,0.3333333333333333,207
+2218cb025adca1ded3e6596acc182b88742e3a51,"def volume_type_create(context, values):",0,1,0.3333333333333333,208
+2218cb025adca1ded3e6596acc182b88742e3a51,filters = filters or {},0,1,0.3333333333333333,209
+2218cb025adca1ded3e6596acc182b88742e3a51,"rows = model_query(context, models.VolumeTypes,",0,1,0.3333333333333333,210
+2218cb025adca1ded3e6596acc182b88742e3a51,result[row['name']] = _dict_with_extra_specs(row),0,1,0.3333333333333333,211
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.VolumeTypes, read_deleted=""yes"").\",0,1,0.3333333333333333,212
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _volume_type_extra_specs_query(context, volume_type_id, session=None):",0,1,0.3333333333333333,213
+2218cb025adca1ded3e6596acc182b88742e3a51,"quotas = model_query(context, models.Quota, session=session,",0,1,0.3333333333333333,214
+2218cb025adca1ded3e6596acc182b88742e3a51,"volume_type_ref = model_query(context, models.VolumeTypes,",0,1,0.3333333333333333,215
+2218cb025adca1ded3e6596acc182b88742e3a51,"def instance_type_create(context, values):",0,1,0.3333333333333333,216
+2218cb025adca1ded3e6596acc182b88742e3a51,"def volume_type_get_all(context, inactive=False, filters=None):",0,1,0.3333333333333333,217
+2218cb025adca1ded3e6596acc182b88742e3a51,"query = model_query(context, models.Console, read_deleted=""yes"").\",0,1,0.3333333333333333,218
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _block_device_mapping_get_query(context, session=session).\",0,1,0.3333333333333333,219
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _volume_get_query(context, session=None, project_only=False):",0,1,0.3333333333333333,220
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _volume_get_query(context, session=session, project_only=True).\",0,1,0.3333333333333333,221
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Console, read_deleted=""yes"").\",0,1,0.3333333333333333,222
+2218cb025adca1ded3e6596acc182b88742e3a51,"iscsi_target_ref = model_query(context, models.IscsiTarget,",0,1,0.3333333333333333,223
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Volume, read_deleted=""no"").\",0,1,0.3333333333333333,224
+2218cb025adca1ded3e6596acc182b88742e3a51,result = _volume_get_query(context).filter_by(id=volume_id).first(),0,1,0.3333333333333333,225
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _volume_metadata_get_query(context, volume_id, session=None):",0,1,0.3333333333333333,226
+2218cb025adca1ded3e6596acc182b88742e3a51,"rows = _volume_metadata_get_query(context, volume_id).all()",0,1,0.3333333333333333,227
+2218cb025adca1ded3e6596acc182b88742e3a51,result = {},0,1,0.3333333333333333,228
+2218cb025adca1ded3e6596acc182b88742e3a51,result[row['key']] = row['value'],0,1,0.3333333333333333,229
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _volume_metadata_get_query(context, volume_id, session=session).\",0,1,0.3333333333333333,230
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Snapshot, session=session,",0,1,0.3333333333333333,231
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _block_device_mapping_get_query(context, session=None):",0,1,0.3333333333333333,232
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.IscsiTarget, read_deleted=""yes"").\",0,1,0.3333333333333333,233
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _security_group_get_query(context, session=None, read_deleted=None,",0,1,0.3333333333333333,234
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.User, session=session).\",0,1,0.3333333333333333,235
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Migration, read_deleted=""yes"").\",0,1,0.3333333333333333,236
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _security_group_get_query(context, session=session,",0,1,0.3333333333333333,237
+2218cb025adca1ded3e6596acc182b88742e3a51,"user = model_query(context, models.User).\",0,1,0.3333333333333333,238
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Project, session=session,",0,1,0.3333333333333333,239
+2218cb025adca1ded3e6596acc182b88742e3a51,"def user_create(context, values):",0,1,0.3333333333333333,240
+2218cb025adca1ded3e6596acc182b88742e3a51,"def project_create(context, values):",0,1,0.3333333333333333,241
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _security_group_rule_get_query(context, session=session).\",0,1,0.3333333333333333,242
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.ConsolePool, read_deleted=""no"").\",0,1,0.3333333333333333,243
+2218cb025adca1ded3e6596acc182b88742e3a51,"def _security_group_rule_get_query(context, session=None):",0,1,0.3333333333333333,244
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = _security_group_get_query(context, read_deleted=""no"").\",0,1,0.3333333333333333,245
+2218cb025adca1ded3e6596acc182b88742e3a51,"result = model_query(context, models.Migration, session=session,",0,1,0.3333333333333333,246
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('instance')).\,1,0,0.0,247
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(project_or_none).\,1,0,0.0,248
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(allocated=False).\,1,0,0.0,249
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.FixedIp.instance_id != None).\,1,0,0.0,250
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.Network.uuid.in_(network_uuids)).\,1,0,0.0,251
+2218cb025adca1ded3e6596acc182b88742e3a51,models.Network.project_id == None),1,0,0.0,252
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(deleted=False).all(),1,0,0.0,253
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=network_id).\,1,0,0.0,254
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(reserved=True).\,1,0,0.0,255
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(reserved=False).\,1,0,0.0,256
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Network).\,1,0,0.0,257
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(allocated=True).\,1,0,0.0,258
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(network_id=network_id).\,1,0,0.0,259
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.FixedIp).\,1,0,0.0,260
+2218cb025adca1ded3e6596acc182b88742e3a51,count(),1,0,0.0,261
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.KeyPair).\,1,0,0.0,262
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_id=instance_id).\,1,0,0.0,263
+2218cb025adca1ded3e6596acc182b88742e3a51,return query.\,1,0,0.0,264
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('instance_type')),1,0,0.0,265
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(bridge=bridge).\,1,0,0.0,266
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(project_id=project_id).\,1,0,0.0,267
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('metadata')).\,1,0,0.0,268
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(deleted=read_deleted).\,1,0,0.0,269
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.FixedIp.virtual_interface_id != None).\,1,0,0.0,270
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('volume_metadata')).\,1,0,0.0,271
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(uuid=uuid).\,1,0,0.0,272
+2218cb025adca1ded3e6596acc182b88742e3a51,with session.begin():,1,0,0.0,273
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_id=values['instance_id']).\,1,0,0.0,274
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.BlockDeviceMapping).\,1,0,0.0,275
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('security_groups')).\,1,0,0.0,276
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Snapshot).\,1,0,0.0,277
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=snapshot_id).\,1,0,0.0,278
+2218cb025adca1ded3e6596acc182b88742e3a51,return meta_result,1,0,0.0,279
+2218cb025adca1ded3e6596acc182b88742e3a51,if not meta_result:,1,0,0.0,280
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.VolumeMetadata).\,1,0,0.0,281
+2218cb025adca1ded3e6596acc182b88742e3a51,return meta_dict,1,0,0.0,282
+2218cb025adca1ded3e6596acc182b88742e3a51,for i in meta_results:,1,0,0.0,283
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(volume_id=volume_id).\,1,0,0.0,284
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Volume).\,1,0,0.0,285
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=volume_id).\,1,0,0.0,286
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('volume_type')).\,1,0,0.0,287
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('instance')).\,1,0,0.0,288
+2218cb025adca1ded3e6596acc182b88742e3a51,func.sum(models.Volume.size)).\,1,0,0.0,289
+2218cb025adca1ded3e6596acc182b88742e3a51,return tk,1,0,0.0,290
+2218cb025adca1ded3e6596acc182b88742e3a51,if not tk:,1,0,0.0,291
+2218cb025adca1ded3e6596acc182b88742e3a51,if session is None:,1,0,0.0,292
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.IscsiTarget).\,1,0,0.0,293
+2218cb025adca1ded3e6596acc182b88742e3a51,models.FixedIp.host == host),1,0,0.0,294
+2218cb025adca1ded3e6596acc182b88742e3a51,#             or that have a fixed ip with host set,1,0,0.0,295
+2218cb025adca1ded3e6596acc182b88742e3a51,# NOTE(vish): return networks that have host set,1,0,0.0,296
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('fixed_ips.network')).\,1,0,0.0,297
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(host=host).\,1,0,0.0,298
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('fixed_ips.floating_ips')).\,1,0,0.0,299
+2218cb025adca1ded3e6596acc182b88742e3a51,first(),1,0,0.0,300
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(topic=topic).\,1,0,0.0,301
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(disabled=False).\,1,0,0.0,302
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(deleted=False).\,1,0,0.0,303
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Service).\,1,0,0.0,304
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(deleted=can_read_deleted(context)),1,0,0.0,305
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(deleted=can_read_deleted(context)).\,1,0,0.0,306
+2218cb025adca1ded3e6596acc182b88742e3a51,if not session:,1,0,0.0,307
+2218cb025adca1ded3e6596acc182b88742e3a51,return context.read_deleted,1,0,0.0,308
+2218cb025adca1ded3e6596acc182b88742e3a51,return False,1,0,0.0,309
+2218cb025adca1ded3e6596acc182b88742e3a51,if not context:,1,0,0.0,310
+2218cb025adca1ded3e6596acc182b88742e3a51,"""""""Indicates if the context has access to deleted objects.""""""",1,0,0.0,311
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SMVolume, read_deleted=""yes"").all()",0,0,0.0,312
+2218cb025adca1ded3e6596acc182b88742e3a51,"_(""No sm_volume with id %(volume_id)s"") % locals())",0,0,0.0,313
+2218cb025adca1ded3e6596acc182b88742e3a51,"_sm_volume_get_query(context, volume_id, session=session).delete()",0,0,0.0,314
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=volume_id),0,0,0.0,315
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SMVolume, session=session,",0,0,0.0,316
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SMFlavors, read_deleted=""yes"").all()",0,0,0.0,317
+2218cb025adca1ded3e6596acc182b88742e3a51,"_(""No sm_flavor called %(sm_flavor)s"") % locals())",0,0,0.0,318
+2218cb025adca1ded3e6596acc182b88742e3a51,"_sm_flavor_get_query(context, sm_flavor_label).delete()",0,0,0.0,319
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(label=sm_flavor_label),0,0,0.0,320
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SMFlavors, session=session,",0,0,0.0,321
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.BlockDeviceMapping.device_name !=,1,0,0.0,322
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(sr_uuid=sr_uuid),0,0,0.0,323
+2218cb025adca1ded3e6596acc182b88742e3a51,all(),1,0,0.0,324
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('compute_node')).\,1,0,0.0,325
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(user_id=user_id).\,1,0,0.0,326
+2218cb025adca1ded3e6596acc182b88742e3a51,"return session.query(models.Service, func.coalesce(sort_value, 0)).\",1,0,0.0,327
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('instance_type')).\,1,0,0.0,328
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Instance).\,1,0,0.0,329
+2218cb025adca1ded3e6596acc182b88742e3a51,return partial,1,0,0.0,330
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(deleted=False),1,0,0.0,331
+2218cb025adca1ded3e6596acc182b88742e3a51,func.sum(models.Instance.memory_mb)).\,1,0,0.0,332
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.sum(models.Instance.vcpus),",1,0,0.0,333
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('fixed_ips')).\,1,0,0.0,334
+2218cb025adca1ded3e6596acc182b88742e3a51,return rv,1,0,0.0,335
+2218cb025adca1ded3e6596acc182b88742e3a51,if not rv:,1,0,0.0,336
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.FloatingIp).\,1,0,0.0,337
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(project_id=context.project_id).\,1,0,0.0,338
+2218cb025adca1ded3e6596acc182b88742e3a51,elif is_user_context(context):,1,0,0.0,339
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=id).\,1,0,0.0,340
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('fixed_ip.instance')).\,1,0,0.0,341
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('fixed_ip')).\,1,0,0.0,342
+2218cb025adca1ded3e6596acc182b88742e3a51,if is_admin_context(context):,1,0,0.0,343
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Certificate).\,1,0,0.0,344
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.ComputeNode).\,1,0,0.0,345
+2218cb025adca1ded3e6596acc182b88742e3a51,func.sum(models.Volume.size).label(label)).\,1,0,0.0,346
+2218cb025adca1ded3e6596acc182b88742e3a51,func.count(models.Network.id).label(label)).\,1,0,0.0,347
+2218cb025adca1ded3e6596acc182b88742e3a51,func.sum(models.Instance.vcpus).label(label)).\,1,0,0.0,348
+2218cb025adca1ded3e6596acc182b88742e3a51,order_by(sort_value).\,1,0,0.0,349
+2218cb025adca1ded3e6596acc182b88742e3a51,"outerjoin((subq, models.Service.host == subq.c.host)).\",1,0,0.0,350
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(virtual_name=virtual_name).\,1,0,0.0,351
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.InstanceTypeExtraSpecs).\,1,0,0.0,352
+2218cb025adca1ded3e6596acc182b88742e3a51,values['device_name']).\,1,0,0.0,353
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.AgentBuild).\,1,0,0.0,354
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('vsa_instance_type')).\,1,0,0.0,355
+2218cb025adca1ded3e6596acc182b88742e3a51,####################,1,0,0.0,356
+2218cb025adca1ded3e6596acc182b88742e3a51,volume_type_id=volume_type_id),1,0,0.0,357
+2218cb025adca1ded3e6596acc182b88742e3a51,"VolumeTypeExtraSpecsNotFound(extra_specs_key=key,",1,0,0.0,358
+2218cb025adca1ded3e6596acc182b88742e3a51,session=None):,1,0,0.0,359
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.VolumeTypeExtraSpecs).\,1,0,0.0,360
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(volume_type_id=volume_type_id).\,1,0,0.0,361
+2218cb025adca1ded3e6596acc182b88742e3a51,return _dict_with_extra_specs(vol_type),1,0,0.0,362
+2218cb025adca1ded3e6596acc182b88742e3a51,if not vol_type:,1,0,0.0,363
+2218cb025adca1ded3e6596acc182b88742e3a51,return vol_dict,1,0,0.0,364
+2218cb025adca1ded3e6596acc182b88742e3a51,for i in vol_types:,1,0,0.0,365
+2218cb025adca1ded3e6596acc182b88742e3a51,if vol_types:,1,0,0.0,366
+2218cb025adca1ded3e6596acc182b88742e3a51,"order_by(""name"").\",1,0,0.0,367
+2218cb025adca1ded3e6596acc182b88742e3a51,if inactive:,1,0,0.0,368
+2218cb025adca1ded3e6596acc182b88742e3a51,return spec_result,1,0,0.0,369
+2218cb025adca1ded3e6596acc182b88742e3a51,instance_type_id=instance_type_id),1,0,0.0,370
+2218cb025adca1ded3e6596acc182b88742e3a51,"InstanceTypeExtraSpecsNotFound(extra_specs_key=key,",1,0,0.0,371
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.\,1,0,0.0,372
+2218cb025adca1ded3e6596acc182b88742e3a51,if not spec_result:,1,0,0.0,373
+2218cb025adca1ded3e6596acc182b88742e3a51,return spec_dict,1,0,0.0,374
+2218cb025adca1ded3e6596acc182b88742e3a51,for i in spec_results:,1,0,0.0,375
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_type_id=instance_type_id).\,1,0,0.0,376
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.BandwidthUsage).\,1,0,0.0,377
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=vsa_id).\,1,0,0.0,378
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.VirtualStorageArray).\,1,0,0.0,379
+2218cb025adca1ded3e6596acc182b88742e3a51,.filter_by(id=image_id)\,1,0,0.0,380
+2218cb025adca1ded3e6596acc182b88742e3a51,"""%(sm_flavor_id)s"") % locals())",1,0,0.0,381
+2218cb025adca1ded3e6596acc182b88742e3a51,# FIXME(sirp): shouldn't this have a `first()` qualifier attached?,0,0,0.0,382
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.SMVolume).\,1,0,0.0,383
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.NotFound(_(""No sm_volume with id %(volume_id)s"") \",1,0,0.0,384
+2218cb025adca1ded3e6596acc182b88742e3a51,if not sm_volume:,1,0,0.0,385
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.SMFlavors).all(),1,0,0.0,386
+2218cb025adca1ded3e6596acc182b88742e3a51,% locals()),1,0,0.0,387
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.NotFound(_(""No sm_flavor called %(sm_flavor)s"") \",1,0,0.0,388
+2218cb025adca1ded3e6596acc182b88742e3a51,delete(),1,0,0.0,389
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(label=sm_flavor_label).\,1,0,0.0,390
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.SMFlavors).\,1,0,0.0,391
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.NotFound(_(""No sm_flavor with id ""\",1,0,0.0,392
+2218cb025adca1ded3e6596acc182b88742e3a51,.first(),1,0,0.0,393
+2218cb025adca1ded3e6596acc182b88742e3a51,if not sm_flavor:,1,0,0.0,394
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(label=sm_flavor_label),1,0,0.0,395
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.SMBackendConf).all(),1,0,0.0,396
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.SMBackendConf).\,1,0,0.0,397
+2218cb025adca1ded3e6596acc182b88742e3a51,"""%(sm_backend_id)s"") % locals())",1,0,0.0,398
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.NotFound(_(""No backend config with id ""\",1,0,0.0,399
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=sm_backend_id).first(),1,0,0.0,400
+2218cb025adca1ded3e6596acc182b88742e3a51,.filter_by(uuid=image_uuid)\,1,0,0.0,401
+2218cb025adca1ded3e6596acc182b88742e3a51,return res,1,0,0.0,402
+2218cb025adca1ded3e6596acc182b88742e3a51,if not res:,1,0,0.0,403
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=agent_build_id). \,1,0,0.0,404
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.AgentBuild).\,1,0,0.0,405
+2218cb025adca1ded3e6596acc182b88742e3a51,"update({'deleted': True,",1,0,0.0,406
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.InstanceMetadata).\,1,0,0.0,407
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(status=status).first(),1,0,0.0,408
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=id).first(),1,0,0.0,409
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Project).\,1,0,0.0,410
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.User).\,1,0,0.0,411
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.ProviderFirewallRule).\,1,0,0.0,412
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(group_id=security_group_id).\,1,0,0.0,413
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('grantee_group.instances')).\,1,0,0.0,414
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(parent_group_id=security_group_id).\,1,0,0.0,415
+2218cb025adca1ded3e6596acc182b88742e3a51,# TODO(vish): Join to group and check for project_id,1,0,0.0,416
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=security_group_rule_id).\,1,0,0.0,417
+2218cb025adca1ded3e6596acc182b88742e3a51,security_group_id=group_name),1,0,0.0,418
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.SecurityGroupNotFoundForProject(project_id=project_id,",1,0,0.0,419
+2218cb025adca1ded3e6596acc182b88742e3a51,else:,1,0,0.0,420
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('instances')).\,1,0,0.0,421
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=security_group_id).\,1,0,0.0,422
+2218cb025adca1ded3e6596acc182b88742e3a51,"filter_by(deleted=can_read_deleted(context),).\",1,0,0.0,423
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('rules')).\,1,0,0.0,424
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.SecurityGroup).\,1,0,0.0,425
+2218cb025adca1ded3e6596acc182b88742e3a51,return result,1,0,0.0,426
+2218cb025adca1ded3e6596acc182b88742e3a51,return [],1,0,0.0,427
+2218cb025adca1ded3e6596acc182b88742e3a51,if not result:,1,0,0.0,428
+2218cb025adca1ded3e6596acc182b88742e3a51,'updated_at': literal_column('updated_at')}),1,0,0.0,429
+2218cb025adca1ded3e6596acc182b88742e3a51,"'deleted_at': utils.utcnow(),",1,0,0.0,430
+2218cb025adca1ded3e6596acc182b88742e3a51,"filter_by(status=""FINISHED"").all()",1,0,0.0,431
+2218cb025adca1ded3e6596acc182b88742e3a51,return results,1,0,0.0,432
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.ConsolePoolNotFoundForHostType(host=host,",1,0,0.0,433
+2218cb025adca1ded3e6596acc182b88742e3a51,if not inactive:,1,0,0.0,434
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.Zone).all(),1,0,0.0,435
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=zone_id).\,1,0,0.0,436
+2218cb025adca1ded3e6596acc182b88742e3a51,session.query(models.Zone).\,1,0,0.0,437
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.ZoneNotFound(zone_id=zone_id),1,0,0.0,438
+2218cb025adca1ded3e6596acc182b88742e3a51,if not zone:,1,0,0.0,439
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(name=name),1,0,0.0,440
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(flavorid=flavor_id).\,1,0,0.0,441
+2218cb025adca1ded3e6596acc182b88742e3a51,return _dict_with_extra_specs(inst_type),1,0,0.0,442
+2218cb025adca1ded3e6596acc182b88742e3a51,if not inst_type:,1,0,0.0,443
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('extra_specs')).\,1,0,0.0,444
+2218cb025adca1ded3e6596acc182b88742e3a51,.options(joinedload('extra_specs')),1,0,0.0,445
+2218cb025adca1ded3e6596acc182b88742e3a51,"console_type=console_type,",1,0,0.0,446
+2218cb025adca1ded3e6596acc182b88742e3a51,##################,1,0,0.0,447
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.ConsoleNotFoundForInstance(console_id=console_id,",1,0,0.0,448
+2218cb025adca1ded3e6596acc182b88742e3a51,if instance_id:,1,0,0.0,449
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=console_id),1,0,0.0,450
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('pool')).\,1,0,0.0,451
+2218cb025adca1ded3e6596acc182b88742e3a51,instance_id=instance_id),1,0,0.0,452
+2218cb025adca1ded3e6596acc182b88742e3a51,"raise exception.ConsoleNotFoundInPoolForInstance(pool_id=pool_id,",1,0,0.0,453
+2218cb025adca1ded3e6596acc182b88742e3a51,# consoles are meant to be transient. (mdragon),1,0,0.0,454
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.ConsolePool).\,1,0,0.0,455
+2218cb025adca1ded3e6596acc182b88742e3a51,compute_host=compute_host),1,0,0.0,456
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SMBackendConf, read_deleted=""yes"").\",0,0,0.0,457
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.FixedIp.virtual_interface_id != None).\,0,0,0.0,458
+2218cb025adca1ded3e6596acc182b88742e3a51,"model_query(context, models.SMBackendConf, session=session,",0,0,0.0,459
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('fixed_ips')),0,0,0.0,460
+2218cb025adca1ded3e6596acc182b88742e3a51,count(),0,0,0.0,461
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(allocated=True).\,0,0,0.0,462
+2218cb025adca1ded3e6596acc182b88742e3a51,"return _network_ips_query(context, network_id).\",0,0,0.0,463
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(network_id=network_id),0,0,0.0,464
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.FixedIp, read_deleted=""no"").\",0,0,0.0,465
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Network).count()",0,0,0.0,466
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Network, session=session,",0,0,0.0,467
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.KeyPair, read_deleted=""no"").\",0,0,0.0,468
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_id=instance_id).\,0,0,0.0,469
+2218cb025adca1ded3e6596acc182b88742e3a51,"return _instance_get_all_query(context, project_only=True).\",0,0,0.0,470
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(project_id=project_id).\,0,0,0.0,471
+2218cb025adca1ded3e6596acc182b88742e3a51,return _instance_get_all_query(context).\,0,0,0.0,472
+2218cb025adca1ded3e6596acc182b88742e3a51,return _instance_get_all_query(context).filter_by(host=host).all(),0,0,0.0,473
+2218cb025adca1ded3e6596acc182b88742e3a51,return _instance_get_all_query(context).filter_by(user_id=user_id).all(),0,0,0.0,474
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('instance_type')),0,0,0.0,475
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Instance, project_only=project_only).\",0,0,0.0,476
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Instance).\",0,0,0.0,477
+2218cb025adca1ded3e6596acc182b88742e3a51,project_only=True).\,0,0,0.0,478
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Instance, session=session,",0,0,0.0,479
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=instance_id).\,0,0,0.0,480
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(uuid=uuid).\,0,0,0.0,481
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.sum(models.Instance.memory_mb),",0,0,0.0,482
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.sum(models.Instance.vcpus),",0,0,0.0,483
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(allocated=False).\,0,0,0.0,484
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(reserved=False).\,0,0,0.0,485
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(reserved=True).\,0,0,0.0,486
+2218cb025adca1ded3e6596acc182b88742e3a51,models.FixedIp.host == host),0,0,0.0,487
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=volume_id).\,0,0,0.0,488
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('volume_type')),0,0,0.0,489
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('volume_metadata')).\,0,0,0.0,490
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('instance')).\,0,0,0.0,491
+2218cb025adca1ded3e6596acc182b88742e3a51,project_only=project_only).\,0,0,0.0,492
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Volume, session=session,",0,0,0.0,493
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.sum(models.Volume.size),",0,0,0.0,494
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.count(models.Volume.id),",0,0,0.0,495
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.IscsiTarget).\",0,0,0.0,496
+2218cb025adca1ded3e6596acc182b88742e3a51,return _network_get_query(context).\,0,0,0.0,497
+2218cb025adca1ded3e6596acc182b88742e3a51,#             or that have a fixed ip with host set,0,0,0.0,498
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=network_id).\,0,0,0.0,499
+2218cb025adca1ded3e6596acc182b88742e3a51,# NOTE(vish): return networks that have host set,0,0,0.0,500
+2218cb025adca1ded3e6596acc182b88742e3a51,"read_deleted=""no"")",0,0,0.0,501
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.FixedIp.instance_id != None).\,0,0,0.0,502
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(network_id=network_id).\,0,0,0.0,503
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('instance')).\,0,0,0.0,504
+2218cb025adca1ded3e6596acc182b88742e3a51,# fixed_ip_get_all_by_network.,0,0,0.0,505
+2218cb025adca1ded3e6596acc182b88742e3a51,"# FIXME(sirp): since this returns fixed_ips, this would be better named",0,0,0.0,506
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(project_or_none).\,0,0,0.0,507
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.Network.uuid.in_(network_uuids)).\,0,0,0.0,508
+2218cb025adca1ded3e6596acc182b88742e3a51,models.Network.project_id == None),0,0,0.0,509
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.count(models.Instance.id),",0,0,0.0,510
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.VirtualInterface, session=session,",0,0,0.0,511
+2218cb025adca1ded3e6596acc182b88742e3a51,return _volume_get_query(context).filter_by(host=host).all(),0,0,0.0,512
+2218cb025adca1ded3e6596acc182b88742e3a51,@require_context,0,0,0.0,513
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('compute_node')).\,0,0,0.0,514
+2218cb025adca1ded3e6596acc182b88742e3a51,first(),0,0,0.0,515
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(host=host).\,0,0,0.0,516
+2218cb025adca1ded3e6596acc182b88742e3a51,all(),0,0,0.0,517
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(topic=topic).\,0,0,0.0,518
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(disabled=False).\,0,0,0.0,519
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Service, read_deleted=""no"").\",0,0,0.0,520
+2218cb025adca1ded3e6596acc182b88742e3a51,return query,0,0,0.0,521
+2218cb025adca1ded3e6596acc182b88742e3a51,if project_only and is_user_context(context):,0,0,0.0,522
+2218cb025adca1ded3e6596acc182b88742e3a51,"_(""Unrecognized read_deleted value '%s'"") % read_deleted)",0,0,0.0,523
+2218cb025adca1ded3e6596acc182b88742e3a51,raise Exception(,0,0,0.0,524
+2218cb025adca1ded3e6596acc182b88742e3a51,else:,0,0,0.0,525
+2218cb025adca1ded3e6596acc182b88742e3a51,elif read_deleted == 'only':,0,0,0.0,526
+2218cb025adca1ded3e6596acc182b88742e3a51,pass  # omit the filter to include deleted and active,0,0,0.0,527
+2218cb025adca1ded3e6596acc182b88742e3a51,elif read_deleted == 'yes':,0,0,0.0,528
+2218cb025adca1ded3e6596acc182b88742e3a51,if read_deleted == 'no':,0,0,0.0,529
+2218cb025adca1ded3e6596acc182b88742e3a51,"""""""",0,0,0.0,530
+2218cb025adca1ded3e6596acc182b88742e3a51,query to match the context's project_id.,0,0,0.0,531
+2218cb025adca1ded3e6596acc182b88742e3a51,":param project_only: if present and context is user-type, then restrict",0,0,0.0,532
+2218cb025adca1ded3e6596acc182b88742e3a51,":param read_deleted: if present, overrides context's read_deleted field.",0,0,0.0,533
+2218cb025adca1ded3e6596acc182b88742e3a51,":param session: if present, the session to use",0,0,0.0,534
+2218cb025adca1ded3e6596acc182b88742e3a51,:param context: context to query under,0,0,0.0,535
+2218cb025adca1ded3e6596acc182b88742e3a51,"""""""Query helper that accounts for context's `read_deleted` field.",0,0,0.0,536
+2218cb025adca1ded3e6596acc182b88742e3a51,"filter_by(topic=""compute"").\",0,0,0.0,537
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Service,",0,0,0.0,538
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.coalesce(sort_value, 0),",0,0,0.0,539
+2218cb025adca1ded3e6596acc182b88742e3a51,@require_admin_context,0,0,0.0,540
+2218cb025adca1ded3e6596acc182b88742e3a51,return result,0,0,0.0,541
+2218cb025adca1ded3e6596acc182b88742e3a51,if not result:,0,0,0.0,542
+2218cb025adca1ded3e6596acc182b88742e3a51,# NOTE(sirp): shouldn't we just use project_only here to restrict the,0,0,0.0,543
+2218cb025adca1ded3e6596acc182b88742e3a51,# results?,0,0,0.0,544
+2218cb025adca1ded3e6596acc182b88742e3a51,# FIXME(sirp): shouldn't we just use project_only here to restrict the,0,0,0.0,545
+2218cb025adca1ded3e6596acc182b88742e3a51,"read_deleted=""yes"").\",0,0,0.0,546
+2218cb025adca1ded3e6596acc182b88742e3a51,"read_deleted=""no"").\",0,0,0.0,547
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.FloatingIp, session=session).\",0,0,0.0,548
+2218cb025adca1ded3e6596acc182b88742e3a51,return _floating_ip_get_all(context).\,0,0,0.0,549
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('fixed_ip.instance')),0,0,0.0,550
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.FloatingIp, read_deleted=""no"").\",0,0,0.0,551
+2218cb025adca1ded3e6596acc182b88742e3a51,"session=session, read_deleted=""no"").\",0,0,0.0,552
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=id).\,0,0,0.0,553
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('fixed_ip.instance')).\,0,0,0.0,554
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('fixed_ip')).\,0,0,0.0,555
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Certificate, read_deleted=""no"").\",0,0,0.0,556
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.ComputeNode, session=session).\",0,0,0.0,557
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.sum(models.Volume.size).label(label),",0,0,0.0,558
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.count(models.Network.id).label(label),",0,0,0.0,559
+2218cb025adca1ded3e6596acc182b88742e3a51,"func.sum(models.Instance.vcpus).label(label),",0,0,0.0,560
+2218cb025adca1ded3e6596acc182b88742e3a51,order_by(sort_value).\,0,0,0.0,561
+2218cb025adca1ded3e6596acc182b88742e3a51,"outerjoin((subq, models.Service.host == subq.c.host)).\",0,0,0.0,562
+2218cb025adca1ded3e6596acc182b88742e3a51,return _volume_get_query(context).all(),0,0,0.0,563
+2218cb025adca1ded3e6596acc182b88742e3a51,return _volume_get_query(context).filter_by(project_id=project_id).all(),0,0,0.0,564
+2218cb025adca1ded3e6596acc182b88742e3a51,# `purge` actually deleting the record?,0,0,0.0,565
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.InstanceTypes, session=session,",0,0,0.0,566
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_type_id=instance_type_id),0,0,0.0,567
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.InstanceTypeExtraSpecs,",0,0,0.0,568
+2218cb025adca1ded3e6596acc182b88742e3a51,session=None):,0,0,0.0,569
+2218cb025adca1ded3e6596acc182b88742e3a51,if not session:,0,0,0.0,570
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.BandwidthUsage, read_deleted=""yes"").\",0,0,0.0,571
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=agent_build_id).\,0,0,0.0,572
+2218cb025adca1ded3e6596acc182b88742e3a51,"session=session, read_deleted=""yes"").\",0,0,0.0,573
+2218cb025adca1ded3e6596acc182b88742e3a51,"model_query(context, models.AgentBuild, session=session,",0,0,0.0,574
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.AgentBuild, read_deleted=""no"").\",0,0,0.0,575
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.AgentBuild, session=session,",0,0,0.0,576
+2218cb025adca1ded3e6596acc182b88742e3a51,"context, instance_id, session=session).\",0,0,0.0,577
+2218cb025adca1ded3e6596acc182b88742e3a51,"_instance_metadata_get_query(context, instance_id).\",0,0,0.0,578
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_id=instance_id),0,0,0.0,579
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.InstanceMetadata, session=session,",0,0,0.0,580
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Zone, read_deleted=""yes"").all()",0,0,0.0,581
+2218cb025adca1ded3e6596acc182b88742e3a51,"_zone_get_by_id_query(context, zone_id, session=session).\",0,0,0.0,582
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=zone_id),0,0,0.0,583
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Zone, session=session).\",0,0,0.0,584
+2218cb025adca1ded3e6596acc182b88742e3a51,# FIXME(sirp): this should update deleted_at and updated_at as well,0,0,0.0,585
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(name=name),0,0,0.0,586
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(flavorid=flavor_id).\,0,0,0.0,587
+2218cb025adca1ded3e6596acc182b88742e3a51,return _dict_with_extra_specs(result),0,0,0.0,588
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('extra_specs')),0,0,0.0,589
+2218cb025adca1ded3e6596acc182b88742e3a51,"context, instance_type_id).\",0,0,0.0,590
+2218cb025adca1ded3e6596acc182b88742e3a51,_instance_type_extra_specs_get_query(,0,0,0.0,591
+2218cb025adca1ded3e6596acc182b88742e3a51,"context, instance_type_id, session=session).\",0,0,0.0,592
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.VirtualStorageArray, session=session,",0,0,0.0,593
+2218cb025adca1ded3e6596acc182b88742e3a51,"# FIXME(sirp): for consistency, shouldn't this just mark as deleted with",0,0,0.0,594
+2218cb025adca1ded3e6596acc182b88742e3a51,"_(""No backend config with id %(sm_backend_id)s"") % locals())",0,0,0.0,595
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.NotFound(,0,0,0.0,596
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=sm_backend_id).\,0,0,0.0,597
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(uuid=image_uuid).\,0,0,0.0,598
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=image_id).\,0,0,0.0,599
+2218cb025adca1ded3e6596acc182b88742e3a51,return _vsa_get_query(context).filter_by(project_id=project_id).all(),0,0,0.0,600
+2218cb025adca1ded3e6596acc182b88742e3a51,return _vsa_get_query(context).all(),0,0,0.0,601
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=vsa_id).\,0,0,0.0,602
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('vsa_instance_type')),0,0,0.0,603
+2218cb025adca1ded3e6596acc182b88742e3a51,####################,0,0,0.0,604
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.InstanceTypeExtraSpecsNotFound(,0,0,0.0,605
+2218cb025adca1ded3e6596acc182b88742e3a51,"extra_specs_key=key, volume_type_id=volume_type_id)",0,0,0.0,606
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.VolumeTypeExtraSpecsNotFound(,0,0,0.0,607
+2218cb025adca1ded3e6596acc182b88742e3a51,"context, volume_type_id, session=session).\",0,0,0.0,608
+2218cb025adca1ded3e6596acc182b88742e3a51,"_volume_type_extra_specs_query(context, volume_type_id).\",0,0,0.0,609
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(volume_type_id=volume_type_id),0,0,0.0,610
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.VolumeTypeExtraSpecs, session=session,",0,0,0.0,611
+2218cb025adca1ded3e6596acc182b88742e3a51,# FIXME(sirp): we should be setting deleted_at and updated_at here,0,0,0.0,612
+2218cb025adca1ded3e6596acc182b88742e3a51,"# is repeated quite a bit, might be worth creating a method for it",0,0,0.0,613
+2218cb025adca1ded3e6596acc182b88742e3a51,# TODO(sirp): this patern of converting rows to a result with extra_specs,0,0,0.0,614
+2218cb025adca1ded3e6596acc182b88742e3a51,"extra_specs_key=key, instance_type_id=instance_type_id)",0,0,0.0,615
+2218cb025adca1ded3e6596acc182b88742e3a51,read_deleted=read_deleted).\,0,0,0.0,616
+2218cb025adca1ded3e6596acc182b88742e3a51,##################,0,0,0.0,617
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.VolumeMetadata,",0,0,0.0,618
+2218cb025adca1ded3e6596acc182b88742e3a51,"console_id=console_id, instance_id=instance_id)",0,0,0.0,619
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=security_group_id).\,0,0,0.0,620
+2218cb025adca1ded3e6596acc182b88742e3a51,return _security_group_get_query(context).all(),0,0,0.0,621
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('rules')),0,0,0.0,622
+2218cb025adca1ded3e6596acc182b88742e3a51,"read_deleted=read_deleted, project_only=project_only).\",0,0,0.0,623
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SecurityGroup, session=session,",0,0,0.0,624
+2218cb025adca1ded3e6596acc182b88742e3a51,project_only=False):,0,0,0.0,625
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(volume_id=volume_id).\,0,0,0.0,626
+2218cb025adca1ded3e6596acc182b88742e3a51,return _block_device_mapping_get_query(context).\,0,0,0.0,627
+2218cb025adca1ded3e6596acc182b88742e3a51,'updated_at': literal_column('updated_at')}),0,0,0.0,628
+2218cb025adca1ded3e6596acc182b88742e3a51,"'deleted_at': utils.utcnow(),",0,0,0.0,629
+2218cb025adca1ded3e6596acc182b88742e3a51,"update({'deleted': True,",0,0,0.0,630
+2218cb025adca1ded3e6596acc182b88742e3a51,values['device_name']).\,0,0,0.0,631
+2218cb025adca1ded3e6596acc182b88742e3a51,filter(models.BlockDeviceMapping.device_name !=,0,0,0.0,632
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(virtual_name=virtual_name).\,0,0,0.0,633
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(instance_id=values['instance_id']).\,0,0,0.0,634
+2218cb025adca1ded3e6596acc182b88742e3a51,"_block_device_mapping_get_query(context, session=session).\",0,0,0.0,635
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.BlockDeviceMapping, session=session,",0,0,0.0,636
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Snapshot).\",0,0,0.0,637
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Snapshot).all()",0,0,0.0,638
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=snapshot_id).\,0,0,0.0,639
+2218cb025adca1ded3e6596acc182b88742e3a51,"_volume_metadata_get_query(context, volume_id).\",0,0,0.0,640
+2218cb025adca1ded3e6596acc182b88742e3a51,for row in rows:,0,0,0.0,641
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(volume_id=volume_id),0,0,0.0,642
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload_all('instances')).\,0,0,0.0,643
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.SecurityGroupNotFoundForProject(,0,0,0.0,644
+2218cb025adca1ded3e6596acc182b88742e3a51,"project_id=project_id, security_group_id=group_name)",0,0,0.0,645
+2218cb025adca1ded3e6596acc182b88742e3a51,"host=host, console_type=console_type,",0,0,0.0,646
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.ConsoleNotFoundForInstance(,0,0,0.0,647
+2218cb025adca1ded3e6596acc182b88742e3a51,if instance_id is not None:,0,0,0.0,648
+2218cb025adca1ded3e6596acc182b88742e3a51,options(joinedload('pool')),0,0,0.0,649
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(id=console_id).\,0,0,0.0,650
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Console, read_deleted=""yes"").\",0,0,0.0,651
+2218cb025adca1ded3e6596acc182b88742e3a51,"pool_id=pool_id, instance_id=instance_id)",0,0,0.0,652
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.ConsoleNotFoundInPoolForInstance(,0,0,0.0,653
+2218cb025adca1ded3e6596acc182b88742e3a51,# NOTE(mdragon): consoles are meant to be transient.,0,0,0.0,654
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.ConsolePool, read_deleted=""no"").\",0,0,0.0,655
+2218cb025adca1ded3e6596acc182b88742e3a51,compute_host=compute_host),0,0,0.0,656
+2218cb025adca1ded3e6596acc182b88742e3a51,raise exception.ConsolePoolNotFoundForHostType(,0,0,0.0,657
+2218cb025adca1ded3e6596acc182b88742e3a51,"return _security_group_get_query(context, read_deleted=""no"").\",0,0,0.0,658
+2218cb025adca1ded3e6596acc182b88742e3a51,"filter_by(status=""FINISHED"").\",0,0,0.0,659
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Migration, session=session,",0,0,0.0,660
+2218cb025adca1ded3e6596acc182b88742e3a51,filter_by(status=status).\,0,0,0.0,661
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.Project).\",0,0,0.0,662
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.User).all()",0,0,0.0,663
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.ProviderFirewallRule).\",0,0,0.0,664
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.ProviderFirewallRule).all()",0,0,0.0,665
+2218cb025adca1ded3e6596acc182b88742e3a51,"return _security_group_rule_get_query(context, session=session).\",0,0,0.0,666
+2218cb025adca1ded3e6596acc182b88742e3a51,session=session),0,0,0.0,667
+2218cb025adca1ded3e6596acc182b88742e3a51,"return model_query(context, models.SecurityGroupIngressRule,",0,0,0.0,668
+2218cb025adca1ded3e6596acc182b88742e3a51,return session.query(models.SMVolume).all(),1,0,0.0,669

@@ -1,0 +1,87 @@
+commit_id,line,line_level_label,count,line_score,row
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,// Only set totals and line items when in a Payment flow,1,4,1.0,1
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"populateDefaultLineItemsAndSubtotal(order, requestDTO);",0,2,0.5,2
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"populateTotals(order, requestDTO);",1,2,0.5,3
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"populateDefaultLineItemsAndSubtotal(order, requestDTO);",1,2,0.5,4
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"populateTotals(order, requestDTO);",0,2,0.5,5
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,// AND where the order does not contain multiple final payments. (e.g. multiple credit cards),1,1,0.25,6
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,// thus the check to prevent incorrect payment totals,0,1,0.25,7
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,for (OrderPayment payment : order.getPayments()) {,1,1,0.25,8
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* @param order,1,1,0.25,9
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* determine whether or not this order contains multiple final payments.,1,1,0.25,10
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,Order order = paymentTransaction.getOrderPayment().getOrder();,1,1,0.25,11
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,for (OrderPayment payment : order.getPayments()) {,0,1,0.25,12
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* @param order,0,1,0.25,13
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* determine whether or not this order contains multiple final payments.,0,1,0.25,14
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,// AND where the order does not contain multiple final payments. (e.g. multiple credit cards),0,1,0.25,15
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,//   you cannot use the total after applied payments convenience method.,1,0,0.0,16
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,return requestDTO;,1,0,0.0,17
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,},1,0,0.0,18
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,!transactionIsDetachedCreditRequest(paymentTransaction)) {,1,0,0.0,19
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,!orderContainsMultipleFinalPayments(order) &&,1,0,0.0,20
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (PaymentTransactionType.UNCONFIRMED.equals(paymentTransaction.getType()) &&,1,0,0.0,21
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,// - The amounts to be sent to the gateway are the amounts passed in.,1,0,0.0,22
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.orderCurrencyCode(paymentTransaction.getOrderPayment().getCurrency().getCurrencyCode()),1,0,0.0,23
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"// - If in a REFUND flow OR paying with multiple final payments OR this is a DETACHED_CREDIT request,",1,0,0.0,24
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"// (i.e. where the transaction is meant to be charged, UNCONFIRMED -> AUTHORIZE or UNCONFIRMED -> AUTHORIZE_AND_CAPTURE)",1,0,0.0,25
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"PaymentRequestDTO requestDTO = translateStandalonePaymentTransaction(transactionAmount, paymentTransaction);",1,0,0.0,26
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"public PaymentRequestDTO translatePaymentTransactionForCheckout(Money transactionAmount, PaymentTransaction paymentTransaction) {",1,0,0.0,27
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,@Override,1,0,0.0,28
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.orderId(paymentTransaction.getOrderPayment().getOrder().getId().toString());,1,0,0.0,29
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* (e.g. paying with multiple credit cards),1,0,0.0,30
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,/**,1,0,0.0,31
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,return finalPaymentCount > 1;,1,0,0.0,32
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* @return,1,0,0.0,33
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,*/,1,0,0.0,34
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,paymentTransaction.getOrderPayment().isFinalPayment()) {,0,0,0.0,35
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (PaymentTransactionType.UNCONFIRMED.equals(paymentTransaction.getType()) &&,0,0,0.0,36
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"// At this point in a checkout, CustomerCredit and GiftCards are still Unconfirmed,",0,0,0.0,37
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,import org.broadleafcommerce.common.payment.PaymentType;,0,0,0.0,38
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,return transaction.getAdditionalFields().containsKey(PaymentGatewayRequestType.DETACHED_CREDIT_REFUND.getType());,1,0,0.0,39
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,protected boolean transactionIsDetachedCreditRequest(PaymentTransaction transaction) {,1,0,0.0,40
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* @param transaction,1,0,0.0,41
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* (as the actual type of the transaction is UNCONFIRMED).,1,0,0.0,42
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"* By default, will look at the additional fields map to determine intent",1,0,0.0,43
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* determine whether or not this transaction is a detached credit request.,1,0,0.0,44
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.shippingTotal(ZERO_TOTAL),1,0,0.0,45
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,finalPaymentCount++;,1,0,0.0,46
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (payment.isActive() && payment.isFinalPayment()) {,1,0,0.0,47
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,int finalPaymentCount = 0;,1,0,0.0,48
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,protected boolean orderContainsMultipleFinalPayments(Order order) {,1,0,0.0,49
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.taxTotal(ZERO_TOTAL),1,0,0.0,50
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (autoCalculateFinalPaymentTotals) {,0,0,0.0,51
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.orderSubtotal(transactionAmount.getAmount().toPlainString()),1,0,0.0,52
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* (e.g. paying with multiple credit cards),0,0,0.0,53
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,finalPaymentCount++;,0,0,0.0,54
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (payment.isActive() && payment.isFinalPayment()) {,0,0,0.0,55
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,int finalPaymentCount = 0;,0,0,0.0,56
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,protected boolean orderContainsMultipleFinalPayments(Order order) {,0,0,0.0,57
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,*/,0,0,0.0,58
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,* @return,0,0,0.0,59
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,/**,0,0,0.0,60
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,return finalPaymentCount > 1;,0,0,0.0,61
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,!orderContainsMultipleFinalPayments(order)) {,0,0,0.0,62
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (PaymentTransactionType.UNCONFIRMED.equals(paymentTransaction.getType()) &&,0,0,0.0,63
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,// - The amounts to be sent to the gateway are the amounts passed in.,0,0,0.0,64
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,//   you cannot use the total after applied payments convenience method.,0,0,0.0,65
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"// - If in a REFUND flow or paying with multiple final payments,",0,0,0.0,66
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"// (i.e. where the transaction is meant to be charged, UNCONFIRMED -> AUTHORIZE or UNCONFIRMED -> AUTHORIZE_AND_CAPTURE)",0,0,0.0,67
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,},0,0,0.0,68
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (PaymentTransactionType.UNCONFIRMED.equals(paymentTransaction.getType())) {,1,0,0.0,69
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.transactionTotal(transactionAmount.getAmount().toPlainString()),1,0,0.0,70
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.taxTotal(ZERO_TOTAL),0,0,0.0,71
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"public PaymentRequestDTO translateStandalonePaymentTransaction(Money transactionAmount, PaymentTransaction paymentTransaction) {",1,0,0.0,72
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,import org.broadleafcommerce.common.payment.PaymentTransactionType;,1,0,0.0,73
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,import org.broadleafcommerce.common.payment.PaymentGatewayRequestType;,1,0,0.0,74
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,import org.broadleafcommerce.common.payment.PaymentAdditionalFieldType;,1,0,0.0,75
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.orderId(paymentTransaction.getOrderPayment().getOrder().getId().toString());,0,0,0.0,76
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.orderCurrencyCode(paymentTransaction.getOrderPayment().getCurrency().getCurrencyCode()),0,0,0.0,77
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.shippingTotal(ZERO_TOTAL),0,0,0.0,78
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"public PaymentRequestDTO translatePaymentTransaction(Money transactionAmount, PaymentTransaction paymentTransaction) {",0,0,0.0,79
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.orderSubtotal(transactionAmount.getAmount().toPlainString()),0,0,0.0,80
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,.transactionTotal(transactionAmount.getAmount().toPlainString()),0,0,0.0,81
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"public PaymentRequestDTO translatePaymentTransaction(Money transactionAmount, PaymentTransaction paymentTransaction, boolean autoCalculateFinalPaymentTotals) {",0,0,0.0,82
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,@Override,0,0,0.0,83
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,},0,0,0.0,84
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,"return translatePaymentTransaction(transactionAmount, paymentTransaction, false);",0,0,0.0,85
+e014c889a02fe035ca823d9c0b3b8b4335e6651a,if (PaymentTransactionType.UNCONFIRMED.equals(paymentTransaction.getType())) {,1,0,0.0,86

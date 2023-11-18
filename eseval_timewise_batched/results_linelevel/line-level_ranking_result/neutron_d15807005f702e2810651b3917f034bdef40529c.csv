@@ -1,0 +1,1249 @@
+commit_id,line,line_level_label,count,line_score,row
+d15807005f702e2810651b3917f034bdef40529c,# Create the first router fip with external net1,1,3,1.0,1
+d15807005f702e2810651b3917f034bdef40529c,# We get the router info particular to a dvr router,1,3,1.0,2
+d15807005f702e2810651b3917f034bdef40529c,# Add floatingip agent gateway port info to router,1,3,1.0,3
+d15807005f702e2810651b3917f034bdef40529c,# Create the second router fip with external net2,1,3,1.0,4
+d15807005f702e2810651b3917f034bdef40529c,# Advts from upstream router when no external gateway is configured.,1,2,0.6666666666666666,5
+d15807005f702e2810651b3917f034bdef40529c,# We need to fetch the floatingip agent gateway port info,1,2,0.6666666666666666,6
+d15807005f702e2810651b3917f034bdef40529c,# is created with the ip address of the external gateway port,1,2,0.6666666666666666,7
+d15807005f702e2810651b3917f034bdef40529c,"self.assertTrue(False, "" agent not configured for dvr or dvr_snat"")",1,2,0.6666666666666666,8
+d15807005f702e2810651b3917f034bdef40529c,# Add the info to router as the first snat port,1,2,0.6666666666666666,9
+d15807005f702e2810651b3917f034bdef40529c,# Add fip agent gateway port information to the router_info,1,2,0.6666666666666666,10
+d15807005f702e2810651b3917f034bdef40529c,# Validate the fip with external net1,1,2,0.6666666666666666,11
+d15807005f702e2810651b3917f034bdef40529c,"* A router (which creates a metadata proxy in the router namespace),",1,2,0.6666666666666666,12
+d15807005f702e2810651b3917f034bdef40529c,# Verify that router internal interface is present and is configured,1,2,0.6666666666666666,13
+d15807005f702e2810651b3917f034bdef40529c,# Verify router gateway interface is configured to receive Router Advts,1,2,0.6666666666666666,14
+d15807005f702e2810651b3917f034bdef40529c,# when the router updates are processed by the agent,1,2,0.6666666666666666,15
+d15807005f702e2810651b3917f034bdef40529c,# Validate the fip with external net2,1,2,0.6666666666666666,16
+d15807005f702e2810651b3917f034bdef40529c,# Verify that router gw interface is configured to receive Router,1,2,0.6666666666666666,17
+d15807005f702e2810651b3917f034bdef40529c,"router1 = self.manage_router(self.agent, router_info)",0,2,0.6666666666666666,18
+d15807005f702e2810651b3917f034bdef40529c,Make sure that when the agent sends notifications of router events,1,2,0.6666666666666666,19
+d15807005f702e2810651b3917f034bdef40529c,namespace=router.ns_name) for fip in floating_ips),0,2,0.6666666666666666,20
+d15807005f702e2810651b3917f034bdef40529c,"router1 = self._create_router(self.agent, router_info)",0,2,0.6666666666666666,21
+d15807005f702e2810651b3917f034bdef40529c,"router1 = self.manage_router(self.agent, router_info)",0,2,0.6666666666666666,22
+d15807005f702e2810651b3917f034bdef40529c,"router1 = self._create_router(self.agent, router_info)",1,2,0.6666666666666666,23
+d15807005f702e2810651b3917f034bdef40529c,namespace=router.ns_name) for fip in floating_ips),1,2,0.6666666666666666,24
+d15807005f702e2810651b3917f034bdef40529c,"router1 = self._create_router(self.agent, router_info)",1,2,0.6666666666666666,25
+d15807005f702e2810651b3917f034bdef40529c,namespace=router.ns_name) for fip in floating_ips),1,2,0.6666666666666666,26
+d15807005f702e2810651b3917f034bdef40529c,"router = self.manage_router(self.agent, router_info)",1,2,0.6666666666666666,27
+d15807005f702e2810651b3917f034bdef40529c,"router1 = self.manage_router(self.agent, router_info)",1,2,0.6666666666666666,28
+d15807005f702e2810651b3917f034bdef40529c,# if the agent is anything else the test is misconfigured,1,1,0.3333333333333333,29
+d15807005f702e2810651b3917f034bdef40529c,# Get values from external gateway port,1,1,0.3333333333333333,30
+d15807005f702e2810651b3917f034bdef40529c,"""namespace %s was found but agent is in dvr mode not dvr_snat""",1,1,0.3333333333333333,31
+d15807005f702e2810651b3917f034bdef40529c,# if the agent is in dvr mode then the snat_ns_name namespace,1,1,0.3333333333333333,32
+d15807005f702e2810651b3917f034bdef40529c,# that the correct ports and ip addresses exist in the,1,1,0.3333333333333333,33
+d15807005f702e2810651b3917f034bdef40529c,"# if the agent is in dvr_snat mode, then we have to check",1,1,0.3333333333333333,34
+d15807005f702e2810651b3917f034bdef40529c,# Add snat port information to the router,1,1,0.3333333333333333,35
+d15807005f702e2810651b3917f034bdef40529c,# Pick an ip address which is not the same as port_ip,1,1,0.3333333333333333,36
+d15807005f702e2810651b3917f034bdef40529c,agent = self.agent,1,1,0.3333333333333333,37
+d15807005f702e2810651b3917f034bdef40529c,return router,1,1,0.3333333333333333,38
+d15807005f702e2810651b3917f034bdef40529c,# the agent type the dvr supports. The namespace creation is,1,1,0.3333333333333333,39
+d15807005f702e2810651b3917f034bdef40529c,# the snat_port info and fip_agent_gw_port_info irrespective of,1,1,0.3333333333333333,40
+d15807005f702e2810651b3917f034bdef40529c,# FIP has a dependency on external gateway. So we need to create,1,1,0.3333333333333333,41
+d15807005f702e2810651b3917f034bdef40529c,router = l3_test_common.prepare_router_data(,1,1,0.3333333333333333,42
+d15807005f702e2810651b3917f034bdef40529c,"# manage the router (create it, create namespaces,",1,1,0.3333333333333333,43
+d15807005f702e2810651b3917f034bdef40529c,# In the router namespace,1,1,0.3333333333333333,44
+d15807005f702e2810651b3917f034bdef40529c,# in the fip namespace:,1,1,0.3333333333333333,45
+d15807005f702e2810651b3917f034bdef40529c,"ex_gw_port_cidr = ip + ""/"" + str(prefix_len)",1,1,0.3333333333333333,46
+d15807005f702e2810651b3917f034bdef40529c,for fip in floating_ips:,1,1,0.3333333333333333,47
+d15807005f702e2810651b3917f034bdef40529c,"self.manage_router(restarted_agent, router_info)",1,1,0.3333333333333333,48
+d15807005f702e2810651b3917f034bdef40529c,router1 = self._create_dvr_ha_router(self.agent),1,1,0.3333333333333333,49
+d15807005f702e2810651b3917f034bdef40529c,"snat_port_cidr = ip + ""/"" + str(prefix_len)",1,1,0.3333333333333333,50
+d15807005f702e2810651b3917f034bdef40529c,"ip = snat_port[""fixed_ips""][0]['ip_address']",1,1,0.3333333333333333,51
+d15807005f702e2810651b3917f034bdef40529c,:param enable_ha: sets the ha value for the router.,1,1,0.3333333333333333,52
+d15807005f702e2810651b3917f034bdef40529c,"ip = ex_gw_port[""fixed_ips""][0]['ip_address']",1,1,0.3333333333333333,53
+d15807005f702e2810651b3917f034bdef40529c,"router = self.manage_router(agent, r_info)",1,1,0.3333333333333333,54
+d15807005f702e2810651b3917f034bdef40529c,when the router interface is deleted.,1,1,0.3333333333333333,55
+d15807005f702e2810651b3917f034bdef40529c,device corresponding to the router interface is removed,1,1,0.3333333333333333,56
+d15807005f702e2810651b3917f034bdef40529c,This test validates the snat namespace for all the external,1,1,0.3333333333333333,57
+d15807005f702e2810651b3917f034bdef40529c,"""""""Function returns the internal and external device status.""""""",1,1,0.3333333333333333,58
+d15807005f702e2810651b3917f034bdef40529c,gateway port host mismatches with the agent and so the,1,1,0.3333333333333333,59
+d15807005f702e2810651b3917f034bdef40529c,This test validates the condition where floatingip agent,1,1,0.3333333333333333,60
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test to validate the floatingip agent mismatch.",1,1,0.3333333333333333,61
+d15807005f702e2810651b3917f034bdef40529c,"# Check that, when the router is set up and there are",1,1,0.3333333333333333,62
+d15807005f702e2810651b3917f034bdef40529c,"info = iprule.rule._parse_line(4, line)",1,1,0.3333333333333333,63
+d15807005f702e2810651b3917f034bdef40529c,# get the correct fip namespace.,1,1,0.3333333333333333,64
+d15807005f702e2810651b3917f034bdef40529c,if fip in line:,1,1,0.3333333333333333,65
+d15807005f702e2810651b3917f034bdef40529c,'''Test dvr router lifecycle,1,1,0.3333333333333333,66
+d15807005f702e2810651b3917f034bdef40529c,"external_port['mac_address'],",1,1,0.3333333333333333,67
+d15807005f702e2810651b3917f034bdef40529c,"fip = {'id': _uuid(),",1,1,0.3333333333333333,68
+d15807005f702e2810651b3917f034bdef40529c,return conf,1,1,0.3333333333333333,69
+d15807005f702e2810651b3917f034bdef40529c,conf = self._get_config_opts(),1,1,0.3333333333333333,70
+d15807005f702e2810651b3917f034bdef40529c,from neutron.tests.functional.agent.linux import helpers,1,1,0.3333333333333333,71
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.l3 import agent as neutron_l3_agent,1,1,0.3333333333333333,72
+d15807005f702e2810651b3917f034bdef40529c,"external_port['mac_address'],",1,1,0.3333333333333333,73
+d15807005f702e2810651b3917f034bdef40529c,"'%s/32' % fip['floating_ip_address'],",1,1,0.3333333333333333,74
+d15807005f702e2810651b3917f034bdef40529c,"external_port['mac_address'],",0,1,0.3333333333333333,75
+d15807005f702e2810651b3917f034bdef40529c,"'%s/32' % fip['floating_ip_address'],",0,1,0.3333333333333333,76
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(lambda: router1.ha_state == 'fault'),1,1,0.3333333333333333,77
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(lambda: router2.ha_state == 'master'),1,1,0.3333333333333333,78
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(lambda: router2.ha_state == 'backup'),1,1,0.3333333333333333,79
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(lambda: router1.ha_state == 'master'),1,1,0.3333333333333333,80
+d15807005f702e2810651b3917f034bdef40529c,"* A ""client"" namespace (simulating a vm) with a port on router",1,1,0.3333333333333333,81
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(lambda: router.ha_state == 'master'),1,1,0.3333333333333333,82
+d15807005f702e2810651b3917f034bdef40529c,ip = ip_lib.IPWrapper(namespace=namespace),1,1,0.3333333333333333,83
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(lambda: self._floating_ips_configured(router1)),1,1,0.3333333333333333,84
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_router_info(enable_ha=True),1,1,0.3333333333333333,85
+d15807005f702e2810651b3917f034bdef40529c,# Synchronize the agent with the plug-in,1,1,0.3333333333333333,86
+d15807005f702e2810651b3917f034bdef40529c,# Verify that router internal interface has a single ipaddress,1,1,0.3333333333333333,87
+d15807005f702e2810651b3917f034bdef40529c,# Add a second IPv6 subnet to the router internal interface.,1,1,0.3333333333333333,88
+d15807005f702e2810651b3917f034bdef40529c,# client sends to fip,1,1,0.3333333333333333,89
+d15807005f702e2810651b3917f034bdef40529c,# Add multiple-IPv6-prefix internal router port,1,1,0.3333333333333333,90
+d15807005f702e2810651b3917f034bdef40529c,# _process_router_if_compatible in the agent fails,1,1,0.3333333333333333,91
+d15807005f702e2810651b3917f034bdef40529c,"# deleted by the agent when it processes the updates. Otherwise,",1,1,0.3333333333333333,92
+d15807005f702e2810651b3917f034bdef40529c,# Mock the plugin RPC API so a known external network id is returned,1,1,0.3333333333333333,93
+d15807005f702e2810651b3917f034bdef40529c,# Remove one subnet from the router internal iface,1,1,0.3333333333333333,94
+d15807005f702e2810651b3917f034bdef40529c,# clear agent router_info as it will be after restart,1,1,0.3333333333333333,95
+d15807005f702e2810651b3917f034bdef40529c,"called with the right resource, event, and router information.",1,1,0.3333333333333333,96
+d15807005f702e2810651b3917f034bdef40529c,"for router create, update, and delete, that the correct handler is",1,1,0.3333333333333333,97
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test notifications for router create, update, and delete.",1,1,0.3333333333333333,98
+d15807005f702e2810651b3917f034bdef40529c,"router2 = self.manage_router(self.agent, router_info)",1,1,0.3333333333333333,99
+d15807005f702e2810651b3917f034bdef40529c,# Get the last state reported for each router,1,1,0.3333333333333333,100
+d15807005f702e2810651b3917f034bdef40529c,that uses floating IP once it's disassociated.,1,1,0.3333333333333333,101
+d15807005f702e2810651b3917f034bdef40529c,else:,1,0,0.0,102
+d15807005f702e2810651b3917f034bdef40529c,return raw_headers.splitlines()[0],1,0,0.0,103
+d15807005f702e2810651b3917f034bdef40529c,self.fail('Timed out waiting metadata proxy to become available'),1,0,0.0,104
+d15807005f702e2810651b3917f034bdef40529c,if i > CONNECTION_REFUSED_TIMEOUT:,1,0,0.0,105
+d15807005f702e2810651b3917f034bdef40529c,'on %s before timeout' % url),1,0,0.0,106
+d15807005f702e2810651b3917f034bdef40529c,self.fail('metadata proxy unreachable ',1,0,0.0,107
+d15807005f702e2810651b3917f034bdef40529c,if 'Connection refused' in str(e):,1,0,0.0,108
+d15807005f702e2810651b3917f034bdef40529c,i += METADATA_REQUEST_SLEEP,1,0,0.0,109
+d15807005f702e2810651b3917f034bdef40529c,time.sleep(METADATA_REQUEST_SLEEP),1,0,0.0,110
+d15807005f702e2810651b3917f034bdef40529c,except RuntimeError as e:,1,0,0.0,111
+d15807005f702e2810651b3917f034bdef40529c,break,1,0,0.0,112
+d15807005f702e2810651b3917f034bdef40529c,raw_headers = machine.execute(cmd),1,0,0.0,113
+d15807005f702e2810651b3917f034bdef40529c,try:,1,0,0.0,114
+d15807005f702e2810651b3917f034bdef40529c,def test_access_to_metadata_proxy(self):,1,0,0.0,115
+d15807005f702e2810651b3917f034bdef40529c,while i <= CONNECTION_REFUSED_TIMEOUT:,1,0,0.0,116
+d15807005f702e2810651b3917f034bdef40529c,the X-Forwarded-For and X-Neutron-Router-Id headers to the request,1,0,0.0,117
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test access to the l3-agent metadata proxy.",1,0,0.0,118
+d15807005f702e2810651b3917f034bdef40529c,The test creates:,1,0,0.0,119
+d15807005f702e2810651b3917f034bdef40529c,i = 0,1,0,0.0,120
+d15807005f702e2810651b3917f034bdef40529c,# Query metadata proxy,1,0,0.0,121
+d15807005f702e2810651b3917f034bdef40529c,router_ip_cidr.partition('/')[0])),1,0,0.0,122
+d15807005f702e2810651b3917f034bdef40529c,machine_fixtures.FakeMachine(,1,0,0.0,123
+d15807005f702e2810651b3917f034bdef40529c,machine = self.useFixture(,1,0,0.0,124
+d15807005f702e2810651b3917f034bdef40529c,# Create and configure client namespace,1,0,0.0,125
+d15807005f702e2810651b3917f034bdef40529c,self._create_metadata_fake_server(webob.exc.HTTPOk.code),1,0,0.0,126
+d15807005f702e2810651b3917f034bdef40529c,"response to the ""client"" namespace.",1,0,0.0,127
+d15807005f702e2810651b3917f034bdef40529c,and forwarded the http request to the fake metadata server and the,1,0,0.0,128
+d15807005f702e2810651b3917f034bdef40529c,firstline = self._query_metadata_proxy(machine),1,0,0.0,129
+d15807005f702e2810651b3917f034bdef40529c,http://169.254.169.254 and asserts that the metadata proxy added,1,0,0.0,130
+d15807005f702e2810651b3917f034bdef40529c,"The test queries from the ""client"" namespace the metadata proxy on",1,0,0.0,131
+d15807005f702e2810651b3917f034bdef40529c,internal subnet.,1,0,0.0,132
+d15807005f702e2810651b3917f034bdef40529c,* A fake metadata server,1,0,0.0,133
+d15807005f702e2810651b3917f034bdef40529c,* A l3-agent metadata service:,1,0,0.0,134
+d15807005f702e2810651b3917f034bdef40529c,CONNECTION_REFUSED_TIMEOUT = METADATA_REQUEST_TIMEOUT // 2,1,0,0.0,135
+d15807005f702e2810651b3917f034bdef40529c,SOCKET_MODE = 0o644,1,0,0.0,136
+d15807005f702e2810651b3917f034bdef40529c,"cmd = 'curl', '--max-time', METADATA_REQUEST_TIMEOUT, '-D-', url",1,0,0.0,137
+d15807005f702e2810651b3917f034bdef40529c,"interfaces[0].update({'fixed_ips': fixed_ips, 'subnets': subnets})",1,0,0.0,138
+d15807005f702e2810651b3917f034bdef40529c,self.status = status,1,0,0.0,139
+d15807005f702e2810651b3917f034bdef40529c,"def __init__(self, status):",1,0,0.0,140
+d15807005f702e2810651b3917f034bdef40529c,class MetadataFakeProxyHandler(object):,1,0,0.0,141
+d15807005f702e2810651b3917f034bdef40529c,L3AgentTestFramework):,1,0,0.0,142
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(1, len(internal_iface['fixed_ips']))",1,0,0.0,143
+d15807005f702e2810651b3917f034bdef40529c,router.router[l3_constants.INTERFACE_KEY] = interfaces,1,0,0.0,144
+d15807005f702e2810651b3917f034bdef40529c,subnets.append(interfaces[0]['subnets'][0]),1,0,0.0,145
+d15807005f702e2810651b3917f034bdef40529c,"def __call__(self, req):",1,0,0.0,146
+d15807005f702e2810651b3917f034bdef40529c,fixed_ips.append(interfaces[0]['fixed_ips'][0]),1,0,0.0,147
+d15807005f702e2810651b3917f034bdef40529c,"fixed_ips, subnets = [], []",1,0,0.0,148
+d15807005f702e2810651b3917f034bdef40529c,"l3_constants.INTERFACE_KEY, []))",1,0,0.0,149
+d15807005f702e2810651b3917f034bdef40529c,interfaces = copy.deepcopy(router.router.get(,1,0,0.0,150
+d15807005f702e2810651b3917f034bdef40529c,"verify_ip_in_keepalived_config(router, internal_iface)",1,0,0.0,151
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(str(webob.exc.HTTPOk.code), firstline.split())",1,0,0.0,152
+d15807005f702e2810651b3917f034bdef40529c,@webob.dec.wsgify(),1,0,0.0,153
+d15807005f702e2810651b3917f034bdef40529c,return webob.Response(status=self.status),1,0,0.0,154
+d15807005f702e2810651b3917f034bdef40529c,'port': dhcp.METADATA_PORT},1,0,0.0,155
+d15807005f702e2810651b3917f034bdef40529c,helpers.RecursivePermDirFixture(,1,0,0.0,156
+d15807005f702e2810651b3917f034bdef40529c,"url = 'http://%(host)s:%(port)s' % {'host': dhcp.METADATA_DEFAULT_IP,",1,0,0.0,157
+d15807005f702e2810651b3917f034bdef40529c,"def _query_metadata_proxy(self, machine):",1,0,0.0,158
+d15807005f702e2810651b3917f034bdef40529c,"workers=0, backlog=4096, mode=self.SOCKET_MODE)",1,0,0.0,159
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.conf.metadata_proxy_socket,",1,0,0.0,160
+d15807005f702e2810651b3917f034bdef40529c,"server.start(MetadataFakeProxyHandler(status),",1,0,0.0,161
+d15807005f702e2810651b3917f034bdef40529c,"os.path.dirname(self.agent.conf.metadata_proxy_socket), 0o555))",1,0,0.0,162
+d15807005f702e2810651b3917f034bdef40529c,self.useFixture(,1,0,0.0,163
+d15807005f702e2810651b3917f034bdef40529c,class MetadataL3AgentTestCase(L3AgentTestFramework):,1,0,0.0,164
+d15807005f702e2810651b3917f034bdef40529c,# users,1,0,0.0,165
+d15807005f702e2810651b3917f034bdef40529c,# permissions but metadata_proxy_socket folder must be readable by all,1,0,0.0,166
+d15807005f702e2810651b3917f034bdef40529c,# NOTE(cbrandily): TempDir fixture creates a folder with 0o700,1,0,0.0,167
+d15807005f702e2810651b3917f034bdef40529c,self.addCleanup(server.stop),1,0,0.0,168
+d15807005f702e2810651b3917f034bdef40529c,server = utils.UnixDomainWSGIServer('metadata-fake-server'),1,0,0.0,169
+d15807005f702e2810651b3917f034bdef40529c,"def _create_metadata_fake_server(self, status):",1,0,0.0,170
+d15807005f702e2810651b3917f034bdef40529c,# Check status code,1,0,0.0,171
+d15807005f702e2810651b3917f034bdef40529c,"self._validate_fips_for_external_network(router2, fip2_ns)",1,0,0.0,172
+d15807005f702e2810651b3917f034bdef40529c,class UnprivilegedUserMetadataL3AgentTestCase(MetadataL3AgentTestCase):,1,0,0.0,173
+d15807005f702e2810651b3917f034bdef40529c,"'gateway_ip': '19.4.5.1',",1,0,0.0,174
+d15807005f702e2810651b3917f034bdef40529c,"custom_mtu=2000,",1,0,0.0,175
+d15807005f702e2810651b3917f034bdef40529c,"def _dvr_router_lifecycle(self, enable_ha=False, enable_snat=False,",1,0,0.0,176
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(2, len(internal_iface['fixed_ips']))",1,0,0.0,177
+d15807005f702e2810651b3917f034bdef40529c,"agent_mode, **dvr_router2_kwargs))",1,0,0.0,178
+d15807005f702e2810651b3917f034bdef40529c,"router2, fip2_ns = (",1,0,0.0,179
+d15807005f702e2810651b3917f034bdef40529c,'gateway_mac': 'ca:fe:de:ab:cd:fe'},1,0,0.0,180
+d15807005f702e2810651b3917f034bdef40529c,"'subnet_cidr': '19.4.5.0/24',",1,0,0.0,181
+d15807005f702e2810651b3917f034bdef40529c,:param enable_snat:  the value of enable_snat is used,1,0,0.0,182
+d15807005f702e2810651b3917f034bdef40529c,"dvr_router2_kwargs = {'ip_address': '19.4.5.3',",1,0,0.0,183
+d15807005f702e2810651b3917f034bdef40529c,"self._validate_fips_for_external_network(router1, fip1_ns)",1,0,0.0,184
+d15807005f702e2810651b3917f034bdef40529c,"agent_mode, **dvr_router1_kwargs))",1,0,0.0,185
+d15807005f702e2810651b3917f034bdef40529c,self._helper_create_dvr_router_fips_for_ext_network(,1,0,0.0,186
+d15807005f702e2810651b3917f034bdef40529c,"router1, fip1_ns = (",1,0,0.0,187
+d15807005f702e2810651b3917f034bdef40529c,'gateway_mac': 'ca:fe:de:ab:cd:ef'},1,0,0.0,188
+d15807005f702e2810651b3917f034bdef40529c,dual_stack=False):,1,0,0.0,189
+d15807005f702e2810651b3917f034bdef40529c,to  set the  agent_mode.,1,0,0.0,190
+d15807005f702e2810651b3917f034bdef40529c,"'subnet_cidr': '19.4.4.0/24',",1,0,0.0,191
+d15807005f702e2810651b3917f034bdef40529c,# because the whole L3PluginApi is mocked and we need the port,1,0,0.0,192
+d15807005f702e2810651b3917f034bdef40529c,# We also need to mock the get_external_network_id method to,1,0,0.0,193
+d15807005f702e2810651b3917f034bdef40529c,'gw_port'],1,0,0.0,194
+d15807005f702e2810651b3917f034bdef40529c,self.mock_plugin_api.get_agent_gateway_port.return_value = router_info[,1,0,0.0,195
+d15807005f702e2810651b3917f034bdef40529c,# router_info['gw_port'],1,0,0.0,196
+d15807005f702e2810651b3917f034bdef40529c,# The port returned needs to have the same information as,1,0,0.0,197
+d15807005f702e2810651b3917f034bdef40529c,# gateway_port information before the l3_agent will create it.,1,0,0.0,198
+d15807005f702e2810651b3917f034bdef40529c,# We need to mock the get_agent_gateway_port return value,1,0,0.0,199
+d15807005f702e2810651b3917f034bdef40529c,"# The value of agent_mode can be dvr, dvr_snat, or legacy.",1,0,0.0,200
+d15807005f702e2810651b3917f034bdef40529c,"enable_ha, enable_snat)",1,0,0.0,201
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_dvr_router_info(,1,0,0.0,202
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.network_device_mtu = custom_mtu,1,0,0.0,203
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode = 'dvr_snat' if enable_snat else 'dvr',1,0,0.0,204
+d15807005f702e2810651b3917f034bdef40529c,# only dvr and dvr_snat are applicable,1,0,0.0,205
+d15807005f702e2810651b3917f034bdef40529c,# Since by definition this is a dvr (distributed = true),1,0,0.0,206
+d15807005f702e2810651b3917f034bdef40529c,"'gateway_ip': '19.4.4.1',",1,0,0.0,207
+d15807005f702e2810651b3917f034bdef40529c,"dvr_router1_kwargs = {'ip_address': '19.4.4.3',",1,0,0.0,208
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test metadata proxy with least privileged user.",1,0,0.0,209
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test metadata proxy with least privileged user/group.",1,0,0.0,210
+d15807005f702e2810651b3917f034bdef40529c,class TestDvrRouter(L3AgentTestFramework):,1,0,0.0,211
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.conf.set_override('metadata_proxy_group', '65534')",1,0,0.0,212
+d15807005f702e2810651b3917f034bdef40529c,"super(UnprivilegedUserGroupMetadataL3AgentTestCase, self).setUp()",1,0,0.0,213
+d15807005f702e2810651b3917f034bdef40529c,SOCKET_MODE = 0o666,1,0,0.0,214
+d15807005f702e2810651b3917f034bdef40529c,why we use its gid.,1,0,0.0,215
+d15807005f702e2810651b3917f034bdef40529c,"Its group has gid=65534 and is commonly named 'nobody' or 'nogroup', that's",1,0,0.0,216
+d15807005f702e2810651b3917f034bdef40529c,class UnprivilegedUserGroupMetadataL3AgentTestCase(MetadataL3AgentTestCase):,1,0,0.0,217
+d15807005f702e2810651b3917f034bdef40529c,"self._dvr_router_lifecycle(enable_ha=False, enable_snat=False)",1,0,0.0,218
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.conf.set_override('metadata_proxy_watch_log', False)",1,0,0.0,219
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.conf.set_override('metadata_proxy_user', '65534')",1,0,0.0,220
+d15807005f702e2810651b3917f034bdef40529c,"super(UnprivilegedUserMetadataL3AgentTestCase, self).setUp()",1,0,0.0,221
+d15807005f702e2810651b3917f034bdef40529c,SOCKET_MODE = 0o664,1,0,0.0,222
+d15807005f702e2810651b3917f034bdef40529c,"not always, that's why we use its uid.",1,0,0.0,223
+d15807005f702e2810651b3917f034bdef40529c,The least privileged user has uid=65534 and is commonly named 'nobody' but,1,0,0.0,224
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_lifecycle_without_ha_without_snat_with_fips(self):,1,0,0.0,225
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_lifecycle_without_ha_with_snat_with_fips(self):,1,0,0.0,226
+d15807005f702e2810651b3917f034bdef40529c,agent_mode = 'dvr',1,0,0.0,227
+d15807005f702e2810651b3917f034bdef40529c,fip_ns = router.fip_ns.get_name(),1,0,0.0,228
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_fips_for_multiple_ext_networks(self):,1,0,0.0,229
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_namespace_does_not_exist(router),1,0,0.0,230
+d15807005f702e2810651b3917f034bdef40529c,self._assert_dvr_floating_ips(router),1,0,0.0,231
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._namespace_exists(fip_ns)),1,0,0.0,232
+d15807005f702e2810651b3917f034bdef40529c,"def _validate_fips_for_external_network(self, router, fip_ns):",1,0,0.0,233
+d15807005f702e2810651b3917f034bdef40529c,"return router, fip_ns",1,0,0.0,234
+d15807005f702e2810651b3917f034bdef40529c,router_info['_floatingips'][0]['floating_network_id']),1,0,0.0,235
+d15807005f702e2810651b3917f034bdef40529c,"self._dvr_router_lifecycle(enable_ha=False, enable_snat=True)",1,0,0.0,236
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_dvr_router_info(**dvr_router_kwargs),1,0,0.0,237
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode = agent_mode,1,0,0.0,238
+d15807005f702e2810651b3917f034bdef40529c,"self, agent_mode, **dvr_router_kwargs):",1,0,0.0,239
+d15807005f702e2810651b3917f034bdef40529c,def _helper_create_dvr_router_fips_for_ext_network(,1,0,0.0,240
+d15807005f702e2810651b3917f034bdef40529c,"self._dvr_router_lifecycle(enable_ha=True, enable_snat=True)",1,0,0.0,241
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_lifecycle_ha_with_snat_with_fips(self):,1,0,0.0,242
+d15807005f702e2810651b3917f034bdef40529c,# Verify that keepalived config is properly updated.,1,0,0.0,243
+d15807005f702e2810651b3917f034bdef40529c,self.conf = self._configure_agent('agent2'),1,0,0.0,244
+d15807005f702e2810651b3917f034bdef40529c,internal_iface = router.router[l3_constants.INTERFACE_KEY][0],1,0,0.0,245
+d15807005f702e2810651b3917f034bdef40529c,"self._gateway_check(self.agent.conf.ipv6_gateway,",1,0,0.0,246
+d15807005f702e2810651b3917f034bdef40529c,ip_version=ip_vers).get('gateway')),1,0,0.0,247
+d15807005f702e2810651b3917f034bdef40529c,existing_gateway = (external_device.route.get_gateway(,1,0,0.0,248
+d15807005f702e2810651b3917f034bdef40529c,ip_vers = netaddr.IPAddress(expected_gateway).version,1,0,0.0,249
+d15807005f702e2810651b3917f034bdef40529c,expected_gateway = gateway_ip,1,0,0.0,250
+d15807005f702e2810651b3917f034bdef40529c,"def _gateway_check(self, gateway_ip, external_device):",1,0,0.0,251
+d15807005f702e2810651b3917f034bdef40529c,external_device),1,0,0.0,252
+d15807005f702e2810651b3917f034bdef40529c,if not v6_ext_gw_with_sub:,1,0,0.0,253
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_ha_device(self, router):",1,0,0.0,254
+d15807005f702e2810651b3917f034bdef40529c,"self._gateway_check(subnet['gateway_ip'], external_device)",1,0,0.0,255
+d15807005f702e2810651b3917f034bdef40529c,for subnet in external_port['subnets']:,1,0,0.0,256
+d15807005f702e2810651b3917f034bdef40529c,namespace=router.ns_name),1,0,0.0,257
+d15807005f702e2810651b3917f034bdef40529c,"external_device = ip_lib.IPDevice(external_device_name,",1,0,0.0,258
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_gateway(self, router, v6_ext_gw_with_sub=True):",1,0,0.0,259
+d15807005f702e2810651b3917f034bdef40529c,router.ns_name)),1,0,0.0,260
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(expected_gateway, existing_gateway)",1,0,0.0,261
+d15807005f702e2810651b3917f034bdef40529c,def ha_router_dev_name_getter(not_used):,1,0,0.0,262
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_external_device(self, router):",1,0,0.0,263
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: self.floating_ips_configured(router1)),1,0,0.0,264
+d15807005f702e2810651b3917f034bdef40529c,'''Test connection to floatingip which is associated with,1,0,0.0,265
+d15807005f702e2810651b3917f034bdef40529c,def test_fip_connection_from_same_subnet(self):,1,0,0.0,266
+d15807005f702e2810651b3917f034bdef40529c,router1.get_ha_device_name())),1,0,0.0,267
+d15807005f702e2810651b3917f034bdef40529c,"router1.ns_name,",1,0,0.0,268
+d15807005f702e2810651b3917f034bdef40529c,self._get_addresses_on_device(,1,0,0.0,269
+d15807005f702e2810651b3917f034bdef40529c,"router1._get_primary_vip(),",1,0,0.0,270
+d15807005f702e2810651b3917f034bdef40529c,"self.manage_router(restarted_agent, router1.router)",1,0,0.0,271
+d15807005f702e2810651b3917f034bdef40529c,return router.get_ha_device_name(),1,0,0.0,272
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.host, self.agent.conf)",1,0,0.0,273
+d15807005f702e2810651b3917f034bdef40529c,restarted_agent = neutron_l3_agent.L3NATAgentWithStateReport(,1,0,0.0,274
+d15807005f702e2810651b3917f034bdef40529c,"self._add_fip(router1, '192.168.111.12')",1,0,0.0,275
+d15807005f702e2810651b3917f034bdef40529c,def test_ha_router_conf_on_restarted_agent(self):,1,0,0.0,276
+d15807005f702e2810651b3917f034bdef40529c,"ha_router_dev_name_getter, router.ns_name))",1,0,0.0,277
+d15807005f702e2810651b3917f034bdef40529c,"router.router[l3_constants.HA_INTERFACE_KEY],",1,0,0.0,278
+d15807005f702e2810651b3917f034bdef40529c,"external_port, router.get_external_device_name,",1,0,0.0,279
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(router.keepalived_manager.get_process().active),1,0,0.0,280
+d15807005f702e2810651b3917f034bdef40529c,# with IP address from both the subnets.,1,0,0.0,281
+d15807005f702e2810651b3917f034bdef40529c,self._assert_internal_devices(router),1,0,0.0,282
+d15807005f702e2810651b3917f034bdef40529c,# For more details: https://review.openstack.org/#/c/151284/,1,0,0.0,283
+d15807005f702e2810651b3917f034bdef40529c,# platform) is updated to 1.2.10 (or above).,1,0,0.0,284
+d15807005f702e2810651b3917f034bdef40529c,"# keepalived on Ubuntu14.04 (i.e., check-neutron-dsvm-functional",1,0,0.0,285
+d15807005f702e2810651b3917f034bdef40529c,# Note(SridharG): enable the assert_gateway for IPv6 once,1,0,0.0,286
+d15807005f702e2810651b3917f034bdef40529c,if not (enable_ha and (ip_version == 6 or dual_stack)):,1,0,0.0,287
+d15807005f702e2810651b3917f034bdef40529c,self._assert_external_device(router),1,0,0.0,288
+d15807005f702e2810651b3917f034bdef40529c,"lambda: self._metadata_proxy_exists(self.agent.conf, router))",1,0,0.0,289
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self.floating_ips_configured(router)),1,0,0.0,290
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._namespace_exists(router.ns_name)),1,0,0.0,291
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(device_exists),1,0,0.0,292
+d15807005f702e2810651b3917f034bdef40529c,"router.get_internal_device_name,",1,0,0.0,293
+d15807005f702e2810651b3917f034bdef40529c,"device,",1,0,0.0,294
+d15807005f702e2810651b3917f034bdef40529c,"self.device_exists_with_ips_and_mac,",1,0,0.0,295
+d15807005f702e2810651b3917f034bdef40529c,device_exists = functools.partial(,1,0,0.0,296
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_gateway(router, v6_ext_gw_with_sub)",1,0,0.0,297
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_chains(router),1,0,0.0,298
+d15807005f702e2810651b3917f034bdef40529c,self._assert_router_does_not_exist(router),1,0,0.0,299
+d15807005f702e2810651b3917f034bdef40529c,ip_wrapper = ip_lib.IPWrapper(namespace=router.ns_name),1,0,0.0,300
+d15807005f702e2810651b3917f034bdef40529c,self._assert_interfaces_deleted_from_ovs(),1,0,0.0,301
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(router.keepalived_manager.get_process().active),1,0,0.0,302
+d15807005f702e2810651b3917f034bdef40529c,self._assert_ha_device(router),1,0,0.0,303
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual('2', ra_state)",1,0,0.0,304
+d15807005f702e2810651b3917f034bdef40529c,'net.ipv6.conf.%s.accept_ra' % external_device_name]),1,0,0.0,305
+d15807005f702e2810651b3917f034bdef40529c,"ra_state = ip_wrapper.netns.execute(['sysctl', '-b',",1,0,0.0,306
+d15807005f702e2810651b3917f034bdef40529c,if not self.agent.conf.ipv6_gateway:,1,0,0.0,307
+d15807005f702e2810651b3917f034bdef40529c,self._assert_floating_ip_chains(router),1,0,0.0,308
+d15807005f702e2810651b3917f034bdef40529c,if router.use_ipv6 and not v6_ext_gw_with_sub:,1,0,0.0,309
+d15807005f702e2810651b3917f034bdef40529c,# when IPv6 is enabled and no IPv6 gateway is configured.,1,0,0.0,310
+d15807005f702e2810651b3917f034bdef40529c,self._assert_metadata_chains(router),1,0,0.0,311
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_onlink_subnet_routes(router, ip_versions)",1,0,0.0,312
+d15807005f702e2810651b3917f034bdef40529c,"ip_versions = [4, 6] if (ip_version == 6 or dual_stack) else [4]",1,0,0.0,313
+d15807005f702e2810651b3917f034bdef40529c,self._assert_extra_routes(router),1,0,0.0,314
+d15807005f702e2810651b3917f034bdef40529c,fixed_ip on the same subnet of the source fixed_ip.,1,0,0.0,315
+d15807005f702e2810651b3917f034bdef40529c,In other words it confirms that return packets surely,1,0,0.0,316
+d15807005f702e2810651b3917f034bdef40529c,go through the router.,1,0,0.0,317
+d15807005f702e2810651b3917f034bdef40529c,def test_ha_router_ipv6_radvd_status(self):,1,0,0.0,318
+d15807005f702e2810651b3917f034bdef40529c,"router.get_internal_device_name(device['id']), [lladdr],",1,0,0.0,319
+d15807005f702e2810651b3917f034bdef40529c,exists = ip_lib.device_exists_with_ips_and_mac(,1,0,0.0,320
+d15807005f702e2810651b3917f034bdef40529c,lladdr = ip_lib.get_ipv6_lladdr(device['mac_address']),1,0,0.0,321
+d15807005f702e2810651b3917f034bdef40529c,"def _check_lla_status(router, expected):",1,0,0.0,322
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router1.radvd.enabled),1,0,0.0,323
+d15807005f702e2810651b3917f034bdef40529c,"router_info = self.generate_router_info(ip_version=6, enable_ha=True)",1,0,0.0,324
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router2.ha_state == 'backup'),1,0,0.0,325
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(expected, exists)",1,0,0.0,326
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router1.ha_state == 'master'),1,0,0.0,327
+d15807005f702e2810651b3917f034bdef40529c,"router2 = self.manage_router(self.failover_agent, router_info_2)",1,0,0.0,328
+d15807005f702e2810651b3917f034bdef40529c,"self.NESTED_NAMESPACE_SEPARATOR, self.failover_agent.host)",1,0,0.0,329
+d15807005f702e2810651b3917f034bdef40529c,"namespaces.RouterNamespace._get_ns_name(router_info_2['id']),",1,0,0.0,330
+d15807005f702e2810651b3917f034bdef40529c,mac='22:22:22:22:22:22')),1,0,0.0,331
+d15807005f702e2810651b3917f034bdef40529c,"l3_test_common.get_ha_interface(ip='169.254.192.2',",1,0,0.0,332
+d15807005f702e2810651b3917f034bdef40529c,"device['mac_address'], router.ns_name)",1,0,0.0,333
+d15807005f702e2810651b3917f034bdef40529c,"_check_lla_status(router1, True)",1,0,0.0,334
+d15807005f702e2810651b3917f034bdef40529c,router_ip_cidr = self._port_first_ip_cidr(router.internal_ports[0]),1,0,0.0,335
+d15807005f702e2810651b3917f034bdef40529c,ip_cidrs = common_utils.fixed_ip_cidrs(iface['fixed_ips']),1,0,0.0,336
+d15807005f702e2810651b3917f034bdef40529c,interface_id=interface_id),1,0,0.0,337
+d15807005f702e2810651b3917f034bdef40529c,"ip_version=6, ipv6_subnet_modes=[slaac_mode],",1,0,0.0,338
+d15807005f702e2810651b3917f034bdef40529c,"self._add_internal_interface_by_subnet(router.router, count=1,",1,0,0.0,339
+d15807005f702e2810651b3917f034bdef40529c,interface_id = router.router[l3_constants.INTERFACE_KEY][0]['id'],1,0,0.0,340
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(ip_addr, config)",1,0,0.0,341
+d15807005f702e2810651b3917f034bdef40529c,for ip_addr in ip_cidrs:,1,0,0.0,342
+d15807005f702e2810651b3917f034bdef40529c,config = router.keepalived_manager.config.get_config_str(),1,0,0.0,343
+d15807005f702e2810651b3917f034bdef40529c,device_name = router1.get_ha_device_name(),1,0,0.0,344
+d15807005f702e2810651b3917f034bdef40529c,"def verify_ip_in_keepalived_config(router, iface):",1,0,0.0,345
+d15807005f702e2810651b3917f034bdef40529c,"router_info = self.generate_router_info(enable_ha=True, ip_version=6)",1,0,0.0,346
+d15807005f702e2810651b3917f034bdef40529c,def test_ha_router_process_ipv6_subnets_to_existing_port(self):,1,0,0.0,347
+d15807005f702e2810651b3917f034bdef40529c,"_check_lla_status(router1, False)",1,0,0.0,348
+d15807005f702e2810651b3917f034bdef40529c,"utils.wait_until_true(lambda: not router1.radvd.enabled, timeout=10)",1,0,0.0,349
+d15807005f702e2810651b3917f034bdef40529c,"ha_device = ip_lib.IPDevice(device_name, namespace=router1.ns_name)",1,0,0.0,350
+d15807005f702e2810651b3917f034bdef40529c,router_info_2[l3_constants.HA_INTERFACE_KEY] = (,1,0,0.0,351
+d15807005f702e2810651b3917f034bdef40529c,router_info_2 = copy.deepcopy(router_info),1,0,0.0,352
+d15807005f702e2810651b3917f034bdef40529c,"self.NESTED_NAMESPACE_SEPARATOR, self.agent.host)",1,0,0.0,353
+d15807005f702e2810651b3917f034bdef40529c,dst_fip = '19.4.4.10',1,0,0.0,354
+d15807005f702e2810651b3917f034bdef40529c,def test_delete_external_gateway_on_standby_router(self):,1,0,0.0,355
+d15807005f702e2810651b3917f034bdef40529c,"dst_fip, protocol_port,",1,0,0.0,356
+d15807005f702e2810651b3917f034bdef40529c,"src_machine.namespace, dst_machine.namespace,",1,0,0.0,357
+d15807005f702e2810651b3917f034bdef40529c,"l3_constants.PROTO_NAME_TCP, dst_machine.namespace)",1,0,0.0,358
+d15807005f702e2810651b3917f034bdef40529c,protocol_port = net_helpers.get_free_namespace_port(,1,0,0.0,359
+d15807005f702e2810651b3917f034bdef40529c,"self._add_fip(router, dst_fip, fixed_address=dst_machine.ip)",1,0,0.0,360
+d15807005f702e2810651b3917f034bdef40529c,router_ip)).machines,1,0,0.0,361
+d15807005f702e2810651b3917f034bdef40529c,"'qrouter-' + router_info['id'],",1,0,0.0,362
+d15807005f702e2810651b3917f034bdef40529c,"net_helpers.increment_ip_cidr(router_ip_cidr),",1,0,0.0,363
+d15807005f702e2810651b3917f034bdef40529c,"br_int,",1,0,0.0,364
+d15807005f702e2810651b3917f034bdef40529c,machine_fixtures.PeerMachines(,1,0,0.0,365
+d15807005f702e2810651b3917f034bdef40529c,"src_machine, dst_machine = self.useFixture(",1,0,0.0,366
+d15807005f702e2810651b3917f034bdef40529c,br_int = get_ovs_bridge(self.agent.conf.ovs_integration_bridge),1,0,0.0,367
+d15807005f702e2810651b3917f034bdef40529c,router_ip = router_ip_cidr.partition('/')[0],1,0,0.0,368
+d15807005f702e2810651b3917f034bdef40529c,# The purpose of the test is to simply make sure no exception is raised,1,0,0.0,369
+d15807005f702e2810651b3917f034bdef40529c,"router.external_gateway_removed(port, interface_name)",1,0,0.0,370
+d15807005f702e2810651b3917f034bdef40529c,class L3HATestFramework(L3AgentTestFramework):,1,0,0.0,371
+d15807005f702e2810651b3917f034bdef40529c,NESTED_NAMESPACE_SEPARATOR = '@',1,0,0.0,372
+d15807005f702e2810651b3917f034bdef40529c,"super(L3HATestFramework, self).setUp()",1,0,0.0,373
+d15807005f702e2810651b3917f034bdef40529c,"# attach interfaces, etc...)",1,0,0.0,374
+d15807005f702e2810651b3917f034bdef40529c,self.failover_agent = neutron_l3_agent.L3NATAgentWithStateReport(,1,0,0.0,375
+d15807005f702e2810651b3917f034bdef40529c,"'agent2', self.conf)",1,0,0.0,376
+d15807005f702e2810651b3917f034bdef40529c,br_int_1 = self._get_agent_ovs_integration_bridge(self.agent),1,0,0.0,377
+d15807005f702e2810651b3917f034bdef40529c,br_int_2 = self._get_agent_ovs_integration_bridge(self.failover_agent),1,0,0.0,378
+d15807005f702e2810651b3917f034bdef40529c,"veth1, veth2 = self.useFixture(net_helpers.VethFixture()).ports",1,0,0.0,379
+d15807005f702e2810651b3917f034bdef40529c,br_int_1.add_port(veth1.name),1,0,0.0,380
+d15807005f702e2810651b3917f034bdef40529c,br_int_2.add_port(veth2.name),1,0,0.0,381
+d15807005f702e2810651b3917f034bdef40529c,def test_ha_router_failover(self):,1,0,0.0,382
+d15807005f702e2810651b3917f034bdef40529c,get_ns_name = mock.patch.object(,1,0,0.0,383
+d15807005f702e2810651b3917f034bdef40529c,"namespaces.RouterNamespace, '_get_ns_name').start()",1,0,0.0,384
+d15807005f702e2810651b3917f034bdef40529c,"get_ns_name.return_value = ""%s%s%s"" % (",1,0,0.0,385
+d15807005f702e2810651b3917f034bdef40529c,# With all that set we can now ask the l3_agent to,1,0,0.0,386
+d15807005f702e2810651b3917f034bdef40529c,"'binding:host_id': self.agent.conf.host,",1,0,0.0,387
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_no_ip_addresses_on_interface(router.ha_namespace,",1,0,0.0,388
+d15807005f702e2810651b3917f034bdef40529c,fip_agent_gw_port = router_info[l3_constants.FLOATINGIP_AGENT_INTF_KEY],1,0,0.0,389
+d15807005f702e2810651b3917f034bdef40529c,fip_agent_gw_port[0]),1,0,0.0,390
+d15807005f702e2810651b3917f034bdef40529c,self.mock_plugin_api.get_agent_gateway_port.return_value = (,1,0,0.0,391
+d15807005f702e2810651b3917f034bdef40529c,router_info[l3_constants.FLOATINGIP_AGENT_INTF_KEY] = [],1,0,0.0,392
+d15807005f702e2810651b3917f034bdef40529c,# host binding.,1,0,0.0,393
+d15807005f702e2810651b3917f034bdef40529c,"# that the server did not create the port, since there was no valid",1,0,0.0,394
+d15807005f702e2810651b3917f034bdef40529c,"# Now let us not pass the FLOATINGIP_AGENT_INTF_KEY, to emulate",1,0,0.0,395
+d15807005f702e2810651b3917f034bdef40529c,binding is done later after floatingip association.,1,0,0.0,396
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._namespace_exists(namespace)),1,0,0.0,397
+d15807005f702e2810651b3917f034bdef40529c,port changes while migration or when the private port host,1,0,0.0,398
+d15807005f702e2810651b3917f034bdef40529c,This test validates the condition where floatingip private,1,0,0.0,399
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test to validate the floatingip migration or latebinding.",1,0,0.0,400
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_fip_late_binding(self):,1,0,0.0,401
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_namespace_does_not_exist(router1),1,0,0.0,402
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(self._namespace_exists(fip_ns)),1,0,0.0,403
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_snat_namespace_exists(self, router):",1,0,0.0,404
+d15807005f702e2810651b3917f034bdef40529c,def _get_dvr_snat_namespace_device_status(,1,0,0.0,405
+d15807005f702e2810651b3917f034bdef40529c,# This is also like there is no current binding.,1,0,0.0,406
+d15807005f702e2810651b3917f034bdef40529c,"""""""Test to validate the snat namespace with interface remove.",1,0,0.0,407
+d15807005f702e2810651b3917f034bdef40529c,internal_device_name = router1._get_snat_int_device_name(,1,0,0.0,408
+d15807005f702e2810651b3917f034bdef40529c,# Now save the internal device name to verify later,1,0,0.0,409
+d15807005f702e2810651b3917f034bdef40529c,router1.router[l3_constants.SNAT_ROUTER_INTF_KEY]),1,0,0.0,410
+d15807005f702e2810651b3917f034bdef40529c,csnat_internal_port = (,1,0,0.0,411
+d15807005f702e2810651b3917f034bdef40529c,snat_internal_port = router_info[l3_constants.SNAT_ROUTER_INTF_KEY],1,0,0.0,412
+d15807005f702e2810651b3917f034bdef40529c,and internal devices. It also validates if the internal,1,0,0.0,413
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_snat_namespace_with_interface_remove(self):,1,0,0.0,414
+d15807005f702e2810651b3917f034bdef40529c,"self, router, internal_dev_name=None):",1,0,0.0,415
+d15807005f702e2810651b3917f034bdef40529c,"return qg_device_created_successfully, sg_device_created_successfully",1,0,0.0,416
+d15807005f702e2810651b3917f034bdef40529c,"internal_dev_name, namespace=snat_ns)",1,0,0.0,417
+d15807005f702e2810651b3917f034bdef40529c,sg_device_created_successfully = ip_lib.device_exists(,1,0,0.0,418
+d15807005f702e2810651b3917f034bdef40529c,"external_device_name, namespace=snat_ns)",1,0,0.0,419
+d15807005f702e2810651b3917f034bdef40529c,qg_device_created_successfully = ip_lib.device_exists(,1,0,0.0,420
+d15807005f702e2810651b3917f034bdef40529c,snat_ns = dvr_snat_ns.SnatNamespace.get_snat_ns_name(,1,0,0.0,421
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._namespace_exists(router1.ns_name)),1,0,0.0,422
+d15807005f702e2810651b3917f034bdef40529c,# should not create the floatingip namespace on the given agent.,1,0,0.0,423
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_namespace_exists(router1),1,0,0.0,424
+d15807005f702e2810651b3917f034bdef40529c,"# existing ports on the uplinked subnet, the ARP",1,0,0.0,425
+d15807005f702e2810651b3917f034bdef40529c,"'fixed_ips': [{'ip_address': expected_neighbor}],",1,0,0.0,426
+d15807005f702e2810651b3917f034bdef40529c,port_data = {,1,0,0.0,427
+d15807005f702e2810651b3917f034bdef40529c,expected_neighbor = '35.4.1.10',1,0,0.0,428
+d15807005f702e2810651b3917f034bdef40529c,router_info['distributed'] = True,1,0,0.0,429
+d15807005f702e2810651b3917f034bdef40529c,router_info = l3_test_common.prepare_router_data(),1,0,0.0,430
+d15807005f702e2810651b3917f034bdef40529c,# cache is properly populated.,1,0,0.0,431
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_add_internal_network_set_arp_cache(self):,1,0,0.0,432
+d15807005f702e2810651b3917f034bdef40529c,'device_owner': DEVICE_OWNER_COMPUTE,1,0,0.0,433
+d15807005f702e2810651b3917f034bdef40529c,return info['priority'],1,0,0.0,434
+d15807005f702e2810651b3917f034bdef40529c,for line in lines:,1,0,0.0,435
+d15807005f702e2810651b3917f034bdef40529c,"lines = iprule.rule._as_root([4], ['show']).splitlines()",1,0,0.0,436
+d15807005f702e2810651b3917f034bdef40529c,iprule = ip_lib.IPRule(namespace),1,0,0.0,437
+d15807005f702e2810651b3917f034bdef40529c,"def _get_fixed_ip_rule_priority(self, namespace, fip):",1,0,0.0,438
+d15807005f702e2810651b3917f034bdef40529c,"self.assertNotEqual(fip_rule_prio_1, fip_rule_prio_2)",1,0,0.0,439
+d15807005f702e2810651b3917f034bdef40529c,"'mac_address': 'fa:3e:aa:bb:cc:dd',",1,0,0.0,440
+d15807005f702e2810651b3917f034bdef40529c,self.agent.plugin_rpc.get_ports_by_subnet.return_value = [port_data],1,0,0.0,441
+d15807005f702e2810651b3917f034bdef40529c,# In this case the floatingip binding is different and so it,1,0,0.0,442
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(expected_mtu, dev_mtu)",1,0,0.0,443
+d15807005f702e2810651b3917f034bdef40529c,floating_ip['host'] = 'my_new_host',1,0,0.0,444
+d15807005f702e2810651b3917f034bdef40529c,floating_ip = router_info['_floatingips'][0],1,0,0.0,445
+d15807005f702e2810651b3917f034bdef40529c,binding will not be there.,1,0,0.0,446
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_fip_agent_mismatch(self):,1,0,0.0,447
+d15807005f702e2810651b3917f034bdef40529c,router.fip_ns.get_name()),1,0,0.0,448
+d15807005f702e2810651b3917f034bdef40529c,"router.router_id, router.fip_ns.get_int_device_name,",1,0,0.0,449
+d15807005f702e2810651b3917f034bdef40529c,"router.router_id, router.fip_ns.get_rtr_ext_device_name,",1,0,0.0,450
+d15807005f702e2810651b3917f034bdef40529c,internal_device = router1.get_internal_device_name(,1,0,0.0,451
+d15807005f702e2810651b3917f034bdef40529c,dev_mtu = self.get_device_mtu(,1,0,0.0,452
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_rfp_fpr_mtu(self, router, expected_mtu=1500):",1,0,0.0,453
+d15807005f702e2810651b3917f034bdef40529c,neighbors.show(ip_version=4).split()[0]),1,0,0.0,454
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(expected_neighbor,",1,0,0.0,455
+d15807005f702e2810651b3917f034bdef40529c,"neighbors = ip_lib.IPDevice(internal_device, router1.ns_name).neigh",1,0,0.0,456
+d15807005f702e2810651b3917f034bdef40529c,router_info['_interfaces'][0]['id']),1,0,0.0,457
+d15807005f702e2810651b3917f034bdef40529c,csnat_internal_port[0]['id']),1,0,0.0,458
+d15807005f702e2810651b3917f034bdef40529c,"qg_device, sg_device = self._get_dvr_snat_namespace_device_status(",1,0,0.0,459
+d15807005f702e2810651b3917f034bdef40529c,floating_ips[0]['fixed_ip_address'] = '10.0.0.2',1,0,0.0,460
+d15807005f702e2810651b3917f034bdef40529c,ex_gw_port['id']),1,0,0.0,461
+d15807005f702e2810651b3917f034bdef40529c,"ex_gw_port_name,",1,0,0.0,462
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_ip_address_on_interface(namespace,",1,0,0.0,463
+d15807005f702e2810651b3917f034bdef40529c,"prefix_len = snat_port[""fixed_ips""][0]['prefixlen']",1,0,0.0,464
+d15807005f702e2810651b3917f034bdef40529c,"prefix_len = ex_gw_port[""fixed_ips""][0]['prefixlen']",1,0,0.0,465
+d15807005f702e2810651b3917f034bdef40529c,snat_port['id']),1,0,0.0,466
+d15807005f702e2810651b3917f034bdef40529c,snat_port_name = router._get_snat_int_device_name(,1,0,0.0,467
+d15807005f702e2810651b3917f034bdef40529c,ex_gw_port_name = router.get_external_device_name(,1,0,0.0,468
+d15807005f702e2810651b3917f034bdef40529c,"snat_port_name,",1,0,0.0,469
+d15807005f702e2810651b3917f034bdef40529c,snat_port = router.get_snat_interfaces()[0],1,0,0.0,470
+d15807005f702e2810651b3917f034bdef40529c,ex_gw_port = router.get_ex_gw_port(),1,0,0.0,471
+d15807005f702e2810651b3917f034bdef40529c,namespace = router.ha_namespace,1,0,0.0,472
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_ip_addresses_in_dvr_ha_snat_namespace(self, router):",1,0,0.0,473
+d15807005f702e2810651b3917f034bdef40529c,get_snat_ns_name.return_value = mocked_r_snat_ns_name,1,0,0.0,474
+d15807005f702e2810651b3917f034bdef40529c,get_ns_name.return_value = mocked_r_ns_name,1,0,0.0,475
+d15807005f702e2810651b3917f034bdef40529c,ex_gw_port_cidr),1,0,0.0,476
+d15807005f702e2810651b3917f034bdef40529c,snat_port_cidr),1,0,0.0,477
+d15807005f702e2810651b3917f034bdef40529c,"mocked_r_ns_name,",1,0,0.0,478
+d15807005f702e2810651b3917f034bdef40529c,self._assert_ip_addresses_in_dvr_ha_snat_namespace(router1),1,0,0.0,479
+d15807005f702e2810651b3917f034bdef40529c,self.agent.fipnamespace_delete_on_ext_net(,1,0,0.0,480
+d15807005f702e2810651b3917f034bdef40529c,ext_net_id = ext_gateway_port['network_id'],1,0,0.0,481
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_fip_namespace_deleted(self, ext_gateway_port):",1,0,0.0,482
+d15807005f702e2810651b3917f034bdef40529c,self._assert_no_ip_addresses_in_dvr_ha_snat_namespace(router1),1,0,0.0,483
+d15807005f702e2810651b3917f034bdef40529c,self._assert_ip_addresses_in_dvr_ha_snat_namespace(router2),1,0,0.0,484
+d15807005f702e2810651b3917f034bdef40529c,self._assert_no_ip_addresses_in_dvr_ha_snat_namespace(router2),1,0,0.0,485
+d15807005f702e2810651b3917f034bdef40529c,router2 = self._create_dvr_ha_router(self.failover_agent),1,0,0.0,486
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_no_ip_addresses_in_dvr_ha_snat_namespace(self, router):",1,0,0.0,487
+d15807005f702e2810651b3917f034bdef40529c,self._setup_dvr_ha_bridges(),1,0,0.0,488
+d15807005f702e2810651b3917f034bdef40529c,self._setup_dvr_ha_agents(),1,0,0.0,489
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_ha_router_failover(self):,1,0,0.0,490
+d15807005f702e2810651b3917f034bdef40529c,ex_gw_port_name),1,0,0.0,491
+d15807005f702e2810651b3917f034bdef40529c,snat_port_name),1,0,0.0,492
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_no_ip_addresses_on_interface(namespace,",1,0,0.0,493
+d15807005f702e2810651b3917f034bdef40529c,mocked_r_snat_ns_name) = self._mocked_dvr_ha_router(agent),1,0,0.0,494
+d15807005f702e2810651b3917f034bdef40529c,"(r_info,",1,0,0.0,495
+d15807005f702e2810651b3917f034bdef40529c,"router1, internal_dev_name=internal_device_name)",1,0,0.0,496
+d15807005f702e2810651b3917f034bdef40529c,"# that the server did not send it, since the interface has been",1,0,0.0,497
+d15807005f702e2810651b3917f034bdef40529c,"router_updated, internal_dev_name=internal_device_name)",1,0,0.0,498
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_namespace_exists(router_updated),1,0,0.0,499
+d15807005f702e2810651b3917f034bdef40529c,router_updated = self.agent.router_info[router_info['id']],1,0,0.0,500
+d15807005f702e2810651b3917f034bdef40529c,self.agent._process_updated_router(router1.router),1,0,0.0,501
+d15807005f702e2810651b3917f034bdef40529c,router1.router[l3_constants.SNAT_ROUTER_INTF_KEY] = [],1,0,0.0,502
+d15807005f702e2810651b3917f034bdef40529c,# removed.,1,0,0.0,503
+d15807005f702e2810651b3917f034bdef40529c,"# Now let us not pass the SNAT_ROUTER_INTF_KEY, to emulate",1,0,0.0,504
+d15807005f702e2810651b3917f034bdef40529c,"def _mocked_dvr_ha_router(self, agent):",1,0,0.0,505
+d15807005f702e2810651b3917f034bdef40529c,router1.router[l3_constants.INTERFACE_KEY] = [],1,0,0.0,506
+d15807005f702e2810651b3917f034bdef40529c,# the interface has been removed.,1,0,0.0,507
+d15807005f702e2810651b3917f034bdef40529c,"# Now let us not pass INTERFACE_KEY, to emulate",1,0,0.0,508
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(router1.snat_ports, snat_internal_port)",1,0,0.0,509
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(sg_device),1,0,0.0,510
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(qg_device),1,0,0.0,511
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(sg_device),1,0,0.0,512
+d15807005f702e2810651b3917f034bdef40529c,"r_info = self.generate_dvr_router_info(enable_ha=True,",1,0,0.0,513
+d15807005f702e2810651b3917f034bdef40529c,'get_snat_ns_name').start(),1,0,0.0,514
+d15807005f702e2810651b3917f034bdef40529c,def _setup_dvr_ha_agents(self):,1,0,0.0,515
+d15807005f702e2810651b3917f034bdef40529c,"get_snat_ns_name = mock.patch.object(dvr_snat_ns.SnatNamespace,",1,0,0.0,516
+d15807005f702e2810651b3917f034bdef40529c,'_get_ns_name').start(),1,0,0.0,517
+d15807005f702e2810651b3917f034bdef40529c,"get_ns_name = mock.patch.object(namespaces.RouterNamespace,",1,0,0.0,518
+d15807005f702e2810651b3917f034bdef40529c,"def _create_dvr_ha_router(self, agent):",1,0,0.0,519
+d15807005f702e2810651b3917f034bdef40529c,def _setup_dvr_ha_bridges(self):,1,0,0.0,520
+d15807005f702e2810651b3917f034bdef40529c,self.failover_agent.conf.agent_mode = 'dvr_snat',1,0,0.0,521
+d15807005f702e2810651b3917f034bdef40529c,"return r_info, mocked_r_ns_name, mocked_r_snat_ns_name",1,0,0.0,522
+d15807005f702e2810651b3917f034bdef40529c,"enable_snat=True,",1,0,0.0,523
+d15807005f702e2810651b3917f034bdef40529c,mocked_r_ns_name = r_ns_name + '@' + agent.host,1,0,0.0,524
+d15807005f702e2810651b3917f034bdef40529c,"r_ns_name = namespaces.build_ns_name(namespaces.NS_PREFIX,",1,0,0.0,525
+d15807005f702e2810651b3917f034bdef40529c,mocked_r_snat_ns_name = r_snat_ns_name + '@' + agent.host,1,0,0.0,526
+d15807005f702e2810651b3917f034bdef40529c,r_info['id']),1,0,0.0,527
+d15807005f702e2810651b3917f034bdef40529c,"r_snat_ns_name = namespaces.build_ns_name(dvr_snat_ns.SNAT_NS_PREFIX,",1,0,0.0,528
+d15807005f702e2810651b3917f034bdef40529c,agent=agent),1,0,0.0,529
+d15807005f702e2810651b3917f034bdef40529c,fip_rule_prio_2 = self._get_fixed_ip_rule_priority(,1,0,0.0,530
+d15807005f702e2810651b3917f034bdef40529c,floating_ips[0]['floating_ip_address'] = '21.4.4.2',1,0,0.0,531
+d15807005f702e2810651b3917f034bdef40529c,ext_gateway_port = router_info['gw_port'],1,0,0.0,532
+d15807005f702e2810651b3917f034bdef40529c,"'id': fixed_ip['subnet_id']}],",1,0,0.0,533
+d15807005f702e2810651b3917f034bdef40529c,"'ip_address': fip_gw_port_ip,",1,0,0.0,534
+d15807005f702e2810651b3917f034bdef40529c,"'fixed_ips': [{'subnet_id': fixed_ip['subnet_id'],",1,0,0.0,535
+d15807005f702e2810651b3917f034bdef40529c,# device has an IP address.,1,0,0.0,536
+d15807005f702e2810651b3917f034bdef40529c,"'mac_address': 'fa:16:3e:80:8d:89',",1,0,0.0,537
+d15807005f702e2810651b3917f034bdef40529c,"'device_owner': l3_constants.DEVICE_OWNER_AGENT_GW,",1,0,0.0,538
+d15807005f702e2810651b3917f034bdef40529c,"'network_id': external_gw_port['network_id'],",1,0,0.0,539
+d15807005f702e2810651b3917f034bdef40529c,"'gateway_ip': float_subnet['gateway_ip'],",1,0,0.0,540
+d15807005f702e2810651b3917f034bdef40529c,"'id': _uuid(),",1,0,0.0,541
+d15807005f702e2810651b3917f034bdef40529c,"{'cidr': float_subnet['cidr'],",1,0,0.0,542
+d15807005f702e2810651b3917f034bdef40529c,{'subnets': [,1,0,0.0,543
+d15807005f702e2810651b3917f034bdef40529c,router[l3_constants.FLOATINGIP_AGENT_INTF_KEY] = [,1,0,0.0,544
+d15807005f702e2810651b3917f034bdef40529c,prefixlen = netaddr.IPNetwork(float_subnet['cidr']).prefixlen,1,0,0.0,545
+d15807005f702e2810651b3917f034bdef40529c,fip_gw_port_ip = str(netaddr.IPAddress(port_ip) + 5),1,0,0.0,546
+d15807005f702e2810651b3917f034bdef40529c,port_ip = fixed_ip['ip_address'],1,0,0.0,547
+d15807005f702e2810651b3917f034bdef40529c,"'prefixlen': prefixlen}],",1,0,0.0,548
+d15807005f702e2810651b3917f034bdef40529c,'device_id': _uuid()},1,0,0.0,549
+d15807005f702e2810651b3917f034bdef40529c,fixed_ip = external_gw_port['fixed_ips'][0],1,0,0.0,550
+d15807005f702e2810651b3917f034bdef40529c,# in the list of snat ports,1,0,0.0,551
+d15807005f702e2810651b3917f034bdef40529c,"'device_owner': l3_constants.DEVICE_OWNER_ROUTER_SNAT,",1,0,0.0,552
+d15807005f702e2810651b3917f034bdef40529c,"'network_id': port['network_id'],",1,0,0.0,553
+d15807005f702e2810651b3917f034bdef40529c,"'gateway_ip': snat_subnet['gateway_ip'],",1,0,0.0,554
+d15807005f702e2810651b3917f034bdef40529c,"{'cidr': snat_subnet['cidr'],",1,0,0.0,555
+d15807005f702e2810651b3917f034bdef40529c,router[l3_constants.SNAT_ROUTER_INTF_KEY] = [,1,0,0.0,556
+d15807005f702e2810651b3917f034bdef40529c,prefixlen = netaddr.IPNetwork(snat_subnet['cidr']).prefixlen,1,0,0.0,557
+d15807005f702e2810651b3917f034bdef40529c,snat_ip = str(netaddr.IPAddress(port_ip) + 5),1,0,0.0,558
+d15807005f702e2810651b3917f034bdef40529c,],1,0,0.0,559
+d15807005f702e2810651b3917f034bdef40529c,snat_subnet = port['subnets'][0],1,0,0.0,560
+d15807005f702e2810651b3917f034bdef40529c,port = internal_ports[0],1,0,0.0,561
+d15807005f702e2810651b3917f034bdef40529c,# Get values from internal port,1,0,0.0,562
+d15807005f702e2810651b3917f034bdef40529c,if not snat_port_list and internal_ports:,1,0,0.0,563
+d15807005f702e2810651b3917f034bdef40529c,"snat_port_list = router.get(l3_constants.SNAT_ROUTER_INTF_KEY, [])",1,0,0.0,564
+d15807005f702e2810651b3917f034bdef40529c,"def _add_snat_port_info_to_router(self, router, internal_ports):",1,0,0.0,565
+d15807005f702e2810651b3917f034bdef40529c,float_subnet = external_gw_port['subnets'][0],1,0,0.0,566
+d15807005f702e2810651b3917f034bdef40529c,if not fip_gw_port_list and external_gw_port:,1,0,0.0,567
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_dvr_external_device(self, router):",1,0,0.0,568
+d15807005f702e2810651b3917f034bdef40529c,"router, ip_versions, snat_ns_name)",1,0,0.0,569
+d15807005f702e2810651b3917f034bdef40529c,**kwargs):,1,0,0.0,570
+d15807005f702e2810651b3917f034bdef40529c,"agent=None,",1,0,0.0,571
+d15807005f702e2810651b3917f034bdef40529c,"enable_snat=False,",1,0,0.0,572
+d15807005f702e2810651b3917f034bdef40529c,"enable_ha=False,",1,0,0.0,573
+d15807005f702e2810651b3917f034bdef40529c,"def generate_dvr_router_info(self,",1,0,0.0,574
+d15807005f702e2810651b3917f034bdef40529c,self._assert_fip_namespace_deleted(ext_gateway_port),1,0,0.0,575
+d15807005f702e2810651b3917f034bdef40529c,self._assert_onlink_subnet_routes(,1,0,0.0,576
+d15807005f702e2810651b3917f034bdef40529c,"enable_floating_ip=True,",1,0,0.0,577
+d15807005f702e2810651b3917f034bdef40529c,router.router_id),1,0,0.0,578
+d15807005f702e2810651b3917f034bdef40529c,snat_ns_name = dvr_snat_ns.SnatNamespace.get_snat_ns_name(,1,0,0.0,579
+d15807005f702e2810651b3917f034bdef40529c,if enable_snat:,1,0,0.0,580
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_rfp_fpr_mtu(router, custom_mtu)",1,0,0.0,581
+d15807005f702e2810651b3917f034bdef40529c,self._assert_dvr_gateway(router),1,0,0.0,582
+d15807005f702e2810651b3917f034bdef40529c,self._assert_dvr_external_device(router),1,0,0.0,583
+d15807005f702e2810651b3917f034bdef40529c,if not agent:,1,0,0.0,584
+d15807005f702e2810651b3917f034bdef40529c,**kwargs),1,0,0.0,585
+d15807005f702e2810651b3917f034bdef40529c,"l3_constants.FLOATINGIP_AGENT_INTF_KEY, [])",1,0,0.0,586
+d15807005f702e2810651b3917f034bdef40529c,floating_ip['status'] = 'ACTIVE',1,0,0.0,587
+d15807005f702e2810651b3917f034bdef40529c,fip_gw_port_list = router.get(,1,0,0.0,588
+d15807005f702e2810651b3917f034bdef40529c,"def _add_fip_agent_gw_port_info_to_router(self, router, external_gw_port):",1,0,0.0,589
+d15807005f702e2810651b3917f034bdef40529c,"self._add_fip_agent_gw_port_info_to_router(router, external_gw_port)",1,0,0.0,590
+d15807005f702e2810651b3917f034bdef40529c,external_gw_port = router['gw_port'],1,0,0.0,591
+d15807005f702e2810651b3917f034bdef40529c,# dependent on the agent_type.,1,0,0.0,592
+d15807005f702e2810651b3917f034bdef40529c,"self._add_snat_port_info_to_router(router, internal_ports)",1,0,0.0,593
+d15807005f702e2810651b3917f034bdef40529c,floating_ip['port_id'] = internal_ports[0]['id'],1,0,0.0,594
+d15807005f702e2810651b3917f034bdef40529c,"internal_ports = router.get(l3_constants.INTERFACE_KEY, [])",1,0,0.0,595
+d15807005f702e2810651b3917f034bdef40529c,floating_ip['host'] = agent.conf.host,1,0,0.0,596
+d15807005f702e2810651b3917f034bdef40529c,floating_ip['floating_network_id'] = router['gw_port']['network_id'],1,0,0.0,597
+d15807005f702e2810651b3917f034bdef40529c,floating_ip = router['_floatingips'][0],1,0,0.0,598
+d15807005f702e2810651b3917f034bdef40529c,router['gw_port']['binding:host_id'] = agent.conf.host,1,0,0.0,599
+d15807005f702e2810651b3917f034bdef40529c,router['gw_port_host'] = agent.conf.host,1,0,0.0,600
+d15807005f702e2810651b3917f034bdef40529c,router['distributed'] = True,1,0,0.0,601
+d15807005f702e2810651b3917f034bdef40529c,"'ip_address': snat_ip,",1,0,0.0,602
+d15807005f702e2810651b3917f034bdef40529c,# snat_ns_name namespace,1,0,0.0,603
+d15807005f702e2810651b3917f034bdef40529c,restarted_agent = neutron_l3_agent.L3NATAgent(,1,0,0.0,604
+d15807005f702e2810651b3917f034bdef40529c,"fip_ns.get_ext_device_name(external_gw_port['id']),",1,0,0.0,605
+d15807005f702e2810651b3917f034bdef40529c,device_name = fip_ns.get_int_device_name(router.router_id),1,0,0.0,606
+d15807005f702e2810651b3917f034bdef40529c,# Check fpr-router device has been created,1,0,0.0,607
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(fg_port_created_successfully),1,0,0.0,608
+d15807005f702e2810651b3917f034bdef40529c,namespace=fip_ns_name),1,0,0.0,609
+d15807005f702e2810651b3917f034bdef40529c,"external_gw_port['mac_address'],",1,0,0.0,610
+d15807005f702e2810651b3917f034bdef40529c,"[self._port_first_ip_cidr(external_gw_port)],",1,0,0.0,611
+d15807005f702e2810651b3917f034bdef40529c,fg_port_created_successfully = ip_lib.device_exists_with_ips_and_mac(,1,0,0.0,612
+d15807005f702e2810651b3917f034bdef40529c,"device_name, namespace=fip_ns_name)",1,0,0.0,613
+d15807005f702e2810651b3917f034bdef40529c,fip_ns_name = fip_ns.get_name(),1,0,0.0,614
+d15807005f702e2810651b3917f034bdef40529c,fip_ns = self.agent.get_fip_ns(floating_ips[0]['floating_network_id']),1,0,0.0,615
+d15807005f702e2810651b3917f034bdef40529c,external_gw_port = floating_agent_gw_port[0],1,0,0.0,616
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(floating_agent_gw_port),1,0,0.0,617
+d15807005f702e2810651b3917f034bdef40529c,router.router[l3_constants.FLOATINGIP_AGENT_INTF_KEY]),1,0,0.0,618
+d15807005f702e2810651b3917f034bdef40529c,floating_agent_gw_port = (,1,0,0.0,619
+d15807005f702e2810651b3917f034bdef40529c,fpr_router_device_created_successfully = ip_lib.device_exists(,1,0,0.0,620
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(fpr_router_device_created_successfully),1,0,0.0,621
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(floating_ips),1,0,0.0,622
+d15807005f702e2810651b3917f034bdef40529c,router1.router[l3_constants.FLOATINGIP_KEY] = [],1,0,0.0,623
+d15807005f702e2810651b3917f034bdef40529c,"router_ns, floating_ips[0]['fixed_ip_address'])",1,0,0.0,624
+d15807005f702e2810651b3917f034bdef40529c,fip_rule_prio_1 = self._get_fixed_ip_rule_priority(,1,0,0.0,625
+d15807005f702e2810651b3917f034bdef40529c,router_ns = router.ns_name,1,0,0.0,626
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode = 'dvr',1,0,0.0,627
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_add_fips_on_restarted_agent(self):,1,0,0.0,628
+d15807005f702e2810651b3917f034bdef40529c,self._assert_dvr_snat_gateway(router1),1,0,0.0,629
+d15807005f702e2810651b3917f034bdef40529c,fip_ns = router1.fip_ns.get_name(),1,0,0.0,630
+d15807005f702e2810651b3917f034bdef40529c,# Check rfp-<router-id> is created correctly,1,0,0.0,631
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_dvr_router_info(),1,0,0.0,632
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode = 'dvr_snat',1,0,0.0,633
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_rem_fips_on_restarted_agent(self):,1,0,0.0,634
+d15807005f702e2810651b3917f034bdef40529c,"device_name, namespace=router.ns_name))",1,0,0.0,635
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(ip_lib.device_exists(,1,0,0.0,636
+d15807005f702e2810651b3917f034bdef40529c,device_name = fip_ns.get_rtr_ext_device_name(router.router_id),1,0,0.0,637
+d15807005f702e2810651b3917f034bdef40529c,# from the router_info,1,0,0.0,638
+d15807005f702e2810651b3917f034bdef40529c,# Check that the fg-<port-id> (floatingip_agent_gateway),1,0,0.0,639
+d15807005f702e2810651b3917f034bdef40529c,if self.agent.conf.agent_mode == 'dvr_snat':,1,0,0.0,640
+d15807005f702e2810651b3917f034bdef40529c,% (str(snat_ns_name)),1,0,0.0,641
+d15807005f702e2810651b3917f034bdef40529c,if gateway_expected_in_snat_namespace:,1,0,0.0,642
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode == 'dvr_snat',1,0,0.0,643
+d15807005f702e2810651b3917f034bdef40529c,gateway_expected_in_snat_namespace = (,1,0,0.0,644
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_dvr_gateway(self, router):",1,0,0.0,645
+d15807005f702e2810651b3917f034bdef40529c,# we force a test failure with message,1,0,0.0,646
+d15807005f702e2810651b3917f034bdef40529c,),1,0,0.0,647
+d15807005f702e2810651b3917f034bdef40529c,"self._namespace_exists(snat_ns_name),",1,0,0.0,648
+d15807005f702e2810651b3917f034bdef40529c,self._assert_removal_of_already_deleted_gateway_device(router),1,0,0.0,649
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(,1,0,0.0,650
+d15807005f702e2810651b3917f034bdef40529c,elif self.agent.conf.agent_mode == 'dvr':,1,0,0.0,651
+d15807005f702e2810651b3917f034bdef40529c,# should not be present at all:,1,0,0.0,652
+d15807005f702e2810651b3917f034bdef40529c,snat_ns_name),1,0,0.0,653
+d15807005f702e2810651b3917f034bdef40529c,"router.get_external_device_name,",1,0,0.0,654
+d15807005f702e2810651b3917f034bdef40529c,"external_port,",1,0,0.0,655
+d15807005f702e2810651b3917f034bdef40529c,self._assert_dvr_snat_gateway(router),1,0,0.0,656
+d15807005f702e2810651b3917f034bdef40529c,snat_namespace_should_not_exist = (,1,0,0.0,657
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_dvr_floating_ips(self, router):",1,0,0.0,658
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_removal_of_already_deleted_gateway_device(self, router):",1,0,0.0,659
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(self._namespace_exists(namespace)),1,0,0.0,660
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_snat_namespace_does_not_exist(self, router):",1,0,0.0,661
+d15807005f702e2810651b3917f034bdef40529c,"device, ""192.168.0.1"", 0))",1,0,0.0,662
+d15807005f702e2810651b3917f034bdef40529c,self.assertIsNone(router._delete_gateway_device_if_exists(,1,0,0.0,663
+d15807005f702e2810651b3917f034bdef40529c,# Assert that no exception is thrown for this case,1,0,0.0,664
+d15807005f702e2810651b3917f034bdef40529c,"device = ip_lib.IPDevice(""fakedevice"",",1,0,0.0,665
+d15807005f702e2810651b3917f034bdef40529c,expected_gateway = external_port['subnets'][0]['gateway_ip'],1,0,0.0,666
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode == 'dvr',1,0,0.0,667
+d15807005f702e2810651b3917f034bdef40529c,external_device.route.get_gateway().get('gateway')),1,0,0.0,668
+d15807005f702e2810651b3917f034bdef40529c,existing_gateway = (,1,0,0.0,669
+d15807005f702e2810651b3917f034bdef40529c,namespace=namespace),1,0,0.0,670
+d15807005f702e2810651b3917f034bdef40529c,namespace = dvr_snat_ns.SnatNamespace.get_snat_ns_name(,1,0,0.0,671
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_dvr_snat_gateway(self, router):",1,0,0.0,672
+d15807005f702e2810651b3917f034bdef40529c,if snat_namespace_should_not_exist:,1,0,0.0,673
+d15807005f702e2810651b3917f034bdef40529c,device = router.router[l3_constants.INTERFACE_KEY][-1],1,0,0.0,674
+d15807005f702e2810651b3917f034bdef40529c,external_network_id),1,0,0.0,675
+d15807005f702e2810651b3917f034bdef40529c,# configuring everything. We verify this by waiting until the last,1,0,0.0,676
+d15807005f702e2810651b3917f034bdef40529c,get_temp_file_path('external/pids')),1,0,0.0,677
+d15807005f702e2810651b3917f034bdef40529c,"enable_fip=True, enable_snat=True,",1,0,0.0,678
+d15807005f702e2810651b3917f034bdef40529c,"def generate_router_info(self, enable_ha, ip_version=4, extra_routes=True,",1,0,0.0,679
+d15807005f702e2810651b3917f034bdef40529c,return get_ovs_bridge(agent.conf.ovs_integration_bridge),1,0,0.0,680
+d15807005f702e2810651b3917f034bdef40529c,"def _get_agent_ovs_integration_bridge(self, agent):",1,0,0.0,681
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('agent_mode', agent_mode)",1,0,0.0,682
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('host', host)",1,0,0.0,683
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('external_pids',",1,0,0.0,684
+d15807005f702e2810651b3917f034bdef40529c,if ip_version == 6 and not dual_stack:,1,0,0.0,685
+d15807005f702e2810651b3917f034bdef40529c,get_temp_file_path('ha_confs')),1,0,0.0,686
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('ha_confs_path',",1,0,0.0,687
+d15807005f702e2810651b3917f034bdef40529c,get_temp_file_path('metadata_proxy')),1,0,0.0,688
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('metadata_proxy_socket',",1,0,0.0,689
+d15807005f702e2810651b3917f034bdef40529c,get_temp_file_path('log_file')),1,0,0.0,690
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('log_file',",1,0,0.0,691
+d15807005f702e2810651b3917f034bdef40529c,"dual_stack=False, v6_ext_gw_with_sub=True):",1,0,0.0,692
+d15807005f702e2810651b3917f034bdef40529c,enable_snat = False,1,0,0.0,693
+d15807005f702e2810651b3917f034bdef40529c,# NOTE(cbrandily): log_file or log_dir must be set otherwise,1,0,0.0,694
+d15807005f702e2810651b3917f034bdef40529c,v6_ext_gw_with_sub=(,1,0,0.0,695
+d15807005f702e2810651b3917f034bdef40529c,"def _delete_router(self, agent, router_id):",1,0,0.0,696
+d15807005f702e2810651b3917f034bdef40529c,return agent.router_info[router['id']],1,0,0.0,697
+d15807005f702e2810651b3917f034bdef40529c,agent._process_added_router(router),1,0,0.0,698
+d15807005f702e2810651b3917f034bdef40529c,"self.addCleanup(agent._safe_router_removed, router['id'])",1,0,0.0,699
+d15807005f702e2810651b3917f034bdef40529c,"def manage_router(self, agent, router):",1,0,0.0,700
+d15807005f702e2810651b3917f034bdef40529c,v6_ext_gw_with_sub)),1,0,0.0,701
+d15807005f702e2810651b3917f034bdef40529c,"dual_stack=dual_stack,",1,0,0.0,702
+d15807005f702e2810651b3917f034bdef40529c,enable_fip = False,1,0,0.0,703
+d15807005f702e2810651b3917f034bdef40529c,"extra_routes=extra_routes,",1,0,0.0,704
+d15807005f702e2810651b3917f034bdef40529c,"enable_ha=enable_ha,",1,0,0.0,705
+d15807005f702e2810651b3917f034bdef40529c,"enable_floating_ip=enable_fip,",1,0,0.0,706
+d15807005f702e2810651b3917f034bdef40529c,"enable_snat=enable_snat,",1,0,0.0,707
+d15807005f702e2810651b3917f034bdef40529c,"return l3_test_common.prepare_router_data(ip_version=ip_version,",1,0,0.0,708
+d15807005f702e2810651b3917f034bdef40529c,extra_routes = False,1,0,0.0,709
+d15807005f702e2810651b3917f034bdef40529c,# metadata_proxy_watch_log has no effect,1,0,0.0,710
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('state_path', temp_dir.path)",1,0,0.0,711
+d15807005f702e2810651b3917f034bdef40529c,"def _add_fip(self, router, fip_address, fixed_address='10.0.0.2',",1,0,0.0,712
+d15807005f702e2810651b3917f034bdef40529c,"super(L3AgentTestFramework, self).setUp()",1,0,0.0,713
+d15807005f702e2810651b3917f034bdef40529c,self.conf),1,0,0.0,714
+d15807005f702e2810651b3917f034bdef40529c,"self.agent = neutron_l3_agent.L3NATAgentWithStateReport('agent1',",1,0,0.0,715
+d15807005f702e2810651b3917f034bdef40529c,self.conf = self._configure_agent('agent1'),1,0,0.0,716
+d15807005f702e2810651b3917f034bdef40529c,mock.patch('neutron.agent.rpc.PluginReportStateAPI').start(),1,0,0.0,717
+d15807005f702e2810651b3917f034bdef40529c,'neutron.agent.l3.agent.L3PluginApi').start().return_value,1,0,0.0,718
+d15807005f702e2810651b3917f034bdef40529c,self.mock_plugin_api = mock.patch(,1,0,0.0,719
+d15807005f702e2810651b3917f034bdef40529c,def setUp(self):,1,0,0.0,720
+d15807005f702e2810651b3917f034bdef40529c,config = cfg.ConfigOpts(),1,0,0.0,721
+d15807005f702e2810651b3917f034bdef40529c,class L3AgentTestFramework(base.BaseSudoTestCase):,1,0,0.0,722
+d15807005f702e2810651b3917f034bdef40529c,return ovs_lib.OVSBridge(br_name),1,0,0.0,723
+d15807005f702e2810651b3917f034bdef40529c,def get_ovs_bridge(br_name):,1,0,0.0,724
+d15807005f702e2810651b3917f034bdef40529c,DEVICE_OWNER_COMPUTE = l3_constants.DEVICE_OWNER_COMPUTE_PREFIX + 'fake',1,0,0.0,725
+d15807005f702e2810651b3917f034bdef40529c,METADATA_REQUEST_SLEEP = 5,1,0,0.0,726
+d15807005f702e2810651b3917f034bdef40529c,METADATA_REQUEST_TIMEOUT = 60,1,0,0.0,727
+d15807005f702e2810651b3917f034bdef40529c,def _get_config_opts(self):,1,0,0.0,728
+d15807005f702e2810651b3917f034bdef40529c,config.register_opts(common_config.core_opts),1,0,0.0,729
+d15807005f702e2810651b3917f034bdef40529c,root=temp_dir),1,0,0.0,730
+d15807005f702e2810651b3917f034bdef40529c,'neutron.agent.linux.interface.OVSInterfaceDriver'),1,0,0.0,731
+d15807005f702e2810651b3917f034bdef40529c,"get_temp_file_path = functools.partial(self.get_temp_file_path,",1,0,0.0,732
+d15807005f702e2810651b3917f034bdef40529c,temp_dir = self.get_new_temp_dir(),1,0,0.0,733
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('external_network_bridge', br_ex.br_name)",1,0,0.0,734
+d15807005f702e2810651b3917f034bdef40529c,"conf.set_override('ovs_integration_bridge', br_int.br_name)",1,0,0.0,735
+d15807005f702e2810651b3917f034bdef40529c,br_ex = self.useFixture(net_helpers.OVSBridgeFixture()).bridge,1,0,0.0,736
+d15807005f702e2810651b3917f034bdef40529c,br_int = self.useFixture(net_helpers.OVSBridgeFixture()).bridge,1,0,0.0,737
+d15807005f702e2810651b3917f034bdef40529c,"'interface_driver',",1,0,0.0,738
+d15807005f702e2810651b3917f034bdef40529c,config.register_opts(common_config.core_cli_opts),1,0,0.0,739
+d15807005f702e2810651b3917f034bdef40529c,conf.set_override(,1,0,0.0,740
+d15807005f702e2810651b3917f034bdef40529c,l3_agent_main.register_opts(conf),1,0,0.0,741
+d15807005f702e2810651b3917f034bdef40529c,"def _configure_agent(self, host, agent_mode='dvr_snat'):",1,0,0.0,742
+d15807005f702e2810651b3917f034bdef40529c,return config,1,0,0.0,743
+d15807005f702e2810651b3917f034bdef40529c,agent_config.register_process_monitor_opts(config),1,0,0.0,744
+d15807005f702e2810651b3917f034bdef40529c,logging.register_options(config),1,0,0.0,745
+d15807005f702e2810651b3917f034bdef40529c,agent._router_removed(router_id),1,0,0.0,746
+d15807005f702e2810651b3917f034bdef40529c,host=None):,1,0,0.0,747
+d15807005f702e2810651b3917f034bdef40529c,0.0.0.0/0 via %(default_gateway_ip)s dev %(external_device_name)s,1,0,0.0,748
+d15807005f702e2810651b3917f034bdef40529c,internal_device_cidr = self._port_first_ip_cidr(internal_port),1,0,0.0,749
+d15807005f702e2810651b3917f034bdef40529c,state BACKUP,1,0,0.0,750
+d15807005f702e2810651b3917f034bdef40529c,"return """"""vrrp_instance VR_1 {",1,0,0.0,751
+d15807005f702e2810651b3917f034bdef40529c,extra_subnet_cidr = external_port['extra_subnets'][0].get('cidr'),1,0,0.0,752
+d15807005f702e2810651b3917f034bdef40529c,default_gateway_ip = external_port['subnets'][0].get('gateway_ip'),1,0,0.0,753
+d15807005f702e2810651b3917f034bdef40529c,router.get_floating_ips()[0]['floating_ip_address']),1,0,0.0,754
+d15807005f702e2810651b3917f034bdef40529c,floating_ip_cidr = common_utils.ip_to_cidr(,1,0,0.0,755
+d15807005f702e2810651b3917f034bdef40529c,internal_port['id']),1,0,0.0,756
+d15807005f702e2810651b3917f034bdef40529c,virtual_router_id 1,1,0,0.0,757
+d15807005f702e2810651b3917f034bdef40529c,internal_device_name = router.get_internal_device_name(,1,0,0.0,758
+d15807005f702e2810651b3917f034bdef40529c,int_port_ipv6 = ip_lib.get_ipv6_lladdr(internal_port['mac_address']),1,0,0.0,759
+d15807005f702e2810651b3917f034bdef40529c,internal_port = router.router[l3_constants.INTERFACE_KEY][0],1,0,0.0,760
+d15807005f702e2810651b3917f034bdef40529c,external_device_cidr = self._port_first_ip_cidr(external_port),1,0,0.0,761
+d15807005f702e2810651b3917f034bdef40529c,external_port['id']),1,0,0.0,762
+d15807005f702e2810651b3917f034bdef40529c,external_device_name = router.get_external_device_name(,1,0,0.0,763
+d15807005f702e2810651b3917f034bdef40529c,interface %(ha_device_name)s,1,0,0.0,764
+d15807005f702e2810651b3917f034bdef40529c,priority 50,1,0,0.0,765
+d15807005f702e2810651b3917f034bdef40529c,external_port = router.get_ex_gw_port(),1,0,0.0,766
+d15807005f702e2810651b3917f034bdef40529c,169.254.0.1/24 dev %(ha_device_name)s,1,0,0.0,767
+d15807005f702e2810651b3917f034bdef40529c,%(int_port_ipv6)s dev %(internal_device_name)s scope link,1,0,0.0,768
+d15807005f702e2810651b3917f034bdef40529c,%(ex_port_ipv6)s dev %(external_device_name)s scope link,1,0,0.0,769
+d15807005f702e2810651b3917f034bdef40529c,%(internal_device_cidr)s dev %(internal_device_name)s,1,0,0.0,770
+d15807005f702e2810651b3917f034bdef40529c,%(external_device_cidr)s dev %(external_device_name)s,1,0,0.0,771
+d15807005f702e2810651b3917f034bdef40529c,%(floating_ip_cidr)s dev %(external_device_name)s,1,0,0.0,772
+d15807005f702e2810651b3917f034bdef40529c,virtual_ipaddress_excluded {,1,0,0.0,773
+d15807005f702e2810651b3917f034bdef40529c,virtual_ipaddress {,1,0,0.0,774
+d15807005f702e2810651b3917f034bdef40529c,garp_master_repeat 5,1,0,0.0,775
+d15807005f702e2810651b3917f034bdef40529c,},1,0,0.0,776
+d15807005f702e2810651b3917f034bdef40529c,%(ha_device_name)s,1,0,0.0,777
+d15807005f702e2810651b3917f034bdef40529c,track_interface {,1,0,0.0,778
+d15807005f702e2810651b3917f034bdef40529c,advert_int 2,1,0,0.0,779
+d15807005f702e2810651b3917f034bdef40529c,nopreempt,1,0,0.0,780
+d15807005f702e2810651b3917f034bdef40529c,garp_master_refresh 10,1,0,0.0,781
+d15807005f702e2810651b3917f034bdef40529c,ex_port_ipv6 = ip_lib.get_ipv6_lladdr(external_port['mac_address']),1,0,0.0,782
+d15807005f702e2810651b3917f034bdef40529c,ha_device_name = router.get_ha_device_name(),1,0,0.0,783
+d15807005f702e2810651b3917f034bdef40529c,"'port_id': _uuid(),",1,0,0.0,784
+d15807005f702e2810651b3917f034bdef40529c,interface_id=None):,1,0,0.0,785
+d15807005f702e2810651b3917f034bdef40529c,pm = external_process.ProcessManager(,1,0,0.0,786
+d15807005f702e2810651b3917f034bdef40529c,"def _metadata_proxy_exists(self, conf, router):",1,0,0.0,787
+d15807005f702e2810651b3917f034bdef40529c,return ip.netns.exists(namespace),1,0,0.0,788
+d15807005f702e2810651b3917f034bdef40529c,"def _namespace_exists(self, namespace):",1,0,0.0,789
+d15807005f702e2810651b3917f034bdef40529c,"ip_version, ipv6_subnet_modes, interface_id)",1,0,0.0,790
+d15807005f702e2810651b3917f034bdef40529c,"return l3_test_common.router_append_subnet(router, count,",1,0,0.0,791
+d15807005f702e2810651b3917f034bdef40529c,"ipv6_subnet_modes=None,",1,0,0.0,792
+d15807005f702e2810651b3917f034bdef40529c,"router.router_id,",1,0,0.0,793
+d15807005f702e2810651b3917f034bdef40529c,"ip_version=4,",1,0,0.0,794
+d15807005f702e2810651b3917f034bdef40529c,"def _add_internal_interface_by_subnet(self, router, count=1,",1,0,0.0,795
+d15807005f702e2810651b3917f034bdef40529c,router.router[l3_constants.FLOATINGIP_KEY].append(fip),1,0,0.0,796
+d15807005f702e2810651b3917f034bdef40529c,'host': host},1,0,0.0,797
+d15807005f702e2810651b3917f034bdef40529c,"'fixed_ip_address': fixed_address,",1,0,0.0,798
+d15807005f702e2810651b3917f034bdef40529c,"'floating_ip_address': fip_address,",1,0,0.0,799
+d15807005f702e2810651b3917f034bdef40529c,"conf,",1,0,0.0,800
+d15807005f702e2810651b3917f034bdef40529c,router.ns_name),1,0,0.0,801
+d15807005f702e2810651b3917f034bdef40529c,"def get_expected_keepalive_configuration(self, router):",1,0,0.0,802
+d15807005f702e2810651b3917f034bdef40529c,def _port_first_ip_cidr(port):,1,0,0.0,803
+d15807005f702e2810651b3917f034bdef40529c,return device.link.mtu,1,0,0.0,804
+d15807005f702e2810651b3917f034bdef40529c,"device = ip_lib.IPDevice(name_getter(target_device), namespace)",1,0,0.0,805
+d15807005f702e2810651b3917f034bdef40529c,"def get_device_mtu(self, target_device, name_getter, namespace):",1,0,0.0,806
+d15807005f702e2810651b3917f034bdef40529c,fixed_ip['prefixlen']),1,0,0.0,807
+d15807005f702e2810651b3917f034bdef40529c,"return common_utils.ip_to_cidr(fixed_ip['ip_address'],",1,0,0.0,808
+d15807005f702e2810651b3917f034bdef40529c,fixed_ip = port['fixed_ips'][0],1,0,0.0,809
+d15807005f702e2810651b3917f034bdef40529c,@staticmethod,1,0,0.0,810
+d15807005f702e2810651b3917f034bdef40529c,return pm.active,1,0,0.0,811
+d15807005f702e2810651b3917f034bdef40529c,"expected_device['mac_address'], namespace)",1,0,0.0,812
+d15807005f702e2810651b3917f034bdef40529c,"name_getter(expected_device['id']), ip_cidrs,",1,0,0.0,813
+d15807005f702e2810651b3917f034bdef40529c,return ip_lib.device_exists_with_ips_and_mac(,1,0,0.0,814
+d15807005f702e2810651b3917f034bdef40529c,ip_cidrs = common_utils.fixed_ip_cidrs(expected_device['fixed_ips']),1,0,0.0,815
+d15807005f702e2810651b3917f034bdef40529c,namespace):,1,0,0.0,816
+d15807005f702e2810651b3917f034bdef40529c,"def device_exists_with_ips_and_mac(self, expected_device, name_getter,",1,0,0.0,817
+d15807005f702e2810651b3917f034bdef40529c,_uuid = uuidutils.generate_uuid,1,0,0.0,818
+d15807005f702e2810651b3917f034bdef40529c,LOG = logging.getLogger(__name__),1,0,0.0,819
+d15807005f702e2810651b3917f034bdef40529c,from neutron.tests.functional import base,1,0,0.0,820
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(device_exists),0,0,0.0,821
+d15807005f702e2810651b3917f034bdef40529c,helpers.wait_until_true(device_exists),1,0,0.0,822
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router1.ha_state == 'fault'),0,0,0.0,823
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router2.ha_state == 'master'),0,0,0.0,824
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router2.ha_state == 'backup'),0,0,0.0,825
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router1.ha_state == 'master'),0,0,0.0,826
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: self._floating_ips_configured(router1)),0,0,0.0,827
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router.ha_state == 'master'),0,0,0.0,828
+d15807005f702e2810651b3917f034bdef40529c,host=None):,0,0,0.0,829
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.linux import utils,0,0,0.0,830
+d15807005f702e2810651b3917f034bdef40529c,gw_pool = 'fd01:%x::1',1,0,0.0,831
+d15807005f702e2810651b3917f034bdef40529c,cidr_pool = 'fd01:%x::/64',1,0,0.0,832
+d15807005f702e2810651b3917f034bdef40529c,ip_pool = 'fd01:%x::6',1,0,0.0,833
+d15807005f702e2810651b3917f034bdef40529c,self._assert_extra_routes(router),1,0,0.0,834
+d15807005f702e2810651b3917f034bdef40529c,self._assert_floating_ip_chains(router),1,0,0.0,835
+d15807005f702e2810651b3917f034bdef40529c,"def _add_fip(self, router, fip_address, fixed_address='10.0.0.2',",0,0,0.0,836
+d15807005f702e2810651b3917f034bdef40529c,"'fixed_ip_address': fixed_address,",0,0,0.0,837
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._floating_ips_configured(router)),1,0,0.0,838
+d15807005f702e2810651b3917f034bdef40529c,def test_dvr_router_rem_fips_on_restarted_agent(self):,0,0,0.0,839
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.host, self.agent.conf)",0,0,0.0,840
+d15807005f702e2810651b3917f034bdef40529c,restarted_agent = neutron_l3_agent.L3NATAgentWithStateReport(,0,0,0.0,841
+d15807005f702e2810651b3917f034bdef40529c,fip_ns = router1.fip_ns.get_name(),0,0,0.0,842
+d15807005f702e2810651b3917f034bdef40529c,"self._add_fip(router1, '192.168.111.12', self.agent.conf.host)",0,0,0.0,843
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_dvr_router_info(),0,0,0.0,844
+d15807005f702e2810651b3917f034bdef40529c,self.agent.conf.agent_mode = 'dvr_snat',0,0,0.0,845
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: self.floating_ips_configured(router1)),0,0,0.0,846
+d15807005f702e2810651b3917f034bdef40529c,'host': host},0,0,0.0,847
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self.floating_ips_configured(router)),0,0,0.0,848
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.get_external_device_name(external_port['id']),",0,0,0.0,849
+d15807005f702e2810651b3917f034bdef40529c,return len(floating_ips) and all(ip_lib.device_exists_with_ip_mac(,0,0,0.0,850
+d15807005f702e2810651b3917f034bdef40529c,external_port = router.get_ex_gw_port(),0,0,0.0,851
+d15807005f702e2810651b3917f034bdef40529c,floating_ips = router.router[l3_constants.FLOATINGIP_KEY],0,0,0.0,852
+d15807005f702e2810651b3917f034bdef40529c,"def floating_ips_configured(self, router):",0,0,0.0,853
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_chains(router),1,0,0.0,854
+d15807005f702e2810651b3917f034bdef40529c,self._assert_gateway(router),1,0,0.0,855
+d15807005f702e2810651b3917f034bdef40529c,from neutron.tests.common import net_helpers,1,0,0.0,856
+d15807005f702e2810651b3917f034bdef40529c,"enable_snat=enable_snat,",0,0,0.0,857
+d15807005f702e2810651b3917f034bdef40529c,"router_info = self.generate_router_info(enable_ha, ip_version)",0,0,0.0,858
+d15807005f702e2810651b3917f034bdef40529c,"def _router_lifecycle(self, enable_ha, ip_version=4):",0,0,0.0,859
+d15807005f702e2810651b3917f034bdef40529c,"self._router_lifecycle(enable_ha=True, ip_version=6)",0,0,0.0,860
+d15807005f702e2810651b3917f034bdef40529c,def test_ipv6_ha_router_lifecycle(self):,0,0,0.0,861
+d15807005f702e2810651b3917f034bdef40529c,extra_routes=extra_routes),0,0,0.0,862
+d15807005f702e2810651b3917f034bdef40529c,"enable_floating_ip=enable_fip,",0,0,0.0,863
+d15807005f702e2810651b3917f034bdef40529c,"return test_l3_agent.prepare_router_data(ip_version=ip_version,",0,0,0.0,864
+d15807005f702e2810651b3917f034bdef40529c,# Note(SridharG): enable the assert_gateway for IPv6 once,0,0,0.0,865
+d15807005f702e2810651b3917f034bdef40529c,extra_routes = False,0,0,0.0,866
+d15807005f702e2810651b3917f034bdef40529c,enable_fip = False,0,0,0.0,867
+d15807005f702e2810651b3917f034bdef40529c,enable_snat = False,0,0,0.0,868
+d15807005f702e2810651b3917f034bdef40529c,if ip_version == 6:,0,0,0.0,869
+d15807005f702e2810651b3917f034bdef40529c,"enable_fip=True, enable_snat=True):",0,0,0.0,870
+d15807005f702e2810651b3917f034bdef40529c,"def generate_router_info(self, enable_ha, ip_version=4, extra_routes=True,",0,0,0.0,871
+d15807005f702e2810651b3917f034bdef40529c,if ip_version == 4:,0,0,0.0,872
+d15807005f702e2810651b3917f034bdef40529c,"# keepalived on Ubuntu14.04 (i.e., check-neutron-dsvm-functional",0,0,0.0,873
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_router_info(enable_ha),1,0,0.0,874
+d15807005f702e2810651b3917f034bdef40529c,cidr_pool = 'fd01:%x:1::/64',0,0,0.0,875
+d15807005f702e2810651b3917f034bdef40529c,"def _router_lifecycle(self, enable_ha):",1,0,0.0,876
+d15807005f702e2810651b3917f034bdef40529c,extra_routes=True),1,0,0.0,877
+d15807005f702e2810651b3917f034bdef40529c,"enable_floating_ip=True,",1,0,0.0,878
+d15807005f702e2810651b3917f034bdef40529c,"return test_l3_agent.prepare_router_data(enable_snat=True,",1,0,0.0,879
+d15807005f702e2810651b3917f034bdef40529c,"def generate_router_info(self, enable_ha):",1,0,0.0,880
+d15807005f702e2810651b3917f034bdef40529c,gw_pool = 'fd01:%x:1::1',0,0,0.0,881
+d15807005f702e2810651b3917f034bdef40529c,ip_pool = 'fd01:%x:1::6',0,0,0.0,882
+d15807005f702e2810651b3917f034bdef40529c,# platform) is updated to 1.2.10 (or above).,0,0,0.0,883
+d15807005f702e2810651b3917f034bdef40529c,self._assert_extra_routes(router),0,0,0.0,884
+d15807005f702e2810651b3917f034bdef40529c,self._assert_floating_ip_chains(router),0,0,0.0,885
+d15807005f702e2810651b3917f034bdef40529c,self._assert_snat_chains(router),0,0,0.0,886
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._floating_ips_configured(router)),0,0,0.0,887
+d15807005f702e2810651b3917f034bdef40529c,self._assert_gateway(router),0,0,0.0,888
+d15807005f702e2810651b3917f034bdef40529c,# For more details: https://review.openstack.org/#/c/151284/,0,0,0.0,889
+d15807005f702e2810651b3917f034bdef40529c,router1.router[l3_constants.FLOATINGIP_KEY] = [],0,0,0.0,890
+d15807005f702e2810651b3917f034bdef40529c,"self._create_router(restarted_agent, router1.router)",0,0,0.0,891
+d15807005f702e2810651b3917f034bdef40529c,self._assert_dvr_snat_gateway(router1),0,0,0.0,892
+d15807005f702e2810651b3917f034bdef40529c,from oslo_log import log as logging,1,0,0.0,893
+d15807005f702e2810651b3917f034bdef40529c,import webob.exc,1,0,0.0,894
+d15807005f702e2810651b3917f034bdef40529c,import webob.dec,1,0,0.0,895
+d15807005f702e2810651b3917f034bdef40529c,import webob,1,0,0.0,896
+d15807005f702e2810651b3917f034bdef40529c,import testtools,1,0,0.0,897
+d15807005f702e2810651b3917f034bdef40529c,import six,1,0,0.0,898
+d15807005f702e2810651b3917f034bdef40529c,from oslo_utils import uuidutils,1,0,0.0,899
+d15807005f702e2810651b3917f034bdef40529c,from oslo_config import cfg,1,0,0.0,900
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.common import ovs_lib,1,0,0.0,901
+d15807005f702e2810651b3917f034bdef40529c,import netaddr,1,0,0.0,902
+d15807005f702e2810651b3917f034bdef40529c,import time,1,0,0.0,903
+d15807005f702e2810651b3917f034bdef40529c,import os.path,1,0,0.0,904
+d15807005f702e2810651b3917f034bdef40529c,import functools,1,0,0.0,905
+d15807005f702e2810651b3917f034bdef40529c,import copy,1,0,0.0,906
+d15807005f702e2810651b3917f034bdef40529c,framework.L3AgentTestFramework):,0,0,0.0,907
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.common import config as agent_config,1,0,0.0,908
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.l3 import dvr_snat_ns,1,0,0.0,909
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(self._namespace_exists(fip_ns)),0,0,0.0,910
+d15807005f702e2810651b3917f034bdef40529c,from neutron.callbacks import registry,1,0,0.0,911
+d15807005f702e2810651b3917f034bdef40529c,from neutron.tests.common import machine_fixtures,1,0,0.0,912
+d15807005f702e2810651b3917f034bdef40529c,from neutron.tests.common import l3_test_common,1,0,0.0,913
+d15807005f702e2810651b3917f034bdef40529c,from neutron.common import utils as common_utils,1,0,0.0,914
+d15807005f702e2810651b3917f034bdef40529c,from neutron.common import constants as l3_constants,1,0,0.0,915
+d15807005f702e2810651b3917f034bdef40529c,from neutron.common import config as common_config,1,0,0.0,916
+d15807005f702e2810651b3917f034bdef40529c,from neutron.callbacks import resources,1,0,0.0,917
+d15807005f702e2810651b3917f034bdef40529c,from neutron.callbacks import events,1,0,0.0,918
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.l3 import namespace_manager,1,0,0.0,919
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.linux import utils,1,0,0.0,920
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.linux import ip_lib,1,0,0.0,921
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.linux import external_process,1,0,0.0,922
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.linux import dhcp,1,0,0.0,923
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent import l3_agent as l3_agent_main,1,0,0.0,924
+d15807005f702e2810651b3917f034bdef40529c,from neutron.agent.l3 import namespaces,1,0,0.0,925
+d15807005f702e2810651b3917f034bdef40529c,from neutron.tests.functional.agent.l3 import framework,0,0,0.0,926
+d15807005f702e2810651b3917f034bdef40529c,"self._create_router(restarted_agent, router1.router)",1,0,0.0,927
+d15807005f702e2810651b3917f034bdef40529c,"def _create_router(self, agent, router):",1,0,0.0,928
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.get_external_device_name(external_port['id']),",1,0,0.0,929
+d15807005f702e2810651b3917f034bdef40529c,return [address['cidr'] for address in,0,0,0.0,930
+d15807005f702e2810651b3917f034bdef40529c,"def _get_addresses_on_device(cls, namespace, interface):",0,0,0.0,931
+d15807005f702e2810651b3917f034bdef40529c,@classmethod,0,0,0.0,932
+d15807005f702e2810651b3917f034bdef40529c,interface_name),0,0,0.0,933
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_no_ip_addresses_on_interface(router.ns_name,",0,0,0.0,934
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: self._floating_ips_configured(router1)),1,0,0.0,935
+d15807005f702e2810651b3917f034bdef40529c,return len(floating_ips) and all(ip_lib.device_exists_with_ip_mac(,1,0,0.0,936
+d15807005f702e2810651b3917f034bdef40529c,return ri,1,0,0.0,937
+d15807005f702e2810651b3917f034bdef40529c,external_port = router.get_ex_gw_port(),1,0,0.0,938
+d15807005f702e2810651b3917f034bdef40529c,floating_ips = router.router[l3_constants.FLOATINGIP_KEY],1,0,0.0,939
+d15807005f702e2810651b3917f034bdef40529c,"def _floating_ips_configured(self, router):",1,0,0.0,940
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._floating_ips_configured(router)),1,0,0.0,941
+d15807005f702e2810651b3917f034bdef40529c,'fixed_ip_address': fixed_address},1,0,0.0,942
+d15807005f702e2810651b3917f034bdef40529c,"def _add_fip(self, router, fip_address, fixed_address='10.0.0.2'):",1,0,0.0,943
+d15807005f702e2810651b3917f034bdef40529c,"ip_lib.IPDevice(interface, namespace=namespace).addr.list()]",0,0,0.0,944
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_no_ip_addresses_on_interface(self, namespace, interface):",0,0,0.0,945
+d15807005f702e2810651b3917f034bdef40529c,self.assertEqual(,0,0,0.0,946
+d15807005f702e2810651b3917f034bdef40529c,"[], self._get_addresses_on_device(namespace, interface))",0,0,0.0,947
+d15807005f702e2810651b3917f034bdef40529c,self.assertIn(,0,0,0.0,948
+d15807005f702e2810651b3917f034bdef40529c,"router1._get_primary_vip(),",0,0,0.0,949
+d15807005f702e2810651b3917f034bdef40529c,self._get_addresses_on_device(,0,0,0.0,950
+d15807005f702e2810651b3917f034bdef40529c,"router1.ns_name,",0,0,0.0,951
+d15807005f702e2810651b3917f034bdef40529c,router1.get_ha_device_name(router1.ha_port['id']))),0,0,0.0,952
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_no_ip_addresses_on_interface(router, interface_name)",1,0,0.0,953
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_no_ip_addresses_on_interface(self, router, interface):",1,0,0.0,954
+d15807005f702e2810651b3917f034bdef40529c,"device = ip_lib.IPDevice(interface, namespace=router.ns_name)",1,0,0.0,955
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual([], device.addr.list())",1,0,0.0,956
+d15807005f702e2810651b3917f034bdef40529c,"self.addCleanup(agent._safe_router_removed, router['id'])",0,0,0.0,957
+d15807005f702e2810651b3917f034bdef40529c,"self.manage_router(restarted_agent, router1.router)",0,0,0.0,958
+d15807005f702e2810651b3917f034bdef40529c,"self.addCleanup(self._delete_router, agent, router['id'])",1,0,0.0,959
+d15807005f702e2810651b3917f034bdef40529c,"ri = self._create_router(agent, router)",1,0,0.0,960
+d15807005f702e2810651b3917f034bdef40529c,virtual_routes {,1,0,0.0,961
+d15807005f702e2810651b3917f034bdef40529c,8.8.8.0/24 via 19.4.4.4,1,0,0.0,962
+d15807005f702e2810651b3917f034bdef40529c,"# not when it ends. Thus, we have to wait until keepalived finishes",1,0,0.0,963
+d15807005f702e2810651b3917f034bdef40529c,# Add a new FIP and change the GW IP address,1,0,0.0,964
+d15807005f702e2810651b3917f034bdef40529c,"fixed_ips = [{'ip_address': '19.4.4.10',",1,0,0.0,965
+d15807005f702e2810651b3917f034bdef40529c,subnet_id = _uuid(),1,0,0.0,966
+d15807005f702e2810651b3917f034bdef40529c,"self._add_fip(router, new_fip)",1,0,0.0,967
+d15807005f702e2810651b3917f034bdef40529c,new_fip = '19.4.4.3',1,0,0.0,968
+d15807005f702e2810651b3917f034bdef40529c,existing_fip = '19.4.4.2',1,0,0.0,969
+d15807005f702e2810651b3917f034bdef40529c,router.router = copy.deepcopy(router.router),1,0,0.0,970
+d15807005f702e2810651b3917f034bdef40529c,router.keepalived_manager.get_conf_on_disk()),1,0,0.0,971
+d15807005f702e2810651b3917f034bdef40529c,'subnet_id': subnet_id}],1,0,0.0,972
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual(expected,",1,0,0.0,973
+d15807005f702e2810651b3917f034bdef40529c,expected = self.get_expected_keepalive_configuration(router),1,0,0.0,974
+d15807005f702e2810651b3917f034bdef40529c,def test_keepalived_configuration(self):,1,0,0.0,975
+d15807005f702e2810651b3917f034bdef40529c,"self._router_lifecycle(enable_ha=True, dual_stack=True,",1,0,0.0,976
+d15807005f702e2810651b3917f034bdef40529c,def test_ipv6_ha_router_lifecycle_with_no_gw_subnet_for_router_advts(self):,1,0,0.0,977
+d15807005f702e2810651b3917f034bdef40529c,"self._router_lifecycle(enable_ha=True, ip_version=6,",1,0,0.0,978
+d15807005f702e2810651b3917f034bdef40529c,"'prefixlen': 24,",1,0,0.0,979
+d15807005f702e2810651b3917f034bdef40529c,"subnets = [{'id': subnet_id,",1,0,0.0,980
+d15807005f702e2810651b3917f034bdef40529c,"self._router_lifecycle(enable_ha=True, ip_version=6)",1,0,0.0,981
+d15807005f702e2810651b3917f034bdef40529c,new_gw = '0.0.0.0/0 via 19.4.4.5',1,0,0.0,982
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(new_gw, new_config)",1,0,0.0,983
+d15807005f702e2810651b3917f034bdef40529c,"self.assertNotIn(old_gw, new_config)",1,0,0.0,984
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(new_fip, new_config)",1,0,0.0,985
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(existing_fip, new_config)",1,0,0.0,986
+d15807005f702e2810651b3917f034bdef40529c,new_external_device_ip = '19.4.4.10',1,0,0.0,987
+d15807005f702e2810651b3917f034bdef40529c,old_external_device_ip = '19.4.4.4',1,0,0.0,988
+d15807005f702e2810651b3917f034bdef40529c,old_gw = '0.0.0.0/0 via 19.4.4.1',1,0,0.0,989
+d15807005f702e2810651b3917f034bdef40529c,"'cidr': '19.4.4.0/24',",1,0,0.0,990
+d15807005f702e2810651b3917f034bdef40529c,new_config = router.keepalived_manager.config.get_config_str(),1,0,0.0,991
+d15807005f702e2810651b3917f034bdef40529c,# and that the GW IP address was updated.,1,0,0.0,992
+d15807005f702e2810651b3917f034bdef40529c,"# Get the updated configuration and assert that both FIPs are in,",1,0,0.0,993
+d15807005f702e2810651b3917f034bdef40529c,router.router['gw_port']['fixed_ips'] = fixed_ips,1,0,0.0,994
+d15807005f702e2810651b3917f034bdef40529c,router.router['gw_port']['subnets'] = subnets,1,0,0.0,995
+d15807005f702e2810651b3917f034bdef40529c,'gateway_ip': '19.4.4.5'}],1,0,0.0,996
+d15807005f702e2810651b3917f034bdef40529c,def test_ipv6_ha_router_lifecycle_with_no_gw_subnet(self):,1,0,0.0,997
+d15807005f702e2810651b3917f034bdef40529c,def test_ipv6_ha_router_lifecycle(self):,1,0,0.0,998
+d15807005f702e2810651b3917f034bdef40529c,"(old_external_device_ip, external_device_name),",1,0,0.0,999
+d15807005f702e2810651b3917f034bdef40529c,''',1,0,0.0,1000
+d15807005f702e2810651b3917f034bdef40529c,router.router[l3_constants.FLOATINGIP_KEY] = [],1,0,0.0,1001
+d15807005f702e2810651b3917f034bdef40529c,def clean_fips(router):,1,0,0.0,1002
+d15807005f702e2810651b3917f034bdef40529c,server_address = '35.4.0.4',1,0,0.0,1003
+d15807005f702e2810651b3917f034bdef40529c,client_address = '19.4.4.3',1,0,0.0,1004
+d15807005f702e2810651b3917f034bdef40529c,"port = net_helpers.get_free_namespace_port(l3_constants.PROTO_NAME_TCP,",1,0,0.0,1005
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_router_info(enable_ha=ha),1,0,0.0,1006
+d15807005f702e2810651b3917f034bdef40529c,'''Test that conntrack immediately drops stateful connection,1,0,0.0,1007
+d15807005f702e2810651b3917f034bdef40529c,"self._add_fip(router, client_address, fixed_address=server_address)",1,0,0.0,1008
+d15807005f702e2810651b3917f034bdef40529c,"def _test_conntrack_disassociate_fip(self, ha):",1,0,0.0,1009
+d15807005f702e2810651b3917f034bdef40529c,self._test_conntrack_disassociate_fip(ha=True),1,0,0.0,1010
+d15807005f702e2810651b3917f034bdef40529c,def test_conntrack_disassociate_fip_ha_router(self):,1,0,0.0,1011
+d15807005f702e2810651b3917f034bdef40529c,self._test_conntrack_disassociate_fip(ha=False),1,0,0.0,1012
+d15807005f702e2810651b3917f034bdef40529c,def test_conntrack_disassociate_fip_legacy_router(self):,1,0,0.0,1013
+d15807005f702e2810651b3917f034bdef40529c,self._router_lifecycle(enable_ha=True),1,0,0.0,1014
+d15807005f702e2810651b3917f034bdef40529c,clean_fips(router),1,0,0.0,1015
+d15807005f702e2810651b3917f034bdef40529c,router.process(self.agent),1,0,0.0,1016
+d15807005f702e2810651b3917f034bdef40529c,netcat.test_connectivity(),1,0,0.0,1017
+d15807005f702e2810651b3917f034bdef40529c,"n, len([line for line in out.strip().split('\n') if line]))",1,0,0.0,1018
+d15807005f702e2810651b3917f034bdef40529c,with testtools.ExpectedException(RuntimeError):,1,0,0.0,1019
+d15807005f702e2810651b3917f034bdef40529c,assert_num_of_conntrack_rules(1),1,0,0.0,1020
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(netcat.test_connectivity()),1,0,0.0,1021
+d15807005f702e2810651b3917f034bdef40529c,assert_num_of_conntrack_rules(0),1,0,0.0,1022
+d15807005f702e2810651b3917f034bdef40529c,with self.assert_max_execution_time(100):,1,0,0.0,1023
+d15807005f702e2810651b3917f034bdef40529c,if ha:,1,0,0.0,1024
+d15807005f702e2810651b3917f034bdef40529c,"""--orig-src"", client_address])",1,0,0.0,1025
+d15807005f702e2810651b3917f034bdef40529c,router_ns = ip_lib.IPWrapper(namespace=router.ns_name),1,0,0.0,1026
+d15807005f702e2810651b3917f034bdef40529c,"out = router_ns.netns.execute([""conntrack"", ""-L"",",1,0,0.0,1027
+d15807005f702e2810651b3917f034bdef40529c,def assert_num_of_conntrack_rules(n):,1,0,0.0,1028
+d15807005f702e2810651b3917f034bdef40529c,self.addCleanup(netcat.stop_processes),1,0,0.0,1029
+d15807005f702e2810651b3917f034bdef40529c,protocol=net_helpers.NetcatTester.TCP),1,0,0.0,1030
+d15807005f702e2810651b3917f034bdef40529c,"router.ns_name, router.ns_name, client_address, port,",1,0,0.0,1031
+d15807005f702e2810651b3917f034bdef40529c,netcat = net_helpers.NetcatTester(,1,0,0.0,1032
+d15807005f702e2810651b3917f034bdef40529c,self.assertNotIn('%s/24 dev %s' %,1,0,0.0,1033
+d15807005f702e2810651b3917f034bdef40529c,new_config),1,0,0.0,1034
+d15807005f702e2810651b3917f034bdef40529c,%(extra_subnet_cidr)s dev %(external_device_name)s scope link,1,0,0.0,1035
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted_during_resync=[]),1,0,0.0,1036
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted_during_resync.append(,1,0,0.0,1037
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted_during_resync = [],1,0,0.0,1038
+d15807005f702e2810651b3917f034bdef40529c,def test_periodic_sync_routers_task_routers_deleted_while_agent_sync(self):,1,0,0.0,1039
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted.append(self.generate_router_info(False)),1,0,0.0,1040
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted = [],1,0,0.0,1041
+d15807005f702e2810651b3917f034bdef40529c,def test_periodic_sync_routers_task_routers_deleted_while_agent_down(self):,1,0,0.0,1042
+d15807005f702e2810651b3917f034bdef40529c,"routers_deleted=[],",1,0,0.0,1043
+d15807005f702e2810651b3917f034bdef40529c,self._test_periodic_sync_routers_task(,1,0,0.0,1044
+d15807005f702e2810651b3917f034bdef40529c,"self._test_periodic_sync_routers_task(routers_to_keep,",1,0,0.0,1045
+d15807005f702e2810651b3917f034bdef40529c,routers_to_keep.append(self.generate_router_info(False)),1,0,0.0,1046
+d15807005f702e2810651b3917f034bdef40529c,for i in range(2):,1,0,0.0,1047
+d15807005f702e2810651b3917f034bdef40529c,routers_to_keep = [],1,0,0.0,1048
+d15807005f702e2810651b3917f034bdef40529c,def test_periodic_sync_routers_task(self):,1,0,0.0,1049
+d15807005f702e2810651b3917f034bdef40529c,self._assert_router_does_not_exist(ri),1,0,0.0,1050
+d15807005f702e2810651b3917f034bdef40529c,self.generate_router_info(False)),1,0,0.0,1051
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted_during_resync=routers_deleted_during_resync),1,0,0.0,1052
+d15807005f702e2810651b3917f034bdef40529c,"self.assertNotIn(ri.router_id,",1,0,0.0,1053
+d15807005f702e2810651b3917f034bdef40529c,ipv6_subnet_modes=subnet_modes),1,0,0.0,1054
+d15807005f702e2810651b3917f034bdef40529c,"# Keepalived notifies of a state transition when it starts,",1,0,0.0,1055
+d15807005f702e2810651b3917f034bdef40529c,interface_name),1,0,0.0,1056
+d15807005f702e2810651b3917f034bdef40529c,"self._assert_no_ip_addresses_on_interface(router.ns_name,",1,0,0.0,1057
+d15807005f702e2810651b3917f034bdef40529c,interface_name = router.get_external_device_name(port['id']),1,0,0.0,1058
+d15807005f702e2810651b3917f034bdef40529c,port = router.get_ex_gw_port(),1,0,0.0,1059
+d15807005f702e2810651b3917f034bdef40529c,if enable_ha:,1,0,0.0,1060
+d15807005f702e2810651b3917f034bdef40529c,"ip_version=6,",1,0,0.0,1061
+d15807005f702e2810651b3917f034bdef40529c,"def _router_lifecycle(self, enable_ha, ip_version=4,",1,0,0.0,1062
+d15807005f702e2810651b3917f034bdef40529c,"count=2,",1,0,0.0,1063
+d15807005f702e2810651b3917f034bdef40529c,"self._add_internal_interface_by_subnet(router.router,",1,0,0.0,1064
+d15807005f702e2810651b3917f034bdef40529c,subnet_modes = [slaac_mode] * 2,1,0,0.0,1065
+d15807005f702e2810651b3917f034bdef40529c,"slaac_mode = {'ra_mode': slaac, 'address_mode': slaac}",1,0,0.0,1066
+d15807005f702e2810651b3917f034bdef40529c,slaac = l3_constants.IPV6_SLAAC,1,0,0.0,1067
+d15807005f702e2810651b3917f034bdef40529c,"router_info = self.generate_router_info(enable_ha, ip_version,",1,0,0.0,1068
+d15807005f702e2810651b3917f034bdef40529c,self.agent.router_info),1,0,0.0,1069
+d15807005f702e2810651b3917f034bdef40529c,for ri in deleted_routers_info:,1,0,0.0,1070
+d15807005f702e2810651b3917f034bdef40529c,self.assertIn('%s/24 dev %s' %,1,0,0.0,1071
+d15807005f702e2810651b3917f034bdef40529c,for r in routers_to_keep:,1,0,0.0,1072
+d15807005f702e2810651b3917f034bdef40529c,mocked_get_routers.return_value = (routers_to_keep +,1,0,0.0,1073
+d15807005f702e2810651b3917f034bdef40529c,mocked_get_routers = self.mock_plugin_api.get_routers,1,0,0.0,1074
+d15807005f702e2810651b3917f034bdef40529c,deleted_routers_info.append(ri),1,0,0.0,1075
+d15807005f702e2810651b3917f034bdef40529c,for r in routers_deleted + routers_deleted_during_resync:,1,0,0.0,1076
+d15807005f702e2810651b3917f034bdef40529c,ns_names_to_retrieve.add(ri.ns_name),1,0,0.0,1077
+d15807005f702e2810651b3917f034bdef40529c,"ri = self.manage_router(self.agent, r)",1,0,0.0,1078
+d15807005f702e2810651b3917f034bdef40529c,deleted_routers_info = [],1,0,0.0,1079
+d15807005f702e2810651b3917f034bdef40529c,self.agent.router_info = {},1,0,0.0,1080
+d15807005f702e2810651b3917f034bdef40529c,ns_names_to_retrieve = set(),1,0,0.0,1081
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted_during_resync):,1,0,0.0,1082
+d15807005f702e2810651b3917f034bdef40529c,"routers_deleted,",1,0,0.0,1083
+d15807005f702e2810651b3917f034bdef40529c,"routers_to_keep,",1,0,0.0,1084
+d15807005f702e2810651b3917f034bdef40529c,"def _test_periodic_sync_routers_task(self,",1,0,0.0,1085
+d15807005f702e2810651b3917f034bdef40529c,"(new_external_device_ip, external_device_name),",1,0,0.0,1086
+d15807005f702e2810651b3917f034bdef40529c,routers_deleted_during_resync),1,0,0.0,1087
+d15807005f702e2810651b3917f034bdef40529c,"with mock.patch.object(namespace_manager.NamespaceManager, 'list_all',",1,0,0.0,1088
+d15807005f702e2810651b3917f034bdef40529c,r['id'])),1,0,0.0,1089
+d15807005f702e2810651b3917f034bdef40529c,for r in routers_deleted_during_resync:,1,0,0.0,1090
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self._namespace_exists(namespaces.NS_PREFIX +,1,0,0.0,1091
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(r['id'], self.agent.router_info)",1,0,0.0,1092
+d15807005f702e2810651b3917f034bdef40529c,self.agent._process_router_update(),1,0,0.0,1093
+d15807005f702e2810651b3917f034bdef40529c,while not self.agent._queue._queue.empty():,1,0,0.0,1094
+d15807005f702e2810651b3917f034bdef40529c,# make sure all events are processed,1,0,0.0,1095
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.router_deleted(self.agent.context, r['id'])",1,0,0.0,1096
+d15807005f702e2810651b3917f034bdef40529c,# router_deleted events may be added there as well,1,0,0.0,1097
+d15807005f702e2810651b3917f034bdef40529c,return_value=ns_names_to_retrieve):,1,0,0.0,1098
+d15807005f702e2810651b3917f034bdef40529c,"# while sync updates are still in the queue, higher priority",1,0,0.0,1099
+d15807005f702e2810651b3917f034bdef40529c,r['external_gateway_info'] = {'network_id': external_network_id},1,0,0.0,1100
+d15807005f702e2810651b3917f034bdef40529c,# Plug external_gateway_info in the routers that are not going to be,1,0,0.0,1101
+d15807005f702e2810651b3917f034bdef40529c,self.mock_plugin_api.get_external_network_id.return_value = (,1,0,0.0,1102
+d15807005f702e2810651b3917f034bdef40529c,external_network_id = _uuid(),1,0,0.0,1103
+d15807005f702e2810651b3917f034bdef40529c,self.agent.periodic_sync_routers_task(self.agent.context),1,0,0.0,1104
+d15807005f702e2810651b3917f034bdef40529c,def test_ha_router_lifecycle(self):,1,0,0.0,1105
+d15807005f702e2810651b3917f034bdef40529c,v6_ext_gw_with_sub=False),1,0,0.0,1106
+d15807005f702e2810651b3917f034bdef40529c,"self._router_lifecycle(enable_ha=False, dual_stack=True,",1,0,0.0,1107
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_extra_routes(self, router):",1,0,0.0,1108
+d15807005f702e2810651b3917f034bdef40529c,def _assert_onlink_subnet_routes(,1,0,0.0,1109
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(extra_route, routes)",1,0,0.0,1110
+d15807005f702e2810651b3917f034bdef40529c,for extra_route in router.router['routes']:,1,0,0.0,1111
+d15807005f702e2810651b3917f034bdef40529c,'destination': route['destination']} for route in routes],1,0,0.0,1112
+d15807005f702e2810651b3917f034bdef40529c,"routes = [{'nexthop': route['nexthop'],",1,0,0.0,1113
+d15807005f702e2810651b3917f034bdef40529c,"routes = ip_lib.get_routing_table(4, namespace=router.ns_name)",1,0,0.0,1114
+d15807005f702e2810651b3917f034bdef40529c,"device, router.get_internal_device_name, router.ns_name))",1,0,0.0,1115
+d15807005f702e2810651b3917f034bdef40529c,ns_name = namespace or router.ns_name,1,0,0.0,1116
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(self.device_exists_with_ips_and_mac(,1,0,0.0,1117
+d15807005f702e2810651b3917f034bdef40529c,for device in internal_devices:,1,0,0.0,1118
+d15807005f702e2810651b3917f034bdef40529c,self.assertTrue(len(internal_devices)),1,0,0.0,1119
+d15807005f702e2810651b3917f034bdef40529c,internal_devices = router.router[l3_constants.INTERFACE_KEY],1,0,0.0,1120
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_internal_devices(self, router):",1,0,0.0,1121
+d15807005f702e2810651b3917f034bdef40529c,"'INPUT',",1,0,0.0,1122
+d15807005f702e2810651b3917f034bdef40529c,"self, router, ip_versions, namespace=None):",1,0,0.0,1123
+d15807005f702e2810651b3917f034bdef40529c,routes = [],1,0,0.0,1124
+d15807005f702e2810651b3917f034bdef40529c,metadata_port_filter)),1,0,0.0,1125
+d15807005f702e2810651b3917f034bdef40529c,def _assert_interfaces_deleted_from_ovs(self):,1,0,0.0,1126
+d15807005f702e2810651b3917f034bdef40529c,"def floating_ips_configured(self, router):",1,0,0.0,1127
+d15807005f702e2810651b3917f034bdef40529c,assert_ovs_bridge_empty(self.agent.conf.external_network_bridge),1,0,0.0,1128
+d15807005f702e2810651b3917f034bdef40529c,assert_ovs_bridge_empty(self.agent.conf.ovs_integration_bridge),1,0,0.0,1129
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(bridge.get_port_name_list()),1,0,0.0,1130
+d15807005f702e2810651b3917f034bdef40529c,bridge = ovs_lib.OVSBridge(bridge_name),1,0,0.0,1131
+d15807005f702e2810651b3917f034bdef40529c,def assert_ovs_bridge_empty(bridge_name):,1,0,0.0,1132
+d15807005f702e2810651b3917f034bdef40529c,"self.assertIn(extra_subnet, routes)",1,0,0.0,1133
+d15807005f702e2810651b3917f034bdef40529c,for ip_version in ip_versions:,1,0,0.0,1134
+d15807005f702e2810651b3917f034bdef40529c,for extra_subnet in (route['cidr'] for route in extra_subnets):,1,0,0.0,1135
+d15807005f702e2810651b3917f034bdef40529c,extra_subnets = router.get_ex_gw_port()['extra_subnets'],1,0,0.0,1136
+d15807005f702e2810651b3917f034bdef40529c,routes = set(route['destination'] for route in routes),1,0,0.0,1137
+d15807005f702e2810651b3917f034bdef40529c,routes.extend(_routes),1,0,0.0,1138
+d15807005f702e2810651b3917f034bdef40529c,namespace=ns_name),1,0,0.0,1139
+d15807005f702e2810651b3917f034bdef40529c,"_routes = ip_lib.get_routing_table(ip_version,",1,0,0.0,1140
+d15807005f702e2810651b3917f034bdef40529c,"'filter',",1,0,0.0,1141
+d15807005f702e2810651b3917f034bdef40529c,"'PREROUTING',",1,0,0.0,1142
+d15807005f702e2810651b3917f034bdef40529c,'fe80::f816:3eff:fe2e:1'),1,0,0.0,1143
+d15807005f702e2810651b3917f034bdef40529c,"'default_gateway_ip': default_gateway_ip,",1,0,0.0,1144
+d15807005f702e2810651b3917f034bdef40529c,result = next(rule for rule in rules if predicate(rule)),1,0,0.0,1145
+d15807005f702e2810651b3917f034bdef40529c,"rules = iptables_manager.get_chain(table, chain)",1,0,0.0,1146
+d15807005f702e2810651b3917f034bdef40529c,"def _get_rule(self, iptables_manager, table, chain, predicate):",1,0,0.0,1147
+d15807005f702e2810651b3917f034bdef40529c,"'extra_subnet_cidr': extra_subnet_cidr,",1,0,0.0,1148
+d15807005f702e2810651b3917f034bdef40529c,"'ex_port_ipv6': ex_port_ipv6,",1,0,0.0,1149
+d15807005f702e2810651b3917f034bdef40529c,"'int_port_ipv6': int_port_ipv6,",1,0,0.0,1150
+d15807005f702e2810651b3917f034bdef40529c,"'floating_ip_cidr': floating_ip_cidr,",1,0,0.0,1151
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_router_does_not_exist(self, router):",1,0,0.0,1152
+d15807005f702e2810651b3917f034bdef40529c,"'internal_device_cidr': internal_device_cidr,",1,0,0.0,1153
+d15807005f702e2810651b3917f034bdef40529c,"'internal_device_name': internal_device_name,",1,0,0.0,1154
+d15807005f702e2810651b3917f034bdef40529c,"'external_device_cidr': external_device_cidr,",1,0,0.0,1155
+d15807005f702e2810651b3917f034bdef40529c,"'external_device_name': external_device_name,",1,0,0.0,1156
+d15807005f702e2810651b3917f034bdef40529c,"'ha_device_name': ha_device_name,",1,0,0.0,1157
+d15807005f702e2810651b3917f034bdef40529c,"}"""""" % {",1,0,0.0,1158
+d15807005f702e2810651b3917f034bdef40529c,return result,1,0,0.0,1159
+d15807005f702e2810651b3917f034bdef40529c,# If the namespace assertion succeeds,1,0,0.0,1160
+d15807005f702e2810651b3917f034bdef40529c,"'nat',",1,0,0.0,1161
+d15807005f702e2810651b3917f034bdef40529c,"'nat', 'POSTROUTING'))",1,0,0.0,1162
+d15807005f702e2810651b3917f034bdef40529c,"self.assertTrue(self._get_rule(router.iptables_manager,",1,0,0.0,1163
+d15807005f702e2810651b3917f034bdef40529c,str(self.agent.conf.metadata_port) in rule.rule),1,0,0.0,1164
+d15807005f702e2810651b3917f034bdef40529c,metadata_port_filter = lambda rule: (,1,0,0.0,1165
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_metadata_chains(self, router):",1,0,0.0,1166
+d15807005f702e2810651b3917f034bdef40529c,"'nat', 'float-snat'))",1,0,0.0,1167
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_floating_ip_chains(self, router):",1,0,0.0,1168
+d15807005f702e2810651b3917f034bdef40529c,"'nat', 'snat'))",1,0,0.0,1169
+d15807005f702e2810651b3917f034bdef40529c,"# then the devices and iptable rules have also been deleted,",1,0,0.0,1170
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(router.iptables_manager.is_chain_empty(,1,0,0.0,1171
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_snat_chains(self, router):",1,0,0.0,1172
+d15807005f702e2810651b3917f034bdef40529c,"lambda: not self._metadata_proxy_exists(self.agent.conf, router))",1,0,0.0,1173
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(,1,0,0.0,1174
+d15807005f702e2810651b3917f034bdef40529c,self.assertFalse(self._namespace_exists(router.ns_name)),1,0,0.0,1175
+d15807005f702e2810651b3917f034bdef40529c,# so there's no need to check that explicitly.,1,0,0.0,1176
+d15807005f702e2810651b3917f034bdef40529c,floating_ips = router.router[l3_constants.FLOATINGIP_KEY],1,0,0.0,1177
+d15807005f702e2810651b3917f034bdef40529c,return len(floating_ips) and all(,1,0,0.0,1178
+d15807005f702e2810651b3917f034bdef40529c,ip_lib.device_exists_with_ips_and_mac(,1,0,0.0,1179
+d15807005f702e2810651b3917f034bdef40529c,def test_agent_notifications_for_router_events(self):,1,0,0.0,1180
+d15807005f702e2810651b3917f034bdef40529c,"resources.ROUTER, events.BEFORE_UPDATE)",1,0,0.0,1181
+d15807005f702e2810651b3917f034bdef40529c,"resources.ROUTER, events.AFTER_CREATE)",1,0,0.0,1182
+d15807005f702e2810651b3917f034bdef40529c,"resources.ROUTER, events.BEFORE_CREATE)",1,0,0.0,1183
+d15807005f702e2810651b3917f034bdef40529c,"registry.subscribe(event_handler,",1,0,0.0,1184
+d15807005f702e2810651b3917f034bdef40529c,event_handler = mock.Mock(),1,0,0.0,1185
+d15807005f702e2810651b3917f034bdef40529c,"""""""",1,0,0.0,1186
+d15807005f702e2810651b3917f034bdef40529c,"{router1.router_id: 'standby', router2.router_id: 'active'}))",1,0,0.0,1187
+d15807005f702e2810651b3917f034bdef40529c,"resources.ROUTER, events.BEFORE_DELETE)",1,0,0.0,1188
+d15807005f702e2810651b3917f034bdef40529c,lambda: self._expected_rpc_report(,1,0,0.0,1189
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router2.ha_state == 'master'),1,0,0.0,1190
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router1.ha_state == 'backup'),1,0,0.0,1191
+d15807005f702e2810651b3917f034bdef40529c,self.fail_ha_router(router1),1,0,0.0,1192
+d15807005f702e2810651b3917f034bdef40529c,def test_keepalived_state_change_bulk_rpc(self):,1,0,0.0,1193
+d15807005f702e2810651b3917f034bdef40529c,return actual_router_states == expected,1,0,0.0,1194
+d15807005f702e2810651b3917f034bdef40529c,"resources.ROUTER, events.AFTER_UPDATE)",1,0,0.0,1195
+d15807005f702e2810651b3917f034bdef40529c,"resources.ROUTER, events.AFTER_DELETE)",1,0,0.0,1196
+d15807005f702e2810651b3917f034bdef40529c,"router.get_external_device_name(external_port['id']),",1,0,0.0,1197
+d15807005f702e2810651b3917f034bdef40529c,"mock.call('router', 'before_delete', self.agent, router=router),",1,0,0.0,1198
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.conf.set_override('ipv6_gateway',",1,0,0.0,1199
+d15807005f702e2810651b3917f034bdef40529c,def test_legacy_router_lifecycle_with_no_gateway_subnet(self):,1,0,0.0,1200
+d15807005f702e2810651b3917f034bdef40529c,"self._router_lifecycle(enable_ha=False, dual_stack=True)",1,0,0.0,1201
+d15807005f702e2810651b3917f034bdef40529c,def test_legacy_router_lifecycle(self):,1,0,0.0,1202
+d15807005f702e2810651b3917f034bdef40529c,event_handler.assert_has_calls(expected_calls),1,0,0.0,1203
+d15807005f702e2810651b3917f034bdef40529c,"mock.call('router', 'after_delete', self.agent, router=router)]",1,0,0.0,1204
+d15807005f702e2810651b3917f034bdef40529c,"mock.call('router', 'after_update', self.agent, router=router),",1,0,0.0,1205
+d15807005f702e2810651b3917f034bdef40529c,router_info = self.generate_router_info(enable_ha=False),1,0,0.0,1206
+d15807005f702e2810651b3917f034bdef40529c,"mock.call('router', 'before_update', self.agent, router=router),",1,0,0.0,1207
+d15807005f702e2810651b3917f034bdef40529c,"mock.call('router', 'after_create', self.agent, router=router),",1,0,0.0,1208
+d15807005f702e2810651b3917f034bdef40529c,"mock.call('router', 'before_create', self.agent, router=router),",1,0,0.0,1209
+d15807005f702e2810651b3917f034bdef40529c,expected_calls = [,1,0,0.0,1210
+d15807005f702e2810651b3917f034bdef40529c,"self._delete_router(self.agent, router.router_id)",1,0,0.0,1211
+d15807005f702e2810651b3917f034bdef40529c,self.agent._process_updated_router(router.router),1,0,0.0,1212
+d15807005f702e2810651b3917f034bdef40529c,actual_router_states[router_id] = state,1,0,0.0,1213
+d15807005f702e2810651b3917f034bdef40529c,"for router_id, state in six.iteritems(call):",1,0,0.0,1214
+d15807005f702e2810651b3917f034bdef40529c,for call in calls:,1,0,0.0,1215
+d15807005f702e2810651b3917f034bdef40529c,return [address['cidr'] for address in,1,0,0.0,1216
+d15807005f702e2810651b3917f034bdef40529c,"namespace, interface, ip_address):",1,0,0.0,1217
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_ip_address_on_interface(self,",1,0,0.0,1218
+d15807005f702e2810651b3917f034bdef40529c,"[], self._get_addresses_on_device(namespace, interface))",1,0,0.0,1219
+d15807005f702e2810651b3917f034bdef40529c,self.assertEqual(,1,0,0.0,1220
+d15807005f702e2810651b3917f034bdef40529c,"def _assert_no_ip_addresses_on_interface(self, namespace, interface):",1,0,0.0,1221
+d15807005f702e2810651b3917f034bdef40529c,"ip_lib.IPDevice(interface, namespace=namespace).addr.list()]",1,0,0.0,1222
+d15807005f702e2810651b3917f034bdef40529c,"def _get_addresses_on_device(cls, namespace, interface):",1,0,0.0,1223
+d15807005f702e2810651b3917f034bdef40529c,actual_router_states = {},1,0,0.0,1224
+d15807005f702e2810651b3917f034bdef40529c,@classmethod,1,0,0.0,1225
+d15807005f702e2810651b3917f034bdef40529c,ha_device.link.set_down(),1,0,0.0,1226
+d15807005f702e2810651b3917f034bdef40529c,"ha_device = ip_lib.IPDevice(device_name, router.ha_namespace)",1,0,0.0,1227
+d15807005f702e2810651b3917f034bdef40529c,device_name = router.get_ha_device_name(),1,0,0.0,1228
+d15807005f702e2810651b3917f034bdef40529c,"def fail_ha_router(self, router):",1,0,0.0,1229
+d15807005f702e2810651b3917f034bdef40529c,"['%s/32' % fip['floating_ip_address']],",1,0,0.0,1230
+d15807005f702e2810651b3917f034bdef40529c,self.assertIn(,1,0,0.0,1231
+d15807005f702e2810651b3917f034bdef40529c,"ip_address, self._get_addresses_on_device(namespace, interface))",1,0,0.0,1232
+d15807005f702e2810651b3917f034bdef40529c,class L3AgentTestCase(L3AgentTestFramework):,1,0,0.0,1233
+d15807005f702e2810651b3917f034bdef40529c,def test_keepalived_state_change_notification(self):,1,0,0.0,1234
+d15807005f702e2810651b3917f034bdef40529c,enqueue_mock = mock.patch.object(,1,0,0.0,1235
+d15807005f702e2810651b3917f034bdef40529c,"self.agent, 'enqueue_state_change').start()",1,0,0.0,1236
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router.ha_state == 'master'),1,0,0.0,1237
+d15807005f702e2810651b3917f034bdef40529c,self.fail_ha_router(router),1,0,0.0,1238
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: router.ha_state == 'backup'),1,0,0.0,1239
+d15807005f702e2810651b3917f034bdef40529c,utils.wait_until_true(lambda: enqueue_mock.call_count == 3),1,0,0.0,1240
+d15807005f702e2810651b3917f034bdef40529c,calls = [args[0] for args in enqueue_mock.call_args_list],1,0,0.0,1241
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual((router.router_id, 'backup'), calls[0])",1,0,0.0,1242
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual((router.router_id, 'master'), calls[1])",1,0,0.0,1243
+d15807005f702e2810651b3917f034bdef40529c,"self.assertEqual((router.router_id, 'backup'), calls[2])",1,0,0.0,1244
+d15807005f702e2810651b3917f034bdef40529c,"def _expected_rpc_report(self, expected):",1,0,0.0,1245
+d15807005f702e2810651b3917f034bdef40529c,calls = (args[0][1] for args in,1,0,0.0,1246
+d15807005f702e2810651b3917f034bdef40529c,self.agent.plugin_rpc.update_ha_routers_states.call_args_list),1,0,0.0,1247
+d15807005f702e2810651b3917f034bdef40529c,"self.agent.context, ext_net_id)",1,0,0.0,1248

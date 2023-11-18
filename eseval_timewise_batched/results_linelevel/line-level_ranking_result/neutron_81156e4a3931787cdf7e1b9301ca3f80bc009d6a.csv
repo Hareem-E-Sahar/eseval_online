@@ -1,0 +1,1083 @@
+commit_id,line,line_level_label,count,line_score,row
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# distributed under the License is distributed on an ""AS IS"" BASIS,",1,8,1.0,1
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Linux Bridge, and IVS VIF drivers in Nova and the neutron agents. See the",1,7,0.875,2
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# See the License for the specific language governing permissions and,1,7,0.875,3
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _get_marker_obj(self, context, resource, limit, marker):",1,6,0.75,4
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return getattr(self, '_get_%s' % resource)(context, marker)",1,6,0.75,5
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# countable or scalable number. [1] gives us the method to test the scale,1,6,0.75,6
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Licensed under the Apache License, Version 2.0 (the ""License"");",1,5,0.625,7
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# you may not use this file except in compliance with the License.,1,5,0.625,8
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# limitations under the License.,1,5,0.625,9
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# RPC interface for the metadata service to get info from the plugin side,1,5,0.625,10
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# You may obtain a copy of the License at,1,4,0.5,11
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# We define the metadata cidr since it falls in the range.,1,4,0.5,12
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# RPC Interface for agents to call DHCP API implemented on the plugin side,1,4,0.5,13
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# A length of a iptables chain name must be less than or equal to 11,1,4,0.5,14
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# <max length of iptables chain name> - (<binary_name> + '-') = 28-(16+1) = 11,1,4,0.5,15
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if limit and marker:,1,4,0.5,16
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if limit and page_reverse and sorts:,1,4,0.5,17
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# hooks into the dict below for ""augmenting"" the ""core way"" of",1,4,0.5,18
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _validate_cidr(self, context, remote_ip_prefix, direction, excluded):",1,4,0.5,19
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# RPC interface for agent to plugin resources API,1,3,0.375,20
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# it will need to be updated in the future:,1,3,0.375,21
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Possible prefixes to partial port IDs in interface names used by the OVS,",1,3,0.375,22
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# RPC interface for agent to plugin security group API,1,3,0.375,23
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# RPC interface for agent to plugin DVR api,1,3,0.375,24
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# RPC interface for reporting state back to the plugin,1,3,0.375,25
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# More states will be available in the future - e.g.: RECYCLABLE,1,3,0.375,26
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# even if they overlap since they are used in disjoint namespaces,",1,3,0.375,27
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Unless required by applicable law or agreed to in writing, software",1,3,0.375,28
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Possible types of values (e.g. in QoS rule types),1,3,0.375,29
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Number of resources for neutron agent side functions to deal,1,3,0.375,30
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Number of resources for neutron to divide the large RPC,1,3,0.375,31
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _validate_cidr(self, context, label_id, remote_ip_prefix,",1,3,0.375,32
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# of known protocol numbers that require a name to be used and,1,3,0.375,33
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# 'get_ovs_interfaceid' method in Nova (nova/virt/libvirt/vif.py) for details.,1,3,0.375,34
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if limit and page_reverse:,1,3,0.375,35
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,Query hooks take as input the query being built and return a,1,3,0.375,36
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sorts = [(s[0], not s[1]) for s in sorts]",1,3,0.375,37
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _validate_cidr(self, context, label_id, remote_ip_prefix,",0,3,0.375,38
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# check if there is a call per agent,0,3,0.375,39
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"topic = ""%s.%s"" % (self.topic, agent_host)",1,3,0.375,40
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# To this aim, the register_model_query_hook and unregister_query_hook",1,3,0.375,41
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,Add the hooks to the _model_query_hooks dict. Models are the keys,1,3,0.375,42
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# bind each router to a specific agent,0,3,0.375,43
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,Filter hooks take as input the filter expression being built and return,1,3,0.375,44
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# must call unbound method - use self as 1st argument,1,3,0.375,45
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if context.is_admin and 'tenant_id' in resource:,1,3,0.375,46
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,elif ('tenant_id' in resource and,1,3,0.375,47
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,reason = _('Cannot create resource for another tenant'),1,3,0.375,48
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Execute query hooks registered from mixins and plugins,1,3,0.375,49
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,2,0.25,50
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_NETWORK_NAME = 'HA network tenant %s',1,2,0.25,51
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_SUBNET_NAME = 'HA subnet tenant %s',1,2,0.25,52
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_PORT_NAME = 'HA port tenant %s',1,2,0.25,53
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# protocol names that require a different name to be used,",1,2,0.25,54
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# These cases are special, and were found by inspection:",1,2,0.25,55
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# This is how the list was created, so there is a possibility",1,2,0.25,56
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# $ for num in {0..255}; do iptables -A INPUT -p $num; done,1,2,0.25,57
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# - 'pgm' uses '113' instead of its name,1,2,0.25,58
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# length of all device prefixes (e.g. qvo, tap, qvb)",1,2,0.25,59
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,direction = m['direction'],0,2,0.25,60
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# TODO(amuller): Re-define the RPC namespaces once Oslo messaging supports,1,2,0.25,61
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,direction = m['direction'],1,2,0.25,62
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"routers = self._get_collection_query(context, l3_db.Router)",1,2,0.25,63
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"rule = self._get_by_id(context, MeteringLabelRule, rule_id)",1,2,0.25,64
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,routers = orm.relationship(,1,2,0.25,65
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"rules = orm.relationship(MeteringLabelRule, backref=""label"",",1,2,0.25,66
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,description = sa.Column(sa.String(attr.LONG_DESCRIPTION_MAX_LEN)),1,2,0.25,67
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,name = sa.Column(sa.String(attr.NAME_MAX_LEN)),1,2,0.25,68
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction = sa.Column(sa.Enum('ingress', 'egress',",1,2,0.25,69
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"rule = self._get_by_id(context,",0,2,0.25,70
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"routers = self._get_collection_query(context, l3_models.Router)",0,2,0.25,71
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self._session = None,0,2,0.25,72
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,uuid = 'neutron.openstack.common.uuidutils.generate_uuid',1,2,0.25,73
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,uuid = 'oslo_utils.uuidutils.generate_uuid',0,2,0.25,74
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = ('neutron.tests.unit.test_l3_plugin.',1,2,0.25,75
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_NAMESPACE_DHCP_PLUGIN = None,1,2,0.25,76
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# for its RPC clients in order to support rolling upgrades.,1,2,0.25,77
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data = {,0,2,0.25,78
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_NAMESPACE_METADATA = None,1,2,0.25,79
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_NAMESPACE_SECGROUP = None,1,2,0.25,80
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction, remote_ip_prefix,",1,2,0.25,81
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data = {'metering_label_rule':,1,2,0.25,82
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id, direction, False,",0,2,0.25,83
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = ('neutron.tests.unit.extensions.test_l3.',0,2,0.25,84
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,direction = m['direction'],1,2,0.25,85
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,cidrs = [r['remote_ip_prefix'] for r in r_ips],1,2,0.25,86
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid, 'shared': False,",0,2,0.25,87
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid, 'shared': True,",0,2,0.25,88
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid, 'shared': False,",0,2,0.25,89
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"data = {'id': label['id'], 'rules': rules}",1,2,0.25,90
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"data = {'id': label['id'], 'rules': rules,",0,2,0.25,91
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# call data sets.,1,2,0.25,92
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# for the restart success rate.,1,2,0.25,93
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# ovs-agent will have a lower timeout probability. And according to the,1,2,0.25,94
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# issue. And we have tested the value of 1000, 500, 200, 100. But for 100,",1,2,0.25,95
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Floating IP host binding states,1,2,0.25,96
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ACCEPT_RA_WITH_FORWARDING = 2,1,2,0.25,97
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ACCEPT_RA_DISABLED = 0,1,2,0.25,98
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,#           even if forwarding is enabled.,1,2,0.25,99
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,#         2 Overrule forwarding behaviour. Accept Router Advertisements,1,2,0.25,100
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,#         1 Accept Router Advertisements if forwarding is disabled.,1,2,0.25,101
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,#         0 Do not accept Router Advertisements.,1,2,0.25,102
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_NAMESPACE_RESOURCES = None,1,2,0.25,103
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_NAMESPACE_STATE = None,1,2,0.25,104
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_NAMESPACE_DVR = None,1,2,0.25,105
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = 'neutron.tests.unit.test_l3_plugin.TestL3NatIntPlugin',1,2,0.25,106
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Timeout in seconds for getting an IPv6 LLA,1,2,0.25,107
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = 'neutron.tests.unit.extensions.test_l3.TestL3NatIntPlugin',0,2,0.25,108
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = ('neutron.tests.unit.test_l3_plugin.',0,2,0.25,109
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _model_query(self, context, model):",1,2,0.25,110
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,Minimize the potential for the instance persisting,1,2,0.25,111
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# add key to dict,1,2,0.25,112
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"and a ""filter"" component, which is used to build the filter expression.",1,2,0.25,113
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"of this dict, whereas the value is another dict mapping hook names to",1,2,0.25,114
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# api resources. Mixins can use this dict for adding their own methods,1,2,0.25,115
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""Common methods used in core and service plugins.""""""",1,2,0.25,116
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent = agents_db.Agent(host=agent_host),1,2,0.25,117
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"expected = {'args': {'routers': [{'status': 'ACTIVE',",1,2,0.25,118
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"data = callbacks.get_sync_data_metering(self.adminContext,",0,2,0.25,119
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,s = subnet['subnet'],0,2,0.25,120
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent = {,0,2,0.25,121
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""Unit tests for the case where separate service plugin",0,2,0.25,122
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query_filter = None,1,2,0.25,123
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"expected = [mock.call(self.ctx, expected1, topic=topic1),",0,2,0.25,124
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"topic2 = ""%s.%s"" % (self.topic, 'agent2')",0,2,0.25,125
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"topic1 = ""%s.%s"" % (self.topic, 'agent1')",0,2,0.25,126
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"agents = {self.uuid: agent1,",0,2,0.25,127
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def get_sync_data_metering(self, context, **kwargs):",1,2,0.25,128
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.plugin = plugin,1,2,0.25,129
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import rpc as p_rpc,1,2,0.25,130
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def get_sync_data_metering(self, context, label_id=None, router_ids=None):",0,2,0.25,131
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = manager.NeutronManager.get_plugin(),1,2,0.25,132
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = manager.NeutronManager.get_service_plugins().get(,0,2,0.25,133
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data = self.get_sync_data_metering(context),1,2,0.25,134
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin = 'neutron.tests.unit.test_l3_plugin.TestL3NatIntPlugin',0,2,0.25,135
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# NOTE(salvatore-orlando): unless the model allows for shared objects,1,2,0.25,136
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def get_sync_data_metering(self, context, label_id=None):",1,2,0.25,137
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"if not context.is_admin and hasattr(model, 'tenant_id'):",1,2,0.25,138
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"collection = sqlalchemyutils.paginate_query(collection, model, limit,",1,2,0.25,139
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LOG.debug(_('Fanout notify metering agent at %(topic)s the message ',1,2,0.25,140
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"query_hook = getattr(self, query_hook, None)",1,2,0.25,141
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LOG.debug('Fanout notify metering agent at %(topic)s the message ',0,2,0.25,142
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data.iteritems() if k in columns),1,2,0.25,143
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return dict((k, v) for (k, v) in",1,2,0.25,144
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,columns = [c.name for c in model.__table__.columns],1,2,0.25,145
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,the model passed as second parameter.,1,2,0.25,146
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""Remove all the attributes from data which are not columns of",1,2,0.25,147
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return None,1,2,0.25,148
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _get_collection_count(self, context, model, filters=None):",1,2,0.25,149
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"items = [dict_func(c, fields) for c in query]",1,2,0.25,150
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _get_collection(self, context, model, dict_func, filters=None,",1,2,0.25,151
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,fmt = 'xml',1,2,0.25,152
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _get_collection_query(self, context, model, filters=None,",1,2,0.25,153
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return dict(((key, item) for key, item in resource.items()",1,2,0.25,154
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"filter_hook = getattr(self, filter_hook, None)",1,2,0.25,155
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# NOTE(salvatore-orlando): 'if query_filter' will try to evaluate the,1,2,0.25,156
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"func = getattr(self, func, None)",1,2,0.25,157
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _fields(self, resource, fields):",1,2,0.25,158
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"data = self.get_sync_data_for_rule(context, rule)",0,2,0.25,159
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if key in fields)),1,2,0.25,160
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return resource,1,2,0.25,161
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"result_filter = getattr(self, result_filter, None)",1,2,0.25,162
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _get_tenant_id_for_create(self, context, resource):",1,2,0.25,163
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _get_by_id(self, context, model, id):",1,2,0.25,164
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ROUTER_STATUS_ACTIVE = 'ACTIVE',1,1,0.125,165
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_ROUTER_STATE_STANDBY = 'standby',1,1,0.125,166
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_ROUTER_STATE_ACTIVE = 'active',1,1,0.125,167
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,SNAT_ROUTER_INTF_KEY = '_snat_router_interfaces',1,1,0.125,168
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,FLOATINGIP_AGENT_INTF_KEY = '_floatingip_agent_interfaces',1,1,0.125,169
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,METERING_LABEL_KEY = '_metering_labels',1,1,0.125,170
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_ROUTER_STATE_KEY = '_ha_state',1,1,0.125,171
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALID_ROUTER_STATUS = (ROUTER_STATUS_ACTIVE,",1,1,0.125,172
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ROUTER_STATUS_ERROR = 'ERROR',1,1,0.125,173
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ROUTER_STATUS_ALLOCATING = 'ALLOCATING',1,1,0.125,174
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ROUTER_PORT_OWNERS = lib_constants.ROUTER_INTERFACE_OWNERS_SNAT + \,1,1,0.125,175
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db.models import agent as agent_model,0,1,0.125,176
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# implied.,1,1,0.125,177
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,#    http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,178
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,#,1,1,0.125,179
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import constants as n_const,1,1,0.125,180
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent2 = agents_db.Agent(host='agent2'),1,1,0.125,181
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent1 = agents_db.Agent(host='agent1'),1,1,0.125,182
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent2 = agent_model.Agent(host='agent2'),0,1,0.125,183
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent1 = agent_model.Agent(host='agent1'),0,1,0.125,184
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_db = metering_models.MeteringLabelRule(,1,1,0.125,185
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_ROUTER_STATE_UNKNOWN = 'unknown',1,1,0.125,186
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Copyright (c) 2012 OpenStack Foundation.,1,1,0.125,187
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# When using iptables-save we specify '-p {proto}',",1,1,0.125,188
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALID_HA_STATES = (HA_ROUTER_STATE_ACTIVE, HA_ROUTER_STATE_STANDBY,",1,1,0.125,189
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# $ iptables-save,1,1,0.125,190
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LLA_TASK_TIMEOUT = 40,1,1,0.125,191
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded = m['excluded'],1,1,0.125,192
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,MAX_IPTABLES_CHAIN_LEN_NOWRAP = 28,1,1,0.125,193
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,MAX_IPTABLES_CHAIN_LEN_WRAP = 11,1,1,0.125,194
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# characters.,1,1,0.125,195
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'0': None,",1,1,0.125,196
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"IPTABLES_PROTOCOL_NAME_MAP = {lib_constants.PROTO_NAME_IPV6_ENCAP: 'ipv6',",1,1,0.125,197
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# - protocol '0' uses no -p argument,1,1,0.125,198
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# - 'icmpv6' uses 'ipv6-icmp',1,1,0.125,199
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# - 'ipv6-encap' uses 'ipv6',1,1,0.125,200
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# because that is how iptables-save will display them.,1,1,0.125,201
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,PAGINATION_INFINITE = 'infinite',1,1,0.125,202
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# but sometimes those values are not identical.  This is a map,1,1,0.125,203
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"str(v): k for k, v in lib_constants.IP_PROTOCOL_MAP.items()}",1,1,0.125,204
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,IP_PROTOCOL_NUM_TO_NAME_MAP = {,1,1,0.125,205
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,IP_PROTOCOL_NAME_ALIASES = {lib_constants.PROTO_NAME_IPV6_ICMP_LEGACY:,1,1,0.125,206
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ETHERTYPE_IPV6 = 0x86DD,1,1,0.125,207
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ETHERTYPE_IP = 0x0800,1,1,0.125,208
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ETHERTYPE_ARP = 0x0806,1,1,0.125,209
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ETHERTYPE_NAME_ARP = 'arp',1,1,0.125,210
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,SORT_DIRECTION_DESC = 'desc',1,1,0.125,211
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,SORT_DIRECTION_ASC = 'asc',1,1,0.125,212
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._validate_cidr(context, label_id, ip_prefix, direction,",1,1,0.125,213
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_db = metering_models.MeteringLabelRule(,0,1,0.125,214
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ip_prefix = m['remote_ip_prefix'],1,1,0.125,215
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def get_plugin_type(cls):,0,1,0.125,216
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"context, metering_models.MeteringLabelRule, rule_id)",0,1,0.125,217
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label_rule = self._get_by_id(,0,1,0.125,218
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return self._get_collection(context, metering_models.MeteringLabelRule,",0,1,0.125,219
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return self._get_collection(context, metering_models.MeteringLabel,",0,1,0.125,220
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label = self._get_by_id(context,",0,1,0.125,221
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"label = self._get_by_id(context,",0,1,0.125,222
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_db = metering_models.MeteringLabel(,0,1,0.125,223
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import _deprecate,0,1,0.125,224
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db.models import l3 as l3_models,0,1,0.125,225
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def get_plugin_type(self):,1,1,0.125,226
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,@classmethod,0,1,0.125,227
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label_id = m['metering_label_id'],1,1,0.125,228
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.ctx = context.Context('', self.tenant_id, is_admin=True)",1,1,0.125,229
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.ctx = FakeContext('', self.tenant_id, is_admin=True)",0,1,0.125,230
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return self._session,0,1,0.125,231
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self._session = db_api.get_session(),0,1,0.125,232
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if self._session is None:,0,1,0.125,233
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def session(self):,0,1,0.125,234
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def __init__(self, *args, **kwargs):",0,1,0.125,235
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# checking for existence of session attribute.,0,1,0.125,236
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# TODO(akamyshnikova):we need this temporary FakeContext class while Context,0,1,0.125,237
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# must be shorter than linux IFNAMSIZ (which is 16),1,1,0.125,238
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label = context.session.query(,0,1,0.125,239
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = context.session.query(metering_models.MeteringLabel),0,1,0.125,240
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = labels.filter(,0,1,0.125,241
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = (labels.join(metering_models.MeteringLabel.routers).,0,1,0.125,242
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_db = metering_models.MeteringLabelRule(,0,1,0.125,243
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._validate_cidr(context, label_id, ip_prefix, direction,",0,1,0.125,244
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded = m['excluded'],0,1,0.125,245
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ip_prefix = m['remote_ip_prefix'],0,1,0.125,246
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label_id = m['metering_label_id'],0,1,0.125,247
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = (labels.join(MeteringLabel.routers).,1,1,0.125,248
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = labels.filter(MeteringLabel.id == label_id),1,1,0.125,249
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = context.session.query(MeteringLabel),1,1,0.125,250
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label = context.session.query(MeteringLabel).get(,1,1,0.125,251
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_db = MeteringLabelRule(id=uuidutils.generate_uuid(),",1,1,0.125,252
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_rule = self._get_by_id(context,",1,1,0.125,253
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return self._get_collection(context, MeteringLabelRule,",1,1,0.125,254
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return self._get_collection(context, MeteringLabel,",1,1,0.125,255
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label = self._get_by_id(context, MeteringLabel, label_id)",1,1,0.125,256
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"label = self._get_by_id(context, MeteringLabel, label_id)",1,1,0.125,257
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_db = MeteringLabel(id=uuidutils.generate_uuid(),",1,1,0.125,258
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"shared = sa.Column(sa.Boolean, default=False, server_default=sql.false())",1,1,0.125,259
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded = sa.Column(sa.Boolean, default=False, server_default=sql.false())",1,1,0.125,260
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id = sa.Column(sa.String(36),",1,1,0.125,261
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix = sa.Column(sa.String(64)),1,1,0.125,262
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,import sqlalchemy as sa,1,1,0.125,263
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LINUX_DEV_PREFIX_LEN = 3,1,1,0.125,264
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if source_ip_prefix:,0,1,0.125,265
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LINUX_DEV_LEN = 14,1,1,0.125,266
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if metering_label_rule.get('source_ip_prefix'):,0,1,0.125,267
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label_id = m['metering_label_id'],1,1,0.125,268
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,m = metering_label_rule['metering_label_rule'],1,1,0.125,269
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if (netaddr.IPSet(cidrs) & new_cidr_ipset):,1,1,0.125,270
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,new_cidr_ipset = netaddr.IPSet([remote_ip_prefix]),1,1,0.125,271
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"r_ips = self.get_metering_label_rules(context,",1,1,0.125,272
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction, excluded):",1,1,0.125,273
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return self._make_metering_label_rule_dict(rule),0,1,0.125,274
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule.destination_ip_prefix = netaddr.IPNetwork(,0,1,0.125,275
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if metering_label_rule.get('destination_ip_prefix'):,0,1,0.125,276
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule.source_ip_prefix = netaddr.IPNetwork(,0,1,0.125,277
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule.remote_ip_prefix = netaddr.IPNetwork(,0,1,0.125,278
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"INTERFACE_PREFIXES = (lib_constants.TAP_DEVICE_PREFIX,",1,1,0.125,279
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if metering_label_rule.get('remote_ip_prefix'):,0,1,0.125,280
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label_id = metering_label_rule['metering_label_id'],0,1,0.125,281
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LOG = logging.getLogger(__name__),0,1,0.125,282
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid}],",1,1,0.125,283
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid},",1,1,0.125,284
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid}],",1,1,0.125,285
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid}],",1,1,0.125,286
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid},",1,1,0.125,287
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'excluded': False,",1,1,0.125,288
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import utils,1,1,0.125,289
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded = m['excluded'],1,1,0.125,290
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._validate_cidr(context, label_id, ip_prefix, direction,",1,1,0.125,291
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return self._make_metering_label_rule_dict(rule),1,1,0.125,292
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': direction,",0,1,0.125,293
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return label,1,1,0.125,294
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"label = super(MeteringPlugin, self).delete_metering_label(",1,1,0.125,295
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction, remote_ip_prefix) as label_rule:",1,1,0.125,296
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"res = self._create_metering_label_rule(self.fmt,",1,1,0.125,297
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction,",1,1,0.125,298
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix,",1,1,0.125,299
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': direction,",1,1,0.125,300
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix, excluded, **kwargs):",1,1,0.125,301
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id2, direction, excluded,",0,1,0.125,302
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id1, direction, excluded,",0,1,0.125,303
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.fmt, metering_label_id, direction, excluded,",0,1,0.125,304
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label['metering_label']['id'], direction,",0,1,0.125,305
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.fmt, _fake_uuid(), direction, excluded,",0,1,0.125,306
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,res = self._create_metering_label_rule(,0,1,0.125,307
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id, direction, excluded,",0,1,0.125,308
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction, excluded, **kwargs)",0,1,0.125,309
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if destination_ip_prefix:,0,1,0.125,310
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data['metering_label_rule']['source_ip_prefix'] = source_ip_prefix,0,1,0.125,311
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.meter_rpc = metering_rpc_agent_api.MeteringAgentNotifyAPI(),1,1,0.125,312
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data['metering_label_rule']['remote_ip_prefix'] = remote_ip_prefix,0,1,0.125,313
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if remote_ip_prefix:,0,1,0.125,314
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid}],",0,1,0.125,315
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid},",0,1,0.125,316
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'excluded': False,",0,1,0.125,317
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,IPAM_ALLOCATION_STATUS_ALLOCATED = 'ALLOCATED',1,1,0.125,318
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,METADATA_CIDR = '169.254.169.254/32',1,1,0.125,319
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,L3_HA_NET_CIDR = '169.254.192.0/18',1,1,0.125,320
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,DVR_FIP_LL_CIDR = '169.254.64.0/18',1,1,0.125,321
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,PRIVATE_CIDR_RANGE = '169.254.0.0/16',1,1,0.125,322
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# but for now they are unique.,1,1,0.125,323
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# them all here. These address ranges should not cause any issues,1,1,0.125,324
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Some components communicate using private address ranges, define",1,1,0.125,325
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ACCEPT_RA_WITHOUT_FORWARDING = 1,1,1,0.125,326
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Possible values are:,1,1,0.125,327
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# networking (netdev) tree, file Documentation/networking/ip-sysctl.txt",1,1,0.125,328
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Configuration values for accept_ra sysctl, copied from linux kernel",1,1,0.125,329
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,PORT_RANGE_MAX = 65535,1,1,0.125,330
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,PORT_RANGE_MIN = 1,1,1,0.125,331
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"IP_ALLOWED_VERSIONS = [lib_constants.IP_VERSION_4, lib_constants.IP_VERSION_6]",1,1,0.125,332
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALID_ETHERTYPES = (lib_constants.IPv4, lib_constants.IPv6)",1,1,0.125,333
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"ROUTER_MARK_MASK = ""0xffff""",1,1,0.125,334
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,IPV6_MIN_MTU = 1280,1,1,0.125,335
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,DEFAULT_NETWORK_MTU = 1500,1,1,0.125,336
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Default network MTU value when not configured,1,1,0.125,337
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Targets with multiple namespaces. Neutron will then implement callbacks,1,1,0.125,338
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ATTRIBUTES_TO_UPDATE = 'attributes_to_update',1,1,0.125,339
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# The only defined IpamAllocation status at this stage is 'ALLOCATED'.,1,1,0.125,340
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALID_IPAM_ALLOCATION_STATUSES = (IPAM_ALLOCATION_STATUS_ALLOCATED,)",1,1,0.125,341
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import constants,1,1,0.125,342
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Port binding states for Live Migration,1,1,0.125,343
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_RES_PROCESSING_STEP = 20,1,1,0.125,344
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,AGENT_RES_PROCESSING_STEP = 100,1,1,0.125,345
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# [1] http://paste.openstack.org/show/745685/,1,1,0.125,346
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# than 500/1000. But such extra time looks inevitably needed to be sacrificed,1,1,0.125,347
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# testing result, step size 100 can indeed cost about 10% much more time",1,1,0.125,348
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Setting this value does not count on special conditions, it is just a human",1,1,0.125,349
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# with large sets.,1,1,0.125,350
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RP_INVENTORY_DEFAULTS = 'resource_provider_inventory_defaults',1,1,0.125,351
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RP_BANDWIDTHS = 'resource_provider_bandwidths',1,1,0.125,352
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,EXT_PARENT_PREFIX = 'ext_parent',1,1,0.125,353
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,NO_ACTIVE_BINDING = 'no_active_binding',1,1,0.125,354
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Port bindings handling,1,1,0.125,355
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,IEC_BASE = 1024,1,1,0.125,356
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,SI_BASE = 1000,1,1,0.125,357
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# Units base,1,1,0.125,358
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALUES_TYPE_RANGE = ""range""",1,1,0.125,359
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALUES_TYPE_CHOICES = ""choices""",1,1,0.125,360
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"FLOATING_IP_HOST_NEEDS_BINDING = ""FLOATING_IP_HOST_NEEDS_BINDING""",1,1,0.125,361
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"FLOATING_IP_HOST_UNBOUND = ""FLOATING_IP_HOST_UNBOUND""",1,1,0.125,362
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"VALID_FLOATINGIP_STATUS = (lib_constants.FLOATINGIP_STATUS_ACTIVE,",1,1,0.125,363
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"PORT_BINDING_STATUSES = (lib_constants.ACTIVE,",1,1,0.125,364
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"tenant_id = self._get_tenant_id_for_create(context, m)",1,1,0.125,365
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ip_prefix = m['remote_ip_prefix'],1,1,0.125,366
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.endpoints = [metering_rpc.MeteringRpcCallbacks(self)],1,1,0.125,367
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,callbacks = metering_rpc.MeteringRpcCallbacks(,0,1,0.125,368
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid},",1,1,0.125,369
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid}],",1,1,0.125,370
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'admin_state_up': True,",1,1,0.125,371
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'gw_port_id': None,",1,1,0.125,372
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.l3routers_patch = mock.patch(plugin_str +,1,1,0.125,373
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin_str = ('neutron.tests.unit.services.metering.',1,1,0.125,374
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def setUp(self):,1,1,0.125,375
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"supported_extension_aliases = [""router"", ""l3_agent_scheduler""]",1,1,0.125,376
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,service_plugins = {'metering_plugin_name': DB_METERING_PLUGIN_KLASS},1,1,0.125,377
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,DB_METERING_PLUGIN_KLASS = (,1,1,0.125,378
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,r = router['router'],0,1,0.125,379
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.l3routers_mock.side_effect = side_effect,0,1,0.125,380
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def test_get_sync_data_metering(self):,0,1,0.125,381
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,callback = agents_db.AgentExtRpcCallback(),0,1,0.125,382
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'start_flag': True,0,1,0.125,383
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _register_l3_agent(self, host):",0,1,0.125,384
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.adminContext = context.get_admin_context(),0,1,0.125,385
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.meter_plugin = manager.NeutronManager.get_service_plugins().get(,0,1,0.125,386
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ext_mgr = MeteringTestExtensionManager(),0,1,0.125,387
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,for k in ext_metering.RESOURCE_ATTRIBUTE_MAP,0,1,0.125,388
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,resource_prefix_map = dict(,0,1,0.125,389
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,l3_plugin = ('neutron.tests.unit.test_l3_plugin.',0,1,0.125,390
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid}]},",1,1,0.125,391
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'namespace': None,",1,1,0.125,392
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent_host = 'l3_agent_host',1,1,0.125,393
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.l3routers_mock.return_value = [agent],1,1,0.125,394
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def safe_reference(self):,1,1,0.125,395
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"model_hooks[name] = {'query': query_hook, 'filter': filter_hook,",1,1,0.125,396
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,cls._model_query_hooks[model] = model_hooks,1,1,0.125,397
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,model_hooks = {},1,1,0.125,398
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not model_hooks:,1,1,0.125,399
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,model_hooks = cls._model_query_hooks.get(model),1,1,0.125,400
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"Each hook has a ""query"" component, used to build the query expression",1,1,0.125,401
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,callables performing the hook.,1,1,0.125,402
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def register_model_query_hook(cls, model, name, query_hook, filter_hook,",1,1,0.125,403
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,@classmethod,1,1,0.125,404
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,_dict_extend_functions = {},1,1,0.125,405
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# TODO(salvatore-orlando): Avoid using class-level variables,1,1,0.125,406
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# This dictionary will store methods for extending attributes of,1,1,0.125,407
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,_model_query_hooks = {},1,1,0.125,408
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# from this class should be invoked,1,1,0.125,409
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# building a query for retrieving objects from a model class.,1,1,0.125,410
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# Plugins, mixin classes implementing extension will register",1,1,0.125,411
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.ext_api = ExtensionMiddleware(app, ext_mgr=ext_mgr)",1,1,0.125,412
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ext_mgr = PluginAwareExtensionManager(,1,1,0.125,413
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.ext_api = extensions.ExtensionMiddleware(app, ext_mgr=ext_mgr)",0,1,0.125,414
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ext_mgr = extensions.PluginAwareExtensionManager(,0,1,0.125,415
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def setUp(self):,0,1,0.125,416
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return [agents[routers[0]]],0,1,0.125,417
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,unnecessarily in memory by returning a weakref proxy that,1,1,0.125,418
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = context.session.query(MeteringLabel),0,1,0.125,419
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def __init__(self, plugin):",1,1,0.125,420
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,RPC_API_VERSION = '1.0',1,1,0.125,421
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.callbacks = metering_rpc.MeteringRpcCallbacks(self),0,1,0.125,422
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"labels = self._get_collection_query(context, MeteringLabel)",1,1,0.125,423
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = [label],1,1,0.125,424
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"label = self._get_by_id(context, MeteringLabel, label_id)",1,1,0.125,425
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if label_id:,1,1,0.125,426
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = (labels.join(MeteringLabel.routers).,0,1,0.125,427
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,labels = labels.filter(MeteringLabel.id == label_id),0,1,0.125,428
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if label_id:,0,1,0.125,429
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not no_delete:,1,1,0.125,430
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def side_effect(context, routers, admin_state_up, active):",0,1,0.125,431
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not no_delete:,0,1,0.125,432
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_config['plugin_name_v2'] = plugin_str,1,1,0.125,433
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def tearDown(self):,1,1,0.125,434
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_config['extension_manager'] = ext_mgr,1,1,0.125,435
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_config['plugin_name_v2'] = ('neutron.tests.unit.test_l3_plugin.',1,1,0.125,436
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,__metaclass__ = abc.ABCMeta,1,1,0.125,437
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._validate_cidr(context, ip_prefix, direction, excluded)",1,1,0.125,438
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._validate_cidr(context, label_id, ip_prefix, direction,",0,1,0.125,439
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction, excluded):",0,1,0.125,440
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return self.conn.consume_in_threads(),0,1,0.125,441
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def create_rpc_dispatcher(self):,1,1,0.125,442
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return p_rpc.PluginRpcDispatcher([self]),1,1,0.125,443
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return super(MeteringCallbacks, self).get_sync_data_metering(context)",1,1,0.125,444
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.callbacks = MeteringCallbacks(self),1,1,0.125,445
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent2 = agents_db.Agent(host='agent2'),0,1,0.125,446
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,agent1 = agents_db.Agent(host='agent1'),0,1,0.125,447
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid}]},",0,1,0.125,448
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"expected2 = {'args': {'routers': [{'status': 'ACTIVE',",0,1,0.125,449
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'namespace': None,",0,1,0.125,450
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid}]},",0,1,0.125,451
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid}],",0,1,0.125,452
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'admin_state_up': True,",0,1,0.125,453
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'gw_port_id': None,",0,1,0.125,454
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"expected1 = {'args': {'routers': [{'status': 'ACTIVE',",0,1,0.125,455
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,scheduler = plugin_str,0,1,0.125,456
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not scheduler:,0,1,0.125,457
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not service_plugins:,0,1,0.125,458
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin_str = ('neutron.tests.unit.test_l3_plugin.',0,1,0.125,459
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not plugin_str:,0,1,0.125,460
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def setUp(self, plugin_str=None, service_plugins=None, scheduler=None):",0,1,0.125,461
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,service_plugins = {'metering_plugin_name':,0,1,0.125,462
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,METERING_SERVICE_PLUGIN_KLASS = (,0,1,0.125,463
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron import manager,0,1,0.125,464
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import topics,0,1,0.125,465
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import constants as n_constants,0,1,0.125,466
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""Return a weakref to the instance.",1,1,0.125,467
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.l3routers_patch = mock.patch(scheduler +,0,1,0.125,468
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return weakref.proxy(self),1,1,0.125,469
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.meter_rpc.update_metering_label_rules(context, data)",1,1,0.125,470
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.mock_uuid.return_value = second_uuid,0,1,0.125,471
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid},",0,1,0.125,472
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'excluded': False,",0,1,0.125,473
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def test_add_and_remove_metering_label_rule_rpc_call(self):,0,1,0.125,474
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.mock_remove_rule = self.remove_rule_patch.start(),0,1,0.125,475
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.remove_rule_patch = mock.patch(remove_rule),0,1,0.125,476
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remove_rule = ('neutron.api.rpc.agentnotifiers.' +,0,1,0.125,477
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.mock_add_rule = self.add_rule_patch.start(),0,1,0.125,478
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.add_rule_patch = mock.patch(add_rule),0,1,0.125,479
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,add_rule = ('neutron.api.rpc.agentnotifiers.' +,0,1,0.125,480
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.meter_rpc.remove_metering_label_rule(context, data)",0,1,0.125,481
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded = sa.Column(sa.Boolean, default=False)",1,1,0.125,482
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.meter_rpc.add_metering_label_rule(context, data)",0,1,0.125,483
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common import constants as n_consts,0,1,0.125,484
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'%(method)s on router %(router_id)s'),",1,1,0.125,485
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LOG.debug(_('Notify metering agent at %(topic)s.%(host)s ',1,1,0.125,486
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'%(method)s on router %(router_id)s',",0,1,0.125,487
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LOG.debug('Notify metering agent at %(topic)s.%(host)s ',0,1,0.125,488
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,LOG = logging.getLogger(__name__),1,1,0.125,489
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sa.Column('description', sa.String(length=255),",1,1,0.125,490
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"meteringlabels_direction = sa.Enum('ingress', 'egress',",0,1,0.125,491
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if not no_delete:,1,1,0.125,492
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def test_update_metering_label_rules_rpc_call(self):,1,1,0.125,493
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'excluded': False,",1,1,0.125,494
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid},",1,1,0.125,495
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': second_uuid}],",1,1,0.125,496
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.endpoints = [metering_rpc.MeteringRpcCallbacks(self)],0,1,0.125,497
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query = context.session.query(model),1,1,0.125,498
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def start_rpc_listeners(self):,0,1,0.125,499
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.meter_rpc = metering_rpc_agent_api.MeteringAgentNotifyAPI(),0,1,0.125,500
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return ""http://wiki.openstack.org/wiki/Neutron/Metering/Bandwidth#API""",1,1,0.125,501
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,def get_namespace(cls):,1,1,0.125,502
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,@classmethod,1,1,0.125,503
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix,",1,1,0.125,504
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction,",1,1,0.125,505
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_rule = (v1, v2)",0,1,0.125,506
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix,",0,1,0.125,507
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction,",0,1,0.125,508
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label = (v1, v2)",0,1,0.125,509
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label(name, description) as v2:",0,1,0.125,510
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.metering_label(name, description) as v1,\",0,1,0.125,511
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,l3_plugin = ('neutron.tests.unit.test_l3_plugin.',1,1,0.125,512
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin_str = ('neutron.tests.unit.test_l3_plugin.',1,1,0.125,513
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,l3_plugin = ('neutron.tests.unit.extensions.test_l3.',0,1,0.125,514
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,plugin_str = ('neutron.tests.unit.extensions.test_l3.',0,1,0.125,515
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,state = agentschedulers_db.get_admin_state_up_filter(),0,1,0.125,516
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'id': self.uuid}],",1,1,0.125,517
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if do_delete:,0,1,0.125,518
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.mock_uuid.return_value = second_uuid,1,1,0.125,519
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded = sa.Column(sa.Boolean, default=False, server_default=sql.false())",0,1,0.125,520
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"if isinstance(filter_hook, basestring):",1,1,0.125,521
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return tenant_id,1,1,0.125,522
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,tenant_id = context.tenant_id,1,1,0.125,523
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,tenant_id = resource['tenant_id'],1,1,0.125,524
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if fields:,1,1,0.125,525
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return query,1,1,0.125,526
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query = query.filter(query_filter),1,1,0.125,527
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if query_filter is not None:,1,1,0.125,528
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"# condition, raising an exception",1,1,0.125,529
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"query_filter = filter_hook(context, model, query_filter)",1,1,0.125,530
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if filter_hook:,1,1,0.125,531
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"query = query_hook(context, model, query)",1,1,0.125,532
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return query.filter(model.id == id).one(),1,1,0.125,533
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if query_hook:,1,1,0.125,534
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"if isinstance(query_hook, basestring):",1,1,0.125,535
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query_hook = hooks.get('query'),1,1,0.125,536
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"for _name, hooks in self._model_query_hooks.get(model,",1,1,0.125,537
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query_filter = (model.tenant_id == context.tenant_id),1,1,0.125,538
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query_filter = ((model.tenant_id == context.tenant_id) |,1,1,0.125,539
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"if hasattr(model, 'shared'):",1,1,0.125,540
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _filter_non_model_columns(self, data, model):",1,1,0.125,541
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# NOTE(jkoelker) non-admin queries are scoped to their tenant_id,1,1,0.125,542
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,# define basic filter condition for model query,1,1,0.125,543
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"query = self._model_query(context, model)",1,1,0.125,544
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filter_hook = hooks.get('filter'),1,1,0.125,545
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _apply_filters_to_query(self, query, model, filters):",1,1,0.125,546
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,for func in self._dict_extend_functions.get(,1,1,0.125,547
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"query = self._get_collection_query(context, model, filters=filters,",1,1,0.125,548
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if filters:,1,1,0.125,549
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return collection,1,1,0.125,550
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"collection = self._apply_filters_to_query(collection, model, filters)",1,1,0.125,551
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"collection = self._model_query(context, model)",1,1,0.125,552
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if func:,1,1,0.125,553
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,return items,1,1,0.125,554
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"if isinstance(func, basestring):",1,1,0.125,555
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"args = (response, db_object)",1,1,0.125,556
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"return self._get_collection_query(context, model, filters).count()",1,1,0.125,557
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"args = (self,) + args",1,1,0.125,558
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"def _apply_dict_extend_functions(self, resource_type,",1,1,0.125,559
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if result_filter:,1,1,0.125,560
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"if isinstance(result_filter, basestring):",1,1,0.125,561
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"result_filter = hooks.get('result_filters', None)",1,1,0.125,562
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,query = query.filter(column.in_(value)),1,1,0.125,563
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,if column:,1,1,0.125,564
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"column = getattr(model, key, None)",1,1,0.125,565
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"query = result_filter(query, filters)",1,1,0.125,566
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"for key, value in filters.iteritems():",1,1,0.125,567
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,context.session.add(metering_db),1,0,0.0,568
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id=label_id,",1,0,0.0,569
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction=direction,",1,0,0.0,570
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=m['excluded'],",1,0,0.0,571
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=ip_prefix),1,0,0.0,572
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.services import service_base,1,0,0.0,573
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import agents_db,1,0,0.0,574
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"constants.IPv6: n_const.ETHERTYPE_IPV6,",1,0,0.0,575
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron_lib.services import base as service_base,0,0,0.0,576
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"constants.IPv4: constants.ETHERTYPE_IP,",0,0,0.0,577
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"constants.IPv6: constants.ETHERTYPE_IPV6,",0,0,0.0,578
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"constants.IPv4: n_const.ETHERTYPE_IP,",1,0,0.0,579
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"id=uuidutils.generate_uuid(),",1,0,0.0,580
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id=label_id,",0,0,0.0,581
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded),1,0,0.0,582
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with context.session.begin(subtransactions=True):,1,0,0.0,583
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,raise metering.MeteringLabelNotFound(label_id=label_id),0,0,0.0,584
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,except db_exc.DBReferenceError:,0,0,0.0,585
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,context.session.add(metering_db),0,0,0.0,586
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=ip_prefix),0,0,0.0,587
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=m['excluded'],",0,0,0.0,588
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction=direction,",0,0,0.0,589
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"id=uuidutils.generate_uuid(),",0,0,0.0,590
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded),0,0,0.0,591
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with context.session.begin(subtransactions=True):,0,0,0.0,592
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,try:,0,0,0.0,593
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule['metering_label_id']),1,0,0.0,594
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"(lib_constants.DEVICE_OWNER_ROUTER_GW,)",1,0,0.0,595
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_db import exception as db_exc,0,0,0.0,596
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron_lib import constants as lib_constants,1,0,0.0,597
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'33': 'dccp',",1,0,0.0,598
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"ROUTER_STATUS_ALLOCATING,",1,0,0.0,599
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'17': 'udp',",1,0,0.0,600
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'46': 'rsvp',",1,0,0.0,601
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=m['excluded'],",1,0,0.0,602
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'45': 'idrp',",1,0,0.0,603
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'44': 'ipv6-frag',",1,0,0.0,604
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'43': 'ipv6-route',",1,0,0.0,605
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'41': 'ipv6',",1,0,0.0,606
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'38': 'idpr-cmtp',",1,0,0.0,607
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'37': 'ddp',",1,0,0.0,608
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'36': 'xtp',",1,0,0.0,609
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'29': 'iso-tp4',",1,0,0.0,610
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'27': 'rdp',",1,0,0.0,611
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'22': 'xns-idp',",1,0,0.0,612
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'20': 'hmp',",1,0,0.0,613
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'12': 'pup',",1,0,0.0,614
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ROUTER_STATUS_ERROR),1,0,0.0,615
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'9': 'igp',",1,0,0.0,616
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'8': 'egp',",1,0,0.0,617
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'6': 'tcp',",1,0,0.0,618
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'5': 'st',",1,0,0.0,619
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'4': 'ipencap',",1,0,0.0,620
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'3': 'ggp',",1,0,0.0,621
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'2': 'igmp',",1,0,0.0,622
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'1': 'icmp',",1,0,0.0,623
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"lib_constants.PROTO_NAME_PGM: '113',",1,0,0.0,624
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'ipv6-icmp',",1,0,0.0,625
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,lib_constants.PROTO_NAME_IPV6_ICMP_LEGACY:,1,0,0.0,626
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,lib_constants.PROTO_NAME_IPV6_ICMP},1,0,0.0,627
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,HA_ROUTER_STATE_UNKNOWN),1,0,0.0,628
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=ip_prefix),1,0,0.0,629
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,l3_models.Router),0,0,0.0,630
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction=direction,",1,0,0.0,631
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id=label_id,",1,0,0.0,632
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_models.MeteringLabel,",0,0,0.0,633
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,shared=m['shared']),0,0,0.0,634
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"name=m['name'],",0,0,0.0,635
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"tenant_id=m['tenant_id'],",0,0,0.0,636
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"description=m['description'],",0,0,0.0,637
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"id=uuidutils.generate_uuid(),",0,0,0.0,638
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"_deprecate._moved_global('MeteringLabel', new_module=metering_models)",0,0,0.0,639
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"_deprecate._moved_global('MeteringLabelRule', new_module=metering_models)",0,0,0.0,640
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db.models import metering as metering_models,0,0,0.0,641
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filter(l3_db.Router.id.in_(router_ids))),1,0,0.0,642
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,l3_db.Router),1,0,0.0,643
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"l3_db.Router,",1,0,0.0,644
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import l3_db,1,0,0.0,645
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filter(l3_models.Router.id.in_(router_ids))),0,0,0.0,646
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"l3_models.Router,",0,0,0.0,647
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,@property,0,0,0.0,648
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(FakeContext, self).__init__(*args, **kwargs)",0,0,0.0,649
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class FakeContext(context.ContextBaseWithSession):,0,0,0.0,650
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import api as db_api,0,0,0.0,651
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringLabel(model_base.BASEV2, models_v2.HasId, models_v2.HasTenant):",1,0,0.0,652
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringLabelRule(model_base.BASEV2, models_v2.HasId):",1,0,0.0,653
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import models_v2,1,0,0.0,654
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringLabel(model_base.BASEV2, model_base.HasId, model_base.HasTenant):",0,0,0.0,655
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringLabelRule(model_base.BASEV2, model_base.HasId):",0,0,0.0,656
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"tenant_id=tenant_id,",1,0,0.0,657
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"tenant_id=m['tenant_id'],",0,0,0.0,658
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.conn.consume_in_threads(),1,0,0.0,659
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.start_rpc_listeners(),0,0,0.0,660
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'50': 'esp',",1,0,0.0,661
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,label_id),0,0,0.0,662
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id=label_id,",0,0,0.0,663
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction=direction,",0,0,0.0,664
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,nullable=False),1,0,0.0,665
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"MeteringLabelRule, rule_id)",1,0,0.0,666
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,shared=m['shared']),1,0,0.0,667
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"name=m['name'],",1,0,0.0,668
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"tenant_id=m['tenant_id'],",1,0,0.0,669
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"description=m['description'],",1,0,0.0,670
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,uselist=True),1,0,0.0,671
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"foreign_keys='MeteringLabel.tenant_id',",1,0,0.0,672
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"primaryjoin=""MeteringLabel.tenant_id==Router.tenant_id"",",1,0,0.0,673
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"l3_models.Router,",1,0,0.0,674
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"cascade=""delete"", lazy=""joined"")",1,0,0.0,675
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,model_base.HasProject):,1,0,0.0,676
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"model_base.HasId,",1,0,0.0,677
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringLabel(model_base.BASEV2,",1,0,0.0,678
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"ondelete=""CASCADE""),",1,0,0.0,679
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=m['excluded'],",0,0,0.0,680
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sa.ForeignKey(""meteringlabels.id"",",1,0,0.0,681
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,name='meteringlabels_direction')),1,0,0.0,682
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringLabelRule(model_base.BASEV2, model_base.HasId):",1,0,0.0,683
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.api.v2 import attributes as attr,1,0,0.0,684
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from sqlalchemy import sql,1,0,0.0,685
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron_lib.db import model_base,1,0,0.0,686
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,_deprecate._MovedGlobals(),0,0,0.0,687
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_models.MeteringLabel.id == label_id),0,0,0.0,688
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule['metering_label_id']),0,0,0.0,689
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_models.MeteringLabel).get(,0,0,0.0,690
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule_id),0,0,0.0,691
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_models.MeteringLabelRule,",0,0,0.0,692
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=ip_prefix),0,0,0.0,693
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'47': 'gre',",1,0,0.0,694
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id, 'ingress', excluded,",0,0,0.0,695
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'51': 'ah',",1,0,0.0,696
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'remote_ip_prefix': metering_label_rule['remote_ip_prefix'],",1,0,0.0,697
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=remote_ip_prefix) as label_rule:,0,0,0.0,698
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with self.metering_label_rule(,0,0,0.0,699
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,**kwargs),0,0,0.0,700
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded,",0,0,0.0,701
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=False, fmt=None, **kwargs):",0,0,0.0,702
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded, **kwargs):",0,0,0.0,703
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,destination_ip_prefix,0,0,0.0,704
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,data['metering_label_rule']['destination_ip_prefix'] =\,0,0,0.0,705
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,},0,0,0.0,706
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'excluded': excluded,",0,0,0.0,707
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'tenant_id': kwargs.get('tenant_id', 'test-tenant'),",0,0,0.0,708
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'metering_label_id': metering_label_id,",0,0,0.0,709
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'metering_label_rule': {,0,0,0.0,710
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,**kwargs):,0,0,0.0,711
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"destination_ip_prefix=None,",0,0,0.0,712
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"source_ip_prefix=None,",0,0,0.0,713
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded, remote_ip_prefix=None,",0,0,0.0,714
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=netaddr.IPNetwork(ip_prefix)),1,0,0.0,715
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=m['excluded'],",1,0,0.0,716
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id=label_id, direction=direction,",1,0,0.0,717
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded),1,0,0.0,718
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=remote_ip_prefix),1,0,0.0,719
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,raise metering_exc.MeteringLabelRuleOverlaps(,1,0,0.0,720
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,fields=['remote_ip_prefix']),1,0,0.0,721
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"[excluded]},",1,0,0.0,722
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'excluded':,1,0,0.0,723
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"[direction],",1,0,0.0,724
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'direction':,1,0,0.0,725
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"[label_id],",1,0,0.0,726
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=remote_ip_prefix),0,0,0.0,727
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix=remote_ip_prefix) as v1,\",0,0,0.0,728
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.metering_label_rule(,0,0,0.0,729
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"_fake_uuid(),",1,0,0.0,730
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id2,",1,0,0.0,731
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.metering_label_rule(metering_label_id1,",1,0,0.0,732
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix2,",1,0,0.0,733
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id,",1,0,0.0,734
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded):,1,0,0.0,735
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix1,",1,0,0.0,736
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,False) as v2:,1,0,0.0,737
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"n_consts.IPv4_ANY,",1,0,0.0,738
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded) as v2:,1,0,0.0,739
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'ingress',",1,0,0.0,740
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id,",1,0,0.0,741
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded) as v1,\",1,0,0.0,742
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label['metering_label']['id'],",1,0,0.0,743
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded) as label_rule:,1,0,0.0,744
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_utils import uuidutils,0,0,0.0,745
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.metering_label_rule(metering_label_id,",1,0,0.0,746
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded),1,0,0.0,747
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded='false', fmt=None):",1,0,0.0,748
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"remote_ip_prefix='10.0.0.0/24',",1,0,0.0,749
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded, **kwargs)",1,0,0.0,750
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'remote_ip_prefix': remote_ip_prefix}},1,0,0.0,751
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'excluded': excluded,",1,0,0.0,752
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'tenant_id': kwargs.get('tenant_id', 'test-tenant'),",1,0,0.0,753
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"{'metering_label_id': metering_label_id,",1,0,0.0,754
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=remote_ip_prefix2),0,0,0.0,755
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=remote_ip_prefix1):,0,0,0.0,756
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=n_consts.IPv4_ANY) as v2:,0,0,0.0,757
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,remote_ip_prefix=remote_ip_prefix) as v2:,0,0,0.0,758
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filters={'metering_label_id':,1,0,0.0,759
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label_rule['destination_ip_prefix']),0,0,0.0,760
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'57': 'skip',",1,0,0.0,761
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label_rule['source_ip_prefix']),0,0,0.0,762
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,lib_constants.INACTIVE),1,0,0.0,763
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,lib_constants.SNAT_INT_DEV_PREFIX),1,0,0.0,764
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"lib_constants.VETH_DEVICE_PREFIX,",1,0,0.0,765
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'142': 'rohc'},1,0,0.0,766
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'141': 'wesp',",1,0,0.0,767
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'140': 'shim6',",1,0,0.0,768
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'139': 'hip',",1,0,0.0,769
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'138': 'manet',",1,0,0.0,770
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'137': 'mpls-in-ip',",1,0,0.0,771
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'136': 'udplite',",1,0,0.0,772
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'135': 'mobility-header',",1,0,0.0,773
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'133': 'fc',",1,0,0.0,774
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'132': 'sctp',",1,0,0.0,775
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'124': 'isis',",1,0,0.0,776
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'115': 'l2tp',",1,0,0.0,777
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'112': 'vrrp',",1,0,0.0,778
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'108': 'ipcomp',",1,0,0.0,779
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'103': 'pim',",1,0,0.0,780
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'98': 'encap',",1,0,0.0,781
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'97': 'etherip',",1,0,0.0,782
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'94': 'ipip',",1,0,0.0,783
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'93': 'ax.25',",1,0,0.0,784
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'89': 'ospf',",1,0,0.0,785
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'88': 'eigrp',",1,0,0.0,786
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'81': 'vmtp',",1,0,0.0,787
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'73': 'rspf',",1,0,0.0,788
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'60': 'ipv6-opts',",1,0,0.0,789
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'59': 'ipv6-nonxt',",1,0,0.0,790
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'58': 'ipv6-icmp',",1,0,0.0,791
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"lib_constants.FLOATINGIP_STATUS_DOWN,",1,0,0.0,792
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,lib_constants.FLOATINGIP_STATUS_ERROR),1,0,0.0,793
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron_lib import constants,0,0,0.0,794
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'name': 'label'}],",0,0,0.0,795
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label_rule['remote_ip_prefix']),0,0,0.0,796
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,),0,0,0.0,797
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded=metering_label_rule['excluded'],",0,0,0.0,798
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"direction=metering_label_rule['direction'],",0,0,0.0,799
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"metering_label_id=label_id,",0,0,0.0,800
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'destination_ip_prefix'),",0,0,0.0,801
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'destination_ip_prefix': metering_label_rule.get(,0,0,0.0,802
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'source_ip_prefix': metering_label_rule.get('source_ip_prefix'),",0,0,0.0,803
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'remote_ip_prefix': metering_label_rule.get('remote_ip_prefix'),",0,0,0.0,804
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_log import log as logging,0,0,0.0,805
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.router(name='router1', tenant_id=self.tenant_id,",1,0,0.0,806
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.router(name='router1', tenant_id=self.tenant_id, shared=True,",0,0,0.0,807
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'name': 'label'},",0,0,0.0,808
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'shared': label['shared'], 'name': label['name']}",0,0,0.0,809
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class MeteringDbMixin(metering.MeteringPluginBase):,0,0,0.0,810
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'metering_label_id': self.uuid,",1,0,0.0,811
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': 'ingress',",1,0,0.0,812
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'10.0.0.0/24'),",1,0,0.0,813
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'remote_ip_prefix': utils.AuthenticIPNetwork(,1,0,0.0,814
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'metering_label_id': self.uuid,",0,0,0.0,815
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': 'ingress',",0,0,0.0,816
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'10.0.0.0/24'),",0,0,0.0,817
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,net_utils.AuthenticIPNetwork(,0,0,0.0,818
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'remote_ip_prefix':,0,0,0.0,819
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron_lib.utils import net as net_utils,0,0,0.0,820
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,base_db.CommonDbMixin):,1,0,0.0,821
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class MeteringDbMixin(metering.MeteringPluginBase,",1,0,0.0,822
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import common_db_mixin as base_db,1,0,0.0,823
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.openstack.common import uuidutils,1,0,0.0,824
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import common_db_mixin as base_db,0,0,0.0,825
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.openstack.common import uuidutils,1,0,0.0,826
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'tenant_id': kwargs.get('tenant_id', 'test_tenant'),",1,0,0.0,827
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"agent_state={'agent_state': agent},",0,0,0.0,828
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"callback.report_state(self.adminContext,",0,0,0.0,829
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,},0,0,0.0,830
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'agent_type': n_constants.AGENT_TYPE_L3,",0,0,0.0,831
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'configurations': {},",0,0,0.0,832
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'topic': topics.L3_AGENT,",0,0,0.0,833
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'host': host,",0,0,0.0,834
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'binary': 'neutron-l3-agent',",0,0,0.0,835
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self._register_l3_agent('agent1'),0,0,0.0,836
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,constants.METERING),0,0,0.0,837
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,ext_mgr=ext_mgr),0,0,0.0,838
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self).setUp(plugin=plugin, service_plugins=service_plugins,",0,0,0.0,839
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(TestMeteringPluginRpcFromL3Agent,",0,0,0.0,840
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,),0,0,0.0,841
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"(k.replace('_', '-'), constants.COMMON_PREFIXES[constants.METERING])",0,0,0.0,842
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_db_metering.MeteringPluginDbTestCaseMixin):,0,0,0.0,843
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"test_l3_plugin.L3NatTestCaseMixin,",0,0,0.0,844
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"test_db_plugin.NeutronDbPluginV2TestCase,",0,0,0.0,845
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class TestMeteringPluginRpcFromL3Agent(,0,0,0.0,846
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,scheduler=l3_plugin),0,0,0.0,847
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"plugin_str=plugin_str, service_plugins=service_plugins,",0,0,0.0,848
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(TestMeteringPluginL3AgentSchedulerServicePlugin, self).setUp(",0,0,0.0,849
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'TestNoL3NatPlugin'),0,0,0.0,850
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'l3_plugin_name': l3_plugin},0,0,0.0,851
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"METERING_SERVICE_PLUGIN_KLASS,",0,0,0.0,852
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'TestL3NatAgentSchedulingServicePlugin'),0,0,0.0,853
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""",0,0,0.0,854
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,implements L3 routing.,0,0,0.0,855
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,TestMeteringPluginL3AgentScheduler):,0,0,0.0,856
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,time=timeutils.strtime()),0,0,0.0,857
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with self.subnet() as subnet:,0,0,0.0,858
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self._set_net_external(s['network_id']),0,0,0.0,859
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'tenant_id': self.tenant_id,",1,0,0.0,860
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'tenant_id': kwargs.get('tenant_id', 'test-tenant'),",0,0,0.0,861
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'test-tenant'),",0,0,0.0,862
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.api.extensions import PluginAwareExtensionManager,1,0,0.0,863
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.api.extensions import ExtensionMiddleware,1,0,0.0,864
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.api import extensions,0,0,0.0,865
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,topic=topic),1,0,0.0,866
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"expected,",1,0,0.0,867
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.mock_cast.assert_called_with(self.ctx,",1,0,0.0,868
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'method': 'add_metering_label'},1,0,0.0,869
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'name': 'router2',",1,0,0.0,870
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"{'status': 'ACTIVE',",1,0,0.0,871
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"{'rules': [],",1,0,0.0,872
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'_metering_labels': [,1,0,0.0,873
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'name': 'router1',",1,0,0.0,874
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.router(name='router1', subnet=subnet) as router:",0,0,0.0,875
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'test_metering_plugin.TestRouteIntPlugin'),1,0,0.0,876
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_l3_plugin.TestL3NatIntPlugin):,1,0,0.0,877
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class TestRouteIntPlugin(l3_agentschedulers_db.L3AgentSchedulerDbMixin,",1,0,0.0,878
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"r['id'], s['network_id'])",0,0,0.0,879
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self._remove_external_gateway_from_router(,0,0,0.0,880
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.assertFalse(data),0,0,0.0,881
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,host='agent2'),0,0,0.0,882
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self._register_l3_agent('agent2'),0,0,0.0,883
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.assertEqual('router1', data[0]['name'])",0,0,0.0,884
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,host='agent1'),0,0,0.0,885
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.meter_plugin),0,0,0.0,886
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with self.metering_label(tenant_id=r['tenant_id']):,0,0,0.0,887
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._add_external_gateway_to_router(r['id'], s['network_id'])",0,0,0.0,888
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class TestMeteringPluginL3AgentSchedulerServicePlugin(,0,0,0.0,889
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.mock_cast.assert_has_calls(expected, any_order=True)",0,0,0.0,890
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"mock.call(self.ctx, expected2, topic=topic2)]",0,0,0.0,891
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.common.test_lib import test_config,1,0,0.0,892
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,yield metering_label,0,0,0.0,893
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(TestMeteringPluginL3AgentScheduler, self).tearDown()",1,0,0.0,894
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.l3routers_patch.stop(),1,0,0.0,895
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.cast_patch.stop(),1,0,0.0,896
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self).setUp(service_plugins=service_plugins),1,0,0.0,897
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(TestMeteringPlugin, self).tearDown()",1,0,0.0,898
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,del test_config['plugin_name_v2'],1,0,0.0,899
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,del test_config['extension_manager'],1,0,0.0,900
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.context_patch.stop(),1,0,0.0,901
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.fanout_patch.stop(),1,0,0.0,902
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.uuid_patch.stop(),1,0,0.0,903
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(TestMeteringPlugin, self).setUp(service_plugins=service_plugins)",1,0,0.0,904
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'TestL3NatIntPlugin'),1,0,0.0,905
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self).setUp(plugin=plugin_str, ext_mgr=ext_mgr,",0,0,0.0,906
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label['metering_label']['id']),0,0,0.0,907
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,self.addCleanup(mock.patch.stopall),0,0,0.0,908
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,service_plugins=service_plugins),0,0,0.0,909
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(TestMeteringPlugin, self).setUp(plugin=plugin, ext_mgr=ext_mgr,",0,0,0.0,910
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,@six.add_metaclass(abc.ABCMeta),0,0,0.0,911
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,import six,0,0,0.0,912
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,foreign_keys='Router.tenant_id'),1,0,0.0,913
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,uselist=True),0,0,0.0,914
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"foreign_keys='MeteringLabel.tenant_id',",0,0,0.0,915
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filters={'direction':,1,0,0.0,916
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded),0,0,0.0,917
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'direction':,0,0,0.0,918
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"label_id,",0,0,0.0,919
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filters={'metering_label_id':,0,0,0.0,920
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._delete('metering-labels',",0,0,0.0,921
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,yield metering_label_rule,0,0,0.0,922
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,second_uuid: agent2},0,0,0.0,923
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,else:,1,0,0.0,924
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'name': 'router2',",0,0,0.0,925
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'method': 'add_metering_label'},0,0,0.0,926
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"{'rules': [],",0,0,0.0,927
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'_metering_labels': [,0,0,0.0,928
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'tenant_id': self.tenant_id,",0,0,0.0,929
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'name': 'router1',",0,0,0.0,930
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'TestL3NatIntAgentSchedulingPlugin'),0,0,0.0,931
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"l3_agentschedulers_db.L3AgentSchedulerDbMixin,",0,0,0.0,932
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,METERING_SERVICE_PLUGIN_KLASS},0,0,0.0,933
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.openstack.common import timeutils,0,0,0.0,934
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db.metering import metering_rpc,0,0,0.0,935
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class MeteringCallbacks(metering_db.MeteringDbMixin):,1,0,0.0,936
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db.metering import metering_rpc,0,0,0.0,937
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with context.session.begin(subtransactions=True):,1,0,0.0,938
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._delete('metering-label-rules',",0,0,0.0,939
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,filter(l3_db.Router.id.in_(router_ids))),0,0,0.0,940
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,elif router_ids:,0,0,0.0,941
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,service_constants.L3_ROUTER_NAT),0,0,0.0,942
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.plugins.common import constants as service_constants,0,0,0.0,943
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label_rule['metering_label_rule']['id']),1,0,0.0,944
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._delete('metering-label-rules',",1,0,0.0,945
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,yield metering_label_rule,1,0,0.0,946
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label['metering_label']['id']),1,0,0.0,947
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._delete('metering-labels',",1,0,0.0,948
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,finally:,1,0,0.0,949
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,yield metering_label,1,0,0.0,950
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,try:,1,0,0.0,951
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,metering_label_rule['metering_label_rule']['id']),0,0,0.0,952
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'test_tenant'),",1,0,0.0,953
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import common_db_mixin,0,0,0.0,954
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_utils import uuidutils,0,0,0.0,955
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,common_db_mixin.CommonDbMixin):,0,0,0.0,956
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.tests.unit.db import test_db_base_plugin_v2,0,0,0.0,957
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.tests.unit.db.metering import test_metering_db,0,0,0.0,958
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"admin_state_up=True,",1,0,0.0,959
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"admin_state_up=state,",0,0,0.0,960
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import agentschedulers_db,0,0,0.0,961
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,expected_del),1,0,0.0,962
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,rule['metering_label_rule']['id']),1,0,0.0,963
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._delete('metering-label-rules',",1,0,0.0,964
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,expected_add),1,0,0.0,965
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.mock_update.assert_called_with(self.ctx,",1,0,0.0,966
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,direction='egress') as rule:,1,0,0.0,967
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.metering_label_rule(l['id'],",1,0,0.0,968
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': 'egress',",1,0,0.0,969
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'metering_label_id': self.uuid,",1,0,0.0,970
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': 'ingress',",1,0,0.0,971
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"{'remote_ip_prefix': '10.0.0.0/24',",1,0,0.0,972
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,{'rules': [,1,0,0.0,973
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,expected_del),0,0,0.0,974
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.mock_remove_rule.assert_called_with(self.ctx,",0,0,0.0,975
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self._delete('metering-label-rules', second_uuid)",0,0,0.0,976
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,expected_add),0,0,0.0,977
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.mock_add_rule.assert_called_with(self.ctx,",0,0,0.0,978
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'metering_label_id': self.uuid,",0,0,0.0,979
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'direction': 'ingress',",0,0,0.0,980
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'remote_ip_prefix': '10.0.0.0/24',",0,0,0.0,981
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,{'rule': {,0,0,0.0,982
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'.remove_metering_label_rule'),0,0,0.0,983
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'.add_metering_label_rule'),0,0,0.0,984
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'metering_rpc_agent_api.MeteringAgentNotifyAPI' +,0,0,0.0,985
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.tests.unit.extensions import test_l3,0,0,0.0,986
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class TestMeteringPlugin(test_db_base_plugin_v2.NeutronDbPluginV2TestCase,",0,0,0.0,987
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"test_l3.L3NatTestCaseMixin,",0,0,0.0,988
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,False) as v2:,0,0,0.0,989
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id2,",1,0,0.0,990
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id1,",1,0,0.0,991
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,False)) as metering_label_rule:,1,0,0.0,992
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"n_consts.IPv4_ANY,",1,0,0.0,993
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded)) as metering_label_rule:,1,0,0.0,994
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'ingress',",1,0,0.0,995
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded),",1,0,0.0,996
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id,",1,0,0.0,997
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label(name, description)) as metering_label:",1,0,0.0,998
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label(name, description),",1,0,0.0,999
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,with contextlib.nested(,1,0,0.0,1000
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id2,",0,0,0.0,1001
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.metering_label_rule(metering_label_id1,",0,0,0.0,1002
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"n_consts.IPv4_ANY,",0,0,0.0,1003
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_metering_db.MeteringPluginDbTestCaseMixin):,0,0,0.0,1004
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,excluded) as v2:,0,0,0.0,1005
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'ingress',",0,0,0.0,1006
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"self.metering_label_rule(metering_label_id,",0,0,0.0,1007
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded) as v1,\",0,0,0.0,1008
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"with self.metering_label_rule(metering_label_id,",0,0,0.0,1009
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"test_db_plugin.NeutronDbPluginV2TestCase,",1,0,0.0,1010
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,test_db_metering.MeteringPluginDbTestCaseMixin):,1,0,0.0,1011
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"test_l3_plugin.L3NatTestCaseMixin,",1,0,0.0,1012
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"class TestMeteringPlugin(test_db_plugin.NeutronDbPluginV2TestCase,",1,0,0.0,1013
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.tests.unit import test_l3_plugin,1,0,0.0,1014
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.tests.unit import test_db_plugin,1,0,0.0,1015
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.tests.unit.db.metering import test_db_metering,1,0,0.0,1016
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"test_db_base_plugin_v2.NeutronDbPluginV2TestCase,",0,0,0.0,1017
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.openstack.common import log as logging,1,0,0.0,1018
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_log import log as logging,0,0,0.0,1019
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.openstack.common import log as logging,1,0,0.0,1020
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"response, db_object):",1,0,0.0,1021
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,CommonDbMixin):,1,0,0.0,1022
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,items.reverse(),1,0,0.0,1023
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,page_reverse=page_reverse),1,0,0.0,1024
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"marker_obj=marker_obj,",1,0,0.0,1025
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"limit=limit,",1,0,0.0,1026
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sorts=sorts,",1,0,0.0,1027
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"fields=None, sorts=None, limit=None, marker_obj=None,",1,0,0.0,1028
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,marker_obj=marker_obj),1,0,0.0,1029
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sorts,",1,0,0.0,1030
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,page_reverse=False):,1,0,0.0,1031
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sorts=None, limit=None, marker_obj=None,",1,0,0.0,1032
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,func(*args),1,0,0.0,1033
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"resource_type, []):",1,0,0.0,1034
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,raise n_exc.AdminRequired(reason=reason),1,0,0.0,1035
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from sqlalchemy import sql,0,0,0.0,1036
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,resource['tenant_id'] != context.tenant_id):,1,0,0.0,1037
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,{}).iteritems():,1,0,0.0,1038
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,else:,1,0,0.0,1039
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,(model.shared == sql.true())),1,0,0.0,1040
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,won't prevent deallocation.,1,0,0.0,1041
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,@property,1,0,0.0,1042
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,'result_filters': result_filters},1,0,0.0,1043
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""",1,0,0.0,1044
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,a transformed filter expression,1,0,0.0,1045
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,transformed query expression.,1,0,0.0,1046
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"""""""Register a hook to be invoked when a query is executed.",1,0,0.0,1047
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,result_filters=None):,1,0,0.0,1048
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class CommonDbMixin(object):,1,0,0.0,1049
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import db_base_plugin_v2 as base_db,1,0,0.0,1050
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class TestMetering(MeteringPluginDbTestCase):,0,0,0.0,1051
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_log import log as logging,0,0,0.0,1052
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sa.Enum('ingress', 'egress',",1,0,0.0,1053
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.openstack.common import log as logging,1,0,0.0,1054
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from oslo_log import log as logging,0,0,0.0,1055
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'0.0.0.0/0',",1,0,0.0,1056
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"n_consts.IPv4_ANY,",0,0,0.0,1057
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'the message %(method)s'),",1,0,0.0,1058
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"'the message %(method)s',",0,0,0.0,1059
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class TestMeteringDbXML(TestMetering):,1,0,0.0,1060
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class MeteringLabelRuleOverlaps(qexception.NotFound):,1,0,0.0,1061
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class MeteringLabelRuleOverlaps(qexception.Conflict):,0,0,0.0,1062
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,dbapi.register_models(),1,0,0.0,1063
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,from neutron.db import api as dbapi,1,0,0.0,1064
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,import logging,1,0,0.0,1065
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"name='meteringlabels_direction'),",1,0,0.0,1066
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sa.Column('direction',",1,0,0.0,1067
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class TestMeteringDbXML(TestMetering):,0,0,0.0,1068
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sa.Column('direction', meteringlabels_direction,",0,0,0.0,1069
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"sa.Column('description', sa.String(length=1024),",0,0,0.0,1070
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"meteringlabels_direction.drop(op.get_bind(), checkfirst=False)",0,0,0.0,1071
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,name='meteringlabels_direction'),0,0,0.0,1072
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,no_delete=True) as label_rule:,1,0,0.0,1073
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,no_delete=True) as metering_label:,1,0,0.0,1074
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded='false', fmt=None, no_delete=False):",1,0,0.0,1075
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"fmt=None, no_delete=False, **kwargs):",1,0,0.0,1076
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,do_delete=False) as label_rule:,0,0,0.0,1077
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,do_delete=False) as metering_label:,0,0,0.0,1078
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"excluded='false', fmt=None, do_delete=True):",0,0,0.0,1079
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"fmt=None, do_delete=True, **kwargs):",0,0,0.0,1080
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,class TestMeteringDbXML(MeteringPluginDbTestCase):,1,0,0.0,1081
+81156e4a3931787cdf7e1b9301ca3f80bc009d6a,"super(MeteringPlugin, self).delete_metering_label(",0,0,0.0,1082

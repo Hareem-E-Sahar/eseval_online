@@ -1,0 +1,91 @@
+commit_id,line,line_level_label,count,line_score,row
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,protected Category category = new CategoryImpl();,0,4,1.0,1
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,protected Product product = new ProductImpl();,0,4,1.0,2
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@ManyToOne(targetEntity = CategoryImpl.class, optional = false)",0,3,0.75,3
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@JoinColumn(name = ""CATEGORY_ID"", nullable = false)",0,3,0.75,4
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@ManyToOne(targetEntity = ProductImpl.class, optional = false)",0,3,0.75,5
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,result = 31 * result + (displayOrder != null ? displayOrder.hashCode() : 0);,0,2,0.5,6
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (id != null ? !id.equals(that.id) : that.id != null) return false;,0,2,0.5,7
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,int result = id != null ? id.hashCode() : 0;,0,2,0.5,8
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,result = 31 * result + (category != null ? category.hashCode() : 0);,0,2,0.5,9
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,result = 31 * result + (product != null ? product.hashCode() : 0);,0,2,0.5,10
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,public void setCategoryProductXref(CategoryProductXrefPK categoryProductXref) {,1,2,0.5,11
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,CategoryProductXrefPK categoryProductXref = new CategoryProductXrefPK();,1,2,0.5,12
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,public CategoryProductXrefPK getCategoryProductXref() {,1,2,0.5,13
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (category != null ? !category.equals(that.category) : that.category != null) return false;,0,2,0.5,14
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return new EqualsBuilder(),1,2,0.5,15
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,int result = categoryProductXref != null ? categoryProductXref.hashCode() : 0;,1,2,0.5,16
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (displayOrder != null ? !displayOrder.equals(that.displayOrder) : that.displayOrder != null) return false;,0,2,0.5,17
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (product != null ? !product.equals(that.product) : that.product != null) return false;,0,2,0.5,18
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,public void setId(Long id) {,0,2,0.5,19
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@JoinColumn(name = ""PRODUCT_ID"", nullable = false)",0,2,0.5,20
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = ""blCategories"")",0,2,0.5,21
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,public Long getId() {,0,2,0.5,22
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@Parameter(name = ""segment_value"", value = ""CategoryProductXrefImpl""),",0,2,0.5,23
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@Parameter(name = ""entity_name"", value = ""org.broadleafcommerce.core.catalog.domain.CategoryProductXrefImpl"")",0,2,0.5,24
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,/** The product. */,0,2,0.5,25
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,parameters = {,0,2,0.5,26
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return category;,0,2,0.5,27
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,this.category = category;,0,2,0.5,28
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return product;,0,2,0.5,29
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,this.product = product;,0,2,0.5,30
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return false;,1,1,0.25,31
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,CategoryProductXrefImpl that = (CategoryProductXrefImpl) o;,1,1,0.25,32
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (o instanceof CategoryProductXrefImpl) {,1,1,0.25,33
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @param product,1,1,0.25,34
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return categoryProductXref.getProduct();,1,1,0.25,35
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @param category,1,1,0.25,36
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return categoryProductXref.getCategory();,1,1,0.25,37
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region=""blStandardElements"")",1,1,0.25,38
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,this.categoryProductXref = categoryProductXref;,1,1,0.25,39
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,},1,1,0.25,40
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return categoryProductXref;,1,1,0.25,41
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,/**,1,1,0.25,42
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return true;,0,1,0.25,43
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,},0,1,0.25,44
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,CategoryProductXrefImpl that = (CategoryProductXrefImpl) o;,0,1,0.25,45
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@GeneratedValue(generator = ""CategoryProductId"")",0,1,0.25,46
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"strategy = ""org.broadleafcommerce.common.persistence.IdOverrideTableGenerator"",",0,1,0.25,47
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"@Column(name = ""CATEGORY_PRODUCT_ID"")",0,1,0.25,48
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,"name = ""CategoryProductId"",",0,1,0.25,49
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,return id;,0,1,0.25,50
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,this.id = id;,0,1,0.25,51
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (this == o) return true;,0,1,0.25,52
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,if (!(o instanceof CategoryProductXrefImpl)) return false;,0,1,0.25,53
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @see org.broadleafcommerce.core.catalog.domain.CategoryProductXref#setDisplayOrder(java.lang.Integer),1,0,0.0,54
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.InheritanceType;,1,0,0.0,55
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Table;,1,0,0.0,56
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import org.apache.commons.lang3.builder.EqualsBuilder;,1,0,0.0,57
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,@EmbeddedId,1,0,0.0,58
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,/* (non-Javadoc),1,0,0.0,59
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @see org.broadleafcommerce.core.catalog.domain.CategoryProductXref#getDisplayOrder(),1,0,0.0,60
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,*/,1,0,0.0,61
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @see org.broadleafcommerce.core.catalog.domain.CategoryProductXrefImpl.CategoryProductXrefPK#getProduct(),1,0,0.0,62
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @return,1,0,0.0,63
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @see org.broadleafcommerce.core.catalog.domain.CategoryProductXrefImpl.CategoryProductXrefPK#getCategory(),1,0,0.0,64
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @see org.broadleafcommerce.core.catalog.domain.CategoryProductXrefImpl.CategoryProductXrefPK#setCategory(org.broadleafcommerce.core.catalog.domain.Category),1,0,0.0,65
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,categoryProductXref.setCategory(category);,1,0,0.0,66
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Entity;,1,0,0.0,67
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,* @see org.broadleafcommerce.core.catalog.domain.CategoryProductXrefImpl.CategoryProductXrefPK#setProduct(org.broadleafcommerce.core.catalog.domain.Product),1,0,0.0,68
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,categoryProductXref.setProduct(product);,1,0,0.0,69
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,".append(categoryProductXref, that.categoryProductXref)",1,0,0.0,70
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Inheritance;,1,0,0.0,71
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,}),0,0,0.0,72
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.EmbeddedId;,1,0,0.0,73
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Column;,1,0,0.0,74
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import org.hibernate.annotations.GenericGenerator;,0,0,0.0,75
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import org.hibernate.annotations.Parameter;,0,0,0.0,76
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Column;,0,0,0.0,77
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Entity;,0,0,0.0,78
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.GeneratedValue;,0,0,0.0,79
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Id;,0,0,0.0,80
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Inheritance;,0,0,0.0,81
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.InheritanceType;,0,0,0.0,82
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.JoinColumn;,0,0,0.0,83
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.ManyToOne;,0,0,0.0,84
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,import javax.persistence.Table;,0,0,0.0,85
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,@Id,0,0,0.0,86
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,@GenericGenerator(,0,0,0.0,87
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,protected Long id;,0,0,0.0,88
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,@Override,0,0,0.0,89
+dc89225aeb0806ee2fe5246ce20c3cee065d1245,.build();,1,0,0.0,90

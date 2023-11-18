@@ -1,0 +1,17 @@
+commit_id,line,line_level_label,count,line_score,row
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"def rescue(self, req, id):",1,3,1.0,1
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"def rescue(self, req, id, body={}):",0,2,0.6666666666666666,2
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,return {'adminPass': password},0,1,0.3333333333333333,3
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"self.compute_api.rescue(context, id)",1,1,0.3333333333333333,4
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,return webob.Response(status_int=202),1,1,0.3333333333333333,5
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,if 'rescue' in body and body['rescue'] and \,0,0,0.0,6
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,'adminPass' in body['rescue']:,0,0,0.0,7
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"password = body[""rescue""][""adminPass""]",0,0,0.0,8
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,else:,0,0,0.0,9
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,password = utils.generate_password(FLAGS.password_length),0,0,0.0,10
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"self.compute_api.rescue(context, id, rescue_password=password)",0,0,0.0,11
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,if 'rebuild' in info and 'adminPass' in info['rebuild']:,0,0,0.0,12
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"password = info[""rebuild""][""adminPass""]",0,0,0.0,13
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,password = utils.generate_password(16),1,0,0.0,14
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,"password = info[""rebuild""].get(""adminPass"",",1,0,0.0,15
+7f2a4fdf5e43620081e163fc46f2ca4fdefd18f3,utils.generate_password(16)),1,0,0.0,16

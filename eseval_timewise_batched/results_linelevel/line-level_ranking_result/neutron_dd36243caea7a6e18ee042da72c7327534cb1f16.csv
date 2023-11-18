@@ -1,0 +1,43 @@
+commit_id,line,line_level_label,count,line_score,row
+dd36243caea7a6e18ee042da72c7327534cb1f16,from neutron.plugins.ml2 import config,1,1,1.0,1
+dd36243caea7a6e18ee042da72c7327534cb1f16,data['router']['flavor_id'] = flavor_id,0,1,1.0,2
+dd36243caea7a6e18ee042da72c7327534cb1f16,"args_list = {'set_context': set_context,",0,1,1.0,3
+dd36243caea7a6e18ee042da72c7327534cb1f16,args_list['flavor_id'] = flavor_id,0,1,1.0,4
+dd36243caea7a6e18ee042da72c7327534cb1f16,with self.router(**args_list) as r:,0,1,1.0,5
+dd36243caea7a6e18ee042da72c7327534cb1f16,args_list = {},0,1,1.0,6
+dd36243caea7a6e18ee042da72c7327534cb1f16,"with self.router(set_context=set_context,",1,1,1.0,7
+dd36243caea7a6e18ee042da72c7327534cb1f16,with self.router() as r:,1,1,1.0,8
+dd36243caea7a6e18ee042da72c7327534cb1f16,"flavor_id = kwargs.get('flavor_id', None)",0,1,1.0,9
+dd36243caea7a6e18ee042da72c7327534cb1f16,# neutron testing this argument should not be passed,0,0,0.0,10
+dd36243caea7a6e18ee042da72c7327534cb1f16,if flavor_id:,0,0,0.0,11
+dd36243caea7a6e18ee042da72c7327534cb1f16,"tenant_id=None, flavor_id=None, **kwargs):",0,0,0.0,12
+dd36243caea7a6e18ee042da72c7327534cb1f16,'tenant_id': tenant_id},0,0,0.0,13
+dd36243caea7a6e18ee042da72c7327534cb1f16,"public_sub=None, flavor_id=None, **kwargs):",0,0,0.0,14
+dd36243caea7a6e18ee042da72c7327534cb1f16,# NOTE(manjeets) Flavor id None is not accepted,0,0,0.0,15
+dd36243caea7a6e18ee042da72c7327534cb1f16,# and return Flavor None not found error. So for,0,0,0.0,16
+dd36243caea7a6e18ee042da72c7327534cb1f16,"tenant_id=None, **kwargs):",1,0,0.0,17
+dd36243caea7a6e18ee042da72c7327534cb1f16,# at all to router.,0,0,0.0,18
+dd36243caea7a6e18ee042da72c7327534cb1f16,"set_context=False, flavor_id=None, **kwargs):",0,0,0.0,19
+dd36243caea7a6e18ee042da72c7327534cb1f16,"flavor_id, **kwargs) as (f, r):",0,0,0.0,20
+dd36243caea7a6e18ee042da72c7327534cb1f16,"config.cfg.CONF.set_override('allow_reverse_dns_lookup', False,",1,0,0.0,21
+dd36243caea7a6e18ee042da72c7327534cb1f16,tenant_id=tenant_id) as r:,1,0,0.0,22
+dd36243caea7a6e18ee042da72c7327534cb1f16,"public_sub=None, **kwargs):",1,0,0.0,23
+dd36243caea7a6e18ee042da72c7327534cb1f16,"set_context=False, **kwargs):",1,0,0.0,24
+dd36243caea7a6e18ee042da72c7327534cb1f16,group='designate'),1,0,0.0,25
+dd36243caea7a6e18ee042da72c7327534cb1f16,"config.cfg.CONF.set_override('external_dns_driver', 'designate')",1,0,0.0,26
+dd36243caea7a6e18ee042da72c7327534cb1f16,"config.cfg.CONF.set_override('dns_domain', self.DNS_DOMAIN)",1,0,0.0,27
+dd36243caea7a6e18ee042da72c7327534cb1f16,return (128 - config.cfg.CONF.designate.ipv6_ptr_zone_prefix_size) / 4,1,0,0.0,28
+dd36243caea7a6e18ee042da72c7327534cb1f16,32 - config.cfg.CONF.designate.ipv4_ptr_zone_prefix_size) / 8),1,0,0.0,29
+dd36243caea7a6e18ee042da72c7327534cb1f16,group='ml2'),1,0,0.0,30
+dd36243caea7a6e18ee042da72c7327534cb1f16,"self._extension_drivers,",1,0,0.0,31
+dd36243caea7a6e18ee042da72c7327534cb1f16,"config.cfg.CONF.set_override('extension_drivers',",1,0,0.0,32
+dd36243caea7a6e18ee042da72c7327534cb1f16,group='designate'),0,0,0.0,33
+dd36243caea7a6e18ee042da72c7327534cb1f16,"cfg.CONF.set_override('allow_reverse_dns_lookup', False,",0,0,0.0,34
+dd36243caea7a6e18ee042da72c7327534cb1f16,"cfg.CONF.set_override('dns_domain', self.DNS_DOMAIN)",0,0,0.0,35
+dd36243caea7a6e18ee042da72c7327534cb1f16,return (128 - cfg.CONF.designate.ipv6_ptr_zone_prefix_size) / 4,0,0,0.0,36
+dd36243caea7a6e18ee042da72c7327534cb1f16,32 - cfg.CONF.designate.ipv4_ptr_zone_prefix_size) / 8),0,0,0.0,37
+dd36243caea7a6e18ee042da72c7327534cb1f16,"cfg.CONF.set_override('external_dns_driver', 'designate')",0,0,0.0,38
+dd36243caea7a6e18ee042da72c7327534cb1f16,group='ml2'),0,0,0.0,39
+dd36243caea7a6e18ee042da72c7327534cb1f16,"self._extension_drivers,",0,0,0.0,40
+dd36243caea7a6e18ee042da72c7327534cb1f16,"cfg.CONF.set_override('extension_drivers',",0,0,0.0,41
+dd36243caea7a6e18ee042da72c7327534cb1f16,"**kwargs) as (f, r):",1,0,0.0,42

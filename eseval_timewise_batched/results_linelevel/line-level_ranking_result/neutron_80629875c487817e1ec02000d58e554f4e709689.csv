@@ -1,0 +1,940 @@
+commit_id,line,line_level_label,count,line_score,row
+80629875c487817e1ec02000d58e554f4e709689,"device = ip_lib.IPDevice(interface_name, namespace=self.ns_name)",1,4,1.0,1
+80629875c487817e1ec02000d58e554f4e709689,"device = ip_lib.IPDevice(fip_2_rtr_name, namespace=fip_ns_name)",0,4,1.0,2
+80629875c487817e1ec02000d58e554f4e709689,"device = ip_lib.IPDevice(fip_2_rtr_name, namespace=fip_ns_name)",1,4,1.0,3
+80629875c487817e1ec02000d58e554f4e709689,"device = ip_lib.IPDevice(rtr_2_fip_name, namespace=self.ns_name)",1,4,1.0,4
+80629875c487817e1ec02000d58e554f4e709689,"device = ip_lib.IPDevice(rtr_2_fip_name, namespace=ri.ns_name)",1,4,1.0,5
+80629875c487817e1ec02000d58e554f4e709689,"device = ip_lib.IPDevice(interface_name, namespace=self.ha_namespace)",0,3,0.75,6
+80629875c487817e1ec02000d58e554f4e709689,root_ip = ip_lib.IPWrapper(),1,3,0.75,7
+80629875c487817e1ec02000d58e554f4e709689,if self.conf.use_namespaces else []),1,3,0.75,8
+80629875c487817e1ec02000d58e554f4e709689,"rtr_2_fip_dev = ip_lib.IPDevice(rtr_2_fip_name, namespace=ri.ns_name)",0,3,0.75,9
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=namespace),0,3,0.75,10
+80629875c487817e1ec02000d58e554f4e709689,"ipd = ip_lib.IPDevice(interface_name, namespace=ns_name)",1,3,0.75,11
+80629875c487817e1ec02000d58e554f4e709689,"ipd = ip_lib.IPDevice(interface_name,",0,3,0.75,12
+80629875c487817e1ec02000d58e554f4e709689,name = device.name,0,2,0.5,13
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=ri.ns_name),0,2,0.5,14
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=ri.ns_name),1,2,0.5,15
+80629875c487817e1ec02000d58e554f4e709689,self.conf = conf,1,2,0.5,16
+80629875c487817e1ec02000d58e554f4e709689,msg = _('Error importing FWaaS device driver: %s'),1,2,0.5,17
+80629875c487817e1ec02000d58e554f4e709689,local_ns_list = root_ip.get_namespaces(),1,2,0.5,18
+80629875c487817e1ec02000d58e554f4e709689,# get the list of tenants with firewalls configured,1,2,0.5,19
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=ns_name),1,2,0.5,20
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=ns_name),0,2,0.5,21
+80629875c487817e1ec02000d58e554f4e709689,ns_ip = ip_lib.IPWrapper(namespace=fip_ns_name),1,2,0.5,22
+80629875c487817e1ec02000d58e554f4e709689,if name.startswith(FIP_EXT_DEV_PREFIX) and name != interface_name:,0,2,0.5,23
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=ns_name),1,2,0.5,24
+80629875c487817e1ec02000d58e554f4e709689,self.dist_fip_count = None,1,2,0.5,25
+80629875c487817e1ec02000d58e554f4e709689,self.dist_fip_count = self.dist_fip_count + 1,1,2,0.5,26
+80629875c487817e1ec02000d58e554f4e709689,self.dist_fip_count = self.dist_fip_count - 1,1,2,0.5,27
+80629875c487817e1ec02000d58e554f4e709689,IPDevice.return_value = device,1,2,0.5,28
+80629875c487817e1ec02000d58e554f4e709689,# Remove the fip namespace rules and routes associated to,1,2,0.5,29
+80629875c487817e1ec02000d58e554f4e709689,self.rtr_fip_subnet = None,1,2,0.5,30
+80629875c487817e1ec02000d58e554f4e709689,"'99.0.1.9', mock.ANY)",1,2,0.5,31
+80629875c487817e1ec02000d58e554f4e709689,"agent_gw_port = {'fixed_ips': [{'ip_address': '20.0.0.30',",1,2,0.5,32
+80629875c487817e1ec02000d58e554f4e709689,# Remove the router to fip namespace connection after the,0,2,0.5,33
+80629875c487817e1ec02000d58e554f4e709689,device = mock.Mock(),1,2,0.5,34
+80629875c487817e1ec02000d58e554f4e709689,id = _uuid(),1,2,0.5,35
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.agent_gateway_port = None,0,2,0.5,36
+80629875c487817e1ec02000d58e554f4e709689,ns_ipr = ip_lib.IPRule(namespace=ri.ns_name),0,2,0.5,37
+80629875c487817e1ec02000d58e554f4e709689,ip_rule = ip_lib.IPRule(namespace=self.ns_name),0,2,0.5,38
+80629875c487817e1ec02000d58e554f4e709689,ip_rule = ip_lib.IpRule(namespace=self.ns_name),1,2,0.5,39
+80629875c487817e1ec02000d58e554f4e709689,"ri = l3router.RouterInfo(ns_id, router, **self.ri_kwargs)",0,2,0.5,40
+80629875c487817e1ec02000d58e554f4e709689,device = router.router[l3_constants.HA_INTERFACE_KEY],1,2,0.5,41
+80629875c487817e1ec02000d58e554f4e709689,cidr = '19.4.4.0/24',1,2,0.5,42
+80629875c487817e1ec02000d58e554f4e709689,cidr = 'fd00::/64',1,2,0.5,43
+80629875c487817e1ec02000d58e554f4e709689,ns_ipr = ip_lib.IpRule(namespace=ri.ns_name),1,2,0.5,44
+80629875c487817e1ec02000d58e554f4e709689,"ri = l3router.RouterInfo(id, router, **self.ri_kwargs)",1,2,0.5,45
+80629875c487817e1ec02000d58e554f4e709689,"ex_gw_port = {'fixed_ips': [{'ip_address': '20.0.0.30',",1,2,0.5,46
+80629875c487817e1ec02000d58e554f4e709689,"'20.0.0.30', mock.ANY)",1,2,0.5,47
+80629875c487817e1ec02000d58e554f4e709689,"def update_routing_table(self, operation, route, namespace=None):",0,2,0.5,48
+80629875c487817e1ec02000d58e554f4e709689,if namespace is None:,0,2,0.5,49
+80629875c487817e1ec02000d58e554f4e709689,namespace = self.ns_name,0,2,0.5,50
+80629875c487817e1ec02000d58e554f4e709689,ip_wrapper = ip_lib.IPWrapper(namespace=self.ns_name),1,2,0.5,51
+80629875c487817e1ec02000d58e554f4e709689,local_ns_list = (root_ip.get_namespaces(),1,2,0.5,52
+80629875c487817e1ec02000d58e554f4e709689,local_ns_list = root_ip.get_namespaces(),0,2,0.5,53
+80629875c487817e1ec02000d58e554f4e709689,fwaas_plugin_configured = (constants.FIREWALL,1,1,0.25,54
+80629875c487817e1ec02000d58e554f4e709689,# None means l3-agent has no information on the server,1,1,0.25,55
+80629875c487817e1ec02000d58e554f4e709689,if self.neutron_service_plugins is not None:,1,1,0.25,56
+80629875c487817e1ec02000d58e554f4e709689,if self.fwaas_enabled:,1,1,0.25,57
+80629875c487817e1ec02000d58e554f4e709689,if fwaas_plugin_configured and not self.fwaas_enabled:,1,1,0.25,58
+80629875c487817e1ec02000d58e554f4e709689,"msg = _(""FWaaS plugin is configured in the server side, but """,1,1,0.25,59
+80629875c487817e1ec02000d58e554f4e709689,self.fwaas_enabled = self.fwaas_enabled and fwaas_plugin_configured,1,1,0.25,60
+80629875c487817e1ec02000d58e554f4e709689,self.fwaas_enabled = cfg.CONF.fwaas.enabled,1,1,0.25,61
+80629875c487817e1ec02000d58e554f4e709689,cctxt = self.client.prepare(),1,1,0.25,62
+80629875c487817e1ec02000d58e554f4e709689,fwaas_driver_class_path = provconf.get_provider_driver_class(,1,1,0.25,63
+80629875c487817e1ec02000d58e554f4e709689,"def __init__(self, conf):",1,1,0.25,64
+80629875c487817e1ec02000d58e554f4e709689,"def get_tenants_with_firewalls(self, context, **kwargs):",1,1,0.25,65
+80629875c487817e1ec02000d58e554f4e709689,"""""""Agent side of the FWaaS agent to FWaaS Plugin RPC API.""""""",1,1,0.25,66
+80629875c487817e1ec02000d58e554f4e709689,"""""""Get the Firewalls with rules from the Plugin to send to driver.""""""",1,1,0.25,67
+80629875c487817e1ec02000d58e554f4e709689,"def get_firewalls_for_tenant(self, context, **kwargs):",1,1,0.25,68
+80629875c487817e1ec02000d58e554f4e709689,"def __init__(self, topic, host):",1,1,0.25,69
+80629875c487817e1ec02000d58e554f4e709689,self.services_sync = False,1,1,0.25,70
+80629875c487817e1ec02000d58e554f4e709689,self.fwaas_driver = importutils.import_object(,1,1,0.25,71
+80629875c487817e1ec02000d58e554f4e709689,router_ns = self.router_info[rid].ns_name,1,1,0.25,72
+80629875c487817e1ec02000d58e554f4e709689,"self.fwplugin_rpc = FWaaSL3PluginApi(FIREWALL_PLUGIN, conf.host)",1,1,0.25,73
+80629875c487817e1ec02000d58e554f4e709689,"def _get_router_info_list_for_tenant(self, routers, tenant_id):",1,1,0.25,74
+80629875c487817e1ec02000d58e554f4e709689,FIREWALL_PLUGIN = 'q-firewall-plugin',1,1,0.25,75
+80629875c487817e1ec02000d58e554f4e709689,"# fw was created before any routers were added, and if a",1,1,0.25,76
+80629875c487817e1ec02000d58e554f4e709689,if not router_info_list:,1,1,0.25,77
+80629875c487817e1ec02000d58e554f4e709689,router_info_list = self._get_router_info_list_for_tenant(,1,1,0.25,78
+80629875c487817e1ec02000d58e554f4e709689,routers = self.plugin_rpc.get_routers(context),1,1,0.25,79
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""%(func_name)s from agent for fw: %(fwid)s"",",1,1,0.25,80
+80629875c487817e1ec02000d58e554f4e709689,"def _invoke_driver_for_plugin_api(self, context, fw, func_name):",1,1,0.25,81
+80629875c487817e1ec02000d58e554f4e709689,if router_ns in local_ns_list:,1,1,0.25,82
+80629875c487817e1ec02000d58e554f4e709689,if rid not in self.router_info:,1,1,0.25,83
+80629875c487817e1ec02000d58e554f4e709689,# for routers without an interface - get_routers returns,1,1,0.25,84
+80629875c487817e1ec02000d58e554f4e709689,# Pick up namespaces for Tenant Routers,1,1,0.25,85
+80629875c487817e1ec02000d58e554f4e709689,router_info_list = [],1,1,0.25,86
+80629875c487817e1ec02000d58e554f4e709689,if router['tenant_id'] == tenant_id],1,1,0.25,87
+80629875c487817e1ec02000d58e554f4e709689,router_ids = [,1,1,0.25,88
+80629875c487817e1ec02000d58e554f4e709689,"""""""Returns the list of router info objects on which to apply the fw.""""""",1,1,0.25,89
+80629875c487817e1ec02000d58e554f4e709689,LOG = logging.getLogger(__name__),1,1,0.25,90
+80629875c487817e1ec02000d58e554f4e709689,gw_ipv4 = agent_gw_port['subnets'][0]['gateway_ip'],0,1,0.25,91
+80629875c487817e1ec02000d58e554f4e709689,from oslo_config import cfg,1,1,0.25,92
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns._check_for_gateway_ip_change = mock.Mock(return_value=True),0,1,0.25,93
+80629875c487817e1ec02000d58e554f4e709689,def test_check_gateway_ip_changed_no_change(self):,0,1,0.25,94
+80629875c487817e1ec02000d58e554f4e709689,agent_gw_port['subnets'][0]['gateway_ip'] = '20.0.1.1',0,1,0.25,95
+80629875c487817e1ec02000d58e554f4e709689,def test_update_gateway_port_gateway_outside_subnet_added(,0,1,0.25,96
+80629875c487817e1ec02000d58e554f4e709689,"expected = [mock.call(gw_ipv4), mock.call(gw_ipv6)]",0,1,0.25,97
+80629875c487817e1ec02000d58e554f4e709689,gw_ipv6 = agent_gw_port['subnets'][1]['gateway_ip'],0,1,0.25,98
+80629875c487817e1ec02000d58e554f4e709689,if func_name == 'delete_firewall':,1,1,0.25,99
+80629875c487817e1ec02000d58e554f4e709689,expected = [,0,1,0.25,100
+80629875c487817e1ec02000d58e554f4e709689,"def test_update_gateway_port(self, send_adv_notif, IPDevice):",0,1,0.25,101
+80629875c487817e1ec02000d58e554f4e709689,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.25,102
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.update_gateway_port = mock.Mock(),0,1,0.25,103
+80629875c487817e1ec02000d58e554f4e709689,agent_gw_port = self._get_agent_gw_port(),0,1,0.25,104
+80629875c487817e1ec02000d58e554f4e709689,"def test_gateway_added(self, device_exists, ip_wrapper):",0,1,0.25,105
+80629875c487817e1ec02000d58e554f4e709689,v6_subnet_id = _uuid(),0,1,0.25,106
+80629875c487817e1ec02000d58e554f4e709689,v4_subnet_id = _uuid(),0,1,0.25,107
+80629875c487817e1ec02000d58e554f4e709689,def _get_agent_gw_port(self):,0,1,0.25,108
+80629875c487817e1ec02000d58e554f4e709689,if router_ns in local_ns_list:,1,1,0.25,109
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.agent_gateway_port = copy.deepcopy(agent_gw_port),0,1,0.25,110
+80629875c487817e1ec02000d58e554f4e709689,agent_gw_port['mac_address'] = 'aa:bb:cc:dd:ee:ff',0,1,0.25,111
+80629875c487817e1ec02000d58e554f4e709689,def test_check_gateway_ip_changed_v4(self):,0,1,0.25,112
+80629875c487817e1ec02000d58e554f4e709689,agent_gw_port['subnets'][0]['gateway_ip'] = '20.0.0.2',0,1,0.25,113
+80629875c487817e1ec02000d58e554f4e709689,#    not use this file except in compliance with the License. You may obtain,1,1,0.25,114
+80629875c487817e1ec02000d58e554f4e709689,"int_dev = ip_wrapper.add_veth(rtr_2_fip_name,",1,1,0.25,115
+80629875c487817e1ec02000d58e554f4e709689,if not device_exists:,1,1,0.25,116
+80629875c487817e1ec02000d58e554f4e709689,namespace=ri.ns_name),1,1,0.25,117
+80629875c487817e1ec02000d58e554f4e709689,"device_exists = ip_lib.device_exists(rtr_2_fip_name,",1,1,0.25,118
+80629875c487817e1ec02000d58e554f4e709689,"rtr_2_fip_dev, fip_2_rtr_dev = ip_wrapper.add_veth(rtr_2_fip_name,",0,1,0.25,119
+80629875c487817e1ec02000d58e554f4e709689,if not rtr_2_fip_dev.exists():,0,1,0.25,120
+80629875c487817e1ec02000d58e554f4e709689,device_exists.return_value = False,1,1,0.25,121
+80629875c487817e1ec02000d58e554f4e709689,"def test_gateway_outside_subnet_added(self, device_exists, send_adv_notif,",1,1,0.25,122
+80629875c487817e1ec02000d58e554f4e709689,mock.ANY),1,1,0.25,123
+80629875c487817e1ec02000d58e554f4e709689,"'20.0.0.30',",1,1,0.25,124
+80629875c487817e1ec02000d58e554f4e709689,subnet_id = _uuid(),1,1,0.25,125
+80629875c487817e1ec02000d58e554f4e709689,"def test_gateway_added(self, device_exists, send_adv_notif,",1,1,0.25,126
+80629875c487817e1ec02000d58e554f4e709689,agent_gw_port['subnets'][1]['gateway_ip'] = 'cafe:dead:beef::2',0,1,0.25,127
+80629875c487817e1ec02000d58e554f4e709689,def test_check_gateway_ip_changed_v6(self):,0,1,0.25,128
+80629875c487817e1ec02000d58e554f4e709689,# delete is sent then we need to ack so that plugin can,1,1,0.25,129
+80629875c487817e1ec02000d58e554f4e709689,# if fw present on tenant,1,1,0.25,130
+80629875c487817e1ec02000d58e554f4e709689,[ri.router['id'] for ri in router_info_list]),1,1,0.25,131
+80629875c487817e1ec02000d58e554f4e709689,rtr_2_fip_name = self.fip_ns.get_rtr_ext_device_name(self.router_id),1,1,0.25,132
+80629875c487817e1ec02000d58e554f4e709689,interface_name = self.fip_ns.get_ext_device_name(,1,1,0.25,133
+80629875c487817e1ec02000d58e554f4e709689,if self.fip_ns.agent_gateway_port:,1,1,0.25,134
+80629875c487817e1ec02000d58e554f4e709689,if self.dist_fip_count == 0:,1,1,0.25,135
+80629875c487817e1ec02000d58e554f4e709689,# check if this is the last FIP for this router,1,1,0.25,136
+80629875c487817e1ec02000d58e554f4e709689,fip_ns_name = self.fip_ns.get_name(),1,1,0.25,137
+80629875c487817e1ec02000d58e554f4e709689,"rtr_2_fip, fip_2_rtr = self.rtr_fip_subnet.get_pair()",1,1,0.25,138
+80629875c487817e1ec02000d58e554f4e709689,self.rtr_fip_subnet = self.fip_ns.local_subnets.allocate(,1,1,0.25,139
+80629875c487817e1ec02000d58e554f4e709689,fip_agent_port = self.agent.plugin_rpc.get_agent_gateway_port(,0,1,0.25,140
+80629875c487817e1ec02000d58e554f4e709689,self.rtr_fip_connect = False,0,1,0.25,141
+80629875c487817e1ec02000d58e554f4e709689,if not fip_agent_port:,0,1,0.25,142
+80629875c487817e1ec02000d58e554f4e709689,"def create_dvr_external_gateway_on_agent(self, ex_gw_port):",0,1,0.25,143
+80629875c487817e1ec02000d58e554f4e709689,self.rtr_fip_connect = True,0,1,0.25,144
+80629875c487817e1ec02000d58e554f4e709689,if self.fip_ns.agent_gateway_port and not self.rtr_fip_connect:,0,1,0.25,145
+80629875c487817e1ec02000d58e554f4e709689,def connect_rtr_2_fip(self):,0,1,0.25,146
+80629875c487817e1ec02000d58e554f4e709689,fip_ns_name = self.fip_ns.get_name(),0,1,0.25,147
+80629875c487817e1ec02000d58e554f4e709689,"rtr_2_fip, fip_2_rtr = self.rtr_fip_subnet.get_pair()",0,1,0.25,148
+80629875c487817e1ec02000d58e554f4e709689,fg_device = ip_lib.IPDevice(,1,1,0.25,149
+80629875c487817e1ec02000d58e554f4e709689,"interface_name, namespace=fip_ns_name)",1,1,0.25,150
+80629875c487817e1ec02000d58e554f4e709689,if fg_device.exists():,1,1,0.25,151
+80629875c487817e1ec02000d58e554f4e709689,# fpr interface route table.,1,1,0.25,152
+80629875c487817e1ec02000d58e554f4e709689,"'20.0.0.30', mock.ANY)]",1,1,0.25,153
+80629875c487817e1ec02000d58e554f4e709689,if (self.fip_ns.agent_gateway_port and,1,1,0.25,154
+80629875c487817e1ec02000d58e554f4e709689,if 'subnets' not in fip_agent_port:,1,1,0.25,155
+80629875c487817e1ec02000d58e554f4e709689,"LOG.error(_LE(""No FloatingIP agent gateway port """,1,1,0.25,156
+80629875c487817e1ec02000d58e554f4e709689,fip_agent_port = self.agent.plugin_rpc.get_agent_gateway_port(,1,1,0.25,157
+80629875c487817e1ec02000d58e554f4e709689,"""requesting agent gateway port for 'network-id' :""",1,1,0.25,158
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""No FloatingIP agent gateway port possibly due to """,1,1,0.25,159
+80629875c487817e1ec02000d58e554f4e709689,if not fip_agent_port:,1,1,0.25,160
+80629875c487817e1ec02000d58e554f4e709689,if floating_ips:,1,1,0.25,161
+80629875c487817e1ec02000d58e554f4e709689,if fip_agent_port:,1,1,0.25,162
+80629875c487817e1ec02000d58e554f4e709689,floating_ips = self.get_floating_ips(),1,1,0.25,163
+80629875c487817e1ec02000d58e554f4e709689,"def create_dvr_fip_interfaces(self, ex_gw_port):",1,1,0.25,164
+80629875c487817e1ec02000d58e554f4e709689,# Remove the rule lookup,1,1,0.25,165
+80629875c487817e1ec02000d58e554f4e709689,fip_rt_rule = ip_lib.IPRule(namespace=fip_ns_name),1,1,0.25,166
+80629875c487817e1ec02000d58e554f4e709689,tbl_index = self._get_snat_idx(fip_2_rtr),1,1,0.25,167
+80629875c487817e1ec02000d58e554f4e709689,if self.rtr_fip_subnet:,0,1,0.25,168
+80629875c487817e1ec02000d58e554f4e709689,ext_net_bridge = self.agent_conf.external_network_bridge,0,1,0.25,169
+80629875c487817e1ec02000d58e554f4e709689,if fw['admin_state_up']:,1,1,0.25,170
+80629875c487817e1ec02000d58e554f4e709689,if fw['status'] == constants.PENDING_DELETE:,1,1,0.25,171
+80629875c487817e1ec02000d58e554f4e709689,fw_list = self.fwplugin_rpc.get_firewalls_for_tenant(ctx),1,1,0.25,172
+80629875c487817e1ec02000d58e554f4e709689,"ctx = context.Context('', ri.router['tenant_id'])",1,1,0.25,173
+80629875c487817e1ec02000d58e554f4e709689,if router_info_list:,1,1,0.25,174
+80629875c487817e1ec02000d58e554f4e709689,routers = [],1,1,0.25,175
+80629875c487817e1ec02000d58e554f4e709689,"""""""On router add, get fw with rules from plugin and update driver.""""""",1,1,0.25,176
+80629875c487817e1ec02000d58e554f4e709689,"def _process_router_add(self, ri):",1,1,0.25,177
+80629875c487817e1ec02000d58e554f4e709689,"LOG.error(_LE(""Firewall Driver Error on fw state %(fwmsg)s """,1,1,0.25,178
+80629875c487817e1ec02000d58e554f4e709689,"""""""Invoke the delete driver method for status of PENDING_DELETE and",1,1,0.25,179
+80629875c487817e1ec02000d58e554f4e709689,for device in devices:,0,1,0.25,180
+80629875c487817e1ec02000d58e554f4e709689,"def _invoke_driver_for_sync_from_plugin(self, ctx, router_info_list, fw):",1,1,0.25,181
+80629875c487817e1ec02000d58e554f4e709689,self.services_sync = True,1,1,0.25,182
+80629875c487817e1ec02000d58e554f4e709689,"if status in [constants.ACTIVE, constants.DOWN]:",1,1,0.25,183
+80629875c487817e1ec02000d58e554f4e709689,# delete needs different handling,1,1,0.25,184
+80629875c487817e1ec02000d58e554f4e709689,status = constants.ERROR,1,1,0.25,185
+80629875c487817e1ec02000d58e554f4e709689,status = constants.DOWN,1,1,0.25,186
+80629875c487817e1ec02000d58e554f4e709689,status = constants.ACTIVE,1,1,0.25,187
+80629875c487817e1ec02000d58e554f4e709689,"def process_router_add(self, ri):",1,1,0.25,188
+80629875c487817e1ec02000d58e554f4e709689,if not self.fwaas_enabled:,1,1,0.25,189
+80629875c487817e1ec02000d58e554f4e709689,"def process_services_sync(self, ctx):",1,1,0.25,190
+80629875c487817e1ec02000d58e554f4e709689,# get all routers,1,1,0.25,191
+80629875c487817e1ec02000d58e554f4e709689,devices = ip_wrapper.get_devices(),0,1,0.25,192
+80629875c487817e1ec02000d58e554f4e709689,"def _internal_ns_interface_added(self, ip_cidr,",1,1,0.25,193
+80629875c487817e1ec02000d58e554f4e709689,"def _add_cidr_to_device(self, device, ip_cidr):",0,1,0.25,194
+80629875c487817e1ec02000d58e554f4e709689,"""""""Handle Rpc from plugin to delete a firewall.""""""",1,1,0.25,195
+80629875c487817e1ec02000d58e554f4e709689,"def delete_firewall(self, context, firewall, host):",1,1,0.25,196
+80629875c487817e1ec02000d58e554f4e709689,"def update_firewall(self, context, firewall, host):",1,1,0.25,197
+80629875c487817e1ec02000d58e554f4e709689,"def create_firewall(self, context, firewall, host):",1,1,0.25,198
+80629875c487817e1ec02000d58e554f4e709689,"LOG.exception(_LE(""Failed fwaas process services sync""))",1,1,0.25,199
+80629875c487817e1ec02000d58e554f4e709689,if fw['status'] != constants.ACTIVE:,1,1,0.25,200
+80629875c487817e1ec02000d58e554f4e709689,for ri in router_info_list]),1,1,0.25,201
+80629875c487817e1ec02000d58e554f4e709689,if self.conf.use_namespaces:,1,1,0.25,202
+80629875c487817e1ec02000d58e554f4e709689,if fw_list:,1,1,0.25,203
+80629875c487817e1ec02000d58e554f4e709689,"ctx = context.Context('', tenant_id)",1,1,0.25,204
+80629875c487817e1ec02000d58e554f4e709689,tenant_ids = self.fwplugin_rpc.get_tenants_with_firewalls(ctx),1,1,0.25,205
+80629875c487817e1ec02000d58e554f4e709689,routers = self.plugin_rpc.get_routers(ctx),1,1,0.25,206
+80629875c487817e1ec02000d58e554f4e709689,router_ns = self.router_info[rid].ns_name,1,1,0.25,207
+80629875c487817e1ec02000d58e554f4e709689,self.rtr_fip_subnet = self.fip_ns.local_subnets.lookup(,0,1,0.25,208
+80629875c487817e1ec02000d58e554f4e709689,if router_ns in local_ns_list:,0,1,0.25,209
+80629875c487817e1ec02000d58e554f4e709689,ip_pool = 'fd01:%x:1::6',0,1,0.25,210
+80629875c487817e1ec02000d58e554f4e709689,gateway_ip = '19.4.4.1',0,1,0.25,211
+80629875c487817e1ec02000d58e554f4e709689,subnet_cidr = '19.4.4.0/24',0,1,0.25,212
+80629875c487817e1ec02000d58e554f4e709689,ip_address = '19.4.4.4',0,1,0.25,213
+80629875c487817e1ec02000d58e554f4e709689,if not fixed_ips:,0,1,0.25,214
+80629875c487817e1ec02000d58e554f4e709689,gw_pool = 'fd01:%x:1::1',0,1,0.25,215
+80629875c487817e1ec02000d58e554f4e709689,prefixlen = 64,0,1,0.25,216
+80629875c487817e1ec02000d58e554f4e709689,cidr_pool = 'fd01:%x:1::/64',0,1,0.25,217
+80629875c487817e1ec02000d58e554f4e709689,gw_pool = '35.4.%i.1',0,1,0.25,218
+80629875c487817e1ec02000d58e554f4e709689,prefixlen = netaddr.IPNetwork(snat_subnet['cidr']).prefixlen,0,1,0.25,219
+80629875c487817e1ec02000d58e554f4e709689,prefixlen = 24,0,1,0.25,220
+80629875c487817e1ec02000d58e554f4e709689,cidr_pool = '35.4.%i.0/24',0,1,0.25,221
+80629875c487817e1ec02000d58e554f4e709689,ip_pool = '35.4.%i.4',0,1,0.25,222
+80629875c487817e1ec02000d58e554f4e709689,if loop_version == 4 and (ip_version == 4 or dual_stack):,0,1,0.25,223
+80629875c487817e1ec02000d58e554f4e709689,subnets = [],0,1,0.25,224
+80629875c487817e1ec02000d58e554f4e709689,fixed_ips = [],0,1,0.25,225
+80629875c487817e1ec02000d58e554f4e709689,fg_port_created_successfully = ip_lib.device_exists_with_ips_and_mac(,0,1,0.25,226
+80629875c487817e1ec02000d58e554f4e709689,ip_address = 'fd00::4',0,1,0.25,227
+80629875c487817e1ec02000d58e554f4e709689,subnet_cidr = 'fd00::/64',0,1,0.25,228
+80629875c487817e1ec02000d58e554f4e709689,gateway_ip = 'fd00::1',0,1,0.25,229
+80629875c487817e1ec02000d58e554f4e709689,"routes = [{'destination': '8.8.8.0/24', 'nexthop': '19.4.4.4'}]",0,1,0.25,230
+80629875c487817e1ec02000d58e554f4e709689,"'20.0.0.30', mock.ANY)]",0,1,0.25,231
+80629875c487817e1ec02000d58e554f4e709689,"exp_arp_calls = [mock.call(ri.ns_name, interface_name,",0,1,0.25,232
+80629875c487817e1ec02000d58e554f4e709689,"ex_gw_port = {'fixed_ips': fixed_ips,",0,1,0.25,233
+80629875c487817e1ec02000d58e554f4e709689,subnet_id_v6 = _uuid(),0,1,0.25,234
+80629875c487817e1ec02000d58e554f4e709689,if dual_stack:,0,1,0.25,235
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '20.0.0.30',",0,1,0.25,236
+80629875c487817e1ec02000d58e554f4e709689,"fixed_ips = [{'subnet_id': subnet_id,",0,1,0.25,237
+80629875c487817e1ec02000d58e554f4e709689,"def _test_external_gateway_action(self, action, router, dual_stack=False):",0,1,0.25,238
+80629875c487817e1ec02000d58e554f4e709689,ri._snat_redirect_modify = mock.Mock(),0,1,0.25,239
+80629875c487817e1ec02000d58e554f4e709689,def _fixed_ip_cidr(fixed_ip):,0,1,0.25,240
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '99.0.1.9',",0,1,0.25,241
+80629875c487817e1ec02000d58e554f4e709689,ns_id = _uuid(),0,1,0.25,242
+80629875c487817e1ec02000d58e554f4e709689,"self.snat_ports = [{'subnets': [{'cidr': '152.2.0.0/16',",0,1,0.25,243
+80629875c487817e1ec02000d58e554f4e709689,subnet_id_2 = _uuid(),0,1,0.25,244
+80629875c487817e1ec02000d58e554f4e709689,subnet_id_1 = _uuid(),0,1,0.25,245
+80629875c487817e1ec02000d58e554f4e709689,expected_gateway = external_port['subnets'][0]['gateway_ip'],0,1,0.25,246
+80629875c487817e1ec02000d58e554f4e709689,snat_subnet = port['subnets'][0],0,1,0.25,247
+80629875c487817e1ec02000d58e554f4e709689,gateway_ips = ['20.0.0.1'],0,1,0.25,248
+80629875c487817e1ec02000d58e554f4e709689,ip_address = str(netaddr.IPNetwork(ex_gw_port['ip_cidr']).ip),1,1,0.25,249
+80629875c487817e1ec02000d58e554f4e709689,fixed_ip = port['fixed_ips'][0],0,1,0.25,250
+80629875c487817e1ec02000d58e554f4e709689,def _port_first_ip_cidr(port):,0,1,0.25,251
+80629875c487817e1ec02000d58e554f4e709689,ip_cidrs = common_utils.fixed_ip_cidrs(expected_device['fixed_ips']),0,1,0.25,252
+80629875c487817e1ec02000d58e554f4e709689,"def device_exists_with_ips_and_mac(self, expected_device, name_getter,",0,1,0.25,253
+80629875c487817e1ec02000d58e554f4e709689,if ip_version == 6 and not dual_stack:,0,1,0.25,254
+80629875c487817e1ec02000d58e554f4e709689,if gw_ip:,1,1,0.25,255
+80629875c487817e1ec02000d58e554f4e709689,gw_ip = ex_gw_port['subnet']['gateway_ip'],1,1,0.25,256
+80629875c487817e1ec02000d58e554f4e709689,if gw_ip:,0,1,0.25,257
+80629875c487817e1ec02000d58e554f4e709689,prefixlen = netaddr.IPNetwork(float_subnet['cidr']).prefixlen,0,1,0.25,258
+80629875c487817e1ec02000d58e554f4e709689,ip_cidrs = common_utils.fixed_ip_cidrs(ex_gw_port['fixed_ips']),0,1,0.25,259
+80629875c487817e1ec02000d58e554f4e709689,net = netaddr.IPNetwork(ip_cidr),1,1,0.25,260
+80629875c487817e1ec02000d58e554f4e709689,ip_cidr = str(ip) + '/32',1,1,0.25,261
+80629875c487817e1ec02000d58e554f4e709689,"def _snat_redirect_remove(self, ri, sn_port, sn_int):",1,1,0.25,262
+80629875c487817e1ec02000d58e554f4e709689,"def _snat_redirect_remove(self, ri, gateway, sn_port, sn_int):",0,1,0.25,263
+80629875c487817e1ec02000d58e554f4e709689,router_ns = self.router_info[rid].ns_name,0,1,0.25,264
+80629875c487817e1ec02000d58e554f4e709689,ns_ipwrapr = ip_lib.IPWrapper(namespace=ri.ns_name),0,1,0.25,265
+80629875c487817e1ec02000d58e554f4e709689,ha_device_cidr = self._port_first_ip_cidr(router.ha_port),0,1,0.25,266
+80629875c487817e1ec02000d58e554f4e709689,external_device_cidr = self._port_first_ip_cidr(external_port),0,1,0.25,267
+80629875c487817e1ec02000d58e554f4e709689,internal_device_cidr = self._port_first_ip_cidr(internal_port),0,1,0.25,268
+80629875c487817e1ec02000d58e554f4e709689,default_gateway_ip = external_port['subnets'][0].get('gateway_ip'),0,1,0.25,269
+80629875c487817e1ec02000d58e554f4e709689,float_subnet = external_gw_port['subnets'][0],0,1,0.25,270
+80629875c487817e1ec02000d58e554f4e709689,router_ip_cidr = self._port_first_ip_cidr(router.internal_ports[0]),0,1,0.25,271
+80629875c487817e1ec02000d58e554f4e709689,def ha_router_dev_name_getter(not_used):,0,1,0.25,272
+80629875c487817e1ec02000d58e554f4e709689,existing_gateway = (external_device.route.get_gateway(,0,1,0.25,273
+80629875c487817e1ec02000d58e554f4e709689,ip_vers = netaddr.IPAddress(expected_gateway).version,0,1,0.25,274
+80629875c487817e1ec02000d58e554f4e709689,expected_gateway = subnet['gateway_ip'],0,1,0.25,275
+80629875c487817e1ec02000d58e554f4e709689,if not (enable_ha and (ip_version == 6 or dual_stack)):,0,1,0.25,276
+80629875c487817e1ec02000d58e554f4e709689,"router_info = self.generate_router_info(enable_ha, ip_version,",0,1,0.25,277
+80629875c487817e1ec02000d58e554f4e709689,"def _router_lifecycle(self, enable_ha, ip_version=4, dual_stack=False):",0,1,0.25,278
+80629875c487817e1ec02000d58e554f4e709689,router.router['gw_port']['fixed_ips'] = fixed_ips,0,1,0.25,279
+80629875c487817e1ec02000d58e554f4e709689,router.router['gw_port']['subnets'] = subnets,0,1,0.25,280
+80629875c487817e1ec02000d58e554f4e709689,"subnets = [{'id': subnet_id,",0,1,0.25,281
+80629875c487817e1ec02000d58e554f4e709689,"fixed_ips = [{'ip_address': '19.4.4.10',",0,1,0.25,282
+80629875c487817e1ec02000d58e554f4e709689,subnet_id = _uuid(),0,1,0.25,283
+80629875c487817e1ec02000d58e554f4e709689,namespace=router.ns_name) for fip in floating_ips),0,1,0.25,284
+80629875c487817e1ec02000d58e554f4e709689,ip_cidrs = ['20.0.0.30/24'],0,1,0.25,285
+80629875c487817e1ec02000d58e554f4e709689,gw_ip = subnet.get('gateway_ip'),0,1,0.25,286
+80629875c487817e1ec02000d58e554f4e709689,"def _prepare_ext_gw_test(self, ri, dual_stack=False):",0,1,0.25,287
+80629875c487817e1ec02000d58e554f4e709689,ip_addr = 'fd00::4',1,1,0.25,288
+80629875c487817e1ec02000d58e554f4e709689,"def _prepare_ext_gw_test(self, ri):",1,1,0.25,289
+80629875c487817e1ec02000d58e554f4e709689,"def _test_external_gateway_action(self, action, router):",1,1,0.25,290
+80629875c487817e1ec02000d58e554f4e709689,ri._snat_redirect_remove = mock.Mock(),1,1,0.25,291
+80629875c487817e1ec02000d58e554f4e709689,ri._set_subnet_info = mock.Mock(),1,1,0.25,292
+80629875c487817e1ec02000d58e554f4e709689,"self.snat_ports = [{'subnet': {'cidr': '152.2.0.0/16',",1,1,0.25,293
+80629875c487817e1ec02000d58e554f4e709689,"routes = [{'destination': '8.8.8.0/24', 'nexthop': ip_addr}]",1,1,0.25,294
+80629875c487817e1ec02000d58e554f4e709689,gateway_ip = 'fd00::1',1,1,0.25,295
+80629875c487817e1ec02000d58e554f4e709689,gateway_ip = '19.4.4.1',1,1,0.25,296
+80629875c487817e1ec02000d58e554f4e709689,snat_subnet = port['subnet'],1,1,0.25,297
+80629875c487817e1ec02000d58e554f4e709689,ip_addr = '19.4.4.4',1,1,0.25,298
+80629875c487817e1ec02000d58e554f4e709689,gw_pool = 'fd01:%x:1::1',1,1,0.25,299
+80629875c487817e1ec02000d58e554f4e709689,cidr_pool = 'fd01:%x:1::/64',1,1,0.25,300
+80629875c487817e1ec02000d58e554f4e709689,ip_pool = 'fd01:%x:1::6',1,1,0.25,301
+80629875c487817e1ec02000d58e554f4e709689,gw_pool = '35.4.%i.1',1,1,0.25,302
+80629875c487817e1ec02000d58e554f4e709689,cidr_pool = '35.4.%i.0/24',1,1,0.25,303
+80629875c487817e1ec02000d58e554f4e709689,ip_pool = '35.4.%i.4',1,1,0.25,304
+80629875c487817e1ec02000d58e554f4e709689,def test_external_gateway_updated(self):,1,1,0.25,305
+80629875c487817e1ec02000d58e554f4e709689,"interface_name, ex_gw_port = self._prepare_ext_gw_test(ri)",1,1,0.25,306
+80629875c487817e1ec02000d58e554f4e709689,prefix = iface['subnet']['cidr'].split('/')[1],1,1,0.25,307
+80629875c487817e1ec02000d58e554f4e709689,"source_cidr = ""%s/%s"" % (iface['fixed_ips'][0]['ip_address'],",1,1,0.25,308
+80629875c487817e1ec02000d58e554f4e709689,"def internal_network_added(self, port):",1,1,0.25,309
+80629875c487817e1ec02000d58e554f4e709689,"def _test_external_gateway_updated(self, dual_stack=False):",0,1,0.25,310
+80629875c487817e1ec02000d58e554f4e709689,interface_name = self.get_internal_device_name(port_id),1,1,0.25,311
+80629875c487817e1ec02000d58e554f4e709689,namespace=self.ns_name),1,1,0.25,312
+80629875c487817e1ec02000d58e554f4e709689,"def internal_network_added(self, port):",0,1,0.25,313
+80629875c487817e1ec02000d58e554f4e709689,"def _plug_ha_router_port(self, port, name_getter, prefix):",0,1,0.25,314
+80629875c487817e1ec02000d58e554f4e709689,"def _add_vips(self, port, interface_name):",0,1,0.25,315
+80629875c487817e1ec02000d58e554f4e709689,def ha_namespace(self):,0,1,0.25,316
+80629875c487817e1ec02000d58e554f4e709689,"def _update_routing_table(self, operation, route):",1,1,0.25,317
+80629875c487817e1ec02000d58e554f4e709689,"def _update_routing_table(self, operation, route, namespace):",0,1,0.25,318
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '20.0.0.30', 'subnet_id': _uuid()",1,1,0.25,319
+80629875c487817e1ec02000d58e554f4e709689,router = prepare_router_data(ip_version=6),1,1,0.25,320
+80629875c487817e1ec02000d58e554f4e709689,def test_process_ipv6_only_gw(self):,1,1,0.25,321
+80629875c487817e1ec02000d58e554f4e709689,"[{'fixed_ips': [{'ip_address': '20.0.0.30',",1,1,0.25,322
+80629875c487817e1ec02000d58e554f4e709689,ports[0]['subnet']['id'] = _get_subnet_id(ports[0]),1,1,0.25,323
+80629875c487817e1ec02000d58e554f4e709689,fg_port_created_successfully = ip_lib.device_exists_with_ip_mac(,1,1,0.25,324
+80629875c487817e1ec02000d58e554f4e709689,interface_name = name_getter(port_id),0,1,0.25,325
+80629875c487817e1ec02000d58e554f4e709689,router = prepare_router_data(num_internal_ports=2),0,1,0.25,326
+80629875c487817e1ec02000d58e554f4e709689,def test_agent_remove_external_gateway_dist_dual_stack(self):,0,1,0.25,327
+80629875c487817e1ec02000d58e554f4e709689,"router = prepare_router_data(ip_version=6, dual_stack=dual_stack)",0,1,0.25,328
+80629875c487817e1ec02000d58e554f4e709689,"def _test_process_ipv6_only_or_dual_stack_gw(self, dual_stack=False):",0,1,0.25,329
+80629875c487817e1ec02000d58e554f4e709689,"{'ip_address': '20.0.0.30',",0,1,0.25,330
+80629875c487817e1ec02000d58e554f4e709689,"ports[0]['subnets'] = [{'id': subnet_id,",0,1,0.25,331
+80629875c487817e1ec02000d58e554f4e709689,subnet_id = _get_subnet_id(ports[0]),0,1,0.25,332
+80629875c487817e1ec02000d58e554f4e709689,"source_cidr = ""%s/%s"" % (iface['fixed_ips'][0]['ip_address'],",0,1,0.25,333
+80629875c487817e1ec02000d58e554f4e709689,prefix = subnet['cidr'].split('/')[1],0,1,0.25,334
+80629875c487817e1ec02000d58e554f4e709689,def test_agent_remove_external_gateway_dual_stack(self):,0,1,0.25,335
+80629875c487817e1ec02000d58e554f4e709689,external_gateway_nat_rules.side_effect = orig_ext_gw_nat_rules,0,1,0.25,336
+80629875c487817e1ec02000d58e554f4e709689,router['gw_port_host'] = HOSTNAME,0,1,0.25,337
+80629875c487817e1ec02000d58e554f4e709689,router['distributed'] = True,0,1,0.25,338
+80629875c487817e1ec02000d58e554f4e709689,def test_agent_add_external_gateway_dist_dual_stack(self):,0,1,0.25,339
+80629875c487817e1ec02000d58e554f4e709689,"interface_name, ex_gw_port = self._prepare_ext_gw_test(",0,1,0.25,340
+80629875c487817e1ec02000d58e554f4e709689,def test_agent_add_external_gateway_dual_stack(self):,0,1,0.25,341
+80629875c487817e1ec02000d58e554f4e709689,float_subnet = external_gw_port['subnet'],1,1,0.25,342
+80629875c487817e1ec02000d58e554f4e709689,def test_external_gateway_updated_dual_stack(self):,0,1,0.25,343
+80629875c487817e1ec02000d58e554f4e709689,orig_ext_gw_nat_rules = ri.external_gateway_nat_rules,0,1,0.25,344
+80629875c487817e1ec02000d58e554f4e709689,def test_external_gateway_updated(self):,0,1,0.25,345
+80629875c487817e1ec02000d58e554f4e709689,def test_process_ipv6_only_gw(self):,0,1,0.25,346
+80629875c487817e1ec02000d58e554f4e709689,router.router['gw_port']['subnet']['gateway_ip'] = '19.4.4.5',1,1,0.25,347
+80629875c487817e1ec02000d58e554f4e709689,def test_process_dual_stack_gw(self):,0,1,0.25,348
+80629875c487817e1ec02000d58e554f4e709689,expected_gateway = external_port['subnet']['gateway_ip'],1,1,0.25,349
+80629875c487817e1ec02000d58e554f4e709689,if ip_version == 4:,1,1,0.25,350
+80629875c487817e1ec02000d58e554f4e709689,"router_info = self.generate_router_info(enable_ha, ip_version)",1,1,0.25,351
+80629875c487817e1ec02000d58e554f4e709689,"def _router_lifecycle(self, enable_ha, ip_version=4):",1,1,0.25,352
+80629875c487817e1ec02000d58e554f4e709689,router_ip_cidr = router.internal_ports[0]['ip_cidr'],1,1,0.25,353
+80629875c487817e1ec02000d58e554f4e709689,router.router['gw_port']['fixed_ips'][0]['ip_address'] = '19.4.4.10',1,1,0.25,354
+80629875c487817e1ec02000d58e554f4e709689,existing_gateway = (,1,1,0.25,355
+80629875c487817e1ec02000d58e554f4e709689,namespace=router.ns_name) for fip in floating_ips),1,1,0.25,356
+80629875c487817e1ec02000d58e554f4e709689,internal_device_cidr = internal_port['ip_cidr'],1,1,0.25,357
+80629875c487817e1ec02000d58e554f4e709689,external_device_cidr = external_port['ip_cidr'],1,1,0.25,358
+80629875c487817e1ec02000d58e554f4e709689,ha_device_cidr = router.ha_port['ip_cidr'],1,1,0.25,359
+80629875c487817e1ec02000d58e554f4e709689,"def device_exists_with_ip_mac(self, expected_device, name_getter,",1,1,0.25,360
+80629875c487817e1ec02000d58e554f4e709689,default_gateway_ip = external_port['subnet'].get('gateway_ip'),1,1,0.25,361
+80629875c487817e1ec02000d58e554f4e709689,if ip_version == 6:,1,1,0.25,362
+80629875c487817e1ec02000d58e554f4e709689,int_dev[1].link.set_mtu(mtu),1,0,0.0,363
+80629875c487817e1ec02000d58e554f4e709689,fip_2_rtr_dev.link.set_up(),0,0,0.0,364
+80629875c487817e1ec02000d58e554f4e709689,"rtr_2_fip_dev.route.add_gateway(str(fip_2_rtr.ip), table=FIP_RT_TBL)",0,0,0.0,365
+80629875c487817e1ec02000d58e554f4e709689,"fip_2_rtr_name,",1,0,0.0,366
+80629875c487817e1ec02000d58e554f4e709689,fip_ns_name),1,0,0.0,367
+80629875c487817e1ec02000d58e554f4e709689,int_dev[0].link.set_mtu(mtu),1,0,0.0,368
+80629875c487817e1ec02000d58e554f4e709689,"device.route.add_gateway(str(fip_2_rtr.ip), table=FIP_RT_TBL)",1,0,0.0,369
+80629875c487817e1ec02000d58e554f4e709689,int_dev[0].link.set_up(),1,0,0.0,370
+80629875c487817e1ec02000d58e554f4e709689,int_dev[1].link.set_up(),1,0,0.0,371
+80629875c487817e1ec02000d58e554f4e709689,# Copyright (c) 2013 OpenStack Foundation.,1,0,0.0,372
+80629875c487817e1ec02000d58e554f4e709689,# All Rights Reserved.,1,0,0.0,373
+80629875c487817e1ec02000d58e554f4e709689,#,1,0,0.0,374
+80629875c487817e1ec02000d58e554f4e709689,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,0,0.0,375
+80629875c487817e1ec02000d58e554f4e709689,#    a copy of the License at,1,0,0.0,376
+80629875c487817e1ec02000d58e554f4e709689,rtr_2_fip_dev.link.set_up(),0,0,0.0,377
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(1, self.driver.init_l3.call_count)",1,0,0.0,378
+80629875c487817e1ec02000d58e554f4e709689,fip_2_rtr_dev.link.set_mtu(mtu),0,0,0.0,379
+80629875c487817e1ec02000d58e554f4e709689,rtr_2_fip_dev.link.set_mtu(mtu),0,0,0.0,380
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': 24,",1,0,0.0,381
+80629875c487817e1ec02000d58e554f4e709689,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,382
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': '20.0.0.0/24',",1,0,0.0,383
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '20.0.1.1'}],",1,0,0.0,384
+80629875c487817e1ec02000d58e554f4e709689,"'id': _uuid(),",1,0,0.0,385
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': self.net_id,",1,0,0.0,386
+80629875c487817e1ec02000d58e554f4e709689,'mac_address': 'ca:fe:de:ad:be:ef'},1,0,0.0,387
+80629875c487817e1ec02000d58e554f4e709689,"self.fip_ns._gateway_added(agent_gw_port,",1,0,0.0,388
+80629875c487817e1ec02000d58e554f4e709689,mock.sentinel.interface_name),1,0,0.0,389
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(1, self.driver.plug.call_count)",1,0,0.0,390
+80629875c487817e1ec02000d58e554f4e709689,"device.route.add_route.assert_called_once_with('20.0.1.1',",1,0,0.0,391
+80629875c487817e1ec02000d58e554f4e709689,scope='link'),1,0,0.0,392
+80629875c487817e1ec02000d58e554f4e709689,device.route.add_gateway.assert_called_once_with('20.0.1.1'),1,0,0.0,393
+80629875c487817e1ec02000d58e554f4e709689,"fip_2_rtr_name,",0,0,0.0,394
+80629875c487817e1ec02000d58e554f4e709689,fip_ns_name),0,0,0.0,395
+80629875c487817e1ec02000d58e554f4e709689,raise ImportError(msg % fwaas_driver_class_path),1,0,0.0,396
+80629875c487817e1ec02000d58e554f4e709689,"return cctxt.call(context, 'get_firewalls_for_tenant', host=self.host)",1,0,0.0,397
+80629875c487817e1ec02000d58e554f4e709689,"#    Unless required by applicable law or agreed to in writing, software",1,0,0.0,398
+80629875c487817e1ec02000d58e554f4e709689,"""FWaaS is disabled in L3-agent."")",1,0,0.0,399
+80629875c487817e1ec02000d58e554f4e709689,class FWaaSL3AgentRpcCallback(api.FWaaSAgentRpcCallbackMixin):,1,0,0.0,400
+80629875c487817e1ec02000d58e554f4e709689,"""""""FWaaS Agent support to be used by Neutron L3 agent.""""""",1,0,0.0,401
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Initializing firewall agent"")",1,0,0.0,402
+80629875c487817e1ec02000d58e554f4e709689,cfg.CONF.fwaas.driver),1,0,0.0,403
+80629875c487817e1ec02000d58e554f4e709689,# configuration due to the lack of RPC support.,1,0,0.0,404
+80629875c487817e1ec02000d58e554f4e709689,in self.neutron_service_plugins),1,0,0.0,405
+80629875c487817e1ec02000d58e554f4e709689,LOG.error(msg),1,0,0.0,406
+80629875c487817e1ec02000d58e554f4e709689,"return cctxt.call(context,",1,0,0.0,407
+80629875c487817e1ec02000d58e554f4e709689,raise SystemExit(1),1,0,0.0,408
+80629875c487817e1ec02000d58e554f4e709689,try:,1,0,0.0,409
+80629875c487817e1ec02000d58e554f4e709689,fwaas_driver_class_path),1,0,0.0,410
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""FWaaS Driver Loaded: '%s'"", fwaas_driver_class_path)",1,0,0.0,411
+80629875c487817e1ec02000d58e554f4e709689,"send_adv_notif.assert_called_once_with(self.fip_ns.get_name(),",1,0,0.0,412
+80629875c487817e1ec02000d58e554f4e709689,except ImportError:,1,0,0.0,413
+80629875c487817e1ec02000d58e554f4e709689,"'get_tenants_with_firewalls', host=self.host)",1,0,0.0,414
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Retrieve Tenants with Firewalls configured from Plugin"")",1,0,0.0,415
+80629875c487817e1ec02000d58e554f4e709689,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,0,0.0,416
+80629875c487817e1ec02000d58e554f4e709689,from neutron.common import exceptions as nexception,1,0,0.0,417
+80629875c487817e1ec02000d58e554f4e709689,#    License for the specific language governing permissions and limitations,1,0,0.0,418
+80629875c487817e1ec02000d58e554f4e709689,#    under the License.,1,0,0.0,419
+80629875c487817e1ec02000d58e554f4e709689,from oslo_log import log as logging,1,0,0.0,420
+80629875c487817e1ec02000d58e554f4e709689,from oslo_utils import importutils,1,0,0.0,421
+80629875c487817e1ec02000d58e554f4e709689,"from neutron._i18n import _, _LE",1,0,0.0,422
+80629875c487817e1ec02000d58e554f4e709689,from neutron.agent.linux import ip_lib,1,0,0.0,423
+80629875c487817e1ec02000d58e554f4e709689,from neutron import context,1,0,0.0,424
+80629875c487817e1ec02000d58e554f4e709689,"""""""Get all Tenants that have Firewalls configured from plugin.""""""",1,0,0.0,425
+80629875c487817e1ec02000d58e554f4e709689,from neutron.plugins.common import constants,1,0,0.0,426
+80629875c487817e1ec02000d58e554f4e709689,from neutron.services.firewall.agents import firewall_agent_api as api,1,0,0.0,427
+80629875c487817e1ec02000d58e554f4e709689,from neutron.services import provider_configuration as provconf,1,0,0.0,428
+80629875c487817e1ec02000d58e554f4e709689,class FWaaSL3PluginApi(api.FWaaSPluginApiMixin):,1,0,0.0,429
+80629875c487817e1ec02000d58e554f4e709689,"super(FWaaSL3PluginApi, self).__init__(topic, host)",1,0,0.0,430
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Retrieve Firewall with rules from Plugin"")",1,0,0.0,431
+80629875c487817e1ec02000d58e554f4e709689,"mock.sentinel.interface_name,",1,0,0.0,432
+80629875c487817e1ec02000d58e554f4e709689,"{'ip_address': 'cafe:dead:beef::3',",0,0,0.0,433
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '20.0.0.1'}],",1,0,0.0,434
+80629875c487817e1ec02000d58e554f4e709689,"'subnets': [{'id': subnet_id,",1,0,0.0,435
+80629875c487817e1ec02000d58e554f4e709689,"'--namespace=%s' % self.ha_namespace,",0,0,0.0,436
+80629875c487817e1ec02000d58e554f4e709689,self.ha_namespace),0,0,0.0,437
+80629875c487817e1ec02000d58e554f4e709689,self._plug_external_gateway(,0,0,0.0,438
+80629875c487817e1ec02000d58e554f4e709689,"ex_gw_port, interface_name, self.ha_namespace)",0,0,0.0,439
+80629875c487817e1ec02000d58e554f4e709689,"namespace=self.ns_name,",1,0,0.0,440
+80629875c487817e1ec02000d58e554f4e709689,for ip_cidr in common_utils.fixed_ip_cidrs(ex_gw_port['fixed_ips']):,1,0,0.0,441
+80629875c487817e1ec02000d58e554f4e709689,"self._add_vip(ip_cidr, interface_name)",1,0,0.0,442
+80629875c487817e1ec02000d58e554f4e709689,prefix=router.INTERNAL_DEV_PREFIX),1,0,0.0,443
+80629875c487817e1ec02000d58e554f4e709689,for ip_cidr in common_utils.fixed_ip_cidrs(port['fixed_ips']):,1,0,0.0,444
+80629875c487817e1ec02000d58e554f4e709689,"self.ns_name,",1,0,0.0,445
+80629875c487817e1ec02000d58e554f4e709689,"'--namespace=%s' % self.ns_name,",1,0,0.0,446
+80629875c487817e1ec02000d58e554f4e709689,self.ns_name),1,0,0.0,447
+80629875c487817e1ec02000d58e554f4e709689,"self._plug_external_gateway(ex_gw_port, interface_name, self.ns_name)",1,0,0.0,448
+80629875c487817e1ec02000d58e554f4e709689,router_info_list.append(self.router_info[rid]),1,0,0.0,449
+80629875c487817e1ec02000d58e554f4e709689,else:,1,0,0.0,450
+80629875c487817e1ec02000d58e554f4e709689,"self.ha_namespace,",0,0,0.0,451
+80629875c487817e1ec02000d58e554f4e709689,"port, self.get_internal_device_name, router.INTERNAL_DEV_PREFIX)",0,0,0.0,452
+80629875c487817e1ec02000d58e554f4e709689,self._plug_ha_router_port(,0,0,0.0,453
+80629875c487817e1ec02000d58e554f4e709689,"namespace=self.ha_namespace,",0,0,0.0,454
+80629875c487817e1ec02000d58e554f4e709689,"self._update_routing_table('replace', route)",1,0,0.0,455
+80629875c487817e1ec02000d58e554f4e709689,"super(FWaaSL3AgentRpcCallback, self).__init__(host=conf.host)",1,0,0.0,456
+80629875c487817e1ec02000d58e554f4e709689,"self._update_routing_table('delete', route)",1,0,0.0,457
+80629875c487817e1ec02000d58e554f4e709689,@property,0,0,0.0,458
+80629875c487817e1ec02000d58e554f4e709689,return self.ns_name,0,0,0.0,459
+80629875c487817e1ec02000d58e554f4e709689,namespace=self.ha_namespace),0,0,0.0,460
+80629875c487817e1ec02000d58e554f4e709689,for ip_cidr in common_utils.fixed_ip_cidrs(port['fixed_ips']):,0,0,0.0,461
+80629875c487817e1ec02000d58e554f4e709689,"self._add_vips(port, interface_name)",0,0,0.0,462
+80629875c487817e1ec02000d58e554f4e709689,try:,0,0,0.0,463
+80629875c487817e1ec02000d58e554f4e709689,"self._add_vip(ip_cidr, interface_name)",0,0,0.0,464
+80629875c487817e1ec02000d58e554f4e709689,except keepalived.VIPDuplicateAddressException:,0,0,0.0,465
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""%s has already been added to keepalive"", ip_cidr)",0,0,0.0,466
+80629875c487817e1ec02000d58e554f4e709689,"self._add_vips(ex_gw_port, interface_name)",0,0,0.0,467
+80629875c487817e1ec02000d58e554f4e709689,prefix=prefix),0,0,0.0,468
+80629875c487817e1ec02000d58e554f4e709689,import copy,0,0,0.0,469
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': v4_subnet_id},",0,0,0.0,470
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': 64,",0,0,0.0,471
+80629875c487817e1ec02000d58e554f4e709689,agent_gw_port)),0,0,0.0,472
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'IPDevice')",0,0,0.0,473
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'send_ip_addr_adv_notif')",0,0,0.0,474
+80629875c487817e1ec02000d58e554f4e709689,"self, send_adv_notif, IPDevice):",0,0,0.0,475
+80629875c487817e1ec02000d58e554f4e709689,"IPDevice().route.add_route.assert_called_once_with('20.0.1.1',",0,0,0.0,476
+80629875c487817e1ec02000d58e554f4e709689,scope='link'),0,0,0.0,477
+80629875c487817e1ec02000d58e554f4e709689,self.assertFalse(self.fip_ns._check_for_gateway_ip_change(,0,0,0.0,478
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(self.fip_ns._check_for_gateway_ip_change(,0,0,0.0,479
+80629875c487817e1ec02000d58e554f4e709689,send_adv_notif.assert_has_calls(expected),0,0,0.0,480
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'IPWrapper')",1,0,0.0,481
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'IPDevice')",1,0,0.0,482
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'send_ip_addr_adv_notif')",1,0,0.0,483
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'device_exists')",1,0,0.0,484
+80629875c487817e1ec02000d58e554f4e709689,"IPDevice, IPWrapper):",1,0,0.0,485
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': subnet_id}],",1,0,0.0,486
+80629875c487817e1ec02000d58e554f4e709689,IPDevice().route.add_gateway.assert_has_calls(expected),0,0,0.0,487
+80629875c487817e1ec02000d58e554f4e709689,mock.ANY)],0,0,0.0,488
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': v6_subnet_id}],",0,0,0.0,489
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'IPWrapper')",0,0,0.0,490
+80629875c487817e1ec02000d58e554f4e709689,"'subnets': [{'id': v4_subnet_id,",0,0,0.0,491
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '20.0.0.1'},",0,0,0.0,492
+80629875c487817e1ec02000d58e554f4e709689,"{'id': v6_subnet_id,",0,0,0.0,493
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': 'cafe:dead:beef::/64',",0,0,0.0,494
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': 'cafe:dead:beef::1'}],",0,0,0.0,495
+80629875c487817e1ec02000d58e554f4e709689,return agent_gw_port,0,0,0.0,496
+80629875c487817e1ec02000d58e554f4e709689,"@mock.patch.object(ip_lib, 'device_exists')",0,0,0.0,497
+80629875c487817e1ec02000d58e554f4e709689,"agent_gw_port['fixed_ips'][1]['ip_address'],",0,0,0.0,498
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.update_gateway_port.assert_called_once_with(agent_gw_port),0,0,0.0,499
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.update_gateway_port(agent_gw_port),0,0,0.0,500
+80629875c487817e1ec02000d58e554f4e709689,"mock.call(self.fip_ns.get_name(),",0,0,0.0,501
+80629875c487817e1ec02000d58e554f4e709689,"self.fip_ns.get_ext_device_name(agent_gw_port['id']),",0,0,0.0,502
+80629875c487817e1ec02000d58e554f4e709689,"agent_gw_port['fixed_ips'][0]['ip_address'],",0,0,0.0,503
+80629875c487817e1ec02000d58e554f4e709689,"mock.ANY),",0,0,0.0,504
+80629875c487817e1ec02000d58e554f4e709689,# setup RPC to msg fwaas plugin,1,0,0.0,505
+80629875c487817e1ec02000d58e554f4e709689,'delete_firewall'),1,0,0.0,506
+80629875c487817e1ec02000d58e554f4e709689,# Get the routers for the tenant,1,0,0.0,507
+80629875c487817e1ec02000d58e554f4e709689,router['id'],1,0,0.0,508
+80629875c487817e1ec02000d58e554f4e709689,# TODO(Carl) mlavelle's work has self.ip_wrapper,1,0,0.0,509
+80629875c487817e1ec02000d58e554f4e709689,self._remove_floating_ip_rule(floating_ip),0,0,0.0,510
+80629875c487817e1ec02000d58e554f4e709689,"device.route.delete_route(fip_cidr, str(rtr_2_fip.ip))",0,0,0.0,511
+80629875c487817e1ec02000d58e554f4e709689,# gateway is removed.,0,0,0.0,512
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.delete_rtr_2_fip_link(self),0,0,0.0,513
+80629875c487817e1ec02000d58e554f4e709689,self.create_dvr_external_gateway_on_agent(ex_gw_port),0,0,0.0,514
+80629875c487817e1ec02000d58e554f4e709689,self.connect_rtr_2_fip(),0,0,0.0,515
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.create_rtr_2_fip_link(self),0,0,0.0,516
+80629875c487817e1ec02000d58e554f4e709689,"self.routes_updated([], self.router['routes'])",0,0,0.0,517
+80629875c487817e1ec02000d58e554f4e709689,"self.agent.context, ex_gw_port['network_id'])",0,0,0.0,518
+80629875c487817e1ec02000d58e554f4e709689,"""plugin: %s"", fip_agent_port)",0,0,0.0,519
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.create_or_update_gateway_port(fip_agent_port),0,0,0.0,520
+80629875c487817e1ec02000d58e554f4e709689,# update internal structures,1,0,0.0,521
+80629875c487817e1ec02000d58e554f4e709689,self._remove_floating_ip_rule(floating_ip),1,0,0.0,522
+80629875c487817e1ec02000d58e554f4e709689,"device.route.delete_route(fip_cidr, str(rtr_2_fip.ip))",1,0,0.0,523
+80629875c487817e1ec02000d58e554f4e709689,prefix=FIP_EXT_DEV_PREFIX),0,0,0.0,524
+80629875c487817e1ec02000d58e554f4e709689,"namespace=ns_name,",0,0,0.0,525
+80629875c487817e1ec02000d58e554f4e709689,"bridge=ext_net_bridge,",0,0,0.0,526
+80629875c487817e1ec02000d58e554f4e709689,"ip_cidr, 'dev', interface_name])",1,0,0.0,527
+80629875c487817e1ec02000d58e554f4e709689,'update_firewall'),1,0,0.0,528
+80629875c487817e1ec02000d58e554f4e709689,"device.addr.add(ip_cidr, add_broadcast=False)",0,0,0.0,529
+80629875c487817e1ec02000d58e554f4e709689,"self._add_cidr_to_device(rtr_2_fip_dev, str(rtr_2_fip))",0,0,0.0,530
+80629875c487817e1ec02000d58e554f4e709689,"self._add_cidr_to_device(fip_2_rtr_dev, str(fip_2_rtr))",0,0,0.0,531
+80629875c487817e1ec02000d58e554f4e709689,"interface_name, ns_name):",1,0,0.0,532
+80629875c487817e1ec02000d58e554f4e709689,"ip_wrapper.netns.execute(['ip', 'addr', 'add',",1,0,0.0,533
+80629875c487817e1ec02000d58e554f4e709689,"self._internal_ns_interface_added(str(rtr_2_fip),",1,0,0.0,534
+80629875c487817e1ec02000d58e554f4e709689,"self.driver.unplug(name,",0,0,0.0,535
+80629875c487817e1ec02000d58e554f4e709689,"rtr_2_fip_name,",1,0,0.0,536
+80629875c487817e1ec02000d58e554f4e709689,ri.ns_name),1,0,0.0,537
+80629875c487817e1ec02000d58e554f4e709689,"self._internal_ns_interface_added(str(fip_2_rtr),",1,0,0.0,538
+80629875c487817e1ec02000d58e554f4e709689,"fip_2_rtr_name,",1,0,0.0,539
+80629875c487817e1ec02000d58e554f4e709689,fip_ns_name),1,0,0.0,540
+80629875c487817e1ec02000d58e554f4e709689,# Remove stale fg devices,0,0,0.0,541
+80629875c487817e1ec02000d58e554f4e709689,#remove default route entry,1,0,0.0,542
+80629875c487817e1ec02000d58e554f4e709689,"device.route.delete_gateway(str(fip_2_rtr.ip),",1,0,0.0,543
+80629875c487817e1ec02000d58e554f4e709689,table=dvr_fip_ns.FIP_RT_TBL),1,0,0.0,544
+80629875c487817e1ec02000d58e554f4e709689,"self.routes_updated([], self.router['routes'])",1,0,0.0,545
+80629875c487817e1ec02000d58e554f4e709689,"""%s""), ex_gw_port['network_id'])",1,0,0.0,546
+80629875c487817e1ec02000d58e554f4e709689,LOG.error(_LE('Missing subnet/agent_gateway_port')),1,0,0.0,547
+80629875c487817e1ec02000d58e554f4e709689,else:,1,0,0.0,548
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.create_or_update_gateway_port(fip_agent_port),1,0,0.0,549
+80629875c487817e1ec02000d58e554f4e709689,(self.dist_fip_count == 0)):,1,0,0.0,550
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.create_rtr_2_fip_link(self),1,0,0.0,551
+80629875c487817e1ec02000d58e554f4e709689,'99.0.1.9'),0,0,0.0,552
+80629875c487817e1ec02000d58e554f4e709689,"self.agent.context, ex_gw_port['network_id'])",1,0,0.0,553
+80629875c487817e1ec02000d58e554f4e709689,'20.0.0.30')],0,0,0.0,554
+80629875c487817e1ec02000d58e554f4e709689,'2001:192:168:100::2')],0,0,0.0,555
+80629875c487817e1ec02000d58e554f4e709689,"self.conf.set_override('send_arp_for_ha', 1)",1,0,0.0,556
+80629875c487817e1ec02000d58e554f4e709689,"'2001:192:168:100::2',",1,0,0.0,557
+80629875c487817e1ec02000d58e554f4e709689,mock.ANY)],1,0,0.0,558
+80629875c487817e1ec02000d58e554f4e709689,"self.update_routing_table('replace', route)",0,0,0.0,559
+80629875c487817e1ec02000d58e554f4e709689,"""returned from server for 'network-id': """,1,0,0.0,560
+80629875c487817e1ec02000d58e554f4e709689,"""%s"", ex_gw_port['network_id'])",1,0,0.0,561
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.agent_gateway_port['id']),1,0,0.0,562
+80629875c487817e1ec02000d58e554f4e709689,"fip_rt_rule.rule.delete(ip=fip_2_rtr.ip,",1,0,0.0,563
+80629875c487817e1ec02000d58e554f4e709689,# Flush the table,1,0,0.0,564
+80629875c487817e1ec02000d58e554f4e709689,"fg_device.route.flush(lib_constants.IP_VERSION_4,",1,0,0.0,565
+80629875c487817e1ec02000d58e554f4e709689,table=tbl_index),1,0,0.0,566
+80629875c487817e1ec02000d58e554f4e709689,"fg_device.route.flush(lib_constants.IP_VERSION_6,",1,0,0.0,567
+80629875c487817e1ec02000d58e554f4e709689,"# IP is ignored in delete, but we still require it",1,0,0.0,568
+80629875c487817e1ec02000d58e554f4e709689,# for getting the ip_version.,1,0,0.0,569
+80629875c487817e1ec02000d58e554f4e709689,"iif=fip_2_rtr_name,",1,0,0.0,570
+80629875c487817e1ec02000d58e554f4e709689,"""late binding of the private port to the host, """,1,0,0.0,571
+80629875c487817e1ec02000d58e554f4e709689,"table=tbl_index,",1,0,0.0,572
+80629875c487817e1ec02000d58e554f4e709689,priority=tbl_index),1,0,0.0,573
+80629875c487817e1ec02000d58e554f4e709689,self.fip_ns.local_subnets.release(self.router_id),1,0,0.0,574
+80629875c487817e1ec02000d58e554f4e709689,ns_ip.del_veth(fip_2_rtr_name),1,0,0.0,575
+80629875c487817e1ec02000d58e554f4e709689,self.create_dvr_fip_interfaces(ex_gw_port),1,0,0.0,576
+80629875c487817e1ec02000d58e554f4e709689,"""plugin: %s"", fip_agent_port)",1,0,0.0,577
+80629875c487817e1ec02000d58e554f4e709689,"""""""Handle Rpc from plugin to update a firewall.""""""",1,0,0.0,578
+80629875c487817e1ec02000d58e554f4e709689,'create_firewall'),1,0,0.0,579
+80629875c487817e1ec02000d58e554f4e709689,"firewall,",1,0,0.0,580
+80629875c487817e1ec02000d58e554f4e709689,self.fwplugin_rpc.set_firewall_status(,1,0,0.0,581
+80629875c487817e1ec02000d58e554f4e709689,"router_info_list,",1,0,0.0,582
+80629875c487817e1ec02000d58e554f4e709689,fw),1,0,0.0,583
+80629875c487817e1ec02000d58e554f4e709689,else:,1,0,0.0,584
+80629875c487817e1ec02000d58e554f4e709689,except nexception.FirewallInternalDriverError:,1,0,0.0,585
+80629875c487817e1ec02000d58e554f4e709689,"LOG.error(_LE(""Firewall Driver Error for %(func_name)s """,1,0,0.0,586
+80629875c487817e1ec02000d58e554f4e709689,"""for fw: %(fwid)s""),",1,0,0.0,587
+80629875c487817e1ec02000d58e554f4e709689,"context,",1,0,0.0,588
+80629875c487817e1ec02000d58e554f4e709689,self.fwaas_driver.__getattribute__(func_name)(,1,0,0.0,589
+80629875c487817e1ec02000d58e554f4e709689,"fw['id'],",1,0,0.0,590
+80629875c487817e1ec02000d58e554f4e709689,status),1,0,0.0,591
+80629875c487817e1ec02000d58e554f4e709689,except Exception:,1,0,0.0,592
+80629875c487817e1ec02000d58e554f4e709689,LOG.exception(,1,0,0.0,593
+80629875c487817e1ec02000d58e554f4e709689,"_LE(""FWaaS RPC failure in %(func_name)s for fw: %(fwid)s""),",1,0,0.0,594
+80629875c487817e1ec02000d58e554f4e709689,update method for all other status to (re)apply on driver which is,1,0,0.0,595
+80629875c487817e1ec02000d58e554f4e709689,"self.conf.agent_mode,",1,0,0.0,596
+80629875c487817e1ec02000d58e554f4e709689,# call into the driver,1,0,0.0,597
+80629875c487817e1ec02000d58e554f4e709689,"""""""",1,0,0.0,598
+80629875c487817e1ec02000d58e554f4e709689,"""""""Invoke driver method for plugin API and provide status back.""""""",1,0,0.0,599
+80629875c487817e1ec02000d58e554f4e709689,for router in routers,1,0,0.0,600
+80629875c487817e1ec02000d58e554f4e709689,for rid in router_ids:,1,0,0.0,601
+80629875c487817e1ec02000d58e554f4e709689,# the router - but this is not yet populated in router_info,1,0,0.0,602
+80629875c487817e1ec02000d58e554f4e709689,continue,1,0,0.0,603
+80629875c487817e1ec02000d58e554f4e709689,router_info_list.append(self.router_info[rid]),1,0,0.0,604
+80629875c487817e1ec02000d58e554f4e709689,return router_info_list,1,0,0.0,605
+80629875c487817e1ec02000d58e554f4e709689,"{'func_name': func_name, 'fwid': fw['id']})",1,0,0.0,606
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Apply fw on Router List: '%s'"",",1,0,0.0,607
+80629875c487817e1ec02000d58e554f4e709689,"routers,",1,0,0.0,608
+80629875c487817e1ec02000d58e554f4e709689,fw['tenant_id']),1,0,0.0,609
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug('No Routers on tenant: %s', fw['tenant_id'])",1,0,0.0,610
+80629875c487817e1ec02000d58e554f4e709689,# cleanup.,1,0,0.0,611
+80629875c487817e1ec02000d58e554f4e709689,"self.fwplugin_rpc.firewall_deleted(context, fw['id'])",1,0,0.0,612
+80629875c487817e1ec02000d58e554f4e709689,return,1,0,0.0,613
+80629875c487817e1ec02000d58e554f4e709689,Idempotent.,1,0,0.0,614
+80629875c487817e1ec02000d58e554f4e709689,self.fwaas_driver.delete_firewall(,1,0,0.0,615
+80629875c487817e1ec02000d58e554f4e709689,return self._invoke_driver_for_plugin_api(,1,0,0.0,616
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Router List: '%s'"",",1,0,0.0,617
+80629875c487817e1ec02000d58e554f4e709689,ri.router['id']),1,0,0.0,618
+80629875c487817e1ec02000d58e554f4e709689,"""""""On RPC issues sync with plugin and apply the sync data.""""""",1,0,0.0,619
+80629875c487817e1ec02000d58e554f4e709689,# from the plugin,1,0,0.0,620
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Tenants with Firewalls: '%s'"", tenant_ids)",1,0,0.0,621
+80629875c487817e1ec02000d58e554f4e709689,for tenant_id in tenant_ids:,1,0,0.0,622
+80629875c487817e1ec02000d58e554f4e709689,tenant_id),1,0,0.0,623
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""fw_list: '%s'"",",1,0,0.0,624
+80629875c487817e1ec02000d58e554f4e709689,self._process_router_add(ri),1,0,0.0,625
+80629875c487817e1ec02000d58e554f4e709689,# apply sync data on fw for this tenant,1,0,0.0,626
+80629875c487817e1ec02000d58e554f4e709689,"# fw, routers present on this host for tenant",1,0,0.0,627
+80629875c487817e1ec02000d58e554f4e709689,# install,1,0,0.0,628
+80629875c487817e1ec02000d58e554f4e709689,[ri.router['id'],1,0,0.0,629
+80629875c487817e1ec02000d58e554f4e709689,# no need to apply sync data for ACTIVE fw,1,0,0.0,630
+80629875c487817e1ec02000d58e554f4e709689,"""""""Handle Rpc from plugin to create a firewall.""""""",1,0,0.0,631
+80629875c487817e1ec02000d58e554f4e709689,"_LE(""FWaaS RPC info call failed for '%s'.""),",1,0,0.0,632
+80629875c487817e1ec02000d58e554f4e709689,# avoid msg to plugin when fwaas is not configured,1,0,0.0,633
+80629875c487817e1ec02000d58e554f4e709689,self.fwplugin_rpc.firewall_deleted(,1,0,0.0,634
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Process router add, router_id: '%s'"", ri.router['id'])",1,0,0.0,635
+80629875c487817e1ec02000d58e554f4e709689,"ctx,",1,0,0.0,636
+80629875c487817e1ec02000d58e554f4e709689,fw['id']),1,0,0.0,637
+80629875c487817e1ec02000d58e554f4e709689,"{'fwmsg': fw['status'], 'fwid': fw['id']})",1,0,0.0,638
+80629875c487817e1ec02000d58e554f4e709689,constants.ERROR),1,0,0.0,639
+80629875c487817e1ec02000d58e554f4e709689,"# PENDING_UPDATE, PENDING_CREATE, ...",1,0,0.0,640
+80629875c487817e1ec02000d58e554f4e709689,self.fwaas_driver.update_firewall(,1,0,0.0,641
+80629875c487817e1ec02000d58e554f4e709689,routers.append(ri.router),1,0,0.0,642
+80629875c487817e1ec02000d58e554f4e709689,self._invoke_driver_for_sync_from_plugin(,1,0,0.0,643
+80629875c487817e1ec02000d58e554f4e709689,ri.router['tenant_id']),1,0,0.0,644
+80629875c487817e1ec02000d58e554f4e709689,# Get the firewall with rules,1,0,0.0,645
+80629875c487817e1ec02000d58e554f4e709689,# for the tenant the router is on.,1,0,0.0,646
+80629875c487817e1ec02000d58e554f4e709689,"LOG.debug(""Process router add, fw_list: '%s'"",",1,0,0.0,647
+80629875c487817e1ec02000d58e554f4e709689,[fw['id'] for fw in fw_list]),1,0,0.0,648
+80629875c487817e1ec02000d58e554f4e709689,for fw in fw_list:,1,0,0.0,649
+80629875c487817e1ec02000d58e554f4e709689,"self.update_routing_table('delete', route)",0,0,0.0,650
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': subnet_id}],",0,0,0.0,651
+80629875c487817e1ec02000d58e554f4e709689,"self._update_routing_table(operation, route, namespace)",0,0,0.0,652
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(orig_nat_rules, new_nat_rules)",1,0,0.0,653
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': subnet_id,",0,0,0.0,654
+80629875c487817e1ec02000d58e554f4e709689,'prefixlen': prefixlen}),0,0,0.0,655
+80629875c487817e1ec02000d58e554f4e709689,"subnets.append({'id': subnet_id,",0,0,0.0,656
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': cidr_pool % i,",0,0,0.0,657
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': gw_pool % i,",0,0,0.0,658
+80629875c487817e1ec02000d58e554f4e709689,"'ipv6_ra_mode': ra_mode,",0,0,0.0,659
+80629875c487817e1ec02000d58e554f4e709689,'ipv6_address_mode': addr_mode}),0,0,0.0,660
+80629875c487817e1ec02000d58e554f4e709689,"raise ValueError(""Invalid ip_version: %s"" % ip_version)",0,0,0.0,661
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': fixed_ips,",0,0,0.0,662
+80629875c487817e1ec02000d58e554f4e709689,'subnets': subnets}),0,0,0.0,663
+80629875c487817e1ec02000d58e554f4e709689,"extra_routes=False, dual_stack=False):",0,0,0.0,664
+80629875c487817e1ec02000d58e554f4e709689,"fixed_ips.append({'ip_address': ip_address,",0,0,0.0,665
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': subnet_cidr,",0,0,0.0,666
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': gateway_ip}),0,0,0.0,667
+80629875c487817e1ec02000d58e554f4e709689,'subnets': subnets},0,0,0.0,668
+80629875c487817e1ec02000d58e554f4e709689,"fixed_ips.append({'ip_address': ip_pool % i,",0,0,0.0,669
+80629875c487817e1ec02000d58e554f4e709689,continue,0,0,0.0,670
+80629875c487817e1ec02000d58e554f4e709689,else:,0,0,0.0,671
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': port['network_id'],",0,0,0.0,672
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': fixed_ip['subnet_id'],",0,0,0.0,673
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': fip_gw_port_ip,",0,0,0.0,674
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': prefixlen}],",0,0,0.0,675
+80629875c487817e1ec02000d58e554f4e709689,"'id': _uuid(),",0,0,0.0,676
+80629875c487817e1ec02000d58e554f4e709689,'device_id': _uuid()},0,0,0.0,677
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': snat_subnet['gateway_ip'],",0,0,0.0,678
+80629875c487817e1ec02000d58e554f4e709689,"'device_owner': 'network:router_centralized_snat',",0,0,0.0,679
+80629875c487817e1ec02000d58e554f4e709689,elif loop_version == 6 and (ip_version == 6 or dual_stack):,0,0,0.0,680
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': snat_ip,",0,0,0.0,681
+80629875c487817e1ec02000d58e554f4e709689,"[self._port_first_ip_cidr(external_gw_port)],",0,0,0.0,682
+80629875c487817e1ec02000d58e554f4e709689,"addr_mode=None, dual_stack=False):",0,0,0.0,683
+80629875c487817e1ec02000d58e554f4e709689,[netaddr.IPNetwork(subnet['cidr']).version == ip_version,0,0,0.0,684
+80629875c487817e1ec02000d58e554f4e709689,for p in interfaces for subnet in p['subnets']]),0,0,0.0,685
+80629875c487817e1ec02000d58e554f4e709689,"for loop_version in (4, 6):",0,0,0.0,686
+80629875c487817e1ec02000d58e554f4e709689,"ip_version=ip_version, dual_stack=dual_stack)",0,0,0.0,687
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': 18,",0,0,0.0,688
+80629875c487817e1ec02000d58e554f4e709689,"'subnets': [{'cidr': '169.254.192.0/18',",0,0,0.0,689
+80629875c487817e1ec02000d58e554f4e709689,"sn_port['fixed_ips'],",0,0,0.0,690
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': subnet_id,",0,0,0.0,691
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': 24}],",0,0,0.0,692
+80629875c487817e1ec02000d58e554f4e709689,'subnets': [{'id': subnet_id}]},0,0,0.0,693
+80629875c487817e1ec02000d58e554f4e709689,"'subnets': [{'gateway_ip': '20.0.0.1'}],",0,0,0.0,694
+80629875c487817e1ec02000d58e554f4e709689,'mac_address': 'ca:fe:de:ad:be:ef'},0,0,0.0,695
+80629875c487817e1ec02000d58e554f4e709689,ri._set_subnet_arp_info.assert_called_once_with(subnet_id),0,0,0.0,696
+80629875c487817e1ec02000d58e554f4e709689,ri._snat_redirect_modify.assert_called_with(,0,0,0.0,697
+80629875c487817e1ec02000d58e554f4e709689,'prefixlen': 24}]},0,0,0.0,698
+80629875c487817e1ec02000d58e554f4e709689,"sn_port, port,",0,0,0.0,699
+80629875c487817e1ec02000d58e554f4e709689,"ri.get_internal_device_name(port['id']),",0,0,0.0,700
+80629875c487817e1ec02000d58e554f4e709689,is_add=False),0,0,0.0,701
+80629875c487817e1ec02000d58e554f4e709689,'prefixlen': 24}],0,0,0.0,702
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': '20.0.0.0/24',",0,0,0.0,703
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': '20.0.0.1'}],0,0,0.0,704
+80629875c487817e1ec02000d58e554f4e709689,"return '%s/%s' % (fixed_ip['ip_address'], fixed_ip['prefixlen'])",0,0,0.0,705
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': _uuid(),",0,0,0.0,706
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '169.254.255.254',",0,0,0.0,707
+80629875c487817e1ec02000d58e554f4e709689,"{'subnets': [{'cidr': '152.10.0.0/16',",0,0,0.0,708
+80629875c487817e1ec02000d58e554f4e709689,"'id': subnet_id}],",0,0,0.0,709
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '152.2.0.1',",0,0,0.0,710
+80629875c487817e1ec02000d58e554f4e709689,"'id': subnet_id_1}],",0,0,0.0,711
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': subnet_id_1,",0,0,0.0,712
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '152.2.0.13',",0,0,0.0,713
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': 16}],",0,0,0.0,714
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '152.10.0.1',",0,0,0.0,715
+80629875c487817e1ec02000d58e554f4e709689,"'mac_address': 'ca:fe:de:ad:be:ef',",0,0,0.0,716
+80629875c487817e1ec02000d58e554f4e709689,"'id': subnet_id_2}],",0,0,0.0,717
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': subnet_id_2,",0,0,0.0,718
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '152.10.0.13',",0,0,0.0,719
+80629875c487817e1ec02000d58e554f4e709689,"'subnets': [{'id': subnet_id,",0,0,0.0,720
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': '19.4.4.1'}]},0,0,0.0,721
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(ri.ns_name.endswith(ns_id)),0,0,0.0,722
+80629875c487817e1ec02000d58e554f4e709689,"'binding:host_id': self.agent.conf.host,",0,0,0.0,723
+80629875c487817e1ec02000d58e554f4e709689,"'mac_address': 'fa:16:3e:80:8d:89',",0,0,0.0,724
+80629875c487817e1ec02000d58e554f4e709689,"'device_owner': 'network:floatingip_agent_gateway',",0,0,0.0,725
+80629875c487817e1ec02000d58e554f4e709689,self.agent_conf.send_arp_for_ha),0,0,0.0,726
+80629875c487817e1ec02000d58e554f4e709689,"device.neigh.delete(net.version, ip, mac)",1,0,0.0,727
+80629875c487817e1ec02000d58e554f4e709689,"self.driver.init_l3(interface_name, ip_cidrs, namespace=ns_name)",0,0,0.0,728
+80629875c487817e1ec02000d58e554f4e709689,for fixed_ip in ex_gw_port['fixed_ips']:,0,0,0.0,729
+80629875c487817e1ec02000d58e554f4e709689,"ip_lib.send_gratuitous_arp(ns_name,",0,0,0.0,730
+80629875c487817e1ec02000d58e554f4e709689,"interface_name,",0,0,0.0,731
+80629875c487817e1ec02000d58e554f4e709689,"fixed_ip['ip_address'],",0,0,0.0,732
+80629875c487817e1ec02000d58e554f4e709689,for subnet in ex_gw_port['subnets']:,0,0,0.0,733
+80629875c487817e1ec02000d58e554f4e709689,"ip_rule.delete(floating_ip, dvr_fip_ns.FIP_RT_TBL, rule_pr)",1,0,0.0,734
+80629875c487817e1ec02000d58e554f4e709689,namespace=ns_name),0,0,0.0,735
+80629875c487817e1ec02000d58e554f4e709689,ipd.route.add_gateway(gw_ip),0,0,0.0,736
+80629875c487817e1ec02000d58e554f4e709689,import netaddr,1,0,0.0,737
+80629875c487817e1ec02000d58e554f4e709689,"self.driver.init_l3(interface_name,",1,0,0.0,738
+80629875c487817e1ec02000d58e554f4e709689,"[ex_gw_port['ip_cidr']],",1,0,0.0,739
+80629875c487817e1ec02000d58e554f4e709689,namespace=ns_name),1,0,0.0,740
+80629875c487817e1ec02000d58e554f4e709689,"device.neigh.add(net.version, ip, mac)",1,0,0.0,741
+80629875c487817e1ec02000d58e554f4e709689,"ip_rule.add(fixed_ip, dvr_fip_ns.FIP_RT_TBL, rule_pr)",1,0,0.0,742
+80629875c487817e1ec02000d58e554f4e709689,"interface_name,",1,0,0.0,743
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipr.netns.execute(['sysctl', '-w', 'net.ipv4.conf.%s.'",1,0,0.0,744
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipr.rule.add(ip_cidr, snat_idx, snat_idx)",0,0,0.0,745
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipwrapr.netns.execute(['sysctl', '-w', 'net.ipv4.conf.%s.'",0,0,0.0,746
+80629875c487817e1ec02000d58e554f4e709689,'send_redirects=0' % sn_int]),0,0,0.0,747
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipd.route.delete_gateway(gateway, table=snat_idx)",0,0,0.0,748
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipr.rule.delete(ip_cidr, snat_idx, snat_idx)",0,0,0.0,749
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipr.add(ip_cidr, snat_idx, snat_idx)",1,0,0.0,750
+80629875c487817e1ec02000d58e554f4e709689,'send_redirects=0' % sn_int]),1,0,0.0,751
+80629875c487817e1ec02000d58e554f4e709689,import netaddr,1,0,0.0,752
+80629875c487817e1ec02000d58e554f4e709689,ns_ipd.route.delete_gateway(table=snat_idx),1,0,0.0,753
+80629875c487817e1ec02000d58e554f4e709689,"ns_ipr.delete(ip_cidr, snat_idx, snat_idx)",1,0,0.0,754
+80629875c487817e1ec02000d58e554f4e709689,"ip_rule.rule.add(fixed_ip, dvr_fip_ns.FIP_RT_TBL, rule_pr)",0,0,0.0,755
+80629875c487817e1ec02000d58e554f4e709689,"ip_rule.rule.delete(floating_ip, dvr_fip_ns.FIP_RT_TBL, rule_pr)",0,0,0.0,756
+80629875c487817e1ec02000d58e554f4e709689,"device.neigh.add(ip, mac)",0,0,0.0,757
+80629875c487817e1ec02000d58e554f4e709689,"device.neigh.delete(ip, mac)",0,0,0.0,758
+80629875c487817e1ec02000d58e554f4e709689,"ip_lib.send_gratuitous_arp(ns_name,",1,0,0.0,759
+80629875c487817e1ec02000d58e554f4e709689,"ip_address,",1,0,0.0,760
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': external_gw_port['network_id'],",0,0,0.0,761
+80629875c487817e1ec02000d58e554f4e709689,ip_version=ip_vers).get('gateway')),0,0,0.0,762
+80629875c487817e1ec02000d58e554f4e709689,"'prefixlen': 24,",0,0,0.0,763
+80629875c487817e1ec02000d58e554f4e709689,'subnet_id': subnet_id}],0,0,0.0,764
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': '19.4.4.0/24',",0,0,0.0,765
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': '19.4.4.5'}],0,0,0.0,766
+80629875c487817e1ec02000d58e554f4e709689,"self.device_exists_with_ips_and_mac,",0,0,0.0,767
+80629875c487817e1ec02000d58e554f4e709689,for subnet in external_port['subnets']:,0,0,0.0,768
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(expected_gateway, existing_gateway)",0,0,0.0,769
+80629875c487817e1ec02000d58e554f4e709689,"external_port['mac_address'],",0,0,0.0,770
+80629875c487817e1ec02000d58e554f4e709689,return router.get_ha_device_name(),0,0,0.0,771
+80629875c487817e1ec02000d58e554f4e709689,"router.router[l3_constants.HA_INTERFACE_KEY],",0,0,0.0,772
+80629875c487817e1ec02000d58e554f4e709689,"ha_router_dev_name_getter, router.ns_name))",0,0,0.0,773
+80629875c487817e1ec02000d58e554f4e709689,{'subnets': [,0,0,0.0,774
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': float_subnet['gateway_ip'],",0,0,0.0,775
+80629875c487817e1ec02000d58e554f4e709689,"'id': fixed_ip['subnet_id']}],",0,0,0.0,776
+80629875c487817e1ec02000d58e554f4e709689,"self._router_lifecycle(enable_ha=False, dual_stack=True)",0,0,0.0,777
+80629875c487817e1ec02000d58e554f4e709689,"['%s/32' % fip['floating_ip_address']],",0,0,0.0,778
+80629875c487817e1ec02000d58e554f4e709689,self.agent_conf.send_arp_for_ha),1,0,0.0,779
+80629875c487817e1ec02000d58e554f4e709689,return ip_lib.device_exists_with_ips_and_mac(,0,0,0.0,780
+80629875c487817e1ec02000d58e554f4e709689,ipd.route.add_gateway(gw_ip),1,0,0.0,781
+80629875c487817e1ec02000d58e554f4e709689,"enable_fip=True, enable_snat=True,",0,0,0.0,782
+80629875c487817e1ec02000d58e554f4e709689,dual_stack=False):,0,0,0.0,783
+80629875c487817e1ec02000d58e554f4e709689,"extra_routes=extra_routes,",0,0,0.0,784
+80629875c487817e1ec02000d58e554f4e709689,dual_stack=dual_stack),0,0,0.0,785
+80629875c487817e1ec02000d58e554f4e709689,namespace):,0,0,0.0,786
+80629875c487817e1ec02000d58e554f4e709689,"name_getter(expected_device['id']), ip_cidrs,",0,0,0.0,787
+80629875c487817e1ec02000d58e554f4e709689,"router.get_external_device_name(external_port['id']),",0,0,0.0,788
+80629875c487817e1ec02000d58e554f4e709689,@staticmethod,0,0,0.0,789
+80629875c487817e1ec02000d58e554f4e709689,"return common_utils.ip_to_cidr(fixed_ip['ip_address'],",0,0,0.0,790
+80629875c487817e1ec02000d58e554f4e709689,fixed_ip['prefixlen']),0,0,0.0,791
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(self.device_exists_with_ips_and_mac(,0,0,0.0,792
+80629875c487817e1ec02000d58e554f4e709689,return len(floating_ips) and all(,0,0,0.0,793
+80629875c487817e1ec02000d58e554f4e709689,ip_lib.device_exists_with_ips_and_mac(,0,0,0.0,794
+80629875c487817e1ec02000d58e554f4e709689,"fixed_ips.append({'subnet_id': subnet_id_v6,",0,0,0.0,795
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '2001:192:168:100::2',",0,0,0.0,796
+80629875c487817e1ec02000d58e554f4e709689,'prefixlen': 64}),0,0,0.0,797
+80629875c487817e1ec02000d58e554f4e709689,"'ip_cidr': '152.2.0.13/16',",1,0,0.0,798
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': gateway_ip}},1,0,0.0,799
+80629875c487817e1ec02000d58e554f4e709689,ip_version=ip_version),1,0,0.0,800
+80629875c487817e1ec02000d58e554f4e709689,"'subnet': {'cidr': '169.254.192.0/18',",1,0,0.0,801
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '169.254.255.254',",1,0,0.0,802
+80629875c487817e1ec02000d58e554f4e709689,"'id': _uuid()},",1,0,0.0,803
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '152.2.0.1',",1,0,0.0,804
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': _uuid(),",1,0,0.0,805
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'ip_address': ip_addr,",1,0,0.0,806
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '152.2.0.13'}],",1,0,0.0,807
+80629875c487817e1ec02000d58e554f4e709689,"{'subnet': {'cidr': '152.10.0.0/16',",1,0,0.0,808
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '152.10.0.1',",1,0,0.0,809
+80629875c487817e1ec02000d58e554f4e709689,"'ip_cidr': '152.10.0.13/16',",1,0,0.0,810
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': '152.10.0.13'}],",1,0,0.0,811
+80629875c487817e1ec02000d58e554f4e709689,"'subnet': {'cidr': '19.4.4.0/24',",1,0,0.0,812
+80629875c487817e1ec02000d58e554f4e709689,"'subnet': {'cidr': cidr,",1,0,0.0,813
+80629875c487817e1ec02000d58e554f4e709689,extra_routes=False):,1,0,0.0,814
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(ri.ns_name.endswith(id)),1,0,0.0,815
+80629875c487817e1ec02000d58e554f4e709689,"raise ValueError(""Invalid ip_version: %s"" % ip_version)",1,0,0.0,816
+80629875c487817e1ec02000d58e554f4e709689,"'device_owner': 'network:router_centralized_snat',",1,0,0.0,817
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': snat_ip}],",1,0,0.0,818
+80629875c487817e1ec02000d58e554f4e709689,"external_gw_port['ip_cidr'],",1,0,0.0,819
+80629875c487817e1ec02000d58e554f4e709689,addr_mode=None):,1,0,0.0,820
+80629875c487817e1ec02000d58e554f4e709689,elif ip_version == 6:,1,0,0.0,821
+80629875c487817e1ec02000d58e554f4e709689,else:,1,0,0.0,822
+80629875c487817e1ec02000d58e554f4e709689,[netaddr.IPNetwork(p['subnet']['cidr']).version == ip_version,1,0,0.0,823
+80629875c487817e1ec02000d58e554f4e709689,'ipv6_address_mode': addr_mode}}),1,0,0.0,824
+80629875c487817e1ec02000d58e554f4e709689,for p in interfaces]),1,0,0.0,825
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'ip_address': ip_pool % i,",1,0,0.0,826
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': _uuid()}],",1,0,0.0,827
+80629875c487817e1ec02000d58e554f4e709689,"'subnet': {'cidr': cidr_pool % i,",1,0,0.0,828
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': gw_pool % i,",1,0,0.0,829
+80629875c487817e1ec02000d58e554f4e709689,"'ipv6_ra_mode': ra_mode,",1,0,0.0,830
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': '19.4.4.1'}},1,0,0.0,831
+80629875c487817e1ec02000d58e554f4e709689,"'ip_cidr': '99.0.1.9/24',",1,0,0.0,832
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': snat_subnet['gateway_ip'],",1,0,0.0,833
+80629875c487817e1ec02000d58e554f4e709689,'ip_cidr': '20.0.0.30/24'}],1,0,0.0,834
+80629875c487817e1ec02000d58e554f4e709689,source_cidrs.append(source_cidr),1,0,0.0,835
+80629875c487817e1ec02000d58e554f4e709689,"'subnet_id': _get_subnet_id(ports[0]),",1,0,0.0,836
+80629875c487817e1ec02000d58e554f4e709689,'fixed_ips': [{'ip_address': '1.2.3.4'}]}],1,0,0.0,837
+80629875c487817e1ec02000d58e554f4e709689,ri._set_subnet_arp_info(ports[0]),1,0,0.0,838
+80629875c487817e1ec02000d58e554f4e709689,"'binding:host_id': 'myhost',",1,0,0.0,839
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': fake_network_id,",1,0,0.0,840
+80629875c487817e1ec02000d58e554f4e709689,"ri, 'get_floating_agent_gw_interface'),",1,0,0.0,841
+80629875c487817e1ec02000d58e554f4e709689,"self.send_arp.assert_called_once_with(ri.ns_name, interface_name,",1,0,0.0,842
+80629875c487817e1ec02000d58e554f4e709689,mock.patch.object(,1,0,0.0,843
+80629875c487817e1ec02000d58e554f4e709689,"ri, '_set_subnet_info')",1,0,0.0,844
+80629875c487817e1ec02000d58e554f4e709689,"fip_gw_port,",1,0,0.0,845
+80629875c487817e1ec02000d58e554f4e709689,sub_info):,1,0,0.0,846
+80629875c487817e1ec02000d58e554f4e709689,# There should be no change with the NAT rules,1,0,0.0,847
+80629875c487817e1ec02000d58e554f4e709689,self.assertFalse(external_gateway_nat_rules.called),1,0,0.0,848
+80629875c487817e1ec02000d58e554f4e709689,prefix),1,0,0.0,849
+80629875c487817e1ec02000d58e554f4e709689,"sn_port,",1,0,0.0,850
+80629875c487817e1ec02000d58e554f4e709689,'mac_address': 'ca:fe:de:ad:be:ef'},1,0,0.0,851
+80629875c487817e1ec02000d58e554f4e709689,"sn_port['ip_cidr'],",1,0,0.0,852
+80629875c487817e1ec02000d58e554f4e709689,"'subnet': {'gateway_ip': '20.0.0.1'},",1,0,0.0,853
+80629875c487817e1ec02000d58e554f4e709689,"'mac_address': 'ca:fe:de:ad:be:ef',",1,0,0.0,854
+80629875c487817e1ec02000d58e554f4e709689,'ip_cidr': '20.0.0.31/24'},1,0,0.0,855
+80629875c487817e1ec02000d58e554f4e709689,'ip_cidr': '20.0.0.30/24'},1,0,0.0,856
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(ri._set_subnet_info.call_count, 1)",1,0,0.0,857
+80629875c487817e1ec02000d58e554f4e709689,ri._set_subnet_arp_info.assert_called_once_with(port),1,0,0.0,858
+80629875c487817e1ec02000d58e554f4e709689,ri._snat_redirect_remove.assert_called_with(,1,0,0.0,859
+80629875c487817e1ec02000d58e554f4e709689,"['20.0.0.30/24'],",1,0,0.0,860
+80629875c487817e1ec02000d58e554f4e709689,"sn_port['fixed_ips'][0]['ip_address'],",1,0,0.0,861
+80629875c487817e1ec02000d58e554f4e709689,"port,",1,0,0.0,862
+80629875c487817e1ec02000d58e554f4e709689,ri.get_internal_device_name(port['id'])),1,0,0.0,863
+80629875c487817e1ec02000d58e554f4e709689,"self.send_arp.assert_called_once_with(ri.ns_name,",1,0,0.0,864
+80629875c487817e1ec02000d58e554f4e709689,"interface_name,",1,0,0.0,865
+80629875c487817e1ec02000d58e554f4e709689,"'gateway': '20.0.0.1',",1,0,0.0,866
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': port['network_id'],",1,0,0.0,867
+80629875c487817e1ec02000d58e554f4e709689,'device_id': _uuid()},1,0,0.0,868
+80629875c487817e1ec02000d58e554f4e709689,"subnets.append({'id': subnet_id_v6,",0,0,0.0,869
+80629875c487817e1ec02000d58e554f4e709689,ri._set_subnet_arp_info(subnet_id),0,0,0.0,870
+80629875c487817e1ec02000d58e554f4e709689,for subnet in iface['subnets']:,0,0,0.0,871
+80629875c487817e1ec02000d58e554f4e709689,prefix),0,0,0.0,872
+80629875c487817e1ec02000d58e554f4e709689,source_cidrs.append(source_cidr),0,0,0.0,873
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'ip_address': '1.2.3.4',",0,0,0.0,874
+80629875c487817e1ec02000d58e554f4e709689,'subnet_id': subnet_id}]}],0,0,0.0,875
+80629875c487817e1ec02000d58e554f4e709689,'cidr': '1.2.3.0/24'}],0,0,0.0,876
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': '20.0.0.1'}],",0,0,0.0,877
+80629875c487817e1ec02000d58e554f4e709689,"self._test_external_gateway_action('add', router, dual_stack=True)",0,0,0.0,878
+80629875c487817e1ec02000d58e554f4e709689,"'binding:host_id': 'myhost',",0,0,0.0,879
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': fake_network_id,",0,0,0.0,880
+80629875c487817e1ec02000d58e554f4e709689,'mac_address': 'ca:fe:de:ad:be:ef'}],0,0,0.0,881
+80629875c487817e1ec02000d58e554f4e709689,[{'fixed_ips': [,0,0,0.0,882
+80629875c487817e1ec02000d58e554f4e709689,'subnets': [,0,0,0.0,883
+80629875c487817e1ec02000d58e554f4e709689,"{'id': subnet_id,",0,0,0.0,884
+80629875c487817e1ec02000d58e554f4e709689,"self._test_external_gateway_action('remove', router, dual_stack=True)",0,0,0.0,885
+80629875c487817e1ec02000d58e554f4e709689,self._test_external_gateway_updated(dual_stack=True),0,0,0.0,886
+80629875c487817e1ec02000d58e554f4e709689,fip_gw_port):,0,0,0.0,887
+80629875c487817e1ec02000d58e554f4e709689,self.send_arp.assert_has_calls(exp_arp_calls),0,0,0.0,888
+80629875c487817e1ec02000d58e554f4e709689,"'cidr': '2001:192:168:100::/64',",0,0,0.0,889
+80629875c487817e1ec02000d58e554f4e709689,'gateway_ip': '2001:192:168:100::1'}),0,0,0.0,890
+80629875c487817e1ec02000d58e554f4e709689,"'subnets': subnets,",0,0,0.0,891
+80629875c487817e1ec02000d58e554f4e709689,"exp_arp_calls += [mock.call(ri.ns_name, interface_name,",0,0,0.0,892
+80629875c487817e1ec02000d58e554f4e709689,"'2001:192:168:100::2',",0,0,0.0,893
+80629875c487817e1ec02000d58e554f4e709689,mock.ANY)],0,0,0.0,894
+80629875c487817e1ec02000d58e554f4e709689,ip_cidrs.append('2001:192:168:100::2/64'),0,0,0.0,895
+80629875c487817e1ec02000d58e554f4e709689,self._test_external_gateway_updated(),0,0,0.0,896
+80629875c487817e1ec02000d58e554f4e709689,gateway_ips.append('2001:192:168:100::1'),0,0,0.0,897
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ips': gateway_ips,",0,0,0.0,898
+80629875c487817e1ec02000d58e554f4e709689,"ip_cidrs,",0,0,0.0,899
+80629875c487817e1ec02000d58e554f4e709689,"sn_port, sn_port,",0,0,0.0,900
+80629875c487817e1ec02000d58e554f4e709689,"ri, dual_stack=dual_stack)",0,0,0.0,901
+80629875c487817e1ec02000d58e554f4e709689,"'2001:192:168:100::2', mock.ANY)]",0,0,0.0,902
+80629875c487817e1ec02000d58e554f4e709689,"ri, 'get_floating_agent_gw_interface')",0,0,0.0,903
+80629875c487817e1ec02000d58e554f4e709689,# NAT rules should only change for dual_stack operation,0,0,0.0,904
+80629875c487817e1ec02000d58e554f4e709689,"'id': _uuid(),",1,0,0.0,905
+80629875c487817e1ec02000d58e554f4e709689,"'gateway_ip': float_subnet['gateway_ip'],",1,0,0.0,906
+80629875c487817e1ec02000d58e554f4e709689,external_device.route.get_gateway().get('gateway')),1,0,0.0,907
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(expected_gateway, existing_gateway)",1,0,0.0,908
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(ip_lib.device_exists_with_ip_mac(,1,0,0.0,909
+80629875c487817e1ec02000d58e554f4e709689,"router.get_ha_device_name(), device['ip_cidr'],",1,0,0.0,910
+80629875c487817e1ec02000d58e554f4e709689,"device['mac_address'], router.ns_name))",1,0,0.0,911
+80629875c487817e1ec02000d58e554f4e709689,{'subnet':,1,0,0.0,912
+80629875c487817e1ec02000d58e554f4e709689,"'id': fixed_ip['subnet_id']},",1,0,0.0,913
+80629875c487817e1ec02000d58e554f4e709689,self._router_lifecycle(enable_ha=False),1,0,0.0,914
+80629875c487817e1ec02000d58e554f4e709689,"'network_id': external_gw_port['network_id'],",1,0,0.0,915
+80629875c487817e1ec02000d58e554f4e709689,"'device_owner': 'network:floatingip_agent_gateway',",1,0,0.0,916
+80629875c487817e1ec02000d58e554f4e709689,"'mac_address': 'fa:16:3e:80:8d:89',",1,0,0.0,917
+80629875c487817e1ec02000d58e554f4e709689,"'binding:host_id': self.agent.conf.host,",1,0,0.0,918
+80629875c487817e1ec02000d58e554f4e709689,"'fixed_ips': [{'subnet_id': fixed_ip['subnet_id'],",1,0,0.0,919
+80629875c487817e1ec02000d58e554f4e709689,"'ip_address': fip_gw_port_ip}],",1,0,0.0,920
+80629875c487817e1ec02000d58e554f4e709689,"self.device_exists_with_ip_mac,",1,0,0.0,921
+80629875c487817e1ec02000d58e554f4e709689,"external_port['mac_address'],",1,0,0.0,922
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(external_gateway_nat_rules.called),0,0,0.0,923
+80629875c487817e1ec02000d58e554f4e709689,"enable_fip=True, enable_snat=True):",1,0,0.0,924
+80629875c487817e1ec02000d58e554f4e709689,"self.assertNotEqual(orig_nat_rules, new_nat_rules)",0,0,0.0,925
+80629875c487817e1ec02000d58e554f4e709689,self.assertFalse(external_gateway_nat_rules.called),0,0,0.0,926
+80629875c487817e1ec02000d58e554f4e709689,"self.assertEqual(orig_nat_rules, new_nat_rules)",0,0,0.0,927
+80629875c487817e1ec02000d58e554f4e709689,self._test_process_ipv6_only_or_dual_stack_gw(),0,0,0.0,928
+80629875c487817e1ec02000d58e554f4e709689,self._test_process_ipv6_only_or_dual_stack_gw(dual_stack=True),0,0,0.0,929
+80629875c487817e1ec02000d58e554f4e709689,'subnet_id': subnet_id,0,0,0.0,930
+80629875c487817e1ec02000d58e554f4e709689,extra_routes=extra_routes),1,0,0.0,931
+80629875c487817e1ec02000d58e554f4e709689,"'%s/32' % fip['floating_ip_address'],",1,0,0.0,932
+80629875c487817e1ec02000d58e554f4e709689,namespace):,1,0,0.0,933
+80629875c487817e1ec02000d58e554f4e709689,return ip_lib.device_exists_with_ip_mac(,1,0,0.0,934
+80629875c487817e1ec02000d58e554f4e709689,"name_getter(expected_device['id']), expected_device['ip_cidr'],",1,0,0.0,935
+80629875c487817e1ec02000d58e554f4e709689,self.assertTrue(self.device_exists_with_ip_mac(,1,0,0.0,936
+80629875c487817e1ec02000d58e554f4e709689,return len(floating_ips) and all(ip_lib.device_exists_with_ip_mac(,1,0,0.0,937
+80629875c487817e1ec02000d58e554f4e709689,"router.get_external_device_name(external_port['id']),",1,0,0.0,938
+80629875c487817e1ec02000d58e554f4e709689,"'2001:192:168:100::2', mock.ANY)]",1,0,0.0,939

@@ -1,0 +1,41 @@
+commit_id,line,line_level_label,count,line_score,row
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"getLog().info(""No environment schemas found for file: "" + JsonSchemas.ENVIRONMENT_SCHEMA_FILE);",1,3,1.0,1
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,} catch (Exception e) {,0,2,0.6666666666666666,2
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"getLog().debug(""No environment schemas found for file: "" + JsonSchemas.ENVIRONMENT_SCHEMA_FILE);",0,2,0.6666666666666666,3
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"@Parameter(defaultValue = ""${project}"", readonly = true)",0,2,0.6666666666666666,4
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,try {,0,1,0.3333333333333333,5
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,},0,1,0.3333333333333333,6
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"warnIfInCDBuild(""Cannot create default value for $"" + envVarName + "" as no .git/config file could be found"");",0,1,0.3333333333333333,7
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"getLog().warn(""Cannot create default value for $"" + envVarName + "" as no .git/config file could be found"");",1,1,0.3333333333333333,8
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"getLog().info(""Looking at repo with directory "" + repository.getDirectory());",0,0,0.0,9
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.plugin.MojoExecutionException;,1,0,0.0,10
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.plugins.annotations.Component;,1,0,0.0,11
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.plugins.annotations.Parameter;,1,0,0.0,12
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.project.MavenProject;,1,0,0.0,13
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,@Component,1,0,0.0,14
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"warnIfInCDBuild(""Failed to initialise Git Repository: "" + e, e);",0,0,0.0,15
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,repository.close();,0,0,0.0,16
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,// ignore,0,0,0.0,17
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"warnIfInCDBuild(""Could not find .git folder based on the current basedir of "" + basedir);",0,0,0.0,18
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.utils.Strings;,1,0,0.0,19
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"System.out.println(""Looking at repo with directory "" + repository.getDirectory());",1,0,0.0,20
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,repository.close();,1,0,0.0,21
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"getLog().warn(""Could not find .git folder based on the current basedir of "" + basedir);",1,0,0.0,22
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.plugin.AbstractMojo;,1,0,0.0,23
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.maven.support.JsonSchema;,1,0,0.0,24
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.utils.Files;,1,0,0.0,25
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.openshift.api.model.template.Template;,1,0,0.0,26
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.maven.support.JsonSchemas;,1,0,0.0,27
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.kubernetes.api.model.HasMetadata;,1,0,0.0,28
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.kubernetes.api.KubernetesHelper;,1,0,0.0,29
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.project.MavenProject;,0,0,0.0,30
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.plugins.annotations.Parameter;,0,0,0.0,31
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import org.apache.maven.plugin.MojoExecutionException;,0,0,0.0,32
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.utils.Strings;,0,0,0.0,33
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.utils.Files;,0,0,0.0,34
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.openshift.api.model.template.Template;,0,0,0.0,35
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.maven.support.JsonSchemas;,0,0,0.0,36
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.maven.support.JsonSchema;,0,0,0.0,37
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.kubernetes.api.model.HasMetadata;,0,0,0.0,38
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,import io.fabric8.kubernetes.api.KubernetesHelper;,0,0,0.0,39
+f7c578c1f6e4e317384fa39eec541a8a6bdd3641,"getLog().warn(""Failed to initialise Git Repository: "" + e, e);",1,0,0.0,40

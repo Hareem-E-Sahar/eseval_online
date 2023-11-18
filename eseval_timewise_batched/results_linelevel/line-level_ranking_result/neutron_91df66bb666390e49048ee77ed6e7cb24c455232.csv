@@ -1,0 +1,168 @@
+commit_id,line,line_level_label,count,line_score,row
+91df66bb666390e49048ee77ed6e7cb24c455232,# REVISIT(rkukura): Is there any point in calling this before,1,8,1.0,1
+91df66bb666390e49048ee77ed6e7cb24c455232,results = [obj['result'] for obj in objects],1,6,0.75,2
+91df66bb666390e49048ee77ed6e7cb24c455232,# a binding has been successfully established?,1,4,0.5,3
+91df66bb666390e49048ee77ed6e7cb24c455232,to_delete = [o for o in objects if o != obj],0,4,0.5,4
+91df66bb666390e49048ee77ed6e7cb24c455232,return [obj['result'] for obj in objects],0,4,0.5,5
+91df66bb666390e49048ee77ed6e7cb24c455232,for obj in objects:,1,3,0.375,6
+91df66bb666390e49048ee77ed6e7cb24c455232,return [obj['bound_context'].current for obj in objects],1,3,0.375,7
+91df66bb666390e49048ee77ed6e7cb24c455232,resource_ids = [res['result']['id'] for res in objects],1,3,0.375,8
+91df66bb666390e49048ee77ed6e7cb24c455232,network_ports_ids = [port['id'] for port in network_ports['ports']],1,3,0.375,9
+91df66bb666390e49048ee77ed6e7cb24c455232,"""Deleting all ports from create bulk '%s'""),",1,2,0.25,10
+91df66bb666390e49048ee77ed6e7cb24c455232,"kwargs = {'context': context, 'port': obj['result']}",1,2,0.25,11
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _create_port_db(self, context, port):",1,1,0.125,12
+91df66bb666390e49048ee77ed6e7cb24c455232,# TODO(kevinbenton): move this to '_after_subnet_create',0,1,0.125,13
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _after_create_subnet(self, context, result, mech_context):",0,1,0.125,14
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _before_create_port(self, context, port):",0,1,0.125,15
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _create_port_db(self, context, port):",0,1,0.125,16
+91df66bb666390e49048ee77ed6e7cb24c455232,attrs = port[attributes.PORT],0,1,0.125,17
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _after_create_port(self, context, result, mech_context):",0,1,0.125,18
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _create_network_db(self, context, network):",1,1,0.125,19
+91df66bb666390e49048ee77ed6e7cb24c455232,tenant_id = net_data['tenant_id'],1,1,0.125,20
+91df66bb666390e49048ee77ed6e7cb24c455232,"query_params = ""network_id=%s"" % net_id",1,1,0.125,21
+91df66bb666390e49048ee77ed6e7cb24c455232,attrs = obj['attributes'],1,1,0.125,22
+91df66bb666390e49048ee77ed6e7cb24c455232,if attrs and attrs.get(portbindings.HOST_ID):,1,1,0.125,23
+91df66bb666390e49048ee77ed6e7cb24c455232,obj['bound_context'] = self._bind_port_if_needed(,1,1,0.125,24
+91df66bb666390e49048ee77ed6e7cb24c455232,with excutils.save_and_reraise_exception():,1,1,0.125,25
+91df66bb666390e49048ee77ed6e7cb24c455232,'security_groups_provider_updated') as p_upd:,1,1,0.125,26
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _before_create_subnet(self, context, subnet):",0,1,0.125,27
+91df66bb666390e49048ee77ed6e7cb24c455232,"network_ports = self._list('ports', query_params=query_params)",1,1,0.125,28
+91df66bb666390e49048ee77ed6e7cb24c455232,p_upd_args = p_upd_mock.call_args,1,1,0.125,29
+91df66bb666390e49048ee77ed6e7cb24c455232,ports_ids = p_upd_args[0][1],1,1,0.125,30
+91df66bb666390e49048ee77ed6e7cb24c455232,# TODO(kevinbenton): BEFORE notification should be added here,0,1,0.125,31
+91df66bb666390e49048ee77ed6e7cb24c455232,"postcommit_op = getattr(self.mechanism_manager,",1,1,0.125,32
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _after_create_network(self, context, result, mech_context):",0,1,0.125,33
+91df66bb666390e49048ee77ed6e7cb24c455232,'security_groups_provider_updated'),1,1,0.125,34
+91df66bb666390e49048ee77ed6e7cb24c455232,tenant_id = net_data['tenant_id'],0,1,0.125,35
+91df66bb666390e49048ee77ed6e7cb24c455232,"with self.network() as net,\",0,1,0.125,36
+91df66bb666390e49048ee77ed6e7cb24c455232,'security_groups_provider_updated') as p_upd:,0,1,0.125,37
+91df66bb666390e49048ee77ed6e7cb24c455232,"with self.subnet(net,",0,1,0.125,38
+91df66bb666390e49048ee77ed6e7cb24c455232,"with self.port() as port,\",0,1,0.125,39
+91df66bb666390e49048ee77ed6e7cb24c455232,"with mock.patch.object(manager.NeutronManager,",0,1,0.125,40
+91df66bb666390e49048ee77ed6e7cb24c455232,"with mock.patch.object(ml2_plugin.Ml2Plugin, '__init__') as init,\",0,1,0.125,41
+91df66bb666390e49048ee77ed6e7cb24c455232,"with mock.patch.object(ml2_plugin.Ml2Plugin,",0,1,0.125,42
+91df66bb666390e49048ee77ed6e7cb24c455232,with contextlib.nested(,1,1,0.125,43
+91df66bb666390e49048ee77ed6e7cb24c455232,with mock.patch(,0,1,0.125,44
+91df66bb666390e49048ee77ed6e7cb24c455232,"plugin.notifier, 'security_groups_provider_updated')",1,1,0.125,45
+91df66bb666390e49048ee77ed6e7cb24c455232,"obj_before_create = getattr(self, '_before_create_%s' % resource)",0,1,0.125,46
+91df66bb666390e49048ee77ed6e7cb24c455232,for item in items:,0,1,0.125,47
+91df66bb666390e49048ee77ed6e7cb24c455232,"postcommit_op = getattr(self, '_after_create_%s' % resource)",0,1,0.125,48
+91df66bb666390e49048ee77ed6e7cb24c455232,# _after_handler will have deleted the object that threw,0,1,0.125,49
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _before_create_network(self, context, network):",0,1,0.125,50
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _create_network_db(self, context, network):",0,1,0.125,51
+91df66bb666390e49048ee77ed6e7cb24c455232,"[mock.call(ctx, [sg]) for sg in used_sg], any_order=True)",0,1,0.125,52
+91df66bb666390e49048ee77ed6e7cb24c455232,net_data = network[attributes.NETWORK],0,1,0.125,53
+91df66bb666390e49048ee77ed6e7cb24c455232,"LOG.exception(_LE(""ML2 _after_create_%(res)s """,0,0,0.0,54
+91df66bb666390e49048ee77ed6e7cb24c455232,"m_upd.assert_called_once_with(ctx, used_sg)",1,0,0.0,55
+91df66bb666390e49048ee77ed6e7cb24c455232,"obj_before_create(context, item)",0,0,0.0,56
+91df66bb666390e49048ee77ed6e7cb24c455232,"postcommit_op(context, obj['result'], obj['mech_context'])",0,0,0.0,57
+91df66bb666390e49048ee77ed6e7cb24c455232,except Exception:,0,0,0.0,58
+91df66bb666390e49048ee77ed6e7cb24c455232,"return self._after_create_network(context, result, mech_context)",0,0,0.0,59
+91df66bb666390e49048ee77ed6e7cb24c455232,"""failed for %(res)s: """,0,0,0.0,60
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._delete_objects(context, resource, to_delete)",0,0,0.0,61
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._before_create_network(context, network)",0,0,0.0,62
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.notify_security_groups_member_updated(context, port)",1,0,0.0,63
+91df66bb666390e49048ee77ed6e7cb24c455232,pass,0,0,0.0,64
+91df66bb666390e49048ee77ed6e7cb24c455232,m_upd.assert_has_calls(,0,0,0.0,65
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(base_plugin.NeutronDbPluginV2, 'create_port'),",1,0,0.0,66
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.notify_security_groups_member_updated_bulk(context, results)",1,0,0.0,67
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.notify_security_groups_member_updated(context, result)",1,0,0.0,68
+91df66bb666390e49048ee77ed6e7cb24c455232,):,1,0,0.0,69
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value={'L3_ROUTER_NAT': l3plugin}),",1,0,0.0,70
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=None),",1,0,0.0,71
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(ml2_plugin.Ml2Plugin, '__init__',",1,0,0.0,72
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (init, super_update_port):",1,0,0.0,73
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(base_plugin.NeutronDbPluginV2, 'update_port'),",1,0,0.0,74
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (init, super_create_port):",1,0,0.0,75
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(ml2_plugin.Ml2Plugin, '__init__'),",1,0,0.0,76
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (glpab_mock, mpd_mock):",1,0,0.0,77
+91df66bb666390e49048ee77ed6e7cb24c455232,mock.patch('neutron.plugins.ml2.plugin.Ml2Plugin._make_port_dict'),1,0,0.0,78
+91df66bb666390e49048ee77ed6e7cb24c455232,"return self._after_create_subnet(context, result, mech_context)",0,0,0.0,79
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._before_create_subnet(context, subnet)",0,0,0.0,80
+91df66bb666390e49048ee77ed6e7cb24c455232,"plugin.notifier,",1,0,0.0,81
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._before_create_port(context, port)",0,0,0.0,82
+91df66bb666390e49048ee77ed6e7cb24c455232,"return self._after_create_port(context, result, mech_context)",0,0,0.0,83
+91df66bb666390e49048ee77ed6e7cb24c455232,self._check_security_groups_provider_updated_args(,1,0,0.0,84
+91df66bb666390e49048ee77ed6e7cb24c455232,"'db.get_locked_port_and_binding',",1,0,0.0,85
+91df66bb666390e49048ee77ed6e7cb24c455232,mock.patch.object(,1,0,0.0,86
+91df66bb666390e49048ee77ed6e7cb24c455232,p_upd.reset_mock(),1,0,0.0,87
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._check_security_groups_provider_updated_args(p_upd, net_id)",1,0,0.0,88
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.assertEqual(sorted(network_ports_ids), sorted(ports_ids))",1,0,0.0,89
+91df66bb666390e49048ee77ed6e7cb24c455232,self.assertTrue(p_upd_mock.called),1,0,0.0,90
+91df66bb666390e49048ee77ed6e7cb24c455232,"def _check_security_groups_provider_updated_args(self, p_upd_mock, net_id):",1,0,0.0,91
+91df66bb666390e49048ee77ed6e7cb24c455232,self.assertFalse(p_upd.called),1,0,0.0,92
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(plugin.notifier,",1,0,0.0,93
+91df66bb666390e49048ee77ed6e7cb24c455232,"'security_groups_member_updated') as m_upd,\",1,0,0.0,94
+91df66bb666390e49048ee77ed6e7cb24c455232,'security_groups_member_updated') as m_upd:,0,0,0.0,95
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._delete_objects(context, attributes.PORT, objects)",1,0,0.0,96
+91df66bb666390e49048ee77ed6e7cb24c455232,resource_ids),1,0,0.0,97
+91df66bb666390e49048ee77ed6e7cb24c455232,"LOG.error(_LE(""_bind_port_if_needed failed. """,1,0,0.0,98
+91df66bb666390e49048ee77ed6e7cb24c455232,obj['mech_context']),1,0,0.0,99
+91df66bb666390e49048ee77ed6e7cb24c455232,try:,1,0,0.0,100
+91df66bb666390e49048ee77ed6e7cb24c455232,"resources.PORT, events.AFTER_CREATE, self, **kwargs)",1,0,0.0,101
+91df66bb666390e49048ee77ed6e7cb24c455232,registry.notify(,1,0,0.0,102
+91df66bb666390e49048ee77ed6e7cb24c455232,"self._delete_objects(context, resource, objects)",1,0,0.0,103
+91df66bb666390e49048ee77ed6e7cb24c455232,"""_postcommit failed for %(res)s: """,1,0,0.0,104
+91df66bb666390e49048ee77ed6e7cb24c455232,"LOG.exception(_LE(""mechanism_manager.create_%(res)s""",1,0,0.0,105
+91df66bb666390e49048ee77ed6e7cb24c455232,except ml2_exc.MechanismDriverError:,1,0,0.0,106
+91df66bb666390e49048ee77ed6e7cb24c455232,postcommit_op(obj['mech_context']),1,0,0.0,107
+91df66bb666390e49048ee77ed6e7cb24c455232,'create_%s_postcommit' % resource),1,0,0.0,108
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=(None, None)),",1,0,0.0,109
+91df66bb666390e49048ee77ed6e7cb24c455232,return_value={'L3_ROUTER_NAT': l3plugin}):,0,0,0.0,110
+91df66bb666390e49048ee77ed6e7cb24c455232,mock.patch('neutron.plugins.ml2.plugin.',1,0,0.0,111
+91df66bb666390e49048ee77ed6e7cb24c455232,'update_port'):,0,0,0.0,112
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(base_plugin.NeutronDbPluginV2,",0,0,0.0,113
+91df66bb666390e49048ee77ed6e7cb24c455232,'_make_port_dict') as mpd_mock:,0,0,0.0,114
+91df66bb666390e49048ee77ed6e7cb24c455232,mock.patch('neutron.plugins.ml2.plugin.Ml2Plugin.',0,0,0.0,115
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=(None, None)) as glpab_mock,\",0,0,0.0,116
+91df66bb666390e49048ee77ed6e7cb24c455232,"'neutron.plugins.ml2.plugin.' 'db.get_locked_port_and_binding',",0,0,0.0,117
+91df66bb666390e49048ee77ed6e7cb24c455232,return_value=[ns_to_delete]) as dvr_delns_ifno_port:,0,0,0.0,118
+91df66bb666390e49048ee77ed6e7cb24c455232,"'dvr_deletens_if_no_port',",0,0,0.0,119
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.l3plugin,",0,0,0.0,120
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=fip_set),\",0,0,0.0,121
+91df66bb666390e49048ee77ed6e7cb24c455232,"'disassociate_floatingips',",0,0,0.0,122
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(self.l3plugin,",0,0,0.0,123
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(registry, 'notify') as notify,\",0,0,0.0,124
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.port(device_owner=device_owner) as port,\",0,0,0.0,125
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=self.service_plugins),\",0,0,0.0,126
+91df66bb666390e49048ee77ed6e7cb24c455232,"'get_service_plugins',",0,0,0.0,127
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(registry, 'notify') as notify:",0,0,0.0,128
+91df66bb666390e49048ee77ed6e7cb24c455232,"'disassociate_floatingips') as disassociate_floatingips,\",0,0,0.0,129
+91df66bb666390e49048ee77ed6e7cb24c455232,"l3plugin,",0,0,0.0,130
+91df66bb666390e49048ee77ed6e7cb24c455232,"plugin.notifier,",0,0,0.0,131
+91df66bb666390e49048ee77ed6e7cb24c455232,mock.patch.object(,0,0,0.0,132
+91df66bb666390e49048ee77ed6e7cb24c455232,"ip_version=6) as snet_v6,\",0,0,0.0,133
+91df66bb666390e49048ee77ed6e7cb24c455232,"cidr=fake_prefix,",0,0,0.0,134
+91df66bb666390e49048ee77ed6e7cb24c455232,"gateway_ip=fake_gateway,",0,0,0.0,135
+91df66bb666390e49048ee77ed6e7cb24c455232,"'security_groups_member_updated') as m_upd,\",0,0,0.0,136
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(plugin.notifier,",0,0,0.0,137
+91df66bb666390e49048ee77ed6e7cb24c455232,'create_port'):,0,0,0.0,138
+91df66bb666390e49048ee77ed6e7cb24c455232,"'__init__',",0,0,0.0,139
+91df66bb666390e49048ee77ed6e7cb24c455232,dvr_delns_ifno_port):,1,0,0.0,140
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=None),\",0,0,0.0,141
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (get_service_plugin, port, notify, disassociate_floatingips,",1,0,0.0,142
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=[ns_to_delete]),",1,0,0.0,143
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(self.l3plugin, 'dvr_deletens_if_no_port',",1,0,0.0,144
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=fip_set),",1,0,0.0,145
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(self.l3plugin, 'disassociate_floatingips',",1,0,0.0,146
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(registry, 'notify'),",1,0,0.0,147
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.port(device_owner=device_owner),",1,0,0.0,148
+91df66bb666390e49048ee77ed6e7cb24c455232,"return_value=self.service_plugins),",1,0,0.0,149
+91df66bb666390e49048ee77ed6e7cb24c455232,"'get_service_plugins',",1,0,0.0,150
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(manager.NeutronManager,",1,0,0.0,151
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (port, disassociate_floatingips, notify):",1,0,0.0,152
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(registry, 'notify')",1,0,0.0,153
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(l3plugin, 'disassociate_floatingips'),",1,0,0.0,154
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.port(),",1,0,0.0,155
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (snet_v6, m_upd, p_upd):",1,0,0.0,156
+91df66bb666390e49048ee77ed6e7cb24c455232,"plugin.notifier, 'security_groups_member_updated'),",1,0,0.0,157
+91df66bb666390e49048ee77ed6e7cb24c455232,mock.patch.object(,1,0,0.0,158
+91df66bb666390e49048ee77ed6e7cb24c455232,"cidr=fake_prefix, ip_version=6),",1,0,0.0,159
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.subnet(net, gateway_ip=fake_gateway,",1,0,0.0,160
+91df66bb666390e49048ee77ed6e7cb24c455232,") as (net, m_upd, p_upd):",1,0,0.0,161
+91df66bb666390e49048ee77ed6e7cb24c455232,"'security_groups_member_updated'),",1,0,0.0,162
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(plugin.notifier,",1,0,0.0,163
+91df66bb666390e49048ee77ed6e7cb24c455232,"self.network(),",1,0,0.0,164
+91df66bb666390e49048ee77ed6e7cb24c455232,import contextlib,1,0,0.0,165
+91df66bb666390e49048ee77ed6e7cb24c455232,"mock.patch.object(manager.NeutronManager,",0,0,0.0,166
+91df66bb666390e49048ee77ed6e7cb24c455232,"p_upd, net_id)",1,0,0.0,167

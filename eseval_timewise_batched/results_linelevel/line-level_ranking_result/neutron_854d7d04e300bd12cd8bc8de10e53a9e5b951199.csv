@@ -1,0 +1,343 @@
+commit_id,line,line_level_label,count,line_score,row
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"# Copyright 2012 Nachi Ueno, NTT MCL, Inc.",1,8,1.0,1
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,0.75,2
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"# Copyright 2013 Cisco Systems, Inc.  All rights reserved.",1,6,0.75,3
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,0.75,4
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,0.75,5
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,0.75,6
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    not use this file except in compliance with the License. You may obtain,1,5,0.625,7
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    not use this file except in compliance with the License. You may obtain,1,5,0.625,8
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    not use this file except in compliance with the License. You may obtain,1,5,0.625,9
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    not use this file except in compliance with the License. You may obtain,1,5,0.625,10
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.5,11
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    under the License.,1,4,0.5,12
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.5,13
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,# All rights reserved.,1,4,0.5,14
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    under the License.,1,4,0.5,15
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    under the License.,1,4,0.5,16
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,# All rights reserved.,1,4,0.5,17
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,# Copyright 2012-2013 NEC Corporation.,1,4,0.5,18
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    under the License.,1,4,0.5,19
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.5,20
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,# All rights reserved.,1,4,0.5,21
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.5,22
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.375,23
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    a copy of the License at,1,3,0.375,24
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    License for the specific language governing permissions and limitations,1,3,0.375,25
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api import extensions,1,3,0.375,26
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"# Copyright 2011 Cisco Systems, Inc.",1,3,0.375,27
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api import extensions,1,3,0.375,28
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.375,29
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.375,30
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    License for the specific language governing permissions and limitations,1,3,0.375,31
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Updates the name for the qos with the given id.""""""",1,3,0.375,32
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.375,33
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.375,34
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    a copy of the License at,1,3,0.375,35
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    License for the specific language governing permissions and limitations,1,3,0.375,36
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api import extensions,1,3,0.375,37
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return [extensions.ResourceExtension(COLLECTION_NAME, controller)]",1,3,0.375,38
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    a copy of the License at,1,3,0.375,39
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.375,40
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.375,41
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api import extensions,1,3,0.375,42
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    a copy of the License at,1,3,0.375,43
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.375,44
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#    License for the specific language governing permissions and limitations,1,3,0.375,45
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron import wsgi,1,2,0.25,46
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api import api_common as common,1,2,0.25,47
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron import manager,1,2,0.25,48
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.plugins.cisco.common import cisco_exceptions as exception,1,2,0.25,49
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.plugins.cisco.common import cisco_faults as faults,1,2,0.25,50
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.plugins.cisco.extensions import _qos_view as qos_view,1,2,0.25,51
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Destroys the qos with the given id.""""""",1,2,0.25,52
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Ext Resource Name.""""""",1,2,0.25,53
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Ext Resource Alias.""""""",1,2,0.25,54
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Ext Resource Description.""""""",1,2,0.25,55
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Ext Resource update.""""""",1,2,0.25,56
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return [extensions.ResourceExtension('qoss', controller,",1,2,0.25,57
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron import manager,1,2,0.25,58
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from webob import exc,1,2,0.25,59
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.quota import resource as quota_resource,1,2,0.25,60
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api.v2 import base,1,2,0.25,61
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api.v2 import attributes,1,2,0.25,62
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api.v2 import attributes,1,2,0.25,63
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return [extensions.ResourceExtension(COLLECTION_NAME,",0,2,0.25,64
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return [extensions.ResourceExtension(COLLECTION_NAME,",1,2,0.25,65
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from oslo_log import log as logging,1,2,0.25,66
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from oslo_config import cfg,1,2,0.25,67
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api.v2 import attributes,1,2,0.25,68
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.api.v2 import base,1,2,0.25,69
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.common import constants,1,2,0.25,70
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.common import exceptions,1,2,0.25,71
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron import manager,1,2,0.25,72
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,from neutron.quota import resource_registry,1,2,0.25,73
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Extended Resource Description.""""""",1,1,0.125,74
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#,1,1,0.125,75
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,controller)],1,1,0.125,76
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return [extensions.ResourceExtension(collection_name,",1,1,0.125,77
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"controller = base.create_resource(collection_name,",1,1,0.125,78
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_resources(cls):,1,1,0.125,79
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""2011-07-25T13:25:27-06:00""",1,1,0.125,80
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Extended Resource Update Time.""""""",1,1,0.125,81
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class Credential(extensions.ExtensionDescriptor):,1,1,0.125,82
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""credential""",1,1,0.125,83
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Extended Resource Alias.""""""",1,1,0.125,84
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""Cisco Credential""",1,1,0.125,85
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Extended Resource Name.""""""",1,1,0.125,86
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,@classmethod,1,1,0.125,87
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class Qos(extensions.ExtensionDescriptor):,1,1,0.125,88
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,# Attribute Map,1,1,0.125,89
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,90
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,91
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,controller = QosController(manager.NeutronManager.get_plugin()),1,1,0.125,92
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,@classmethod,1,1,0.125,93
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return dict(qoss=result),1,1,0.125,94
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return {},1,1,0.125,95
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return exc.HTTPOk(),1,1,0.125,96
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return faults.Fault(exp),1,1,0.125,97
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#look for qos name in request,1,1,0.125,98
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return faults.Fault(faults.QosNotFound(exp)),1,1,0.125,99
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns qos details for the given qos id.""""""",1,1,0.125,100
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,# pylint: disable=no-member,1,1,0.125,101
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"result = [builder.build(qos, is_detail)['qos'] for qos in qoss]",1,1,0.125,102
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""Cisco qos""",1,1,0.125,103
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return self._items(request, tenant_id, is_detail=False)",1,1,0.125,104
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""qos API controller based on NeutronController.""""""",1,1,0.125,105
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"class QosController(common.NeutronController, wsgi.Controller):",1,1,0.125,106
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Ext Resources.""""""",1,1,0.125,107
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_resources(cls):,1,1,0.125,108
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""2011-07-25T13:25:27-06:00""",1,1,0.125,109
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""qos includes qos_name and qos_desc""",1,1,0.125,110
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#,1,1,0.125,111
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""Credential include username and password""",1,1,0.125,112
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return PACKET_FILTER_ATTR_MAP,1,1,0.125,113
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class PacketFilterIpVersionNonSupported(exceptions.BadRequest):,1,1,0.125,114
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,115
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#,1,1,0.125,116
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return {},1,1,0.125,117
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return FLAVOR_ATTRIBUTE,1,1,0.125,118
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""2012-07-20T10:00:00-00:00""",1,1,0.125,119
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""Flavor""",1,1,0.125,120
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""flavor""",1,1,0.125,121
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,@classmethod,1,1,0.125,122
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class Flavor(extensions.ExtensionDescriptor):,1,1,0.125,123
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,124
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#,1,1,0.125,125
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"COLLECTION_NAME,",1,1,0.125,126
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,key in RESOURCE_ATTRIBUTE_MAP.keys()],1,1,0.125,127
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return [extensions.ResourceExtension(collection_name,",0,1,0.125,128
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"my_plurals = [(key, key[:-1]) for key in RESOURCE_ATTRIBUTE_MAP.keys()]",0,1,0.125,129
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return [pf_ext],1,1,0.125,130
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"controller,",0,1,0.125,131
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class PacketFilterNotFound(exceptions.NotFound):,1,1,0.125,132
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""Flavor support for network and router""",1,1,0.125,133
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class PacketFilterInvalidPriority(exceptions.BadRequest):,1,1,0.125,134
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return convert_to_int_dec_and_hex(data),1,1,0.125,135
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""2013-07-16T00:00:00+09:00""",1,1,0.125,136
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class PacketFilterUpdateNotSupported(exceptions.BadRequest):,1,1,0.125,137
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return ""PacketFilters on OFC""",1,1,0.125,138
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return ALIAS,1,1,0.125,139
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,@classmethod,1,1,0.125,140
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class Packetfilter(extensions.ExtensionDescriptor):,1,1,0.125,141
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,RESOURCE = 'packet_filter',1,1,0.125,142
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,COLLECTION = 'packet_filters',1,1,0.125,143
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return,1,1,0.125,144
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,return int(data),1,1,0.125,145
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"return int(data, 0)",1,1,0.125,146
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""'%(protocol)s'. Update or clear protocol before """,1,1,0.125,147
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class PacketFilterEtherTypeProtocolMismatch(exceptions.Conflict):,1,1,0.125,148
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_resources(cls):,1,1,0.125,149
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""Priority %(priority)s is in use"")",1,1,0.125,150
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,class PacketFilterDuplicatedPriority(exceptions.BadRequest):,1,1,0.125,151
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'credential_name': {'allow_post': True, 'allow_put': True,",1,0,0.0,152
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'type': {'allow_post': True, 'allow_put': True,",1,0,0.0,153
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'password': {'allow_post': True, 'allow_put': True,",1,0,0.0,154
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'user_name': {'allow_post': True, 'allow_put': True,",1,0,0.0,155
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'is_visible': True, 'default': ''},",1,0,0.0,156
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'is_visible': False, 'default': ''},",1,0,0.0,157
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'tenant_id': {'allow_post': True, 'allow_put': False,",1,0,0.0,158
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,},1,0,0.0,159
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"},",1,0,0.0,160
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,plugin = manager.NeutronManager.get_plugin(),1,0,0.0,161
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_name(cls):,1,0,0.0,162
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_alias(cls):,1,0,0.0,163
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_description(cls):,1,0,0.0,164
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_updated(cls):,1,0,0.0,165
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns Extended Resources.""""""",1,0,0.0,166
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"resource_name = ""credential""",1,0,0.0,167
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"collection_name = resource_name + ""s""",1,0,0.0,168
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"params = RESOURCE_ATTRIBUTE_MAP.get(collection_name, dict())",1,0,0.0,169
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"resource_name,",1,0,0.0,170
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"plugin, params)",1,0,0.0,171
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:regex': attributes.UUID_PATTERN},",1,0,0.0,172
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'is_visible': True},",1,0,0.0,173
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_name(cls):,1,0,0.0,174
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'credential_id': {'allow_post': False, 'allow_put': False,",1,0,0.0,175
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,'credentials': {,1,0,0.0,176
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"PACKET_FILTER_PROTOCOL_REGEX},",1,0,0.0,177
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'src_port': {'allow_post': True, 'allow_put': True,",1,0,0.0,178
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'dst_port': {'allow_post': True, 'allow_put': True,",1,0,0.0,179
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,},1,0,0.0,180
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PACKET_FILTER_ATTR_MAP = {COLLECTION: PACKET_FILTER_ATTR_PARAMS},1,0,0.0,181
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_name(cls):,1,0,0.0,182
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_alias(cls):,1,0,0.0,183
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_description(cls):,1,0,0.0,184
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_updated(cls):,1,0,0.0,185
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,qresource = quota_resource.CountableResource(,1,0,0.0,186
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"RESOURCE, quota_resource._count_resource, 'quota_%s' % RESOURCE)",1,0,0.0,187
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,resource_registry.register_resource(qresource),1,0,0.0,188
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"resource = base.create_resource(COLLECTION, RESOURCE,",1,0,0.0,189
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"manager.NeutronManager.get_plugin(),",1,0,0.0,190
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PACKET_FILTER_ATTR_PARAMS),1,0,0.0,191
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,pf_ext = extensions.ResourceExtension(,1,0,0.0,192
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"COLLECTION, resource, attr_map=PACKET_FILTER_ATTR_PARAMS)",1,0,0.0,193
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def get_extended_resources(self, version):",1,0,0.0,194
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"if version == ""2.0"":",1,0,0.0,195
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,else:,1,0,0.0,196
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,RESOURCE_ATTRIBUTE_MAP = {,1,0,0.0,197
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Qos extension file.""""""",1,0,0.0,198
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,self._plugin = plugin,1,0,0.0,199
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_alias(cls):,1,0,0.0,200
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,req_params = req_body[self._resource_name],1,0,0.0,201
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"qos = self._plugin.get_qos_details(tenant_id, id)",1,0,0.0,202
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,#build response with details,1,0,0.0,203
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"result = builder.build(qos, True)",1,0,0.0,204
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,except exception.QosNotFound as exp:,1,0,0.0,205
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def create(self, request, tenant_id):",1,0,0.0,206
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Creates a new qos for a given tenant.""""""",1,0,0.0,207
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"body = self._deserialize(request.body, request.get_content_type())",1,0,0.0,208
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"req_body = self._prepare_request_body(body,",1,0,0.0,209
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,self._qos_ops_param_list),1,0,0.0,210
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,except exc.HTTPError as exp:,1,0,0.0,211
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def show(self, request, tenant_id, id):",1,0,0.0,212
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"qos = self._plugin.create_qos(tenant_id,",1,0,0.0,213
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"req_params['qos_name'],",1,0,0.0,214
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,req_params['qos_desc']),1,0,0.0,215
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,result = builder.build(qos),1,0,0.0,216
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def update(self, request, tenant_id, id):",1,0,0.0,217
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"qos = self._plugin.rename_qos(tenant_id, id,",1,0,0.0,218
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,req_params['qos_name']),1,0,0.0,219
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def delete(self, request, tenant_id, id):",1,0,0.0,220
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'protocol': {'allow_post': True, 'allow_put': True,",1,0,0.0,221
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,try:,1,0,0.0,222
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,builder = qos_view.get_view_builder(request),1,0,0.0,223
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_description(cls):,1,0,0.0,224
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""application/xml"": {",1,0,0.0,225
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_updated(cls):,1,0,0.0,226
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"parent_resource = dict(member_name=""tenant"",",1,0,0.0,227
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"collection_name=""extensions/csco/tenants"")",1,0,0.0,228
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,parent=parent_resource)],1,0,0.0,229
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,_qos_ops_param_list = [,1,0,0.0,230
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"{'param-name': 'qos_name', 'required': True},",1,0,0.0,231
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"{'param-name': 'qos_desc', 'required': True},",1,0,0.0,232
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,],1,0,0.0,233
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,_serialization_metadata = {,1,0,0.0,234
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""attributes"": {",1,0,0.0,235
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,qoss = self._plugin.get_all_qoss(tenant_id),1,0,0.0,236
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""qos"": [""id"", ""name""],",1,0,0.0,237
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"},",1,0,0.0,238
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,},1,0,0.0,239
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def __init__(self, plugin):",1,0,0.0,240
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,self._resource_name = 'qos',1,0,0.0,241
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def index(self, request, tenant_id):",1,0,0.0,242
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns a list of qos ids.""""""",1,0,0.0,243
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def _items(self, request, tenant_id, is_detail):",1,0,0.0,244
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""""""Returns a list of qoss.""""""",1,0,0.0,245
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,'validate': {'type:regex_or_none':,1,0,0.0,246
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,'default': attributes.ATTR_NOT_SPECIFIED},1,0,0.0,247
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'dst_cidr': {'allow_post': True, 'allow_put': True,",1,0,0.0,248
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"default=100,",1,0,0.0,249
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_name(cls):,1,0,0.0,250
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_alias(cls):,1,0,0.0,251
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_description(cls):,1,0,0.0,252
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def get_updated(cls):,1,0,0.0,253
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"def get_extended_resources(self, version):",1,0,0.0,254
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"if version == ""2.0"":",1,0,0.0,255
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,else:,1,0,0.0,256
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,quota_packet_filter_opts = [,1,0,0.0,257
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"cfg.IntOpt('quota_packet_filter',",1,0,0.0,258
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"help=_(""Number of packet_filters allowed per tenant, """,1,0,0.0,259
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"FLAVOR_ROUTER: {'allow_post': True,",1,0,0.0,260
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""-1 for unlimited""))",1,0,0.0,261
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,],1,0,0.0,262
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"cfg.CONF.register_opts(quota_packet_filter_opts, 'QUOTAS')",1,0,0.0,263
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"message = _(""PacketFilter %(id)s could not be found"")",1,0,0.0,264
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"message = _(""IP version %(version)s is not supported for %(field)s """,1,0,0.0,265
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""(%(value)s is specified)"")",1,0,0.0,266
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"message = _(""Packet Filter priority should be %(min)s-%(max)s (included)"")",1,0,0.0,267
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"message = _(""%(field)s field cannot be updated"")",1,0,0.0,268
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"message = _(""The backend does not support duplicated priority. """,1,0,0.0,269
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,},1,0,0.0,270
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,'routers': {,1,0,0.0,271
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"""changing ether type."")",1,0,0.0,272
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,EXT_ALIAS = RESOURCE_NAME,1,0,0.0,273
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,attr_map = RESOURCE_ATTRIBUTE_MAP[COLLECTION_NAME],0,0,0.0,274
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,attr_map),0,0,0.0,275
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,attr_map=attr_map)],0,0,0.0,276
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,RESOURCE_ATTRIBUTE_MAP[COLLECTION_NAME]),1,0,0.0,277
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"RESOURCE_NAME = ""service_type""",0,0,0.0,278
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,EXT_ALIAS = 'service-type',0,0,0.0,279
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"collection_name = COLLECTION_NAME.replace('_', '-')",0,0,0.0,280
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"collection_name,",0,0,0.0,281
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"RESOURCE_NAME = ""service-type""",1,0,0.0,282
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"my_plurals = [(key.replace('-', '_'),",1,0,0.0,283
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"},",1,0,0.0,284
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"key[:-1].replace('-', '_')) for",1,0,0.0,285
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,LOG = logging.getLogger(__name__),1,0,0.0,286
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,FLAVOR_NETWORK = 'flavor:network',1,0,0.0,287
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,FLAVOR_ROUTER = 'flavor:router',1,0,0.0,288
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,FLAVOR_ATTRIBUTE = {,1,0,0.0,289
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,'networks': {,1,0,0.0,290
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"FLAVOR_NETWORK: {'allow_post': True,",1,0,0.0,291
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'allow_put': False,",1,0,0.0,292
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'is_visible': True,",1,0,0.0,293
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"message = _(""Ether Type '%(eth_type)s' conflicts with protocol """,1,0,0.0,294
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def convert_to_int_dec_and_hex(data):,1,0,0.0,295
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:subnet_or_none': None},",1,0,0.0,296
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:regex': PACKET_FILTER_ACTION_REGEX},",1,0,0.0,297
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'tenant_id': {'allow_post': True, 'allow_put': False,",1,0,0.0,298
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:string': attributes.TENANT_ID_MAX_LEN},",1,0,0.0,299
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'required_by_policy': True,",1,0,0.0,300
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'network_id': {'allow_post': True, 'allow_put': False,",1,0,0.0,301
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'admin_state_up': {'allow_post': True, 'allow_put': True,",1,0,0.0,302
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'default': True,",1,0,0.0,303
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'convert_to': attributes.convert_to_boolean,",1,0,0.0,304
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'status': {'allow_post': False, 'allow_put': False,",1,0,0.0,305
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'action': {'allow_post': True, 'allow_put': True,",1,0,0.0,306
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'priority': {'allow_post': True, 'allow_put': True,",1,0,0.0,307
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'name': {'allow_post': True, 'allow_put': True, 'default': '',",1,0,0.0,308
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'convert_to': convert_to_int_dec_and_hex,",1,0,0.0,309
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'in_port': {'allow_post': True, 'allow_put': False,",1,0,0.0,310
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'default': attributes.ATTR_NOT_SPECIFIED,",1,0,0.0,311
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'src_mac': {'allow_post': True, 'allow_put': True,",1,0,0.0,312
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:mac_address_or_none': None},",1,0,0.0,313
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'dst_mac': {'allow_post': True, 'allow_put': True,",1,0,0.0,314
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'eth_type': {'allow_post': True, 'allow_put': True,",1,0,0.0,315
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'convert_to': convert_to_int_or_none,",1,0,0.0,316
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'src_cidr': {'allow_post': True, 'allow_put': True,",1,0,0.0,317
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:string': attributes.NAME_MAX_LEN},",1,0,0.0,318
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'is_visible': True},",1,0,0.0,319
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,try:,1,0,0.0,320
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"constants.PROTO_NAME_UDP,",1,0,0.0,321
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"except (ValueError, TypeError):",1,0,0.0,322
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,pass,1,0,0.0,323
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"msg = _(""'%s' is not a integer"") % data",1,0,0.0,324
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,raise exceptions.InvalidInput(error_message=msg),1,0,0.0,325
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,def convert_to_int_or_none(data):,1,0,0.0,326
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,if data is None:,1,0,0.0,327
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PROTO_NAME_ARP = 'arp',1,0,0.0,328
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"SUPPORTED_PROTOCOLS = [constants.PROTO_NAME_ICMP,",1,0,0.0,329
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"constants.PROTO_NAME_TCP,",1,0,0.0,330
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PROTO_NAME_ARP],1,0,0.0,331
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'validate': {'type:uuid': None},",1,0,0.0,332
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"ALLOW_ACTIONS = ['allow', 'accept']",1,0,0.0,333
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"DROP_ACTIONS = ['drop', 'deny']",1,0,0.0,334
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,SUPPORTED_ACTIONS = ALLOW_ACTIONS + DROP_ACTIONS,1,0,0.0,335
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,ALIAS = 'packet-filter',1,0,0.0,336
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PACKET_FILTER_ACTION_REGEX = '(?i)^(%s)$' % '|'.join(SUPPORTED_ACTIONS),1,0,0.0,337
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PACKET_FILTER_PROTOCOL_REGEX = ('(?i)^(%s|0x[0-9a-fA-F]+|[0-9]+|)$' %,1,0,0.0,338
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,'|'.join(SUPPORTED_PROTOCOLS)),1,0,0.0,339
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,PACKET_FILTER_ATTR_PARAMS = {,1,0,0.0,340
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"'id': {'allow_post': False, 'allow_put': False,",1,0,0.0,341
+854d7d04e300bd12cd8bc8de10e53a9e5b951199,"self._plugin.delete_qos(tenant_id, id)",1,0,0.0,342

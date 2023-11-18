@@ -1,0 +1,197 @@
+commit_id,line,line_level_label,count,line_score,row
+147038a61386fb2c94459499637341978032cc30,"set(n['event_type'] for n in fake_notifier.NOTIFICATIONS), msg)",0,4,1.0,1
+147038a61386fb2c94459499637341978032cc30,set(n['event_type'] for n in fake_notifier.NOTIFICATIONS)),1,4,1.0,2
+147038a61386fb2c94459499637341978032cc30,Tests creation of two new Virtual Networks.,1,3,0.75,3
+147038a61386fb2c94459499637341978032cc30,"action_string = 'mod_vlan_vid:%s,normal' % LV_ID",1,3,0.75,4
+147038a61386fb2c94459499637341978032cc30,"a.port_bound(VIF_PORT, NET_UUID, 'gre', None, LS_ID)",1,3,0.75,5
+147038a61386fb2c94459499637341978032cc30,a.local_vlan_map[NET_UUID] = LVM,1,3,0.75,6
+147038a61386fb2c94459499637341978032cc30,for n in fake_notifier.NOTIFICATIONS:,0,3,0.75,7
+147038a61386fb2c94459499637341978032cc30,for n in fake_notifier.NOTIFICATIONS:,1,3,0.75,8
+147038a61386fb2c94459499637341978032cc30,"'tag', str(LVM.vlan))",1,2,0.5,9
+147038a61386fb2c94459499637341978032cc30,for uc in use_cases:,0,2,0.5,10
+147038a61386fb2c94459499637341978032cc30,# tolerate subnet tenant deliberately set to '' in the,0,2,0.5,11
+147038a61386fb2c94459499637341978032cc30,"self.mock_int_bridge.set_db_attribute('Port', VIF_PORT.port_name,",1,2,0.5,12
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(priority=3, tun_id=LS_ID,",1,2,0.5,13
+147038a61386fb2c94459499637341978032cc30,for tunnel_type in constants.TUNNEL_NETWORK_TYPES:,0,2,0.5,14
+147038a61386fb2c94459499637341978032cc30,"""""""Tests creation of two new Virtual Networks.""""""",0,2,0.5,15
+147038a61386fb2c94459499637341978032cc30,exp_code = exc.HTTPBadRequest.code,0,1,0.25,16
+147038a61386fb2c94459499637341978032cc30,"""""""Test router-interface-add for valid ipv6 subnets.",0,1,0.25,17
+147038a61386fb2c94459499637341978032cc30,slaac = l3_constants.IPV6_SLAAC,0,1,0.25,18
+147038a61386fb2c94459499637341978032cc30,stateful = l3_constants.DHCPV6_STATEFUL,0,1,0.25,19
+147038a61386fb2c94459499637341978032cc30,stateless = l3_constants.DHCPV6_STATELESS,0,1,0.25,20
+147038a61386fb2c94459499637341978032cc30,"use_cases = [{'msg': 'IPv6 Subnet Modes (slaac, none)',",0,1,0.25,21
+147038a61386fb2c94459499637341978032cc30,"""""""Test router-interface-add for in-valid ipv6 subnets.",0,1,0.25,22
+147038a61386fb2c94459499637341978032cc30,an IPv6 subnet configured to use an external_router for Router,0,1,0.25,23
+147038a61386fb2c94459499637341978032cc30,# tolerate subnet tenant deliberately to '' in the,1,1,0.25,24
+147038a61386fb2c94459499637341978032cc30,"body = self._router_interface_action('add',",1,1,0.25,25
+147038a61386fb2c94459499637341978032cc30,r_port_id = body['port_id'],1,1,0.25,26
+147038a61386fb2c94459499637341978032cc30,"body = self._show('ports', r_port_id)",1,1,0.25,27
+147038a61386fb2c94459499637341978032cc30,"body = self._router_interface_action('remove',",1,1,0.25,28
+147038a61386fb2c94459499637341978032cc30,"body = self._show('ports', r_port_id,",1,1,0.25,29
+147038a61386fb2c94459499637341978032cc30,payload = n['payload']['router_interface'],1,1,0.25,30
+147038a61386fb2c94459499637341978032cc30,stid = s['subnet']['tenant_id'],1,1,0.25,31
+147038a61386fb2c94459499637341978032cc30,payload = n['payload']['router_interface'],0,1,0.25,32
+147038a61386fb2c94459499637341978032cc30,stid = subnet['subnet']['tenant_id'],0,1,0.25,33
+147038a61386fb2c94459499637341978032cc30,"use_cases = [{'msg': 'IPv6 Subnet Modes (none, slaac)',",0,1,0.25,34
+147038a61386fb2c94459499637341978032cc30,"port = self._show('ports', r_port_id)",0,1,0.25,35
+147038a61386fb2c94459499637341978032cc30,"tun_id=LS_ID,",0,1,0.25,36
+147038a61386fb2c94459499637341978032cc30,"""""""Test deletion of a vlan.""""""",0,1,0.25,37
+147038a61386fb2c94459499637341978032cc30,r_port_id = body['port_id'],0,1,0.25,38
+147038a61386fb2c94459499637341978032cc30,Test deletion of a vlan.,1,1,0.25,39
+147038a61386fb2c94459499637341978032cc30,"GRE_OFPORTS = set(['11', '12'])",0,1,0.25,40
+147038a61386fb2c94459499637341978032cc30,"VXLAN_OFPORTS = set(['13', '14'])",0,1,0.25,41
+147038a61386fb2c94459499637341978032cc30,"TUN_OFPORTS = {constants.TYPE_GRE: GRE_OFPORTS,",0,1,0.25,42
+147038a61386fb2c94459499637341978032cc30,"UCAST_MAC = ""00:00:00:00:00:00/01:00:00:00:00:00""",0,1,0.25,43
+147038a61386fb2c94459499637341978032cc30,"learned_flow = (""table=%s,""",0,1,0.25,44
+147038a61386fb2c94459499637341978032cc30,VIF_PORTS = {VIF_ID: VIF_PORT},0,1,0.25,45
+147038a61386fb2c94459499637341978032cc30,a.tun_br_ofports = TUN_OFPORTS,0,1,0.25,46
+147038a61386fb2c94459499637341978032cc30,a.available_local_vlans = set([LV_ID]),1,1,0.25,47
+147038a61386fb2c94459499637341978032cc30,VIF_PORTS = {LV_ID: VIF_PORT},1,1,0.25,48
+147038a61386fb2c94459499637341978032cc30,"action_string = 'set_tunnel:%s,normal' % LS_ID",1,1,0.25,49
+147038a61386fb2c94459499637341978032cc30,"action_string = 'mod_vlan_vid:%s,output:%s' % (LV_ID, self.INT_OFPORT)",1,1,0.25,50
+147038a61386fb2c94459499637341978032cc30,"dl_dst=VIF_PORT.vif_mac,",1,1,0.25,51
+147038a61386fb2c94459499637341978032cc30,self.mock_int_bridge.delete_flows(in_port=VIF_PORT.ofport),1,1,0.25,52
+147038a61386fb2c94459499637341978032cc30,"body = self._router_interface_action('add',",0,1,0.25,53
+147038a61386fb2c94459499637341978032cc30,"'ra_mode': slaac, 'address_mode': slaac},",0,0,0.0,54
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (dhcpv6-stateful,'",0,0,0.0,55
+147038a61386fb2c94459499637341978032cc30,"'dhcpv6-stateful)', 'ra_mode': stateful,",0,0,0.0,56
+147038a61386fb2c94459499637341978032cc30,"'address_mode': stateful},",0,0,0.0,57
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (dhcpv6-stateless,'",0,0,0.0,58
+147038a61386fb2c94459499637341978032cc30,"'dhcpv6-stateless)', 'ra_mode': stateless,",0,0,0.0,59
+147038a61386fb2c94459499637341978032cc30,"with self.subnet(network=n, cidr='fd00::1/64',",0,0,0.0,60
+147038a61386fb2c94459499637341978032cc30,'address_mode': stateless}],0,0,0.0,61
+147038a61386fb2c94459499637341978032cc30,"with contextlib.nested(self.router(), self.network()) as (r, n):",0,0,0.0,62
+147038a61386fb2c94459499637341978032cc30,"self._delete('subnets', s['subnet']['id'])",0,0,0.0,63
+147038a61386fb2c94459499637341978032cc30,"gateway_ip='fd00::1', ip_version=6,",0,0,0.0,64
+147038a61386fb2c94459499637341978032cc30,"ipv6_ra_mode=uc['ra_mode'],",0,0,0.0,65
+147038a61386fb2c94459499637341978032cc30,ipv6_address_mode=uc['address_mode']) as s:,0,0,0.0,66
+147038a61386fb2c94459499637341978032cc30,"self._test_router_add_interface_subnet(r, s, uc['msg'])",0,0,0.0,67
+147038a61386fb2c94459499637341978032cc30,"'ra_mode': stateless, 'address_mode': None},",0,0,0.0,68
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (slaac, slaac)',",0,0,0.0,69
+147038a61386fb2c94459499637341978032cc30,Verify the valid use-cases of an IPv6 subnet where we,0,0,0.0,70
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (dhcpv6-stateless, none)',",0,0,0.0,71
+147038a61386fb2c94459499637341978032cc30,"self._test_router_add_interface_subnet(r, s)",0,0,0.0,72
+147038a61386fb2c94459499637341978032cc30,Verify that an appropriate error message is displayed when,0,0,0.0,73
+147038a61386fb2c94459499637341978032cc30,def test_router_add_interface_subnet(self):,0,0,0.0,74
+147038a61386fb2c94459499637341978032cc30,fake_notifier.reset(),0,0,0.0,75
+147038a61386fb2c94459499637341978032cc30,with self.router() as r:,0,0,0.0,76
+147038a61386fb2c94459499637341978032cc30,with self.network() as n:,0,0,0.0,77
+147038a61386fb2c94459499637341978032cc30,with self.subnet(network=n) as s:,0,0,0.0,78
+147038a61386fb2c94459499637341978032cc30,def test_router_add_interface_ipv6_subnet(self):,0,0,0.0,79
+147038a61386fb2c94459499637341978032cc30,"'ra_mode': stateful, 'address_mode': None},",0,0,0.0,80
+147038a61386fb2c94459499637341978032cc30,are allowed to associate to the Neutron Router are successful.,0,0,0.0,81
+147038a61386fb2c94459499637341978032cc30,"""""""",0,0,0.0,82
+147038a61386fb2c94459499637341978032cc30,"'ra_mode': slaac, 'address_mode': None},",0,0,0.0,83
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (none, none)',",0,0,0.0,84
+147038a61386fb2c94459499637341978032cc30,"'ra_mode': None, 'address_mode': None},",0,0,0.0,85
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (dhcpv6-stateful, none)',",0,0,0.0,86
+147038a61386fb2c94459499637341978032cc30,def test_router_add_iface_ipv6_ext_ra_subnet_returns_400(self):,0,0,0.0,87
+147038a61386fb2c94459499637341978032cc30,# fetch port and confirm device_id,1,0,0.0,88
+147038a61386fb2c94459499637341978032cc30,"Advertisements (i.e., ipv6_ra_mode is None and ipv6_address_mode",0,0,0.0,89
+147038a61386fb2c94459499637341978032cc30,is not None) is attempted to associate with a Neutron Router.,0,0,0.0,90
+147038a61386fb2c94459499637341978032cc30,with self.subnet() as s:,1,0,0.0,91
+147038a61386fb2c94459499637341978032cc30,"r['router']['id'],",1,0,0.0,92
+147038a61386fb2c94459499637341978032cc30,"s['subnet']['id'],",1,0,0.0,93
+147038a61386fb2c94459499637341978032cc30,None),1,0,0.0,94
+147038a61386fb2c94459499637341978032cc30,"self.assertIn('port_id', body)",1,0,0.0,95
+147038a61386fb2c94459499637341978032cc30,# nsx metadata access case,0,0,0.0,96
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(body['port']['device_id'], r['router']['id'])",1,0,0.0,97
+147038a61386fb2c94459499637341978032cc30,expected_code=exc.HTTPNotFound.code),1,0,0.0,98
+147038a61386fb2c94459499637341978032cc30,self.assertEqual(,1,0,0.0,99
+147038a61386fb2c94459499637341978032cc30,"set(exp_notifications),",1,0,0.0,100
+147038a61386fb2c94459499637341978032cc30,if n['event_type'].startswith('router.interface.'):,1,0,0.0,101
+147038a61386fb2c94459499637341978032cc30,"self.assertIn('id', payload)",1,0,0.0,102
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(payload['id'], r['router']['id'])",1,0,0.0,103
+147038a61386fb2c94459499637341978032cc30,"self.assertIn('tenant_id', payload)",1,0,0.0,104
+147038a61386fb2c94459499637341978032cc30,# nsx metadata access case,1,0,0.0,105
+147038a61386fb2c94459499637341978032cc30,with self.router() as r:,1,0,0.0,106
+147038a61386fb2c94459499637341978032cc30,fake_notifier.reset(),1,0,0.0,107
+147038a61386fb2c94459499637341978032cc30,def test_router_add_interface_subnet(self):,1,0,0.0,108
+147038a61386fb2c94459499637341978032cc30,"self._router_interface_action('add',",0,0,0.0,109
+147038a61386fb2c94459499637341978032cc30,"'ra_mode': None,",0,0,0.0,110
+147038a61386fb2c94459499637341978032cc30,"'address_mode': l3_constants.IPV6_SLAAC},",0,0,0.0,111
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (none, dhcpv6-stateful)',",0,0,0.0,112
+147038a61386fb2c94459499637341978032cc30,"'address_mode': l3_constants.DHCPV6_STATEFUL},",0,0,0.0,113
+147038a61386fb2c94459499637341978032cc30,"{'msg': 'IPv6 Subnet Modes (none, dhcpv6-stateless)',",0,0,0.0,114
+147038a61386fb2c94459499637341978032cc30,'address_mode': l3_constants.DHCPV6_STATELESS}],0,0,0.0,115
+147038a61386fb2c94459499637341978032cc30,"r['router']['id'],",0,0,0.0,116
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(response, expected_body)",1,0,0.0,117
+147038a61386fb2c94459499637341978032cc30,"s['subnet']['id'],",0,0,0.0,118
+147038a61386fb2c94459499637341978032cc30,"None,",0,0,0.0,119
+147038a61386fb2c94459499637341978032cc30,"expected_code=exp_code,",0,0,0.0,120
+147038a61386fb2c94459499637341978032cc30,msg=uc['msg']),0,0,0.0,121
+147038a61386fb2c94459499637341978032cc30,tenant_id=None):,1,0,0.0,122
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(res.status_int, expected_code)",1,0,0.0,123
+147038a61386fb2c94459499637341978032cc30,"self.assertIn(payload['tenant_id'], [stid, ''], msg)",0,0,0.0,124
+147038a61386fb2c94459499637341978032cc30,"dl_vlan=LV_ID, actions=action_string)",1,0,0.0,125
+147038a61386fb2c94459499637341978032cc30,"self.assertIn('tenant_id', payload)",0,0,0.0,126
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(table=constants.LEARN_FROM_TUN,",0,0,0.0,127
+147038a61386fb2c94459499637341978032cc30,"""priority=1,""",0,0,0.0,128
+147038a61386fb2c94459499637341978032cc30,"""hard_timeout=300,""",0,0,0.0,129
+147038a61386fb2c94459499637341978032cc30,"""NXM_OF_VLAN_TCI[0..11],""",0,0,0.0,130
+147038a61386fb2c94459499637341978032cc30,"""load:0->NXM_OF_VLAN_TCI[],""",0,0,0.0,131
+147038a61386fb2c94459499637341978032cc30,"""load:NXM_NX_TUN_ID[]->NXM_NX_TUN_ID[],""",0,0,0.0,132
+147038a61386fb2c94459499637341978032cc30,"""output:NXM_OF_IN_PORT[]"" %",0,0,0.0,133
+147038a61386fb2c94459499637341978032cc30,"priority=1,",0,0,0.0,134
+147038a61386fb2c94459499637341978032cc30,"priority=0,",0,0,0.0,135
+147038a61386fb2c94459499637341978032cc30,"actions=""learn(%s),output:%s"" %",0,0,0.0,136
+147038a61386fb2c94459499637341978032cc30,"(learned_flow, self.INT_OFPORT))",0,0,0.0,137
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(table=constants.UCAST_TO_TUN,",0,0,0.0,138
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(table=constants.FLOOD_TO_TUN,",0,0,0.0,139
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.mod_flow(table=constants.FLOOD_TO_TUN,",0,0,0.0,140
+147038a61386fb2c94459499637341978032cc30,"dl_vlan=LV_ID,",0,0,0.0,141
+147038a61386fb2c94459499637341978032cc30,"actions=""drop"")",0,0,0.0,142
+147038a61386fb2c94459499637341978032cc30,"table=constants.TUN_TABLE[tunnel_type],",0,0,0.0,143
+147038a61386fb2c94459499637341978032cc30,"""set_tunnel:%s,output:%s"" %",0,0,0.0,144
+147038a61386fb2c94459499637341978032cc30,"actions=""resubmit(,%s)"" %",0,0,0.0,145
+147038a61386fb2c94459499637341978032cc30,"""""""Set up function.""""""",0,0,0.0,146
+147038a61386fb2c94459499637341978032cc30,"""""""",1,0,0.0,147
+147038a61386fb2c94459499637341978032cc30,Set up function,1,0,0.0,148
+147038a61386fb2c94459499637341978032cc30,constants.TYPE_VXLAN: VXLAN_OFPORTS},0,0,0.0,149
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(priority=1,",0,0,0.0,150
+147038a61386fb2c94459499637341978032cc30,"in_port=self.INT_OFPORT,",0,0,0.0,151
+147038a61386fb2c94459499637341978032cc30,constants.PATCH_LV_TO_TUN),0,0,0.0,152
+147038a61386fb2c94459499637341978032cc30,self.mock_tun_bridge.add_flow(,0,0,0.0,153
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(priority=0, actions='drop')",0,0,0.0,154
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(table=constants.PATCH_LV_TO_TUN,",0,0,0.0,155
+147038a61386fb2c94459499637341978032cc30,"dl_dst=UCAST_MAC,",0,0,0.0,156
+147038a61386fb2c94459499637341978032cc30,constants.UCAST_TO_TUN),0,0,0.0,157
+147038a61386fb2c94459499637341978032cc30,"dl_dst=BCAST_MAC,",0,0,0.0,158
+147038a61386fb2c94459499637341978032cc30,constants.FLOOD_TO_TUN),0,0,0.0,159
+147038a61386fb2c94459499637341978032cc30,"actions=""strip_vlan,""",0,0,0.0,160
+147038a61386fb2c94459499637341978032cc30,"(LS_ID, ','.join(GRE_OFPORTS)))",0,0,0.0,161
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(payload['id'], router['router']['id'])",0,0,0.0,162
+147038a61386fb2c94459499637341978032cc30,"router['router']['id'], msg)",0,0,0.0,163
+147038a61386fb2c94459499637341978032cc30,"router['router']['id'],",0,0,0.0,164
+147038a61386fb2c94459499637341978032cc30,"subnet['subnet']['id'],",0,0,0.0,165
+147038a61386fb2c94459499637341978032cc30,None),0,0,0.0,166
+147038a61386fb2c94459499637341978032cc30,"self.assertIn('port_id', body, msg)",0,0,0.0,167
+147038a61386fb2c94459499637341978032cc30,# fetch port and confirm device_id,0,0,0.0,168
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(port['port']['device_id'],",0,0,0.0,169
+147038a61386fb2c94459499637341978032cc30,"self._router_interface_action('remove',",0,0,0.0,170
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(response, expected_body, msg)",0,0,0.0,171
+147038a61386fb2c94459499637341978032cc30,"self._show('ports', r_port_id,",0,0,0.0,172
+147038a61386fb2c94459499637341978032cc30,expected_code=exc.HTTPNotFound.code),0,0,0.0,173
+147038a61386fb2c94459499637341978032cc30,self.assertEqual(,0,0,0.0,174
+147038a61386fb2c94459499637341978032cc30,"set(exp_notifications),",0,0,0.0,175
+147038a61386fb2c94459499637341978032cc30,if n['event_type'].startswith('router.interface.'):,0,0,0.0,176
+147038a61386fb2c94459499637341978032cc30,"self.assertIn('id', payload)",0,0,0.0,177
+147038a61386fb2c94459499637341978032cc30,"def _test_router_add_interface_subnet(self, router, subnet, msg=None):",0,0,0.0,178
+147038a61386fb2c94459499637341978032cc30,"self.assertEqual(res.status_int, expected_code, msg)",0,0,0.0,179
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(table=constants.TUN_TABLE['gre'],",0,0,0.0,180
+147038a61386fb2c94459499637341978032cc30,"ovs_neutron_agent.OVSNeutronAgent.reclaim_local_vlan(NET_UUID, LVM)",0,0,0.0,181
+147038a61386fb2c94459499637341978032cc30,"actions=""mod_vlan_vid:%s,resubmit(,%s)"" %",0,0,0.0,182
+147038a61386fb2c94459499637341978032cc30,"(LV_ID, constants.LEARN_FROM_TUN))",0,0,0.0,183
+147038a61386fb2c94459499637341978032cc30,self.mock_tun_bridge.delete_flows(,0,0,0.0,184
+147038a61386fb2c94459499637341978032cc30,"table=constants.TUN_TABLE['gre'], tun_id=LS_ID)",0,0,0.0,185
+147038a61386fb2c94459499637341978032cc30,self.mox.StubOutWithMock(,0,0,0.0,186
+147038a61386fb2c94459499637341978032cc30,"ovs_neutron_agent.OVSNeutronAgent, 'reclaim_local_vlan')",0,0,0.0,187
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(priority=1, actions='drop')",1,0,0.0,188
+147038a61386fb2c94459499637341978032cc30,msg=None):,0,0,0.0,189
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.add_flow(priority=4, in_port=self.INT_OFPORT,",1,0,0.0,190
+147038a61386fb2c94459499637341978032cc30,"dl_dst=BCAST_MAC, actions=action_string)",1,0,0.0,191
+147038a61386fb2c94459499637341978032cc30,self.mock_tun_bridge.delete_flows(tun_id=LVM.segmentation_id),1,0,0.0,192
+147038a61386fb2c94459499637341978032cc30,actions=action_string),1,0,0.0,193
+147038a61386fb2c94459499637341978032cc30,"self.mock_tun_bridge.delete_flows(dl_dst=VIF_MAC, tun_id=LS_ID)",1,0,0.0,194
+147038a61386fb2c94459499637341978032cc30,"tenant_id=None,",0,0,0.0,195
+147038a61386fb2c94459499637341978032cc30,"self.assertIn(payload['tenant_id'], [stid, ''])",1,0,0.0,196

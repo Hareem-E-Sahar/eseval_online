@@ -1,0 +1,1405 @@
+line,commit_id,count,line_level_label
+var data = pkg && pkg._data || pkg,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,5,1
+", pkg = {}",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,4,1
+", deps = data.dependencies || {}",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,3,0
+pkg._data = data,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,3,1
+", readInstalled = require(""./utils/read-installed"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,2,0
+", semver = require(""./utils/semver"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,2,0
+", depNames = Array.isArray(deps) ? deps : Object.keys(deps)",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,2,0
+var o = {},1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,2,0
+", pkgDir = path.join(npm.dir, data.name, data.version, ""package"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,2,1
+", [readAndLink, jsonFile, folder]",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+", ""-1-LINK-""+(",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+", doLink(folder, cb)",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+"var pkgDir = path.join(npm.dir, data.name, data.version, ""package"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+"deps.forEach(function (d) { o[d] = ""*"" })",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+deps = o,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+"var satis = semver.maxSatisfying(Object.keys(inst[d]), deps[d])",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+var depsNeeded = Object.keys(deps).map(function (d) {,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+", [ require(""./utils/link""), folder, pkgDir ]",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+", [ npm.commands, ""build"", [data] ]",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+", function (er) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+"var rb = depsNeeded.concat([data.name+""@""+data.version])",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,0
+", function (cb) { readJson",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,1
+", ""-1-LINK-""+(",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,1
+", function (er, data) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,1
+", function (cb) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,1
+", [npm.commands, ""build"", [pkg]]",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,1,1
+"function readAndLink (jsonFile, folder, cb) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+readJson,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+( jsonFile,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"crypto.createHash(""sha1"").update(folder).digest(""hex"").substr(0,8)",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+},1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"function doLink (folder, cb) { return function (er, data) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+if (er) return cb(er),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"log(data.name+"" ""+data.version, ""link"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+if (Array.isArray(deps)) {,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+// skip any that are installed,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"readInstalled(depNames, function (er, inst) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"if (er) return log.er(cb, ""Couldn't read installed packages"")(er)",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+for (var d in inst) {,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+if (satis) delete deps[d],1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"return d+""@""+deps[d]",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+}),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"log(depsNeeded, ""link install deps"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+chain,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"( [ npm.commands, ""install"", depsNeeded.slice(0) ]",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+if (!er) return cb(),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"// error, rollback",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"log(er, ""error linking, rollback"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"npm.commands.rm(rb, function (er_) {",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+"if (er_) log(er_, ""error rolling back"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+cb(er),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+}},1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,0
+( jsonFile,1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+"crypto.createHash(""sha1"").update(folder).digest(""hex"").substr(0,8)",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+if (er) return cb(er),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+"log(data.name+"" ""+data.version, ""link"")",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+cb(),1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+},1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+"require(""./utils/link"")(folder, pkgDir, cb)",1a0fb065b6a28ce54e6c4960c884972d1aaa2ea0,0,1
+var data = pkg && pkg._data || pkg,48106360d2f4de074947d27dde6d3d3115909e6c,8,1
+"var pkgDir = path.join(npm.dir, data.name, data.version, ""package"")",48106360d2f4de074947d27dde6d3d3115909e6c,5,0
+", pkgDir = path.join(npm.dir, data.name, data.version, ""package"")",48106360d2f4de074947d27dde6d3d3115909e6c,5,1
+", deps = data.dependencies || {}",48106360d2f4de074947d27dde6d3d3115909e6c,3,0
+", pkg = {}",48106360d2f4de074947d27dde6d3d3115909e6c,3,1
+pkg._data = data,48106360d2f4de074947d27dde6d3d3115909e6c,3,1
+", readInstalled = require(""./utils/read-installed"")",48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+", semver = require(""./utils/semver"")",48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+", depNames = Array.isArray(deps) ? deps : Object.keys(deps)",48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+var o = {},48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+"var satis = semver.maxSatisfying(Object.keys(inst[d]), deps[d])",48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+var depsNeeded = Object.keys(deps).map(function (d) {,48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+", [ require(""./utils/link""), folder, pkgDir ]",48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+"var rb = depsNeeded.concat([data.name+""@""+data.version])",48106360d2f4de074947d27dde6d3d3115909e6c,2,0
+", [readAndLink, jsonFile, folder]",48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+", ""-1-LINK-""+(",48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+", doLink(folder, cb)",48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+"deps.forEach(function (d) { o[d] = ""*"" })",48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+deps = o,48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+", [ npm.commands, ""build"", [data] ]",48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+", function (er) {",48106360d2f4de074947d27dde6d3d3115909e6c,1,0
+", function (cb) { readJson",48106360d2f4de074947d27dde6d3d3115909e6c,1,1
+", ""-1-LINK-""+(",48106360d2f4de074947d27dde6d3d3115909e6c,1,1
+", function (er, data) {",48106360d2f4de074947d27dde6d3d3115909e6c,1,1
+", function (cb) {",48106360d2f4de074947d27dde6d3d3115909e6c,1,1
+", [npm.commands, ""build"", [pkg]]",48106360d2f4de074947d27dde6d3d3115909e6c,1,1
+"function readAndLink (jsonFile, folder, cb) {",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+readJson,48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+( jsonFile,48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"crypto.createHash(""sha1"").update(folder).digest(""hex"").substr(0,8)",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+),48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+},48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"function doLink (folder, cb) { return function (er, data) {",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+if (er) return cb(er),48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"log(data.name+"" ""+data.version, ""link"")",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+if (Array.isArray(deps)) {,48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+// skip any that are installed,48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"readInstalled(depNames, function (er, inst) {",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"if (er) return log.er(cb, ""Couldn't read installed packages"")(er)",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+for (var d in inst) {,48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+if (satis) delete deps[d],48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"return d+""@""+deps[d]",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+}),48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"log(depsNeeded, ""link install deps"")",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+chain,48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"( [ npm.commands, ""install"", depsNeeded.slice(0) ]",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+if (!er) return cb(),48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"// error, rollback",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"log(er, ""error linking, rollback"")",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"npm.commands.rm(rb, function (er_) {",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+"if (er_) log(er_, ""error rolling back"")",48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+cb(er),48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+}},48106360d2f4de074947d27dde6d3d3115909e6c,0,0
+( jsonFile,48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+"crypto.createHash(""sha1"").update(folder).digest(""hex"").substr(0,8)",48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+),48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+if (er) return cb(er),48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+"log(data.name+"" ""+data.version, ""link"")",48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+cb(),48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+},48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+"require(""./utils/link"")(folder, pkgDir, cb)",48106360d2f4de074947d27dde6d3d3115909e6c,0,1
+"if (remote[p][""dist-tags""][tag] === v) {",0f09adfad135eded197988c0acb681f6e635188c,1,0
+"if (remote[p][""dist-tags""][tag] === v) merged[p].versions[v].tags.push(tag)",0f09adfad135eded197988c0acb681f6e635188c,1,1
+merged[p].versions[v] = merged[p].versions[v] || {},0f09adfad135eded197988c0acb681f6e635188c,0,0
+merged[p].versions[v] = merged[p][v] || {},0f09adfad135eded197988c0acb681f6e635188c,0,1
+var descs = remote[p].descriptions,0f09adfad135eded197988c0acb681f6e635188c,0,0
+if (descs && descs[v] && descs[v] !== remote[p].description) {,0f09adfad135eded197988c0acb681f6e635188c,0,0
+merged[p].versions[v].description = descs[v],0f09adfad135eded197988c0acb681f6e635188c,0,0
+},0f09adfad135eded197988c0acb681f6e635188c,0,0
+merged[p].versions[v].tags.push(tag),0f09adfad135eded197988c0acb681f6e635188c,0,0
+var depObjectifyWarn = {},c44b8406f52d81dee53acb9ddd8dafa0359bc367,3,0
+if (!deps) return {},c44b8406f52d81dee53acb9ddd8dafa0359bc367,3,0
+"if (typeof deps === ""string"") {",c44b8406f52d81dee53acb9ddd8dafa0359bc367,3,0
+"json[d] = json.hasOwnProperty(d) ? depObjectify(json[d], d, json._id) : {}",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+"function depObjectify (deps, d, id) {",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+"if ((!deps || typeof deps !== ""object"" || Array.isArray(deps))",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+&& !depObjectifyWarn[id+d]) {,c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+"deps = deps.trim().split(/[\n\r\s\t ,]+/)",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+json[d] = json[d] ? depObjectify(json[d]) : {},c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,1
+function depObjectify (deps) {,c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,1
+].forEach(function (d) {,c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+Object.keys(json.optionalDependencies).forEach(function (d) {,c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,0
+";[""dependencies"", ""devDependencies""].forEach(function (d) {",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,1
+"json[d] = json.hasOwnProperty(d) ? depObjectify(json[d], d, json._id) : {}",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,1
+"if (opts.dev || npm.config.get(""dev"") || npm.config.get(""npat"")) {",c44b8406f52d81dee53acb9ddd8dafa0359bc367,2,1
+"log.warn( d + "" field should be hash of <name>:<version-range> pairs""",c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+depObjectifyWarn[id + d] = true,c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+},c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+json[d] = json.hasOwnProperty(d),c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+: {},c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+}),c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+// always merge optionals into deps,c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+json.dependencies[d] = json.optionalDependencies[d],c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+if (opts.dev,c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+"|| npm.config.get(""npat"")) {",c44b8406f52d81dee53acb9ddd8dafa0359bc367,1,0
+", id )",c44b8406f52d81dee53acb9ddd8dafa0359bc367,0,0
+"; [ ""dependencies""",c44b8406f52d81dee53acb9ddd8dafa0359bc367,0,0
+", ""devDependencies""",c44b8406f52d81dee53acb9ddd8dafa0359bc367,0,0
+", ""optionalDependencies""",c44b8406f52d81dee53acb9ddd8dafa0359bc367,0,0
+"? depObjectify(json[d], d, json._id)",c44b8406f52d81dee53acb9ddd8dafa0359bc367,0,0
+"|| npm.config.get(""dev"")",c44b8406f52d81dee53acb9ddd8dafa0359bc367,0,0
+function cleanup (data) {,34692d00a49a9d186f04e5f4935039e1cabfd948,2,0
+function unparsePerson (d) {,34692d00a49a9d186f04e5f4935039e1cabfd948,2,0
+"if (typeof d === ""string"") return d",34692d00a49a9d186f04e5f4935039e1cabfd948,2,0
+Object.keys(data).forEach(function (d) {,34692d00a49a9d186f04e5f4935039e1cabfd948,1,0
+switch (d) {,34692d00a49a9d186f04e5f4935039e1cabfd948,1,0
+}),34692d00a49a9d186f04e5f4935039e1cabfd948,1,0
+return data,34692d00a49a9d186f04e5f4935039e1cabfd948,1,0
+d[a] = data,34692d00a49a9d186f04e5f4935039e1cabfd948,1,1
+d[a] = cleanup(data),34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"case ""author"":",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+data[d] = unparsePerson(data[d]),34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+break,34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"case ""contributors"":",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"case ""maintainers"":",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+data[d] = data[d].map(unparsePerson),34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+default:,34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"if (d.charAt(0) === ""_"") delete data[d]",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"else if (typeof data[d] === ""object"") cleanup(data[d])",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+},34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+return d.name,34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"+ (d.email ? "" <""+d.email+"">"" : """")",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"+ (d.url ? "" (""+d.url+"")"" : """")",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"log(d.replace(/\//, '@'), ""view"")",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"process.stdout.write(sys.inspect(data[d],false,5,true))",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"process.stdout.write(""\n"")",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+process.stdout.flush(),34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"setTimeout(cb,100)",34692d00a49a9d186f04e5f4935039e1cabfd948,0,0
+"log(d.replace(/\//, '@'), ""view "")",34692d00a49a9d186f04e5f4935039e1cabfd948,0,1
+process.stdout.write(sys.inspect(data[d])),34692d00a49a9d186f04e5f4935039e1cabfd948,0,1
+process.stdout.flush(),34692d00a49a9d186f04e5f4935039e1cabfd948,0,1
+cb(),34692d00a49a9d186f04e5f4935039e1cabfd948,0,1
+},34692d00a49a9d186f04e5f4935039e1cabfd948,0,1
+"json[""dev-dependencies""] = null",06dd026d04768edd7adf2aa37cf9a8d9e8c335be,3,1
+json.bundleDependencies = json.bundledDependencies,06dd026d04768edd7adf2aa37cf9a8d9e8c335be,1,0
+"var e = new Error(""bundleDependencies must be an array.\n""",06dd026d04768edd7adf2aa37cf9a8d9e8c335be,1,0
+"delete json[""dev-dependencies""]",06dd026d04768edd7adf2aa37cf9a8d9e8c335be,1,0
+if (json.bundledDependencies && !json.bundleDependencies) {,06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+delete json.bundledDependencies,06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+},06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+if (json.bundleDependencies && !Array.isArray(json.bundleDependencies)) {,06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+"+""See `npm help json`"")",06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+if (cb) return cb(e),06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+throw e,06dd026d04768edd7adf2aa37cf9a8d9e8c335be,0,0
+"function installManyTop_ (what, where, family, ancestors, explicit, parent, cb) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,5,0
+"function installMany (what, where, family, ancestors, explicit, parent, cb) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,5,0
+"function installManyTop (what, where, family, ancestors, explicit, parent, cb_) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,4,0
+"installManyTop_(what, where, family, ancestors, explicit, parent, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,4,0
+"if (er) return installMany(what, where, family, ancestors, explicit, parent, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,4,0
+"return installMany(what, where, family, ancestors, explicit, parent, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,4,0
+"function installManyTop_ (what, where, family, ancestors, explicit, cb) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,4,1
+"function installMany (what, where, family, ancestors, explicit, cb) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,4,1
+"function installManyTop (what, where, family, ancestors, explicit, cb_) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,3,1
+"installManyTop_(what, where, family, ancestors, explicit, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,3,1
+"if (er) return installMany(what, where, family, ancestors, explicit, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,3,1
+"return installMany(what, where, family, ancestors, explicit, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,3,1
+// doing `npm install foo` inside of the foo project.  Print,f16f7c3ec31ce2bd7460651075340d034677b7f0,3,0
+// Note: `npm install foo` inside of the `foo` package will abort,f16f7c3ec31ce2bd7460651075340d034677b7f0,3,0
+// each target will be a data object corresponding,f16f7c3ec31ce2bd7460651075340d034677b7f0,3,0
+// each target will be a data object corresponding,f16f7c3ec31ce2bd7460651075340d034677b7f0,3,1
+"target = dep + ""@"" + target",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"}), where, family, ancestors, false, data, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"fn(args, where, family, ancestors, true, data, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+var parent = data,f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"cb(er, [resultList(target, where, parent && parent._id)])",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"function resultList (target, where, parentId) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"d.push(resultList(target, where, parent && parent._id))",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"t = d + ""@"" + t",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"target = dep + ""@"" + target",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"}), where, family, ancestors, false, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"fn(args, where, family, ancestors, true, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"function resultList (target, where, parent) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"t = d + ""@"" + t",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"// if it's identical to its parent, then it's probably someone",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"// we need to still fail here, but just skip the first level. Of",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"// leave things in an undefined state, but that's what is to be",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+// is used *twice* here: to skip the first level of repetition.,f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+// only take the hit for readInstalled if there are probably bundled,f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"// to a package, folder, or whatever that is in the cache now.",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"asyncMap(targets, function (target, cb) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"installOne(target, where, newContext, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,0
+"// to a package, folder, or whatever that is in the cache now.",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"asyncMap(targets, function (target, cb) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+"installOne(target, where, newContext, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,2,1
+", targetResolver(where, family, ancestors, explicit, d, parent)",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"function targetResolver (where, family, ancestors, explicit, deps, parent) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+if (er && parent && parent.optionalDependencies &&,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+var parent = data._id,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+", targetResolver(where, family, ancestors, explicit, d)",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+"function targetResolver (where, family, ancestors, explicit, deps) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+"cb(er, [resultList(target, where, parent)])",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+", prettyWhere && parent",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+", parent && prettyWhere ]",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+"d.push(resultList(target, where, parent))",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+"// a warning, and skip it.",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"if (parent && parent.name === what && !npm.config.get(""force"")) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"log.warn(""Refusing to install ""+what+"" as a dependency of itself""",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+//,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"// earlier if `--force` is not set.  However, if it IS set, then",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"// course, it'll still fail eventually if it's a true cycle, and",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+// expected when `--force` is used.  That is why getPrototypeOf,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+// dependencies to read,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+targets.filter(function (t) { return t }).forEach(function (t) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+", parent: parent",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"}, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"log.verbose('install', what, 'is installed as', context.family[what])",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"return log.verbose(""installOne"", ""of"", target.name, ""to"", where, ""already in flight; waiting"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+"log.verbose(""installOne"", ""of"", target.name, ""to"", where, ""not in flight; installing"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,0
+targets.filter(function (t) { return t }).forEach(function (t) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+", parent: parent",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+"}, cb)",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+"""to"", where,",f16f7c3ec31ce2bd7460651075340d034677b7f0,1,1
+if (er) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"log.error(er, ""target resolver error"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+return cb(er),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+},f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"parent.optionalDependencies.hasOwnProperty(what.split(""@"").shift())) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"log.warn(what, ""optional dependency failed, continuing"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"return cb(null, [])",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+", prettyWhere && parentId",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+", parentId && prettyWhere ]",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"}), targetFolder, family, ancestors, false, target, function (er, d) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (!parsed.protocol) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+},f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"//log.warn(k, ""k"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"//log.warn(things, ""things"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"log.verbose(what, ""into ""+where)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+if (er) return cb(er),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"log.verbose(what, ""cache add"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"}), targetFolder, family, ancestors, false, function (er, d) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"//log.warn(d, ""write installMany cb"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+",""install"")",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"return cb(null, [])",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+},f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var p = Object.getPrototypeOf(Object.getPrototypeOf(ancestors)),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var p = Object.getPrototypeOf(ancestors),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+var bundled = data.bundleDependencies || data.bundledDependencies || [],f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (bundled.length) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"readInstalled(where, { dev: true }, andBuildResolvedTree)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+} else {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+andBuildResolvedTree(),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+},f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"function andBuildResolvedTree (er, current) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (er) return cb(er),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var newPrev = Object.create(context.family),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+", newAnc = Object.create(context.ancestors)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (!context.root) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+newAnc[data.name] = data.version,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+bundled.forEach(function (bundle) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var bundleData = current.dependencies[bundle],f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if ((!bundleData || !bundleData.version) && current.devDependencies) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+log.verbose(,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"'installMany', bundle, 'was bundled with',",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+data.name + '@' + data.version +,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+""", but wasn't found in dependencies. Trying devDependencies""",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+bundleData = current.devDependencies[bundle],f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (!bundleData || !bundleData.version) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+log.warn(,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+""", but bundled package wasn't found in unpacked tree""",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"'installMany', bundle + '@' + bundleData.version,",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"'was bundled with', data.name + '@' + data.version",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+newPrev[bundle] = bundleData.version,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+}),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+targets.forEach(function (t) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+newPrev[t.name] = t.version,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"log.silly(""install resolved"", targets)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"log.info(""install"", ""%s into %s"", t._id, where)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"log.info(""installOne"", target._id)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var wrapData = wrap ? wrap[target.name] : null,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var newWrap = wrapData && wrapData.dependencies,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+? wrap[target.name].dependencies || {},f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+: null,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var newContext = { family: newPrev,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+", ancestors: newAnc",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+", explicit: false",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+", wrap: newWrap }",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var isBundled = bd && bd.indexOf(d.name) !== -1,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"var currentIsSatisfactory = semver.satisfies(d.version, deps[d.name] || ""*"", true)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (isBundled || currentIsSatisfactory || deps[d.name] === d._resolved) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+if (!cb_) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+else {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+"if (semver.validRange(family[d], true)) {",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,0
+var newPrev = Object.create(context.family),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+", newAnc = Object.create(context.ancestors)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+if (!context.root) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+newAnc[data.name] = data.version,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+targets.forEach(function (t) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+newPrev[t.name] = t.version,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+}),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"log.silly(""install resolved"", targets)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"log.info(""install"", ""%s into %s"", t._id, where)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"log.info(""installOne"", target._id)",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+var wrapData = wrap ? wrap[target.name] : null,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+var newWrap = wrapData && wrapData.dependencies,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+? wrap[target.name].dependencies || {},f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+: null,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+var newContext = { family: newPrev,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+", ancestors: newAnc",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+", explicit: false",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+", wrap: newWrap }",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+if (bd && bd.indexOf(d.name) !== -1 ||,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"semver.satisfies(d.version, deps[d.name] || ""*"", true) ||",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+deps[d.name] === d._resolved) {,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+if (!cb_) return log.verbose(,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"""installOne"",",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"""of"", target.name,",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"""already in flight; waiting""",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+),f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+else log.verbose(,f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"""not in flight; installing""",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"if (semver.validRange(family[d], true))",f16f7c3ec31ce2bd7460651075340d034677b7f0,0,1
+"// set the env variables, then run scripts as a child process.",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+"log.warn('lifecycle', 'The node binary used for scripts is', foundExecPath, 'but npm is using', process.execPath, 'itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+if (er || !st.isDirectory()) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+if (p === d) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+if (prefix !== 'npm_package_') return env,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+if (i.charAt(0) === '_' && i.indexOf('_' + namePref) !== 0 || i.match(/:_/)) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+if (value instanceof Stream || Array.isArray(value)) return,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,3,1
+if (process.platform === 'win32') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (e.match(/^PATH$/i)) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+return pkg._id + '~' + stage + ':',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (!pkg) return cb(new Error('Invalid package data')),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (opts.ignoreScripts) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (stage === 'prepublish' && opts.ignorePrepublish) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (!pkg.scripts[stage]) return cb(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+"validWd(wd || path.resolve(opts.dir, pkg.name), function (er, wd) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (er) return cb(er),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+"if ((wd.indexOf(opts.dir) !== 0 || _incorrectWorkingDirectory(wd, pkg)) &&",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (!opts.unsafePerm) env.TMPDIR = wd,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (shouldPrependCurrentNodeDirToPATH(opts.scriptsPrependNodePath)) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (packageLifecycle) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (er) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (opts.force) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+} else if (opts.failOk) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (cfgsetting === false) return false,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (cfgsetting === true) return true,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (cfgsetting === 'warn-only') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (isDifferentNodeInPath && !shouldPrependCurrentNodeDirToPATH.hasWarned) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (foundExecPath) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+var p = path.dirname(d),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+"return cb(null, d)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+"// run package lifecycle scripts in the package root, or the nearest parent.",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+var note = '\n> ' + pkg._id + ' ' + stage + ' ' + wd +,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (queue.length) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (running) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (log.level !== 'silent') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (unsafe) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+function cb (er) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (!unsafe) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (customShell) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+} else if (process.platform === 'win32') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (signal) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+} else if (code) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (er.code !== 'EPERM') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+"fs.stat(opts.dir, function (statError, d) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (statError && statError.code === 'ENOENT' && opts.dir.split(path.sep).slice(-1)[0] === 'node_modules') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+"// check for a hook script, run if present.",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (er) return cb(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (!env) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (!i.match(/^npm_/)) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+} else if (!data.hasOwnProperty('_lifecycleEnv')) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (i.charAt(0) !== '_') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (i === 'readme') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (data[i] && typeof data[i] === 'object') {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+if (i.indexOf(namePref) === 0) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+} else if (i.indexOf(verPref) === 0) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+return env,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,2,1
+Object.keys(process.env).forEach(function (e) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function logid (pkg, stage) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"return lifecycle(pkg, stage, wd, opts, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function lifecycle (pkg, stage, wd, opts, cb) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+while (pkg && pkg._data) pkg = pkg._data,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+if (!pkg.scripts) pkg.scripts = {},56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+!opts.unsafePerm && pkg.scripts[stage]) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"log.warn('lifecycle', logid(pkg, stage), 'cannot run in wd',",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"'%s %s (wd=%s)', pkg._id, pkg.scripts[stage], wd",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return cb(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"var env = makeEnv(pkg, opts)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+env.npm_lifecycle_event = stage,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+env.npm_node_execpath = env.NODE = env.NODE || process.execPath,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"// even if it's never used, sh freaks out.",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function _incorrectWorkingDirectory (wd, pkg) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return wd.lastIndexOf(pkg.name) !== wd.length - pkg.name.length,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function lifecycle_ (pkg, stage, wd, opts, env, cb) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var p = wd.split(/[\\\/]node_modules[\\\/]/),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+p.forEach(function (pp) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+// prefer current node interpreter in child scripts,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+if (env[PATH]) pathArr.push(env[PATH]),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+} else {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"log.silly('lifecycle', logid(pkg, stage), 'no script for ' + stage + ', continuing')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+function done (er) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+er = null,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+function shouldPrependCurrentNodeDirToPATH (cfgsetting) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+try {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+} catch (e) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"log.warn('lifecycle', 'npm is using', process.execPath, 'but there is no node binary in the current PATH. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return false,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return isDifferentNodeInPath,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function validWd (d, cb) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"fs.stat(d, function (er, st) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return cb(new Error('Could not find suitable wd')),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"return validWd(p, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function runPackageLifecycle (pkg, env, wd, opts, cb) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var stage = env.npm_lifecycle_event,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+function dequeue () {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function runCmd (note, cmd, pkg, env, stage, wd, opts, cb) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var unsafe = opts.unsafePerm,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var user = unsafe ? null : opts.user,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var group = unsafe ? null : opts.group,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+unsafe = true,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"uidNumber(user, group, function (er, uid, gid) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function runCmd_ (cmd, pkg, env, wd, opts, stage, unsafe, uid, gid, cb_) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var conf = {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+sh = process.env.comspec || 'cmd',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"proc.on('close', function (code, signal) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var er = new Error('Exit status ' + code),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+function procError (er) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"log.info('lifecycle', logid(pkg, stage), 'Failed to exec ' + stage + ' script')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+er.message = pkg._id + ' ' + stage + ': `' + cmd + '`\n' +,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+er.stage = stage,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+return cb(er),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+function procKill () {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+function procInterupt () {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"proc.on('exit', function () {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function runHookLifecycle (pkg, env, wd, opts, cb) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"fs.stat(hook, function (er) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"function makeEnv (data, opts, prefix, env) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+prefix = prefix || 'npm_package_',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+env = {},56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+for (var i in process.env) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+if (opts.production) env.NODE_ENV = 'production',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+{,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+for (i in data) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+} catch (ex) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+var d = data[i],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+"{ name: d.name, version: d.version, path: d.path },",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+env,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+Object.keys(opts.config).forEach(function (i) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+if (i.match(/umask/)) value = umask.toString(value),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+if (!value) value = '',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+else if (typeof value === 'number') value = '' + value,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+else if (typeof value !== 'string') value = JSON.stringify(value),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+";[pkgConfig, pkgVerConfig].forEach(function (conf) {",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+for (var i in conf) {,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,1,1
+const log = require('npmlog'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,0
+"log: log,",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,0
+const lifecycle = require('npm-lifecycle'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,0
+"lifecycle(pkg, stage, wd, opts).then(cb, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,0
+exports.makeEnv = makeEnv,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+exports._incorrectWorkingDirectory = _incorrectWorkingDirectory,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var log = require('npmlog'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var spawn = require('./spawn'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var path = require('path'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var fs = require('graceful-fs'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var chain = require('slide').chain,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var Stream = require('stream').Stream,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var PATH = 'PATH',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var uidNumber = require('uid-number'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var umask = require('umask'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var which = require('which'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"// windows calls it's path 'Path' usually, but this is not guaranteed.",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+PATH = 'Path',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+PATH = e,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+},56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+}),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.info('lifecycle', logid(pkg, stage), pkg._id)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.info('lifecycle', logid(pkg, stage), 'ignored because ignore-scripts is set to true', pkg._id)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+pkg.scripts = {},56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.info('lifecycle', logid(pkg, stage), 'ignored because ignore-prepublish is set to true', pkg._id)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+delete pkg.scripts.prepublish,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env.npm_execpath = require.main.filename,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env.INIT_CWD = process.cwd(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// 'nobody' typically doesn't have permission to write to /tmp,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"lifecycle_(pkg, stage, wd, opts, env, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var pathArr = [],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var acc = path.resolve(p.shift()),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"pathArr.unshift(path.join(acc, 'node_modules', '.bin'))",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"acc = path.join(acc, 'node_modules', pp)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// we also unshift the bundled node-gyp-bin folder so that,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// the bundled one will be used for installing things.,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"pathArr.unshift(path.join(__dirname, '..', '..', 'bin', 'node-gyp-bin'))",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+pathArr.push(path.dirname(process.execPath)),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env[PATH] = pathArr.join(process.platform === 'win32' ? ';' : ':'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var packageLifecycle = pkg.scripts && pkg.scripts.hasOwnProperty(stage),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// define this here so it's available to all scripts.,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env.npm_lifecycle_script = pkg.scripts[stage],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.info('lifecycle', logid(pkg, stage), 'forced, continuing', er)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.warn('lifecycle', logid(pkg, stage), 'continuing anyway', er.message)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+cb(er),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+chain(,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+[,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"packageLifecycle && [runPackageLifecycle, pkg, env, wd, opts],",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"[runHookLifecycle, pkg, env, wd, opts]",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"],",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+done,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var isDifferentNodeInPath,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var isWindows = process.platform === 'win32',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var foundExecPath,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"foundExecPath = which.sync(path.basename(process.execPath), {pathExt: isWindows ? ';' : ':'})",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// Apply `fs.realpath()` here to avoid false positives when `node` is a symlinked executable.,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+isDifferentNodeInPath = fs.realpathSync(process.execPath).toUpperCase() !==,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+fs.realpathSync(foundExecPath).toUpperCase(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+isDifferentNodeInPath = true,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+shouldPrependCurrentNodeDirToPATH.hasWarned = true,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var cmd = env.npm_lifecycle_script,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+'\n> ' + cmd + '\n',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"runCmd(note, cmd, pkg, env, stage, wd, opts, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var running = false,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var queue = [],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+running = false,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var r = queue.shift(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"runCmd.apply(null, r)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"queue.push([note, cmd, pkg, env, stage, wd, cb])",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+running = true,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+log.pause(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+log.clearProgress(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+console.log(note),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+log.showProgress(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.verbose('lifecycle', logid(pkg, stage), 'unsafe-perm in lifecycle', unsafe)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"runCmd_(cmd, pkg, env, wd, opts, stage, unsafe, 0, 0, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"runCmd_(cmd, pkg, env, wd, opts, stage, unsafe, uid, gid, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"cb_.apply(null, arguments)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+log.resume(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+process.nextTick(dequeue),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"cwd: wd,",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"env: env,",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"stdio: [ 0, 1, 2 ]",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+conf.uid = uid ^ 0,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+conf.gid = gid ^ 0,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var sh = 'sh',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var shFlag = '-c',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var customShell = opts.scriptShell,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+sh = customShell,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+shFlag = '/d /s /c',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+conf.windowsVerbatimArguments = true,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.verbose('lifecycle', logid(pkg, stage), 'PATH:', env[PATH])",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.verbose('lifecycle', logid(pkg, stage), 'CWD:', wd)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.silly('lifecycle', logid(pkg, stage), 'Args:', [shFlag, cmd])",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"var proc = spawn(sh, [shFlag, cmd], conf)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"proc.on('error', procError)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.silly('lifecycle', logid(pkg, stage), 'Returned: code:', code, ' signal:', signal)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.kill(process.pid, signal)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+er.errno = code,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+procError(er),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.once('SIGTERM', procKill)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.once('SIGINT', procInterupt)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+er.message,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+er.code = 'ELIFECYCLE',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"log.warn('', 'Local package.json exists, but node_modules missing, did you mean to install?')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+er.pkgid = pkg._id,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+er.script = cmd,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+er.pkgname = pkg.name,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.removeListener('SIGTERM', procKill)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.removeListener('SIGTERM', procInterupt)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.removeListener('SIGINT', procKill)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+proc.kill(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+proc.kill('SIGINT'),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+process.exit(),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"process.once('SIGINT', procKill)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"var hook = path.join(opts.dir, '.hooks', stage)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var cmd = hook,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+'\n> ' + cmd,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"runCmd(note, hook, pkg, env, stage, wd, opts, cb)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env[i] = process.env[i],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// express and others respect the NODE_ENV value.,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"Object.defineProperty(data, '_lifecycleEnv',",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"value: env,",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+enumerable: false,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"var envKey = (prefix + i).replace(/[^a-zA-Z0-9_]/g, '_')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+continue,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// quick and dirty detection for cyclical structures,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+JSON.stringify(data[i]),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"makeEnv(data[i], opts, envKey + '_', env)",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// usually these are package objects.,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+// just get the path and basic details.,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+makeEnv(,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"opts,",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"envKey + '_',",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env[envKey] = String(data[i]),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env[envKey] = env[envKey].indexOf('\n') !== -1,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+? JSON.stringify(env[envKey]),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+: env[envKey],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+prefix = 'npm_config_',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var pkgConfig = {},56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var pkgVerConfig = {},56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var namePref = data.name + ':',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var verPref = data.name + '@' + data.version + ':',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"// in some rare cases (e.g. working with nerf darts), there are segmented",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"// ""private"" (underscore-prefixed) config names -- don't export",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var value = opts.config[i],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+value = value.indexOf('\n') !== -1,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+? JSON.stringify(value),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+: value,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"i = i.replace(/^_+/, '')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var k,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"k = i.substr(namePref.length).replace(/[^a-zA-Z0-9_]/g, '_')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+pkgConfig[k] = value,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"k = i.substr(verPref.length).replace(/[^a-zA-Z0-9_]/g, '_')",56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+pkgVerConfig[k] = value,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env[envKey] = value,56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+prefix = 'npm_package_config_',56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+var envKey = (prefix + i),56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+env[envKey] = conf[i],56a6dd3ad00e6efcc1b1dfb6b84eb21eca82352d,0,1
+"// cp the gzip of the tarball, pipe the stdout into tar's stdin",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,4,0
+"// cp the gzip of the tarball, pipe the stdout into tar's stdin",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,4,1
+"// now we read the json, so we know it's there.",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,3,1
+"// curse you, nfs!  It will lie and tell you that the",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,2,1
+// reading the file should cause it to wait until it's done.,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,2,1
+// HACK skip on windows,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,2,1
+folder = folder && folder.filter(function (f) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,2,1
+// gzip {tarball} --decompress --stdout \,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,0
+//   | tar -mvxpf - --strip-components=1 -C {unpackTarget},beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,0
+"// figure out who we're supposed to be, if we're not pretending",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,0
+// to be a specific user.,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,0
+"// if there's a specific owner uid/gid that we want, then set that",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,0
+// gzip {tarball} --decompress --stdout \,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+//   | tar -mvxpf - --strip-components=1 -C {unpackTarget},beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+"moveIntoPlace(folder, unpackTarget, function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+"// mv is done, when in fact, it isn't.  In theory,",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+"// if we're not doing ownership management,",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+// then we're done now.,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+"cb(er, folder && path.resolve(tmp, folder[0]))",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,1,1
+if (process.env.SUDO_UID && myUid === 0) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+if (!isNaN(process.env.SUDO_UID)) myUid = +process.env.SUDO_UID,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+if (!isNaN(process.env.SUDO_GID)) myGid = +process.env.SUDO_GID,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+},beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"rm(unpackTarget, function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+if (er) return cb(er),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"mkdir(unpackTarget, dMode || npm.modes.exec, uid, gid, function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"log.verbose([uid, gid], ""unpack_ uid, gid"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"log.verbose(unpackTarget, ""unpackTarget"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"gunzTarPerm( tarball, unpackTarget",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+", dMode, fMode",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+", uid, gid",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+", function (er, folder) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"log.verbose(folder, ""gunzed"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"readJson(path.resolve(folder, ""package.json""), cb)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+}),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"function gunzTarPerm (tarball, target, dMode, fMode, uid, gid, cb_) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+var cbCalled = false,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+function cb (er) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+if (cbCalled) return,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+cbCalled = true,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"cb_(er, target)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"if (npm.config.get(""unsafe-perm"") && process.platform !== ""win32"") {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+uid = myUid,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+gid = myGid,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+entry.mode = entry.mode & (~npm.modes.umask),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"if (process.platform !== ""win32"" &&",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"typeof uid === ""number"" &&",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"typeof gid === ""number"") {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+entry.props.uid = entry.uid = uid,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+entry.props.gid = entry.gid = gid,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"var extractOpts = { type: ""Directory"", path: target, strip: 1 }",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+var extracter = tar.Extract(extractOpts),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+.pipe(tar.Extract(extractOpts)),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+".on(""close"", cb)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+".pipe(fstream.Writer({ path: path.resolve(target, ""index.js"") }))",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"var j = path.resolve(target, ""package.json"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+"fs.writeFile(j, JSON.stringify(d) + ""\n"", cb)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,0
+", tmp = path.resolve(parent, ""___"" + base + "".npm"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"mkdir(tmp, dMode || npm.modes.exec, uid, gid, function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.verbose([uid, gid], ""unpack_ uid, gid"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.verbose(unpackTarget, ""unpackTarget"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"if (er) return log.er(cb, ""Could not create ""+tmp)(er)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"gunzTarPerm( tarball, tmp",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+", dMode, fMode",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+", uid, gid",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+", function (er, folder) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.verbose(folder, ""gunzed"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"rm(unpackTarget, function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.verbose(unpackTarget, ""rm'ed"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+if (er) return cb(er),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.verbose([folder, unpackTarget], ""renamed"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"readJson( path.resolve(unpackTarget, ""package.json"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+", function (er, data) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"rm(tmp, function (er2) { cb(er || er2, data) })",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+}),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"function gunzTarPerm (tarball, tmp, dMode, fMode, uid, gid, cb) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"var extracter = tar.Extract({ type: ""Directory"", path: tmp })",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+".pipe(tar.Extract({ type: ""Directory"", path: tmp }))",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+".on(""close"", afterUntar)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+".pipe(fstream.Writer({ path: path.resolve(tmp, ""package/index.js"") }))",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"var j = path.resolve(tmp, ""package/package.json"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"fs.writeFile(j, JSON.stringify(d) + ""\n"", function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+return afterUntar(),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+function afterUntar (er) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.silly(er || ""ok"", ""afterUntar"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"if (er) return log.er(cb, ""Failed unpacking ""+tarball)(er)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"if (npm.config.get(""unsafe-perm"") && process.platform !== ""win32"") {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+uid = process.getuid(),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+gid = process.getgid(),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+if (uid === 0) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+if (process.env.SUDO_UID) uid = +process.env.SUDO_UID,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+if (process.env.SUDO_GID) gid = +process.env.SUDO_GID,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+},beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"if (process.platform === ""win32"") {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"return fs.readdir(tmp, function (er, files) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+files = files.filter(function (f) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"return f && f.indexOf(""\0"") === -1",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"cb(er, files && path.resolve(tmp, files[0]))",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"find(tmp, function (f) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+return f !== tmp,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"}, function (er, files) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"asyncMap(files, function (f, cb) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+f = path.resolve(f),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.silly(f, ""asyncMap in gTP"")",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"fs.lstat(f, function (er, stat) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+if (er || stat.isSymbolicLink()) return cb(er),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"if (typeof uid === ""number"" && typeof gid === ""number"") {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"fs.chown(f, uid, gid, chown)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+} else chown(),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+function chown (er) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+var mode = stat.isDirectory() ? dMode : fMode,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+", oldMode = stat.mode & 0777",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+", newMode = (oldMode | mode) & (~npm.modes.umask)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+if (mode && newMode !== oldMode) {,beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"log.silly(newMode.toString(8), ""chmod ""+path.basename(f))",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"fs.chmod(f, newMode, cb)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+} else cb(),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"}, function (er) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"if (typeof myUid === ""number"" && typeof myGid === ""number"") {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"fs.chown(tmp, myUid, myGid, chown)",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"fs.readdir(tmp, function (er, folder) {",beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+return f && !f.match(/^\._/),beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,0,1
+"json[d] = json.hasOwnProperty(d) ? depObjectify(json[d], d, json._id) : {}",eac92ef67c62d2213b905d1053bc302f004d8e57,4,1
+"? depObjectify(json[d], d, json._id)",eac92ef67c62d2213b905d1053bc302f004d8e57,2,0
+"if (opts.dev || npm.config.get(""dev"") || npm.config.get(""npat"")) {",eac92ef67c62d2213b905d1053bc302f004d8e57,2,1
+json[d] = json.hasOwnProperty(d),eac92ef67c62d2213b905d1053bc302f004d8e57,1,0
+: {},eac92ef67c62d2213b905d1053bc302f004d8e57,1,0
+// always merge optionals into deps,eac92ef67c62d2213b905d1053bc302f004d8e57,1,0
+"|| npm.config.get(""dev"")",eac92ef67c62d2213b905d1053bc302f004d8e57,1,0
+"|| npm.config.get(""npat"")) {",eac92ef67c62d2213b905d1053bc302f004d8e57,1,0
+"; [ ""dependencies""",eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+", ""devDependencies""",eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+", ""optionalDependencies""",eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+].forEach(function (d) {,eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+}),eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+Object.keys(json.optionalDependencies).forEach(function (d) {,eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+json.dependencies[d] = json.optionalDependencies[d],eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+if (opts.dev,eac92ef67c62d2213b905d1053bc302f004d8e57,0,0
+";[""dependencies"", ""devDependencies""].forEach(function (d) {",eac92ef67c62d2213b905d1053bc302f004d8e57,0,1
+"exec( npm.config.get(""git""), [""clone"", u, tmp], null, false",80da8e392ab79cfd689fffe560ff46d67b54a725,6,1
+"exec( npm.config.get(""git""), [""checkout"", co], null, false, tmp",80da8e392ab79cfd689fffe560ff46d67b54a725,6,1
+"( [ [ exec, git, [ ""add"", ""package.json"" ], {env: process.env} ]",80da8e392ab79cfd689fffe560ff46d67b54a725,6,0
+", [ exec, git, [ ""commit"", ""-m"", message ], {env: process.env} ]",80da8e392ab79cfd689fffe560ff46d67b54a725,6,0
+", [""commit"", ""-m"", message ], process.env, false ]",80da8e392ab79cfd689fffe560ff46d67b54a725,6,1
+", [""tag"", ""v""+data.version, flag, message], process.env, false ] ]",80da8e392ab79cfd689fffe560ff46d67b54a725,6,1
+"exec( npm.config.get(""git""), [""clone"", u, tmp], gitEnv(), false",80da8e392ab79cfd689fffe560ff46d67b54a725,5,0
+"exec( npm.config.get(""git""), [""checkout"", co], gitEnv(), false, tmp",80da8e392ab79cfd689fffe560ff46d67b54a725,5,0
+"exec( npm.config.get(""git""), [ ""submodule"", ""update"", ""--init""",80da8e392ab79cfd689fffe560ff46d67b54a725,5,1
+"exec( npm.config.get(""git""), [ ""submodule"", ""add"", url",80da8e392ab79cfd689fffe560ff46d67b54a725,5,1
+"exec( npm.config.get(""git""), [""submodule"", ""status""], null, false",80da8e392ab79cfd689fffe560ff46d67b54a725,5,1
+", [ exec, git, [ ""tag"", ""v"" + data.version, flag, message ]",80da8e392ab79cfd689fffe560ff46d67b54a725,5,0
+"exec( npm.config.get(""git""), [""status"", ""--porcelain""], process.env, false",80da8e392ab79cfd689fffe560ff46d67b54a725,5,1
+", [""add"",""package.json""], process.env, false ]",80da8e392ab79cfd689fffe560ff46d67b54a725,5,1
+"var args = [ ""submodule"", ""update"", ""--init"", ""node_modules/"", name ]",80da8e392ab79cfd689fffe560ff46d67b54a725,4,0
+"var args = [ ""submodule"", ""add"", url, ""node_modules/"", name ]",80da8e392ab79cfd689fffe560ff46d67b54a725,4,0
+"var arg = [ ""submodule"", ""status"" ]",80da8e392ab79cfd689fffe560ff46d67b54a725,3,0
+", {env: process.env} ] ]",80da8e392ab79cfd689fffe560ff46d67b54a725,3,0
+"( [ [ exec, npm.config.get(""git"")",80da8e392ab79cfd689fffe560ff46d67b54a725,3,1
+", [ exec, npm.config.get(""git"")",80da8e392ab79cfd689fffe560ff46d67b54a725,3,1
+// git responds to env vars in some weird ways in post-receive hooks,80da8e392ab79cfd689fffe560ff46d67b54a725,2,0
+", exec = require(""child_process"").execFile",80da8e392ab79cfd689fffe560ff46d67b54a725,2,0
+", exec = require(""./utils/exec.js"")",80da8e392ab79cfd689fffe560ff46d67b54a725,2,1
+", ""node_modules/"" + name ]",80da8e392ab79cfd689fffe560ff46d67b54a725,2,1
+", null, true, npm.prefix, cb)",80da8e392ab79cfd689fffe560ff46d67b54a725,2,1
+", null, true, npm.prefix, function (er) {",80da8e392ab79cfd689fffe560ff46d67b54a725,2,1
+"var args = [ ""status"", ""--porcelain"" ]",80da8e392ab79cfd689fffe560ff46d67b54a725,2,0
+"var git = npm.config.get(""git"")",80da8e392ab79cfd689fffe560ff46d67b54a725,1,0
+", npm.prefix, function (er, code, stdout, stderr) {",80da8e392ab79cfd689fffe560ff46d67b54a725,1,1
+"var exec = require(""child_process"").execFile",80da8e392ab79cfd689fffe560ff46d67b54a725,1,0
+"var git = npm.config.get(""git"")",80da8e392ab79cfd689fffe560ff46d67b54a725,1,0
+var env = process.env,80da8e392ab79cfd689fffe560ff46d67b54a725,1,0
+"var exec = require(""./utils/exec.js"")",80da8e392ab79cfd689fffe560ff46d67b54a725,1,1
+", function (er, code, stdout, stderr) {",80da8e392ab79cfd689fffe560ff46d67b54a725,1,1
+var gitEnv_,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+function gitEnv () {,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+// so don't carry those along.,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+if (gitEnv_) return gitEnv_,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+gitEnv_ = {},80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+for (var k in process.env) {,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+if (k.match(/^GIT/)) continue,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+gitEnv_[k] = process.env[k],80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+},80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+return gitEnv_,80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+"exec(git, args, cb)",80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+"exec(git, args, function (er) {",80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+"exec(git, args, function (er, stdout, stderr) {",80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+"exec(git, args, {env: env}, function (er, stdout, stderr) {",80da8e392ab79cfd689fffe560ff46d67b54a725,0,0
+", pretty = prettify(tree, installed).trim()",8933ccdd0e803defc5a8fa028a29e326bfd41150,4,0
+", pretty = prettify(tree, installed).trim()",8933ccdd0e803defc5a8fa028a29e326bfd41150,4,1
+", readInstalled = require(""read-installed"")",8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+"findPeerInvalid(where, function (er, problem) {",8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+if (er) return cb_(er),8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+if (problem) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+var tree = treeify(installed || []),8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+"function findPeerInvalid (where, cb) {",8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+"readInstalled(where, function (er, data) {",8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+if (er) return cb(er),8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+function findPeerInvalid_ (packageMap) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+if (pkg.peerInvalid) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+if (peer.peerDependencies && peer.peerDependencies[packageName]) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+"return { name: pkg.name, peersDepending: peersDepending }",8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+if (peerInvalidDep) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,2,0
+var tree = treeify(installed || []),8933ccdd0e803defc5a8fa028a29e326bfd41150,2,1
+if (er) return cb_(er),8933ccdd0e803defc5a8fa028a29e326bfd41150,2,1
+"var peerInvalidError = new Error(""The package "" + problem.name +",8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+"peerInvalidError.code = ""EPEERINVALID""",8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+peerInvalidError.packageName = problem.name,8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+peerInvalidError.peersDepending = problem.peersDepending,8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+},8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+if (pretty) console.log(pretty),8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+for (var packageName in packageMap) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+var pkg = packageMap[packageName],8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+var peersDepending = {};,8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+for (peerName in packageMap) {,8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+var peer = packageMap[peerName],8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+"peersDepending[peer.name + ""@"" + peer.version] =",8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+var peerInvalidDep = pkg.dependencies && findPeerInvalid_(pkg.dependencies),8933ccdd0e803defc5a8fa028a29e326bfd41150,1,0
+if (pretty) console.log(pretty),8933ccdd0e803defc5a8fa028a29e326bfd41150,1,1
+""" does not satisfy its siblings' peerDependencies requirements!"")",8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+return cb(peerInvalidError),8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+"save(where, installed, tree, pretty, cb_)",8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+}),8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+"cb(null, findPeerInvalid_(data.dependencies))",8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+peer.peerDependencies[packageName],8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+return peerInvalidDep,8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+return null,8933ccdd0e803defc5a8fa028a29e326bfd41150,0,0
+"save(where, installed, tree, pretty, cb_)",8933ccdd0e803defc5a8fa028a29e326bfd41150,0,1
+"mr({port : common.port}, function (er, server) {",1f108b8a1f0f28a21b4ba4d0b86037abfd426dcd,1,0
+"mr(common.port, function (server) {",1f108b8a1f0f28a21b4ba4d0b86037abfd426dcd,1,1
+if (parsed && (parsed.reason === r409 || parsed.reason === r409b)) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,4,0
+"var url = require(""url"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,4,1
+var url = require('url'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var crypto = require('crypto'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var er = new Error('auth required for publishing'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var root = {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var r409 = 'must supply latest _rev to update existing package',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var r409b = 'Document update conflict.',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+"if (!er && !conflict) return cb(er, parsed, json, res)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var AUTH = {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+var PARAMS = {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,0
+"var er = new Error(""auth required for publishing"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+"var r409 = ""must supply latest _rev to update existing package""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+"var r409b = ""Document update conflict.""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+if (parsed && (parsed.reason === r409 || parsed.reason === r409b)),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+if (!er && !conflict),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+"var crypto = require(""crypto"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+var AUTH      = {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+var PARAMS  = {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,3,1
+var semver = require('semver'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var Stream = require('stream').Stream,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var assert = require('assert'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var fixer = require('normalize-package-data/lib/fixer.js'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var concat = require('concat-stream'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var tbName = data.name + '-' + data.version + '.tgz',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var tbURI = data.name + '/-/' + tbName,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+"client.request(fixed + '?write=true', { auth: auth }, function (er, current) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+}).concat(Object.keys(current.time || {}).map(function (v) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var e = new Error('cannot modify pre-existing version'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var test = require('tap').test,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var fs = require('fs'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var server = require('./lib/server.js'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var common = require('./lib/common.js'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var URI = 'http://localhost:1337/',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var USERNAME = 'username',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var PASSWORD = '%1234@asdf%',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var EMAIL = 'i@izs.me',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var METADATA = require('../package.json'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var ACCESS = 'public',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var BODY_PATH = require.resolve('../package.json'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var BODY = fs.createReadStream(BODY_PATH),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+"test('publish call contract', function (t) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+"var pd = fs.readFileSync(BODY_PATH, 'base64')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var b = '',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+var att = o._attachments[METADATA.name + '-' + METADATA.version + '.tgz'],2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+"var hash = crypto.createHash('sha1').update(pd, 'base64').digest('hex')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,0
+", crypto = require(""crypto"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+var root =,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"root.maintainers = [{name : auth.username, email : auth.email}]",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var tbName = data.name + ""-"" + data.version + "".tgz""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"client.request(fixed+""?write=true"", { auth : auth }, function (er, current) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+}).concat(Object.keys(current.time || {}).map(function(v) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var e = new Error(""cannot modify pre-existing version"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var test = require(""tap"").test",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var fs = require(""fs"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var server = require(""./lib/server.js"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var common = require(""./lib/common.js"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var URI       = ""http://localhost:1337/""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var USERNAME  = ""username""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var PASSWORD  = ""%1234@asdf%""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var EMAIL     = ""i@izs.me""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var METADATA  = require(""../package.json"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var ACCESS    = ""public""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var BODY_PATH = require.resolve(""../package.json"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var BODY      = fs.createReadStream(BODY_PATH, ""base64"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"test(""publish call contract"", function (t) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"{ name : ""AssertionError"", message : ""must pass package metadata to publish"" },",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"{ name : ""AssertionError"", message : ""must pass package body to publish"" },",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"{ name : ""AssertionError"", message : ""must pass auth to publish"" },",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var pd = fs.readFileSync(BODY_PATH, ""base64"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var b = """"",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var att = o._attachments[METADATA.name+""-""+METADATA.version+"".tgz""]",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"var hash = crypto.createHash(""sha1"").update(pd, ""base64"").digest(""hex"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,2,1
+"assert(typeof uri === 'string', 'must pass registry URI to publish')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"assert(params && typeof params === 'object', 'must pass params to publish')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"assert(typeof cb === 'function', 'must pass callback to publish')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"(!access) || ['public', 'restricted'].indexOf(access) !== -1,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"assert(auth && typeof auth === 'object', 'must pass auth to publish')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+er.code = 'ENEEDAUTH',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"metadata && typeof metadata === 'object',",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+} catch (er) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+if (!version) return cb(new Error('invalid semver: ' + metadata.version)),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"sink.on('error', cb)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+readme: data.readme || '',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"root.maintainers = [{ name: auth.username, email: auth.email }]",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+root['dist-tags'][tag] = data.version,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+data._id = data.name + '@' + data.version,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+data.dist.shasum = crypto.createHash('sha1').update(tarbuffer).digest('hex'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"client.log.error('publish', 'Failed PUT ' + (res && res.statusCode))",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"if (semver.valid(v, true)) return semver.clean(v, true)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+}).filter(function (v) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+e.code = 'EPUBLISHCONFLICT',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"{ name: 'AssertionError', message: 'must pass package metadata to publish' },",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"{ name: 'AssertionError', message: 'must pass package body to publish' },",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"{ name: 'AssertionError', message: 'must pass auth to publish' },",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"t.test('malformed semver in publish', function (t) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+metadata.version = '%!@#$',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"test('publish', function (t) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"server.expect('/npm-registry-client', function (req, res) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"req.on('data', function (d) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"req.on('end', function () {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+"t.deepEqual(data, { created: true })",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,0
+", semver = require(""semver"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+", Stream = require(""stream"").Stream",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+", assert = require(""assert"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+", fixer = require(""normalize-package-data/lib/fixer.js"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+", concat = require(""concat-stream"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"assert(typeof uri === ""string"", ""must pass registry URI to publish"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"assert(params && typeof params === ""object"", ""must pass params to publish"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"assert(typeof cb === ""function"", ""must pass callback to publish"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"(!access) || [""public"", ""restricted""].indexOf(access) !== -1,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"assert(auth && typeof auth === ""object"", ""must pass auth to publish"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"er.code = ""ENEEDAUTH""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"metadata && typeof metadata === ""object"",",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+catch (er) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"if (!version) return cb(new Error(""invalid semver: "" + metadata.version))",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"sink.on(""error"", cb)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+{ _id : data.name,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+", readme: data.readme || """"",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"root[""dist-tags""][tag] = data.version",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+", tbURI = data.name + ""/-/"" + tbName",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"data._id = data.name+""@""+data.version",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"data.dist.shasum = crypto.createHash(""sha1"").update(tarbuffer).digest(""hex"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"client.log.error(""publish"", ""Failed PUT ""+(res && res.statusCode))",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"if (semver.valid(v, true))",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+}).filter(function(v) {,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"e.code = ""EPUBLISHCONFLICT""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"username : USERNAME,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+email    : EMAIL,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"message : ""if present, access level must be either 'public' or 'restricted'""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"message : ""package body passed to publish must be a stream""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"t.test(""malformed semver in publish"", function (t) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"metadata.version = ""%!@#$""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"message : BODY,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"test(""publish"", function (t) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"server.expect(""/npm-registry-client"", function (req, res) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"req.on(""data"", function (d) {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"req.on(""end"", function () {",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"t.same(o.maintainers, [{ name : ""username"", email : ""i@izs.me"" }])",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"t.deepEqual(data, { created : true })",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,1,1
+"return name.replace('/', '%2f')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'must pass package metadata to publish',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"assert(body, 'must pass package body to publish')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"assert(body instanceof Stream, 'package body passed to publish must be a stream')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"_id: data.name,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"name: data.name,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"description: data.description,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"'dist-tags': {},",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"versions: {},",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+},2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+".replace(/^https:\/\//, 'http://')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"'content_type': 'application/octet-stream',",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"'data': tarbuffer.toString('base64'),",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'length': tarbuffer.length,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"method: 'PUT',",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"body: root,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+auth: auth,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+case 'dist-tags':,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+case 'versions':,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+case '_attachments':,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+case 'maintainers':,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"body: current,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"username: USERNAME,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"password: PASSWORD,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+email: EMAIL,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"metadata: METADATA,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"access: ACCESS,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"body: BODY,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+auth: AUTH,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"}, 'requires a URI')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"}, 'requires URI to be a string')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"}, 'requires params object')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"client.publish(URI, '', nop)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"}, 'params must be object')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"}, 'requires callback')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"client.publish(URI, PARAMS, 'callback')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"}, 'callback must be function')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'params must include metadata for package',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'params must include body of package to publish',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+body: BODY,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'params must include auth',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"metadata: -1,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'metadata must be object',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"access: 'hamchunx',",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"name: 'AssertionError',",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"message: ""if present, access level must be either 'public' or 'restricted'""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"body: -1,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+message: 'package body passed to publish must be a stream',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'body must be a Stream',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"metadata: metadata,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"message: BODY,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"'invalid semver: %!@#$',",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+'got expected semver validation failure',2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"t.equal(req.method, 'PUT')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+req.setEncoding('utf8'),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"t.equal(o._id, 'npm-registry-client')",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"t.equal(o['dist-tags'].latest, METADATA.version)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"t.same(o.maintainers, [{ name: 'username', email: 'i@izs.me' }])",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+res.json({ created: true }),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,0
+"return name.replace(""/"", ""%2f"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""must pass package metadata to publish""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+},2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"assert(body, ""must pass package body to publish"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"assert(body instanceof Stream, ""package body passed to publish must be a stream"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+", name : data.name",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+", description : data.description",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+", ""dist-tags"" : {}",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+", versions : {}",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+".replace(/^https:\/\//, ""http://"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""content_type"": ""application/octet-stream"",",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""data"": tarbuffer.toString(""base64""),",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""length"": tarbuffer.length",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"method : ""PUT"",",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"body : root,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+auth : auth,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"return cb(er, parsed, json, res)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"return semver.clean(v, true)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"case ""dist-tags"":",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"case ""versions"":",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"case ""_attachments"":",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"case ""maintainers"":",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"body   : current,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+auth   : auth,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"password : PASSWORD,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"metadata : METADATA,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"access   : ACCESS,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"body     : BODY,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+auth     : AUTH,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"}, ""requires a URI"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"}, ""requires URI to be a string"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"}, ""requires params object"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"client.publish(URI, """", nop)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"}, ""params must be object"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"}, ""requires callback"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"client.publish(URI, PARAMS, ""callback"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"}, ""callback must be function"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"access : ACCESS,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"body : BODY,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+auth : AUTH,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""params must include metadata for package""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""params must include body of package to publish""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+body : BODY,2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""params must include auth""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"metadata : -1,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""metadata must be object""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"access : ""hamchunx"",",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"name    : ""AssertionError"",",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"body : -1,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""body must be a Stream""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"metadata : metadata,",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""invalid semver: %!@#$"",",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"""got expected semver validation failure""",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"t.equal(req.method, ""PUT"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"req.setEncoding(""utf8"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"t.equal(o._id, ""npm-registry-client"")",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"t.equal(o[""dist-tags""].latest, METADATA.version)",2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+res.json({ created : true }),2da4f398bf3fe0880b520e299ce0d91c8d20f0c4,0,1
+"addLocalTarball(tmp, null, null, function(er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,6,1
+"tar.unpack(tgz, target, null, null, cs.uid, cs.gid, function (er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,5,0
+"function addLocalTarball (p, pkgData, shasum, cb) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,0
+"addTmpTarball(p, pkgData, shasum, function (er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,0
+"addTmpTarball_(tgz, data, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,0
+"function addLocalTarball (p, pkgData, shasum, cb_) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,1
+"function cb (er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,1
+"addTmpTarball_(tgz, data, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,1
+"addLocal(spec, null, function (er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,4,0
+"addLocalTarball(p, pkgData, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,0
+"return addTmpTarball_(tgz, pkgData, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,0
+"// If we don't have a shasum yet, then get the shasum now.",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"addLocalTarball(p, pkgData, shasum, cb_)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"// then unzip to .tmp, add the tmp folder, and clean up tmp",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"addTmpTarball_(tgz, pkgData, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"readJson(pj, function (er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"function needName(er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"function needVersion(er, data) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"function fetchRemote (p, u, co, origUrl, cb) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,0
+"function resolveHead (p, u, co, origUrl, cb) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,0
+"function cache (p, u, treeish, resolved, cb) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,0
+"function archiveGitRemote (p, u, co, origUrl, cb) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,3,1
+"assert(typeof cb === ""function"", ""must have callback"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"// If we don't have a shasum yet, compute it.",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"return addPlacedTarball(p, pkgData, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"assert(shasum, ""must have shasum by now"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"randomBytes(6, function (er, random) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+else if (pkgData.name && data.name !== pkgData.name) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+else if (pkgData.version && data.version !== pkgData.version) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"var name = pkgData.name || """"",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"return addTmpTarball(p, pkgData, shasum, cb_)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"return addPlacedTarball(p, pkgData, shasum, cb_)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"var tmp = path.join(npm.tmp, name + Date.now()",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"mkdir(path.dirname(tmp), function (er) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+function errHandler (er) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"to.on(""close"", function () {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"addTmpTarball(tmp, pkgData, shasum, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"assert(shasum, ""should have shasum by now"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"tar.unpack(tgz, target, null, null, cs.uid, cs.gid, next)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+function next (er) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"er = needName(er, data)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"er = needVersion(er, data)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+return er ? er,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"{ cwd : p, env : gitEnv },",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"function (er, stdout, stderr) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"{ cwd : p, env : gitEnv() },",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+} else {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+else {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"{ cwd : tmp, env : gitEnv() },",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"realizePackageSpecifier(tmp, function (er, spec) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,0
+"git.whichAndExec(args, {cwd: p, env: env}, function (er, stdout, stderr) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+} else {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"git.whichAndExec(archive, {cwd: p, env: env}, function (er, stdout, stderr) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+function resolveHead () {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"git.whichAndExec(resolve, {cwd: p, env: env}, function (er, stdout, stderr) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+function next () {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"mkdir(path.dirname(tmp), function (er) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"var cp = git.spawn(args, { env: env, cwd: p })",0404aa49d0affc618b7b15b63eb07cdd7d49906a,2,1
+"if (path.basename(p) !== ""package.tgz"") {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"return cb(new Error(""Not a valid cache tarball name: ""+p))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"return cb(er, data)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"log.verbose(""addTmpTarball"", ""already have metadata; skipping unpack"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"// NOTE: we might not have any clue what we think it is, for example if the",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"getCacheStat(function (er, cs) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+if (!data.name) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"return cb(new Error(""No name provided""))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+if (!data.version) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"return cb(new Error(""No version provided""))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"assert(typeof cb_ === ""function"", ""must have callback"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"""Not a valid cache tarball name: ""+p))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"return cb_(er, data)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+// just copy it over and then add the temp tarball file.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+", to = writeStream(tmp, { mode: npm.modes.file })",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+", errState = null",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"// Note: we might not have any clue what we think it is, for",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"var target = tgz + ""-unpack""",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"getCacheStat(function (er, cs) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+if (!er && pkgData.name && pkgData.name !== data.name) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"er = new Error( ""Invalid Package: expected """,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+if (!er && pkgData.version && pkgData.version !== data.version) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+": (data && !data.name) ? new Error(""No name provided"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+: null,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+": (data && !data.version) ? new Error(""No version provided"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+if (er || u !== stdout.trim()) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"return rm(p, function (er){",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"cloneGitRemote(p, u, co, origUrl, silent, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"fetchRemote(p, u, co, origUrl, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"[ ""clone"", ""--template="" + templates, ""--mirror"", u, p ],",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+if (er) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+if (silent) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"if (process.platform === ""win32"") {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"getCacheStat(function(er, cs) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"chownr(p, cs.uid, cs.gid, function(er) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"resolveHead(p, u, co, origUrl, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"if (spo[1].charAt(0) === "":"" && spr[1].charAt(0) === ""/"") {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"cache(p, u, stdout, resolved, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"var tmp = path.join(npm.tmp, Date.now()+""-""+Math.random(), treeish)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"[ ""clone"", p, tmp ],",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+"cb(er, data)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,0
+if (er || u !== stdout.trim()) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"return rm(p, function (er){",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"cloneGitRemote(p, u, co, origUrl, silent, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"archiveGitRemote(p, u, co, origUrl, cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"""_git_remotes"", ""_templates""), ""--mirror"", u, p ]",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+if (er) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+if (silent) {,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+var resolved = null,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+var tmp,0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"tmp = path.join(npm.tmp, Date.now()+""-""+Math.random(), ""tmp.tgz"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"if (process.platform === ""win32"") {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"getCacheStat(function(er, cs) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"chownr(p, cs.uid, cs.gid, function(er) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"if (parsed.protocol !== ""git:"") {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+cb = once(cb),0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"cp.on(""error"", cb)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"cp.stderr.on(""data"", function(chunk) {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"cp.stdout.pipe(gzip).pipe(out).on(""close"", function() {",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+"cb(er, data)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,1,1
+", log = require(""npmlog"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+", randomBytes = require(""crypto"").pseudoRandomBytes // only need uniqueness",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+if (er) return cb(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.silly(""addLocalTarball"", ""shasum (computed)"", shasum)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+},0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""addLocalTarball"", ""adding from inside cache"", p)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+if (!cb) return undefined,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// This is a tarball we probably downloaded from the internet.  The shasum's,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"// already been checked, but we haven't ever had a peek inside, so we unpack",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// it here just to make sure it is what it says it is.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+//,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// user just did `npm install ./foo.tgz`,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// generate a unique filename,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"var target = path.join(npm.tmp, ""unpack-"" + random.toString(""hex""))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""addTmpTarball"", ""validating metadata from"", tgz)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// check that this is what we expected.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"return cb(new Error(""Invalid Package: expected "" + pkgData.name +",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+""" but found "" + data.name))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"return cb(new Error(""Invalid Package: expected "" +",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"pkgData.name + ""@"" + pkgData.version +",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+""" but found "" + data.name + ""@"" + data.version))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+}),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+", readJson = require(""read-package-json"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+if (er) return cb_(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"// if it's a tar, and not in place,",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"if (pathIsInside(p, npm.tmp))",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"if (path.basename(p) !== ""package.tgz"") return cb_(new Error(",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+},0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"+ ""-"" + Math.random(), ""tmp.tgz"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+if (er) return cb(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+var from = fs.createReadStream(p),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+if (errState) return,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+cb(errState = er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"from.on(""error"", errHandler)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"to.on(""error"", errHandler)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+}),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+from.pipe(to),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+if (!cb) return,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// This is a tarball we probably downloaded from the internet.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"// The shasum's already been checked, but we haven't ever had",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"// a peek inside, so we unpack it here just to make sure it is",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// what it says it is.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// example if the user just did `npm install ./foo.tgz`,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var pj = path.join(target, ""package.json"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// XXX dry with similar stanza in add-local.js,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// check that this is what we expected.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"+ pkgData.name + "" but found """,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
++ data.name ),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"+ pkgData.name + ""@"" + pkgData.version",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"+ "" but found """,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"+ data.name + ""@"" + data.version )",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+", addLocal = require(""./add-local.js"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+", realizePackageSpecifier = require(""realize-package-specifier"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+git.whichAndExec(,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"[ ""config"", ""--get"", ""remote.origin.url"" ],",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"var stdoutTrimmed = (stdout + ""\n"" + stderr).trim()",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.warn( ""`git config --get remote.origin.url` returned """,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"+ ""wrong result (""+u+"")"", stdoutTrimmed )",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+if (er) return cb(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+}),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+},0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""git remote.origin.url"", stdoutTrimmed)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"var templates = path.join(npm.config.get(""cache""), ""_git_remotes"", ""_templates"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"stdout = (stdout + ""\n"" + stderr).trim()",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""git clone "" + u, stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""git clone "" + u, stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+return cb(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"[ ""fetch"", ""-a"", ""origin"" ],",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""git fetch -a origin (""+u+"")"", stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""git fetch -a origin (""+u+"")"", stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.silly(""verifyOwnership"", ""skipping for windows"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+resolveHead(),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""Could not get cache stat"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""Failed to change folder ownership under npm cache for %s"", p)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"[ ""rev-list"", ""-n1"", co ],",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+var resolved = url.format(parsed),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"if (parsed.protocol !== ""git:"") resolved = ""git+"" + resolved",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// node incorrectly sticks a / at the start of the path We know that the,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"// host won't change, so split and detect this",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+/**,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+* Make an actual clone from the bare (mirrored) cache. There is no safe way to,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"* do a one-step clone to a treeish that isn't guaranteed to be a branch, so",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+* this has to be two steps.,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+*/,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""Failed to clone ""+resolved+"" from ""+u, stderr)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""git clone"", ""from"", p)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""git clone"", stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"[ ""checkout"", treeish ],",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""Failed to check out ""+treeish, stderr)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.verbose(""git checkout"", stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+"log.error(""Failed to map"", tmp, ""to a package specifier"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// https://github.com/npm/npm/issues/6400,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+// ensure pack logic is applied,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+if (data) data._resolved = resolved,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,0
+", once = require(""once"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+", zlib = require(""zlib"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+", addLocalTarball = require(""./add-local-tarball.js"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+", writeStream = require(""fs-write-stream-atomic"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var args = [ ""config"", ""--get"", ""remote.origin.url"" ]",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+var env = gitEnv(),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// check for git,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var stdoutTrimmed = (stdout + ""\n"" + stderr).trim()",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.warn( ""`git config --get remote.origin.url` returned """,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"+ ""wrong result (""+u+"")"", stdoutTrimmed )",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+if (er) return cb(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+}),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.verbose(""git remote.origin.url"", stdoutTrimmed)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var args = [ ""clone"", ""--template="" + path.join(npm.config.get(""cache""),",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"stdout = (stdout + ""\n"" + stderr).trim()",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.verbose(""git clone "" + u, stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.error(""git clone "" + u, stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+return cb(er),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var archive = [ ""fetch"", ""-a"", ""origin"" ]",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var resolve = [ ""rev-list"", ""-n1"", co ]",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.error(""git fetch -a origin (""+u+"")"", stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+},0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.verbose(""git fetch -a origin (""+u+"")"", stdout)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.silly(""verifyOwnership"", ""skipping for windows"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+resolveHead(),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.error(""Could not get cache stat"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.error(""Failed to change folder ownership under npm cache for %s"", p)",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+resolved = url.format(parsed),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"resolved = ""git+"" + resolved",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+// node incorrectly sticks a / at the start of the path,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"// We know that the host won't change, so split and detect this",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"if (spo[1].charAt(0) === "":"" && spr[1].charAt(0) === ""/"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+next(),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+var gzip = zlib.createGzip({ level: 9 }),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"var args = [""archive"", co, ""--format=tar"", ""--prefix=package/""]",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+var out = writeStream(tmp),0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+"log.silly(chunk.toString(), ""git archive"")",0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1
+if (data) data._resolved = resolved,0404aa49d0affc618b7b15b63eb07cdd7d49906a,0,1

@@ -1,0 +1,236 @@
+commit_id,line,line_level_label,count,line_score,row
+33025acc016e68691cbde972fb62e2b766178b80,//NOTE: There is no reason to set the admin server here as the SolrContext will return the primary server,1,4,1.0,1
+33025acc016e68691cbde972fb62e2b766178b80,//Make sure we shut down each of the SolrClient references (these is really the Solr clients despite the name),1,3,0.75,2
+33025acc016e68691cbde972fb62e2b766178b80,* This creates the proper directories and writes the correct properties files for Solr to run in embedded mode.,1,3,0.75,3
+33025acc016e68691cbde972fb62e2b766178b80,"* By having this and then simply disregarding the second and third parameters, we can more easily support 2-core",1,2,0.5,4
+33025acc016e68691cbde972fb62e2b766178b80,} catch (Exception e) {,1,2,0.5,5
+33025acc016e68691cbde972fb62e2b766178b80,String collectionName = aliasCollectionMap.get(reindex.getDefaultCollection());,1,2,0.5,6
+33025acc016e68691cbde972fb62e2b766178b80,String collectionName = aliasCollectionMap.get(primary.getDefaultCollection());,1,2,0.5,7
+33025acc016e68691cbde972fb62e2b766178b80,for (int i = 0; i < 1000; i++) {,1,2,0.5,8
+33025acc016e68691cbde972fb62e2b766178b80,String collectionName = null;,1,2,0.5,9
+33025acc016e68691cbde972fb62e2b766178b80,"+ "" the two instances. All other things, like Zookeeper addresses should be the same."");",1,2,0.5,10
+33025acc016e68691cbde972fb62e2b766178b80,//We want to use the Solr APIs to make sure the correct collections are set up.,1,2,0.5,11
+33025acc016e68691cbde972fb62e2b766178b80,"public SolrSearchServiceImpl(String solrServer, String reindexServer, String adminServer)",1,2,0.5,12
+33025acc016e68691cbde972fb62e2b766178b80,"+ ""and their defaultCollection property must be unique or null.  All other things like the """,1,2,0.5,13
+33025acc016e68691cbde972fb62e2b766178b80,"* By having this and then simply disregarding the second parameter, we can more easily support 2-core",1,2,0.5,14
+33025acc016e68691cbde972fb62e2b766178b80,} else {,1,2,0.5,15
+33025acc016e68691cbde972fb62e2b766178b80,public String getSolrHomePath() {,1,2,0.5,16
+33025acc016e68691cbde972fb62e2b766178b80,} catch (Throwable e) {,1,2,0.5,17
+33025acc016e68691cbde972fb62e2b766178b80,} finally {,1,2,0.5,18
+33025acc016e68691cbde972fb62e2b766178b80,while ((line = br.readLine()) != null) {,1,2,0.5,19
+33025acc016e68691cbde972fb62e2b766178b80,"final String baseTempPath = System.getProperty(""java.io.tmpdir"");",1,2,0.5,20
+33025acc016e68691cbde972fb62e2b766178b80,"protected String solrCloudConfigName = ""blc"";",1,2,0.5,21
+33025acc016e68691cbde972fb62e2b766178b80,* This constructor serves to mimic the one which takes in one {@link SolrClient} argument.,1,2,0.5,22
+33025acc016e68691cbde972fb62e2b766178b80,//This is the name of the config that Zookeeper has associated with Solr configs,1,2,0.5,23
+33025acc016e68691cbde972fb62e2b766178b80,CloudSolrClient reindex = (CloudSolrClient) SolrContext.getReindexServer();,1,1,0.25,24
+33025acc016e68691cbde972fb62e2b766178b80,"public SolrSearchServiceImpl(SolrClient solrServer, SolrClient reindexServer, SolrClient adminServer) {",1,1,0.25,25
+33025acc016e68691cbde972fb62e2b766178b80,public void afterPropertiesSet() throws Exception {,1,1,0.25,26
+33025acc016e68691cbde972fb62e2b766178b80,if (SolrContext.isSolrCloudMode()) {,1,1,0.25,27
+33025acc016e68691cbde972fb62e2b766178b80,CloudSolrClient primary = (CloudSolrClient) SolrContext.getServer();,1,1,0.25,28
+33025acc016e68691cbde972fb62e2b766178b80,"//These are the same object instances.  They should be separate instances, with generally",1,1,0.25,29
+33025acc016e68691cbde972fb62e2b766178b80,if (primary == null || reindex == null) {,1,1,0.25,30
+33025acc016e68691cbde972fb62e2b766178b80,"+ ""your configuration and ensure that you are passing a different instance for each to the """,1,1,0.25,31
+33025acc016e68691cbde972fb62e2b766178b80,if (primary == reindex) {,1,1,0.25,32
+33025acc016e68691cbde972fb62e2b766178b80,"//the same configuration, except for the defaultCollection name.",1,1,0.25,33
+33025acc016e68691cbde972fb62e2b766178b80,"* Solr configurations that use embedded/standalone per environment, along with an admin server.",1,1,0.25,34
+33025acc016e68691cbde972fb62e2b766178b80,"public SolrSearchServiceImpl(SolrClient solrServer, SolrClient reindexServer) {",1,1,0.25,35
+33025acc016e68691cbde972fb62e2b766178b80,FileOutputStream os = new FileOutputStream(reindexCoreFile);,1,1,0.25,36
+33025acc016e68691cbde972fb62e2b766178b80,"throws IOException, ParserConfigurationException, SAXException {",1,1,0.25,37
+33025acc016e68691cbde972fb62e2b766178b80,"public SolrSearchServiceImpl(String solrServer, String reindexServer)",1,1,0.25,38
+33025acc016e68691cbde972fb62e2b766178b80,* @throws ParserConfigurationException,1,1,0.25,39
+33025acc016e68691cbde972fb62e2b766178b80,* @throws SAXException,1,1,0.25,40
+33025acc016e68691cbde972fb62e2b766178b80,* @param reindexServer,1,1,0.25,41
+33025acc016e68691cbde972fb62e2b766178b80,*,1,1,0.25,42
+33025acc016e68691cbde972fb62e2b766178b80,* Solr configurations that use embedded/standalone per environment.,1,1,0.25,43
+33025acc016e68691cbde972fb62e2b766178b80,public SolrSearchServiceImpl(SolrClient solrServer) {,1,1,0.25,44
+33025acc016e68691cbde972fb62e2b766178b80,if (!reindexConfDir.exists() || !reindexConfDir.isDirectory()) {,1,1,0.25,45
+33025acc016e68691cbde972fb62e2b766178b80,"File reindexConfDir = new File(reindexCoreDir, ""conf"");",1,1,0.25,46
+33025acc016e68691cbde972fb62e2b766178b80,//Set the default collection if it's null,1,1,0.25,47
+33025acc016e68691cbde972fb62e2b766178b80,if (!reindexCoreFile.exists()) {,1,1,0.25,48
+33025acc016e68691cbde972fb62e2b766178b80,"File reindexCoreFile = new File(reindexCoreDir, ""core.properties"");",1,1,0.25,49
+33025acc016e68691cbde972fb62e2b766178b80,"+ ""Zookeeper addresses should be the same."");",1,1,0.25,50
+33025acc016e68691cbde972fb62e2b766178b80,"collectionName = ""blcCollection"" + i;",1,1,0.25,51
+33025acc016e68691cbde972fb62e2b766178b80,if (StringUtils.isEmpty(primary.getDefaultCollection())) {,1,1,0.25,52
+33025acc016e68691cbde972fb62e2b766178b80,if (!collectionNames.contains(collectionName)) {,1,1,0.25,53
+33025acc016e68691cbde972fb62e2b766178b80,"response = SolrContext.getServer().query(solrQuery, getSolrQueryMethod());",1,1,0.25,54
+33025acc016e68691cbde972fb62e2b766178b80,&& SolrContext.getAdminServer() != SolrContext.getReindexServer()) {,1,1,0.25,55
+33025acc016e68691cbde972fb62e2b766178b80,&& SolrContext.getReindexServer() != SolrContext.getServer()) {,1,1,0.25,56
+33025acc016e68691cbde972fb62e2b766178b80,if (SolrContext.getServer() != null) {,1,1,0.25,57
+33025acc016e68691cbde972fb62e2b766178b80,public void destroy() throws Exception {,1,1,0.25,58
+33025acc016e68691cbde972fb62e2b766178b80,if (aliasCollectionMap == null || !aliasCollectionMap.containsKey(reindex.getDefaultCollection())) {,1,1,0.25,59
+33025acc016e68691cbde972fb62e2b766178b80,aliasCollectionMap = aliases.getCollectionAliasMap();,1,1,0.25,60
+33025acc016e68691cbde972fb62e2b766178b80,aliases = primary.getZkStateReader().getAliases();,1,1,0.25,61
+33025acc016e68691cbde972fb62e2b766178b80,//Reload these maps for the next collection.,1,1,0.25,62
+33025acc016e68691cbde972fb62e2b766178b80,collectionNames = primary.getZkStateReader().getClusterState().getCollections();,1,1,0.25,63
+33025acc016e68691cbde972fb62e2b766178b80,//Reload the collection names,1,1,0.25,64
+33025acc016e68691cbde972fb62e2b766178b80,"collectionName = collectionName.split("","")[0];",1,1,0.25,65
+33025acc016e68691cbde972fb62e2b766178b80,if (StringUtils.isEmpty(reindex.getDefaultCollection())) {,1,1,0.25,66
+33025acc016e68691cbde972fb62e2b766178b80,//Aliases can be mapped to collections that don't exist.... Make sure the collection exists,1,1,0.25,67
+33025acc016e68691cbde972fb62e2b766178b80,collectionName = null;,1,1,0.25,68
+33025acc016e68691cbde972fb62e2b766178b80,if (collectionNames.contains(collectionName)) {,1,1,0.25,69
+33025acc016e68691cbde972fb62e2b766178b80,"File reindexCoreDir = new File(cores, ""reindex"");",1,1,0.25,70
+33025acc016e68691cbde972fb62e2b766178b80,"Map<String, String> aliasCollectionMap = aliases.getCollectionAliasMap();",1,1,0.25,71
+33025acc016e68691cbde972fb62e2b766178b80,Aliases aliases = primary.getZkStateReader().getAliases();,1,1,0.25,72
+33025acc016e68691cbde972fb62e2b766178b80,collectionNames = new HashSet<String>();,1,1,0.25,73
+33025acc016e68691cbde972fb62e2b766178b80,if (collectionNames == null) {,1,1,0.25,74
+33025acc016e68691cbde972fb62e2b766178b80,Set<String> collectionNames = primary.getZkStateReader().getClusterState().getCollections();,1,1,0.25,75
+33025acc016e68691cbde972fb62e2b766178b80,"+ ""unique defaultCollection property.  All other things like the """,1,1,0.25,76
+33025acc016e68691cbde972fb62e2b766178b80,"if (Objects.equals(primary.getDefaultCollection(), reindex.getDefaultCollection())) {",1,1,0.25,77
+33025acc016e68691cbde972fb62e2b766178b80,if (!reindexCoreDir.exists() || !reindexCoreDir.isDirectory()) {,1,1,0.25,78
+33025acc016e68691cbde972fb62e2b766178b80,if (aliasCollectionMap == null || !aliasCollectionMap.containsKey(primary.getDefaultCollection())) {,1,1,0.25,79
+33025acc016e68691cbde972fb62e2b766178b80,if (!primaryConfDir.exists() || !primaryConfDir.isDirectory()) {,1,1,0.25,80
+33025acc016e68691cbde972fb62e2b766178b80,"CoreContainer coreContainer = CoreContainer.createAndLoad(solrServer, solrXml);",1,1,0.25,81
+33025acc016e68691cbde972fb62e2b766178b80,String line;,1,1,0.25,82
+33025acc016e68691cbde972fb62e2b766178b80,br = new BufferedReader(new FileReader(solrXml));,1,1,0.25,83
+33025acc016e68691cbde972fb62e2b766178b80,try {,1,1,0.25,84
+33025acc016e68691cbde972fb62e2b766178b80,BufferedReader br = null;,1,1,0.25,85
+33025acc016e68691cbde972fb62e2b766178b80,if (LOG.isTraceEnabled()) {,1,1,0.25,86
+33025acc016e68691cbde972fb62e2b766178b80,if (!solrXml.exists()) {,1,1,0.25,87
+33025acc016e68691cbde972fb62e2b766178b80,"File solrXml = new File(new File(solrServer), ""solr.xml"");",1,1,0.25,88
+33025acc016e68691cbde972fb62e2b766178b80,solrHomePath = solrServer;,1,1,0.25,89
+33025acc016e68691cbde972fb62e2b766178b80,solrServer = tempDir.getAbsolutePath();,1,1,0.25,90
+33025acc016e68691cbde972fb62e2b766178b80,if (!tempDir.exists()) {,1,1,0.25,91
+33025acc016e68691cbde972fb62e2b766178b80,},1,1,0.25,92
+33025acc016e68691cbde972fb62e2b766178b80,"tempDir = new File(System.getProperty(""tmpdir.solrhome""));",1,1,0.25,93
+33025acc016e68691cbde972fb62e2b766178b80,"if (System.getProperty(""tmpdir.solrhome"") != null) {",1,1,0.25,94
+33025acc016e68691cbde972fb62e2b766178b80,"File tempDir = new File(baseTempPath + File.separator + System.getProperty(""user.name"") + File.separator + ""solrhome-5.3.1"");",1,1,0.25,95
+33025acc016e68691cbde972fb62e2b766178b80,"if (Objects.equals(""solrhome"", solrServer)) {",1,1,0.25,96
+33025acc016e68691cbde972fb62e2b766178b80,"public SolrSearchServiceImpl(String solrServer) throws IOException, ParserConfigurationException, SAXException {",1,1,0.25,97
+33025acc016e68691cbde972fb62e2b766178b80,protected String solrHomePath;,1,1,0.25,98
+33025acc016e68691cbde972fb62e2b766178b80,protected int solrCloudNumShards = 2;,1,1,0.25,99
+33025acc016e68691cbde972fb62e2b766178b80,//This is the default number of shards that should be created if a SolrCloud collection is created via API,1,1,0.25,100
+33025acc016e68691cbde972fb62e2b766178b80,"public class SolrSearchServiceImpl implements SearchService, InitializingBean, DisposableBean {",1,1,0.25,101
+33025acc016e68691cbde972fb62e2b766178b80,},0,1,0.25,102
+33025acc016e68691cbde972fb62e2b766178b80,"response = solrConfiguration.getServer().query(solrQuery, getSolrQueryMethod());",0,1,0.25,103
+33025acc016e68691cbde972fb62e2b766178b80,@Autowired(required = false),0,1,0.25,104
+33025acc016e68691cbde972fb62e2b766178b80,"public class SolrSearchServiceImpl implements SearchService, DisposableBean {",0,1,0.25,105
+33025acc016e68691cbde972fb62e2b766178b80,"File primaryConfDir = new File(primaryCoreDir, ""conf"");",1,1,0.25,106
+33025acc016e68691cbde972fb62e2b766178b80,if (br != null) {,1,1,0.25,107
+33025acc016e68691cbde972fb62e2b766178b80,public void destroy() throws Exception {,0,1,0.25,108
+33025acc016e68691cbde972fb62e2b766178b80,"EmbeddedSolrServer primaryServer = new EmbeddedSolrServer(coreContainer, SolrContext.PRIMARY);",1,1,0.25,109
+33025acc016e68691cbde972fb62e2b766178b80,if (bis != null) {,1,1,0.25,110
+33025acc016e68691cbde972fb62e2b766178b80,Properties prop = new Properties();,1,1,0.25,111
+33025acc016e68691cbde972fb62e2b766178b80,"EmbeddedSolrServer reindexServer = new EmbeddedSolrServer(coreContainer, SolrContext.REINDEX);",1,1,0.25,112
+33025acc016e68691cbde972fb62e2b766178b80,FileOutputStream os = new FileOutputStream(primaryCoreFile);,1,1,0.25,113
+33025acc016e68691cbde972fb62e2b766178b80,"File primaryCoreFile = new File(primaryCoreDir, ""core.properties"");",1,1,0.25,114
+33025acc016e68691cbde972fb62e2b766178b80,if (!primaryCoreDir.exists() || !primaryCoreDir.isDirectory()) {,1,1,0.25,115
+33025acc016e68691cbde972fb62e2b766178b80,"File primaryCoreDir = new File(cores, ""primary"");",1,1,0.25,116
+33025acc016e68691cbde972fb62e2b766178b80,if (!cores.exists() || !cores.isDirectory()) {,1,1,0.25,117
+33025acc016e68691cbde972fb62e2b766178b80,"File cores = new File(new File(solrServer), ""cores"");",1,1,0.25,118
+33025acc016e68691cbde972fb62e2b766178b80,protected void buildSolrCoreDirectories(String solrServer) throws IOException {,1,1,0.25,119
+33025acc016e68691cbde972fb62e2b766178b80,* @throws IOException,1,1,0.25,120
+33025acc016e68691cbde972fb62e2b766178b80,* @param solrServer,1,1,0.25,121
+33025acc016e68691cbde972fb62e2b766178b80,if (bos != null) {,1,1,0.25,122
+33025acc016e68691cbde972fb62e2b766178b80,if (!primaryCoreFile.exists()) {,1,1,0.25,123
+33025acc016e68691cbde972fb62e2b766178b80,eof = true;,1,1,0.25,124
+33025acc016e68691cbde972fb62e2b766178b80,BufferedOutputStream bos = null;,1,1,0.25,125
+33025acc016e68691cbde972fb62e2b766178b80,if (temp == -1) {,1,1,0.25,126
+33025acc016e68691cbde972fb62e2b766178b80,return solrHomePath;,1,1,0.25,127
+33025acc016e68691cbde972fb62e2b766178b80,BufferedInputStream bis = null;,1,1,0.25,128
+33025acc016e68691cbde972fb62e2b766178b80,//if the admin server is not set...,1,1,0.25,129
+33025acc016e68691cbde972fb62e2b766178b80,"public void copyConfigToSolrHome(InputStream configIs, File destFile) throws IOException {",1,1,0.25,130
+33025acc016e68691cbde972fb62e2b766178b80,bis = new BufferedInputStream(configIs);,1,1,0.25,131
+33025acc016e68691cbde972fb62e2b766178b80,"bos = new BufferedOutputStream(new FileOutputStream(destFile, false));",1,1,0.25,132
+33025acc016e68691cbde972fb62e2b766178b80,boolean eof = false;,1,1,0.25,133
+33025acc016e68691cbde972fb62e2b766178b80,while (!eof) {,1,1,0.25,134
+33025acc016e68691cbde972fb62e2b766178b80,int temp = bis.read();,1,1,0.25,135
+33025acc016e68691cbde972fb62e2b766178b80,"+ "" and ensure that each has a null (empty)""",1,0,0.0,136
+33025acc016e68691cbde972fb62e2b766178b80,+ this.getClass().getName(),1,0,0.0,137
+33025acc016e68691cbde972fb62e2b766178b80,"+ ""constructor of """,1,0,0.0,138
+33025acc016e68691cbde972fb62e2b766178b80,"throw new IllegalStateException(""The primary and reindex CloudSolrServers must not be null. Check """,1,0,0.0,139
+33025acc016e68691cbde972fb62e2b766178b80,@Override,1,0,0.0,140
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.setAdminServer(adminServer);,1,0,0.0,141
+33025acc016e68691cbde972fb62e2b766178b80,this(solrServer);,1,0,0.0,142
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.setPrimaryServer(solrServer);,1,0,0.0,143
+33025acc016e68691cbde972fb62e2b766178b80,reindexConfDir.mkdirs();,1,0,0.0,144
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a ""cores/reindex/conf"" directory if it does not exist",1,0,0.0,145
+33025acc016e68691cbde972fb62e2b766178b80,primaryConfDir.mkdirs();,1,0,0.0,146
+33025acc016e68691cbde972fb62e2b766178b80,"prop.put(""name"", SolrContext.REINDEX);",1,0,0.0,147
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a cores/reindex/core.properties file, populated with ""name=reindex""",1,0,0.0,148
+33025acc016e68691cbde972fb62e2b766178b80,reindexCoreDir.mkdirs();,1,0,0.0,149
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a ""cores/reindex"" if it does not exist",1,0,0.0,150
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a ""cores/primary/conf"" directory if it does not exist",1,0,0.0,151
+33025acc016e68691cbde972fb62e2b766178b80,IOUtils.closeQuietly(os);,1,0,0.0,152
+33025acc016e68691cbde972fb62e2b766178b80,"prop.store(os, ""Generated Solr core properties file"");",1,0,0.0,153
+33025acc016e68691cbde972fb62e2b766178b80,"prop.put(""name"", SolrContext.PRIMARY);",1,0,0.0,154
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a cores/primary/core.properties file, populated with ""name=primary""",1,0,0.0,155
+33025acc016e68691cbde972fb62e2b766178b80,primaryCoreDir.mkdirs();,1,0,0.0,156
+33025acc016e68691cbde972fb62e2b766178b80,"throw new IllegalStateException(""The primary and reindex CloudSolrServers must be different instances """,1,0,0.0,157
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a ""cores/primary"" if it does not exist",1,0,0.0,158
+33025acc016e68691cbde972fb62e2b766178b80,"+ "" defaultCollection property, or ensure that defaultCollection is unique between""",1,0,0.0,159
+33025acc016e68691cbde972fb62e2b766178b80,new CollectionAdminRequest.CreateAlias().setAliasName(reindex.getDefaultCollection()),1,0,0.0,160
+33025acc016e68691cbde972fb62e2b766178b80,primary.setDefaultCollection(SolrContext.PRIMARY);,1,0,0.0,161
+33025acc016e68691cbde972fb62e2b766178b80,reindex.setDefaultCollection(SolrContext.REINDEX);,1,0,0.0,162
+33025acc016e68691cbde972fb62e2b766178b80,"//Create a ""cores"" directory if it does not exist",1,0,0.0,163
+33025acc016e68691cbde972fb62e2b766178b80,"solrQuery.setParam(""collection"", SolrContext.PRIMARY); //This should be ignored if not using SolrCloud",1,0,0.0,164
+33025acc016e68691cbde972fb62e2b766178b80,"//This is for SolrCloud.  We assume that we are always searching against a collection aliased as ""PRIMARY""",1,0,0.0,165
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.error(""Error shutting down admin SolrClient (client)."", e);",1,0,0.0,166
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.getAdminServer().shutdown();,1,0,0.0,167
+33025acc016e68691cbde972fb62e2b766178b80,&& SolrContext.getAdminServer() != SolrContext.getServer(),1,0,0.0,168
+33025acc016e68691cbde972fb62e2b766178b80,if (SolrContext.getAdminServer() != null,1,0,0.0,169
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.error(""Error shutting down reindex SolrClient (client)."", e);",1,0,0.0,170
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.getReindexServer().shutdown();,1,0,0.0,171
+33025acc016e68691cbde972fb62e2b766178b80,if (SolrContext.getReindexServer() != null,1,0,0.0,172
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.error(""Error shutting down primary SolrClient (client)."", e);",1,0,0.0,173
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.getServer().shutdown();,1,0,0.0,174
+33025acc016e68691cbde972fb62e2b766178b80,.setAliasedCollections(collectionName).process(primary);,1,0,0.0,175
+33025acc016e68691cbde972fb62e2b766178b80,new CollectionAdminRequest.CreateAlias().setAliasName(primary.getDefaultCollection()),1,0,0.0,176
+33025acc016e68691cbde972fb62e2b766178b80,.setConfigName(solrCloudConfigName).process(primary);,1,0,0.0,177
+33025acc016e68691cbde972fb62e2b766178b80,new CollectionAdminRequest.Create().setCollectionName(collectionName).setNumShards(solrCloudNumShards),1,0,0.0,178
+33025acc016e68691cbde972fb62e2b766178b80,break;,1,0,0.0,179
+33025acc016e68691cbde972fb62e2b766178b80,//Create a completely new collection,1,0,0.0,180
+33025acc016e68691cbde972fb62e2b766178b80,//Get a list of existing collections so we don't overwrite one,1,0,0.0,181
+33025acc016e68691cbde972fb62e2b766178b80,primary.connect(); //This is required to ensure no NPE!,1,0,0.0,182
+33025acc016e68691cbde972fb62e2b766178b80,"throw new IllegalStateException(""The primary and reindex CloudSolrServers must have a null (empty) or """,1,0,0.0,183
+33025acc016e68691cbde972fb62e2b766178b80,cores.mkdirs();,1,0,0.0,184
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.FileOutputStream;,1,0,0.0,185
+33025acc016e68691cbde972fb62e2b766178b80,*/,1,0,0.0,186
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.solr.client.solrj.embedded.EmbeddedSolrServer;,1,0,0.0,187
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.File;,1,0,0.0,188
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.BufferedReader;,1,0,0.0,189
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.BufferedOutputStream;,1,0,0.0,190
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.BufferedInputStream;,1,0,0.0,191
+33025acc016e68691cbde972fb62e2b766178b80,import org.xml.sax.SAXException;,1,0,0.0,192
+33025acc016e68691cbde972fb62e2b766178b80,import org.springframework.beans.factory.InitializingBean;,1,0,0.0,193
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.solr.core.CoreContainer;,1,0,0.0,194
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.solr.common.cloud.Aliases;,1,0,0.0,195
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.solr.client.solrj.request.CollectionAdminRequest;,1,0,0.0,196
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.solr.client.solrj.impl.CloudSolrClient;,1,0,0.0,197
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.solr.client.solrj.SolrClient;,1,0,0.0,198
+33025acc016e68691cbde972fb62e2b766178b80,/**,1,0,0.0,199
+33025acc016e68691cbde972fb62e2b766178b80,import org.apache.commons.io.IOUtils;,1,0,0.0,200
+33025acc016e68691cbde972fb62e2b766178b80,solrConfiguration.destroy();,0,0,0.0,201
+33025acc016e68691cbde972fb62e2b766178b80,@Override,0,0,0.0,202
+33025acc016e68691cbde972fb62e2b766178b80,"solrQuery.addFilterQuery(shs.getNamespaceFieldName() + "":(\"""" + solrConfiguration.getNamespace() + ""\"")"");",0,0,0.0,203
+33025acc016e68691cbde972fb62e2b766178b80,"solrQuery.setParam(""collection"", solrConfiguration.getPrimaryName()); //This should be ignored if not using SolrCloud",0,0,0.0,204
+33025acc016e68691cbde972fb62e2b766178b80,"//This is for SolrCloud.  We assume that we are always searching against a collection aliased as ""primaryName""",0,0,0.0,205
+33025acc016e68691cbde972fb62e2b766178b80,protected SolrConfiguration solrConfiguration;,0,0,0.0,206
+33025acc016e68691cbde972fb62e2b766178b80,"@Qualifier(""blCatalogSolrConfiguration"")",0,0,0.0,207
+33025acc016e68691cbde972fb62e2b766178b80,import org.springframework.beans.factory.annotation.Qualifier;,0,0,0.0,208
+33025acc016e68691cbde972fb62e2b766178b80,import org.springframework.beans.factory.annotation.Autowired;,0,0,0.0,209
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.FileReader;,1,0,0.0,210
+33025acc016e68691cbde972fb62e2b766178b80,import java.io.InputStream;,1,0,0.0,211
+33025acc016e68691cbde972fb62e2b766178b80,import java.util.HashSet;,1,0,0.0,212
+33025acc016e68691cbde972fb62e2b766178b80,import java.util.Properties;,1,0,0.0,213
+33025acc016e68691cbde972fb62e2b766178b80,bos.close();,1,0,0.0,214
+33025acc016e68691cbde972fb62e2b766178b80,bis.close();,1,0,0.0,215
+33025acc016e68691cbde972fb62e2b766178b80,bos.flush();,1,0,0.0,216
+33025acc016e68691cbde972fb62e2b766178b80,bos.write(temp);,1,0,0.0,217
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.setReindexServer(reindexServer);,1,0,0.0,218
+33025acc016e68691cbde972fb62e2b766178b80,SolrContext.setPrimaryServer(primaryServer);,1,0,0.0,219
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.trace(""Done printing solr.xml"");",1,0,0.0,220
+33025acc016e68691cbde972fb62e2b766178b80,//do nothing,1,0,0.0,221
+33025acc016e68691cbde972fb62e2b766178b80,br.close();,1,0,0.0,222
+33025acc016e68691cbde972fb62e2b766178b80,LOG.trace(line);,1,0,0.0,223
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.trace(""Contents of solr.xml:"");",1,0,0.0,224
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.debug(String.format(""Using [%s] as solr.xml"", solrXml.getAbsoluteFile()));",1,0,0.0,225
+33025acc016e68691cbde972fb62e2b766178b80,"LOG.debug(String.format(""Using [%s] as solrhome"", solrServer));",1,0,0.0,226
+33025acc016e68691cbde972fb62e2b766178b80,buildSolrCoreDirectories(solrServer);,1,0,0.0,227
+33025acc016e68691cbde972fb62e2b766178b80,"copyConfigToSolrHome(this.getClass().getResourceAsStream(""/solr-default.xml""), solrXml);",1,0,0.0,228
+33025acc016e68691cbde972fb62e2b766178b80,tempDir.mkdirs();,1,0,0.0,229
+33025acc016e68691cbde972fb62e2b766178b80,//allow for an override of tmpdir,1,0,0.0,230
+33025acc016e68691cbde972fb62e2b766178b80,"@Value(""${solr.cloud.defaultNumShards}"")",1,0,0.0,231
+33025acc016e68691cbde972fb62e2b766178b80,"@Value(""${solr.cloud.configName}"")",1,0,0.0,232
+33025acc016e68691cbde972fb62e2b766178b80,import javax.xml.parsers.ParserConfigurationException;,1,0,0.0,233
+33025acc016e68691cbde972fb62e2b766178b80,import java.util.Set;,1,0,0.0,234
+33025acc016e68691cbde972fb62e2b766178b80,"solrQuery.addFilterQuery(shs.getNamespaceFieldName() + "":(\"""" + shs.getCurrentNamespace() + ""\"")"");",1,0,0.0,235

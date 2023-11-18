@@ -1,0 +1,111 @@
+commit_id,line,line_level_label,count,line_score,row
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* @return true if pool is either configured to test connections on connect or a non-NULL init,0,8,1.0,1
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,"* @return true if the connection was either not expired or expired but reconnecting succeeded,",0,6,0.75,2
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* Checks whether this connection has {@link PooledConnection#isMaxAgeExpired() expired} and tries to reconnect if it has.,0,5,0.625,3
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* false if reconnecting failed (either because a new connection could not be established or,0,5,0.625,4
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* This method must be called <b>after</b> configuration properties affecting the pool cleaner,0,5,0.625,5
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* Forces a validation of all idle connections if {@link PoolProperties#testWhileIdle} is set.,0,4,0.5,6
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* @param wasEnabled whether the pool cleaner was enabled <b>before</b> the configuration change occurred.,0,4,0.5,7
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,} else if (pool.getPoolProperties().getMaxAge() > 0) {,0,3,0.375,8
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (con.isMaxAgeExpired()) return true;,1,3,0.375,9
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,private void poolCleanerAttributeUpdated(boolean wasEnabled) {,0,3,0.375,10
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* Starts/stops pool cleaner thread as necessary after its configuration properties,0,3,0.375,11
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,//make sure the pool is properly configured,0,3,0.375,12
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void testAllIdle(boolean checkMaxAgeOnly) {,0,3,0.375,13
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,protected boolean reconnectIfExpired(PooledConnection con) {,0,3,0.375,14
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* validating the newly created connection failed),0,3,0.375,15
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,private boolean isInitNewConnections() {,0,3,0.375,16
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getReconnectedCount();,1,2,0.25,17
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public int getNumIdle();,1,2,0.25,18
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public int getNumActive();,1,2,0.25,19
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public int getWaitCount();,1,2,0.25,20
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getBorrowedCount();,1,2,0.25,21
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getReturnedCount();,1,2,0.25,22
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getCreatedCount();,1,2,0.25,23
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getReleasedCount();,1,2,0.25,24
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void resetStats();,1,2,0.25,25
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getRemoveAbandonedCount();,1,2,0.25,26
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public long getReleasedIdleCount();,1,2,0.25,27
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void checkIdle();,1,2,0.25,28
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void checkAbandoned();,1,2,0.25,29
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void testIdle();,1,2,0.25,30
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void purge();,1,2,0.25,31
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public void purgeOnReturn();,1,2,0.25,32
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public int getSize();,1,2,0.25,33
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public int getIdle();,1,2,0.25,34
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,public int getActive();,1,2,0.25,35
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,boolean shouldBeEnabled = getPoolProperties().isPoolSweeperEnabled();,1,2,0.25,36
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* @param checkMaxAgeOnly whether to only check {@link PooledConnection#isMaxAgeExpired()} but,0,2,0.25,37
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (!con.validate(PooledConnection.VALIDATE_IDLE)) {,1,2,0.25,38
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (con.isMaxAgeExpired()) {,0,2,0.25,39
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,"if (log.isDebugEnabled()) log.debug( ""Connection [""+this+""] expired because of maxAge, trying to reconnect"" );",0,2,0.25,40
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if ( isInitNewConnections() && !con.validate( PooledConnection.VALIDATE_INIT)) {,0,2,0.25,41
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,} catch(Exception e) {,0,2,0.25,42
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,"log.error(""Failed to re-connect connection [""+this+""] that expired because of maxAge"",e);",0,2,0.25,43
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,return true;,0,2,0.25,44
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,"if (!shouldClose(con,PooledConnection.VALIDATE_RETURN) && reconnectIfExpired(con)) {",0,2,0.25,45
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int validationMode = isInitNewConnections() ?,0,2,0.25,46
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,*                        not invoke {@link PooledConnection#validate(int)},0,2,0.25,47
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,} else {,0,2,0.25,48
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (release) {,0,2,0.25,49
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (pool.getPoolProperties().isTestWhileIdle()) {,0,2,0.25,50
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,boolean wasEnabled = getPoolProperties().isPoolSweeperEnabled();,0,2,0.25,51
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int validationMode = getPoolProperties().isTestOnConnect() || getPoolProperties().getInitSQL()!=null ?,1,2,0.25,52
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,"if (!shouldClose(con,PooledConnection.VALIDATE_RETURN)) {",1,2,0.25,53
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (checkMaxAgeOnly) {,0,2,0.25,54
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int getNumActive();,0,1,0.125,55
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getReturnedCount();,0,1,0.125,56
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getBorrowedCount();,0,1,0.125,57
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int getWaitCount();,0,1,0.125,58
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int getIdle();,0,1,0.125,59
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int getNumIdle();,0,1,0.125,60
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int getActive();,0,1,0.125,61
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getReleasedCount();,0,1,0.125,62
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,int getSize();,0,1,0.125,63
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getCreatedCount();,0,1,0.125,64
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,void checkIdle();,0,1,0.125,65
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getReconnectedCount();,0,1,0.125,66
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getRemoveAbandonedCount();,0,1,0.125,67
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,long getReleasedIdleCount();,0,1,0.125,68
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,void checkAbandoned();,0,1,0.125,69
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,void testIdle();,0,1,0.125,70
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,void purge();,0,1,0.125,71
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,void purgeOnReturn();,0,1,0.125,72
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (!wasEnabled && shouldBeEnabled) pool.initializePoolCleaner(getPoolProperties());,1,1,0.125,73
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,void resetStats();,0,1,0.125,74
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,else if (wasEnabled && !shouldBeEnabled) pool.terminatePoolCleaner();,1,1,0.125,75
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,properties.getTimeBetweenEvictionRunsMillis()>properties.getMaxAge()) {,0,1,0.125,76
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,//make sure pool cleaner starts/stops when it should,1,1,0.125,77
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,return getPoolProperties().isTestOnConnect() || getPoolProperties().getInitSQL()!=null;,0,1,0.125,78
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (properties.getMaxAge()>0 && properties.isPoolSweeperEnabled() &&,0,1,0.125,79
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,"log.warn(""timeBetweenEvictionRunsMillis is larger than maxAge, setting timeBetweenEvictionRunsMillis to: "" + properties.getMaxAge());",0,1,0.125,80
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,if (pool.getPoolProperties().isTestWhileIdle()),1,1,0.125,81
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* Returns whether new connections should be initialized by invoking,0,1,0.125,82
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* {@link PooledConnection#validate(int)} with {@link PooledConnection#VALIDATE_INIT}.,0,1,0.125,83
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,*,0,1,0.125,84
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* SQL has been configured,0,1,0.125,85
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,*/,0,1,0.125,86
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,},0,1,0.125,87
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,return false;,0,1,0.125,88
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,try {,0,1,0.125,89
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,boolean release;,0,1,0.125,90
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,release = !reconnectIfExpired(con);,0,1,0.125,91
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,release = !reconnectIfExpired(con) || !con.validate(PooledConnection.VALIDATE_IDLE);,0,1,0.125,92
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* were updated.,0,1,0.125,93
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* have been updated.,0,1,0.125,94
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,else return false;,1,1,0.125,95
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,* @see PooledConnection#isMaxAgeExpired(),0,1,0.125,96
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,pool.testAllIdle(false);,0,0,0.0,97
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,PooledConnection.VALIDATE_BORROW;,1,0,0.0,98
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,PooledConnection.VALIDATE_INIT :,1,0,0.0,99
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,poolCleanerAttributeUpdated(wasEnabled);,0,0,0.0,100
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,pool.checkPoolConfiguration(getPoolProperties());,0,0,0.0,101
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,pool.testAllIdle(true);,0,0,0.0,102
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,PooledConnection.VALIDATE_BORROW;,0,0,0.0,103
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,testAllIdle(false);,0,0,0.0,104
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,reconnectedCount.incrementAndGet();,0,0,0.0,105
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,con.reconnect();,0,0,0.0,106
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,/**,0,0,0.0,107
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,PooledConnection.VALIDATE_INIT:,0,0,0.0,108
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,properties.setTimeBetweenEvictionRunsMillis((int)properties.getMaxAge());,0,0,0.0,109
+baa492f1dcf5cad6a7ae41ebd90ca5d1055f71b7,pool.testAllIdle();,1,0,0.0,110

@@ -1,0 +1,538 @@
+commit_id,line,line_level_label,count,line_score,row
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response getCommandInput(@PathParam(""name"") final String name, @PathParam(""namespace"") String namespace, @PathParam(""projectName"") String projectName) throws Exception {",1,5,1.0,1
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected void createBuildConfig(RestUIContext context, String namespace, String projectName, String cloneUrl) throws Exception {",1,5,1.0,2
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (userDetails != null) {,1,4,0.8,3
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (dir != null && dir.isDirectory()) {,1,4,0.8,4
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (repository != null) {,1,4,0.8,5
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (page1 != null) {,1,4,0.8,6
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (inputList != null) {,1,4,0.8,7
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"* For new projects; lets git add, git commit, git push otherwise lets git add/commit/push any new/udpated changes",1,4,0.8,8
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected <T> T withUIContext(final String namespace, final String projectName, String resourcePath, boolean write, final RestUIFunction<T> function, final GitContext gitContext) throws Exception {",1,4,0.8,9
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (commandCompletePostProcessor != null) {,1,4,0.8,10
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNotBlank(namespace) && Strings.isNotBlank(projectName) && resourceFactory != null) {,1,4,0.8,11
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (answer.isCommandCompleted() && postProcessor != null) {,1,4,0.8,12
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (nextController != null) {,1,4,0.8,13
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (postProcessor != null) {,1,4,0.8,14
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (command != null) {,1,4,0.8,15
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (answer != null) {,1,4,0.8,16
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response getCommandInfo(@PathParam(""name"") final String name, @PathParam(""namespace"") final String namespace, @PathParam(""projectName"") final String projectName,",1,4,0.8,17
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (dto != null && dto.isEnabled()) {,1,4,0.8,18
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public List<CommandInfoDTO> getCommands(@PathParam(""namespace"") String namespace, @PathParam(""projectName"") String projectName, @PathParam(""path"") String resourcePath) throws Exception {",1,4,0.8,19
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (projectResource == null) {,1,3,0.6000000000000001,20
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (children == null || children.length == 0) {,1,3,0.6000000000000001,21
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} else if (Strings.isNullOrEmpty(named)) {,1,3,0.6000000000000001,22
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public void firePostCompleteActions(String name, ExecutionRequest executionRequest, RestUIContext context, CommandController controller, ExecutionResult results, HttpServletRequest request) {",1,3,0.6000000000000001,23
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@ConfigProperty(name = ""OPENSHIFT_CREATE_BUILD_ON_PROJECT_CREATE"", defaultValue = ""false"") boolean createOpenShiftBuildResources) {",1,3,0.6000000000000001,24
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@ConfigProperty(name = ""JENKINS_SEED_JOB"", defaultValue = DEFAULT_JENKINS_SEED_JOB) String jenkinsSeedJob,",1,3,0.6000000000000001,25
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (converterFactory == null) {,1,3,0.6000000000000001,26
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (resourceFactory == null) {,1,3,0.6000000000000001,27
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected <T> T withUIContext(String namespace, String projectName, String resourcePath, boolean write, RestUIFunction<T> function) throws Exception {",1,3,0.6000000000000001,28
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response doValidate(@PathParam(""name"") String name, ExecutionRequest executionRequest, UserDetails userDetails, RestUIContext uiContext) throws Exception {",1,3,0.6000000000000001,29
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response validateCommand(@PathParam(""name"") final String name, final ExecutionRequest executionRequest) throws Exception {",1,3,0.6000000000000001,30
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} else if (!valid) {,1,3,0.6000000000000001,31
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (command == null) {,1,3,0.6000000000000001,32
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response doExecute(@PathParam(""name"") String name, ExecutionRequest executionRequest, CommandCompletePostProcessor postProcessor, UserDetails userDetails, RestUIContext uiContext) throws Exception {",1,3,0.6000000000000001,33
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response executeCommand(@PathParam(""name"") final String name, final ExecutionRequest executionRequest) throws Exception {",1,3,0.6000000000000001,34
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public List<CommandInfoDTO> getCommands(@PathParam(""namespace"") String namespace, @PathParam(""projectName"") String projectName) throws Exception {",1,3,0.6000000000000001,35
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String named = null;,1,2,0.4,36
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String origin = projectFileSystem.getRemote();,1,2,0.4,37
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (name.equals(PROJECT_NEW_COMMAND)) {,1,2,0.4,38
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String targetLocation = null;,1,2,0.4,39
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (!basedir.isDirectory() || !basedir.exists()) {,1,2,0.4,40
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNullOrEmpty(named)) {,1,2,0.4,41
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} else {,1,2,0.4,42
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"File basedir = new File(targetLocation, named);",1,2,0.4,43
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String internalAddress = userDetails.getInternalAddress();,1,2,0.4,44
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String branch = userDetails.getBranch();,1,2,0.4,45
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"if (Objects.equals(name, PROJECT_NEW_COMMAND)) {",1,2,0.4,46
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String address = userDetails.getAddress();,1,2,0.4,47
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String user = userDetails.getUser();,1,2,0.4,48
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (page1.containsKey(TARGET_LOCATION_PROPERTY)) {,1,2,0.4,49
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String fullName = null;,1,2,0.4,50
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNullOrEmpty(userDetails.getUser()) || Strings.isNullOrEmpty(userDetails.getUser())) {,1,2,0.4,51
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public UserDetails preprocessRequest(String name, ExecutionRequest executionRequest, HttpServletRequest request) {",1,2,0.4,52
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public static final String DEFAULT_JENKINS_SEED_JOB = ""seed"";",1,2,0.4,53
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public static final String TARGET_LOCATION_PROPERTY = ""targetLocation"";",1,2,0.4,54
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public static final String PROJECT_NEW_COMMAND = ""project-new"";",1,2,0.4,55
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Git git = initCommand.call();,1,2,0.4,56
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (child.isDirectory()) {,1,2,0.4,57
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (LOG.isDebugEnabled()) {,1,2,0.4,58
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String jenkinsUrl = getJenkinsServiceUrl(namespace);,1,2,0.4,59
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected void handleException(Throwable e) {,1,2,0.4,60
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (registerWebHooksValue instanceof Runnable) {,1,2,0.4,61
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected void registerWebHooks(RestUIContext context) {,1,2,0.4,62
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,try (RestUIContext context = new RestUIContext(null)) {,1,2,0.4,63
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} catch (IOException e) {,1,2,0.4,64
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"File dummyFile = new File(dir, "".gitkeep"");",1,2,0.4,65
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected void addDummyFileToEmptyFolders(File dir) {,1,2,0.4,66
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected String getJenkinsServiceUrl(String namespace) {,1,2,0.4,67
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (!Strings.isNullOrEmpty(text)) {,1,2,0.4,68
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNullOrEmpty(fullName)) {,1,2,0.4,69
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public static String firstNotBlank(String... texts) {,1,2,0.4,70
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} catch (Exception e) {,1,2,0.4,71
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"String projectName = firstNotBlank(named, context.getProjectName(), executionRequest.getProjectName());",1,2,0.4,72
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"String namespace = firstNotBlank(context.getProjectName(), executionRequest.getNamespace());",1,2,0.4,73
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"String message = ExecutionRequest.createCommitMessage(name, executionRequest);",1,2,0.4,74
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"String cloneUrl =  htmlUrl + "".git"";",1,2,0.4,75
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"String remoteUrl = internalAddress + user + ""/"" + named + "".git"";",1,2,0.4,76
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"String htmlUrl = address + user + ""/"" + named;",1,2,0.4,77
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public void setConverterFactory(ConverterFactory converterFactory) {,1,2,0.4,78
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNullOrEmpty(targetLocation)) {,1,2,0.4,79
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (write) {,1,2,0.4,80
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@PathParam(""namespace"") String namespace, @PathParam(""projectName"") String projectName,",1,2,0.4,81
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (controller instanceof WizardCommandController) {,1,2,0.4,82
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,try (RestUIContext context = uiContext) {,1,2,0.4,83
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Failed to invoke command "" + name + "" on "" + executionRequest + "". "" + e, e);",1,2,0.4,84
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} catch (Throwable e) {,1,2,0.4,85
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String resourcePath = executionRequest.getResource();,1,2,0.4,86
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String projectName = executionRequest.getProjectName();,1,2,0.4,87
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String namespace = executionRequest.getNamespace();,1,2,0.4,88
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"UICommand command = getCommandByName(context, name);",1,2,0.4,89
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@PathParam(""path"") String resourcePath) throws Exception {",1,2,0.4,90
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response getCommandInput(@PathParam(""name"") final String name,",1,2,0.4,91
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (!canMoveToNextStep) {,1,2,0.4,92
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response getCommandInput(@PathParam(""name"") String name) throws Exception {",1,2,0.4,93
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} else {,1,2,0.4,94
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@PathParam(""path"") final String resourcePath) throws Exception {",1,2,0.4,95
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Ignored exception on command "" + name + "" probably due to missing project?: "" + e, e);",1,2,0.4,96
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,} catch (Exception e) {,1,2,0.4,97
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,for (String name : commandFactory.getCommandNames(context)) {,1,2,0.4,98
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,try (RestUIContext context = new RestUIContext()) {,1,2,0.4,99
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public String getInfo() {,1,2,0.4,100
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNotBlank(commitMessage)) {,1,2,0.4,101
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (!stepValidation.isValid()) {,1,2,0.4,102
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public Response getCommandInfo(@PathParam(""name"") String name) throws Exception {",1,2,0.4,103
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.debug(""Invoked command "" + name + "" with "" + executionRequest + "" result: "" + lastResult);",1,2,0.4,104
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (Strings.isNullOrBlank(name) || ignoreCommands.contains(name)) {,1,2,0.4,105
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String commitMessage = context.getCommitMessage();,1,2,0.4,106
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (nextController == lastController) {,1,2,0.4,107
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"try (RestUIContext context = new RestUIContext(selection, namespace, projectName, cloneUrl)) {",1,2,0.4,108
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,String cloneUrl = projectResource.getCloneUrl();,1,2,0.4,109
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,File gitDir = repository.getDirectory();,1,2,0.4,110
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,GitOperation<T> operation = new GitOperation<T>() {,1,2,0.4,111
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"throw new NotFoundException(""Could not find git project for namespace: "" + namespace + "" and projectName: "" + projectName);",1,2,0.4,112
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected UICommand getCommandByName(RestUIContext context, String name) {",1,2,0.4,113
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (name.startsWith(prefix)) {,1,2,0.4,114
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,File directory = gitDir.getParentFile();,1,2,0.4,115
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,* Returns true if the name is valid. Lets filter out commands which are not suitable to run inside fabric8-forge,1,2,0.4,116
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected void configureAttributeMaps(UserDetails userDetails, CommandController controller, ExecutionRequest executionRequest) {",1,2,0.4,117
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected CommandInfoDTO createCommandInfoDTO(RestUIContext context, String name) {",1,2,0.4,118
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,final String resourcePath = executionRequest.getResource();,1,2,0.4,119
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,final String projectName = executionRequest.getProjectName();,1,2,0.4,120
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.debug(""Invoked command "" + name + "" with "" + executionRequest + "" result: "" + result);",1,2,0.4,121
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,final String namespace = executionRequest.getNamespace();,1,2,0.4,122
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,if (isValidCommandName(name)) {,1,2,0.4,123
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,AddonRegistry addonRegistry = furnace.getAddonRegistry();,1,1,0.2,124
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Imported<ResourceFactory> resourceFactoryImport = addonRegistry.getServices(ResourceFactory.class);,1,1,0.2,125
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,ResourceFactory resourceFactory = null;,1,1,0.2,126
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,resourceFactory = resourceFactoryImport.get();,1,1,0.2,127
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public ConverterFactory getConverterFactory() {,1,1,0.2,128
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Imported<ConverterFactory> converterFactoryImport = addonRegistry.getServices(ConverterFactory.class);,1,1,0.2,129
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public class GitCommandCompletePostProcessor implements CommandCompletePostProcessor {,1,1,0.2,130
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,converterFactory = converterFactoryImport.get();,1,1,0.2,131
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,this.converterFactory = converterFactory;,1,1,0.2,132
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private static final transient Logger LOG = LoggerFactory.getLogger(GitCommandCompletePostProcessor.class);,1,1,0.2,133
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private final String jenkinsSeedJob;,1,1,0.2,134
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,this.kubernetes = kubernetes;,1,1,0.2,135
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,this.projectFileSystem = projectFileSystem;,1,1,0.2,136
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Resource<File> selection = resourceFactory.create(file);,1,1,0.2,137
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,this.gitUserHelper = gitUserHelper;,1,1,0.2,138
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected ResourceFactory getResourceFactory() {,1,1,0.2,139
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,final ResourceFactory resourceFactory = getResourceFactory();,1,1,0.2,140
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,ResourceFactory resourceFactory = getResourceFactory();,1,1,0.2,141
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,RestUIRuntime runtime = new RestUIRuntime();,1,1,0.2,142
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"answer = UICommands.createValidationResult(context, controller, result);",1,1,0.2,143
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,this.createOpenShiftBuildResources = createOpenShiftBuildResources;,1,1,0.2,144
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,CommandInfoDTO answer = null;,1,1,0.2,145
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"answer = UICommands.createCommandInfoDTO(context, command);",1,1,0.2,146
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected boolean isValidCommandName(String name) {,1,1,0.2,147
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected CommandController createController(RestUIContext context, UICommand command) throws Exception {",1,1,0.2,148
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"CommandController controller = commandControllerFactory.createController(context, runtime,",1,1,0.2,149
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public RestUIContext createUIContext(File file) {,1,1,0.2,150
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"RepositoriesResource repositoriesResource = new RepositoriesResource(gitUserHelper, repositoryCache, projectFileSystem, lockManager, kubernetes);",1,1,0.2,151
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"final RepositoryResource projectResource = repositoriesResource.projectRepositoryResource(namespace, projectName);",1,1,0.2,152
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public T call(Git git, GitContext gitContext) throws Exception {",1,1,0.2,153
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Repository repository = git.getRepository();,1,1,0.2,154
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Resource<?> selection = resourceFactory.create(directory);,1,1,0.2,155
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,T answer = function.apply(context);,1,1,0.2,156
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,this.jenkinsSeedJob = jenkinsSeedJob;,1,1,0.2,157
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,for (String text : texts) {,1,1,0.2,158
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,},1,1,0.2,159
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,File[] children = dir.listFiles();,1,1,0.2,160
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.info(""Using remoteUrl: "" + remoteUrl + "" and remote name "" + origin);",1,1,0.2,161
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.info(""Commiting and pushing to: "" + remoteUrl + "" and remote name "" + origin);",1,1,0.2,162
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"BuildConfig buildConfig = Builds.createDefaultBuildConfig(projectName, cloneUrl, jenkinsUrl);",1,1,0.2,163
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Controller controller = new Controller(kubernetes);,1,1,0.2,164
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"controller.applyBuildConfig(buildConfig, ""from project "" + projectName);",1,1,0.2,165
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,* Git tends to ignore empty directories so lets add a dummy file to empty folders to keep them in git,1,1,0.2,166
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"IOHelpers.writeFully(dummyFile, ""This file is only here to avoid git removing empty folders\nOnce there are files in this folder feel free to delete this file!"");",1,1,0.2,167
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,UserDetails userDetails = gitUserHelper.createUserDetails(request);,1,1,0.2,168
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,for (File child : children) {,1,1,0.2,169
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"Map<Object, Object> attributeMap = context.getAttributeMap();",1,1,0.2,170
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"Object registerWebHooksValue = attributeMap.get(""registerWebHooks"");",1,1,0.2,171
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Runnable runnable = (Runnable) registerWebHooksValue;,1,1,0.2,172
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected boolean isPushOnCommit() {,1,1,0.2,173
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"WizardResultsDTO wizardResultsDTO = new WizardResultsDTO(stepPropertiesList, stepResultList, new ArrayList<ExecutionResult>());",1,1,0.2,174
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"//results.appendOut(""Created git repository "" + fullName + "" at: "" + htmlUrl);",1,1,0.2,175
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"fullName = user + ""/"" + named;",1,1,0.2,176
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,fullName = repository.getFullName();,1,1,0.2,177
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,RepositoryDTO repository = repoClient.createRepository(createRepository);,1,1,0.2,178
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,CreateRepositoryDTO createRepository = new CreateRepositoryDTO();,1,1,0.2,179
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,GitRepoClient repoClient = userDetails.createRepoClient();,1,1,0.2,180
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.info(""Initialised an empty git configuration repo at {}"", basedir.getAbsolutePath());",1,1,0.2,181
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,InitCommand initCommand = Git.init();,1,1,0.2,182
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Generated project folder does not exist: "" + basedir.getAbsolutePath());",1,1,0.2,183
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"named = map.get(""named"");",1,1,0.2,184
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"targetLocation = map.get(""targetLocation"");",1,1,0.2,185
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"for (Map<String, String> map : inputList) {",1,1,0.2,186
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,PersonIdent personIdent = userDetails.createPersonIdent();,1,1,0.2,187
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,try {,1,1,0.2,188
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"Map<String, String> page1 = inputList.get(0);",1,1,0.2,189
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"List<Map<String, String>> inputList = executionRequest.getInputList();",1,1,0.2,190
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// TODO this isn't really required if there's a secret associated with the BuildConfig source,1,1,0.2,191
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<UIMessage> result = controller.validate();,1,1,0.2,192
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,for (String prefix : ignoreCommandPrefixes) {,1,1,0.2,193
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"//WizardResultsDTO wizardResultsDTO = new WizardResultsDTO(stepPropertiesList, stepValidationList, stepResultList);",1,1,0.2,194
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<ValidationResult> stepValidationList = new ArrayList<>();,1,1,0.2,195
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public Response apply(RestUIContext context) throws Exception {,1,1,0.2,196
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,CommandInputDTO answer = null;,1,1,0.2,197
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"CommandController controller = createController(context, command);",1,1,0.2,198
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"answer = UICommands.createCommandInputDTO(context, command, controller);",1,1,0.2,199
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,final CommandCompletePostProcessor postProcessor = this.commandCompletePostProcessor;,1,1,0.2,200
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"userDetails = postProcessor.preprocessRequest(name, executionRequest, request);",1,1,0.2,201
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,userDetails = null;,1,1,0.2,202
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return withUIContext(namespace, projectName, resourcePath, true, new RestUIFunction<Response>() {",1,1,0.2,203
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public Response apply(RestUIContext uiContext) throws Exception {,1,1,0.2,204
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,* This method is only used to warm up JBoss Forge so we can create a sample project on startup in a temporary directory,1,1,0.2,205
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"List<Map<String, String>> inputList = executionRequest.getInputList();",1,1,0.2,206
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,ExecutionResult answer = null;,1,1,0.2,207
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,WizardCommandController wizardCommandController = (WizardCommandController) controller;,1,1,0.2,208
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<WizardCommandController> controllers = new ArrayList<>();,1,1,0.2,209
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<CommandInputDTO> stepPropertiesList = new ArrayList<>();,1,1,0.2,210
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"CommandInfoDTO answer = createCommandInfoDTO(context, name);",1,1,0.2,211
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public Response apply(RestUIContext context) {,1,1,0.2,212
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return withUIContext(namespace, projectName, resourcePath, false, new RestUIFunction<Response>() {",1,1,0.2,213
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public List<String> getCommandNames() {,1,1,0.2,214
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"answer = UICommands.createValidationResult(context, controller, lastResult);",1,1,0.2,215
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public class CommandsResource {,1,1,0.2,216
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private static final transient Logger LOG = LoggerFactory.getLogger(CommandsResource.class);,1,1,0.2,217
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// project commands,1,1,0.2,218
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"protected static final List<String> ignoreCommandPrefixes = Arrays.asList(""addon-"", ""archetype-"", ""fabric8-"", ""git-"", ""camel-get-"");",1,1,0.2,219
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,},1,1,0.2,220
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<String> answer = new ArrayList<>();,1,1,0.2,221
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"CommandInfoDTO dto = createCommandInfoDTO(context, name);",1,1,0.2,222
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,for (String commandName : commandFactory.getCommandNames(context)) {,1,1,0.2,223
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public List<CommandInfoDTO> getCommands() throws Exception {,1,1,0.2,224
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return withUIContext(namespace, projectName, resourcePath, false, new RestUIFunction<List<CommandInfoDTO>>() {",1,1,0.2,225
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,public List<CommandInfoDTO> apply(RestUIContext context) {,1,1,0.2,226
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<CommandInfoDTO> answer = new ArrayList<>();,1,1,0.2,227
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,try {,1,1,0.2,228
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<ExecutionResult> stepResultList = new ArrayList<>();,1,1,0.2,229
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,protected static final Set<String> ignoreCommands = new HashSet<>(Arrays.asList(,1,1,0.2,230
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,WizardCommandController lastController = wizardCommandController;,1,1,0.2,231
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"userDetails = commandCompletePostProcessor.preprocessRequest(name, executionRequest, request);",1,1,0.2,232
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"answer = UICommands.createExecutionResult(context, lastResult, canMoveToNextStep);",1,1,0.2,233
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"WizardResultsDTO wizardResultsDTO = new WizardResultsDTO(stepPropertiesList, stepValidationList, stepResultList);",1,1,0.2,234
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"Map<String, String> inputs = inputList.get(0);",1,1,0.2,235
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Result result = controller.execute();,1,1,0.2,236
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"answer = UICommands.createExecutionResult(context, result, false);",1,1,0.2,237
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"Map<Object, Object> attributeMap = controller.getContext().getAttributeMap();",1,1,0.2,238
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,GitContext gitContext = new GitContext();,1,1,0.2,239
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"Map<String, String> stepControllerInputs = inputList.get(i++);",1,1,0.2,240
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,ValidationResult answer = null;,1,1,0.2,241
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<ValidationResult> stepResultList = new ArrayList<>();,1,1,0.2,242
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<UIMessage> lastResult = null;,1,1,0.2,243
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,lastResult = stepController.validate();,1,1,0.2,244
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"ValidationResult stepResults = UICommands.createValidationResult(context, controller, lastResult);",1,1,0.2,245
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,Result lastResult = null;,1,1,0.2,246
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,lastResult = stepController.execute();,1,1,0.2,247
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,lastResult = lastController.validate();,1,1,0.2,248
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,for (WizardCommandController stepController : controllers) {,1,1,0.2,249
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,canMoveToNextStep = lastController.canMoveToNextStep();,1,1,0.2,250
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,int i = 0;,1,1,0.2,251
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,boolean canMoveToNextStep = false;,1,1,0.2,252
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"for (Map<String, String> inputs : inputList) {",1,1,0.2,253
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,int page = executionRequest.wizardStep();,1,1,0.2,254
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"ValidationResult stepValidation = UICommands.createValidationResult(context, lastController, messages);",1,1,0.2,255
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,List<UIMessage> messages = lastController.validate();,1,1,0.2,256
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,boolean valid = lastController.isValid();,1,1,0.2,257
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,lastResult = lastController.execute();,1,1,0.2,258
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"ExecutionResult stepResults = UICommands.createExecutionResult(context, lastResult, false);",1,1,0.2,259
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,WizardCommandController nextController = lastController.next();,1,1,0.2,260
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,lastController = nextController;,1,1,0.2,261
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"CommandInputDTO stepDto = UICommands.createCommandInputDTO(context, command, lastController);",1,1,0.2,262
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,int nextPage = page + 1;,1,1,0.2,263
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Failed to get ResourceFactory injected: "" + e, e);",1,0,0.0,264
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,265
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,/**,1,0,0.0,266
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return converterFactory;,1,0,0.0,267
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return resourceFactory;,1,0,0.0,268
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// lets try one more time - might work this time?,1,0,0.0,269
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,};,1,0,0.0,270
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return new RestUIContext(selection);,1,0,0.0,271
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return function.apply(context);,1,0,0.0,272
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return projectResource.gitReadOperation(operation);,1,0,0.0,273
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return projectResource.gitWriteOperation(operation);,1,0,0.0,274
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,275
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,projectResource.setMessage(commitMessage);,1,0,0.0,276
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.debug(""using repository directory: "" + directory.getAbsolutePath());",1,0,0.0,277
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*,1,0,0.0,278
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*  implied.  See the License for the specific language governing,1,0,0.0,279
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,280
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*  with the License.  You may obtain a copy of the License at,1,0,0.0,281
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,282
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,283
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,284
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,285
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*  permissions and limitations under the License.,1,0,0.0,286
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*/,1,0,0.0,287
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,package io.fabric8.forge.rest.main;,1,0,0.0,288
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.ExecutionRequest;,1,0,0.0,289
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.ExecutionResult;,1,0,0.0,290
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.hooks.CommandCompletePostProcessor;,1,0,0.0,291
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.ui.RestUIContext;,1,0,0.0,292
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.kubernetes.api.Controller;,1,0,0.0,293
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.kubernetes.api.KubernetesHelper;,1,0,0.0,294
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,repositoriesResource.setRequest(request);,1,0,0.0,295
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""namespace"", executionRequest.getNamespace());",1,0,0.0,296
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return withUIContext(namespace, projectName, resourcePath, write, function, new GitContext());",1,0,0.0,297
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"UICommands.populateController(inputs, controller, getConverterFactory());",1,0,0.0,298
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""gitAddress"", userDetails.getAddress());",1,0,0.0,299
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""gitAuthorEmail"", userDetails.getEmail());",1,0,0.0,300
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""gitPassword"", userDetails.getPassword());",1,0,0.0,301
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""gitUser"", userDetails.getUser());",1,0,0.0,302
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"context.setCommitMessage(ExecutionRequest.createCommitMessage(name, executionRequest));",1,0,0.0,303
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"postProcessor.firePostCompleteActions(name, executionRequest, context, controller, answer, request);",1,0,0.0,304
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,answer.setWizardResults(wizardResultsDTO);,1,0,0.0,305
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return controller;,1,0,0.0,306
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"UICommands.populateController(stepControllerInputs, stepController, getConverterFactory());",1,0,0.0,307
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,stepPropertiesList.add(stepDto);,1,0,0.0,308
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,controllers.add(lastController);,1,0,0.0,309
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,lastController.initialize();,1,0,0.0,310
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.kubernetes.api.builds.Builds;,1,0,0.0,311
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""No idea whats going on ;)"");",1,0,0.0,312
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""gitUrl"", userDetails.getAddress());",1,0,0.0,313
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""gitBranch"", userDetails.getBranch());",1,0,0.0,314
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""projectName"", executionRequest.getProjectName());",1,0,0.0,315
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""buildName"", executionRequest.getProjectName());",1,0,0.0,316
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"attributeMap.put(""jenkinsWorkflowFolder"", projectFileSystem.getJenkinsWorkflowFolder());",1,0,0.0,317
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,projectFileSystem.asyncCloneOrPullJenkinsWorkflows(userDetails);,1,0,0.0,318
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/command/validate/{name}"")",1,0,0.0,319
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,gitContext.setRequirePull(false);,1,0,0.0,320
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return doValidate(name, executionRequest, userDetails, uiContext);",1,0,0.0,321
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"}, gitContext);",1,0,0.0,322
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,* Helper method used purely to pre-load and warm up JBoss Forge,1,0,0.0,323
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// TODO do we need stepValidationList?,1,0,0.0,324
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return false;,1,0,0.0,325
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return true;,1,0,0.0,326
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return commandFactory.getCommandByName(context, name);",1,0,0.0,327
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,command);,1,0,0.0,328
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,controller.initialize();,1,0,0.0,329
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.kubernetes.api.ServiceNames;,1,0,0.0,330
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"page1.put(TARGET_LOCATION_PROPERTY, projectFileSystem.getUserProjectFolderLocation(userDetails));",1,0,0.0,331
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.kubernetes.client.KubernetesClient;,1,0,0.0,332
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"results.setOutputProperty(""fullName"", fullName);",1,0,0.0,333
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"GitHelpers.doAddCommitAndPushFiles(git, userDetails, personIdent, branch, origin, message, isPushOnCommit());",1,0,0.0,334
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,addDummyFileToEmptyFolders(basedir);,1,0,0.0,335
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"GitHelpers.configureBranch(git, branch, origin, remoteUrl);",1,0,0.0,336
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// now lets import the code and publish,1,0,0.0,337
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"results.setOutputProperty(""htmlUrl"", htmlUrl);",1,0,0.0,338
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"results.setOutputProperty(""cloneUrl"", remoteUrl);",1,0,0.0,339
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.debug(""Got repository: "" + toJson(repository));",1,0,0.0,340
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.openshift.api.model.BuildConfig;,1,0,0.0,341
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,createRepository.setName(named);,1,0,0.0,342
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// lets create the repository,1,0,0.0,343
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,initCommand.setDirectory(basedir);,1,0,0.0,344
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""No named could be found!"");",1,0,0.0,345
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""No targetLocation could be found!"");",1,0,0.0,346
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,GitHelpers.disableSslCertificateChecks();,1,0,0.0,347
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,results.setProjectName(projectName);,1,0,0.0,348
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"createBuildConfig(context, namespace, projectName, cloneUrl);",1,0,0.0,349
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.info(""Creating any pending webhooks"");",1,0,0.0,350
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,registerWebHooks(context);,1,0,0.0,351
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.info(""Done creating webhooks!"");",1,0,0.0,352
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,handleException(e);,1,0,0.0,353
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return text;,1,0,0.0,354
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return null;,1,0,0.0,355
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.info(""Creating a BuildConfig for namespace: "" + namespace + "" project: "" + projectName);",1,0,0.0,356
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,controller.setNamespace(namespace);,1,0,0.0,357
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return KubernetesHelper.getServiceURL(kubernetes, ServiceNames.JENKINS, namespace, ""http"", true);",1,0,0.0,358
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Failed to write file "" + dummyFile + "". "" + e, e);",1,0,0.0,359
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,addDummyFileToEmptyFolders(child);,1,0,0.0,360
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"projectFileSystem.invokeLater(runnable, 1000L);",1,0,0.0,361
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return true;,1,0,0.0,362
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Caught: "" + e, e);",1,0,0.0,363
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,stepResultList.add(stepResults);,1,0,0.0,364
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return userDetails;,1,0,0.0,365
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,/*,1,0,0.0,366
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"throw new NotAuthorizedException(""You must authenticate to be able to perform this command"");",1,0,0.0,367
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.NotAuthorizedException;,1,0,0.0,368
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.repo.git.CreateRepositoryDTO;,1,0,0.0,369
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.repo.git.GitRepoClient;,1,0,0.0,370
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.repo.git.RepositoryDTO;,1,0,0.0,371
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.utils.IOHelpers;,1,0,0.0,372
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.apache.deltaspike.core.api.config.ConfigProperty;,1,0,0.0,373
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.eclipse.jgit.api.Git;,1,0,0.0,374
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.eclipse.jgit.api.InitCommand;,1,0,0.0,375
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.eclipse.jgit.lib.PersonIdent;,1,0,0.0,376
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.controller.CommandController;,1,0,0.0,377
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.furnace.util.Strings;,1,0,0.0,378
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.slf4j.Logger;,1,0,0.0,379
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.slf4j.LoggerFactory;,1,0,0.0,380
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.inject.Inject;,1,0,0.0,381
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.servlet.http.HttpServletRequest;,1,0,0.0,382
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.io.File;,1,0,0.0,383
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Override,1,0,0.0,384
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.io.IOException;,1,0,0.0,385
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.List;,1,0,0.0,386
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.Map;,1,0,0.0,387
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.Objects;,1,0,0.0,388
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import static io.fabric8.utils.cxf.JsonHelper.toJson;,1,0,0.0,389
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// TODO we should try add this into the ConfigureDevOpsStep.execute() block instead!,1,0,0.0,390
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private final KubernetesClient kubernetes;,1,0,0.0,391
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private final GitUserHelper gitUserHelper;,1,0,0.0,392
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private final ProjectFileSystem projectFileSystem;,1,0,0.0,393
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private final boolean createOpenShiftBuildResources;,1,0,0.0,394
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Inject,1,0,0.0,395
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"public GitCommandCompletePostProcessor(KubernetesClient kubernetes,",1,0,0.0,396
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"GitUserHelper gitUserHelper,",1,0,0.0,397
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"ProjectFileSystem projectFileSystem,",1,0,0.0,398
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"LOG.warn(""Cannot move to next step as invalid despite the validation saying otherwise"");",1,0,0.0,399
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*  with the License.  You may obtain a copy of the License at,1,0,0.0,400
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// lets assume we can execute now,1,0,0.0,401
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.command.UICommand;,1,0,0.0,402
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.furnace.Furnace;,1,0,0.0,403
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,404
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.output.UIMessage;,1,0,0.0,405
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.controller.WizardCommandController;,1,0,0.0,406
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.controller.CommandControllerFactory;,1,0,0.0,407
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.controller.CommandController;,1,0,0.0,408
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.ui.command.CommandFactory;,1,0,0.0,409
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.io.File;,1,0,0.0,410
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.resource.ResourceFactory;,1,0,0.0,411
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.resource.Resource;,1,0,0.0,412
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.addon.convert.ConverterFactory;,1,0,0.0,413
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.eclipse.jgit.lib.Repository;,1,0,0.0,414
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.eclipse.jgit.api.Git;,1,0,0.0,415
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.utils.Strings;,1,0,0.0,416
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.furnace.addons.AddonRegistry;,1,0,0.0,417
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.jboss.forge.furnace.services.Imported;,1,0,0.0,418
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.slf4j.Logger;,1,0,0.0,419
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import org.slf4j.LoggerFactory;,1,0,0.0,420
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ejb.Stateless;,1,0,0.0,421
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.inject.Inject;,1,0,0.0,422
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.servlet.http.HttpServletRequest;,1,0,0.0,423
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.Consumes;,1,0,0.0,424
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.GET;,1,0,0.0,425
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.NotFoundException;,1,0,0.0,426
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.POST;,1,0,0.0,427
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.Path;,1,0,0.0,428
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.PathParam;,1,0,0.0,429
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.Produces;,1,0,0.0,430
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.core.Context;,1,0,0.0,431
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.core.MediaType;,1,0,0.0,432
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.core.Response;,1,0,0.0,433
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.kubernetes.client.KubernetesClient;,1,0,0.0,434
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.ui.RestUIRuntime;,1,0,0.0,435
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.ui.RestUIFunction;,1,0,0.0,436
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.CommandInputDTO;,1,0,0.0,437
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,/**,1,0,0.0,438
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,439
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*,1,0,0.0,440
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,441
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,442
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,443
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,444
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,445
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,446
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*  implied.  See the License for the specific language governing,1,0,0.0,447
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*  permissions and limitations under the License.,1,0,0.0,448
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,*/,1,0,0.0,449
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,package io.fabric8.forge.rest;,1,0,0.0,450
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.CommandInfoDTO;,1,0,0.0,451
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.ExecutionRequest;,1,0,0.0,452
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.ui.RestUIContext;,1,0,0.0,453
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.ExecutionResult;,1,0,0.0,454
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.UICommands;,1,0,0.0,455
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.ValidationResult;,1,0,0.0,456
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.dto.WizardResultsDTO;,1,0,0.0,457
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.git.GitContext;,1,0,0.0,458
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.git.GitLockManager;,1,0,0.0,459
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.git.GitOperation;,1,0,0.0,460
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.git.RepositoriesResource;,1,0,0.0,461
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.git.RepositoryResource;,1,0,0.0,462
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.hooks.CommandCompletePostProcessor;,1,0,0.0,463
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.main.GitUserHelper;,1,0,0.0,464
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.main.ProjectFileSystem;,1,0,0.0,465
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.main.RepositoryCache;,1,0,0.0,466
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import io.fabric8.forge.rest.main.UserDetails;,1,0,0.0,467
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import javax.ws.rs.core.Response.Status;,1,0,0.0,468
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.ArrayList;,1,0,0.0,469
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,break;,1,0,0.0,470
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Override,1,0,0.0,471
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return Response.ok(answer).build();,1,0,0.0,472
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/command/{name}/{namespace}/{projectName}/{path: .*}"")",1,0,0.0,473
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return getCommandInfo(name, null, null, null);",1,0,0.0,474
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/command/{name}"")",1,0,0.0,475
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,});,1,0,0.0,476
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,answer.add(dto);,1,0,0.0,477
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commands/{namespace}/{projectName}/{path: .*}"")",1,0,0.0,478
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.Arrays;,1,0,0.0,479
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return getCommands(namespace, projectName, null);",1,0,0.0,480
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commands/{namespace}/{projectName}"")",1,0,0.0,481
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return getCommands(null, null, null);",1,0,0.0,482
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commands"")",1,0,0.0,483
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return answer;,1,0,0.0,484
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,answer.add(commandName);,1,0,0.0,485
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return Response.status(Status.NOT_FOUND).build();,1,0,0.0,486
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commandInput/{name}"")",1,0,0.0,487
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return getCommandInput(name, null, null, null);",1,0,0.0,488
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commandInput/{name}/{namespace}/{projectName}"")",1,0,0.0,489
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return getCommandInput(name, namespace, projectName, null);",1,0,0.0,490
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commandInput/{name}/{namespace}/{projectName}/{path: .*}"")",1,0,0.0,491
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@POST,1,0,0.0,492
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/command/execute/{name}"")",1,0,0.0,493
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Consumes(MediaType.APPLICATION_JSON),1,0,0.0,494
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,final UserDetails userDetails;,1,0,0.0,495
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,userDetails.setAddress(uiContext.getCloneUrl());,1,0,0.0,496
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"return doExecute(name, executionRequest, postProcessor, userDetails, uiContext);",1,0,0.0,497
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,throw e;,1,0,0.0,498
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"configureAttributeMaps(userDetails, controller, executionRequest);",1,0,0.0,499
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,controllers.add(wizardCommandController);,1,0,0.0,500
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"UICommands.populateController(inputs, lastController, getConverterFactory());",1,0,0.0,501
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,stepValidationList.add(stepValidation);,1,0,0.0,502
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Produces(MediaType.APPLICATION_JSON),1,0,0.0,503
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/commandNames"")",1,0,0.0,504
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,return furnace.getVersion().toString();,1,0,0.0,505
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""build"",",1,0,0.0,506
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.HashSet;,1,0,0.0,507
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.List;,1,0,0.0,508
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.Map;,1,0,0.0,509
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,import java.util.Set;,1,0,0.0,510
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"@Path(""/api/forge"")",1,0,0.0,511
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Stateless,1,0,0.0,512
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""devops-edit"",",1,0,0.0,513
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""devops-new-build"",",1,0,0.0,514
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,// forge commands,1,0,0.0,515
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""build-and-install-an-addon"",",1,0,0.0,516
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""install-an-addon"",",1,0,0.0,517
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""install-an-addon-from-git"",",1,0,0.0,518
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""remove-an-addon"",",1,0,0.0,519
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""update-an-addon"",",1,0,0.0,520
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,"""project-new""",1,0,0.0,521
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@GET,1,0,0.0,522
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,));,1,0,0.0,523
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Inject,1,0,0.0,524
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private Furnace furnace;,1,0,0.0,525
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private CommandControllerFactory commandControllerFactory;,1,0,0.0,526
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private CommandFactory commandFactory;,1,0,0.0,527
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private CommandCompletePostProcessor commandCompletePostProcessor;,1,0,0.0,528
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private ProjectFileSystem projectFileSystem;,1,0,0.0,529
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private GitUserHelper gitUserHelper;,1,0,0.0,530
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private RepositoryCache repositoryCache;,1,0,0.0,531
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private KubernetesClient kubernetes;,1,0,0.0,532
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private GitLockManager lockManager;,1,0,0.0,533
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,@Context,1,0,0.0,534
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private HttpServletRequest request;,1,0,0.0,535
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,private ConverterFactory converterFactory;,1,0,0.0,536
+732e365c4af8e06e5e78cf28815a0dabf4231c1b,throw new RuntimeException(e);,1,0,0.0,537

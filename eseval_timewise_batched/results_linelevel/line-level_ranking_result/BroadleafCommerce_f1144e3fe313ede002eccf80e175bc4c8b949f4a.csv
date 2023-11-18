@@ -1,0 +1,180 @@
+commit_id,line,line_level_label,count,line_score,row
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String viewCustomerPayment(HttpServletRequest request, Model model, Long customerPaymentId) {",0,4,1.0,1
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String viewCustomerPayment(HttpServletRequest request, Model model, Long customerPaymentId) {",1,4,1.0,2
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String updateCustomerPayment(HttpServletRequest request, Model model, Long customerPaymentId) {",0,4,1.0,3
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String addCustomerPayment(HttpServletRequest request, Model model, SavePaymentForm paymentForm,",1,4,1.0,4
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String viewCustomerPayments(HttpServletRequest request, Model model, SavedPaymentForm savedPaymentForm) {",0,4,1.0,5
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String removeCustomerPayment(HttpServletRequest request, Model model, SavePaymentForm form, Long customerPaymentId) {",1,4,1.0,6
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String updateCustomerPayment(HttpServletRequest request, Model model, SavePaymentForm form, BindingResult result, Long customerPaymentId) {",1,4,1.0,7
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String addCustomerPayment(HttpServletRequest request, Model model,",0,4,1.0,8
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String removeCustomerPayment(HttpServletRequest request, Model model, Long customerPaymentId) {",0,4,1.0,9
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String removeCustomerPayment(HttpServletRequest request, Model model, @PathVariable(""customerPaymentId"") Long customerPaymentId) {",1,4,1.0,10
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String updateCustomerPayment(HttpServletRequest request, Model model, @PathVariable(""customerPaymentId"") Long customerPaymentId) {",1,4,1.0,11
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String viewCustomerPayment(HttpServletRequest request, Model model, @PathVariable(""customerPaymentId"") Long customerPaymentId) {",1,4,1.0,12
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String removeCustomerPayment(HttpServletRequest request, Model model, Long customerPaymentId) {",0,4,1.0,13
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"public String viewCustomerPayments(HttpServletRequest request, Model model) {",1,3,0.75,14
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"//TODO: update model, add form",0,2,0.5,15
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,//TODO: update model,1,2,0.5,16
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"//TODO: update model, add form",1,2,0.5,17
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,Customer customer = CustomerState.getCustomer();,0,2,0.5,18
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,Customer customer = CustomerState.getCustomer();,1,2,0.5,19
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@RequestMapping(value = ""/{customerPaymentId}/"", method = RequestMethod.POST, params=""removePayment=Remove"")",1,1,0.25,20
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"throw new InvalidParameterException(""Requested customer payment does not exist."");",1,1,0.25,21
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"throw new IllegalArgumentException(""Requested customer payment does not exist."");",0,1,0.25,22
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@RequestMapping(value = ""/{customerPaymentId}/"", method = RequestMethod.POST)",1,1,0.25,23
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"throw new SecurityException(""The active customer does not own the object that they are trying to view, edit, or remove."");",0,1,0.25,24
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,Customer activeCustomer = CustomerState.getCustomer();,0,1,0.25,25
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@RequestMapping(value = ""/{customerPaymentId}/"", method = RequestMethod.GET)",1,1,0.25,26
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,(StringUtils.isEmpty(savedPaymentForm.getAddress().getPhonePrimary().getPhoneNumber()))) {,0,0,0.0,27
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,savedPaymentForm.getAddress().setPhoneFax(null);,0,0,0.0,28
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,},0,0,0.0,29
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if ((savedPaymentForm.getAddress().getPhoneSecondary() != null) &&,0,0,0.0,30
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,(StringUtils.isEmpty(savedPaymentForm.getAddress().getPhoneSecondary().getPhoneNumber()))) {,0,0,0.0,31
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,savedPaymentForm.getAddress().setPhoneSecondary(null);,0,0,0.0,32
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if ((savedPaymentForm.getAddress().getPhoneFax() != null) &&,0,0,0.0,33
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,(StringUtils.isEmpty(savedPaymentForm.getAddress().getPhoneFax().getPhoneNumber()))) {,0,0,0.0,34
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,return getCustomerPaymentView();,0,0,0.0,35
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"savedPaymentService.addSavedPayment(customer, savedPaymentForm);",0,0,0.0,36
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (customerPayment == null) {,0,0,0.0,37
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.common.payment.PaymentAdditionalFieldType;,1,0,0.0,38
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.core.web.checkout.validator.BillingInfoFormValidator;,1,0,0.0,39
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.core.web.controller.account.validator.SavePaymentValidator;,1,0,0.0,40
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.springframework.beans.factory.annotation.Value;,1,0,0.0,41
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import java.security.InvalidParameterException;,1,0,0.0,42
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"* This is the page controller for adding, updating, and deleting saved payment information.",1,0,0.0,43
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,savedPaymentForm.getAddress().setPhonePrimary(null);,0,0,0.0,44
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blSavedPaymentService"")",0,0,0.0,45
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if ((savedPaymentForm.getAddress().getPhonePrimary() != null) &&,0,0,0.0,46
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (!bindingResult.hasErrors()) {,0,0,0.0,47
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"binder.registerCustomEditor(Phone.class, ""address.phoneFax"", new PropertyEditorSupport() {",1,0,0.0,48
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.core.web.controller.account.validator.SavedPaymentFormValidator;,0,0,0.0,49
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.core.web.payment.service.SavedPaymentService;,0,0,0.0,50
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"* This is the page controller for adding, updating, and deleting a customer's saved payments.",0,0,0.0,51
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,* @author Chris Kittrell (ckittrell),0,0,0.0,52
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected boolean validateCustomerOwnedData;,1,0,0.0,53
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected SavedPaymentService savedPaymentService;,0,0,0.0,54
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blSavedPaymentFormValidator"")",0,0,0.0,55
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected SavedPaymentFormValidator savedPaymentFormValidator;,0,0,0.0,56
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (customer == null) {,0,0,0.0,57
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,List<CustomerAddress> customerAddresses = customerAddressService.readActiveCustomerAddressesByCustomerId(customer.getId());,0,0,0.0,58
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"model.addAttribute(""customerAddresses"", customerAddresses);",0,0,0.0,59
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"SavedPaymentForm savedPaymentForm, BindingResult bindingResult) {",0,0,0.0,60
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,addressService.populateAddressISOCountrySub(savedPaymentForm.getAddress());,0,0,0.0,61
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"savedPaymentFormValidator.validate(savedPaymentForm, bindingResult);",0,0,0.0,62
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Value(""${validate.customer.owned.data:true}"")",1,0,0.0,63
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,addressService.populateAddressISOCountrySub(billingForm.getAddress());,1,0,0.0,64
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blSavePaymentValidator"")",1,0,0.0,65
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,customerPayment.setIsDefault(paymentForm.isDefaultMethod());,1,0,0.0,66
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if ((billingForm.getAddress().getPhoneFax() != null) &&,1,0,0.0,67
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,(StringUtils.isEmpty(billingForm.getAddress().getPhoneFax().getPhoneNumber()))) {,1,0,0.0,68
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,billingForm.getAddress().setPhoneFax(null);,1,0,0.0,69
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if(paymentResult.hasErrors() || billingResult.hasErrors()) {,1,0,0.0,70
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,return getCustomerPaymentRedirect();,1,0,0.0,71
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,CustomerPayment customerPayment = customerPaymentService.create();,1,0,0.0,72
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,customerPayment.setCustomer(customer);,1,0,0.0,73
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"customerPayment.getAdditionalFields().put(PaymentAdditionalFieldType.EXP_DATE.getType(), paymentForm.getExpiration());",1,0,0.0,74
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected SavePaymentValidator savePaymentValidator;,1,0,0.0,75
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"customerPayment.getAdditionalFields().put(PaymentAdditionalFieldType.LAST_FOUR.getType(), paymentForm.getLastFourDigits());",1,0,0.0,76
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"customerPayment.getAdditionalFields().put(PaymentAdditionalFieldType.PAYMENT_NAME.getType(), paymentForm.getPaymentName());",1,0,0.0,77
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"customerPayment.getAdditionalFields().put(PaymentAdditionalFieldType.NAME_ON_CARD.getType(), paymentForm.getPersonName());",1,0,0.0,78
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"//customerPayment.getAdditionalFields().put(PaymentAdditionalFieldType.CARD_TYPE.getType(), paymentForm.getPersonName());",1,0,0.0,79
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,customerPayment.setBillingAddress(billingForm.getAddress());,1,0,0.0,80
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,//        customerPayment.setToken();,1,0,0.0,81
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,customerPaymentService.saveCustomerPayment(customerPayment);,1,0,0.0,82
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,billingForm.getAddress().setPhoneSecondary(null);,1,0,0.0,83
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,(StringUtils.isEmpty(billingForm.getAddress().getPhoneSecondary().getPhoneNumber()))) {,1,0,0.0,84
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if ((billingForm.getAddress().getPhoneSecondary() != null) &&,1,0,0.0,85
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,},1,0,0.0,86
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blBillingInfoFormValidator"")",1,0,0.0,87
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected BillingInfoFormValidator billingInfoFormValidator;,1,0,0.0,88
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if(customer == null) {,1,0,0.0,89
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,SavePaymentForm savePaymentForm = new SavePaymentForm();,1,0,0.0,90
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,savePaymentForm.setDefaultMethod(savedPaymentList.isEmpty());,1,0,0.0,91
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"model.addAttribute(""savePaymentForm"", savePaymentForm);",1,0,0.0,92
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,List<CustomerAddress> customerAddresses = customerAddressService.readActiveCustomerAddressesByCustomerId(CustomerState.getCustomer().getId());,1,0,0.0,93
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"model.addAttribute(""customerAddresses"", customerAddresses);",1,0,0.0,94
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"BindingResult paymentResult, BillingInfoForm billingForm, BindingResult billingResult) {",1,0,0.0,95
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,setValue(phone);,1,0,0.0,96
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"savePaymentValidator.validate(paymentForm, paymentResult);",1,0,0.0,97
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"billingInfoFormValidator.validate(billingForm, billingResult);",1,0,0.0,98
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if ((billingForm.getAddress().getPhonePrimary() != null) &&,1,0,0.0,99
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,(StringUtils.isEmpty(billingForm.getAddress().getPhonePrimary().getPhoneNumber()))) {,1,0,0.0,100
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,billingForm.getAddress().setPhonePrimary(null);,1,0,0.0,101
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"binder.registerCustomEditor(Phone.class, ""address.phoneSecondary"", new PropertyEditorSupport() {",1,0,0.0,102
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,},1,0,0.0,103
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,phone.setPhoneNumber(text);,1,0,0.0,104
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.core.web.service.InitBinderService;,0,0,0.0,105
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.springframework.web.bind.annotation.RequestMethod;,1,0,0.0,106
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,@Controller,1,0,0.0,107
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@RequestMapping(""/account/payments"")",1,0,0.0,108
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,@RequestMapping(method = RequestMethod.GET),1,0,0.0,109
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,return getCustomerPaymentView();,1,0,0.0,110
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,},1,0,0.0,111
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,return getCustomerPaymentRedirect();,1,0,0.0,112
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.domain.Customer;,0,0,0.0,113
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,Phone phone = new PhoneImpl();,1,0,0.0,114
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.domain.CustomerAddress;,0,0,0.0,115
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.domain.CustomerPayment;,0,0,0.0,116
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.service.AddressService;,0,0,0.0,117
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.service.CustomerAddressService;,0,0,0.0,118
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.service.CustomerPaymentService;,0,0,0.0,119
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import javax.annotation.Resource;,0,0,0.0,120
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import javax.servlet.http.HttpServletRequest;,0,0,0.0,121
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.springframework.web.bind.annotation.RequestMapping;,1,0,0.0,122
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.springframework.web.bind.annotation.PathVariable;,1,0,0.0,123
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.springframework.stereotype.Controller;,1,0,0.0,124
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (activeCustomer == null && customerPayment.getCustomer() != null) {,0,0,0.0,125
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.domain.Customer;,0,0,0.0,126
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.domain.CustomerPayment;,0,0,0.0,127
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.service.CustomerPaymentService;,0,0,0.0,128
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.web.core.CustomerState;,0,0,0.0,129
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.springframework.beans.factory.annotation.Value;,0,0,0.0,130
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import javax.annotation.Resource;,0,0,0.0,131
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Value(""${validate.customer.owned.data:true}"")",0,0,0.0,132
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected boolean validateCustomerOwnedData;,0,0,0.0,133
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blCustomerPaymentService"")",0,0,0.0,134
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected CustomerPaymentService customerPaymentService;,0,0,0.0,135
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected void validateCustomerOwnedData(CustomerPayment customerPayment) {,0,0,0.0,136
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (validateCustomerOwnedData) {,0,0,0.0,137
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (activeCustomer != null,0,0,0.0,138
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,&& !(activeCustomer.equals(customerPayment.getCustomer()))) {,0,0,0.0,139
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,},0,0,0.0,140
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blInitBinderService"")",0,0,0.0,141
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected InitBinderService initBinderService;,0,0,0.0,142
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,initBinderService.configAddressInitBinder(binder);,0,0,0.0,143
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,@Override,1,0,0.0,144
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if (StringUtils.isNotEmpty(text)) {,1,0,0.0,145
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,State state = stateService.findStateByAbbreviation(text);,1,0,0.0,146
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,setValue(state);,1,0,0.0,147
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,} else {,1,0,0.0,148
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,setValue(null);,1,0,0.0,149
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,});,1,0,0.0,150
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,* @deprecated - address.setCountry() is deprecated in favor of ISO standardization,1,0,0.0,151
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"binder.registerCustomEditor(Country.class, ""address.country"", new PropertyEditorSupport() {",1,0,0.0,152
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,Country country = countryService.findCountryByAbbreviation(text);,1,0,0.0,153
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,setValue(country);,1,0,0.0,154
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"binder.registerCustomEditor(ISOCountry.class, ""address.isoCountryAlpha2"", new PropertyEditorSupport() {",1,0,0.0,155
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,ISOCountry isoCountry = isoService.findISOCountryByAlpha2Code(text);,1,0,0.0,156
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,setValue(isoCountry);,1,0,0.0,157
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,}else {,1,0,0.0,158
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"binder.registerCustomEditor(Phone.class, ""address.phonePrimary"", new PropertyEditorSupport() {",1,0,0.0,159
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,public void setAsText(String text) {,1,0,0.0,160
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"binder.registerCustomEditor(State.class, ""address.state"", new PropertyEditorSupport() {",1,0,0.0,161
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.common.i18n.domain.ISOCountry;,1,0,0.0,162
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,*/,1,0,0.0,163
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.common.i18n.service.ISOService;,1,0,0.0,164
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.domain.*;,1,0,0.0,165
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import org.broadleafcommerce.profile.core.service.*;,1,0,0.0,166
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import javax.annotation.Resource;,1,0,0.0,167
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import javax.servlet.http.HttpServletRequest;,1,0,0.0,168
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,import java.beans.PropertyEditorSupport;,1,0,0.0,169
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blCountryService"")",1,0,0.0,170
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected CountryService countryService;,1,0,0.0,171
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blStateService"")",1,0,0.0,172
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected StateService stateService;,1,0,0.0,173
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,"@Resource(name = ""blISOService"")",1,0,0.0,174
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,protected ISOService isoService;,1,0,0.0,175
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,/**,1,0,0.0,176
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,* @deprecated - address.setState() is deprecated in favor of ISO standardization,1,0,0.0,177
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,* This is here for legacy compatibility,1,0,0.0,178
+f1144e3fe313ede002eccf80e175bc4c8b949f4a,if(customerPayment == null) {,1,0,0.0,179

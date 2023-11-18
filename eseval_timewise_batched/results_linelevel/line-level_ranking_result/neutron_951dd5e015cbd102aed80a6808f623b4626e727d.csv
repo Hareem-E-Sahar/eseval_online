@@ -1,0 +1,195 @@
+commit_id,line,line_level_label,count,line_score,row
+951dd5e015cbd102aed80a6808f623b4626e727d,"port = ml2_db.get_dvr_port_bindings(self.ctx.session, 'foo_port_id')",1,2,1.0,1
+951dd5e015cbd102aed80a6808f623b4626e727d,"backref='qos_policy', lazy='joined',",1,1,0.5,2
+951dd5e015cbd102aed80a6808f623b4626e727d,binding = ml2_db.ensure_distributed_port_binding(,0,1,0.5,3
+951dd5e015cbd102aed80a6808f623b4626e727d,binding = ml2_db.ensure_distributed_port_binding(,1,1,0.5,4
+951dd5e015cbd102aed80a6808f623b4626e727d,binding_kwarg = {,0,1,0.5,5
+951dd5e015cbd102aed80a6808f623b4626e727d,"id='port_id',",0,1,0.5,6
+951dd5e015cbd102aed80a6808f623b4626e727d,binding = ml2_db.ensure_distributed_port_binding(,0,1,0.5,7
+951dd5e015cbd102aed80a6808f623b4626e727d,from neutron.plugins.ml2 import models,0,1,0.5,8
+951dd5e015cbd102aed80a6808f623b4626e727d,"'SubPort', lazy='joined', uselist=True, cascade=""all, delete-orphan"")",1,1,0.5,9
+951dd5e015cbd102aed80a6808f623b4626e727d,"lazy='joined',",1,1,0.5,10
+951dd5e015cbd102aed80a6808f623b4626e727d,"backref=orm.backref(""binding_levels"", lazy='joined', cascade='delete'))",1,1,0.5,11
+951dd5e015cbd102aed80a6808f623b4626e727d,binding_kwarg = {,1,1,0.5,12
+951dd5e015cbd102aed80a6808f623b4626e727d,"backref=orm.backref(""dhcp_opts"", lazy='joined', cascade='delete'))",1,1,0.5,13
+951dd5e015cbd102aed80a6808f623b4626e727d,binding = ml2_db.ensure_dvr_port_binding(,1,1,0.5,14
+951dd5e015cbd102aed80a6808f623b4626e727d,"ports = ml2_db.get_dvr_port_bindings(self.ctx.session, 'port_id')",1,1,0.5,15
+951dd5e015cbd102aed80a6808f623b4626e727d,port = ml2_db.get_distributed_port_binding_by_host(,0,1,0.5,16
+951dd5e015cbd102aed80a6808f623b4626e727d,"port = ml2_db.get_distributed_port_bindings(self.ctx.session,",0,1,0.5,17
+951dd5e015cbd102aed80a6808f623b4626e727d,binding = self._setup_distributed_binding(,0,1,0.5,18
+951dd5e015cbd102aed80a6808f623b4626e727d,binding = self._setup_dvr_binding(,1,1,0.5,19
+951dd5e015cbd102aed80a6808f623b4626e727d,port = ml2_db.get_dvr_port_binding_by_host(,1,1,0.5,20
+951dd5e015cbd102aed80a6808f623b4626e727d,"ports = ml2_db.get_dvr_port_bindings(self.ctx.session, 'foo_port_id')",1,1,0.5,21
+951dd5e015cbd102aed80a6808f623b4626e727d,"'vif_type': portbindings.VIF_TYPE_UNBOUND,",0,0,0.0,22
+951dd5e015cbd102aed80a6808f623b4626e727d,"ports = ml2_db.get_distributed_port_bindings(self.ctx,",0,0,0.0,23
+951dd5e015cbd102aed80a6808f623b4626e727d,"'router_id': 'router_id',",0,0,0.0,24
+951dd5e015cbd102aed80a6808f623b4626e727d,'status': constants.PORT_STATUS_DOWN,0,0,0.0,25
+951dd5e015cbd102aed80a6808f623b4626e727d,},0,0,0.0,26
+951dd5e015cbd102aed80a6808f623b4626e727d,self.ctx.session.add(models.DistributedPortBinding(,0,0,0.0,27
+951dd5e015cbd102aed80a6808f623b4626e727d,**binding_kwarg)),0,0,0.0,28
+951dd5e015cbd102aed80a6808f623b4626e727d,binding_kwarg['host'] = 'another-host',0,0,0.0,29
+951dd5e015cbd102aed80a6808f623b4626e727d,"'vnic_type': portbindings.VNIC_NORMAL,",0,0,0.0,30
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id=port_id, vif_type=vif_type, host=host).create()",1,0,0.0,31
+951dd5e015cbd102aed80a6808f623b4626e727d,'port_id'),0,0,0.0,32
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(0, len(ports))",0,0,0.0,33
+951dd5e015cbd102aed80a6808f623b4626e727d,port_obj.PortBinding(,1,0,0.0,34
+951dd5e015cbd102aed80a6808f623b4626e727d,binding_obj = port_obj.DistributedPortBinding(,1,0,0.0,35
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx,",1,0,0.0,36
+951dd5e015cbd102aed80a6808f623b4626e727d,"port_id=port_id,",1,0,0.0,37
+951dd5e015cbd102aed80a6808f623b4626e727d,"host=host_id,",1,0,0.0,38
+951dd5e015cbd102aed80a6808f623b4626e727d,"router_id=router_id,",1,0,0.0,39
+951dd5e015cbd102aed80a6808f623b4626e727d,"'port_id': 'port_id',",0,0,0.0,40
+951dd5e015cbd102aed80a6808f623b4626e727d,"'host': 'host',",0,0,0.0,41
+951dd5e015cbd102aed80a6808f623b4626e727d,bindings = (self.ctx.session.query(models.DistributedPortBinding).,0,0,0.0,42
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertFalse(len(port)),0,0,0.0,43
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(port_id, expected.port_id)",0,0,0.0,44
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id, host_id, router_id)",0,0,0.0,45
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertTrue(query_first.called),0,0,0.0,46
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertTrue(log_trace.called),0,0,0.0,47
+951dd5e015cbd102aed80a6808f623b4626e727d,port_id = uuidutils.generate_uuid(),0,0,0.0,48
+951dd5e015cbd102aed80a6808f623b4626e727d,"self._setup_neutron_network(network_id, [port_id])",0,0,0.0,49
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id, 'foo_host', router.id)",0,0,0.0,50
+951dd5e015cbd102aed80a6808f623b4626e727d,expected = (self.ctx.session.query(models.DistributedPortBinding).,0,0,0.0,51
+951dd5e015cbd102aed80a6808f623b4626e727d,filter_by(port_id=port_id).one()),0,0,0.0,52
+951dd5e015cbd102aed80a6808f623b4626e727d,"vnic_type=portbindings.VNIC_NORMAL,",1,0,0.0,53
+951dd5e015cbd102aed80a6808f623b4626e727d,'foo_port_id'),0,0,0.0,54
+951dd5e015cbd102aed80a6808f623b4626e727d,filter_by(port_id=port_id).all()),0,0,0.0,55
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(2, len(bindings))",0,0,0.0,56
+951dd5e015cbd102aed80a6808f623b4626e727d,"ml2_db.delete_distributed_port_binding_if_stale(self.ctx,",0,0,0.0,57
+951dd5e015cbd102aed80a6808f623b4626e727d,binding),0,0,0.0,58
+951dd5e015cbd102aed80a6808f623b4626e727d,count = (self.ctx.session.query(models.DistributedPortBinding).,0,0,0.0,59
+951dd5e015cbd102aed80a6808f623b4626e727d,filter_by(port_id=binding.port_id).count()),0,0,0.0,60
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertFalse(count),0,0,0.0,61
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, 'foo_port_id', 'foo_host_id')",0,0,0.0,62
+951dd5e015cbd102aed80a6808f623b4626e727d,"vif_type=portbindings.VIF_TYPE_UNBOUND,",1,0,0.0,63
+951dd5e015cbd102aed80a6808f623b4626e727d,"get_object.side_effect = [None, dpb]",1,0,0.0,64
+951dd5e015cbd102aed80a6808f623b4626e727d,status='DOWN'),1,0,0.0,65
+951dd5e015cbd102aed80a6808f623b4626e727d,"'port_id': port_id,",1,0,0.0,66
+951dd5e015cbd102aed80a6808f623b4626e727d,obj_exists = port_obj.DistributedPortBinding.objects_exist(,1,0,0.0,67
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id=binding.port_id)",1,0,0.0,68
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertFalse(obj_exists),1,0,0.0,69
+951dd5e015cbd102aed80a6808f623b4626e727d,port_id = uuidutils.generate_uuid(),1,0,0.0,70
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id, host_id)",1,0,0.0,71
+951dd5e015cbd102aed80a6808f623b4626e727d,uuidutils.generate_uuid()),1,0,0.0,72
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(0, len(port))",1,0,0.0,73
+951dd5e015cbd102aed80a6808f623b4626e727d,"id=port_id,",1,0,0.0,74
+951dd5e015cbd102aed80a6808f623b4626e727d,"'host': 'host',",1,0,0.0,75
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(2, count_objs)",1,0,0.0,76
+951dd5e015cbd102aed80a6808f623b4626e727d,"'vif_type': portbindings.VIF_TYPE_UNBOUND,",1,0,0.0,77
+951dd5e015cbd102aed80a6808f623b4626e727d,"'vnic_type': portbindings.VNIC_NORMAL,",1,0,0.0,78
+951dd5e015cbd102aed80a6808f623b4626e727d,"'router_id': 'router_id',",1,0,0.0,79
+951dd5e015cbd102aed80a6808f623b4626e727d,'status': constants.PORT_STATUS_DOWN,1,0,0.0,80
+951dd5e015cbd102aed80a6808f623b4626e727d,},1,0,0.0,81
+951dd5e015cbd102aed80a6808f623b4626e727d,"port_obj.DistributedPortBinding(self.ctx, **binding_kwarg).create()",1,0,0.0,82
+951dd5e015cbd102aed80a6808f623b4626e727d,binding_kwarg['host'] = 'another-host',1,0,0.0,83
+951dd5e015cbd102aed80a6808f623b4626e727d,"bindings = ml2_db.get_distributed_port_bindings(self.ctx, port_id)",1,0,0.0,84
+951dd5e015cbd102aed80a6808f623b4626e727d,"ml2_db.delete_distributed_port_binding_if_stale(self.ctx, binding)",1,0,0.0,85
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id=port_id)",1,0,0.0,86
+951dd5e015cbd102aed80a6808f623b4626e727d,binding_obj.create(),1,0,0.0,87
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id, host_id, router_id)",1,0,0.0,88
+951dd5e015cbd102aed80a6808f623b4626e727d,return binding_obj,1,0,0.0,89
+951dd5e015cbd102aed80a6808f623b4626e727d,router_id = uuidutils.generate_uuid(),1,0,0.0,90
+951dd5e015cbd102aed80a6808f623b4626e727d,host_id = uuidutils.generate_uuid(),1,0,0.0,91
+951dd5e015cbd102aed80a6808f623b4626e727d,"dpb = self._setup_distributed_binding(network_id, port_id,",1,0,0.0,92
+951dd5e015cbd102aed80a6808f623b4626e727d,"router_id, host_id)",1,0,0.0,93
+951dd5e015cbd102aed80a6808f623b4626e727d,"with mock.patch.object(port_obj.DistributedPortBinding,",1,0,0.0,94
+951dd5e015cbd102aed80a6808f623b4626e727d,'get_object') as get_object:,1,0,0.0,95
+951dd5e015cbd102aed80a6808f623b4626e727d,query_first.return_value = [],0,0,0.0,96
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertTrue(get_object.called),1,0,0.0,97
+951dd5e015cbd102aed80a6808f623b4626e727d,count_objs = port_obj.DistributedPortBinding.count(,1,0,0.0,98
+951dd5e015cbd102aed80a6808f623b4626e727d,expected_port_id = uuidutils.generate_uuid(),1,0,0.0,99
+951dd5e015cbd102aed80a6808f623b4626e727d,"self._setup_neutron_network(network_id, [expected_port_id])",1,0,0.0,100
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, expected_port_id, 'foo_host', router.id)",1,0,0.0,101
+951dd5e015cbd102aed80a6808f623b4626e727d,actual_objs = port_obj.DistributedPortBinding.get_objects(,1,0,0.0,102
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx, port_id=expected_port_id)",1,0,0.0,103
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(1, len(actual_objs))",1,0,0.0,104
+951dd5e015cbd102aed80a6808f623b4626e727d,actual_obj = actual_objs.pop(),1,0,0.0,105
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(expected_port_id, actual_obj.port_id)",1,0,0.0,106
+951dd5e015cbd102aed80a6808f623b4626e727d,"with mock.patch.object(ml2_db.LOG, 'debug') as log_trace:",0,0,0.0,107
+951dd5e015cbd102aed80a6808f623b4626e727d,"vif_type=portbindings.VIF_TYPE_UNBOUND,",0,0,0.0,108
+951dd5e015cbd102aed80a6808f623b4626e727d,"with mock.patch.object(query.Query, 'first') as query_first:",0,0,0.0,109
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_distributed_port_binding_by_host_not_found(self):,0,0,0.0,110
+951dd5e015cbd102aed80a6808f623b4626e727d,"self._setup_distributed_binding(network_id, port_id,",0,0,0.0,111
+951dd5e015cbd102aed80a6808f623b4626e727d,"router_id, host_id)",0,0,0.0,112
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_ensure_distributed_port_binding(self):,0,0,0.0,113
+951dd5e015cbd102aed80a6808f623b4626e727d,ml2_db.ensure_distributed_port_binding(,0,0,0.0,114
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_ensure_distributed_port_binding_multiple_bindings(self):,0,0,0.0,115
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_delete_distributed_port_binding_if_stale(self):,0,0,0.0,116
+951dd5e015cbd102aed80a6808f623b4626e727d,"ml2_db.delete_distributed_port_binding_if_stale(self.ctx.session,",0,0,0.0,117
+951dd5e015cbd102aed80a6808f623b4626e727d,binding),0,0,0.0,118
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_distributed_port_bindings_not_found(self):,0,0,0.0,119
+951dd5e015cbd102aed80a6808f623b4626e727d,"port_id, router_id, host_id):",0,0,0.0,120
+951dd5e015cbd102aed80a6808f623b4626e727d,'foo_port_id'),0,0,0.0,121
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_distributed_port_bindings(self):,0,0,0.0,122
+951dd5e015cbd102aed80a6808f623b4626e727d,self._setup_distributed_binding(,0,0,0.0,123
+951dd5e015cbd102aed80a6808f623b4626e727d,"ports = ml2_db.get_distributed_port_bindings(self.ctx.session,",0,0,0.0,124
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_distributed_port_binding_deleted_by_port_deletion(self):,0,0,0.0,125
+951dd5e015cbd102aed80a6808f623b4626e727d,'port_id'),0,0,0.0,126
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_dvr_active_network_ports(self):,1,0,0.0,127
+951dd5e015cbd102aed80a6808f623b4626e727d,tunnel_network_ports = l2pop_db.get_dvr_active_network_ports(,1,0,0.0,128
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_ensure_distributed_port_binding_deals_with_db_duplicate(self):,0,0,0.0,129
+951dd5e015cbd102aed80a6808f623b4626e727d,"def _setup_distributed_binding(self, network_id,",0,0,0.0,130
+951dd5e015cbd102aed80a6808f623b4626e727d,"router_id, host_id)",0,0,0.0,131
+951dd5e015cbd102aed80a6808f623b4626e727d,record = models.DVRPortBinding(,1,0,0.0,132
+951dd5e015cbd102aed80a6808f623b4626e727d,port_binding_cls = (models.DistributedPortBinding if dvr,0,0,0.0,133
+951dd5e015cbd102aed80a6808f623b4626e727d,record = models.DistributedPortBinding(,0,0,0.0,134
+951dd5e015cbd102aed80a6808f623b4626e727d,expected = (self.ctx.session.query(models.DistributedPortBinding).,0,0,0.0,135
+951dd5e015cbd102aed80a6808f623b4626e727d,bindings = (self.ctx.session.query(models.DistributedPortBinding).,0,0,0.0,136
+951dd5e015cbd102aed80a6808f623b4626e727d,count = (self.ctx.session.query(models.DistributedPortBinding).,0,0,0.0,137
+951dd5e015cbd102aed80a6808f623b4626e727d,self.ctx.session.add(models.DistributedPortBinding(,0,0,0.0,138
+951dd5e015cbd102aed80a6808f623b4626e727d,**binding_kwarg)),0,0,0.0,139
+951dd5e015cbd102aed80a6808f623b4626e727d,port_binding_cls = (models.DVRPortBinding if dvr,1,0,0.0,140
+951dd5e015cbd102aed80a6808f623b4626e727d,expected = (self.ctx.session.query(models.DVRPortBinding).,1,0,0.0,141
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_nondistributed_active_network_ports_no_candidate(self):,0,0,0.0,142
+951dd5e015cbd102aed80a6808f623b4626e727d,bindings = (self.ctx.session.query(models.DVRPortBinding).,1,0,0.0,143
+951dd5e015cbd102aed80a6808f623b4626e727d,count = (self.ctx.session.query(models.DVRPortBinding).,1,0,0.0,144
+951dd5e015cbd102aed80a6808f623b4626e727d,self.ctx.session.add(models.DVRPortBinding(**binding_kwarg)),1,0,0.0,145
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_distributed_active_network_ports(self):,0,0,0.0,146
+951dd5e015cbd102aed80a6808f623b4626e727d,tunnel_network_ports = l2pop_db.get_distributed_active_network_ports(,0,0,0.0,147
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_distributed_active_network_ports_no_candidate(self):,0,0,0.0,148
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_nondistributed_active_network_ports(self):,0,0,0.0,149
+951dd5e015cbd102aed80a6808f623b4626e727d,fdb_network_ports = l2pop_db.get_nondistributed_active_network_ports(,0,0,0.0,150
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_dvr_active_network_ports_no_candidate(self):,1,0,0.0,151
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_nondvr_active_network_ports(self):,1,0,0.0,152
+951dd5e015cbd102aed80a6808f623b4626e727d,fdb_network_ports = l2pop_db.get_nondvr_active_network_ports(,1,0,0.0,153
+951dd5e015cbd102aed80a6808f623b4626e727d,"port_id=port_id,",0,0,0.0,154
+951dd5e015cbd102aed80a6808f623b4626e727d,'Warnings: %s' % ';'.join([str(w) for w in warning_list])),0,0,0.0,155
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual([], warning_list)",1,0,0.0,156
+951dd5e015cbd102aed80a6808f623b4626e727d,from sqlalchemy.orm import query,0,0,0.0,157
+951dd5e015cbd102aed80a6808f623b4626e727d,with db_api.context_manager.writer.using(self.ctx):,0,0,0.0,158
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.ctx.session.add(models.PortBinding(port_id=port_id,",0,0,0.0,159
+951dd5e015cbd102aed80a6808f623b4626e727d,"vif_type=vif_type,",0,0,0.0,160
+951dd5e015cbd102aed80a6808f623b4626e727d,host=host)),0,0,0.0,161
+951dd5e015cbd102aed80a6808f623b4626e727d,record = models.DistributedPortBinding(,0,0,0.0,162
+951dd5e015cbd102aed80a6808f623b4626e727d,"host=host_id,",0,0,0.0,163
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_nondvr_active_network_ports_no_candidate(self):,1,0,0.0,164
+951dd5e015cbd102aed80a6808f623b4626e727d,"router_id=router_id,",0,0,0.0,165
+951dd5e015cbd102aed80a6808f623b4626e727d,"vnic_type=portbindings.VNIC_NORMAL,",0,0,0.0,166
+951dd5e015cbd102aed80a6808f623b4626e727d,status='DOWN'),0,0,0.0,167
+951dd5e015cbd102aed80a6808f623b4626e727d,self.ctx.session.add(record),0,0,0.0,168
+951dd5e015cbd102aed80a6808f623b4626e727d,return record,0,0,0.0,169
+951dd5e015cbd102aed80a6808f623b4626e727d,router_id = 'foo_router_id',0,0,0.0,170
+951dd5e015cbd102aed80a6808f623b4626e727d,host_id = 'foo_host_id',0,0,0.0,171
+951dd5e015cbd102aed80a6808f623b4626e727d,"self._setup_distributed_binding(network_id, port_id,",0,0,0.0,172
+951dd5e015cbd102aed80a6808f623b4626e727d,"[], warning_list,",0,0,0.0,173
+951dd5e015cbd102aed80a6808f623b4626e727d,self.assertEqual(,0,0,0.0,174
+951dd5e015cbd102aed80a6808f623b4626e727d,"'SubPort', lazy='subquery', uselist=True, cascade=""all, delete-orphan"")",0,0,0.0,175
+951dd5e015cbd102aed80a6808f623b4626e727d,"lazy='subquery',",0,0,0.0,176
+951dd5e015cbd102aed80a6808f623b4626e727d,"def _setup_dvr_binding(self, network_id, port_id, router_id, host_id):",1,0,0.0,177
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_ensure_dvr_port_binding_deals_with_db_duplicate(self):,1,0,0.0,178
+951dd5e015cbd102aed80a6808f623b4626e727d,"self._setup_dvr_binding(network_id, port_id, router_id, host_id)",1,0,0.0,179
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_ensure_dvr_port_binding(self):,1,0,0.0,180
+951dd5e015cbd102aed80a6808f623b4626e727d,ml2_db.ensure_dvr_port_binding(,1,0,0.0,181
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_ensure_dvr_port_binding_multiple_bindings(self):,1,0,0.0,182
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_delete_dvr_port_binding_if_stale(self):,1,0,0.0,183
+951dd5e015cbd102aed80a6808f623b4626e727d,"ml2_db.delete_dvr_port_binding_if_stale(self.ctx.session, binding)",1,0,0.0,184
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_dvr_port_binding_by_host_not_found(self):,1,0,0.0,185
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_dvr_port_bindings_not_found(self):,1,0,0.0,186
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_get_dvr_port_bindings(self):,1,0,0.0,187
+951dd5e015cbd102aed80a6808f623b4626e727d,self._setup_dvr_binding(,1,0,0.0,188
+951dd5e015cbd102aed80a6808f623b4626e727d,def test_dvr_port_binding_deleted_by_port_deletion(self):,1,0,0.0,189
+951dd5e015cbd102aed80a6808f623b4626e727d,"backref=orm.backref(""dhcp_opts"", lazy='subquery', cascade='delete'))",0,0,0.0,190
+951dd5e015cbd102aed80a6808f623b4626e727d,"backref='qos_policy', lazy='subquery',",0,0,0.0,191
+951dd5e015cbd102aed80a6808f623b4626e727d,"backref=orm.backref(""binding_levels"", lazy='subquery',",0,0,0.0,192
+951dd5e015cbd102aed80a6808f623b4626e727d,cascade='delete')),0,0,0.0,193
+951dd5e015cbd102aed80a6808f623b4626e727d,"self.assertEqual(0, len(bindings))",1,0,0.0,194

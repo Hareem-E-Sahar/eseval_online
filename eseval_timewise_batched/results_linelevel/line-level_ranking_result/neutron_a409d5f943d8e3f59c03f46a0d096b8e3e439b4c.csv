@@ -1,0 +1,32 @@
+commit_id,line,line_level_label,count,line_score,row
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"print(""\nThere are one or mode transport nodes that are """,0,2,1.0,1
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,""" Please, revise!"" % errors)",1,1,0.5,2
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,# between config and runtime errors,0,1,0.5,3
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"print(""\tTransport nodes: %s"" % transport_nodes)",0,0,0.0,4
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,if errors:,1,0,0.0,5
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,sys.exit(12),0,0,0.0,6
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"""Please, revise!"" % errors)",0,0,0.0,7
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,elif errors:,0,0,0.0,8
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,sys.exit(10),0,0,0.0,9
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"""not connected: %s. Please, revise!"" % node_errors)",0,0,0.0,10
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,if len(node_errors):,0,0,0.0,11
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"# Use different exit codes, so that we can distinguish",0,0,0.0,12
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,node_errors.append(node),0,0,0.0,13
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"if not is_transport_node_connected(cluster, node):",0,0,0.0,14
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,for node in transport_nodes:,0,0,0.0,15
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,node_errors = [],0,0,0.0,16
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,raise Exception(msg),0,0,0.0,17
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,transport_nodes = get_transport_nodes(cluster),0,0,0.0,18
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"'ctl': ', '.join(get_nsx_controllers(cluster))})",0,0,0.0,19
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"% {'err': str(e),",0,0,0.0,20
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"msg = (_(""Error '%(err)s' when connecting to controller(s): %(ctl)s."")",0,0,0.0,21
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,except Exception as e:,0,0,0.0,22
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,cluster=cluster)['connection']['connected'],0,0,0.0,23
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"""/ws.v1/transport-node/%s/status"" % node_uuid,",0,0,0.0,24
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"return nvplib.do_request('GET',",0,0,0.0,25
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,try:,0,0,0.0,26
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"def is_transport_node_connected(cluster, node_uuid):",0,0,0.0,27
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,return [transport_node['uuid'] for transport_node in transport_nodes],0,0,0.0,28
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,"transport_nodes = config_helper(""transport-node"", cluster)",0,0,0.0,29
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,def get_transport_nodes(cluster):,0,0,0.0,30
+a409d5f943d8e3f59c03f46a0d096b8e3e439b4c,sys.exit(1),1,0,0.0,31

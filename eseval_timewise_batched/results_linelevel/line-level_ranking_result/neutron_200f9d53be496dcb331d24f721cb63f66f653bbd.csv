@@ -1,0 +1,224 @@
+commit_id,line,line_level_label,count,line_score,row
+200f9d53be496dcb331d24f721cb63f66f653bbd,# nested = True frames an operation that may potentially fail,0,3,1.0,1
+200f9d53be496dcb331d24f721cb63f66f653bbd,# Create the port,0,3,1.0,2
+200f9d53be496dcb331d24f721cb63f66f653bbd,# Ensure that the mac on the network is unique,1,3,1.0,3
+200f9d53be496dcb331d24f721cb63f66f653bbd,if 'status' not in p:,1,3,1.0,4
+200f9d53be496dcb331d24f721cb63f66f653bbd,status = constants.PORT_STATUS_ACTIVE,1,3,1.0,5
+200f9d53be496dcb331d24f721cb63f66f653bbd,with self.port(name='myname') as port:,0,3,1.0,6
+200f9d53be496dcb331d24f721cb63f66f653bbd,"with self.port(subnet=subnet, fixed_ips=fixed_ip_data) as port:",0,3,1.0,7
+200f9d53be496dcb331d24f721cb63f66f653bbd,expected_ip_net = ip_net_v4 if ip_addr.version == 4 else ip_net_v6,0,3,1.0,8
+200f9d53be496dcb331d24f721cb63f66f653bbd,with self.port(name='myname') as port:,1,3,1.0,9
+200f9d53be496dcb331d24f721cb63f66f653bbd,with self.port(subnet=subnet) as port:,1,3,1.0,10
+200f9d53be496dcb331d24f721cb63f66f653bbd,"# within a transaction, so that it can be rolled back to the",0,3,1.0,11
+200f9d53be496dcb331d24f721cb63f66f653bbd,with self.network(shared=True) as network:,0,2,0.6666666666666666,12
+200f9d53be496dcb331d24f721cb63f66f653bbd,for p in ports_to_delete:,1,2,0.6666666666666666,13
+200f9d53be496dcb331d24f721cb63f66f653bbd,with self.subnet() as subnet:,1,2,0.6666666666666666,14
+200f9d53be496dcb331d24f721cb63f66f653bbd,"with self.subnet(network) as subnet_v4,\",0,2,0.6666666666666666,15
+200f9d53be496dcb331d24f721cb63f66f653bbd,with self.subnet(network=network) as subnet:,0,2,0.6666666666666666,16
+200f9d53be496dcb331d24f721cb63f66f653bbd,"with self.subnet(network=network, cidr='10.0.0.0/24') as subnet:",1,2,0.6666666666666666,17
+200f9d53be496dcb331d24f721cb63f66f653bbd,status = p['status'],1,2,0.6666666666666666,18
+200f9d53be496dcb331d24f721cb63f66f653bbd,#since _allocate_ips_for_port will need the mac when,1,2,0.6666666666666666,19
+200f9d53be496dcb331d24f721cb63f66f653bbd,"#Note(scollins) Add the generated mac_address to the port,",1,2,0.6666666666666666,20
+200f9d53be496dcb331d24f721cb63f66f653bbd,# Ensure that a MAC address is defined and it is unique on the,1,2,0.6666666666666666,21
+200f9d53be496dcb331d24f721cb63f66f653bbd,# point before its failure while maintaining the enclosing,0,2,0.6666666666666666,22
+200f9d53be496dcb331d24f721cb63f66f653bbd,"if not NeutronDbPluginV2._check_unique_mac(context,",1,2,0.6666666666666666,23
+200f9d53be496dcb331d24f721cb63f66f653bbd,for address in ips:,0,1,0.3333333333333333,24
+200f9d53be496dcb331d24f721cb63f66f653bbd,"exp_ip_addr = self._calc_ipv6_addr_by_EUI64(port, subnet)",0,1,0.3333333333333333,25
+200f9d53be496dcb331d24f721cb63f66f653bbd,if addr_mode == n_const.IPV6_SLAAC:,0,1,0.3333333333333333,26
+200f9d53be496dcb331d24f721cb63f66f653bbd,subnet_ip_net = netaddr.IPNetwork(subnet_v4['subnet']['cidr']),0,1,0.3333333333333333,27
+200f9d53be496dcb331d24f721cb63f66f653bbd,network_ip_set = netaddr.IPSet(subnet1_net),0,1,0.3333333333333333,28
+200f9d53be496dcb331d24f721cb63f66f653bbd,subnet2_net = netaddr.IPNetwork(subnet2['subnet']['cidr']),0,1,0.3333333333333333,29
+200f9d53be496dcb331d24f721cb63f66f653bbd,subnet1_net = netaddr.IPNetwork(subnet['subnet']['cidr']),0,1,0.3333333333333333,30
+200f9d53be496dcb331d24f721cb63f66f653bbd,ip_addr = netaddr.IPAddress(address['ip_address']),0,1,0.3333333333333333,31
+200f9d53be496dcb331d24f721cb63f66f653bbd,"def _test_dual_stack_port_ip_addresses_in_subnets(self, ips, cidr_v4,",0,1,0.3333333333333333,32
+200f9d53be496dcb331d24f721cb63f66f653bbd,ip_net_v6 = netaddr.IPNetwork(cidr_v6),0,1,0.3333333333333333,33
+200f9d53be496dcb331d24f721cb63f66f653bbd,ip_net_v4 = netaddr.IPNetwork(cidr_v4),0,1,0.3333333333333333,34
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(set(x['subnet_id'] for x in ips),",0,1,0.3333333333333333,35
+200f9d53be496dcb331d24f721cb63f66f653bbd,"def _test_requested_port_subnet_ids(self, ips, expected_subnet_ids):",0,1,0.3333333333333333,36
+200f9d53be496dcb331d24f721cb63f66f653bbd,cidr_v6 = subnet2['subnet']['cidr'],0,1,0.3333333333333333,37
+200f9d53be496dcb331d24f721cb63f66f653bbd,cidr_v4 = subnet['subnet']['cidr'],0,1,0.3333333333333333,38
+200f9d53be496dcb331d24f721cb63f66f653bbd,network_ip_net = netaddr.IPNetwork(subnet['subnet']['cidr']),0,1,0.3333333333333333,39
+200f9d53be496dcb331d24f721cb63f66f653bbd,"('status', self.port_create_status),",1,1,0.3333333333333333,40
+200f9d53be496dcb331d24f721cb63f66f653bbd,"for k, v in keys:",1,1,0.3333333333333333,41
+200f9d53be496dcb331d24f721cb63f66f653bbd,"res = self._create_port(self.fmt, net_id=net_id, **kwargs)",1,1,0.3333333333333333,42
+200f9d53be496dcb331d24f721cb63f66f653bbd,"with self.subnet(network),\",1,1,0.3333333333333333,43
+200f9d53be496dcb331d24f721cb63f66f653bbd,if addr_mode == n_const.IPV6_SLAAC:,1,1,0.3333333333333333,44
+200f9d53be496dcb331d24f721cb63f66f653bbd,"res = self._create_port(self.fmt, net_id=net_id)",1,1,0.3333333333333333,45
+200f9d53be496dcb331d24f721cb63f66f653bbd,for a in allocated:,1,1,0.3333333333333333,46
+200f9d53be496dcb331d24f721cb63f66f653bbd,"allocated = ['10.0.0.3', '10.0.0.4', '10.0.0.6']",1,1,0.3333333333333333,47
+200f9d53be496dcb331d24f721cb63f66f653bbd,# Allocate specific IP's,1,1,0.3333333333333333,48
+200f9d53be496dcb331d24f721cb63f66f653bbd,ips = port2['port']['fixed_ips'],1,1,0.3333333333333333,49
+200f9d53be496dcb331d24f721cb63f66f653bbd,"port2 = self.deserialize(self.fmt, res)",1,1,0.3333333333333333,50
+200f9d53be496dcb331d24f721cb63f66f653bbd,ip_address = '10.0.0.2',0,1,0.3333333333333333,51
+200f9d53be496dcb331d24f721cb63f66f653bbd,net_id = port['port']['network_id'],1,1,0.3333333333333333,52
+200f9d53be496dcb331d24f721cb63f66f653bbd,"kwargs = {""fixed_ips"": [{'subnet_id': subnet['subnet']['id'],",1,1,0.3333333333333333,53
+200f9d53be496dcb331d24f721cb63f66f653bbd,# Allocate specific IP,1,1,0.3333333333333333,54
+200f9d53be496dcb331d24f721cb63f66f653bbd,ports_to_delete = [],1,1,0.3333333333333333,55
+200f9d53be496dcb331d24f721cb63f66f653bbd,def test_requested_split(self):,1,1,0.3333333333333333,56
+200f9d53be496dcb331d24f721cb63f66f653bbd,exp_ip_addr = 'fe80::2',1,1,0.3333333333333333,57
+200f9d53be496dcb331d24f721cb63f66f653bbd,else:,1,1,0.3333333333333333,58
+200f9d53be496dcb331d24f721cb63f66f653bbd,"exp_ip_addr = self._calc_ipv6_addr_by_EUI64(port, subnet)",1,1,0.3333333333333333,59
+200f9d53be496dcb331d24f721cb63f66f653bbd,"fixed_ip_data = [{'ip_address': ip_address,",0,1,0.3333333333333333,60
+200f9d53be496dcb331d24f721cb63f66f653bbd,ips = port['port']['fixed_ips'],1,1,0.3333333333333333,61
+200f9d53be496dcb331d24f721cb63f66f653bbd,"fixed_ip_data = [{'ip_address': '10.0.0.2',",0,1,0.3333333333333333,62
+200f9d53be496dcb331d24f721cb63f66f653bbd,"mac = [int(base_mac[0], 16), int(base_mac[1], 16),",1,1,0.3333333333333333,63
+200f9d53be496dcb331d24f721cb63f66f653bbd,max_retries = cfg.CONF.mac_generation_retries,1,1,0.3333333333333333,64
+200f9d53be496dcb331d24f721cb63f66f653bbd,base_mac = cfg.CONF.base_mac.split(':'),1,1,0.3333333333333333,65
+200f9d53be496dcb331d24f721cb63f66f653bbd,"def _generate_mac(context, network_id):",1,1,0.3333333333333333,66
+200f9d53be496dcb331d24f721cb63f66f653bbd,db_port = self._create_port_with_mac(,0,1,0.3333333333333333,67
+200f9d53be496dcb331d24f721cb63f66f653bbd,p['mac_address'] = db_port['mac_address'],0,1,0.3333333333333333,68
+200f9d53be496dcb331d24f721cb63f66f653bbd,"db_port = self._create_port(context, network_id, port_data)",0,1,0.3333333333333333,69
+200f9d53be496dcb331d24f721cb63f66f653bbd,"port_data = dict(tenant_id=tenant_id,",0,1,0.3333333333333333,70
+200f9d53be496dcb331d24f721cb63f66f653bbd,# transaction,0,1,0.3333333333333333,71
+200f9d53be496dcb331d24f721cb63f66f653bbd,mac = self._generate_mac(),0,1,0.3333333333333333,72
+200f9d53be496dcb331d24f721cb63f66f653bbd,for i in range(max_retries):,0,1,0.3333333333333333,73
+200f9d53be496dcb331d24f721cb63f66f653bbd,max_retries = cfg.CONF.mac_generation_retries,0,1,0.3333333333333333,74
+200f9d53be496dcb331d24f721cb63f66f653bbd,"def _create_port(self, context, network_id, port_data):",0,1,0.3333333333333333,75
+200f9d53be496dcb331d24f721cb63f66f653bbd,"with context.session.begin(subtransactions=True, nested=nested):",0,1,0.3333333333333333,76
+200f9d53be496dcb331d24f721cb63f66f653bbd,"def _create_port_with_mac(self, context, network_id, port_data,",0,1,0.3333333333333333,77
+200f9d53be496dcb331d24f721cb63f66f653bbd,def _generate_mac():,0,1,0.3333333333333333,78
+200f9d53be496dcb331d24f721cb63f66f653bbd,port_ip = port['port']['fixed_ips'][0]['ip_address'],0,1,0.3333333333333333,79
+200f9d53be496dcb331d24f721cb63f66f653bbd,from oslo.db import exception as db_exc,0,1,0.3333333333333333,80
+200f9d53be496dcb331d24f721cb63f66f653bbd,for i in range(max_retries):,1,1,0.3333333333333333,81
+200f9d53be496dcb331d24f721cb63f66f653bbd,"db_port = models_v2.Port(mac_address=mac_address, **port_data)",0,1,0.3333333333333333,82
+200f9d53be496dcb331d24f721cb63f66f653bbd,ip_net = netaddr.IPNetwork('10.0.0.0/24'),0,1,0.3333333333333333,83
+200f9d53be496dcb331d24f721cb63f66f653bbd,# network,1,1,0.3333333333333333,84
+200f9d53be496dcb331d24f721cb63f66f653bbd,"with self.subnet(network=network, cidr=str(ip_net)):",0,1,0.3333333333333333,85
+200f9d53be496dcb331d24f721cb63f66f653bbd,"('status', self.port_create_status)]",0,1,0.3333333333333333,86
+200f9d53be496dcb331d24f721cb63f66f653bbd,subnet_ip_net = netaddr.IPNetwork(subnet['subnet']['cidr']),0,1,0.3333333333333333,87
+200f9d53be496dcb331d24f721cb63f66f653bbd,ips = port['port']['fixed_ips'],0,1,0.3333333333333333,88
+200f9d53be496dcb331d24f721cb63f66f653bbd,"for k, v in keys:",0,1,0.3333333333333333,89
+200f9d53be496dcb331d24f721cb63f66f653bbd,if base_mac[3] != '00':,1,1,0.3333333333333333,90
+200f9d53be496dcb331d24f721cb63f66f653bbd,"p['mac_address'] = NeutronDbPluginV2._generate_mac(context,",1,1,0.3333333333333333,91
+200f9d53be496dcb331d24f721cb63f66f653bbd,"db_port = models_v2.Port(tenant_id=tenant_id,",1,1,0.3333333333333333,92
+200f9d53be496dcb331d24f721cb63f66f653bbd,return True,1,1,0.3333333333333333,93
+200f9d53be496dcb331d24f721cb63f66f653bbd,mac_qry = context.session.query(models_v2.Port),1,1,0.3333333333333333,94
+200f9d53be496dcb331d24f721cb63f66f653bbd,"def _check_unique_mac(context, network_id, mac_address):",1,1,0.3333333333333333,95
+200f9d53be496dcb331d24f721cb63f66f653bbd,else:,1,1,0.3333333333333333,96
+200f9d53be496dcb331d24f721cb63f66f653bbd,"if NeutronDbPluginV2._check_unique_mac(context, network_id,",1,1,0.3333333333333333,97
+200f9d53be496dcb331d24f721cb63f66f653bbd,"mac_address = ':'.join(map(lambda x: ""%02x"" % x, mac))",1,1,0.3333333333333333,98
+200f9d53be496dcb331d24f721cb63f66f653bbd,"mac[3] = int(base_mac[3], 16)",1,1,0.3333333333333333,99
+200f9d53be496dcb331d24f721cb63f66f653bbd,"[subnet['subnet']['id'],",0,0,0.0,100
+200f9d53be496dcb331d24f721cb63f66f653bbd,subnet2['subnet']['id']]),0,0,0.0,101
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self._test_dual_stack_port_ip_addresses_in_subnets(ips,",0,0,0.0,102
+200f9d53be496dcb331d24f721cb63f66f653bbd,"cidr_v4,",0,0,0.0,103
+200f9d53be496dcb331d24f721cb63f66f653bbd,cidr_v6),0,0,0.0,104
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(1, len(ips))",0,0,0.0,105
+200f9d53be496dcb331d24f721cb63f66f653bbd,set(expected_subnet_ids)),0,0,0.0,106
+200f9d53be496dcb331d24f721cb63f66f653bbd,cidr_v6):,0,0,0.0,107
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(ip_addr, expected_ip_net)",0,0,0.0,108
+200f9d53be496dcb331d24f721cb63f66f653bbd,network_ip_set.add(subnet2_net),0,0,0.0,109
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(ips[0]['ip_address'], network_ip_set)",0,0,0.0,110
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(ips[1]['ip_address'], network_ip_set)",0,0,0.0,111
+200f9d53be496dcb331d24f721cb63f66f653bbd,netaddr.IPSet(subnet_ip_net)),0,0,0.0,112
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(fixed_ips[0]['ip_address'], subnet_ip_net)",0,0,0.0,113
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self._test_requested_port_subnet_ids(ips,",0,0,0.0,114
+200f9d53be496dcb331d24f721cb63f66f653bbd,{'ip_address': ip_address}]}},0,0,0.0,115
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(ips[0]['ip_address'], subnet_ip_net)",0,0,0.0,116
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(ips[1]['ip_address'], network_ip_net)",0,0,0.0,117
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(ips[0]['ip_address'], network_ip_net)",0,0,0.0,118
+200f9d53be496dcb331d24f721cb63f66f653bbd,ips[1]['ip_address']),0,0,0.0,119
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertNotEqual(ips[0]['ip_address'],",0,0,0.0,120
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn({'ip_address': ip_address,",0,0,0.0,121
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(ip_address, ips[0]['ip_address'])",0,0,0.0,122
+200f9d53be496dcb331d24f721cb63f66f653bbd,'subnet_id': subnet['subnet']['id']}],0,0,0.0,123
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(port_ip, ip_net)",0,0,0.0,124
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual('myname', port['port']['name'])",0,0,0.0,125
+200f9d53be496dcb331d24f721cb63f66f653bbd,subnet_ip_net),0,0,0.0,126
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(netaddr.IPAddress(ips[0]['ip_address']),",0,0,0.0,127
+200f9d53be496dcb331d24f721cb63f66f653bbd,port_fixed_ips[0]['ip_address']),0,0,0.0,128
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(exp_ip_addr,",0,0,0.0,129
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn({'ip_address': '2607:f0d0:1002:51::3',",1,0,0.0,130
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn(port_fixed_ips[0]['ip_address'],",0,0,0.0,131
+200f9d53be496dcb331d24f721cb63f66f653bbd,netaddr.IPNetwork(subnet['subnet']['cidr'])),0,0,0.0,132
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(port['port'][k], v)",0,0,0.0,133
+200f9d53be496dcb331d24f721cb63f66f653bbd,ips[0]['subnet_id']),1,0,0.0,134
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(subnet['subnet']['id'],",1,0,0.0,135
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(a, ips[0]['ip_address'])",1,0,0.0,136
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(subnet['subnet']['id'], ips[0]['subnet_id'])",1,0,0.0,137
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual('10.0.0.5', ips[0]['ip_address'])",1,0,0.0,138
+200f9d53be496dcb331d24f721cb63f66f653bbd,ports_to_delete.append(port2),1,0,0.0,139
+200f9d53be496dcb331d24f721cb63f66f653bbd,'ip_address': '10.0.0.5'}]},1,0,0.0,140
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(ips[0]['subnet_id'], subnet['subnet']['id'])",1,0,0.0,141
+200f9d53be496dcb331d24f721cb63f66f653bbd,port_fixed_ips[0]['ip_address']),1,0,0.0,142
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(exp_ip_addr,",1,0,0.0,143
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual('10.0.0.2', fixed_ips[0]['ip_address'])",1,0,0.0,144
+200f9d53be496dcb331d24f721cb63f66f653bbd,"'subnet_id': subnet2['subnet']['id']}, ips)",1,0,0.0,145
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn({'ip_address': '2607:f0d0:1002:51::2',",1,0,0.0,146
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual('10.0.0.3', ips[0]['ip_address'])",1,0,0.0,147
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn({'ip_address': '10.0.0.4',",1,0,0.0,148
+200f9d53be496dcb331d24f721cb63f66f653bbd,"'subnet_id': subnet['subnet']['id']}, ips)",1,0,0.0,149
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn({'ip_address': '10.0.0.3',",1,0,0.0,150
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn({'ip_address': '10.0.0.2',",1,0,0.0,151
+200f9d53be496dcb331d24f721cb63f66f653bbd,"{'ip_address': ""10.0.0.2""}]}}",1,0,0.0,152
+200f9d53be496dcb331d24f721cb63f66f653bbd,'ip_address': '10.0.0.2'}])],1,0,0.0,153
+200f9d53be496dcb331d24f721cb63f66f653bbd,"('fixed_ips', [{'subnet_id': subnet['subnet']['id'],",1,0,0.0,154
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual('myname', port['port']['name'])",1,0,0.0,155
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual('10.0.0.2', ips[0]['ip_address'])",1,0,0.0,156
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(1, len(ips))",1,0,0.0,157
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn('mac_address', port['port'])",1,0,0.0,158
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertEqual(port['port'][k], v)",1,0,0.0,159
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self.assertIn('mac_address', port['port'])",0,0,0.0,160
+200f9d53be496dcb331d24f721cb63f66f653bbd,"'network %(network_id)s',",0,0,0.0,161
+200f9d53be496dcb331d24f721cb63f66f653bbd,context.session.add(db_port),1,0,0.0,162
+200f9d53be496dcb331d24f721cb63f66f653bbd,max_retries),0,0,0.0,163
+200f9d53be496dcb331d24f721cb63f66f653bbd,mac_address):,1,0,0.0,164
+200f9d53be496dcb331d24f721cb63f66f653bbd,"random.randint(0x00, 0xff), random.randint(0x00, 0xff)]",1,0,0.0,165
+200f9d53be496dcb331d24f721cb63f66f653bbd,"int(base_mac[2], 16), random.randint(0x00, 0xff),",1,0,0.0,166
+200f9d53be496dcb331d24f721cb63f66f653bbd,import random,1,0,0.0,167
+200f9d53be496dcb331d24f721cb63f66f653bbd,"context, network_id, port_data, p['mac_address'])",0,0,0.0,168
+200f9d53be496dcb331d24f721cb63f66f653bbd,device_owner=p['device_owner']),0,0,0.0,169
+200f9d53be496dcb331d24f721cb63f66f653bbd,"device_id=p['device_id'],",0,0,0.0,170
+200f9d53be496dcb331d24f721cb63f66f653bbd,"status=p.get('status', constants.PORT_STATUS_ACTIVE),",0,0,0.0,171
+200f9d53be496dcb331d24f721cb63f66f653bbd,"admin_state_up=p['admin_state_up'],",0,0,0.0,172
+200f9d53be496dcb331d24f721cb63f66f653bbd,"network_id=network_id,",0,0,0.0,173
+200f9d53be496dcb331d24f721cb63f66f653bbd,"id=port_id,",0,0,0.0,174
+200f9d53be496dcb331d24f721cb63f66f653bbd,"name=p['name'],",0,0,0.0,175
+200f9d53be496dcb331d24f721cb63f66f653bbd,raise n_exc.MacAddressGenerationFailure(net_id=network_id),0,0,0.0,176
+200f9d53be496dcb331d24f721cb63f66f653bbd,"LOG.error(_LE(""Unable to generate mac address after %s attempts""),",0,0,0.0,177
+200f9d53be496dcb331d24f721cb63f66f653bbd,device_owner=p['device_owner']),1,0,0.0,178
+200f9d53be496dcb331d24f721cb63f66f653bbd,"{'mac_address': mac, 'network_id': network_id})",0,0,0.0,179
+200f9d53be496dcb331d24f721cb63f66f653bbd,LOG.debug('Generated mac %(mac_address)s exists on ',0,0,0.0,180
+200f9d53be496dcb331d24f721cb63f66f653bbd,except n_exc.MacAddressInUse:,0,0,0.0,181
+200f9d53be496dcb331d24f721cb63f66f653bbd,"context, network_id, port_data, mac, nested=True)",0,0,0.0,182
+200f9d53be496dcb331d24f721cb63f66f653bbd,return self._create_port_with_mac(,0,0,0.0,183
+200f9d53be496dcb331d24f721cb63f66f653bbd,"raise n_exc.MacAddressInUse(net_id=network_id, mac=mac_address)",0,0,0.0,184
+200f9d53be496dcb331d24f721cb63f66f653bbd,except db_exc.DBDuplicateEntry:,0,0,0.0,185
+200f9d53be496dcb331d24f721cb63f66f653bbd,return db_port,0,0,0.0,186
+200f9d53be496dcb331d24f721cb63f66f653bbd,context.session.add(db_port),0,0,0.0,187
+200f9d53be496dcb331d24f721cb63f66f653bbd,try:,0,0,0.0,188
+200f9d53be496dcb331d24f721cb63f66f653bbd,"mac_address, nested=False):",0,0,0.0,189
+200f9d53be496dcb331d24f721cb63f66f653bbd,return utils.get_random_mac(cfg.CONF.base_mac.split(':')),0,0,0.0,190
+200f9d53be496dcb331d24f721cb63f66f653bbd,from neutron.common import utils,0,0,0.0,191
+200f9d53be496dcb331d24f721cb63f66f653bbd,"LOG.debug(""Generated mac for network %(network_id)s """,1,0,0.0,192
+200f9d53be496dcb331d24f721cb63f66f653bbd,"""is %(mac_address)s"",",1,0,0.0,193
+200f9d53be496dcb331d24f721cb63f66f653bbd,"{'network_id': network_id,",1,0,0.0,194
+200f9d53be496dcb331d24f721cb63f66f653bbd,'mac_address': mac_address}),1,0,0.0,195
+200f9d53be496dcb331d24f721cb63f66f653bbd,"device_id=p['device_id'],",1,0,0.0,196
+200f9d53be496dcb331d24f721cb63f66f653bbd,"status=status,",1,0,0.0,197
+200f9d53be496dcb331d24f721cb63f66f653bbd,"admin_state_up=p['admin_state_up'],",1,0,0.0,198
+200f9d53be496dcb331d24f721cb63f66f653bbd,"mac_address=p['mac_address'],",1,0,0.0,199
+200f9d53be496dcb331d24f721cb63f66f653bbd,"network_id=network_id,",1,0,0.0,200
+200f9d53be496dcb331d24f721cb63f66f653bbd,"id=port_id,",1,0,0.0,201
+200f9d53be496dcb331d24f721cb63f66f653bbd,"name=p['name'],",1,0,0.0,202
+200f9d53be496dcb331d24f721cb63f66f653bbd,mac=p['mac_address']),1,0,0.0,203
+200f9d53be496dcb331d24f721cb63f66f653bbd,"raise n_exc.MacAddressInUse(net_id=network_id,",1,0,0.0,204
+200f9d53be496dcb331d24f721cb63f66f653bbd,p['mac_address']):,1,0,0.0,205
+200f9d53be496dcb331d24f721cb63f66f653bbd,"network_id,",1,0,0.0,206
+200f9d53be496dcb331d24f721cb63f66f653bbd,network_id),1,0,0.0,207
+200f9d53be496dcb331d24f721cb63f66f653bbd,#calculating an EUI-64 address for a v6 subnet,1,0,0.0,208
+200f9d53be496dcb331d24f721cb63f66f653bbd,return False,1,0,0.0,209
+200f9d53be496dcb331d24f721cb63f66f653bbd,except exc.NoResultFound:,1,0,0.0,210
+200f9d53be496dcb331d24f721cb63f66f653bbd,mac_address=mac_address).one(),1,0,0.0,211
+200f9d53be496dcb331d24f721cb63f66f653bbd,"mac_qry.filter_by(network_id=network_id,",1,0,0.0,212
+200f9d53be496dcb331d24f721cb63f66f653bbd,try:,1,0,0.0,213
+200f9d53be496dcb331d24f721cb63f66f653bbd,@staticmethod,1,0,0.0,214
+200f9d53be496dcb331d24f721cb63f66f653bbd,raise n_exc.MacAddressGenerationFailure(net_id=network_id),1,0,0.0,215
+200f9d53be496dcb331d24f721cb63f66f653bbd,max_retries),1,0,0.0,216
+200f9d53be496dcb331d24f721cb63f66f653bbd,"LOG.error(_LE(""Unable to generate mac address after %s attempts""),",1,0,0.0,217
+200f9d53be496dcb331d24f721cb63f66f653bbd,'max_retries': max_retries - (i + 1)}),1,0,0.0,218
+200f9d53be496dcb331d24f721cb63f66f653bbd,"{'mac_address': mac_address,",1,0,0.0,219
+200f9d53be496dcb331d24f721cb63f66f653bbd,"""attempts %(max_retries)s."",",1,0,0.0,220
+200f9d53be496dcb331d24f721cb63f66f653bbd,"LOG.debug(""Generated mac %(mac_address)s exists. Remaining """,1,0,0.0,221
+200f9d53be496dcb331d24f721cb63f66f653bbd,return mac_address,1,0,0.0,222
+200f9d53be496dcb331d24f721cb63f66f653bbd,"self._delete('ports', p['port']['id'])",1,0,0.0,223

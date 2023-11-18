@@ -1,0 +1,437 @@
+commit_id,line,line_level_label,count,line_score,row
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return Strings.FILE_FILTER_LIST_PREFIX + "" "" + joinBolded(filter.slice(0, 2)) + "" "" +",0,9,1.0,1
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return Strings.FILE_FILTER_LIST_PREFIX + "" "" + joinBolded(filter.slice(0, 2)) + "" "" +",1,9,1.0,2
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/** Moves a filter to the top of the MRU list */,1,8,0.8888888888888888,3
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* Opens a dialog box to edit the given filter. When editing is finished, the newly modified filter is added to the top of",1,8,0.8888888888888888,4
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* the MRU list; the original filter is left intact (unless it was pushed off the end of the MRU list). If no changes were,1,8,0.8888888888888888,5
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// (unless this filter is empty - 'No filter' is always at top of dropdown, and can never fall off the MRU list)",1,7,0.7777777777777777,6
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// This filter wasn't in the MRU list before. Bump oldest item if necessary to make room for it.,1,7,0.7777777777777777,7
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Same exact filter was in the MRU list already. Remove from old spot so we can move it to the front.,1,7,0.7777777777777777,8
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",0,6,0.6666666666666666,9
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"html += ""<li><a class='stylesheet-link "" + disabledClass + ""' data-index='"" + i + ""'>"";",0,6,0.6666666666666666,10
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",1,6,0.6666666666666666,11
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Add new filter to top of MRU list,1,6,0.6666666666666666,12
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"/** @type {?FileSystemEntry} Root of subtree to search in, or single file to search in, or null to search entire project */",0,6,0.6666666666666666,13
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",0,6,0.6666666666666666,14
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* On Mac these would silently fail to be read, but on Windows we'd read the garbled content & try to search it.",0,5,0.5555555555555556,15
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?{label:string, promise:$.Promise}} context Info on files filter will apply to - see editFilter()",0,5,0.5555555555555556,16
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/** @type {Array.<File>} An array of the files where it should look or null/empty to search the entire project */,1,5,0.5555555555555556,17
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// If the added or removed sets are null, must redo the search for the entire subtree - we",0,5,0.5555555555555556,18
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return Strings.FILE_FILTER_LIST_PREFIX + "" "" + joinBolded(filter);",1,5,0.5555555555555556,19
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"picker.$button.attr(""title"", Strings.FILE_FILTER_LIST_PREFIX + "" "" + dropdownItems[picker.selectedIndex].join("", ""));",1,5,0.5555555555555556,20
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Normal filter object from the MRU list,1,5,0.5555555555555556,21
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* made or the dialog was canceled, the MRU list is unchanged.",1,5,0.5555555555555556,22
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return Strings.FILE_FILTER_LIST_PREFIX + "" "" + joinBolded(filter);",0,5,0.5555555555555556,23
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var html = StringUtils.format(Strings.FILE_FILTER_INSTRUCTIONS, brackets.config.glob_help_url) +",0,4,0.4444444444444444,24
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?function(*, number):!string} itemRenderer  Optional function to convert a single item to HTML",1,4,0.4444444444444444,25
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"*          convert a single item to HTML (see itemRenderer() docs below). If not provided, items are",0,4,0.4444444444444444,26
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// is skipped and we move on to the next file.,1,4,0.4444444444444444,27
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In the initial search, this is covered by the filterFileList() pass",1,4,0.4444444444444444,28
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In the initial search, this is passed as a getAllFiles() filter",1,4,0.4444444444444444,29
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* initial search, the filter and part of the scope are taken care of in bulk instead, so _subtreeFilter()",1,4,0.4444444444444444,30
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// is skipped and we move on to the next file.,0,4,0.4444444444444444,31
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Returns a copy of 'files' filtered to just those that don't match any of the exclusion globs in the filter.,1,4,0.4444444444444444,32
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Returns false if the given path matches any of the exclusion globs in the given filter. Returns true,1,4,0.4444444444444444,33
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var html = StringUtils.format(Strings.FILE_FILTER_INSTRUCTIONS, brackets.config.glob_help_url) +",1,4,0.4444444444444444,34
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",1,4,0.4444444444444444,35
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",0,4,0.4444444444444444,36
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?{label:string, promise:$.Promise}} context Info on which files the filter will be applied to. If specified,",0,4,0.4444444444444444,37
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* initial search, the filter and part of the scope are taken care of in bulk instead, so _subtreeFilter()",0,4,0.4444444444444444,38
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",0,4,0.4444444444444444,39
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Update dropdownItems list - editFilter() changes MRU order,1,4,0.4444444444444444,40
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Checks that the file matches the given subtree scope. To fully check whether the file,0,4,0.4444444444444444,41
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Checks that the file is eligible for inclusion in the search (matches the user's subtree scope and,0,4,0.4444444444444444,42
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// Update last-used pref (-1 for ""No filter"", else MRU-list index - which will always be 0 due to above code)",1,4,0.4444444444444444,43
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In the initial search, this is passed as a getAllFiles() filter",0,4,0.4444444444444444,44
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In the initial search, this is covered by the filterFileList() pass",0,4,0.4444444444444444,45
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {boolean} True if the entry's contents should be included in the file list,1,4,0.4444444444444444,46
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Returns false if the given path matches any of the exclusion globs in the given filter. Returns true,0,4,0.4444444444444444,47
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Returns a copy of 'files' filtered to just those that don't match any of the exclusion globs in the filter.,0,4,0.4444444444444444,48
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Finds search results in the given file and adds them to 'searchResults.' Resolves with,0,3,0.3333333333333333,49
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"*          editing UI will indicate how many files are excluded by the filter. Label should be of the form ""in ...""",0,3,0.3333333333333333,50
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,lastFocus.focus();  // restore focus to old pos,0,3,0.3333333333333333,51
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Code to update the file count readout at bottom of dialog (if context provided),0,3,0.3333333333333333,52
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var filter = getValue();,0,3,0.3333333333333333,53
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,lastFocus.focus();  // restore focus to old pos,1,3,0.3333333333333333,54
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* if the path does not match any of the globs. If filtering many paths at once, use filterFileList()",1,3,0.3333333333333333,55
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var re = new RegExp(compiledFilter);,1,3,0.3333333333333333,56
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/** @const @type {!Object} Token used to indicate a specific reason for zero search results */,0,3,0.3333333333333333,57
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In getCandidateFiles(), this is covered by the baseline getAllFiles() itself",0,3,0.3333333333333333,58
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,this._lastFocus.focus();  // restore focus to old pos,1,3,0.3333333333333333,59
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* true if any matches found, false if none found. Errors reading the file are treated the",0,3,0.3333333333333333,60
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Does not perform any filtering - assumes caller has already vetted this file as a search,0,3,0.3333333333333333,61
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var exclusionsContext = {,0,3,0.3333333333333333,62
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In the initial search, this is covered by getAllFiles()",1,3,0.3333333333333333,63
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var doSearch = _doSearchInOneFile.bind(undefined, function () {",1,3,0.3333333333333333,64
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* if the path does not match any of the globs. If filtering many paths at once, use filterFileList()",0,3,0.3333333333333333,65
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*      or as the 'html' field in an object that also conveys enabled state. Disabled items inherit gray,0,3,0.3333333333333333,66
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"*          (see itemRenderer() docs below). If not provided, items are assumed to be plain text strings.",1,3,0.3333333333333333,67
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"html += ""<li><a class='stylesheet-link' data-index='"" + i + ""'>"";",1,3,0.3333333333333333,68
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var re = new RegExp(compiledFilter);,0,3,0.3333333333333333,69
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/** @type {string} Compiled filter from FileFilters */,0,3,0.3333333333333333,70
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// If the added or removed sets are null, we should redo the",1,3,0.3333333333333333,71
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"picker = new DropdownButton("""", []);",1,3,0.3333333333333333,72
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var userFilter = FileFilters.commitPicker(filterPicker);,1,3,0.3333333333333333,73
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* A search filter is an array of one or more glob strings. The filter must be 'compiled' via compile(),0,3,0.3333333333333333,74
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,lastFocus.focus();  // restore focus to old pos,0,3,0.3333333333333333,75
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var filter = getLastFilter();,0,3,0.3333333333333333,76
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/** Max number of recently-used filters to store in preferences */,1,3,0.3333333333333333,77
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var filter = picker.items[picker.selectedIndex];,1,3,0.3333333333333333,78
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,dropdownItems.unshift([]);  // 'No filter' item always at top,1,3,0.3333333333333333,79
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,dropdownItems.push(undefined);  // 'Edit filter' item always at bottom,1,3,0.3333333333333333,80
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Initialize selection (pref unset or -1 indicates 'No filter'; else specifies index in MRU list),1,3,0.3333333333333333,81
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var filterIndex = _.findIndex(filters, function (oldFilter) {",1,3,0.3333333333333333,82
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Filters out files that are known binary types (currently just image/audio; ideally we'd filter out ALL binary files).,0,3,0.3333333333333333,83
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* file exclusion filters, and isn't binary). Used when updating results incrementally - during the",0,3,0.3333333333333333,84
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Still need to make sure it's within project or working set,0,3,0.3333333333333333,85
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// In the initial search, this is covered by getAllFiles()",0,3,0.3333333333333333,86
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var inWorkingSet = DocumentManager.getWorkingSet().some(function (wsFile) {,0,3,0.3333333333333333,87
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Re-check the filtering that the initial search applied,0,3,0.3333333333333333,88
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* should be in the search set, use _inSearchScope() instead - a supserset of this.",0,3,0.3333333333333333,89
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Filters out files that are known binary types (currently just image/audio; ideally we'd filter out ALL binary files).,1,3,0.3333333333333333,90
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var $fileCount = dialog.getElement().find("".exclusions-filecount"");",0,2,0.2222222222222222,91
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var newFilter = dialog.getElement().find("".exclusions-editor"").val().split(""\n"");",1,2,0.2222222222222222,92
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var ZERO_FILES_TO_SEARCH = {};,0,2,0.2222222222222222,93
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!string} compiledFilter  'Compiled' filter object as returned by compile(),1,2,0.2222222222222222,94
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Update saved filter preference,1,2,0.2222222222222222,95
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,newFilter = newFilter.filter(function (glob) {,1,2,0.2222222222222222,96
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!Array.<string>} filter,1,2,0.2222222222222222,97
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var dialog = Dialogs.showModalDialog(DefaultDialogs.DIALOG_ID_INFO, Strings.FILE_FILTER_DIALOG, html, buttons);",1,2,0.2222222222222222,98
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var buttons = [,1,2,0.2222222222222222,99
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var lastFocus = window.document.activeElement;,1,2,0.2222222222222222,100
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var filtered = filterFileList(compile(getValue()), files);",0,2,0.2222222222222222,101
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Finds all candidate files to search in currentScope's subtree that are not binary content. Does NOT apply,0,2,0.2222222222222222,102
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?Object} zeroFiles The 'ZERO_FILES_TO_SEARCH' token, if no results found for this reason",0,2,0.2222222222222222,103
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?function(*, number):!string|{html:string, enabled:boolean} itemRenderer  Optional function to",0,2,0.2222222222222222,104
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* initial search, these checks are done in bulk via getCandidateFiles() and the filterFileList() call",0,2,0.2222222222222222,105
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Replicate the checks getCandidateFiles() does,0,2,0.2222222222222222,106
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Replicate the filtering filterFileList() does,0,2,0.2222222222222222,107
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var foundMatches = _addSearchMatches(file.fullPath, text, currentQueryExpr);",0,2,0.2222222222222222,108
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// Always resolve. If there is an error, this file",0,2,0.2222222222222222,109
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"candidateFilesPromise = getCandidateFiles(),  // used for eventual search, and in exclusions editor UI",0,2,0.2222222222222222,110
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// Always resolve. If there is an error, this file",1,2,0.2222222222222222,111
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var doSearch = _doSearchInOneFile.bind(undefined, _addSearchMatches);",1,2,0.2222222222222222,112
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// Restore focus to old pos, unless ""select"" handler changed it",0,2,0.2222222222222222,113
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*          assumed to be plain text strings.,0,2,0.2222222222222222,114
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var rendered = this.itemRenderer(item, i),",0,2,0.2222222222222222,115
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var newFilter = $editField.val().split(""\n"");",0,2,0.2222222222222222,116
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Update saved filter preference,0,2,0.2222222222222222,117
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var $editField = dialog.getElement().find("".exclusions-editor"");",0,2,0.2222222222222222,118
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var $picker = $(""<div class='filter-picker'><span class='filter-label'></span><button class='btn no-focus'></button></div>""),",0,2,0.2222222222222222,119
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var currentFilter = null;,0,2,0.2222222222222222,120
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* before passing to filterPath().,0,2,0.2222222222222222,121
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var lastFocus = window.document.activeElement;,0,2,0.2222222222222222,122
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Update saved filter preference,0,2,0.2222222222222222,123
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Format filter in condensed form,0,2,0.2222222222222222,124
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var MAX_FILTER_HISTORY = 10;,1,2,0.2222222222222222,125
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* Each filter is an array of one or more glob strings.,1,2,0.2222222222222222,126
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Update MRU order,1,2,0.2222222222222222,127
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var filters = getFilters();,1,2,0.2222222222222222,128
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Custom formatted button label,1,2,0.2222222222222222,129
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Tooltip with full filter text (not clipped as in label),1,2,0.2222222222222222,130
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var lastUsedFilterIndex = PreferencesManager.getViewState(""search.exclusion.lastUsed"");",1,2,0.2222222222222222,131
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,filters.length = MAX_FILTER_HISTORY - 1;,1,2,0.2222222222222222,132
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {boolean} True if the file's contents can be read as text,0,2,0.2222222222222222,133
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!string} compiledFilter  'Compiled' filter object as returned by compile(),0,2,0.2222222222222222,134
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var buttons = [,0,2,0.2222222222222222,135
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"""<textarea class='exclusions-editor'></textarea><div class='exclusions-filecount'>"" + Strings.FILTER_COUNTING_FILES + ""</div>"";",0,2,0.2222222222222222,136
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var language = LanguageManager.getLanguageForPath(file.fullPath);,0,2,0.2222222222222222,137
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!Array.<string>} filter,0,2,0.2222222222222222,138
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var lastFocus = window.document.activeElement;,0,2,0.2222222222222222,139
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// search for the entire directory,1,2,0.2222222222222222,140
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,var language = LanguageManager.getLanguageForPath(entry.fullPath);,1,2,0.2222222222222222,141
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {FileSystemEntry} entry The entry to test,1,2,0.2222222222222222,142
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!File} file File in question,1,2,0.2222222222222222,143
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var dialog = Dialogs.showModalDialog(DefaultDialogs.DIALOG_ID_INFO, Strings.FILE_FILTER_DIALOG, html, buttons);",0,2,0.2222222222222222,144
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,dialog.done(function (buttonId) {,1,1,0.1111111111111111,145
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function filterPath(compiledFilter, fullPath) {",1,1,0.1111111111111111,146
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (buttonId === Dialogs.DIALOG_BTN_OK) {,1,1,0.1111111111111111,147
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Remove blank lines,1,1,0.1111111111111111,148
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function createFilterPicker() {,1,1,0.1111111111111111,149
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* for much better performance.,1,1,0.1111111111111111,150
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*,1,1,0.1111111111111111,151
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!string} fullPath,1,1,0.1111111111111111,152
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {boolean},1,1,0.1111111111111111,153
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!Array.<File>},0,1,0.1111111111111111,154
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (!compiledFilter) {,1,1,0.1111111111111111,155
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!Array.<File>} files,1,1,0.1111111111111111,156
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!Array.<File>},1,1,0.1111111111111111,157
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function filterFileList(compiledFilter, files) {",1,1,0.1111111111111111,158
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return files.filter(function (f) {,1,1,0.1111111111111111,159
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _showSearchResults(zeroFilesToken) {,0,1,0.1111111111111111,160
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (zeroFilesToken === ZERO_FILES_TO_SEARCH) {,0,1,0.1111111111111111,161
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,} else {,0,1,0.1111111111111111,162
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/**,0,1,0.1111111111111111,163
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"{ className : Dialogs.DIALOG_BTN_CLASS_NORMAL, id: Dialogs.DIALOG_BTN_CANCEL, text: Strings.CANCEL },",1,1,0.1111111111111111,164
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"{ className : Dialogs.DIALOG_BTN_CLASS_PRIMARY, id: Dialogs.DIALOG_BTN_OK, text: Strings.OK }",1,1,0.1111111111111111,165
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,dialog.done(function (buttonId) {,0,1,0.1111111111111111,166
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function editFilter(filter) {,1,1,0.1111111111111111,167
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*/,0,1,0.1111111111111111,168
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return files.filter(function (f) {,0,1,0.1111111111111111,169
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!$.Promise} Dialog box promise,0,1,0.1111111111111111,170
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function editFilter(filter, context) {",0,1,0.1111111111111111,171
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"{ className : Dialogs.DIALOG_BTN_CLASS_NORMAL, id: Dialogs.DIALOG_BTN_CANCEL, text: Strings.CANCEL },",0,1,0.1111111111111111,172
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"{ className : Dialogs.DIALOG_BTN_CLASS_PRIMARY, id: Dialogs.DIALOG_BTN_OK, text: Strings.OK }",0,1,0.1111111111111111,173
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function getValue() {,0,1,0.1111111111111111,174
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Remove blank lines,0,1,0.1111111111111111,175
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return newFilter.filter(function (glob) {,0,1,0.1111111111111111,176
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (buttonId === Dialogs.DIALOG_BTN_OK) {,0,1,0.1111111111111111,177
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*/,1,1,0.1111111111111111,178
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function updateFileCount() {,0,1,0.1111111111111111,179
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,context.promise.done(function (files) {,0,1,0.1111111111111111,180
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filter.length) {,0,1,0.1111111111111111,181
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,} else {,0,1,0.1111111111111111,182
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (context) {,0,1,0.1111111111111111,183
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function createFilterPicker(contextPromise) {,0,1,0.1111111111111111,184
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/**,1,1,0.1111111111111111,185
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!$.Promise} Dialog box promise,1,1,0.1111111111111111,186
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* currentFilter yet.,0,1,0.1111111111111111,187
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function (zeroFilesToken) {,0,1,0.1111111111111111,188
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function getCandidateFiles() {,0,1,0.1111111111111111,189
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function filter(file) {,0,1,0.1111111111111111,190
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function _doSearchInOneFile(addMatches, file) {",1,1,0.1111111111111111,191
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"if (!_subtreeFilter(file, currentScope)) {",1,1,0.1111111111111111,192
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,} else {,1,1,0.1111111111111111,193
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function (text) {,1,1,0.1111111111111111,194
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.always(function () {,1,1,0.1111111111111111,195
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _doSearch(query) {,1,1,0.1111111111111111,196
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function () {,1,1,0.1111111111111111,197
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,currentFilter = FileFilters.commitPicker(filterPicker);,1,1,0.1111111111111111,198
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,filterPicker = FileFilters.createFilterPicker();,1,1,0.1111111111111111,199
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"if (_addSearchMatches.apply(undefined, arguments)) {",1,1,0.1111111111111111,200
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,resultsChanged = true;,1,1,0.1111111111111111,201
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (window.document.activeElement === this.$dropdown[0]) {,0,1,0.1111111111111111,202
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @return {!string|{html:string, enabled:boolean}} Formatted & escaped HTML, either as a simple string",0,1,0.1111111111111111,203
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*      text color and cannot be selected.,0,1,0.1111111111111111,204
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"itemHtml = rendered.html || rendered,",0,1,0.1111111111111111,205
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"disabledClass = (rendered.html && !rendered.enabled) ? ""disabled"" : """";",0,1,0.1111111111111111,206
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,html += itemHtml;,0,1,0.1111111111111111,207
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!string} Formatted & escaped HTML,1,1,0.1111111111111111,208
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"html += this.itemRenderer(item, i);",1,1,0.1111111111111111,209
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* is just called directly.,1,1,0.1111111111111111,210
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _showSearchResults() {,1,1,0.1111111111111111,211
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,resultsChanged = resultsChanged || foundMatches;,0,1,0.1111111111111111,212
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function _doSearch(query, candidateFilesPromise) {",0,1,0.1111111111111111,213
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* after it.,0,1,0.1111111111111111,214
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* same as if no results found.,0,1,0.1111111111111111,215
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*,0,1,0.1111111111111111,216
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* candidate.,0,1,0.1111111111111111,217
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _doSearchInOneFile(file) {,0,1,0.1111111111111111,218
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function (text) {,0,1,0.1111111111111111,219
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.fail(function () {,0,1,0.1111111111111111,220
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {!$.Promise} candidateFilesPromise Promise from getCandidateFiles(), which was called earlier",0,1,0.1111111111111111,221
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (fileListResult.length) {,0,1,0.1111111111111111,222
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function (foundMatches) {,0,1,0.1111111111111111,223
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filterPicker) {,0,1,0.1111111111111111,224
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,currentFilter = FileFilters.commitPicker(filterPicker);,0,1,0.1111111111111111,225
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Single-file scope: don't use any file filters,0,1,0.1111111111111111,226
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,currentFilter = null;,0,1,0.1111111111111111,227
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Show file-exclusion UI *unless* search scope is just a single file,0,1,0.1111111111111111,228
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (!scope || scope.isDirectory) {,0,1,0.1111111111111111,229
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,filterPicker = FileFilters.createFilterPicker(exclusionsContext);,0,1,0.1111111111111111,230
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"Async.doInParallel(addedFiles, function (file) {",0,1,0.1111111111111111,231
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function filterFileList(compiledFilter, files) {",0,1,0.1111111111111111,232
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*/,1,1,0.1111111111111111,233
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!Array.<File>} files,0,1,0.1111111111111111,234
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,exports.getFilters = getFilters;,1,1,0.1111111111111111,235
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"var dropdownItems,",1,1,0.1111111111111111,236
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (!filter) {,1,1,0.1111111111111111,237
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,} else if (!filter.length) {,1,1,0.1111111111111111,238
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filter.length > 2) {,1,1,0.1111111111111111,239
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"StringUtils.format(Strings.FILE_FILTER_CLIPPED_SUFFIX, filter.length - 2);",1,1,0.1111111111111111,240
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function setSelected(index) {,1,1,0.1111111111111111,241
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"// Store selection in an expando we stuff onto picker, so it's easily retrieved in commitPicker() later",1,1,0.1111111111111111,242
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,picker.selectedIndex = index;,1,1,0.1111111111111111,243
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (picker.selectedIndex > 0) {,1,1,0.1111111111111111,244
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function doPopulate() {,1,1,0.1111111111111111,245
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,dropdownItems = _.clone(getFilters());,1,1,0.1111111111111111,246
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,picker.items = dropdownItems;,1,1,0.1111111111111111,247
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (lastUsedFilterIndex === undefined || lastUsedFilterIndex === -1) {,1,1,0.1111111111111111,248
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,setSelected(lastUsedFilterIndex + 1);,1,1,0.1111111111111111,249
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,picker.itemRenderer = itemRenderer;,1,1,0.1111111111111111,250
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"picker.dropdownExtraClasses = ""exclusions-dropdown"";",1,1,0.1111111111111111,251
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$(picker).on(""select"", function (event, item, itemIndex) {",1,1,0.1111111111111111,252
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (!item) {,1,1,0.1111111111111111,253
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function (buttonId) {,1,1,0.1111111111111111,254
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*,1,1,0.1111111111111111,255
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,} else {,1,1,0.1111111111111111,256
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filters.length >= MAX_FILTER_HISTORY) {,1,1,0.1111111111111111,257
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"StringUtils.format(Strings.FILE_FILTER_CLIPPED_SUFFIX, filter.length - 2);",0,1,0.1111111111111111,258
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (!compiledFilter) {,0,1,0.1111111111111111,259
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!Array.<string>>},0,1,0.1111111111111111,260
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function getLastFilter() {,0,1,0.1111111111111111,261
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/**,0,1,0.1111111111111111,262
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*/,0,1,0.1111111111111111,263
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function setLastFilter(filter) {,0,1,0.1111111111111111,264
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$button = $picker.find(""button"");",0,1,0.1111111111111111,265
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filter.length > 2) {,0,1,0.1111111111111111,266
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function updatePicker() {,0,1,0.1111111111111111,267
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filterIndex === -1) {,1,1,0.1111111111111111,268
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filter.length) {,0,1,0.1111111111111111,269
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,$button.click(function () {,0,1,0.1111111111111111,270
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.done(function (buttonId) {,0,1,0.1111111111111111,271
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (buttonId === Dialogs.DIALOG_BTN_OK) {,0,1,0.1111111111111111,272
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,exports.getLastFilter      = getLastFilter;,0,1,0.1111111111111111,273
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function getFilters() {,1,1,0.1111111111111111,274
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function markLastUsed(filter) {,1,1,0.1111111111111111,275
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (filter.length) {,1,1,0.1111111111111111,276
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (buttonId === Dialogs.DIALOG_BTN_OK) {,1,1,0.1111111111111111,277
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {!Array.<!Array.<string>>},1,1,0.1111111111111111,278
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*,0,1,0.1111111111111111,279
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"fileListResult = FileFilters.filterFileList(userFilter, fileListResult);",1,1,0.1111111111111111,280
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @private,1,1,0.1111111111111111,281
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?Entry} scope Search scope, or null if whole project",1,1,0.1111111111111111,282
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function _inScope(file, scope) {",1,1,0.1111111111111111,283
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"if (searchResultsPanel.isVisible() && _inScope(document.file, currentScope)) {",1,1,0.1111111111111111,284
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"if (!_inScope(file, currentScope)) {",1,1,0.1111111111111111,285
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function _doSearch(query, userFilter) {",1,1,0.1111111111111111,286
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/**,1,1,0.1111111111111111,287
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function fileFilter(entry) {,1,1,0.1111111111111111,288
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (child.isFile) {,1,1,0.1111111111111111,289
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (_inSearchScope(child)) {,0,1,0.1111111111111111,290
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/**,0,1,0.1111111111111111,291
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* for much better performance.,0,1,0.1111111111111111,292
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*,0,1,0.1111111111111111,293
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!string} fullPath,0,1,0.1111111111111111,294
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {boolean},0,1,0.1111111111111111,295
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*/,0,1,0.1111111111111111,296
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {!File} file,0,1,0.1111111111111111,297
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function filterPath(compiledFilter, fullPath) {",0,1,0.1111111111111111,298
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// don't know which child files/folders may have been added or removed.,0,1,0.1111111111111111,299
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"ProjectManager      = require(""project/ProjectManager""),",0,1,0.1111111111111111,300
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (child.isFile && !ProjectManager.isBinaryFile(child.name)) {,0,1,0.1111111111111111,301
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (currentScope) {,0,1,0.1111111111111111,302
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"function _subtreeFilter(file, scope) {",0,1,0.1111111111111111,303
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,// Replicate filtering that getAllFiles() does,0,1,0.1111111111111111,304
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,/**,0,1,0.1111111111111111,305
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @param {File} file,0,1,0.1111111111111111,306
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,*/,0,1,0.1111111111111111,307
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* is just called directly.,0,1,0.1111111111111111,308
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,* @return {boolean},0,1,0.1111111111111111,309
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _inSearchScope(file) {,0,1,0.1111111111111111,310
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _isReadableText(file) {,0,1,0.1111111111111111,311
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"if (!_subtreeFilter(file, currentScope)) {",0,1,0.1111111111111111,312
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (_inSearchScope(document.file)) {,0,1,0.1111111111111111,313
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,currentFilter = FileFilters.commitPicker(filterPicker);,0,1,0.1111111111111111,314
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"fileListResult = FileFilters.filterFileList(currentFilter, fileListResult);",0,1,0.1111111111111111,315
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,} else {,0,1,0.1111111111111111,316
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,function _doSearch(query) {,0,1,0.1111111111111111,317
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"* @param {?FileSystemEntry} scope Search scope, or null if whole project",0,1,0.1111111111111111,318
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (!_isReadableText(file)) {,0,1,0.1111111111111111,319
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,if (file.fullPath.indexOf(ProjectManager.getProjectRoot().fullPath) !== 0) {,0,1,0.1111111111111111,320
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,DocumentManager.getDocumentText(file),0,0,0.0,321
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,editFilter(getLastFilter()),1,0,0.0,322
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return _subtreeFilter(file, currentScope) && _isReadableText(file);",0,0,0.0,323
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},0,0,0.0,324
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,".html(StringUtils.format(Strings.FIND_IN_FILES_ZERO_FILES, _labelForScope(currentScope)));",0,0,0.0,325
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,.show(),0,0,0.0,326
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$("".modal-bar .error"")",0,0,0.0,327
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return ProjectManager.getAllFiles(filter, true);",0,0,0.0,328
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return !f.fullPath.match(re);,1,0,0.0,329
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return files;,1,0,0.0,330
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return !fullPath.match(re);,1,0,0.0,331
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return true;,1,0,0.0,332
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$("".modal-bar .no-results-message"").show();",0,0,0.0,333
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"""<textarea class='exclusions-editor'></textarea>"";",1,0,0.0,334
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return dialog.getPromise();,1,0,0.0,335
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},1,0,0.0,336
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,setLastFilter(newFilter);,1,0,0.0,337
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,1,0,0.0,338
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return glob.trim().length;,1,0,0.0,339
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"dialog.getElement().find("".exclusions-editor"").val(filter.join(""\n"")).focus();",1,0,0.0,340
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,];,1,0,0.0,341
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"editFilter(getLastFilter(), contextPromise)",0,0,0.0,342
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return dialog.getPromise();,0,0,0.0,343
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,$fileCount.hide();,0,0,0.0,344
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,updateFileCount();,0,0,0.0,345
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,}),0,0,0.0,346
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$editField.on(""input"", _.debounce(updateFileCount, 400));",0,0,0.0,347
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,result.resolve(foundMatches);,0,0,0.0,348
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},1,0,0.0,349
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,result.resolve();,0,0,0.0,350
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,0,0,0.0,351
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$fileCount.html(StringUtils.format(Strings.FILTER_FILE_COUNT, filtered.length, files.length, context.label));",0,0,0.0,352
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,this._lastFocus.focus();,0,0,0.0,353
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"Async.doInParallel(addedFiles, doSearch).always(deferred.resolve);",1,0,0.0,354
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"this.modalBar.getRoot().find(""#find-group"").append(filterPicker);",1,0,0.0,355
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,_doSearch(query);,1,0,0.0,356
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,_showSearchResults();,1,0,0.0,357
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return Async.doInParallel(fileListResult, doSearch);",1,0,0.0,358
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"ProjectManager.getAllFiles(_isReadableText, true)",1,0,0.0,359
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,1,0,0.0,360
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,}),1,0,0.0,361
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"addMatches(file.fullPath, text, currentQueryExpr);",1,0,0.0,362
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,DocumentManager.getDocumentText(file),1,0,0.0,363
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,result.resolve();,1,0,0.0,364
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$("".modal-bar .no-results-message"").show();",1,0,0.0,365
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,}).always(deferred.resolve);,0,0,0.0,366
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return _doSearchInOneFile(file),0,0,0.0,367
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"this.modalBar.getRoot().find(""#find-group"").append(filterPicker);",0,0,0.0,368
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,};,0,0,0.0,369
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,promise: candidateFilesPromise,0,0,0.0,370
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"label: _labelForScope(scope),",0,0,0.0,371
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"_doSearch(query, candidateFilesPromise);",0,0,0.0,372
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,_showSearchResults(zeroFilesToken);,0,0,0.0,373
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return ZERO_FILES_TO_SEARCH;,0,0,0.0,374
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return Async.doInParallel(fileListResult, _doSearchInOneFile);",0,0,0.0,375
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,candidateFilesPromise,0,0,0.0,376
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$fileCount.html(StringUtils.format(Strings.FILTER_FILE_COUNT_ALL, files.length, context.label));",0,0,0.0,377
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},1,0,0.0,378
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,setLastFilter(getValue());,0,0,0.0,379
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,1,0,0.0,380
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,setSelected(0);,1,0,0.0,381
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"picker.$button.attr(""title"", """");",1,0,0.0,382
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,picker.$button.html(itemRenderer(dropdownItems[picker.selectedIndex]));,1,0,0.0,383
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return Strings.NO_FILE_FILTER;,1,0,0.0,384
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return Strings.EDIT_FILE_FILTER;,1,0,0.0,385
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,picker;,1,0,0.0,386
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,markLastUsed(filter);,1,0,0.0,387
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,markLastUsed(newFilter);,1,0,0.0,388
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"PreferencesManager.setViewState(""search.exclusion.lastUsed"", filter.length ? 0 : -1);",1,0,0.0,389
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"PreferencesManager.setViewState(""search.exclusions"", filters);",1,0,0.0,390
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,filters.unshift(filter);,1,0,0.0,391
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"filters.splice(filterIndex, 1);",1,0,0.0,392
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return _.isEqual(oldFilter, filter);",1,0,0.0,393
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return glob.trim().length;,0,0,0.0,394
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return $picker;,0,0,0.0,395
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,0,0,0.0,396
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},0,0,0.0,397
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,editFilter(getLastFilter()),0,0,0.0,398
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,updatePicker();,0,0,0.0,399
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$picker.find("".filter-label"").html("""").attr(""title"", """");",0,0,0.0,400
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,$button.text(Strings.NO_FILE_FILTER);,0,0,0.0,401
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,".attr(""title"", filter.join(""\n""));",0,0,0.0,402
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$picker.find("".filter-label"").html(itemRenderer(filter))",0,0,0.0,403
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,$button.text(Strings.EDIT_FILE_FILTER);,0,0,0.0,404
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,setLastFilter(newFilter);,0,0,0.0,405
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"PreferencesManager.setViewState(""search.exclusions"", filter);",0,0,0.0,406
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,doPopulate();,1,0,0.0,407
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,editFilter(dropdownItems[picker.selectedIndex]),1,0,0.0,408
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,setSelected(itemIndex);,1,0,0.0,409
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return picker;,1,0,0.0,410
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"$editField.val(filter.join(""\n"")).focus();",0,0,0.0,411
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,];,0,0,0.0,412
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,0,0,0.0,413
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return !f.fullPath.match(re);,0,0,0.0,414
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return files;,0,0,0.0,415
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return !fullPath.match(re);,0,0,0.0,416
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},0,0,0.0,417
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return true;,0,0,0.0,418
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,addedFiles.push(child);,1,0,0.0,419
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"_doSearch(query, userFilter);",1,0,0.0,420
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"ProjectManager.getAllFiles(fileFilter, true)",1,0,0.0,421
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},1,0,0.0,422
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return !language.isBinary();,1,0,0.0,423
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,addedFiles.push(child);,0,0,0.0,424
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,_doSearch(query);,0,0,0.0,425
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"ProjectManager.getAllFiles(_isReadableText, true)",0,0,0.0,426
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"return FileFilters.filterPath(currentFilter, file.fullPath);",0,0,0.0,427
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return inWorkingSet;,0,0,0.0,428
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,});,0,0,0.0,429
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return wsFile.fullPath === file.fullPath;,0,0,0.0,430
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return false;,0,0,0.0,431
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},0,0,0.0,432
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,return !language.isBinary();,0,0,0.0,433
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"this.modalBar.getRoot().find(""#find-group"").append(filterPicker.$button);",1,0,0.0,434
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,"this.modalBar.getRoot().find(""#find-group"").append(filterPicker);",0,0,0.0,435
+0bbaf7a544f91ba8f40308104643e5c543e88fa6,},0,0,0.0,436

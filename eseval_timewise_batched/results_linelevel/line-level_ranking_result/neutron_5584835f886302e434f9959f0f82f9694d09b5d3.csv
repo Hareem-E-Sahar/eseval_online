@@ -1,0 +1,376 @@
+commit_id,line,line_level_label,count,line_score,row
+5584835f886302e434f9959f0f82f9694d09b5d3,"""return an uuid for the newly """,1,3,1.0,1
+5584835f886302e434f9959f0f82f9694d09b5d3,raise nvp_exc.NvpPluginException(err_msg=msg),1,2,0.6666666666666666,2
+5584835f886302e434f9959f0f82f9694d09b5d3,"msg = _(""No cluster specified in NVP plugin configuration. """,1,2,0.6666666666666666,3
+5584835f886302e434f9959f0f82f9694d09b5d3,raise nvp_exc.NvpPluginException(,1,2,0.6666666666666666,4
+5584835f886302e434f9959f0f82f9694d09b5d3,"""created resource:%s"") % nvp_res)",1,2,0.6666666666666666,5
+5584835f886302e434f9959f0f82f9694d09b5d3,"msg = _(""No controller connection specified in cluster """,1,2,0.6666666666666666,6
+5584835f886302e434f9959f0f82f9694d09b5d3,network id,1,1,0.3333333333333333,7
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.debug(_(""Looking for nova zone %(novazone_id)s in """,1,1,0.3333333333333333,8
+5584835f886302e434f9959f0f82f9694d09b5d3,raise nvp_exc.NvpInvalidNovaZone(nova_zone=novazone_id),1,1,0.3333333333333333,9
+5584835f886302e434f9959f0f82f9694d09b5d3,"the zone id (nova_id), then select corresponding cluster,",1,1,0.3333333333333333,10
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.debug(_(""get_all_networks() completed for tenant """,1,1,0.3333333333333333,11
+5584835f886302e434f9959f0f82f9694d09b5d3,raise nvp_exc.NvpL2GatewayAlreadyInUse(gateway=gw_data['name']),0,1,0.3333333333333333,12
+5584835f886302e434f9959f0f82f9694d09b5d3,for port in ports:,1,1,0.3333333333333333,13
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_lports[tag[""tag""]] = port",1,1,0.3333333333333333,14
+5584835f886302e434f9959f0f82f9694d09b5d3,"""[CLUSTER:<cluster_name>] section is specified in """,1,1,0.3333333333333333,15
+5584835f886302e434f9959f0f82f9694d09b5d3,raise nvp_exc.NvpPluginException(err_msg=err_msg),0,1,0.3333333333333333,16
+5584835f886302e434f9959f0f82f9694d09b5d3,"err_msg=_(""Create_l2_gw_service did not """,1,1,0.3333333333333333,17
+5584835f886302e434f9959f0f82f9694d09b5d3,"""the NVP Plugin configuration file."")",1,1,0.3333333333333333,18
+5584835f886302e434f9959f0f82f9694d09b5d3,raise q_exc.NetworkNotFound(net_id=netw_id),1,1,0.3333333333333333,19
+5584835f886302e434f9959f0f82f9694d09b5d3,"""Unable to start. Please ensure at least a """,1,1,0.3333333333333333,20
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.exception(_(""Invalid connection parameters for """,1,1,0.3333333333333333,21
+5584835f886302e434f9959f0f82f9694d09b5d3,# want to support deprecated options in the nvp config file,0,1,0.3333333333333333,22
+5584835f886302e434f9959f0f82f9694d09b5d3,# Default controller cluster (to be used when nova zone id is unspecified),1,1,0.3333333333333333,23
+5584835f886302e434f9959f0f82f9694d09b5d3,for port in ports:,0,1,0.3333333333333333,24
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.warn(_(""Overlapping IPs must be enabled in order to setup """,1,1,0.3333333333333333,25
+5584835f886302e434f9959f0f82f9694d09b5d3,"""the metadata access network. Metadata access in """,1,1,0.3333333333333333,26
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_lports[tag[""tag""]] = port",0,1,0.3333333333333333,27
+5584835f886302e434f9959f0f82f9694d09b5d3,"""controller %(ctrl)s in """,1,1,0.3333333333333333,28
+5584835f886302e434f9959f0f82f9694d09b5d3,raise nvp_exc.NvpInvalidConnection(,1,1,0.3333333333333333,29
+5584835f886302e434f9959f0f82f9694d09b5d3,"""configuration. Please ensure at least a value for """,1,1,0.3333333333333333,30
+5584835f886302e434f9959f0f82f9694d09b5d3,"""'nvp_controller_connection' is specified in the """,1,1,0.3333333333333333,31
+5584835f886302e434f9959f0f82f9694d09b5d3,networks = [],1,0,0.0,32
+5584835f886302e434f9959f0f82f9694d09b5d3,"""""""Return cluster where configuration should be applied",1,0,0.0,33
+5584835f886302e434f9959f0f82f9694d09b5d3,"def get_all_networks(self, tenant_id, **kwargs):",1,0,0.0,34
+5584835f886302e434f9959f0f82f9694d09b5d3,# TODO(savatore-orlando) Find main_ls too!,1,0,0.0,35
+5584835f886302e434f9959f0f82f9694d09b5d3,return self.default_cluster,1,0,0.0,36
+5584835f886302e434f9959f0f82f9694d09b5d3,return self._novazone_to_cluster(resource['nova_id']),1,0,0.0,37
+5584835f886302e434f9959f0f82f9694d09b5d3,if 'nova_id' in resource:,1,0,0.0,38
+5584835f886302e434f9959f0f82f9694d09b5d3,otherwise return default cluster.,1,0,0.0,39
+5584835f886302e434f9959f0f82f9694d09b5d3,If the resource being configured has a paremeter expressing,1,0,0.0,40
+5584835f886302e434f9959f0f82f9694d09b5d3,self.novazone_cluster_map[x.zone] = x,1,0,0.0,41
+5584835f886302e434f9959f0f82f9694d09b5d3,"def _find_target_cluster(self, resource):",1,0,0.0,42
+5584835f886302e434f9959f0f82f9694d09b5d3,novazone_id),1,0,0.0,43
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.error(_(""Unable to find cluster config entry for nova zone: %s""),",1,0,0.0,44
+5584835f886302e434f9959f0f82f9694d09b5d3,return x,1,0,0.0,45
+5584835f886302e434f9959f0f82f9694d09b5d3,if x.zone == str(novazone_id):,1,0,0.0,46
+5584835f886302e434f9959f0f82f9694d09b5d3,"{'novazone_id': novazone_id, 'x': x})",1,0,0.0,47
+5584835f886302e434f9959f0f82f9694d09b5d3,"""cluster: %(x)s""),",1,0,0.0,48
+5584835f886302e434f9959f0f82f9694d09b5d3,for x in self.clusters:,1,0,0.0,49
+5584835f886302e434f9959f0f82f9694d09b5d3,"networks.extend(nvplib.get_all_networks(c, tenant_id, networks))",1,0,0.0,50
+5584835f886302e434f9959f0f82f9694d09b5d3,for c in self.clusters:,1,0,0.0,51
+5584835f886302e434f9959f0f82f9694d09b5d3,"def _get_lswitch_cluster_pairs(self, netw_id, tenant_id):",1,0,0.0,52
+5584835f886302e434f9959f0f82f9694d09b5d3,"""%(tenant_id)s: %(networks)s""),",1,0,0.0,53
+5584835f886302e434f9959f0f82f9694d09b5d3,"{'tenant_id': tenant_id, 'networks': networks})",1,0,0.0,54
+5584835f886302e434f9959f0f82f9694d09b5d3,"results = nvplib.get_lswitches(c, netw_id)",1,0,0.0,55
+5584835f886302e434f9959f0f82f9694d09b5d3,lswitches = [],1,0,0.0,56
+5584835f886302e434f9959f0f82f9694d09b5d3,for c in self.clusters.itervalues():,1,0,0.0,57
+5584835f886302e434f9959f0f82f9694d09b5d3,pairs = [],1,0,0.0,58
+5584835f886302e434f9959f0f82f9694d09b5d3,"""""""Figure out the set of lswitches on each cluster that maps to this",1,0,0.0,59
+5584835f886302e434f9959f0f82f9694d09b5d3,return self.novazone_cluster_map[novazone_id],1,0,0.0,60
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_networks(cluster, id, switches)",1,0,0.0,61
+5584835f886302e434f9959f0f82f9694d09b5d3,"for (cluster, switches) in pairs:",1,0,0.0,62
+5584835f886302e434f9959f0f82f9694d09b5d3,"pairs = self._get_lswitch_cluster_pairs(id, context.tenant_id)",1,0,0.0,63
+5584835f886302e434f9959f0f82f9694d09b5d3,# and quantum state to diverge,1,0,0.0,64
+5584835f886302e434f9959f0f82f9694d09b5d3,# FIXME(salvatore-orlando): Failures here might lead NVP,1,0,0.0,65
+5584835f886302e434f9959f0f82f9694d09b5d3,"context, self.default_cluster, port)",1,0,0.0,66
+5584835f886302e434f9959f0f82f9694d09b5d3,"net_data.get(pnet.PHYSICAL_NETWORK),",1,0,0.0,67
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_binding_type,",1,0,0.0,68
+5584835f886302e434f9959f0f82f9694d09b5d3,"target_cluster, tenant_id, net_data.get('name'),",1,0,0.0,69
+5584835f886302e434f9959f0f82f9694d09b5d3,target_cluster = self._find_target_cluster(net_data),1,0,0.0,70
+5584835f886302e434f9959f0f82f9694d09b5d3,return networks,1,0,0.0,71
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.debug(_(""Looking for nova zone: %s""), novazone_id)",1,0,0.0,72
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, network, network_binding, max_ports,",1,0,0.0,73
+5584835f886302e434f9959f0f82f9694d09b5d3,if novazone_id in self.novazone_cluster_map:,1,0,0.0,74
+5584835f886302e434f9959f0f82f9694d09b5d3,default_cluster = clusters[default_cluster_name],1,0,0.0,75
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.clusters, self.default_cluster = parse_clusters_opts(",1,0,0.0,76
+5584835f886302e434f9959f0f82f9694d09b5d3,LOG.error(msg),1,0,0.0,77
+5584835f886302e434f9959f0f82f9694d09b5d3,if not self.clusters_opts:,1,0,0.0,78
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.nvp_opts, self.clusters_opts = parse_config()",1,0,0.0,79
+5584835f886302e434f9959f0f82f9694d09b5d3,default_cluster = None,1,0,0.0,80
+5584835f886302e434f9959f0f82f9694d09b5d3,"return (clusters, default_cluster)",1,0,0.0,81
+5584835f886302e434f9959f0f82f9694d09b5d3,default_cluster = first_cluster,1,0,0.0,82
+5584835f886302e434f9959f0f82f9694d09b5d3,else:,1,0,0.0,83
+5584835f886302e434f9959f0f82f9694d09b5d3,if default_cluster_name and default_cluster_name in clusters:,1,0,0.0,84
+5584835f886302e434f9959f0f82f9694d09b5d3,"def _novazone_to_cluster(self, novazone_id):",1,0,0.0,85
+5584835f886302e434f9959f0f82f9694d09b5d3,clusters[c_opts['name']] = cluster,1,0,0.0,86
+5584835f886302e434f9959f0f82f9694d09b5d3,first_cluster = cluster,1,0,0.0,87
+5584835f886302e434f9959f0f82f9694d09b5d3,if not clusters:,1,0,0.0,88
+5584835f886302e434f9959f0f82f9694d09b5d3,nvp_gen_timeout=nvp_gen_timeout),1,0,0.0,89
+5584835f886302e434f9959f0f82f9694d09b5d3,"concurrent_connections=concurrent_connections,",1,0,0.0,90
+5584835f886302e434f9959f0f82f9694d09b5d3,"redirects=cluster.redirects,",1,0,0.0,91
+5584835f886302e434f9959f0f82f9694d09b5d3,"retries=cluster.retries,",1,0,0.0,92
+5584835f886302e434f9959f0f82f9694d09b5d3,"http_timeout=cluster.http_timeout,",1,0,0.0,93
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.clusters_opts, self.nvp_opts.concurrent_connections,",1,0,0.0,94
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.nvp_opts.nvp_gen_timeout, self.nvp_opts.default_cluster_name)",1,0,0.0,95
+5584835f886302e434f9959f0f82f9694d09b5d3,# Extend the fault map,1,0,0.0,96
+5584835f886302e434f9959f0f82f9694d09b5d3,# TODO(salvatore-orlando): Handle default gateways in multiple clusters,1,0,0.0,97
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster,",1,0,0.0,98
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.default_cluster.default_l3_gw_service_uuid,",1,0,0.0,99
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id, ""SourceNatRule"",",1,0,0.0,100
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id,",1,0,0.0,101
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, context, router_id, port_data,",1,0,0.0,102
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_router_lport(cluster,",1,0,0.0,103
+5584835f886302e434f9959f0f82f9694d09b5d3,"lr_port = nvplib.find_router_gw_port(context, cluster, router_id)",1,0,0.0,104
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_peer_router_lport(self.default_cluster,",1,0,0.0,105
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_port(self.default_cluster,",1,0,0.0,106
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_port_id = self._nvp_get_port_id(context, self.default_cluster,",1,0,0.0,107
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.plug_interface(cluster, selected_lswitch['uuid'],",1,0,0.0,108
+5584835f886302e434f9959f0f82f9694d09b5d3,"lport = self._nvp_create_port_helper(cluster,",1,0,0.0,109
+5584835f886302e434f9959f0f82f9694d09b5d3,allow_extra_lswitches),1,0,0.0,110
+5584835f886302e434f9959f0f82f9694d09b5d3,except q_exc.NetworkNotFound:,1,0,0.0,111
+5584835f886302e434f9959f0f82f9694d09b5d3,return self._handle_lswitch_selection(,1,0,0.0,112
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = self._find_target_cluster(port_data),1,0,0.0,113
+5584835f886302e434f9959f0f82f9694d09b5d3,def_l2_gw_uuid = self.default_cluster.default_l2_gw_service_uuid,1,0,0.0,114
+5584835f886302e434f9959f0f82f9694d09b5d3,lswitches.extend([ls['uuid'] for ls in results]),1,0,0.0,115
+5584835f886302e434f9959f0f82f9694d09b5d3,# Issue a second query for fetching shared networks.,1,0,0.0,116
+5584835f886302e434f9959f0f82f9694d09b5d3,continue,1,0,0.0,117
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, '*',",1,0,0.0,118
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id, ""DestinationNatRule"",",1,0,0.0,119
+5584835f886302e434f9959f0f82f9694d09b5d3,#TODO(salvatore-orlando): Multiple cluster support,1,0,0.0,120
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_router_lport(cluster, router_id, lrouter_port_id)",1,0,0.0,121
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id, ""NoSourceNatRule"",",1,0,0.0,122
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, '*', relations=""LogicalPortAttachment"",",1,0,0.0,123
+5584835f886302e434f9959f0f82f9694d09b5d3,# TODO(salvatore-orlando): Usual thing about cluster selection,1,0,0.0,124
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id, snat_ip, snat_ip,",1,0,0.0,125
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, context, router_id, port,",1,0,0.0,126
+5584835f886302e434f9959f0f82f9694d09b5d3,# of always defaulting to self.default_cluster,1,0,0.0,127
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_lrouter_port_ips(self.default_cluster,",1,0,0.0,128
+5584835f886302e434f9959f0f82f9694d09b5d3,"# TODO(salvatore-orlando): Identify the appropriate cluster, instead",1,0,0.0,129
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_lrouters = nvplib.get_lrouters(self.default_cluster,",1,0,0.0,130
+5584835f886302e434f9959f0f82f9694d09b5d3,"lrouter = nvplib.get_lrouter(cluster, id)",1,0,0.0,131
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = self.default_cluster,1,0,0.0,132
+5584835f886302e434f9959f0f82f9694d09b5d3,# find the appropriate cluster!,1,0,0.0,133
+5584835f886302e434f9959f0f82f9694d09b5d3,# FIXME(salvatore-orlando): We need to,1,0,0.0,134
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_lrouter(self.default_cluster, id)",1,0,0.0,135
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_lrouter(cluster, id,",1,0,0.0,136
+5584835f886302e434f9959f0f82f9694d09b5d3,"context, self.default_cluster, router_id)['uuid']",1,0,0.0,137
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = self._find_target_cluster(fip),1,0,0.0,138
+5584835f886302e434f9959f0f82f9694d09b5d3,"pairs.append((c, lswitches))",1,0,0.0,139
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_security_profile(self.default_cluster,",1,0,0.0,140
+5584835f886302e434f9959f0f82f9694d09b5d3,LOG.exception(err_msg),0,0,0.0,141
+5584835f886302e434f9959f0f82f9694d09b5d3,"err_msg = _(""Unable to create l2_gw_service for: %s"") % gw_data",0,0,0.0,142
+5584835f886302e434f9959f0f82f9694d09b5d3,except NvpApiClient.NvpApiException:,0,0,0.0,143
+5584835f886302e434f9959f0f82f9694d09b5d3,except NvpApiClient.Conflict:,0,0,0.0,144
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_lqueue(self.default_cluster, id)",1,0,0.0,145
+5584835f886302e434f9959f0f82f9694d09b5d3,"q['id'] = nvplib.create_lqueue(self.default_cluster,",1,0,0.0,146
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.default_cluster, sgid, current_rules)",1,0,0.0,147
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_security_group_rules(self.default_cluster,",1,0,0.0,148
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_secgroup = nvplib.create_security_profile(self.default_cluster,",1,0,0.0,149
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id, internal_ip,",1,0,0.0,150
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_l2_gw_service(self.default_cluster, id)",1,0,0.0,151
+5584835f886302e434f9959f0f82f9694d09b5d3,devices),1,0,0.0,152
+5584835f886302e434f9959f0f82f9694d09b5d3,"gw_data['name'],",1,0,0.0,153
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_res = nvplib.create_l2_gw_service(cluster, tenant_id,",1,0,0.0,154
+5584835f886302e434f9959f0f82f9694d09b5d3,device['interface_name'] = cluster.default_interface_name,1,0,0.0,155
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = self._find_target_cluster(gw_data),1,0,0.0,156
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_lrouter_port_ips(cluster,",1,0,0.0,157
+5584835f886302e434f9959f0f82f9694d09b5d3,"cluster, router_id, floating_ip, floating_ip,",1,0,0.0,158
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster.default_l3_gw_service_uuid),1,0,0.0,159
+5584835f886302e434f9959f0f82f9694d09b5d3,"""L3GatewayAttachment"",",1,0,0.0,160
+5584835f886302e434f9959f0f82f9694d09b5d3,"{'fake_ext_gw': True},",1,0,0.0,161
+5584835f886302e434f9959f0f82f9694d09b5d3,"lswitch_url_path_1, c)",1,0,0.0,162
+5584835f886302e434f9959f0f82f9694d09b5d3,"(ls['uuid'], ls) for ls in res_shared))",1,0,0.0,163
+5584835f886302e434f9959f0f82f9694d09b5d3,"lswitch_url_path_2, c)",1,0,0.0,164
+5584835f886302e434f9959f0f82f9694d09b5d3,res_shared = nvplib.get_all_query_pages(,1,0,0.0,165
+5584835f886302e434f9959f0f82f9694d09b5d3,# cannot be or-ed,1,0,0.0,166
+5584835f886302e434f9959f0f82f9694d09b5d3,# We cannot unfortunately use just a single query because tags,1,0,0.0,167
+5584835f886302e434f9959f0f82f9694d09b5d3,"api_providers, cluster.user, cluster.password,",1,0,0.0,168
+5584835f886302e434f9959f0f82f9694d09b5d3,"(ls['uuid'], ls) for ls in res))",1,0,0.0,169
+5584835f886302e434f9959f0f82f9694d09b5d3,nvp_lswitches.update(dict(,1,0,0.0,170
+5584835f886302e434f9959f0f82f9694d09b5d3,res = nvplib.get_all_query_pages(,1,0,0.0,171
+5584835f886302e434f9959f0f82f9694d09b5d3,"lrouter['uuid'],",1,0,0.0,172
+5584835f886302e434f9959f0f82f9694d09b5d3,"lswitches = nvplib.get_lswitches(cluster, id)",1,0,0.0,173
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = self._find_target_cluster(network),1,0,0.0,174
+5584835f886302e434f9959f0f82f9694d09b5d3,# enable multiple clusters,1,0,0.0,175
+5584835f886302e434f9959f0f82f9694d09b5d3,# unless we store the nova_id in the database once we'll,1,0,0.0,176
+5584835f886302e434f9959f0f82f9694d09b5d3,# FIXME(salvatore-orlando): This is not going to work,1,0,0.0,177
+5584835f886302e434f9959f0f82f9694d09b5d3,return pairs,1,0,0.0,178
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.debug(_(""Returning pairs for network: %s""), pairs)",1,0,0.0,179
+5584835f886302e434f9959f0f82f9694d09b5d3,if not pairs:,1,0,0.0,180
+5584835f886302e434f9959f0f82f9694d09b5d3,lport_query_path = (,1,0,0.0,181
+5584835f886302e434f9959f0f82f9694d09b5d3,"""/ws.v1/lswitch/%s/lport?fields=%s&%s%stag_scope=q_port_id""",1,0,0.0,182
+5584835f886302e434f9959f0f82f9694d09b5d3,"""&relations=LogicalPortStatus"" %",1,0,0.0,183
+5584835f886302e434f9959f0f82f9694d09b5d3,"(lswitch, lport_fields_str, vm_filter, tenant_filter))",1,0,0.0,184
+5584835f886302e434f9959f0f82f9694d09b5d3,"context,",1,0,0.0,185
+5584835f886302e434f9959f0f82f9694d09b5d3,"self._create_and_attach_router_port(cluster,",1,0,0.0,186
+5584835f886302e434f9959f0f82f9694d09b5d3,"lrouter = nvplib.create_lrouter(cluster, tenant_id,",1,0,0.0,187
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = self._find_target_cluster(router),1,0,0.0,188
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.default_cluster, quantum_db_port['network_id'],",1,0,0.0,189
+5584835f886302e434f9959f0f82f9694d09b5d3,#TODO(salvatore-orlando): pass the appropriate cluster here,1,0,0.0,190
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_id = self._nvp_get_port_id(context, self.default_cluster,",1,0,0.0,191
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.default_cluster, ret_port['network_id'], nvp_port_id)",1,0,0.0,192
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_port(self.default_cluster,",1,0,0.0,193
+5584835f886302e434f9959f0f82f9694d09b5d3,"context, self.default_cluster, ret_port)",1,0,0.0,194
+5584835f886302e434f9959f0f82f9694d09b5d3,"if tag[""scope""] == ""q_port_id"":",1,0,0.0,195
+5584835f886302e434f9959f0f82f9694d09b5d3,"for tag in port[""tags""]:",1,0,0.0,196
+5584835f886302e434f9959f0f82f9694d09b5d3,if ports:,1,0,0.0,197
+5584835f886302e434f9959f0f82f9694d09b5d3,ports = None,1,0,0.0,198
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.warn(_(""Lswitch %s not found in NVP""), lswitch)",1,0,0.0,199
+5584835f886302e434f9959f0f82f9694d09b5d3,except q_exc.NotFound:,1,0,0.0,200
+5584835f886302e434f9959f0f82f9694d09b5d3,"ports = nvplib.get_all_query_pages(lport_query_path, c)",1,0,0.0,201
+5584835f886302e434f9959f0f82f9694d09b5d3,"request_timeout=cluster.request_timeout,",1,0,0.0,202
+5584835f886302e434f9959f0f82f9694d09b5d3,"c_opts['nova_zone_id'],",1,0,0.0,203
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster.api_client = NvpApiClient.NVPApiHelper(,1,0,0.0,204
+5584835f886302e434f9959f0f82f9694d09b5d3,"res_shared = nvplib.get_all_query_pages(lswitch_url_path_2,",0,0,0.0,205
+5584835f886302e434f9959f0f82f9694d09b5d3,"ports = nvplib.get_all_query_pages(lport_query_path,",0,0,0.0,206
+5584835f886302e434f9959f0f82f9694d09b5d3,try:,0,0,0.0,207
+5584835f886302e434f9959f0f82f9694d09b5d3,"(lswitch, lport_fields_str, vm_filter, tenant_filter))",0,0,0.0,208
+5584835f886302e434f9959f0f82f9694d09b5d3,"""&relations=LogicalPortStatus"" %",0,0,0.0,209
+5584835f886302e434f9959f0f82f9694d09b5d3,"""/ws.v1/lswitch/%s/lport?fields=%s&%s%stag_scope=q_port_id""",0,0,0.0,210
+5584835f886302e434f9959f0f82f9694d09b5d3,lport_query_path = (,0,0,0.0,211
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_lswitches.update(dict((ls['uuid'], ls) for ls in res_shared))",0,0,0.0,212
+5584835f886302e434f9959f0f82f9694d09b5d3,self.cluster),0,0,0.0,213
+5584835f886302e434f9959f0f82f9694d09b5d3,# cannot be or-ed,0,0,0.0,214
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.warn(_(""Lswitch %s not found in NVP""), lswitch)",0,0,0.0,215
+5584835f886302e434f9959f0f82f9694d09b5d3,# We cannot unfortunately use just a single query because tags,0,0,0.0,216
+5584835f886302e434f9959f0f82f9694d09b5d3,# Issue a second query for fetching shared networks.,0,0,0.0,217
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_lswitches.update(dict((ls['uuid'], ls) for ls in res))",0,0,0.0,218
+5584835f886302e434f9959f0f82f9694d09b5d3,"res = nvplib.get_all_query_pages(lswitch_url_path_1, self.cluster)",0,0,0.0,219
+5584835f886302e434f9959f0f82f9694d09b5d3,"lswitches = nvplib.get_lswitches(self.cluster, id)",0,0,0.0,220
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_networks(self.cluster, id, lswitch_ids)",0,0,0.0,221
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.get_lswitches(self.cluster, id)]",0,0,0.0,222
+5584835f886302e434f9959f0f82f9694d09b5d3,lswitch_ids = [ls['uuid'] for ls in,0,0,0.0,223
+5584835f886302e434f9959f0f82f9694d09b5d3,except q_exc.NotFound:,0,0,0.0,224
+5584835f886302e434f9959f0f82f9694d09b5d3,ports = None,0,0,0.0,225
+5584835f886302e434f9959f0f82f9694d09b5d3,for x in cluster.controllers],1,0,0.0,226
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, context, lrouter['uuid'], {'fake_ext_gw': True},",0,0,0.0,227
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id, snat_ip, snat_ip,",0,0,0.0,228
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, context, router_id, port,",0,0,0.0,229
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, '*',",0,0,0.0,230
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_lrouters = nvplib.get_lrouters(self.cluster,",0,0,0.0,231
+5584835f886302e434f9959f0f82f9694d09b5d3,"lrouter = nvplib.get_lrouter(self.cluster, id)",0,0,0.0,232
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_lrouter(self.cluster, id)",0,0,0.0,233
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_lrouter(self.cluster, id,",0,0,0.0,234
+5584835f886302e434f9959f0f82f9694d09b5d3,"""L3GatewayAttachment"", self.cluster.default_l3_gw_service_uuid)",0,0,0.0,235
+5584835f886302e434f9959f0f82f9694d09b5d3,self._create_and_attach_router_port(,0,0,0.0,236
+5584835f886302e434f9959f0f82f9694d09b5d3,if ports:,0,0,0.0,237
+5584835f886302e434f9959f0f82f9694d09b5d3,"lrouter = nvplib.create_lrouter(self.cluster, tenant_id,",0,0,0.0,238
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, quantum_db_port['network_id'],",0,0,0.0,239
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_id = self._nvp_get_port_id(context, self.cluster,",0,0,0.0,240
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, ret_port['network_id'], nvp_port_id)",0,0,0.0,241
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_port(self.cluster,",0,0,0.0,242
+5584835f886302e434f9959f0f82f9694d09b5d3,"context, self.cluster, ret_port)",0,0,0.0,243
+5584835f886302e434f9959f0f82f9694d09b5d3,"if tag[""scope""] == ""q_port_id"":",0,0,0.0,244
+5584835f886302e434f9959f0f82f9694d09b5d3,"for tag in port[""tags""]:",0,0,0.0,245
+5584835f886302e434f9959f0f82f9694d09b5d3,"context, self.cluster, port)",0,0,0.0,246
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_binding_type, net_data.get(pnet.PHYSICAL_NETWORK),",0,0,0.0,247
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, tenant_id, net_data.get('name'),",0,0,0.0,248
+5584835f886302e434f9959f0f82f9694d09b5d3,for ctrl in cluster.nvp_controllers],0,0,0.0,249
+5584835f886302e434f9959f0f82f9694d09b5d3,nvp_gen_timeout=nvp_gen_timeout),0,0,0.0,250
+5584835f886302e434f9959f0f82f9694d09b5d3,"concurrent_connections=concurrent_connections,",0,0,0.0,251
+5584835f886302e434f9959f0f82f9694d09b5d3,"redirects=cluster.redirects,",0,0,0.0,252
+5584835f886302e434f9959f0f82f9694d09b5d3,"retries=cluster.retries,",0,0,0.0,253
+5584835f886302e434f9959f0f82f9694d09b5d3,"http_timeout=cluster.http_timeout,",0,0,0.0,254
+5584835f886302e434f9959f0f82f9694d09b5d3,"request_timeout=cluster.req_timeout,",0,0,0.0,255
+5584835f886302e434f9959f0f82f9694d09b5d3,"api_providers, cluster.nvp_user, cluster.nvp_password,",0,0,0.0,256
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster.api_client = NvpApiClient.NVPApiHelper(,0,0,0.0,257
+5584835f886302e434f9959f0f82f9694d09b5d3,api_providers = [ctrl.split(':') + [True],0,0,0.0,258
+5584835f886302e434f9959f0f82f9694d09b5d3,# TODO(salvatore-orlando) find main_ls too!,0,0,0.0,259
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = nvp_cluster.NVPCluster(**cluster_opts),0,0,0.0,260
+5584835f886302e434f9959f0f82f9694d09b5d3,# ### END,0,0,0.0,261
+5584835f886302e434f9959f0f82f9694d09b5d3,config.register_deprecated(cfg.CONF),0,0,0.0,262
+5584835f886302e434f9959f0f82f9694d09b5d3,# ### BEGIN,0,0,0.0,263
+5584835f886302e434f9959f0f82f9694d09b5d3,# NOTE(armando-migliaccio): remove this block once we no longer,0,0,0.0,264
+5584835f886302e434f9959f0f82f9694d09b5d3,nvp_gen_timeout):,0,0,0.0,265
+5584835f886302e434f9959f0f82f9694d09b5d3,"def create_nvp_cluster(cluster_opts, concurrent_connections,",0,0,0.0,266
+5584835f886302e434f9959f0f82f9694d09b5d3,from quantum.plugins.nicira.common import config  # noqa,0,0,0.0,267
+5584835f886302e434f9959f0f82f9694d09b5d3,return cluster,0,0,0.0,268
+5584835f886302e434f9959f0f82f9694d09b5d3,self.nvp_opts = cfg.CONF.NVP,0,0,0.0,269
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster = create_nvp_cluster(cfg.CONF,",0,0,0.0,270
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.nvp_opts.concurrent_connections,",0,0,0.0,271
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster,",0,0,0.0,272
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster.default_l3_gw_service_uuid,",0,0,0.0,273
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id, ""SourceNatRule"",",0,0,0.0,274
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id,",0,0,0.0,275
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, context, router_id, port_data,",0,0,0.0,276
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_router_lport(self.cluster,",0,0,0.0,277
+5584835f886302e434f9959f0f82f9694d09b5d3,"lr_port = nvplib.find_router_gw_port(context, self.cluster, router_id)",0,0,0.0,278
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_peer_router_lport(self.cluster,",0,0,0.0,279
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_port(self.cluster,",0,0,0.0,280
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_port_id = self._nvp_get_port_id(context, self.cluster,",0,0,0.0,281
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.plug_interface(self.cluster, selected_lswitch['uuid'],",0,0,0.0,282
+5584835f886302e434f9959f0f82f9694d09b5d3,"lport = self._nvp_create_port_helper(self.cluster,",0,0,0.0,283
+5584835f886302e434f9959f0f82f9694d09b5d3,allow_extra_lswitches),0,0,0.0,284
+5584835f886302e434f9959f0f82f9694d09b5d3,"network_binding, max_ports,",0,0,0.0,285
+5584835f886302e434f9959f0f82f9694d09b5d3,"return self._handle_lswitch_selection(self.cluster, network,",0,0,0.0,286
+5584835f886302e434f9959f0f82f9694d09b5d3,def_l2_gw_uuid = self.cluster.default_l2_gw_service_uuid,0,0,0.0,287
+5584835f886302e434f9959f0f82f9694d09b5d3,self.nvp_opts.nvp_gen_timeout),0,0,0.0,288
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, '*', relations=""LogicalPortAttachment"",",0,0,0.0,289
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id, ""NoSourceNatRule"",",0,0,0.0,290
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_router_lport(self.cluster,",0,0,0.0,291
+5584835f886302e434f9959f0f82f9694d09b5d3,"""routed mode will not work with this configuration""))",1,0,0.0,292
+5584835f886302e434f9959f0f82f9694d09b5d3,for c_opts in clusters_opts:,1,0,0.0,293
+5584835f886302e434f9959f0f82f9694d09b5d3,first_cluster = None,1,0,0.0,294
+5584835f886302e434f9959f0f82f9694d09b5d3,clusters = {},1,0,0.0,295
+5584835f886302e434f9959f0f82f9694d09b5d3,# cluster assignment,1,0,0.0,296
+5584835f886302e434f9959f0f82f9694d09b5d3,# Will store the first cluster in case is needed for default,1,0,0.0,297
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_gen_timeout, default_cluster_name):",1,0,0.0,298
+5584835f886302e434f9959f0f82f9694d09b5d3,"def parse_clusters_opts(clusters_opts, concurrent_connections,",1,0,0.0,299
+5584835f886302e434f9959f0f82f9694d09b5d3,"return cfg.CONF.NVP, clusters_options",1,0,0.0,300
+5584835f886302e434f9959f0f82f9694d09b5d3,not cfg.CONF.allow_overlapping_ips):,1,0,0.0,301
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf[cluster_name].default_l2_gw_service_uuid,",1,0,0.0,302
+5584835f886302e434f9959f0f82f9694d09b5d3,"if (cfg.CONF.NVP.metadata_mode == ""access_network"" and",1,0,0.0,303
+5584835f886302e434f9959f0f82f9694d09b5d3,'quantum/plugins/nicira/extensions'),1,0,0.0,304
+5584835f886302e434f9959f0f82f9694d09b5d3,"'api_extensions_path',",1,0,0.0,305
+5584835f886302e434f9959f0f82f9694d09b5d3,cfg.CONF.set_override(,1,0,0.0,306
+5584835f886302e434f9959f0f82f9694d09b5d3,if not cfg.CONF.api_extensions_path:,1,0,0.0,307
+5584835f886302e434f9959f0f82f9694d09b5d3,# If no api_extensions_path is provided set the following,1,0,0.0,308
+5584835f886302e434f9959f0f82f9694d09b5d3,"LOG.debug(_(""Cluster options:%s""), clusters_options)",1,0,0.0,309
+5584835f886302e434f9959f0f82f9694d09b5d3,nvp_conf[cluster_name].default_interface_name}),1,0,0.0,310
+5584835f886302e434f9959f0f82f9694d09b5d3,# Password is guaranteed to be the same across all controllers,1,0,0.0,311
+5584835f886302e434f9959f0f82f9694d09b5d3,# in the same NVP cluster.,1,0,0.0,312
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster = nvp_cluster.NVPCluster(c_opts['name']),1,0,0.0,313
+5584835f886302e434f9959f0f82f9694d09b5d3,try:,1,0,0.0,314
+5584835f886302e434f9959f0f82f9694d09b5d3,"api_providers = [(x['ip'], x['port'], True)",1,0,0.0,315
+5584835f886302e434f9959f0f82f9694d09b5d3,LOG.exception(msg),1,0,0.0,316
+5584835f886302e434f9959f0f82f9694d09b5d3,"""[CLUSTER:%s] section"") % c_opts['name']",1,0,0.0,317
+5584835f886302e434f9959f0f82f9694d09b5d3,except TypeError:,1,0,0.0,318
+5584835f886302e434f9959f0f82f9694d09b5d3,conn_params=ctrl_conn),1,0,0.0,319
+5584835f886302e434f9959f0f82f9694d09b5d3,'cluster': c_opts['name']}),1,0,0.0,320
+5584835f886302e434f9959f0f82f9694d09b5d3,"{'ctrl': ctrl_conn,",1,0,0.0,321
+5584835f886302e434f9959f0f82f9694d09b5d3,"""cluster %(cluster)s""),",1,0,0.0,322
+5584835f886302e434f9959f0f82f9694d09b5d3,except Exception:,1,0,0.0,323
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster.add_controller(*args),1,0,0.0,324
+5584835f886302e434f9959f0f82f9694d09b5d3,c_opts['default_interface_name']]),1,0,0.0,325
+5584835f886302e434f9959f0f82f9694d09b5d3,"c_opts['default_l2_gw_service_uuid'],",1,0,0.0,326
+5584835f886302e434f9959f0f82f9694d09b5d3,"c_opts['default_l3_gw_service_uuid'],",1,0,0.0,327
+5584835f886302e434f9959f0f82f9694d09b5d3,"c_opts['nvp_cluster_uuid'],",1,0,0.0,328
+5584835f886302e434f9959f0f82f9694d09b5d3,"args.extend([c_opts['default_tz_uuid'],",1,0,0.0,329
+5584835f886302e434f9959f0f82f9694d09b5d3,args = ctrl_conn.split(':'),1,0,0.0,330
+5584835f886302e434f9959f0f82f9694d09b5d3,for ctrl_conn in c_opts['nvp_controller_connection']:,1,0,0.0,331
+5584835f886302e434f9959f0f82f9694d09b5d3,'default_interface_name':,1,0,0.0,332
+5584835f886302e434f9959f0f82f9694d09b5d3,'default_l2_gw_service_uuid':,1,0,0.0,333
+5584835f886302e434f9959f0f82f9694d09b5d3,"router_id, lrouter_port_id)",0,0,0.0,334
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_secgroup = nvplib.create_security_profile(self.cluster,",0,0,0.0,335
+5584835f886302e434f9959f0f82f9694d09b5d3,"""""""Parse the supplied plugin configuration.",1,0,0.0,336
+5584835f886302e434f9959f0f82f9694d09b5d3,def parse_config():,1,0,0.0,337
+5584835f886302e434f9959f0f82f9694d09b5d3,from quantum.plugins.nicira.common import config,1,0,0.0,338
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_lqueue(self.cluster, id)",0,0,0.0,339
+5584835f886302e434f9959f0f82f9694d09b5d3,"q['id'] = nvplib.create_lqueue(self.cluster,",0,0,0.0,340
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, sgid, current_rules)",0,0,0.0,341
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_security_group_rules(self.cluster,",0,0,0.0,342
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_security_profile(self.cluster,",0,0,0.0,343
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.delete_l2_gw_service(self.cluster, id)",0,0,0.0,344
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf[cluster_name].default_l3_gw_service_uuid,",1,0,0.0,345
+5584835f886302e434f9959f0f82f9694d09b5d3,"gw_data['name'], devices)",0,0,0.0,346
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_res = nvplib.create_l2_gw_service(self.cluster, tenant_id,",0,0,0.0,347
+5584835f886302e434f9959f0f82f9694d09b5d3,device['interface_name'] = self.cluster.default_interface_name,0,0,0.0,348
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id, floating_ip, floating_ip,",0,0,0.0,349
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id, internal_ip,",0,0,0.0,350
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvplib.update_lrouter_port_ips(self.cluster,",0,0,0.0,351
+5584835f886302e434f9959f0f82f9694d09b5d3,"context, self.cluster, router_id)['uuid']",0,0,0.0,352
+5584835f886302e434f9959f0f82f9694d09b5d3,"self.cluster, router_id, ""DestinationNatRule"",",0,0,0.0,353
+5584835f886302e434f9959f0f82f9694d09b5d3,:param config: a ConfigParser() object encapsulating nvp.ini.,1,0,0.0,354
+5584835f886302e434f9959f0f82f9694d09b5d3,":returns: A tuple: (clusters, plugin_config). 'clusters' is a list of",1,0,0.0,355
+5584835f886302e434f9959f0f82f9694d09b5d3,"NVPCluster objects, 'plugin_config' is a dictionary with plugin",1,0,0.0,356
+5584835f886302e434f9959f0f82f9694d09b5d3,parameters (currently only 'max_lp_per_bridged_ls').,1,0,0.0,357
+5584835f886302e434f9959f0f82f9694d09b5d3,'default_l3_gw_service_uuid':,1,0,0.0,358
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf[cluster_name].nvp_controller_connection,",1,0,0.0,359
+5584835f886302e434f9959f0f82f9694d09b5d3,'nvp_controller_connection':,1,0,0.0,360
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf[cluster_name].nova_zone_id,",1,0,0.0,361
+5584835f886302e434f9959f0f82f9694d09b5d3,'nova_zone_id':,1,0,0.0,362
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf[cluster_name].nvp_cluster_uuid,",1,0,0.0,363
+5584835f886302e434f9959f0f82f9694d09b5d3,'nvp_cluster_uuid':,1,0,0.0,364
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf[cluster_name].default_tz_uuid,",1,0,0.0,365
+5584835f886302e434f9959f0f82f9694d09b5d3,'default_tz_uuid':,1,0,0.0,366
+5584835f886302e434f9959f0f82f9694d09b5d3,"{'name': cluster_name,",1,0,0.0,367
+5584835f886302e434f9959f0f82f9694d09b5d3,clusters_options.append(,1,0,0.0,368
+5584835f886302e434f9959f0f82f9694d09b5d3,for cluster_name in cluster_names:,1,0,0.0,369
+5584835f886302e434f9959f0f82f9694d09b5d3,clusters_options = [],1,0,0.0,370
+5584835f886302e434f9959f0f82f9694d09b5d3,"nvp_conf.log_opt_values(LOG, logging.DEBUG)",1,0,0.0,371
+5584835f886302e434f9959f0f82f9694d09b5d3,cluster_names = config.register_cluster_groups(nvp_conf),1,0,0.0,372
+5584835f886302e434f9959f0f82f9694d09b5d3,nvp_conf = config.ClusterConfigOptions(cfg.CONF),1,0,0.0,373
+5584835f886302e434f9959f0f82f9694d09b5d3,"""""""",1,0,0.0,374
+5584835f886302e434f9959f0f82f9694d09b5d3,except Exception:,1,0,0.0,375

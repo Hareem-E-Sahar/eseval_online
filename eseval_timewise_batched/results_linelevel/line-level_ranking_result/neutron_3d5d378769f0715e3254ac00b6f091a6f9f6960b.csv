@@ -1,0 +1,84 @@
+commit_id,line,line_level_label,count,line_score,row
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"ports = self._core_plugin.get_ports(context.elevated(), filters)",1,4,1.0,1
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"r['router']['id'], None, None, routes, skip_add=True)",1,4,1.0,2
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes = [{'destination': '135.207.0.0/16', 'nexthop': '10.0.1.3'}]",1,4,1.0,3
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes = [{'destination': '135.207.0.0/16', 'nexthop': '10.0.1.3'}]",0,4,1.0,4
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"ports = self._core_plugin.get_ports(context, filters)",0,3,0.75,5
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"r['router']['id'], None, None, routes, skip_add=True,",0,3,0.75,6
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes = [{'destination': '135.207.0.0/16',",0,3,0.75,7
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes = [{'destination': '135.207.0.0/16',",1,3,0.75,8
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"body = self._show('routers', r['router']['id'])",0,2,0.5,9
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self.assertEqual(routes, body['router']['routes'])",1,2,0.5,10
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"body = self._show('routers', r['router']['id'])",1,2,0.5,11
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"body = self._update('routers', r['router']['id'],",1,2,0.5,12
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes1 = [{'destination': '135.207.0.0/16',",1,2,0.5,13
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self.assertEqual(routes, body['router']['routes'])",0,2,0.5,14
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"body = self._update('routers', r['router']['id'],",0,2,0.5,15
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes1 = [{'destination': '135.207.0.0/16',",0,2,0.5,16
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"r['router']['id'], subnet['subnet']['id'], None, routes,",0,2,0.5,17
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self.assertEqual(routes, body['router']['routes'])",0,2,0.5,18
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,body = self._routes_update_prepare(,0,2,0.5,19
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,context = context.elevated(),0,2,0.5,20
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,p1_ip = p1['port']['fixed_ips'][0]['ip_address'],0,1,0.25,21
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,gw_info = body['router']['external_gateway_info'],1,1,0.25,22
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': '10.0.1.3'}],1,1,0.25,23
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes2 = [{'destination': '12.0.0.0/8',",1,1,0.25,24
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,gw_info = body['router']['external_gateway_info'],0,1,0.25,25
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,next_hop = p['port']['fixed_ips'][0]['ip_address'],0,1,0.25,26
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"routes2 = [{'destination': '12.0.0.0/8',",0,1,0.25,27
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,p2_ip = p2['port']['fixed_ips'][0]['ip_address'],0,1,0.25,28
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,nexthop_ip = nexthop_port['port']['fixed_ips'][0]['ip_address'],0,1,0.25,29
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,from neutron import context,0,1,0.25,30
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,fixed_ip_data = [{'ip_address': '10.0.1.2'}],0,1,0.25,31
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,with self.subnet(cidr='10.0.1.0/24') as ext_subnet:,1,1,0.25,32
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"port_id, routes, skip_add=False):",1,1,0.25,33
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,my_tenant = 'tenant1',0,1,0.25,34
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"ctxt = context.Context('', tenant_id) if tenant_id else None",0,1,0.25,35
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"port_id, routes, skip_add=False, tenant_id=None):",0,1,0.25,36
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,s['subnet']['network_id']),0,0,0.0,37
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"r['router']['id'],",0,0,0.0,38
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self._remove_external_gateway_from_router(,0,0,0.0,39
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,routes}}),0,0,0.0,40
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': p1_ip}],0,0,0.0,41
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,{'router': {'routes':,0,0,0.0,42
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': next_hop}],0,0,0.0,43
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,with self.port(subnet=s) as p:,0,0,0.0,44
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,with self.port(subnet=s) as p:,1,0,0.0,45
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': p2_ip}],0,0,0.0,46
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self.assertIsNone(gw_info),0,0,0.0,47
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': '10.0.0.4'}],1,0,0.0,48
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.subnet(cidr='10.0.1.0/24', tenant_id='notme') as ext_subnet:",1,0,0.0,49
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.subnet(cidr='10.0.1.0/24', tenant_id='notme') as subnet:",1,0,0.0,50
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': '10.0.0.3'}],1,0,0.0,51
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.port(subnet=s) as p1,\",0,0,0.0,52
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.port(subnet=s) as p1, self.port(subnet=s) as p2:",1,0,0.0,53
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,{'router': {'routes':,1,0,0.0,54
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,routes}}),1,0,0.0,55
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self._remove_external_gateway_from_router(,1,0,0.0,56
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"r['router']['id'],",1,0,0.0,57
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,s['subnet']['network_id']),1,0,0.0,58
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self.port(subnet=s) as p2:,0,0,0.0,59
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,neutron_context=ctxt),0,0,0.0,60
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self.port(subnet=subnet) as nexthop_port:,0,0,0.0,61
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,def test_route_update_with_route_via_another_tenant_subnet(self):,0,0,0.0,62
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,def _routes_update_prepare(,0,0,0.0,63
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self, router_id, subnet_id,",0,0,0.0,64
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self._router_interface_action(,0,0,0.0,65
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"'add', router_id, subnet_id, port_id, tenant_id=None)",0,0,0.0,66
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self._update('routers', router_id, {'router': {'routes': routes}},",0,0,0.0,67
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.subnet(cidr='10.0.1.0/24', tenant_id='notme') as ext_subnet:",0,0,0.0,68
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,with self.router(,0,0,0.0,69
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"external_gateway_info=ext_info, tenant_id=my_tenant) as r:",0,0,0.0,70
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,tenant_id=my_tenant),0,0,0.0,71
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.subnet(cidr='10.0.1.0/24', tenant_id='notme') as subnet:",0,0,0.0,72
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.subnet(cidr='10.0.1.0/24', tenant_id='notme') as subnet,\",0,0,0.0,73
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,with self.router(tenant_id=my_tenant) as r:,0,0,0.0,74
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"def _routes_update_prepare(self, router_id, subnet_id,",1,0,0.0,75
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self._router_interface_action('add', router_id, subnet_id, port_id)",1,0,0.0,76
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"self._update('routers', router_id, {'router': {'routes': routes}})",1,0,0.0,77
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,with self.router(external_gateway_info=ext_info) as r:,1,0,0.0,78
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.port(subnet=s, fixed_ips=fixed_ip_data) as p:",0,0,0.0,79
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,"with self.subnet(cidr='10.0.1.0/24', tenant_id='notme') as ext_subnet,\",0,0,0.0,80
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self.port(subnet=ext_subnet) as nexthop_port:,0,0,0.0,81
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,'nexthop': nexthop_ip}],0,0,0.0,82
+3d5d378769f0715e3254ac00b6f091a6f9f6960b,self.assertIsNone(gw_info),1,0,0.0,83

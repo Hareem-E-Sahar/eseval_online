@@ -1,0 +1,38 @@
+commit_id,line,line_level_label,count,line_score,row
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,*  for the given {@link Product} or {@link OrderItem}.,0,4,1.0,1
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,*  for the given {@link Product}.,1,3,0.75,2
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,import org.broadleafcommerce.core.order.domain.OrderItem;,0,1,0.25,3
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,import org.broadleafcommerce.core.promotionMessage.domain.type.PromotionMessagePlacementType;,0,1,0.25,4
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,import org.springframework.util.CollectionUtils;,0,1,0.25,5
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,import java.util.ArrayList;,0,1,0.25,6
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,List<PromotionMessageDTO> filteredPromotionMessages = new ArrayList<>();,0,1,0.25,7
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,List<String> requestedPlacement = new ArrayList<>();,0,1,0.25,8
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,PromotionMessagePlacementType type = PromotionMessagePlacementType.getInstance(placement);,0,0,0.0,9
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"if (testPlacementType(requestedPlacement, placement)) {",0,0,0.0,10
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,requestedPlacement.add(placement);,0,0,0.0,11
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,return requestedPlacement;,0,0,0.0,12
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"protected Boolean testPlacementType(List<String> requestedPlacement, String placement) {",0,0,0.0,13
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,try {,0,0,0.0,14
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"LOG.error(""Unrecognized Promotion Message Placement Type"", e);",0,0,0.0,15
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,requestedPlacement.add(type.getType());,0,0,0.0,16
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,} catch (Exception e) {,0,0,0.0,17
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"for (String placement : placementString.split("","")) {",0,0,0.0,18
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,return Boolean.FALSE;,0,0,0.0,19
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,return Boolean.TRUE;,0,0,0.0,20
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,BLCPromotionMessageUtils.sortMessagesByPriority(promotionMessages);,1,0,0.0,21
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,placement = placement.trim();,0,0,0.0,22
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,BLCPromotionMessageUtils.sortMessagesByPriority(filteredPromotionMessages);,0,0,0.0,23
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,String placementString = element.getAttributeValue(PLACEMENT);,0,0,0.0,24
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,protected List<String> getPlacementFromArguments(Element element) {,0,0,0.0,25
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"newVars.put(""promotionMessages"", filteredPromotionMessages);",0,0,0.0,26
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,},0,0,0.0,27
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,filteredPromotionMessages.addAll(promotionMessages.get(type));,0,0,0.0,28
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,if (placementTypes.contains(type)) {,0,0,0.0,29
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,for (String type : promotionMessages.keySet()) {,0,0,0.0,30
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,placementTypes.add(PromotionMessagePlacementType.EVERYWHERE.getType());,0,0,0.0,31
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,List<String> placementTypes = getPlacementFromArguments(element);,0,0,0.0,32
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"public static final String PLACEMENT = ""placement"";",0,0,0.0,33
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"public Map<String, List<PromotionMessageDTO>> generatePromotionMessages(Product product);",1,0,0.0,34
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,List<String> generatePromotionMessages(OrderItem orderItem);,0,0,0.0,35
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"Map<String, List<PromotionMessageDTO>> generatePromotionMessages(Product product);",0,0,0.0,36
+59684b01f7e295adaf4ad6af7bd426d37f1c17b9,"newVars.put(""promotionMessageMap"", promotionMessages);",1,0,0.0,37

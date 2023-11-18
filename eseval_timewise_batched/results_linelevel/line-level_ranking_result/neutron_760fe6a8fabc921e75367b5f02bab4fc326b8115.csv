@@ -1,0 +1,45 @@
+commit_id,line,line_level_label,count,line_score,row
+760fe6a8fabc921e75367b5f02bab4fc326b8115,if not subnet_ids:,1,3,1.0,1
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"l3_agent, router = self._prepare_check_ports_exist_tests()",1,3,1.0,2
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"return l3_agent, router",1,3,1.0,3
+760fe6a8fabc921e75367b5f02bab4fc326b8115,return False,1,2,0.6666666666666666,4
+760fe6a8fabc921e75367b5f02bab4fc326b8115,self.get_subnet_ids_on_router = mock.Mock(,1,2,0.6666666666666666,5
+760fe6a8fabc921e75367b5f02bab4fc326b8115,'get_plugin') as getp:,1,2,0.6666666666666666,6
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"# no subnets and operation is remove_router_interface,",1,2,0.6666666666666666,7
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"l3_agent, [])",0,1,0.3333333333333333,8
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"self.check_ports_exist_on_l3agent(self.adminContext,",1,1,0.3333333333333333,9
+760fe6a8fabc921e75367b5f02bab4fc326b8115,# so return immediately without calling get_ports,1,1,0.3333333333333333,10
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"with mock.patch.object(manager.NeutronManager,",1,1,0.3333333333333333,11
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"l3_agent, router['id'])",1,1,0.3333333333333333,12
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"val = self.check_ports_exist_on_l3agent(self.adminContext,",1,1,0.3333333333333333,13
+760fe6a8fabc921e75367b5f02bab4fc326b8115,self.get_subnet_ids_on_router = mock.Mock(return_value=[]),1,1,0.3333333333333333,14
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"l3_agent, [port['subnet_id']])",0,1,0.3333333333333333,15
+760fe6a8fabc921e75367b5f02bab4fc326b8115,getp.return_value = self.plugin,1,1,0.3333333333333333,16
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"self.adminContext, l3_agent, [])",0,1,0.3333333333333333,17
+760fe6a8fabc921e75367b5f02bab4fc326b8115,return l3_agent,0,1,0.3333333333333333,18
+760fe6a8fabc921e75367b5f02bab4fc326b8115,self.get_subnet_ids_on_router = mock.Mock(),0,1,0.3333333333333333,19
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"context, l3_agent, sync_router['id'])):",1,1,0.3333333333333333,20
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"def check_ports_exist_on_l3agent(self, context, l3_agent, router_id):",1,1,0.3333333333333333,21
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"context, l3_agent, subnet_ids))):",0,1,0.3333333333333333,22
+760fe6a8fabc921e75367b5f02bab4fc326b8115,if is_router_distributed:,0,1,0.3333333333333333,23
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"self, context, l3_agent, subnet_ids):",0,1,0.3333333333333333,24
+760fe6a8fabc921e75367b5f02bab4fc326b8115,l3_agent = self._prepare_check_ports_exist_tests(),0,1,0.3333333333333333,25
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"self.adminContext, agent_list[0], [subnet['id']])",0,0,0.0,26
+760fe6a8fabc921e75367b5f02bab4fc326b8115,self.check_ports_exist_on_l3agent(,1,0,0.0,27
+760fe6a8fabc921e75367b5f02bab4fc326b8115,val = self.check_ports_exist_on_l3agent(,0,0,0.0,28
+760fe6a8fabc921e75367b5f02bab4fc326b8115,self.assertFalse(self.plugin.get_ports.called),1,0,0.0,29
+760fe6a8fabc921e75367b5f02bab4fc326b8115,return_value=[subnet['id']]),1,0,0.0,30
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"self.adminContext, agent_list[0], router['id'])",1,0,0.0,31
+760fe6a8fabc921e75367b5f02bab4fc326b8115,def test_check_ports_exist_on_l3agent_if_no_subnets_then_return(self):,1,0,0.0,32
+760fe6a8fabc921e75367b5f02bab4fc326b8115,elif is_router_distributed and agent_mode.startswith(,1,0,0.0,33
+760fe6a8fabc921e75367b5f02bab4fc326b8115,constants.L3_AGENT_MODE_DVR) and (,1,0,0.0,34
+760fe6a8fabc921e75367b5f02bab4fc326b8115,agent_mode.startswith(constants.L3_AGENT_MODE_DVR) and (,0,0,0.0,35
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"is_router_distributed = sync_router.get('distributed', False)",1,0,0.0,36
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"subnet_ids = self.get_subnet_ids_on_router(context, router_id)",1,0,0.0,37
+760fe6a8fabc921e75367b5f02bab4fc326b8115,self.check_ports_exist_on_l3agent(,0,0,0.0,38
+760fe6a8fabc921e75367b5f02bab4fc326b8115,elif (is_router_distributed and subnet_ids and,0,0,0.0,39
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"context, sync_router['id'])",0,0,0.0,40
+760fe6a8fabc921e75367b5f02bab4fc326b8115,subnet_ids = self.get_subnet_ids_on_router(,0,0,0.0,41
+760fe6a8fabc921e75367b5f02bab4fc326b8115,"is_router_distributed = sync_router.get('distributed', False)",0,0,0.0,42
+760fe6a8fabc921e75367b5f02bab4fc326b8115,def check_ports_exist_on_l3agent(,0,0,0.0,43
+760fe6a8fabc921e75367b5f02bab4fc326b8115,return_value=[port['subnet_id']]),1,0,0.0,44

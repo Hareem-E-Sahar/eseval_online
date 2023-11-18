@@ -1,0 +1,59 @@
+commit_id,line,line_level_label,count,line_score,row
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Paris"", Exchange.FILE_NAME, ""paris.dat"");",1,3,1.0,1
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Paris"", Exchange.FILE_NAME, ""report-3.dat"");",1,3,1.0,2
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello London"", Exchange.FILE_NAME, ""REPORT-2.txt"");",1,3,1.0,3
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Paris"", Exchange.FILE_NAME, ""paris.txt"");",1,3,1.0,4
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",1,3,1.0,5
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",1,3,1.0,6
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Copenhagen"", Exchange.FILE_NAME,",1,2,0.6666666666666666,7
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Dublin"", Exchange.FILE_NAME, ""dublin.txt"");",1,2,0.6666666666666666,8
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Copenhagen"", Exchange.FILE_NAME,",1,2,0.6666666666666666,9
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",0,2,0.6666666666666666,10
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Paris"", Exchange.FILE_NAME, ""paris.txt"");",0,2,0.6666666666666666,11
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello London"", Exchange.FILE_NAME, ""REPORT-2.txt"");",0,2,0.6666666666666666,12
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Paris"", Exchange.FILE_NAME, ""report-3.dat"");",0,2,0.6666666666666666,13
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Copenhagen"", Exchange.FILE_NAME,",1,2,0.6666666666666666,14
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",0,2,0.6666666666666666,15
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Paris"", Exchange.FILE_NAME, ""paris.dat"");",0,2,0.6666666666666666,16
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""c/?initialDelay=0&delay=10&sortBy=reverse:ignoreCase:file:name"").convertBodyTo(String.class)",1,1,0.3333333333333333,17
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""b/?initialDelay=0&delay=10&sortBy=file:ext;reverse:file:name"").convertBodyTo(String.class)",1,1,0.3333333333333333,18
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""a/?initialDelay=0&delay=10&sortBy=file:ext;file:name"").convertBodyTo(String.class)",1,1,0.3333333333333333,19
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Dublin"", Exchange.FILE_NAME, ""dublin.txt"");",0,1,0.3333333333333333,20
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Copenhagen"", Exchange.FILE_NAME,",0,1,0.3333333333333333,21
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""b/?initialDelay=0&delay=10&sortBy=ignoreCase:file:name"").convertBodyTo(String.class)",1,1,0.3333333333333333,22
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Copenhagen"", Exchange.FILE_NAME,",0,1,0.3333333333333333,23
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""b/?initialDelay=0&delay=10&sortBy=reverse:file:ext"").convertBodyTo(String.class)",1,1,0.3333333333333333,24
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""a/?initialDelay=0&delay=10&sortBy=file:ext"").to(""mock:result"");",1,1,0.3333333333333333,25
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"template.sendBodyAndHeader(fileUri(folder), ""Hello Copenhagen"", Exchange.FILE_NAME,",0,1,0.3333333333333333,26
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUrl + ""a/?sortBy=file:name&initialDelay=250&delay=1000"").convertBodyTo(String.class).to(""mock:result"");",1,1,0.3333333333333333,27
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,@Override,1,0,0.0,28
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""b/?initialDelay=0&delay=10&sortBy=file:ext;reverse:file:name"")).convertBodyTo(String.class)",0,0,0.0,29
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,public void setUp() throws Exception {,1,0,0.0,30
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"deleteDirectory(""target/data/filesorter"");",1,0,0.0,31
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,super.setUp();,1,0,0.0,32
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,},1,0,0.0,33
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""a/?initialDelay=0&delay=10&sortBy=file:ext;file:name"")).convertBodyTo(String.class)",0,0,0.0,34
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,@Override,1,0,0.0,35
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,import org.junit.jupiter.api.BeforeEach;,1,0,0.0,36
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"private String fileUrl = ""file://target/data/filesorter/"";",1,0,0.0,37
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,@BeforeEach,1,0,0.0,38
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,public void setUp() throws Exception {,1,0,0.0,39
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"deleteDirectory(""target/data/filesorter"");",1,0,0.0,40
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,super.setUp();,1,0,0.0,41
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,@BeforeEach,1,0,0.0,42
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,import org.junit.jupiter.api.BeforeEach;,1,0,0.0,43
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"private String fileUrl = ""file://target/data/filesorter/"";",1,0,0.0,44
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,import org.junit.jupiter.api.BeforeEach;,1,0,0.0,45
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""c/?initialDelay=0&delay=10&sortBy=reverse:ignoreCase:file:name"")).convertBodyTo(String.class)",0,0,0.0,46
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""b/?initialDelay=0&delay=10&sortBy=ignoreCase:file:name"")).convertBodyTo(String.class)",0,0,0.0,47
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""a/?sortBy=file:name&initialDelay=250&delay=1000"")).convertBodyTo(String.class).to(""mock:result"");",0,0,0.0,48
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,},1,0,0.0,49
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,super.setUp();,1,0,0.0,50
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"deleteDirectory(""target/data/filesorter"");",1,0,0.0,51
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,public void setUp() throws Exception {,1,0,0.0,52
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,@BeforeEach,1,0,0.0,53
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,@Override,1,0,0.0,54
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"private String fileUrl = ""file://target/data/filesorter/"";",1,0,0.0,55
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""b/?initialDelay=0&delay=10&sortBy=reverse:file:ext"")).convertBodyTo(String.class)",0,0,0.0,56
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,"from(fileUri(""a/?initialDelay=0&delay=10&sortBy=file:ext"")).to(""mock:result"");",0,0,0.0,57
+0891b2303a88ec8fab2be7af0a0f13b49e803f22,},1,0,0.0,58

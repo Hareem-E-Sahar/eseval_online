@@ -1,0 +1,569 @@
+commit_id,line,line_level_label,count,line_score,row
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from quantum.openstack.common import log as logging,1,6,1.0,1
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from oslo_log import log as logging,1,5,0.8333333333333333,2
+86eef047df8ac616dd58492ad41dc2f77ef5452c,# Initialize the nxos db,1,5,0.8333333333333333,3
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Establish database connection and load models""""""",1,4,0.6666666666666666,4
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Establish database connection and load models""""""",1,4,0.6666666666666666,5
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from neutron.db import api as db,1,4,0.6666666666666666,6
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from neutron.plugins.cisco.common import cisco_exceptions as c_exc,1,3,0.5,7
+86eef047df8ac616dd58492ad41dc2f77ef5452c,Returns True if the provider network table contains a vlan network,1,3,0.5,8
+86eef047df8ac616dd58492ad41dc2f77ef5452c,:return: network_id if it was in the table and successfully removed.,1,3,0.5,9
+86eef047df8ac616dd58492ad41dc2f77ef5452c,LOG = logging.getLogger(__name__),1,3,0.5,10
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Lists the qos given a tenant_id and qos_id.""""""",1,3,0.5,11
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from neutron.plugins.cisco.common import cisco_constants as const,1,3,0.5,12
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    License for the specific language governing permissions and limitations,1,3,0.5,13
+86eef047df8ac616dd58492ad41dc2f77ef5452c,LOG = logging.getLogger(__name__),1,3,0.5,14
+86eef047df8ac616dd58492ad41dc2f77ef5452c,import quantum.plugins.cisco.db.api as db,1,3,0.5,15
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    License for the specific language governing permissions and limitations,1,3,0.5,16
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,2,0.3333333333333333,17
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'mnget_id', sa.String(255), nullable=True),",1,2,0.3333333333333333,18
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'nbnet_id', sa.String(255), nullable=True),",1,2,0.3333333333333333,19
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'sbnet_id', sa.String(255), nullable=True),",1,2,0.3333333333333333,20
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'port_id', sa.String(255), nullable=True),",0,2,0.3333333333333333,21
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'port_id', sa.Integer(), nullable=True),",1,2,0.3333333333333333,22
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"# Copyright 2012, Cisco Systems, Inc.",1,2,0.3333333333333333,23
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.3333333333333333,24
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    not use this file except in compliance with the License. You may obtain,1,2,0.3333333333333333,25
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    a copy of the License at,1,2,0.3333333333333333,26
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"qos = network_models_v2.QoS(qos_id=uuidutils.generate_uuid(),",1,2,0.3333333333333333,27
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,28
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    under the License.,1,2,0.3333333333333333,29
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from oslo_utils import uuidutils,1,2,0.3333333333333333,30
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from sqlalchemy.orm import exc,1,2,0.3333333333333333,31
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from neutron.plugins.cisco.db import network_models_v2,1,2,0.3333333333333333,32
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Lists all the qos to tenant associations.""""""",1,2,0.3333333333333333,33
+86eef047df8ac616dd58492ad41dc2f77ef5452c,qos = (session.query(network_models_v2.QoS).,1,2,0.3333333333333333,34
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'id', sa.Integer(), autoincrement=True,",1,2,0.3333333333333333,35
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Remove network_id from the provider network table.",1,2,0.3333333333333333,36
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Return True if network_id is in the provider network table.""""""",1,2,0.3333333333333333,37
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'service_id', sa.String(255), nullable=True),",1,2,0.3333333333333333,38
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Mixin class for Cisco Credentials as a resource.""""""",1,2,0.3333333333333333,39
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"name = net[""net-name""]",1,2,0.3333333333333333,40
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"# @author: Rohit Agarwalla, Cisco Systems, Inc.",1,2,0.3333333333333333,41
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def initialize():,1,2,0.3333333333333333,42
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Port id %s Net id %s"" % (port[""port-id""], net.uuid))",1,2,0.3333333333333333,43
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def initialize():,1,2,0.3333333333333333,44
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"# Copyright 2011, Cisco Systems, Inc.",1,2,0.3333333333333333,45
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.3333333333333333,46
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    a copy of the License at,1,2,0.3333333333333333,47
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,2,0.3333333333333333,48
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,49
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    under the License.,1,2,0.3333333333333333,50
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#    not use this file except in compliance with the License. You may obtain,1,2,0.3333333333333333,51
+86eef047df8ac616dd58492ad41dc2f77ef5452c,that tests the database api method calls,1,2,0.3333333333333333,52
+86eef047df8ac616dd58492ad41dc2f77ef5452c,import quantum.plugins.cisco.db.l2network_db as l2network_db,1,2,0.3333333333333333,53
+86eef047df8ac616dd58492ad41dc2f77ef5452c,import quantum.plugins.cisco.db.nexus_db_v2 as nexus_db,1,2,0.3333333333333333,54
+86eef047df8ac616dd58492ad41dc2f77ef5452c,from quantum.tests import base,1,2,0.3333333333333333,55
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Class consisting of methods to call nexus db methods.""""""",1,2,0.3333333333333333,56
+86eef047df8ac616dd58492ad41dc2f77ef5452c,bindings = [],1,2,0.3333333333333333,57
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Setup for nexus db tests.""""""",1,2,0.3333333333333333,58
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to get network and port.""""""",1,2,0.3333333333333333,59
+86eef047df8ac616dd58492ad41dc2f77ef5452c,import quantum.plugins.cisco.common.cisco_exceptions as c_exc,1,2,0.3333333333333333,60
+86eef047df8ac616dd58492ad41dc2f77ef5452c,bindings = self.dbtest.get_all_nexusportbindings(),1,2,0.3333333333333333,61
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testb_get_networks(self):,1,1,0.16666666666666666,62
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testc_delete_network(self):,1,1,0.16666666666666666,63
+86eef047df8ac616dd58492ad41dc2f77ef5452c,nets = self.dbtest.get_all_networks(self.tenant_id),1,1,0.16666666666666666,64
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net2 = self.dbtest.create_network(self.tenant_id, ""plugin_test2"")",1,1,0.16666666666666666,65
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to get all networks.""""""",1,1,0.16666666666666666,66
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest = QuantumDB(),1,1,0.16666666666666666,67
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net1 = self.dbtest.create_network(self.tenant_id, ""plugin_test1"")",1,1,0.16666666666666666,68
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testa_create_network(self):,1,1,0.16666666666666666,69
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.tenant_id = ""t1""",1,1,0.16666666666666666,70
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"netid = vlan[""net-id""]",1,1,0.16666666666666666,71
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def teardown_vlanbinding(self):,1,1,0.16666666666666666,72
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net = self.dbtest.update_network(self.tenant_id, net1[""net-id""],",1,1,0.16666666666666666,73
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testd_update_network(self):,1,1,0.16666666666666666,74
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port2 = self.dbtest.create_port(net1[""net-id""])",1,1,0.16666666666666666,75
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def teste_create_port(self):,1,1,0.16666666666666666,76
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = self.dbtest.create_port(net1[""net-id""])",1,1,0.16666666666666666,77
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"ports = self.dbtest.get_all_ports(net1[""net-id""])",1,1,0.16666666666666666,78
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testf_delete_port(self):,1,1,0.16666666666666666,79
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testg_plug_unplug_interface(self):,1,1,0.16666666666666666,80
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port1 = self.dbtest.create_port(net1[""net-id""])",1,1,0.16666666666666666,81
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = self.dbtest.get_port(net1[""net-id""], port1[""port-id""])",1,1,0.16666666666666666,82
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testh_joined_test(self):,1,1,0.16666666666666666,83
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net1 = self.dbtest.create_network(""t1"", ""net1"")",1,1,0.16666666666666666,84
+86eef047df8ac616dd58492ad41dc2f77ef5452c,ports = self.quantum.get_all_ports(netid),1,1,0.16666666666666666,85
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net = port[""net""]",1,1,0.16666666666666666,86
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def teardown_network_port(self):,1,1,0.16666666666666666,87
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""tearDown for Network and Port table.""""""",1,1,0.16666666666666666,88
+86eef047df8ac616dd58492ad41dc2f77ef5452c,networks = self.dbtest.get_all_networks(self.tenant_id),1,1,0.16666666666666666,89
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"portid = port[""port-id""]",1,1,0.16666666666666666,90
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan1 = self.dbtest.update_vlan_binding(net1[""net-id""], 11, ""newvlan1"")",1,1,0.16666666666666666,91
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def teardown_port(self):,1,1,0.16666666666666666,92
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test get all vlan bindings.""""""",1,1,0.16666666666666666,93
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def teardown_joined_test(self):,1,1,0.16666666666666666,94
+86eef047df8ac616dd58492ad41dc2f77ef5452c,except c_exc.NexusPortBindingNotFound as e:,1,1,0.16666666666666666,95
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def tearDown_nexusportbinding(self):,1,1,0.16666666666666666,96
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Tear down nexus port binding table.""""""",1,1,0.16666666666666666,97
+86eef047df8ac616dd58492ad41dc2f77ef5452c,binds = self.dbtest.get_all_nexusportbindings(),1,1,0.16666666666666666,98
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_id = bind[""vlan-id""]",1,1,0.16666666666666666,99
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest = L2networkDB(),1,1,0.16666666666666666,100
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.quantum = QuantumDB(),1,1,0.16666666666666666,101
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testa_create_vlanbinding(self):,1,1,0.16666666666666666,102
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net1 = self.quantum.create_network(""t1"", ""netid1"")",1,1,0.16666666666666666,103
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan1 = self.dbtest.create_vlan_binding(10, ""vlan1"", net1[""net-id""])",1,1,0.16666666666666666,104
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testb_getall_vlanbindings(self):,1,1,0.16666666666666666,105
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net2 = self.quantum.create_network(""t1"", ""netid2"")",1,1,0.16666666666666666,106
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"netid = net[""net-id""]",1,1,0.16666666666666666,107
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan2 = self.dbtest.create_vlan_binding(20, ""vlan2"", net2[""net-id""])",1,1,0.16666666666666666,108
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlans = self.dbtest.get_all_vlan_bindings(),1,1,0.16666666666666666,109
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testc_delete_vlanbinding(self):,1,1,0.16666666666666666,110
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testd_update_vlanbinding(self):,1,1,0.16666666666666666,111
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testm_test_vlanids(self):,1,1,0.16666666666666666,112
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlanids = l2network_db.get_all_vlanids(),1,1,0.16666666666666666,113
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlanid = l2network_db.reserve_vlanid(),1,1,0.16666666666666666,114
+86eef047df8ac616dd58492ad41dc2f77ef5452c,used = l2network_db.is_vlanid_used(vlanid),1,1,0.16666666666666666,115
+86eef047df8ac616dd58492ad41dc2f77ef5452c,used = l2network_db.release_vlanid(vlanid),1,1,0.16666666666666666,116
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#counting on default teardown here to clear db,1,1,0.16666666666666666,117
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def teardown_network(self):,1,1,0.16666666666666666,118
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nets = self.quantum.get_all_networks(""t1"")",1,1,0.16666666666666666,119
+86eef047df8ac616dd58492ad41dc2f77ef5452c,ports = self.dbtest.get_all_ports(netid),1,1,0.16666666666666666,120
+86eef047df8ac616dd58492ad41dc2f77ef5452c,cred = network_models_v2.Credential(,1,1,0.16666666666666666,121
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""tearDown for joined Network and Port test.""""""",1,1,0.16666666666666666,122
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Check for a for a vlan provider network with the specified vland_id.",1,1,0.16666666666666666,123
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"cred[""user_name""] = new_user_name",1,1,0.16666666666666666,124
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"cred[""password""] = new_password",1,1,0.16666666666666666,125
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_all_n1kv_credentials():,1,1,0.16666666666666666,126
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def delete_all_n1kv_credentials():,1,1,0.16666666666666666,127
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def add_provider_network(network_id, network_type, segmentation_id):",1,1,0.16666666666666666,128
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Add a network to the provider network table.""""""",1,1,0.16666666666666666,129
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"pnet = network_models_v2.ProviderNetwork(network_id=network_id,",1,1,0.16666666666666666,130
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def remove_provider_network(network_id):,1,1,0.16666666666666666,131
+86eef047df8ac616dd58492ad41dc2f77ef5452c,":param network_id: Any network id. If it is not in the table, do nothing.",1,1,0.16666666666666666,132
+86eef047df8ac616dd58492ad41dc2f77ef5452c,pnet = (session.query(network_models_v2.ProviderNetwork).,1,1,0.16666666666666666,133
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return True,1,1,0.16666666666666666,134
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def is_provider_vlan(vlan_id):,1,1,0.16666666666666666,135
+86eef047df8ac616dd58492ad41dc2f77ef5452c,with the specified vlan_id.,1,1,0.16666666666666666,136
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def remove_credential(credential_id):,1,1,0.16666666666666666,137
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def _make_credential_dict(self, credential, fields=None):",1,1,0.16666666666666666,138
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"res = {'credential_id': credential['credential_id'],",1,1,0.16666666666666666,139
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def create_credential(self, context, credential):",1,1,0.16666666666666666,140
+86eef047df8ac616dd58492ad41dc2f77ef5452c,c = credential['credential'],1,1,0.16666666666666666,141
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"cred = add_credential(c['credential_name'],",1,1,0.16666666666666666,142
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_credentials(self, context, filters=None, fields=None):",1,1,0.16666666666666666,143
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_credential(self, context, id, fields=None):",1,1,0.16666666666666666,144
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Retireve the requested credential based on its id.""""""",1,1,0.16666666666666666,145
+86eef047df8ac616dd58492ad41dc2f77ef5452c,credential = get_credential(id),1,1,0.16666666666666666,146
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_credential(self, context, id, credential):",1,1,0.16666666666666666,147
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"cred = update_credential(id,",1,1,0.16666666666666666,148
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def delete_credential(self, context, id):",1,1,0.16666666666666666,149
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_credential(credential_id,",1,1,0.16666666666666666,150
+86eef047df8ac616dd58492ad41dc2f77ef5452c,mock_first.return_value = None,1,1,0.16666666666666666,151
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Tearing Down Network and Ports"")",1,1,0.16666666666666666,152
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Adds a qos to tenant association.""""""",1,1,0.16666666666666666,153
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nets = self.dbtest.get_all_networks(""t1"")",1,1,0.16666666666666666,154
+86eef047df8ac616dd58492ad41dc2f77ef5452c,op.create_table(,1,1,0.16666666666666666,155
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nullable=False),",1,1,0.16666666666666666,156
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'default', sa.Boolean(), nullable=False),",0,1,0.16666666666666666,157
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.Column(u'portprofile_id', sa.Boolean(), nullable=False),",1,1,0.16666666666666666,158
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#,1,1,0.16666666666666666,159
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,160
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,161
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_all_qoss(tenant_id):,1,1,0.16666666666666666,162
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session = db.get_session(),1,1,0.16666666666666666,163
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_qos(tenant_id, qos_id):",1,1,0.16666666666666666,164
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def add_qos(tenant_id, qos_name, qos_desc):",1,1,0.16666666666666666,165
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return qos,1,1,0.16666666666666666,166
+86eef047df8ac616dd58492ad41dc2f77ef5452c,cred = (session.query(network_models_v2.Credential).,1,1,0.16666666666666666,167
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def remove_qos(tenant_id, qos_id):",1,1,0.16666666666666666,168
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Removes a qos to tenant association.""""""",1,1,0.16666666666666666,169
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_qos(tenant_id, qos_id, new_qos_name=None):",1,1,0.16666666666666666,170
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Updates a qos to tenant association.""""""",1,1,0.16666666666666666,171
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"qos[""qos_name""] = new_qos_name",1,1,0.16666666666666666,172
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_all_credentials():,1,1,0.16666666666666666,173
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Lists all the creds for a tenant.""""""",1,1,0.16666666666666666,174
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_credential(credential_id):,1,1,0.16666666666666666,175
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Lists the creds for given a cred_id.""""""",1,1,0.16666666666666666,176
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_credential_name(credential_name):,1,1,0.16666666666666666,177
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Lists the creds for given a cred_name.""""""",1,1,0.16666666666666666,178
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def add_credential(credential_name, user_name, password, type):",1,1,0.16666666666666666,179
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def test_nexusport_binding_not_found_exception_message_formatting(self):,1,1,0.16666666666666666,180
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def is_provider_network(network_id):,1,1,0.16666666666666666,181
+86eef047df8ac616dd58492ad41dc2f77ef5452c,with mock.patch('sqlalchemy.orm.Query.first') as mock_first:,1,1,0.16666666666666666,182
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_all_networks(self, tenant_id):",1,1,0.16666666666666666,183
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to delete nexus port binding: %s""",1,1,0.16666666666666666,184
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_nexusport_binding(self, port_id, new_vlan_id):",1,1,0.16666666666666666,185
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Update nexus port binding.""""""",1,1,0.16666666666666666,186
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"res = nexus_db.update_nexusport_binding(port_id, new_vlan_id)",1,1,0.16666666666666666,187
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Updating nexus port binding : %s"" % res.port_id)",1,1,0.16666666666666666,188
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to update nexus port binding vnic: %s""",1,1,0.16666666666666666,189
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Class conisting of methods to call L2network db methods.""""""",1,1,0.16666666666666666,190
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_all_vlan_bindings(self):,1,1,0.16666666666666666,191
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlans = [],1,1,0.16666666666666666,192
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Getting vlan bindings for vlan: %s"" %",1,1,0.16666666666666666,193
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlan_dict = {},1,1,0.16666666666666666,194
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_dict[""vlan-id""] = str(vlan_bind.vlan_id)",1,1,0.16666666666666666,195
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_dict[""vlan-name""] = vlan_bind.vlan_name",1,1,0.16666666666666666,196
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_dict[""net-id""] = str(vlan_bind.network_id)",1,1,0.16666666666666666,197
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get all vlan bindings: %s"" % str(exc))",1,1,0.16666666666666666,198
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_vlan_binding(self, network_id):",1,1,0.16666666666666666,199
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlan = [],1,1,0.16666666666666666,200
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get vlan binding: %s"" % str(exc))",1,1,0.16666666666666666,201
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def create_vlan_binding(self, vlan_id, vlan_name, network_id):",1,1,0.16666666666666666,202
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"res = l2network_db.add_vlan_binding(vlan_id, vlan_name, network_id)",1,1,0.16666666666666666,203
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_dict[""vlan-id""] = str(res.vlan_id)",1,1,0.16666666666666666,204
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_dict[""vlan-name""] = res.vlan_name",1,1,0.16666666666666666,205
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_dict[""net-id""] = str(res.network_id)",1,1,0.16666666666666666,206
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def delete_vlan_binding(self, network_id):",1,1,0.16666666666666666,207
+86eef047df8ac616dd58492ad41dc2f77ef5452c,res = l2network_db.remove_vlan_binding(network_id),1,1,0.16666666666666666,208
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_vlan_binding(self, network_id, vlan_id, vlan_name):",1,1,0.16666666666666666,209
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"res = l2network_db.update_vlan_binding(network_id, vlan_id,",1,1,0.16666666666666666,210
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"bind_dict[""port-id""] = res.port_id",1,1,0.16666666666666666,211
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Deleted nexus port binding: %s"" % res.vlan_id)",1,1,0.16666666666666666,212
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Delete nexus port binding.""""""",1,1,0.16666666666666666,213
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"bind_dict[""vlan-id""] = str(bind.vlan_id)",1,1,0.16666666666666666,214
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def test_get_nexusvm_binding_no_result_found_handling(self):,1,1,0.16666666666666666,215
+86eef047df8ac616dd58492ad41dc2f77ef5452c,# vim: tabstop=4 shiftwidth=4 softtabstop=4,1,1,0.16666666666666666,216
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#,1,1,0.16666666666666666,217
+86eef047df8ac616dd58492ad41dc2f77ef5452c,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,218
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,219
+86eef047df8ac616dd58492ad41dc2f77ef5452c,import mock,1,1,0.16666666666666666,220
+86eef047df8ac616dd58492ad41dc2f77ef5452c,import sqlalchemy,1,1,0.16666666666666666,221
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def get_all_nexusportbindings(self):,1,1,0.16666666666666666,222
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get all nexus port bindings.""""""",1,1,0.16666666666666666,223
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Getting nexus port binding : %s"" % bind.port_id)",1,1,0.16666666666666666,224
+86eef047df8ac616dd58492ad41dc2f77ef5452c,bind_dict = {},1,1,0.16666666666666666,225
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"bind_dict[""port-id""] = str(bind.port_id)",1,1,0.16666666666666666,226
+86eef047df8ac616dd58492ad41dc2f77ef5452c,except Exception as exc:,1,1,0.16666666666666666,227
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def delete_nexusportbinding(self, vlan_id):",1,1,0.16666666666666666,228
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get all bindings: %s"" % str(exc))",1,1,0.16666666666666666,229
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return bindings,1,1,0.16666666666666666,230
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_nexusportbinding(self, vlan_id):",1,1,0.16666666666666666,231
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get nexus port binding.""""""",1,1,0.16666666666666666,232
+86eef047df8ac616dd58492ad41dc2f77ef5452c,binding = [],1,1,0.16666666666666666,233
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def create_nexusportbinding(self, port_id, vlan_id):",1,1,0.16666666666666666,234
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Create nexus port binding.""""""",1,1,0.16666666666666666,235
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"res = nexus_db.add_nexusport_binding(port_id, vlan_id)",1,1,0.16666666666666666,236
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Created nexus port binding : %s"" % res.port_id)",1,1,0.16666666666666666,237
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"bind_dict[""port-id""] = str(res.port_id)",1,1,0.16666666666666666,238
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"bind_dict[""vlan-id""] = str(res.vlan_id)",1,1,0.16666666666666666,239
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to create nexus binding: %s"" % str(exc))",1,1,0.16666666666666666,240
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Class conisting of methods to call Quantum db methods.""""""",1,1,0.16666666666666666,241
+86eef047df8ac616dd58492ad41dc2f77ef5452c,bind = nexus_db.remove_nexusport_binding(vlan_id),1,1,0.16666666666666666,242
+86eef047df8ac616dd58492ad41dc2f77ef5452c,nets = [],1,1,0.16666666666666666,243
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get port: %s"" % str(exc))",1,1,0.16666666666666666,244
+86eef047df8ac616dd58492ad41dc2f77ef5452c,port = db.port_create(net_id),1,1,0.16666666666666666,245
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def delete_port(self, net_id, port_id):",1,1,0.16666666666666666,246
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = db.port_destroy(net_id, port_id)",1,1,0.16666666666666666,247
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_port(self, net_id, port_id, port_state):",1,1,0.16666666666666666,248
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = db.port_set_state(net_id, port_id, port_state)",1,1,0.16666666666666666,249
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def plug_interface(self, net_id, port_id, int_id):",1,1,0.16666666666666666,250
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = db.port_set_attachment(net_id, port_id, int_id)",1,1,0.16666666666666666,251
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def unplug_interface(self, net_id, port_id):",1,1,0.16666666666666666,252
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = db.port_unset_attachment(net_id, port_id)",1,1,0.16666666666666666,253
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Detached interface from port %s"" % port.uuid)",1,1,0.16666666666666666,254
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Class conisting of nexus DB unit tests.""""""",1,1,0.16666666666666666,255
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def setUp(self):,1,1,0.16666666666666666,256
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testa_create_nexusportbinding(self):,1,1,0.16666666666666666,257
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"binding1 = self.dbtest.create_nexusportbinding(""port1"", 10)",1,1,0.16666666666666666,258
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testb_getall_nexusportbindings(self):,1,1,0.16666666666666666,259
+86eef047df8ac616dd58492ad41dc2f77ef5452c,count = 0,1,1,0.16666666666666666,260
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testc_delete_nexusportbinding(self):,1,1,0.16666666666666666,261
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def testd_update_nexusportbinding(self):,1,1,0.16666666666666666,262
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"binding1 = self.dbtest.update_nexusport_binding(binding1[""port-id""],",1,1,0.16666666666666666,263
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def test_get_nexusport_binding_no_result_found_handling(self):,1,1,0.16666666666666666,264
+86eef047df8ac616dd58492ad41dc2f77ef5452c,with mock.patch('sqlalchemy.orm.Query.all') as mock_all:,1,1,0.16666666666666666,265
+86eef047df8ac616dd58492ad41dc2f77ef5452c,mock_all.return_value = [],1,1,0.16666666666666666,266
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def test_get_nexusvlan_binding_no_result_found_handling(self):,1,1,0.16666666666666666,267
+86eef047df8ac616dd58492ad41dc2f77ef5452c,def test_update_nexusport_binding_no_result_found_handling(self):,1,1,0.16666666666666666,268
+86eef047df8ac616dd58492ad41dc2f77ef5452c,with mock.patch('sqlalchemy.orm.Query.one') as mock_one:,1,1,0.16666666666666666,269
+86eef047df8ac616dd58492ad41dc2f77ef5452c,net_dict = {},1,1,0.16666666666666666,270
+86eef047df8ac616dd58492ad41dc2f77ef5452c,mock_one.side_effect = sqlalchemy.orm.exc.NoResultFound,1,1,0.16666666666666666,271
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def create_port(self, net_id):",1,1,0.16666666666666666,272
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest = NexusDB(),1,1,0.16666666666666666,273
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"res = db.network_create(tenant_id, net_name)",1,1,0.16666666666666666,274
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def update_network(self, tenant_id, net_id, **kwargs):",1,1,0.16666666666666666,275
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net_dict[""tenant-id""] = net.tenant_id",1,1,0.16666666666666666,276
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net_dict[""net-id""] = str(net.uuid)",1,1,0.16666666666666666,277
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port = db.port_get(net_id, port_id)",1,1,0.16666666666666666,278
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net_dict[""net-name""] = net.name",1,1,0.16666666666666666,279
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get all networks: %s"" % str(exc))",1,1,0.16666666666666666,280
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_network(self, network_id):",1,1,0.16666666666666666,281
+86eef047df8ac616dd58492ad41dc2f77ef5452c,net = [],1,1,0.16666666666666666,282
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get network: %s"" % str(exc))",1,1,0.16666666666666666,283
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def create_network(self, tenant_id, net_name):",1,1,0.16666666666666666,284
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net_dict[""tenant-id""] = res.tenant_id",1,1,0.16666666666666666,285
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net_dict[""net-id""] = str(res.uuid)",1,1,0.16666666666666666,286
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net_dict[""net-name""] = res.name",1,1,0.16666666666666666,287
+86eef047df8ac616dd58492ad41dc2f77ef5452c,net = db.network_destroy(net_id),1,1,0.16666666666666666,288
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def delete_network(self, net_id):",1,1,0.16666666666666666,289
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port_dict[""int-id""] = port.interface_id",1,1,0.16666666666666666,290
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"net = db.network_update(net_id, tenant_id, **kwargs)",1,1,0.16666666666666666,291
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_all_ports(self, net_id):",1,1,0.16666666666666666,292
+86eef047df8ac616dd58492ad41dc2f77ef5452c,ports = [],1,1,0.16666666666666666,293
+86eef047df8ac616dd58492ad41dc2f77ef5452c,port_list = [],1,1,0.16666666666666666,294
+86eef047df8ac616dd58492ad41dc2f77ef5452c,port_dict = {},1,1,0.16666666666666666,295
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port_dict[""port-id""] = str(port.uuid)",1,1,0.16666666666666666,296
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port_dict[""net-id""] = str(port.network_id)",1,1,0.16666666666666666,297
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port_dict[""state""] = port.state",1,1,0.16666666666666666,298
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"port_dict[""net""] = port.network",1,1,0.16666666666666666,299
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"def get_port(self, net_id, port_id):",1,1,0.16666666666666666,300
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to get all ports: %s"" % str(exc))",1,1,0.16666666666666666,301
+86eef047df8ac616dd58492ad41dc2f77ef5452c,op.drop_table(u'port_bindings'),0,0,0.0,302
+86eef047df8ac616dd58492ad41dc2f77ef5452c,op.drop_table(u'portprofiles'),0,0,0.0,303
+86eef047df8ac616dd58492ad41dc2f77ef5452c,op.drop_table(u'portprofiles'),1,0,0.0,304
+86eef047df8ac616dd58492ad41dc2f77ef5452c,op.drop_table(u'port_bindings'),1,0,0.0,305
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest.delete_network(netid),1,0,0.0,306
+86eef047df8ac616dd58492ad41dc2f77ef5452c,op.drop_table(u'services_bindings'),1,0,0.0,307
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.delete_port(port[""net-id""], port[""port-id""])",1,0,0.0,308
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(qos_name=qos_name).one()),1,0,0.0,309
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.delete_port(netid, por[""port-id""])",1,0,0.0,310
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""plugin_test"" in name:",1,0,0.0,311
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for net in networks:,1,0,0.0,312
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.teardown_joined_test(),1,0,0.0,313
+86eef047df8ac616dd58492ad41dc2f77ef5452c,sa.PrimaryKeyConstraint(u'id'),1,0,0.0,314
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(port2[""net-id""] == net1[""net-id""])",1,0,0.0,315
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"u'service_bindings',",1,0,0.0,316
+86eef047df8ac616dd58492ad41dc2f77ef5452c,tenant_id=tenant_id),1,0,0.0,317
+86eef047df8ac616dd58492ad41dc2f77ef5452c,),1,0,0.0,318
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.ForeignKeyConstraint(['port_id'], ['ports.id'], ),",0,0,0.0,319
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"sa.ForeignKeyConstraint(['ports'], ['ports.id'], ),",1,0,0.0,320
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""get_all_qoss() called"")",1,0,0.0,321
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return (session.query(network_models_v2.QoS).,1,0,0.0,322
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(tenant_id=tenant_id).all()),1,0,0.0,323
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""get_qos() called"")",1,0,0.0,324
+86eef047df8ac616dd58492ad41dc2f77ef5452c,try:,1,0,0.0,325
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(tenant_id=tenant_id).,1,0,0.0,326
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(qos_id=qos_id).one()),1,0,0.0,327
+86eef047df8ac616dd58492ad41dc2f77ef5452c,except exc.NoResultFound:,1,0,0.0,328
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise c_exc.QosNotFound(qos_id=qos_id,",1,0,0.0,329
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""add_qos() called"")",1,0,0.0,330
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(port[0][""int-id""] is None)",1,0,0.0,331
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(port1[""net-id""] == net1[""net-id""])",1,0,0.0,332
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Tearing Down Port"")",1,0,0.0,333
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.unplug_interface(net1[""net-id""], port1[""port-id""])",1,0,0.0,334
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.teardown_network_port(),1,0,0.0,335
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"tenant_id=tenant_id,",1,0,0.0,336
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for net in nets:,1,0,0.0,337
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.quantum.delete_network(netid),1,0,0.0,338
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""tearDown Port table.""""""",1,0,0.0,339
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for port in ports:,1,0,0.0,340
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.quantum.delete_port(netid, portid)",1,0,0.0,341
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""tearDown VlanBinding table.""""""",1,0,0.0,342
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Tearing Down Vlan Binding"")",1,0,0.0,343
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest.delete_vlan_binding(netid),1,0,0.0,344
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class QuantumDBTest(base.BaseTestCase):,1,0,0.0,345
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Class conisting of Quantum DB unit tests.""""""",1,0,0.0,346
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"super(QuantumDBTest, self).setUp()",1,0,0.0,347
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to create network.""""""",1,0,0.0,348
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(net1[""net-name""] == ""plugin_test1"")",1,0,0.0,349
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(net2[""net-name""] == ""plugin_test2"")",1,0,0.0,350
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(port[0][""int-id""] == ""vif1.1"")",1,0,0.0,351
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""plugin_test"" in net[""net-name""]:",1,0,0.0,352
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to delete network.""""""",1,0,0.0,353
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.delete_network(net1[""net-id""])",1,0,0.0,354
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""plugin_test1"" in net[""net-name""]:",1,0,0.0,355
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to update (rename) network.""""""",1,0,0.0,356
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"name=""plugin_test1_renamed"")",1,0,0.0,357
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(net[""net-name""] == ""plugin_test1_renamed"")",1,0,0.0,358
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to create port.""""""",1,0,0.0,359
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(port[""net-id""] == net1[""net-id""])",1,0,0.0,360
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for por in ports:,1,0,0.0,361
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to delete port.""""""",1,0,0.0,362
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.delete_port(net1[""net-id""], por[""port-id""])",1,0,0.0,363
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test to plug/unplug interface.""""""",1,0,0.0,364
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.plug_interface(net1[""net-id""], port1[""port-id""], ""vif1.1"")",1,0,0.0,365
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise c_exc.QosNameAlreadyExists(qos_name=qos_name,",1,0,0.0,366
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self._make_credential_dict,",1,0,0.0,367
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"qos_name=qos_name,",1,0,0.0,368
+86eef047df8ac616dd58492ad41dc2f77ef5452c,'type': credential['type']},1,0,0.0,369
+86eef047df8ac616dd58492ad41dc2f77ef5452c,segmentation_id=segmentation_id),1,0,0.0,370
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.add(pnet),1,0,0.0,371
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""",1,0,0.0,372
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(network_id=network_id).first()),1,0,0.0,373
+86eef047df8ac616dd58492ad41dc2f77ef5452c,if pnet:,1,0,0.0,374
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.delete(pnet),1,0,0.0,375
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return network_id,1,0,0.0,376
+86eef047df8ac616dd58492ad41dc2f77ef5452c,if (session.query(network_models_v2.ProviderNetwork).,1,0,0.0,377
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"filter_by(network_type=const.NETWORK_TYPE_VLAN,",1,0,0.0,378
+86eef047df8ac616dd58492ad41dc2f77ef5452c,segmentation_id=vlan_id).first()):,1,0,0.0,379
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class Credential_db_mixin(object):,1,0,0.0,380
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"'credential_name': credential['credential_name'],",1,0,0.0,381
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"'user_name': credential['user_name'],",1,0,0.0,382
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"'password': credential['password'],",1,0,0.0,383
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"return self._fields(res, fields)",1,0,0.0,384
+86eef047df8ac616dd58492ad41dc2f77ef5452c,raise c_exc.ProviderNetworkExists(network_id),1,0,0.0,385
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"c['user_name'],",1,0,0.0,386
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"c['password'],",1,0,0.0,387
+86eef047df8ac616dd58492ad41dc2f77ef5452c,c['type']),1,0,0.0,388
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return self._make_credential_dict(cred),1,0,0.0,389
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Retrieve a list of credentials.""""""",1,0,0.0,390
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"return self._get_collection(context,",1,0,0.0,391
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"network_models_v2.Credential,",1,0,0.0,392
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""tearDown Network table.""""""",1,0,0.0,393
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"filters=filters,",1,0,0.0,394
+86eef047df8ac616dd58492ad41dc2f77ef5452c,fields=fields),1,0,0.0,395
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"return self._make_credential_dict(credential, fields)",1,0,0.0,396
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Update a credential based on its id.""""""",1,0,0.0,397
+86eef047df8ac616dd58492ad41dc2f77ef5452c,c['password']),1,0,0.0,398
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Delete a credential based on its id.""""""",1,0,0.0,399
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"network_type=network_type,",1,0,0.0,400
+86eef047df8ac616dd58492ad41dc2f77ef5452c,network_id=network_id).first():,1,0,0.0,401
+86eef047df8ac616dd58492ad41dc2f77ef5452c,qos_desc=qos_desc),1,0,0.0,402
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"credential_id=uuidutils.generate_uuid(),",1,0,0.0,403
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.add(qos),1,0,0.0,404
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.flush(),1,0,0.0,405
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.delete(qos),1,0,0.0,406
+86eef047df8ac616dd58492ad41dc2f77ef5452c,pass,1,0,0.0,407
+86eef047df8ac616dd58492ad41dc2f77ef5452c,if new_qos_name:,1,0,0.0,408
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.merge(qos),1,0,0.0,409
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return (session.query(network_models_v2.Credential).all()),1,0,0.0,410
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return (session.query(network_models_v2.Credential).,1,0,0.0,411
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(credential_id=credential_id).one()),1,0,0.0,412
+86eef047df8ac616dd58492ad41dc2f77ef5452c,raise c_exc.CredentialNotFound(credential_id=credential_id),1,0,0.0,413
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(credential_name=credential_name).one()),1,0,0.0,414
+86eef047df8ac616dd58492ad41dc2f77ef5452c,raise c_exc.CredentialNameNotFound(credential_name=credential_name),1,0,0.0,415
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Create a credential.""""""",1,0,0.0,416
+86eef047df8ac616dd58492ad41dc2f77ef5452c,raise c_exc.CredentialAlreadyExists(credential_name=credential_name),1,0,0.0,417
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"credential_name=credential_name,",1,0,0.0,418
+86eef047df8ac616dd58492ad41dc2f77ef5452c,if session.query(network_models_v2.ProviderNetwork).filter_by(,1,0,0.0,419
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"user_name=user_name,",1,0,0.0,420
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"password=password,",1,0,0.0,421
+86eef047df8ac616dd58492ad41dc2f77ef5452c,type=type),1,0,0.0,422
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.add(cred),1,0,0.0,423
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return cred,1,0,0.0,424
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Removes a credential.""""""",1,0,0.0,425
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.delete(cred),1,0,0.0,426
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"new_user_name=None, new_password=None):",1,0,0.0,427
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Updates a credential for a tenant.""""""",1,0,0.0,428
+86eef047df8ac616dd58492ad41dc2f77ef5452c,if new_user_name:,1,0,0.0,429
+86eef047df8ac616dd58492ad41dc2f77ef5452c,if new_password:,1,0,0.0,430
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.merge(cred),1,0,0.0,431
+86eef047df8ac616dd58492ad41dc2f77ef5452c,filter_by(type='n1kv')),1,0,0.0,432
+86eef047df8ac616dd58492ad41dc2f77ef5452c,session.query(network_models_v2.Credential).filter_by(type='n1kv').delete(),1,0,0.0,433
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Tearing Down Network"")",1,0,0.0,434
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to update port state: %s"" % str(exc))",1,0,0.0,435
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.assertFalse(used),1,0,0.0,436
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Create a network.""""""",1,0,0.0,437
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Update a vlan binding.""""""",1,0,0.0,438
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlan_name),1,0,0.0,439
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Updating vlan binding for vlan: %s"" % res.vlan_id)",1,0,0.0,440
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to update vlan binding: %s"" % str(exc))",1,0,0.0,441
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class QuantumDB(object):,1,0,0.0,442
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get all networks.""""""",1,0,0.0,443
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for net in db.network_list(tenant_id):,1,0,0.0,444
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Getting network: %s"" % net.uuid)",1,0,0.0,445
+86eef047df8ac616dd58492ad41dc2f77ef5452c,nets.append(net_dict),1,0,0.0,446
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return nets,1,0,0.0,447
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get a network.""""""",1,0,0.0,448
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for net in db.network_get(network_id):,1,0,0.0,449
+86eef047df8ac616dd58492ad41dc2f77ef5452c,net.append(net_dict),1,0,0.0,450
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return net,1,0,0.0,451
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Created network: %s"" % res.uuid)",1,0,0.0,452
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return port_list,1,0,0.0,453
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return net_dict,1,0,0.0,454
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to create network: %s"" % str(exc))",1,0,0.0,455
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Delete a network.""""""",1,0,0.0,456
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Deleted network: %s"" % net.uuid)",1,0,0.0,457
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to delete port: %s"" % str(exc))",1,0,0.0,458
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Update a network.""""""",1,0,0.0,459
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Updated network: %s"" % net.uuid)",1,0,0.0,460
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to update network: %s"" % str(exc))",1,0,0.0,461
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get all ports.""""""",1,0,0.0,462
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for port in db.port_list(net_id):,1,0,0.0,463
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Getting port: %s"" % port.uuid)",1,0,0.0,464
+86eef047df8ac616dd58492ad41dc2f77ef5452c,ports.append(port_dict),1,0,0.0,465
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return ports,1,0,0.0,466
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get a port.""""""",1,0,0.0,467
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to delete vlan binding: %s"" % str(exc))",1,0,0.0,468
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Deleted vlan binding for vlan: %s"" % res.vlan_id)",1,0,0.0,469
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Delete a vlan binding.""""""",1,0,0.0,470
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to create vlan binding: %s"" % str(exc))",1,0,0.0,471
+86eef047df8ac616dd58492ad41dc2f77ef5452c,db.configure_db(),1,0,0.0,472
+86eef047df8ac616dd58492ad41dc2f77ef5452c,db.configure_db(),1,0,0.0,473
+86eef047df8ac616dd58492ad41dc2f77ef5452c,nxos_db.initialize(),1,0,0.0,474
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""",1,0,0.0,475
+86eef047df8ac616dd58492ad41dc2f77ef5452c,test_database.py is an independent test suite,1,0,0.0,476
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class NexusDB(object):,1,0,0.0,477
+86eef047df8ac616dd58492ad41dc2f77ef5452c,try:,1,0,0.0,478
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for bind in nexus_db.get_all_nexusport_bindings():,1,0,0.0,479
+86eef047df8ac616dd58492ad41dc2f77ef5452c,bindings.append(bind_dict),1,0,0.0,480
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for bind in nexus_db.get_nexusport_binding(vlan_id):,1,0,0.0,481
+86eef047df8ac616dd58492ad41dc2f77ef5452c,binding.append(bind_dict),1,0,0.0,482
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return binding,1,0,0.0,483
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return bind_dict,1,0,0.0,484
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for res in bind:,1,0,0.0,485
+86eef047df8ac616dd58492ad41dc2f77ef5452c,% str(exc)),1,0,0.0,486
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class L2networkDB(object):,1,0,0.0,487
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get all vlan binding into a list of dict.""""""",1,0,0.0,488
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for vlan_bind in l2network_db.get_all_vlan_bindings():,1,0,0.0,489
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlan_bind.vlan_id),1,0,0.0,490
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlans.append(vlan_dict),1,0,0.0,491
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return vlans,1,0,0.0,492
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Get a vlan binding.""""""",1,0,0.0,493
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for vlan_bind in l2network_db.get_vlan_binding(network_id):,1,0,0.0,494
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Getting vlan binding for vlan: %s"" %",1,0,0.0,495
+86eef047df8ac616dd58492ad41dc2f77ef5452c,vlan.append(vlan_dict),1,0,0.0,496
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return vlan,1,0,0.0,497
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Create a vlan binding.""""""",1,0,0.0,498
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Created vlan binding for vlan: %s"" % res.vlan_id)",1,0,0.0,499
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return vlan_dict,1,0,0.0,500
+86eef047df8ac616dd58492ad41dc2f77ef5452c,port_list.append(port_dict),1,0,0.0,501
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Add a port.""""""",1,0,0.0,502
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.assertTrue(used),1,0,0.0,503
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"super(L2networkDBTest, self).setUp()",1,0,0.0,504
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"switch_ip='10.0.0.1',",1,0,0.0,505
+86eef047df8ac616dd58492ad41dc2f77ef5452c,instance_id=1),1,0,0.0,506
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nexus_db.get_nexusvlan_binding(vlan_id=10,",1,0,0.0,507
+86eef047df8ac616dd58492ad41dc2f77ef5452c,switch_ip='10.0.0.1'),1,0,0.0,508
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nexus_db.update_nexusport_binding(port_id=10,",1,0,0.0,509
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nexus_db.get_nexusvm_binding(port_id=10,",1,0,0.0,510
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise c_exc.NexusPortBindingNotFound(a=1, b='test')",1,0,0.0,511
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertIn('(a=1,b=test)', str(e))",1,0,0.0,512
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Tearing Down Nexus port Bindings"")",1,0,0.0,513
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for bind in binds:,1,0,0.0,514
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest.delete_nexusportbinding(vlan_id),1,0,0.0,515
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class L2networkDBTest(base.BaseTestCase):,1,0,0.0,516
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Class conisting of L2network DB unit tests.""""""",1,0,0.0,517
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Setup for tests.""""""",1,0,0.0,518
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test add vlan binding.""""""",1,0,0.0,519
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Creating port %s"" % port.uuid)",1,0,0.0,520
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(vlan1[""vlan-id""] == ""10"")",1,0,0.0,521
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.teardown_vlanbinding(),1,0,0.0,522
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.teardown_network(),1,0,0.0,523
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(vlan2[""vlan-id""] == ""20"")",1,0,0.0,524
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for vlan in vlans:,1,0,0.0,525
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""vlan"" in vlan[""vlan-name""]:",1,0,0.0,526
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test delete vlan binding.""""""",1,0,0.0,527
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.delete_vlan_binding(net1[""net-id""])",1,0,0.0,528
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""vlan "" in vlan[""vlan-name""]:",1,0,0.0,529
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test update vlan binding.""""""",1,0,0.0,530
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""new"" in vlan[""vlan-name""]:",1,0,0.0,531
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Test vlanid methods.""""""",1,0,0.0,532
+86eef047df8ac616dd58492ad41dc2f77ef5452c,l2network_db.create_vlanids(),1,0,0.0,533
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.assertTrue(len(vlanids) > 0),1,0,0.0,534
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"vlan_id=20,",1,0,0.0,535
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"nexus_db.get_nexusport_binding(port_id=10,",1,0,0.0,536
+86eef047df8ac616dd58492ad41dc2f77ef5452c,with self.assertRaises(c_exc.NexusPortBindingNotFound):,1,0,0.0,537
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.assertTrue(count == 1),1,0,0.0,538
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return port_dict,1,0,0.0,539
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.error(""Failed to create port: %s"" % str(exc))",1,0,0.0,540
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Delete a port.""""""",1,0,0.0,541
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Deleted port %s"" % port.uuid)",1,0,0.0,542
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Update a port.""""""",1,0,0.0,543
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Updated port %s"" % port.uuid)",1,0,0.0,544
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Plug interface to a port.""""""",1,0,0.0,545
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Attached interface to port %s"" % port.uuid)",1,0,0.0,546
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to plug interface: %s"" % str(exc))",1,0,0.0,547
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"""""""Unplug interface to a port.""""""",1,0,0.0,548
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"raise Exception(""Failed to unplug interface: %s"" % str(exc))",1,0,0.0,549
+86eef047df8ac616dd58492ad41dc2f77ef5452c,class NexusDBTest(base.BaseTestCase):,1,0,0.0,550
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"super(NexusDBTest, self).setUp()",1,0,0.0,551
+86eef047df8ac616dd58492ad41dc2f77ef5452c,l2network_db.initialize(),1,0,0.0,552
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.addCleanup(db.clear_db),1,0,0.0,553
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"LOG.debug(""Setup"")",1,0,0.0,554
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.assertTrue(binding1[""port-id""] == ""port1"")",1,0,0.0,555
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.tearDown_nexusportbinding(),1,0,0.0,556
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.create_nexusportbinding(""port1"", 10)",1,0,0.0,557
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"self.dbtest.create_nexusportbinding(""port2"", 10)",1,0,0.0,558
+86eef047df8ac616dd58492ad41dc2f77ef5452c,for bind in bindings:,1,0,0.0,559
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""port"" in bind[""port-id""]:",1,0,0.0,560
+86eef047df8ac616dd58492ad41dc2f77ef5452c,count += 1,1,0,0.0,561
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.assertTrue(count == 2),1,0,0.0,562
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.dbtest.delete_nexusportbinding(10),1,0,0.0,563
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""port "" in bind[""port-id""]:",1,0,0.0,564
+86eef047df8ac616dd58492ad41dc2f77ef5452c,self.assertTrue(count == 0),1,0,0.0,565
+86eef047df8ac616dd58492ad41dc2f77ef5452c,20),1,0,0.0,566
+86eef047df8ac616dd58492ad41dc2f77ef5452c,"if ""20"" in str(bind[""vlan-id""]):",1,0,0.0,567
+86eef047df8ac616dd58492ad41dc2f77ef5452c,return remove_credential(id),1,0,0.0,568

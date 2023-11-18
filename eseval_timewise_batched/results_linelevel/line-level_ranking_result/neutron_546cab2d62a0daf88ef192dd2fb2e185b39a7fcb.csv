@@ -1,0 +1,609 @@
+commit_id,line,line_level_label,count,line_score,row
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Remove the IP address from the allocation pool,1,8,1.0,1
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,IPs. Include the subnet_id in the result if only an IP address is,1,7,0.875,2
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Validate that the IP address on the subnet is not in use.""""""",1,7,0.875,3
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# select the IP address at the selected index within the window,0,6,0.75,4
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# select the IP address at the selected index within the window,1,6,0.75,5
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# A scan for auto-address subnets on the network is done,1,6,0.75,6
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# we need to start with entries that asked for a specific IP in case,1,6,0.75,7
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# those IPs happen to be next in the line for allocation for ones that,1,6,0.75,8
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,The IP address will be generated from one of the subnets defined on,1,5,0.625,9
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# last address is broadcast in v4,1,5,0.625,10
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# last address is broadcast in v4,0,5,0.625,11
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"# ipam_subnet is not expected to be allocated for non pluggable ipam,",1,5,0.625,12
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Only subnet ID is specified => need to generate IP,1,5,0.625,13
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Use set difference to find free addresses in the pool,1,5,0.625,14
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"first, last = first if first else cidr.first, cidr.last",1,5,0.625,15
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Create a set of all addresses in the pool,1,5,0.625,16
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"the IPAllocationPools associated with the subnet that is updating,",1,5,0.625,17
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Use the gw_ip to find a point for splitting allocation pools,1,5,0.625,18
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# last address is broadcast in v4,0,5,0.625,19
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_id_list = [subnet['id'] for subnet in subnets],1,4,0.5,20
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"# the context of a nested transaction, so that the entry",1,4,0.5,21
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Do the insertion of each IP allocation entry within,1,4,0.5,22
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# IP addresses for IPv6 SLAAC and DHCPv6-stateless subnets,1,4,0.5,23
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,addresses for the port. If port['fixed_ips'] contains an IP address or,1,4,0.5,24
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# it will be changed in the following operation and the latest,1,4,0.5,25
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# IP address allocation,1,4,0.5,26
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,#    not use this file except in compliance with the License. You may obtain,1,4,0.5,27
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Create a new second range for after ip_address,1,4,0.5,28
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Adjust the original range to end before ip_address,1,4,0.5,29
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Write the ranges to the db,1,4,0.5,30
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_id_list = [subnet['id'] for subnet in subnets],0,4,0.5,31
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# NOTE(changzhi) delete all dns nameservers from db,0,4,0.5,32
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.db import ipam_non_pluggable_backend as non_ipam,1,4,0.5,33
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"# Expire the fixed_ips of db_port in current transaction, because",1,3,0.375,34
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for fixed in fixed_ips:,1,3,0.375,35
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip in changes.add:,1,3,0.375,36
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Update ips if necessary,1,3,0.375,37
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip in filtered_ips:,1,3,0.375,38
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Check if the IPs need to be updated,1,3,0.375,39
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for pool in allocation_pools:,1,3,0.375,40
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# with the port.,1,3,0.375,41
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.ipam import requests as ipam_req,1,3,0.375,42
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.db import models_v2,1,3,0.375,43
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if ('ip_address' in fixed and,1,3,0.375,44
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip in changes.remove:,1,3,0.375,45
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# didn't ask for a specific IP,1,3,0.375,46
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# from subnet,1,3,0.375,47
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Check if the IP's to add are OK,1,3,0.375,48
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Allocate IP addresses for the port.",1,3,0.375,49
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"If port['fixed_ips'] is set to 'ATTR_NOT_SPECIFIED', allocate IP",1,3,0.375,50
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# preserve previous behavior of DHCP ports choosing start of pool,1,3,0.375,51
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for subnets in version_subnets:,1,3,0.375,52
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for subnet in v6_stateless:,1,3,0.375,53
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# gateway_ip and allocation pools should be validated or generated,1,3,0.375,54
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# so just return None for it (second element in returned tuple),1,3,0.375,55
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.common import constants as n_const,1,3,0.375,56
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.db import ipam_backend_mixin,1,3,0.375,57
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip in ips:,1,3,0.375,58
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from oslo_log import log as logging,1,3,0.375,59
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for subnet in subnets:,1,3,0.375,60
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from oslo_db import exception as db_exc,1,3,0.375,61
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.ipam import utils as ipam_utils,0,3,0.375,62
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for pool in pools],0,3,0.375,63
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# for this subnet,1,3,0.375,64
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for dns in old_dns_list:,0,3,0.375,65
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# by one when create subnet with DNS nameservers,0,3,0.375,66
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for dns in old_dns_list]),1,3,0.375,67
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for dns in old_dns_list:,1,3,0.375,68
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for addr in dns_nameservers:,1,3,0.375,69
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if ('ip_address' in fixed and,0,3,0.375,70
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip in filtered_ips:,0,3,0.375,71
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Auto allocate the pool around gateway_ip,1,3,0.375,72
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# increment the first free,1,3,0.375,73
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if first <= ip <= last:,1,3,0.375,74
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for subnet in sorted(subnets):,1,3,0.375,75
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,#    License for the specific language governing permissions and limitations,1,3,0.375,76
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron_lib import exceptions as n_exc,1,3,0.375,77
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.db import ipam_non_pluggable_backend,1,3,0.375,78
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,3,0.375,79
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Allocate a specific IP address on the subnet.""""""",1,3,0.375,80
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if last and last + 1 != cidr.first:,1,3,0.375,81
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Generator compacts an ip set into contiguous ranges,1,3,0.375,82
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for pool in pool_qry.filter_by(subnet_id=subnet['id']):,1,3,0.375,83
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""assigned to a port on subnet %(id)s since the """,1,2,0.25,84
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"msg = (_(""IPv6 address %(address)s can not be directly """,1,2,0.25,85
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Ensure that the IP's are unique,1,2,0.25,86
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet = self._get_subnet_for_fixed_ip(context, fixed, subnets)",1,2,0.25,87
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Test fixed IPs for port.",1,2,0.25,88
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# data is expected.,1,2,0.25,89
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if 'fixed_ips' in new_port:,1,2,0.25,90
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ips = self._allocate_ips_for_port(context, port)",1,2,0.25,91
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"# Compute a window size, select an index inside the window, then",1,2,0.25,92
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for subnet_id in subnet_id_list:,1,2,0.25,93
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.common import ipv6_utils,1,2,0.25,94
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip_pool in pool_qry:,1,2,0.25,95
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ipallocation in allocation_qry:,1,2,0.25,96
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.ipam import subnet_alloc,1,2,0.25,97
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.extensions import portbindings,1,2,0.25,98
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron._i18n import _,1,2,0.25,99
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from sqlalchemy.orm import exc,1,2,0.25,100
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from oslo_utils import netutils,1,2,0.25,101
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron_lib import constants,1,2,0.25,102
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# separately so that all such subnets (not just those,1,2,0.25,103
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import netaddr,1,2,0.25,104
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""subnet is configured for automatic addresses"") %",1,2,0.25,105
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnets = self._ipam_get_subnets(context,",1,2,0.25,106
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# listed explicitly here by subnet ID) are associated,1,2,0.25,107
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if (device_owner in constants.ROUTER_INTERFACE_OWNERS_SNAT or,1,2,0.25,108
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.25,109
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet = self._save_subnet(context,",1,2,0.25,110
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnet['cidr'] is not constants.ATTR_NOT_SPECIFIED:,1,2,0.25,111
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# only for specific request,1,2,0.25,112
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# the corresponding port has been deleted.,1,2,0.25,113
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# is rolled back independently of other entries whenever,1,2,0.25,114
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for port in ports:,1,2,0.25,115
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""For an auto-address subnet, add addrs for ports on the net.""""""",1,2,0.25,116
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ips = self._allocate_fixed_ips(context,",1,2,0.25,117
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,fixed_configured = p['fixed_ips'] is not constants.ATTR_NOT_SPECIFIED,1,2,0.25,118
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,a subnet_id then allocate an IP address accordingly.,1,2,0.25,119
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if device_owner not in constants.ROUTER_INTERFACE_OWNERS:,1,2,0.25,120
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnets = self._ipam_get_subnets(,1,2,0.25,121
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Add or remove IPs from the port.""""""",1,2,0.25,122
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnets = [subnet],1,2,0.25,123
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if 'ip_address' in fixed:,1,2,0.25,124
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet = self._get_subnet(context, fixed['subnet_id'])",1,2,0.25,125
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ips = [],1,2,0.25,126
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Allocate IP addresses according to the configured fixed_ips.""""""",1,2,0.25,127
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,#    under the License.,1,2,0.25,128
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from sqlalchemy import and_,1,2,0.25,129
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"#    Unless required by applicable law or agreed to in writing, software",1,2,0.25,130
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""All IPs from subnet %(subnet_id)s (%(cidr)s) """,1,2,0.25,131
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for subnet_id in ip_pools:,0,2,0.25,132
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip_pool in pool_qry:,0,2,0.25,133
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ipallocation in allocation_qry:,0,2,0.25,134
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet = self._get_subnet_for_fixed_ip(context, fixed, network_id)",1,2,0.25,135
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnets = self._get_subnets(context, filters=net_id_filter)",0,2,0.25,136
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet = self._get_subnet_for_fixed_ip(context, fixed, subnets)",0,2,0.25,137
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron.i18n import _LI,1,2,0.25,138
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from neutron._i18n import _LI,0,2,0.25,139
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if 'ip_address' in fixed:,1,2,0.25,140
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for dns_addr in new_dns_addr_set - old_dns_addr_set:,1,2,0.25,141
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for dns_addr in old_dns_addr_set - new_dns_addr_set:,1,2,0.25,142
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,dns = models_v2.DNSNameServer(,0,2,0.25,143
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"for order, server in enumerate(dns_nameservers):",0,2,0.25,144
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# NOTE(changzhi) Store DNS nameservers with order into DB one,0,2,0.25,145
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"for order, server in enumerate(new_dns_addr_list):",0,2,0.25,146
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# nameservers with order one by one.,0,2,0.25,147
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# when update subnet's DNS nameservers. And store new,0,2,0.25,148
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# no need to check for their validity,1,2,0.25,149
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# return auto-generated pools,1,2,0.25,150
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,#    a copy of the License at,1,2,0.25,151
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"pools = ipam_utils.generate_pools(subnet['cidr'], subnet['gateway_ip'])",0,2,0.25,152
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"# Compute a window size, select an index inside the window, then",0,2,0.25,153
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pools = [],1,2,0.25,154
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# No more free indices on subnet => delete,1,2,0.25,155
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for cidr in ipset.iter_cidrs():,1,2,0.25,156
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""Allocated IP - %(ip_address)s from %(first_ip)s """,1,2,0.25,157
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if first == last:,1,2,0.25,158
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from oslo_utils import netutils,0,2,0.25,159
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,last = int(netaddr.IPAddress(ip_range['last_ip'])),1,2,0.25,160
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,first = int(netaddr.IPAddress(ip_range['first_ip'])),1,2,0.25,161
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip = int(netaddr.IPAddress(ip_address)),1,2,0.25,162
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip_range in ipset_to_ranges(available):,1,2,0.25,163
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,first = None,1,2,0.25,164
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for ip_range in results:,1,2,0.25,165
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"first, last = None, None",1,2,0.25,166
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# PostgreSQL does not support select...for update with an outer join.,1,2,0.25,167
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,from sqlalchemy import orm,1,2,0.25,168
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,for i in ip_qry_results]),1,2,0.25,169
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,This method is called only when there's no more IP available or by,1,2,0.25,170
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,which will result in deleting the IPAvailabilityRange too.,1,2,0.25,171
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.25,172
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# No join is needed here.,1,2,0.25,173
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""Rebuilding availability ranges for subnet %s"",",1,2,0.25,174
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Create a set of all currently allocated addresses,1,2,0.25,175
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,Check that configured subnets are valid prior to allocating any,1,1,0.125,176
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address = ip['ip_address'],1,1,0.125,177
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_id = ip['subnet_id'],1,1,0.125,178
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return ips,1,1,0.125,179
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"changes = self.Changes(add=[], original=[], remove=[])",1,1,0.125,180
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,network_id = db_port['network_id'],1,1,0.125,181
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"original = self._make_port_dict(db_port, process_extensions=False)",1,1,0.125,182
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,changes = self._update_ips_for_port(,1,1,0.125,183
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if ips:,1,1,0.125,184
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if is_auto_addr:,1,1,0.125,185
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,is_auto_addr_subnet = ipv6_utils.is_auto_address_subnet(subnet),1,1,0.125,186
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if not IpamNonPluggableBackend._check_unique_ip(,1,1,0.125,187
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if (is_auto_addr_subnet and,1,1,0.125,188
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,device_owner not in,1,1,0.125,189
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,fixed_ips.sort(key=lambda x: 'ip_address' not in x),1,1,0.125,190
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ips = [],1,1,0.125,191
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,is_auto_addr = ipv6_utils.is_auto_address_subnet(subnet),1,1,0.125,192
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_range = models_v2.IPAvailabilityRange(,1,1,0.125,193
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip_address = self._calculate_ipv6_eui64_addr(context,",1,1,0.125,194
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"result = self._generate_ip(context, subnets, allocated_ips,",1,1,0.125,195
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,network_id = port['port']['network_id'],1,1,0.125,196
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"window = min(av_set_size, 10)",1,1,0.125,197
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip_pool = models_v2.IPAllocationPool(subnet=subnet,",1,1,0.125,198
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,av_set = av_set.difference(filter_set),1,1,0.125,199
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_allocations = collections.defaultdict(netaddr.IPSet),1,1,0.125,200
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"changes = self._get_changed_ips_for_port(context, original_ips,",1,1,0.125,201
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_allocs = ip_allocations[ipallocation.subnet_id],1,1,0.125,202
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_pools = collections.defaultdict(netaddr.IPSet),1,1,0.125,203
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_pools = ip_pools[ip_pool.subnet_id],1,1,0.125,204
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_pools = ip_pools[subnet_id],1,1,0.125,205
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_allocs = ip_allocations[subnet_id],1,1,0.125,206
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,filter_set = netaddr.IPSet(),1,1,0.125,207
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,av_set = subnet_ip_pools.difference(subnet_ip_allocs),1,1,0.125,208
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,av_set_size = av_set.size,1,1,0.125,209
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"last_ip = str(netaddr.IPAddress(pool.last, pool.version))",1,1,0.125,210
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if av_set_size == 0:,1,1,0.125,211
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if prefer_next:,1,1,0.125,212
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,window = 1,1,1,0.125,213
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip_index = random.randint(1, window)",1,1,0.125,214
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"candidate_ips = list(itertools.islice(av_set, ip_index))",1,1,0.125,215
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if candidate_ips:,1,1,0.125,216
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ip = candidate_ips[-1],1,1,0.125,217
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_qry = context.session.query(models_v2.IPAllocation),1,1,0.125,218
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"first_ip = str(netaddr.IPAddress(pool.first, pool.version))",1,1,0.125,219
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,added = [],1,1,0.125,220
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,with context.session.begin_nested():,1,1,0.125,221
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"to_add = self._test_fixed_ips_for_port(context, network_id,",1,1,0.125,222
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_request = ipam_subnet.get_details(),1,1,0.125,223
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnetpool = None,1,1,0.125,224
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnetpool_id and not subnetpool_id == constants.IPV6_PD_POOL_ID:,1,1,0.125,225
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnetpool = self._get_subnetpool(context, id=subnetpool_id)",1,1,0.125,226
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['gateway_ip'] = self._gateway_ip_str(subnet,",1,1,0.125,227
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# allocation_pools are converted to list of IPRanges,1,1,0.125,228
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet['allocation_pools'] = self._prepare_allocation_pools(,1,1,0.125,229
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet_request = ipam_req.SubnetRequestFactory.get_request(context,",1,1,0.125,230
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"driver = subnet_alloc.SubnetAllocator(subnetpool, context)",1,1,0.125,231
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ipam_subnet = driver.allocate_subnet(subnet_request),1,1,0.125,232
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnet.version == const.IP_VERSION_4:,0,1,0.125,233
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address = netutils.get_ipv6_addr_by_EUI64(,1,1,0.125,234
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnet.prefixlen <= 30:,0,1,0.125,235
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_first_ip = netaddr.IPAddress(subnet.first + 1),0,1,0.125,236
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_last_ip = netaddr.IPAddress(subnet.last - 1),0,1,0.125,237
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_first_ip = netaddr.IPAddress(subnet.first),0,1,0.125,238
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_last_ip = netaddr.IPAddress(subnet.last),0,1,0.125,239
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,else:  # IPv6 case,0,1,0.125,240
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_first_ip = netaddr.IPAddress(subnet.first + 1),1,1,0.125,241
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_last_ip = netaddr.IPAddress(subnet.last - (subnet.version == 4)),1,1,0.125,242
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocation_qry = context.session.query(models_v2.IPAllocation),1,1,0.125,243
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"if not self._check_unique_ip(context, network_id,",1,1,0.125,244
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,prefix = subnet['cidr'],1,1,0.125,245
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if to_add:,1,1,0.125,246
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,is_router_port = (,1,1,0.125,247
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"added = self._allocate_fixed_ips(context, to_add, mac_address)",1,1,0.125,248
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,p = port['port'],1,1,0.125,249
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"v4, v6_stateful, v6_stateless = self._classify_subnets(",1,1,0.125,250
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,prefer_next = p['device_owner'] == constants.DEVICE_OWNER_DHCP,1,1,0.125,251
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if fixed_configured:,1,1,0.125,252
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"configured_ips = self._test_fixed_ips_for_port(context,",1,1,0.125,253
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"version_subnets = [v4, v6_stateful]",1,1,0.125,254
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnets:,1,1,0.125,255
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,result = IpamNonPluggableBackend._generate_ip(,1,1,0.125,256
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,p['device_owner'] in constants.ROUTER_INTERFACE_OWNERS_SNAT),1,1,0.125,257
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""Port %s was deleted while updating it with an """,1,1,0.125,258
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if not is_router_port:,1,1,0.125,259
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# are generated and implicitly included.,1,1,0.125,260
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address = self._calculate_ipv6_eui64_addr(,1,1,0.125,261
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,with context.session.begin(subtransactions=True):,1,1,0.125,262
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,network_id = subnet['network_id'],1,1,0.125,263
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,port_qry = context.session.query(models_v2.Port),1,1,0.125,264
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ports = port_qry.filter(,1,1,0.125,265
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,updated_ports = [],1,1,0.125,266
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"allocated = models_v2.IPAllocation(network_id=network_id,",1,1,0.125,267
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocation_qry = allocation_qry.filter(,1,1,0.125,268
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,fixed_ip_set = [],1,1,0.125,269
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pool_qry = pool_qry.filter(,1,1,0.125,270
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_allocs = ip_allocations[subnet_id],0,1,0.125,271
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pool_qry = context.session.query(models_v2.IPAllocationPool),0,1,0.125,272
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pool_qry = pool_qry.filter(,0,1,0.125,273
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocation_qry = context.session.query(models_v2.IPAllocation),0,1,0.125,274
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocation_qry = allocation_qry.filter(,0,1,0.125,275
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_allocations = collections.defaultdict(netaddr.IPSet),0,1,0.125,276
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_allocs = ip_allocations[ipallocation.subnet_id],0,1,0.125,277
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_pools = collections.defaultdict(netaddr.IPSet),0,1,0.125,278
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_pools = ip_pools[ip_pool.subnet_id],0,1,0.125,279
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_pools = ip_pools[subnet_id],0,1,0.125,280
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,filter_set = netaddr.IPSet(),0,1,0.125,281
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import random,0,1,0.125,282
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,av_set = subnet_ip_pools.difference(subnet_ip_allocs),0,1,0.125,283
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,av_set = av_set.difference(filter_set),0,1,0.125,284
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,av_set_size = av_set.size,0,1,0.125,285
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if av_set_size == 0:,0,1,0.125,286
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"window = min(av_set_size, 10)",0,1,0.125,287
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip_index = random.randint(1, window)",0,1,0.125,288
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"candidate_ips = list(itertools.islice(av_set, ip_index))",0,1,0.125,289
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if candidate_ips:,0,1,0.125,290
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ip = candidate_ips[-1],0,1,0.125,291
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,filtered_ips = filtered_ips or [],0,1,0.125,292
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import itertools,0,1,0.125,293
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"result = self._generate_ip(context, subnets, allocated_ips)",0,1,0.125,294
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return pools,1,1,0.125,295
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pool_qry = context.session.query(models_v2.IPAllocationPool),1,1,0.125,296
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_last_ip = netaddr.IPAddress(subnet.last - (subnet.version == 4)),0,1,0.125,297
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,net = netaddr.IPNetwork(subnet['cidr']),1,1,0.125,298
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,first_ip = net.first + 1,1,1,0.125,299
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,last_ip = net.last - 1,1,1,0.125,300
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,gw_ip = int(netaddr.IPAddress(subnet['gateway_ip'] or net.last)),1,1,0.125,301
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"split_ip = min(max(gw_ip, net.first), net.last)",1,1,0.125,302
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if split_ip > first_ip:,1,1,0.125,303
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if split_ip < last_ip:,1,1,0.125,304
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_last_ip = netaddr.IPAddress(subnet.last - 1),1,1,0.125,305
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import collections,0,1,0.125,306
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"new_dns_addr_list = s[""dns_nameservers""]",0,1,0.125,307
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"new_dns_addr_set = set(s[""dns_nameservers""])",1,1,0.125,308
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,old_dns_addr_set = set([dns['address'],1,1,0.125,309
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,new_dns = list(new_dns_addr_set),1,1,0.125,310
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if dns['address'] == dns_addr:,1,1,0.125,311
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ns = models_v2.DNSNameServer(address=addr,",1,1,0.125,312
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnetpool_id:,1,1,0.125,313
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,net_id_filter = {'network_id': [network_id]},0,1,0.125,314
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,net_id_filter = {'network_id': [p['network_id']]},0,1,0.125,315
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ips = [],0,1,0.125,316
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if subnetpool_id and not subnetpool_id == constants.IPV6_PD_POOL_ID:,0,1,0.125,317
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,range_qry = context.session.query(,1,1,0.125,318
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# All Rights Reserved.,1,1,0.125,319
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,new_ip_range = models_v2.IPAvailabilityRange(,1,1,0.125,320
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if not is_auto_addr:,1,1,0.125,321
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address = netutils.get_ipv6_addr_by_EUI64(,0,1,0.125,322
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address = ipv6_utils.get_ipv6_addr_by_EUI64(,1,1,0.125,323
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,self.ipam = ipam_pluggable_backend.IpamPluggableBackend(),0,1,0.125,324
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if cfg.CONF.ipam_driver:,1,1,0.125,325
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,self.ipam = ipam_pluggable_backend.IpamPluggableBackend(),1,1,0.125,326
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,self.ipam = ipam_non_pluggable_backend.IpamNonPluggableBackend(),1,1,0.125,327
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,# Copyright (c) 2015 OpenStack Foundation.,1,1,0.125,328
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,329
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_range['last_ip'] = new_last_ip,1,1,0.125,330
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import collections,1,1,0.125,331
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import itertools,1,1,0.125,332
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,import random,1,1,0.125,333
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,LOG = logging.getLogger(__name__),1,1,0.125,334
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,class IpamNonPluggableBackend(ipam_backend_mixin.IpamBackendMixin):,1,1,0.125,335
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Generate an IP address.",1,1,0.125,336
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,the network.,1,1,0.125,337
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_range = range_qry.filter_by(subnet_id=subnet['id']).first(),1,1,0.125,338
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,filtered_ips = filtered_ips or [],1,1,0.125,339
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,old_last_ip = ip_range['last_ip'],1,1,0.125,340
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,#,1,1,0.125,341
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,new_last_ip = str(netaddr.IPAddress(ip_address) - 1),1,1,0.125,342
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocations = netaddr.IPSet([netaddr.IPAddress(i['ip_address']),1,1,0.125,343
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address = ip_range['first_ip'],1,1,0.125,344
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,elif last == ip:,1,1,0.125,345
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if ip_range['first_ip'] == ip_range['last_ip']:,1,1,0.125,346
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""No more free IP's in slice. Deleting """,1,1,0.125,347
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,new_first_ip = str(netaddr.IPAddress(ip_address) + 1),1,1,0.125,348
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"result = self._generate_ip(context, subnets)",1,1,0.125,349
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_qry = context.session.query(,1,1,0.125,350
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pool_qry = context.session.query(,1,1,0.125,351
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_qry_results = ip_qry.filter_by(subnet_id=subnet['id']),1,1,0.125,352
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_range['first_ip'] = new_first_ip,1,1,0.125,353
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"poolset = netaddr.IPSet(netaddr.IPRange(pool['first_ip'],",1,1,0.125,354
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,results = range_qry.filter_by(subnet_id=subnet_id),1,1,0.125,355
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_range['first_ip'] = new_first_ip,1,1,0.125,356
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,new_first_ip = str(netaddr.IPAddress(ip_address) + 1),1,1,0.125,357
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,elif first == ip:,1,1,0.125,358
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if not ip_range:,1,1,0.125,359
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,available = poolset - allocations,1,1,0.125,360
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,available_range = models_v2.IPAvailabilityRange(,1,1,0.125,361
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,if first:,1,1,0.125,362
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,range_qry = context.session.query(,1,1,0.125,363
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _allocate_fixed_ips(self, context, fixed_ips, mac_address,",1,0,0.0,364
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return fixed_ip_set,1,0,0.0,365
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self._validate_max_ips_per_port(fixed_ip_set, device_owner)",1,0,0.0,366
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,fixed_ip_set.append({'subnet_id': subnet['id']}),1,0,0.0,367
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,not is_auto_addr_subnet):,1,0,0.0,368
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'ip_address': fixed['ip_address']}),1,0,0.0,369
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,raise n_exc.InvalidInput(error_message=msg),1,0,0.0,370
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"fixed_ip_set.append({'subnet_id': subnet['id'],",1,0,0.0,371
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'id': subnet['id']}),1,0,0.0,372
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"raise n_exc.IpAddressInUse(net_id=network_id,",1,0,0.0,373
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,constants.ROUTER_INTERFACE_OWNERS):,1,0,0.0,374
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address=fixed['ip_address']),1,0,0.0,375
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['id'], fixed['ip_address']):",1,0,0.0,376
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"{'address': fixed['ip_address'],",1,0,0.0,377
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,prefer_next),1,0,0.0,378
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,prefer_next=False):,1,0,0.0,379
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ips.append(fixed['ip_address']),1,0,0.0,380
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ips.append({'ip_address': fixed['ip_address'],",1,0,0.0,381
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'subnet_id': fixed['subnet_id']}),1,0,0.0,382
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet,",1,0,0.0,383
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,mac_address),1,0,0.0,384
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ips.append({'ip_address': ip_address.format(),",1,0,0.0,385
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'subnet_id': subnet['id']}),1,0,0.0,386
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ips.append(result['ip_address']),1,0,0.0,387
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ips.append({'ip_address': result['ip_address'],",1,0,0.0,388
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'subnet_id': result['subnet_id']}),1,0,0.0,389
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet['cidr'] != n_const.PROVISIONAL_IPV6_PD_PREFIX):,1,0,0.0,390
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _update_ips_for_port(self, context, network_id, host, original_ips,",1,0,0.0,391
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, network_id,",1,0,0.0,392
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,last_ip=last_ip),1,0,0.0,393
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,InvalidIpForSubnet,1,0,0.0,394
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,":raises: InvalidInput, IpAddressInUse, InvalidIpForNetwork,",1,0,0.0,395
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"new_ips, device_owner)",1,0,0.0,396
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet_id=subnet_id,",1,0,0.0,397
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address=ip_address).one(),1,0,0.0,398
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,except exc.NoResultFound:,1,0,0.0,399
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return True,1,0,0.0,400
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return False,1,0,0.0,401
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def save_allocation_pools(self, context, subnet, allocation_pools):",1,0,0.0,402
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"first_ip=first_ip,",1,0,0.0,403
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(ip_pool),1,0,0.0,404
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ipallocationpool=ip_pool,",1,0,0.0,405
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(ip_range),1,0,0.0,406
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def allocate_ips_for_port_and_store(self, context, port, port_id):",1,0,0.0,407
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self._store_ip_allocation(context, ip_address, network_id,",1,0,0.0,408
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet_id, port_id)",1,0,0.0,409
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def update_port_with_ips(self, context, host, db_port, new_port, new_mac):",1,0,0.0,410
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, network_id, host,",1,0,0.0,411
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"original[""fixed_ips""], new_port['fixed_ips'],",1,0,0.0,412
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"original['mac_address'], db_port['device_owner'])",1,0,0.0,413
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context.session.expire(db_port, ['fixed_ips'])",1,0,0.0,414
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,IpamNonPluggableBackend._store_ip_allocation(,1,0,0.0,415
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, ip['ip_address'], network_id,",1,0,0.0,416
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip['subnet_id'], db_port.id)",1,0,0.0,417
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self._update_db_port(context, db_port, new_port, network_id, new_mac)",1,0,0.0,418
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return changes,1,0,0.0,419
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _test_fixed_ips_for_port(self, context, network_id, fixed_ips,",1,0,0.0,420
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"device_owner, subnets):",1,0,0.0,421
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,configured.,1,0,0.0,422
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"new_ips, mac_address, device_owner):",1,0,0.0,423
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def allocate_subnet(self, context, network, subnet, subnetpool_id):",1,0,0.0,424
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, network_id=network_id, host=host)",1,0,0.0,425
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, subnet, port['mac_address'])",1,0,0.0,426
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip_address=ip_address,",1,0,0.0,427
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_id=subnet['id']),1,0,0.0,428
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(allocated),1,0,0.0,429
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,updated_ports.append(port['id']),1,0,0.0,430
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,except db_exc.DBReferenceError:,1,0,0.0,431
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""IPv6 auto-address. Ignoring."", port['id'])",1,0,0.0,432
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return updated_ports,1,0,0.0,433
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _calculate_ipv6_eui64_addr(self, context, subnet, mac_addr):",1,0,0.0,434
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"prefix, mac_addr).format()",1,0,0.0,435
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['id'], ip_address):",1,0,0.0,436
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_address=ip_address),1,0,0.0,437
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return ip_address,1,0,0.0,438
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,try:,1,0,0.0,439
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self._validate_ip_version_with_subnetpool(subnet, subnetpool)",1,0,0.0,440
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet['cidr']),1,0,0.0,441
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['allocation_pools'],",1,0,0.0,442
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['cidr'],",1,0,0.0,443
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet['gateway_ip']),1,0,0.0,444
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnetpool),1,0,0.0,445
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"network,",1,0,0.0,446
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,self._make_subnet_args(,1,0,0.0,447
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet_request,",1,0,0.0,448
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnetpool_id),",1,0,0.0,449
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['dns_nameservers'],",1,0,0.0,450
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet['host_routes'],",1,0,0.0,451
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_request),1,0,0.0,452
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return subnet, None",1,0,0.0,453
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"port_id=port['id'],",1,0,0.0,454
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,constants.ROUTER_INTERFACE_OWNERS_SNAT))),1,0,0.0,455
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"changes.add, device_owner,",1,0,0.0,456
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,~models_v2.Port.device_owner.in_(,1,0,0.0,457
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnets),1,0,0.0,458
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,to_add += self._update_ips_for_pd_subnet(,1,0,0.0,459
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, subnets, changes.add)",1,0,0.0,460
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""Port update. Hold %s"", ip)",1,0,0.0,461
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"IpamNonPluggableBackend._delete_ip_allocation(context,",1,0,0.0,462
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"network_id,",1,0,0.0,463
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip['subnet_id'],",1,0,0.0,464
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip['ip_address']),1,0,0.0,465
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"LOG.debug(""Port update. Adding %s"", to_add)",1,0,0.0,466
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return self.Changes(add=added,",1,0,0.0,467
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"original=changes.original,",1,0,0.0,468
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,remove=changes.remove),1,0,0.0,469
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _allocate_ips_for_port(self, context, port):",1,0,0.0,470
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"network_id=p['network_id'],",1,0,0.0,471
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"host=p.get(portbindings.HOST_ID),",1,0,0.0,472
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,service_type=p.get('device_owner')),1,0,0.0,473
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, subnets)",1,0,0.0,474
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"p[""network_id""],",1,0,0.0,475
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"p['fixed_ips'],",1,0,0.0,476
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"p['device_owner'],",1,0,0.0,477
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"configured_ips,",1,0,0.0,478
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"p['mac_address'],",1,0,0.0,479
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,prefer_next=prefer_next),1,0,0.0,480
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, subnets, prefer_next=prefer_next)",1,0,0.0,481
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, subnet, p['mac_address'])",1,0,0.0,482
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def add_auto_addrs_on_network_ports(self, context, subnet, ipam_subnet):",1,0,0.0,483
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"and_(models_v2.Port.network_id == network_id,",1,0,0.0,484
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"ip_qry.filter_by(network_id=network_id,",1,0,0.0,485
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""",1,0,0.0,486
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _check_unique_ip(context, network_id, subnet_id, ip_address):",1,0,0.0,487
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"p['device_owner'],",0,0,0.0,488
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"changes.add, device_owner)",1,0,0.0,489
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, p['network_id'])",1,0,0.0,490
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,p['device_owner']),1,0,0.0,491
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _generate_ip(context, subnets, filtered_ips=None):",0,0,0.0,492
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocationPool.subnet_id.in_(subnet_id_list)),0,0,0.0,493
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocation.subnet_id.in_(subnet_id_list)),0,0,0.0,494
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_allocs.add(netaddr.IPAddress(ipallocation.ip_address)),0,0,0.0,495
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet_ip_pools.add(netaddr.IPRange(ip_pool.first_ip,",0,0,0.0,496
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_pool.last_ip)),0,0,0.0,497
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,filter_set.add(netaddr.IPAddress(ip)),0,0,0.0,498
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return {'ip_address': str(allocated_ip),",0,0,0.0,499
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'subnet_id': subnet_id},0,0,0.0,500
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,raise n_exc.IpAddressGenerationFailure(,0,0,0.0,501
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,net_id=subnets[0]['network_id']),0,0,0.0,502
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ips.append(fixed['ip_address']),0,0,0.0,503
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,allocated_ips.append(result['ip_address']),0,0,0.0,504
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _generate_ip(context, subnets):",1,0,0.0,505
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,try:,1,0,0.0,506
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return IpamNonPluggableBackend._try_generate_ip(context, subnets)",1,0,0.0,507
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,except n_exc.IpAddressGenerationFailure:,1,0,0.0,508
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"IpamNonPluggableBackend._rebuild_availability_ranges(context,",1,0,0.0,509
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnets),1,0,0.0,510
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,@staticmethod,1,0,0.0,511
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _try_generate_ip(context, subnets):",1,0,0.0,512
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAvailabilityRange).join(,1,0,0.0,513
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocationPool).with_lockmode('update'),1,0,0.0,514
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""allocated"",",1,0,0.0,515
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,device_owner):,1,0,0.0,516
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, subnets)",0,0,0.0,517
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,net_id=subnets[0]['network_id']),1,0,0.0,518
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnets),0,0,0.0,519
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return [{'start': str(netaddr.IPAddress(pool.first)),",0,0,0.0,520
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'end': str(netaddr.IPAddress(pool.last))},0,0,0.0,521
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"pools.append({'start': str(netaddr.IPAddress(first_ip)),",1,0,0.0,522
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'end': str(netaddr.IPAddress(split_ip - 1))}),1,0,0.0,523
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"pools.append({'start': str(netaddr.IPAddress(split_ip + 1)),",1,0,0.0,524
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'end': str(netaddr.IPAddress(last_ip))}),1,0,0.0,525
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.delete(dns),0,0,0.0,526
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"address=server,",0,0,0.0,527
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"order=order,",0,0,0.0,528
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return new_dns_addr_list,0,0,0.0,529
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_id=subnet.id),0,0,0.0,530
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(dns),0,0,0.0,531
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.delete(dns),1,0,0.0,532
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"address=dns_addr,",1,0,0.0,533
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return new_dns,1,0,0.0,534
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_id=subnet.id),1,0,0.0,535
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(ns),1,0,0.0,536
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet['cidr'] != constants.PROVISIONAL_IPV6_PD_PREFIX):,0,0,0.0,537
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ipv6_utils.is_ipv6_pd_enabled(subnet) or,0,0,0.0,538
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def validate_allocation_pools(self, ip_pools, subnet_cidr):",0,0,0.0,539
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self.validate_allocation_pools(ip_range_pools, cidr)",0,0,0.0,540
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self._validate_allocation_pools(s['allocation_pools'],",1,0,0.0,541
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,s['cidr']),1,0,0.0,542
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _validate_allocation_pools(self, ip_pools, subnet_cidr):",1,0,0.0,543
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self._validate_allocation_pools(ip_range_pools, cidr)",1,0,0.0,544
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"device_owner, subnets):",0,0,0.0,545
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"changes.add, device_owner,",0,0,0.0,546
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"{'subnet_id': subnet['id'],",1,0,0.0,547
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'cidr': subnet['cidr']}),1,0,0.0,548
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""allocation pool."")",1,0,0.0,549
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.delete(ip_range),1,0,0.0,550
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"allocation_pool_id=ip_range['allocation_pool_id'],",1,0,0.0,551
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"first_ip=new_first_ip,",1,0,0.0,552
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,last_ip=old_last_ip),1,0,0.0,553
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(new_ip_range),1,0,0.0,554
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,IpamNonPluggableBackend._allocate_specific_ip(,1,0,0.0,555
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"context, fixed['subnet_id'], fixed['ip_address'])",1,0,0.0,556
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,def test_requested_fixed_ip_address_v6_slaac_router_iface(self):,0,0,0.0,557
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"@mock.patch.object(non_ipam.IpamNonPluggableBackend,",1,0,0.0,558
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'_allocate_specific_ip'),1,0,0.0,559
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,def test_requested_fixed_ip_address_v6_slaac_router_iface(,1,0,0.0,560
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"self, alloc_specific_ip):",1,0,0.0,561
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,self.assertFalse(alloc_specific_ip.called),1,0,0.0,562
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,else:,1,0,0.0,563
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,@staticmethod,1,0,0.0,564
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _generate_ip(context, subnets, filtered_ips=None, prefer_next=False):",1,0,0.0,565
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""",1,0,0.0,566
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocationPool.subnet_id.in_(subnet_id_list)),1,0,0.0,567
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocation.subnet_id.in_(subnet_id_list)),1,0,0.0,568
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet_ip_allocs.add(netaddr.IPAddress(ipallocation.ip_address)),1,0,0.0,569
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"subnet_ip_pools.add(netaddr.IPRange(ip_pool.first_ip,",1,0,0.0,570
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,ip_pool.last_ip)),1,0,0.0,571
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,filter_set.add(netaddr.IPAddress(ip)),1,0,0.0,572
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,continue,1,0,0.0,573
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,else:,1,0,0.0,574
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return {'ip_address': str(allocated_ip),",1,0,0.0,575
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'subnet_id': subnet_id},1,0,0.0,576
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,raise n_exc.IpAddressGenerationFailure(,1,0,0.0,577
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,else:,1,0,0.0,578
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,return,1,0,0.0,579
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.delete(ip_range),1,0,0.0,580
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,_update_subnet_allocation_pools before calling this function deletes,1,0,0.0,581
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,else:,1,0,0.0,582
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""to %(last_ip)s"",",1,0,0.0,583
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"{'ip_address': ip_address,",1,0,0.0,584
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"'first_ip': ip_range['first_ip'],",1,0,0.0,585
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'last_ip': ip_range['last_ip']}),1,0,0.0,586
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"return {'ip_address': ip_address,",1,0,0.0,587
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,'subnet_id': subnet['id']},1,0,0.0,588
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,raise n_exc.IpAddressGenerationFailure(net_id=subnets[0]['network_id']),1,0,0.0,589
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,@staticmethod,1,0,0.0,590
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _rebuild_availability_ranges(context, subnets):",1,0,0.0,591
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"""""""Rebuild availability ranges.",1,0,0.0,592
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,_update_subnet_allocation_pools. Calling,1,0,0.0,593
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocation).with_lockmode('update'),1,0,0.0,594
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocationPool).with_lockmode('update'),1,0,0.0,595
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAllocationPool).options(,1,0,0.0,596
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,orm.noload('available_ranges')).with_lockmode('update'),1,0,0.0,597
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,subnet),1,0,0.0,598
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,pool['last_ip'])),1,0,0.0,599
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,def ipset_to_ranges(ipset):,1,0,0.0,600
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"yield netaddr.IPRange(first, last)",1,0,0.0,601
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"allocation_pool_id=pool['id'],",1,0,0.0,602
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"first_ip=str(netaddr.IPAddress(ip_range.first)),",1,0,0.0,603
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,last_ip=str(netaddr.IPAddress(ip_range.last))),1,0,0.0,604
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,context.session.add(available_range),1,0,0.0,605
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,"def _allocate_specific_ip(context, subnet_id, ip_address):",1,0,0.0,606
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,models_v2.IPAvailabilityRange).join(,1,0,0.0,607
+546cab2d62a0daf88ef192dd2fb2e185b39a7fcb,else:,0,0,0.0,608

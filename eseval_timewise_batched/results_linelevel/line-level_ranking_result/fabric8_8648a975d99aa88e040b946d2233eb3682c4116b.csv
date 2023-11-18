@@ -1,0 +1,93 @@
+commit_id,line,line_level_label,count,line_score,row
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String VOLUME_HOST_PATH = ""hostPath"";",1,3,1.0,1
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String GENEATE = ""generate"";",0,3,1.0,2
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String EMPTY_DIR_MEDIUM = ""emptyDir"";",1,3,1.0,3
+8648a975d99aa88e040b946d2233eb3682c4116b,String type = m.group(VOLUME_ATTRIBUTE_TYPE);,1,3,1.0,4
+8648a975d99aa88e040b946d2233eb3682c4116b,String name = m.group(VOLUME_NAME);,1,3,1.0,5
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String VOLUME_ATTRIBUTE_TYPE = ""attributeType"";",1,3,1.0,6
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String VOLUME_NAME = ""name"";",1,3,1.0,7
+8648a975d99aa88e040b946d2233eb3682c4116b,String type = m.group(ATTRIBUTE_TYPE);,0,3,1.0,8
+8648a975d99aa88e040b946d2233eb3682c4116b,String name = m.group(NAME);,0,3,1.0,9
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String DESCRIPTION = ""description"";",0,3,1.0,10
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String FROM = ""from"";",0,3,1.0,11
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String VALUE = ""value"";",0,3,1.0,12
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String PARAMETER_PROPERTY = PARAMETER_NAME_PREFIX + "".%s"";",0,3,1.0,13
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String PARAMETER_NAME_PREFIX = PARAMETER_PREFIX + "".%s"";",0,3,1.0,14
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String PARAMETER_PREFIX = ""fabric8.parameter"";",0,3,1.0,15
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String TEMPLATE_NAME = ""fabric8.template"";",0,3,1.0,16
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String PARAM_REGEX = ""fabric8.parameter.(?<name>[^. ]*)(.)?(?<attributeType>[^ ]*)"";",0,3,1.0,17
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String ATTRIBUTE_TYPE = ""attributeType"";",0,3,1.0,18
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String NAME = ""name"";",0,3,1.0,19
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String VOLUME_GIT_REVISION_PROPERTY = ""fabric8.volume.%s.gitRevision"";",1,3,1.0,20
+8648a975d99aa88e040b946d2233eb3682c4116b,"private static final String VOLUME_GIT_REPO = ""gitRepo"";",1,3,1.0,21
+8648a975d99aa88e040b946d2233eb3682c4116b,String s = (String) key;,0,2,0.6666666666666666,22
+8648a975d99aa88e040b946d2233eb3682c4116b,"String generate = properties.getProperty(String.format(PARAMETER_PROPERTY, name, GENEATE));",0,2,0.6666666666666666,23
+8648a975d99aa88e040b946d2233eb3682c4116b,"String description = properties.getProperty(String.format(PARAMETER_PROPERTY, name, DESCRIPTION));",0,2,0.6666666666666666,24
+8648a975d99aa88e040b946d2233eb3682c4116b,"String from = properties.getProperty(String.format(PARAMETER_PROPERTY, name, FROM));",0,2,0.6666666666666666,25
+8648a975d99aa88e040b946d2233eb3682c4116b,"String value = properties.getProperty(String.format(PARAMETER_PROPERTY, name, VALUE));",0,2,0.6666666666666666,26
+8648a975d99aa88e040b946d2233eb3682c4116b,Matcher m = PARAM_PATTERN.matcher(s);,0,2,0.6666666666666666,27
+8648a975d99aa88e040b946d2233eb3682c4116b,String templateName = properties.containsKey(TEMPLATE_NAME) ?,0,2,0.6666666666666666,28
+8648a975d99aa88e040b946d2233eb3682c4116b,MavenProject project = getProject();,0,2,0.6666666666666666,29
+8648a975d99aa88e040b946d2233eb3682c4116b,String revision = project.getProperties().getProperty(revisionPropertyName);,1,2,0.6666666666666666,30
+8648a975d99aa88e040b946d2233eb3682c4116b,"String revisionPropertyName = String.format(VOLUME_GIT_REVISION_PROPERTY, name);",1,2,0.6666666666666666,31
+8648a975d99aa88e040b946d2233eb3682c4116b,String repository = String.valueOf(entry.getValue());,1,2,0.6666666666666666,32
+8648a975d99aa88e040b946d2233eb3682c4116b,String medium = String.valueOf(entry.getValue());,1,2,0.6666666666666666,33
+8648a975d99aa88e040b946d2233eb3682c4116b,private static final Pattern PARAM_PATTERN = Pattern.compile(PARAM_REGEX);,0,2,0.6666666666666666,34
+8648a975d99aa88e040b946d2233eb3682c4116b,String path = String.valueOf(entry.getValue());,1,2,0.6666666666666666,35
+8648a975d99aa88e040b946d2233eb3682c4116b,builder = builder.addToTemplates(template);,0,1,0.3333333333333333,36
+8648a975d99aa88e040b946d2233eb3682c4116b,"value = properties.getProperty(String.format(PARAMETER_NAME_PREFIX, name));",0,1,0.3333333333333333,37
+8648a975d99aa88e040b946d2233eb3682c4116b,Object key = entry.getKey();,0,1,0.3333333333333333,38
+8648a975d99aa88e040b946d2233eb3682c4116b,"for (Map.Entry<Object, Object> entry : project.getProperties().entrySet()) {",0,1,0.3333333333333333,39
+8648a975d99aa88e040b946d2233eb3682c4116b,List<io.fabric8.openshift.api.model.template.Parameter> parameters = new ArrayList<>();,0,1,0.3333333333333333,40
+8648a975d99aa88e040b946d2233eb3682c4116b,Properties properties = project.getProperties();,0,1,0.3333333333333333,41
+8648a975d99aa88e040b946d2233eb3682c4116b,Template template = getTemplate();,0,1,0.3333333333333333,42
+8648a975d99aa88e040b946d2233eb3682c4116b,"for (Map.Entry<Object, Object> entry : project.getProperties().entrySet()) {",1,1,0.3333333333333333,43
+8648a975d99aa88e040b946d2233eb3682c4116b,VolumeType volumeType = VolumeType.typeFor(type);,0,1,0.3333333333333333,44
+8648a975d99aa88e040b946d2233eb3682c4116b,"for (Map.Entry<Object, Object> entry : properties.entrySet()) {",0,1,0.3333333333333333,45
+8648a975d99aa88e040b946d2233eb3682c4116b,Properties properties = project.getProperties();,0,1,0.3333333333333333,46
+8648a975d99aa88e040b946d2233eb3682c4116b,//If neither value nor from has been specified read the value inline.,0,0,0.0,47
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.openshift.api.model.template.ParameterBuilder;,0,0,0.0,48
+8648a975d99aa88e040b946d2233eb3682c4116b,".withGitRepo(new GitRepoVolumeSource(repository, revision))",1,0,0.0,49
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.openshift.api.model.template.Template;,0,0,0.0,50
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.openshift.api.model.template.TemplateBuilder;,0,0,0.0,51
+8648a975d99aa88e040b946d2233eb3682c4116b,if (!template.getParameters().isEmpty()) {,0,0,0.0,52
+8648a975d99aa88e040b946d2233eb3682c4116b,},0,0,0.0,53
+8648a975d99aa88e040b946d2233eb3682c4116b,public Template getTemplate() {,0,0,0.0,54
+8648a975d99aa88e040b946d2233eb3682c4116b,if (key instanceof String) {,0,0,0.0,55
+8648a975d99aa88e040b946d2233eb3682c4116b,if (m.matches()) {,0,0,0.0,56
+8648a975d99aa88e040b946d2233eb3682c4116b,String.valueOf(properties.getProperty(TEMPLATE_NAME)) :,0,0,0.0,57
+8648a975d99aa88e040b946d2233eb3682c4116b,if (Strings.isNullOrBlank(value) && Strings.isNullOrBlank(from)) {,0,0,0.0,58
+8648a975d99aa88e040b946d2233eb3682c4116b,parameters.add(new ParameterBuilder(),0,0,0.0,59
+8648a975d99aa88e040b946d2233eb3682c4116b,.withName(name),0,0,0.0,60
+8648a975d99aa88e040b946d2233eb3682c4116b,.withFrom(from),0,0,0.0,61
+8648a975d99aa88e040b946d2233eb3682c4116b,.withValue(value),0,0,0.0,62
+8648a975d99aa88e040b946d2233eb3682c4116b,.withGenerate(generate),0,0,0.0,63
+8648a975d99aa88e040b946d2233eb3682c4116b,.withDescription(description),0,0,0.0,64
+8648a975d99aa88e040b946d2233eb3682c4116b,.build());,0,0,0.0,65
+8648a975d99aa88e040b946d2233eb3682c4116b,project.getArtifactId();,0,0,0.0,66
+8648a975d99aa88e040b946d2233eb3682c4116b,.withEmptyDir(new EmptyDirVolumeSource(medium)),1,0,0.0,67
+8648a975d99aa88e040b946d2233eb3682c4116b,} else if (type.equals(VOLUME_GIT_REPO)) {,1,0,0.0,68
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.maven.support.VolumeType;,0,0,0.0,69
+8648a975d99aa88e040b946d2233eb3682c4116b,} else if (type.equals(EMPTY_DIR_MEDIUM)) {,1,0,0.0,70
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.kubernetes.api.model.EmptyDirVolumeSource;,1,0,0.0,71
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.ArrayList;,0,0,0.0,72
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.HashMap;,0,0,0.0,73
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.List;,0,0,0.0,74
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.Map;,0,0,0.0,75
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.Properties;,0,0,0.0,76
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.Set;,0,0,0.0,77
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.TreeMap;,0,0,0.0,78
+8648a975d99aa88e040b946d2233eb3682c4116b,if (volumeType != null) {,0,0,0.0,79
+8648a975d99aa88e040b946d2233eb3682c4116b,"volumes.add(volumeType.fromProperties(name, properties));",0,0,0.0,80
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.kubernetes.api.model.GitRepoVolumeSource;,1,0,0.0,81
+8648a975d99aa88e040b946d2233eb3682c4116b,.build());,1,0,0.0,82
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.kubernetes.api.model.HostPathVolumeSource;,1,0,0.0,83
+8648a975d99aa88e040b946d2233eb3682c4116b,import io.fabric8.kubernetes.api.model.VolumeBuilder;,1,0,0.0,84
+8648a975d99aa88e040b946d2233eb3682c4116b,import java.util.*;,1,0,0.0,85
+8648a975d99aa88e040b946d2233eb3682c4116b,if (type.equals(VOLUME_HOST_PATH)) {,1,0,0.0,86
+8648a975d99aa88e040b946d2233eb3682c4116b,volumes.add(new VolumeBuilder(),1,0,0.0,87
+8648a975d99aa88e040b946d2233eb3682c4116b,.withName(name),1,0,0.0,88
+8648a975d99aa88e040b946d2233eb3682c4116b,.withNewSource(),1,0,0.0,89
+8648a975d99aa88e040b946d2233eb3682c4116b,.withHostDir(new HostPathVolumeSource(path)),1,0,0.0,90
+8648a975d99aa88e040b946d2233eb3682c4116b,.endSource(),1,0,0.0,91
+8648a975d99aa88e040b946d2233eb3682c4116b,return new TemplateBuilder().withName(templateName).withParameters(parameters).build();,0,0,0.0,92

@@ -1,0 +1,88 @@
+commit_id,line,line_level_label,count,line_score,row
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"type_, value, tb = sys.exc_info()",1,5,1.0,1
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,body = serializer.serialize(,1,2,0.4,2
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"six.reraise(type_, value, tb)",1,2,0.4,3
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,import sys,1,2,0.4,4
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"e = translate(e, language)",1,2,0.4,5
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,import six,1,2,0.4,6
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"{'action': action, 'exc': e})",1,1,0.2,7
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"translatable.message = localize(translatable, locale)",1,1,0.2,8
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"translatable.detail = localize(translatable.detail, locale)",1,1,0.2,9
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"translatable.msg = localize(translatable.msg, locale)",1,1,0.2,10
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,localize = oslo_i18n.translate,1,1,0.2,11
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"err_data = {'type': e.__class__.__name__,",1,1,0.2,12
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"msg = translate(msg, language)",1,1,0.2,13
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,value.content_type = content_type,1,1,0.2,14
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,value.body = serializer.serialize(,1,1,0.2,15
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"kwargs = {'body': body, 'content_type': content_type}",1,1,0.2,16
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"Neutron client for the v2 API expects exceptions to have 'type', 'message'",1,1,0.2,17
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,mapped_exc = webob.exc.HTTPInternalServerError,1,1,0.2,18
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,import netaddr,1,1,0.2,19
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,mapped_exc = faults[fault],1,1,0.2,20
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"from neutron._i18n import _LE, _LI",0,1,0.2,21
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,from neutron.api import api_common,0,1,0.2,22
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"mapped_exc = api_common.convert_exception_to_http_exc(e, faults,",0,1,0.2,23
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,msg = _('Request Failed: internal server error while ',1,1,0.2,24
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,from neutron_lib import exceptions,1,1,0.2,25
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,from oslo_policy import policy as oslo_policy,1,1,0.2,26
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"from neutron._i18n import _, _LE, _LI",1,1,0.2,27
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,import oslo_i18n,1,1,0.2,28
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"""""""Extract the information about an exception.",1,0,0.0,29
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"""""""",1,0,0.0,30
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,:returns: a structured dict with the exception data,1,0,0.0,31
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,:param e: the exception to be reraised,1,0,0.0,32
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,dictionary.,1,0,0.0,33
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,and 'detail' attributes.This information is extracted and converted into a,1,0,0.0,34
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,raise webob.exc.HTTPInternalServerError(**kwargs),1,0,0.0,35
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,def get_exception_data(e):,1,0,0.0,36
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,webob.exc.HTTPInternalServerError(msg))}),1,0,0.0,37
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,{'NeutronError': get_exception_data(,1,0,0.0,38
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,# Do not expose details of 500 error to clients.,1,0,0.0,39
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"'message': e, 'detail': ''}",1,0,0.0,40
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,'processing your request.'),1,0,0.0,41
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"return localize(translatable, locale)",1,0,0.0,42
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,return err_data,1,0,0.0,43
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"def translate(translatable, locale):",1,0,0.0,44
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"""""""Translates the object to the given locale.",1,0,0.0,45
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,If the object is an exception its translatable elements are translated,1,0,0.0,46
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"in place, if the object is a translatable string it is translated and",1,0,0.0,47
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"returned. Otherwise, the object is returned as-is.",1,0,0.0,48
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,:param translatable: the object to be translated,1,0,0.0,49
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,:param locale: the locale to translate to,1,0,0.0,50
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,":returns: the translated object, or the object as-is if it",1,0,0.0,51
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,was not translated,1,0,0.0,52
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"if isinstance(translatable, exceptions.NeutronException):",1,0,0.0,53
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"elif isinstance(translatable, webob.exc.HTTPError):",1,0,0.0,54
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"elif isinstance(translatable, Exception):",1,0,0.0,55
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,except Exception:,1,0,0.0,56
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,# NOTE(jkoelker) Everything else is 500,1,0,0.0,57
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,{'NeutronError': get_exception_data(e)}),1,0,0.0,58
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,raise webob.exc.HTTPNotImplemented(**kwargs),1,0,0.0,59
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,if 400 <= mapped_exc.code < 500:,1,0,0.0,60
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,except Exception as e:,0,0,0.0,61
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,language),0,0,0.0,62
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"if hasattr(mapped_exc, 'code') and 400 <= mapped_exc.code < 500:",0,0,0.0,63
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"{'action': action, 'exc': mapped_exc})",0,0,0.0,64
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,raise mapped_exc,0,0,0.0,65
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"except (exceptions.NeutronException,",1,0,0.0,66
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"netaddr.AddrFormatError,",1,0,0.0,67
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,oslo_policy.PolicyNotAuthorized) as e:,1,0,0.0,68
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,for fault in faults:,1,0,0.0,69
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"if isinstance(e, fault):",1,0,0.0,70
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,break,1,0,0.0,71
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,else:,1,0,0.0,72
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"LOG.info(_LI('%(action)s failed (client error): %(exc)s'),",1,0,0.0,73
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,{'NotImplementedError': get_exception_data(e)}),1,0,0.0,74
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"LOG.exception(_LE('%s failed'), action)",1,0,0.0,75
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,raise mapped_exc(**kwargs),1,0,0.0,76
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,except webob.exc.HTTPException as e:,1,0,0.0,77
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"if hasattr(e, 'code') and 400 <= e.code < 500:",1,0,0.0,78
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"translate(e, language)",1,0,0.0,79
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,except NotImplementedError as e:,1,0,0.0,80
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,# NOTE(armando-migliaccio): from a client standpoint,1,0,0.0,81
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"# it makes sense to receive these errors, because",1,0,0.0,82
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,# extensions may or may not be implemented by,1,0,0.0,83
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"# the underlying plugin. So if something goes south,",1,0,0.0,84
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,"# because a plugin does not implement a feature,",1,0,0.0,85
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,# returning 500 is definitely confusing.,1,0,0.0,86
+6b13ee0c3b446b7fc4f440dd58c9226bf4abfdf8,return translatable,1,0,0.0,87

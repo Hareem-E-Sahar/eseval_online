@@ -1,0 +1,315 @@
+commit_id,line,line_level_label,count,line_score,row
+a8f0906d7539780418289bfc609c8ea410aa3717,"String msg = ""The fabric8.service.name: "" + name + "" is being limited to max 24 chars as that is required by Kubernetes/Openshift.""",1,7,1.0,1
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Maven Fabric8 Profiles"", required = false, defaultValue = ""true"", description = ""Include Maven fabric8 profiles for easily building and deploying"")",1,4,0.5714285714285714,2
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Test classes"", required = false, defaultValue = ""true"", description = ""Include test dependencies"")",1,4,0.5714285714285714,3
+a8f0906d7539780418289bfc609c8ea410aa3717,final Project project = getSelectedProject(builder.getUIContext());,1,3,0.42857142857142855,4
+a8f0906d7539780418289bfc609c8ea410aa3717,"+ "" You can change the name of the service in the <properties> section of the Maven pom file."";",1,3,0.42857142857142855,5
+a8f0906d7539780418289bfc609c8ea410aa3717,"String msg = ""Added Fabric8 Maven support with base Docker image: "" + from.getValue();",1,3,0.42857142857142855,6
+a8f0906d7539780418289bfc609c8ea410aa3717,Project project = getSelectedProject(context.getUIContext());,1,3,0.42857142857142855,7
+a8f0906d7539780418289bfc609c8ea410aa3717,// favor Camel if there is a Camel dependency,1,3,0.42857142857142855,8
+a8f0906d7539780418289bfc609c8ea410aa3717,"// this is a step in a wizard, you cannot run this standalone",1,3,0.42857142857142855,9
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Main class"", required = false, description = ""Main class to use for Java standalone"")",1,3,0.42857142857142855,10
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Icon"", required = false, description = ""Icon to use for the app"")",1,3,0.42857142857142855,11
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Group label"", required = false, description = ""Group label to use for the app"")",1,3,0.42857142857142855,12
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Container label"", required = false, description = ""Container label to use for the app"")",1,3,0.42857142857142855,13
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Docker Image From"", required = true, description = ""The Docker image to use as base line"")",1,3,0.42857142857142855,14
+a8f0906d7539780418289bfc609c8ea410aa3717,"@WithAttributes(label = ""Docker Organization"", required = true, description = ""The Docker organization/company"")",1,3,0.42857142857142855,15
+a8f0906d7539780418289bfc609c8ea410aa3717,"updated = MavenHelpers.updatePomProperty(properties, ""fabric8.iconRef"", ""icons/"" + iconValue, updated);",1,2,0.2857142857142857,16
+a8f0906d7539780418289bfc609c8ea410aa3717,fromImage = fromImage.substring(idx + 1);,1,2,0.2857142857142857,17
+a8f0906d7539780418289bfc609c8ea410aa3717,* If this is a WAR or EAR then lets assume 8080.,1,2,0.2857142857142857,18
+a8f0906d7539780418289bfc609c8ea410aa3717,// there is a max 24 chars limit in OpenShift/Kubernetes,1,2,0.2857142857142857,19
+a8f0906d7539780418289bfc609c8ea410aa3717,// log and print to system out as the latter is what is seen in the CLI,1,2,0.2857142857142857,20
+a8f0906d7539780418289bfc609c8ea410aa3717,// if there is an existing then leave it as-is,1,2,0.2857142857142857,21
+a8f0906d7539780418289bfc609c8ea410aa3717,// limit the choices depending on the project packaging,1,2,0.2857142857142857,22
+a8f0906d7539780418289bfc609c8ea410aa3717,private static final transient Logger LOG = LoggerFactory.getLogger(Fabric8SetupStep.class);,1,2,0.2857142857142857,23
+a8f0906d7539780418289bfc609c8ea410aa3717,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,2,0.2857142857142857,24
+a8f0906d7539780418289bfc609c8ea410aa3717,// is it possible to pre select a choice?,1,2,0.2857142857142857,25
+a8f0906d7539780418289bfc609c8ea410aa3717,"updated = MavenHelpers.updatePomProperty(properties, ""fabric8.label.container"", container.getValue(), updated);",1,1,0.14285714285714285,26
+a8f0906d7539780418289bfc609c8ea410aa3717,"name = name.substring(0, 24);",1,1,0.14285714285714285,27
+a8f0906d7539780418289bfc609c8ea410aa3717,// print a warning,1,1,0.14285714285714285,28
+a8f0906d7539780418289bfc609c8ea410aa3717,if (name.length() > 24) {,1,1,0.14285714285714285,29
+a8f0906d7539780418289bfc609c8ea410aa3717,String name = pom.getArtifactId();,1,1,0.14285714285714285,30
+a8f0906d7539780418289bfc609c8ea410aa3717,if (servicePort != null) {,1,1,0.14285714285714285,31
+a8f0906d7539780418289bfc609c8ea410aa3717,String servicePort = getDefaultServicePort(project);,1,1,0.14285714285714285,32
+a8f0906d7539780418289bfc609c8ea410aa3717,if (Strings.isNotBlank(iconValue)) {,1,1,0.14285714285714285,33
+a8f0906d7539780418289bfc609c8ea410aa3717,String iconValue = icon.getValue();,1,1,0.14285714285714285,34
+a8f0906d7539780418289bfc609c8ea410aa3717,boolean updated = false;,1,1,0.14285714285714285,35
+a8f0906d7539780418289bfc609c8ea410aa3717,Properties properties = pom.getProperties();,1,1,0.14285714285714285,36
+a8f0906d7539780418289bfc609c8ea410aa3717,if (test.getValue() != null && test.getValue()) {,1,1,0.14285714285714285,37
+a8f0906d7539780418289bfc609c8ea410aa3717,MavenPluginFacet pluginFacet = project.getFacet(MavenPluginFacet.class);,1,1,0.14285714285714285,38
+a8f0906d7539780418289bfc609c8ea410aa3717,if (pluginBuilder != null) {,1,1,0.14285714285714285,39
+a8f0906d7539780418289bfc609c8ea410aa3717,pluginBuilder = MavenPluginBuilder.create(),1,1,0.14285714285714285,40
+a8f0906d7539780418289bfc609c8ea410aa3717,pluginBuilder = null;,1,1,0.14285714285714285,41
+a8f0906d7539780418289bfc609c8ea410aa3717,if (plugin != null) {,1,1,0.14285714285714285,42
+a8f0906d7539780418289bfc609c8ea410aa3717,"updated = MavenHelpers.updatePomProperty(properties, ""fabric8.service.port"", ""80"", updated);",1,1,0.14285714285714285,43
+a8f0906d7539780418289bfc609c8ea410aa3717,"updated = MavenHelpers.updatePomProperty(properties, ""fabric8.service.containerPort"", servicePort, updated);",1,1,0.14285714285714285,44
+a8f0906d7539780418289bfc609c8ea410aa3717,* Try to determine the default service port.,1,1,0.14285714285714285,45
+a8f0906d7539780418289bfc609c8ea410aa3717,"updated = MavenHelpers.updatePomProperty(properties, ""fabric8.service.name"", name, updated);",1,1,0.14285714285714285,46
+a8f0906d7539780418289bfc609c8ea410aa3717,"profile = MavenHelpers.findProfile(pom, ""f8-local-deploy"");",1,1,0.14285714285714285,47
+a8f0906d7539780418289bfc609c8ea410aa3717,"fromImage = fromImage.substring(0, idx);",1,1,0.14285714285714285,48
+a8f0906d7539780418289bfc609c8ea410aa3717,idx = fromImage.indexOf('-');,1,1,0.14285714285714285,49
+a8f0906d7539780418289bfc609c8ea410aa3717,if (idx > 0) {,1,1,0.14285714285714285,50
+a8f0906d7539780418289bfc609c8ea410aa3717,int idx = fromImage.indexOf('/');,1,1,0.14285714285714285,51
+a8f0906d7539780418289bfc609c8ea410aa3717,"if (Objects.equal(""war"", packaging) || Objects.equal(""ear"", packaging)) {",1,1,0.14285714285714285,52
+a8f0906d7539780418289bfc609c8ea410aa3717,if (Strings.isNotBlank(packaging)) {,1,1,0.14285714285714285,53
+a8f0906d7539780418289bfc609c8ea410aa3717,Dependency bom = DependencyBuilder.create(),1,1,0.14285714285714285,54
+a8f0906d7539780418289bfc609c8ea410aa3717,Properties prop = new Properties();,1,1,0.14285714285714285,55
+a8f0906d7539780418289bfc609c8ea410aa3717,if (updated) {,1,1,0.14285714285714285,56
+a8f0906d7539780418289bfc609c8ea410aa3717,"profile = MavenHelpers.findProfile(pom, ""f8-deploy"");",1,1,0.14285714285714285,57
+a8f0906d7539780418289bfc609c8ea410aa3717,updated = true;,1,1,0.14285714285714285,58
+a8f0906d7539780418289bfc609c8ea410aa3717,Build build = new Build();,1,1,0.14285714285714285,59
+a8f0906d7539780418289bfc609c8ea410aa3717,profile = new Profile();,1,1,0.14285714285714285,60
+a8f0906d7539780418289bfc609c8ea410aa3717,if (profile == null) {,1,1,0.14285714285714285,61
+a8f0906d7539780418289bfc609c8ea410aa3717,"Profile profile = MavenHelpers.findProfile(pom, ""f8-build"");",1,1,0.14285714285714285,62
+a8f0906d7539780418289bfc609c8ea410aa3717,if (profiles.getValue() == null || !profiles.getValue()) {,1,1,0.14285714285714285,63
+a8f0906d7539780418289bfc609c8ea410aa3717,"MavenPlugin plugin = MavenHelpers.findPlugin(project, ""io.fabric8"", ""fabric8-maven-plugin"");",1,1,0.14285714285714285,64
+a8f0906d7539780418289bfc609c8ea410aa3717,"updated = MavenHelpers.updatePomProperty(properties, ""fabric8.label.group"", group.getValue(), updated);",1,1,0.14285714285714285,65
+a8f0906d7539780418289bfc609c8ea410aa3717,"if (!MavenHelpers.hasManagedDependency(pom, ""io.fabric8"", ""fabric8-project"")) {",1,1,0.14285714285714285,66
+a8f0906d7539780418289bfc609c8ea410aa3717,"if (packaging == null || (!packaging.equals(""war"") && !packaging.equals(""ear""))) {",1,1,0.14285714285714285,67
+a8f0906d7539780418289bfc609c8ea410aa3717,if (defaultChoice != null) {,1,1,0.14285714285714285,68
+a8f0906d7539780418289bfc609c8ea410aa3717,String defaultChoice = choices.get(0);,1,1,0.14285714285714285,69
+a8f0906d7539780418289bfc609c8ea410aa3717,if (choices.size() > 0) {,1,1,0.14285714285714285,70
+a8f0906d7539780418289bfc609c8ea410aa3717,"if (!springBoot && (packaging == null || ""war"".equals(packaging))) {",1,1,0.14285714285714285,71
+a8f0906d7539780418289bfc609c8ea410aa3717,"if (packaging == null || ""bundle"".equals(packaging)) {",1,1,0.14285714285714285,72
+a8f0906d7539780418289bfc609c8ea410aa3717,if (currentImage != null) {,1,1,0.14285714285714285,73
+a8f0906d7539780418289bfc609c8ea410aa3717,String currentImage = getDockerFromImage(project);,1,1,0.14285714285714285,74
+a8f0906d7539780418289bfc609c8ea410aa3717,"if (packaging == null || springBoot || ""jar"".equals(packaging)) {",1,1,0.14285714285714285,75
+a8f0906d7539780418289bfc609c8ea410aa3717,final List<String> choices = new ArrayList<String>();,1,1,0.14285714285714285,76
+a8f0906d7539780418289bfc609c8ea410aa3717,String packaging = getProjectPackaging(project);,1,1,0.14285714285714285,77
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Got the current project"");",1,1,0.14285714285714285,78
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Getting the current project"");",1,1,0.14285714285714285,79
+a8f0906d7539780418289bfc609c8ea410aa3717,".description(""Configure the Fabric8 and Docker options for the project"");",1,1,0.14285714285714285,80
+a8f0906d7539780418289bfc609c8ea410aa3717,"private String[] warImages = new String[]{DockerSetupHelper.DEFAULT_TOMCAT_IMAGE, DockerSetupHelper.DEFAULT_WILDFLY_IMAGE};",1,1,0.14285714285714285,81
+a8f0906d7539780418289bfc609c8ea410aa3717,private String[] bundleImages = new String[]{DockerSetupHelper.DEFAULT_KARAF_IMAGE};,1,1,0.14285714285714285,82
+a8f0906d7539780418289bfc609c8ea410aa3717,"private String[] jarImages = new String[]{DockerSetupHelper.DEFAULT_JAVA_IMAGE, DockerSetupHelper.S2I_JAVA_IMAGE};",1,1,0.14285714285714285,83
+a8f0906d7539780418289bfc609c8ea410aa3717,"msg += "". Added the following Maven profiles [f8-build, f8-deploy, f8-local-deploy] to make building the project easier, e.g. mvn -Pf8-local-deploy"";",1,1,0.14285714285714285,84
+a8f0906d7539780418289bfc609c8ea410aa3717,// use a listener so the docker step knows what we selected as it want to reuse,1,1,0.14285714285714285,85
+a8f0906d7539780418289bfc609c8ea410aa3717,boolean springBoot = hasSpringBootMavenPlugin(project);,1,1,0.14285714285714285,86
+a8f0906d7539780418289bfc609c8ea410aa3717,boolean jarImage = DockerSetupHelper.isJarImage(from.getValue());,1,1,0.14285714285714285,87
+a8f0906d7539780418289bfc609c8ea410aa3717,if (choice.equals(container.getValue())) {,1,1,0.14285714285714285,88
+a8f0906d7539780418289bfc609c8ea410aa3717,if (f8profiles) {,1,1,0.14285714285714285,89
+a8f0906d7539780418289bfc609c8ea410aa3717,// only enable main if its required,1,1,0.14285714285714285,90
+a8f0906d7539780418289bfc609c8ea410aa3717,"boolean f8profiles = setupFabricMavenProfiles(project, maven, pom);",1,1,0.14285714285714285,91
+a8f0906d7539780418289bfc609c8ea410aa3717,Model pom = maven.getModel();,1,1,0.14285714285714285,92
+a8f0906d7539780418289bfc609c8ea410aa3717,MavenFacet maven = project.getFacet(MavenFacet.class);,1,1,0.14285714285714285,93
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""starting to setup fabric8 project"");",1,1,0.14285714285714285,94
+a8f0906d7539780418289bfc609c8ea410aa3717,// use the project name as default value,1,1,0.14285714285714285,95
+a8f0906d7539780418289bfc609c8ea410aa3717,if (project == null) {,1,1,0.14285714285714285,96
+a8f0906d7539780418289bfc609c8ea410aa3717,if (!findCamelArtifacts(project).isEmpty()) {,1,1,0.14285714285714285,97
+a8f0906d7539780418289bfc609c8ea410aa3717,*  with the License.  You may obtain a copy of the License at,1,1,0.14285714285714285,98
+a8f0906d7539780418289bfc609c8ea410aa3717,Set<String> choices = new LinkedHashSet<String>();,1,1,0.14285714285714285,99
+a8f0906d7539780418289bfc609c8ea410aa3717,if (from != null) {,1,1,0.14285714285714285,100
+a8f0906d7539780418289bfc609c8ea410aa3717,"String from = (String) builder.getUIContext().getAttributeMap().get(""docker.from"");",1,1,0.14285714285714285,101
+a8f0906d7539780418289bfc609c8ea410aa3717,if (container.getValue() != null) {,1,1,0.14285714285714285,102
+a8f0906d7539780418289bfc609c8ea410aa3717,if (project != null) {,1,1,0.14285714285714285,103
+a8f0906d7539780418289bfc609c8ea410aa3717,// TODO we could disable if we knew this was an executable jar,1,1,0.14285714285714285,104
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""weld"");",1,0,0.0,105
+a8f0906d7539780418289bfc609c8ea410aa3717,for (String choice : icon.getValueChoices()) {,1,0,0.0,106
+a8f0906d7539780418289bfc609c8ea410aa3717,"return ""java"";",1,0,0.0,107
+a8f0906d7539780418289bfc609c8ea410aa3717,// use java by default,1,0,0.0,108
+a8f0906d7539780418289bfc609c8ea410aa3717,return choice;,1,0,0.0,109
+a8f0906d7539780418289bfc609c8ea410aa3717,return choices.iterator();,1,0,0.0,110
+a8f0906d7539780418289bfc609c8ea410aa3717,"return ""camel"";",1,0,0.0,111
+a8f0906d7539780418289bfc609c8ea410aa3717,icon.setDefaultValue(new Callable<String>() {,1,0,0.0,112
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""wildfly"");",1,0,0.0,113
+a8f0906d7539780418289bfc609c8ea410aa3717,builder.add(profiles).add(test).add(icon).add(group).add(container);,1,0,0.0,114
+a8f0906d7539780418289bfc609c8ea410aa3717,group.setDefaultValue(new Callable<String>() {,1,0,0.0,115
+a8f0906d7539780418289bfc609c8ea410aa3717,// import fabric8 bom,1,0,0.0,116
+a8f0906d7539780418289bfc609c8ea410aa3717,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,117
+a8f0906d7539780418289bfc609c8ea410aa3717,"return Results.fail(""No pom.xml available so cannot edit the project!"");",1,0,0.0,118
+a8f0906d7539780418289bfc609c8ea410aa3717,// setup docker-maven-plugin and fabric8-maven-plugin,1,0,0.0,119
+a8f0906d7539780418289bfc609c8ea410aa3717,"setupDocker(project, organization.getValue(), from.getValue(), main.getValue());",1,0,0.0,120
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""docker-maven-plugin now setup"");",1,0,0.0,121
+a8f0906d7539780418289bfc609c8ea410aa3717,setupFabricMavenPlugin(project);,1,0,0.0,122
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""fabric8-maven-plugin now setup"");",1,0,0.0,123
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""importing fabric8 bom"");",1,0,0.0,124
+a8f0906d7539780418289bfc609c8ea410aa3717,"importFabricBom(project, pom);",1,0,0.0,125
+a8f0906d7539780418289bfc609c8ea410aa3717,// make sure we have resources as we need it later,1,0,0.0,126
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""tomcat"");",1,0,0.0,127
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""tomee"");",1,0,0.0,128
+a8f0906d7539780418289bfc609c8ea410aa3717,return jarImage;,1,0,0.0,129
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""mule"");",1,0,0.0,130
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""karaf"");",1,0,0.0,131
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""setting up arquillian test"");",1,0,0.0,132
+a8f0906d7539780418289bfc609c8ea410aa3717,"builder.getUIContext().getAttributeMap().put(""docker.from"", event.getNewValue());",1,0,0.0,133
+a8f0906d7539780418289bfc609c8ea410aa3717,builder.add(from);,1,0,0.0,134
+a8f0906d7539780418289bfc609c8ea410aa3717,// TODO until we can detect reliably executable JARS versus mains lets not make this mandatory,1,0,0.0,135
+a8f0906d7539780418289bfc609c8ea410aa3717,/*,1,0,0.0,136
+a8f0906d7539780418289bfc609c8ea410aa3717,main.setRequired(new Callable<Boolean>() {,1,0,0.0,137
+a8f0906d7539780418289bfc609c8ea410aa3717,public Boolean call() throws Exception {,1,0,0.0,138
+a8f0906d7539780418289bfc609c8ea410aa3717,main.setEnabled(jarImage);,1,0,0.0,139
+a8f0906d7539780418289bfc609c8ea410aa3717,main.setDefaultValue(DockerSetupHelper.defaultMainClass(project));,1,0,0.0,140
+a8f0906d7539780418289bfc609c8ea410aa3717,main.addValidator(new ClassNameOrMavenPropertyValidator(true));,1,0,0.0,141
+a8f0906d7539780418289bfc609c8ea410aa3717,main.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,142
+a8f0906d7539780418289bfc609c8ea410aa3717,"builder.getUIContext().getAttributeMap().put(""docker.main"", event.getNewValue());",1,0,0.0,143
+a8f0906d7539780418289bfc609c8ea410aa3717,builder.add(main);,1,0,0.0,144
+a8f0906d7539780418289bfc609c8ea410aa3717,container.setDefaultValue(new Callable<String>() {,1,0,0.0,145
+a8f0906d7539780418289bfc609c8ea410aa3717,public String call() throws Exception {,1,0,0.0,146
+a8f0906d7539780418289bfc609c8ea410aa3717,return asContainer(from);,1,0,0.0,147
+a8f0906d7539780418289bfc609c8ea410aa3717,// the from image values,1,0,0.0,148
+a8f0906d7539780418289bfc609c8ea410aa3717,icon.setValueChoices(new Iterable<String>() {,1,0,0.0,149
+a8f0906d7539780418289bfc609c8ea410aa3717,public Iterator<String> iterator() {,1,0,0.0,150
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""activemq"");",1,0,0.0,151
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""camel"");",1,0,0.0,152
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""java"");",1,0,0.0,153
+a8f0906d7539780418289bfc609c8ea410aa3717,"choices.add(""jetty"");",1,0,0.0,154
+a8f0906d7539780418289bfc609c8ea410aa3717,"facetFactory.install(project, ResourcesFacet.class);",1,0,0.0,155
+a8f0906d7539780418289bfc609c8ea410aa3717,private static String getProjectPackaging(Project project) {,1,0,0.0,156
+a8f0906d7539780418289bfc609c8ea410aa3717,"setupArguillianTest(project, pom);",1,0,0.0,157
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""setting up fabric8 properties"");",1,0,0.0,158
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""updated pom.xml"");",1,0,0.0,159
+a8f0906d7539780418289bfc609c8ea410aa3717,"private boolean setupFabricMavenProfiles(Project project, MavenFacet maven, Model pom) {",1,0,0.0,160
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Adding f8-build profile"");",1,0,0.0,161
+a8f0906d7539780418289bfc609c8ea410aa3717,"profile.setId(""f8-build"");",1,0,0.0,162
+a8f0906d7539780418289bfc609c8ea410aa3717,"build.setDefaultGoal(""clean install docker:build fabric8:json"");",1,0,0.0,163
+a8f0906d7539780418289bfc609c8ea410aa3717,profile.setBuild(build);,1,0,0.0,164
+a8f0906d7539780418289bfc609c8ea410aa3717,pom.addProfile(profile);,1,0,0.0,165
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Adding f8-deploy profile"");",1,0,0.0,166
+a8f0906d7539780418289bfc609c8ea410aa3717,"profile.setId(""f8-deploy"");",1,0,0.0,167
+a8f0906d7539780418289bfc609c8ea410aa3717,"prop.setProperty(""fabric8.imagePullPolicySnapshot"", ""Always"");",1,0,0.0,168
+a8f0906d7539780418289bfc609c8ea410aa3717,"prop.setProperty(""fabric8.recreate"", ""true"");",1,0,0.0,169
+a8f0906d7539780418289bfc609c8ea410aa3717,profile.setProperties(prop);,1,0,0.0,170
+a8f0906d7539780418289bfc609c8ea410aa3717,"build.setDefaultGoal(""clean install docker:build docker:push fabric8:json fabric8:apply"");",1,0,0.0,171
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Adding f8-local-deploy profile"");",1,0,0.0,172
+a8f0906d7539780418289bfc609c8ea410aa3717,"profile.setId(""f8-local-deploy"");",1,0,0.0,173
+a8f0906d7539780418289bfc609c8ea410aa3717,"build.setDefaultGoal(""clean install docker:build fabric8:json fabric8:apply"");",1,0,0.0,174
+a8f0906d7539780418289bfc609c8ea410aa3717,return true;,1,0,0.0,175
+a8f0906d7539780418289bfc609c8ea410aa3717,* For karaf we can't know its definitely got http inside; so lets punt for now.,1,0,0.0,176
+a8f0906d7539780418289bfc609c8ea410aa3717,protected String getDefaultServicePort(Project project) {,1,0,0.0,177
+a8f0906d7539780418289bfc609c8ea410aa3717,"return ""8080"";",1,0,0.0,178
+a8f0906d7539780418289bfc609c8ea410aa3717,private static String asContainer(String fromImage) {,1,0,0.0,179
+a8f0906d7539780418289bfc609c8ea410aa3717,return fromImage;,1,0,0.0,180
+a8f0906d7539780418289bfc609c8ea410aa3717,from.addValueChangeListener(new ValueChangeListener() {,1,0,0.0,181
+a8f0906d7539780418289bfc609c8ea410aa3717,maven.setModel(pom);,1,0,0.0,182
+a8f0906d7539780418289bfc609c8ea410aa3717,// to save then set the model,1,0,0.0,183
+a8f0906d7539780418289bfc609c8ea410aa3717,// clip the name at max 24 chars,1,0,0.0,184
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Adding fabric8-maven-plugin"");",1,0,0.0,185
+a8f0906d7539780418289bfc609c8ea410aa3717,"setupFabricProperties(project, maven, pom);",1,0,0.0,186
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""setting up fabric8 maven profiles"");",1,0,0.0,187
+a8f0906d7539780418289bfc609c8ea410aa3717,return Results.success(msg);,1,0,0.0,188
+a8f0906d7539780418289bfc609c8ea410aa3717,"private void importFabricBom(Project project, Model pom) {",1,0,0.0,189
+a8f0906d7539780418289bfc609c8ea410aa3717,".setCoordinate(MavenHelpers.createCoordinate(""io.fabric8"", ""fabric8-project"", VersionHelper.fabric8Version(), ""pom""))",1,0,0.0,190
+a8f0906d7539780418289bfc609c8ea410aa3717,".setScopeType(""import"");",1,0,0.0,191
+a8f0906d7539780418289bfc609c8ea410aa3717,"dependencyInstaller.installManaged(project, bom);",1,0,0.0,192
+a8f0906d7539780418289bfc609c8ea410aa3717,private void setupFabricMavenPlugin(Project project) {,1,0,0.0,193
+a8f0906d7539780418289bfc609c8ea410aa3717,MavenPluginBuilder pluginBuilder;,1,0,0.0,194
+a8f0906d7539780418289bfc609c8ea410aa3717,"LOG.info(""Found existing fabric8-maven-plugin"");",1,0,0.0,195
+a8f0906d7539780418289bfc609c8ea410aa3717,// add fabric8 plugin,1,0,0.0,196
+a8f0906d7539780418289bfc609c8ea410aa3717,System.out.println(msg);,1,0,0.0,197
+a8f0906d7539780418289bfc609c8ea410aa3717,".setCoordinate(MavenHelpers.createCoordinate(""io.fabric8"", ""fabric8-maven-plugin"", VersionHelper.fabric8Version()))",1,0,0.0,198
+a8f0906d7539780418289bfc609c8ea410aa3717,".addExecution(ExecutionBuilder.create().setId(""json"").setPhase(""generate-resources"").addGoal(""json""))",1,0,0.0,199
+a8f0906d7539780418289bfc609c8ea410aa3717,".addExecution(ExecutionBuilder.create().setId(""attach"").setPhase(""package"").addGoal(""attach""));",1,0,0.0,200
+a8f0906d7539780418289bfc609c8ea410aa3717,pluginFacet.addPlugin(pluginBuilder);,1,0,0.0,201
+a8f0906d7539780418289bfc609c8ea410aa3717,"private void setupArguillianTest(Project project, Model pom) {",1,0,0.0,202
+a8f0906d7539780418289bfc609c8ea410aa3717,"ensureMavenDependencyAdded(project, dependencyInstaller, ""io.fabric8"", ""fabric8-arquillian"", ""test"");",1,0,0.0,203
+a8f0906d7539780418289bfc609c8ea410aa3717,"ensureMavenDependencyAdded(project, dependencyInstaller, ""org.jboss.arquillian.junit"", ""arquillian-junit-container"", ""test"");",1,0,0.0,204
+a8f0906d7539780418289bfc609c8ea410aa3717,"private void setupFabricProperties(Project project, MavenFacet maven, Model pom) {",1,0,0.0,205
+a8f0906d7539780418289bfc609c8ea410aa3717,// update properties section in pom.xml,1,0,0.0,206
+a8f0906d7539780418289bfc609c8ea410aa3717,LOG.warn(msg);,1,0,0.0,207
+a8f0906d7539780418289bfc609c8ea410aa3717,public void valueChanged(ValueChangeEvent event) {,1,0,0.0,208
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,209
+a8f0906d7539780418289bfc609c8ea410aa3717,from.setDefaultValue(defaultChoice);,1,0,0.0,210
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,211
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.apache.maven.model.Build;,1,0,0.0,212
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.apache.maven.model.Model;,1,0,0.0,213
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.apache.maven.model.Profile;,1,0,0.0,214
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,215
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,216
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.facets.FacetFactory;,1,0,0.0,217
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,0,0.0,218
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.maven.plugins.ExecutionBuilder;,1,0,0.0,219
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.maven.plugins.MavenPlugin;,1,0,0.0,220
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.maven.plugins.MavenPluginBuilder;,1,0,0.0,221
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.maven.projects.MavenFacet;,1,0,0.0,222
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.maven.projects.MavenPluginFacet;,1,0,0.0,223
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.projects.Project;,1,0,0.0,224
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,225
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,0,0.0,226
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.resource.ResourceFactory;,1,0,0.0,227
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.templates.TemplateFactory;,1,0,0.0,228
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,229
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,230
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,231
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.context.UINavigationContext;,1,0,0.0,232
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.input.InputComponent;,1,0,0.0,233
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.input.UICompleter;,1,0,0.0,234
+a8f0906d7539780418289bfc609c8ea410aa3717,import io.fabric8.utils.Strings;,1,0,0.0,235
+a8f0906d7539780418289bfc609c8ea410aa3717,import io.fabric8.utils.Objects;,1,0,0.0,236
+a8f0906d7539780418289bfc609c8ea410aa3717,import io.fabric8.forge.addon.utils.validator.ClassNameOrMavenPropertyValidator;,1,0,0.0,237
+a8f0906d7539780418289bfc609c8ea410aa3717,*/,1,0,0.0,238
+a8f0906d7539780418289bfc609c8ea410aa3717,/**,1,0,0.0,239
+a8f0906d7539780418289bfc609c8ea410aa3717,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,240
+a8f0906d7539780418289bfc609c8ea410aa3717,*,1,0,0.0,241
+a8f0906d7539780418289bfc609c8ea410aa3717,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,242
+a8f0906d7539780418289bfc609c8ea410aa3717,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,243
+a8f0906d7539780418289bfc609c8ea410aa3717,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,244
+a8f0906d7539780418289bfc609c8ea410aa3717,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,245
+a8f0906d7539780418289bfc609c8ea410aa3717,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,246
+a8f0906d7539780418289bfc609c8ea410aa3717,*  implied.  See the License for the specific language governing,1,0,0.0,247
+a8f0906d7539780418289bfc609c8ea410aa3717,*  permissions and limitations under the License.,1,0,0.0,248
+a8f0906d7539780418289bfc609c8ea410aa3717,package io.fabric8.forge.devops.setup;,1,0,0.0,249
+a8f0906d7539780418289bfc609c8ea410aa3717,import io.fabric8.forge.addon.utils.VersionHelper;,1,0,0.0,250
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.ArrayList;,1,0,0.0,251
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.Arrays;,1,0,0.0,252
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.Iterator;,1,0,0.0,253
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.LinkedHashSet;,1,0,0.0,254
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.List;,1,0,0.0,255
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.Properties;,1,0,0.0,256
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.Set;,1,0,0.0,257
+a8f0906d7539780418289bfc609c8ea410aa3717,import java.util.concurrent.Callable;,1,0,0.0,258
+a8f0906d7539780418289bfc609c8ea410aa3717,import javax.inject.Inject;,1,0,0.0,259
+a8f0906d7539780418289bfc609c8ea410aa3717,import io.fabric8.forge.addon.utils.MavenHelpers;,1,0,0.0,260
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,261
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,0,0.0,262
+a8f0906d7539780418289bfc609c8ea410aa3717,});,1,0,0.0,263
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,0,0.0,264
+a8f0906d7539780418289bfc609c8ea410aa3717,private TemplateFactory factory;,1,0,0.0,265
+a8f0906d7539780418289bfc609c8ea410aa3717,ResourceFactory resourceFactory;,1,0,0.0,266
+a8f0906d7539780418289bfc609c8ea410aa3717,FacetFactory facetFactory;,1,0,0.0,267
+a8f0906d7539780418289bfc609c8ea410aa3717,@Override,1,0,0.0,268
+a8f0906d7539780418289bfc609c8ea410aa3717,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,269
+a8f0906d7539780418289bfc609c8ea410aa3717,return Metadata.forCommand(Fabric8SetupStep.class).name(,1,0,0.0,270
+a8f0906d7539780418289bfc609c8ea410aa3717,"""Fabric8: Setup"").category(Categories.create(CATEGORY))",1,0,0.0,271
+a8f0906d7539780418289bfc609c8ea410aa3717,},1,0,0.0,272
+a8f0906d7539780418289bfc609c8ea410aa3717,public boolean isEnabled(UIContext context) {,1,0,0.0,273
+a8f0906d7539780418289bfc609c8ea410aa3717,return false;,1,0,0.0,274
+a8f0906d7539780418289bfc609c8ea410aa3717,public NavigationResult next(UINavigationContext context) throws Exception {,1,0,0.0,275
+a8f0906d7539780418289bfc609c8ea410aa3717,return null;,1,0,0.0,276
+a8f0906d7539780418289bfc609c8ea410aa3717,public void initializeUI(final UIBuilder builder) throws Exception {,1,0,0.0,277
+a8f0906d7539780418289bfc609c8ea410aa3717,"organization.setDefaultValue(""fabric8"");",1,0,0.0,278
+a8f0906d7539780418289bfc609c8ea410aa3717,builder.add(organization);,1,0,0.0,279
+a8f0906d7539780418289bfc609c8ea410aa3717,choices.add(currentImage);,1,0,0.0,280
+a8f0906d7539780418289bfc609c8ea410aa3717,} else {,1,0,0.0,281
+a8f0906d7539780418289bfc609c8ea410aa3717,choices.addAll(Arrays.asList(jarImages));,1,0,0.0,282
+a8f0906d7539780418289bfc609c8ea410aa3717,choices.add(bundleImages[0]);,1,0,0.0,283
+a8f0906d7539780418289bfc609c8ea410aa3717,choices.addAll(Arrays.asList(warImages));,1,0,0.0,284
+a8f0906d7539780418289bfc609c8ea410aa3717,from.setCompleter(new UICompleter<String>() {,1,0,0.0,285
+a8f0906d7539780418289bfc609c8ea410aa3717,"public Iterable<String> getCompletionProposals(UIContext context, InputComponent<?, String> input, String value) {",1,0,0.0,286
+a8f0906d7539780418289bfc609c8ea410aa3717,return choices;,1,0,0.0,287
+a8f0906d7539780418289bfc609c8ea410aa3717,private DependencyInstaller dependencyInstaller;,1,0,0.0,288
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<Boolean> profiles;,1,0,0.0,289
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<Boolean> test;,1,0,0.0,290
+a8f0906d7539780418289bfc609c8ea410aa3717,import static io.fabric8.forge.devops.setup.DockerSetupHelper.getDockerFromImage;,1,0,0.0,291
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,292
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.result.NavigationResult;,1,0,0.0,293
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,294
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,295
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,296
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,297
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.jboss.forge.addon.ui.wizard.UIWizardStep;,1,0,0.0,298
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.slf4j.Logger;,1,0,0.0,299
+a8f0906d7539780418289bfc609c8ea410aa3717,import org.slf4j.LoggerFactory;,1,0,0.0,300
+a8f0906d7539780418289bfc609c8ea410aa3717,import static io.fabric8.forge.addon.utils.MavenHelpers.ensureMavenDependencyAdded;,1,0,0.0,301
+a8f0906d7539780418289bfc609c8ea410aa3717,import static io.fabric8.forge.devops.setup.DockerSetupHelper.hasSpringBootMavenPlugin;,1,0,0.0,302
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<String> main;,1,0,0.0,303
+a8f0906d7539780418289bfc609c8ea410aa3717,import static io.fabric8.forge.devops.setup.DockerSetupHelper.setupDocker;,1,0,0.0,304
+a8f0906d7539780418289bfc609c8ea410aa3717,import static io.fabric8.forge.devops.setup.SetupProjectHelper.findCamelArtifacts;,1,0,0.0,305
+a8f0906d7539780418289bfc609c8ea410aa3717,"@FacetConstraint({MavenFacet.class, MavenPluginFacet.class, ResourcesFacet.class})",1,0,0.0,306
+a8f0906d7539780418289bfc609c8ea410aa3717,public class Fabric8SetupStep extends AbstractFabricProjectCommand implements UIWizardStep {,1,0,0.0,307
+a8f0906d7539780418289bfc609c8ea410aa3717,@Inject,1,0,0.0,308
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<String> organization;,1,0,0.0,309
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<String> from;,1,0,0.0,310
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<String> container;,1,0,0.0,311
+a8f0906d7539780418289bfc609c8ea410aa3717,private UIInput<String> group;,1,0,0.0,312
+a8f0906d7539780418289bfc609c8ea410aa3717,private UISelectOne<String> icon;,1,0,0.0,313
+a8f0906d7539780418289bfc609c8ea410aa3717,return maven.getModel().getPackaging();,1,0,0.0,314

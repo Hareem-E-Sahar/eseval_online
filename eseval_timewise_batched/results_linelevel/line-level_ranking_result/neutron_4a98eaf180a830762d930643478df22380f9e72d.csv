@@ -1,0 +1,25 @@
+commit_id,line,line_level_label,count,line_score,row
+4a98eaf180a830762d930643478df22380f9e72d,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,1.0,1
+4a98eaf180a830762d930643478df22380f9e72d,#    not use this file except in compliance with the License. You may obtain,1,4,0.6666666666666666,2
+4a98eaf180a830762d930643478df22380f9e72d,#    under the License.,1,4,0.6666666666666666,3
+4a98eaf180a830762d930643478df22380f9e72d,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.6666666666666666,4
+4a98eaf180a830762d930643478df22380f9e72d,#    a copy of the License at,1,3,0.5,5
+4a98eaf180a830762d930643478df22380f9e72d,#    License for the specific language governing permissions and limitations,1,3,0.5,6
+4a98eaf180a830762d930643478df22380f9e72d,revision = 'bebba223288',1,3,0.5,7
+4a98eaf180a830762d930643478df22380f9e72d,# Copyright 2015 OpenStack Foundation,1,2,0.3333333333333333,8
+4a98eaf180a830762d930643478df22380f9e72d,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,2,0.3333333333333333,9
+4a98eaf180a830762d930643478df22380f9e72d,"""""""Add vlan transparent property to network",1,2,0.3333333333333333,10
+4a98eaf180a830762d930643478df22380f9e72d,"# revision identifiers, used by Alembic.",1,2,0.3333333333333333,11
+4a98eaf180a830762d930643478df22380f9e72d,from alembic import op,1,1,0.16666666666666666,12
+4a98eaf180a830762d930643478df22380f9e72d,nullable=True)),1,1,0.16666666666666666,13
+4a98eaf180a830762d930643478df22380f9e72d,"op.add_column('networks', sa.Column('vlan_transparent', sa.Boolean(),",1,1,0.16666666666666666,14
+4a98eaf180a830762d930643478df22380f9e72d,import sqlalchemy as sa,1,1,0.16666666666666666,15
+4a98eaf180a830762d930643478df22380f9e72d,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,16
+4a98eaf180a830762d930643478df22380f9e72d,down_revision = '43763a9618fd',1,1,0.16666666666666666,17
+4a98eaf180a830762d930643478df22380f9e72d,Revision ID: bebba223288,1,1,0.16666666666666666,18
+4a98eaf180a830762d930643478df22380f9e72d,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,19
+4a98eaf180a830762d930643478df22380f9e72d,#,1,1,0.16666666666666666,20
+4a98eaf180a830762d930643478df22380f9e72d,Revises: 43763a9618fd,1,0,0.0,21
+4a98eaf180a830762d930643478df22380f9e72d,Create Date: 2015-02-04 18:07:29.670554,1,0,0.0,22
+4a98eaf180a830762d930643478df22380f9e72d,"""""""",1,0,0.0,23
+4a98eaf180a830762d930643478df22380f9e72d,def upgrade():,1,0,0.0,24

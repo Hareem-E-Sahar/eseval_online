@@ -1,0 +1,570 @@
+commit_id,line,line_level_label,count,line_score,row
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,'''Check the external process calls for dibbler are expected,0,5,1.0,1
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,Remove the interface by deleting it from the router,0,4,0.8,2
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# ensure that the dhcp interface is first in the list,1,4,0.8,3
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _expected_call_lookup_ri_process(self, ri, process):",1,4,0.8,4
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm = cls._get_metadata_proxy_process_manager(uuid, ns_name, conf,",1,4,0.8,5
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# The number of external process calls takes radvd into account.,0,4,0.8,6
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _get_metadata_proxy_process_manager(cls, router_id, ns_name, conf,",1,4,0.8,7
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def destroy_monitored_metadata_proxy(cls, monitor, uuid, ns_name, conf):",1,4,0.8,8
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# First generate the prefixes that will be used for each interface,0,3,0.6000000000000001,9
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm = cls._get_metadata_proxy_process_manager(uuid, conf,",0,3,0.6000000000000001,10
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# NOTE(sahid): Path of dhcp conf will be /<segid>/<netid>. We,0,3,0.6000000000000001,11
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _assert_ri_process_disabled(self, ri, process):",1,3,0.6000000000000001,12
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _assert_ri_process_enabled(self, ri, process):",1,3,0.6000000000000001,13
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""""""Expected call if a process is looked up in a router instance.""""""",1,3,0.6000000000000001,14
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,Remove the interfaces by deleting them from the router,0,3,0.6000000000000001,15
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Check that radvd is started and the router port is configured,0,3,0.6000000000000001,16
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Update the router with the new prefix,0,3,0.6000000000000001,17
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm = cls._get_metadata_proxy_process_manager(uuid, conf,",1,3,0.6000000000000001,18
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"msg = ""Unexpected dibbler external process call.""",0,3,0.6000000000000001,19
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"# the interfaces, and radvd will be killed because of that",0,3,0.6000000000000001,20
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Process the router for removed interfaces,0,3,0.6000000000000001,21
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Remove the router interface,0,3,0.6000000000000001,22
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm = cls._get_metadata_proxy_process_manager(uuid, ns_name, conf)",1,3,0.6000000000000001,23
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _get_metadata_proxy_process_manager(cls, router_id, conf, ns_name=None,",0,3,0.6000000000000001,24
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def destroy_monitored_metadata_proxy(cls, monitor, uuid, conf):",0,3,0.6000000000000001,25
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm = cls._get_metadata_proxy_process_manager(uuid, conf,",0,3,0.6000000000000001,26
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_monitor, network.id, network.namespace, self.conf)",1,3,0.6000000000000001,27
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"in the case of multiple pd-enabled router ports, the exact sequence",0,3,0.6000000000000001,28
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,test_pm = mock.Mock(),1,2,0.4,29
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"LOG.warning(_LW('Failed trying to delete namespace: %s'),",1,2,0.4,30
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"LOG.warning(_LW('Failed trying to delete namespace: %s'),",0,2,0.4,31
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lp = LocalChild(self.conf, network)",1,2,0.4,32
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,network = FakeDualNetwork(),1,2,0.4,33
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls = self._expected_call_lookup_ri_process(,1,2,0.4,34
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lp = LocalChild(self.conf, FakeDualNetwork())",1,2,0.4,35
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_open.return_value.__exit__ = mock.Mock(),1,2,0.4,36
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,test_pm = mock.Mock(),0,2,0.4,37
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lp = LocalChild(self.conf, net)",0,2,0.4,38
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls = [,0,2,0.4,39
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Check that radvd is notified for the new prefix,0,2,0.4,40
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.ANY, fake_network.id, mock.ANY, fake_network.namespace)",0,2,0.4,41
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# by external_process.ProcessManager to check whether the process,0,2,0.4,42
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"expected_calls = [mock.call(mock.ANY, r_id, agent.conf)",1,2,0.4,43
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pm = self._get_process_manager(),0,2,0.4,44
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Delete metadata proxy config and PID files.,0,2,0.4,45
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Delete metadata proxy config file,1,2,0.4,46
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"LOG.warning('Failed trying to delete namespace: %s',",0,2,0.4,47
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"LOG.warning('Failed trying to delete namespace: %s',",1,2,0.4,48
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Do not use the address or interface when DAD fails,0,2,0.4,49
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,bind_address_v6 = bind_interface = None,0,2,0.4,50
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,uuid = network_id or router_id,0,2,0.4,51
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,callback = cls._get_metadata_proxy_callback(,0,2,0.4,52
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,callback = cls._get_metadata_proxy_callback(,1,2,0.4,53
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# There will be a router update,0,2,0.4,54
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Create 1 pd-enabled subnet and add router interface,0,2,0.4,55
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,uuid = network_id or router_id,1,2,0.4,56
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Now remove the gw interface,0,2,0.4,57
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ri = l3router.RouterInfo(router['id'], router, **self.ri_kwargs)",0,2,0.4,58
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,Remove the gateway port and check the prefix is removed,0,2,0.4,59
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router = kwargs['router'],0,2,0.4,60
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,proxy = l3_agent.metadata_driver,0,2,0.4,61
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_monitor, network.id, self.conf)",0,2,0.4,62
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# No need to pass ns name as it's not needed for disable(),0,2,0.4,63
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _radvd_expected_call_external_process(self, ri, enable=True):",0,2,0.4,64
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"expected_calls = [mock.call(uuid=ri.router['id'],",0,2,0.4,65
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls = self._radvd_expected_call_external_process(ri),0,2,0.4,66
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"expected_calls = self._radvd_expected_call_external_process(ri, False)",0,2,0.4,67
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_expected_call_external_process(self, requestor, ri, enable=True):",0,2,0.4,68
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls = [],0,2,0.4,69
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router = l3_test_common.prepare_router_data(),0,2,0.4,70
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm = cls._get_metadata_proxy_process_manager(uuid, conf)",0,2,0.4,71
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,agent.external_gateway_added = mock.Mock(),0,2,0.4,72
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Make sure radvd monitor is created,0,2,0.4,73
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Remove the gateway interface,0,2,0.4,74
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,external_process call is followed with either an enable() or disable(),0,2,0.4,75
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_assert_radvd_calls(self, ri, enable=True):",0,2,0.4,76
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_get_prefixes(self, agent, router, ri,",0,2,0.4,77
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Get the prefix and check that the neutron server is notified,0,2,0.4,78
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Make sure that the updated prefixes are expected,0,2,0.4,79
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"agent, router, ri = self._pd_setup_agent_router()",0,2,0.4,80
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Now remove the interface,0,2,0.4,81
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Create one pd-enabled subnet and add router interface,0,2,0.4,82
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Add the gateway interface,0,2,0.4,83
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"LOG.error(_LE(""Exception during stale dhcp device cleanup""))",0,1,0.2,84
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ns_ip = ip_lib.IPWrapper(namespace=self.network.namespace),0,1,0.2,85
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def test_disable_delete_ns(self):,1,1,0.2,86
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._ns_name = ""%s%s"" % (NS_PREFIX, self.id)",0,1,0.2,87
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def __init__(self, d):",0,1,0.2,88
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._ns_name = (use_namespaces and,1,1,0.2,89
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.assertEqual(ip.return_value.netns.delete.call_count, 0)",1,1,0.2,90
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def __init__(self, use_namespaces, d):",1,1,0.2,91
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def wait_for_all_children_spawned(self):,0,1,0.2,92
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""%s%s"" % (NS_PREFIX, self.id) or None)",1,1,0.2,93
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ns_ip = ip_lib.IPWrapper(namespace=self.network.namespace),1,1,0.2,94
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,device = ip_lib.IPDevice(interface_name),1,1,0.2,95
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"LOG.error(_LE(""Exception during stale dhcp device cleanup""))",1,1,0.2,96
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def wait_for_all_children_respawned(self):,1,1,0.2,97
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.ANY, r_id, agent.conf, namespaces.NS_PREFIX + r_id)",0,1,0.2,98
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.ANY,",0,1,0.2,99
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mocks['active'].__get__ = mock.Mock(return_value=True),1,1,0.2,100
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mocks['interface_name'].__get__ = mock.Mock(return_value='tap0'),1,1,0.2,101
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,dnsmasq = self._get_dnsmasq(FakeDualNetwork()),0,1,0.2,102
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"attrs_to_mock = dict([(a, mock.DEFAULT) for a in",1,1,0.2,103
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lines = [""00:00:80:aa:bb:cc,id:client1,inst-name,192.168.0.1"",",1,1,0.2,104
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,path = '/dhcp/%s/interface' % net.id,0,1,0.2,105
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,hpath = '/dhcp/%s/host' % net.id,0,1,0.2,106
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ipath = '/dhcp/%s/interface' % net.id,0,1,0.2,107
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"dm = self._get_dnsmasq(net, test_pm)",0,1,0.2,108
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lines = [""00:00:80:aa:bb:cc,inst-name,192.168.0.1"",",0,1,0.2,109
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_open = self.useFixture(,0,1,0.2,110
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pm.disable(),0,1,0.2,111
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,leases = dnsmasq._read_hosts_file_leases(filename),0,1,0.2,112
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lines = [""00:00:80:aa:bb:cc,id:client1,inst-name,192.168.0.1"",",0,1,0.2,113
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_open.return_value.__enter__ = lambda s: s,1,1,0.2,114
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_open.return_value.read.return_value = 'tap0',1,1,0.2,115
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_open.return_value.readline.return_value = None,1,1,0.2,116
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"dm = self._get_dnsmasq(FakeDualNetwork(), test_pm)",1,1,0.2,117
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"lines = [""00:00:80:aa:bb:cc,inst-name,192.168.0.1"",",1,1,0.2,118
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_open.return_value.readlines.return_value = lines,1,1,0.2,119
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,dnsmasq = self._get_dnsmasq(FakeDualNetwork()),1,1,0.2,120
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,leases = dnsmasq._read_hosts_file_leases(filename),1,1,0.2,121
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def disable(self, retain_port=False, block=False):",0,1,0.2,122
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _del_running_interface(cls, interface):",0,1,0.2,123
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def disable(self, retain_port=False):",1,1,0.2,124
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def get_device_id(self, network):",1,1,0.2,125
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"device_id = self.get_device_id(network, segment)",0,1,0.2,126
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def setup(self, network, segment=None):",0,1,0.2,127
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"port = self.setup_dhcp_port(network, segment)",0,1,0.2,128
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def destroy(self, network, device_name, segment=None):",0,1,0.2,129
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.network_conf_dir = os.path.join(self.confs_dir, network.id)",1,1,0.2,130
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,interface_name = self.device_manager.setup(self.network),1,1,0.2,131
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.device_manager.destroy(self.network, self.interface_name)",1,1,0.2,132
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def setup_dhcp_port(self, network):",1,1,0.2,133
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,segmentation_id = segment.segmentation_id if segment else None,0,1,0.2,134
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,device_id = self.get_device_id(network),1,1,0.2,135
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def setup(self, network):",1,1,0.2,136
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,port = self.setup_dhcp_port(network),1,1,0.2,137
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def destroy(self, network, device_name):",1,1,0.2,138
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"bind_address, port, conf,",0,1,0.2,139
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"bind_address, port, conf,",1,1,0.2,140
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ri, process)",1,1,0.2,141
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def setup_dhcp_port(self, network, segment=None):",0,1,0.2,142
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def get_device_id(self, network, segment=None):",0,1,0.2,143
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,SIGTERM_TIMEOUT = 5,0,1,0.2,144
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# disable of the legacy port that is not taking care of,0,1,0.2,145
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,LOG.warning('Metadata process %s did not finish after SIGTERM ',0,1,0.2,146
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pm.disable(),1,1,0.2,147
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.segment = segment,0,1,0.2,148
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,_interfaces = set(),0,1,0.2,149
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# In case of multi-segments support we want a dns process per vlan.,0,1,0.2,150
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.network_conf_dir = os.path.join(,0,1,0.2,151
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# don't do the opposite so we can clean /<netid>* when calling,0,1,0.2,152
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.network_conf_dir = os.path.join(self.confs_dir, network.id)",0,1,0.2,153
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.segment.segmentation_id if self.segment else None),0,1,0.2,154
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _add_running_interface(cls, interface):",0,1,0.2,155
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if interface in cls._interfaces:,0,1,0.2,156
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def _has_running_interfaces(cls):,0,1,0.2,157
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def get_process_uuid(self):,0,1,0.2,158
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# NOTE(sahid): Keep the order to match directory path. This is used,0,1,0.2,159
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,interface_name = self.device_manager.setup(,0,1,0.2,160
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,segmentation_id = (,0,1,0.2,161
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,net = FakeDualNetwork(),0,1,0.2,162
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.ANY, fake_network.id, mock.ANY)",1,1,0.2,163
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_get_prefixes(agent, router, ri, intfs,",0,1,0.2,164
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"agent = l3_agent.L3NATAgent(HOSTNAME, self.conf)",0,1,0.2,165
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"return agent, router, ri",0,1,0.2,166
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_remove_gw_interface(self, intfs, agent, router, ri):",0,1,0.2,167
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_pd_update = {},0,1,0.2,168
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"requestor_id = self._pd_get_requestor_id(intf, router, ri)",0,1,0.2,169
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls += (self._pd_expected_call_external_process(,0,1,0.2,170
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"requestor_id, ri, False))",0,1,0.2,171
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_pd_update[subnet['id']] = (,0,1,0.2,172
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Implement the prefix update notifier,0,1,0.2,173
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Keep track of the updated prefix,0,1,0.2,174
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.pd_update = {},0,1,0.2,175
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def pd_notifier(context, prefix_update):",0,1,0.2,176
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.pd_update = prefix_update,0,1,0.2,177
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Update the prefix,0,1,0.2,178
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,subnet['cidr'] = prefix,0,1,0.2,179
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,agent.pd.notifier = pd_notifier,0,1,0.2,180
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_remove_interfaces(self, intfs, agent, router, ri):",0,1,0.2,181
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_pd_update = [],0,1,0.2,182
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ri.radvd = ra.DaemonMonitor(router['id'],",0,1,0.2,183
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def _pd_setup_agent_router(self):,0,1,0.2,184
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,subnet['cidr'] = prefix_update.values()[0],0,1,0.2,185
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _assert_ri_process_disabled(self, ri):",0,1,0.2,186
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"intfs1 = l3_test_common.router_append_pd_enabled_subnet(router,",0,1,0.2,187
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.ns_name,",0,1,0.2,188
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def before_router_removed(resource, event, l3_agent, **kwargs):",0,1,0.2,189
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def after_router_added(self, router):",1,1,0.2,190
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.ns_name,",1,1,0.2,191
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def before_router_removed(self, router):",1,1,0.2,192
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.ns_name,",1,1,0.2,193
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _process_manager_constructor_call(self, ns=FAKE_NETWORK_DHCP_NS):",0,1,0.2,194
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def _process_manager_constructor_call(self):,1,1,0.2,195
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"namespace=FAKE_NETWORK_DHCP_NS,",1,1,0.2,196
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.ANY,",1,1,0.2,197
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _process_manager_constructor_call(self, ns=FAKE_NETWORK_DHCP_NS):",0,1,0.2,198
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def _process_manager_constructor_call(self):,1,1,0.2,199
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"namespace=FAKE_NETWORK_DHCP_NS,",1,1,0.2,200
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.ANY,",1,1,0.2,201
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,return expected_calls,0,1,0.2,202
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _assert_ri_process_enabled(self, ri):",0,1,0.2,203
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.pd_update = [],0,1,0.2,204
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def after_router_added(resource, event, l3_agent, **kwargs):",0,1,0.2,205
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# This is because there is no ipv6 interface any more after removing,0,1,0.2,206
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,'''Add one pd-enabled subnet and remove the gateway port,0,1,0.2,207
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_add_gw_interface(self, agent, router, ri):",0,1,0.2,208
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,gw_ifname = ri.get_external_device_name(router['gw_port']['id']),0,1,0.2,209
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def test_pd_add_remove_subnet(self, mock1, mock2, mock3, mock4,",0,1,0.2,210
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,intfs = l3_test_common.router_append_pd_enabled_subnet(router),0,1,0.2,211
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# No client should be started since there is no gateway port,0,1,0.2,212
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_get_prefixes(agent, router, ri, [], intfs, mock_get_prefix)",0,1,0.2,213
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def test_pd_remove_gateway(self, mock1, mock2, mock3, mock4,",0,1,0.2,214
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Check that radvd is started,0,1,0.2,215
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"key = '%s:%s:%s' % (pdo.router_id, pdo.subnet_id, pdo.ri_ifname)",0,1,0.2,216
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def test_pd_add_remove_2_subnets(self, mock1, mock2, mock3, mock4,",0,1,0.2,217
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Create 2 pd-enabled subnets and add router interfaces,0,1,0.2,218
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"intfs = l3_test_common.router_append_pd_enabled_subnet(router, count=2)",0,1,0.2,219
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# No client should be started,0,1,0.2,220
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def test_pd_remove_gateway_2_subnets(self, mock1, mock2, mock3, mock4,",0,1,0.2,221
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"intfs = l3_test_common.router_append_pd_enabled_subnet(router, count=1)",0,1,0.2,222
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Now add another interface,0,1,0.2,223
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock_get_prefix.side_effect = get_prefix,0,1,0.2,224
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# with the new prefix,0,1,0.2,225
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,def get_prefix(pdo):,0,1,0.2,226
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,actual_action_calls = [],0,1,0.2,227
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Start the dibbler client,0,1,0.2,228
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ifname = ri.get_internal_device_name(intf['id']),0,1,0.2,229
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_assert_dibbler_calls(self, expected, actual):",0,1,0.2,230
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"of these calls are not deterministic. It's known, though, that each",0,1,0.2,231
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,num_ext_calls = len(expected) / 2,0,1,0.2,232
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_ext_calls = [],0,1,0.2,233
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,actual_ext_calls = [],0,1,0.2,234
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_action_calls = [],0,1,0.2,235
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"def _pd_get_requestor_id(self, intf, router, ri):",0,1,0.2,236
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"exp_calls = self._radvd_expected_call_external_process(ri, enable)",0,1,0.2,237
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,prefixes = {},0,1,0.2,238
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"prefixes[requestor_id] = ""2001:cafe:cafe:%d::/64"" % ifno",0,1,0.2,239
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,subnet_id = (intf['subnets'][0]['id'] if intf['subnets'],0,1,0.2,240
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,else None),0,1,0.2,241
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_pd_update[subnet_id] = prefixes[requestor_id],0,1,0.2,242
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls += (,0,1,0.2,243
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if network.namespace is None:,1,0,0.0,244
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# catch everything as we don't want to fail because of,1,0,0.0,245
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except Exception:,1,0,0.0,246
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._cleanup_stale_devices(network, port)",1,0,0.0,247
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._set_default_route(network, interface_name)",1,0,0.0,248
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if self.conf.use_namespaces:,1,0,0.0,249
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ip_version=constants.IP_VERSION_4),1,0,0.0,250
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"device.route.pullup_route(interface_name,",1,0,0.0,251
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.network.namespace),1,0,0.0,252
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.conf.use_namespaces):,1,0,0.0,253
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if (self.conf.enable_isolated_metadata and,1,0,0.0,254
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if not conf.use_namespaces or not conf.enable_isolated_metadata:,1,0,0.0,255
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._set_default_route(network, device_name)",1,0,0.0,256
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except RuntimeError:,1,0,0.0,257
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ns_ip.netns.delete(self.network.namespace),1,0,0.0,258
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,try:,1,0,0.0,259
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if self.network.namespace:,1,0,0.0,260
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# cleanup step,1,0,0.0,261
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,fake_network.namespace),0,0,0.0,262
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if is_isolated_network and enable_isolated_metadata:,0,0,0.0,263
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock.call().enable()]),0,0,0.0,264
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# cleanup step,0,0,0.0,265
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"cfg.CONF,",0,0,0.0,266
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(),",0,0,0.0,267
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.wait_for_all_children_respawned(),1,0,0.0,268
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,exception=RuntimeError('Not all children respawned.')),1,0,0.0,269
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.wait_for_all_children_spawned(),0,0,0.0,270
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,exception=RuntimeError('Not all children (re)spawned.')),0,0,0.0,271
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,import six,1,0,0.0,272
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,import six,0,0,0.0,273
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,]),1,0,0.0,274
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock.call().enable(),1,0,0.0,275
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if is_isolated_network:,1,0,0.0,276
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"cfg.CONF.set_override('enable_isolated_metadata', True)",0,0,0.0,277
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock.call().disable()]),0,0,0.0,278
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(ns=None),",0,0,0.0,279
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.external_process.assert_has_calls([,0,0,0.0,280
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,elif not enable_isolated_metadata:,0,0,0.0,281
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._set_default_route(network, device_name)",0,0,0.0,282
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.conf.set_override('dhcp_delete_namespaces', False)",1,0,0.0,283
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# catch everything as we don't want to fail because of,0,0,0.0,284
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except Exception:,0,0,0.0,285
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call(exp_opt_name, exp_opt_data),",1,0,0.0,286
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call(exp_addn_name, exp_addn_data),",1,0,0.0,287
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call(exp_host_name, exp_host_data),",1,0,0.0,288
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.safe.assert_has_calls([,1,0,0.0,289
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,reload_cfg=True),1,0,0.0,290
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.external_process().enable.assert_called_once_with(,1,0,0.0,291
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.assertTrue(test_pm.register.called),1,0,0.0,292
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,dm.reload_allocations(),1,0,0.0,293
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.assertEqual(lp.interface_name, 'tap0')",1,0,0.0,294
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,with mock.patch('six.moves.builtins.open') as mock_open:,1,0,0.0,295
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""[fdca:3ba5:a17a::1]""]",0,0,0.0,296
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""00:00:80:aa:bb:cc,id:client2,inst-name,""",0,0,0.0,297
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"tools.OpenFixture(filename, '\n'.join(lines))).mock_open",0,0,0.0,298
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""00:00:80:aa:bb:cc,inst-name,[fdca:3ba5:a17a::1]""]",0,0,0.0,299
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,]),0,0,0.0,300
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call(exp_opt_name, exp_opt_data),",0,0,0.0,301
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call(exp_addn_name, exp_addn_data),",0,0,0.0,302
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,]),1,0,0.0,303
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""00:00:80:aa:bb:cc,inst-name,[fdca:3ba5:a17a::1]""]",1,0,0.0,304
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""00:00:80:aa:bb:cc,id:client2,inst-name,""",1,0,0.0,305
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,try:,0,0,0.0,306
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._cleanup_stale_devices(network, port)",0,0,0.0,307
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._set_default_route(network, interface_name)",0,0,0.0,308
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if self.conf.enable_isolated_metadata:,0,0,0.0,309
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if not conf.enable_isolated_metadata:,0,0,0.0,310
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.network.namespace),0,0,0.0,311
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except RuntimeError:,0,0,0.0,312
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ns_ip.netns.delete(self.network.namespace),0,0,0.0,313
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call().destroy(network, 'tap0')])",1,0,0.0,314
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""[fdca:3ba5:a17a::1]""]",1,0,0.0,315
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.mock_mgr.assert_has_calls([mock.call(self.conf, None),",1,0,0.0,316
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._assert_disabled(lp),1,0,0.0,317
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,lp.disable(),1,0,0.0,318
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,with mock.patch('neutron.agent.linux.ip_lib.IPWrapper') as ip:,1,0,0.0,319
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"with mock.patch.multiple(LocalChild, **attrs_to_mock) as mocks:",1,0,0.0,320
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"['active', 'interface_name']])",1,0,0.0,321
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock.call(,0,0,0.0,322
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,network.namespace),0,0,0.0,323
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.common import utils as common_utils,0,0,0.0,324
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for r_id in stale_router_ids],0,0,0.0,325
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,return bool(cls._interfaces),0,0,0.0,326
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,segmentation_id),0,0,0.0,327
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.conf.host,",0,0,0.0,328
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.process_monitor.register(uuid=self.get_process_uuid(),",0,0,0.0,329
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.network.namespace),0,0,0.0,330
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except RuntimeError:,0,0,0.0,331
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ip_lib.delete_network_namespace(self.network.namespace),0,0,0.0,332
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,try:,0,0,0.0,333
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Delete nm only if we don't serve different segmentation id.,0,0,0.0,334
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if not self._has_running_interfaces():,0,0,0.0,335
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.network, self.interface_name, segmentation_id)",0,0,0.0,336
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.device_manager.destroy(,0,0,0.0,337
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._del_running_interface(self.interface_name),0,0,0.0,338
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"uuid=self.get_process_uuid(),",0,0,0.0,339
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._add_running_interface(self.interface_name),0,0,0.0,340
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.network, self.segment)",0,0,0.0,341
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,return self.network.id,0,0,0.0,342
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"return ""%s/%s"" % (self.segment.segmentation_id, self.network.id)",0,0,0.0,343
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.get_device_id(network, segment))",0,0,0.0,344
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"version=None, plugin=None):",1,0,0.0,345
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,plugin=None):,1,0,0.0,346
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"network_id=network_id, router_id=router_id,",0,0,0.0,347
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,callback=callback),1,0,0.0,348
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ns_name=ns_name,",1,0,0.0,349
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"bind_address_v6=bind_address_v6, bind_interface=bind_interface)",1,0,0.0,350
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"network_id=network_id, router_id=router_id,",1,0,0.0,351
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,callback=callback),0,0,0.0,352
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ns_name=ns_name,",0,0,0.0,353
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"bind_address_v6=bind_address_v6, bind_interface=bind_interface)",0,0,0.0,354
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.get_device_id(network)),1,0,0.0,355
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"version, plugin)",1,0,0.0,356
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.conf.host),1,0,0.0,357
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.process_monitor.register(uuid=self.network.id,",1,0,0.0,358
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.network.namespace),1,0,0.0,359
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except RuntimeError:,1,0,0.0,360
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ip_lib.delete_network_namespace(self.network.namespace),1,0,0.0,361
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,try:,1,0,0.0,362
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"uuid=self.network.id,",1,0,0.0,363
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# is active.,0,0,0.0,364
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,cls._interfaces.remove(interface),0,0,0.0,365
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,'qrouter-' + router_id),0,0,0.0,366
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""""""Safe method that remove given interface""""""",0,0,0.0,367
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.safe.assert_has_calls([,0,0,0.0,368
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,import signal,0,0,0.0,369
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,reload_cfg=True),1,0,0.0,370
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,reload_cfg=False),1,0,0.0,371
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ensure_active=True, reload_cfg=True)",0,0,0.0,372
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ensure_active=True, reload_cfg=False)",0,0,0.0,373
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pm.enable(reload_cfg=reload_with_HUP),1,0,0.0,374
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm.enable(reload_cfg=reload_with_HUP, ensure_active=True)",0,0,0.0,375
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._get_process_manager().disable(),1,0,0.0,376
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.disable(retain_port=True),1,0,0.0,377
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,common_utils.wait_until_true(lambda: not pm.active),0,0,0.0,378
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if block:,0,0,0.0,379
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.disable(retain_port=True, block=True)",0,0,0.0,380
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,mock.ANY),1,0,0.0,381
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for r_id in stale_router_ids],1,0,0.0,382
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,cfg.CONF),1,0,0.0,383
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(ns=None),",1,0,0.0,384
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pm.disable(sig=str(int(signal.SIGTERM))),0,0,0.0,385
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,try:,0,0,0.0,386
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"common_utils.wait_until_true(lambda: not pm.active,",0,0,0.0,387
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"version, plugin, segment)",0,0,0.0,388
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,cls._interfaces.add(interface),0,0,0.0,389
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"""""""Safe method that add running interface""""""",0,0,0.0,390
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,@classmethod,0,0,0.0,391
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,else:,0,0,0.0,392
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.confs_dir, str(self.segment.segmentation_id), network.id)",0,0,0.0,393
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# segmentation.,0,0,0.0,394
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if self.segment:,0,0,0.0,395
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"plugin=None, segment=None):",0,0,0.0,396
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,timeout=SIGTERM_TIMEOUT),0,0,0.0,397
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Track running interfaces.,0,0,0.0,398
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"version=None, plugin=None, segment=None):",0,0,0.0,399
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"linux_utils.delete_if_exists(pm.get_pid_file_name(), run_as_root=True)",0,0,0.0,400
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pm.disable(sig=str(int(signal.SIGKILL))),0,0,0.0,401
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pm.pid, SIGTERM_TIMEOUT)",0,0,0.0,402
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"'signal in %s seconds, sending SIGKILL signal',",0,0,0.0,403
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,except common_utils.WaitTimeout:,0,0,0.0,404
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock.call(exp_host_name, exp_host_data),",0,0,0.0,405
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['mangle'].remove_rule(c, r)",1,0,0.0,406
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,reload_cfg=True),0,0,0.0,407
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router_id=router.router_id),1,0,0.0,408
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(),",1,0,0.0,409
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(ns=None),",0,0,0.0,410
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"namespace=ns,",0,0,0.0,411
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"fake_network.namespace,",1,0,0.0,412
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(),",1,0,0.0,413
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._process_manager_constructor_call(ns=None),",0,0,0.0,414
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"namespace=ns,",0,0,0.0,415
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ns_name=ns_name,",0,0,0.0,416
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ip_wrapper.netns.execute(cmd),1,0,0.0,417
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pid_file=self.get_conf_file_name('pid')),1,0,0.0,418
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ip_wrapper.netns.execute(cmd, run_as_root=True)",0,0,0.0,419
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,run_as_root=True),0,0,0.0,420
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"pid_file=self.get_conf_file_name('pid'),",0,0,0.0,421
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.l3_agent.conf),1,0,0.0,422
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.router['id'],",1,0,0.0,423
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.destroy_monitored_metadata_proxy(self.l3_agent.process_monitor,",1,0,0.0,424
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['nat'].remove_rule(c, r)",1,0,0.0,425
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"fake_network.namespace,",1,0,0.0,426
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,import six,0,0,0.0,427
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.agent.linux import dibbler,0,0,0.0,428
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"service='dibbler',",0,0,0.0,429
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,get_stop_command=mock.ANY)),0,0,0.0,430
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls.append(mock.call().disable(,0,0,0.0,431
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls.append(mock.call().enable(reload_cfg=False)),0,0,0.0,432
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,pid_file=mock.ANY)),0,0,0.0,433
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"conf=mock.ANY,",0,0,0.0,434
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"namespace=ri.ns_name,",0,0,0.0,435
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"default_cmd_callback=mock.ANY,",0,0,0.0,436
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"expected_calls.append(mock.call(uuid=requestor,",0,0,0.0,437
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.agent.linux import pd,0,0,0.0,438
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._assert_ri_process_disabled(ri),0,0,0.0,439
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._assert_ri_process_enabled(ri),0,0,0.0,440
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls.append(mock.call().disable()),0,0,0.0,441
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,else:,0,0,0.0,442
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls.append(mock.call().enable(reload_cfg=True)),0,0,0.0,443
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if enable:,0,0,0.0,444
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"service='radvd',",0,0,0.0,445
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['filter'].remove_rule(c, r)",1,0,0.0,446
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.l3_agent.conf,",1,0,0.0,447
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"agent._router_added(router['id'], router)",0,0,0.0,448
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.metadata_port,",1,0,0.0,449
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"l3_agent.process_monitor,",0,0,0.0,450
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,proxy.spawn_monitored_metadata_proxy(,0,0,0.0,451
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if not router.is_ha:,0,0,0.0,452
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router.iptables_manager.apply(),0,0,0.0,453
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['nat'].add_rule(c, r)",0,0,0.0,454
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for c, r in proxy.metadata_nat_rules(proxy.metadata_port):",0,0,0.0,455
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['mangle'].add_rule(c, r)",0,0,0.0,456
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for c, r in proxy.metadata_mangle_rules(proxy.metadata_access_mark):",0,0,0.0,457
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['filter'].add_rule(c, r)",0,0,0.0,458
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,proxy.metadata_access_mark):,0,0,0.0,459
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for c, r in proxy.metadata_filter_rules(proxy.metadata_port,",0,0,0.0,460
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"before_router_removed, resources.ROUTER, events.BEFORE_DELETE)",0,0,0.0,461
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"after_router_added, resources.ROUTER, events.AFTER_CREATE)",0,0,0.0,462
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,registry.subscribe(,0,0,0.0,463
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.callbacks import resources,0,0,0.0,464
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.callbacks import registry,0,0,0.0,465
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.callbacks import events,0,0,0.0,466
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"proxy.metadata_port,",0,0,0.0,467
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"l3_agent.conf,",0,0,0.0,468
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router_id=router.router_id),0,0,0.0,469
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for c, r in self.metadata_mangle_rules(self.metadata_access_mark):",1,0,0.0,470
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.l3_agent.process_monitor,",1,0,0.0,471
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.spawn_monitored_metadata_proxy(,1,0,0.0,472
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if not router.is_ha:,1,0,0.0,473
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router.iptables_manager.apply(),1,0,0.0,474
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['nat'].add_rule(c, r)",1,0,0.0,475
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for c, r in self.metadata_nat_rules(self.metadata_port):",1,0,0.0,476
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['mangle'].add_rule(c, r)",1,0,0.0,477
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['filter'].add_rule(c, r)",1,0,0.0,478
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['filter'].remove_rule(c, r)",0,0,0.0,479
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.metadata_access_mark):,1,0,0.0,480
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for c, r in self.metadata_filter_rules(self.metadata_port,",1,0,0.0,481
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,l3_agent.conf),0,0,0.0,482
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.router['id'],",0,0,0.0,483
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"proxy.destroy_monitored_metadata_proxy(l3_agent.process_monitor,",0,0,0.0,484
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['nat'].remove_rule(c, r)",0,0,0.0,485
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"router.iptables_manager.ipv4['mangle'].remove_rule(c, r)",0,0,0.0,486
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ri.process(agent),0,0,0.0,487
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if not ri.radvd:,0,0,0.0,488
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.external_process().enable.assert_called_once_with(,0,0,0.0,489
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,agent.pd.process_prefix_update(),0,0,0.0,490
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_remove_interfaces(intfs, agent, router, ri)",0,0,0.0,491
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self._pd_assert_radvd_calls(ri),0,0,0.0,492
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Get one prefix,0,0,0.0,493
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_add_gw_interface(agent, router, ri)",0,0,0.0,494
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.assertFalse(mock_get_prefix.call_count),0,0,0.0,495
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.assertFalse(self.external_process.call_count),0,0,0.0,496
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Initial setup,0,0,0.0,497
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,'''Add and remove one pd-enabled subnet,0,0,0.0,498
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"mock_getpid, mock_get_prefix):",0,0,0.0,499
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"@mock.patch.object(pd.PrefixDelegation, '_get_sync_data')",0,0,0.0,500
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"@mock.patch.object(dibbler.shutil, 'rmtree')",0,0,0.0,501
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"@mock.patch.object(dibbler.os, 'chmod')",0,0,0.0,502
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,return_value=True),0,0,0.0,503
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"@mock.patch.object(pd.PrefixDelegation, '_is_lla_active',",0,0,0.0,504
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"@mock.patch.object(dibbler.os, 'getpid', return_value=1234)",0,0,0.0,505
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"@mock.patch.object(dibbler.PDDibbler, 'get_prefix', autospec=True)",0,0,0.0,506
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"agent.pd.add_gw_interface(router['id'], gw_ifname)",0,0,0.0,507
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_remove_gw_interface(intfs, agent, router, ri)",0,0,0.0,508
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,'''Add and remove two pd-enabled subnets,0,0,0.0,509
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,# Get prefixes,0,0,0.0,510
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._assert_ri_process_disabled(ri, 'radvd')",1,0,0.0,511
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.assertTrue(test_pm.register.called),0,0,0.0,512
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,dm.reload_allocations(),0,0,0.0,513
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.useFixture(tools.OpenFixture(ipath)),0,0,0.0,514
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.useFixture(tools.OpenFixture(hpath)),0,0,0.0,515
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.assertEqual(lp.interface_name, 'tap0')",0,0,0.0,516
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.useFixture(tools.OpenFixture(path, 'tap0'))",0,0,0.0,517
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,from neutron.tests import tools,0,0,0.0,518
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._assert_ri_process_enabled(ri, 'radvd')",1,0,0.0,519
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"'''Add one pd-enabled subnet, followed by adding another one",0,0,0.0,520
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls.append(mock.call().disable()),1,0,0.0,521
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_calls.append(mock.call().enable(reload_cfg=True)),1,0,0.0,522
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"service=process,",1,0,0.0,523
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"return [mock.call(uuid=ri.router['id'],",1,0,0.0,524
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_remove_gw_interface(intfs + intfs1, agent, router, ri)",0,0,0.0,525
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"intfs1, mock_get_prefix)",0,0,0.0,526
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,count=1),0,0,0.0,527
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,return prefixes[key],0,0,0.0,528
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for intf in new_intfs:,0,0,0.0,529
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"ri.ns_name,",0,0,0.0,530
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_expected_call_external_process(requestor_id, ri))",0,0,0.0,531
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if subnet['id'] == prefix_update.keys()[0]:,0,0,0.0,532
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.pd_update.append(prefix_update),0,0,0.0,533
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,l3_constants.PROVISIONAL_IPV6_PD_PREFIX}],0,0,0.0,534
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_pd_update += [{subnet['id']:,0,0,0.0,535
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,router[l3_constants.INTERFACE_KEY].remove(intf),0,0,0.0,536
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.assertEqual(expected_pd_update, self.pd_update)",0,0,0.0,537
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.external_process.mock_calls[-len(expected_calls):]),0,0,0.0,538
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_assert_dibbler_calls(expected_calls,",0,0,0.0,539
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,agent.pd.remove_gw_interface(router['id']),0,0,0.0,540
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,break,0,0,0.0,541
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if subnet['id'] == subnet_id:,0,0,0.0,542
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for subnet_id, prefix in six.iteritems(prefix_update):",0,0,0.0,543
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,l3_constants.PROVISIONAL_IPV6_PD_PREFIX),0,0,0.0,544
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for subnet in intf['subnets']:,0,0,0.0,545
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for intf in intfs:,0,0,0.0,546
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,ri.get_internal_device_name),0,0,0.0,547
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"agent.process_monitor,",0,0,0.0,548
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.external_process.mock_calls[-len(expected_calls) - 2:]),0,0,0.0,549
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self._pd_assert_radvd_calls(ri, False)",0,0,0.0,550
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"return dibbler.PDDibbler(router['id'],",0,0,0.0,551
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for act in actual_ext_calls:,0,0,0.0,552
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if intf in new_intfs:,0,0,0.0,553
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"for ifno, intf in enumerate(existing_intfs + new_intfs):",0,0,0.0,554
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"existing_intfs, new_intfs, mock_get_prefix):",0,0,0.0,555
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.external_process.mock_calls[-len(exp_calls):]),0,0,0.0,556
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.assertEqual(exp_calls,",0,0,0.0,557
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,self.fail(msg),0,0,0.0,558
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,if exp == act:,0,0,0.0,559
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for exp in expected_ext_calls:,0,0,0.0,560
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"subnet['id'], ifname).requestor_id",0,0,0.0,561
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,"self.assertEqual(expected_action_calls, actual_action_calls)",0,0,0.0,562
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,actual_action_calls.append(actual[c * 2 + 1]),0,0,0.0,563
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_action_calls.append(expected[c * 2 + 1]),0,0,0.0,564
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,actual_ext_calls.append(actual[c * 2]),0,0,0.0,565
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,expected_ext_calls.append(expected[c * 2]),0,0,0.0,566
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,for c in range(num_ext_calls):,0,0,0.0,567
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,''',0,0,0.0,568
+8540cfea3edc615ed6e937ac77bb8f0cef78adcf,return,1,0,0.0,569

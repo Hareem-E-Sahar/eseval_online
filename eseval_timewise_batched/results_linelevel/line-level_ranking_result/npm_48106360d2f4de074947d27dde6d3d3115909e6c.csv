@@ -1,0 +1,62 @@
+commit_id,line,line_level_label,count,line_score,row
+48106360d2f4de074947d27dde6d3d3115909e6c,var data = pkg && pkg._data || pkg,1,8,1.0,1
+48106360d2f4de074947d27dde6d3d3115909e6c,", pkgDir = path.join(npm.dir, data.name, data.version, ""package"")",1,5,0.625,2
+48106360d2f4de074947d27dde6d3d3115909e6c,"var pkgDir = path.join(npm.dir, data.name, data.version, ""package"")",0,5,0.625,3
+48106360d2f4de074947d27dde6d3d3115909e6c,", deps = data.dependencies || {}",0,3,0.375,4
+48106360d2f4de074947d27dde6d3d3115909e6c,", pkg = {}",1,3,0.375,5
+48106360d2f4de074947d27dde6d3d3115909e6c,pkg._data = data,1,3,0.375,6
+48106360d2f4de074947d27dde6d3d3115909e6c,"var satis = semver.maxSatisfying(Object.keys(inst[d]), deps[d])",0,2,0.25,7
+48106360d2f4de074947d27dde6d3d3115909e6c,"var rb = depsNeeded.concat([data.name+""@""+data.version])",0,2,0.25,8
+48106360d2f4de074947d27dde6d3d3115909e6c,", [ require(""./utils/link""), folder, pkgDir ]",0,2,0.25,9
+48106360d2f4de074947d27dde6d3d3115909e6c,var depsNeeded = Object.keys(deps).map(function (d) {,0,2,0.25,10
+48106360d2f4de074947d27dde6d3d3115909e6c,var o = {},0,2,0.25,11
+48106360d2f4de074947d27dde6d3d3115909e6c,", depNames = Array.isArray(deps) ? deps : Object.keys(deps)",0,2,0.25,12
+48106360d2f4de074947d27dde6d3d3115909e6c,", semver = require(""./utils/semver"")",0,2,0.25,13
+48106360d2f4de074947d27dde6d3d3115909e6c,", readInstalled = require(""./utils/read-installed"")",0,2,0.25,14
+48106360d2f4de074947d27dde6d3d3115909e6c,", function (er) {",0,1,0.125,15
+48106360d2f4de074947d27dde6d3d3115909e6c,", [npm.commands, ""build"", [pkg]]",1,1,0.125,16
+48106360d2f4de074947d27dde6d3d3115909e6c,", function (cb) {",1,1,0.125,17
+48106360d2f4de074947d27dde6d3d3115909e6c,", function (er, data) {",1,1,0.125,18
+48106360d2f4de074947d27dde6d3d3115909e6c,", ""-1-LINK-""+(",1,1,0.125,19
+48106360d2f4de074947d27dde6d3d3115909e6c,", function (cb) { readJson",1,1,0.125,20
+48106360d2f4de074947d27dde6d3d3115909e6c,", [ npm.commands, ""build"", [data] ]",0,1,0.125,21
+48106360d2f4de074947d27dde6d3d3115909e6c,deps = o,0,1,0.125,22
+48106360d2f4de074947d27dde6d3d3115909e6c,"deps.forEach(function (d) { o[d] = ""*"" })",0,1,0.125,23
+48106360d2f4de074947d27dde6d3d3115909e6c,", doLink(folder, cb)",0,1,0.125,24
+48106360d2f4de074947d27dde6d3d3115909e6c,", ""-1-LINK-""+(",0,1,0.125,25
+48106360d2f4de074947d27dde6d3d3115909e6c,", [readAndLink, jsonFile, folder]",0,1,0.125,26
+48106360d2f4de074947d27dde6d3d3115909e6c,}},0,0,0.0,27
+48106360d2f4de074947d27dde6d3d3115909e6c,"( [ npm.commands, ""install"", depsNeeded.slice(0) ]",0,0,0.0,28
+48106360d2f4de074947d27dde6d3d3115909e6c,if (!er) return cb(),0,0,0.0,29
+48106360d2f4de074947d27dde6d3d3115909e6c,"// error, rollback",0,0,0.0,30
+48106360d2f4de074947d27dde6d3d3115909e6c,"log(er, ""error linking, rollback"")",0,0,0.0,31
+48106360d2f4de074947d27dde6d3d3115909e6c,"npm.commands.rm(rb, function (er_) {",0,0,0.0,32
+48106360d2f4de074947d27dde6d3d3115909e6c,"if (er_) log(er_, ""error rolling back"")",0,0,0.0,33
+48106360d2f4de074947d27dde6d3d3115909e6c,cb(er),0,0,0.0,34
+48106360d2f4de074947d27dde6d3d3115909e6c,),1,0,0.0,35
+48106360d2f4de074947d27dde6d3d3115909e6c,( jsonFile,1,0,0.0,36
+48106360d2f4de074947d27dde6d3d3115909e6c,"crypto.createHash(""sha1"").update(folder).digest(""hex"").substr(0,8)",1,0,0.0,37
+48106360d2f4de074947d27dde6d3d3115909e6c,"log(depsNeeded, ""link install deps"")",0,0,0.0,38
+48106360d2f4de074947d27dde6d3d3115909e6c,if (er) return cb(er),1,0,0.0,39
+48106360d2f4de074947d27dde6d3d3115909e6c,"log(data.name+"" ""+data.version, ""link"")",1,0,0.0,40
+48106360d2f4de074947d27dde6d3d3115909e6c,cb(),1,0,0.0,41
+48106360d2f4de074947d27dde6d3d3115909e6c,},1,0,0.0,42
+48106360d2f4de074947d27dde6d3d3115909e6c,chain,0,0,0.0,43
+48106360d2f4de074947d27dde6d3d3115909e6c,),0,0,0.0,44
+48106360d2f4de074947d27dde6d3d3115909e6c,}),0,0,0.0,45
+48106360d2f4de074947d27dde6d3d3115909e6c,if (er) return cb(er),0,0,0.0,46
+48106360d2f4de074947d27dde6d3d3115909e6c,"function readAndLink (jsonFile, folder, cb) {",0,0,0.0,47
+48106360d2f4de074947d27dde6d3d3115909e6c,readJson,0,0,0.0,48
+48106360d2f4de074947d27dde6d3d3115909e6c,( jsonFile,0,0,0.0,49
+48106360d2f4de074947d27dde6d3d3115909e6c,"crypto.createHash(""sha1"").update(folder).digest(""hex"").substr(0,8)",0,0,0.0,50
+48106360d2f4de074947d27dde6d3d3115909e6c,},0,0,0.0,51
+48106360d2f4de074947d27dde6d3d3115909e6c,"function doLink (folder, cb) { return function (er, data) {",0,0,0.0,52
+48106360d2f4de074947d27dde6d3d3115909e6c,"log(data.name+"" ""+data.version, ""link"")",0,0,0.0,53
+48106360d2f4de074947d27dde6d3d3115909e6c,"return d+""@""+deps[d]",0,0,0.0,54
+48106360d2f4de074947d27dde6d3d3115909e6c,if (Array.isArray(deps)) {,0,0,0.0,55
+48106360d2f4de074947d27dde6d3d3115909e6c,// skip any that are installed,0,0,0.0,56
+48106360d2f4de074947d27dde6d3d3115909e6c,"readInstalled(depNames, function (er, inst) {",0,0,0.0,57
+48106360d2f4de074947d27dde6d3d3115909e6c,"if (er) return log.er(cb, ""Couldn't read installed packages"")(er)",0,0,0.0,58
+48106360d2f4de074947d27dde6d3d3115909e6c,for (var d in inst) {,0,0,0.0,59
+48106360d2f4de074947d27dde6d3d3115909e6c,if (satis) delete deps[d],0,0,0.0,60
+48106360d2f4de074947d27dde6d3d3115909e6c,"require(""./utils/link"")(folder, pkgDir, cb)",1,0,0.0,61

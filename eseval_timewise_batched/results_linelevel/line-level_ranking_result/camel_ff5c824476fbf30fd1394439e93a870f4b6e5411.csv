@@ -1,0 +1,98 @@
+commit_id,line,line_level_label,count,line_score,row
+ff5c824476fbf30fd1394439e93a870f4b6e5411,// lookup file filter in registry if provided,1,4,1.0,1
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setSortBy(String expression) {,0,4,1.0,2
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"public void setSortBy(String expression, boolean reverse) {",0,4,1.0,3
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setExchangeSorter(String expression) {,1,4,1.0,4
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"public void setExchangeSorter(String expression, boolean reverse) {",1,4,1.0,5
+ff5c824476fbf30fd1394439e93a870f4b6e5411,// lookup sorter in registry if provided,1,4,1.0,6
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setFileSorter(Comparator<File> fileSorter) {,1,3,0.75,7
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setUp() throws Exception {,1,3,0.75,8
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"private String fileUrl = ""file://target/data/filesorter/"";",1,3,0.75,9
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setUp() throws Exception {,1,3,0.75,10
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setExchangeSorter(Comparator<FileExchange> exchangeSorter) {,1,3,0.75,11
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"private String fileUrl = ""file://target/data/filesorter/"";",1,3,0.75,12
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public Comparator<File> getFileSorter() {,1,3,0.75,13
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setSorter(Comparator<File> sorter) {,0,3,0.75,14
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public Comparator<File> getSorter() {,0,3,0.75,15
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"Comparator<File> sorter = mandatoryLookup(ref, Comparator.class);",1,3,0.75,16
+ff5c824476fbf30fd1394439e93a870f4b6e5411,// lookup idempotent repository in registry if provided,1,3,0.75,17
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public void setSortBy(Comparator<FileExchange> sortBy) {,0,3,0.75,18
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",1,2,0.5,19
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public Comparator<FileExchange> getExchangeSorter() {,1,2,0.5,20
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello Paris"", Exchange.FILE_NAME, ""paris.dat"");",0,2,0.5,21
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",0,2,0.5,22
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Paris"", Exchange.FILE_NAME, ""paris.dat"");",1,2,0.5,23
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Paris"", Exchange.FILE_NAME, ""paris.txt"");",1,2,0.5,24
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello Paris"", Exchange.FILE_NAME, ""paris.txt"");",0,2,0.5,25
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",0,2,0.5,26
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",1,2,0.5,27
+ff5c824476fbf30fd1394439e93a870f4b6e5411,public Comparator<FileExchange> getSortBy() {,0,2,0.5,28
+ff5c824476fbf30fd1394439e93a870f4b6e5411,private Comparator<File> fileSorter;,1,2,0.5,29
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (endpoint.getFileSorter() != null) {,1,2,0.5,30
+ff5c824476fbf30fd1394439e93a870f4b6e5411,private Comparator<File> sorter;,0,2,0.5,31
+ff5c824476fbf30fd1394439e93a870f4b6e5411,protected synchronized void poll() throws Exception {,1,2,0.5,32
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (endpoint.getSortBy() != null) {,0,2,0.5,33
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (endpoint.getSorter() != null) {,0,2,0.5,34
+ff5c824476fbf30fd1394439e93a870f4b6e5411,protected void poll() throws Exception {,0,2,0.5,35
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (sortBy != null) {,1,2,0.5,36
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (ref != null) {,1,2,0.5,37
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"String ref = getAndRemoveParameter(parameters, ""idempotentRepositoryRef"", String.class);",1,2,0.5,38
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (endpoint.getExchangeSorter() != null) {,1,2,0.5,39
+ff5c824476fbf30fd1394439e93a870f4b6e5411,if (isNotNullAndNonEmpty(sortBy) && !isReferenceParameter(sortBy)) {,0,2,0.5,40
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Copenhagen"", Exchange.FILE_NAME,",1,1,0.25,41
+ff5c824476fbf30fd1394439e93a870f4b6e5411,this.exchangeSorter = exchangeSorter;,1,1,0.25,42
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"setExchangeSorter(expression, false);",1,1,0.25,43
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello Copenhagen"", Exchange.FILE_NAME,",0,1,0.25,44
+ff5c824476fbf30fd1394439e93a870f4b6e5411,},1,1,0.25,45
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Copenhagen"", Exchange.FILE_NAME,",1,1,0.25,46
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello Copenhagen"", Exchange.FILE_NAME,",0,1,0.25,47
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(fileUri(folder), ""Hello Dublin"", Exchange.FILE_NAME, ""dublin.txt"");",0,1,0.25,48
+ff5c824476fbf30fd1394439e93a870f4b6e5411,},1,1,0.25,49
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"template.sendBodyAndHeader(""file:target/data/filesorter/"" + folder, ""Hello Dublin"", Exchange.FILE_NAME, ""dublin.txt"");",1,1,0.25,50
+ff5c824476fbf30fd1394439e93a870f4b6e5411,this.fileSorter = fileSorter;,1,1,0.25,51
+ff5c824476fbf30fd1394439e93a870f4b6e5411,return exchangeSorter;,1,1,0.25,52
+ff5c824476fbf30fd1394439e93a870f4b6e5411,return sortBy;,0,1,0.25,53
+ff5c824476fbf30fd1394439e93a870f4b6e5411,return fileSorter;,1,1,0.25,54
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"ref = getAndRemoveParameter(parameters, ""sorterRef"", String.class);",1,1,0.25,55
+ff5c824476fbf30fd1394439e93a870f4b6e5411,private Comparator<FileExchange> exchangeSorter;,1,1,0.25,56
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"IdempotentRepository repository = mandatoryLookup(ref, IdempotentRepository.class);",1,1,0.25,57
+ff5c824476fbf30fd1394439e93a870f4b6e5411,},1,1,0.25,58
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"FileFilter filter = mandatoryLookup(ref, FileFilter.class);",1,1,0.25,59
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"ref = getAndRemoveParameter(parameters, ""fileFilterRef"", String.class);",1,1,0.25,60
+ff5c824476fbf30fd1394439e93a870f4b6e5411,private Comparator<FileExchange> sortBy;,0,1,0.25,61
+ff5c824476fbf30fd1394439e93a870f4b6e5411,return sorter;,0,1,0.25,62
+ff5c824476fbf30fd1394439e93a870f4b6e5411,this.sorter = sorter;,0,1,0.25,63
+ff5c824476fbf30fd1394439e93a870f4b6e5411,this.sortBy = sortBy;,0,1,0.25,64
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"setSortBy(expression, false);",0,1,0.25,65
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUri(""a/?initialDelay=0&delay=10&sortBy=file:ext;file:name"")).convertBodyTo(String.class)",0,0,0.0,66
+ff5c824476fbf30fd1394439e93a870f4b6e5411,@BeforeEach,1,0,0.0,67
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"deleteDirectory(""target/data/filesorter"");",1,0,0.0,68
+ff5c824476fbf30fd1394439e93a870f4b6e5411,super.setUp();,1,0,0.0,69
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUrl + ""a/?initialDelay=0&delay=10&sortBy=file:ext"").to(""mock:result"");",1,0,0.0,70
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUrl + ""b/?initialDelay=0&delay=10&sortBy=reverse:file:ext"").convertBodyTo(String.class)",1,0,0.0,71
+ff5c824476fbf30fd1394439e93a870f4b6e5411,super.setUp();,1,0,0.0,72
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUri(""b/?initialDelay=0&delay=10&sortBy=file:ext;reverse:file:name"")).convertBodyTo(String.class)",0,0,0.0,73
+ff5c824476fbf30fd1394439e93a870f4b6e5411,import org.junit.jupiter.api.BeforeEach;,1,0,0.0,74
+ff5c824476fbf30fd1394439e93a870f4b6e5411,@Override,1,0,0.0,75
+ff5c824476fbf30fd1394439e93a870f4b6e5411,@BeforeEach,1,0,0.0,76
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"deleteDirectory(""target/data/filesorter"");",1,0,0.0,77
+ff5c824476fbf30fd1394439e93a870f4b6e5411,import org.junit.jupiter.api.BeforeEach;,1,0,0.0,78
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUrl + ""a/?initialDelay=0&delay=10&sortBy=file:ext;file:name"").convertBodyTo(String.class)",1,0,0.0,79
+ff5c824476fbf30fd1394439e93a870f4b6e5411,@Override,1,0,0.0,80
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"Collections.sort(files, endpoint.getFileSorter());",1,0,0.0,81
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUri(""b/?initialDelay=0&delay=10&sortBy=reverse:file:ext"")).convertBodyTo(String.class)",0,0,0.0,82
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUri(""a/?initialDelay=0&delay=10&sortBy=file:ext"")).to(""mock:result"");",0,0,0.0,83
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"setExchangeSorter(DefaultFileSorter.sortByFileLanguage(expression, reverse));",1,0,0.0,84
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"setSortBy(DefaultFileSorter.sortByFileLanguage(expression, reverse));",0,0,0.0,85
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"Collections.sort(exchanges, endpoint.getExchangeSorter());",1,0,0.0,86
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"Collections.sort(exchanges, endpoint.getSortBy());",0,0,0.0,87
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"Collections.sort(files, endpoint.getSorter());",0,0,0.0,88
+ff5c824476fbf30fd1394439e93a870f4b6e5411,result.setExchangeSorter(comparator);,1,0,0.0,89
+ff5c824476fbf30fd1394439e93a870f4b6e5411,result.setFileSorter(sorter);,1,0,0.0,90
+ff5c824476fbf30fd1394439e93a870f4b6e5411,result.setFilter(filter);,1,0,0.0,91
+ff5c824476fbf30fd1394439e93a870f4b6e5411,result.setIdempotentRepository(repository);,1,0,0.0,92
+ff5c824476fbf30fd1394439e93a870f4b6e5411,import org.apache.camel.spi.IdempotentRepository;,1,0,0.0,93
+ff5c824476fbf30fd1394439e93a870f4b6e5411,import java.io.FileFilter;,1,0,0.0,94
+ff5c824476fbf30fd1394439e93a870f4b6e5411,result.setSortBy(comparator);,0,0,0.0,95
+ff5c824476fbf30fd1394439e93a870f4b6e5411,import static org.apache.camel.util.ObjectHelper.isNotNullAndNonEmpty;,0,0,0.0,96
+ff5c824476fbf30fd1394439e93a870f4b6e5411,"from(fileUrl + ""b/?initialDelay=0&delay=10&sortBy=file:ext;reverse:file:name"").convertBodyTo(String.class)",1,0,0.0,97

@@ -1,0 +1,456 @@
+commit_id,line,line_level_label,count,line_score,row
+9c9db24738161aef465489b320e6f54a94b4cac7,Floating IP Agent gateway port will be deleted when a,1,7,1.0,1
+9c9db24738161aef465489b320e6f54a94b4cac7,"# fip in the host, so the agent gateway port can be deleted.",1,6,0.8571428571428571,2
+9c9db24738161aef465489b320e6f54a94b4cac7,# FIXME (Swami): This FIP Agent Gateway port should be,0,5,0.7142857142857142,3
+9c9db24738161aef465489b320e6f54a94b4cac7,# FIXME (Swami): This FIP Agent Gateway port should be,1,5,0.7142857142857142,4
+9c9db24738161aef465489b320e6f54a94b4cac7,# of floating IP transaction since it creates a port,1,5,0.7142857142857142,5
+9c9db24738161aef465489b320e6f54a94b4cac7,# FloatingIP agent gateway port,1,4,0.5714285714285714,6
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Create floating agent gw port for DVR.",0,4,0.5714285714285714,7
+9c9db24738161aef465489b320e6f54a94b4cac7,the FIP agent gateway port. If even a single VM is using the,1,4,0.5714285714285714,8
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Helper function to check for fip agent gw port and delete.",1,4,0.5714285714285714,9
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Override to create floating agent gw port for DVR.",1,4,0.5714285714285714,10
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Override to create and delete floating agent gw port for DVR.",1,4,0.5714285714285714,11
+9c9db24738161aef465489b320e6f54a94b4cac7,# created only once and there should not be a duplicate,1,4,0.5714285714285714,12
+9c9db24738161aef465489b320e6f54a94b4cac7,# created only once and there should not be a duplicate,0,4,0.5714285714285714,13
+9c9db24738161aef465489b320e6f54a94b4cac7,# FloatingIP agent gateway port,0,4,0.5714285714285714,14
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Override to create floating agent gw port for DVR.",0,4,0.5714285714285714,15
+9c9db24738161aef465489b320e6f54a94b4cac7,"using the FIP agent gateway port, it will go ahead and delete",1,3,0.42857142857142855,16
+9c9db24738161aef465489b320e6f54a94b4cac7,# Check for the active floatingip in the host,1,3,0.42857142857142855,17
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Override disassociate floatingips to delete fip agent gw port.""""""",1,3,0.42857142857142855,18
+9c9db24738161aef465489b320e6f54a94b4cac7,are any VMs using the FIP agent gateway port. If no VMs are,1,3,0.42857142857142855,19
+9c9db24738161aef465489b320e6f54a94b4cac7,"LOG.debug(""FIP Agent gateway port: %s"", fip_agent_port)",1,3,0.42857142857142855,20
+9c9db24738161aef465489b320e6f54a94b4cac7,"LOG.debug(""FIP Agent gateway port: %s"", fip_agent_port)",0,3,0.42857142857142855,21
+9c9db24738161aef465489b320e6f54a94b4cac7,"'id': _uuid(),",1,2,0.2857142857142857,22
+9c9db24738161aef465489b320e6f54a94b4cac7,fip = {,1,2,0.2857142857142857,23
+9c9db24738161aef465489b320e6f54a94b4cac7,"'id': _uuid(),",1,2,0.2857142857142857,24
+9c9db24738161aef465489b320e6f54a94b4cac7,floatingip = {,1,2,0.2857142857142857,25
+9c9db24738161aef465489b320e6f54a94b4cac7,"# if the fip_count is equal to 1, then this would be last active",1,2,0.2857142857142857,26
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (grtr, vf, cf):",1,2,0.2857142857142857,27
+9c9db24738161aef465489b320e6f54a94b4cac7,floatingip = {,1,2,0.2857142857142857,28
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (vmp, vf, c_fip, cf):",1,2,0.2857142857142857,29
+9c9db24738161aef465489b320e6f54a94b4cac7,fip = {,1,2,0.2857142857142857,30
+9c9db24738161aef465489b320e6f54a94b4cac7,fip = {,0,2,0.2857142857142857,31
+9c9db24738161aef465489b320e6f54a94b4cac7,"'id': _uuid(),",0,2,0.2857142857142857,32
+9c9db24738161aef465489b320e6f54a94b4cac7,floatingip = {,0,2,0.2857142857142857,33
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (grtr, vf, cf):",0,2,0.2857142857142857,34
+9c9db24738161aef465489b320e6f54a94b4cac7,# for the same host. Until we find a good solution for,1,2,0.2857142857142857,35
+9c9db24738161aef465489b320e6f54a94b4cac7,# for the same host. Until we find a good solution for,0,2,0.2857142857142857,36
+9c9db24738161aef465489b320e6f54a94b4cac7,for fip in floating_ips:,1,1,0.14285714285714285,37
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin, '_get_vm_port_hostid') as gvm,\",1,1,0.14285714285714285,38
+9c9db24738161aef465489b320e6f54a94b4cac7,},1,1,0.14285714285714285,39
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_port_id': _uuid(),",1,1,0.14285714285714285,40
+9c9db24738161aef465489b320e6f54a94b4cac7,# If fip_count greater than 1 or equal to zero no action taken,1,1,0.14285714285714285,41
+9c9db24738161aef465489b320e6f54a94b4cac7,port it will not delete.,1,1,0.14285714285714285,42
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""Query all floating_ips and filter on host and external net.""""""",1,1,0.14285714285714285,43
+9c9db24738161aef465489b320e6f54a94b4cac7,fip = self._get_floatingip_on_port(,1,1,0.14285714285714285,44
+9c9db24738161aef465489b320e6f54a94b4cac7,"floatingip = self._get_floatingip(context, id)",1,1,0.14285714285714285,45
+9c9db24738161aef465489b320e6f54a94b4cac7,gvm.return_value = 'my-host',1,1,0.14285714285714285,46
+9c9db24738161aef465489b320e6f54a94b4cac7,# Check if distributed router and then delete the,1,1,0.14285714285714285,47
+9c9db24738161aef465489b320e6f54a94b4cac7,gfips.return_value = floatingip,1,1,0.14285714285714285,48
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(self.mixin, '_get_floatingip_on_port') as gf,\",1,1,0.14285714285714285,49
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin,",1,1,0.14285714285714285,50
+9c9db24738161aef465489b320e6f54a94b4cac7,gf.return_value = floatingip,1,1,0.14285714285714285,51
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin, '_get_floatingip_on_port'),",1,1,0.14285714285714285,52
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(self.mixin, 'get_router') as grtr,\",1,1,0.14285714285714285,53
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._update_fip_assoc(,1,1,0.14285714285714285,54
+9c9db24738161aef465489b320e6f54a94b4cac7,"hostid = self._get_dvr_service_port_hostid(context,",0,1,0.14285714285714285,55
+9c9db24738161aef465489b320e6f54a94b4cac7,hostid = self._get_dvr_service_port_hostid(,1,1,0.14285714285714285,56
+9c9db24738161aef465489b320e6f54a94b4cac7,# FIXME(kevinbenton): refactor so this happens outside,1,1,0.14285714285714285,57
+9c9db24738161aef465489b320e6f54a94b4cac7,# via ML2.,1,1,0.14285714285714285,58
+9c9db24738161aef465489b320e6f54a94b4cac7,"'floating_network_id': _uuid(),",0,1,0.14285714285714285,59
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._update_fip_assoc(,1,1,0.14285714285714285,60
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_update_fip_assoc'),",1,1,0.14285714285714285,61
+9c9db24738161aef465489b320e6f54a94b4cac7,LOG.debug('Deleting the Agent GW Port for ext-net: ',1,1,0.14285714285714285,62
+9c9db24738161aef465489b320e6f54a94b4cac7,"'delete_floatingip')) as (gf, vf, df):",1,1,0.14285714285714285,63
+9c9db24738161aef465489b320e6f54a94b4cac7,"'port_id': _uuid(),",1,1,0.14285714285714285,64
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin,",1,1,0.14285714285714285,65
+9c9db24738161aef465489b320e6f54a94b4cac7,# Check if distributed router and then create the,0,1,0.14285714285714285,66
+9c9db24738161aef465489b320e6f54a94b4cac7,vm_hostid = self.get_vm_port_hostid(,0,1,0.14285714285714285,67
+9c9db24738161aef465489b320e6f54a94b4cac7,# existing flow.,0,1,0.14285714285714285,68
+9c9db24738161aef465489b320e6f54a94b4cac7,vm_hostid = self.get_vm_port_hostid(,1,1,0.14285714285714285,69
+9c9db24738161aef465489b320e6f54a94b4cac7,# augmenting multiple server requests we should use the,1,1,0.14285714285714285,70
+9c9db24738161aef465489b320e6f54a94b4cac7,# existing flow.,1,1,0.14285714285714285,71
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin,",0,1,0.14285714285714285,72
+9c9db24738161aef465489b320e6f54a94b4cac7,"'id': '1234',",0,1,0.14285714285714285,73
+9c9db24738161aef465489b320e6f54a94b4cac7,},0,1,0.14285714285714285,74
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (vf, cf):",1,1,0.14285714285714285,75
+9c9db24738161aef465489b320e6f54a94b4cac7,# augmenting multiple server requests we should use the,0,1,0.14285714285714285,76
+9c9db24738161aef465489b320e6f54a94b4cac7,},1,1,0.14285714285714285,77
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(self.mixin, '_get_floatingip_on_port') as gf,\",0,1,0.14285714285714285,78
+9c9db24738161aef465489b320e6f54a94b4cac7,vm_hostid = self.get_vm_port_hostid(,1,1,0.14285714285714285,79
+9c9db24738161aef465489b320e6f54a94b4cac7,# Check if distributed router and then delete the,0,1,0.14285714285714285,80
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin, '_get_vm_port_hostid') as vmp,\",0,1,0.14285714285714285,81
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(self.mixin, 'get_router') as grtr,\",0,1,0.14285714285714285,82
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(self.mixin, '_get_router') as grtr,\",0,1,0.14285714285714285,83
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin,",0,1,0.14285714285714285,84
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin, '_get_vm_port_hostid') as gvm,\",0,1,0.14285714285714285,85
+9c9db24738161aef465489b320e6f54a94b4cac7,"'get_vm_port_hostid'),",1,1,0.14285714285714285,86
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_hostid = self.get_vm_port_hostid(,1,1,0.14285714285714285,87
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(self.mixin, '_get_device_owner') as gdev,\",0,1,0.14285714285714285,88
+9c9db24738161aef465489b320e6f54a94b4cac7,"port_id,",1,0,0.0,89
+9c9db24738161aef465489b320e6f54a94b4cac7,"super(L3_NAT_with_dvr_db_mixin,",1,0,0.0,90
+9c9db24738161aef465489b320e6f54a94b4cac7,"self).disassociate_floatingips(context,",1,0,0.0,91
+9c9db24738161aef465489b320e6f54a94b4cac7,"return super(L3_NAT_with_dvr_db_mixin,",1,0,0.0,92
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, fip)",1,0,0.0,93
+9c9db24738161aef465489b320e6f54a94b4cac7,if fip:,1,0,0.0,94
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, port_id=port_id)",1,0,0.0,95
+9c9db24738161aef465489b320e6f54a94b4cac7,with context.session.begin(subtransactions=True):,1,0,0.0,96
+9c9db24738161aef465489b320e6f54a94b4cac7,"def disassociate_floatingips(self, context, port_id, do_notify=True):",1,0,0.0,97
+9c9db24738161aef465489b320e6f54a94b4cac7,"self).delete_floatingip(context, id)",1,0,0.0,98
+9c9db24738161aef465489b320e6f54a94b4cac7,self.delete_floatingip_agent_gateway_port(,1,0,0.0,99
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip)",1,0,0.0,100
+9c9db24738161aef465489b320e6f54a94b4cac7,if floatingip['fixed_port_id']:,1,0,0.0,101
+9c9db24738161aef465489b320e6f54a94b4cac7,"def delete_floatingip(self, context, id):",1,0,0.0,102
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, fip_hostid, floatingip_db['floating_network_id'])",1,0,0.0,103
+9c9db24738161aef465489b320e6f54a94b4cac7,"'%s', floatingip_db['floating_network_id'])",1,0,0.0,104
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, fip_hostid, floatingip_db['floating_network_id']):",1,0,0.0,105
+9c9db24738161aef465489b320e6f54a94b4cac7,if fip_hostid and self._check_fips_availability_on_host_ext_net(,1,0,0.0,106
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, floatingip_db['fixed_port_id'])",1,0,0.0,107
+9c9db24738161aef465489b320e6f54a94b4cac7,def _check_fips_availability_on_host_ext_net(,1,0,0.0,108
+9c9db24738161aef465489b320e6f54a94b4cac7,do_notify=do_notify),1,0,0.0,109
+9c9db24738161aef465489b320e6f54a94b4cac7,def _setup_test_create_floatingip(,0,0,0.0,110
+9c9db24738161aef465489b320e6f54a94b4cac7,"self, context, host_id, fip_ext_net_id):",1,0,0.0,111
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_count_on_host = 0,1,0,0.0,112
+9c9db24738161aef465489b320e6f54a94b4cac7,"""""""",1,0,0.0,113
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.mixin,",1,0,0.0,114
+9c9db24738161aef465489b320e6f54a94b4cac7,mock.patch.object(,1,0,0.0,115
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_floatingip') as gfips,\",1,0,0.0,116
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(l3_dvr_db.l3_db.L3_NAT_db_mixin,",1,0,0.0,117
+9c9db24738161aef465489b320e6f54a94b4cac7,'floating_network_id': _uuid(),1,0,0.0,118
+9c9db24738161aef465489b320e6f54a94b4cac7,def test__clear_unused_fip_agent_gw_port(self):,1,0,0.0,119
+9c9db24738161aef465489b320e6f54a94b4cac7,self._setup_test_create_floatingip(,0,0,0.0,120
+9c9db24738161aef465489b320e6f54a94b4cac7,create_fip = (,0,0,0.0,121
+9c9db24738161aef465489b320e6f54a94b4cac7,return c_fip,0,0,0.0,122
+9c9db24738161aef465489b320e6f54a94b4cac7,return False,1,0,0.0,123
+9c9db24738161aef465489b320e6f54a94b4cac7,return True,1,0,0.0,124
+9c9db24738161aef465489b320e6f54a94b4cac7,if fip_count_on_host == 1:,1,0,0.0,125
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_count_on_host += 1,1,0,0.0,126
+9c9db24738161aef465489b320e6f54a94b4cac7,(fip['floating_network_id'] == fip_ext_net_id)):,1,0,0.0,127
+9c9db24738161aef465489b320e6f54a94b4cac7,if (f_host == host_id and,1,0,0.0,128
+9c9db24738161aef465489b320e6f54a94b4cac7,"f_host = self._get_vm_port_hostid(context, fip['port_id'])",1,0,0.0,129
+9c9db24738161aef465489b320e6f54a94b4cac7,"floating_ips = self._get_sync_floating_ips(context, router_ids)",1,0,0.0,130
+9c9db24738161aef465489b320e6f54a94b4cac7,router_ids = self._get_router_ids(context),1,0,0.0,131
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_hostid = self._get_vm_port_hostid(,1,0,0.0,132
+9c9db24738161aef465489b320e6f54a94b4cac7,"mkintf, notify):",1,0,0.0,133
+9c9db24738161aef465489b320e6f54a94b4cac7,This function checks on compute nodes to make sure if there,1,0,0.0,134
+9c9db24738161aef465489b320e6f54a94b4cac7,"'mac_address': attributes.ATTR_NOT_SPECIFIED,",1,0,0.0,135
+9c9db24738161aef465489b320e6f54a94b4cac7,"{'port': {'tenant_id': '',",1,0,0.0,136
+9c9db24738161aef465489b320e6f54a94b4cac7,"context,",1,0,0.0,137
+9c9db24738161aef465489b320e6f54a94b4cac7,agent_port = self._core_plugin.create_port(,1,0,0.0,138
+9c9db24738161aef465489b320e6f54a94b4cac7,"snat_port = p_utils.create_port(self._core_plugin, context,",0,0,0.0,139
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_owner': DEVICE_OWNER_DVR_SNAT,",0,0,0.0,140
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_id': router.id,",0,0,0.0,141
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_ips': [{'subnet_id': subnet_id}],",0,0,0.0,142
+9c9db24738161aef465489b320e6f54a94b4cac7,{'port': port_data}),0,0,0.0,143
+9c9db24738161aef465489b320e6f54a94b4cac7,"agent_port = p_utils.create_port(self._core_plugin, context,",0,0,0.0,144
+9c9db24738161aef465489b320e6f54a94b4cac7,'name': ''},0,0,0.0,145
+9c9db24738161aef465489b320e6f54a94b4cac7,"'admin_state_up': True,",0,0,0.0,146
+9c9db24738161aef465489b320e6f54a94b4cac7,"'binding:host_id': host,",0,0,0.0,147
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_owner': DEVICE_OWNER_AGENT_GW,",0,0,0.0,148
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_id': l3_agent_db['id'],",0,0,0.0,149
+9c9db24738161aef465489b320e6f54a94b4cac7,"'network_id': network_id,",0,0,0.0,150
+9c9db24738161aef465489b320e6f54a94b4cac7,"port_data = {'tenant_id': '',",0,0,0.0,151
+9c9db24738161aef465489b320e6f54a94b4cac7,from neutron.plugins.common import utils as p_utils,0,0,0.0,152
+9c9db24738161aef465489b320e6f54a94b4cac7,'delete_floatingip_agent_gateway_port') as dfips:,1,0,0.0,153
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (grtr, gdev, rmintf, delintf, gplugin,",1,0,0.0,154
+9c9db24738161aef465489b320e6f54a94b4cac7,"'network_id': network_id,",1,0,0.0,155
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_ips': attributes.ATTR_NOT_SPECIFIED,",1,0,0.0,156
+9c9db24738161aef465489b320e6f54a94b4cac7,"self, context, floatingip_db):",1,0,0.0,157
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_id': l3_agent_db['id'],",1,0,0.0,158
+9c9db24738161aef465489b320e6f54a94b4cac7,def _clear_unused_fip_agent_gw_port(,1,0,0.0,159
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip_db)",1,0,0.0,160
+9c9db24738161aef465489b320e6f54a94b4cac7,self._clear_unused_fip_agent_gw_port(,1,0,0.0,161
+9c9db24738161aef465489b320e6f54a94b4cac7,if router_dict.get('distributed'):,1,0,0.0,162
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip_db['router_id'])",1,0,0.0,163
+9c9db24738161aef465489b320e6f54a94b4cac7,router_dict = self.get_router(,1,0,0.0,164
+9c9db24738161aef465489b320e6f54a94b4cac7,admin_ctx = context.elevated(),1,0,0.0,165
+9c9db24738161aef465489b320e6f54a94b4cac7,if unused_fip_agent_gw_port and floatingip_db.get('router_id'):,1,0,0.0,166
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_port is None and floatingip_db['fixed_port_id']),1,0,0.0,167
+9c9db24738161aef465489b320e6f54a94b4cac7,unused_fip_agent_gw_port = (,1,0,0.0,168
+9c9db24738161aef465489b320e6f54a94b4cac7,floatingIP disassociation happens.,1,0,0.0,169
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_owner': DEVICE_OWNER_DVR_SNAT,",1,0,0.0,170
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_id': router.id,",1,0,0.0,171
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_ips': [{'subnet_id': subnet_id}],",1,0,0.0,172
+9c9db24738161aef465489b320e6f54a94b4cac7,snat_port = self._core_plugin.create_port(,1,0,0.0,173
+9c9db24738161aef465489b320e6f54a94b4cac7,'name': ''}}),1,0,0.0,174
+9c9db24738161aef465489b320e6f54a94b4cac7,"'admin_state_up': True,",1,0,0.0,175
+9c9db24738161aef465489b320e6f54a94b4cac7,"'binding:host_id': host,",1,0,0.0,176
+9c9db24738161aef465489b320e6f54a94b4cac7,"'device_owner': DEVICE_OWNER_AGENT_GW,",1,0,0.0,177
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_check_fips_availability_on_host_ext_net') as cfips,\",1,0,0.0,178
+9c9db24738161aef465489b320e6f54a94b4cac7,"return d_fip, c_fip",1,0,0.0,179
+9c9db24738161aef465489b320e6f54a94b4cac7,cfips.return_value = True,1,0,0.0,180
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _create_dvr_floating_gw_port(self, resource, event, trigger, context,",0,0,0.0,181
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, fixed_port_id)",0,0,0.0,182
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floating_network_id, hostid))",0,0,0.0,183
+9c9db24738161aef465489b320e6f54a94b4cac7,fixed_port_id),0,0,0.0,184
+9c9db24738161aef465489b320e6f54a94b4cac7,"router_dict = self.get_router(admin_ctx, router_id)",0,0,0.0,185
+9c9db24738161aef465489b320e6f54a94b4cac7,if associate_fip and router_id:,0,0,0.0,186
+9c9db24738161aef465489b320e6f54a94b4cac7,associate_fip = fixed_port_id and floating_ip_id,0,0,0.0,187
+9c9db24738161aef465489b320e6f54a94b4cac7,**kwargs):,0,0,0.0,188
+9c9db24738161aef465489b320e6f54a94b4cac7,"floating_network_id, fixed_ip_address,",0,0,0.0,189
+9c9db24738161aef465489b320e6f54a94b4cac7,"router_id, fixed_port_id, floating_ip_id,",0,0,0.0,190
+9c9db24738161aef465489b320e6f54a94b4cac7,return n,0,0,0.0,191
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._clear_unused_fip_agent_gw_port(,1,0,0.0,192
+9c9db24738161aef465489b320e6f54a94b4cac7,"resources.FLOATING_IP, events.AFTER_UPDATE)",0,0,0.0,193
+9c9db24738161aef465489b320e6f54a94b4cac7,"registry.subscribe(n._create_dvr_floating_gw_port,",0,0,0.0,194
+9c9db24738161aef465489b320e6f54a94b4cac7,"n = super(L3_NAT_with_dvr_db_mixin, cls).__new__(cls, *args, **kwargs)",0,0,0.0,195
+9c9db24738161aef465489b320e6f54a94b4cac7,"def __new__(cls, *args, **kwargs):",0,0,0.0,196
+9c9db24738161aef465489b320e6f54a94b4cac7,"router = {'id': 'foo_router_id', 'distributed': False}",1,0,0.0,197
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_agent_gw_port_with_non_dvr_router(self):,1,0,0.0,198
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(delete_fip.called),1,0,0.0,199
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_agent_gw_port_with_dvr_router(self):,1,0,0.0,200
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertFalse(create_fip.called),1,0,0.0,201
+9c9db24738161aef465489b320e6f54a94b4cac7,fixed_ip_address)),0,0,0.0,202
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _update_fip_assoc(self, context, fip, floatingip_db, external_port):",1,0,0.0,203
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_port = fip.get('port_id'),1,0,0.0,204
+9c9db24738161aef465489b320e6f54a94b4cac7,"super(L3_NAT_with_dvr_db_mixin, self)._update_fip_assoc(",1,0,0.0,205
+9c9db24738161aef465489b320e6f54a94b4cac7,fixed_ip_address='1.2.3.4'),0,0,0.0,206
+9c9db24738161aef465489b320e6f54a94b4cac7,"floating_network_id=fip['floating_network_id'],",0,0,0.0,207
+9c9db24738161aef465489b320e6f54a94b4cac7,"fixed_port_id=port['id'], floating_ip_id=fip['id'],",0,0,0.0,208
+9c9db24738161aef465489b320e6f54a94b4cac7,"context=mock.Mock(), router_id=router_db['id'],",0,0,0.0,209
+9c9db24738161aef465489b320e6f54a94b4cac7,"registry.notify(resources.FLOATING_IP, events.AFTER_UPDATE, self,",0,0,0.0,210
+9c9db24738161aef465489b320e6f54a94b4cac7,from neutron.callbacks import resources,0,0,0.0,211
+9c9db24738161aef465489b320e6f54a94b4cac7,from neutron.callbacks import registry,0,0,0.0,212
+9c9db24738161aef465489b320e6f54a94b4cac7,from neutron.callbacks import events,0,0,0.0,213
+9c9db24738161aef465489b320e6f54a94b4cac7,floatingip_db['fixed_ip_address'])),1,0,0.0,214
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, fip_port)",1,0,0.0,215
+9c9db24738161aef465489b320e6f54a94b4cac7,hostid)),1,0,0.0,216
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, external_port['network_id'],",1,0,0.0,217
+9c9db24738161aef465489b320e6f54a94b4cac7,"setattr(admin_ctx, 'GUARD_TRANSACTION', False)",1,0,0.0,218
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, fip_port)",1,0,0.0,219
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip_db['router_id'])",1,0,0.0,220
+9c9db24738161aef465489b320e6f54a94b4cac7,router_dict = self.get_router(,1,0,0.0,221
+9c9db24738161aef465489b320e6f54a94b4cac7,if associate_fip and floatingip_db.get('router_id'):,1,0,0.0,222
+9c9db24738161aef465489b320e6f54a94b4cac7,associate_fip = fip_port and floatingip_db['id'],1,0,0.0,223
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, fip, floatingip_db, external_port)",1,0,0.0,224
+9c9db24738161aef465489b320e6f54a94b4cac7,"fip, floatingip, router))",1,0,0.0,225
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertFalse(delete_fip.called),1,0,0.0,226
+9c9db24738161aef465489b320e6f54a94b4cac7,self._setup_test_create_delete_floatingip(,1,0,0.0,227
+9c9db24738161aef465489b320e6f54a94b4cac7,"port_id=port_id, floatingip=floatingip)",1,0,0.0,228
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_port_id': 1234,",1,0,0.0,229
+9c9db24738161aef465489b320e6f54a94b4cac7,port_id = '1234',1,0,0.0,230
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_disassociate_floatingip_with_vm_port(self):,1,0,0.0,231
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.ctx, port_id, do_notify=False)",1,0,0.0,232
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin.disassociate_floatingips(,1,0,0.0,233
+9c9db24738161aef465489b320e6f54a94b4cac7,'_clear_unused_fip_agent_gw_port') as vf:,1,0,0.0,234
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _disassociate_floatingip_setup(self, port_id=None, floatingip=None):",1,0,0.0,235
+9c9db24738161aef465489b320e6f54a94b4cac7,return vf,1,0,0.0,236
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.mixin.delete_floatingip(self.ctx, fip_id)",1,0,0.0,237
+9c9db24738161aef465489b320e6f54a94b4cac7,'delete_floatingip'):,1,0,0.0,238
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(l3_dvr_db.l3_db.L3_NAT_db_mixin,",1,0,0.0,239
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_clear_unused_fip_agent_gw_port') as vf,\",1,0,0.0,240
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_floatingip') as gf,\",1,0,0.0,241
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_id = floatingip['id'],1,0,0.0,242
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _delete_floatingip_test_setup(self, floatingip):",1,0,0.0,243
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(gvm.called),1,0,0.0,244
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(cfips.called),1,0,0.0,245
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(dfips.called),1,0,0.0,246
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.ctx, floatingip)",1,0,0.0,247
+9c9db24738161aef465489b320e6f54a94b4cac7,mock_disassociate_fip = self._disassociate_floatingip_setup(,1,0,0.0,248
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(mock_disassociate_fip.called),1,0,0.0,249
+9c9db24738161aef465489b320e6f54a94b4cac7,"delete_fip, create_fip = (",1,0,0.0,250
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_disassociate_floatingip_with_no_vm_port(self):,1,0,0.0,251
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_make_router_interface_info'),",1,0,0.0,252
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_clear_unused_fip_agent_gw_port') as d_fip,\",1,0,0.0,253
+9c9db24738161aef465489b320e6f54a94b4cac7,def _setup_test_create_delete_floatingip(,1,0,0.0,254
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(vf.called),1,0,0.0,255
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.ctx, fip, floatingip, mock.ANY)",1,0,0.0,256
+9c9db24738161aef465489b320e6f54a94b4cac7,grtr.return_value = router,1,0,0.0,257
+9c9db24738161aef465489b320e6f54a94b4cac7,'_update_fip_assoc'):,1,0,0.0,258
+9c9db24738161aef465489b320e6f54a94b4cac7,"router = {'id': 'foo_router_id', 'distributed': True}",1,0,0.0,259
+9c9db24738161aef465489b320e6f54a94b4cac7,'router_id': 'foo_router_id',1,0,0.0,260
+9c9db24738161aef465489b320e6f54a94b4cac7,'port_id': None,1,0,0.0,261
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_disassociated_floatingip_agent_port(self):,1,0,0.0,262
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(mock_fip_clear.called),1,0,0.0,263
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_with_internal_port(self):,1,0,0.0,264
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertFalse(mock_fip_clear.call_count),1,0,0.0,265
+9c9db24738161aef465489b320e6f54a94b4cac7,mock_fip_clear = self._delete_floatingip_test_setup(floatingip),1,0,0.0,266
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_port_id': None,",1,0,0.0,267
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_without_internal_port(self):,1,0,0.0,268
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertFalse(mock_disassociate_fip.called),1,0,0.0,269
+9c9db24738161aef465489b320e6f54a94b4cac7,mock_disassociate_fip = self._disassociate_floatingip_setup(),1,0,0.0,270
+9c9db24738161aef465489b320e6f54a94b4cac7,"'notify_router_interface_action'),",1,0,0.0,271
+9c9db24738161aef465489b320e6f54a94b4cac7,'_create_snat_intf_ports_if_not_exists') as cs:,0,0,0.0,272
+9c9db24738161aef465489b320e6f54a94b4cac7,"'get_service_plugins'),",1,0,0.0,273
+9c9db24738161aef465489b320e6f54a94b4cac7,"fip['host'] = self._get_vm_port_hostid(context, fip['port_id'],",0,0,0.0,274
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _get_fip_sync_interfaces(self, context, fip_agent_id):",0,0,0.0,275
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_sync_interfaces = self._get_fip_sync_interfaces(,0,0,0.0,276
+9c9db24738161aef465489b320e6f54a94b4cac7,"snat_router_intfs = self._get_snat_sync_interfaces(context,",0,0,0.0,277
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _get_snat_sync_interfaces(self, context, router_ids):",0,0,0.0,278
+9c9db24738161aef465489b320e6f54a94b4cac7,self._add_csnat_router_interface_port(,0,0,0.0,279
+9c9db24738161aef465489b320e6f54a94b4cac7,self._delete_floatingip_agent_gateway_port(,0,0,0.0,280
+9c9db24738161aef465489b320e6f54a94b4cac7,if fip_hostid and self._check_fips_availability_on_host_ext_net(,0,0,0.0,281
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_hostid = self._get_vm_port_hostid(,0,0,0.0,282
+9c9db24738161aef465489b320e6f54a94b4cac7,def _clear_unused_fip_agent_gw_port(,0,0,0.0,283
+9c9db24738161aef465489b320e6f54a94b4cac7,vm_hostid = self._get_vm_port_hostid(,0,0,0.0,284
+9c9db24738161aef465489b320e6f54a94b4cac7,self._clear_unused_fip_agent_gw_port(,0,0,0.0,285
+9c9db24738161aef465489b320e6f54a94b4cac7,snat_p_list = self._create_snat_intf_ports_if_not_exists(,0,0,0.0,286
+9c9db24738161aef465489b320e6f54a94b4cac7,if not self._create_snat_intf_ports_if_not_exists(,0,0,0.0,287
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(c_fip.called),1,0,0.0,288
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.ctx, fip, floatingip, port)",1,0,0.0,289
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_port_id': 1234,",1,0,0.0,290
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_create_floatingip_agent_gw_port(self):,1,0,0.0,291
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_agent_gw_port_with_non_dvr_router(self):,0,0,0.0,292
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(delete_fip.called),0,0,0.0,293
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _get_dvr_sync_data(self, context, host, agent, router_ids=None,",0,0,0.0,294
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _get_vm_port_hostid(self, context, port_id, port=None):",0,0,0.0,295
+9c9db24738161aef465489b320e6f54a94b4cac7,"'fixed_port_id': 1234,",0,0,0.0,296
+9c9db24738161aef465489b320e6f54a94b4cac7,def _get_agent_gw_ports_exist_for_network(,0,0,0.0,297
+9c9db24738161aef465489b320e6f54a94b4cac7,"snat_router_intfs = self.get_snat_sync_interfaces(context,",1,0,0.0,298
+9c9db24738161aef465489b320e6f54a94b4cac7,"def get_snat_sync_interfaces(self, context, router_ids):",1,0,0.0,299
+9c9db24738161aef465489b320e6f54a94b4cac7,self.add_csnat_router_interface_port(,1,0,0.0,300
+9c9db24738161aef465489b320e6f54a94b4cac7,self.delete_floatingip_agent_gateway_port(,1,0,0.0,301
+9c9db24738161aef465489b320e6f54a94b4cac7,if fip_hostid and self.check_fips_availability_on_host_ext_net(,1,0,0.0,302
+9c9db24738161aef465489b320e6f54a94b4cac7,def clear_unused_fip_agent_gw_port(,1,0,0.0,303
+9c9db24738161aef465489b320e6f54a94b4cac7,self.clear_unused_fip_agent_gw_port(,1,0,0.0,304
+9c9db24738161aef465489b320e6f54a94b4cac7,snat_p_list = self.create_snat_intf_ports_if_not_exists(,1,0,0.0,305
+9c9db24738161aef465489b320e6f54a94b4cac7,if not self.create_snat_intf_ports_if_not_exists(,1,0,0.0,306
+9c9db24738161aef465489b320e6f54a94b4cac7,snat_port = self._add_csnat_router_interface_port(,0,0,0.0,307
+9c9db24738161aef465489b320e6f54a94b4cac7,port_list = self._get_snat_interface_ports_for_router(,0,0,0.0,308
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _create_snat_intf_ports_if_not_exists(self, context, router):",0,0,0.0,309
+9c9db24738161aef465489b320e6f54a94b4cac7,def _add_csnat_router_interface_port(,0,0,0.0,310
+9c9db24738161aef465489b320e6f54a94b4cac7,"def _get_snat_interface_ports_for_router(self, context, router_id):",0,0,0.0,311
+9c9db24738161aef465489b320e6f54a94b4cac7,f_port = self._get_agent_gw_ports_exist_for_network(,0,0,0.0,312
+9c9db24738161aef465489b320e6f54a94b4cac7,"if self._get_vm_port_hostid(context, p['id'], p) == host_id:",0,0,0.0,313
+9c9db24738161aef465489b320e6f54a94b4cac7,def _delete_floatingip_agent_gateway_port(,0,0,0.0,314
+9c9db24738161aef465489b320e6f54a94b4cac7,"f_host = self._get_vm_port_hostid(context, fip['port_id'])",0,0,0.0,315
+9c9db24738161aef465489b320e6f54a94b4cac7,def _check_fips_availability_on_host_ext_net(,0,0,0.0,316
+9c9db24738161aef465489b320e6f54a94b4cac7,'port_id': None,0,0,0.0,317
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_agent_gw_port_with_dvr_router(self):,0,0,0.0,318
+9c9db24738161aef465489b320e6f54a94b4cac7,"def get_fip_sync_interfaces(self, context, fip_agent_id):",1,0,0.0,319
+9c9db24738161aef465489b320e6f54a94b4cac7,if unused_fip_agent_gw_port:,1,0,0.0,320
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_agent_port = self.create_fip_agent_gw_port_if_not_exists(,1,0,0.0,321
+9c9db24738161aef465489b320e6f54a94b4cac7,if vm_hostid:,1,0,0.0,322
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, fip_port)",1,0,0.0,323
+9c9db24738161aef465489b320e6f54a94b4cac7,if fip_port and floatingip_db['id']:,1,0,0.0,324
+9c9db24738161aef465489b320e6f54a94b4cac7,vm_hostid)),0,0,0.0,325
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, external_port['network_id'],",0,0,0.0,326
+9c9db24738161aef465489b320e6f54a94b4cac7,self.create_fip_agent_gw_port_if_not_exists(,0,0,0.0,327
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_agent_port = (,0,0,0.0,328
+9c9db24738161aef465489b320e6f54a94b4cac7,if vm_hostid:,0,0,0.0,329
+9c9db24738161aef465489b320e6f54a94b4cac7,"context, fip_port)",0,0,0.0,330
+9c9db24738161aef465489b320e6f54a94b4cac7,admin_ctx = context.elevated(),0,0,0.0,331
+9c9db24738161aef465489b320e6f54a94b4cac7,if associate_fip and floatingip_db.get('router_id'):,0,0,0.0,332
+9c9db24738161aef465489b320e6f54a94b4cac7,associate_fip = fip_port and floatingip_db['id'],0,0,0.0,333
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip_db)",0,0,0.0,334
+9c9db24738161aef465489b320e6f54a94b4cac7,self.clear_unused_fip_agent_gw_port(,0,0,0.0,335
+9c9db24738161aef465489b320e6f54a94b4cac7,if router_dict.get('distributed'):,0,0,0.0,336
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip_db['router_id'])",0,0,0.0,337
+9c9db24738161aef465489b320e6f54a94b4cac7,router_dict = self.get_router(,0,0,0.0,338
+9c9db24738161aef465489b320e6f54a94b4cac7,if unused_fip_agent_gw_port and floatingip_db.get('router_id'):,0,0,0.0,339
+9c9db24738161aef465489b320e6f54a94b4cac7,"context.elevated(), external_port['network_id'], vm_hostid)",1,0,0.0,340
+9c9db24738161aef465489b320e6f54a94b4cac7,self.clear_unused_fip_agent_gw_port(,1,0,0.0,341
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertFalse(create_fip.called),0,0,0.0,342
+9c9db24738161aef465489b320e6f54a94b4cac7,"admin_ctx, floatingip_db)",1,0,0.0,343
+9c9db24738161aef465489b320e6f54a94b4cac7,"router = {'id': 'foo_router_id', 'distributed': False}",0,0,0.0,344
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_create_floatingip_agent_gw_port_with_non_dvr_router(self):,0,0,0.0,345
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertFalse(delete_fip.called),0,0,0.0,346
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(create_fip.called),0,0,0.0,347
+9c9db24738161aef465489b320e6f54a94b4cac7,"fip, floatingip, router))",0,0,0.0,348
+9c9db24738161aef465489b320e6f54a94b4cac7,self._setup_test_create_delete_floatingip(,0,0,0.0,349
+9c9db24738161aef465489b320e6f54a94b4cac7,"delete_fip, create_fip = (",0,0,0.0,350
+9c9db24738161aef465489b320e6f54a94b4cac7,'port_id': _uuid(),0,0,0.0,351
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_create_floatingip_agent_gw_port_with_dvr_router(self):,0,0,0.0,352
+9c9db24738161aef465489b320e6f54a94b4cac7,"return d_fip, c_fip",0,0,0.0,353
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.ctx, fip, floatingip_db, port)",0,0,0.0,354
+9c9db24738161aef465489b320e6f54a94b4cac7,grtr.return_value = router_db,0,0,0.0,355
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (grtr, vmp, d_fip, c_fip, up_fip):",0,0,0.0,356
+9c9db24738161aef465489b320e6f54a94b4cac7,"self, fip, floatingip_db, router_db):",0,0,0.0,357
+9c9db24738161aef465489b320e6f54a94b4cac7,def _setup_test_create_delete_floatingip(,0,0,0.0,358
+9c9db24738161aef465489b320e6f54a94b4cac7,grtr.return_value = router,0,0,0.0,359
+9c9db24738161aef465489b320e6f54a94b4cac7,"'get_router'),",0,0,0.0,360
+9c9db24738161aef465489b320e6f54a94b4cac7,"router = {'id': 'foo_router_id', 'distributed': True}",0,0,0.0,361
+9c9db24738161aef465489b320e6f54a94b4cac7,'router_id': 'foo_router_id',0,0,0.0,362
+9c9db24738161aef465489b320e6f54a94b4cac7,fip_sync_interfaces = self.get_fip_sync_interfaces(,1,0,0.0,363
+9c9db24738161aef465489b320e6f54a94b4cac7,"def get_dvr_sync_data(self, context, host, agent, router_ids=None,",1,0,0.0,364
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(manager.NeutronManager,",1,0,0.0,365
+9c9db24738161aef465489b320e6f54a94b4cac7,import contextlib,1,0,0.0,366
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_make_router_interface_info') as mkintf,\",0,0,0.0,367
+9c9db24738161aef465489b320e6f54a94b4cac7,"'get_service_plugins') as gplugin,\",0,0,0.0,368
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(manager.NeutronManager,",0,0,0.0,369
+9c9db24738161aef465489b320e6f54a94b4cac7,"'delete_csnat_router_interface_ports') as delintf,\",0,0,0.0,370
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_remove_interface_by_subnet') as rmintf,\",0,0,0.0,371
+9c9db24738161aef465489b320e6f54a94b4cac7,"'create_fip_agent_gw_port_if_not_exists') as c_fip,\",0,0,0.0,372
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_clear_unused_fip_agent_gw_port') as d_fip,\",0,0,0.0,373
+9c9db24738161aef465489b320e6f54a94b4cac7,'_update_fip_assoc'):,0,0,0.0,374
+9c9db24738161aef465489b320e6f54a94b4cac7,'_clear_unused_fip_agent_gw_port') as vf:,0,0,0.0,375
+9c9db24738161aef465489b320e6f54a94b4cac7,'delete_floatingip'):,0,0,0.0,376
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(l3_dvr_db.l3_db.L3_NAT_db_mixin,",0,0,0.0,377
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_clear_unused_fip_agent_gw_port') as vf,\",0,0,0.0,378
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_floatingip') as gf,\",0,0,0.0,379
+9c9db24738161aef465489b320e6f54a94b4cac7,'_get_vm_port_hostid') as vm_host:,0,0,0.0,380
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(manager.NeutronManager, 'get_plugin') as gp,\",0,0,0.0,381
+9c9db24738161aef465489b320e6f54a94b4cac7,'_delete_floatingip_agent_gateway_port') as dfips:,0,0,0.0,382
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_check_fips_availability_on_host_ext_net') as cfips,\",0,0,0.0,383
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_floatingip') as gfips,\",0,0,0.0,384
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.mixin,",0,0,0.0,385
+9c9db24738161aef465489b320e6f54a94b4cac7,'notify_router_interface_action') as notify:,0,0,0.0,386
+9c9db24738161aef465489b320e6f54a94b4cac7,with contextlib.nested(,1,0,0.0,387
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_create_gw_port'),\",0,0,0.0,388
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(l3_dvr_db.l3_db.L3_NAT_db_mixin,",1,0,0.0,389
+9c9db24738161aef465489b320e6f54a94b4cac7,"'delete_csnat_router_interface_ports'),",1,0,0.0,390
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_remove_interface_by_subnet'),",1,0,0.0,391
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_device_owner'),",1,0,0.0,392
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_router'),",1,0,0.0,393
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (grtr, vmp, d_fip, c_fip, up_fip):",1,0,0.0,394
+9c9db24738161aef465489b320e6f54a94b4cac7,"'create_fip_agent_gw_port_if_not_exists'),",1,0,0.0,395
+9c9db24738161aef465489b320e6f54a94b4cac7,"'get_router'),",1,0,0.0,396
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (gf, vf):",1,0,0.0,397
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_clear_unused_fip_agent_gw_port'),",1,0,0.0,398
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_vm_port_hostid')) as (gp, vm_host):",1,0,0.0,399
+9c9db24738161aef465489b320e6f54a94b4cac7,"mock.patch.object(manager.NeutronManager, 'get_plugin'),",1,0,0.0,400
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (gfips, gvm, cfips, dfips):",1,0,0.0,401
+9c9db24738161aef465489b320e6f54a94b4cac7,'_delete_floatingip_agent_gateway_port'),1,0,0.0,402
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_check_fips_availability_on_host_ext_net'),",1,0,0.0,403
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_vm_port_hostid'),",1,0,0.0,404
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_floatingip'),",1,0,0.0,405
+9c9db24738161aef465489b320e6f54a94b4cac7,") as (cw, cs):",1,0,0.0,406
+9c9db24738161aef465489b320e6f54a94b4cac7,'_create_snat_intf_ports_if_not_exists'),1,0,0.0,407
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_create_gw_port'),",1,0,0.0,408
+9c9db24738161aef465489b320e6f54a94b4cac7,mock.patch.object(,0,0,0.0,409
+9c9db24738161aef465489b320e6f54a94b4cac7,"with mock.patch.object(l3_dvr_db.l3_db.L3_NAT_db_mixin,",0,0,0.0,410
+9c9db24738161aef465489b320e6f54a94b4cac7,"fip['host'] = self.get_vm_port_hostid(context, fip['port_id'],",1,0,0.0,411
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._clear_unused_fip_agent_gw_port(,0,0,0.0,412
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_check_fips_availability_on_host_ext_net'),",0,0,0.0,413
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_vm_port_hostid'),",0,0,0.0,414
+9c9db24738161aef465489b320e6f54a94b4cac7,def test__clear_unused_fip_agent_gw_port(self):,0,0,0.0,415
+9c9db24738161aef465489b320e6f54a94b4cac7,'_create_snat_intf_ports_if_not_exists'),0,0,0.0,416
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_prevent__delete_floatingip_agent_gateway_port(self):,0,0,0.0,417
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._get_agent_gw_ports_exist_for_network(,0,0,0.0,418
+9c9db24738161aef465489b320e6f54a94b4cac7,def test__get_agent_gw_ports_exist_for_network(self):,0,0,0.0,419
+9c9db24738161aef465489b320e6f54a94b4cac7,snat_port = self.add_csnat_router_interface_port(,1,0,0.0,420
+9c9db24738161aef465489b320e6f54a94b4cac7,port_list = self.get_snat_interface_ports_for_router(,1,0,0.0,421
+9c9db24738161aef465489b320e6f54a94b4cac7,"def create_snat_intf_ports_if_not_exists(self, context, router):",1,0,0.0,422
+9c9db24738161aef465489b320e6f54a94b4cac7,def add_csnat_router_interface_port(,1,0,0.0,423
+9c9db24738161aef465489b320e6f54a94b4cac7,"def get_snat_interface_ports_for_router(self, context, router_id):",1,0,0.0,424
+9c9db24738161aef465489b320e6f54a94b4cac7,f_port = self.get_agent_gw_ports_exist_for_network(,1,0,0.0,425
+9c9db24738161aef465489b320e6f54a94b4cac7,"if self.get_vm_port_hostid(context, p['id'], p) == host_id:",1,0,0.0,426
+9c9db24738161aef465489b320e6f54a94b4cac7,def delete_floatingip_agent_gateway_port(,1,0,0.0,427
+9c9db24738161aef465489b320e6f54a94b4cac7,"f_host = self.get_vm_port_hostid(context, fip['port_id'])",1,0,0.0,428
+9c9db24738161aef465489b320e6f54a94b4cac7,def check_fips_availability_on_host_ext_net(,1,0,0.0,429
+9c9db24738161aef465489b320e6f54a94b4cac7,def get_agent_gw_ports_exist_for_network(,1,0,0.0,430
+9c9db24738161aef465489b320e6f54a94b4cac7,"def get_vm_port_hostid(self, context, port_id, port=None):",1,0,0.0,431
+9c9db24738161aef465489b320e6f54a94b4cac7,'_delete_floatingip_agent_gateway_port'),0,0,0.0,432
+9c9db24738161aef465489b320e6f54a94b4cac7,def test__delete_floatingip_agent_gateway_port(self):,0,0,0.0,433
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(self.mixin.get_fip_sync_interfaces.called),1,0,0.0,434
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_get_vm_port_hostid')) as (gp, vm_host):",0,0,0.0,435
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin.get_fip_sync_interfaces = mock.Mock(,1,0,0.0,436
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin.get_vm_port_hostid = mock.Mock(return_value=hostid),1,0,0.0,437
+9c9db24738161aef465489b320e6f54a94b4cac7,"'clear_unused_fip_agent_gw_port'),",1,0,0.0,438
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin.delete_floatingip_agent_gateway_port(,1,0,0.0,439
+9c9db24738161aef465489b320e6f54a94b4cac7,"'get_vm_port_hostid')) as (gp, vm_host):",1,0,0.0,440
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_delete_floatingip_agent_gateway_port(self):,1,0,0.0,441
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin.clear_unused_fip_agent_gw_port(,1,0,0.0,442
+9c9db24738161aef465489b320e6f54a94b4cac7,'delete_floatingip_agent_gateway_port'),1,0,0.0,443
+9c9db24738161aef465489b320e6f54a94b4cac7,"'check_fips_availability_on_host_ext_net'),",1,0,0.0,444
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_clear_unused_fip_agent_gw_port(self):,1,0,0.0,445
+9c9db24738161aef465489b320e6f54a94b4cac7,'create_snat_intf_ports_if_not_exists'),1,0,0.0,446
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_prevent_delete_floatingip_agent_gateway_port(self):,1,0,0.0,447
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin.get_agent_gw_ports_exist_for_network(,1,0,0.0,448
+9c9db24738161aef465489b320e6f54a94b4cac7,def test_get_agent_gw_ports_exist_for_network(self):,1,0,0.0,449
+9c9db24738161aef465489b320e6f54a94b4cac7,self.assertTrue(self.mixin._get_fip_sync_interfaces.called),0,0,0.0,450
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._get_fip_sync_interfaces = mock.Mock(,0,0,0.0,451
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._get_vm_port_hostid = mock.Mock(return_value=hostid),0,0,0.0,452
+9c9db24738161aef465489b320e6f54a94b4cac7,"'_clear_unused_fip_agent_gw_port'),",0,0,0.0,453
+9c9db24738161aef465489b320e6f54a94b4cac7,self.mixin._delete_floatingip_agent_gateway_port(,0,0,0.0,454
+9c9db24738161aef465489b320e6f54a94b4cac7,"self.ctx, fip, floatingip_db, port)",1,0,0.0,455

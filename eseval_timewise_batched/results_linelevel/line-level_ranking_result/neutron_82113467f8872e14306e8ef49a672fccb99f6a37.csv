@@ -1,0 +1,175 @@
+commit_id,line,line_level_label,count,line_score,row
+82113467f8872e14306e8ef49a672fccb99f6a37,# Stores port update notifications for processing in main rpc loop,0,3,1.0,1
+82113467f8872e14306e8ef49a672fccb99f6a37,# update plugin about port status,1,3,1.0,2
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.plugin_rpc.update_device_down(self.context, port['id'],",1,2,0.6666666666666666,3
+82113467f8872e14306e8ef49a672fccb99f6a37,# A device might be both in the 'added' and 'updated',0,1,0.3333333333333333,4
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.exception(_(""Error in agent event loop""))",1,1,0.3333333333333333,5
+82113467f8872e14306e8ef49a672fccb99f6a37,# Notify the plugin of tunnel IP,1,1,0.3333333333333333,6
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.error(_(""RPC timeout while updating port %s""), port['id'])",1,1,0.3333333333333333,7
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.plugin_rpc.update_device_up(self.context, port['id'],",1,1,0.3333333333333333,8
+82113467f8872e14306e8ef49a672fccb99f6a37,# Validate that port is on OVS,1,1,0.3333333333333333,9
+82113467f8872e14306e8ef49a672fccb99f6a37,# Notify the plugin of tunnel IP,0,1,0.3333333333333333,10
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.treat_vif_port(vif_port, port['id'], port['network_id'],",1,1,0.3333333333333333,11
+82113467f8872e14306e8ef49a672fccb99f6a37,# to be performed anyway when the admin state of a device is changed.,0,1,0.3333333333333333,12
+82113467f8872e14306e8ef49a672fccb99f6a37,# plugin (eg: when there are no IP address changes),0,1,0.3333333333333333,13
+82113467f8872e14306e8ef49a672fccb99f6a37,# In this case the updated port won't be found among,0,1,0.3333333333333333,14
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""port_update message processed for port %s""), port['id'])",0,1,0.3333333333333333,15
+82113467f8872e14306e8ef49a672fccb99f6a37,"# Even if full port details might be provided to this call,",0,1,0.3333333333333333,16
+82113467f8872e14306e8ef49a672fccb99f6a37,# Put the port identifier in the updated_ports set.,0,1,0.3333333333333333,17
+82113467f8872e14306e8ef49a672fccb99f6a37,self.agent_id),1,1,0.3333333333333333,18
+82113467f8872e14306e8ef49a672fccb99f6a37,self.sg_agent.refresh_firewall(),1,0,0.0,19
+82113467f8872e14306e8ef49a672fccb99f6a37,from neutron.extensions import securitygroup as ext_sg,1,0,0.0,20
+82113467f8872e14306e8ef49a672fccb99f6a37,from neutron.openstack.common.rpc import common as rpc_common,1,0,0.0,21
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""port_update received""))",1,0,0.0,22
+82113467f8872e14306e8ef49a672fccb99f6a37,vif_port = self.int_br.get_vif_port_by_id(port['id']),1,0,0.0,23
+82113467f8872e14306e8ef49a672fccb99f6a37,if not vif_port:,1,0,0.0,24
+82113467f8872e14306e8ef49a672fccb99f6a37,return,1,0,0.0,25
+82113467f8872e14306e8ef49a672fccb99f6a37,if ext_sg.SECURITYGROUPS in port:,1,0,0.0,26
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.agent_id,",1,0,0.0,27
+82113467f8872e14306e8ef49a672fccb99f6a37,network_type = kwargs.get('network_type'),1,0,0.0,28
+82113467f8872e14306e8ef49a672fccb99f6a37,segmentation_id = kwargs.get('segmentation_id'),1,0,0.0,29
+82113467f8872e14306e8ef49a672fccb99f6a37,physical_network = kwargs.get('physical_network'),1,0,0.0,30
+82113467f8872e14306e8ef49a672fccb99f6a37,"network_type, physical_network,",1,0,0.0,31
+82113467f8872e14306e8ef49a672fccb99f6a37,"segmentation_id, port['admin_state_up'])",1,0,0.0,32
+82113467f8872e14306e8ef49a672fccb99f6a37,try:,1,0,0.0,33
+82113467f8872e14306e8ef49a672fccb99f6a37,if port['admin_state_up']:,1,0,0.0,34
+82113467f8872e14306e8ef49a672fccb99f6a37,self.updated_ports |= updated_ports_copy,0,0,0.0,35
+82113467f8872e14306e8ef49a672fccb99f6a37,sync = True,0,0,0.0,36
+82113467f8872e14306e8ef49a672fccb99f6a37,"port_info = self.scan_ports(ports, updated_ports_copy)",0,0,0.0,37
+82113467f8872e14306e8ef49a672fccb99f6a37,# Put the ports back in self.updated_port,0,0,0.0,38
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.exception(_(""Error while processing VIF ports""))",0,0,0.0,39
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.exception(_(""Error while synchronizing tunnels""))",0,0,0.0,40
+82113467f8872e14306e8ef49a672fccb99f6a37,tunnel_sync = True,0,0,0.0,41
+82113467f8872e14306e8ef49a672fccb99f6a37,if self._agent_has_updates(polling_manager):,0,0,0.0,42
+82113467f8872e14306e8ef49a672fccb99f6a37,# Save updated ports dict to perform rollback in,0,0,0.0,43
+82113467f8872e14306e8ef49a672fccb99f6a37,"# case resync would be needed, and then clear",0,0,0.0,44
+82113467f8872e14306e8ef49a672fccb99f6a37,# self.updated_ports. As the greenthread should not yield,0,0,0.0,45
+82113467f8872e14306e8ef49a672fccb99f6a37,"# between these two statements, this will be thread-safe",0,0,0.0,46
+82113467f8872e14306e8ef49a672fccb99f6a37,updated_ports_copy = self.updated_ports,0,0,0.0,47
+82113467f8872e14306e8ef49a672fccb99f6a37,else:,1,0,0.0,48
+82113467f8872e14306e8ef49a672fccb99f6a37,ports = port_info['current'],0,0,0.0,49
+82113467f8872e14306e8ef49a672fccb99f6a37,if self._port_info_has_changes(port_info):,0,0,0.0,50
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Starting to process devices in:%s""),",0,0,0.0,51
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info),0,0,0.0,52
+82113467f8872e14306e8ef49a672fccb99f6a37,port_stats['regular']['updated'] = (,0,0,0.0,53
+82113467f8872e14306e8ef49a672fccb99f6a37,"len(port_info.get('updated', [])))",0,0,0.0,54
+82113467f8872e14306e8ef49a672fccb99f6a37,cfg.CONF.host),1,0,0.0,55
+82113467f8872e14306e8ef49a672fccb99f6a37,"'added': added,",1,0,0.0,56
+82113467f8872e14306e8ef49a672fccb99f6a37,except rpc_common.Timeout:,1,0,0.0,57
+82113467f8872e14306e8ef49a672fccb99f6a37,if self.enable_tunneling and tunnel_sync:,1,0,0.0,58
+82113467f8872e14306e8ef49a672fccb99f6a37,self.iter_num),1,0,0.0,59
+82113467f8872e14306e8ef49a672fccb99f6a37,if sync:,1,0,0.0,60
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.info(_(""Agent out of sync with plugin!""))",1,0,0.0,61
+82113467f8872e14306e8ef49a672fccb99f6a37,ports.clear(),1,0,0.0,62
+82113467f8872e14306e8ef49a672fccb99f6a37,ancillary_ports.clear(),1,0,0.0,63
+82113467f8872e14306e8ef49a672fccb99f6a37,sync = False,1,0,0.0,64
+82113467f8872e14306e8ef49a672fccb99f6a37,polling_manager.force_polling(),1,0,0.0,65
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.info(_(""Agent tunnel out of sync with plugin!""))",1,0,0.0,66
+82113467f8872e14306e8ef49a672fccb99f6a37,"'ancillary': {'added': 0, 'removed': 0}}",1,0,0.0,67
+82113467f8872e14306e8ef49a672fccb99f6a37,if polling_manager.is_polling_required:,1,0,0.0,68
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info = self.update_ports(ports),1,0,0.0,69
+82113467f8872e14306e8ef49a672fccb99f6a37,if port_info:,1,0,0.0,70
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Agent loop has new devices!""))",1,0,0.0,71
+82113467f8872e14306e8ef49a672fccb99f6a37,ports = port_info['current'],1,0,0.0,72
+82113467f8872e14306e8ef49a672fccb99f6a37,except Exception:,1,0,0.0,73
+82113467f8872e14306e8ef49a672fccb99f6a37,sync = True,1,0,0.0,74
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Agent rpc_loop - iteration:%d started""),",1,0,0.0,75
+82113467f8872e14306e8ef49a672fccb99f6a37,"port_stats = {'regular': {'added': 0, 'removed': 0},",1,0,0.0,76
+82113467f8872e14306e8ef49a672fccb99f6a37,"def update_ports(self, registered_ports):",1,0,0.0,77
+82113467f8872e14306e8ef49a672fccb99f6a37,'removed': removed},1,0,0.0,78
+82113467f8872e14306e8ef49a672fccb99f6a37,ports = self.int_br.get_vif_port_set(),1,0,0.0,79
+82113467f8872e14306e8ef49a672fccb99f6a37,if ports == registered_ports:,1,0,0.0,80
+82113467f8872e14306e8ef49a672fccb99f6a37,self.int_br_device_count = len(ports),1,0,0.0,81
+82113467f8872e14306e8ef49a672fccb99f6a37,added = ports - registered_ports,1,0,0.0,82
+82113467f8872e14306e8ef49a672fccb99f6a37,removed = registered_ports - ports,1,0,0.0,83
+82113467f8872e14306e8ef49a672fccb99f6a37,"return {'current': ports,",1,0,0.0,84
+82113467f8872e14306e8ef49a672fccb99f6a37,try:,0,0,0.0,85
+82113467f8872e14306e8ef49a672fccb99f6a37,"def treat_devices_added(self, devices):",1,0,0.0,86
+82113467f8872e14306e8ef49a672fccb99f6a37,start = time.time(),1,0,0.0,87
+82113467f8872e14306e8ef49a672fccb99f6a37,self.sg_agent.prepare_devices_filter(devices),1,0,0.0,88
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.info(_(""Port %s added""), device)",1,0,0.0,89
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.plugin_rpc.update_device_up(self.context,",1,0,0.0,90
+82113467f8872e14306e8ef49a672fccb99f6a37,"device,",1,0,0.0,91
+82113467f8872e14306e8ef49a672fccb99f6a37,if 'added' in port_info:,1,0,0.0,92
+82113467f8872e14306e8ef49a672fccb99f6a37,resync_a = self.treat_devices_added(port_info['added']),1,0,0.0,93
+82113467f8872e14306e8ef49a672fccb99f6a37,"""treat_devices_added completed in %(elapsed).3f""),",1,0,0.0,94
+82113467f8872e14306e8ef49a672fccb99f6a37,except Exception:,0,0,0.0,95
+82113467f8872e14306e8ef49a672fccb99f6a37,self.iter_num),0,0,0.0,96
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.info(_(""Agent tunnel out of sync with plugin!""))",0,0,0.0,97
+82113467f8872e14306e8ef49a672fccb99f6a37,# details for all devices in one call,0,0,0.0,98
+82113467f8872e14306e8ef49a672fccb99f6a37,return port_info,0,0,0.0,99
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info['added'] = cur_ports - registered_ports,0,0,0.0,100
+82113467f8872e14306e8ef49a672fccb99f6a37,# Remove all the known ports not found on the integration bridge,0,0,0.0,101
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info['removed'] = registered_ports - cur_ports,0,0,0.0,102
+82113467f8872e14306e8ef49a672fccb99f6a37,"def treat_devices_added_or_updated(self, devices):",0,0,0.0,103
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Processing port:%s""), device)",0,0,0.0,104
+82113467f8872e14306e8ef49a672fccb99f6a37,# TODO(salv-orlando): Provide bulk API for retrieving,0,0,0.0,105
+82113467f8872e14306e8ef49a672fccb99f6a37,if details.get('admin_state_up'):,0,0,0.0,106
+82113467f8872e14306e8ef49a672fccb99f6a37,if cur_ports == registered_ports:,0,0,0.0,107
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Setting status for %s to UP""), device)",0,0,0.0,108
+82113467f8872e14306e8ef49a672fccb99f6a37,self.plugin_rpc.update_device_up(,0,0,0.0,109
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.context, device, self.agent_id, cfg.CONF.host)",0,0,0.0,110
+82113467f8872e14306e8ef49a672fccb99f6a37,else:,0,0,0.0,111
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Setting status for %s to DOWN""), device)",0,0,0.0,112
+82113467f8872e14306e8ef49a672fccb99f6a37,self.plugin_rpc.update_device_down(,0,0,0.0,113
+82113467f8872e14306e8ef49a672fccb99f6a37,# If there is an exception while processing security groups ports,0,0,0.0,114
+82113467f8872e14306e8ef49a672fccb99f6a37,"# No added or removed ports to set, just return here",0,0,0.0,115
+82113467f8872e14306e8ef49a672fccb99f6a37,# if nothing has changed.,0,0,0.0,116
+82113467f8872e14306e8ef49a672fccb99f6a37,if self.enable_tunneling and tunnel_sync:,0,0,0.0,117
+82113467f8872e14306e8ef49a672fccb99f6a37,cur_ports = self.int_br.get_vif_port_set(),0,0,0.0,118
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.agent_id,",0,0,0.0,119
+82113467f8872e14306e8ef49a672fccb99f6a37,cfg.CONF.host),0,0,0.0,120
+82113467f8872e14306e8ef49a672fccb99f6a37,self.updated_ports = set(),0,0,0.0,121
+82113467f8872e14306e8ef49a672fccb99f6a37,# they are not used since there is no guarantee the notifications,0,0,0.0,122
+82113467f8872e14306e8ef49a672fccb99f6a37,# are processed in the same order as the relevant API requests,0,0,0.0,123
+82113467f8872e14306e8ef49a672fccb99f6a37,self.updated_ports.add(port['id']),0,0,0.0,124
+82113467f8872e14306e8ef49a672fccb99f6a37,"def scan_ports(self, registered_ports, updated_ports=None):",0,0,0.0,125
+82113467f8872e14306e8ef49a672fccb99f6a37,self.int_br_device_count = len(cur_ports),0,0,0.0,126
+82113467f8872e14306e8ef49a672fccb99f6a37,# FIXME(salv-orlando): It's not really necessary to return early,0,0,0.0,127
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info = {'current': cur_ports},0,0,0.0,128
+82113467f8872e14306e8ef49a672fccb99f6a37,if updated_ports:,0,0,0.0,129
+82113467f8872e14306e8ef49a672fccb99f6a37,# Some updated ports might have been removed in the,0,0,0.0,130
+82113467f8872e14306e8ef49a672fccb99f6a37,"# meanwhile, and therefore should not be processed.",0,0,0.0,131
+82113467f8872e14306e8ef49a672fccb99f6a37,# current ports.,0,0,0.0,132
+82113467f8872e14306e8ef49a672fccb99f6a37,updated_ports &= cur_ports,0,0,0.0,133
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info['updated'] = updated_ports,0,0,0.0,134
+82113467f8872e14306e8ef49a672fccb99f6a37,"# will not be wired anyway, and a resync will be triggered",0,0,0.0,135
+82113467f8872e14306e8ef49a672fccb99f6a37,"self.sg_agent.prepare_devices_filter(port_info.get('added', set()))",0,0,0.0,136
+82113467f8872e14306e8ef49a672fccb99f6a37,# TODO(salv-orlando): Optimize by avoiding unnecessary applying,0,0,0.0,137
+82113467f8872e14306e8ef49a672fccb99f6a37,"'ancillary': {'added': 0,",0,0,0.0,138
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info.get('removed') or,0,0,0.0,139
+82113467f8872e14306e8ef49a672fccb99f6a37,port_info.get('updated')),0,0,0.0,140
+82113467f8872e14306e8ef49a672fccb99f6a37,updated_ports_copy = set(),0,0,0.0,141
+82113467f8872e14306e8ef49a672fccb99f6a37,start = time.time(),0,0,0.0,142
+82113467f8872e14306e8ef49a672fccb99f6a37,"port_stats = {'regular': {'added': 0,",0,0,0.0,143
+82113467f8872e14306e8ef49a672fccb99f6a37,"'updated': 0,",0,0,0.0,144
+82113467f8872e14306e8ef49a672fccb99f6a37,"'removed': 0},",0,0,0.0,145
+82113467f8872e14306e8ef49a672fccb99f6a37,'removed': 0}},0,0,0.0,146
+82113467f8872e14306e8ef49a672fccb99f6a37,"# filters twice to the same ports, and unnecessary calls to the",0,0,0.0,147
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.debug(_(""Agent rpc_loop - iteration:%d started""),",0,0,0.0,148
+82113467f8872e14306e8ef49a672fccb99f6a37,if sync:,0,0,0.0,149
+82113467f8872e14306e8ef49a672fccb99f6a37,"LOG.info(_(""Agent out of sync with plugin!""))",0,0,0.0,150
+82113467f8872e14306e8ef49a672fccb99f6a37,ports.clear(),0,0,0.0,151
+82113467f8872e14306e8ef49a672fccb99f6a37,ancillary_ports.clear(),0,0,0.0,152
+82113467f8872e14306e8ef49a672fccb99f6a37,sync = False,0,0,0.0,153
+82113467f8872e14306e8ef49a672fccb99f6a37,polling_manager.force_polling(),0,0,0.0,154
+82113467f8872e14306e8ef49a672fccb99f6a37,return (port_info.get('added') or,0,0,0.0,155
+82113467f8872e14306e8ef49a672fccb99f6a37,"def _port_info_has_changes(self, port_info):",0,0,0.0,156
+82113467f8872e14306e8ef49a672fccb99f6a37,self.updated_ports),0,0,0.0,157
+82113467f8872e14306e8ef49a672fccb99f6a37,return (polling_manager.is_polling_required or,0,0,0.0,158
+82113467f8872e14306e8ef49a672fccb99f6a37,if port_info.get('updated'):,0,0,0.0,159
+82113467f8872e14306e8ef49a672fccb99f6a37,self.sg_agent.refresh_firewall(),0,0,0.0,160
+82113467f8872e14306e8ef49a672fccb99f6a37,# VIF wiring needs to be performed always for 'new' devices.,0,0,0.0,161
+82113467f8872e14306e8ef49a672fccb99f6a37,"# For updated ports, re-wiring is not needed in most cases, but needs",0,0,0.0,162
+82113467f8872e14306e8ef49a672fccb99f6a37,# TODO(salv-orlando): Optimize for avoiding unnecessary VIF,0,0,0.0,163
+82113467f8872e14306e8ef49a672fccb99f6a37,# processing for updated ports whose admin state is left unchanged,0,0,0.0,164
+82113467f8872e14306e8ef49a672fccb99f6a37,# list at the same time; avoid processing it twice.,0,0,0.0,165
+82113467f8872e14306e8ef49a672fccb99f6a37,"devices_added_updated = (port_info.get('added', set()) |",0,0,0.0,166
+82113467f8872e14306e8ef49a672fccb99f6a37,"port_info.get('updated', set()))",0,0,0.0,167
+82113467f8872e14306e8ef49a672fccb99f6a37,if devices_added_updated:,0,0,0.0,168
+82113467f8872e14306e8ef49a672fccb99f6a37,resync_a = self.treat_devices_added_or_updated(,0,0,0.0,169
+82113467f8872e14306e8ef49a672fccb99f6a37,devices_added_updated),0,0,0.0,170
+82113467f8872e14306e8ef49a672fccb99f6a37,"""treat_devices_added_or_updated completed """,0,0,0.0,171
+82113467f8872e14306e8ef49a672fccb99f6a37,"""in %(elapsed).3f""),",0,0,0.0,172
+82113467f8872e14306e8ef49a672fccb99f6a37,"def _agent_has_updates(self, polling_manager):",0,0,0.0,173
+82113467f8872e14306e8ef49a672fccb99f6a37,tunnel_sync = True,1,0,0.0,174

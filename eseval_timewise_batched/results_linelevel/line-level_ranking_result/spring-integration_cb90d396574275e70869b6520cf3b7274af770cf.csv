@@ -1,0 +1,139 @@
+commit_id,line,line_level_label,count,line_score,row
+cb90d396574275e70869b6520cf3b7274af770cf,* Copyright 2002-2019 the original author or authors.,0,7,1.0,1
+cb90d396574275e70869b6520cf3b7274af770cf,* Copyright 2002-2016 the original author or authors.,1,7,1.0,2
+cb90d396574275e70869b6520cf3b7274af770cf,"MethodInvokingRouter router = new MethodInvokingRouter(bean, method);",1,6,0.8571428571428571,3
+cb90d396574275e70869b6520cf3b7274af770cf,"router = new MethodInvokingRouter(bean, method);",0,5,0.7142857142857142,4
+cb90d396574275e70869b6520cf3b7274af770cf,public void multiChannelNameResolutionByMessageConfiguredByMethodName() throws Exception {,1,4,0.5714285714285714,5
+cb90d396574275e70869b6520cf3b7274af770cf,public void terDown() {,0,3,0.42857142857142855,6
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> message = new GenericMessage<String>(""bar"");",1,3,0.42857142857142855,7
+cb90d396574275e70869b6520cf3b7274af770cf,public void multiChannelNameResolutionByMessageConfiguredByMethodName() {,0,3,0.42857142857142855,8
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> message = new GenericMessage<>(""bar"");",0,3,0.42857142857142855,9
+cb90d396574275e70869b6520cf3b7274af770cf,private final DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();,1,3,0.42857142857142855,10
+cb90d396574275e70869b6520cf3b7274af770cf,for (String channelMapping : channelMappings) {,0,3,0.42857142857142855,11
+cb90d396574275e70869b6520cf3b7274af770cf,"String prefix = MessagingAnnotationUtils.resolveAttribute(annotations, ""prefix"", String.class);",0,3,0.42857142857142855,12
+cb90d396574275e70869b6520cf3b7274af770cf,router = new MethodInvokingRouter(target);,0,3,0.42857142857142855,13
+cb90d396574275e70869b6520cf3b7274af770cf,if (router == null) {,0,3,0.42857142857142855,14
+cb90d396574275e70869b6520cf3b7274af770cf,"protected MessageHandler createHandler(Object bean, Method method, List<Annotation> annotations) {",0,3,0.42857142857142855,15
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<?> failedMessage = new GenericMessage<String>(""foo"");",1,2,0.2857142857142857,16
+cb90d396574275e70869b6520cf3b7274af770cf,"String defaultOutputChannel = MessagingAnnotationUtils.resolveAttribute(annotations, ""defaultOutputChannel"",",0,2,0.2857142857142857,17
+cb90d396574275e70869b6520cf3b7274af770cf,"protected MessageHandler createHandler(Object bean, Method method,",1,2,0.2857142857142857,18
+cb90d396574275e70869b6520cf3b7274af770cf,"String defaultOutputChannelName = MessagingAnnotationUtils.resolveAttribute(annotations, ""defaultOutputChannel"",",1,2,0.2857142857142857,19
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(defaultOutputChannelName)) {,1,2,0.2857142857142857,20
+cb90d396574275e70869b6520cf3b7274af770cf,MessageChannel defaultOutputChannel = this.channelResolver.resolveDestination(defaultOutputChannelName);,1,2,0.2857142857142857,21
+cb90d396574275e70869b6520cf3b7274af770cf,private final TestUtils.TestApplicationContext context = TestUtils.createTestApplicationContext();,0,2,0.2857142857142857,22
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<?> failedMessage = new GenericMessage<>(""foo"");",0,2,0.2857142857142857,23
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> badMessage = new GenericMessage<String>(""bad"");",1,2,0.2857142857142857,24
+cb90d396574275e70869b6520cf3b7274af770cf,"MessageHandlingException error = new MessageRejectedException(new GenericMessage<Object>(""foo""), ""failed"", rootCause);",1,2,0.2857142857142857,25
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.beans.factory.BeanFactory;,0,2,0.2857142857142857,26
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> fooMessage = new GenericMessage<>(""foo"");",0,2,0.2857142857142857,27
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> barMessage = new GenericMessage<>(""bar"");",0,2,0.2857142857142857,28
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> badMessage = new GenericMessage<>(""bad"");",0,2,0.2857142857142857,29
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> fooMessage = new GenericMessage<String>(""foo"");",1,2,0.2857142857142857,30
+cb90d396574275e70869b6520cf3b7274af770cf,"Message<String> barMessage = new GenericMessage<String>(""bar"");",1,2,0.2857142857142857,31
+cb90d396574275e70869b6520cf3b7274af770cf,StringBuilder mappings = new StringBuilder();,0,2,0.2857142857142857,32
+cb90d396574275e70869b6520cf3b7274af770cf,"Properties properties = (Properties) this.conversionService.convert(mappings.toString(),",0,2,0.2857142857142857,33
+cb90d396574275e70869b6520cf3b7274af770cf,"String[] channelMappings = MessagingAnnotationUtils.resolveAttribute(annotations, ""channelMappings"",",0,2,0.2857142857142857,34
+cb90d396574275e70869b6520cf3b7274af770cf,if (!ObjectUtils.isEmpty(channelMappings)) {,0,2,0.2857142857142857,35
+cb90d396574275e70869b6520cf3b7274af770cf,if (this.routerAttributesProvided(annotations)) {,0,2,0.2857142857142857,36
+cb90d396574275e70869b6520cf3b7274af770cf,"if (AnnotatedElementUtils.isAnnotated(method, Bean.class.getName())) {",0,2,0.2857142857142857,37
+cb90d396574275e70869b6520cf3b7274af770cf,"router = this.extractTypeIfPossible(target, AbstractMessageRouter.class);",0,2,0.2857142857142857,38
+cb90d396574275e70869b6520cf3b7274af770cf,if (target instanceof MessageHandler) {,0,2,0.2857142857142857,39
+cb90d396574275e70869b6520cf3b7274af770cf,"String applySequence = MessagingAnnotationUtils.resolveAttribute(annotations, ""applySequence"", String.class);",0,2,0.2857142857142857,40
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(applySequence)) {,0,2,0.2857142857142857,41
+cb90d396574275e70869b6520cf3b7274af770cf,"String ignoreSendFailures = MessagingAnnotationUtils.resolveAttribute(annotations, ""ignoreSendFailures"",",0,2,0.2857142857142857,42
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(ignoreSendFailures)) {,0,2,0.2857142857142857,43
+cb90d396574275e70869b6520cf3b7274af770cf,"String defaultOutputChannelName = MessagingAnnotationUtils.resolveAttribute(annotations,",0,2,0.2857142857142857,44
+cb90d396574275e70869b6520cf3b7274af770cf,MethodInvokingRouter methodInvokingRouter = (MethodInvokingRouter) router;,0,2,0.2857142857142857,45
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(resolutionRequired)) {,0,2,0.2857142857142857,46
+cb90d396574275e70869b6520cf3b7274af770cf,String resolutionRequiredValue = this.environment.resolvePlaceholders(resolutionRequired);,0,2,0.2857142857142857,47
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(resolutionRequiredValue)) {,0,2,0.2857142857142857,48
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(prefix)) {,0,2,0.2857142857142857,49
+cb90d396574275e70869b6520cf3b7274af770cf,"String suffix = MessagingAnnotationUtils.resolveAttribute(annotations, ""suffix"", String.class);",0,2,0.2857142857142857,50
+cb90d396574275e70869b6520cf3b7274af770cf,if (StringUtils.hasText(suffix)) {,0,2,0.2857142857142857,51
+cb90d396574275e70869b6520cf3b7274af770cf,"String resolutionRequired = MessagingAnnotationUtils.resolveAttribute(annotations, ""resolutionRequired"",",0,2,0.2857142857142857,52
+cb90d396574275e70869b6520cf3b7274af770cf,"new MessageRejectedException(new GenericMessage<Object>(""foo""), ""failed"", rootCause);",0,1,0.14285714285714285,53
+cb90d396574275e70869b6520cf3b7274af770cf,List<Annotation> annotations) {,1,1,0.14285714285714285,54
+cb90d396574275e70869b6520cf3b7274af770cf,"Assert.notNull(defaultOutputChannel, ""unable to resolve defaultOutputChannel '"" + defaultOutputChannelName + ""'"");",1,1,0.14285714285714285,55
+cb90d396574275e70869b6520cf3b7274af770cf,},0,1,0.14285714285714285,56
+cb90d396574275e70869b6520cf3b7274af770cf,MessageHandlingException error =,0,1,0.14285714285714285,57
+cb90d396574275e70869b6520cf3b7274af770cf,"beanFactory.registerSingleton(""messageHandlingExceptionChannel"", messageHandlingExceptionChannel);",1,1,0.14285714285714285,58
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.beans.factory.support.DefaultListableBeanFactory;,1,1,0.14285714285714285,59
+cb90d396574275e70869b6520cf3b7274af770cf,"beanFactory.registerSingleton(""runtimeExceptionChannel"", runtimeExceptionChannel);",1,1,0.14285714285714285,60
+cb90d396574275e70869b6520cf3b7274af770cf,import static org.mockito.Mockito.mock;,0,1,0.14285714285714285,61
+cb90d396574275e70869b6520cf3b7274af770cf,router.afterPropertiesSet();,0,1,0.14285714285714285,62
+cb90d396574275e70869b6520cf3b7274af770cf,return StringUtils.hasText(defaultOutputChannel) || !ObjectUtils.isEmpty(channelMappings),0,1,0.14285714285714285,63
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.messaging.MessageChannel;,1,1,0.14285714285714285,64
+cb90d396574275e70869b6520cf3b7274af770cf,import org.junit.After;,0,1,0.14285714285714285,65
+cb90d396574275e70869b6520cf3b7274af770cf,private boolean routerAttributesProvided(List<Annotation> annotations) {,0,1,0.14285714285714285,66
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.util.ObjectUtils;,0,1,0.14285714285714285,67
+cb90d396574275e70869b6520cf3b7274af770cf,return router;,0,1,0.14285714285714285,68
+cb90d396574275e70869b6520cf3b7274af770cf,import java.util.Properties;,0,1,0.14285714285714285,69
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.context.annotation.Bean;,0,1,0.14285714285714285,70
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.core.annotation.AnnotatedElementUtils;,0,1,0.14285714285714285,71
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.integration.router.AbstractMessageRouter;,0,1,0.14285714285714285,72
+cb90d396574275e70869b6520cf3b7274af770cf,import org.springframework.core.convert.TypeDescriptor;,0,1,0.14285714285714285,73
+cb90d396574275e70869b6520cf3b7274af770cf,* @author Artem Bilan,0,1,0.14285714285714285,74
+cb90d396574275e70869b6520cf3b7274af770cf,Object target = this.resolveTargetBeanFromMethodWithBeanAnnotation(method);,0,1,0.14285714285714285,75
+cb90d396574275e70869b6520cf3b7274af770cf,return (MessageHandler) target;,0,1,0.14285714285714285,76
+cb90d396574275e70869b6520cf3b7274af770cf,},0,1,0.14285714285714285,77
+cb90d396574275e70869b6520cf3b7274af770cf,else {,0,1,0.14285714285714285,78
+cb90d396574275e70869b6520cf3b7274af770cf,router.setBeanFactory(beanFactory);,1,0,0.0,79
+cb90d396574275e70869b6520cf3b7274af770cf,doTestChannelNameResolutionByMessage(router);,0,0,0.0,80
+cb90d396574275e70869b6520cf3b7274af770cf,router.setBeanFactory(mock(BeanFactory.class));,0,0,0.0,81
+cb90d396574275e70869b6520cf3b7274af770cf,ctx.getBean(ErrorMessageExceptionTypeRouter.class).handleMessage(new GenericMessage<>(new NullPointerException()));,1,0,0.0,82
+cb90d396574275e70869b6520cf3b7274af770cf,router.setDefaultOutputChannel(defaultChannel);,1,0,0.0,83
+cb90d396574275e70869b6520cf3b7274af770cf,router.setApplicationContext(TestUtils.createTestApplicationContext());,1,0,0.0,84
+cb90d396574275e70869b6520cf3b7274af770cf,ctx.getBean(ErrorMessageExceptionTypeRouter.class),0,0,0.0,85
+cb90d396574275e70869b6520cf3b7274af770cf,"beanFactory.registerSingleton(""defaultChannel"", defaultChannel);",1,0,0.0,86
+cb90d396574275e70869b6520cf3b7274af770cf,"beanFactory.registerSingleton(""messageDeliveryExceptionChannel"", messageDeliveryExceptionChannel);",1,0,0.0,87
+cb90d396574275e70869b6520cf3b7274af770cf,"beanFactory.registerSingleton(""illegalArgumentChannel"", illegalArgumentChannel);",1,0,0.0,88
+cb90d396574275e70869b6520cf3b7274af770cf,.handleMessage(new GenericMessage<>(new NullPointerException()));,0,0,0.0,89
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestChannelInstanceResolutionByMessage(router, channelResolver);",0,0,0.0,90
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestChannelInstanceResolutionByPayload(router, channelResolver);",0,0,0.0,91
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestMultiChannelArrayResolutionByMessage(router, channelResolver);",0,0,0.0,92
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestMultiChannelNameResolutionByPayload(router, channelResolver);",0,0,0.0,93
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestMultiChannelNameResolutionByMessage(router, channelResolver);",0,0,0.0,94
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestMultiChannelNameArrayResolutionByMessage(router, channelResolver);",0,0,0.0,95
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestMultiChannelListResolutionByPayload(router, channelResolver);",0,0,0.0,96
+cb90d396574275e70869b6520cf3b7274af770cf,"doTestMultiChannelListResolutionByMessage(router, channelResolver);",0,0,0.0,97
+cb90d396574275e70869b6520cf3b7274af770cf,router.setApplicationContext(this.context);,0,0,0.0,98
+cb90d396574275e70869b6520cf3b7274af770cf,this.doTestChannelNameResolutionByMessage(router);,1,0,0.0,99
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestChannelInstanceResolutionByPayload(router, channelResolver);",1,0,0.0,100
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestChannelInstanceResolutionByMessage(router, channelResolver);",1,0,0.0,101
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestMultiChannelNameResolutionByPayload(router, channelResolver);",1,0,0.0,102
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestMultiChannelNameResolutionByMessage(router, channelResolver);",1,0,0.0,103
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestMultiChannelNameArrayResolutionByMessage(router, channelResolver);",1,0,0.0,104
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestMultiChannelListResolutionByPayload(router, channelResolver);",1,0,0.0,105
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestMultiChannelListResolutionByMessage(router, channelResolver);",1,0,0.0,106
+cb90d396574275e70869b6520cf3b7274af770cf,router.setDefaultOutputChannel(this.defaultChannel);,0,0,0.0,107
+cb90d396574275e70869b6520cf3b7274af770cf,"this.context.registerBean(""messageHandlingExceptionChannel"", this.messageHandlingExceptionChannel);",0,0,0.0,108
+cb90d396574275e70869b6520cf3b7274af770cf,router.setBeanFactory(this.context);,0,0,0.0,109
+cb90d396574275e70869b6520cf3b7274af770cf,this.context.close();,0,0,0.0,110
+cb90d396574275e70869b6520cf3b7274af770cf,AbstractMessageRouter router;,0,0,0.0,111
+cb90d396574275e70869b6520cf3b7274af770cf,"Assert.isTrue(this.routerAttributesProvided(annotations), ""'defaultOutputChannel', """,0,0,0.0,112
+cb90d396574275e70869b6520cf3b7274af770cf,"+ ""'applySequence', 'ignoreSendFailures', 'resolutionRequired' and 'channelMappings' """,0,0,0.0,113
+cb90d396574275e70869b6520cf3b7274af770cf,"+ ""can be applied to 'AbstractMessageRouter' implementations, but target handler is: """,0,0,0.0,114
+cb90d396574275e70869b6520cf3b7274af770cf,+ target.getClass());,0,0,0.0,115
+cb90d396574275e70869b6520cf3b7274af770cf,"""defaultOutputChannel"", String.class);",0,0,0.0,116
+cb90d396574275e70869b6520cf3b7274af770cf,router.setDefaultOutputChannelName(defaultOutputChannelName);,0,0,0.0,117
+cb90d396574275e70869b6520cf3b7274af770cf,router.setApplySequence(Boolean.parseBoolean(this.environment.resolvePlaceholders(applySequence)));,0,0,0.0,118
+cb90d396574275e70869b6520cf3b7274af770cf,router.setIgnoreSendFailures(Boolean.parseBoolean(this.environment.resolvePlaceholders(ignoreSendFailures)));,0,0,0.0,119
+cb90d396574275e70869b6520cf3b7274af770cf,String.class);,0,0,0.0,120
+cb90d396574275e70869b6520cf3b7274af770cf,methodInvokingRouter.setResolutionRequired(Boolean.parseBoolean(resolutionRequiredValue));,0,0,0.0,121
+cb90d396574275e70869b6520cf3b7274af770cf,methodInvokingRouter.setPrefix(this.environment.resolvePlaceholders(prefix));,0,0,0.0,122
+cb90d396574275e70869b6520cf3b7274af770cf,methodInvokingRouter.setSuffix(this.environment.resolvePlaceholders(suffix));,0,0,0.0,123
+cb90d396574275e70869b6520cf3b7274af770cf,String[].class);,0,0,0.0,124
+cb90d396574275e70869b6520cf3b7274af770cf,"mappings.append(channelMapping).append(""\n"");",0,0,0.0,125
+cb90d396574275e70869b6520cf3b7274af770cf,"TypeDescriptor.valueOf(String.class), TypeDescriptor.valueOf(Properties.class));",0,0,0.0,126
+cb90d396574275e70869b6520cf3b7274af770cf,methodInvokingRouter.replaceChannelMappings(properties);,0,0,0.0,127
+cb90d396574275e70869b6520cf3b7274af770cf,|| StringUtils.hasText(prefix) || StringUtils.hasText(suffix) || StringUtils.hasText(resolutionRequired),0,0,0.0,128
+cb90d396574275e70869b6520cf3b7274af770cf,|| StringUtils.hasText(applySequence) || StringUtils.hasText(ignoreSendFailures);,0,0,0.0,129
+cb90d396574275e70869b6520cf3b7274af770cf,router.setBeanFactory(this.beanFactory);,1,0,0.0,130
+cb90d396574275e70869b6520cf3b7274af770cf,router.setDefaultOutputChannel(defaultOutputChannel);,1,0,0.0,131
+cb90d396574275e70869b6520cf3b7274af770cf,"this.context.registerBean(""illegalArgumentChannel"", this.illegalArgumentChannel);",0,0,0.0,132
+cb90d396574275e70869b6520cf3b7274af770cf,"this.context.registerBean(""runtimeExceptionChannel"", this.runtimeExceptionChannel);",0,0,0.0,133
+cb90d396574275e70869b6520cf3b7274af770cf,"this.context.registerBean(""messageDeliveryExceptionChannel"", this.messageDeliveryExceptionChannel);",0,0,0.0,134
+cb90d396574275e70869b6520cf3b7274af770cf,"this.context.registerBean(""defaultChannel"", this.defaultChannel);",0,0,0.0,135
+cb90d396574275e70869b6520cf3b7274af770cf,this.context.refresh();,0,0,0.0,136
+cb90d396574275e70869b6520cf3b7274af770cf,@After,0,0,0.0,137
+cb90d396574275e70869b6520cf3b7274af770cf,"this.doTestMultiChannelArrayResolutionByMessage(router, channelResolver);",1,0,0.0,138

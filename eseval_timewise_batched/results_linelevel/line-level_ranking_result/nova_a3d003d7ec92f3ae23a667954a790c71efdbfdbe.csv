@@ -1,0 +1,48 @@
+commit_id,line,line_level_label,count,line_score,row
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"fpath = self._append_to_file(data, console_log)",0,2,1.0,1
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"fpath = self._append_to_file(data, console_log)",1,2,1.0,2
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,# Xen is special,1,2,1.0,3
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,if node is None:,0,1,0.5,4
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,fpath = console_log,1,1,0.5,5
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,# LXC is also special,1,1,0.5,6
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,data = self._flush_libvirt_console(virsh_output),1,1,0.5,7
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"virsh_output = utils.execute('virsh',",1,1,0.5,8
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,return '',1,1,0.5,9
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,return out,1,1,0.5,10
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,check_exit_code=False),1,1,0.5,11
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"out, err = utils.execute('dd',",1,1,0.5,12
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,virsh_output = virsh_output[0].strip(),1,1,0.5,13
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"def _flush_libvirt_console(self, virsh_output):",1,1,0.5,14
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,data = self._flush_libvirt_console(pty),0,1,0.5,15
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"pty = node.get(""path"")",0,1,0.5,16
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'if=%s' % virsh_output,",1,1,0.5,17
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"node = tree.find(""./devices/console[@type='pty']/source"")",0,1,0.5,18
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,virt_dom = self._lookup_by_name(instance['name']),0,1,0.5,19
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"# else if there is a PTY, then try to read latest data from that",0,1,0.5,20
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"def _flush_libvirt_console(self, pty):",0,1,0.5,21
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"out, err = utils.execute('dd',",0,1,0.5,22
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'if=%s' % pty,",0,1,0.5,23
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,return out,0,1,0.5,24
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,check_exit_code=False),0,1,0.5,25
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,xml = virt_dom.XMLDesc(0),0,1,0.5,26
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,tree = ElementTree.fromstring(xml),0,1,0.5,27
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"node = tree.find(""./devices/console[@type='file']/source"")",0,1,0.5,28
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,if node is not None:,0,1,0.5,29
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"fpath = node.get(""path"")",0,1,0.5,30
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,return libvirt_utils.load_file(fpath),0,1,0.5,31
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"run_as_root=True,",1,0,0.0,32
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'-c',",1,0,0.0,33
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,elif FLAGS.libvirt_type == 'lxc':,1,0,0.0,34
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,instance['name']),1,0,0.0,35
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'ttyconsole',",1,0,0.0,36
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,if FLAGS.libvirt_type == 'xen':,1,0,0.0,37
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,else:,1,0,0.0,38
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"run_as_root=True,",0,0,0.0,39
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'iflag=nonblock',",1,0,0.0,40
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"LOG.info(_(""cool, it's a device""))",1,0,0.0,41
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,if virsh_output.startswith('/dev/'):,1,0,0.0,42
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"LOG.info(_('virsh said: %r'), virsh_output)",1,0,0.0,43
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"raise exception.Error(_(""Guest does not have a console available""))",0,0,0.0,44
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,# If the guest has a console logging to a file prefer to use that,0,0,0.0,45
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'iflag=nonblock',",0,0,0.0,46
+a3d003d7ec92f3ae23a667954a790c71efdbfdbe,"'lxc:///',",1,0,0.0,47

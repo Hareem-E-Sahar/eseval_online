@@ -1,0 +1,428 @@
+commit_id,line,line_level_label,count,line_score,row
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Also skip floatingip if the fip port have a host defined,0,7,1.0,1
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is migrating to a new compute host and the original host will not,0,6,0.8571428571428571,2
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# device owner, and if the device_owner is a dvr serviceable",1,6,0.8571428571428571,3
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# device owner saved in profile and update the port,1,6,0.8571428571428571,4
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# If the agent hosting the fixed port is in,0,6,0.8571428571428571,5
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# The port binding profile filter for host performs a ""contains""",0,6,0.8571428571428571,6
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,Check if the given floatingip host matches with the requesting,0,6,0.8571428571428571,7
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# If the original_port is None, then it is a migration",0,5,0.7142857142857142,8
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Add quotes to force an exact match of the host name in the port,0,5,0.7142857142857142,9
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,Skip if host and dest_host is none and the agent,0,5,0.7142857142857142,10
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""Function to check if floatingip host match for the given agent.",0,5,0.7142857142857142,11
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Skip if floatingip need not be processed for the,0,5,0.7142857142857142,12
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,This function sets the host and device_owner to the port,1,4,0.5714285714285714,13
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# since we would be centralizing the floatingip for,0,4,0.5714285714285714,14
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# the fip host binding since it would be created,0,4,0.5714285714285714,15
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# If the agent requesting is dvr_snat but,0,4,0.5714285714285714,16
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Consider the ports where the portbinding host and,0,4,0.5714285714285714,17
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,associated with the port_addr_pair_ip with the port_dict's,1,4,0.5714285714285714,18
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Check this is a valid VM or service port,1,4,0.5714285714285714,19
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# for the private ports that are associated with,0,4,0.5714285714285714,20
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Handle the case were there is no host binding,0,4,0.5714285714285714,21
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# the device owner should be included as valid ports,0,4,0.5714285714285714,22
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,If floatingip dest_host is not None it means that the floatingip,0,4,0.5714285714285714,23
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# and if the host does not match.,0,4,0.5714285714285714,24
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# the portbinding host resides in dvr_no_external,0,3,0.42857142857142855,25
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# This check is required to prevent an arp update,1,3,0.42857142857142855,26
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip = fips[0] if fips else None,1,3,0.42857142857142855,27
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip = fips[0] if fips else None,0,3,0.42857142857142855,28
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# the routers without checking for device_owner.,0,3,0.42857142857142855,29
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# Make a call here to notify the snat nodes.,0,3,0.42857142857142855,30
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# In that case please forward the notification to the,0,3,0.42857142857142855,31
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# This might be a case were it is migrating from unbound,0,3,0.42857142857142855,32
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# 'dvr_no_external' mode, then set the host to None,",0,3,0.42857142857142855,33
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if host is not None:,0,3,0.42857142857142855,34
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# agent then include the port.,0,3,0.42857142857142855,35
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,This function clears the host and device_owner associated with,1,3,0.42857142857142855,36
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# Before reverting the changes, fetch the original",1,3,0.42857142857142855,37
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if host is not None:,0,3,0.42857142857142855,38
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"requesting is not dvr_snat agent, and the fip has",0,3,0.42857142857142855,39
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return (fip_host is None and (fip_dest_host is None) and,0,3,0.42857142857142855,40
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# All unbound ports with floatingip irrespective of,0,3,0.42857142857142855,41
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,host when floatingip dest_host is None.,0,3,0.42857142857142855,42
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"device_owner = port_db['device_owner'] if port_db else """"",1,3,0.42857142857142855,43
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""Update allowed address pair port with host and device_owner",1,3,0.42857142857142855,44
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# If the allowed_address_pair port already has an associated,1,3,0.42857142857142855,45
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# port, then don't update the device_owner.",1,3,0.42857142857142855,46
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router = l3plugin._get_router(context, fip_router_id)",0,2,0.2857142857142857,47
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# snat_nodes hosting the routers.,0,2,0.2857142857142857,48
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,for agent in snat_agent_list:,0,2,0.2857142857142857,49
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.debug('DVR: Handle new unbound migration port, '",0,2,0.2857142857142857,50
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# No need to check for device_owner since we are scheduling,0,2,0.2857142857142857,51
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if original_port[portbindings.HOST_ID] is None:,0,2,0.2857142857142857,52
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# binding profile dictionary.,0,2,0.2857142857142857,53
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"profile_host = ""\""%s\"""" % host",0,2,0.2857142857142857,54
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if dest_host and router_id is not None:,0,2,0.2857142857142857,55
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router = l3plugin._get_router(context, router_id)",0,2,0.2857142857142857,56
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin = mock.Mock(),1,2,0.2857142857142857,57
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router = l3plugin._get_router(context, fip['router_id'])",1,2,0.2857142857142857,58
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# of the allowed_address_pair port.,1,2,0.2857142857142857,59
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin = mock.MagicMock(),0,2,0.2857142857142857,60
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, kwargs.get('port'),",0,2,0.2857142857142857,61
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if (port[portbindings.HOST_ID] == host or port_in_migration or,1,2,0.2857142857142857,62
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, kwargs.get('port'), dest_host='vm-host2')",1,2,0.2857142857142857,63
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, kwargs.get('port'), dest_host=None)",1,2,0.2857142857142857,64
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port = kwargs.get('original_port'),1,2,0.2857142857142857,65
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router = self._get_router(context.elevated(), router_id)",1,2,0.2857142857142857,66
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,notification to the snat_agents and to the bound host.,0,2,0.2857142857142857,67
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router = self._get_router(n_utils.get_elevated_context(context),",0,2,0.2857142857142857,68
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,for agent in centralized_agent_list:,0,2,0.2857142857142857,69
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"port_profile = address_pair_port.get(portbindings.PROFILE, {})",1,2,0.2857142857142857,70
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,host = None,0,2,0.2857142857142857,71
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip_host != host and fip_dest_host is None),0,2,0.2857142857142857,72
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""Function to check if floatingip need to be processed or skipped.",0,2,0.2857142857142857,73
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if (port[portbindings.HOST_ID] == host or port_in_migration or,0,2,0.2857142857142857,74
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# floating ip.,0,2,0.2857142857142857,75
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.warning(_LW(""Allowed_address_pair port update failed: %s""),",1,2,0.2857142857142857,76
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"if (floating_ip.get('host', None) != host and",1,2,0.2857142857142857,77
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if (port[portbindings.HOST_ID] == host or port_in_migration):,1,2,0.2857142857142857,78
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,host = service_port_dict[portbindings.HOST_ID],1,2,0.2857142857142857,79
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return (fip_host is not None and host_mismatch),0,2,0.2857142857142857,80
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_profile = address_pair_port.get(portbindings.PROFILE),1,2,0.2857142857142857,81
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# request host does not match.,0,2,0.2857142857142857,82
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# For floatingip configured on ports that,0,2,0.2857142857142857,83
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"# reside on 'dvr_no_external' agent, get rid of",0,2,0.2857142857142857,84
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# in the 'dvr_snat' agent.,0,2,0.2857142857142857,85
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# If no port-binding assign the fip['host'],0,2,0.2857142857142857,86
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not fip['host'] or fip['host'] is None:,0,2,0.2857142857142857,87
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if (port_host == host or port_in_migration or,0,2,0.2857142857142857,88
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# value to None.,0,2,0.2857142857142857,89
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if is_port_no_longer_serviced or is_port_moved:,1,1,0.14285714285714285,90
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not is_new_device_dvr_serviced:,1,1,0.14285714285714285,91
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_new_device_dvr_serviced = n_utils.is_dvr_serviced(new_device_owner),1,1,0.14285714285714285,92
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_port_moved = (,1,1,0.14285714285714285,93
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_port_no_longer_serviced = (,1,1,0.14285714285714285,94
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if ((is_new_port_binding_changed or dest_host) and,1,1,0.14285714285714285,95
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"new_device_owner = new_port.get('device_owner', '')",1,1,0.14285714285714285,96
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"original_device_owner = original_port.get('device_owner', '')",1,1,0.14285714285714285,97
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return,1,1,0.14285714285714285,98
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if l3_dvr_db.is_distributed_router(router):,0,1,0.14285714285714285,99
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# operation. This produces a LIKE expression targeting a sub-string,0,1,0.14285714285714285,100
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# match: column LIKE '%' || <host> || '%'.,0,1,0.14285714285714285,101
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""distributed router %(router_id)s"",",0,1,0.14285714285714285,102
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_new_port_binding_changed = (,0,1,0.14285714285714285,103
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip_router_id = None,0,1,0.14285714285714285,104
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host = None,0,1,0.14285714285714285,105
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"def dvr_handle_new_service_port(self, context, port, dest_host=None):",1,1,0.14285714285714285,106
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,new_port_profile = new_port.get(portbindings.PROFILE),0,1,0.14285714285714285,107
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if router_ids:,1,1,0.14285714285714285,108
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if agent.host == port_host:,0,1,0.14285714285714285,109
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if (is_new_port_binding_changed or dest_host):,0,1,0.14285714285714285,110
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# from unbound to bound.,0,1,0.14285714285714285,111
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, fip['port_id'], port=vm_port))",1,1,0.14285714285714285,112
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not fip['host']:,1,1,0.14285714285714285,113
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"def dvr_handle_new_service_port(self, context, port,",0,1,0.14285714285714285,114
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"If an unbound port migrates and becomes a bound port, send",0,1,0.14285714285714285,115
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not router_ids:,0,1,0.14285714285714285,116
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return,0,1,0.14285714285714285,117
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,agent_port_host_match = False,0,1,0.14285714285714285,118
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if unbound_migrate:,0,1,0.14285714285714285,119
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# to a bound port.,0,1,0.14285714285714285,120
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,snat_agent_list = self.get_dvr_snat_agent_list(context),0,1,0.14285714285714285,121
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, router_ids, agent.host)",0,1,0.14285714285714285,122
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host = new_port_profile.get('migrating_to'),0,1,0.14285714285714285,123
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,agent_port_host_match = True,0,1,0.14285714285714285,124
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not agent_port_host_match:,0,1,0.14285714285714285,125
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,agent_filters = {'agent_modes': [n_const.L3_AGENT_MODE_DVR_SNAT]},0,1,0.14285714285714285,126
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,state = agentschedulers_db.get_admin_state_up_filter(),0,1,0.14285714285714285,127
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"return self.get_l3_agents(context, active=state,",0,1,0.14285714285714285,128
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_bound_port_moved = (,0,1,0.14285714285714285,129
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if is_bound_port_moved:,0,1,0.14285714285714285,130
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if new_port_profile:,0,1,0.14285714285714285,131
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if dest_host:,1,1,0.14285714285714285,132
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if is_new_port_binding_changed or is_bound_port_moved or dest_host:,0,1,0.14285714285714285,133
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,with plugin_utils.delete_port_on_error(,0,1,0.14285714285714285,134
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, kwargs.get('port'))",0,1,0.14285714285714285,135
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.update_arp_entry_for_dvr_service_port.\,1,1,0.14285714285714285,136
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, kwargs.get('port'))",1,1,0.14285714285714285,137
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext,",1,1,0.14285714285714285,138
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.update_arp_entry_for_dvr_service_port.\,1,1,0.14285714285714285,139
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, kwargs.get('port'))",1,1,0.14285714285714285,140
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.adminContext, mock.ANY)",1,1,0.14285714285714285,141
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not self._create_snat_intf_ports_if_not_exists(,0,1,0.14285714285714285,142
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,admin_ctx = n_utils.get_elevated_context(context),0,1,0.14285714285714285,143
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"with mock.patch.object(l3plugin, '_get_floatingips_by_port_id',",0,1,0.14285714285714285,144
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,admin_context = n_utils.get_elevated_context(context),0,1,0.14285714285714285,145
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,ports = self._core_plugin.get_ports(,0,1,0.14285714285714285,146
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"if not self._create_snat_intf_ports_if_not_exists(context.elevated(),",1,1,0.14285714285714285,147
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"with plugin_utils.delete_port_on_error(self.l3plugin._core_plugin,",1,1,0.14285714285714285,148
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,admin_ctx = context.elevated(),1,1,0.14285714285714285,149
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,admin_context = context.elevated(),1,1,0.14285714285714285,150
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"ports = self._core_plugin.get_ports(context.elevated(), filters)",1,1,0.14285714285714285,151
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, fip['port_id'], port=vm_port)",1,1,0.14285714285714285,152
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.update_arp_entry_for_dvr_service_port.\,0,1,0.14285714285714285,153
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return,1,1,0.14285714285714285,154
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fips = l3plugin._get_floatingips_by_port_id(,0,1,0.14285714285714285,155
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fips = l3plugin._get_floatingips_by_port_id(,1,1,0.14285714285714285,156
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, port_id=original_port['id'])",0,1,0.14285714285714285,157
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if fip:,0,1,0.14285714285714285,158
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip_router_id = fip['router_id'],0,1,0.14285714285714285,159
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not fip_router_id:,0,1,0.14285714285714285,160
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if info['router_id'] == fip_router_id:,0,1,0.14285714285714285,161
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [fip_router_id],",0,1,0.14285714285714285,162
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, new_port,",0,1,0.14285714285714285,163
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, port, dest_host))",1,1,0.14285714285714285,164
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, port_id=original_port['id'])",1,1,0.14285714285714285,165
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if new_port_profile.get('original_owner'):,1,1,0.14285714285714285,166
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not fip:,1,1,0.14285714285714285,167
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if info['router_id'] == fip['router_id']:,1,1,0.14285714285714285,168
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [fip['router_id']],",1,1,0.14285714285714285,169
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_new_port_binding_changed = (,1,1,0.14285714285714285,170
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host = None,1,1,0.14285714285714285,171
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,new_port_profile = new_port.get(portbindings.PROFILE),1,1,0.14285714285714285,172
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if new_port_profile:,1,1,0.14285714285714285,173
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host = new_port_profile.get('migrating_to'),1,1,0.14285714285714285,174
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip['dest_host'] = (,1,1,0.14285714285714285,175
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, port, dest_host))",0,1,0.14285714285714285,176
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip['host'] = self._get_dvr_service_port_hostid(,1,1,0.14285714285714285,177
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_profile['original_owner'] = address_pair_dev_owner,1,1,0.14285714285714285,178
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,updated_port = (,1,1,0.14285714285714285,179
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, service_port_dict,",1,1,0.14285714285714285,180
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not updated_port:,1,1,0.14285714285714285,181
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, service_port_dict)",1,1,0.14285714285714285,182
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,floating_ip.get('dest_host') is None):,1,1,0.14285714285714285,183
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if n_utils.is_dvr_serviced(device_owner):,1,1,0.14285714285714285,184
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return port_db[portbindings.HOST_ID],1,1,0.14285714285714285,185
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return (n_utils.is_dvr_serviced(port_dict['device_owner']) and,1,1,0.14285714285714285,186
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not self._should_update_arp_entry_for_dvr_service_port(port_dict):,1,1,0.14285714285714285,187
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fixed_ips = port_dict['fixed_ips'],1,1,0.14285714285714285,188
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self, context, service_port_dict,",1,1,0.14285714285714285,189
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,host and device_owner.,1,1,0.14285714285714285,190
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_addr_pair_ip = port_address_pairs['ip_address'],1,1,0.14285714285714285,191
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not address_pair_port:,1,1,0.14285714285714285,192
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,address_pair_port = self._get_address_pair_active_port_with_fip(,1,1,0.14285714285714285,193
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, service_port_dict, port_addr_pair_ip)",1,1,0.14285714285714285,194
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if address_pair_port:,1,1,0.14285714285714285,195
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dev_owner = service_port_dict['device_owner'],1,1,0.14285714285714285,196
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,address_pair_dev_owner = address_pair_port.get('device_owner'),1,1,0.14285714285714285,197
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return,1,1,0.14285714285714285,198
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""with the allowed_address_pairs.""))",1,1,0.14285714285714285,199
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if len(addr_pair_active_service_port_list) > 1:,1,1,0.14285714285714285,200
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not fip['host']:,0,1,0.14285714285714285,201
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [router_id], agent['host'])",0,1,0.14285714285714285,202
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip_host = floating_ip.get('host'),0,1,0.14285714285714285,203
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip_dest_host = floating_ip.get('dest_host'),0,1,0.14285714285714285,204
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if self._should_skip_floating_ip_processed_for_given_agent(,0,1,0.14285714285714285,205
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if self._check_floating_ip_not_valid_for_given_host(,0,1,0.14285714285714285,206
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,host_mismatch = (,0,1,0.14285714285714285,207
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,agent_mode = self._get_agent_mode(agent),0,1,0.14285714285714285,208
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# and updated.,0,1,0.14285714285714285,209
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip[l3_const.DVR_SNAT_BOUND] = True,0,1,0.14285714285714285,210
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [router_id], dest_host)",0,1,0.14285714285714285,211
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""Check for port-bindings irrespective of device_owner.""""""",0,1,0.14285714285714285,212
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return not port[portbindings.HOST_ID],0,1,0.14285714285714285,213
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return port_db[portbindings.HOST_ID] or None,0,1,0.14285714285714285,214
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if not fixed_ips:,0,1,0.14285714285714285,215
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return,0,1,0.14285714285714285,216
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fixed_ips = port_dict['fixed_ips'],0,1,0.14285714285714285,217
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [router_id], host)",0,1,0.14285714285714285,218
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if dest_host and dest_host != host:,0,1,0.14285714285714285,219
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if n_utils.is_dvr_serviced(address_pair_dev_owner):,1,1,0.14285714285714285,220
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# given agent.,0,1,0.14285714285714285,221
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"port_data = {portbindings.HOST_ID: host,",1,1,0.14285714285714285,222
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"def get_dvr_agent_on_host(self, context, fip_host):",0,1,0.14285714285714285,223
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_host = vm_port[portbindings.HOST_ID],0,1,0.14285714285714285,224
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if port_host:,0,1,0.14285714285714285,225
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip['host'] = port_host,0,1,0.14285714285714285,226
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip['dest_host'] = (,0,1,0.14285714285714285,227
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, fip['port_id'], port=vm_port))",0,1,0.14285714285714285,228
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"vm_port_agent_mode = vm_port.get('agent', None)",0,1,0.14285714285714285,229
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if vm_port_agent_mode == (,0,1,0.14285714285714285,230
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fip['host'] = None,0,1,0.14285714285714285,231
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,agent_filters = {'host': [fip_host]},0,1,0.14285714285714285,232
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if (l3_agent_mode == (,0,1,0.14285714285714285,233
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"return self.get_l3_agents(context, filters=agent_filters)",0,1,0.14285714285714285,234
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_agent_on_host = self.get_dvr_agent_on_host(,0,1,0.14285714285714285,235
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, host)",0,1,0.14285714285714285,236
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,agent_mode = self._get_agent_mode(l3_agent_on_host[0]),0,1,0.14285714285714285,237
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if agent_mode == l3_const.L3_AGENT_MODE_DVR_NO_EXTERNAL:,0,1,0.14285714285714285,238
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,# those fixed_ports.,0,1,0.14285714285714285,239
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,'device_owner': dev_owner},1,1,0.14285714285714285,240
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, router_id)['agents']",0,1,0.14285714285714285,241
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port['agent'] = (,0,1,0.14285714285714285,242
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,centralized_agent_list = self.list_l3_agents_hosting_router(,0,1,0.14285714285714285,243
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,requesting_agent_mode = self._get_agent_mode(agent),0,1,0.14285714285714285,244
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"port_data = {portbindings.HOST_ID: """",",1,1,0.14285714285714285,245
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_agent_mode = self._get_agent_mode(,0,1,0.14285714285714285,246
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, address_pair_port['id'], {'port': port_data})",1,1,0.14285714285714285,247
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return update_port,1,1,0.14285714285714285,248
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,update_port = self._core_plugin.update_port(,1,1,0.14285714285714285,249
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""Remove allowed address pair port binding and device_owner",1,1,0.14285714285714285,250
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,the port_addr_pair_ip.,1,1,0.14285714285714285,251
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if port_profile:,1,1,0.14285714285714285,252
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,orig_device_owner = port_profile.get('original_owner'),1,1,0.14285714285714285,253
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"orig_device_owner = """"",1,1,0.14285714285714285,254
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"'device_owner': orig_device_owner,",1,1,0.14285714285714285,255
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if port_host and port_host != host:,0,1,0.14285714285714285,256
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if len(l3_agent_on_host):,0,1,0.14285714285714285,257
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [router_id], host)",1,1,0.14285714285714285,258
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_agent_on_host = self.get_l3_agents(,0,1,0.14285714285714285,259
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context,",0,1,0.14285714285714285,260
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_host = port[portbindings.HOST_ID],0,1,0.14285714285714285,261
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context, [router_id], dest_host)",1,1,0.14285714285714285,262
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,if dest_host and dest_host != host:,1,1,0.14285714285714285,263
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_dvrscheduler_db._notify_l3_agent_port_update(,1,0,0.0,264
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"None, fip, router_id=fip['router_id'])",0,0,0.0,265
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"None,",0,0,0.0,266
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"fip, is_distributed,",0,0,0.0,267
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router_to_remove, fip, is_distributed,",0,0,0.0,268
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"is_distributed=False,",0,0,0.0,269
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_id=None):,0,0,0.0,270
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"dest_host=None, router_id=router_id)",0,0,0.0,271
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_distributed=False):,1,0,0.0,272
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"'port', 'after_update', mock.ANY, **kwargs)",1,0,0.0,273
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.dvr_handle_new_service_port.assert_called_once_with(,1,0,0.0,274
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,assert_called_once_with(,1,0,0.0,275
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self._test__notify_l3_agent_port_binding_change(router_to_remove, fip)",1,0,0.0,276
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self._test__notify_l3_agent_port_binding_change(None, fip)",1,0,0.0,277
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self._test__notify_l3_agent_port_binding_change(None,",1,0,0.0,278
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"fip, is_distributed)",1,0,0.0,279
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self._test__notify_l3_agent_port_binding_change(router_to_remove,",1,0,0.0,280
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_id=fip['router_id']),0,0,0.0,281
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,'id': uuidutils.generate_uuid(),0,0,0.0,282
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router_to_remove, fip,",0,0,0.0,283
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,(original_port[portbindings.HOST_ID] !=,1,0,0.0,284
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"dest_host=dest_host,",0,0,0.0,285
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.update_arp_entry_for_dvr_service_port.called),1,0,0.0,286
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_id=fip_router_id),0,0,0.0,287
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"dest_host=None, unbound_migrate=False):",1,0,0.0,288
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,(,1,0,0.0,289
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.,1,0,0.0,290
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,check_for_fip_and_create_agent_gw_port_on_host_if_not_exists(,1,0,0.0,291
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,new_port[portbindings.HOST_ID] and,1,0,0.0,292
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,new_port[portbindings.HOST_ID])),1,0,0.0,293
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self._test__notify_l3_agent_port_binding_change(,0,0,0.0,294
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"l3plugin.dvr_handle_new_service_port(context, new_port,",1,0,0.0,295
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host=dest_host),1,0,0.0,296
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,return_value=[]):,0,0,0.0,297
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_dvrscheduler_db._notify_l3_agent_port_update(,0,0,0.0,298
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"'port', 'after_update', mock.ANY, **kwargs)",0,0,0.0,299
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.dvr_handle_new_service_port.assert_called_once_with(,0,0,0.0,300
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"dest_host='vm-host2', router_id=None)",0,0,0.0,301
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,assert_called_once_with(,0,0,0.0,302
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.assertFalse(,1,0,0.0,303
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(payload.context), filters)",0,0,0.0,304
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.delete_arp_entry_for_dvr_service_port.\,1,0,0.0,305
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,assert_called_once_with(,1,0,0.0,306
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context), network_id, host)",0,0,0.0,307
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_id),0,0,0.0,308
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context), router_id)['agents']",0,0,0.0,309
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.get_router(n_utils.get_elevated_context(context),",0,0,0.0,310
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_id)),0,0,0.0,311
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context.elevated(), router_db['id'])",1,0,0.0,312
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context.elevated(), router_db)",1,0,0.0,313
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_db):,1,0,0.0,314
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context.elevated(),",1,0,0.0,315
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,snat_port['id']):,1,0,0.0,316
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"payload.context.elevated(), payload.latest_state)",1,0,0.0,317
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"payload.context.elevated(), filters)",1,0,0.0,318
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"payload.context.elevated(), None, network_id)",1,0,0.0,319
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context.elevated(), router, subnet_id=sub_id)",1,0,0.0,320
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context.elevated(), network_id, host)",1,0,0.0,321
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"context.elevated(), router_id)['agents']",1,0,0.0,322
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,original_port[portbindings.HOST_ID]),0,0,0.0,323
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context), filters)",0,0,0.0,324
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"router, subnet_id=sub_id)",0,0,0.0,325
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"None, network_id)",0,0,0.0,326
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"1, l3plugin.update_arp_entry_for_dvr_service_port.call_count)",1,0,0.0,327
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"port,",1,0,0.0,328
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,fixed_ips_to_delete=mock.ANY),1,0,0.0,329
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.assertTrue(,1,0,0.0,330
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.assertFalse(l3plugin.update_arp_entry_for_dvr_service_port.called),1,0,0.0,331
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.assertEqual(,1,0,0.0,332
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"1,",1,0,0.0,333
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.delete_arp_entry_for_dvr_service_port.call_count),1,0,0.0,334
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"1, l3plugin.delete_arp_entry_for_dvr_service_port.call_count)",1,0,0.0,335
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,payload.latest_state),0,0,0.0,336
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context), router_db['id'])",0,0,0.0,337
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context), router_db)",0,0,0.0,338
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context), router_db):",0,0,0.0,339
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.l3plugin._core_plugin,",0,0,0.0,340
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(context),",0,0,0.0,341
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,snat_port['id']):,0,0,0.0,342
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"n_utils.get_elevated_context(payload.context),",0,0,0.0,343
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3plugin.dvr_handle_new_service_port(,0,0,0.0,344
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,portbindings.PROFILE: port_profile},1,0,0.0,345
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,new_port[portbindings.HOST_ID] !=,0,0,0.0,346
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"floating_ips, host, agent)",0,0,0.0,347
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.l3_rpc_notifier.routers_updated_on_host(,0,0,0.0,348
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,else:,0,0,0.0,349
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.notify_router_updated(context, router_id)",0,0,0.0,350
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.warning(_LW(""Multiple active ports associated """,1,0,0.0,351
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.l3plugin.update_unbound_allowed_address_pair_port_binding(,1,0,0.0,352
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"address_pair,",1,0,0.0,353
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,address_pair_port=allowed_address_port)),1,0,0.0,354
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,updated_port),1,0,0.0,355
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.l3plugin.update_arp_entry_for_dvr_service_port(,1,0,0.0,356
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"floating_ips, host):",1,0,0.0,357
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.debug(""Floating IP host: %s"", floating_ip['host'])",1,0,0.0,358
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"floating_ips, host)",1,0,0.0,359
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"def _should_update_arp_entry_for_dvr_service_port(self, port_dict):",1,0,0.0,360
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_dict['fixed_ips']),1,0,0.0,361
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,def update_unbound_allowed_address_pair_port_binding(,1,0,0.0,362
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"port_address_pairs, address_pair_port=None):",1,0,0.0,363
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""",1,0,0.0,364
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"def _is_unbound_port(self, port):",0,0,0.0,365
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self._is_unbound_port(port)):,0,0,0.0,366
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,new_port[portbindings.HOST_ID] and,0,0,0.0,367
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,not floating_ip.get(l3_const.DVR_SNAT_BOUND)),0,0,0.0,368
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.update_arp_entry_for_dvr_service_port(context,",0,0,0.0,369
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,service_port_dict),0,0,0.0,370
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"floating_ips, host, agent):",0,0,0.0,371
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.debug(""FIP Agent : %s "", agent.id)",0,0,0.0,372
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"floating_ip, fip_host, fip_dest_host, agent):",0,0,0.0,373
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,continue,0,0,0.0,374
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"fip_host, fip_dest_host, host):",0,0,0.0,375
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.debug(""Floating IP host: %s"", fip_host)",0,0,0.0,376
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,def _check_floating_ip_not_valid_for_given_host(,0,0,0.0,377
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self, fip_host, fip_dest_host, host):",0,0,0.0,378
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,match.,0,0,0.0,379
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"""""""",0,0,0.0,380
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,def _should_skip_floating_ip_processed_for_given_agent(,0,0,0.0,381
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self, floating_ip, fip_host, fip_dest_host, agent):",0,0,0.0,382
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,not already been assigned 'dvr_snat_bound' state.,0,0,0.0,383
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"agent_mode in [const.L3_AGENT_MODE_LEGACY,",0,0,0.0,384
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,const.L3_AGENT_MODE_DVR] and,0,0,0.0,385
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,else:,1,0,0.0,386
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,def remove_unbound_allowed_address_pair_port_binding(,1,0,0.0,387
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,del port_profile['original_owner'],1,0,0.0,388
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.l3_rpc_notifier.routers_updated_on_host(,1,0,0.0,389
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,unbound_migrate=True),0,0,0.0,390
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,else:,0,0,0.0,391
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host=dest_host),0,0,0.0,392
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,n_utils.is_dvr_serviced(original_device_owner) and,1,0,0.0,393
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,not n_utils.is_dvr_serviced(new_device_owner)),1,0,0.0,394
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,is_new_device_dvr_serviced):,1,0,0.0,395
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"l3plugin.dvr_handle_new_service_port(context, new_port,",1,0,0.0,396
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,dest_host=dest_host),1,0,0.0,397
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,ml2_models.PortBinding.profile.contains(profile_host)),0,0,0.0,398
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,ml2_models.PortBinding.profile.contains(host)),1,0,0.0,399
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"dest_host=None, unbound_migrate=False,",0,0,0.0,400
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,router_id=None):,0,0,0.0,401
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,(l3plugin.,0,0,0.0,402
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,check_for_fip_and_create_agent_gw_port_on_host_if_not_exists(,0,0,0.0,403
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,else:,0,0,0.0,404
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"LOG.debug(""Port-in-Migration: Floating IP has a non-""",0,0,0.0,405
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,{'router_id': router_id}),0,0,0.0,406
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"l3plugin.dvr_handle_new_service_port(context, new_port,",0,0,0.0,407
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,filters=agent_filters),0,0,0.0,408
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"def get_dvr_snat_agent_list(self, context):",0,0,0.0,409
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self._get_dvr_migrating_service_port_hostid(,0,0,0.0,410
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,filters={'host': [port_host]}),0,0,0.0,411
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_agent_on_host[0]),0,0,0.0,412
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_const.L3_AGENT_MODE_DVR_NO_EXTERNAL) and,0,0,0.0,413
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,requesting_agent_mode == (,0,0,0.0,414
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,const.L3_AGENT_MODE_DVR_SNAT)):,0,0,0.0,415
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_const.L3_AGENT_MODE_DVR_NO_EXTERNAL),0,0,0.0,416
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,port_dict.update({port['id']: port}),0,0,0.0,417
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,l3_const.L3_AGENT_MODE_DVR_NO_EXTERNAL):,0,0,0.0,418
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.l3_rpc_notifier.routers_updated_on_host(,0,0,0.0,419
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,else:,0,0,0.0,420
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self.l3_rpc_notifier.routers_updated_on_host(,0,0,0.0,421
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,self._get_dvr_migrating_service_port_hostid(,1,0,0.0,422
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.notify_router_updated(context, router_id)",1,0,0.0,423
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"dest_host=None, unbound_migrate=False):",0,0,0.0,424
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"'host %(host)s, router_ids %(router_ids)s',",0,0,0.0,425
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"{'host': agent.host, 'router_ids': router_ids})",0,0,0.0,426
+f0bdb798fa14b7bd5649d98789e71803127dd9f7,"self.get_router(context.elevated(), router_id))",1,0,0.0,427

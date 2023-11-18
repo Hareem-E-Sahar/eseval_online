@@ -1,0 +1,29 @@
+commit_id,line,line_level_label,count,line_score,row
+1e7999356023ed430c54c510d69c74753beb2f31,// Usually means an invalid protocol has been configured.,0,2,1.0,1
+1e7999356023ed430c54c510d69c74753beb2f31,if (getPort() < 0) {,1,2,1.0,2
+1e7999356023ed430c54c510d69c74753beb2f31,"""coyoteConnector.invalidPort"", Integer.valueOf(getPort())));",1,2,1.0,3
+1e7999356023ed430c54c510d69c74753beb2f31,// Zero is a special case and negative values are invalid,0,2,1.0,4
+1e7999356023ed430c54c510d69c74753beb2f31,// Try shortcut that should work for nearly all uses first as it does,0,1,0.5,5
+1e7999356023ed430c54c510d69c74753beb2f31,// not use reflection and is therefore faster.,0,1,0.5,6
+1e7999356023ed430c54c510d69c74753beb2f31,// Fall back for custom protocol handlers not based on AbstractProtocol,0,1,0.5,7
+1e7999356023ed430c54c510d69c74753beb2f31,if (getPortWithOffset() < 0) {,0,1,0.5,8
+1e7999356023ed430c54c510d69c74753beb2f31,"""coyoteConnector.invalidPort"", Integer.valueOf(getPortWithOffset())));",0,1,0.5,9
+1e7999356023ed430c54c510d69c74753beb2f31,return port + getPortOffset();,0,0,0.0,10
+1e7999356023ed430c54c510d69c74753beb2f31,int port = getPort();,0,0,0.0,11
+1e7999356023ed430c54c510d69c74753beb2f31,if (port > 0) {,0,0,0.0,12
+1e7999356023ed430c54c510d69c74753beb2f31,int port = getPortWithOffset();,0,0,0.0,13
+1e7999356023ed430c54c510d69c74753beb2f31,return port;,0,0,0.0,14
+1e7999356023ed430c54c510d69c74753beb2f31,public int getRedirectPortWithOffset() {,0,0,0.0,15
+1e7999356023ed430c54c510d69c74753beb2f31,return getRedirectPort() + getPortOffset();,0,0,0.0,16
+1e7999356023ed430c54c510d69c74753beb2f31,"setProperty(""portOffset"", String.valueOf(portOffset));",0,0,0.0,17
+1e7999356023ed430c54c510d69c74753beb2f31,public int getPortWithOffset() {,0,0,0.0,18
+1e7999356023ed430c54c510d69c74753beb2f31,if (port instanceof Integer) {,0,0,0.0,19
+1e7999356023ed430c54c510d69c74753beb2f31,public void setPortOffset(int portOffset) {,0,0,0.0,20
+1e7999356023ed430c54c510d69c74753beb2f31,return 0;,0,0,0.0,21
+1e7999356023ed430c54c510d69c74753beb2f31,return ((Integer) port).intValue();,0,0,0.0,22
+1e7999356023ed430c54c510d69c74753beb2f31,"Object port = getProperty(""portOffset"");",0,0,0.0,23
+1e7999356023ed430c54c510d69c74753beb2f31,},0,0,0.0,24
+1e7999356023ed430c54c510d69c74753beb2f31,return ((AbstractProtocol<?>) protocolHandler).getPortOffset();,0,0,0.0,25
+1e7999356023ed430c54c510d69c74753beb2f31,if (protocolHandler instanceof AbstractProtocol<?>) {,0,0,0.0,26
+1e7999356023ed430c54c510d69c74753beb2f31,public int getPortOffset() {,0,0,0.0,27
+1e7999356023ed430c54c510d69c74753beb2f31,int port = getPort();,1,0,0.0,28

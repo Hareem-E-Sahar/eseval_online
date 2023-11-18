@@ -1,0 +1,14 @@
+commit_id,line,line_level_label,count,line_score,row
+ca32eef3093410fd17903c001dc214784b00affc,"* Camel uses <a href=""https://rome.dev.java.net/"">ROME</a> as the RSS implementation.",0,3,1.0,1
+ca32eef3093410fd17903c001dc214784b00affc,"* Camel uses <a href=""https://rome.dev.java.net/"">ROME</a> as the RSS implementation.",1,3,1.0,2
+ca32eef3093410fd17903c001dc214784b00affc,"protected void afterConfiguration(String uri, String remaining, Endpoint endpoint, Map<String, Object> parameters) throws Exception {",1,3,1.0,3
+ca32eef3093410fd17903c001dc214784b00affc,throws Exception {,0,2,0.6666666666666666,4
+ca32eef3093410fd17903c001dc214784b00affc,import org.apache.camel.support.jndi.JndiContext;,0,1,0.3333333333333333,5
+ca32eef3093410fd17903c001dc214784b00affc,import org.apache.camel.util.jndi.JndiContext;,1,1,0.3333333333333333,6
+ca32eef3093410fd17903c001dc214784b00affc,"protected void afterConfiguration(String uri, String remaining, Endpoint endpoint, Map<String, Object> parameters)",0,1,0.3333333333333333,7
+ca32eef3093410fd17903c001dc214784b00affc,},0,1,0.3333333333333333,8
+ca32eef3093410fd17903c001dc214784b00affc,},1,1,0.3333333333333333,9
+ca32eef3093410fd17903c001dc214784b00affc,"from(""rss:file:src/test/data/rss20.xml?splitEntries=true&delay=100"").filter().method(""myBean"", ""isAfterDate"")",0,0,0.0,10
+ca32eef3093410fd17903c001dc214784b00affc,".to(""mock:result"");",0,0,0.0,11
+ca32eef3093410fd17903c001dc214784b00affc,"from(""rss:file:src/test/data/rss20.xml?splitEntries=true&delay=100"").",1,0,0.0,12
+ca32eef3093410fd17903c001dc214784b00affc,"filter().method(""myBean"", ""isAfterDate"").to(""mock:result"");",1,0,0.0,13

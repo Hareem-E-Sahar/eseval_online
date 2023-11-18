@@ -1,0 +1,539 @@
+commit_id,line,line_level_label,count,line_score,row
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Copyright 2002-2011 the original author or authors.,0,7,1.0,1
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Copyright 2002-2011 the original author or authors.,1,7,1.0,2
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Copyright 2002-2012 the original author or authors.,1,7,1.0,3
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Copyright 2002-2019 the original author or authors.,0,7,1.0,4
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""USER flags are supported by this mail server. Flagging message with '"" + SI_USER_FLAG + ""' user flag"");",0,5,0.7142857142857142,5
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.info(""attempting to receive mail from folder ["" + this.getFolder().getFullName() + ""]"");",1,5,0.7142857142857142,6
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""USER flags are supported by this mail server. Flagging message with '"" + SI_USER_FLAG + ""' user flag"");",1,5,0.7142857142857142,7
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.logger.info(""attempting to receive mail from folder ["" + this.folder.getFullName() + ""]"");",0,5,0.7142857142857142,8
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.logger.info(""attempting to receive mail from folder ["" + folder.getFullName() + ""]"");",1,5,0.7142857142857142,9
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.info(""attempting to receive mail from folder ["" + this.getFolder().getFullName() + ""]"");",0,5,0.7142857142857142,10
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Delete and expunge messages after success.,1,4,0.5714285714285714,11
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (int i = 0; i < messages.length; i++) {,1,4,0.5714285714285714,12
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (int i = 0; i < messages.length; i++) {,1,4,0.5714285714285714,13
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Fetched email with subject '"" + message.getSubject() + ""' will be discarded by the matching filter"" +",1,4,0.5714285714285714,14
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (int i = 0; i < messages.length; i++) {,1,4,0.5714285714285714,15
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Fetched email with subject '"" + message.getSubject() + ""' will be discarded by the matching filter"" +",0,4,0.5714285714285714,16
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (int i = 0; i < messages.length; i++) {,0,4,0.5714285714285714,17
+3817fa259882b8deef289615bed0e4a00e2b76c7,"* If we're running with the default executor, shut it down.",1,3,0.42857142857142855,18
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""This email server does not support RECENT or USER flags. "" +",0,3,0.42857142857142855,19
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = this.getFolder();,1,3,0.42857142857142855,20
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""folder is not an instance of ["" + IMAPFolder.class.getName() + ""]"");",1,3,0.42857142857142855,21
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags siFlags = new Flags();,1,3,0.42857142857142855,22
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""This email server does not support RECENT or USER flags. "" +",1,3,0.42857142857142855,23
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = ImapIdleChannelAdapter.this.mailReceiver.getFolder();,0,3,0.42857142857142855,24
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""received "" + mailMessages.length + "" mail messages"");",0,3,0.42857142857142855,25
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Failure during the destruction of Mail receiver: "" + this.mailReceiver, e);",1,3,0.42857142857142855,26
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(() -> ""received "" + mailMessages.length + "" mail messages"");",0,3,0.42857142857142855,27
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = ImapIdleChannelAdapter.this.mailReceiver.getFolder();,1,3,0.42857142857142855,28
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""received "" + mailMessages.length + "" mail messages"");",1,3,0.42857142857142855,29
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Provide a managed {@link Executor} to schedule a receiving IDLE task.,0,3,0.42857142857142855,30
+3817fa259882b8deef289615bed0e4a00e2b76c7,* @param taskExecutor the {@link Executor} to use.,0,3,0.42857142857142855,31
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.taskExecutor = new SimpleAsyncTaskExecutor(getBeanName() + ""-"");",0,3,0.42857142857142855,32
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = this.mailReceiver.getFolder();,0,3,0.42857142857142855,33
+3817fa259882b8deef289615bed0e4a00e2b76c7,"() -> ""folder is not an instance of ["" + IMAPFolder.class.getName() + ""]"");",0,3,0.42857142857142855,34
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = ImapIdleChannelAdapter.this.mailReceiver.getFolder();,1,3,0.42857142857142855,35
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(() -> ""received "" + mailMessages.length + "" mail messages"");",1,3,0.42857142857142855,36
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags siFlags = new Flags();,0,3,0.42857142857142855,37
+3817fa259882b8deef289615bed0e4a00e2b76c7,"searchTerm = new AndTerm(searchTerm, notFlagged);",1,3,0.42857142857142855,38
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = getFolder();,0,3,0.42857142857142855,39
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""found "" + messages.length + "" new messages"");",1,3,0.42857142857142855,40
+3817fa259882b8deef289615bed0e4a00e2b76c7,"for (String name : new String[] { PROTOCOL, ""imaps"" }) {",0,3,0.42857142857142855,41
+3817fa259882b8deef289615bed0e4a00e2b76c7,protected void openFolder() throws MessagingException {,0,3,0.42857142857142855,42
+3817fa259882b8deef289615bed0e4a00e2b76c7,public Message[] receive() throws javax.mail.MessagingException {,0,3,0.42857142857142855,43
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""found "" + messages.length + "" new messages"");",0,3,0.42857142857142855,44
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags siFlags = new Flags();,0,3,0.42857142857142855,45
+3817fa259882b8deef289615bed0e4a00e2b76c7,public void destroy() throws Exception {,0,3,0.42857142857142855,46
+3817fa259882b8deef289615bed0e4a00e2b76c7,protected synchronized void openFolder() throws MessagingException {,1,3,0.42857142857142855,47
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = null;,1,3,0.42857142857142855,48
+3817fa259882b8deef289615bed0e4a00e2b76c7,public Message[] receive() throws javax.mail.MessagingException {,1,3,0.42857142857142855,49
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""USER flags are not supported by this mail server. Flagging message with system flag"");",0,3,0.42857142857142855,50
+3817fa259882b8deef289615bed0e4a00e2b76c7,public synchronized void destroy() throws Exception {,1,3,0.42857142857142855,51
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folder = context.getFolder();,1,3,0.42857142857142855,52
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.logger.debug(""found "" + messages.length + "" new messages"");",1,3,0.42857142857142855,53
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags siFlags = new Flags();,1,3,0.42857142857142855,54
+3817fa259882b8deef289615bed0e4a00e2b76c7,private MimeMessage[] searchAndFilterMessages() throws MessagingException {,0,3,0.42857142857142855,55
+3817fa259882b8deef289615bed0e4a00e2b76c7,private void obtainFolder() throws MessagingException {,0,3,0.42857142857142855,56
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.logger.debug(""found "" + messages.length + "" new messages"");",0,3,0.42857142857142855,57
+3817fa259882b8deef289615bed0e4a00e2b76c7,"exceptionToThrow = new org.springframework.integration.MessagingException(""Failed to delete messages"", e);",1,3,0.42857142857142855,58
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""USER flags are not supported by this mail server. Flagging message with system flag"");",1,3,0.42857142857142855,59
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()) {,0,2,0.2857142857142857,60
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (searchTerm == null) {,1,2,0.2857142857142857,61
+3817fa259882b8deef289615bed0e4a00e2b76c7,"notFlagged = new NotTerm(new FlagTerm(new Flags(Flags.Flag.FLAGGED), true));",1,2,0.2857142857142857,62
+3817fa259882b8deef289615bed0e4a00e2b76c7,"notFlagged = new NotTerm(new FlagTerm(siFlags, true));",1,2,0.2857142857142857,63
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder.getPermanentFlags().contains(Flags.Flag.USER)) {,1,2,0.2857142857142857,64
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder.isOpen()) {,1,2,0.2857142857142857,65
+3817fa259882b8deef289615bed0e4a00e2b76c7,SearchTerm searchTerm = this.compileSearchTerms(supportedFlags);,1,2,0.2857142857142857,66
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags supportedFlags = this.getFolder().getPermanentFlags();,1,2,0.2857142857142857,67
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (searchForNewMessages().length > 0) {,1,2,0.2857142857142857,68
+3817fa259882b8deef289615bed0e4a00e2b76c7,else if (!folder.getPermanentFlags().contains(Flags.Flag.RECENT)) {,1,2,0.2857142857142857,69
+3817fa259882b8deef289615bed0e4a00e2b76c7,"for (String name : new String[]{""imap"", ""imaps""}) {",1,2,0.2857142857142857,70
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (searchTerm == null) {,0,2,0.2857142857142857,71
+3817fa259882b8deef289615bed0e4a00e2b76c7,"notFlagged = new NotTerm(new FlagTerm(new Flags(Flag.FLAGGED), true));",0,2,0.2857142857142857,72
+3817fa259882b8deef289615bed0e4a00e2b76c7,"notFlagged = new NotTerm(new FlagTerm(siFlags, true));",0,2,0.2857142857142857,73
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.headerMapper != null) {,1,2,0.2857142857142857,74
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder.getPermanentFlags().contains(Flag.USER)) {,0,2,0.2857142857142857,75
+3817fa259882b8deef289615bed0e4a00e2b76c7,"searchTerm = applyTermsWhenNoRecentFlag(folder, searchTerm);",0,2,0.2857142857142857,76
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folderToUse.isOpen()) {,0,2,0.2857142857142857,77
+3817fa259882b8deef289615bed0e4a00e2b76c7,SearchTerm searchTerm = compileSearchTerms(supportedFlags);,0,2,0.2857142857142857,78
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags supportedFlags = folderToUse.getPermanentFlags();,0,2,0.2857142857142857,79
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folderToUse = getFolder();,0,2,0.2857142857142857,80
+3817fa259882b8deef289615bed0e4a00e2b76c7,else if (!folder.getPermanentFlags().contains(Flags.Flag.RECENT) && searchForNewMessages().length > 0) {,0,2,0.2857142857142857,81
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.pingTask != null) {,0,2,0.2857142857142857,82
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.cancelIdleInterval = cancelIdleInterval * 1000; // NOSONAR - convert seconds to milliseconds,0,2,0.2857142857142857,83
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.logger.debug(""Received "" + messages.length + "" messages"");",1,2,0.2857142857142857,84
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (messages.length > 0) {,1,2,0.2857142857142857,85
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.logger.isDebugEnabled()) {,1,2,0.2857142857142857,86
+3817fa259882b8deef289615bed0e4a00e2b76c7,Folder folderToUse = getFolder();,0,2,0.2857142857142857,87
+3817fa259882b8deef289615bed0e4a00e2b76c7,searchTerm = notFlagged;,1,2,0.2857142857142857,88
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.stop.getAndSet(false)) {,1,2,0.2857142857142857,89
+3817fa259882b8deef289615bed0e4a00e2b76c7,private Executor sendingTaskExecutor = Executors.newFixedThreadPool(1);,0,2,0.2857142857142857,90
+3817fa259882b8deef289615bed0e4a00e2b76c7,"// If we're running with the default executor, shut it down.",0,2,0.2857142857142857,91
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] reducedMessages = new Message[this.maxFetchSize];,1,2,0.2857142857142857,92
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.delayNextExecution.getAndSet(false)) {,1,2,0.2857142857142857,93
+3817fa259882b8deef289615bed0e4a00e2b76c7,private final AtomicBoolean stop = new AtomicBoolean();,1,2,0.2857142857142857,94
+3817fa259882b8deef289615bed0e4a00e2b76c7,private final AtomicBoolean delayNextExecution = new AtomicBoolean();,1,2,0.2857142857142857,95
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (ImapIdleChannelAdapter.this.shouldReconnectAutomatically) {,1,2,0.2857142857142857,96
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder != null && folder.isOpen() && isRunning()) {,1,2,0.2857142857142857,97
+3817fa259882b8deef289615bed0e4a00e2b76c7,"+ ImapIdleChannelAdapter.this.reconnectDelay + "" milliseconds."");",1,2,0.2857142857142857,98
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (isRunning()) {,1,2,0.2857142857142857,99
+3817fa259882b8deef289615bed0e4a00e2b76c7,private final IdleTask idleTask = new IdleTask();,1,2,0.2857142857142857,100
+3817fa259882b8deef289615bed0e4a00e2b76c7,private final ExceptionAwarePeriodicTrigger receivingTaskTrigger = new ExceptionAwarePeriodicTrigger();,1,2,0.2857142857142857,101
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.shouldReconnectAutomatically) {,0,2,0.2857142857142857,102
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (isRunning()) {,0,2,0.2857142857142857,103
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder != null && folder.isOpen() && isRunning()) {,0,2,0.2857142857142857,104
+3817fa259882b8deef289615bed0e4a00e2b76c7,"+ this.reconnectDelay + "" milliseconds."");",0,2,0.2857142857142857,105
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.taskExecutor == null) {,0,2,0.2857142857142857,106
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (ImapIdleChannelAdapter.this.shouldReconnectAutomatically) {,1,2,0.2857142857142857,107
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()) {,1,2,0.2857142857142857,108
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder != null && folder.isOpen()) {,1,2,0.2857142857142857,109
+3817fa259882b8deef289615bed0e4a00e2b76c7,"+ ImapIdleChannelAdapter.this.reconnectDelay + "" milliseconds."", e);",1,2,0.2857142857142857,110
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isWarnEnabled()) {,1,2,0.2857142857142857,111
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.sendingTaskExecutor == null) {,1,2,0.2857142857142857,112
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (ImapIdleChannelAdapter.this.shouldReconnectAutomatically) {,0,2,0.2857142857142857,113
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()) {,0,2,0.2857142857142857,114
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder != null && folder.isOpen() && isRunning()) {,0,2,0.2857142857142857,115
+3817fa259882b8deef289615bed0e4a00e2b76c7,"+ ImapIdleChannelAdapter.this.reconnectDelay + "" milliseconds."", e);",0,2,0.2857142857142857,116
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isWarnEnabled()) {,0,2,0.2857142857142857,117
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (isRunning()) {,0,2,0.2857142857142857,118
+3817fa259882b8deef289615bed0e4a00e2b76c7,messages = reducedMessages;,1,2,0.2857142857142857,119
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.cancelIdleInterval = cancelIdleInterval * 1000;,1,2,0.2857142857142857,120
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.maxFetchSize > 0 && messages.length > this.maxFetchSize) {,1,2,0.2857142857142857,121
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.selectorExpression != null) {,0,2,0.2857142857142857,122
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] messages = this.searchForNewMessages();,1,2,0.2857142857142857,123
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isInfoEnabled()) {,1,2,0.2857142857142857,124
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder.isOpen()) {,1,2,0.2857142857142857,125
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (folder == null || !folder.exists()) {,1,2,0.2857142857142857,126
+3817fa259882b8deef289615bed0e4a00e2b76c7,folder = context.getFolder();,1,2,0.2857142857142857,127
+3817fa259882b8deef289615bed0e4a00e2b76c7,folder = this.store.getFolder(this.url);,1,2,0.2857142857142857,128
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (context == null) {,1,2,0.2857142857142857,129
+3817fa259882b8deef289615bed0e4a00e2b76c7,MailReceiverContext context = this.contextHolder.get();,1,2,0.2857142857142857,130
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new org.springframework.integration.MessagingException(""Failed to open folder"", e);",1,2,0.2857142857142857,131
+3817fa259882b8deef289615bed0e4a00e2b76c7,private final ThreadLocal<MailReceiverContext> contextHolder = new ThreadLocal<MailReceiverContext>();,1,2,0.2857142857142857,132
+3817fa259882b8deef289615bed0e4a00e2b76c7,* @author Gary Russell,1,2,0.2857142857142857,133
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.shouldDeleteMessages()) {,0,2,0.2857142857142857,134
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message message = messages[i];,0,2,0.2857142857142857,135
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags flags = this.getFolder().getPermanentFlags();,0,2,0.2857142857142857,136
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] reducedMessages = new Message[this.maxFetchSize];,1,2,0.2857142857142857,137
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Recieved "" + messages.length + "" messages"");",0,2,0.2857142857142857,138
+3817fa259882b8deef289615bed0e4a00e2b76c7,List<Message> copiedMessages = new LinkedList<Message>();,0,2,0.2857142857142857,139
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (messages.length > 0) {,0,2,0.2857142857142857,140
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()) {,0,2,0.2857142857142857,141
+3817fa259882b8deef289615bed0e4a00e2b76c7,messages = reducedMessages;,0,2,0.2857142857142857,142
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.maxFetchSize > 0 && messages.length > this.maxFetchSize) {,0,2,0.2857142857142857,143
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] messages = this.searchForNewMessages();,0,2,0.2857142857142857,144
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isInfoEnabled()) {,0,2,0.2857142857142857,145
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.folder.isOpen()) {,0,2,0.2857142857142857,146
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.folder == null || !this.folder.exists()) {,0,2,0.2857142857142857,147
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.folder == null) {,0,2,0.2857142857142857,148
+3817fa259882b8deef289615bed0e4a00e2b76c7,private final Object folderMonitor = new Object();,0,2,0.2857142857142857,149
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] messages = searchForNewMessages();,1,2,0.2857142857142857,150
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.maxFetchSize > 0 && messages.length > this.maxFetchSize) {,1,2,0.2857142857142857,151
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] reducedMessages = new Message[this.maxFetchSize];,0,2,0.2857142857142857,152
+3817fa259882b8deef289615bed0e4a00e2b76c7,messages = reducedMessages;,1,2,0.2857142857142857,153
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (exceptionToThrow != null) {,1,2,0.2857142857142857,154
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.logger.isInfoEnabled()) {,1,2,0.2857142857142857,155
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()) {,1,2,0.2857142857142857,156
+3817fa259882b8deef289615bed0e4a00e2b76c7,folder = getFolder();,1,2,0.2857142857142857,157
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.logger.debug(""Received "" + messages.length + "" messages"");",0,2,0.2857142857142857,158
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (messages.length > 0) {,0,2,0.2857142857142857,159
+3817fa259882b8deef289615bed0e4a00e2b76c7,messages = reducedMessages;,0,2,0.2857142857142857,160
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] reducedMessages = new Message[this.maxFetchSize];,0,2,0.2857142857142857,161
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.maxFetchSize > 0 && messages.length > this.maxFetchSize) {,0,2,0.2857142857142857,162
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] messages = searchForNewMessages();,0,2,0.2857142857142857,163
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.logger.isInfoEnabled()) {,0,2,0.2857142857142857,164
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.headerMapper != null) {,0,2,0.2857142857142857,165
+3817fa259882b8deef289615bed0e4a00e2b76c7,protected final Log logger = LogFactory.getLog(getClass()); // NOSONAR safe to use final,1,2,0.2857142857142857,166
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Message message1 : messages) {,0,2,0.2857142857142857,167
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.logger.isDebugEnabled()) {,0,2,0.2857142857142857,168
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (messages != null) {,1,2,0.2857142857142857,169
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message[] messages = this.contextHolder.get().getMessages();,1,2,0.2857142857142857,170
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.shouldDeleteMessages) {,1,2,0.2857142857142857,171
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Received "" + messages.length + "" messages"");",1,2,0.2857142857142857,172
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (messages.length > 0) {,1,2,0.2857142857142857,173
+3817fa259882b8deef289615bed0e4a00e2b76c7,Message message = messages[i];,1,2,0.2857142857142857,174
+3817fa259882b8deef289615bed0e4a00e2b76c7,* @param context,1,2,0.2857142857142857,175
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.selectorExpression != null) {,1,2,0.2857142857142857,176
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.state(messages != null, ""No messages in mail receiver context"");",1,2,0.2857142857142857,177
+3817fa259882b8deef289615bed0e4a00e2b76c7,Flags flags = context.getFolder().getPermanentFlags();,1,2,0.2857142857142857,178
+3817fa259882b8deef289615bed0e4a00e2b76c7,"exceptionToThrow = new org.springframework.integration.MessagingException(""Failed to set flags"", e);",1,2,0.2857142857142857,179
+3817fa259882b8deef289615bed0e4a00e2b76c7,List<Message> copiedMessages = new LinkedList<Message>();,1,2,0.2857142857142857,180
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Object mailMessage : mailMessages) {,1,1,0.14285714285714285,181
+3817fa259882b8deef289615bed0e4a00e2b76c7,Object[] mailMessages = ImapIdleChannelAdapter.this.mailReceiver.receive();,1,1,0.14285714285714285,182
+3817fa259882b8deef289615bed0e4a00e2b76c7,import java.util.concurrent.Executor;,0,1,0.14285714285714285,183
+3817fa259882b8deef289615bed0e4a00e2b76c7,Runnable messageSendingTask = createMessageSendingTask(mailMessage);,1,1,0.14285714285714285,184
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (MessagingException e) {,1,1,0.14285714285714285,185
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(""error occurred in idle task"", e);",1,1,0.14285714285714285,186
+3817fa259882b8deef289615bed0e4a00e2b76c7,"* one. But, just in case...",1,1,0.14285714285714285,187
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new IllegalStateException(""Failure in 'idle' task. Will resubmit."", e);",1,1,0.14285714285714285,188
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,1,1,0.14285714285714285,189
+3817fa259882b8deef289615bed0e4a00e2b76c7,throw new org.springframework.messaging.MessagingException(,1,1,0.14285714285714285,190
+3817fa259882b8deef289615bed0e4a00e2b76c7,*/,0,1,0.14285714285714285,191
+3817fa259882b8deef289615bed0e4a00e2b76c7,import org.springframework.core.task.SimpleAsyncTaskExecutor;,0,1,0.14285714285714285,192
+3817fa259882b8deef289615bed0e4a00e2b76c7,private Executor taskExecutor;,0,1,0.14285714285714285,193
+3817fa259882b8deef289615bed0e4a00e2b76c7,/**,0,1,0.14285714285714285,194
+3817fa259882b8deef289615bed0e4a00e2b76c7,* @since 6.2,0,1,0.14285714285714285,195
+3817fa259882b8deef289615bed0e4a00e2b76c7,public void setTaskExecutor(Executor taskExecutor) {,0,1,0.14285714285714285,196
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.taskExecutor = taskExecutor;,0,1,0.14285714285714285,197
+3817fa259882b8deef289615bed0e4a00e2b76c7,},0,1,0.14285714285714285,198
+3817fa259882b8deef289615bed0e4a00e2b76c7,private void callIdle() {,0,1,0.14285714285714285,199
+3817fa259882b8deef289615bed0e4a00e2b76c7,final TaskScheduler scheduler = getTaskScheduler();,1,1,0.14285714285714285,200
+3817fa259882b8deef289615bed0e4a00e2b76c7,while (isActive()) {,0,1,0.14285714285714285,201
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,0,1,0.14285714285714285,202
+3817fa259882b8deef289615bed0e4a00e2b76c7,* The following shouldn't be necessary because doStart() will have ensured we have,1,1,0.14285714285714285,203
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(""error occurred in idle task"", e);",0,1,0.14285714285714285,204
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception e) { //run again after a delay,1,1,0.14285714285714285,205
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (MessagingException e) {,0,1,0.14285714285714285,206
+3817fa259882b8deef289615bed0e4a00e2b76c7,new MimeMessage((MimeMessage) messages[i]);,1,1,0.14285714285714285,207
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (this.shouldReconnectAutomatically,0,1,0.14285714285714285,208
+3817fa259882b8deef289615bed0e4a00e2b76c7,},0,1,0.14285714285714285,209
+3817fa259882b8deef289615bed0e4a00e2b76c7,public void destroy() {,0,1,0.14285714285714285,210
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,0,1,0.14285714285714285,211
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception e) { //run again after a delay,0,1,0.14285714285714285,212
+3817fa259882b8deef289615bed0e4a00e2b76c7,Object[] mailMessages = ImapIdleChannelAdapter.this.mailReceiver.receive();,0,1,0.14285714285714285,213
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Object mailMessage : mailMessages) {,0,1,0.14285714285714285,214
+3817fa259882b8deef289615bed0e4a00e2b76c7,Runnable messageSendingTask = createMessageSendingTask(mailMessage);,0,1,0.14285714285714285,215
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new IllegalStateException(""Failure in 'idle' task. Will resubmit."", e);",0,1,0.14285714285714285,216
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.sendingTaskExecutor = null;,1,1,0.14285714285714285,217
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,0,1,0.14285714285714285,218
+3817fa259882b8deef289615bed0e4a00e2b76c7,throw new org.springframework.messaging.MessagingException(,0,1,0.14285714285714285,219
+3817fa259882b8deef289615bed0e4a00e2b76c7,private Executor sendingTaskExecutor;,1,1,0.14285714285714285,220
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.sendingTaskExecutor = Executors.newFixedThreadPool(1);,1,1,0.14285714285714285,221
+3817fa259882b8deef289615bed0e4a00e2b76c7,},1,1,0.14285714285714285,222
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,1,1,0.14285714285714285,223
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception e) {,1,1,0.14285714285714285,224
+3817fa259882b8deef289615bed0e4a00e2b76c7,throw new IllegalStateException(,1,1,0.14285714285714285,225
+3817fa259882b8deef289615bed0e4a00e2b76c7,*/,1,1,0.14285714285714285,226
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception ex) {,0,1,0.14285714285714285,227
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception ex) {,1,1,0.14285714285714285,228
+3817fa259882b8deef289615bed0e4a00e2b76c7,&& ex.getCause() instanceof jakarta.mail.MessagingException messagingException) {,0,1,0.14285714285714285,229
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,0,1,0.14285714285714285,230
+3817fa259882b8deef289615bed0e4a00e2b76c7,public void run() {,1,1,0.14285714285714285,231
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,1,1,0.14285714285714285,232
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (ImapIdleChannelAdapter.this.shouldReconnectAutomatically,1,1,0.14285714285714285,233
+3817fa259882b8deef289615bed0e4a00e2b76c7,&& ex.getCause() instanceof jakarta.mail.MessagingException messagingException) {,1,1,0.14285714285714285,234
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,1,1,0.14285714285714285,235
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Failed to execute IDLE task. "" +",1,1,0.14285714285714285,236
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Won't resubmit since not a 'shouldReconnectAutomatically' "" +",1,1,0.14285714285714285,237
+3817fa259882b8deef289615bed0e4a00e2b76c7,private class IdleTask implements Runnable {,1,1,0.14285714285714285,238
+3817fa259882b8deef289615bed0e4a00e2b76c7,IdleTask() {,1,1,0.14285714285714285,239
+3817fa259882b8deef289615bed0e4a00e2b76c7,Object[] mailMessages = ImapIdleChannelAdapter.this.mailReceiver.receive();,1,1,0.14285714285714285,240
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Object mailMessage : mailMessages) {,1,1,0.14285714285714285,241
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (jakarta.mail.MessagingException ex) {,1,1,0.14285714285714285,242
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(ex, ""error occurred in idle task"");",1,1,0.14285714285714285,243
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new IllegalStateException(""Failure in 'idle' task. Will resubmit."", ex);",1,1,0.14285714285714285,244
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new MessagingException(""Failure in 'idle' task. Will NOT resubmit."", ex);",1,1,0.14285714285714285,245
+3817fa259882b8deef289615bed0e4a00e2b76c7,private class ExceptionAwarePeriodicTrigger implements Trigger {,1,1,0.14285714285714285,246
+3817fa259882b8deef289615bed0e4a00e2b76c7,ExceptionAwarePeriodicTrigger() {,1,1,0.14285714285714285,247
+3817fa259882b8deef289615bed0e4a00e2b76c7,public Instant nextExecution(TriggerContext triggerContext) {,1,1,0.14285714285714285,248
+3817fa259882b8deef289615bed0e4a00e2b76c7,void delayNextExecution() {,1,1,0.14285714285714285,249
+3817fa259882b8deef289615bed0e4a00e2b76c7,void stop() {,1,1,0.14285714285714285,250
+3817fa259882b8deef289615bed0e4a00e2b76c7,int messageCount = this.getFolder().getMessageCount();,1,1,0.14285714285714285,251
+3817fa259882b8deef289615bed0e4a00e2b76c7,},1,1,0.14285714285714285,252
+3817fa259882b8deef289615bed0e4a00e2b76c7,ReceivingTask() {,1,1,0.14285714285714285,253
+3817fa259882b8deef289615bed0e4a00e2b76c7,private class ReceivingTask implements Runnable {,1,1,0.14285714285714285,254
+3817fa259882b8deef289615bed0e4a00e2b76c7,private void delayNextIdleCall() {,0,1,0.14285714285714285,255
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Failed to execute IDLE task. "" +",0,1,0.14285714285714285,256
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Won't resubmit since not a 'shouldReconnectAutomatically' "" +",0,1,0.14285714285714285,257
+3817fa259882b8deef289615bed0e4a00e2b76c7,private void processIdle() {,0,1,0.14285714285714285,258
+3817fa259882b8deef289615bed0e4a00e2b76c7,Object[] mailMessages = this.mailReceiver.receive();,0,1,0.14285714285714285,259
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Object mailMessage : mailMessages) {,0,1,0.14285714285714285,260
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (jakarta.mail.MessagingException ex) {,0,1,0.14285714285714285,261
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(ex, ""error occurred in idle task"");",0,1,0.14285714285714285,262
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new IllegalStateException(""Failure in 'idle' task. Will resubmit."", ex);",0,1,0.14285714285714285,263
+3817fa259882b8deef289615bed0e4a00e2b76c7,"throw new MessagingException(""Failure in 'idle' task. Will NOT resubmit."", ex);",0,1,0.14285714285714285,264
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (InterruptedException ex) {,0,1,0.14285714285714285,265
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.receivingTask = scheduler.schedule(new ReceivingTask(), this.receivingTaskTrigger);",1,1,0.14285714285714285,266
+3817fa259882b8deef289615bed0e4a00e2b76c7,throw new IllegalStateException(ex);,0,1,0.14285714285714285,267
+3817fa259882b8deef289615bed0e4a00e2b76c7,import java.time.Instant;,1,1,0.14285714285714285,268
+3817fa259882b8deef289615bed0e4a00e2b76c7,import java.util.concurrent.atomic.AtomicBoolean;,1,1,0.14285714285714285,269
+3817fa259882b8deef289615bed0e4a00e2b76c7,import org.springframework.scheduling.TaskScheduler;,1,1,0.14285714285714285,270
+3817fa259882b8deef289615bed0e4a00e2b76c7,import org.springframework.scheduling.Trigger;,1,1,0.14285714285714285,271
+3817fa259882b8deef289615bed0e4a00e2b76c7,import org.springframework.scheduling.TriggerContext;,1,1,0.14285714285714285,272
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Lifecycle implementation,1,1,0.14285714285714285,273
+3817fa259882b8deef289615bed0e4a00e2b76c7,*/,1,1,0.14285714285714285,274
+3817fa259882b8deef289615bed0e4a00e2b76c7,TaskScheduler scheduler = getTaskScheduler();,1,1,0.14285714285714285,275
+3817fa259882b8deef289615bed0e4a00e2b76c7,*,1,1,0.14285714285714285,276
+3817fa259882b8deef289615bed0e4a00e2b76c7,NotTerm notFlagged = null;,1,1,0.14285714285714285,277
+3817fa259882b8deef289615bed0e4a00e2b76c7,new MimeMessage((MimeMessage) message);,0,1,0.14285714285714285,278
+3817fa259882b8deef289615bed0e4a00e2b76c7,MimeMessage message = (MimeMessage) message1;,0,1,0.14285714285714285,279
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (mailReceiverContext == null ||,1,1,0.14285714285714285,280
+3817fa259882b8deef289615bed0e4a00e2b76c7,!mailReceiverContext.getFolder().isOpen()) {,1,1,0.14285714285714285,281
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,1,1,0.14285714285714285,282
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (MessagingException e) {,1,1,0.14285714285714285,283
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,1,1,0.14285714285714285,284
+3817fa259882b8deef289615bed0e4a00e2b76c7,"if (this.selectorExpression.getValue(this.context, message, Boolean.class)){",1,1,0.14285714285714285,285
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Optional method allowing you to set additional flags.,1,1,0.14285714285714285,286
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.store = null;,1,1,0.14285714285714285,287
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.initialized = false;,1,1,0.14285714285714285,288
+3817fa259882b8deef289615bed0e4a00e2b76c7,/**,1,1,0.14285714285714285,289
+3817fa259882b8deef289615bed0e4a00e2b76c7,*/,1,1,0.14285714285714285,290
+3817fa259882b8deef289615bed0e4a00e2b76c7,public void closeContextAfterSuccess(MailReceiverContext context) {,1,1,0.14285714285714285,291
+3817fa259882b8deef289615bed0e4a00e2b76c7,RuntimeException exceptionToThrow = null;,1,1,0.14285714285714285,292
+3817fa259882b8deef289615bed0e4a00e2b76c7,boolean recentFlagSupported = false;,1,1,0.14285714285714285,293
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (flags != null){,1,1,0.14285714285714285,294
+3817fa259882b8deef289615bed0e4a00e2b76c7,recentFlagSupported = flags.contains(Flags.Flag.RECENT);,1,1,0.14285714285714285,295
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (!recentFlagSupported){,1,1,0.14285714285714285,296
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (flags != null && flags.contains(Flags.Flag.USER)){,1,1,0.14285714285714285,297
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()){,1,1,0.14285714285714285,298
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception e) {,1,1,0.14285714285714285,299
+3817fa259882b8deef289615bed0e4a00e2b76c7,public void closeContextAfterFailure(MailReceiverContext context) {,1,1,0.14285714285714285,300
+3817fa259882b8deef289615bed0e4a00e2b76c7,MailReceiverContext mailReceiverContext = this.contextHolder.get();,1,1,0.14285714285714285,301
+3817fa259882b8deef289615bed0e4a00e2b76c7,private MailReceiverContext doObtainTransactionContext() {,1,1,0.14285714285714285,302
+3817fa259882b8deef289615bed0e4a00e2b76c7,public MailReceiverContext getTransactionContext() {,1,1,0.14285714285714285,303
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (!recentFlagSupported){,0,1,0.14285714285714285,304
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Message message : messages) {,0,1,0.14285714285714285,305
+3817fa259882b8deef289615bed0e4a00e2b76c7,*,0,1,0.14285714285714285,306
+3817fa259882b8deef289615bed0e4a00e2b76c7,private volatile Folder folder;,0,1,0.14285714285714285,307
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.folder = this.store.getFolder(this.url);,0,1,0.14285714285714285,308
+3817fa259882b8deef289615bed0e4a00e2b76c7,synchronized (this.folderMonitor) {,0,1,0.14285714285714285,309
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,0,1,0.14285714285714285,310
+3817fa259882b8deef289615bed0e4a00e2b76c7,},0,1,0.14285714285714285,311
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (flags != null){,0,1,0.14285714285714285,312
+3817fa259882b8deef289615bed0e4a00e2b76c7,recentFlagSupported = flags.contains(Flags.Flag.RECENT);,0,1,0.14285714285714285,313
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (flags != null && flags.contains(Flags.Flag.USER)){,0,1,0.14285714285714285,314
+3817fa259882b8deef289615bed0e4a00e2b76c7,},1,1,0.14285714285714285,315
+3817fa259882b8deef289615bed0e4a00e2b76c7,if (logger.isDebugEnabled()){,0,1,0.14285714285714285,316
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,0,1,0.14285714285714285,317
+3817fa259882b8deef289615bed0e4a00e2b76c7,"if (this.selectorExpression.getValue(this.context, message, Boolean.class)){",0,1,0.14285714285714285,318
+3817fa259882b8deef289615bed0e4a00e2b76c7,finally {,0,1,0.14285714285714285,319
+3817fa259882b8deef289615bed0e4a00e2b76c7,* Optional method allowing you to set additional flags.,0,1,0.14285714285714285,320
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.folder = null;,0,1,0.14285714285714285,321
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.store = null;,0,1,0.14285714285714285,322
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.initialized = false;,0,1,0.14285714285714285,323
+3817fa259882b8deef289615bed0e4a00e2b76c7,*,1,1,0.14285714285714285,324
+3817fa259882b8deef289615bed0e4a00e2b76c7,"public static final String DEFAULT_SI_USER_FLAG = ""spring-integration-mail-adapter"";",0,1,0.14285714285714285,325
+3817fa259882b8deef289615bed0e4a00e2b76c7,boolean recentFlagSupported = false;,0,1,0.14285714285714285,326
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (Message message : messages) {,0,1,0.14285714285714285,327
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.error(""Error during resetting idle state."", ex);",0,1,0.14285714285714285,328
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Map<String, Object> headers = this.headerMapper.toHeaders(message);",1,1,0.14285714285714285,329
+3817fa259882b8deef289615bed0e4a00e2b76c7,converted[n++] =,1,1,0.14285714285714285,330
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,1,1,0.14285714285714285,331
+3817fa259882b8deef289615bed0e4a00e2b76c7,finally {,1,1,0.14285714285714285,332
+3817fa259882b8deef289615bed0e4a00e2b76c7,*,1,1,0.14285714285714285,333
+3817fa259882b8deef289615bed0e4a00e2b76c7,* @since 2.2,1,1,0.14285714285714285,334
+3817fa259882b8deef289615bed0e4a00e2b76c7,"private static final String PROTOCOL = ""imap"";",0,1,0.14285714285714285,335
+3817fa259882b8deef289615bed0e4a00e2b76c7,},0,1,0.14285714285714285,336
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception ex) {,0,1,0.14285714285714285,337
+3817fa259882b8deef289615bed0e4a00e2b76c7,"private SearchTerm applyTermsWhenNoRecentFlag(Folder folder, SearchTerm searchTerm) {",0,1,0.14285714285714285,338
+3817fa259882b8deef289615bed0e4a00e2b76c7,int n = 0;,1,1,0.14285714285714285,339
+3817fa259882b8deef289615bed0e4a00e2b76c7,NotTerm notFlagged = null;,0,1,0.14285714285714285,340
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,0,1,0.14285714285714285,341
+3817fa259882b8deef289615bed0e4a00e2b76c7,"return new AndTerm(searchTerm, notFlagged);",0,1,0.14285714285714285,342
+3817fa259882b8deef289615bed0e4a00e2b76c7,},1,1,0.14285714285714285,343
+3817fa259882b8deef289615bed0e4a00e2b76c7,catch (Exception ignore) {,1,1,0.14285714285714285,344
+3817fa259882b8deef289615bed0e4a00e2b76c7,import javax.mail.Folder;,0,1,0.14285714285714285,345
+3817fa259882b8deef289615bed0e4a00e2b76c7,"public static final String PROTOCOL = ""pop3"";",0,1,0.14285714285714285,346
+3817fa259882b8deef289615bed0e4a00e2b76c7,import org.apache.commons.logging.Log;,1,1,0.14285714285714285,347
+3817fa259882b8deef289615bed0e4a00e2b76c7,int messageCount = folderToUse.getMessageCount();,0,1,0.14285714285714285,348
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (MimeMessage message : filteredMessages) {,1,1,0.14285714285714285,349
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,1,1,0.14285714285714285,350
+3817fa259882b8deef289615bed0e4a00e2b76c7,new org.springframework.messaging.Message<?>[filteredMessages.length];,1,1,0.14285714285714285,351
+3817fa259882b8deef289615bed0e4a00e2b76c7,converted[n++] =,0,1,0.14285714285714285,352
+3817fa259882b8deef289615bed0e4a00e2b76c7,org.springframework.messaging.Message<?>[] converted =,1,1,0.14285714285714285,353
+3817fa259882b8deef289615bed0e4a00e2b76c7,import org.apache.commons.logging.LogFactory;,1,1,0.14285714285714285,354
+3817fa259882b8deef289615bed0e4a00e2b76c7,MimeMessage message = (MimeMessage) messages[i];,1,1,0.14285714285714285,355
+3817fa259882b8deef289615bed0e4a00e2b76c7,MimeMessage[] filteredMessages = searchAndFilterMessages();,0,1,0.14285714285714285,356
+3817fa259882b8deef289615bed0e4a00e2b76c7,org.springframework.messaging.Message<?>[] converted =,0,1,0.14285714285714285,357
+3817fa259882b8deef289615bed0e4a00e2b76c7,new org.springframework.messaging.Message<?>[filteredMessages.length];,0,1,0.14285714285714285,358
+3817fa259882b8deef289615bed0e4a00e2b76c7,int n = 0;,0,1,0.14285714285714285,359
+3817fa259882b8deef289615bed0e4a00e2b76c7,for (MimeMessage message : filteredMessages) {,0,1,0.14285714285714285,360
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Map<String, Object> headers = this.headerMapper.toHeaders(message);",0,1,0.14285714285714285,361
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,0,1,0.14285714285714285,362
+3817fa259882b8deef289615bed0e4a00e2b76c7,},0,1,0.14285714285714285,363
+3817fa259882b8deef289615bed0e4a00e2b76c7,* @since 2.2,0,1,0.14285714285714285,364
+3817fa259882b8deef289615bed0e4a00e2b76c7,MimeMessage[] filteredMessages = filterMessagesThruSelector(messages);,1,1,0.14285714285714285,365
+3817fa259882b8deef289615bed0e4a00e2b76c7,else {,0,1,0.14285714285714285,366
+3817fa259882b8deef289615bed0e4a00e2b76c7,},1,1,0.14285714285714285,367
+3817fa259882b8deef289615bed0e4a00e2b76c7,try {,1,1,0.14285714285714285,368
+3817fa259882b8deef289615bed0e4a00e2b76c7,"public final static String DEFAULT_SI_USER_FLAG = ""spring-integration-mail-adapter"";",1,1,0.14285714285714285,369
+3817fa259882b8deef289615bed0e4a00e2b76c7,finally {,0,1,0.14285714285714285,370
+3817fa259882b8deef289615bed0e4a00e2b76c7,*,0,1,0.14285714285714285,371
+3817fa259882b8deef289615bed0e4a00e2b76c7,MimeMessage[] filteredMessages = filterMessagesThruSelector(messages);,0,1,0.14285714285714285,372
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""'sendingTaskExecutor' must not be null"");",1,0,0.0,373
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(""Failed to execute IDLE task. Will attempt to resubmit in """,0,0,0.0,374
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.receivingTaskTrigger.delayNextExecution();,0,0,0.0,375
+3817fa259882b8deef289615bed0e4a00e2b76c7,publishException(e);,0,0,0.0,376
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""waiting for mail"");",0,0,0.0,377
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.mailReceiver.waitForNewMessages();,0,0,0.0,378
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.sendingTaskExecutor.execute(messageSendingTask);,0,0,0.0,379
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Failure in 'idle' task. Will NOT resubmit."", e);",0,0,0.0,380
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.mailReceiver.destroy();,1,0,0.0,381
+3817fa259882b8deef289615bed0e4a00e2b76c7,/*,1,0,0.0,382
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Task completed successfully. Re-scheduling it again right away."");",0,0,0.0,383
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.idleTask.run();,1,0,0.0,384
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Task completed successfully. Re-scheduling it again right away."");",1,0,0.0,385
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(""Failed to execute IDLE task. Will attempt to resubmit in """,1,0,0.0,386
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""waiting for mail"");",1,0,0.0,387
+3817fa259882b8deef289615bed0e4a00e2b76c7,publishException(e);,1,0,0.0,388
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.notNull(scheduler, ""'taskScheduler' must not be null"");",1,0,0.0,389
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.state(ImapIdleChannelAdapter.this.sendingTaskExecutor != null,",1,0,0.0,390
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.receivingTaskTrigger.delayNextExecution();,1,0,0.0,391
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.setProtocol(""pop3"");",1,0,0.0,392
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.idleTask.run();,0,0,0.0,393
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.mailReceiver.destroy();,0,0,0.0,394
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.openFolder();,1,0,0.0,395
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.sendingTaskExecutor.execute(messageSendingTask);,1,0,0.0,396
+3817fa259882b8deef289615bed0e4a00e2b76c7,return;,1,0,0.0,397
+3817fa259882b8deef289615bed0e4a00e2b76c7,return nullSafeMessages(searchTerm != null ? folder.search(searchTerm) : folder.getMessages());,1,0,0.0,398
+3817fa259882b8deef289615bed0e4a00e2b76c7,siFlags.add(getUserFlag());,1,0,0.0,399
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""System flag 'Flag.FLAGGED' will be used to prevent duplicates during email fetch."");",1,0,0.0,400
+3817fa259882b8deef289615bed0e4a00e2b76c7,return searchTerm;,1,0,0.0,401
+3817fa259882b8deef289615bed0e4a00e2b76c7,setProtocol(PROTOCOL);,0,0,0.0,402
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.isTrue(url.startsWith(PROTOCOL), ""url must start with 'pop3'"");",0,0,0.0,403
+3817fa259882b8deef289615bed0e4a00e2b76c7,"super(new URLName(PROTOCOL, host, port, ""INBOX"", username, password));",0,0,0.0,404
+3817fa259882b8deef289615bed0e4a00e2b76c7,return folderToUse.getMessages();,0,0,0.0,405
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.isTrue(url.startsWith(""pop3""), ""url must start with 'pop3'"");",1,0,0.0,406
+3817fa259882b8deef289615bed0e4a00e2b76c7,"super(new URLName(""pop3"", host, port, ""INBOX"", username, password));",1,0,0.0,407
+3817fa259882b8deef289615bed0e4a00e2b76c7,return this.getFolder().getMessages();,1,0,0.0,408
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.mailReceiver.cancelPing();,0,0,0.0,409
+3817fa259882b8deef289615bed0e4a00e2b76c7,@Override,0,0,0.0,410
+3817fa259882b8deef289615bed0e4a00e2b76c7,super.destroy();,0,0,0.0,411
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.mailReceiver.waitForNewMessages();,1,0,0.0,412
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.notNull(scheduler, ""'taskScheduler' must not be null"");",1,0,0.0,413
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""Failure in 'idle' task. Will NOT resubmit."", e);",1,0,0.0,414
+3817fa259882b8deef289615bed0e4a00e2b76c7,@Override,1,0,0.0,415
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Task completed successfully. Re-scheduling it again right away."");",1,0,0.0,416
+3817fa259882b8deef289615bed0e4a00e2b76c7,//run again after a delay,1,0,0.0,417
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.info(messagingException,",1,0,0.0,418
+3817fa259882b8deef289615bed0e4a00e2b76c7,"() -> ""Failed to execute IDLE task. Will attempt to resubmit in """,1,0,0.0,419
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.receivingTaskTrigger.delayNextExecution();,1,0,0.0,420
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(ex,",1,0,0.0,421
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""or not a 'jakarta.mail.MessagingException'"");",1,0,0.0,422
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.receivingTaskTrigger.stop();,1,0,0.0,423
+3817fa259882b8deef289615bed0e4a00e2b76c7,publishException(ex);,1,0,0.0,424
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""waiting for mail"");",1,0,0.0,425
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.mailReceiver.waitForNewMessages();,1,0,0.0,426
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.messageSender.accept(mailMessage);,1,0,0.0,427
+3817fa259882b8deef289615bed0e4a00e2b76c7,return null;,1,0,0.0,428
+3817fa259882b8deef289615bed0e4a00e2b76c7,return Instant.now().plusMillis(ImapIdleChannelAdapter.this.reconnectDelay);,1,0,0.0,429
+3817fa259882b8deef289615bed0e4a00e2b76c7,return Instant.now();,1,0,0.0,430
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.delayNextExecution.set(true);,1,0,0.0,431
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.setProtocol(""imap"");",1,0,0.0,432
+3817fa259882b8deef289615bed0e4a00e2b76c7,ImapIdleChannelAdapter.this.idleTask.run();,1,0,0.0,433
+3817fa259882b8deef289615bed0e4a00e2b76c7,@Override // guarded by super#lifecycleLock,1,0,0.0,434
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.notNull(taskExecutor, ""'taskExecutor' must not be null"");",0,0,0.0,435
+3817fa259882b8deef289615bed0e4a00e2b76c7,/*,1,0,0.0,436
+3817fa259882b8deef289615bed0e4a00e2b76c7,@Override,0,0,0.0,437
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.taskExecutor.execute(this::callIdle);,0,0,0.0,438
+3817fa259882b8deef289615bed0e4a00e2b76c7,processIdle();,0,0,0.0,439
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""Task completed successfully. Re-scheduling it again right away."");",0,0,0.0,440
+3817fa259882b8deef289615bed0e4a00e2b76c7,publishException(ex);,0,0,0.0,441
+3817fa259882b8deef289615bed0e4a00e2b76c7,//run again after a delay,0,0,0.0,442
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.info(messagingException,",0,0,0.0,443
+3817fa259882b8deef289615bed0e4a00e2b76c7,"() -> ""Failed to execute IDLE task. Will attempt to resubmit in """,0,0,0.0,444
+3817fa259882b8deef289615bed0e4a00e2b76c7,delayNextIdleCall();,0,0,0.0,445
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.warn(ex,",0,0,0.0,446
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""or not a 'jakarta.mail.MessagingException'"");",0,0,0.0,447
+3817fa259882b8deef289615bed0e4a00e2b76c7,break;,0,0,0.0,448
+3817fa259882b8deef289615bed0e4a00e2b76c7,"logger.debug(""waiting for mail"");",0,0,0.0,449
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.mailReceiver.waitForNewMessages();,0,0,0.0,450
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.messageSender.accept(mailMessage);,0,0,0.0,451
+3817fa259882b8deef289615bed0e4a00e2b76c7,Thread.sleep(this.reconnectDelay);,0,0,0.0,452
+3817fa259882b8deef289615bed0e4a00e2b76c7,Thread.currentThread().interrupt();,0,0,0.0,453
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.isTrue(url.toLowerCase().startsWith(""imap""),",1,0,0.0,454
+3817fa259882b8deef289615bed0e4a00e2b76c7,siFlags.add(SI_USER_FLAG);,1,0,0.0,455
+3817fa259882b8deef289615bed0e4a00e2b76c7,return notFlagged;,0,0,0.0,456
+3817fa259882b8deef289615bed0e4a00e2b76c7,return doObtainTransactionContext();,1,0,0.0,457
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.openFolder();,1,0,0.0,458
+3817fa259882b8deef289615bed0e4a00e2b76c7,return this.contextHolder.get();,1,0,0.0,459
+3817fa259882b8deef289615bed0e4a00e2b76c7,return mailReceiverContext;,1,0,0.0,460
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.contextHolder.set(new MailReceiverContext(folder));,1,0,0.0,461
+3817fa259882b8deef289615bed0e4a00e2b76c7,folder.open(this.folderOpenMode);,1,0,0.0,462
+3817fa259882b8deef289615bed0e4a00e2b76c7,"System.arraycopy(messages, 0, reducedMessages, 0, this.maxFetchSize);",1,0,0.0,463
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.fetchMessages(messages);,1,0,0.0,464
+3817fa259882b8deef289615bed0e4a00e2b76c7,copiedMessages.add(new MimeMessage((MimeMessage) message));,1,0,0.0,465
+3817fa259882b8deef289615bed0e4a00e2b76c7,copiedMessages.add(new MimeMessage((MimeMessage) messages[i]));,1,0,0.0,466
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.contextHolder.get().setMessages(messages);,1,0,0.0,467
+3817fa259882b8deef289615bed0e4a00e2b76c7,return copiedMessages.toArray(new Message[copiedMessages.size()]);,1,0,0.0,468
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.contextHolder.get().getFolder().fetch(messages, contentsProfile);",1,0,0.0,469
+3817fa259882b8deef289615bed0e4a00e2b76c7,MailTransportUtils.closeService(this.store);,1,0,0.0,470
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.notNull(context, ""Mail Reader Context cannot be null"");",1,0,0.0,471
+3817fa259882b8deef289615bed0e4a00e2b76c7,"messages[i].setFlags(siFlags, true);",1,0,0.0,472
+3817fa259882b8deef289615bed0e4a00e2b76c7,"messages[i].setFlag(Flags.Flag.FLAGGED, true);",1,0,0.0,473
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.setAdditionalFlags(message);,1,0,0.0,474
+3817fa259882b8deef289615bed0e4a00e2b76c7,mailReceiverContext.getFolder() == null ||,1,0,0.0,475
+3817fa259882b8deef289615bed0e4a00e2b76c7,return this.getTransactionContext().getFolder();,1,0,0.0,476
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.setAdditionalFlags(messages[i]);,1,0,0.0,477
+3817fa259882b8deef289615bed0e4a00e2b76c7,MailTransportUtils.closeService(this.store);,0,0,0.0,478
+3817fa259882b8deef289615bed0e4a00e2b76c7,return this.folder;,0,0,0.0,479
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.folder.open(this.folderOpenMode);,0,0,0.0,480
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.openFolder();,0,0,0.0,481
+3817fa259882b8deef289615bed0e4a00e2b76c7,"System.arraycopy(messages, 0, reducedMessages, 0, this.maxFetchSize);",0,0,0.0,482
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.fetchMessages(messages);,0,0,0.0,483
+3817fa259882b8deef289615bed0e4a00e2b76c7,siFlags.add(SI_USER_FLAG);,0,0,0.0,484
+3817fa259882b8deef289615bed0e4a00e2b76c7,"messages[i].setFlags(siFlags, true);",0,0,0.0,485
+3817fa259882b8deef289615bed0e4a00e2b76c7,"messages[i].setFlag(Flags.Flag.FLAGGED, true);",0,0,0.0,486
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.setAdditionalFlags(message);,0,0,0.0,487
+3817fa259882b8deef289615bed0e4a00e2b76c7,copiedMessages.add(new MimeMessage((MimeMessage) message));,0,0,0.0,488
+3817fa259882b8deef289615bed0e4a00e2b76c7,""" and will not be flagged as SEEN."");",0,0,0.0,489
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.setAdditionalFlags(messages[i]);,0,0,0.0,490
+3817fa259882b8deef289615bed0e4a00e2b76c7,copiedMessages.add(new MimeMessage((MimeMessage) messages[i]));,0,0,0.0,491
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.deleteMessages(messages);,0,0,0.0,492
+3817fa259882b8deef289615bed0e4a00e2b76c7,return copiedMessages.toArray(new Message[copiedMessages.size()]);,0,0,0.0,493
+3817fa259882b8deef289615bed0e4a00e2b76c7,"MailTransportUtils.closeFolder(this.folder, this.shouldDeleteMessages);",0,0,0.0,494
+3817fa259882b8deef289615bed0e4a00e2b76c7,"this.folder.fetch(messages, contentsProfile);",0,0,0.0,495
+3817fa259882b8deef289615bed0e4a00e2b76c7,""" and will not be flagged as SEEN."");",1,0,0.0,496
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.deleteMessages(messages);,1,0,0.0,497
+3817fa259882b8deef289615bed0e4a00e2b76c7,"""System flag 'Flag.FLAGGED' will be used to prevent duplicates during email fetch."");",0,0,0.0,498
+3817fa259882b8deef289615bed0e4a00e2b76c7,fetchMessages(messages);,1,0,0.0,499
+3817fa259882b8deef289615bed0e4a00e2b76c7,getMessageBuilderFactory(),1,0,0.0,500
+3817fa259882b8deef289615bed0e4a00e2b76c7,".withPayload(extractContent(message, headers))",1,0,0.0,501
+3817fa259882b8deef289615bed0e4a00e2b76c7,.copyHeaders(headers),1,0,0.0,502
+3817fa259882b8deef289615bed0e4a00e2b76c7,.build();,1,0,0.0,503
+3817fa259882b8deef289615bed0e4a00e2b76c7,return converted;,1,0,0.0,504
+3817fa259882b8deef289615bed0e4a00e2b76c7,return filteredMessages;,1,0,0.0,505
+3817fa259882b8deef289615bed0e4a00e2b76c7,"MailTransportUtils.closeFolder(folder, this.shouldDeleteMessages);",1,0,0.0,506
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.folderReadLock.unlock();,1,0,0.0,507
+3817fa259882b8deef289615bed0e4a00e2b76c7,return AbstractMailReceiver.this.obtainFolderInstance();,1,0,0.0,508
+3817fa259882b8deef289615bed0e4a00e2b76c7,setProtocol(PROTOCOL);,0,0,0.0,509
+3817fa259882b8deef289615bed0e4a00e2b76c7,"Assert.isTrue(url.toLowerCase().startsWith(PROTOCOL),",0,0,0.0,510
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.pingTask.cancel(true);,0,0,0.0,511
+3817fa259882b8deef289615bed0e4a00e2b76c7,openFolder();,0,0,0.0,512
+3817fa259882b8deef289615bed0e4a00e2b76c7,return;,0,0,0.0,513
+3817fa259882b8deef289615bed0e4a00e2b76c7,return nullSafeMessages(searchTerm != null ? folderToUse.search(searchTerm) : folderToUse.getMessages());,0,0,0.0,514
+3817fa259882b8deef289615bed0e4a00e2b76c7,return searchTerm;,0,0,0.0,515
+3817fa259882b8deef289615bed0e4a00e2b76c7,siFlags.add(getUserFlag());,0,0,0.0,516
+3817fa259882b8deef289615bed0e4a00e2b76c7,postProcessFilteredMessages(filteredMessages);,1,0,0.0,517
+3817fa259882b8deef289615bed0e4a00e2b76c7,"System.arraycopy(messages, 0, reducedMessages, 0, this.maxFetchSize);",1,0,0.0,518
+3817fa259882b8deef289615bed0e4a00e2b76c7,"MailTransportUtils.closeFolder(folder, this.shouldDeleteMessages);",1,0,0.0,519
+3817fa259882b8deef289615bed0e4a00e2b76c7,return obtainFolderInstance();,0,0,0.0,520
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.contextHolder.remove();,1,0,0.0,521
+3817fa259882b8deef289615bed0e4a00e2b76c7,throw exceptionToThrow;,1,0,0.0,522
+3817fa259882b8deef289615bed0e4a00e2b76c7,"MailTransportUtils.closeFolder(context.getFolder(), false);",1,0,0.0,523
+3817fa259882b8deef289615bed0e4a00e2b76c7,"message.setFlag(Flags.Flag.DELETED, true);",0,0,0.0,524
+3817fa259882b8deef289615bed0e4a00e2b76c7,"messages[i].setFlag(Flags.Flag.DELETED, true);",1,0,0.0,525
+3817fa259882b8deef289615bed0e4a00e2b76c7,obtainFolder();,0,0,0.0,526
+3817fa259882b8deef289615bed0e4a00e2b76c7,getMessageBuilderFactory(),0,0,0.0,527
+3817fa259882b8deef289615bed0e4a00e2b76c7,".withPayload(extractContent(message, headers))",0,0,0.0,528
+3817fa259882b8deef289615bed0e4a00e2b76c7,.copyHeaders(headers),0,0,0.0,529
+3817fa259882b8deef289615bed0e4a00e2b76c7,.build();,0,0,0.0,530
+3817fa259882b8deef289615bed0e4a00e2b76c7,return converted;,0,0,0.0,531
+3817fa259882b8deef289615bed0e4a00e2b76c7,return filteredMessages;,0,0,0.0,532
+3817fa259882b8deef289615bed0e4a00e2b76c7,"MailTransportUtils.closeFolder(this.folder, this.shouldDeleteMessages);",0,0,0.0,533
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.folderReadLock.unlock();,0,0,0.0,534
+3817fa259882b8deef289615bed0e4a00e2b76c7,"System.arraycopy(messages, 0, reducedMessages, 0, this.maxFetchSize);",0,0,0.0,535
+3817fa259882b8deef289615bed0e4a00e2b76c7,fetchMessages(messages);,0,0,0.0,536
+3817fa259882b8deef289615bed0e4a00e2b76c7,postProcessFilteredMessages(filteredMessages);,0,0,0.0,537
+3817fa259882b8deef289615bed0e4a00e2b76c7,this.stop.set(true);,1,0,0.0,538

@@ -1,0 +1,547 @@
+commit_id,line,line_level_label,count,line_score,row
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from quantum.agent.common import config as agent_config,0,6,1.0,1
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from quantum.agent.common import config as agent_config,1,6,1.0,2
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device = ip_lib.IPDevice(device_name, self.root_helper, namespace)",1,5,0.8333333333333333,3
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device = ip_lib.IPDevice(interface_name, self.root_helper,",0,4,0.6666666666666666,4
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device = ip_lib.IPDevice(interface_name, self.root_helper,",1,4,0.6666666666666666,5
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ovs = ovs_lib.OVSBridge(bridge, self.root_helper)",0,4,0.6666666666666666,6
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,help=_('Use the root helper to read the namespaces from ',1,4,0.6666666666666666,7
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device = ip_lib.IPDevice(device_name, self.conf.root_helper, namespace)",0,4,0.6666666666666666,8
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from oslo.config import cfg,1,3,0.5,9
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Use the root helper when listing the namespaces on a """,0,3,0.5,10
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from neutron.agent.common import config,1,3,0.5,11
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from neutron.agent.common import config,0,3,0.5,12
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from neutron.agent.linux import interface,0,3,0.5,13
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper = ip_lib.IPWrapper(self.root_helper,",1,3,0.5,14
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper = ip_lib.IPWrapper(self.root_helper,",0,3,0.5,15
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"expected_params = {'conf': conf, 'network': mock.ANY,",0,2,0.3333333333333333,16
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""support so long as it is set to True."")),",0,2,0.3333333333333333,17
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""integration bridge as it won't be managed by the """,0,2,0.3333333333333333,18
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Note: If you remove a bridge from this """,0,2,0.3333333333333333,19
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""security configuration. If the root helper is """,0,2,0.3333333333333333,20
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""to use the real root filter facility. Change to 'sudo' """,0,2,0.3333333333333333,21
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"utils.execute(cmd, self.root_helper)",1,2,0.3333333333333333,22
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cmd = ['ovs-vsctl', '--', '--if-exists', 'del-port', device_name, '--',",1,2,0.3333333333333333,23
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from neutron.agent.linux import ovs_lib  # noqa,1,2,0.3333333333333333,24
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self.ns_name = NS_PREFIX + router_id if use_namespaces else None,1,2,0.3333333333333333,25
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"import_object.called_once_with('driver', conf, mock.ANY,",1,2,0.3333333333333333,26
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ri = RouterInfo(router_id, self.root_helper,",1,2,0.3333333333333333,27
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,conf = util.setup_conf(),0,2,0.3333333333333333,28
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,root_ip = ip_lib.IPWrapper(self.root_helper),1,2,0.3333333333333333,29
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"if ip_lib.device_exists(interface_name,",1,2,0.3333333333333333,30
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"plugin_tag = self._get_device_plugin_tag(device_name, namespace)",0,2,0.3333333333333333,31
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""""""Destroy stale router namespaces on host when L3 agent restarts",0,2,0.3333333333333333,32
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,router_namespaces = set(ns for ns in host_namespaces,0,2,0.3333333333333333,33
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,root_ip = ip_lib.IPWrapper(self.root_helper),0,2,0.3333333333333333,34
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper = ip_lib.IPWrapper(self.conf.root_helper,",0,2,0.3333333333333333,35
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,from neutron.agent.linux import utils,1,2,0.3333333333333333,36
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper = ip_lib.IPWrapper(self.conf.root_helper,",1,2,0.3333333333333333,37
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"if not ip_lib.device_exists(interface_name,",1,2,0.3333333333333333,38
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Root helper application. """,0,1,0.16666666666666666,39
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,agent_opts = [,1,1,0.16666666666666666,40
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The number of seconds the agent will wait between """,1,1,0.16666666666666666,41
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""OVSDB interface to connect to."")),",1,1,0.16666666666666666,42
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""polling for local device changes."")),",1,1,0.16666666666666666,43
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"attrs = [('external-ids:iface-id', port_id),",0,1,0.16666666666666666,44
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cmd += ['--', 'set', 'Interface', device_name, 'type=internal']",1,1,0.16666666666666666,45
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cmd += ['--', 'set', 'Interface', device_name,",1,1,0.16666666666666666,46
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""recover from any transient notification or RPC errors. """,0,1,0.16666666666666666,47
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""not required, set this to False for a performance """,0,1,0.16666666666666666,48
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,EXT_NET_BRIDGE_OPTS = [,0,1,0.16666666666666666,49
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Name of bridge used for external network """,0,1,0.16666666666666666,50
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""traffic. This should be set to an empty value for the """,0,1,0.16666666666666666,51
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The DHCP agent will resync its state with Neutron to """,0,1,0.16666666666666666,52
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""force_metadata is set to True."")),",0,1,0.16666666666666666,53
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Allows for serving metadata requests coming from a """,0,1,0.16666666666666666,54
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Integration bridge to use."")),",1,1,0.16666666666666666,55
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Tunnel interface to use."")),",1,1,0.16666666666666666,56
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"LOG.exception(_(""Failed deleting namespace '%s'""), ns)",1,1,0.16666666666666666,57
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ovs_opts = [,1,1,0.16666666666666666,58
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self.assertTrue(all([opt.name in conf for opt in expected_opts])),0,1,0.16666666666666666,59
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""not be injected in VMs, as they will be able to reach """,0,1,0.16666666666666666,60
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if root_helper != 'sudo':,0,1,0.16666666666666666,61
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if root_helper is not 'sudo':,1,1,0.16666666666666666,62
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if self.conf.use_namespaces:,1,1,0.16666666666666666,63
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"utils.execute(cmd, check_exit_code=False,",1,1,0.16666666666666666,64
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,def test_setup_conf(self):,0,1,0.16666666666666666,65
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,expected_opts = interface.OPTS,0,1,0.16666666666666666,66
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ovs_br_cls.called_once_with('br-int', conf.AGENT.root_helper)",1,1,0.16666666666666666,67
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ns_to_ignore = set(NS_PREFIX + id for id in router_ids),1,1,0.16666666666666666,68
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,def ns_name(self):,0,1,0.16666666666666666,69
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return NS_PREFIX + self.router_id if self.use_namespaces else None,0,1,0.16666666666666666,70
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _get_router_info(self, router_id, router):",0,1,0.16666666666666666,71
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,This routine is called when self._clean_stale_namespaces is True.,0,1,0.16666666666666666,72
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ns_to_ignore = set(self._get_router_info(id, router=None).ns_name",0,1,0.16666666666666666,73
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ri = self._get_router_info(router_id, router)",0,1,0.16666666666666666,74
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,This routine is called when self._clean_stale_namespaces is True.,1,1,0.16666666666666666,75
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""connected to a Neutron router from which the VMs send """,0,1,0.16666666666666666,76
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Integration bridge to use. """,0,1,0.16666666666666666,77
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""requires enable_isolated_metadata = True."")),",0,1,0.16666666666666666,78
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_('Root helper application.')),",1,1,0.16666666666666666,79
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""node-specific Open vSwitch bridge names to be used """,0,1,0.16666666666666666,80
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""for flat and VLAN networks. The length of bridge """,0,1,0.16666666666666666,81
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""names should be no more than 11. Each bridge must """,0,1,0.16666666666666666,82
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""exist, and should have a physical network interface """,0,1,0.16666666666666666,83
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""configured as a port. All physical networks """,0,1,0.16666666666666666,84
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""mapping, make sure to disconnect it from the """,0,1,0.16666666666666666,85
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""integration bridge to physical networks. """,0,1,0.16666666666666666,86
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Force to use DHCP to get Metadata on all networks."")),",1,1,0.16666666666666666,87
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""bridge acts as a virtual 'patch bay'. All VM VIFs are """,0,1,0.16666666666666666,88
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Allows for serving metadata requests from a """,1,1,0.16666666666666666,89
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""enable_isolated_metadata = True"")),",1,1,0.16666666666666666,90
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Name of bridge used for external network """,1,1,0.16666666666666666,91
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""physical network device of SR-IOV physical """,1,1,0.16666666666666666,92
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""(BDF format).to exclude from network_device. """,1,1,0.16666666666666666,93
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Integration bridge to use."")),",1,1,0.16666666666666666,94
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""integration bridge to physical bridges."")),",1,1,0.16666666666666666,95
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""attached to this bridge and then 'patched' according """,0,1,0.16666666666666666,96
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""reason to. This is the name of the OVS integration """,0,1,0.16666666666666666,97
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Indicates that this L3 agent should also handle """,0,1,0.16666666666666666,98
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""creation of a subnet is being called without a """,0,1,0.16666666666666666,99
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""single agent in a Neutron deployment, and may be """,0,1,0.16666666666666666,100
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""False for all agents if all routers must have an """,0,1,0.16666666666666666,101
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""When external_network_bridge is set, each L3 agent can """,0,1,0.16666666666666666,102
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""This value should be set to the UUID of that external """,0,1,0.16666666666666666,103
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""network. To allow L3 agent support multiple external """,0,1,0.16666666666666666,104
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""For example: api_extensions_path = """,0,1,0.16666666666666666,105
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""this, so if your extensions are in there you don't """,0,1,0.16666666666666666,106
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""subnet pool ID. If not set then no pool """,0,1,0.16666666666666666,107
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if only_router_id and not only_router_id == router_id:,1,1,0.16666666666666666,108
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""allocated from any pool; it will be considered part of """,0,1,0.16666666666666666,109
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Note that enabling PD will override the behavior of """,0,1,0.16666666666666666,110
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Attention: the following parameter MUST be set to """,0,1,0.16666666666666666,111
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""False if Neutron is being used in conjunction with """,0,1,0.16666666666666666,112
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""If ipam_driver is not set (default behavior), no IPAM """,0,1,0.16666666666666666,113
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""physical network device interfaces of SR-IOV physical """,0,1,0.16666666666666666,114
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""list of virtual functions to exclude from """,0,1,0.16666666666666666,115
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if self.conf.enable_metadata_proxy:,1,1,0.16666666666666666,116
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""userspace datapath set this value to 'netdev'."")),",0,1,0.16666666666666666,117
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,router_id = ns[len(NS_PREFIX):],1,1,0.16666666666666666,118
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,net = netaddr.IPNetwork(ip_cidr),0,1,0.16666666666666666,119
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,interface_name = self.get_external_device_name(ex_gw_port['id']),0,1,0.16666666666666666,120
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,existing_cidrs = set([addr['cidr'] for addr in device.addr.list()]),0,1,0.16666666666666666,121
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,new_cidrs = set(),0,1,0.16666666666666666,122
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# Loop once to ensure that floating ips are configured.,0,1,0.16666666666666666,123
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,fip_ip = fip['floating_ip_address'],0,1,0.16666666666666666,124
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ip_cidr = str(fip_ip) + cidr_suffix,0,1,0.16666666666666666,125
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if ip_cidr not in existing_cidrs:,0,1,0.16666666666666666,126
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,fixed = fip['fixed_ip_address'],0,1,0.16666666666666666,127
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"driver = self._get_driver_by_device_name(device_name, namespace=None)",1,1,0.16666666666666666,128
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if ip_cidr.endswith(cidr_suffix):,0,1,0.16666666666666666,129
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self.floating_ips = [],1,1,0.16666666666666666,130
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"floating_ips = ri.router.get(l3_constants.FLOATINGIP_KEY, [])",1,1,0.16666666666666666,131
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,existing_floating_ip_ids = set([fip['id'] for fip in ri.floating_ips]),1,1,0.16666666666666666,132
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,cur_floating_ip_ids = set([fip['id'] for fip in floating_ips]),1,1,0.16666666666666666,133
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,id_to_fip_map = {},1,1,0.16666666666666666,134
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if fip['port_id']:,1,1,0.16666666666666666,135
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,cidr_suffix = '/32',0,1,0.16666666666666666,136
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if not ports.get('ports'):,1,1,0.16666666666666666,137
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# store to see if floatingip was remapped,1,1,0.16666666666666666,138
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,plugin_tag = self._get_flavor_by_network_id(network_id),0,1,0.16666666666666666,139
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if ns.startswith(NS_PREFIX):,1,1,0.16666666666666666,140
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.assertEqual(config.get_root_helper(conf), 'sudo')",0,1,0.16666666666666666,141
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.assertEquals(config.get_root_helper(conf), 'sudo')",1,1,0.16666666666666666,142
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _get_flavor_by_network_id(self, network_id):",0,1,0.16666666666666666,143
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _get_driver_by_network_id(self, network_id):",0,1,0.16666666666666666,144
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,flavor = self._get_flavor_by_network_id(network_id),0,1,0.16666666666666666,145
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _set_device_plugin_tag(self, network_id, device_name, namespace=None):",0,1,0.16666666666666666,146
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _get_device_plugin_tag(self, device_name, namespace=None):",0,1,0.16666666666666666,147
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ports = self.quantum.list_ports(mac_address=mac_address),1,1,0.16666666666666666,148
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ret = driver.plug(network_id, port_id, device_name, mac_address,",0,1,0.16666666666666666,149
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self._set_device_plugin_tag(network_id, device_name, namespace)",0,1,0.16666666666666666,150
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,driver = self.flavor_driver_map[plugin_tag],0,1,0.16666666666666666,151
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _get_driver_by_network_id(self, network_id):",1,1,0.16666666666666666,152
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,flavor = network['network'][FLAVOR_NETWORK],1,1,0.16666666666666666,153
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _get_driver_by_device_name(self, device_name, namespace=None):",1,1,0.16666666666666666,154
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,mac_address = device.link.address,1,1,0.16666666666666666,155
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if fip['id'] not in existing_floating_ip_ids:,1,1,0.16666666666666666,156
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,raise Exception(_('No port for this device %s') % device_name),1,1,0.16666666666666666,157
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,id_to_fip_map[fip['id']] = fip,1,1,0.16666666666666666,158
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._delete_stale_namespaces = False,0,1,0.16666666666666666,159
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'for namespace cleanup.')),0,1,0.16666666666666666,160
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _destroy_stale_router_namespaces(self, router_namespaces):",0,1,0.16666666666666666,161
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""""""Destroys the stale router namespaces",0,1,0.16666666666666666,162
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,The argumenet router_namespaces is a list of stale router namespaces,0,1,0.16666666666666666,163
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"As some stale router namespaces may not be able to be deleted, only",0,1,0.16666666666666666,164
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if self.conf.enable_metadata_proxy:,0,1,0.16666666666666666,165
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,LOG.exception(_('Failed to destroy stale router namespace ',0,1,0.16666666666666666,166
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self.fullsync = True,0,1,0.16666666666666666,167
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ns_to_ignore = set(NS_PREFIX + r['id'] for r in routers),0,1,0.16666666666666666,168
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if self._delete_stale_namespaces:,0,1,0.16666666666666666,169
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if self.conf.use_namespaces:,1,1,0.16666666666666666,170
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _destroy_router_namespaces(self, only_router_id=None):",1,1,0.16666666666666666,171
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""""""Destroy router namespaces on the host to eliminate all stale",1,1,0.16666666666666666,172
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,floating_ip_ids_to_remove = (existing_floating_ip_ids -,1,1,0.16666666666666666,173
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,for ns in root_ip.get_namespaces(self.root_helper):,1,1,0.16666666666666666,174
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,other's toes on init.  This only makes sense if only_router_id is set.,1,1,0.16666666666666666,175
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ns_to_destroy = router_namespaces - ns_to_ignore,0,1,0.16666666666666666,176
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,for ns in router_namespaces:,0,1,0.16666666666666666,177
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def floating_ip_added(self, ri, ex_gw_port, floating_ip, fixed_ip):",1,1,0.16666666666666666,178
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,net = netaddr.IPNetwork(ip_cidr),1,1,0.16666666666666666,179
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,new_fixed_ip = new_fip['fixed_ip_address'],1,1,0.16666666666666666,180
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if ns.startswith(NS_PREFIX)),0,1,0.16666666666666666,181
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,existing_fixed_ip = fip['fixed_ip_address'],1,1,0.16666666666666666,182
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if (new_fixed_ip and existing_fixed_ip and,1,1,0.16666666666666666,183
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,floating_ip = fip['floating_ip_address'],1,1,0.16666666666666666,184
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if fip['id'] in floating_ip_ids_to_remove:,1,1,0.16666666666666666,185
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ip_cidr = str(floating_ip) + '/32',1,1,0.16666666666666666,186
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,interface_name = self.get_external_device_name(ex_gw_port['id']),1,1,0.16666666666666666,187
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,if ip_cidr not in [addr['cidr'] for addr in device.addr.list()]:,1,1,0.16666666666666666,188
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def floating_ip_removed(self, ri, ex_gw_port, floating_ip, fixed_ip):",1,1,0.16666666666666666,189
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._delete_stale_namespaces = (self.conf.use_namespaces and,0,1,0.16666666666666666,190
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"def _cleanup_namespaces(self, routers):",0,1,0.16666666666666666,191
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,This routine is called when self._delete_stale_namespaces is True.,0,1,0.16666666666666666,192
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,the database as being hosted on this node.,0,1,0.16666666666666666,193
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,host_namespaces = root_ip.get_namespaces(self.root_helper),0,1,0.16666666666666666,194
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,new_fip = id_to_fip_map[fip['id']],1,1,0.16666666666666666,195
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""create. If no pool is used, then a CIDR must be passed """,0,0,0.0,196
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Specifies by UUID the pool to be used in case where """,0,0,0.0,197
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""subnet CIDR allocation. """,0,0,0.0,198
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""will be used unless passed explicitly to the subnet """,0,0,0.0,199
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The path for API extensions. """,0,0,0.0,200
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""to create a subnet and that subnet will not be """,0,0,0.0,201
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Maximum number of DNS nameservers per subnet"")),",0,0,0.0,202
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""the tenant's private address space. This option is """,0,0,0.0,203
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""deprecated for removal in the N release."")),",0,0,0.0,204
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Default IPv4 subnet pool to be used for automatic """,0,0,0.0,205
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""The __path__ of neutron.extensions is appended to """,0,0,0.0,206
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""will be randomly generated."")),",0,0,0.0,207
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""octet is not 00, it will also be used. The others """,0,0,0.0,208
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""The first 3 octets will remain unchanged. If the 4th """,0,0,0.0,209
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The base MAC address Neutron will use for VIFs. """,0,0,0.0,210
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""need to specify them here."")),",0,0,0.0,211
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""extensions:/path/to/more/exts:/even/more/exts. """,0,0,0.0,212
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""subnet pool ID. See the description for """,0,0,0.0,213
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Note that this can be a colon-separated list of paths. """,0,0,0.0,214
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Default IPv6 subnet pool to be used for automatic """,0,0,0.0,215
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""use 'internal'."")),",0,0,0.0,216
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""default_ipv4_subnet_pool for more information. This """,0,0,0.0,217
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"sample_default='example.domain',",0,0,0.0,218
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'by the Nova Metadata Server. NOTE: Nova uses the same ',0,0,0.0,219
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""between hosts."")),",0,0,0.0,220
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""single-box testing but provides no connectivity """,0,0,0.0,221
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""networks. The default value 'local' is useful for """,0,0,0.0,222
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""implementation of Neutron IPAM driver, """,0,0,0.0,223
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""driver is used. In order to use the reference """,0,0,0.0,224
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Neutron IPAM (IP address management) driver to use. """,0,0,0.0,225
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Hostname to be used by the Neutron server, agents and """,0,0,0.0,226
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Nova security groups."")),",0,0,0.0,227
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""option is deprecated for removal in the N release."")),",0,0,0.0,228
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Allow overlapping IP support in Neutron. """,0,0,0.0,229
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""the default IPv6 subnetpool."")),",0,0,0.0,230
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""given a CIDR via the Prefix Delegation mechanism. """,0,0,0.0,231
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""without providing a CIDR or subnetpool ID will be """,0,0,0.0,232
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""making subnet creation requests for IPv6 subnets """,0,0,0.0,233
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""subnet allocation in a PD-capable environment. Users """,0,0,0.0,234
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Set to True to enable IPv6 Prefix Delegation for """,0,0,0.0,235
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""CIDR allocation. """,0,0,0.0,236
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'config key, but in [neutron] section.'),",0,0,0.0,237
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""agent can be associated with no more than one external """,0,0,0.0,238
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'but it must match here and in the configuration used ',0,0,0.0,239
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'spoofing. You may select any string for a secret, '",0,0,0.0,240
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""In some cases the Neutron router is not present to """,0,0,0.0,241
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""121). This option doesn't have any effect when """,0,0,0.0,242
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""configured to request host routes via DHCP (Option """,0,0,0.0,243
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""contain any router port. The guest instance must be """,0,0,0.0,244
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""will only be activated when the subnet does not """,0,0,0.0,245
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""host routes to the DHCP request. The metadata service """,0,0,0.0,246
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""True will cause the DHCP server to append specific """,0,0,0.0,247
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""support on isolated networks. Setting this value to """,0,0,0.0,248
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The DHCP server can assist with providing metadata """,0,0,0.0,249
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""The interval is number of seconds between attempts."")),",0,0,0.0,250
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,],0,0,0.0,251
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""in the M release."")),",0,0,0.0,252
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""network. This option is deprecated and will be removed """,0,0,0.0,253
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'Drivers calculate maximum viable MTU for validating ',0,0,0.0,254
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Linux Bridge. When this parameter is set, each L3 """,0,0,0.0,255
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"deprecated_for_removal=True,",0,0,0.0,256
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('external_network_bridge', default='br-ex',",0,0,0.0,257
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""module for addition of comments."")),",0,0,0.0,258
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""purpose. System must support the iptables comments """,0,0,0.0,259
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""provide the metadata IP but the DHCP server can be """,0,0,0.0,260
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""used to provide this info. Setting this value will """,0,0,0.0,261
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""force the DHCP server to append specific host routes """,0,0,0.0,262
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""routers that do not have an external network gateway """,0,0,0.0,263
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'Instance-ID header with a shared secret to prevent ',0,0,0.0,264
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_('When proxying metadata requests, Neutron signs the '",0,0,0.0,265
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,OPTS += config.EXT_NET_BRIDGE_OPTS,0,0,0.0,266
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""gateway_external_network_id must be left empty."")),",0,0,0.0,267
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""networks, both the external_network_bridge and """,0,0,0.0,268
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""be associated with no more than one external network. """,0,0,0.0,269
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""external network gateway."")),",0,0,0.0,270
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""configured. This option should be True only for a """,0,0,0.0,271
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'server.')),0,0,0.0,272
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""to the DHCP request. If this option is set, then the """,0,0,0.0,273
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'Should not exceed connection pool size configured on ',0,0,0.0,274
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,help=_('Number of threads to use during sync process. ',0,0,0.0,275
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""169.254.169.254 through a router. This option """,0,0,0.0,276
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""metadata:1 request. In this case DHCP Option 121 will """,0,0,0.0,277
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""169.254.169.254/16 (or larger prefix), and is """,0,0,0.0,278
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""dedicated metadata access network whose CIDR is """,0,0,0.0,279
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""networks."")),",0,0,0.0,280
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""metadata service will be activated for all the """,0,0,0.0,281
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'encapsulated Neutron traffic is sent. ',0,0,0.0,282
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""agent anymore. Deprecated for ofagent."")),",0,0,0.0,283
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'tenant requests based on this value (typically, '",0,0,0.0,284
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The base MAC address Neutron will use for VIFs"")),",1,0,0.0,285
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Hostname to be used by the neutron server, agents and """,1,0,0.0,286
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Allow overlapping IP support in Neutron"")),",1,0,0.0,287
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""CIDR allocation"")),",1,0,0.0,288
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Default IPv6 subnet-pool to be used for automatic """,1,0,0.0,289
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""removal in the N release."")),",1,0,0.0,290
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""subnet CIDR allocation. This option is deprecated for """,1,0,0.0,291
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Default IPv4 subnet-pool to be used for automatic """,1,0,0.0,292
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Maximum number of DNS nameservers"")),",1,0,0.0,293
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""The path for API extensions"")),",1,0,0.0,294
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""networks."")),",1,0,0.0,295
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_('Shared secret to sign instance-id request'),",1,0,0.0,296
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""by the agents."")),",1,0,0.0,297
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""UUID of external network for routers implemented """,1,0,0.0,298
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Agent should implement routers with no gateway"")),",1,0,0.0,299
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""in the M release."")),",1,0,0.0,300
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""traffic. This option is deprecated and will be removed """,1,0,0.0,301
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"deprecated_for_removal=True,",1,0,0.0,302
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('external_network_bridge', default='br-ex',",1,0,0.0,303
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_('IPAM driver to use.')),",1,0,0.0,304
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'encapsulated Neutron traffic is sent.  If <= 0, '",1,0,0.0,305
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""dedicated network. Requires """,1,0,0.0,306
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""mapping network_device to the agent's node-specific """,1,0,0.0,307
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Set to false to disallow the addition of comments to """,0,0,0.0,308
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Deprecated for ofagent."")),",1,0,0.0,309
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""List of <physical_network>:<bridge>. """,1,0,0.0,310
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""the physical_device_mappings list."")),",1,0,0.0,311
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""The network_device in the mapping should appear in """,1,0,0.0,312
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""semicolon separated list of virtual functions """,1,0,0.0,313
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""for virtual networking. excluded_devices is a """,1,0,0.0,314
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""list of virtual functions that should not be used """,1,0,0.0,315
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""List of <network_device>:<excluded_devices> """,1,0,0.0,316
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'the path MTU is indeterminate.')),",1,0,0.0,317
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""interfaces on each agent"")),",1,0,0.0,318
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""on the server should have mappings to appropriate """,1,0,0.0,319
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""All physical networks listed in network_vlan_ranges """,1,0,0.0,320
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""function to be used for VLAN networks. """,1,0,0.0,321
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""List of <physical_network>:<network_device> mapping """,1,0,0.0,322
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""List of <physical_network>:<physical_interface>"")),",1,0,0.0,323
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""notation. To reserve a unique group for each possible """,1,0,0.0,324
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'segment MTU is indeterminate.')),",1,0,0.0,325
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,help=_('Number of threads to use during sync process.')),1,0,0.0,326
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Support Metadata requests on isolated networks."")),",1,0,0.0,327
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'path_mtu - maxmum encapsulation header size). If <= 0, '",0,0,0.0,328
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""<physical_network>:<physical_interface> tuples """,0,0,0.0,329
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""function to be used for VLAN networks. All physical """,0,0,0.0,330
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""<physical_network>:<network_device> tuples mapping """,0,0,0.0,331
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""agent."")),",0,0,0.0,332
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""have mappings to appropriate interfaces on each """,0,0,0.0,333
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""listed in network_vlan_ranges on the server should """,0,0,0.0,334
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""for flat and VLAN networks. All physical networks """,0,0,0.0,335
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""node-specific physical network interfaces to be used """,0,0,0.0,336
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""mapping physical network names to the agent's """,0,0,0.0,337
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Comma-separated list of """,0,0,0.0,338
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""should have mappings to appropriate interfaces on """,0,0,0.0,339
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""To reserve a unique group for each possible """,0,0,0.0,340
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""spurious broadcast traffic to the tunnel endpoints. """,0,0,0.0,341
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""use different group addresses, reducing or eliminating """,0,0,0.0,342
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""notation. Specifying a range allows different VNIs to """,0,0,0.0,343
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'place.')),",0,0,0.0,344
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'segment MTU is indeterminate and no calculation takes ',0,0,0.0,345
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'takes place.')),",0,0,0.0,346
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'the path MTU is indeterminate and no calculation ',0,0,0.0,347
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""networks listed in network_vlan_ranges on the server """,0,0,0.0,348
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""each agent."")),",0,0,0.0,349
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Interval to resync."")),",1,0,0.0,350
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Comma-separated list of <physical_network>:<bridge> """,0,0,0.0,351
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Add comments to iptables rules."")),",1,0,0.0,352
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'the operating system.')),",1,0,0.0,353
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""corresponds to the kernel datapath. To enable the """,0,0,0.0,354
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""OVS datapath to use. 'system' is the default value and """,0,0,0.0,355
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Support kernel without Open vSwitch patch port """,0,0,0.0,356
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""appropriate bridges on each agent. """,0,0,0.0,357
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""configured on the server should have mappings to """,0,0,0.0,358
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""tuples mapping physical network names to the agent's """,0,0,0.0,359
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""to their network connectivity."")),",0,0,0.0,360
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""<network_device>:<vfs_to_exclude> tuples, mapping """,0,0,0.0,361
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""bridge. There is one per hypervisor. The integration """,0,0,0.0,362
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Do not change this parameter unless you have a good """,0,0,0.0,363
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""list."")),",0,0,0.0,364
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""should appear in the physical_device_mappings """,0,0,0.0,365
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""network_device. The network_device in the mapping """,0,0,0.0,366
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""networking. vfs_to_exclude is a semicolon-separated """,0,0,0.0,367
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""virtual functions that should not be used for virtual """,0,0,0.0,368
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""network_device to the agent's node-specific list of """,0,0,0.0,369
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""generated iptables rules that describe each rule's """,0,0,0.0,370
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,continue,1,0,0.0,371
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Add comments to iptables rules. """,0,0,0.0,372
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ri.iptables_manager.apply(),1,0,0.0,373
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,else:,0,0,0.0,374
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,LOG.exception(_('RuntimeError in obtaining router list ',0,0,0.0,375
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,except RuntimeError:,0,0,0.0,376
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,try:,0,0,0.0,377
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,The argument routers is the list of routers that are recorded in,0,0,0.0,378
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self.conf.router_delete_namespaces),0,0,0.0,379
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ri.iptables_manager.ipv4['nat'].remove_rule(chain, rule)",1,0,0.0,380
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device.addr.delete(net.version, ip_cidr)",1,0,0.0,381
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ri.iptables_manager.ipv4['nat'].add_rule(chain, rule)",1,0,0.0,382
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,one attempt will be made to delete them.,0,0,0.0,383
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"for chain, rule in self.floating_forward_rules(floating_ip, fixed_ip):",1,0,0.0,384
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self._send_gratuitous_arp_packet(ri, interface_name, floating_ip)",1,0,0.0,385
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device.addr.add(net.version, ip_cidr, str(net.broadcast))",1,0,0.0,386
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,namespace=ri.ns_name()),1,0,0.0,387
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ri.floating_ips.append(new_fip),1,0,0.0,388
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"floating_ip, new_fixed_ip)",1,0,0.0,389
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.floating_ip_added(ri, ri.ex_gw_port,",1,0,0.0,390
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"floating_ip, existing_fixed_ip)",1,0,0.0,391
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._destroy_stale_router_namespaces(ns_to_destroy),0,0,0.0,392
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""""""",0,0,0.0,393
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# handle remapping of a floating IP,1,0,0.0,394
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"linux devices, iptables rules, and namespaces.",1,0,0.0,395
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper.netns.execute(arping_cmd, check_exit_code=True)",0,0,0.0,396
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,namespace=ri.ns_name()),0,0,0.0,397
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,except Exception:,1,0,0.0,398
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._destroy_router_namespace(ns),1,0,0.0,399
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,try:,1,0,0.0,400
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self._destroy_metadata_proxy(router_id, ns)",1,0,0.0,401
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"for multiple l3 agents on the same host, without stepping on each",1,0,0.0,402
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"If only_router_id is passed, only destroy single namespace, to allow",1,0,0.0,403
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._destroy_router_namespaces(self.conf.router_id),1,0,0.0,404
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self._destroy_metadata_proxy(ns[len(NS_PREFIX):], ns)",0,0,0.0,405
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._cleanup_namespaces(routers),0,0,0.0,406
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# namespaces.,0,0,0.0,407
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# Resync is not necessary for the cleanup of stale,0,0,0.0,408
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return,0,0,0.0,409
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"LOG.exception(_(""Failed synchronizing routers due to RPC error""))",0,0,0.0,410
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,except rpc_common.RPCException:,0,0,0.0,411
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'%s'), ns)",0,0,0.0,412
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,self._destroy_router_namespace(ns),0,0,0.0,413
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,new_fixed_ip != existing_fixed_ip):,1,0,0.0,414
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,else:,1,0,0.0,415
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,namespace=ri.ns_name()),1,0,0.0,416
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"bridge=bridge, namespace=namespace, prefix=prefix)",1,0,0.0,417
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,namespace=ri.ns_name()),0,0,0.0,418
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""""""",0,0,0.0,419
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,Cleans up floating ips that should not longer be configured.,0,0,0.0,420
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,Configures floating ips in iptables and on the router's gateway device.,0,0,0.0,421
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""""""Configure the router's floating IPs",0,0,0.0,422
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,LOG.deprecated(_('DEFAULT.root_helper is deprecated!')),1,0,0.0,423
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'root_helper configuration to [AGENT] section.')),0,0,0.0,424
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,LOG.deprecated(_('DEFAULT.root_helper is deprecated! Please move ',0,0,0.0,425
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"return driver.plug(network_id, port_id, device_name, mac_address,",1,0,0.0,426
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"for chain, rule in self.floating_forward_rules(None, None):",0,0,0.0,427
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return self._get_driver_by_network_id(ports['ports'][0]['network_id']),1,0,0.0,428
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return ret,0,0,0.0,429
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"bridge=bridge, namespace=namespace, prefix=prefix)",0,0,0.0,430
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return device.link.alias,0,0,0.0,431
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,device.link.set_alias(plugin_tag),0,0,0.0,432
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return network['network'][FLAVOR_NETWORK],0,0,0.0,433
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.assertEquals(config.get_root_helper(conf), 'my_root_helper')",1,0,0.0,434
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.assertEqual(config.get_root_helper(conf), 'my_root_helper')",0,0,0.0,435
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# Clear out all iptables rules for these chains.,0,0,0.0,436
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ri.iptables_manager.ipv4['nat'].empty_chain(chain),0,0,0.0,437
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.floating_ip_removed(ri, ri.ex_gw_port,",1,0,0.0,438
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device.addr.delete(net.version, ip_cidr)",0,0,0.0,439
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ri.floating_ips.remove(fip),1,0,0.0,440
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,for fip in ri.floating_ips:,1,0,0.0,441
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,cur_floating_ip_ids),1,0,0.0,442
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,fip['fixed_ip_address']),1,0,0.0,443
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"fip['floating_ip_address'],",1,0,0.0,444
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.floating_ip_added(ri, ex_gw_port,",1,0,0.0,445
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ri.floating_ips.append(fip),1,0,0.0,446
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,for fip in floating_ips:,1,0,0.0,447
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,for ip_cidr in existing_cidrs - new_cidrs:,0,0,0.0,448
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"for fip in ri.router.get(l3_constants.FLOATINGIP_KEY, []):",0,0,0.0,449
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# Clean up addresses that no longer belong on the gateway interface.,0,0,0.0,450
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ri.iptables_manager.apply(),0,0,0.0,451
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ri.iptables_manager.ipv4['nat'].add_rule(chain, rule)",0,0,0.0,452
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"for chain, rule in self.floating_forward_rules(fip_ip, fixed):",0,0,0.0,453
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,# Rebuild iptables rules for the floating ip.,0,0,0.0,454
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self._send_gratuitous_arp_packet(ri, interface_name, fip_ip)",0,0,0.0,455
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"device.addr.add(net.version, ip_cidr, str(net.broadcast))",0,0,0.0,456
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,new_cidrs.add(ip_cidr),0,0,0.0,457
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper.netns.execute(cmd, check_exit_code=False)",0,0,0.0,458
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper.netns.execute(arping_cmd, check_exit_code=True)",1,0,0.0,459
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""improvement."")),",0,0,0.0,460
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""OpenFlow REST API location."")),",1,0,0.0,461
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.IntOpt('ovsdb_port', default=6634,",1,0,0.0,462
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('tunnel_interface',",1,0,0.0,463
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Tunnel IP to use."")),",1,0,0.0,464
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('tunnel_ip',",1,0,0.0,465
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Maximum tunnel ID to use."")),",1,0,0.0,466
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.IntOpt('tunnel_key_max', default=0xffffff,",1,0,0.0,467
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""Minimum tunnel ID to use."")),",1,0,0.0,468
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.IntOpt('tunnel_key_min', default=1,",1,0,0.0,469
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('openflow_rest_api', default='127.0.0.1:8080',",1,0,0.0,470
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('ovsdb_ip',",1,0,0.0,471
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('integration_bridge', default='br-int',",1,0,0.0,472
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#    under the License.,1,0,0.0,473
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#    License for the specific language governing permissions and limitations,1,0,0.0,474
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,0,0.0,475
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,0,0.0,476
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"#    Unless required by applicable law or agreed to in writing, software",1,0,0.0,477
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,478
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#    a copy of the License at,1,0,0.0,479
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""OVSDB port to connect to."")),",1,0,0.0,480
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""OVSDB IP to connect to."")),",1,0,0.0,481
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,0,0.0,482
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'add-port', bridge, device_name]",1,0,0.0,483
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""system. This may not be required depending on the """,0,0,0.0,484
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""directly."")),",0,0,0.0,485
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""to skip the filtering and just run the command """,0,0,0.0,486
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"""Use 'sudo neutron-rootwrap /etc/neutron/rootwrap.conf' """,0,0,0.0,487
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'external-ids:attached-mac=%s' % mac_address],1,0,0.0,488
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'external-ids:iface-status=active',",1,0,0.0,489
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'--', 'set', 'Interface', device_name,",1,0,0.0,490
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'external-ids:iface-id=%s' % port_id,",1,0,0.0,491
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ovs.replace_port(device_name, *attrs)",0,0,0.0,492
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.StrOpt('ovsdb_interface',",1,0,0.0,493
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"attrs.insert(0, ('type', 'internal'))",0,0,0.0,494
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"('external-ids:attached-mac', mac_address)]",0,0,0.0,495
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"('external-ids:iface-status', 'active'),",0,0,0.0,496
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,config.register_root_helper(cfg.CONF),1,0,0.0,497
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.CONF.register_opts(agent_opts, ""AGENT"")",1,0,0.0,498
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.CONF.register_opts(ovs_opts, ""OVS"")",1,0,0.0,499
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"cfg.IntOpt('polling_interval', default=2,",1,0,0.0,500
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,],1,0,0.0,501
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#    not use this file except in compliance with the License. You may obtain,1,0,0.0,502
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#,1,0,0.0,503
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,else:,1,0,0.0,504
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"namespace=ri.ns_name(),",0,0,0.0,505
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"bridge=self.conf.external_network_bridge,",1,0,0.0,506
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ex_gw_port['mac_address'],",1,0,0.0,507
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ex_gw_port['id'], interface_name,",1,0,0.0,508
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.driver.plug(ex_gw_port['network_id'],",1,0,0.0,509
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,namespace=ri.ns_name()):,1,0,0.0,510
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"root_helper=self.root_helper,",1,0,0.0,511
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.driver.unplug(interface_name,",0,0,0.0,512
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,prefix=EXTERNAL_DEV_PREFIX),0,0,0.0,513
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"bridge=self.conf.external_network_bridge,",0,0,0.0,514
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,prefix=EXTERNAL_DEV_PREFIX),1,0,0.0,515
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ex_gw_port['mac_address'],",0,0,0.0,516
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ex_gw_port['id'], interface_name,",0,0,0.0,517
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.driver.plug(ex_gw_port['network_id'],",0,0,0.0,518
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,root_helper=self.conf.root_helper),1,0,0.0,519
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,#TODO(nati) move this code to iplib,1,0,0.0,520
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ip_wrapper.netns.execute(cmd, check_exit_code=False)",1,0,0.0,521
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,root_helper=self.root_helper),1,0,0.0,522
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"utils.execute(arping_cmd, check_exit_code=True,",1,0,0.0,523
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"namespace=ri.ns_name(),",1,0,0.0,524
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.driver.unplug(interface_name,",1,0,0.0,525
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"# Copyright 2012 Red Hat, Inc.",1,0,0.0,526
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"root_helper=self.root_helper,",0,0,0.0,527
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,use_ipv6=self.use_ipv6),1,0,0.0,528
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"self.conf.use_namespaces, router,",1,0,0.0,529
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ns_to_ignore.update(SNAT_NS_PREFIX + id for id in router_ids),1,0,0.0,530
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,ns_to_ignore.update(self.get_snat_ns_name(id) for id in router_ids),0,0,0.0,531
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,for id in router_ids),0,0,0.0,532
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,use_ipv6=self.use_ipv6),0,0,0.0,533
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"router=router,",0,0,0.0,534
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"use_namespaces=self.conf.use_namespaces,",0,0,0.0,535
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"router_id=router_id,",0,0,0.0,536
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"'root_helper': conf.AGENT.root_helper,",0,0,0.0,537
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,return RouterInfo(,0,0,0.0,538
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,@property,0,0,0.0,539
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,mock.ANY),1,0,0.0,540
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"conf.AGENT.root_helper,",1,0,0.0,541
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,conf.AGENT.root_helper),0,0,0.0,542
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"ovs_br_cls.assert_called_once_with('br-int',",0,0,0.0,543
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"import_object.assert_called_once_with('driver', **expected_params)",0,0,0.0,544
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,'plugin': mock.ANY},0,0,0.0,545
+1b7565b83ca8ef9761cdfb1eed1e9eb9498ea340,"help=_(""OVS datapath to use."")),",1,0,0.0,546

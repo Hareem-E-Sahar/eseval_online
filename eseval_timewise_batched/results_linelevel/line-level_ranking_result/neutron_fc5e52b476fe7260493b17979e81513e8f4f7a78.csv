@@ -1,0 +1,205 @@
+commit_id,line,line_level_label,count,line_score,row
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# be consistent with other network resources,1,6,1.0,1
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#TODO(xuhanp): Remove INACTIVE status and use DOWN to,1,5,0.8333333333333333,2
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#    not use this file except in compliance with the License. You may obtain,1,4,0.6666666666666666,3
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"# fw was created before any routers were added, and if a",1,4,0.6666666666666666,4
+fc5e52b476fe7260493b17979e81513e8f4f7a78,update method for all other status to (re)apply on driver which is,1,4,0.6666666666666666,5
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Invoke the delete driver method for status of PENDING_DELETE and",1,3,0.5,6
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# no need to apply sync data for ACTIVE fw,1,3,0.5,7
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"# fw, routers present on this host for tenant",1,3,0.5,8
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# if fw present on tenant,1,3,0.5,9
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# get the list of tenants with firewalls configured,1,3,0.5,10
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# Get the firewall with rules,1,3,0.5,11
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""On router add, get fw with rules from plugin and update driver.""""""",1,3,0.5,12
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# get all routers,1,3,0.5,13
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"if status in [constants.ACTIVE, constants.DOWN]:",1,3,0.5,14
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Invoke driver method for plugin API and provide status back.""""""",1,3,0.5,15
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# Get the routers for the tenant,1,3,0.5,16
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Get the Firewalls with rules from the Plugin to send to driver.""""""",1,3,0.5,17
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.5,18
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"if status in (const.ACTIVE, const.INACTIVE, const.DOWN):",1,3,0.5,19
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"if status in (const.ACTIVE, const.DOWN):",0,3,0.5,20
+fc5e52b476fe7260493b17979e81513e8f4f7a78,status = constants.ACTIVE,1,3,0.5,21
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# for the tenant the router is on.,1,2,0.3333333333333333,22
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# delete is sent then we need to ack so that plugin can,1,2,0.3333333333333333,23
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# call into the driver,1,2,0.3333333333333333,24
+fc5e52b476fe7260493b17979e81513e8f4f7a78,status = constants.DOWN,1,2,0.3333333333333333,25
+fc5e52b476fe7260493b17979e81513e8f4f7a78,status = constants.ERROR,1,2,0.3333333333333333,26
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# apply sync data on fw for this tenant,1,2,0.3333333333333333,27
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# avoid msg to plugin when fwaas is not configured,1,2,0.3333333333333333,28
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""On RPC issues sync with plugin and apply the sync data.""""""",1,2,0.3333333333333333,29
+fc5e52b476fe7260493b17979e81513e8f4f7a78,routers = self.plugin_rpc.get_routers(ctx),1,2,0.3333333333333333,30
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if router_ns in local_ns_list:,1,2,0.3333333333333333,31
+fc5e52b476fe7260493b17979e81513e8f4f7a78,routers = self.plugin_rpc.get_routers(context),1,2,0.3333333333333333,32
+fc5e52b476fe7260493b17979e81513e8f4f7a78,routers = [],1,2,0.3333333333333333,33
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if rid not in self.router_info:,1,2,0.3333333333333333,34
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwaas_enabled = self.fwaas_enabled and fwaas_plugin_configured,1,2,0.3333333333333333,35
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# the router - but this is not yet populated in router_info,1,2,0.3333333333333333,36
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#    License for the specific language governing permissions and limitations,1,2,0.3333333333333333,37
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""FWaaS Agent support to be used by Neutron L3 agent.""""""",1,2,0.3333333333333333,38
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# configuration due to the lack of RPC support.,1,2,0.3333333333333333,39
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"msg = _(""FWaaS plugin is configured in the server side, but """,1,2,0.3333333333333333,40
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if fwaas_plugin_configured and not self.fwaas_enabled:,1,2,0.3333333333333333,41
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# setup RPC to msg fwaas plugin,1,2,0.3333333333333333,42
+fc5e52b476fe7260493b17979e81513e8f4f7a78,for router in routers,1,2,0.3333333333333333,43
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# Pick up namespaces for Tenant Routers,1,2,0.3333333333333333,44
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# for routers without an interface - get_routers returns,1,2,0.3333333333333333,45
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.error(_LE(""Firewall Driver Error on fw state %(fwmsg)s """,1,1,0.16666666666666666,46
+fc5e52b476fe7260493b17979e81513e8f4f7a78,else:,1,1,0.16666666666666666,47
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if fw['status'] == constants.PENDING_DELETE:,1,1,0.16666666666666666,48
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.services_sync = True,1,1,0.16666666666666666,49
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"_LE(""FWaaS RPC failure in %(func_name)s for fw: %(fwid)s""),",1,1,0.16666666666666666,50
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# delete needs different handling,1,1,0.16666666666666666,51
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if not router_info_list:,1,1,0.16666666666666666,52
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if fw['admin_state_up']:,1,1,0.16666666666666666,53
+fc5e52b476fe7260493b17979e81513e8f4f7a78,[ri.router['id'] for ri in router_info_list]),1,1,0.16666666666666666,54
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if func_name == 'delete_firewall':,1,1,0.16666666666666666,55
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# cleanup.,1,1,0.16666666666666666,56
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if router_info_list:,1,1,0.16666666666666666,57
+fc5e52b476fe7260493b17979e81513e8f4f7a78,router_info_list = self._get_router_info_list_for_tenant(,1,1,0.16666666666666666,58
+fc5e52b476fe7260493b17979e81513e8f4f7a78,router_ns = self.router_info[rid].ns_name,1,1,0.16666666666666666,59
+fc5e52b476fe7260493b17979e81513e8f4f7a78,for rid in router_ids:,1,1,0.16666666666666666,60
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"# PENDING_UPDATE, PENDING_CREATE, ...",1,1,0.16666666666666666,61
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# from the plugin,1,1,0.16666666666666666,62
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"ctx = context.Context('', ri.router['tenant_id'])",1,1,0.16666666666666666,63
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# install,1,1,0.16666666666666666,64
+fc5e52b476fe7260493b17979e81513e8f4f7a78,local_ns_list = root_ip.get_namespaces(),1,1,0.16666666666666666,65
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Handle Rpc from plugin to delete a firewall.""""""",1,1,0.16666666666666666,66
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Handle Rpc from plugin to update a firewall.""""""",1,1,0.16666666666666666,67
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Handle Rpc from plugin to create a firewall.""""""",1,1,0.16666666666666666,68
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if fw['status'] != constants.ACTIVE:,1,1,0.16666666666666666,69
+fc5e52b476fe7260493b17979e81513e8f4f7a78,for ri in router_info_list]),1,1,0.16666666666666666,70
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if fw_list:,1,1,0.16666666666666666,71
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fw_list = self.fwplugin_rpc.get_firewalls_for_tenant(ctx),1,1,0.16666666666666666,72
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"ctx = context.Context('', tenant_id)",1,1,0.16666666666666666,73
+fc5e52b476fe7260493b17979e81513e8f4f7a78,for tenant_id in tenant_ids:,1,1,0.16666666666666666,74
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Tenants with Firewalls: '%s'"", tenant_ids)",1,1,0.16666666666666666,75
+fc5e52b476fe7260493b17979e81513e8f4f7a78,tenant_ids = self.fwplugin_rpc.get_tenants_with_firewalls(ctx),1,1,0.16666666666666666,76
+fc5e52b476fe7260493b17979e81513e8f4f7a78,for fw in fw_list:,1,1,0.16666666666666666,77
+fc5e52b476fe7260493b17979e81513e8f4f7a78,[fw['id'] for fw in fw_list]),1,1,0.16666666666666666,78
+fc5e52b476fe7260493b17979e81513e8f4f7a78,router_info_list = [],1,1,0.16666666666666666,79
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if not self.fwaas_enabled:,1,1,0.16666666666666666,80
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if router['tenant_id'] == tenant_id],1,1,0.16666666666666666,81
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Retrieve Tenants with Firewalls configured from Plugin"")",1,1,0.16666666666666666,82
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Retrieve Firewall with rules from Plugin"")",1,1,0.16666666666666666,83
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Agent side of the FWaaS agent to FWaaS Plugin RPC API.""""""",1,1,0.16666666666666666,84
+fc5e52b476fe7260493b17979e81513e8f4f7a78,LOG = logging.getLogger(__name__),1,1,0.16666666666666666,85
+fc5e52b476fe7260493b17979e81513e8f4f7a78,FIREWALL_PLUGIN = 'q-firewall-plugin',1,1,0.16666666666666666,86
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from neutron.services.firewall.agents import firewall_agent_api as api,1,1,0.16666666666666666,87
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from neutron.plugins.common import constants,1,1,0.16666666666666666,88
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#    under the License.,1,1,0.16666666666666666,89
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.16666666666666666,90
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,91
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#    a copy of the License at,1,1,0.16666666666666666,92
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.16666666666666666,93
+fc5e52b476fe7260493b17979e81513e8f4f7a78,#,1,1,0.16666666666666666,94
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# All Rights Reserved.,1,1,0.16666666666666666,95
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# Copyright (c) 2013 OpenStack Foundation.,1,1,0.16666666666666666,96
+fc5e52b476fe7260493b17979e81513e8f4f7a78,router_ids = [,1,1,0.16666666666666666,97
+fc5e52b476fe7260493b17979e81513e8f4f7a78,cctxt = self.client.prepare(),1,1,0.16666666666666666,98
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.16666666666666666,99
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Initializing firewall agent"")",1,1,0.16666666666666666,100
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if self.fwaas_enabled:,1,1,0.16666666666666666,101
+fc5e52b476fe7260493b17979e81513e8f4f7a78,root_ip = ip_lib.IPWrapper(),1,1,0.16666666666666666,102
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.conf = conf,1,1,0.16666666666666666,103
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Returns the list of router info objects on which to apply the fw.""""""",1,1,0.16666666666666666,104
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"self.fwplugin_rpc = FWaaSL3PluginApi(FIREWALL_PLUGIN, conf.host)",1,1,0.16666666666666666,105
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.services_sync = False,1,1,0.16666666666666666,106
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwaas_driver = importutils.import_object(,1,1,0.16666666666666666,107
+fc5e52b476fe7260493b17979e81513e8f4f7a78,msg = _('Error importing FWaaS device driver: %s'),1,1,0.16666666666666666,108
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""FWaaS is disabled in L3-agent."")",1,1,0.16666666666666666,109
+fc5e52b476fe7260493b17979e81513e8f4f7a78,in self.neutron_service_plugins),1,1,0.16666666666666666,110
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fwaas_plugin_configured = (constants.FIREWALL,1,1,0.16666666666666666,111
+fc5e52b476fe7260493b17979e81513e8f4f7a78,if self.neutron_service_plugins is not None:,1,1,0.16666666666666666,112
+fc5e52b476fe7260493b17979e81513e8f4f7a78,# None means l3-agent has no information on the server,1,1,0.16666666666666666,113
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwaas_enabled = cfg.CONF.fwaas.enabled,1,1,0.16666666666666666,114
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fwaas_driver_class_path = provconf.get_provider_driver_class(,1,1,0.16666666666666666,115
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwaas_driver.update_firewall(,1,0,0.0,116
+fc5e52b476fe7260493b17979e81513e8f4f7a78,Idempotent.,1,0,0.0,117
+fc5e52b476fe7260493b17979e81513e8f4f7a78,constants.ERROR),1,0,0.0,118
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"{'fwmsg': fw['status'], 'fwid': fw['id']})",1,0,0.0,119
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fw['id']),1,0,0.0,120
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"ctx,",1,0,0.0,121
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwplugin_rpc.firewall_deleted(,1,0,0.0,122
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwaas_driver.delete_firewall(,1,0,0.0,123
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""",1,0,0.0,124
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""for fw: %(fwid)s""),",1,0,0.0,125
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def _invoke_driver_for_sync_from_plugin(self, ctx, router_info_list, fw):",1,0,0.0,126
+fc5e52b476fe7260493b17979e81513e8f4f7a78,LOG.exception(,1,0,0.0,127
+fc5e52b476fe7260493b17979e81513e8f4f7a78,except Exception:,1,0,0.0,128
+fc5e52b476fe7260493b17979e81513e8f4f7a78,status),1,0,0.0,129
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"fw['id'],",1,0,0.0,130
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"context,",1,0,0.0,131
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwplugin_rpc.set_firewall_status(,1,0,0.0,132
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.error(_LE(""Firewall Driver Error for %(func_name)s """,1,0,0.0,133
+fc5e52b476fe7260493b17979e81513e8f4f7a78,except nexception.FirewallInternalDriverError:,1,0,0.0,134
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Process router add, router_id: '%s'"", ri.router['id'])",1,0,0.0,135
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def _process_router_add(self, ri):",1,0,0.0,136
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"firewall,",1,0,0.0,137
+fc5e52b476fe7260493b17979e81513e8f4f7a78,routers.append(ri.router),1,0,0.0,138
+fc5e52b476fe7260493b17979e81513e8f4f7a78,ri.router['tenant_id']),1,0,0.0,139
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def delete_firewall(self, context, firewall, host):",1,0,0.0,140
+fc5e52b476fe7260493b17979e81513e8f4f7a78,'update_firewall'),1,0,0.0,141
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def update_firewall(self, context, firewall, host):",1,0,0.0,142
+fc5e52b476fe7260493b17979e81513e8f4f7a78,'create_firewall'),1,0,0.0,143
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"router_info_list,",1,0,0.0,144
+fc5e52b476fe7260493b17979e81513e8f4f7a78,return self._invoke_driver_for_plugin_api(,1,0,0.0,145
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def create_firewall(self, context, firewall, host):",1,0,0.0,146
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.exception(_LE(""Failed fwaas process services sync""))",1,0,0.0,147
+fc5e52b476fe7260493b17979e81513e8f4f7a78,[ri.router['id'],1,0,0.0,148
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""fw_list: '%s'"",",1,0,0.0,149
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Router List: '%s'"",",1,0,0.0,150
+fc5e52b476fe7260493b17979e81513e8f4f7a78,tenant_id),1,0,0.0,151
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def process_services_sync(self, ctx):",1,0,0.0,152
+fc5e52b476fe7260493b17979e81513e8f4f7a78,ri.router['id']),1,0,0.0,153
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"_LE(""FWaaS RPC info call failed for '%s'.""),",1,0,0.0,154
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self._process_router_add(ri),1,0,0.0,155
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def process_router_add(self, ri):",1,0,0.0,156
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self._invoke_driver_for_sync_from_plugin(,1,0,0.0,157
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Process router add, fw_list: '%s'"",",1,0,0.0,158
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fw),1,0,0.0,159
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"super(FWaaSL3AgentRpcCallback, self).__init__(host=conf.host)",1,0,0.0,160
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"self.conf.agent_mode,",1,0,0.0,161
+fc5e52b476fe7260493b17979e81513e8f4f7a78,self.fwaas_driver.__getattribute__(func_name)(,1,0,0.0,162
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def __init__(self, conf):",1,0,0.0,163
+fc5e52b476fe7260493b17979e81513e8f4f7a78,class FWaaSL3AgentRpcCallback(api.FWaaSAgentRpcCallbackMixin):,1,0,0.0,164
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"'get_tenants_with_firewalls', host=self.host)",1,0,0.0,165
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"return cctxt.call(context,",1,0,0.0,166
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"""""""Get all Tenants that have Firewalls configured from plugin.""""""",1,0,0.0,167
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def get_tenants_with_firewalls(self, context, **kwargs):",1,0,0.0,168
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"return cctxt.call(context, 'get_firewalls_for_tenant', host=self.host)",1,0,0.0,169
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def get_firewalls_for_tenant(self, context, **kwargs):",1,0,0.0,170
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"super(FWaaSL3PluginApi, self).__init__(topic, host)",1,0,0.0,171
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def __init__(self, topic, host):",1,0,0.0,172
+fc5e52b476fe7260493b17979e81513e8f4f7a78,class FWaaSL3PluginApi(api.FWaaSPluginApiMixin):,1,0,0.0,173
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from neutron.services import provider_configuration as provconf,1,0,0.0,174
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from neutron import context,1,0,0.0,175
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from neutron.common import exceptions as nexception,1,0,0.0,176
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from neutron.agent.linux import ip_lib,1,0,0.0,177
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"from neutron._i18n import _, _LE",1,0,0.0,178
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from oslo_utils import importutils,1,0,0.0,179
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from oslo_log import log as logging,1,0,0.0,180
+fc5e52b476fe7260493b17979e81513e8f4f7a78,from oslo_config import cfg,1,0,0.0,181
+fc5e52b476fe7260493b17979e81513e8f4f7a78,cfg.CONF.fwaas.driver),1,0,0.0,182
+fc5e52b476fe7260493b17979e81513e8f4f7a78,LOG.error(msg),1,0,0.0,183
+fc5e52b476fe7260493b17979e81513e8f4f7a78,raise SystemExit(1),1,0,0.0,184
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def _invoke_driver_for_plugin_api(self, context, fw, func_name):",1,0,0.0,185
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""Apply fw on Router List: '%s'"",",1,0,0.0,186
+fc5e52b476fe7260493b17979e81513e8f4f7a78,return,1,0,0.0,187
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"self.fwplugin_rpc.firewall_deleted(context, fw['id'])",1,0,0.0,188
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug('No Routers on tenant: %s', fw['tenant_id'])",1,0,0.0,189
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fw['tenant_id']),1,0,0.0,190
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"routers,",1,0,0.0,191
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"{'func_name': func_name, 'fwid': fw['id']})",1,0,0.0,192
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""%(func_name)s from agent for fw: %(fwid)s"",",1,0,0.0,193
+fc5e52b476fe7260493b17979e81513e8f4f7a78,return router_info_list,1,0,0.0,194
+fc5e52b476fe7260493b17979e81513e8f4f7a78,try:,1,0,0.0,195
+fc5e52b476fe7260493b17979e81513e8f4f7a78,router_info_list.append(self.router_info[rid]),1,0,0.0,196
+fc5e52b476fe7260493b17979e81513e8f4f7a78,continue,1,0,0.0,197
+fc5e52b476fe7260493b17979e81513e8f4f7a78,router['id'],1,0,0.0,198
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"def _get_router_info_list_for_tenant(self, routers, tenant_id):",1,0,0.0,199
+fc5e52b476fe7260493b17979e81513e8f4f7a78,raise ImportError(msg % fwaas_driver_class_path),1,0,0.0,200
+fc5e52b476fe7260493b17979e81513e8f4f7a78,except ImportError:,1,0,0.0,201
+fc5e52b476fe7260493b17979e81513e8f4f7a78,"LOG.debug(""FWaaS Driver Loaded: '%s'"", fwaas_driver_class_path)",1,0,0.0,202
+fc5e52b476fe7260493b17979e81513e8f4f7a78,fwaas_driver_class_path),1,0,0.0,203
+fc5e52b476fe7260493b17979e81513e8f4f7a78,'delete_firewall'),1,0,0.0,204

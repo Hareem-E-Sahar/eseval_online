@@ -1,0 +1,197 @@
+commit_id,line,line_level_label,count,line_score,row
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Filters out files that are known binary types (currently just image/audio; ideally we'd filter out ALL binary files).,0,17,1.0,1
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Filters out files that are known binary types (currently just image/audio; ideally we'd filter out ALL binary files).,1,17,1.0,2
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Returns a copy of 'files' filtered to just those that don't match any of the exclusion globs in the filter.,0,5,0.29411764705882354,3
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Returns a copy of 'files' filtered to just those that don't match any of the exclusion globs in the filter.,1,5,0.29411764705882354,4
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Checks that the file matches the given subtree scope. To fully check whether the file,0,4,0.23529411764705882,5
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Checks that the file is eligible for inclusion in the search (matches the user's subtree scope and,0,4,0.23529411764705882,6
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* @param {?{label:string, promise:$.Promise}} context Info on which files the filter will be applied to. If specified,",0,3,0.1764705882352941,7
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Returns false if the given path matches any of the exclusion globs in the given filter. Returns true,1,3,0.1764705882352941,8
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* @param {?{label:string, promise:$.Promise}} context Info on files filter will apply to - see editFilter()",0,3,0.1764705882352941,9
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return newFilter.filter(function (glob) {,0,3,0.1764705882352941,10
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* Returns false if the given path matches any of the exclusion globs in the given filter. Returns true,0,3,0.1764705882352941,11
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!File} file File in question,1,3,0.1764705882352941,12
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* file exclusion filters, and isn't binary). Used when updating results incrementally - during the",0,3,0.1764705882352941,13
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,newFilter = newFilter.filter(function (glob) {,1,2,0.11764705882352941,14
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"{ className : Dialogs.DIALOG_BTN_CLASS_PRIMARY, id: Dialogs.DIALOG_BTN_OK, text: Strings.OK }",0,2,0.11764705882352941,15
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Update saved filter preference,0,2,0.11764705882352941,16
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Code to update the file count readout at bottom of dialog (if context provided),0,2,0.11764705882352941,17
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!Array.<string>} filter,1,2,0.11764705882352941,18
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"{ className : Dialogs.DIALOG_BTN_CLASS_PRIMARY, id: Dialogs.DIALOG_BTN_OK, text: Strings.OK }",1,2,0.11764705882352941,19
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return files.filter(function (f) {,1,2,0.11764705882352941,20
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Update saved filter preference,1,2,0.11764705882352941,21
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* if the path does not match any of the globs. If filtering many paths at once, use filterFileList()",1,2,0.11764705882352941,22
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!string} compiledFilter  'Compiled' filter object as returned by compile(),1,2,0.11764705882352941,23
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!Array.<File>} files,1,2,0.11764705882352941,24
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!Array.<string>} filter,0,2,0.11764705882352941,25
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"*          editing UI will indicate how many files are excluded by the filter. Label should be of the form ""in ...""",0,2,0.11764705882352941,26
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,} else {,0,2,0.11764705882352941,27
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return files.filter(function (f) {,0,2,0.11764705882352941,28
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Re-check the filtering that the initial search applied,0,2,0.11764705882352941,29
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!Array.<File>} files,0,2,0.11764705882352941,30
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!File} file,0,2,0.11764705882352941,31
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* On Mac these would silently fail to be read, but on Windows we'd read the garbled content & try to search it.",0,2,0.11764705882352941,32
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* initial search, the filter and part of the scope are taken care of in bulk instead, so _subtreeFilter()",0,2,0.11764705882352941,33
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,} else {,0,2,0.11764705882352941,34
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"// In the initial search, this is passed as a getAllFiles() filter",0,2,0.11764705882352941,35
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {File} file,0,2,0.11764705882352941,36
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Replicate filtering that getAllFiles() does,0,2,0.11764705882352941,37
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// don't know which child files/folders may have been added or removed.,0,2,0.11764705882352941,38
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {boolean} True if the entry's contents should be included in the file list,1,2,0.11764705882352941,39
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* if the path does not match any of the globs. If filtering many paths at once, use filterFileList()",0,2,0.11764705882352941,40
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!string} compiledFilter  'Compiled' filter object as returned by compile(),0,2,0.11764705882352941,41
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function createFilterPicker(contextPromise) {,0,1,0.058823529411764705,42
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return glob.trim().length;,0,1,0.058823529411764705,43
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return dialog.getPromise();,0,1,0.058823529411764705,44
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (context) {,0,1,0.058823529411764705,45
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (filter.length) {,0,1,0.058823529411764705,46
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var filter = getValue();,0,1,0.058823529411764705,47
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,context.promise.done(function (files) {,0,1,0.058823529411764705,48
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function updateFileCount() {,0,1,0.058823529411764705,49
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,lastFocus.focus();  // restore focus to old pos,0,1,0.058823529411764705,50
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (buttonId === Dialogs.DIALOG_BTN_OK) {,0,1,0.058823529411764705,51
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,dialog.done(function (buttonId) {,0,1,0.058823529411764705,52
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",0,1,0.058823529411764705,53
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Remove blank lines,0,1,0.058823529411764705,54
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function getValue() {,0,1,0.058823529411764705,55
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"{ className : Dialogs.DIALOG_BTN_CLASS_NORMAL, id: Dialogs.DIALOG_BTN_CANCEL, text: Strings.CANCEL },",0,1,0.058823529411764705,56
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function editFilter(filter, context) {",0,1,0.058823529411764705,57
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {!$.Promise} Dialog box promise,0,1,0.058823529411764705,58
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",0,1,0.058823529411764705,59
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return files;,0,1,0.058823529411764705,60
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function filterFileList(compiledFilter, files) {",0,1,0.058823529411764705,61
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {!Array.<File>},0,1,0.058823529411764705,62
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return !fullPath.match(re);,0,1,0.058823529411764705,63
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* reflect the edits. If the dialog was canceled, the preference is left unchanged.",1,1,0.058823529411764705,64
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* Opens a dialog box to edit the given filter. When editing is finished, the value of getLastFilter() changes to",1,1,0.058823529411764705,65
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return !fullPath.match(re);,1,1,0.058823529411764705,66
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {!$.Promise} Dialog box promise,1,1,0.058823529411764705,67
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!string} fullPath,1,1,0.058823529411764705,68
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return !f.fullPath.match(re);,1,1,0.058823529411764705,69
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return files;,1,1,0.058823529411764705,70
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function filterFileList(compiledFilter, files) {",1,1,0.058823529411764705,71
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {!Array.<File>},1,1,0.058823529411764705,72
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,},0,1,0.058823529411764705,73
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var re = new RegExp(compiledFilter);,1,1,0.058823529411764705,74
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return true;,1,1,0.058823529411764705,75
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (!compiledFilter) {,1,1,0.058823529411764705,76
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function filterPath(compiledFilter, fullPath) {",1,1,0.058823529411764705,77
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {boolean},1,1,0.058823529411764705,78
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*,1,1,0.058823529411764705,79
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function editFilter(filter) {,1,1,0.058823529411764705,80
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* for much better performance.,1,1,0.058823529411764705,81
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function createFilterPicker() {,1,1,0.058823529411764705,82
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return dialog.getPromise();,1,1,0.058823529411764705,83
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,lastFocus.focus();  // restore focus to old pos,1,1,0.058823529411764705,84
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,},1,1,0.058823529411764705,85
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return glob.trim().length;,1,1,0.058823529411764705,86
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Remove blank lines,1,1,0.058823529411764705,87
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (buttonId === Dialogs.DIALOG_BTN_OK) {,1,1,0.058823529411764705,88
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,dialog.done(function (buttonId) {,1,1,0.058823529411764705,89
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"{ className : Dialogs.DIALOG_BTN_CLASS_NORMAL, id: Dialogs.DIALOG_BTN_CANCEL, text: Strings.CANCEL },",1,1,0.058823529411764705,90
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var re = new RegExp(compiledFilter);,0,1,0.058823529411764705,91
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return !f.fullPath.match(re);,0,1,0.058823529411764705,92
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return true;,0,1,0.058823529411764705,93
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"return FileFilters.filterPath(currentFilter, file.fullPath);",0,1,0.058823529411764705,94
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (!_isReadableText(file)) {,0,1,0.058823529411764705,95
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return inWorkingSet;,0,1,0.058823529411764705,96
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return wsFile.fullPath === file.fullPath;,0,1,0.058823529411764705,97
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var inWorkingSet = DocumentManager.getWorkingSet().some(function (wsFile) {,0,1,0.058823529411764705,98
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (file.fullPath.indexOf(ProjectManager.getProjectRoot().fullPath) !== 0) {,0,1,0.058823529411764705,99
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"// In the initial search, this is covered by getAllFiles()",0,1,0.058823529411764705,100
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// Still need to make sure it's within project or working set,0,1,0.058823529411764705,101
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return false;,0,1,0.058823529411764705,102
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"if (!_subtreeFilter(file, currentScope)) {",0,1,0.058823529411764705,103
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (currentScope) {,0,1,0.058823529411764705,104
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {boolean},0,1,0.058823529411764705,105
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* is just called directly.,0,1,0.058823529411764705,106
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,},0,1,0.058823529411764705,107
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return !language.isBinary();,0,1,0.058823529411764705,108
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function _isReadableText(file) {,0,1,0.058823529411764705,109
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {boolean} True if the file's contents can be read as text,0,1,0.058823529411764705,110
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function _subtreeFilter(file, scope) {",0,1,0.058823529411764705,111
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* @param {?FileSystemEntry} scope Search scope, or null if whole project",0,1,0.058823529411764705,112
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*,0,1,0.058823529411764705,113
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* should be in the search set, use _inSearchScope() instead - a supserset of this.",0,1,0.058823529411764705,114
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,/** @type {string} Compiled filter from FileFilters */,0,1,0.058823529411764705,115
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"/** @type {?FileSystemEntry} Root of subtree to search in, or single file to search in, or null to search entire project */",0,1,0.058823529411764705,116
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (!compiledFilter) {,0,1,0.058823529411764705,117
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"// In the initial search, this is covered by the filterFileList() pass",0,1,0.058823529411764705,118
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function _inSearchScope(file) {,0,1,0.058823529411764705,119
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (_inSearchScope(document.file)) {,0,1,0.058823529411764705,120
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {FileSystemEntry} entry The entry to test,1,1,0.058823529411764705,121
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function _doSearch(query) {,0,1,0.058823529411764705,122
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @return {boolean},0,1,0.058823529411764705,123
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @param {!string} fullPath,0,1,0.058823529411764705,124
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*,0,1,0.058823529411764705,125
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* for much better performance.,0,1,0.058823529411764705,126
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,// search for the entire directory,1,1,0.058823529411764705,127
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"// If the added or removed sets are null, we should redo the",1,1,0.058823529411764705,128
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (child.isFile) {,1,1,0.058823529411764705,129
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,},1,1,0.058823529411764705,130
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,return !language.isBinary();,1,1,0.058823529411764705,131
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,function fileFilter(entry) {,1,1,0.058823529411764705,132
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function filterPath(compiledFilter, fullPath) {",0,1,0.058823529411764705,133
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function _doSearch(query, userFilter) {",1,1,0.058823529411764705,134
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,* @private,1,1,0.058823529411764705,135
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (_inSearchScope(child)) {,0,1,0.058823529411764705,136
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"// If the added or removed sets are null, must redo the search for the entire subtree - we",0,1,0.058823529411764705,137
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,/** @type {Array.<File>} An array of the files where it should look or null/empty to search the entire project */,1,1,0.058823529411764705,138
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,if (child.isFile && !ProjectManager.isBinaryFile(child.name)) {,0,1,0.058823529411764705,139
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"* @param {?Entry} scope Search scope, or null if whole project",1,1,0.058823529411764705,140
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"function _inScope(file, scope) {",1,1,0.058823529411764705,141
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"if (searchResultsPanel.isVisible() && _inScope(document.file, currentScope)) {",1,1,0.058823529411764705,142
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"if (!_inScope(file, currentScope)) {",1,1,0.058823529411764705,143
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var $editField = dialog.getElement().find("".exclusions-editor"");",0,0,0.0,144
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"editFilter(getLastFilter(), contextPromise)",0,0,0.0,145
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"$editField.val(filter.join(""\n"")).focus();",0,0,0.0,146
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var newFilter = $editField.val().split(""\n"");",0,0,0.0,147
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,setLastFilter(getValue());,0,0,0.0,148
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var $fileCount = dialog.getElement().find("".exclusions-filecount"");",0,0,0.0,149
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var filtered = filterFileList(compile(getValue()), files);",0,0,0.0,150
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"$fileCount.html(StringUtils.format(Strings.FILTER_FILE_COUNT, filtered.length, files.length, context.label));",0,0,0.0,151
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"$fileCount.html(StringUtils.format(Strings.FILTER_FILE_COUNT_ALL, files.length, context.label));",0,0,0.0,152
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"$editField.on(""input"", _.debounce(updateFileCount, 400));",0,0,0.0,153
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,updateFileCount();,0,0,0.0,154
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,$fileCount.hide();,0,0,0.0,155
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"""<textarea class='exclusions-editor'></textarea>"";",1,0,0.0,156
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,/**,1,0,0.0,157
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*/,1,0,0.0,158
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var lastFocus = window.document.activeElement;,1,0,0.0,159
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var html = StringUtils.format(Strings.FILE_FILTER_INSTRUCTIONS, brackets.config.glob_help_url) +",1,0,0.0,160
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,];,0,0,0.0,161
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var buttons = [,1,0,0.0,162
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,];,1,0,0.0,163
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var dialog = Dialogs.showModalDialog(DefaultDialogs.DIALOG_ID_INFO, Strings.FILE_FILTER_DIALOG, html, buttons);",1,0,0.0,164
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"dialog.getElement().find("".exclusions-editor"").val(filter.join(""\n"")).focus();",1,0,0.0,165
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var newFilter = dialog.getElement().find("".exclusions-editor"").val().split(""\n"");",1,0,0.0,166
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,});,1,0,0.0,167
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,setLastFilter(newFilter);,1,0,0.0,168
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var dialog = Dialogs.showModalDialog(DefaultDialogs.DIALOG_ID_INFO, Strings.FILE_FILTER_DIALOG, html, buttons);",0,0,0.0,169
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,/**,0,0,0.0,170
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var buttons = [,0,0,0.0,171
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"""<textarea class='exclusions-editor'></textarea><div class='exclusions-filecount'>"" + Strings.FILTER_COUNTING_FILES + ""</div>"";",0,0,0.0,172
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var currentFilter = null;,0,0,0.0,173
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*/,0,0,0.0,174
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var language = LanguageManager.getLanguageForPath(file.fullPath);,0,0,0.0,175
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,});,0,0,0.0,176
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"ProjectManager.getAllFiles(_isReadableText, true)",0,0,0.0,177
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"fileListResult = FileFilters.filterFileList(currentFilter, fileListResult);",0,0,0.0,178
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,currentFilter = FileFilters.commitPicker(filterPicker);,0,0,0.0,179
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,_doSearch(query);,0,0,0.0,180
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,addedFiles.push(child);,0,0,0.0,181
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,/**,1,0,0.0,182
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*/,1,0,0.0,183
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var language = LanguageManager.getLanguageForPath(entry.fullPath);,1,0,0.0,184
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"ProjectManager.getAllFiles(fileFilter, true)",1,0,0.0,185
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"fileListResult = FileFilters.filterFileList(userFilter, fileListResult);",1,0,0.0,186
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var userFilter = FileFilters.commitPicker(filterPicker);,1,0,0.0,187
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"_doSearch(query, userFilter);",1,0,0.0,188
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,addedFiles.push(child);,1,0,0.0,189
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"ProjectManager      = require(""project/ProjectManager""),",0,0,0.0,190
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,/**,0,0,0.0,191
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,*/,0,0,0.0,192
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,});,0,0,0.0,193
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,var lastFocus = window.document.activeElement;,0,0,0.0,194
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,"var html = StringUtils.format(Strings.FILE_FILTER_INSTRUCTIONS, brackets.config.glob_help_url) +",0,0,0.0,195
+f8091fe6b849a9f15666c3b8367981fa94d69bc3,editFilter(getLastFilter()),1,0,0.0,196

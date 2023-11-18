@@ -1,0 +1,61 @@
+commit_id,line,line_level_label,count,line_score,row
+e2e71c4ef4c749b303934c3473d77104c89a850a,"+ ""This is most likely be caused by a XML parse error. """,0,13,1.0,1
+e2e71c4ef4c749b303934c3473d77104c89a850a,"+ ""This is most likely be caused by a XML parse error. """,1,13,1.0,2
+e2e71c4ef4c749b303934c3473d77104c89a850a,* Sets the output as being a File where the filename must be provided in the {@link Exchange#XSLT_FILE_NAME},0,10,0.7692307692307693,3
+e2e71c4ef4c749b303934c3473d77104c89a850a,* Will by default output the result as a String. You can chose which kind of output you want using the,0,8,0.6153846153846154,4
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @return                          the current context if it is not {@code null},0,7,0.5384615384615385,5
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @throws IllegalArgumentException if the {@code CamelContext} has not been set.,0,6,0.46153846153846156,6
+e2e71c4ef4c749b303934c3473d77104c89a850a,"throw new IllegalArgumentException(""CamelContext has not been injected!"");",1,6,0.46153846153846156,7
+e2e71c4ef4c749b303934c3473d77104c89a850a,* Sets the output as being a File where the filename,1,6,0.46153846153846156,8
+e2e71c4ef4c749b303934c3473d77104c89a850a,* Will by default output the result as a String. You can chose which kind of output,1,6,0.46153846153846156,9
+e2e71c4ef4c749b303934c3473d77104c89a850a,* must be provided in the {@link Exchange#XSLT_FILE_NAME} header.,1,5,0.38461538461538464,10
+e2e71c4ef4c749b303934c3473d77104c89a850a,"* Creates a <a href=""http://camel.apache.org/processor.html"">Processor</a> which performs an XSLT transformation of the",0,4,0.3076923076923077,11
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @param numberToCache the maximum number of transformers to cache,0,4,0.3076923076923077,12
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @param numberToCache  the maximum number of transformers to cache,1,4,0.3076923076923077,13
+e2e71c4ef4c749b303934c3473d77104c89a850a,* Creates a new templated route,0,4,0.3076923076923077,14
+e2e71c4ef4c749b303934c3473d77104c89a850a,if (camelContext == null) {,1,4,0.3076923076923077,15
+e2e71c4ef4c749b303934c3473d77104c89a850a,protected void populateTemplatedRoutes() throws Exception {,0,3,0.23076923076923078,16
+e2e71c4ef4c749b303934c3473d77104c89a850a,protected void populateRouteTemplates() throws Exception {,0,3,0.23076923076923078,17
+e2e71c4ef4c749b303934c3473d77104c89a850a,protected void populateRouteTemplates() throws Exception {,1,3,0.23076923076923078,18
+e2e71c4ef4c749b303934c3473d77104c89a850a,"throw new TransformerConfigurationException(""Error creating XSLT template. """,1,3,0.23076923076923078,19
+e2e71c4ef4c749b303934c3473d77104c89a850a,* you want using the <tt>outputXXX</tt> methods.,1,3,0.23076923076923078,20
+e2e71c4ef4c749b303934c3473d77104c89a850a,* which performs an XSLT transformation of the IN message body.,1,3,0.23076923076923078,21
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @param  source                            the source,0,2,0.15384615384615385,22
+e2e71c4ef4c749b303934c3473d77104c89a850a,throw new TransformerConfigurationException(,0,2,0.15384615384615385,23
+e2e71c4ef4c749b303934c3473d77104c89a850a,"+ ""Please verify your XSLT file configured."");",0,2,0.15384615384615385,24
+e2e71c4ef4c749b303934c3473d77104c89a850a,"* Creates a <a href=""http://camel.apache.org/processor.html"">Processor</a>",1,2,0.15384615384615385,25
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @param source  the source,1,2,0.15384615384615385,26
+e2e71c4ef4c749b303934c3473d77104c89a850a,"+ ""Please verify your XSLT file configured."");",1,2,0.15384615384615385,27
+e2e71c4ef4c749b303934c3473d77104c89a850a,private TemplatedRoutesDefinition templatedRouteCollection = new TemplatedRoutesDefinition();,0,2,0.15384615384615385,28
+e2e71c4ef4c749b303934c3473d77104c89a850a,* @return the builder,0,2,0.15384615384615385,29
+e2e71c4ef4c749b303934c3473d77104c89a850a,public void setTemplatedRouteCollection(TemplatedRoutesDefinition templatedRouteCollection) {,0,1,0.07692307692307693,30
+e2e71c4ef4c749b303934c3473d77104c89a850a,private CamelContext notNullCamelContext() {,0,1,0.07692307692307693,31
+e2e71c4ef4c749b303934c3473d77104c89a850a,return camelContext;,0,1,0.07692307692307693,32
+e2e71c4ef4c749b303934c3473d77104c89a850a,public TemplatedRoutesDefinition getTemplatedRouteCollection() {,0,1,0.07692307692307693,33
+e2e71c4ef4c749b303934c3473d77104c89a850a,return templatedRouteCollection;,0,1,0.07692307692307693,34
+e2e71c4ef4c749b303934c3473d77104c89a850a,},1,1,0.07692307692307693,35
+e2e71c4ef4c749b303934c3473d77104c89a850a,this.templatedRouteCollection = templatedRouteCollection;,0,1,0.07692307692307693,36
+e2e71c4ef4c749b303934c3473d77104c89a850a,protected void configureTemplatedRoute(CamelContextAware templatedRoute) {,0,1,0.07692307692307693,37
+e2e71c4ef4c749b303934c3473d77104c89a850a,CamelContext camelContext = getContext();,1,1,0.07692307692307693,38
+e2e71c4ef4c749b303934c3473d77104c89a850a,},0,1,0.07692307692307693,39
+e2e71c4ef4c749b303934c3473d77104c89a850a,CamelContext camelContext = notNullCamelContext();,0,1,0.07692307692307693,40
+e2e71c4ef4c749b303934c3473d77104c89a850a,* <tt>outputXXX</tt> methods.,0,1,0.07692307692307693,41
+e2e71c4ef4c749b303934c3473d77104c89a850a,return answer;,0,1,0.07692307692307693,42
+e2e71c4ef4c749b303934c3473d77104c89a850a,Transformer t = null;,1,1,0.07692307692307693,43
+e2e71c4ef4c749b303934c3473d77104c89a850a,* IN message body.,0,1,0.07692307692307693,44
+e2e71c4ef4c749b303934c3473d77104c89a850a,TemplatedRouteDefinition answer = getTemplatedRouteCollection().templatedRoute(routeTemplateId);,0,1,0.07692307692307693,45
+e2e71c4ef4c749b303934c3473d77104c89a850a,"""Error creating XSLT template. """,0,1,0.07692307692307693,46
+e2e71c4ef4c749b303934c3473d77104c89a850a,Transformer t = null;,0,1,0.07692307692307693,47
+e2e71c4ef4c749b303934c3473d77104c89a850a,* header.,0,1,0.07692307692307693,48
+e2e71c4ef4c749b303934c3473d77104c89a850a,import org.apache.camel.model.TemplatedRouteDefinition;,0,1,0.07692307692307693,49
+e2e71c4ef4c749b303934c3473d77104c89a850a,import org.apache.camel.model.TemplatedRoutesDefinition;,0,1,0.07692307692307693,50
+e2e71c4ef4c749b303934c3473d77104c89a850a,*,0,1,0.07692307692307693,51
+e2e71c4ef4c749b303934c3473d77104c89a850a,public TemplatedRouteDefinition templatedRoute(String routeTemplateId) {,0,1,0.07692307692307693,52
+e2e71c4ef4c749b303934c3473d77104c89a850a,/**,0,0,0.0,53
+e2e71c4ef4c749b303934c3473d77104c89a850a,*/,0,0,0.0,54
+e2e71c4ef4c749b303934c3473d77104c89a850a,getTemplatedRouteCollection().setCamelContext(getContext());,0,0,0.0,55
+e2e71c4ef4c749b303934c3473d77104c89a850a,configureTemplatedRoute(answer);,0,0,0.0,56
+e2e71c4ef4c749b303934c3473d77104c89a850a,populateTemplatedRoutes();,0,0,0.0,57
+e2e71c4ef4c749b303934c3473d77104c89a850a,getTemplatedRouteCollection().setCamelContext(camelContext);,0,0,0.0,58
+e2e71c4ef4c749b303934c3473d77104c89a850a,camelContext.getExtension(Model.class).addRouteFromTemplatedRoutes(getTemplatedRouteCollection().getTemplatedRoutes());,0,0,0.0,59
+e2e71c4ef4c749b303934c3473d77104c89a850a,"CamelContextAware.trySetCamelContext(templatedRoute, getContext());",0,0,0.0,60

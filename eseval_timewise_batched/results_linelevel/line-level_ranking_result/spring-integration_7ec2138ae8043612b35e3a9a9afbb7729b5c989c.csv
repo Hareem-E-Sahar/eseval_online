@@ -1,0 +1,24 @@
+commit_id,line,line_level_label,count,line_score,row
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,* Copyright 2002-2013 the original author or authors.,0,3,1.0,1
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,* Copyright 2002-2010 the original author or authors.,1,3,1.0,2
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,ClassLoader classLoader = parserContext.getReaderContext().getBeanClassLoader();,1,2,0.6666666666666666,3
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,classLoader = this.getClass().getClassLoader();,1,2,0.6666666666666666,4
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,else if (StringUtils.hasText(type)) {,0,1,0.3333333333333333,5
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"Class<?> clazz = ClassUtils.resolveClassName(type, classLoader);",1,1,0.3333333333333333,6
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,},1,1,0.3333333333333333,7
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,if (classLoader == null) {,1,1,0.3333333333333333,8
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"""'type' and 'ref' attributes are mutually-exclusive, but both have valid values; type: "" + type + ""; ref:"");",1,1,0.3333333333333333,9
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,} else if (StringUtils.hasText(type)){,1,1,0.3333333333333333,10
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,if (StringUtils.hasText(ref)) {,0,1,0.3333333333333333,11
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,},0,1,0.3333333333333333,12
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"""but both have valid values; type: "" + type + ""; ref: "" + ref,",0,1,0.3333333333333333,13
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,if (StringUtils.hasText(ref) && StringUtils.hasText(type)) {,0,1,0.3333333333333333,14
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,* @author Artem Bilan,0,1,0.3333333333333333,15
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"parserContext.getReaderContext().error(""'type' and 'ref' attributes are mutually-exclusive, "" +",0,0,0.0,16
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,IntegrationNamespaceUtils.createElementDescription(element));,0,0,0.0,17
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"builder.getBeanDefinition().getConstructorArgumentValues().addGenericArgumentValue(type, ""java.lang.Class"");",0,0,0.0,18
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,import org.springframework.util.Assert;,1,0,0.0,19
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,import org.springframework.util.ClassUtils;,1,0,0.0,20
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"Assert.isTrue(!(StringUtils.hasText(ref) && StringUtils.hasText(type)),",1,0,0.0,21
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,if (StringUtils.hasText(ref)){,1,0,0.0,22
+7ec2138ae8043612b35e3a9a9afbb7729b5c989c,"builder.getBeanDefinition().getConstructorArgumentValues().addGenericArgumentValue(clazz, ""java.lang.Class"");",1,0,0.0,23

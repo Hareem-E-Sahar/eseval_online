@@ -1,0 +1,14 @@
+commit_id,line,line_level_label,count,line_score,row
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"err_message = _(""Network Admin State Validation Failed: "")",1,8,1.0,1
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"network_name = network[""network""][""name""]",1,1,0.125,2
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"if network[""network""].get(""admin_state_up"") is False:",0,0,0.0,3
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"LOG.warning(""Networks with admin_state_up=False are not """,0,0,0.0,4
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"""supported by PLUMgrid plugin yet."")",0,0,0.0,5
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,try:,1,0,0.0,6
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"if network[""network""].get(""admin_state_up""):",1,0,0.0,7
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"if network[""network""][""admin_state_up""] is False:",1,0,0.0,8
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"LOG.warning(_(""Network with admin_state_up=False are not """,1,0,0.0,9
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"""supported yet by this plugin. Ignoring """,1,0,0.0,10
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,"""setting for network %s""), network_name)",1,0,0.0,11
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,except Exception:,1,0,0.0,12
+844ae433c17ee3956a8c83ed693ca44c8e3c38de,raise plum_excep.PLUMgridException(err_msg=err_message),1,0,0.0,13

@@ -1,0 +1,33 @@
+commit_id,line,line_level_label,count,line_score,row
+f98f985fe79f75db00fae124ad3d65d8553df857,"protected void addLabelIntoObjects(List<HasMetadata> objects, String label, String value) {",0,3,1.0,1
+f98f985fe79f75db00fae124ad3d65d8553df857,"protected boolean addLabelIfNotExist(HasMetadata object, String label, String value) {",0,3,1.0,2
+f98f985fe79f75db00fae124ad3d65d8553df857,String templateName = getProjectName();,0,2,0.6666666666666666,3
+f98f985fe79f75db00fae124ad3d65d8553df857,final PodTemplateSpec template = spec.getTemplate();,0,2,0.6666666666666666,4
+f98f985fe79f75db00fae124ad3d65d8553df857,HasMetadata hasMetadata = new HasMetadata() {,0,2,0.6666666666666666,5
+f98f985fe79f75db00fae124ad3d65d8553df857,public String getKind() {,0,2,0.6666666666666666,6
+f98f985fe79f75db00fae124ad3d65d8553df857,if (template != null) {,0,1,0.3333333333333333,7
+f98f985fe79f75db00fae124ad3d65d8553df857,"Map<String, String> labels = KubernetesHelper.getOrCreateLabels(object);",0,1,0.3333333333333333,8
+f98f985fe79f75db00fae124ad3d65d8553df857,if (object != null) {,0,1,0.3333333333333333,9
+f98f985fe79f75db00fae124ad3d65d8553df857,public void setMetadata(ObjectMeta objectMeta) {,0,1,0.3333333333333333,10
+f98f985fe79f75db00fae124ad3d65d8553df857,public ObjectMeta getMetadata() {,0,1,0.3333333333333333,11
+f98f985fe79f75db00fae124ad3d65d8553df857,if (labels.get(label) == null) {,0,1,0.3333333333333333,12
+f98f985fe79f75db00fae124ad3d65d8553df857,if (spec != null) {,0,1,0.3333333333333333,13
+f98f985fe79f75db00fae124ad3d65d8553df857,ReplicationController entity = (ReplicationController) object;,0,1,0.3333333333333333,14
+f98f985fe79f75db00fae124ad3d65d8553df857,if (object instanceof ReplicationController) {,0,1,0.3333333333333333,15
+f98f985fe79f75db00fae124ad3d65d8553df857,for (HasMetadata object : objects) {,0,1,0.3333333333333333,16
+f98f985fe79f75db00fae124ad3d65d8553df857,ReplicationControllerSpec spec = entity.getSpec();,0,1,0.3333333333333333,17
+f98f985fe79f75db00fae124ad3d65d8553df857,template.setMetadata(objectMeta);,0,0,0.0,18
+f98f985fe79f75db00fae124ad3d65d8553df857,return false;,0,0,0.0,19
+f98f985fe79f75db00fae124ad3d65d8553df857,return true;,0,0,0.0,20
+f98f985fe79f75db00fae124ad3d65d8553df857,"labels.put(label, value);",0,0,0.0,21
+f98f985fe79f75db00fae124ad3d65d8553df857,"addLabelIfNotExist(hasMetadata, label, value);",0,0,0.0,22
+f98f985fe79f75db00fae124ad3d65d8553df857,};,0,0,0.0,23
+f98f985fe79f75db00fae124ad3d65d8553df857,"return ""PodTemplateSpec"";",0,0,0.0,24
+f98f985fe79f75db00fae124ad3d65d8553df857,return template.getMetadata();,0,0,0.0,25
+f98f985fe79f75db00fae124ad3d65d8553df857,},0,0,0.0,26
+f98f985fe79f75db00fae124ad3d65d8553df857,@Override,0,0,0.0,27
+f98f985fe79f75db00fae124ad3d65d8553df857,// TODO hack until this is fixed https://github.com/fabric8io/kubernetes-model/issues/112,0,0,0.0,28
+f98f985fe79f75db00fae124ad3d65d8553df857,"addLabelIfNotExist(object, label, value);",0,0,0.0,29
+f98f985fe79f75db00fae124ad3d65d8553df857,"addLabelIntoObjects(template.getObjects(), ""group"", templateName);",0,0,0.0,30
+f98f985fe79f75db00fae124ad3d65d8553df857,"setName(template, templateName);",0,0,0.0,31
+f98f985fe79f75db00fae124ad3d65d8553df857,"setName(template, getProjectName());",1,0,0.0,32

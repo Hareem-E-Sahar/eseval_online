@@ -1,0 +1,87 @@
+commit_id,line,line_level_label,count,line_score,row
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"bc.init_l3('tap0', ['2001:db8:a::124/64'], namespace=ns)",1,2,1.0,1
+597288b1d1dfd148d1d782230bd258f3c851cbe0,bc = BaseChild(self.conf),0,2,1.0,2
+597288b1d1dfd148d1d782230bd258f3c851cbe0,ns = '12345678-1234-5678-90ab-ba0987654321',0,2,1.0,3
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"bc.init_l3('tap0', ['2001:db8:a::124/64'], namespace=ns)",0,2,1.0,4
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"addresses = [dict(ip_version=4, scope='global',",1,2,1.0,5
+597288b1d1dfd148d1d782230bd258f3c851cbe0,bc = BaseChild(self.conf),0,2,1.0,6
+597288b1d1dfd148d1d782230bd258f3c851cbe0,ns = '12345678-1234-5678-90ab-ba0987654321',0,2,1.0,7
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev().addr.list = mock.Mock(return_value=addresses),0,2,1.0,8
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"old_addrs = [dict(ip_version=4, scope='global',",0,1,0.5,9
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"bc.init_l3('tap0', ['2001:db8:a::124/64'], namespace=ns,",1,1,0.5,10
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"bc.init_l3('tap0', new_cidrs, namespace=ns,",0,1,0.5,11
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev().addr.list = mock.Mock(return_value=old_addrs),0,1,0.5,12
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"dict(ip_version=6, scope='global',",0,1,0.5,13
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"dynamic=False, cidr='172.16.77.240/24'),",0,1,0.5,14
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"dynamic=False, cidr='2001:db8:a::123/64')]",0,1,0.5,15
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"bc.init_l3('tap0', [new_cidr], **kwargs)",0,1,0.5,16
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"scope='global',",1,1,0.5,17
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"addresses = [dict(ip_version=6,",1,1,0.5,18
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"dynamic=False, cidr='2001:db8:a::123/64')]",0,1,0.5,19
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"addresses = [dict(scope='global',",0,1,0.5,20
+597288b1d1dfd148d1d782230bd258f3c851cbe0,if include_gw_ip:,0,1,0.5,21
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"bc.init_l3('tap0', ['2001:db8:a::124/64'], namespace=ns,",0,1,0.5,22
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"[mock.call().route.list_onlink_routes(constants.IP_VERSION_4),",0,0,0.0,23
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self._test_l3_init_with_ipv6(include_gw_ip=True),0,0,0.0,24
+597288b1d1dfd148d1d782230bd258f3c851cbe0,def test_l3_init_ipv6_with_gw_ip(self):,0,0,0.0,25
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev.assert_has_calls(expected_calls),0,0,0.0,26
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().route.add_onlink_route('2001:db8:b::/64')]),0,0,0.0,27
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().route.list_onlink_routes(constants.IP_VERSION_6),",0,0,0.0,28
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().addr.delete('2001:db8:a::123/64')]),0,0,0.0,29
+597288b1d1dfd148d1d782230bd258f3c851cbe0,[mock.call().route.add_gateway('2001:db8:a::1')]),0,0,0.0,30
+597288b1d1dfd148d1d782230bd258f3c851cbe0,expected_calls += (,0,0,0.0,31
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add('2001:db8:a::124/64'),",0,0,0.0,32
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.list(scope='global', filters=['permanent']),",0,0,0.0,33
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"[mock.call('tap0', namespace=ns),",0,0,0.0,34
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self._test_l3_init_with_ipv6(include_gw_ip=False),0,0,0.0,35
+597288b1d1dfd148d1d782230bd258f3c851cbe0,def test_l3_init_ipv6_without_gw_ip(self):,0,0,0.0,36
+597288b1d1dfd148d1d782230bd258f3c851cbe0,def setUp(self):,0,0,0.0,37
+597288b1d1dfd148d1d782230bd258f3c851cbe0,def test_l3_init_ext_gw_with_dual_stack(self):,0,0,0.0,38
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev().route.list_onlink_routes.return_value = [],0,0,0.0,39
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"new_cidrs = ['192.168.1.2/24', '2001:db8:a::124/64']",0,0,0.0,40
+597288b1d1dfd148d1d782230bd258f3c851cbe0,extra_subnets=[{'cidr': '172.20.0.0/24'}]),0,0,0.0,41
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add('192.168.1.2/24'),",0,0,0.0,42
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete('172.16.77.240/24'),",0,0,0.0,43
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().route.add_onlink_route('172.20.0.0/24')]),0,0,0.0,44
+597288b1d1dfd148d1d782230bd258f3c851cbe0,def test_l3_init_with_ipv6(self):,1,0,0.0,45
+597288b1d1dfd148d1d782230bd258f3c851cbe0,extra_subnets=[{'cidr': '2001:db8:b::/64'}]),1,0,0.0,46
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().route.add_onlink_route('2001:db8:b::/64')]),1,0,0.0,47
+597288b1d1dfd148d1d782230bd258f3c851cbe0,kwargs['gateway_ips'] = ['2001:db8:a::1'],0,0,0.0,48
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"super(TestABCDriver, self).setUp()",0,0,0.0,49
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock_link_addr = mock.PropertyMock(return_value='aa:bb:cc:dd:ee:ff'),0,0,0.0,50
+597288b1d1dfd148d1d782230bd258f3c851cbe0,type(self.ip_dev().link).address = mock_link_addr,0,0,0.0,51
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.list(filters=['permanent']),",0,0,0.0,52
+597288b1d1dfd148d1d782230bd258f3c851cbe0,expected_calls = (,0,0,0.0,53
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete(4, '172.16.77.240/24'),",1,0,0.0,54
+597288b1d1dfd148d1d782230bd258f3c851cbe0,'extra_subnets': [{'cidr': '2001:db8:b::/64'}]},0,0,0.0,55
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"kwargs = {'namespace': ns,",0,0,0.0,56
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev().route.list_onlink_routes.return_value = [],0,0,0.0,57
+597288b1d1dfd148d1d782230bd258f3c851cbe0,extra_subnets=[{'cidr': '2001:db8:b::/64'}]),0,0,0.0,58
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete(6, '2001:db8:a::123/64'),",0,0,0.0,59
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().route.list_onlink_routes(),",0,0,0.0,60
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().route.add_onlink_route('2001:db8:b::/64')]),0,0,0.0,61
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete(6, '2001:db8:a::123/64')])",1,0,0.0,62
+597288b1d1dfd148d1d782230bd258f3c851cbe0,from neutron.common import constants,0,0,0.0,63
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add('192.168.1.2/24'),",0,0,0.0,64
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete('172.16.77.240/24'),",0,0,0.0,65
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().route.list_onlink_routes(constants.IP_VERSION_4),",0,0,0.0,66
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().route.list_onlink_routes(constants.IP_VERSION_6),",0,0,0.0,67
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"[mock.call().route.list_onlink_routes(constants.IP_VERSION_4),",0,0,0.0,68
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().addr.add('192.168.1.2/24')]),0,0,0.0,69
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add('2001:db8:a::124/64'),",0,0,0.0,70
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete('2001:db8:a::123/64'),",0,0,0.0,71
+597288b1d1dfd148d1d782230bd258f3c851cbe0,def test_l3_init_with_ipv6_delete_onlink_routes(self):,0,0,0.0,72
+597288b1d1dfd148d1d782230bd258f3c851cbe0,route = '2001:db8:a::/64',0,0,0.0,73
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev().route.list_onlink_routes.return_value = [route],0,0,0.0,74
+597288b1d1dfd148d1d782230bd258f3c851cbe0,self.ip_dev.assert_has_calls(,0,0,0.0,75
+597288b1d1dfd148d1d782230bd258f3c851cbe0,mock.call().route.delete_onlink_route(route)]),0,0,0.0,76
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add(4, '192.168.1.2/24', '192.168.1.255'),",1,0,0.0,77
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().route.list_onlink_routes(),",1,0,0.0,78
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"[mock.call().route.list_onlink_routes(),",1,0,0.0,79
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add(4, '192.168.1.2/24', '192.168.1.255')])",1,0,0.0,80
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.add(6, '2001:db8:a::124/64',",1,0,0.0,81
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"'2001:db8:a:0:ffff:ffff:ffff:ffff'),",1,0,0.0,82
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.delete(6, '2001:db8:a::123/64'),",1,0,0.0,83
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"def _test_l3_init_with_ipv6(self, include_gw_ip):",0,0,0.0,84
+597288b1d1dfd148d1d782230bd258f3c851cbe0,new_cidr = '2001:db8:a::124/64',0,0,0.0,85
+597288b1d1dfd148d1d782230bd258f3c851cbe0,"mock.call().addr.list(scope='global', filters=['permanent']),",1,0,0.0,86

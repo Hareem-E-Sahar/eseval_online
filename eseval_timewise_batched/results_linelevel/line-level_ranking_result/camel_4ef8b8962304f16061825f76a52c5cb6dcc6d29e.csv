@@ -1,0 +1,40 @@
+commit_id,line,line_level_label,count,line_score,row
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"String ref = getAndRemoveParameter(parameters, ""idempotentRepositoryRef"", String.class);",1,2,1.0,1
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"ref = getAndRemoveParameter(parameters, ""sorterRef"", String.class);",1,2,1.0,2
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"Comparator<File> sorter = mandatoryLookup(ref, Comparator.class);",1,2,1.0,3
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"template.sendBodyAndHeader(fileUri(), ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",0,2,1.0,4
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"template.sendBodyAndHeader(""file:target/data/filesorter/"", ""Hello London"", Exchange.FILE_NAME, ""london.txt"");",1,2,1.0,5
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"ref = getAndRemoveParameter(parameters, ""fileFilterRef"", String.class);",1,2,1.0,6
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"FileFilter filter = mandatoryLookup(ref, FileFilter.class);",1,1,0.5,7
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"template.sendBodyAndHeader(""file:target/data/filesorter/"", ""Hello Copenhagen"", Exchange.FILE_NAME, ""copenhagen.txt"");",1,1,0.5,8
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,},1,1,0.5,9
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,import org.junit.jupiter.api.BeforeEach;,1,1,0.5,10
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"template.sendBodyAndHeader(fileUri(), ""Hello Copenhagen"", Exchange.FILE_NAME, ""copenhagen.txt"");",0,1,0.5,11
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"template.sendBodyAndHeader(fileUri(), ""Hello Paris"", Exchange.FILE_NAME, ""paris.txt"");",0,1,0.5,12
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,// lookup sorter in registry if provided,1,1,0.5,13
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"template.sendBodyAndHeader(""file:target/data/filesorter/"", ""Hello Paris"", Exchange.FILE_NAME, ""paris.txt"");",1,1,0.5,14
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,// lookup file filter in registry if provided,1,1,0.5,15
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"IdempotentRepository repository = mandatoryLookup(ref, IdempotentRepository.class);",1,1,0.5,16
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,if (ref != null) {,1,1,0.5,17
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,import org.apache.camel.spi.IdempotentRepository;,1,1,0.5,18
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,import java.io.FileFilter;,1,1,0.5,19
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,import static org.apache.camel.util.ObjectHelper.isNotNullAndNonEmpty;,0,1,0.5,20
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,},1,1,0.5,21
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"private String fileUrl = ""file://target/filesorter/?sorterRef=mySorter"";",1,0,0.0,22
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,super.setUp();,1,0,0.0,23
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"deleteDirectory(""target/data/filesorter"");",1,0,0.0,24
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,public void setUp() throws Exception {,1,0,0.0,25
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,@BeforeEach,1,0,0.0,26
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,@Override,1,0,0.0,27
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"private String fileUrl = ""file://target/data/filesorter/?initialDelay=0&delay=10&sorter=#mySorter"";",1,0,0.0,28
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"from(fileUri(""?initialDelay=0&delay=10&sorter=#mySorter"")).convertBodyTo(String.class).to(""mock:result"");",0,0,0.0,29
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,result.setFileSorter(sorter);,1,0,0.0,30
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"private String fileUrl = ""file://target/filesorter/?sorter=#mySorter"";",0,0,0.0,31
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,result.setExchangeSorter(comparator);,1,0,0.0,32
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,if (sortBy != null) {,1,0,0.0,33
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,result.setFilter(filter);,1,0,0.0,34
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,result.setIdempotentRepository(repository);,1,0,0.0,35
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,// lookup idempotent repository in registry if provided,1,0,0.0,36
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,result.setSortBy(comparator);,0,0,0.0,37
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,if (isNotNullAndNonEmpty(sortBy) && !isReferenceParameter(sortBy)) {,0,0,0.0,38
+4ef8b8962304f16061825f76a52c5cb6dcc6d29e,"from(fileUrl).convertBodyTo(String.class).to(""mock:result"");",1,0,0.0,39

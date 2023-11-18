@@ -1,0 +1,138 @@
+commit_id,line,line_level_label,count,line_score,row
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"BRIDGE_FS = ""/sys/class/net/""",1,1,1.0,1
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"BRIDGE_INTERFACES_FS = BRIDGE_FS + ""%s/brif/""",1,1,1.0,2
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"BRIDGE_PORT_FS_FOR_DEVICE = BRIDGE_FS + ""%s/brport""",1,1,1.0,3
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"BRIDGE_INTERFACE_FS = BRIDGE_FS + ""%(bridge)s/brif/%(interface)s""",1,1,1.0,4
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(os, 'listdir') as listdir_fn,\",1,0,0.0,5
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,listdir_fn.return_value = br_list,1,0,0.0,6
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(self.lbm.get_all_neutron_bridges(),",1,0,0.0,7
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,result),1,0,0.0,8
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,self.assertTrue(listdir_fn.called),1,0,0.0,9
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,def test_get_interfaces_on_bridge(self):,1,0,0.0,10
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"with mock.patch.object(utils, 'execute'),\",1,0,0.0,11
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"listdir_fn.return_value = [""qbr1""]",1,0,0.0,12
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(ip_lib, 'device_exists', return_value=True):",1,0,0.0,13
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.lbm.interface_exists_on_bridge(""br-int"", ""abd"")",1,0,0.0,14
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(self.lbm.get_interfaces_on_bridge(""br0""),",1,0,0.0,15
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"[""qbr1""])",1,0,0.0,16
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,def test_get_interfaces_on_bridge_not_existing(self):,1,0,0.0,17
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"with mock.patch.object(ip_lib, 'device_exists', return_value=False):",1,0,0.0,18
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"with mock.patch.object(os, 'listdir') as listdir_fn:",1,0,0.0,19
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,),1,0,0.0,20
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,self.assertFalse(,1,0,0.0,21
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"listdir_fn.return_value = ['tap2101', 'eth0.100', 'vxlan-1000']",1,0,0.0,22
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.lbm.interface_exists_on_bridge(""br-int"", ""abc"")",1,0,0.0,23
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,self.assertTrue(,1,0,0.0,24
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,lambda p: p == '/sys/class/net/br-int/brif/abc'),1,0,0.0,25
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,exists_fn.side_effect = (,1,0,0.0,26
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"with mock.patch.object(os.path, 'exists') as exists_fn:",1,0,0.0,27
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,def test_interface_exists_on_bridge(self):,1,0,0.0,28
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,import os,1,0,0.0,29
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"'is_bridged_interface') as isdev_fn,\",0,0,0.0,30
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(bridge_lib,",0,0,0.0,31
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"bridge_device.get_interfaces.return_value = [""eth1.1"", ""eth1.4000""]",0,0,0.0,32
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"bridge_device.get_interfaces.return_value = [""eth0"", ""eth1.1""]",0,0,0.0,33
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"""get_interfaces"") as getif_fn,\",0,0,0.0,34
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(bridge_lib.BridgeDevice,",0,0,0.0,35
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual([], self.lbm.get_interfaces_on_bridge(""br0""))",1,0,0.0,36
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,listdir_fn.side_effect = OSError(),1,0,0.0,37
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge_device.addif.reset_mock(),0,0,0.0,38
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"""/sys/class/net/tap1/brport""",1,0,0.0,39
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"getif_fn.return_value = [""eth1.1"", ""eth1.4000""]",1,0,0.0,40
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(self.lbm, ""get_interfaces_on_bridge"") as getif_fn,\",1,0,0.0,41
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(lbm,",1,0,0.0,42
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"getif_fn.return_value = [""eth0"", ""eth1.1""]",1,0,0.0,43
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"""get_interfaces_on_bridge"") as getif_fn,\",1,0,0.0,44
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,br_fn.return_value.addif.assert_called_once_with('eth0'),1,0,0.0,45
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"get_if_br_fn.return_value = ""br1""",1,0,0.0,46
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,ie_fn.return_value = False,1,0,0.0,47
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"ie_fn.assert_called_with(""br0"", ""eth0"")",1,0,0.0,48
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,ie_fn.return_Value = False,1,0,0.0,49
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(self.lbm, 'is_device_on_bridge'),\",1,0,0.0,50
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"'interface_exists_on_bridge') as ie_fn,\",1,0,0.0,51
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(self.lbm,",1,0,0.0,52
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"return_value=bridge_device_old) as br_fn, \",1,0,0.0,53
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,exists_fn.assert_called_with(,1,0,0.0,54
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(self.lbm.get_tap_devices_count('br0'), 0)",1,0,0.0,55
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertTrue(self.lbm.is_device_on_bridge(""tap1""))",1,0,0.0,56
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,exists_fn.return_value = True,1,0,0.0,57
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertTrue(not self.lbm.is_device_on_bridge(""""))",1,0,0.0,58
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,def test_is_device_on_bridge(self):,1,0,0.0,59
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,readlink.side_effect = OSError(),1,0,0.0,60
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,readlink.return_value = 'blah/notneutronbridge',1,0,0.0,61
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,BRIDGE_MAPPING_VALUE),1,0,0.0,62
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(self.lbm.get_bridge_for_tap_device(""tap2""),",1,0,0.0,63
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,readlink.return_value = 'blah/%s' % BRIDGE_MAPPING_VALUE,1,0,0.0,64
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"""brq-fake"")",1,0,0.0,65
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(self.lbm.get_bridge_for_tap_device(""tap1""),",1,0,0.0,66
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,'blah/%s-fake' % linuxbridge_neutron_agent.BRIDGE_NAME_PREFIX),1,0,0.0,67
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,readlink.return_value = (,1,0,0.0,68
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"with mock.patch.object(os, 'readlink') as readlink:",1,0,0.0,69
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge_device.addif.assert_called_once_with('eth0'),0,0,0.0,70
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"bridge_device.owns_interface.assert_called_with(""eth0"")",0,0,0.0,71
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,get_if_br_fn.return_value = bridge_device_old,0,0,0.0,72
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,BRIDGE_PATH_FOR_DEVICE = BRIDGE_PORT_FS_FOR_DEVICE + '/bridge',1,0,0.0,73
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,interface.startswith(constants.TAP_DEVICE_PREFIX)]),1,0,0.0,74
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return len([interface for interface in if_list if,1,0,0.0,75
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if_list = os.listdir(BRIDGE_INTERFACES_FS % bridge_name),1,0,0.0,76
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,try:,1,0,0.0,77
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return [],1,0,0.0,78
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,else:,1,0,0.0,79
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return os.listdir(BRIDGE_INTERFACES_FS % bridge_name),1,0,0.0,80
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if ip_lib.device_exists(bridge_name):,1,0,0.0,81
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"def get_interfaces_on_bridge(self, bridge_name):",1,0,0.0,82
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge_list = os.listdir(BRIDGE_FS),1,0,0.0,83
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"BRIDGE_INTERFACE_FS % {'bridge': bridge, 'interface': interface})",1,0,0.0,84
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return os.path.exists(,1,0,0.0,85
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"def interface_exists_on_bridge(bridge, interface):",1,0,0.0,86
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,@staticmethod,1,0,0.0,87
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,import os,1,0,0.0,88
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge_device.owns_interface.return_value = False,0,0,0.0,89
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,for device in bridge_lib.get_bridge_names():,0,0,0.0,90
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if not bridge_lib.is_bridged_interface(interface_name):,0,0,0.0,91
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,interfaces_on_bridge = bridge_device.get_interfaces(),0,0,0.0,92
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge.delif(interface),0,0,0.0,93
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if bridge_lib.is_bridged_interface(interface):,0,0,0.0,94
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if not bridge_device.owns_interface(interface):,0,0,0.0,95
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return bridge,0,0,0.0,96
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,or bridge.name in self.bridge_mappings.values())):,0,0,0.0,97
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if (bridge and (bridge.name.startswith(BRIDGE_NAME_PREFIX),0,0,0.0,98
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge = bridge_lib.BridgeDevice.get_interface_bridge(tap_device_name),0,0,0.0,99
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,interface.startswith(constants.TAP_DEVICE_PREFIX)]),0,0,0.0,100
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return len([interface for interface in if_list if,0,0,0.0,101
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if_list = bridge_lib.BridgeDevice(bridge_name).get_interfaces(),0,0,0.0,102
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge_list = bridge_lib.get_bridge_names(),0,0,0.0,103
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,except OSError:,1,0,0.0,104
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return 0,1,0,0.0,105
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,path = os.readlink(BRIDGE_PATH_FOR_DEVICE % tap_device_name),1,0,0.0,106
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,pass,1,0,0.0,107
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"mock.patch.object(bridge_lib, 'is_bridged_interface'),\",0,0,0.0,108
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"return_value=bridge_device) as br_fn,\",0,0,0.0,109
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,get_br.return_value = None,0,0,0.0,110
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,get_br.return_value = bridge_lib.BridgeDevice('notneutronbridge'),0,0,0.0,111
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.lbm.get_bridge_for_tap_device(""tap2""))",0,0,0.0,112
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,get_br.return_value = bridge_lib.BridgeDevice(BRIDGE_MAPPING_VALUE),0,0,0.0,113
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.lbm.get_bridge_for_tap_device(""tap1""))",0,0,0.0,114
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(get_br.return_value,",0,0,0.0,115
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"get_br.return_value = bridge_lib.BridgeDevice(""brq-fake"")",0,0,0.0,116
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"bridge_lib.BridgeDevice, 'get_interface_bridge') as get_br:",0,0,0.0,117
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"get_ifs_fn.return_value = ['tap2101', 'eth0.100', 'vxlan-1000']",0,0,0.0,118
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"bridge_lib.BridgeDevice, 'get_interfaces') as get_ifs_fn:",0,0,0.0,119
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"self.assertEqual(result, self.lbm.get_all_neutron_bridges())",0,0,0.0,120
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"bridge_lib, 'get_bridge_names', return_value=br_list):",0,0,0.0,121
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,with mock.patch.object(,0,0,0.0,122
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,for device in os.listdir(BRIDGE_FS):,1,0,0.0,123
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if not self.is_device_on_bridge(interface_name):,1,0,0.0,124
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,interfaces_on_bridge = self.get_interfaces_on_bridge(bridge_name),1,0,0.0,125
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge_lib.BridgeDevice(bridge).delif(interface),1,0,0.0,126
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if self.is_device_on_bridge(interface):,1,0,0.0,127
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"if not self.interface_exists_on_bridge(bridge_name, interface):",1,0,0.0,128
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return os.path.exists(BRIDGE_PORT_FS_FOR_DEVICE % device_name),1,0,0.0,129
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return False,1,0,0.0,130
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if not device_name:,1,0,0.0,131
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"def is_device_on_bridge(self, device_name):",1,0,0.0,132
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,return bridge,1,0,0.0,133
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,or bridge in self.bridge_mappings.values()):,1,0,0.0,134
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,if (bridge.startswith(BRIDGE_NAME_PREFIX),1,0,0.0,135
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,bridge = path.rpartition('/')[-1],1,0,0.0,136
+e228a3dc69eca08896c4e22d6a2d51b60a9a0a94,"""is_device_on_bridge"") as isdev_fn,\",1,0,0.0,137

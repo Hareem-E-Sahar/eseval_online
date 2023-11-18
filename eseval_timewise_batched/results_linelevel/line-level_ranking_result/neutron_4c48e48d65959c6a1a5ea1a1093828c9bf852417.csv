@@ -1,0 +1,103 @@
+commit_id,line,line_level_label,count,line_score,row
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,6,1.0,1
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,#    not use this file except in compliance with the License. You may obtain,1,5,0.8333333333333333,2
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"# Copyright 2013, Big Switch Networks",1,4,0.6666666666666666,3
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,4,0.6666666666666666,4
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,#    under the License.,1,4,0.6666666666666666,5
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,#    a copy of the License at,1,3,0.5,6
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,#    License for the specific language governing permissions and limitations,1,3,0.5,7
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.5,8
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.5,9
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,# All Rights Reserved.,1,3,0.5,10
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,dst = V4ANY if rule['destination'] == 'any' else rule['destination'],1,3,0.5,11
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,src = V4ANY if rule['source'] == 'any' else rule['source'],1,3,0.5,12
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,dst = V4ANY if rule['destination'] in CIDRALL else rule['destination'],0,3,0.5,13
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,src = V4ANY if rule['source'] in CIDRALL else rule['source'],0,3,0.5,14
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,# Set to None to reload the drivers,1,2,0.3333333333333333,15
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"action = sa.Column(sa.String(10), nullable=False)",1,2,0.3333333333333333,16
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"destination = sa.Column(sa.String(64), nullable=False)",1,2,0.3333333333333333,17
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"source = sa.Column(sa.String(64), nullable=False)",1,2,0.3333333333333333,18
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"id = sa.Column(sa.Integer, primary_key=True)",1,2,0.3333333333333333,19
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,LOG.debug('No rules in router'),1,2,0.3333333333333333,20
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"LOG.debug(_('Updating router rules to %s'), rules)",0,2,0.3333333333333333,21
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,LOG.debug(_('No rules in router')),0,2,0.3333333333333333,22
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,LOG.debug('Updating router rules to %s' % rules),1,2,0.3333333333333333,23
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,self.plugin_obj = manager.NeutronManager.get_plugin(),0,1,0.16666666666666666,24
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from oslo_config import cfg,0,1,0.16666666666666666,25
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,plugin_obj = manager.NeutronManager.get_plugin(),0,1,0.16666666666666666,26
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"for i in moves.xrange(1, 12):",0,1,0.16666666666666666,27
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,self.plugin_obj = NeutronManager.get_plugin(),1,1,0.16666666666666666,28
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,multiFloatPatch = patch(,1,1,0.16666666666666666,29
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,plugin_obj = NeutronManager.get_plugin(),1,1,0.16666666666666666,30
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"for i in xrange(1, 12):",1,1,0.16666666666666666,31
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,#,1,1,0.16666666666666666,32
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from oslo.config import cfg,1,1,0.16666666666666666,33
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,34
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"nexthops = orm.relationship('NextHop', cascade='all,delete')",1,1,0.16666666666666666,35
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"router_id = sa.Column(sa.String(36),",1,1,0.16666666666666666,36
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"rule_id = sa.Column(sa.Integer,",1,1,0.16666666666666666,37
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"nexthop = sa.Column(sa.String(64), nullable=False, primary_key=True)",1,1,0.16666666666666666,38
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,multiFloatPatch = mock.patch(,0,1,0.16666666666666666,39
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,import sqlalchemy as sa,1,1,0.16666666666666666,40
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,test_l3_plugin.L3NatDBIntTestCase.setUp = origSetUp,1,1,0.16666666666666666,41
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,test_config['plugin_name_v2'] = (,1,1,0.16666666666666666,42
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,test_l3_plugin.L3NatDBIntTestCase.setUp = new_L3_setUp,1,1,0.16666666666666666,43
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"supported_extension_aliases = [""router"", ""binding"", ""router_rules"",",0,1,0.16666666666666666,44
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"dhcp_opts = port['port'].get(edo_ext.EXTRADHCPOPTS, [])",0,1,0.16666666666666666,45
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"CIDRALL = ['any', 'external']",0,1,0.16666666666666666,46
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,ext_mgr = RouterRulesTestExtensionManager(),0,1,0.16666666666666666,47
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,import os,1,1,0.16666666666666666,48
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"supported_extension_aliases = [""router"", ""binding"", ""router_rules""]",1,1,0.16666666666666666,49
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"etc_path = os.path.join(os.path.dirname(__file__), 'etc')",1,1,0.16666666666666666,50
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,test_config['config_files'] = [rp_conf_file],1,1,0.16666666666666666,51
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,ext_mgr = RouterRulesTestExtensionManager(),1,1,0.16666666666666666,52
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,test_config['extension_manager'] = ext_mgr,1,1,0.16666666666666666,53
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,notifier_api._drivers = None,1,1,0.16666666666666666,54
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"rp_conf_file = os.path.join(etc_path, 'restproxy.ini.test')",1,1,0.16666666666666666,55
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,origSetUp = test_l3_plugin.L3NatDBIntTestCase.setUp,1,1,0.16666666666666666,56
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,del test_lib.test_config['config_files'],0,0,0.0,57
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from six.moves import xrange,1,0,0.0,58
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from mock import patch,1,0,0.0,59
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"with mock.patch(HTTPCON, new=fake_server.HTTPConnectionMock500):",0,0,0.0,60
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from six import moves,0,0,0.0,61
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron import manager,0,0,0.0,62
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.common import test_lib,0,0,0.0,63
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,import mock,0,0,0.0,64
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.manager import NeutronManager,1,0,0.0,65
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.common.test_lib import test_config,1,0,0.0,66
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"ondelete=""CASCADE""))",1,0,0.0,67
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,del test_config['config_files'],1,0,0.0,68
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"with patch(HTTPCON, new=fake_server.HTTPConnectionMock500):",1,0,0.0,69
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from sqlalchemy import orm,1,0,0.0,70
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.db import model_base,1,0,0.0,71
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,class RouterRule(model_base.BASEV2):,1,0,0.0,72
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"sa.ForeignKey('routers.id',",1,0,0.0,73
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"super(RouterDBTestCase, self).setUp()",1,0,0.0,74
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,class NextHop(model_base.BASEV2):,1,0,0.0,75
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"sa.ForeignKey('routerrules.id',",1,0,0.0,76
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"ondelete=""CASCADE""),",1,0,0.0,77
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,del test_config['plugin_name_v2'],1,0,0.0,78
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"cfg.CONF.set_default('allow_overlapping_ips', False)",0,0,0.0,79
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"cfg.CONF.set_override(""notification_driver"", [test_notifier.__name__])",1,0,0.0,80
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"{'source': '1.1.1.1/32', 'destination': 'any',",1,0,0.0,81
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.db import extradhcpopt_db,0,0,0.0,82
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.extensions import extra_dhcp_opt as edo_ext,0,0,0.0,83
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"routerrule_db.RouterRule_db_mixin,",0,0,0.0,84
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,extradhcpopt_db.ExtraDhcpOptMixin):,0,0,0.0,85
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"""extra_dhcp_opt""]",0,0,0.0,86
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"self._process_port_create_extra_dhcp_opts(context, new_port, dhcp_opts)",0,0,0.0,87
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"self._update_extra_dhcp_opts_on_port(context, port_id, port, new_port)",0,0,0.0,88
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,routerrule_db.RouterRule_db_mixin):,1,0,0.0,89
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"{'source': '1.1.1.1/32', 'destination': 'external',",0,0,0.0,90
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"router_rules.append({'source': 'external',",0,0,0.0,91
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"super(test_l3_plugin.L3BaseForIntTests, self).setUp()",1,0,0.0,92
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"router_rules.append({'source': 'any',",1,0,0.0,93
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,self.setup_config_files(),0,0,0.0,94
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"super(RouterDBTestCase, self).setUp(plugin=self._plugin_name,",0,0,0.0,95
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,ext_mgr=ext_mgr),0,0,0.0,96
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.openstack.common.notifier import api as notifier_api,1,0,0.0,97
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,from neutron.openstack.common.notifier import test_notifier,1,0,0.0,98
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,def new_L3_setUp(self):,1,0,0.0,99
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,'neutron.plugins.bigswitch.plugin.NeutronRestProxyV2'),1,0,0.0,100
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,"cfg.CONF.set_default('allow_overlapping_ips', False)",1,0,0.0,101
+4c48e48d65959c6a1a5ea1a1093828c9bf852417,primary_key=True),1,0,0.0,102

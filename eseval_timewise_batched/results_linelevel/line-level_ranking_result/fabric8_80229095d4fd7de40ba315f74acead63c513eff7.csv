@@ -1,0 +1,296 @@
+commit_id,line,line_level_label,count,line_score,row
+80229095d4fd7de40ba315f74acead63c513eff7,"boolean jar = packaging == null || packaging.equals(""jar""); // jar is default packaging",1,6,1.0,1
+80229095d4fd7de40ba315f74acead63c513eff7,} else if (jar && main != null) {,1,6,1.0,2
+80229095d4fd7de40ba315f74acead63c513eff7,"boolean springBoot, boolean war, boolean bundle, boolean jar) {",1,5,0.8333333333333333,3
+80229095d4fd7de40ba315f74acead63c513eff7,} else if (CamelProjectHelper.findCamelSpringDependency(project) != null) {,1,5,0.8333333333333333,4
+80229095d4fd7de40ba315f74acead63c513eff7,} else if (CamelProjectHelper.findCamelBlueprintDependency(project) != null) {,1,5,0.8333333333333333,5
+80229095d4fd7de40ba315f74acead63c513eff7,"boolean jar = packaging != null && packaging.equals(""jar"");",1,4,0.6666666666666666,6
+80229095d4fd7de40ba315f74acead63c513eff7,if (CamelProjectHelper.findCamelCDIDependency(project) != null) {,1,4,0.6666666666666666,7
+80229095d4fd7de40ba315f74acead63c513eff7,if (element != null) {,1,4,0.6666666666666666,8
+80229095d4fd7de40ba315f74acead63c513eff7,// try to guess a default main class,1,4,0.6666666666666666,9
+80229095d4fd7de40ba315f74acead63c513eff7,* Tries to guess a good default main class to use based on the project.,1,4,0.6666666666666666,10
+80229095d4fd7de40ba315f74acead63c513eff7,if (version != null) {,1,4,0.6666666666666666,11
+80229095d4fd7de40ba315f74acead63c513eff7,if (maven != null) {,1,4,0.6666666666666666,12
+80229095d4fd7de40ba315f74acead63c513eff7,if (project != null) {,1,4,0.6666666666666666,13
+80229095d4fd7de40ba315f74acead63c513eff7,if (pom != null) {,1,4,0.6666666666666666,14
+80229095d4fd7de40ba315f74acead63c513eff7,if (pluginBuilder != null) {,1,4,0.6666666666666666,15
+80229095d4fd7de40ba315f74acead63c513eff7,"boolean bundle = packaging != null && packaging.equals(""bundle"");",1,4,0.6666666666666666,16
+80229095d4fd7de40ba315f74acead63c513eff7,"boolean war = packaging != null && packaging.equals(""war"");",1,4,0.6666666666666666,17
+80229095d4fd7de40ba315f74acead63c513eff7,// install test dependency,1,4,0.6666666666666666,18
+80229095d4fd7de40ba315f74acead63c513eff7,if (core != null) {,1,4,0.6666666666666666,19
+80229095d4fd7de40ba315f74acead63c513eff7,"@WithAttributes(label = ""Camel Version"", required = false, description = ""Camel version to use. If none provided then the latest version will be used."")",1,4,0.6666666666666666,20
+80229095d4fd7de40ba315f74acead63c513eff7,"@WithAttributes(label = ""Project Kind"", required = true, description = ""Camel project kind."")",1,4,0.6666666666666666,21
+80229095d4fd7de40ba315f74acead63c513eff7,if (plugin != null) {,1,4,0.6666666666666666,22
+80229095d4fd7de40ba315f74acead63c513eff7,// to save then set the model,1,3,0.5,23
+80229095d4fd7de40ba315f74acead63c513eff7,// only include main for JAR deployment as WAR/bundle is container based,1,3,0.5,24
+80229095d4fd7de40ba315f74acead63c513eff7,// if there is an existing then leave it as-is,1,3,0.5,25
+80229095d4fd7de40ba315f74acead63c513eff7,// if we are adding then we need to include some configurations as well,1,3,0.5,26
+80229095d4fd7de40ba315f74acead63c513eff7,} else if (bundle) {,1,3,0.5,27
+80229095d4fd7de40ba315f74acead63c513eff7,// if camel-spring is on classpath,1,3,0.5,28
+80229095d4fd7de40ba315f74acead63c513eff7,"} else if (""bundle"".equals(packaging)) {",1,3,0.5,29
+80229095d4fd7de40ba315f74acead63c513eff7,"} else if (""war"".equals(packaging)) {",1,3,0.5,30
+80229095d4fd7de40ba315f74acead63c513eff7,"* @return the suggested main class, or <tt>null</tt> if not possible to guess/find a good candidate",1,3,0.5,31
+80229095d4fd7de40ba315f74acead63c513eff7,private static String[] jarImages = new String[]{DEFAULT_JAVA_IMAGE}; // s2i is not yet supported,1,3,0.5,32
+80229095d4fd7de40ba315f74acead63c513eff7,} else if (war) {,1,3,0.5,33
+80229095d4fd7de40ba315f74acead63c513eff7,"} else if (""camel-blueprint"".equals(kind.getValue())) {",1,3,0.5,34
+80229095d4fd7de40ba315f74acead63c513eff7,"return Results.success(""Added Apache Camel to the project"");",1,3,0.5,35
+80229095d4fd7de40ba315f74acead63c513eff7,Dependency core = findCamelCoreDependency(project);,1,3,0.5,36
+80229095d4fd7de40ba315f74acead63c513eff7,Project project = getSelectedProjectOrNull(context);,1,3,0.5,37
+80229095d4fd7de40ba315f74acead63c513eff7,if (project == null) {,1,3,0.5,38
+80229095d4fd7de40ba315f74acead63c513eff7,Project project = getSelectedProject(context);,1,3,0.5,39
+80229095d4fd7de40ba315f74acead63c513eff7,// only enable if we do not have Camel yet,1,3,0.5,40
+80229095d4fd7de40ba315f74acead63c513eff7,"return Results.success(""Apache Camel is already setup"");",1,3,0.5,41
+80229095d4fd7de40ba315f74acead63c513eff7,"DependencyBuilder component = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,3,0.5,42
+80229095d4fd7de40ba315f74acead63c513eff7,"DependencyBuilder testComponent = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,3,0.5,43
+80229095d4fd7de40ba315f74acead63c513eff7,"} else if (""camel-spring"".equals(kind.getValue()) || ""camel-spring-boot"".equals(kind.getValue())) {",1,3,0.5,44
+80229095d4fd7de40ba315f74acead63c513eff7,"if (""jar"".equals(packaging)) {",1,2,0.3333333333333333,45
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNullOrBlank(descriptorRef.getText())) {,1,2,0.3333333333333333,46
+80229095d4fd7de40ba315f74acead63c513eff7,boolean updated = false;,1,2,0.3333333333333333,47
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNotBlank(fromImage)) {,1,2,0.3333333333333333,48
+80229095d4fd7de40ba315f74acead63c513eff7,// jolokia is exposed on our docker images on port 8778,1,2,0.3333333333333333,49
+80229095d4fd7de40ba315f74acead63c513eff7,// spring-boot is packaged as war but runs as fat WARs,1,2,0.3333333333333333,50
+80229095d4fd7de40ba315f74acead63c513eff7,if (updated) {,1,2,0.3333333333333333,51
+80229095d4fd7de40ba315f74acead63c513eff7,public static boolean hasSpringBootMavenPlugin(Project project) {,1,2,0.3333333333333333,52
+80229095d4fd7de40ba315f74acead63c513eff7,"Coordinate coor = CoordinateBuilder.create(""org.springframework.boot:spring-boot-maven-plugin"");",1,2,0.3333333333333333,53
+80229095d4fd7de40ba315f74acead63c513eff7,CoordinateBuilder builder = CoordinateBuilder.create(),1,2,0.3333333333333333,54
+80229095d4fd7de40ba315f74acead63c513eff7,public static boolean isJarImage(String fromImage) {,1,2,0.3333333333333333,55
+80229095d4fd7de40ba315f74acead63c513eff7,// is required for jar images,1,2,0.3333333333333333,56
+80229095d4fd7de40ba315f74acead63c513eff7,if (jar.equals(fromImage)) {,1,2,0.3333333333333333,57
+80229095d4fd7de40ba315f74acead63c513eff7,"private static Coordinate createCoordinate(String groupId, String artifactId, String version) {",1,2,0.3333333333333333,58
+80229095d4fd7de40ba315f74acead63c513eff7,"if (!assembly.hasChildByName(""basedir"")) {",1,2,0.3333333333333333,59
+80229095d4fd7de40ba315f74acead63c513eff7,builder = builder.setVersion(version);,1,2,0.3333333333333333,60
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNullOrBlank(answer)) {,1,2,0.3333333333333333,61
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNotBlank(answer)) {,1,2,0.3333333333333333,62
+80229095d4fd7de40ba315f74acead63c513eff7,"if (!assembly.hasChildByName(""descriptor"")) {",1,2,0.3333333333333333,63
+80229095d4fd7de40ba315f74acead63c513eff7,"if (!fromImage.startsWith(dockerFromImagePrefix) || fromImage.split(""/"").length <= 2) {",1,2,0.3333333333333333,64
+80229095d4fd7de40ba315f74acead63c513eff7,if (springBoot || jar) {,1,2,0.3333333333333333,65
+80229095d4fd7de40ba315f74acead63c513eff7,if (!found) {,1,2,0.3333333333333333,66
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNullOrBlank(name.getText())) {,1,2,0.3333333333333333,67
+80229095d4fd7de40ba315f74acead63c513eff7,public boolean isEnabled(UIContext context) {,1,2,0.3333333333333333,68
+80229095d4fd7de40ba315f74acead63c513eff7,// must have a project,1,2,0.3333333333333333,69
+80229095d4fd7de40ba315f74acead63c513eff7,} else {,1,2,0.3333333333333333,70
+80229095d4fd7de40ba315f74acead63c513eff7,// does the project already have camel?,1,2,0.3333333333333333,71
+80229095d4fd7de40ba315f74acead63c513eff7,core = findCamelCoreDependency(project);,1,2,0.3333333333333333,72
+80229095d4fd7de40ba315f74acead63c513eff7,boolean found = false;,1,2,0.3333333333333333,73
+80229095d4fd7de40ba315f74acead63c513eff7,for (Dependency dependency : existing) {,1,2,0.3333333333333333,74
+80229095d4fd7de40ba315f74acead63c513eff7,if (dependency.getCoordinate().getArtifactId().equals(kind.getValue())) {,1,2,0.3333333333333333,75
+80229095d4fd7de40ba315f74acead63c513eff7,"core = DependencyBuilder.create().setCoordinate(createCamelCoordinate(""camel-core"", version.getValue()));",1,2,0.3333333333333333,76
+80229095d4fd7de40ba315f74acead63c513eff7,"if (""camel-core"".equals(kind.getValue())) {",1,2,0.3333333333333333,77
+80229095d4fd7de40ba315f74acead63c513eff7,if (springBoot) {,1,2,0.3333333333333333,78
+80229095d4fd7de40ba315f74acead63c513eff7,} else {,1,2,0.3333333333333333,79
+80229095d4fd7de40ba315f74acead63c513eff7,if (bundle) {,1,2,0.3333333333333333,80
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNotBlank(commandShell)) {,1,2,0.3333333333333333,81
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNullOrBlank(from.getText())) {,1,2,0.3333333333333333,82
+80229095d4fd7de40ba315f74acead63c513eff7,boolean springBoot = hasSpringBootMavenPlugin(project);,1,2,0.3333333333333333,83
+80229095d4fd7de40ba315f74acead63c513eff7,if (Strings.isNullOrBlank(shell.getText())) {,1,2,0.3333333333333333,84
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.image"", organization + ""/${project.artifactId}:${project.version}"", updated);",1,1,0.16666666666666666,85
+80229095d4fd7de40ba315f74acead63c513eff7,String fullDockerFromName = fromImage;,1,1,0.16666666666666666,86
+80229095d4fd7de40ba315f74acead63c513eff7,fullDockerFromName = dockerFromImagePrefix + fromImage;,1,1,0.16666666666666666,87
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.from"", fullDockerFromName, updated);",1,1,0.16666666666666666,88
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.port.container.http"", ""8080"", updated);",1,1,0.16666666666666666,89
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.port.container.jolokia"", ""8778"", updated);",1,1,0.16666666666666666,90
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.assemblyDescriptorRef"", ""artifact"", updated);",1,1,0.16666666666666666,91
+80229095d4fd7de40ba315f74acead63c513eff7,// tomcat/jetty on port 8080,1,1,0.16666666666666666,92
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.assemblyDescriptorRef"", ""rootWar"", updated);",1,1,0.16666666666666666,93
+80229095d4fd7de40ba315f74acead63c513eff7,// karaf,1,1,0.16666666666666666,94
+80229095d4fd7de40ba315f74acead63c513eff7,// update properties section in pom.xml,1,1,0.16666666666666666,95
+80229095d4fd7de40ba315f74acead63c513eff7,Properties properties = pom.getProperties();,1,1,0.16666666666666666,96
+80229095d4fd7de40ba315f74acead63c513eff7,"for (Map.Entry<String, String> entry : envs.entrySet()) {",1,1,0.16666666666666666,97
+80229095d4fd7de40ba315f74acead63c513eff7,"public static void setupDockerProperties(Project project, String organization, String fromImage) {",1,1,0.16666666666666666,98
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElementBuilder descriptorRef = MavenHelpers.getOrCreateElementBuilder(assembly, ""descriptorRef"");",1,1,0.16666666666666666,99
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElementBuilder baseDir = MavenHelpers.getOrCreateElementBuilder(assembly, ""basedir"");",1,1,0.16666666666666666,100
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElementBuilder assembly = MavenHelpers.getOrCreateElementBuilder(build, ""assembly"");",1,1,0.16666666666666666,101
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElementBuilder name = MavenHelpers.getOrCreateElementBuilder(image, ""name"");",1,1,0.16666666666666666,102
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElementBuilder shell = MavenHelpers.getOrCreateElementBuilder(build, ""cmd"", ""shell"");",1,1,0.16666666666666666,103
+80229095d4fd7de40ba315f74acead63c513eff7,ConfigurationElement cfg = ConfigurationElementBuilder.create().setName(entry.getKey()).setText(entry.getValue());,1,1,0.16666666666666666,104
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.port.container.http"", ""8181"", updated);",1,1,0.16666666666666666,105
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElement env = MavenHelpers.getOrCreateElement(build, ""env"");",1,1,0.16666666666666666,106
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElement build = MavenHelpers.getOrCreateElement(image, ""build"");",1,1,0.16666666666666666,107
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElement image = MavenHelpers.getOrCreateElement(images, ""image"");",1,1,0.16666666666666666,108
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElement images = MavenHelpers.getOrCreateElement(config, ""images"");",1,1,0.16666666666666666,109
+80229095d4fd7de40ba315f74acead63c513eff7,"updated = MavenHelpers.updatePomProperty(properties, ""docker.assemblyDescriptorRef"", ""artifact-with-dependencies"", updated);",1,1,0.16666666666666666,110
+80229095d4fd7de40ba315f74acead63c513eff7,// we have both tomcat or jboss,1,1,0.16666666666666666,111
+80229095d4fd7de40ba315f74acead63c513eff7,public static String getDockerFromImage(Project project) {,1,1,0.16666666666666666,112
+80229095d4fd7de40ba315f74acead63c513eff7,String answer = null;,1,1,0.16666666666666666,113
+80229095d4fd7de40ba315f74acead63c513eff7,MavenPluginFacet pluginFacet = project.getFacet(MavenPluginFacet.class);,1,1,0.16666666666666666,114
+80229095d4fd7de40ba315f74acead63c513eff7,// TODO: what about spring-boot / docker-swarm??,1,1,0.16666666666666666,115
+80229095d4fd7de40ba315f74acead63c513eff7,"return ""org.apache.camel.test.blueprint.Main"";",1,1,0.16666666666666666,116
+80229095d4fd7de40ba315f74acead63c513eff7,"return ""org.apache.camel.spring.Main"";",1,1,0.16666666666666666,117
+80229095d4fd7de40ba315f74acead63c513eff7,"return ""org.apache.camel.cdi.Main"";",1,1,0.16666666666666666,118
+80229095d4fd7de40ba315f74acead63c513eff7,return answer;,1,1,0.16666666666666666,119
+80229095d4fd7de40ba315f74acead63c513eff7,"answer = properties.getProperty(""fabric8.env.MAIN"");",1,1,0.16666666666666666,120
+80229095d4fd7de40ba315f74acead63c513eff7,"answer = properties.getProperty(""docker.env.MAIN"");",1,1,0.16666666666666666,121
+80229095d4fd7de40ba315f74acead63c513eff7,answer = element.getText();,1,1,0.16666666666666666,122
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElement element = MavenHelpers.getConfigurationElement(config, ""images"", ""image"", ""build"", ""env"", ""JAVA_MAIN_CLASS"");",1,1,0.16666666666666666,123
+80229095d4fd7de40ba315f74acead63c513eff7,Configuration config = plugin.getConfig();,1,1,0.16666666666666666,124
+80229095d4fd7de40ba315f74acead63c513eff7,public static String defaultMainClass(Project project) {,1,1,0.16666666666666666,125
+80229095d4fd7de40ba315f74acead63c513eff7,"return properties.getProperty(""docker.from"");",1,1,0.16666666666666666,126
+80229095d4fd7de40ba315f74acead63c513eff7,return builder;,1,1,0.16666666666666666,127
+80229095d4fd7de40ba315f74acead63c513eff7,return true;,1,1,0.16666666666666666,128
+80229095d4fd7de40ba315f74acead63c513eff7,for (String jar : jarImages) {,1,1,0.16666666666666666,129
+80229095d4fd7de40ba315f74acead63c513eff7,return maven.getModel().getPackaging();,1,1,0.16666666666666666,130
+80229095d4fd7de40ba315f74acead63c513eff7,private static String getProjectPackaging(Project project) {,1,1,0.16666666666666666,131
+80229095d4fd7de40ba315f74acead63c513eff7,return bundleImages[0];,1,1,0.16666666666666666,132
+80229095d4fd7de40ba315f74acead63c513eff7,return jarImages[0];,1,1,0.16666666666666666,133
+80229095d4fd7de40ba315f74acead63c513eff7,public static String defaultDockerImage(Project project) {,1,1,0.16666666666666666,134
+80229095d4fd7de40ba315f74acead63c513eff7,return false;,1,1,0.16666666666666666,135
+80229095d4fd7de40ba315f74acead63c513eff7,return pluginFacet.hasPlugin(coor);,1,1,0.16666666666666666,136
+80229095d4fd7de40ba315f74acead63c513eff7,return null;,1,1,0.16666666666666666,137
+80229095d4fd7de40ba315f74acead63c513eff7,"protected static void setupDockerConfiguration(ConfigurationBuilder config, Map<String, String> envs, String commandShell,",1,1,0.16666666666666666,138
+80229095d4fd7de40ba315f74acead63c513eff7,"ConfigurationElementBuilder from = MavenHelpers.getOrCreateElementBuilder(build, ""from"");",1,1,0.16666666666666666,139
+80229095d4fd7de40ba315f74acead63c513eff7,"commandShell = ""/usr/bin/deploy-and-start"";",1,1,0.16666666666666666,140
+80229095d4fd7de40ba315f74acead63c513eff7,public void initializeUI(UIBuilder builder) throws Exception {,1,1,0.16666666666666666,141
+80229095d4fd7de40ba315f74acead63c513eff7,MavenPluginFacet pluginFacet = project.getFacet(MavenPluginFacet.class);,1,1,0.16666666666666666,142
+80229095d4fd7de40ba315f74acead63c513eff7,// add camel-maven-plugin,1,1,0.16666666666666666,143
+80229095d4fd7de40ba315f74acead63c513eff7,"dependencyInstaller.install(project, testComponent);",1,1,0.16666666666666666,144
+80229095d4fd7de40ba315f74acead63c513eff7,"dependencyInstaller.install(project, component);",1,1,0.16666666666666666,145
+80229095d4fd7de40ba315f74acead63c513eff7,found = true;,1,1,0.16666666666666666,146
+80229095d4fd7de40ba315f74acead63c513eff7,Set<Dependency> existing = findCamelArtifacts(project);,1,1,0.16666666666666666,147
+80229095d4fd7de40ba315f74acead63c513eff7,// add additional dependencies based on kind,1,1,0.16666666666666666,148
+80229095d4fd7de40ba315f74acead63c513eff7,String camelVersion = core.getCoordinate().getVersion();,1,1,0.16666666666666666,149
+80229095d4fd7de40ba315f74acead63c513eff7,"dependencyInstaller.install(project, core);",1,1,0.16666666666666666,150
+80229095d4fd7de40ba315f74acead63c513eff7,// add camel-core,1,1,0.16666666666666666,151
+80229095d4fd7de40ba315f74acead63c513eff7,public Result execute(UIExecutionContext context) throws Exception {,1,1,0.16666666666666666,152
+80229095d4fd7de40ba315f74acead63c513eff7,".description(""Setup Apache Camel in your project"");",1,1,0.16666666666666666,153
+80229095d4fd7de40ba315f74acead63c513eff7,// add hawtio-maven-plugin using latest version,1,1,0.16666666666666666,154
+80229095d4fd7de40ba315f74acead63c513eff7,return Metadata.forCommand(CamelSetupCommand.class).name(,1,1,0.16666666666666666,155
+80229095d4fd7de40ba315f74acead63c513eff7,public UICommandMetadata getMetadata(UIContext context) {,1,1,0.16666666666666666,156
+80229095d4fd7de40ba315f74acead63c513eff7,},1,1,0.16666666666666666,157
+80229095d4fd7de40ba315f74acead63c513eff7,return true;,1,1,0.16666666666666666,158
+80229095d4fd7de40ba315f74acead63c513eff7,return false;,1,1,0.16666666666666666,159
+80229095d4fd7de40ba315f74acead63c513eff7,@Override,1,1,0.16666666666666666,160
+80229095d4fd7de40ba315f74acead63c513eff7,"private String[] choices = new String[]{""camel-core"", ""camel-blueprint"", ""camel-cdi"", ""camel-spring"", ""camel-spring-boot""};",1,1,0.16666666666666666,161
+80229095d4fd7de40ba315f74acead63c513eff7,public class CamelSetupCommand extends AbstractCamelProjectCommand {,1,1,0.16666666666666666,162
+80229095d4fd7de40ba315f74acead63c513eff7,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,1,0.16666666666666666,163
+80229095d4fd7de40ba315f74acead63c513eff7,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.16666666666666666,164
+80229095d4fd7de40ba315f74acead63c513eff7,String commandShell = null;,1,1,0.16666666666666666,165
+80229095d4fd7de40ba315f74acead63c513eff7,MavenPluginBuilder plugin = MavenPluginBuilder.create(),1,1,0.16666666666666666,166
+80229095d4fd7de40ba315f74acead63c513eff7,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,167
+80229095d4fd7de40ba315f74acead63c513eff7,plugin = MavenPluginBuilder.create(),1,1,0.16666666666666666,168
+80229095d4fd7de40ba315f74acead63c513eff7,"private static String[] warImages = new String[]{DEFAULT_TOMCAT_IMAGE, DEFAULT_WILDFLY_IMAGE};",1,1,0.16666666666666666,169
+80229095d4fd7de40ba315f74acead63c513eff7,"*  Red Hat licenses this file to you under the Apache License, version",1,1,0.16666666666666666,170
+80229095d4fd7de40ba315f74acead63c513eff7,configurationBuilder = ConfigurationBuilder.create(pluginBuilder);,1,1,0.16666666666666666,171
+80229095d4fd7de40ba315f74acead63c513eff7,configurationBuilder = null;,1,1,0.16666666666666666,172
+80229095d4fd7de40ba315f74acead63c513eff7,pluginBuilder = null;,1,1,0.16666666666666666,173
+80229095d4fd7de40ba315f74acead63c513eff7,"MavenPlugin plugin = MavenHelpers.findPlugin(project, ""org.jolokia"", ""docker-maven-plugin"");",1,1,0.16666666666666666,174
+80229095d4fd7de40ba315f74acead63c513eff7,},1,1,0.16666666666666666,175
+80229095d4fd7de40ba315f74acead63c513eff7,"Map<String, String> envs = new LinkedHashMap<>();",1,1,0.16666666666666666,176
+80229095d4fd7de40ba315f74acead63c513eff7,String packaging = getProjectPackaging(project);,1,1,0.16666666666666666,177
+80229095d4fd7de40ba315f74acead63c513eff7,Model pom = maven.getModel();,1,1,0.16666666666666666,178
+80229095d4fd7de40ba315f74acead63c513eff7,MavenFacet maven = project.getFacet(MavenFacet.class);,1,1,0.16666666666666666,179
+80229095d4fd7de40ba315f74acead63c513eff7,"public static void setupDocker(Project project, String organization, String fromImage, String main) {",1,1,0.16666666666666666,180
+80229095d4fd7de40ba315f74acead63c513eff7,pluginBuilder = MavenPluginBuilder.create(),1,1,0.16666666666666666,181
+80229095d4fd7de40ba315f74acead63c513eff7,private static String[] bundleImages = new String[]{DEFAULT_KARAF_IMAGE};,1,1,0.16666666666666666,182
+80229095d4fd7de40ba315f74acead63c513eff7,"public static final String DEFAULT_TOMCAT_IMAGE = ""fabric8/tomcat-8.0"";",1,1,0.16666666666666666,183
+80229095d4fd7de40ba315f74acead63c513eff7,"private static String dockerFromImagePrefix = ""docker.io/"";",1,1,0.16666666666666666,184
+80229095d4fd7de40ba315f74acead63c513eff7,public class DockerSetupHelper {,1,1,0.16666666666666666,185
+80229095d4fd7de40ba315f74acead63c513eff7,private static final transient Logger LOG = LoggerFactory.getLogger(DockerSetupHelper.class);,1,1,0.16666666666666666,186
+80229095d4fd7de40ba315f74acead63c513eff7,"public static final String DEFAULT_KARAF_IMAGE = ""fabric8/karaf-2.4"";",1,1,0.16666666666666666,187
+80229095d4fd7de40ba315f74acead63c513eff7,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,1,0.16666666666666666,188
+80229095d4fd7de40ba315f74acead63c513eff7,"public static final String DEFAULT_WILDFLY_IMAGE = ""jboss/wildfly:9.0.2.Final"";",1,1,0.16666666666666666,189
+80229095d4fd7de40ba315f74acead63c513eff7,"public static final String DEFAULT_JAVA_IMAGE = ""fabric8/java-jboss-openjdk8-jdk:1.0.10"";",1,1,0.16666666666666666,190
+80229095d4fd7de40ba315f74acead63c513eff7,"public static final String S2I_JAVA_IMAGE = ""fabric8/s2i-java:1.1.6"";",1,1,0.16666666666666666,191
+80229095d4fd7de40ba315f74acead63c513eff7,// see https://github.com/fabric8io/fabric8/issues/4160,1,1,0.16666666666666666,192
+80229095d4fd7de40ba315f74acead63c513eff7,"*  Unless required by applicable law or agreed to in writing, software",1,1,0.16666666666666666,193
+80229095d4fd7de40ba315f74acead63c513eff7,import org.slf4j.Logger;,1,0,0.0,194
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.dependencies.builder.CoordinateBuilder;,1,0,0.0,195
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.projects.Project;,1,0,0.0,196
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.projects.MavenPluginFacet;,1,0,0.0,197
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.projects.MavenFacet;,1,0,0.0,198
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.MavenPluginBuilder;,1,0,0.0,199
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.MavenPlugin;,1,0,0.0,200
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.ConfigurationElementBuilder;,1,0,0.0,201
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.ConfigurationElement;,1,0,0.0,202
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.ConfigurationBuilder;,1,0,0.0,203
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.Configuration;,1,0,0.0,204
+80229095d4fd7de40ba315f74acead63c513eff7,import io.fabric8.forge.addon.utils.MavenHelpers;,1,0,0.0,205
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.dependencies.Coordinate;,1,0,0.0,206
+80229095d4fd7de40ba315f74acead63c513eff7,import org.apache.maven.model.Model;,1,0,0.0,207
+80229095d4fd7de40ba315f74acead63c513eff7,import io.fabric8.utils.Strings;,1,0,0.0,208
+80229095d4fd7de40ba315f74acead63c513eff7,import io.fabric8.forge.addon.utils.VersionHelper;,1,0,0.0,209
+80229095d4fd7de40ba315f74acead63c513eff7,import io.fabric8.forge.addon.utils.CamelProjectHelper;,1,0,0.0,210
+80229095d4fd7de40ba315f74acead63c513eff7,package io.fabric8.forge.devops.setup;,1,0,0.0,211
+80229095d4fd7de40ba315f74acead63c513eff7,*/,1,0,0.0,212
+80229095d4fd7de40ba315f74acead63c513eff7,*  permissions and limitations under the License.,1,0,0.0,213
+80229095d4fd7de40ba315f74acead63c513eff7,*  implied.  See the License for the specific language governing,1,0,0.0,214
+80229095d4fd7de40ba315f74acead63c513eff7,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,215
+80229095d4fd7de40ba315f74acead63c513eff7,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,216
+80229095d4fd7de40ba315f74acead63c513eff7,import org.slf4j.LoggerFactory;,1,0,0.0,217
+80229095d4fd7de40ba315f74acead63c513eff7,".setCoordinate(MavenHelpers.createCoordinate(""org.jolokia"", ""docker-maven-plugin"", VersionHelper.dockerVersion()));",1,0,0.0,218
+80229095d4fd7de40ba315f74acead63c513eff7,import java.util.LinkedHashMap;,1,0,0.0,219
+80229095d4fd7de40ba315f74acead63c513eff7,pluginFacet.addPlugin(pluginBuilder);,1,0,0.0,220
+80229095d4fd7de40ba315f74acead63c513eff7,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,221
+80229095d4fd7de40ba315f74acead63c513eff7,.setGroupId(groupId),1,0,0.0,222
+80229095d4fd7de40ba315f74acead63c513eff7,maven.setModel(pom);,1,0,0.0,223
+80229095d4fd7de40ba315f74acead63c513eff7,"descriptorRef.setText(""${docker.assemblyDescriptorRef}"");",1,0,0.0,224
+80229095d4fd7de40ba315f74acead63c513eff7,"baseDir.setText(""/app"");",1,0,0.0,225
+80229095d4fd7de40ba315f74acead63c513eff7,"name.setText(""${docker.image}"");",1,0,0.0,226
+80229095d4fd7de40ba315f74acead63c513eff7,"from.setText(""${docker.from}"");",1,0,0.0,227
+80229095d4fd7de40ba315f74acead63c513eff7,MavenHelpers.asConfigurationElementBuilder(shell).setText(commandShell);,1,0,0.0,228
+80229095d4fd7de40ba315f74acead63c513eff7,env.getChildren().add(cfg);,1,0,0.0,229
+80229095d4fd7de40ba315f74acead63c513eff7,"setupDockerProperties(project, organization, fromImage);",1,0,0.0,230
+80229095d4fd7de40ba315f74acead63c513eff7,"setupDockerConfiguration(configurationBuilder, envs, commandShell, springBoot, war, bundle, jar);",1,0,0.0,231
+80229095d4fd7de40ba315f74acead63c513eff7,import java.util.Map;,1,0,0.0,232
+80229095d4fd7de40ba315f74acead63c513eff7,pluginBuilder.setConfiguration(configurationBuilder);,1,0,0.0,233
+80229095d4fd7de40ba315f74acead63c513eff7,"LOG.info(""Adding docker-maven-plugin"");",1,0,0.0,234
+80229095d4fd7de40ba315f74acead63c513eff7,"LOG.info(""Found existing docker-maven-plugin"");",1,0,0.0,235
+80229095d4fd7de40ba315f74acead63c513eff7,ConfigurationBuilder configurationBuilder;,1,0,0.0,236
+80229095d4fd7de40ba315f74acead63c513eff7,MavenPluginBuilder pluginBuilder;,1,0,0.0,237
+80229095d4fd7de40ba315f74acead63c513eff7,"envs.put(""JAVA_MAIN_CLASS"", main);",1,0,0.0,238
+80229095d4fd7de40ba315f74acead63c513eff7,"envs.put(""CATALINA_OPTS"", ""-javaagent:/opt/tomcat/jolokia-agent.jar=host=0.0.0.0,port=8778"");",1,0,0.0,239
+80229095d4fd7de40ba315f74acead63c513eff7,"envs.put(""JAVA_OPTIONS"", ""-Djava.security.egd=/dev/./urandom"");",1,0,0.0,240
+80229095d4fd7de40ba315f74acead63c513eff7,"envs.put(""JAR"", ""${project.artifactId}-${project.version}.war"");",1,0,0.0,241
+80229095d4fd7de40ba315f74acead63c513eff7,import java.util.Properties;,1,0,0.0,242
+80229095d4fd7de40ba315f74acead63c513eff7,*  with the License.  You may obtain a copy of the License at,1,0,0.0,243
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.input.UIInput;,1,0,0.0,244
+80229095d4fd7de40ba315f74acead63c513eff7,*,1,0,0.0,245
+80229095d4fd7de40ba315f74acead63c513eff7,import java.util.Arrays;,1,0,0.0,246
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.context.UIBuilder;,1,0,0.0,247
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,0,0.0,248
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.projects.Project;,1,0,0.0,249
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.projects.MavenPluginFacet;,1,0,0.0,250
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.maven.plugins.MavenPluginBuilder;,1,0,0.0,251
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,0,0.0,252
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.dependencies.Dependency;,1,0,0.0,253
+80229095d4fd7de40ba315f74acead63c513eff7,import io.fabric8.forge.addon.utils.VersionHelper;,1,0,0.0,254
+80229095d4fd7de40ba315f74acead63c513eff7,import javax.inject.Inject;,1,0,0.0,255
+80229095d4fd7de40ba315f74acead63c513eff7,import java.util.Set;,1,0,0.0,256
+80229095d4fd7de40ba315f74acead63c513eff7,package io.fabric8.forge.camel.commands.project;,1,0,0.0,257
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,0,0.0,258
+80229095d4fd7de40ba315f74acead63c513eff7,*/,1,0,0.0,259
+80229095d4fd7de40ba315f74acead63c513eff7,*  permissions and limitations under the License.,1,0,0.0,260
+80229095d4fd7de40ba315f74acead63c513eff7,*  implied.  See the License for the specific language governing,1,0,0.0,261
+80229095d4fd7de40ba315f74acead63c513eff7,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,262
+80229095d4fd7de40ba315f74acead63c513eff7,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,263
+80229095d4fd7de40ba315f74acead63c513eff7,*  with the License.  You may obtain a copy of the License at,1,0,0.0,264
+80229095d4fd7de40ba315f74acead63c513eff7,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,265
+80229095d4fd7de40ba315f74acead63c513eff7,*,1,0,0.0,266
+80229095d4fd7de40ba315f74acead63c513eff7,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,267
+80229095d4fd7de40ba315f74acead63c513eff7,/**,1,0,0.0,268
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.context.UIContext;,1,0,0.0,269
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.input.UISelectOne;,1,0,0.0,270
+80229095d4fd7de40ba315f74acead63c513eff7,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,271
+80229095d4fd7de40ba315f74acead63c513eff7,builder.add(kind).add(version);,1,0,0.0,272
+80229095d4fd7de40ba315f74acead63c513eff7,/**,1,0,0.0,273
+80229095d4fd7de40ba315f74acead63c513eff7,".setCoordinate(createCoordinate(""io.hawt"", ""hawtio-maven-plugin"", VersionHelper.hawtioVersion()));",1,0,0.0,274
+80229095d4fd7de40ba315f74acead63c513eff7,pluginFacet.addPlugin(plugin);,1,0,0.0,275
+80229095d4fd7de40ba315f74acead63c513eff7,".setCoordinate(createCamelCoordinate(""camel-maven-plugin"", camelVersion));",1,0,0.0,276
+80229095d4fd7de40ba315f74acead63c513eff7,".setArtifactId(""camel-test-blueprint"").setVersion(core.getCoordinate().getVersion())",1,0,0.0,277
+80229095d4fd7de40ba315f74acead63c513eff7,".setArtifactId(""camel-test-spring"").setVersion(core.getCoordinate().getVersion())",1,0,0.0,278
+80229095d4fd7de40ba315f74acead63c513eff7,".setScopeType(""test"");",1,0,0.0,279
+80229095d4fd7de40ba315f74acead63c513eff7,".setArtifactId(""camel-test"").setVersion(core.getCoordinate().getVersion())",1,0,0.0,280
+80229095d4fd7de40ba315f74acead63c513eff7,.setArtifactId(kind.getValue()).setVersion(core.getCoordinate().getVersion());,1,0,0.0,281
+80229095d4fd7de40ba315f74acead63c513eff7,break;,1,0,0.0,282
+80229095d4fd7de40ba315f74acead63c513eff7,kind.setValueChoices(Arrays.asList(choices));,1,0,0.0,283
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,0,0.0,284
+80229095d4fd7de40ba315f74acead63c513eff7,"""Camel: Setup"").category(Categories.create(CATEGORY))",1,0,0.0,285
+80229095d4fd7de40ba315f74acead63c513eff7,private DependencyInstaller dependencyInstaller;,1,0,0.0,286
+80229095d4fd7de40ba315f74acead63c513eff7,private UIInput<String> version;,1,0,0.0,287
+80229095d4fd7de40ba315f74acead63c513eff7,private UISelectOne<String> kind;,1,0,0.0,288
+80229095d4fd7de40ba315f74acead63c513eff7,@Inject,1,0,0.0,289
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.util.Metadata;,1,0,0.0,290
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.util.Categories;,1,0,0.0,291
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.result.Results;,1,0,0.0,292
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.result.Result;,1,0,0.0,293
+80229095d4fd7de40ba315f74acead63c513eff7,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,0,0.0,294
+80229095d4fd7de40ba315f74acead63c513eff7,.setArtifactId(artifactId);,1,0,0.0,295

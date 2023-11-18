@@ -1,0 +1,40 @@
+commit_id,line,line_level_label,count,line_score,row
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,# none of the default extensions should be loaded as their,0,7,1.0,1
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,# of tree plugins are not entirely up to speed,1,4,0.5714285714285714,2
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"# requirements are not satisfied, and yet we do not fail.",0,4,0.5714285714285714,3
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,# Remove the faulty extensions so that they do not show during,0,4,0.5714285714285714,4
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"Gracefully fail for defective default extensions, which will be",0,3,0.42857142857142855,5
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"# Fail gracefully for default extensions, just in case some out",1,3,0.42857142857142855,6
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,ext_mgr = extensions.ExtensionManager(''),0,3,0.42857142857142855,7
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,removed from the list of loaded extensions.,0,2,0.2857142857142857,8
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,if not unloadable_extensions <= default_extensions:,1,1,0.14285714285714285,9
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,return constants.DEFAULT_SERVICE_PLUGINS.keys(),1,1,0.14285714285714285,10
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,return constants.DEFAULT_SERVICE_PLUGINS.keys(),0,1,0.14285714285714285,11
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,core_plugin = directory.get_plugin(),0,1,0.14285714285714285,12
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"self.assertIn(default_ext, ext_mgr.extensions)",1,1,0.14285714285714285,13
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,def test__check_faulty_extensions_raise_not_default_ext(self):,0,1,0.14285714285714285,14
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,return [],0,1,0.14285714285714285,15
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,default_extensions = set(const.DEFAULT_SERVICE_PLUGINS.values()),1,1,0.14285714285714285,16
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,# ext-list,0,1,0.14285714285714285,17
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,if not faulty_extensions <= default_extensions:,0,1,0.14285714285714285,18
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,default_extensions = set(const.DEFAULT_SERVICE_PLUGINS.values()),0,1,0.14285714285714285,19
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"def _check_faulty_extensions(self, faulty_extensions):",0,1,0.14285714285714285,20
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,for ext in faulty_extensions:,0,1,0.14285714285714285,21
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,pass,0,0,0.0,22
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,if core_plugin.has_native_datastore():,0,0,0.0,23
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,ext_mgr._check_faulty_extensions(set(['foo'])),0,0,0.0,24
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,with testtools.ExpectedException(exceptions.ExtensionsNotFound):,0,0,0.0,25
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,self.assertFalse(ext_mgr.extensions),0,0,0.0,26
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,import testtools,0,0,0.0,27
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,extensions=list(unloadable_extensions)),1,0,0.0,28
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,raise exceptions.ExtensionsNotFound(,1,0,0.0,29
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,try:,0,0,0.0,30
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,except KeyError:,0,0,0.0,31
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,del self.extensions[ext],0,0,0.0,32
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,else:,0,0,0.0,33
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,extensions=list(faulty_extensions)),0,0,0.0,34
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,raise exceptions.ExtensionsNotFound(,0,0,0.0,35
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"""""""",0,0,0.0,36
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,"""""""Raise for non-default faulty extensions.",0,0,0.0,37
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,self._check_faulty_extensions(unloadable_extensions),0,0,0.0,38
+aadf2f30f84dff3d85f380a7ff4e16dbbb0c6bb0,else:,0,0,0.0,39

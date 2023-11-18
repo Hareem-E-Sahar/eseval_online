@@ -1,0 +1,796 @@
+commit_id,line,line_level_label,count,line_score,row
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Loads a class of the given name from the project class loader or returns null if its not found,1,8,1.0,1
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Converts a java type as a string to a valid input type and returns the class or null if its not supported,1,7,0.875,2
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Removes the package from the type name from the given type,1,7,0.875,3
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Converts a java type as a string to a valid input type and returns the class or null if its not supported,0,7,0.875,4
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* distributed under the License is distributed on an ""AS IS"" BASIS,",1,6,0.75,5
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,6,0.75,6
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,6,0.75,7
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,6,0.75,8
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""Component Name"", required = true, description = ""Name of component type to add"")",1,6,0.75,9
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,6,0.75,10
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""Package Name"", required = false, description = ""The package name where this type will be created"")",1,6,0.75,11
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* The ASF licenses this file to You under the Apache License, Version 2.0",1,6,0.75,12
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* distributed under the License is distributed on an ""AS IS"" BASIS,",1,6,0.75,13
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* The ASF licenses this file to You under the Apache License, Version 2.0",1,6,0.75,14
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",0,6,0.75,15
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""componentName"", required = true, description = ""Name of component type to add."")",1,6,0.75,16
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""componentName"", required = true, description = ""Name of component type to add"")",0,6,0.75,17
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",0,6,0.75,18
+b2def7948589cf55adb28e0169043b04a81d0dd5,* @return the primitive Java Class type,1,5,0.625,19
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static void createCdiComponentProducerClass(JavaClassSource javaClass, CamelComponentDetails details, String camelComponentName, String componentInstanceName, String configurationCode) {",1,5,0.625,20
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static void createSpringComponentFactoryClass(JavaClassSource javaClass, CamelComponentDetails details, String camelComponentName, String componentInstanceName, String configurationCode) {",1,5,0.625,21
+b2def7948589cf55adb28e0169043b04a81d0dd5,* @param name the json type,1,5,0.625,22
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Class<?> loadProjectClass(Project project, String className) {",1,5,0.625,23
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Red Hat licenses this file to you under the Apache License, version",1,5,0.625,24
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Red Hat licenses this file to you under the Apache License, version",1,5,0.625,25
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static boolean projectHasClassOnClassPath(Project project, String className) {",1,5,0.625,26
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Red Hat licenses this file to you under the Apache License, version",1,5,0.625,27
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Results.fail(""Could not find fully qualified class name in catalog for component name: "" + camelComponentName);",1,5,0.625,28
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Licensed to the Apache Software Foundation (ASF) under one or more,1,5,0.625,29
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""Instance Name"", required = true, description = ""Name of component instance to add"")",1,5,0.625,30
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Red Hat licenses this file to you under the Apache License, version",0,5,0.625,31
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Licensed to the Apache Software Foundation (ASF) under one or more,1,5,0.625,32
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Red Hat licenses this file to you under the Apache License, version",0,5,0.625,33
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""instanceName"", required = true, description = ""Name of component instance to add."")",1,5,0.625,34
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""instanceName"", required = true, description = ""Name of component instance to add"")",0,5,0.625,35
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String body = componentClassName + "" component = new "" + componentClassName + ""();\n/* TODO configure component here */\nreturn component;"";",1,5,0.625,36
+b2def7948589cf55adb28e0169043b04a81d0dd5,// lets find the camel component class,1,5,0.625,37
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Red Hat licenses this file to you under the Apache License, version",1,5,0.625,38
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  with the License.  You may obtain a copy of the License at,1,4,0.5,39
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  with the License.  You may obtain a copy of the License at,1,4,0.5,40
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  implied.  See the License for the specific language governing,1,4,0.5,41
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String body = componentClassName + "" component = new "" + componentClassName + ""();"" + configurationCode + ""\nreturn component;"";",1,4,0.5,42
+b2def7948589cf55adb28e0169043b04a81d0dd5,"// its a custom java type so use String as the input type, so you can refer to it using # lookup",1,4,0.5,43
+b2def7948589cf55adb28e0169043b04a81d0dd5,"// is the component consumer or producer only, if so we do not need any kind of filter",1,4,0.5,44
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  implied.  See the License for the specific language governing,1,4,0.5,45
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  implied.  See the License for the specific language governing,1,4,0.5,46
+b2def7948589cf55adb28e0169043b04a81d0dd5,public String getArtifactId() {,1,4,0.5,47
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  with the License.  You may obtain a copy of the License at,1,4,0.5,48
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static String removeJavaPackageName(String className) {,1,4,0.5,49
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  implied.  See the License for the specific language governing,1,4,0.5,50
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""Filter"", required = false, description = ""To filter components"")",1,4,0.5,51
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  with the License.  You may obtain a copy of the License at,0,4,0.5,52
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  with the License.  You may obtain a copy of the License at,1,4,0.5,53
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  with the License.  You may obtain a copy of the License at,0,4,0.5,54
+b2def7948589cf55adb28e0169043b04a81d0dd5,* See the License for the specific language governing permissions and,1,4,0.5,55
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Results.success(""Added Component instance @Producer class "" + generateClassName + "" to the project"");",1,4,0.5,56
+b2def7948589cf55adb28e0169043b04a81d0dd5,"protected static void createCdiComponentProducerClass(JavaClassSource javaClass, CamelComponentDetails details, String camelComponentName, String componentInstanceName, String configurationCode) {",0,4,0.5,57
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String body = componentClassName + "" component = new "" + componentClassName + ""();"" + configurationCode + ""\nreturn component;"";",0,4,0.5,58
+b2def7948589cf55adb28e0169043b04a81d0dd5,"protected static void createSpringComponentFactoryClass(JavaClassSource javaClass, CamelComponentDetails details, String camelComponentName, String componentInstanceName, String configurationCode) {",0,4,0.5,59
+b2def7948589cf55adb28e0169043b04a81d0dd5,// need to parse to be able to extends another class,1,4,0.5,60
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  implied.  See the License for the specific language governing,0,4,0.5,61
+b2def7948589cf55adb28e0169043b04a81d0dd5,* See the License for the specific language governing permissions and,1,4,0.5,62
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  implied.  See the License for the specific language governing,0,4,0.5,63
+b2def7948589cf55adb28e0169043b04a81d0dd5,* the License.  You may obtain a copy of the License at,1,4,0.5,64
+b2def7948589cf55adb28e0169043b04a81d0dd5,* the License.  You may obtain a copy of the License at,1,4,0.5,65
+b2def7948589cf55adb28e0169043b04a81d0dd5,// we want to use same version as camel-core if its a camel component,1,3,0.375,66
+b2def7948589cf55adb28e0169043b04a81d0dd5,"// reset the filters as the component can only be one of them anyway, so we should show all options",1,3,0.375,67
+b2def7948589cf55adb28e0169043b04a81d0dd5,"throw new IllegalArgumentException(""Could not find catalog entry for component name: "" + camelComponentName);",1,3,0.375,68
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static Class getPrimitiveWrapperClassType(String name) {,1,3,0.375,69
+b2def7948589cf55adb28e0169043b04a81d0dd5,* Gets the JSon schema primitive type.,1,3,0.375,70
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Class<Object> loadValidInputTypes(String javaType, String type) {",1,3,0.375,71
+b2def7948589cf55adb28e0169043b04a81d0dd5,String json = camelCatalog.componentJSonSchema(camelComponentName);,1,3,0.375,72
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Result ensureCamelArtifactIdAdded(Project project, CamelComponentDetails details, DependencyInstaller dependencyInstaller) {",1,3,0.375,73
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Result loadCamelComponentDetails(CamelCatalog camelCatalog, String camelComponentName, CamelComponentDetails details) {",1,3,0.375,74
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* Populates the details for the given component, returning a Result if it fails.",1,3,0.375,75
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Callable<Iterable<ComponentDto>> createComponentDtoValues(final Project project, final CamelCatalog camelCatalog,",1,3,0.375,76
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String type = propertyMap.get(""type"");",1,3,0.375,77
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Iterable<String> createComponentLabelValues(Project project, CamelCatalog camelCatalog) {",1,3,0.375,78
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String name = propertyMap.get(""name"");",1,3,0.375,79
+b2def7948589cf55adb28e0169043b04a81d0dd5,public String getComponentClassName() {,1,3,0.375,80
+b2def7948589cf55adb28e0169043b04a81d0dd5,// this group is now done so add to answer,1,3,0.375,81
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Unless required by applicable law or agreed to in writing, software",1,3,0.375,82
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  permissions and limitations under the License.,1,3,0.375,83
+b2def7948589cf55adb28e0169043b04a81d0dd5,public class CamelComponentDetails {,1,3,0.375,84
+b2def7948589cf55adb28e0169043b04a81d0dd5,public String getComponentClassQName() {,1,3,0.375,85
+b2def7948589cf55adb28e0169043b04a81d0dd5,public void setArtifactId(String artifactId) {,1,3,0.375,86
+b2def7948589cf55adb28e0169043b04a81d0dd5,this.artifactId = artifactId;,1,3,0.375,87
+b2def7948589cf55adb28e0169043b04a81d0dd5,public String getGroupId() {,1,3,0.375,88
+b2def7948589cf55adb28e0169043b04a81d0dd5,public String getVersion() {,1,3,0.375,89
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Unless required by applicable law or agreed to in writing, software",1,3,0.375,90
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  permissions and limitations under the License.,1,3,0.375,91
+b2def7948589cf55adb28e0169043b04a81d0dd5,public final class JavaHelper {,1,3,0.375,92
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  permissions and limitations under the License.,1,3,0.375,93
+b2def7948589cf55adb28e0169043b04a81d0dd5,public final class CamelCommandsHelper {,1,3,0.375,94
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Results.fail(""Could not find catalog entry for component name: "" + camelComponentName);",1,3,0.375,95
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Unless required by applicable law or agreed to in writing, software",1,3,0.375,96
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  permissions and limitations under the License.,0,3,0.375,97
+b2def7948589cf55adb28e0169043b04a81d0dd5,String name = instanceName.getValue();,1,3,0.375,98
+b2def7948589cf55adb28e0169043b04a81d0dd5,public class CamelAddComponentInstanceCDICommand extends AbstractCamelProjectCommand implements UIWizard {,0,3,0.375,99
+b2def7948589cf55adb28e0169043b04a81d0dd5,String name = instanceName.getValue();,0,3,0.375,100
+b2def7948589cf55adb28e0169043b04a81d0dd5,public class CamelAddComponentInstanceCDICommand extends AbstractCamelProjectCommand {,1,3,0.375,101
+b2def7948589cf55adb28e0169043b04a81d0dd5,String name = instanceName.getValue();,1,3,0.375,102
+b2def7948589cf55adb28e0169043b04a81d0dd5,Project project = getSelectedProject(context);,1,3,0.375,103
+b2def7948589cf55adb28e0169043b04a81d0dd5,// do we already have a class with the name,1,3,0.375,104
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  permissions and limitations under the License.,0,3,0.375,105
+b2def7948589cf55adb28e0169043b04a81d0dd5,public final class CamelCommands {,0,3,0.375,106
+b2def7948589cf55adb28e0169043b04a81d0dd5,* contributor license agreements.  See the NOTICE file distributed with,1,3,0.375,107
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* Unless required by applicable law or agreed to in writing, software",1,3,0.375,108
+b2def7948589cf55adb28e0169043b04a81d0dd5,* limitations under the License.,1,3,0.375,109
+b2def7948589cf55adb28e0169043b04a81d0dd5,public class CamelCommands {,1,3,0.375,110
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Unless required by applicable law or agreed to in writing, software",0,3,0.375,111
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Unless required by applicable law or agreed to in writing, software",0,3,0.375,112
+b2def7948589cf55adb28e0169043b04a81d0dd5,public final class JavaHelper {,0,3,0.375,113
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Unless required by applicable law or agreed to in writing, software",1,3,0.375,114
+b2def7948589cf55adb28e0169043b04a81d0dd5,public String call() throws Exception {,1,3,0.375,115
+b2def7948589cf55adb28e0169043b04a81d0dd5,* contributor license agreements.  See the NOTICE file distributed with,1,3,0.375,116
+b2def7948589cf55adb28e0169043b04a81d0dd5,Project project = getSelectedProject(builder.getUIContext());,1,3,0.375,117
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@WithAttributes(label = ""Class Name"", required = true, description = ""Name of @Producer class"")",1,3,0.375,118
+b2def7948589cf55adb28e0169043b04a81d0dd5,public class CamelNewComponentInstanceCDICommand extends AbstractCamelProjectCommand implements UIWizard {,1,3,0.375,119
+b2def7948589cf55adb28e0169043b04a81d0dd5,*  permissions and limitations under the License.,1,3,0.375,120
+b2def7948589cf55adb28e0169043b04a81d0dd5,// we want to use same version as camel-core if its a camel component,0,3,0.375,121
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static Callable<Iterable<ComponentDto>> createComponentDtoValues(final Project project,",0,3,0.375,122
+b2def7948589cf55adb28e0169043b04a81d0dd5,public class JavaHelper {,1,3,0.375,123
+b2def7948589cf55adb28e0169043b04a81d0dd5,* limitations under the License.,1,3,0.375,124
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* Unless required by applicable law or agreed to in writing, software",1,3,0.375,125
+b2def7948589cf55adb28e0169043b04a81d0dd5,int idx = javaType.indexOf('<');,1,2,0.25,126
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (idx > 0) {,1,2,0.25,127
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""integer"".equals(name)) {",1,2,0.25,128
+b2def7948589cf55adb28e0169043b04a81d0dd5,} catch (Throwable e) {,1,2,0.25,129
+b2def7948589cf55adb28e0169043b04a81d0dd5,private static Class loadStringSupportedType(String javaType) {,1,2,0.25,130
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.net.URL"".equals(javaType)) {",1,2,0.25,131
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.net.URI"".equals(javaType)) {",1,2,0.25,132
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""boolean"".equals(name)) {",1,2,0.25,133
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.String[]"".equals(name) || ""String[]"".equals(name)) {",1,2,0.25,134
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""number"".equals(name)) {",1,2,0.25,135
+b2def7948589cf55adb28e0169043b04a81d0dd5,private static Class loadPrimitiveWrapperType(String name) {,1,2,0.25,136
+b2def7948589cf55adb28e0169043b04a81d0dd5,// special for byte[] or Object[] as its common to use,1,2,0.25,137
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Byte[]"".equals(name) || ""Byte[]"".equals(name)) {",1,2,0.25,138
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Object[]"".equals(name) || ""Object[]"".equals(name)) {",1,2,0.25,139
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.String"".equals(name) || ""String"".equals(name)) {",1,2,0.25,140
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Boolean"".equals(name) || ""Boolean"".equals(name)) {",1,2,0.25,141
+b2def7948589cf55adb28e0169043b04a81d0dd5,String componentClassName = details.getComponentClassName();,1,2,0.25,142
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String methodName = ""create"" + Strings.capitalize(componentInstanceName) + ""Component"";",1,2,0.25,143
+b2def7948589cf55adb28e0169043b04a81d0dd5,String label = componentCategoryFilter.getValue();,1,2,0.25,144
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static boolean isBlueprintProject(Project project) {,1,2,0.25,145
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static boolean isSpringProject(Project project) {,1,2,0.25,146
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  2.0 (the ""License""); you may not use this file except in compliance",1,2,0.25,147
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,2,0.25,148
+b2def7948589cf55adb28e0169043b04a81d0dd5,// use callable so we can live update the filter,1,2,0.25,149
+b2def7948589cf55adb28e0169043b04a81d0dd5,public Iterable<ComponentDto> call() throws Exception {,1,2,0.25,150
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""int"".equals(name)) {",1,2,0.25,151
+b2def7948589cf55adb28e0169043b04a81d0dd5,"for (Map<String, String> row : data) {",1,2,0.25,152
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String javaType = row.get(""javaType"");",1,2,0.25,153
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String groupId = row.get(""groupId"");",1,2,0.25,154
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String version = row.get(""version"");",1,2,0.25,155
+b2def7948589cf55adb28e0169043b04a81d0dd5,String groupId = details.getGroupId();,1,2,0.25,156
+b2def7948589cf55adb28e0169043b04a81d0dd5,String artifactId = details.getArtifactId();,1,2,0.25,157
+b2def7948589cf55adb28e0169043b04a81d0dd5,Dependency core = CamelProjectHelper.findCamelCoreDependency(project);,1,2,0.25,158
+b2def7948589cf55adb28e0169043b04a81d0dd5,// otherwise use the version from the dto,1,2,0.25,159
+b2def7948589cf55adb28e0169043b04a81d0dd5,} else {,1,2,0.25,160
+b2def7948589cf55adb28e0169043b04a81d0dd5,DependencyBuilder component = DependencyBuilder.create().setGroupId(groupId),1,2,0.25,161
+b2def7948589cf55adb28e0169043b04a81d0dd5,// install the component,1,2,0.25,162
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static boolean isCdiProject(Project project) {,1,2,0.25,163
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Integer"".equals(name) || ""Integer"".equals(name)) {",1,2,0.25,164
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String group = propertyMap.get(""group"");",1,2,0.25,165
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Long"".equals(name) || ""Long"".equals(name)) {",1,2,0.25,166
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""long"".equals(name)) {",1,2,0.25,167
+b2def7948589cf55adb28e0169043b04a81d0dd5,// filter out options in case we should only include consumers or producers only,1,2,0.25,168
+b2def7948589cf55adb28e0169043b04a81d0dd5,// if no default value exists then add none as the 1st choice default value,1,2,0.25,169
+b2def7948589cf55adb28e0169043b04a81d0dd5,// otherwise the GUI makes us force to select an option which is not what we want,1,2,0.25,170
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  2.0 (the ""License""); you may not use this file except in compliance",1,2,0.25,171
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,2,0.25,172
+b2def7948589cf55adb28e0169043b04a81d0dd5,private String artifactId;,1,2,0.25,173
+b2def7948589cf55adb28e0169043b04a81d0dd5,public void setComponentClassQName(String componentClassQName) {,1,2,0.25,174
+b2def7948589cf55adb28e0169043b04a81d0dd5,public void setGroupId(String groupId) {,1,2,0.25,175
+b2def7948589cf55adb28e0169043b04a81d0dd5,public void setVersion(String version) {,1,2,0.25,176
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  2.0 (the ""License""); you may not use this file except in compliance",1,2,0.25,177
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,2,0.25,178
+b2def7948589cf55adb28e0169043b04a81d0dd5,int idx = className.lastIndexOf('.');,1,2,0.25,179
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (idx >= 0) {,1,2,0.25,180
+b2def7948589cf55adb28e0169043b04a81d0dd5,} else {,1,2,0.25,181
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static URLClassLoader getProjectClassLoader(Project project) {,1,2,0.25,182
+b2def7948589cf55adb28e0169043b04a81d0dd5,} catch (ClassNotFoundException e) {,1,2,0.25,183
+b2def7948589cf55adb28e0169043b04a81d0dd5,public Result execute(UIExecutionContext context) throws Exception {,1,2,0.25,184
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String enums = propertyMap.get(""enum"");",1,2,0.25,185
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String description = propertyMap.get(""description"");",1,2,0.25,186
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String defaultValue = propertyMap.get(""defaultValue"");",1,2,0.25,187
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""double"".equals(name)) {",1,2,0.25,188
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Short"".equals(name) || ""Short"".equals(name)) {",1,2,0.25,189
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""short"".equals(name)) {",1,2,0.25,190
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Byte"".equals(name) || ""Byte"".equals(name)) {",1,2,0.25,191
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""byte"".equals(name)) {",1,2,0.25,192
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Float"".equals(name) || ""Float"".equals(name)) {",1,2,0.25,193
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""float"".equals(name)) {",1,2,0.25,194
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Double"".equals(name) || ""Double"".equals(name)) {",1,2,0.25,195
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Character"".equals(name) || ""Character"".equals(name)) {",1,2,0.25,196
+b2def7948589cf55adb28e0169043b04a81d0dd5,String currentValue = currentValues.get(name);,1,2,0.25,197
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""char"".equals(name)) {",1,2,0.25,198
+b2def7948589cf55adb28e0169043b04a81d0dd5,"public static List<EndpointOptionByGroup> createUIInputsForCamelComponent(String camelComponentName, String uri, int maxOptionsPerPage, boolean consumerOnly, boolean producerOnly,",1,2,0.25,199
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String kind = propertyMap.get(""kind"");",1,2,0.25,200
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String label = propertyMap.get(""label"");",1,2,0.25,201
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String javaType = propertyMap.get(""javaType"");",1,2,0.25,202
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String deprecated = propertyMap.get(""deprecated"");",1,2,0.25,203
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String required = propertyMap.get(""required"");",1,2,0.25,204
+b2def7948589cf55adb28e0169043b04a81d0dd5,protected String getDefaultProducerClassName() {,1,2,0.25,205
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String artifactId = row.get(""artifactId"");",1,2,0.25,206
+b2def7948589cf55adb28e0169043b04a81d0dd5,public NavigationResult next(UINavigationContext context) throws Exception {,1,2,0.25,207
+b2def7948589cf55adb28e0169043b04a81d0dd5,* this work for additional information regarding copyright ownership.,1,2,0.25,208
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",1,2,0.25,209
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  2.0 (the ""License""); you may not use this file except in compliance",0,2,0.25,210
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",0,2,0.25,211
+b2def7948589cf55adb28e0169043b04a81d0dd5,* this work for additional information regarding copyright ownership.,1,2,0.25,212
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* (the ""License""); you may not use this file except in compliance with",1,2,0.25,213
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",1,2,0.25,214
+b2def7948589cf55adb28e0169043b04a81d0dd5,"protected static Class<Object> loadValidInputTypes(String javaType, String type) {",0,2,0.25,215
+b2def7948589cf55adb28e0169043b04a81d0dd5,private static Class loadPrimitiveType(String name) {,0,2,0.25,216
+b2def7948589cf55adb28e0169043b04a81d0dd5,// special for byte[] or Object[] as its common to use,0,2,0.25,217
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Byte[]"".equals(name) || ""Byte[]"".equals(name)) {",0,2,0.25,218
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Object[]"".equals(name) || ""Object[]"".equals(name)) {",0,2,0.25,219
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.String[]"".equals(name) || ""String[]"".equals(name)) {",0,2,0.25,220
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.String"".equals(name) || ""String"".equals(name)) {",0,2,0.25,221
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Boolean"".equals(name) || ""Boolean"".equals(name)) {",0,2,0.25,222
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""boolean"".equals(name)) {",0,2,0.25,223
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Integer"".equals(name) || ""Integer"".equals(name)) {",0,2,0.25,224
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""int"".equals(name)) {",0,2,0.25,225
+b2def7948589cf55adb28e0169043b04a81d0dd5,"* (the ""License""); you may not use this file except in compliance with",1,2,0.25,226
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",0,2,0.25,227
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""long"".equals(name)) {",0,2,0.25,228
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  2.0 (the ""License""); you may not use this file except in compliance",0,2,0.25,229
+b2def7948589cf55adb28e0169043b04a81d0dd5,public NavigationResult next(UINavigationContext context) throws Exception {,0,2,0.25,230
+b2def7948589cf55adb28e0169043b04a81d0dd5,} else {,1,2,0.25,231
+b2def7948589cf55adb28e0169043b04a81d0dd5,protected String getDefaultProducerClassName() {,0,2,0.25,232
+b2def7948589cf55adb28e0169043b04a81d0dd5,protected String getDefaultProducerClassName() {,1,2,0.25,233
+b2def7948589cf55adb28e0169043b04a81d0dd5,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,2,0.25,234
+b2def7948589cf55adb28e0169043b04a81d0dd5,// does the project already have camel?,1,2,0.25,235
+b2def7948589cf55adb28e0169043b04a81d0dd5,String camelComponentName = componentName.getValue();,1,2,0.25,236
+b2def7948589cf55adb28e0169043b04a81d0dd5,String generatePackageName = targetPackage.getValue();,1,2,0.25,237
+b2def7948589cf55adb28e0169043b04a81d0dd5,String generateClassName = className.getValue();,1,2,0.25,238
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String fqn = generatePackageName != null ? generatePackageName + ""."" + generateClassName : generateClassName;",1,2,0.25,239
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Results.fail(""A class with name "" + fqn + "" already exists"");",1,2,0.25,240
+b2def7948589cf55adb28e0169043b04a81d0dd5,String componentClassName = details.getComponentClassName();,1,2,0.25,241
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String methodName = ""create"" + Strings.capitalize(instanceName.getValue()) + ""Component"";",1,2,0.25,242
+b2def7948589cf55adb28e0169043b04a81d0dd5,String componentClassName = details.getComponentClassName();,0,2,0.25,243
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String methodName = ""create"" + Strings.capitalize(componentInstanceName) + ""Component"";",0,2,0.25,244
+b2def7948589cf55adb28e0169043b04a81d0dd5,"protected static  Class<?> loadValidInputTypes(String javaType, String type) {",0,2,0.25,245
+b2def7948589cf55adb28e0169043b04a81d0dd5,} catch (ClassNotFoundException e) {,0,2,0.25,246
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Long"".equals(name) || ""Long"".equals(name)) {",0,2,0.25,247
+b2def7948589cf55adb28e0169043b04a81d0dd5,Dependency core = findCamelCoreDependency(project);,1,2,0.25,248
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Short"".equals(name) || ""Short"".equals(name)) {",0,2,0.25,249
+b2def7948589cf55adb28e0169043b04a81d0dd5,public UICommandMetadata getMetadata(UIContext context) {,1,2,0.25,250
+b2def7948589cf55adb28e0169043b04a81d0dd5,String groupId = details.getGroupId();,0,2,0.25,251
+b2def7948589cf55adb28e0169043b04a81d0dd5,// otherwise use the version from the dto,0,2,0.25,252
+b2def7948589cf55adb28e0169043b04a81d0dd5,} else {,0,2,0.25,253
+b2def7948589cf55adb28e0169043b04a81d0dd5,DependencyBuilder component = DependencyBuilder.create().setGroupId(groupId),0,2,0.25,254
+b2def7948589cf55adb28e0169043b04a81d0dd5,"DependencyBuilder component = DependencyBuilder.create().setGroupId(""org.apache.camel"")",1,2,0.25,255
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  2.0 (the ""License""); you may not use this file except in compliance",1,2,0.25,256
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,2,0.25,257
+b2def7948589cf55adb28e0169043b04a81d0dd5,".description(""Creates a new Camel component instance configuration using CDI"");",1,2,0.25,258
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String groupId = row.get(""groupId"");",0,2,0.25,259
+b2def7948589cf55adb28e0169043b04a81d0dd5,public boolean isEnabled(UIContext context) {,1,2,0.25,260
+b2def7948589cf55adb28e0169043b04a81d0dd5,public void initializeUI(UIBuilder builder) throws Exception {,1,2,0.25,261
+b2def7948589cf55adb28e0169043b04a81d0dd5,final JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,2,0.25,262
+b2def7948589cf55adb28e0169043b04a81d0dd5,public ComponentDto convert(String text) {,1,2,0.25,263
+b2def7948589cf55adb28e0169043b04a81d0dd5,public void valueChanged(ValueChangeEvent event) {,1,2,0.25,264
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""short"".equals(name)) {",0,2,0.25,265
+b2def7948589cf55adb28e0169043b04a81d0dd5,ComponentDto component = (ComponentDto) event.getNewValue();,1,2,0.25,266
+b2def7948589cf55adb28e0169043b04a81d0dd5,"String version = row.get(""version"");",0,2,0.25,267
+b2def7948589cf55adb28e0169043b04a81d0dd5,// show note about the chosen component,1,2,0.25,268
+b2def7948589cf55adb28e0169043b04a81d0dd5,public ComponentDto convert(String name) {,0,2,0.25,269
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""char"".equals(name)) {",0,2,0.25,270
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Byte"".equals(name) || ""Byte"".equals(name)) {",0,2,0.25,271
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""byte"".equals(name)) {",0,2,0.25,272
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static Iterable<String> createComponentNameValues(Project project) {,1,2,0.25,273
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Float"".equals(name) || ""Float"".equals(name)) {",0,2,0.25,274
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""float"".equals(name)) {",0,2,0.25,275
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Double"".equals(name) || ""Double"".equals(name)) {",0,2,0.25,276
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""double"".equals(name)) {",0,2,0.25,277
+b2def7948589cf55adb28e0169043b04a81d0dd5,"} else if (""java.lang.Character"".equals(name) || ""Character"".equals(name)) {",0,2,0.25,278
+b2def7948589cf55adb28e0169043b04a81d0dd5,String description = component.getDescription();,1,2,0.25,279
+b2def7948589cf55adb28e0169043b04a81d0dd5,public Iterable<ComponentDto> call() throws Exception {,0,2,0.25,280
+b2def7948589cf55adb28e0169043b04a81d0dd5,final JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,0,2,0.25,281
+b2def7948589cf55adb28e0169043b04a81d0dd5,JavaSourceFacet facet = project.getFacet(JavaSourceFacet.class);,1,2,0.25,282
+b2def7948589cf55adb28e0169043b04a81d0dd5,// TODO if we already have a instance of the same name then lets return null,1,2,0.25,283
+b2def7948589cf55adb28e0169043b04a81d0dd5,String label = componentCategoryFilter.getValue();,0,2,0.25,284
+b2def7948589cf55adb28e0169043b04a81d0dd5,public static Iterable<String> createComponentLabelValues(Project project) {,0,2,0.25,285
+b2def7948589cf55adb28e0169043b04a81d0dd5,"protected static  Class<?> loadValidInputTypes(String javaType, String type) {",1,2,0.25,286
+b2def7948589cf55adb28e0169043b04a81d0dd5,// use callable so we can live update the filter,0,2,0.25,287
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(artifactId)) {,1,1,0.125,288
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""org.apache.camel"".equals(groupId)) {",1,1,0.125,289
+b2def7948589cf55adb28e0169043b04a81d0dd5,String version;,1,1,0.125,290
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Results.fail(""The project does not include camel-core"");",1,1,0.125,291
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (core == null) {,1,1,0.125,292
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (Strings.isNullOrEmpty(details.getComponentClassQName())) {,1,1,0.125,293
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(version)) {,1,1,0.125,294
+b2def7948589cf55adb28e0169043b04a81d0dd5,List<EndpointOptionByGroup> answer = new ArrayList<>();,1,1,0.125,295
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(groupId)) {,1,1,0.125,296
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(javaType)) {,1,1,0.125,297
+b2def7948589cf55adb28e0169043b04a81d0dd5,version = core.getCoordinate().getVersion();,1,1,0.125,298
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (json == null) {,1,1,0.125,299
+b2def7948589cf55adb28e0169043b04a81d0dd5,return new Callable<Iterable<ComponentDto>>() {,1,1,0.125,300
+b2def7948589cf55adb28e0169043b04a81d0dd5,final boolean excludeComponentsOnClasspath) {,1,1,0.125,301
+b2def7948589cf55adb28e0169043b04a81d0dd5,},1,1,0.125,302
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.endpointComponentName;,1,1,0.125,303
+b2def7948589cf55adb28e0169043b04a81d0dd5,"List<Map<String, String>> data = JSonSchemaHelper.parseJsonSchema(""component"", json, false);",1,1,0.125,304
+b2def7948589cf55adb28e0169043b04a81d0dd5,"// we have generics in the javatype, if so remove it so its loadable from a classloader",1,1,0.125,305
+b2def7948589cf55adb28e0169043b04a81d0dd5,version = details.getVersion();,1,1,0.125,306
+b2def7948589cf55adb28e0169043b04a81d0dd5,"clazz = loadPrimitiveWrapperType(""java.lang.String"");",1,1,0.125,307
+b2def7948589cf55adb28e0169043b04a81d0dd5,"CamelCatalog camelCatalog, InputComponentFactory componentFactory, ConverterFactory converterFactory, UIContext ui) throws Exception {",1,1,0.125,308
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.addon.utils.UIHelper.createUIInput;,1,1,0.125,309
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""java.lang.byte[]"".equals(name) || ""byte[]"".equals(name)) {",1,1,0.125,310
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""string"".equals(name)) {",1,1,0.125,311
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""java.io.File"".equals(javaType)) {",1,1,0.125,312
+b2def7948589cf55adb28e0169043b04a81d0dd5,|| clazz.isPrimitive() || Number.class.isAssignableFrom(clazz))) {,1,1,0.125,313
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""object"".equals(type)) {",1,1,0.125,314
+b2def7948589cf55adb28e0169043b04a81d0dd5,MethodSource<JavaClassSource> method = javaClass.addMethod(),1,1,0.125,315
+b2def7948589cf55adb28e0169043b04a81d0dd5,clazz = (Class<Object>) Class.forName(javaType);,1,1,0.125,316
+b2def7948589cf55adb28e0169043b04a81d0dd5,clazz = loadStringSupportedType(javaType);,1,1,0.125,317
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (clazz == null) {,1,1,0.125,318
+b2def7948589cf55adb28e0169043b04a81d0dd5,Class<Object> clazz = getPrimitiveWrapperClassType(type);,1,1,0.125,319
+b2def7948589cf55adb28e0169043b04a81d0dd5,try {,1,1,0.125,320
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaType = javaType.substring(0, idx);",1,1,0.125,321
+b2def7948589cf55adb28e0169043b04a81d0dd5,clazz = loadPrimitiveWrapperType(javaType);,1,1,0.125,322
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.model.CamelComponentDetails;,1,1,0.125,323
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.util.Strings;,1,1,0.125,324
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.source.MethodSource;,1,1,0.125,325
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.addon.utils.CamelProjectHelper;,1,1,0.125,326
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.concurrent.Callable;,1,1,0.125,327
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Set;,1,1,0.125,328
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Map;,1,1,0.125,329
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.List;,1,1,0.125,330
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.HashSet;,1,1,0.125,331
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Date;,1,1,0.125,332
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Collections;,1,1,0.125,333
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.ArrayList;,1,1,0.125,334
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,1,1,0.125,335
+b2def7948589cf55adb28e0169043b04a81d0dd5,*     http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,336
+b2def7948589cf55adb28e0169043b04a81d0dd5,*,1,1,0.125,337
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Copyright 2005-2015 Red Hat, Inc.",1,1,0.125,338
+b2def7948589cf55adb28e0169043b04a81d0dd5,camelComponentName = endpointComponentName(uri);,1,1,0.125,339
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,1,1,0.125,340
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.completer.CamelComponentsCompleter;,1,1,0.125,341
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.completer.CamelComponentsLabelCompleter;,1,1,0.125,342
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,1,1,0.125,343
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.125,344
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.source.JavaClassSource;,1,1,0.125,345
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.result.Results;,1,1,0.125,346
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,347
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.UISelectOne;,1,1,0.125,348
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.InputComponentFactory;,1,1,0.125,349
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.InputComponent;,1,1,0.125,350
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,1,0.125,351
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.model.EndpointOptionByGroup;,1,1,0.125,352
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.Project;,1,1,0.125,353
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.dependencies.builder.DependencyBuilder;,1,1,0.125,354
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.dependencies.Dependency;,1,1,0.125,355
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.convert.ConverterFactory;,1,1,0.125,356
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.apache.camel.catalog.JSonSchemaHelper;,1,1,0.125,357
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.apache.camel.catalog.CamelCatalog;,1,1,0.125,358
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (camelComponentName == null && uri != null) {,1,1,0.125,359
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!inputs.isEmpty()) {,1,1,0.125,360
+b2def7948589cf55adb28e0169043b04a81d0dd5,"boolean componentConsumerOnly = CamelCatalogHelper.isComponentConsumerOnly(camelCatalog, camelComponentName);",1,1,0.125,361
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (inputs.size() == maxOptionsPerPage) {,1,1,0.125,362
+b2def7948589cf55adb28e0169043b04a81d0dd5,this.groupId = groupId;,1,1,0.125,363
+b2def7948589cf55adb28e0169043b04a81d0dd5,return artifactId;,1,1,0.125,364
+b2def7948589cf55adb28e0169043b04a81d0dd5,},1,1,0.125,365
+b2def7948589cf55adb28e0169043b04a81d0dd5,this.componentClassName = JavaHelper.removeJavaPackageName(componentClassQName);,1,1,0.125,366
+b2def7948589cf55adb28e0169043b04a81d0dd5,this.componentClassQName = componentClassQName;,1,1,0.125,367
+b2def7948589cf55adb28e0169043b04a81d0dd5,private String version;,1,1,0.125,368
+b2def7948589cf55adb28e0169043b04a81d0dd5,private String groupId;,1,1,0.125,369
+b2def7948589cf55adb28e0169043b04a81d0dd5,private String componentClassName;,1,1,0.125,370
+b2def7948589cf55adb28e0169043b04a81d0dd5,private String componentClassQName;,1,1,0.125,371
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.addon.utils.JavaHelper;,1,1,0.125,372
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,1,1,0.125,373
+b2def7948589cf55adb28e0169043b04a81d0dd5,*     http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,374
+b2def7948589cf55adb28e0169043b04a81d0dd5,*,1,1,0.125,375
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Copyright 2005-2015 Red Hat, Inc.",1,1,0.125,376
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,1,1,0.125,377
+b2def7948589cf55adb28e0169043b04a81d0dd5,this.version = version;,1,1,0.125,378
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,1,1,0.125,379
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Copyright 2005-2015 Red Hat, Inc.",1,1,0.125,380
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (project != null) {,1,1,0.125,381
+b2def7948589cf55adb28e0169043b04a81d0dd5,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",1,1,0.125,382
+b2def7948589cf55adb28e0169043b04a81d0dd5,Class<?> clazz = classLoader.loadClass(className);,1,1,0.125,383
+b2def7948589cf55adb28e0169043b04a81d0dd5,try {,1,1,0.125,384
+b2def7948589cf55adb28e0169043b04a81d0dd5,URLClassLoader classLoader = getProjectClassLoader(project);,1,1,0.125,385
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (classLoaderFacet != null) {,1,1,0.125,386
+b2def7948589cf55adb28e0169043b04a81d0dd5,ClassLoaderFacet classLoaderFacet = project.getFacet(ClassLoaderFacet.class);,1,1,0.125,387
+b2def7948589cf55adb28e0169043b04a81d0dd5,},1,1,0.125,388
+b2def7948589cf55adb28e0169043b04a81d0dd5,*,1,1,0.125,389
+b2def7948589cf55adb28e0169043b04a81d0dd5,return className;,1,1,0.125,390
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.facets.ClassLoaderFacet;,1,1,0.125,391
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.Project;,1,1,0.125,392
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.net.URLClassLoader;,1,1,0.125,393
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,1,1,0.125,394
+b2def7948589cf55adb28e0169043b04a81d0dd5,*     http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,395
+b2def7948589cf55adb28e0169043b04a81d0dd5,// add last group if there was some new inputs,1,1,0.125,396
+b2def7948589cf55adb28e0169043b04a81d0dd5,// if we hit max options then create a new group,1,1,0.125,397
+b2def7948589cf55adb28e0169043b04a81d0dd5,"boolean componentProducerOnly = CamelCatalogHelper.isComponentProducerOnly(camelCatalog, camelComponentName);",1,1,0.125,398
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (input != null) {,1,1,0.125,399
+b2def7948589cf55adb28e0169043b04a81d0dd5,current = new EndpointOptionByGroup();,1,1,0.125,400
+b2def7948589cf55adb28e0169043b04a81d0dd5,inputs = new ArrayList<>();,1,1,0.125,401
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!current.getInputs().isEmpty()) {,1,1,0.125,402
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (group != null && !group.equals(current.getGroup())) {,1,1,0.125,403
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (current.getGroup() == null) {,1,1,0.125,404
+b2def7948589cf55adb28e0169043b04a81d0dd5,"for (Map<String, String> propertyMap : data) {",1,1,0.125,405
+b2def7948589cf55adb28e0169043b04a81d0dd5,Set<String> namesAdded = new HashSet<>();,1,1,0.125,406
+b2def7948589cf55adb28e0169043b04a81d0dd5,EndpointOptionByGroup current = new EndpointOptionByGroup();,1,1,0.125,407
+b2def7948589cf55adb28e0169043b04a81d0dd5,List<InputComponent> inputs = new ArrayList<>();,1,1,0.125,408
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (data != null) {,1,1,0.125,409
+b2def7948589cf55adb28e0169043b04a81d0dd5,"Map<String, String> currentValues = uri != null ? camelCatalog.endpointProperties(uri) : Collections.EMPTY_MAP;",1,1,0.125,410
+b2def7948589cf55adb28e0169043b04a81d0dd5,"List<Map<String, String>> data = JSonSchemaHelper.parseJsonSchema(""properties"", json, true);",1,1,0.125,411
+b2def7948589cf55adb28e0169043b04a81d0dd5,producerOnly = false;,1,1,0.125,412
+b2def7948589cf55adb28e0169043b04a81d0dd5,consumerOnly = false;,1,1,0.125,413
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (componentConsumerOnly || componentProducerOnly) {,1,1,0.125,414
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (consumerOnly && label != null) {,1,1,0.125,415
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (!label.contains(""consumer"")) {",1,1,0.125,416
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (producerOnly && label != null) {,1,1,0.125,417
+b2def7948589cf55adb28e0169043b04a81d0dd5,"description = """";",1,1,0.125,418
+b2def7948589cf55adb28e0169043b04a81d0dd5,"InputComponent input = createUIInput(componentFactory, converterFactory, name, inputClazz, required, currentValue, defaultValue, enums, description);",1,1,0.125,419
+b2def7948589cf55adb28e0169043b04a81d0dd5,"enums = ""none,"" + enums;",1,1,0.125,420
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (!enums.startsWith(""none,"")) {",1,1,0.125,421
+b2def7948589cf55adb28e0169043b04a81d0dd5,"defaultValue = ""none"";",1,1,0.125,422
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (defaultValue == null || defaultValue.isEmpty()) {,1,1,0.125,423
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (enums != null && required == null || ""false"".equals(required)) {",1,1,0.125,424
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!gui) {,1,1,0.125,425
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (!label.contains(""producer"")) {",1,1,0.125,426
+b2def7948589cf55adb28e0169043b04a81d0dd5,boolean gui = ui.getProvider().isGUI();,1,1,0.125,427
+b2def7948589cf55adb28e0169043b04a81d0dd5,// we do not want descriptions in CLI mode as it makes the UI clutter,1,1,0.125,428
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (namesAdded.add(name)) {,1,1,0.125,429
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (inputClazz != null) {,1,1,0.125,430
+b2def7948589cf55adb28e0169043b04a81d0dd5,"Class<Object> inputClazz = CamelCommandsHelper.loadValidInputTypes(javaType, type);",1,1,0.125,431
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(name)) {,1,1,0.125,432
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isBlank(name)) {,1,1,0.125,433
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.dependencies.DependencyResolver;,1,1,0.125,434
+b2def7948589cf55adb28e0169043b04a81d0dd5,className.setDefaultValue(new Callable<String>() {,1,1,0.125,435
+b2def7948589cf55adb28e0169043b04a81d0dd5,Class<?> clazz = Class.forName(javaType);,0,1,0.125,436
+b2def7948589cf55adb28e0169043b04a81d0dd5,Class<Object> clazz = loadPrimitiveType(javaType);,0,1,0.125,437
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.concurrent.Callable;,0,1,0.125,438
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Map;,0,1,0.125,439
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.List;,0,1,0.125,440
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Date;,0,1,0.125,441
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,1,1,0.125,442
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,1,1,0.125,443
+b2def7948589cf55adb28e0169043b04a81d0dd5,* http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,444
+b2def7948589cf55adb28e0169043b04a81d0dd5,*     http://www.apache.org/licenses/LICENSE-2.0,0,1,0.125,445
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Copyright 2005-2014 Red Hat, Inc.",0,1,0.125,446
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,1,1,0.125,447
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,1,1,0.125,448
+b2def7948589cf55adb28e0169043b04a81d0dd5,* http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,449
+b2def7948589cf55adb28e0169043b04a81d0dd5,*     http://www.apache.org/licenses/LICENSE-2.0,0,1,0.125,450
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Copyright 2005-2014 Red Hat, Inc.",0,1,0.125,451
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (clazz == null) {,0,1,0.125,452
+b2def7948589cf55adb28e0169043b04a81d0dd5,clazz = (Class<Object>) Class.forName(javaType);,0,1,0.125,453
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,454
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.resource.visit.ResourceVisitor;,0,1,0.125,455
+b2def7948589cf55adb28e0169043b04a81d0dd5,Iterator<CamelEndpointDetails> it = endpoints.iterator();,0,1,0.125,456
+b2def7948589cf55adb28e0169043b04a81d0dd5,"ResourceVisitor visitor = new XmlResourcesCamelEndpointsVisitor((ResourcesFacet) facet, endpoints);",0,1,0.125,457
+b2def7948589cf55adb28e0169043b04a81d0dd5,List<CamelEndpointDetails> endpoints = new ArrayList<>();,0,1,0.125,458
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.List;,0,1,0.125,459
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Iterator;,0,1,0.125,460
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.ArrayList;,0,1,0.125,461
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.completer.XmlResourcesCamelEndpointsVisitor;,0,1,0.125,462
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""java.lang.byte[]"".equals(name) || ""byte[]"".equals(name)) {",0,1,0.125,463
+b2def7948589cf55adb28e0169043b04a81d0dd5,Class<?> clazz = Class.forName(javaType);,1,1,0.125,464
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.camel.commands.project.CamelCatalogHelper.findComponentArchetype;,1,1,0.125,465
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.concurrent.Callable;,1,1,0.125,466
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Map;,1,1,0.125,467
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.List;,1,1,0.125,468
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Date;,1,1,0.125,469
+b2def7948589cf55adb28e0169043b04a81d0dd5,|| clazz.isPrimitive() || Number.class.isAssignableFrom(clazz)) {,0,1,0.125,470
+b2def7948589cf55adb28e0169043b04a81d0dd5,try {,0,1,0.125,471
+b2def7948589cf55adb28e0169043b04a81d0dd5,CamelEndpointDetails det = it.next();,0,1,0.125,472
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,0,1,0.125,473
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.camel.commands.project.CamelCommands.loadCamelComponentDetails;,1,1,0.125,474
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.camel.commands.project.CamelCommands.ensureCamelArtifactIdAdded;,1,1,0.125,475
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.source.MethodSource;,1,1,0.125,476
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.source.JavaClassSource;,1,1,0.125,477
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.Roaster;,1,1,0.125,478
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.parser.java.resources.JavaResource;,1,1,0.125,479
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.dependencies.Dependency;,1,1,0.125,480
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isBlank(name)) {,0,1,0.125,481
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,482
+b2def7948589cf55adb28e0169043b04a81d0dd5,"Map<Object, Object> attributeMap = context.getUIContext().getAttributeMap();",0,1,0.125,483
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Map;,0,1,0.125,484
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.wizard.UIWizard;,0,1,0.125,485
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.result.NavigationResult;,0,1,0.125,486
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.context.UINavigationContext;,0,1,0.125,487
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (component != null) {,1,1,0.125,488
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isBlank(name)) {,1,1,0.125,489
+b2def7948589cf55adb28e0169043b04a81d0dd5,},1,1,0.125,490
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (core == null) {,1,1,0.125,491
+b2def7948589cf55adb28e0169043b04a81d0dd5,MethodSource<JavaClassSource> method = javaClass.addMethod(),1,1,0.125,492
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,0,1,0.125,493
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,494
+b2def7948589cf55adb28e0169043b04a81d0dd5,MethodSource<JavaClassSource> method = javaClass.addMethod(),0,1,0.125,495
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Date;,0,1,0.125,496
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.source.MethodSource;,0,1,0.125,497
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.source.JavaClassSource;,0,1,0.125,498
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (generatePackageName != null) {,1,1,0.125,499
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Results.fail(""The project does not include camel-core"");",1,1,0.125,500
+b2def7948589cf55adb28e0169043b04a81d0dd5,final JavaClassSource javaClass = Roaster.create(JavaClassSource.class);,1,1,0.125,501
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (existing != null && existing.exists()) {,1,1,0.125,502
+b2def7948589cf55adb28e0169043b04a81d0dd5,JavaResource existing = facet.getJavaResource(fqn);,1,1,0.125,503
+b2def7948589cf55adb28e0169043b04a81d0dd5,"result = ensureCamelArtifactIdAdded(project, details, dependencyInstaller);",1,1,0.125,504
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (result != null) {,1,1,0.125,505
+b2def7948589cf55adb28e0169043b04a81d0dd5,"Result result = loadCamelComponentDetails(camelComponentName, details);",1,1,0.125,506
+b2def7948589cf55adb28e0169043b04a81d0dd5,while (it.hasNext()) {,0,1,0.125,507
+b2def7948589cf55adb28e0169043b04a81d0dd5,CamelComponentDetails details = new CamelComponentDetails();,1,1,0.125,508
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (det.getEndpointInstance() != null) {,0,1,0.125,509
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.helper.CamelCommandsHelper;,1,1,0.125,510
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.ValueChangeListener;,1,1,0.125,511
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.UISelectOne;,1,1,0.125,512
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.125,513
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.hints.InputType;,1,1,0.125,514
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.facets.HintsFacet;,1,1,0.125,515
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.context.UINavigationContext;,1,1,0.125,516
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.125,517
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.125,518
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.125,519
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.facets.ResourcesFacet;,1,1,0.125,520
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.facets.ClassLoaderFacet;,1,1,0.125,521
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.dependencies.DependencyInstaller;,1,1,0.125,522
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.projects.Project;,1,1,0.125,523
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.parser.java.facets.JavaSourceFacet;,1,1,0.125,524
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.facets.constraints.FacetConstraint;,1,1,0.125,525
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.input.events.ValueChangeEvent;,1,1,0.125,526
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,1,0.125,527
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.125,528
+b2def7948589cf55adb28e0169043b04a81d0dd5,"""Camel: New Component CDI"").category(Categories.create(CATEGORY))",1,1,0.125,529
+b2def7948589cf55adb28e0169043b04a81d0dd5,componentName.addValueChangeListener(new ValueChangeListener() {,1,1,0.125,530
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (det.getEndpointInstance().equals(instanceName)) {,0,1,0.125,531
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setValueConverter(new Converter<String, ComponentDto>() {",1,1,0.125,532
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (enabled) {,1,1,0.125,533
+b2def7948589cf55adb28e0169043b04a81d0dd5,boolean enabled = super.isEnabled(context);,1,1,0.125,534
+b2def7948589cf55adb28e0169043b04a81d0dd5,},1,1,0.125,535
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UIInput<String> className;,1,1,0.125,536
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.result.NavigationResult;,1,1,0.125,537
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createComponentDto;,1,1,0.125,538
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.roaster.model.util.Strings;,1,1,0.125,539
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.util.Metadata;,1,1,0.125,540
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.util.Categories;,1,1,0.125,541
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.result.Results;,1,1,0.125,542
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.result.Result;,1,1,0.125,543
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.convert.Converter;,1,1,0.125,544
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.ui.wizard.UIWizard;,1,1,0.125,545
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,1,1,0.125,546
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(version)) {,0,1,0.125,547
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (!Strings.isNullOrEmpty(groupId)) {,0,1,0.125,548
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.apache.camel.catalog.DefaultCamelCatalog;,1,1,0.125,549
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.completer.CamelComponentsDtoCompleter;,1,1,0.125,550
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.completer.CamelComponentsCompleter;,0,1,0.125,551
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,552
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setValueConverter(new Converter<String, ComponentDto>() {",0,1,0.125,553
+b2def7948589cf55adb28e0169043b04a81d0dd5,import static io.fabric8.forge.camel.commands.project.helper.CamelCatalogHelper.createComponentDto;,0,1,0.125,554
+b2def7948589cf55adb28e0169043b04a81d0dd5,import org.jboss.forge.addon.convert.Converter;,0,1,0.125,555
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,556
+b2def7948589cf55adb28e0169043b04a81d0dd5,return new Callable<Iterable<ComponentDto>>() {,0,1,0.125,557
+b2def7948589cf55adb28e0169043b04a81d0dd5,final boolean excludeComponentsOnClasspath) {,0,1,0.125,558
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,0,1,0.125,559
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.addon.utils.validator.PackageNameValidator;,1,1,0.125,560
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,561
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.completer.CamelComponentsDtoCompleter;,0,1,0.125,562
+b2def7948589cf55adb28e0169043b04a81d0dd5,},0,1,0.125,563
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.camel.commands.project.dto.ComponentDto;,0,1,0.125,564
+b2def7948589cf55adb28e0169043b04a81d0dd5,String version;,0,1,0.125,565
+b2def7948589cf55adb28e0169043b04a81d0dd5,*     http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,566
+b2def7948589cf55adb28e0169043b04a81d0dd5,import javax.inject.Inject;,1,1,0.125,567
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.addon.utils.completer.PackageNameCompleter;,1,1,0.125,568
+b2def7948589cf55adb28e0169043b04a81d0dd5,"if (""org.apache.camel"".equals(groupId)) {",0,1,0.125,569
+b2def7948589cf55adb28e0169043b04a81d0dd5,import io.fabric8.forge.addon.utils.validator.ClassNameValidator;,1,1,0.125,570
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.concurrent.Callable;,1,1,0.125,571
+b2def7948589cf55adb28e0169043b04a81d0dd5,package io.fabric8.forge.camel.commands.project;,1,1,0.125,572
+b2def7948589cf55adb28e0169043b04a81d0dd5,*/,1,1,0.125,573
+b2def7948589cf55adb28e0169043b04a81d0dd5,import java.util.Map;,1,1,0.125,574
+b2def7948589cf55adb28e0169043b04a81d0dd5,*,1,1,0.125,575
+b2def7948589cf55adb28e0169043b04a81d0dd5,"*  Copyright 2005-2015 Red Hat, Inc.",1,1,0.125,576
+b2def7948589cf55adb28e0169043b04a81d0dd5,/**,1,1,0.125,577
+b2def7948589cf55adb28e0169043b04a81d0dd5,version = details.getVersion();,0,1,0.125,578
+b2def7948589cf55adb28e0169043b04a81d0dd5,version = core.getCoordinate().getVersion();,0,1,0.125,579
+b2def7948589cf55adb28e0169043b04a81d0dd5,"final UISelectOne<String> componentCategoryFilter,",1,0,0.0,580
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,1,0,0.0,581
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return new CamelComponentsLabelCompleter(project, camelCatalog).getValueChoices();",1,0,0.0,582
+b2def7948589cf55adb28e0169043b04a81d0dd5,@Override,1,0,0.0,583
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return new CamelComponentsCompleter(project, camelCatalog, null, excludeComponentsOnClasspath).getValueChoices(label);",1,0,0.0,584
+b2def7948589cf55adb28e0169043b04a81d0dd5,};,1,0,0.0,585
+b2def7948589cf55adb28e0169043b04a81d0dd5,details.setComponentClassQName(javaType);,1,0,0.0,586
+b2def7948589cf55adb28e0169043b04a81d0dd5,details.setGroupId(groupId);,1,0,0.0,587
+b2def7948589cf55adb28e0169043b04a81d0dd5,details.setArtifactId(artifactId);,1,0,0.0,588
+b2def7948589cf55adb28e0169043b04a81d0dd5,package io.fabric8.forge.camel.commands.project.helper;,1,0,0.0,589
+b2def7948589cf55adb28e0169043b04a81d0dd5,details.setVersion(version);,1,0,0.0,590
+b2def7948589cf55adb28e0169043b04a81d0dd5,return CamelProjectHelper.findCamelBlueprintDependency(project) != null;,1,0,0.0,591
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setArtifactId(artifactId).setVersion(version);,1,0,0.0,592
+b2def7948589cf55adb28e0169043b04a81d0dd5,"dependencyInstaller.install(project, component);",1,0,0.0,593
+b2def7948589cf55adb28e0169043b04a81d0dd5,return CamelProjectHelper.findCamelCDIDependency(project) != null;,1,0,0.0,594
+b2def7948589cf55adb28e0169043b04a81d0dd5,return CamelProjectHelper.findCamelSpringDependency(project) != null;,1,0,0.0,595
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.enterprise.inject.Produces"");",1,0,0.0,596
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.inject.Singleton"");",1,0,0.0,597
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.inject.Named"");",1,0,0.0,598
+b2def7948589cf55adb28e0169043b04a81d0dd5,javaClass.addImport(details.getComponentClassQName());,1,0,0.0,599
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setPublic(),1,0,0.0,600
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Strings.capitalize(name) + ""ComponentProducer"";",1,0,0.0,601
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setReturnType(componentClassName),1,0,0.0,602
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setName(methodName),1,0,0.0,603
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,1,0,0.0,604
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setNote(description != null ? description : """");",1,0,0.0,605
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Results.success();,1,0,0.0,606
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setNote("""");",1,0,0.0,607
+b2def7948589cf55adb28e0169043b04a81d0dd5,@Override,1,0,0.0,608
+b2def7948589cf55adb28e0169043b04a81d0dd5,.addThrows(Exception.class);,1,0,0.0,609
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Metadata.forCommand(CamelNewComponentInstanceCDICommand.class).name(,1,0,0.0,610
+b2def7948589cf55adb28e0169043b04a81d0dd5,return CamelCommandsHelper.isCdiProject(getSelectedProject(context));,1,0,0.0,611
+b2def7948589cf55adb28e0169043b04a81d0dd5,return false;,1,0,0.0,612
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentNameFilter.setValueChoices(CamelCommandsHelper.createComponentLabelValues(project, getCamelCatalog()));",1,0,0.0,613
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentNameFilter.setDefaultValue(""<all>"");",1,0,0.0,614
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setValueChoices(CamelCommandsHelper.createComponentDtoValues(project, getCamelCatalog(), componentNameFilter, false));",1,0,0.0,615
+b2def7948589cf55adb28e0169043b04a81d0dd5,// include converter from string->dto,1,0,0.0,616
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return createComponentDto(getCamelCatalog(), text);",1,0,0.0,617
+b2def7948589cf55adb28e0169043b04a81d0dd5,});,1,0,0.0,618
+b2def7948589cf55adb28e0169043b04a81d0dd5,targetPackage.setCompleter(new PackageNameCompleter(facet));,1,0,0.0,619
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Results.navigateTo(ConfigureComponentPropertiesStep.class);,1,0,0.0,620
+b2def7948589cf55adb28e0169043b04a81d0dd5,targetPackage.addValidator(new PackageNameValidator());,1,0,0.0,621
+b2def7948589cf55adb28e0169043b04a81d0dd5,targetPackage.getFacet(HintsFacet.class).setInputType(InputType.JAVA_PACKAGE_PICKER);,1,0,0.0,622
+b2def7948589cf55adb28e0169043b04a81d0dd5,className.addValidator(new ClassNameValidator(false));,1,0,0.0,623
+b2def7948589cf55adb28e0169043b04a81d0dd5,return getDefaultProducerClassName();,1,0,0.0,624
+b2def7948589cf55adb28e0169043b04a81d0dd5,className.getFacet(HintsFacet.class).setInputType(InputType.JAVA_CLASS_PICKER);,1,0,0.0,625
+b2def7948589cf55adb28e0169043b04a81d0dd5,builder.add(componentNameFilter).add(componentName).add(instanceName).add(targetPackage).add(className);,1,0,0.0,626
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""componentName"", componentName.getValue().getScheme());",1,0,0.0,627
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""instanceName"", instanceName.getValue());",1,0,0.0,628
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""targetPackage"", targetPackage.getValue());",1,0,0.0,629
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""className"", className.getValue());",1,0,0.0,630
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""kind"", ""cdi"");",1,0,0.0,631
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setBody(body),1,0,0.0,632
+b2def7948589cf55adb28e0169043b04a81d0dd5,answer.add(current);,1,0,0.0,633
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Named"").setStringValue(camelComponentName);",1,0,0.0,634
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Double.class;,1,0,0.0,635
+b2def7948589cf55adb28e0169043b04a81d0dd5,current.setGroup(null);,1,0,0.0,636
+b2def7948589cf55adb28e0169043b04a81d0dd5,current.setInputs(inputs);,1,0,0.0,637
+b2def7948589cf55adb28e0169043b04a81d0dd5,current.setGroup(group);,1,0,0.0,638
+b2def7948589cf55adb28e0169043b04a81d0dd5,// its a new group,1,0,0.0,639
+b2def7948589cf55adb28e0169043b04a81d0dd5,// get ready for a new group,1,0,0.0,640
+b2def7948589cf55adb28e0169043b04a81d0dd5,continue;,1,0,0.0,641
+b2def7948589cf55adb28e0169043b04a81d0dd5,// if its an enum and its optional then make sure there is a default value,1,0,0.0,642
+b2def7948589cf55adb28e0169043b04a81d0dd5,inputs.add(input);,1,0,0.0,643
+b2def7948589cf55adb28e0169043b04a81d0dd5,return answer;,1,0,0.0,644
+b2def7948589cf55adb28e0169043b04a81d0dd5,package io.fabric8.forge.camel.commands.project.model;,1,0,0.0,645
+b2def7948589cf55adb28e0169043b04a81d0dd5,return componentClassQName;,1,0,0.0,646
+b2def7948589cf55adb28e0169043b04a81d0dd5,return componentClassName;,1,0,0.0,647
+b2def7948589cf55adb28e0169043b04a81d0dd5,return groupId;,1,0,0.0,648
+b2def7948589cf55adb28e0169043b04a81d0dd5,return version;,1,0,0.0,649
+b2def7948589cf55adb28e0169043b04a81d0dd5,package io.fabric8.forge.addon.utils;,1,0,0.0,650
+b2def7948589cf55adb28e0169043b04a81d0dd5,return className.substring(idx + 1);,1,0,0.0,651
+b2def7948589cf55adb28e0169043b04a81d0dd5,return classLoaderFacet.getClassLoader();,1,0,0.0,652
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,1,0,0.0,653
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (classLoader != null ){,1,0,0.0,654
+b2def7948589cf55adb28e0169043b04a81d0dd5,return true;,1,0,0.0,655
+b2def7948589cf55adb28e0169043b04a81d0dd5,// ignore,1,0,0.0,656
+b2def7948589cf55adb28e0169043b04a81d0dd5,return false;,1,0,0.0,657
+b2def7948589cf55adb28e0169043b04a81d0dd5,private DependencyInstaller dependencyInstaller;,1,0,0.0,658
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Character.class;,1,0,0.0,659
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Byte.class;,1,0,0.0,660
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Produces"");",1,0,0.0,661
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Short.class;,1,0,0.0,662
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Singleton"");",1,0,0.0,663
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addAnnotation(""Component"");",1,0,0.0,664
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.beans.factory.config.BeanDefinition"");",1,0,0.0,665
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.beans.factory.annotation.Qualifier"");",1,0,0.0,666
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.context.annotation.Bean"");",1,0,0.0,667
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.context.annotation.Scope"");",1,0,0.0,668
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.stereotype.Component"");",1,0,0.0,669
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Qualifier"").setStringValue(camelComponentName);",1,0,0.0,670
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Bean"");",1,0,0.0,671
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Scope"").setLiteralValue(""BeanDefinition.SCOPE_SINGLETON"");",1,0,0.0,672
+b2def7948589cf55adb28e0169043b04a81d0dd5,// favor specialized UI for these types,1,0,0.0,673
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (clazz != null && (clazz.equals(String.class) || clazz.equals(Date.class) || clazz.equals(Boolean.class),1,0,0.0,674
+b2def7948589cf55adb28e0169043b04a81d0dd5,return clazz;,1,0,0.0,675
+b2def7948589cf55adb28e0169043b04a81d0dd5,// ignore errors,1,0,0.0,676
+b2def7948589cf55adb28e0169043b04a81d0dd5,return String.class;,1,0,0.0,677
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Boolean.class;,1,0,0.0,678
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Integer.class;,1,0,0.0,679
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Float.class;,1,0,0.0,680
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Byte[].class;,1,0,0.0,681
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Object[].class;,1,0,0.0,682
+b2def7948589cf55adb28e0169043b04a81d0dd5,return String[].class;,1,0,0.0,683
+b2def7948589cf55adb28e0169043b04a81d0dd5,// and these is common as well,1,0,0.0,684
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Long.class;,1,0,0.0,685
+b2def7948589cf55adb28e0169043b04a81d0dd5,private DependencyResolver dependencyResolver;,1,0,0.0,686
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setBody(body),0,0,0.0,687
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UIInput<String> targetPackage;,1,0,0.0,688
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Singleton"");",0,0,0.0,689
+b2def7948589cf55adb28e0169043b04a81d0dd5,facet.saveJavaSource(javaClass);,1,0,0.0,690
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.enterprise.inject.Produces"");",0,0,0.0,691
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.inject.Singleton"");",0,0,0.0,692
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.inject.Named"");",0,0,0.0,693
+b2def7948589cf55adb28e0169043b04a81d0dd5,javaClass.addImport(details.getComponentClassQName());,0,0,0.0,694
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setPublic(),0,0,0.0,695
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setReturnType(componentClassName),0,0,0.0,696
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setName(methodName),0,0,0.0,697
+b2def7948589cf55adb28e0169043b04a81d0dd5,.addThrows(Exception.class);,0,0,0.0,698
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Named"").setStringValue(camelComponentName);",0,0,0.0,699
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Produces"");",0,0,0.0,700
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addAnnotation(""Component"");",0,0,0.0,701
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UIInput<String> instanceName;,1,0,0.0,702
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.beans.factory.config.BeanDefinition"");",0,0,0.0,703
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.beans.factory.annotation.Qualifier"");",0,0,0.0,704
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.context.annotation.Bean"");",0,0,0.0,705
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.context.annotation.Scope"");",0,0,0.0,706
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""org.springframework.stereotype.Component"");",0,0,0.0,707
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Qualifier"").setStringValue(camelComponentName);",0,0,0.0,708
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Bean"");",0,0,0.0,709
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Scope"").setLiteralValue(""BeanDefinition.SCOPE_SINGLETON"");",0,0,0.0,710
+b2def7948589cf55adb28e0169043b04a81d0dd5,if (clazz.equals(String.class) || clazz.equals(Date.class),0,0,0.0,711
+b2def7948589cf55adb28e0169043b04a81d0dd5,return clazz;,0,0,0.0,712
+b2def7948589cf55adb28e0169043b04a81d0dd5,// ignore errors,0,0,0.0,713
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Singleton"");",1,0,0.0,714
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Produces"");",1,0,0.0,715
+b2def7948589cf55adb28e0169043b04a81d0dd5,"method.addAnnotation(""Named"").setStringValue(camelComponentName);",1,0,0.0,716
+b2def7948589cf55adb28e0169043b04a81d0dd5,.addThrows(Exception.class);,1,0,0.0,717
+b2def7948589cf55adb28e0169043b04a81d0dd5,@Override,0,0,0.0,718
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""componentName"", componentName.getValue());",0,0,0.0,719
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""instanceName"", instanceName.getValue());",0,0,0.0,720
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""targetPackage"", targetPackage.getValue());",0,0,0.0,721
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""className"", className.getValue());",0,0,0.0,722
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""kind"", ""cdi"");",0,0,0.0,723
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Results.navigateTo(ConfigureComponentPropertiesStep.class);,0,0,0.0,724
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Results.success();,0,0,0.0,725
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Strings.capitalize(name) + ""ComponentProducer"";",0,0,0.0,726
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,0,0,0.0,727
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return Strings.capitalize(name) + ""ComponentProducer"";",1,0,0.0,728
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,1,0,0.0,729
+b2def7948589cf55adb28e0169043b04a81d0dd5,return result;,1,0,0.0,730
+b2def7948589cf55adb28e0169043b04a81d0dd5,javaClass.setName(generateClassName);,1,0,0.0,731
+b2def7948589cf55adb28e0169043b04a81d0dd5,javaClass.setPackage(generatePackageName);,1,0,0.0,732
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.enterprise.inject.Produces"");",1,0,0.0,733
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.inject.Singleton"");",1,0,0.0,734
+b2def7948589cf55adb28e0169043b04a81d0dd5,"javaClass.addImport(""javax.inject.Named"");",1,0,0.0,735
+b2def7948589cf55adb28e0169043b04a81d0dd5,javaClass.addImport(details.getComponentClassQName());,1,0,0.0,736
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setPublic(),1,0,0.0,737
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setReturnType(componentClassName),1,0,0.0,738
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setName(methodName),1,0,0.0,739
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setBody(body),1,0,0.0,740
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,0,0,0.0,741
+b2def7948589cf55adb28e0169043b04a81d0dd5,"System.out.println(""Row: "" + row);",1,0,0.0,742
+b2def7948589cf55adb28e0169043b04a81d0dd5,className.addValidator(new ClassNameValidator(false));,0,0,0.0,743
+b2def7948589cf55adb28e0169043b04a81d0dd5,((ResourcesFacet) facet).visitResources(visitor);,0,0,0.0,744
+b2def7948589cf55adb28e0169043b04a81d0dd5,"final UISelectOne<String> componentCategoryFilter,",0,0,0.0,745
+b2def7948589cf55adb28e0169043b04a81d0dd5,@Override,0,0,0.0,746
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return new CamelComponentsDtoCompleter(project, null, excludeComponentsOnClasspath).getValueChoices(label);",0,0,0.0,747
+b2def7948589cf55adb28e0169043b04a81d0dd5,};,0,0,0.0,748
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UISelectOne<ComponentDto> componentName;,0,0,0.0,749
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setValueChoices(CamelCommandsHelper.createComponentDtoValues(project, componentNameFilter, false));",0,0,0.0,750
+b2def7948589cf55adb28e0169043b04a81d0dd5,@Override,0,0,0.0,751
+b2def7948589cf55adb28e0169043b04a81d0dd5,return createComponentDto(name);,0,0,0.0,752
+b2def7948589cf55adb28e0169043b04a81d0dd5,});,0,0,0.0,753
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""componentName"", componentName.getValue().getScheme());",0,0,0.0,754
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UISelectOne<String> componentName;,1,0,0.0,755
+b2def7948589cf55adb28e0169043b04a81d0dd5,"componentName.setValueChoices(CamelCommandsHelper.createComponentNameValues(project, componentNameFilter, false));",1,0,0.0,756
+b2def7948589cf55adb28e0169043b04a81d0dd5,"attributeMap.put(""componentName"", componentName.getValue());",1,0,0.0,757
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return new CamelComponentsCompleter(project, camelCatalog, null, excludeComponentsOnClasspath).getValueChoices(label);",0,0,0.0,758
+b2def7948589cf55adb28e0169043b04a81d0dd5,"return new CamelComponentsDtoCompleter(project, camelCatalog, null, excludeComponentsOnClasspath).getValueChoices(label);",1,0,0.0,759
+b2def7948589cf55adb28e0169043b04a81d0dd5,details.setGroupId(groupId);,0,0,0.0,760
+b2def7948589cf55adb28e0169043b04a81d0dd5,details.setVersion(version);,0,0,0.0,761
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setArtifactId(artifactId).setVersion(version);,0,0,0.0,762
+b2def7948589cf55adb28e0169043b04a81d0dd5,.setArtifactId(artifactId).setVersion(core.getCoordinate().getVersion());,1,0,0.0,763
+b2def7948589cf55adb28e0169043b04a81d0dd5,"@FacetConstraint({JavaSourceFacet.class, ResourcesFacet.class, ClassLoaderFacet.class})",1,0,0.0,764
+b2def7948589cf55adb28e0169043b04a81d0dd5,@Inject,1,0,0.0,765
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UISelectOne<String> componentNameFilter;,1,0,0.0,766
+b2def7948589cf55adb28e0169043b04a81d0dd5,private UISelectOne<ComponentDto> componentName;,1,0,0.0,767
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,0,0,0.0,768
+b2def7948589cf55adb28e0169043b04a81d0dd5,CamelProjectHelper.findCamelSpringDependency(project) != null;,1,0,0.0,769
+b2def7948589cf55adb28e0169043b04a81d0dd5,className.addValidator(new ClassNameValidator());,1,0,0.0,770
+b2def7948589cf55adb28e0169043b04a81d0dd5,return null;,0,0,0.0,771
+b2def7948589cf55adb28e0169043b04a81d0dd5,CamelProjectHelper.findCamelSpringDependency(project) != null;,0,0,0.0,772
+b2def7948589cf55adb28e0169043b04a81d0dd5,return byte[].class;,0,0,0.0,773
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Byte[].class;,0,0,0.0,774
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Object[].class;,0,0,0.0,775
+b2def7948589cf55adb28e0169043b04a81d0dd5,return String[].class;,0,0,0.0,776
+b2def7948589cf55adb28e0169043b04a81d0dd5,// and these is common as well,0,0,0.0,777
+b2def7948589cf55adb28e0169043b04a81d0dd5,return String.class;,0,0,0.0,778
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Boolean.class;,0,0,0.0,779
+b2def7948589cf55adb28e0169043b04a81d0dd5,return boolean.class;,0,0,0.0,780
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Integer.class;,0,0,0.0,781
+b2def7948589cf55adb28e0169043b04a81d0dd5,return int.class;,0,0,0.0,782
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Long.class;,0,0,0.0,783
+b2def7948589cf55adb28e0169043b04a81d0dd5,return long.class;,0,0,0.0,784
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Short.class;,0,0,0.0,785
+b2def7948589cf55adb28e0169043b04a81d0dd5,return short.class;,0,0,0.0,786
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Byte.class;,0,0,0.0,787
+b2def7948589cf55adb28e0169043b04a81d0dd5,return byte.class;,0,0,0.0,788
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Float.class;,0,0,0.0,789
+b2def7948589cf55adb28e0169043b04a81d0dd5,return float.class;,0,0,0.0,790
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Double.class;,0,0,0.0,791
+b2def7948589cf55adb28e0169043b04a81d0dd5,return double.class;,0,0,0.0,792
+b2def7948589cf55adb28e0169043b04a81d0dd5,return Character.class;,0,0,0.0,793
+b2def7948589cf55adb28e0169043b04a81d0dd5,return char.class;,0,0,0.0,794
+b2def7948589cf55adb28e0169043b04a81d0dd5,return classLoader.loadClass(className);,1,0,0.0,795

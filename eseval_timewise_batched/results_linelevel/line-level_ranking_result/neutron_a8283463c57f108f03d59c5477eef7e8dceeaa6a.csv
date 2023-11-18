@@ -1,0 +1,353 @@
+commit_id,line,line_level_label,count,line_score,row
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import api as db,1,3,1.0,1
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from oslo_utils import importutils,1,2,0.6666666666666666,2
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.common import rpc as n_rpc,1,2,0.6666666666666666,3
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# save to brocade persistent db,1,2,0.6666666666666666,4
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from oslo_config import cfg,1,2,0.6666666666666666,5
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# Doing what other plugins are doing,1,1,0.3333333333333333,6
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import portbindings_base,1,1,0.3333333333333333,7
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import securitygroups_rpc_base as sg_db_rpc,1,1,0.3333333333333333,8
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.extensions import portbindings,1,1,0.3333333333333333,9
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.extensions import securitygroup as ext_sg,1,1,0.3333333333333333,10
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.plugins.brocade.db import models as brocade_db,1,1,0.3333333333333333,11
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.plugins.brocade import vlanbm as vbm,1,1,0.3333333333333333,12
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.plugins.common import constants as svc_constants,1,1,0.3333333333333333,13
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Get port from the brocade specific db.""""""",1,1,0.3333333333333333,14
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,layer driver class that interfaces to NETCONF layer below.,1,1,0.3333333333333333,15
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# TODO(shiv): need to extend the db model to include device owners,1,1,0.3333333333333333,16
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Agent side of the linux bridge rpc API.",1,1,0.3333333333333333,17
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import extraroute_db,1,1,0.3333333333333333,18
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Initialize Brocade Plugin.",1,1,0.3333333333333333,19
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,Specify switch address and db configuration.,1,1,0.3333333333333333,20
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.router_scheduler = importutils.import_object(,1,1,0.3333333333333333,21
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"LOG.exception(_LE(""Brocade NOS driver error""))",1,1,0.3333333333333333,22
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# we must delete all ports in db first (foreign key constraint),1,1,0.3333333333333333,23
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# there is no need to delete port in the driver (its a no-op),1,1,0.3333333333333333,24
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import l3_agentschedulers_db,1,1,0.3333333333333333,25
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.network_scheduler = importutils.import_object(,1,1,0.3333333333333333,26
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import external_net_db,1,1,0.3333333333333333,27
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.api.rpc.handlers import dhcp_rpc,1,1,0.3333333333333333,28
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"# Copyright 2013 Brocade Communications System, Inc.",1,1,0.3333333333333333,29
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import db_base_plugin_v2,1,1,0.3333333333333333,30
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Implementation of Brocade Neutron Plugin.""""""",1,1,0.3333333333333333,31
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,import oslo_messaging,1,1,0.3333333333333333,32
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"from neutron._i18n import _LE, _LI",1,1,0.3333333333333333,33
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.agent import securitygroups_rpc as sg_rpc,1,1,0.3333333333333333,34
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.api.rpc.agentnotifiers import dhcp_rpc_agent_api,1,1,0.3333333333333333,35
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.api.rpc.agentnotifiers import l3_rpc_agent_api,1,1,0.3333333333333333,36
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from oslo_log import log as logging,1,1,0.3333333333333333,37
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.api.rpc.handlers import l3_rpc,1,1,0.3333333333333333,38
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.api.rpc.handlers import securitygroups_rpc,1,1,0.3333333333333333,39
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.common import constants as n_const,1,1,0.3333333333333333,40
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import agentschedulers_db,1,1,0.3333333333333333,41
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.common import topics,1,1,0.3333333333333333,42
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.common import utils,1,1,0.3333333333333333,43
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron import context as n_context,1,1,0.3333333333333333,44
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.api.rpc.handlers import metadata_rpc,1,1,0.3333333333333333,45
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,from neutron.db import agents_db,1,1,0.3333333333333333,46
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"bports = brocade_db.get_ports(context, net_id)",1,0,0.0,47
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# Tell hw to do remove PP,1,0,0.0,48
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,vlan_id = net['vlan'],1,0,0.0,49
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"net = brocade_db.get_network(context, net_id)",1,0,0.0,50
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# find the vlan for this network,1,0,0.0,51
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_db.delete_port(context, bport['port_id'])",1,0,0.0,52
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,for bport in bports:,1,0,0.0,53
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"result = super(BrocadePluginV2, self).delete_network(context,",1,0,0.0,54
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# (actually: note there is no such call to the driver),1,0,0.0,55
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,net_id),1,0,0.0,56
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._process_l3_delete(context, net_id)",1,0,0.0,57
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port-profile on the physical switch.,1,0,0.0,58
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,This call to delete the network translates to removing the,1,0,0.0,59
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Delete network.",1,0,0.0,60
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# now ok to delete the network,1,0,0.0,61
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def delete_network(self, context, net_id):",1,0,0.0,62
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._driver.delete_network(switch['address'],",1,0,0.0,63
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def create_port(self, context, port):",1,0,0.0,64
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_db.delete_network(context, net_id)",1,0,0.0,65
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,tenant_id = port['port']['tenant_id'],1,0,0.0,66
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"LOG.info(_LI(""Allocated vlan (%d) from the pool""), vlan_id)",1,0,0.0,67
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"neutron_port = super(BrocadePluginV2, self).create_port(context,",1,0,0.0,68
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,vlan_id = bnet['vlan'],1,0,0.0,69
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"bnet = brocade_db.get_network(context, network_id)",1,0,0.0,70
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,physical_interface = self.physical_interface,1,0,0.0,71
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,admin_state_up = port['port']['admin_state_up'],1,0,0.0,72
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,network_id = port['port']['network_id'],1,0,0.0,73
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Create logical port on the switch.""""""",1,0,0.0,74
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# relinquish vlan in bitmap,1,0,0.0,75
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._process_l3_update(context, net, network['network'])",1,0,0.0,76
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,network),1,0,0.0,77
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"net = super(BrocadePluginV2, self).update_network(context, id,",1,0,0.0,78
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,with session.begin(subtransactions=True):,1,0,0.0,79
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,session = context.session,1,0,0.0,80
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def update_network(self, context, id, network):",1,0,0.0,81
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return result,1,0,0.0,82
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return net,1,0,0.0,83
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def create_network(self, context, network):",1,0,0.0,84
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._process_l3_create(context, net, network['network'])",1,0,0.0,85
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,This call to create network translates to creation of port-profile on,1,0,0.0,86
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._process_portbindings_create_and_update(context,",1,0,0.0,87
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,l3_rpc_agent_api.L3AgentNotifyAPI(),1,0,0.0,88
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.agent_notifiers[n_const.AGENT_TYPE_L3] = (,1,0,0.0,89
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,dhcp_rpc_agent_api.DhcpAgentNotifyAPI(),1,0,0.0,90
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.agent_notifiers[n_const.AGENT_TYPE_DHCP] = (,1,0,0.0,91
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.notifier = AgentNotifierApi(topics.AGENT),1,0,0.0,92
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.conn.consume_in_threads(),1,0,0.0,93
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# Consume from all consumers in threads,1,0,0.0,94
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.conn.create_consumer(svc_topic, self.endpoints, fanout=False)",1,0,0.0,95
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,for svc_topic in self.service_topics.values():,1,0,0.0,96
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,metadata_rpc.MetadataRpcCallback()],1,0,0.0,97
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"agents_db.AgentExtRpcCallback(),",1,0,0.0,98
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"l3_rpc.L3RpcCallback(),",1,0,0.0,99
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"dhcp_rpc.DhcpRpcCallback(),",1,0,0.0,100
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"securitygroups_rpc.SecurityGroupServerRpcCallback(),",1,0,0.0,101
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Create network.",1,0,0.0,102
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,the physical switch.,1,0,0.0,103
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_db.create_network(context, net_uuid, vlan_id)",1,0,0.0,104
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,with context.session.begin(subtransactions=True):,1,0,0.0,105
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""check logs""))",1,0,0.0,106
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"raise Exception(_(""Brocade plugin raised exception, """,1,0,0.0,107
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self._vlan_bitmap.release_vlan(int(vlan_id)),1,0,0.0,108
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"LOG.debug(""Returning the allocated vlan (%d) to the pool"",",1,0,0.0,109
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# Proper formatting,1,0,0.0,110
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,except Exception:,1,0,0.0,111
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,vlan_id),1,0,0.0,112
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"switch['password'],",1,0,0.0,113
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"switch['username'],",1,0,0.0,114
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._driver.create_network(switch['address'],",1,0,0.0,115
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,try:,1,0,0.0,116
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,switch = self._switch,1,0,0.0,117
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,vlan_id = self._vlan_bitmap.get_next_vlan(None),1,0,0.0,118
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,net_uuid = net['id'],1,0,0.0,119
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"net = super(BrocadePluginV2, self).create_network(context, network)",1,0,0.0,120
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port),1,0,0.0,121
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"super(BrocadePluginV2, self).delete_port(context, port_id)",1,0,0.0,122
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"port['port'],",1,0,0.0,123
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,if port_updated:,1,0,0.0,124
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,bport.vlan_id),1,0,0.0,125
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"bport.physical_interface,",1,0,0.0,126
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.notifier.port_update(context, port,",1,0,0.0,127
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"bport = brocade_db.get_port(context, port_id)",1,0,0.0,128
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port_id = port['id'],1,0,0.0,129
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def _notify_port_updated(self, context, port):",1,0,0.0,130
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._notify_port_updated(context, port)",1,0,0.0,131
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"context, port.get(ext_sg.SECURITYGROUPS))",1,0,0.0,132
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,neutron_port),1,0,0.0,133
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.notifier.security_groups_member_updated(,1,0,0.0,134
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port.get(ext_sg.SECURITYGROUPS))):,1,0,0.0,135
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"original_port.get(ext_sg.SECURITYGROUPS),",1,0,0.0,136
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,not utils.compare_elements(,1,0,0.0,137
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,if (original_port['fixed_ips'] != port['fixed_ips'] or,1,0,0.0,138
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,if original_port['admin_state_up'] != port['admin_state_up']:,1,0,0.0,139
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"port_data,",1,0,0.0,140
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,def _get_base_binding_dict(self):,1,0,0.0,141
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,binding = {,1,0,0.0,142
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"portbindings.VIF_TYPE: portbindings.VIF_TYPE_BRIDGE,",1,0,0.0,143
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,portbindings.VIF_DETAILS: {,1,0,0.0,144
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"mac = mac[0:4] + ""."" + mac[4:8] + ""."" + mac[8:12]",1,0,0.0,145
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"mac = interface_mac.replace("":"", """")",1,0,0.0,146
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,:rtype: string,1,0,0.0,147
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,:returns: MAC address in the format xxxx.xxxx.xxxx,1,0,0.0,148
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,:type interface_mac: string,1,0,0.0,149
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,:param interface_mac: MAC address in the format xx:xx:xx:xx:xx:xx,1,0,0.0,150
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"to 3 groups of 4 hexadecimals numbers delimited by ""."".",1,0,0.0,151
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"Transforms from 6 groups of 2 hexadecimal numbers delimited by "":""",1,0,0.0,152
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Transform MAC address format.",1,0,0.0,153
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,def mac_reformat_62to34(interface_mac):,1,0,0.0,154
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,@staticmethod,1,0,0.0,155
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return binding,1,0,0.0,156
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,'security-group' in self.supported_extension_aliases}},1,0,0.0,157
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,portbindings.CAP_PORT_FILTER:,1,0,0.0,158
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# TODO(rkukura): Replace with new VIF security details,1,0,0.0,159
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"context, port_id, port)",1,0,0.0,160
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"port = super(BrocadePluginV2, self).update_port(",1,0,0.0,161
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port_data = port['port'],1,0,0.0,162
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._driver.dissociate_mac_from_network(switch['address'],",1,0,0.0,163
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_port = brocade_db.get_port(context, port_id)",1,0,0.0,164
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"neutron_port = self.get_port(context, port_id)",1,0,0.0,165
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def delete_port(self, context, port_id):",1,0,0.0,166
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return neutron_port,1,0,0.0,167
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# apply any extensions,1,0,0.0,168
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"vlan_id, tenant_id, admin_state_up)",1,0,0.0,169
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"physical_interface,",1,0,0.0,170
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_db.create_port(context, port_id, network_id,",1,0,0.0,171
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,mac),1,0,0.0,172
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"vlan_id,",1,0,0.0,173
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._driver.associate_mac_to_network(switch['address'],",1,0,0.0,174
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,mac = self.mac_reformat_62to34(interface_mac),1,0,0.0,175
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# convert mac format: xx:xx:xx:xx:xx:xx -> xxxx.xxxx.xxxx,1,0,0.0,176
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port_id = neutron_port['id'],1,0,0.0,177
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,interface_mac = neutron_port['mac_address'],1,0,0.0,178
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,vlan_id = brocade_port['vlan_id'],1,0,0.0,179
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,raise Exception(,1,0,0.0,180
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port_updated = True,1,0,0.0,181
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"_(""Brocade plugin raised exception, check logs""))",1,0,0.0,182
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port['port'][ext_sg.SECURITYGROUPS]),1,0,0.0,183
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"context,",1,0,0.0,184
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self._process_port_create_security_group(,1,0,0.0,185
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port['port']['id'] = port_id,1,0,0.0,186
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# process_port_create_security_group also needs port id,1,0,0.0,187
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._delete_port_security_group_bindings(context, port_id)",1,0,0.0,188
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._get_security_groups_on_port(context, port))",1,0,0.0,189
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port['port'][ext_sg.SECURITYGROUPS] = (,1,0,0.0,190
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,if ext_sg.SECURITYGROUPS in port['port']:,1,0,0.0,191
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# delete the port binding and read it with the new rules,1,0,0.0,192
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port_updated = False,1,0,0.0,193
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"original_port = self.get_port(context, port_id)",1,0,0.0,194
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def update_port(self, context, port_id, port):",1,0,0.0,195
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_db.delete_port(context, port_id)",1,0,0.0,196
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.conn = n_rpc.create_connection(),1,0,0.0,197
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.endpoints = [BridgeRpcCallbacks(),",1,0,0.0,198
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.physical_interface = (cfg.CONF.PHYSICAL_INTERFACE.,1,0,0.0,199
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,is_admin=False),1,0,0.0,200
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"entry = {'device': device,",1,0,0.0,201
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,else:,1,0,0.0,202
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,},1,0,0.0,203
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,'admin_state_up': port.admin_state_up,1,0,0.0,204
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"'physical_network': port.physical_interface,",1,0,0.0,205
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"'port_id': port.port_id,",1,0,0.0,206
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"'network_id': port.network_id,",1,0,0.0,207
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"'vlan_id': port.vlan_id,",1,0,0.0,208
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,if port:,1,0,0.0,209
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,@classmethod,1,0,0.0,210
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,device[len(n_const.TAP_DEVICE_PREFIX):]),1,0,0.0,211
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"port = brocade_db.get_port(rpc_context,",1,0,0.0,212
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"{'device': device, 'agent_id': agent_id})",1,0,0.0,213
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"LOG.debug(""Device %(device)s details requested from %(agent_id)s"",",1,0,0.0,214
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,device = kwargs.get('device'),1,0,0.0,215
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,agent_id = kwargs.get('agent_id'),1,0,0.0,216
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Agent requests device details.""""""",1,0,0.0,217
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,entry = {'device': device},1,0,0.0,218
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"LOG.debug(""%s can not be found in database"", device)",1,0,0.0,219
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return entry,1,0,0.0,220
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def get_devices_details_list(self, rpc_context, **kwargs):",1,0,0.0,221
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,'exists': False},1,0,0.0,222
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"brocade_db.update_port_state(rpc_context, port_id, False)",1,0,0.0,223
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port_id = port['port_id'],1,0,0.0,224
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# Set port status to DOWN,1,0,0.0,225
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,'exists': True},1,0,0.0,226
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port = self.get_port_from_device(device),1,0,0.0,227
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Device no longer exists on agent.""""""",1,0,0.0,228
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def update_device_down(self, rpc_context, **kwargs):",1,0,0.0,229
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"for device in kwargs.pop('devices', [])",1,0,0.0,230
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,),1,0,0.0,231
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,**kwargs,1,0,0.0,232
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"device=device,",1,0,0.0,233
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"rpc_context,",1,0,0.0,234
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.get_device_details(,1,0,0.0,235
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return [,1,0,0.0,236
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def get_device_details(self, rpc_context, **kwargs):",1,0,0.0,237
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#   1.2 Support get_devices_details_list,1,0,0.0,238
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#   1.1 Support Security Group RPC,1,0,0.0,239
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"SWITCH_OPTS = [cfg.StrOpt('address', default='',",1,0,0.0,240
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"AGENT_OWNER_PREFIX = ""network:""",1,0,0.0,241
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,LOG = logging.getLogger(__name__),1,0,0.0,242
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# TODO(shiv) need support for security groups,1,0,0.0,243
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# (Some parts adapted from LinuxBridge Plugin),1,0,0.0,244
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#    under the License.,1,0,0.0,245
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#    License for the specific language governing permissions and limitations,1,0,0.0,246
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,0,0.0,247
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,0,0.0,248
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"#    Unless required by applicable law or agreed to in writing, software",1,0,0.0,249
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#         http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,250
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#    a copy of the License at,1,0,0.0,251
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#    not use this file except in compliance with the License. You may obtain,1,0,0.0,252
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,0,0.0,253
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,#,1,0,0.0,254
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# All rights reserved.,1,0,0.0,255
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,NOS_DRIVER = 'neutron.plugins.brocade.nos.nosdriver.NOSdriver',1,0,0.0,256
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"help=_('The address of the host to SSH to')),",1,0,0.0,257
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# history,1,0,0.0,258
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cfg.StrOpt('username', default='',",1,0,0.0,259
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"# Device names start with ""tap""",1,0,0.0,260
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,target = oslo_messaging.Target(version='1.2'),1,0,0.0,261
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Agent callback.""""""",1,0,0.0,262
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,class BridgeRpcCallbacks(object):,1,0,0.0,263
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cfg.CONF.register_opts(PHYSICAL_INTERFACE_OPTS, ""PHYSICAL_INTERFACE"")",1,0,0.0,264
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cfg.CONF.register_opts(SWITCH_OPTS, ""SWITCH"")",1,0,0.0,265
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,'a port')),1,0,0.0,266
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,help=_('The network interface to use when creating ',1,0,0.0,267
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"PHYSICAL_INTERFACE_OPTS = [cfg.StrOpt('physical_interface', default='eth0',",1,0,0.0,268
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,],1,0,0.0,269
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,help=_('Currently unused')),1,0,0.0,270
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cfg.StrOpt('ostype', default='NOS',",1,0,0.0,271
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"help=_('The SSH password to use')),",1,0,0.0,272
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cfg.StrOpt('password', default='', secret=True,",1,0,0.0,273
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"help=_('The SSH username to use')),",1,0,0.0,274
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,class SecurityGroupServerRpcMixin(sg_db_rpc.SecurityGroupServerRpcMixin):,1,0,0.0,275
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def get_port_from_device(cls, device):",1,0,0.0,276
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.rpc_context = n_context.ContextBase('neutron', 'neutron',",1,0,0.0,277
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,def __init__(self):,1,0,0.0,278
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,physical_interface),1,0,0.0,279
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""dhcp_agent_scheduler""]",1,0,0.0,280
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""l3_agent_scheduler"",",1,0,0.0,281
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""extraroute"", ""agent"",",1,0,0.0,282
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""external-net"", ""router"",",1,0,0.0,283
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.supported_extension_aliases = [""binding"", ""security-group"",",1,0,0.0,284
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"super(BrocadePluginV2, self).__init__()",1,0,0.0,285
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,Provides L2 Virtual Network functionality using VDX. Upper,1,0,0.0,286
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# TODO(shh) context is not being passed as,1,0,0.0,287
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""BrocadePluginV2 is a Neutron plugin.",1,0,0.0,288
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,portbindings_base.PortBindingBaseMixin):,1,0,0.0,289
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"agentschedulers_db.DhcpAgentSchedulerDbMixin,",1,0,0.0,290
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"l3_agentschedulers_db.L3AgentSchedulerDbMixin,",1,0,0.0,291
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"SecurityGroupServerRpcMixin,",1,0,0.0,292
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"extraroute_db.ExtraRoute_db_mixin,",1,0,0.0,293
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"external_net_db.External_net_db_mixin,",1,0,0.0,294
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.base_binding_dict = self._get_base_binding_dict(),1,0,0.0,295
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,portbindings_base.register_port_dict_function(),1,0,0.0,296
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.ctxt = n_context.get_admin_context(),1,0,0.0,297
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self._vlan_bitmap = vbm.VlanBitmap(self.ctxt),1,0,0.0,298
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,svc_constants.L3_ROUTER_NAT: topics.L3PLUGIN},1,0,0.0,299
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.service_topics = {svc_constants.CORE: topics.PLUGIN,",1,0,0.0,300
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# RPC support,1,0,0.0,301
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,def _setup_rpc(self):,1,0,0.0,302
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self._driver = importutils.import_object(NOS_DRIVER),1,0,0.0,303
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,'password': cfg.CONF.SWITCH.password,1,0,0.0,304
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"'username': cfg.CONF.SWITCH.username,",1,0,0.0,305
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self._switch = {'address': cfg.CONF.SWITCH.address,",1,0,0.0,306
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""Brocade specific initialization.""""""",1,0,0.0,307
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,def brocade_init(self):,1,0,0.0,308
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.start_periodic_dhcp_agent_status_check(),1,0,0.0,309
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.brocade_init(),1,0,0.0,310
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,cfg.CONF.router_scheduler_driver,1,0,0.0,311
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,cfg.CONF.network_scheduler_driver,1,0,0.0,312
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self._setup_rpc(),1,0,0.0,313
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"class BrocadePluginV2(db_base_plugin_v2.NeutronDbPluginV2,",1,0,0.0,314
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"physical_network=physical_network, vlan_id=vlan_id)",1,0,0.0,315
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cctxt.cast(context, 'port_update', port=port,",1,0,0.0,316
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"1.1 - Added get_active_networks_info, create_dhcp_port,",1,0,0.0,317
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,API version history:,1,0,0.0,318
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,class AgentNotifierApi(sg_rpc.SecurityGroupAgentRpcApiMixin):,1,0,0.0,319
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return port,1,0,0.0,320
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port['binding:vif_type'] = 'bridge',1,0,0.0,321
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port['device_owner'] = AGENT_OWNER_PREFIX,1,0,0.0,322
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port['device'] = device,1,0,0.0,323
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# make it appears that the device owner is of type network,1,0,0.0,324
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"session, device[len(n_const.TAP_DEVICE_PREFIX):])",1,0,0.0,325
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,port = brocade_db.get_port_from_device(,1,0,0.0,326
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,session = db.get_session(),1,0,0.0,327
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# which needs to pass context to us,1,0,0.0,328
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# function: securitygroup_rules_for_devices(),1,0,0.0,329
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# file: neutron/db/securtygroups_rpc_base.py,1,0,0.0,330
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# need to be fixed in:,1,0,0.0,331
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,# an argument to this function;,1,0,0.0,332
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,1.0 - Initial version.,1,0,0.0,333
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,and update_dhcp_port methods.,1,0,0.0,334
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cctxt = self.client.prepare(topic=self.topic_port_update, fanout=True)",1,0,0.0,335
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"""""""",1,0,0.0,336
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def port_update(self, context, port, physical_network, vlan_id):",1,0,0.0,337
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cctxt.cast(context, 'network_delete', network_id=network_id)",1,0,0.0,338
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,fanout=True),1,0,0.0,339
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"cctxt = self.client.prepare(topic=self.topic_network_delete,",1,0,0.0,340
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def network_delete(self, context, network_id):",1,0,0.0,341
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,topics.UPDATE),1,0,0.0,342
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"topics.PORT,",1,0,0.0,343
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.topic_port_update = topics.get_topic_name(topic,",1,0,0.0,344
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,topics.DELETE),1,0,0.0,345
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"topics.NETWORK,",1,0,0.0,346
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"self.topic_network_delete = topics.get_topic_name(topic,",1,0,0.0,347
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.client = n_rpc.get_client(target),1,0,0.0,348
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"target = oslo_messaging.Target(topic=topic, version='1.0')",1,0,0.0,349
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,self.topic = topic,1,0,0.0,350
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,"def __init__(self, topic):",1,0,0.0,351
+a8283463c57f108f03d59c5477eef7e8dceeaa6a,return mac,1,0,0.0,352

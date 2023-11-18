@@ -1,0 +1,97 @@
+commit_id,line,line_level_label,count,line_score,row
+ea35b299f06050608f3e7bb6fbc880006ed31024,network = network or self.get_network(,1,4,1.0,1
+ea35b299f06050608f3e7bb6fbc880006ed31024,if (not host or host == port_context.host):,1,3,0.75,2
+ea35b299f06050608f3e7bb6fbc880006ed31024,network = None,0,3,0.75,3
+ea35b299f06050608f3e7bb6fbc880006ed31024,"with mock.patch.object(plugin, 'get_networks') as get_nets:",0,3,0.75,4
+ea35b299f06050608f3e7bb6fbc880006ed31024,"with mock.patch.object(plugin, 'get_network') as get_net:",1,3,0.75,5
+ea35b299f06050608f3e7bb6fbc880006ed31024,if not host or host == port_context.host:,0,3,0.75,6
+ea35b299f06050608f3e7bb6fbc880006ed31024,"context, port_dbs_by_id[port_id], status, host)",0,2,0.5,7
+ea35b299f06050608f3e7bb6fbc880006ed31024,"port = db.get_port(context, port_id)",1,2,0.5,8
+ea35b299f06050608f3e7bb6fbc880006ed31024,network can be passed in to avoid another get_network call if,1,2,0.5,9
+ea35b299f06050608f3e7bb6fbc880006ed31024,"def _update_individual_port_db_status(self, context, port, status, host):",0,2,0.5,10
+ea35b299f06050608f3e7bb6fbc880006ed31024,with excutils.save_and_reraise_exception() as ectx:,0,2,0.5,11
+ea35b299f06050608f3e7bb6fbc880006ed31024,"context, port, status, host)",0,2,0.5,12
+ea35b299f06050608f3e7bb6fbc880006ed31024,result[port_id] = None,0,2,0.5,13
+ea35b299f06050608f3e7bb6fbc880006ed31024,"for port_id, status in port_id_to_status.items():",0,2,0.5,14
+ea35b299f06050608f3e7bb6fbc880006ed31024,plugin = directory.get_plugin(),1,2,0.5,15
+ea35b299f06050608f3e7bb6fbc880006ed31024,# success so we update status,0,2,0.5,16
+ea35b299f06050608f3e7bb6fbc880006ed31024,port = port_context.current,0,2,0.5,17
+ea35b299f06050608f3e7bb6fbc880006ed31024,"context, original_port['network_id'])",1,2,0.5,18
+ea35b299f06050608f3e7bb6fbc880006ed31024,"context, {port_id: status}, host)[port_id]",0,1,0.25,19
+ea35b299f06050608f3e7bb6fbc880006ed31024,"def update_port_statuses(self, context, port_id_to_status, host=None):",0,1,0.25,20
+ea35b299f06050608f3e7bb6fbc880006ed31024,result = {},0,1,0.25,21
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_ids = port_id_to_status.keys(),0,1,0.25,22
+ea35b299f06050608f3e7bb6fbc880006ed31024,"port_dbs_by_id = db.get_port_db_objects(context, port_ids)",0,1,0.25,23
+ea35b299f06050608f3e7bb6fbc880006ed31024,result[port_id] = self._safe_update_individual_port_db_status(,0,1,0.25,24
+ea35b299f06050608f3e7bb6fbc880006ed31024,"def _safe_update_individual_port_db_status(self, context, port,",0,1,0.25,25
+ea35b299f06050608f3e7bb6fbc880006ed31024,"status, host):",0,1,0.25,26
+ea35b299f06050608f3e7bb6fbc880006ed31024,return None,1,1,0.25,27
+ea35b299f06050608f3e7bb6fbc880006ed31024,# don't reraise if port doesn't exist anymore,0,1,0.25,28
+ea35b299f06050608f3e7bb6fbc880006ed31024,"ectx.reraise = bool(db.get_port(context, port_id))",0,1,0.25,29
+ea35b299f06050608f3e7bb6fbc880006ed31024,updated = False,0,1,0.25,30
+ea35b299f06050608f3e7bb6fbc880006ed31024,with db_api.context_manager.writer.using(context):,0,1,0.25,31
+ea35b299f06050608f3e7bb6fbc880006ed31024,context.session.add(port)  # bring port into writer session,0,1,0.25,32
+ea35b299f06050608f3e7bb6fbc880006ed31024,updated = False,1,1,0.25,33
+ea35b299f06050608f3e7bb6fbc880006ed31024,with db_api.context_manager.writer.using(context):,1,1,0.25,34
+ea35b299f06050608f3e7bb6fbc880006ed31024,if not port:,1,1,0.25,35
+ea35b299f06050608f3e7bb6fbc880006ed31024,return None,0,1,0.25,36
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_id = full[port_id],0,1,0.25,37
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_id = port.id,0,1,0.25,38
+ea35b299f06050608f3e7bb6fbc880006ed31024,"full = db.partial_port_ids_to_full_ids(context, [port_id])",0,1,0.25,39
+ea35b299f06050608f3e7bb6fbc880006ed31024,# filter out any without status changes,0,1,0.25,40
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_context.network.current),1,1,0.25,41
+ea35b299f06050608f3e7bb6fbc880006ed31024,new_status = (n_const.PORT_STATUS_BUILD if port['admin_state_up'],0,1,0.25,42
+ea35b299f06050608f3e7bb6fbc880006ed31024,"result = self._get_device_details(rpc_context, agent_id=agent_id,",0,1,0.25,43
+ea35b299f06050608f3e7bb6fbc880006ed31024,"new_status = self._get_new_status(host, port_context)",0,1,0.25,44
+ea35b299f06050608f3e7bb6fbc880006ed31024,"port_id,",0,1,0.25,45
+ea35b299f06050608f3e7bb6fbc880006ed31024,"host,",0,1,0.25,46
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_context.network.current),0,1,0.25,47
+ea35b299f06050608f3e7bb6fbc880006ed31024,"new_status_map = {ctxt.current['id']: self._get_new_status(host, ctxt)",0,1,0.25,48
+ea35b299f06050608f3e7bb6fbc880006ed31024,"def _get_new_status(self, host, port_context):",0,1,0.25,49
+ea35b299f06050608f3e7bb6fbc880006ed31024,"new_status_map = {p: s for p, s in new_status_map.items() if s}",0,1,0.25,50
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_id = port_context.current['id'],1,1,0.25,51
+ea35b299f06050608f3e7bb6fbc880006ed31024,"for port_id, new_status in new_status_map.items():",0,1,0.25,52
+ea35b299f06050608f3e7bb6fbc880006ed31024,"port_id,",1,1,0.25,53
+ea35b299f06050608f3e7bb6fbc880006ed31024,new_status = (n_const.PORT_STATUS_BUILD if port['admin_state_up'],1,1,0.25,54
+ea35b299f06050608f3e7bb6fbc880006ed31024,"host,",1,1,0.25,55
+ea35b299f06050608f3e7bb6fbc880006ed31024,devices = [],0,1,0.25,56
+ea35b299f06050608f3e7bb6fbc880006ed31024,failed_devices = devices_to_fetch,0,1,0.25,57
+ea35b299f06050608f3e7bb6fbc880006ed31024,"plugin.update_port_status(rpc_context, port_id,",0,1,0.25,58
+ea35b299f06050608f3e7bb6fbc880006ed31024,continue,0,0,0.0,59
+ea35b299f06050608f3e7bb6fbc880006ed31024,'network' is deprecated and has no effect,0,0,0.0,60
+ea35b299f06050608f3e7bb6fbc880006ed31024,if port_id not in full:,0,0,0.0,61
+ea35b299f06050608f3e7bb6fbc880006ed31024,return self.update_port_statuses(,0,0,0.0,62
+ea35b299f06050608f3e7bb6fbc880006ed31024,@utils.transaction_guard,0,0,0.0,63
+ea35b299f06050608f3e7bb6fbc880006ed31024,@db_api.retry_if_session_inactive(),0,0,0.0,64
+ea35b299f06050608f3e7bb6fbc880006ed31024,if not port_dbs_by_id.get(port_id):,0,0,0.0,65
+ea35b299f06050608f3e7bb6fbc880006ed31024,"new_status,",1,0,0.0,66
+ea35b299f06050608f3e7bb6fbc880006ed31024,except Exception:,0,0,0.0,67
+ea35b299f06050608f3e7bb6fbc880006ed31024,return result,0,0,0.0,68
+ea35b299f06050608f3e7bb6fbc880006ed31024,try:,0,0,0.0,69
+ea35b299f06050608f3e7bb6fbc880006ed31024,return self._update_individual_port_db_status(,0,0,0.0,70
+ea35b299f06050608f3e7bb6fbc880006ed31024,@utils.transaction_guard,1,0,0.0,71
+ea35b299f06050608f3e7bb6fbc880006ed31024,@db_api.retry_if_session_inactive(),1,0,0.0,72
+ea35b299f06050608f3e7bb6fbc880006ed31024,one was already performed by the caller.,1,0,0.0,73
+ea35b299f06050608f3e7bb6fbc880006ed31024,self.assertFalse(get_nets.called),0,0,0.0,74
+ea35b299f06050608f3e7bb6fbc880006ed31024,if port['status'] != new_status:,1,0,0.0,75
+ea35b299f06050608f3e7bb6fbc880006ed31024,"plugin.update_port_status(rpc_context,",1,0,0.0,76
+ea35b299f06050608f3e7bb6fbc880006ed31024,return result,0,0,0.0,77
+ea35b299f06050608f3e7bb6fbc880006ed31024,else n_const.PORT_STATUS_DOWN),1,0,0.0,78
+ea35b299f06050608f3e7bb6fbc880006ed31024,"plugin.update_port_status(rpc_context,",0,0,0.0,79
+ea35b299f06050608f3e7bb6fbc880006ed31024,else n_const.PORT_STATUS_DOWN),0,0,0.0,80
+ea35b299f06050608f3e7bb6fbc880006ed31024,if port['status'] != new_status:,0,0,0.0,81
+ea35b299f06050608f3e7bb6fbc880006ed31024,return new_status,0,0,0.0,82
+ea35b299f06050608f3e7bb6fbc880006ed31024,"host=host, device=device,",0,0,0.0,83
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_context=port_context),0,0,0.0,84
+ea35b299f06050608f3e7bb6fbc880006ed31024,if 'network_id' in result:,0,0,0.0,85
+ea35b299f06050608f3e7bb6fbc880006ed31024,if new_status:,0,0,0.0,86
+ea35b299f06050608f3e7bb6fbc880006ed31024,"new_status,",0,0,0.0,87
+ea35b299f06050608f3e7bb6fbc880006ed31024,port_context=port_context),1,0,0.0,88
+ea35b299f06050608f3e7bb6fbc880006ed31024,for ctxt in bound_contexts.values() if ctxt},0,0,0.0,89
+ea35b299f06050608f3e7bb6fbc880006ed31024,try:,0,0,0.0,90
+ea35b299f06050608f3e7bb6fbc880006ed31024,"new_status, host)",0,0,0.0,91
+ea35b299f06050608f3e7bb6fbc880006ed31024,except Exception:,0,0,0.0,92
+ea35b299f06050608f3e7bb6fbc880006ed31024,"LOG.exception(""Failure updating statuses, retrying all"")",0,0,0.0,93
+ea35b299f06050608f3e7bb6fbc880006ed31024,"return self._get_device_details(rpc_context, agent_id=agent_id,",1,0,0.0,94
+ea35b299f06050608f3e7bb6fbc880006ed31024,"host=host, device=device,",1,0,0.0,95
+ea35b299f06050608f3e7bb6fbc880006ed31024,self.assertFalse(get_net.called),1,0,0.0,96

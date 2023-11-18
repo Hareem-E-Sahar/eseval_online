@@ -1,0 +1,552 @@
+commit_id,line,line_level_label,count,line_score,row
+3d127dd767659e371b72acf04728fb3a2e1025a6,# This check is required to prevent an arp update,1,6,1.0,1
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now update the VM port with the allowed_address_pair,1,4,0.6666666666666666,2
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now the vrrp port should have an 'original_owner',1,4,0.6666666666666666,3
+3d127dd767659e371b72acf04728fb3a2e1025a6,# device_owner for the allowed_address_pair port.,1,4,0.6666666666666666,4
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now update the VM port with the allowed_address_pair,1,4,0.6666666666666666,5
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now update both the VM ports with the allowed_address_pair ip,0,4,0.6666666666666666,6
+3d127dd767659e371b72acf04728fb3a2e1025a6,"def _get_allowed_address_pair_fixed_ips(self, context, port_dict):",1,3,0.5,7
+3d127dd767659e371b72acf04728fb3a2e1025a6,# VRRP port that is already attached to the VM port,1,3,0.5,8
+3d127dd767659e371b72acf04728fb3a2e1025a6,# port host bindings from the parent VM port.,1,3,0.5,9
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now the VRRP port is attached to the VM port. At this,1,3,0.5,10
+3d127dd767659e371b72acf04728fb3a2e1025a6,"aa_fixed_ips = plugin._get_allowed_address_pair_fixed_ips(context, port)",1,3,0.5,11
+3d127dd767659e371b72acf04728fb3a2e1025a6,"When a dvr service port goes up, look for the DVR router on",1,3,0.5,12
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Check for allowed_address_pairs and port state,1,3,0.5,13
+3d127dd767659e371b72acf04728fb3a2e1025a6,routers = [port['device_id'] for port in ports],1,3,0.5,14
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# with the existing vrrp port device_owner, but should",1,3,0.5,15
+3d127dd767659e371b72acf04728fb3a2e1025a6,# This port admin_state down should not cause any issue,1,3,0.5,16
+3d127dd767659e371b72acf04728fb3a2e1025a6,# allowed_address_pair port is active and the other one,1,3,0.5,17
+3d127dd767659e371b72acf04728fb3a2e1025a6,# update of this port or router_updated event to the,1,3,0.5,18
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now let us assign the floatingip to the vrrp port that is,0,3,0.5,19
+3d127dd767659e371b72acf04728fb3a2e1025a6,# of the allowed_address_pair port.,1,3,0.5,20
+3d127dd767659e371b72acf04728fb3a2e1025a6,subnet_id = self._get_subnet_id_for_given_fixed_ip(,1,2,0.3333333333333333,21
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""""""Notify L3 agents of ARP table entry for dvr service port.",1,2,0.3333333333333333,22
+3d127dd767659e371b72acf04728fb3a2e1025a6,"def update_arp_entry_for_dvr_service_port(self, context, port_dict):",1,2,0.3333333333333333,23
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""fixed_ip %s for arp update"", aap_ip_cidr[0])",1,2,0.3333333333333333,24
+3d127dd767659e371b72acf04728fb3a2e1025a6,"LOG.debug(""Subnet does not match for the given """,1,2,0.3333333333333333,25
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router = l3plugin._get_router(context, fip['router_id'])",1,2,0.3333333333333333,26
+3d127dd767659e371b72acf04728fb3a2e1025a6,subnet = fixed_ip['subnet_id'],1,2,0.3333333333333333,27
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""""""Generates the arp table entry and notifies the l3 agent.""""""",1,2,0.3333333333333333,28
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""""""Function inherits port host bindings for allowed_address_pair.""""""",1,2,0.3333333333333333,29
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router = l3plugin._get_router(context, fip_router_id)",0,2,0.3333333333333333,30
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# Case were we activate the port from inactive state,",1,2,0.3333333333333333,31
+3d127dd767659e371b72acf04728fb3a2e1025a6,"When a dvr service port goes down, look for the DVR",1,2,0.3333333333333333,32
+3d127dd767659e371b72acf04728fb3a2e1025a6,post_update_vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,33
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Case were we deactivate the port from active state.,1,2,0.3333333333333333,34
+3d127dd767659e371b72acf04728fb3a2e1025a6,HOST1 = 'host1',1,2,0.3333333333333333,35
+3d127dd767659e371b72acf04728fb3a2e1025a6,router = self._create_router(ha=False),1,2,0.3333333333333333,36
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Set gateway to router,1,2,0.3333333333333333,37
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, router['id'],",1,2,0.3333333333333333,38
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port1 = self.core_plugin.get_port(,1,2,0.3333333333333333,39
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port2 = self.core_plugin.get_port(,1,2,0.3333333333333333,40
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# point, the VRRP port should not have inherited the",1,2,0.3333333333333333,41
+3d127dd767659e371b72acf04728fb3a2e1025a6,cur_vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,42
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,43
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,44
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port = self.core_plugin.get_port(,1,2,0.3333333333333333,45
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router = l3plugin._get_router(context, router_id)",0,2,0.3333333333333333,46
+3d127dd767659e371b72acf04728fb3a2e1025a6,# or the same port has additional address_pairs added.,1,2,0.3333333333333333,47
+3d127dd767659e371b72acf04728fb3a2e1025a6,# how it inherits from the compute port.,1,2,0.3333333333333333,48
+3d127dd767659e371b72acf04728fb3a2e1025a6,# table in the router namespace.,1,2,0.3333333333333333,49
+3d127dd767659e371b72acf04728fb3a2e1025a6,cur_new_vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,50
+3d127dd767659e371b72acf04728fb3a2e1025a6,# and create l3 agents on corresponding hosts,0,2,0.3333333333333333,51
+3d127dd767659e371b72acf04728fb3a2e1025a6,router = self._create_router(ha=False),0,2,0.3333333333333333,52
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port1 = self.core_plugin.get_port(,0,2,0.3333333333333333,53
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port2 = self.core_plugin.get_port(,0,2,0.3333333333333333,54
+3d127dd767659e371b72acf04728fb3a2e1025a6,router = self._create_router(),1,2,0.3333333333333333,55
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port = self.core_plugin.get_port(,1,2,0.3333333333333333,56
+3d127dd767659e371b72acf04728fb3a2e1025a6,cur_vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,57
+3d127dd767659e371b72acf04728fb3a2e1025a6,# and gets updated with a new profile. In this case,1,2,0.3333333333333333,58
+3d127dd767659e371b72acf04728fb3a2e1025a6,# the update triggers a notification to the neutron,1,2,0.3333333333333333,59
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# server, but this should not trigger another arp",1,2,0.3333333333333333,60
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# agent, otherwise this will mess up with the arp",1,2,0.3333333333333333,61
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Make sure that the VRRP port is not bound to any host,0,2,0.3333333333333333,62
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# True, and see if the vrrp ports device_owner and binding",1,2,0.3333333333333333,63
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now change the compute port admin_state_up from True to,1,2,0.3333333333333333,64
+3d127dd767659e371b72acf04728fb3a2e1025a6,# only one of the Service port associated with the,1,2,0.3333333333333333,65
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now change the compute port admin_state_up from False to,1,2,0.3333333333333333,66
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,67
+3d127dd767659e371b72acf04728fb3a2e1025a6,"# False, and see if the vrrp ports device_owner and binding",1,2,0.3333333333333333,68
+3d127dd767659e371b72acf04728fb3a2e1025a6,# inherits from the associated parent compute port.,1,2,0.3333333333333333,69
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port_db = self.core_plugin.get_port(,1,2,0.3333333333333333,70
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, router['id'],",1,2,0.3333333333333333,71
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Set gateway to router,1,2,0.3333333333333333,72
+3d127dd767659e371b72acf04728fb3a2e1025a6,HOST1 = 'host1',1,2,0.3333333333333333,73
+3d127dd767659e371b72acf04728fb3a2e1025a6,port_valid_state = (port_dict['admin_state_up'] or,1,1,0.16666666666666666,74
+3d127dd767659e371b72acf04728fb3a2e1025a6,for address_pair in allowed_address_pairs_list:,1,1,0.16666666666666666,75
+3d127dd767659e371b72acf04728fb3a2e1025a6,fips = l3_obj.FloatingIP.get_objects(,1,1,0.16666666666666666,76
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, _pager=base_obj.Pager(limit=1),",1,1,0.16666666666666666,77
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, fips[0].fixed_port_id) if fips else None",1,1,0.16666666666666666,78
+3d127dd767659e371b72acf04728fb3a2e1025a6,"plugin, context, port, allowed_address_pair):",1,1,0.16666666666666666,79
+3d127dd767659e371b72acf04728fb3a2e1025a6,"plugin.update_arp_entry_for_dvr_service_port(context, port)",1,1,0.16666666666666666,80
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, port, fixed_ips_to_delete=aa_fixed_ips)",1,1,0.16666666666666666,81
+3d127dd767659e371b72acf04728fb3a2e1025a6,"l3plugin.update_arp_entry_for_dvr_service_port(context, port)",1,1,0.16666666666666666,82
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pairs_list = port.get('allowed_address_pairs'),1,1,0.16666666666666666,83
+3d127dd767659e371b72acf04728fb3a2e1025a6,"private_net1 = self._make_network(self.fmt, 'net1', True)",1,1,0.16666666666666666,84
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pairs_list = new_port.get('allowed_address_pairs'),1,1,0.16666666666666666,85
+3d127dd767659e371b72acf04728fb3a2e1025a6,"l3plugin, context, port, address_pair)",1,1,0.16666666666666666,86
+3d127dd767659e371b72acf04728fb3a2e1025a6,"l3plugin.delete_arp_entry_for_dvr_service_port(context, port)",1,1,0.16666666666666666,87
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, new_port)",1,1,0.16666666666666666,88
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port_host = new_port.get(portbindings.HOST_ID),1,1,0.16666666666666666,89
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port_state = new_port.get('admin_state_up'),1,1,0.16666666666666666,90
+3d127dd767659e371b72acf04728fb3a2e1025a6,original_port_state = original_port.get('admin_state_up'),1,1,0.16666666666666666,91
+3d127dd767659e371b72acf04728fb3a2e1025a6,"l3plugin, context, new_port, address_pair)",1,1,0.16666666666666666,92
+3d127dd767659e371b72acf04728fb3a2e1025a6,"l3plugin, context, original_port, address_pair)",1,1,0.16666666666666666,93
+3d127dd767659e371b72acf04728fb3a2e1025a6,HOST2 = 'host2',1,1,0.16666666666666666,94
+3d127dd767659e371b72acf04728fb3a2e1025a6,for fixed_ip in fixed_ips_to_delete:,1,1,0.16666666666666666,95
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self, context, port_dict, port_addr_pair_ip):",1,1,0.16666666666666666,96
+3d127dd767659e371b72acf04728fb3a2e1025a6,if subnet_id is not None:,1,1,0.16666666666666666,97
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_ips_to_delete = fixed_ips + allowed_address_pair_fixed_ips,1,1,0.16666666666666666,98
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, aap_ip_cidr[0], port_dict)",1,1,0.16666666666666666,99
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_vrrp_ip = [{'ip_address': '10.1.0.201'}],1,1,0.16666666666666666,100
+3d127dd767659e371b72acf04728fb3a2e1025a6,ip_address = fixed_ip['ip_address'],1,1,0.16666666666666666,101
+3d127dd767659e371b72acf04728fb3a2e1025a6,"arp_table = {'ip_address': ip_address,",1,1,0.16666666666666666,102
+3d127dd767659e371b72acf04728fb3a2e1025a6,"filters = {'fixed_ips': {'subnet_id': [subnet]},",1,1,0.16666666666666666,103
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ports = self._core_plugin.get_ports(context, filters=filters)",1,1,0.16666666666666666,104
+3d127dd767659e371b72acf04728fb3a2e1025a6,for router_id in routers:,1,1,0.16666666666666666,105
+3d127dd767659e371b72acf04728fb3a2e1025a6,aa_pair_fixed_ips = [],1,1,0.16666666666666666,106
+3d127dd767659e371b72acf04728fb3a2e1025a6,for address_pair in port_dict['allowed_address_pairs']:,1,1,0.16666666666666666,107
+3d127dd767659e371b72acf04728fb3a2e1025a6,"aap_ip_cidr = address_pair['ip_address'].split(""/"")",1,1,0.16666666666666666,108
+3d127dd767659e371b72acf04728fb3a2e1025a6,"fixed_ip = {'subnet_id': subnet_id,",1,1,0.16666666666666666,109
+3d127dd767659e371b72acf04728fb3a2e1025a6,L3 agents hosting the router to delete it.,1,1,0.16666666666666666,110
+3d127dd767659e371b72acf04728fb3a2e1025a6,L3 agents hosting the router to add it.,1,1,0.16666666666666666,111
+3d127dd767659e371b72acf04728fb3a2e1025a6,If there are any allowed_address_pairs associated with the port,1,1,0.16666666666666666,112
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_ips = port_dict['fixed_ips'],1,1,0.16666666666666666,113
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pair_fixed_ips = (,1,1,0.16666666666666666,114
+3d127dd767659e371b72acf04728fb3a2e1025a6,changed_fixed_ips = fixed_ips + allowed_address_pair_fixed_ips,1,1,0.16666666666666666,115
+3d127dd767659e371b72acf04728fb3a2e1025a6,for fixed_ip in changed_fixed_ips:,1,1,0.16666666666666666,116
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, fixed_ip, port_dict['mac_address'],",1,1,0.16666666666666666,117
+3d127dd767659e371b72acf04728fb3a2e1025a6,"def delete_arp_entry_for_dvr_service_port(self, context, port_dict,",1,1,0.16666666666666666,118
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router on the port's subnet, and send the ARP details to all",1,1,0.16666666666666666,119
+3d127dd767659e371b72acf04728fb3a2e1025a6,"test_allocation_pools = [{'start': '10.1.0.2',",1,1,0.16666666666666666,120
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_info = (,1,1,0.16666666666666666,121
+3d127dd767659e371b72acf04728fb3a2e1025a6,"kwargs = {'arg_list': (extnet_apidef.EXTERNAL,),",1,1,0.16666666666666666,122
+3d127dd767659e371b72acf04728fb3a2e1025a6,for address_pair in address_pair_list:,1,1,0.16666666666666666,123
+3d127dd767659e371b72acf04728fb3a2e1025a6,floating_ip = self.l3_plugin.create_floatingip(,1,1,0.16666666666666666,124
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, {'floatingip': floating_ip})",1,1,0.16666666666666666,125
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port_fixed_ips = post_update_vrrp_port_db['fixed_ips'],1,1,0.16666666666666666,126
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port_subnet_id = vrrp_port_fixed_ips[0]['subnet_id'],1,1,0.16666666666666666,127
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_arp_table1 = {,1,1,0.16666666666666666,128
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_calls = [,1,1,0.16666666666666666,129
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'], vm_arp_table),",1,1,0.16666666666666666,130
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'], vrrp_arp_table1)]",1,1,0.16666666666666666,131
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_routers_updated_calls = [,1,1,0.16666666666666666,132
+3d127dd767659e371b72acf04728fb3a2e1025a6,floatingips = router_info[0][constants.FLOATINGIP_KEY],1,1,0.16666666666666666,133
+3d127dd767659e371b72acf04728fb3a2e1025a6,"floating_ip = {'floating_network_id': ext_net['network']['id'],",1,1,0.16666666666666666,134
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_allowed_address_pairs = updated_vm_port.get(,1,1,0.16666666666666666,135
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port_fixed_ips = cur_vrrp_port_db['fixed_ips'],1,1,0.16666666666666666,136
+3d127dd767659e371b72acf04728fb3a2e1025a6,gw_info = {'network_id': ext_net_id},0,1,0.16666666666666666,137
+3d127dd767659e371b72acf04728fb3a2e1025a6,request_body = {,0,1,0.16666666666666666,138
+3d127dd767659e371b72acf04728fb3a2e1025a6,gw_info = {'network_id': ext_net['network']['id']},0,1,0.16666666666666666,139
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, router1['id'], {},",0,1,0.16666666666666666,140
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, router2['id'], {},",0,1,0.16666666666666666,141
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, router1['id'], {})",1,1,0.16666666666666666,142
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, router2['id'], {})",1,1,0.16666666666666666,143
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'router_id': router['id'],",1,1,0.16666666666666666,144
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Next we can try to associate the floatingip to the,1,1,0.16666666666666666,145
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ext_net = self._make_network(self.fmt, '', True, **kwargs)",1,1,0.16666666666666666,146
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port_fixed_ips = vm_port['fixed_ips'],1,1,0.16666666666666666,147
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'],",1,1,0.16666666666666666,148
+3d127dd767659e371b72acf04728fb3a2e1025a6,private_subnet1 = self._make_subnet(,1,1,0.16666666666666666,149
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port = self._make_port(,1,1,0.16666666666666666,150
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pairs = [,1,1,0.16666666666666666,151
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_handle = (,1,1,0.16666666666666666,152
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, self.l3_agent['host'], [router['id']]))",1,1,0.16666666666666666,153
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port = self.core_plugin.update_port(,1,1,0.16666666666666666,154
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, int_port['port']['id'],",1,1,0.16666666666666666,155
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port_mac = vm_port['mac_address'],1,1,0.16666666666666666,156
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port_subnet_id = vm_port_fixed_ips[0]['subnet_id'],1,1,0.16666666666666666,157
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vrrp_port['port']['id'])",1,1,0.16666666666666666,158
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_arp_table = {,1,1,0.16666666666666666,159
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port2 = self.core_plugin.update_port(,1,1,0.16666666666666666,160
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, int_port2['port']['id'],",1,1,0.16666666666666666,161
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port['id'],",1,1,0.16666666666666666,162
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port2['id'],",1,1,0.16666666666666666,163
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port['id'])",1,1,0.16666666666666666,164
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port2['id'])",1,1,0.16666666666666666,165
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_allowed_address_pairs = updated_vm_port1.get(,1,1,0.16666666666666666,166
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_allowed_address_pairs_2 = updated_vm_port2.get(,1,1,0.16666666666666666,167
+3d127dd767659e371b72acf04728fb3a2e1025a6,"def _generate_arp_table_and_notify_agent(self, context, fixed_ip,",1,1,0.16666666666666666,168
+3d127dd767659e371b72acf04728fb3a2e1025a6,port_host = port.get(portbindings.HOST_ID),1,1,0.16666666666666666,169
+3d127dd767659e371b72acf04728fb3a2e1025a6,address_pair_list = service_port_dict.get('allowed_address_pairs'),1,1,0.16666666666666666,170
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'], vrrp_arp_table1)]",0,1,0.16666666666666666,171
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, int_port['port']['id'],",1,1,0.16666666666666666,172
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, {router['id']}, HOST1)",1,1,0.16666666666666666,173
+3d127dd767659e371b72acf04728fb3a2e1025a6,"floating_ip = {'floating_network_id': ext_net['network']['id'],",1,1,0.16666666666666666,174
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'router_id': router['id'],",1,1,0.16666666666666666,175
+3d127dd767659e371b72acf04728fb3a2e1025a6,floating_ip = self.l3_plugin.create_floatingip(,1,1,0.16666666666666666,176
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, {'floatingip': floating_ip})",1,1,0.16666666666666666,177
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port['id'],",1,1,0.16666666666666666,178
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port['id'])",1,1,0.16666666666666666,179
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_allowed_address_pairs = updated_vm_port.get(,1,1,0.16666666666666666,180
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vrrp_port['port']['id'])",1,1,0.16666666666666666,181
+3d127dd767659e371b72acf04728fb3a2e1025a6,port_profile = cur_vrrp_port_db.get(portbindings.PROFILE),1,1,0.16666666666666666,182
+3d127dd767659e371b72acf04728fb3a2e1025a6,port_profile['new_owner'] = 'test_owner',1,1,0.16666666666666666,183
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, cur_vrrp_port_db['id'],",1,1,0.16666666666666666,184
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Before we try to associate a floatingip make sure that,1,1,0.16666666666666666,185
+3d127dd767659e371b72acf04728fb3a2e1025a6,# is DOWN,1,1,0.16666666666666666,186
+3d127dd767659e371b72acf04728fb3a2e1025a6,mod_vm_port2 = self.core_plugin.update_port(,1,1,0.16666666666666666,187
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, updated_vm_port2['id'],",1,1,0.16666666666666666,188
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_arp_table = {,1,1,0.16666666666666666,189
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'], vrrp_arp_table1),",1,1,0.16666666666666666,190
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'], vrrp_arp_table)]",1,1,0.16666666666666666,191
+3d127dd767659e371b72acf04728fb3a2e1025a6,"private_net1 = self._make_network(self.fmt, 'net1', True)",1,1,0.16666666666666666,192
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port = self.core_plugin.update_port(,1,1,0.16666666666666666,193
+3d127dd767659e371b72acf04728fb3a2e1025a6,floatingips = router_info[0][constants.FLOATINGIP_KEY],0,1,0.16666666666666666,194
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_vrrp_ip = [{'ip_address': '10.1.0.201'}],1,1,0.16666666666666666,195
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_info = (,0,1,0.16666666666666666,196
+3d127dd767659e371b72acf04728fb3a2e1025a6,service_port_dict = self.l3plugin._core_plugin._make_port_dict(,1,1,0.16666666666666666,197
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, int_port['port']['id'],",0,1,0.16666666666666666,198
+3d127dd767659e371b72acf04728fb3a2e1025a6,HOST2 = 'host2',0,1,0.16666666666666666,199
+3d127dd767659e371b72acf04728fb3a2e1025a6,"router['id'],",0,1,0.16666666666666666,200
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_handle = (,0,1,0.16666666666666666,201
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, self.l3_agent['host'], [router['id']]))",0,1,0.16666666666666666,202
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port1 = self.core_plugin.update_port(,0,1,0.16666666666666666,203
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, int_port1['port']['id'],",0,1,0.16666666666666666,204
+3d127dd767659e371b72acf04728fb3a2e1025a6,vm_port2 = self.core_plugin.update_port(,0,1,0.16666666666666666,205
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, int_port2['port']['id'],",0,1,0.16666666666666666,206
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port1['id'],",0,1,0.16666666666666666,207
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port1['id'])",0,1,0.16666666666666666,208
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_allowed_address_pairs1 = updated_vm_port1.get(,0,1,0.16666666666666666,209
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port2['id'],",0,1,0.16666666666666666,210
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_allowed_address_pairs2 = updated_vm_port2.get(,0,1,0.16666666666666666,211
+3d127dd767659e371b72acf04728fb3a2e1025a6,# unbound to any host.,0,1,0.16666666666666666,212
+3d127dd767659e371b72acf04728fb3a2e1025a6,"floating_ip = {'floating_network_id': ext_net['network']['id'],",0,1,0.16666666666666666,213
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'router_id': router['id'],",0,1,0.16666666666666666,214
+3d127dd767659e371b72acf04728fb3a2e1025a6,floating_ip = self.l3_plugin.create_floatingip(,0,1,0.16666666666666666,215
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, {'floatingip': floating_ip})",0,1,0.16666666666666666,216
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_routers_updated_calls = [,0,1,0.16666666666666666,217
+3d127dd767659e371b72acf04728fb3a2e1025a6,"test_allocation_pools = [{'start': '10.1.0.2',",1,1,0.16666666666666666,218
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, vm_port2['id'])",0,1,0.16666666666666666,219
+3d127dd767659e371b72acf04728fb3a2e1025a6,"kwargs = {'arg_list': (external_net.EXTERNAL,),",1,1,0.16666666666666666,220
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""distributed router %(router_id)s"",",0,1,0.16666666666666666,221
+3d127dd767659e371b72acf04728fb3a2e1025a6,fip_router_id = None,0,1,0.16666666666666666,222
+3d127dd767659e371b72acf04728fb3a2e1025a6,dest_host = None,0,1,0.16666666666666666,223
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port_profile = new_port.get(portbindings.PROFILE),0,1,0.16666666666666666,224
+3d127dd767659e371b72acf04728fb3a2e1025a6,dest_host = new_port_profile.get('migrating_to'),0,1,0.16666666666666666,225
+3d127dd767659e371b72acf04728fb3a2e1025a6,fips = l3plugin._get_floatingips_by_port_id(,0,1,0.16666666666666666,226
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, port_id=original_port['id'])",0,1,0.16666666666666666,227
+3d127dd767659e371b72acf04728fb3a2e1025a6,fip = fips[0] if fips else None,0,1,0.16666666666666666,228
+3d127dd767659e371b72acf04728fb3a2e1025a6,fip_router_id = fip['router_id'],0,1,0.16666666666666666,229
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, [fip_router_id],",0,1,0.16666666666666666,230
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, new_port,",0,1,0.16666666666666666,231
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, port, dest_host))",1,1,0.16666666666666666,232
+3d127dd767659e371b72acf04728fb3a2e1025a6,fips = l3plugin._get_floatingips_by_port_id(,1,1,0.16666666666666666,233
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, port_id=original_port['id'])",1,1,0.16666666666666666,234
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, [fip['router_id']],",1,1,0.16666666666666666,235
+3d127dd767659e371b72acf04728fb3a2e1025a6,is_new_port_binding_changed = (,1,1,0.16666666666666666,236
+3d127dd767659e371b72acf04728fb3a2e1025a6,dest_host = None,1,1,0.16666666666666666,237
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port_profile = new_port.get(portbindings.PROFILE),1,1,0.16666666666666666,238
+3d127dd767659e371b72acf04728fb3a2e1025a6,dest_host = new_port_profile.get('migrating_to'),1,1,0.16666666666666666,239
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, addr_pair_active_service_port_list[0])",1,1,0.16666666666666666,240
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ext_net = self._make_network(self.fmt, '', True, **kwargs)",1,1,0.16666666666666666,241
+3d127dd767659e371b72acf04728fb3a2e1025a6,"def _inherit_service_port_and_arp_update(self, context, service_port):",1,1,0.16666666666666666,242
+3d127dd767659e371b72acf04728fb3a2e1025a6,is_new_port_binding_changed = (,0,1,0.16666666666666666,243
+3d127dd767659e371b72acf04728fb3a2e1025a6,fip = fips[0] if fips else None,1,1,0.16666666666666666,244
+3d127dd767659e371b72acf04728fb3a2e1025a6,"context, port, dest_host))",0,1,0.16666666666666666,245
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_mod_int_port = self.core_plugin.update_port(,1,1,0.16666666666666666,246
+3d127dd767659e371b72acf04728fb3a2e1025a6,vrrp_port = self._make_port(,1,1,0.16666666666666666,247
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pairs = [,1,1,0.16666666666666666,248
+3d127dd767659e371b72acf04728fb3a2e1025a6,private_subnet1 = self._make_subnet(,1,1,0.16666666666666666,249
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, updated_vrrp_port['id'])",1,1,0.16666666666666666,250
+3d127dd767659e371b72acf04728fb3a2e1025a6,cur_int_port = self.core_plugin.update_port(,1,1,0.16666666666666666,251
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Check to make sure that we are not chaning the existing,1,1,0.16666666666666666,252
+3d127dd767659e371b72acf04728fb3a2e1025a6,mod_int_port = self.core_plugin.update_port(,1,1,0.16666666666666666,253
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, cur_int_port['id'],",1,1,0.16666666666666666,254
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, cur_vrrp_port_db['id'])",1,1,0.16666666666666666,255
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port_profile = new_vrrp_port_db.get(portbindings.PROFILE),1,1,0.16666666666666666,256
+3d127dd767659e371b72acf04728fb3a2e1025a6,# inheritance reverts back to normal,1,1,0.16666666666666666,257
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, mod_int_port['id'],",1,1,0.16666666666666666,258
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, cur_new_vrrp_port_db['id'],",1,1,0.16666666666666666,259
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, new_vrrp_port_db['id'])",1,1,0.16666666666666666,260
+3d127dd767659e371b72acf04728fb3a2e1025a6,# only change the port_binding HOST_ID.,1,1,0.16666666666666666,261
+3d127dd767659e371b72acf04728fb3a2e1025a6,# Now let us try to remove vrrp_port device_owner and see,1,1,0.16666666666666666,262
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vrrp_port = self.core_plugin.update_port(,1,1,0.16666666666666666,263
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.context, new_mod_int_port['id'],",1,1,0.16666666666666666,264
+3d127dd767659e371b72acf04728fb3a2e1025a6,updated_vm_port = self.core_plugin.update_port(,1,1,0.16666666666666666,265
+3d127dd767659e371b72acf04728fb3a2e1025a6,return self._core_plugin.get_port(,1,0,0.0,266
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_ip_address=netaddr.IPAddress(port_addr_pair_ip)),1,0,0.0,267
+3d127dd767659e371b72acf04728fb3a2e1025a6,if not port_valid_state:,1,0,0.0,268
+3d127dd767659e371b72acf04728fb3a2e1025a6,port_dict['status'] == const.PORT_STATUS_ACTIVE),1,0,0.0,269
+3d127dd767659e371b72acf04728fb3a2e1025a6,def _get_address_pair_active_port_with_fip(,1,0,0.0,270
+3d127dd767659e371b72acf04728fb3a2e1025a6,if not fixed_ips_to_delete:,1,0,0.0,271
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_rpc_notifier.del_arp_entry),1,0,0.0,272
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self._get_allowed_address_pair_fixed_ips(context, port_dict))",1,0,0.0,273
+3d127dd767659e371b72acf04728fb3a2e1025a6,"port, those fixed_ips should be removed from the ARP table.",1,0,0.0,274
+3d127dd767659e371b72acf04728fb3a2e1025a6,If there are any allowed_address_pairs associated with the,1,0,0.0,275
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_ips_to_delete=None):,1,0,0.0,276
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_rpc_notifier.add_arp_entry),1,0,0.0,277
+3d127dd767659e371b72acf04728fb3a2e1025a6,def _dvr_handle_unbound_allowed_addr_pair_del(,1,0,0.0,278
+3d127dd767659e371b72acf04728fb3a2e1025a6,return,1,0,0.0,279
+3d127dd767659e371b72acf04728fb3a2e1025a6,self._generate_arp_table_and_notify_agent(,1,0,0.0,280
+3d127dd767659e371b72acf04728fb3a2e1025a6,def _dvr_handle_unbound_allowed_addr_pair_add(,1,0,0.0,281
+3d127dd767659e371b72acf04728fb3a2e1025a6,if new_port_state:,1,0,0.0,282
+3d127dd767659e371b72acf04728fb3a2e1025a6,if aa_fixed_ips:,1,0,0.0,283
+3d127dd767659e371b72acf04728fb3a2e1025a6,elif original_port_state:,1,0,0.0,284
+3d127dd767659e371b72acf04728fb3a2e1025a6,"host=HOST1, agent_mode=constants.L3_AGENT_MODE_DVR)",1,0,0.0,285
+3d127dd767659e371b72acf04728fb3a2e1025a6,"host=HOST2, agent_mode=constants.L3_AGENT_MODE_DVR)",1,0,0.0,286
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""""""",1,0,0.0,287
+3d127dd767659e371b72acf04728fb3a2e1025a6,helpers.register_l3_agent(,1,0,0.0,288
+3d127dd767659e371b72acf04728fb3a2e1025a6,def test_allowed_addr_pairs_delayed_fip_and_update_arp_entry(self):,1,0,0.0,289
+3d127dd767659e371b72acf04728fb3a2e1025a6,if kwargs.get('mac_address_updated') or is_fixed_ips_changed:,1,0,0.0,290
+3d127dd767659e371b72acf04728fb3a2e1025a6,return,1,0,0.0,291
+3d127dd767659e371b72acf04728fb3a2e1025a6,plugin.delete_arp_entry_for_dvr_service_port(,1,0,0.0,292
+3d127dd767659e371b72acf04728fb3a2e1025a6,_dvr_handle_unbound_allowed_addr_pair_add(,1,0,0.0,293
+3d127dd767659e371b72acf04728fb3a2e1025a6,if allowed_address_pairs_list and new_port_host:,1,0,0.0,294
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3plugin.update_arp_entry_for_dvr_service_port(,1,0,0.0,295
+3d127dd767659e371b72acf04728fb3a2e1025a6,_dvr_handle_unbound_allowed_addr_pair_del(,1,0,0.0,296
+3d127dd767659e371b72acf04728fb3a2e1025a6,if allowed_address_pairs_list and port_host:,1,0,0.0,297
+3d127dd767659e371b72acf04728fb3a2e1025a6,if port:,1,0,0.0,298
+3d127dd767659e371b72acf04728fb3a2e1025a6,if not fixed_ips:,1,0,0.0,299
+3d127dd767659e371b72acf04728fb3a2e1025a6,"l3plugin.dvr_handle_new_service_port(context, new_port,",1,0,0.0,300
+3d127dd767659e371b72acf04728fb3a2e1025a6,those fixed_ips should also be updated in the ARP table.,1,0,0.0,301
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port[portbindings.HOST_ID] and,1,0,0.0,302
+3d127dd767659e371b72acf04728fb3a2e1025a6,dest_host=dest_host),1,0,0.0,303
+3d127dd767659e371b72acf04728fb3a2e1025a6,return,1,0,0.0,304
+3d127dd767659e371b72acf04728fb3a2e1025a6,if new_port_profile.get('original_owner'):,1,0,0.0,305
+3d127dd767659e371b72acf04728fb3a2e1025a6,if new_port_profile:,1,0,0.0,306
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port[portbindings.HOST_ID])),1,0,0.0,307
+3d127dd767659e371b72acf04728fb3a2e1025a6,(original_port[portbindings.HOST_ID] !=,1,0,0.0,308
+3d127dd767659e371b72acf04728fb3a2e1025a6,if info['router_id'] == fip['router_id']:,1,0,0.0,309
+3d127dd767659e371b72acf04728fb3a2e1025a6,from neutron.objects import base as base_obj,1,0,0.0,310
+3d127dd767659e371b72acf04728fb3a2e1025a6,if not fip:,1,0,0.0,311
+3d127dd767659e371b72acf04728fb3a2e1025a6,check_for_fip_and_create_agent_gw_port_on_host_if_not_exists(,1,0,0.0,312
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3plugin.,1,0,0.0,313
+3d127dd767659e371b72acf04728fb3a2e1025a6,(,1,0,0.0,314
+3d127dd767659e371b72acf04728fb3a2e1025a6,extnet_apidef.EXTERNAL: True},1,0,0.0,315
+3d127dd767659e371b72acf04728fb3a2e1025a6,if dest_host:,1,0,0.0,316
+3d127dd767659e371b72acf04728fb3a2e1025a6,import netaddr,1,0,0.0,317
+3d127dd767659e371b72acf04728fb3a2e1025a6,self._inherit_service_port_and_arp_update(,1,0,0.0,318
+3d127dd767659e371b72acf04728fb3a2e1025a6,"the port's subnet, and send the ARP details to all",1,0,0.0,319
+3d127dd767659e371b72acf04728fb3a2e1025a6,"""""""Returns all fixed_ips associated with the allowed_address_pair.""""""",1,0,0.0,320
+3d127dd767659e371b72acf04728fb3a2e1025a6,return aa_pair_fixed_ips,1,0,0.0,321
+3d127dd767659e371b72acf04728fb3a2e1025a6,else:,1,0,0.0,322
+3d127dd767659e371b72acf04728fb3a2e1025a6,aa_pair_fixed_ips.append(fixed_ip),1,0,0.0,323
+3d127dd767659e371b72acf04728fb3a2e1025a6,'ip_address': aap_ip_cidr[0]},1,0,0.0,324
+3d127dd767659e371b72acf04728fb3a2e1025a6,if len(aap_ip_cidr) == 1 or int(aap_ip_cidr[1]) == 32:,1,0,0.0,325
+3d127dd767659e371b72acf04728fb3a2e1025a6,if port_dict.get('allowed_address_pairs'):,1,0,0.0,326
+3d127dd767659e371b72acf04728fb3a2e1025a6,"notifier(context, router_id, arp_table)",1,0,0.0,327
+3d127dd767659e371b72acf04728fb3a2e1025a6,service_port),1,0,0.0,328
+3d127dd767659e371b72acf04728fb3a2e1025a6,'device_owner': [const.DEVICE_OWNER_DVR_INTERFACE]},1,0,0.0,329
+3d127dd767659e371b72acf04728fb3a2e1025a6,'subnet_id': subnet},1,0,0.0,330
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'mac_address': mac_address,",1,0,0.0,331
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mac_address, notifier):",1,0,0.0,332
+3d127dd767659e371b72acf04728fb3a2e1025a6,service_port_dict),1,0,0.0,333
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.update_arp_entry_for_dvr_service_port(context,",1,0,0.0,334
+3d127dd767659e371b72acf04728fb3a2e1025a6,'end': '10.1.0.20'}],1,0,0.0,335
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'port_id': vrrp_port['port']['id'],",1,0,0.0,336
+3d127dd767659e371b72acf04728fb3a2e1025a6,self._make_subnet(,1,0,0.0,337
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cur_vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,338
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3_notifier.add_arp_entry.assert_has_calls(,1,0,0.0,339
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context,",1,0,0.0,340
+3d127dd767659e371b72acf04728fb3a2e1025a6,'subnet_id': vrrp_port_subnet_id},1,0,0.0,341
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'ip_address': vrrp_port_fixed_ips[0]['ip_address'],",1,0,0.0,342
+3d127dd767659e371b72acf04728fb3a2e1025a6,'tenant_id': vrrp_port['port']['tenant_id']},1,0,0.0,343
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cur_vrrp_port_db[portbindings.HOST_ID], HOST2)",1,0,0.0,344
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertNotEqual(,1,0,0.0,345
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context, mock.ANY, HOST1),",1,0,0.0,346
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(expected_allowed_address_pairs_2,",1,0,0.0,347
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pairs),1,0,0.0,348
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(expected_allowed_address_pairs,",1,0,0.0,349
+3d127dd767659e371b72acf04728fb3a2e1025a6,'allowed_address_pairs'),1,0,0.0,350
+3d127dd767659e371b72acf04728fb3a2e1025a6,"2, l3_notifier.routers_updated_on_host.call_count)",1,0,0.0,351
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertEqual(,1,0,0.0,352
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_calls),1,0,0.0,353
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context, mock.ANY, HOST2),",1,0,0.0,354
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {,1,0,0.0,355
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertNotEqual(vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,356
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_id=fip_router_id),0,0,0.0,357
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'network_id': ext_net_id}),1,0,0.0,358
+3d127dd767659e371b72acf04728fb3a2e1025a6,{l3_apidef.EXTERNAL_GW_INFO: {}}),0,0,0.0,359
+3d127dd767659e371b72acf04728fb3a2e1025a6,"gw_info, request_body)",0,0,0.0,360
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3_apidef.EXTERNAL_GW_INFO: gw_info},0,0,0.0,361
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_routers_updated_calls),1,0,0.0,362
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(1, l3_notifier.add_arp_entry.call_count)",1,0,0.0,363
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context, mock.ANY, 'host0')]",1,0,0.0,364
+3d127dd767659e371b72acf04728fb3a2e1025a6,device_owner=DEVICE_OWNER_COMPUTE) as int_port:,1,0,0.0,365
+3d127dd767659e371b72acf04728fb3a2e1025a6,def test_allowed_address_pairs_update_arp_entry(self):,1,0,0.0,366
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(floatingips[0][constants.DVR_SNAT_BOUND]),1,0,0.0,367
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertFalse(l3_notifier.routers_updated.called),1,0,0.0,368
+3d127dd767659e371b72acf04728fb3a2e1025a6,"expected_routers_updated_calls, any_order=True)",1,0,0.0,369
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3_notifier.routers_updated_on_host.assert_has_calls(,1,0,0.0,370
+3d127dd767659e371b72acf04728fb3a2e1025a6,'allowed_address_pairs': allowed_address_pairs}}),1,0,0.0,371
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.core_plugin.update_port(,1,0,0.0,372
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.fmt, ext_net, '10.20.0.1', '10.20.0.0/24',",1,0,0.0,373
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'10.1.0.1',",1,0,0.0,374
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_ips=fixed_vrrp_ip),1,0,0.0,375
+3d127dd767659e371b72acf04728fb3a2e1025a6,"private_net1['network']['id'],",1,0,0.0,376
+3d127dd767659e371b72acf04728fb3a2e1025a6,enable_dhcp=True),1,0,0.0,377
+3d127dd767659e371b72acf04728fb3a2e1025a6,"allocation_pools=test_allocation_pools,",1,0,0.0,378
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ip_version=constants.IP_VERSION_4,",1,0,0.0,379
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cidr='10.1.0.0/24',",1,0,0.0,380
+3d127dd767659e371b72acf04728fb3a2e1025a6,"private_net1,",1,0,0.0,381
+3d127dd767659e371b72acf04728fb3a2e1025a6,'mac_address': vrrp_port['port']['mac_address']}],1,0,0.0,382
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.fmt,",1,0,0.0,383
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'network_id': ext_net['network']['id']}),1,0,0.0,384
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_plugin._update_router_gw_info(,1,0,0.0,385
+3d127dd767659e371b72acf04728fb3a2e1025a6,candidates=[self.l3_agent]),1,0,0.0,386
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.l3_plugin.schedule_router(self.context,",1,0,0.0,387
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ip_version=constants.IP_VERSION_4, enable_dhcp=True)",1,0,0.0,388
+3d127dd767659e371b72acf04728fb3a2e1025a6,"{'ip_address': '10.1.0.201',",1,0,0.0,389
+3d127dd767659e371b72acf04728fb3a2e1025a6,with self.port(,1,0,0.0,390
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {portbindings.HOST_ID: HOST2}}),1,0,0.0,391
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_handle[0]['gw_port_host']),1,0,0.0,392
+3d127dd767659e371b72acf04728fb3a2e1025a6,'subnet_id': vm_port_subnet_id},1,0,0.0,393
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'mac_address': vm_port_mac,",1,0,0.0,394
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'ip_address': vm_port_fixed_ips[0]['ip_address'],",1,0,0.0,395
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {portbindings.HOST_ID: HOST1}}),1,0,0.0,396
+3d127dd767659e371b72acf04728fb3a2e1025a6,'_l3_rpc_notifier') as l3_notifier:,1,0,0.0,397
+3d127dd767659e371b72acf04728fb3a2e1025a6,"with mock.patch.object(self.l3_plugin,",1,0,0.0,398
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(self.l3_agent['host'],",1,0,0.0,399
+3d127dd767659e371b72acf04728fb3a2e1025a6,"subnet=private_subnet1,",1,0,0.0,400
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_plugin.list_active_sync_routers_on_active_l3_agent(,1,0,0.0,401
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'subnet_id': private_subnet1['subnet']['id']}),1,0,0.0,402
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_plugin.add_router_interface(,1,0,0.0,403
+3d127dd767659e371b72acf04728fb3a2e1025a6,device_owner=DEVICE_OWNER_COMPUTE) as int_port2:,1,0,0.0,404
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.port(subnet=private_subnet1,",1,0,0.0,405
+3d127dd767659e371b72acf04728fb3a2e1025a6,"device_owner=DEVICE_OWNER_COMPUTE) as int_port,\",1,0,0.0,406
+3d127dd767659e371b72acf04728fb3a2e1025a6,"dest_host=None, unbound_migrate=False):",1,0,0.0,407
+3d127dd767659e371b72acf04728fb3a2e1025a6,"device_owner='',",0,0,0.0,408
+3d127dd767659e371b72acf04728fb3a2e1025a6,"dest_host=dest_host,",0,0,0.0,409
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(1, l3_notifier.add_arp_entry.call_count)",1,0,0.0,410
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(cur_vrrp_port_db.get(portbindings.PROFILE)),1,0,0.0,411
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(cur_vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,412
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(expected_allowed_address_pairs,",1,0,0.0,413
+3d127dd767659e371b72acf04728fb3a2e1025a6,'tenant_id': vrrp_port['port']['tenant_id']},1,0,0.0,414
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'port_id': vrrp_port['port']['id'],",1,0,0.0,415
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3_notifier.reset_mock(),1,0,0.0,416
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3_notifier.routers_updated_on_host.assert_called_once_with(,1,0,0.0,417
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(port_profile['original_owner'],",1,0,0.0,418
+3d127dd767659e371b72acf04728fb3a2e1025a6,device_owner=DEVICE_OWNER_COMPUTE) as int_port:,1,0,0.0,419
+3d127dd767659e371b72acf04728fb3a2e1025a6,"device_owner=constants.DEVICE_OWNER_LOADBALANCER,",1,0,0.0,420
+3d127dd767659e371b72acf04728fb3a2e1025a6,def test_allowed_addr_pairs_arp_update_for_port_with_original_owner(self):,1,0,0.0,421
+3d127dd767659e371b72acf04728fb3a2e1025a6,int_port['port'][portbindings.HOST_ID]),1,0,0.0,422
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context, mock.ANY, HOST1)]",0,0,0.0,423
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'mac_address': vm_port_mac,",0,0,0.0,424
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(port_profile),1,0,0.0,425
+3d127dd767659e371b72acf04728fb3a2e1025a6,constants.DEVICE_OWNER_LOADBALANCER),1,0,0.0,426
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(floatingips[0][n_const.DVR_SNAT_BOUND]),0,0,0.0,427
+3d127dd767659e371b72acf04728fb3a2e1025a6,"2, l3_notifier.routers_updated_on_host.call_count)",1,0,0.0,428
+3d127dd767659e371b72acf04728fb3a2e1025a6,"post_update_vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,429
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'mac_address': vrrp_port['port']['mac_address'],",1,0,0.0,430
+3d127dd767659e371b72acf04728fb3a2e1025a6,'subnet_id': vrrp_port_subnet_id},1,0,0.0,431
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'mac_address': vm_port_mac,",1,0,0.0,432
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'ip_address': vrrp_port_fixed_ips[0]['ip_address'],",1,0,0.0,433
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(3, l3_notifier.add_arp_entry.call_count)",1,0,0.0,434
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertFalse(mod_vm_port2['admin_state_up']),1,0,0.0,435
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {portbindings.PROFILE: port_profile}}),1,0,0.0,436
+3d127dd767659e371b72acf04728fb3a2e1025a6,'admin_state_up': False}}),1,0,0.0,437
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {,1,0,0.0,438
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(4, l3_notifier.add_arp_entry.call_count)",1,0,0.0,439
+3d127dd767659e371b72acf04728fb3a2e1025a6,"0, l3_notifier.routers_updated_on_host.call_count)",1,0,0.0,440
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertEqual(,1,0,0.0,441
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(0, l3_notifier.add_arp_entry.call_count)",1,0,0.0,442
+3d127dd767659e371b72acf04728fb3a2e1025a6,"2, l3_notifier.routers_updated_on_host.call_count)",0,0,0.0,443
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(l3_notifier.routers_updated.called),0,0,0.0,444
+3d127dd767659e371b72acf04728fb3a2e1025a6,def test_update_service_port_with_allowed_address_pairs(self):,1,0,0.0,445
+3d127dd767659e371b72acf04728fb3a2e1025a6,"host=HOST2, agent_mode=constants.L3_AGENT_MODE_DVR)",0,0,0.0,446
+3d127dd767659e371b72acf04728fb3a2e1025a6,device_owner=DEVICE_OWNER_COMPUTE) as int_port2:,0,0,0.0,447
+3d127dd767659e371b72acf04728fb3a2e1025a6,"subnet=private_subnet1,",0,0,0.0,448
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.port(,0,0,0.0,449
+3d127dd767659e371b72acf04728fb3a2e1025a6,"device_owner=DEVICE_OWNER_COMPUTE) as int_port1,\",0,0,0.0,450
+3d127dd767659e371b72acf04728fb3a2e1025a6,candidates=[self.l3_agent]),0,0,0.0,451
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.l3_plugin.schedule_router(self.context,",0,0,0.0,452
+3d127dd767659e371b72acf04728fb3a2e1025a6,helpers.register_l3_agent(,0,0,0.0,453
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(self.l3_agent['host'],",0,0,0.0,454
+3d127dd767659e371b72acf04728fb3a2e1025a6,def test_unbound_allowed_addr_pairs_fip_with_multiple_active_vms(self):,0,0,0.0,455
+3d127dd767659e371b72acf04728fb3a2e1025a6,'host1'),0,0,0.0,456
+3d127dd767659e371b72acf04728fb3a2e1025a6,agent_mode=constants.L3_AGENT_MODE_DVR),0,0,0.0,457
+3d127dd767659e371b72acf04728fb3a2e1025a6,"helpers.register_l3_agent(host='host1',",0,0,0.0,458
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {portbindings.HOST_ID: 'host1'}}),0,0,0.0,459
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.core_plugin.update_port(,0,0,0.0,460
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_plugin.list_active_sync_routers_on_active_l3_agent(,0,0,0.0,461
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_handle[0]['gw_port_host']),0,0,0.0,462
+3d127dd767659e371b72acf04728fb3a2e1025a6,expected_routers_updated_calls),0,0,0.0,463
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(expected_allowed_address_pairs2,",0,0,0.0,464
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3_notifier.routers_updated_on_host.assert_has_calls(,0,0,0.0,465
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context, mock.ANY, HOST2)]",0,0,0.0,466
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context, mock.ANY, HOST1),",0,0,0.0,467
+3d127dd767659e371b72acf04728fb3a2e1025a6,'tenant_id': vrrp_port['port']['tenant_id']},0,0,0.0,468
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'port_id': vrrp_port['port']['id'],",0,0,0.0,469
+3d127dd767659e371b72acf04728fb3a2e1025a6,allowed_address_pairs),0,0,0.0,470
+3d127dd767659e371b72acf04728fb3a2e1025a6,'allowed_address_pairs'),0,0,0.0,471
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {portbindings.HOST_ID: HOST2}}),0,0,0.0,472
+3d127dd767659e371b72acf04728fb3a2e1025a6,'allowed_address_pairs': allowed_address_pairs}}),0,0,0.0,473
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {,0,0,0.0,474
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual(expected_allowed_address_pairs1,",0,0,0.0,475
+3d127dd767659e371b72acf04728fb3a2e1025a6,"vrrp_port_db[portbindings.HOST_ID], self.l3_agent['host'])",0,0,0.0,476
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertNotEqual(,0,0,0.0,477
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertNotEqual(vrrp_port_db[portbindings.HOST_ID], HOST2)",0,0,0.0,478
+3d127dd767659e371b72acf04728fb3a2e1025a6,"mock.call(self.context,",1,0,0.0,479
+3d127dd767659e371b72acf04728fb3a2e1025a6,helpers.register_l3_agent(,1,0,0.0,480
+3d127dd767659e371b72acf04728fb3a2e1025a6,l3plugin.dvr_handle_new_service_port(,0,0,0.0,481
+3d127dd767659e371b72acf04728fb3a2e1025a6,"updated_vrrp_port_db['device_owner'], DEVICE_OWNER_COMPUTE)",1,0,0.0,482
+3d127dd767659e371b72acf04728fb3a2e1025a6,'subnet_id': vm_port_subnet_id},1,0,0.0,483
+3d127dd767659e371b72acf04728fb3a2e1025a6,'nud_state': 'reachable'},0,0,0.0,484
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'subnet_id': vrrp_port_subnet_id,",0,0,0.0,485
+3d127dd767659e371b72acf04728fb3a2e1025a6,'nud_state': 'permanent'},0,0,0.0,486
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'subnet_id': vm_port_subnet_id,",0,0,0.0,487
+3d127dd767659e371b72acf04728fb3a2e1025a6,"updated_vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,488
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(updated_vm_port['admin_state_up']),1,0,0.0,489
+3d127dd767659e371b72acf04728fb3a2e1025a6,"dest_host=None, unbound_migrate=False,",0,0,0.0,490
+3d127dd767659e371b72acf04728fb3a2e1025a6,""""", cur_new_vrrp_port_db[portbindings.HOST_ID])",1,0,0.0,491
+3d127dd767659e371b72acf04728fb3a2e1025a6,""""", cur_new_vrrp_port_db['device_owner'])",1,0,0.0,492
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertFalse(updated_vm_port['admin_state_up']),1,0,0.0,493
+3d127dd767659e371b72acf04728fb3a2e1025a6,"portbindings.PROFILE: {'original_owner': """"}}})",1,0,0.0,494
+3d127dd767659e371b72acf04728fb3a2e1025a6,"{'port': {'device_owner': """",",1,0,0.0,495
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cur_new_vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,496
+3d127dd767659e371b72acf04728fb3a2e1025a6,'subnet_id': vrrp_port_subnet_id},1,0,0.0,497
+3d127dd767659e371b72acf04728fb3a2e1025a6,router_id=None):,0,0,0.0,498
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertTrue(new_mod_int_port['admin_state_up']),1,0,0.0,499
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port[portbindings.HOST_ID] !=,0,0,0.0,500
+3d127dd767659e371b72acf04728fb3a2e1025a6,if info['router_id'] == fip_router_id:,0,0,0.0,501
+3d127dd767659e371b72acf04728fb3a2e1025a6,if not fip_router_id:,0,0,0.0,502
+3d127dd767659e371b72acf04728fb3a2e1025a6,if fip:,0,0,0.0,503
+3d127dd767659e371b72acf04728fb3a2e1025a6,if is_new_port_binding_changed or is_bound_port_moved or dest_host:,0,0,0.0,504
+3d127dd767659e371b72acf04728fb3a2e1025a6,if new_port_profile:,0,0,0.0,505
+3d127dd767659e371b72acf04728fb3a2e1025a6,original_port[portbindings.HOST_ID]),0,0,0.0,506
+3d127dd767659e371b72acf04728fb3a2e1025a6,new_port[portbindings.HOST_ID] and,0,0,0.0,507
+3d127dd767659e371b72acf04728fb3a2e1025a6,if dest_host and router_id is not None:,0,0,0.0,508
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'router_id': router_id}),0,0,0.0,509
+3d127dd767659e371b72acf04728fb3a2e1025a6,"LOG.debug(""Port-in-Migration: Floating IP has a non-""",0,0,0.0,510
+3d127dd767659e371b72acf04728fb3a2e1025a6,else:,0,0,0.0,511
+3d127dd767659e371b72acf04728fb3a2e1025a6,check_for_fip_and_create_agent_gw_port_on_host_if_not_exists(,0,0,0.0,512
+3d127dd767659e371b72acf04728fb3a2e1025a6,(l3plugin.,0,0,0.0,513
+3d127dd767659e371b72acf04728fb3a2e1025a6,if l3_dvr_db.is_distributed_router(router):,0,0,0.0,514
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cur_new_vrrp_port_db['device_owner'], DEVICE_OWNER_COMPUTE)",1,0,0.0,515
+3d127dd767659e371b72acf04728fb3a2e1025a6,'admin_state_up': True}}),1,0,0.0,516
+3d127dd767659e371b72acf04728fb3a2e1025a6,"host=HOST1, agent_mode=constants.L3_AGENT_MODE_DVR)",1,0,0.0,517
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.fmt,",1,0,0.0,518
+3d127dd767659e371b72acf04728fb3a2e1025a6,enable_dhcp=True),1,0,0.0,519
+3d127dd767659e371b72acf04728fb3a2e1025a6,"allocation_pools=test_allocation_pools,",1,0,0.0,520
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ip_version=4,",1,0,0.0,521
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cidr='10.1.0.0/24',",1,0,0.0,522
+3d127dd767659e371b72acf04728fb3a2e1025a6,"'10.1.0.1',",1,0,0.0,523
+3d127dd767659e371b72acf04728fb3a2e1025a6,"private_net1,",1,0,0.0,524
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'network_id': ext_net['network']['id']}),1,0,0.0,525
+3d127dd767659e371b72acf04728fb3a2e1025a6,fixed_ips=fixed_vrrp_ip),1,0,0.0,526
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_plugin._update_router_gw_info(,1,0,0.0,527
+3d127dd767659e371b72acf04728fb3a2e1025a6,"ip_version=4, enable_dhcp=True)",1,0,0.0,528
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.fmt, ext_net, '10.20.0.1', '10.20.0.0/24',",1,0,0.0,529
+3d127dd767659e371b72acf04728fb3a2e1025a6,self._make_subnet(,1,0,0.0,530
+3d127dd767659e371b72acf04728fb3a2e1025a6,external_net.EXTERNAL: True},1,0,0.0,531
+3d127dd767659e371b72acf04728fb3a2e1025a6,'end': '10.1.0.20'}],1,0,0.0,532
+3d127dd767659e371b72acf04728fb3a2e1025a6,"private_net1['network']['id'],",1,0,0.0,533
+3d127dd767659e371b72acf04728fb3a2e1025a6,"{'ip_address': '10.1.0.201',",1,0,0.0,534
+3d127dd767659e371b72acf04728fb3a2e1025a6,"new_vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,535
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'port': {portbindings.HOST_ID: HOST1}}),1,0,0.0,536
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertNotEqual(,1,0,0.0,537
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertEqual({}, new_port_profile)",1,0,0.0,538
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.assertFalse(mod_int_port['admin_state_up']),1,0,0.0,539
+3d127dd767659e371b72acf04728fb3a2e1025a6,"cur_vrrp_port_db['device_owner'],",1,0,0.0,540
+3d127dd767659e371b72acf04728fb3a2e1025a6,'allowed_address_pairs': allowed_address_pairs}}),1,0,0.0,541
+3d127dd767659e371b72acf04728fb3a2e1025a6,"self.assertNotEqual(vrrp_port_db[portbindings.HOST_ID], HOST1)",1,0,0.0,542
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.core_plugin.update_port(,1,0,0.0,543
+3d127dd767659e371b72acf04728fb3a2e1025a6,'mac_address': vrrp_port['port']['mac_address']}],1,0,0.0,544
+3d127dd767659e371b72acf04728fb3a2e1025a6,'_l3_rpc_notifier') as l3_notifier:,1,0,0.0,545
+3d127dd767659e371b72acf04728fb3a2e1025a6,"with mock.patch.object(self.l3_plugin,",1,0,0.0,546
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'subnet_id': private_subnet1['subnet']['id']}),1,0,0.0,547
+3d127dd767659e371b72acf04728fb3a2e1025a6,self.l3_plugin.add_router_interface(,1,0,0.0,548
+3d127dd767659e371b72acf04728fb3a2e1025a6,"subnet=private_subnet1,",1,0,0.0,549
+3d127dd767659e371b72acf04728fb3a2e1025a6,with self.port(,1,0,0.0,550
+3d127dd767659e371b72acf04728fb3a2e1025a6,{'network_id': ext_net['network']['id']}),1,0,0.0,551

@@ -1,0 +1,64 @@
+commit_id,line,line_level_label,count,line_score,row
+2e0227114d54e2ead452eaec7f7a74fe11290830,* The name label used in the generated Kubernetes JSON template,0,5,1.0,1
+2e0227114d54e2ead452eaec7f7a74fe11290830,* The name label used in the generated Kubernetes JSON template,1,5,1.0,2
+2e0227114d54e2ead452eaec7f7a74fe11290830,* The replication controller name used in the generated Kubernetes JSON template,0,4,0.8,3
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.kubernetes.name"", defaultValue = ""${project.artifactId}"")",0,3,0.6000000000000001,4
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.container.name"", defaultValue = ""${project.artifactId}-container"")",0,3,0.6000000000000001,5
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.service.name"", defaultValue = ""${project.artifactId}-service"")",0,3,0.6000000000000001,6
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.service.name"", defaultValue = ""${project.artifactId}"")",1,3,0.6000000000000001,7
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.label.project"", defaultValue = ""${project.artifactId}"")",0,3,0.6000000000000001,8
+2e0227114d54e2ead452eaec7f7a74fe11290830,String name = getProjectName();,0,3,0.6000000000000001,9
+2e0227114d54e2ead452eaec7f7a74fe11290830,public String getProjectName() {,0,3,0.6000000000000001,10
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.kubernetes.name"", defaultValue = ""${project.artifactId}"")",1,3,0.6000000000000001,11
+2e0227114d54e2ead452eaec7f7a74fe11290830,String name = getKubernetesName();,1,3,0.6000000000000001,12
+2e0227114d54e2ead452eaec7f7a74fe11290830,public String getKubernetesName() {,1,3,0.6000000000000001,13
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.replicationController.name"", defaultValue = ""${project.artifactId}-controller"")",0,3,0.6000000000000001,14
+2e0227114d54e2ead452eaec7f7a74fe11290830,// lets add a project label,0,2,0.4,15
+2e0227114d54e2ead452eaec7f7a74fe11290830,public void setKubernetesName(String kubernetesName) {,1,2,0.4,16
+2e0227114d54e2ead452eaec7f7a74fe11290830,public void setProjectName(String projectName) {,0,2,0.4,17
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.kubernetes.name"")",1,2,0.4,18
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.container.name"")",1,2,0.4,19
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.container.name"")",0,2,0.4,20
+2e0227114d54e2ead452eaec7f7a74fe11290830,"@Parameter(property = ""fabric8.kubernetes.containerName"")",1,2,0.4,21
+2e0227114d54e2ead452eaec7f7a74fe11290830,},1,1,0.2,22
+2e0227114d54e2ead452eaec7f7a74fe11290830,this.kubernetesName = kubernetesName;,1,1,0.2,23
+2e0227114d54e2ead452eaec7f7a74fe11290830,// lets add a default label,1,1,0.2,24
+2e0227114d54e2ead452eaec7f7a74fe11290830,if (labelMap.isEmpty() && Strings.isNotBlank(name)) {,1,1,0.2,25
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String kubernetesName;,1,1,0.2,26
+2e0227114d54e2ead452eaec7f7a74fe11290830,this.projectName = projectName;,0,1,0.2,27
+2e0227114d54e2ead452eaec7f7a74fe11290830,"if (!labelMap.containsKey(""project"") && Strings.isNotBlank(name)) {",0,1,0.2,28
+2e0227114d54e2ead452eaec7f7a74fe11290830,},0,1,0.2,29
+2e0227114d54e2ead452eaec7f7a74fe11290830,"if (!labelMap.containsKey(""version"")) {",0,1,0.2,30
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String projectName;,0,1,0.2,31
+2e0227114d54e2ead452eaec7f7a74fe11290830,"kubernetesName = Strings.convertToCamelCase(getKubernetesContainerName(), ""-"");",1,1,0.2,32
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String kubernetesContainerName;,1,1,0.2,33
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String kubernetesName;,1,1,0.2,34
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String kubernetesContainerName;,0,1,0.2,35
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String kubernetesName;,0,1,0.2,36
+2e0227114d54e2ead452eaec7f7a74fe11290830,private String replicationControllerName;,0,1,0.2,37
+2e0227114d54e2ead452eaec7f7a74fe11290830,if (!isPom(getProject()) && !isIgnoreProject() && generateJson) {,1,1,0.2,38
+2e0227114d54e2ead452eaec7f7a74fe11290830,if (shouldGenerateForThisProject() && !isIgnoreProject() && generateJson) {,0,1,0.2,39
+2e0227114d54e2ead452eaec7f7a74fe11290830,if (Strings.isNullOrBlank(kubernetesName)) {,1,1,0.2,40
+2e0227114d54e2ead452eaec7f7a74fe11290830,"setName(template, getProjectName());",0,0,0.0,41
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setServiceName(serviceName);,1,0,0.0,42
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setServicePort(servicePort);,1,0,0.0,43
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setServiceContainerPort(serviceContainerPort);,1,0,0.0,44
+2e0227114d54e2ead452eaec7f7a74fe11290830,"setName(template, getKubernetesName());",1,0,0.0,45
+2e0227114d54e2ead452eaec7f7a74fe11290830,"labelMap.put(""version"", project.getVersion());",0,0,0.0,46
+2e0227114d54e2ead452eaec7f7a74fe11290830,"labelMap.put(""project"", name);",0,0,0.0,47
+2e0227114d54e2ead452eaec7f7a74fe11290830,return projectName;,0,0,0.0,48
+2e0227114d54e2ead452eaec7f7a74fe11290830,*/,1,0,0.0,49
+2e0227114d54e2ead452eaec7f7a74fe11290830,"labelMap.put(""component"", name);",1,0,0.0,50
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setReplicaCount(replicaCount);,1,0,0.0,51
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setServicePort(servicePort);,0,0,0.0,52
+2e0227114d54e2ead452eaec7f7a74fe11290830,/**,1,0,0.0,53
+2e0227114d54e2ead452eaec7f7a74fe11290830,import io.fabric8.utils.Function;,1,0,0.0,54
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setServiceContainerPort(serviceContainerPort);,0,0,0.0,55
+2e0227114d54e2ead452eaec7f7a74fe11290830,"config.setServiceName(KubernetesHelper.validateKubernetesId(serviceName, ""fabric8.service.name""));",0,0,0.0,56
+2e0227114d54e2ead452eaec7f7a74fe11290830,// services,0,0,0.0,57
+2e0227114d54e2ead452eaec7f7a74fe11290830,"config.setReplicationControllerName(KubernetesHelper.validateKubernetesId(replicationControllerName, ""fabric8.replicationController.name""));",0,0,0.0,58
+2e0227114d54e2ead452eaec7f7a74fe11290830,config.setReplicaCount(replicaCount);,0,0,0.0,59
+2e0227114d54e2ead452eaec7f7a74fe11290830,// replication controllers,0,0,0.0,60
+2e0227114d54e2ead452eaec7f7a74fe11290830,*/,0,0,0.0,61
+2e0227114d54e2ead452eaec7f7a74fe11290830,/**,0,0,0.0,62
+2e0227114d54e2ead452eaec7f7a74fe11290830,return kubernetesName;,1,0,0.0,63

@@ -1,0 +1,46 @@
+commit_id,line,line_level_label,count,line_score,row
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,display_name = Column(String(255)),1,3,1.0,1
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,display_description = Column(String(255)),1,3,1.0,2
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,availability_zone = Column(String(255)),1,2,0.6666666666666666,3
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,status = Column(String(255))  # TODO(vish): enum?,1,2,0.6666666666666666,4
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,mountpoint = Column(String(255)),1,2,0.6666666666666666,5
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,attach_status = Column(String(255))  # TODO(vish): enum,1,2,0.6666666666666666,6
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,host = Column(String(255)),1,2,0.6666666666666666,7
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,project_id = Column(String(255)),1,2,0.6666666666666666,8
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,user_id = Column(String(255)),1,2,0.6666666666666666,9
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,ec2_id = Column(String(255)),1,2,0.6666666666666666,10
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,launched_at = Column(DateTime),1,1,0.3333333333333333,11
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"volume = orm.relationship(Volume,",1,1,0.3333333333333333,12
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"volume_id = Column(String(36), ForeignKey('volumes.id'))",1,1,0.3333333333333333,13
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,target_num = Column(Integer),1,1,0.3333333333333333,14
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"id = Column(Integer, primary_key=True, nullable=False)",1,1,0.3333333333333333,15
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,__tablename__ = 'iscsi_targets',1,1,0.3333333333333333,16
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,volume_type_id = Column(Integer),1,1,0.3333333333333333,17
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,provider_location = Column(String(256)),1,1,0.3333333333333333,18
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,terminated_at = Column(DateTime),1,1,0.3333333333333333,19
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,provider_auth = Column(String(256)),1,1,0.3333333333333333,20
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,scheduled_at = Column(DateTime),1,1,0.3333333333333333,21
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,instance_uuid = Column(String(36)),1,1,0.3333333333333333,22
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,size = Column(Integer),1,1,0.3333333333333333,23
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,snapshot_id = Column(String(36)),1,1,0.3333333333333333,24
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"deleted = Column(String(36), default="""")",1,1,0.3333333333333333,25
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"id = Column(String(36), primary_key=True, nullable=False)",1,1,0.3333333333333333,26
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,__table_args__ = (,1,1,0.3333333333333333,27
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,__tablename__ = 'volumes',1,1,0.3333333333333333,28
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,attach_time = Column(DateTime),1,1,0.3333333333333333,29
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"""""""Represents an iscsi target for a given host.""""""",1,0,0.0,30
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"primaryjoin='and_(IscsiTarget.volume_id==Volume.id,'",1,0,0.0,31
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"foreign_keys=volume_id,",1,0,0.0,32
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"backref=orm.backref('iscsi_target', uselist=False),",1,0,0.0,33
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,'deleted'),1,0,0.0,34
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"Index('iscsi_targets_host_volume_id_deleted_idx', 'host', 'volume_id',",1,0,0.0,35
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"Index('iscsi_targets_volume_id_fkey', 'volume_id'),",1,0,0.0,36
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,),1,0,0.0,37
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"class IscsiTarget(BASE, NovaBase):",1,0,0.0,38
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,return CONF.volume_name_template % self.id,1,0,0.0,39
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,def name(self):,1,0,0.0,40
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,@property,1,0,0.0,41
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"Index('volumes_instance_uuid_idx', 'instance_uuid'),",1,0,0.0,42
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"""""""Represents a block storage device that can be attached to a VM.""""""",1,0,0.0,43
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,"class Volume(BASE, NovaBase):",1,0,0.0,44
+71c41338e4aac98ec03eec1c90ee99e43d51bcb7,'IscsiTarget.deleted==0)'),1,0,0.0,45

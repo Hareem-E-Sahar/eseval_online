@@ -1,0 +1,72 @@
+commit_id,line,line_level_label,count,line_score,row
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"router_dict = {'name': 'test_router', 'admin_state_up': True,",1,5,1.0,1
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"notifier(context, router_id, arp_table)",1,3,0.6000000000000001,2
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"notifier(context, router_id, arp_table)",0,3,0.6000000000000001,3
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"router_id = next((port['device_id'] for port in ports), None)",1,2,0.4,4
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'distributed': True},1,2,0.4,5
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,router = self._create_router(router_dict),1,2,0.4,6
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"ports = [{'id': _uuid(), 'device_id': 'router_1'},",1,1,0.2,7
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'device_id': router['id'],1,1,0.2,8
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'mac_address': 'my_mac',",1,1,0.2,9
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"self.ctx, fixed_ip, mac_address, notifier)",1,1,0.2,10
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"{'id': _uuid(), 'device_id': 'router_2'}]",1,1,0.2,11
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,port = {,1,1,0.2,12
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,notifier = mock.Mock(),1,1,0.2,13
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'subnet_id': fixed_ip['subnet_id'],",1,1,0.2,14
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'subnet_id': _uuid()},1,1,0.2,15
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,for router_id in routers:,0,1,0.2,16
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,routers = [port['device_id'] for port in ports],0,1,0.2,17
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'mac_address': mac_address},1,1,0.2,18
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'device_owner': device_owner,1,0,0.0,19
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'fixed_ips': mock.ANY,",1,0,0.0,20
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'id': 'dvr_port_id',",1,0,0.0,21
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,dvr_port = {,1,0,0.0,22
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,},1,0,0.0,23
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"{'subnet_id': '48534187-f077-4e81-93ff-81ec4cc0ad3b',",1,0,0.0,24
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'ip_address': 'fd45:1515:7e0:0:f816:3eff:fe1a:1111'}],",1,0,0.0,25
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'ip_address': '10.0.0.21'},",1,0,0.0,26
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"{'subnet_id': '2b7c8a07-6f8e-4937-8701-f1d5da1a807c',",1,0,0.0,27
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'ip_address': '10.0.0.11'},",1,0,0.0,28
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,plugin.get_ports.return_value = [dvr_port],1,0,0.0,29
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'device_owner': const.DEVICE_OWNER_DVR_INTERFACE,",1,0,0.0,30
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,def test_update_arp_entry_for_dvr_service_port_added(self):,1,0,0.0,31
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,if action == 'add':,1,0,0.0,32
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,self.mixin.update_arp_entry_for_dvr_service_port(,1,0,0.0,33
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"self.ctx, port)",1,0,0.0,34
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"self.assertEqual(3, l3_notify.add_arp_entry.call_count)",1,0,0.0,35
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,elif action == 'del':,1,0,0.0,36
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,self.mixin.delete_arp_entry_for_dvr_service_port(,1,0,0.0,37
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"self.assertEqual(3, l3_notify.del_arp_entry.call_count)",1,0,0.0,38
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'fixed_ips': [,1,0,0.0,39
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,action = 'add',1,0,0.0,40
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,device_owner = const.DEVICE_OWNER_LOADBALANCER,1,0,0.0,41
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"self._test_update_arp_entry_for_dvr_service_port(device_owner, action)",1,0,0.0,42
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,def test_update_arp_entry_for_dvr_service_port_deleted(self):,1,0,0.0,43
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"{'subnet_id': '51edc9e0-24f9-47f2-8e1e-2a41cb691323',",1,0,0.0,44
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,notifier.assert_has_calls([,1,0,0.0,45
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'id': 'my_port_id',",1,0,0.0,46
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,l3_notify = self.mixin.l3_rpc_notifier = mock.Mock(),1,0,0.0,47
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"filters = {'fixed_ips': {'subnet_id': [subnet]},",0,0,0.0,48
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'device_owner': [const.DEVICE_OWNER_DVR_INTERFACE]},0,0,0.0,49
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"ports = self._core_plugin.get_ports(context, filters=filters)",0,0,0.0,50
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"filters = {'fixed_ips': {'subnet_id': [subnet]},",1,0,0.0,51
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,'device_owner': [const.DEVICE_OWNER_DVR_INTERFACE]},1,0,0.0,52
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"ports = self._core_plugin.get_ports(context, filters=filters)",1,0,0.0,53
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,if not router_id:,1,0,0.0,54
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,return,1,0,0.0,55
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,def test__generate_arp_table_and_notify_agent(self):,1,0,0.0,56
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,fixed_ip = {,1,0,0.0,57
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'ip_address': '1.2.3.4',",1,0,0.0,58
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"mac_address = ""00:11:22:33:44:55""",1,0,0.0,59
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,expected_arp_table = {,1,0,0.0,60
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"'ip_address': fixed_ip['ip_address'],",1,0,0.0,61
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"with mock.patch.object(self.core_plugin, ""get_ports"",",1,0,0.0,62
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,return_value=ports):,1,0,0.0,63
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,self.mixin._generate_arp_table_and_notify_agent(,1,0,0.0,64
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"mock.call(self.ctx, ""router_1"", expected_arp_table),",1,0,0.0,65
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"mock.call(self.ctx, ""router_2"", expected_arp_table)])",1,0,0.0,66
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,def _test_update_arp_entry_for_dvr_service_port(,1,0,0.0,67
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"self, device_owner, action):",1,0,0.0,68
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,plugin = mock.Mock(),1,0,0.0,69
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,"directory.add_plugin(plugin_constants.CORE, plugin)",1,0,0.0,70
+0199425d8bfe2f8683f5eef449ccae6c6e8ae742,action = 'del',1,0,0.0,71

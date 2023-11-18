@@ -1,0 +1,86 @@
+commit_id,line,line_level_label,count,line_score,row
+c7d0d2e5692b7a66599885f961035bca59c62402,"keys = ('id', 'cidr', 'gateway_ip', 'ipv6_ra_mode',",0,2,1.0,1
+c7d0d2e5692b7a66599885f961035bca59c62402,subnets = [,0,2,1.0,2
+c7d0d2e5692b7a66599885f961035bca59c62402,"keys = ('id', 'cidr', 'gateway_ip', 'ipv6_ra_mode',",0,2,1.0,3
+c7d0d2e5692b7a66599885f961035bca59c62402,# If RPN plugin is not enabled or the network subnets do not have,0,2,1.0,4
+c7d0d2e5692b7a66599885f961035bca59c62402,"keys = ('id', 'cidr', 'gateway_ip', 'ipv6_ra_mode', 'subnetpool_id',",1,2,1.0,5
+c7d0d2e5692b7a66599885f961035bca59c62402,get_subnets_by_network.return_value = {'net_id': subnets},0,1,0.5,6
+c7d0d2e5692b7a66599885f961035bca59c62402,{k: subnets[2][k] for k in keys}),0,1,0.5,7
+c7d0d2e5692b7a66599885f961035bca59c62402,"# associated segments (that means this is not a RPN), all subnets",0,1,0.5,8
+c7d0d2e5692b7a66599885f961035bca59c62402,'extra_subnets': [{k: subnets[1][k] for k in keys}]},0,1,0.5,9
+c7d0d2e5692b7a66599885f961035bca59c62402,"'subnets': [{k: subnets[0][k] for k in keys}],",0,1,0.5,10
+c7d0d2e5692b7a66599885f961035bca59c62402,"reference = {'fixed_ips': [{'subnet_id': subnets[0]['id'],",0,1,0.5,11
+c7d0d2e5692b7a66599885f961035bca59c62402,"address_scopes = {4: mock.sentinel.address_scope_id, 6: None}",0,1,0.5,12
+c7d0d2e5692b7a66599885f961035bca59c62402,"get_p().get_networks.return_value = [{'id': 'net_id', 'mtu': 1446}]",0,1,0.5,13
+c7d0d2e5692b7a66599885f961035bca59c62402,"ports = [{'network_id': 'net_id',",0,1,0.5,14
+c7d0d2e5692b7a66599885f961035bca59c62402,"'network_id': 'net_id',",0,1,0.5,15
+c7d0d2e5692b7a66599885f961035bca59c62402,"'subnetpool_id': mock.sentinel.subnetpool_id,",0,1,0.5,16
+c7d0d2e5692b7a66599885f961035bca59c62402,"'network_id': 'net_id',",1,1,0.5,17
+c7d0d2e5692b7a66599885f961035bca59c62402,"address_scopes = {4: None, 6: mock.sentinel.address_scope_id}",1,1,0.5,18
+c7d0d2e5692b7a66599885f961035bca59c62402,"'subnets': [{k: subnet[k] for k in keys}],",0,1,0.5,19
+c7d0d2e5692b7a66599885f961035bca59c62402,"'network_id': 'net_id',",0,1,0.5,20
+c7d0d2e5692b7a66599885f961035bca59c62402,"address_scopes = {4: None, 6: mock.sentinel.address_scope_id}",0,1,0.5,21
+c7d0d2e5692b7a66599885f961035bca59c62402,"get_p().get_networks.return_value = [{'id': 'net_id', 'mtu': 1446}]",0,1,0.5,22
+c7d0d2e5692b7a66599885f961035bca59c62402,get_p().get_networks.return_value = [],0,1,0.5,23
+c7d0d2e5692b7a66599885f961035bca59c62402,"'subnets': [{k: subnet[k] for k in keys}],",1,1,0.5,24
+c7d0d2e5692b7a66599885f961035bca59c62402,"'address_scope_id': mock.sentinel.address_scope_id,",0,0,0.0,25
+c7d0d2e5692b7a66599885f961035bca59c62402,"'id': 'port_id',",0,0,0.0,26
+c7d0d2e5692b7a66599885f961035bca59c62402,'segment_id': seg2}],0,0,0.0,27
+c7d0d2e5692b7a66599885f961035bca59c62402,"'cidr': '10.3.0.0/24',",0,0,0.0,28
+c7d0d2e5692b7a66599885f961035bca59c62402,"'cidr': '10.2.0.0/24',",0,0,0.0,29
+c7d0d2e5692b7a66599885f961035bca59c62402,"'segment_id': seg1},",0,0,0.0,30
+c7d0d2e5692b7a66599885f961035bca59c62402,"'cidr': '10.1.0.0/24',",0,0,0.0,31
+c7d0d2e5692b7a66599885f961035bca59c62402,"'ipv6_ra_mode': mock.sentinel.ipv6_ra_mode,",0,0,0.0,32
+c7d0d2e5692b7a66599885f961035bca59c62402,"'dns_nameservers': mock.sentinel.dns_nameservers,",0,0,0.0,33
+c7d0d2e5692b7a66599885f961035bca59c62402,"'gateway_ip': mock.sentinel.gateway_ip,",0,0,0.0,34
+c7d0d2e5692b7a66599885f961035bca59c62402,"{'id': uuidutils.generate_uuid(),",0,0,0.0,35
+c7d0d2e5692b7a66599885f961035bca59c62402,"plugin_loaded, seg1, seg2):",0,0,0.0,36
+c7d0d2e5692b7a66599885f961035bca59c62402,'device_owner': n_const.DEVICE_OWNER_ROUTER_GW}],0,0,0.0,37
+c7d0d2e5692b7a66599885f961035bca59c62402,"'fixed_ips': [{'subnet_id': subnets[0]['id']}],",0,0,0.0,38
+c7d0d2e5692b7a66599885f961035bca59c62402,if not plugin_loaded or subnets[0]['segment_id'] is None:,0,0,0.0,39
+c7d0d2e5692b7a66599885f961035bca59c62402,"with mock.patch.object(directory, 'get_plugin') as get_p, \",0,0,0.0,40
+c7d0d2e5692b7a66599885f961035bca59c62402,"mock.patch.object(segment_ext.SegmentPluginBase,",0,0,0.0,41
+c7d0d2e5692b7a66599885f961035bca59c62402,"'is_loaded', return_value=plugin_loaded):",0,0,0.0,42
+c7d0d2e5692b7a66599885f961035bca59c62402,"self.db._populate_mtu_and_subnets_for_ports(mock.sentinel.context,",0,0,0.0,43
+c7d0d2e5692b7a66599885f961035bca59c62402,ports),0,0,0.0,44
+c7d0d2e5692b7a66599885f961035bca59c62402,"'subnetpool_id', 'dns_nameservers')",0,0,0.0,45
+c7d0d2e5692b7a66599885f961035bca59c62402,"'prefixlen': 24}],",0,0,0.0,46
+c7d0d2e5692b7a66599885f961035bca59c62402,"'mtu': 1446,",0,0,0.0,47
+c7d0d2e5692b7a66599885f961035bca59c62402,"'device_owner': n_const.DEVICE_OWNER_ROUTER_GW,",0,0,0.0,48
+c7d0d2e5692b7a66599885f961035bca59c62402,"# should be passed in ""subnets"" + ""extra_subnets"".",0,0,0.0,49
+c7d0d2e5692b7a66599885f961035bca59c62402,'_get_subnets_by_network_list'),0,0,0.0,50
+c7d0d2e5692b7a66599885f961035bca59c62402,reference['extra_subnets'].append(,0,0,0.0,51
+c7d0d2e5692b7a66599885f961035bca59c62402,"self.assertEqual([reference], ports)",0,0,0.0,52
+c7d0d2e5692b7a66599885f961035bca59c62402,'fixed_ips': [{'subnet_id': mock.sentinel.subnet_id}]}],1,0,0.0,53
+c7d0d2e5692b7a66599885f961035bca59c62402,"def test__populate_ports_for_subnets_gw_port(self, get_subnets_by_network,",0,0,0.0,54
+c7d0d2e5692b7a66599885f961035bca59c62402,import ddt,0,0,0.0,55
+c7d0d2e5692b7a66599885f961035bca59c62402,"@mock.patch.object(l3_db.L3_NAT_dbonly_mixin,",0,0,0.0,56
+c7d0d2e5692b7a66599885f961035bca59c62402,"{'plugin_loaded': True, 'seg1': 'seg1', 'seg2': 'seg2'})",0,0,0.0,57
+c7d0d2e5692b7a66599885f961035bca59c62402,"with mock.patch.object(manager.NeutronManager, 'get_plugin') as get_p:",0,0,0.0,58
+c7d0d2e5692b7a66599885f961035bca59c62402,"self.db._populate_mtu_and_subnets_for_ports(mock.sentinel.context,",0,0,0.0,59
+c7d0d2e5692b7a66599885f961035bca59c62402,ports),0,0,0.0,60
+c7d0d2e5692b7a66599885f961035bca59c62402,"'subnetpool_id', 'dns_nameservers')",0,0,0.0,61
+c7d0d2e5692b7a66599885f961035bca59c62402,"self.assertEqual([{'extra_subnets': [],",0,0,0.0,62
+c7d0d2e5692b7a66599885f961035bca59c62402,'fixed_ips': [{'subnet_id':,0,0,0.0,63
+c7d0d2e5692b7a66599885f961035bca59c62402,"mock.sentinel.subnet_id,",0,0,0.0,64
+c7d0d2e5692b7a66599885f961035bca59c62402,"'prefixlen': 64}],",0,0,0.0,65
+c7d0d2e5692b7a66599885f961035bca59c62402,"'id': 'port_id',",0,0,0.0,66
+c7d0d2e5692b7a66599885f961035bca59c62402,"'mtu': 1446,",0,0,0.0,67
+c7d0d2e5692b7a66599885f961035bca59c62402,"'address_scopes': address_scopes}], ports)",0,0,0.0,68
+c7d0d2e5692b7a66599885f961035bca59c62402,"self.db._populate_subnets_for_ports(mock.sentinel.context, ports)",1,0,0.0,69
+c7d0d2e5692b7a66599885f961035bca59c62402,'dns_nameservers'),1,0,0.0,70
+c7d0d2e5692b7a66599885f961035bca59c62402,"self.assertEqual([{'extra_subnets': [],",1,0,0.0,71
+c7d0d2e5692b7a66599885f961035bca59c62402,"'fixed_ips': [{'subnet_id': mock.sentinel.subnet_id,",1,0,0.0,72
+c7d0d2e5692b7a66599885f961035bca59c62402,"'prefixlen': 64}],",1,0,0.0,73
+c7d0d2e5692b7a66599885f961035bca59c62402,"'id': 'port_id',",1,0,0.0,74
+c7d0d2e5692b7a66599885f961035bca59c62402,"'address_scopes': address_scopes}], ports)",1,0,0.0,75
+c7d0d2e5692b7a66599885f961035bca59c62402,from neutron.extensions import segment as segment_ext,0,0,0.0,76
+c7d0d2e5692b7a66599885f961035bca59c62402,@ddt.ddt,0,0,0.0,77
+c7d0d2e5692b7a66599885f961035bca59c62402,"'fixed_ips': [{'subnet_id': mock.sentinel.subnet_id}],",0,0,0.0,78
+c7d0d2e5692b7a66599885f961035bca59c62402,'device_owner': 'compute:nova'}],0,0,0.0,79
+c7d0d2e5692b7a66599885f961035bca59c62402,"'address_scopes': address_scopes,",0,0,0.0,80
+c7d0d2e5692b7a66599885f961035bca59c62402,"'device_owner': 'compute:nova'}], ports)",0,0,0.0,81
+c7d0d2e5692b7a66599885f961035bca59c62402,@ddt.unpack,0,0,0.0,82
+c7d0d2e5692b7a66599885f961035bca59c62402,"@ddt.data({'plugin_loaded': False, 'seg1': None, 'seg2': None},",0,0,0.0,83
+c7d0d2e5692b7a66599885f961035bca59c62402,"{'plugin_loaded': True, 'seg1': None, 'seg2': None},",0,0,0.0,84
+c7d0d2e5692b7a66599885f961035bca59c62402,"'address_scopes': address_scopes}], ports)",1,0,0.0,85

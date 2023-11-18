@@ -1,0 +1,123 @@
+commit_id,line,line_level_label,count,line_score,row
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// cp the gzip of the tarball, pipe the stdout into tar's stdin",0,4,1.0,1
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// cp the gzip of the tarball, pipe the stdout into tar's stdin",1,4,1.0,2
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// now we read the json, so we know it's there.",1,3,0.75,3
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// curse you, nfs!  It will lie and tell you that the",1,2,0.5,4
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,// reading the file should cause it to wait until it's done.,1,2,0.5,5
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,// HACK skip on windows,1,2,0.5,6
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,folder = folder && folder.filter(function (f) {,1,2,0.5,7
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,//   | tar -mvxpf - --strip-components=1 -C {unpackTarget},1,1,0.25,8
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"cb(er, folder && path.resolve(tmp, folder[0]))",1,1,0.25,9
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,// then we're done now.,1,1,0.25,10
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// if we're not doing ownership management,",1,1,0.25,11
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"moveIntoPlace(folder, unpackTarget, function (er) {",1,1,0.25,12
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// mv is done, when in fact, it isn't.  In theory,",1,1,0.25,13
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,// gzip {tarball} --decompress --stdout \,1,1,0.25,14
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,// to be a specific user.,0,1,0.25,15
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// figure out who we're supposed to be, if we're not pretending",0,1,0.25,16
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,//   | tar -mvxpf - --strip-components=1 -C {unpackTarget},0,1,0.25,17
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,// gzip {tarball} --decompress --stdout \,0,1,0.25,18
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"// if there's a specific owner uid/gid that we want, then set that",0,1,0.25,19
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,gid = process.getgid(),1,0,0.0,20
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (er) return log.er(cb, ""Failed unpacking ""+tarball)(er)",1,0,0.0,21
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (npm.config.get(""unsafe-perm"") && process.platform !== ""win32"") {",1,0,0.0,22
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,uid = process.getuid(),1,0,0.0,23
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (process.env.SUDO_GID) gid = +process.env.SUDO_GID,1,0,0.0,24
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (uid === 0) {,1,0,0.0,25
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (process.env.SUDO_UID) uid = +process.env.SUDO_UID,1,0,0.0,26
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,},1,0,0.0,27
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (process.platform === ""win32"") {",1,0,0.0,28
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,function afterUntar (er) {,1,0,0.0,29
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.silly(er || ""ok"", ""afterUntar"")",1,0,0.0,30
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,}),1,0,0.0,31
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,return afterUntar(),1,0,0.0,32
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.writeFile(j, JSON.stringify(d) + ""\n"", function (er) {",1,0,0.0,33
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"var j = path.resolve(tmp, ""package/package.json"")",1,0,0.0,34
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,".pipe(fstream.Writer({ path: path.resolve(tmp, ""package/index.js"") }))",1,0,0.0,35
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,".on(""close"", afterUntar)",1,0,0.0,36
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,".pipe(tar.Extract({ type: ""Directory"", path: tmp }))",1,0,0.0,37
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"var extracter = tar.Extract({ type: ""Directory"", path: tmp })",1,0,0.0,38
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"function gunzTarPerm (tarball, tmp, dMode, fMode, uid, gid, cb) {",1,0,0.0,39
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,files = files.filter(function (f) {,1,0,0.0,40
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"rm(tmp, function (er2) { cb(er || er2, data) })",1,0,0.0,41
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", function (er, data) {",1,0,0.0,42
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"return fs.readdir(tmp, function (er, files) {",1,0,0.0,43
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.lstat(f, function (er, stat) {",1,0,0.0,44
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"return f && f.indexOf(""\0"") === -1",1,0,0.0,45
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"cb(er, files && path.resolve(tmp, files[0]))",1,0,0.0,46
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.readdir(tmp, function (er, folder) {",1,0,0.0,47
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.chown(tmp, myUid, myGid, chown)",1,0,0.0,48
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (typeof myUid === ""number"" && typeof myGid === ""number"") {",1,0,0.0,49
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"}, function (er) {",1,0,0.0,50
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,} else cb(),1,0,0.0,51
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.chmod(f, newMode, cb)",1,0,0.0,52
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.silly(newMode.toString(8), ""chmod ""+path.basename(f))",1,0,0.0,53
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (mode && newMode !== oldMode) {,1,0,0.0,54
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", newMode = (oldMode | mode) & (~npm.modes.umask)",1,0,0.0,55
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", oldMode = stat.mode & 0777",1,0,0.0,56
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,var mode = stat.isDirectory() ? dMode : fMode,1,0,0.0,57
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,function chown (er) {,1,0,0.0,58
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,} else chown(),1,0,0.0,59
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.chown(f, uid, gid, chown)",1,0,0.0,60
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (typeof uid === ""number"" && typeof gid === ""number"") {",1,0,0.0,61
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (er || stat.isSymbolicLink()) return cb(er),1,0,0.0,62
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose([folder, unpackTarget], ""renamed"")",1,0,0.0,63
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.silly(f, ""asyncMap in gTP"")",1,0,0.0,64
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,f = path.resolve(f),1,0,0.0,65
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"asyncMap(files, function (f, cb) {",1,0,0.0,66
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"}, function (er, files) {",1,0,0.0,67
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,return f !== tmp,1,0,0.0,68
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"find(tmp, function (f) {",1,0,0.0,69
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"readJson( path.resolve(unpackTarget, ""package.json"")",1,0,0.0,70
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (er) return log.er(cb, ""Could not create ""+tmp)(er)",1,0,0.0,71
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (er) return cb(er),1,0,0.0,72
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", uid, gid",0,0,0.0,73
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"cb_(er, target)",0,0,0.0,74
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,cbCalled = true,0,0,0.0,75
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (cbCalled) return,0,0,0.0,76
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,function cb (er) {,0,0,0.0,77
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,var cbCalled = false,0,0,0.0,78
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"function gunzTarPerm (tarball, target, dMode, fMode, uid, gid, cb_) {",0,0,0.0,79
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,}),0,0,0.0,80
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"readJson(path.resolve(folder, ""package.json""), cb)",0,0,0.0,81
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose(folder, ""gunzed"")",0,0,0.0,82
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", function (er, folder) {",0,0,0.0,83
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", dMode, fMode",0,0,0.0,84
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,uid = myUid,0,0,0.0,85
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"gunzTarPerm( tarball, unpackTarget",0,0,0.0,86
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose(unpackTarget, ""unpackTarget"")",0,0,0.0,87
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose([uid, gid], ""unpack_ uid, gid"")",0,0,0.0,88
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"mkdir(unpackTarget, dMode || npm.modes.exec, uid, gid, function (er) {",0,0,0.0,89
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (er) return cb(er),0,0,0.0,90
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"rm(unpackTarget, function (er) {",0,0,0.0,91
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,},0,0,0.0,92
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (!isNaN(process.env.SUDO_GID)) myGid = +process.env.SUDO_GID,0,0,0.0,93
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (!isNaN(process.env.SUDO_UID)) myUid = +process.env.SUDO_UID,0,0,0.0,94
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,if (process.env.SUDO_UID && myUid === 0) {,0,0,0.0,95
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (npm.config.get(""unsafe-perm"") && process.platform !== ""win32"") {",0,0,0.0,96
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,gid = myGid,0,0,0.0,97
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose(unpackTarget, ""rm'ed"")",1,0,0.0,98
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"fs.writeFile(j, JSON.stringify(d) + ""\n"", cb)",0,0,0.0,99
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"rm(unpackTarget, function (er) {",1,0,0.0,100
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose(folder, ""gunzed"")",1,0,0.0,101
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", function (er, folder) {",1,0,0.0,102
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", uid, gid",1,0,0.0,103
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", dMode, fMode",1,0,0.0,104
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"gunzTarPerm( tarball, tmp",1,0,0.0,105
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose(unpackTarget, ""unpackTarget"")",1,0,0.0,106
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"log.verbose([uid, gid], ""unpack_ uid, gid"")",1,0,0.0,107
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"mkdir(tmp, dMode || npm.modes.exec, uid, gid, function (er) {",1,0,0.0,108
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,", tmp = path.resolve(parent, ""___"" + base + "".npm"")",1,0,0.0,109
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"var j = path.resolve(target, ""package.json"")",0,0,0.0,110
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,entry.mode = entry.mode & (~npm.modes.umask),0,0,0.0,111
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,".pipe(fstream.Writer({ path: path.resolve(target, ""index.js"") }))",0,0,0.0,112
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,".on(""close"", cb)",0,0,0.0,113
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,.pipe(tar.Extract(extractOpts)),0,0,0.0,114
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,var extracter = tar.Extract(extractOpts),0,0,0.0,115
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"var extractOpts = { type: ""Directory"", path: target, strip: 1 }",0,0,0.0,116
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,entry.props.gid = entry.gid = gid,0,0,0.0,117
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,entry.props.uid = entry.uid = uid,0,0,0.0,118
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"typeof gid === ""number"") {",0,0,0.0,119
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"typeof uid === ""number"" &&",0,0,0.0,120
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,"if (process.platform !== ""win32"" &&",0,0,0.0,121
+beeb7fd82e3cc543a9911fe87ec096f8eed29e7a,return f && !f.match(/^\._/),1,0,0.0,122

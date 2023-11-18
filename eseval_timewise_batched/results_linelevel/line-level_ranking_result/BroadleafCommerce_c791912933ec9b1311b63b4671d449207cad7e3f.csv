@@ -1,0 +1,785 @@
+commit_id,line,line_level_label,count,line_score,row
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.warn(""No customer was found on the current request, no cart will be added to the current request. Ensure that the""",0,10,1.0,1
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return the anonymous customer in session or null if there is no anonymous customer represented in session,0,10,1.0,2
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return the anonymous customer in session or null if there is no anonymous customer represented in session,0,10,1.0,3
+c791912933ec9b1311b63b4671d449207cad7e3f,* Gets whether or not the cart should be copied to a new cart and then repriced if,0,9,0.9,4
+c791912933ec9b1311b63b4671d449207cad7e3f,* Gets whether or not the cart should be copied to a new cart and then repriced if,1,9,0.9,5
+c791912933ec9b1311b63b4671d449207cad7e3f,* Returns the anonymous customer that was saved in session. This first checks for a full customer in session (meaning,0,8,0.8,6
+c791912933ec9b1311b63b4671d449207cad7e3f,"* So, once Broadleaf detects that the session-based {@link Customer} has been persisted, it should remove the session-based",1,8,0.8,7
+c791912933ec9b1311b63b4671d449207cad7e3f,* Returns the anonymous customer that was saved in session or null if none exists.,1,8,0.8,8
+c791912933ec9b1311b63b4671d449207cad7e3f,"* <p>So, once Broadleaf detects that the session-based {@link Customer} has been persisted, it should remove the session-based",0,8,0.8,9
+c791912933ec9b1311b63b4671d449207cad7e3f,* there is instead just an anonymous customer ID) then this will look up the customer from the database using that and,0,8,0.8,10
+c791912933ec9b1311b63b4671d449207cad7e3f,"* So, once Broadleaf detects that the session-based {@link Customer} has been persisted, it should remove the session-based",1,8,0.8,11
+c791912933ec9b1311b63b4671d449207cad7e3f,* Returns the anonymous customer that was saved in session or null if none exists.,1,8,0.8,12
+c791912933ec9b1311b63b4671d449207cad7e3f,"* <p>So, once Broadleaf detects that the session-based {@link Customer} has been persisted, it should remove the session-based",0,8,0.8,13
+c791912933ec9b1311b63b4671d449207cad7e3f,* there is instead just an anonymous customer ID) then this will look up the customer from the database using that and,0,8,0.8,14
+c791912933ec9b1311b63b4671d449207cad7e3f,* Returns the anonymous customer that was saved in session. This first checks for a full customer in session (meaning,0,8,0.8,15
+c791912933ec9b1311b63b4671d449207cad7e3f,* @param copyCartWhenSpecifiedStateChanges whether or not the old cart should be copied to a new cart and then repriced,1,8,0.8,16
+c791912933ec9b1311b63b4671d449207cad7e3f,* @param copyCartWhenSpecifiedStateChanges whether or not the old cart should be copied to a new cart and then repriced,0,8,0.8,17
+c791912933ec9b1311b63b4671d449207cad7e3f,"//Customer is not in session, see if we have just a customer ID in session (the anonymous customer might have",0,7,0.7000000000000001,18
+c791912933ec9b1311b63b4671d449207cad7e3f,* Returns the session attribute to store the anonymous customer ID. This session attribute should be used to track,1,7,0.7000000000000001,19
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return the anonymous customer that has not been persisted in the database but is available as a session object,1,7,0.7000000000000001,20
+c791912933ec9b1311b63b4671d449207cad7e3f,"//Customer is not in session, see if we have just a customer ID in session (the anonymous customer might have",1,7,0.7000000000000001,21
+c791912933ec9b1311b63b4671d449207cad7e3f,* <p>Returns the session attribute to store the anonymous customer ID. This session attribute should be used to track,0,7,0.7000000000000001,22
+c791912933ec9b1311b63b4671d449207cad7e3f,private final List<Long> createdCustomerPhoneIds = new ArrayList<Long>();,1,7,0.7000000000000001,23
+c791912933ec9b1311b63b4671d449207cad7e3f,* Returns the session attribute to store the anonymous customer ID. This session attribute should be used to track,1,7,0.7000000000000001,24
+c791912933ec9b1311b63b4671d449207cad7e3f,"//Customer is not in session, see if we have just a customer ID in session (the anonymous customer might have",1,7,0.7000000000000001,25
+c791912933ec9b1311b63b4671d449207cad7e3f,* <p>Returns the session attribute to store the anonymous customer ID. This session attribute should be used to track,0,7,0.7000000000000001,26
+c791912933ec9b1311b63b4671d449207cad7e3f,"//Customer is not in session, see if we have just a customer ID in session (the anonymous customer might have",0,7,0.7000000000000001,27
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return the anonymous customer that has not been persisted in the database but is available as a session object,1,7,0.7000000000000001,28
+c791912933ec9b1311b63b4671d449207cad7e3f,* @param request - the current request,1,6,0.6000000000000001,29
+c791912933ec9b1311b63b4671d449207cad7e3f,private final Long userId = 1L;,1,6,0.6000000000000001,30
+c791912933ec9b1311b63b4671d449207cad7e3f,private final List<Long> createdCustomerPhoneIds = new ArrayList<>();,0,6,0.6000000000000001,31
+c791912933ec9b1311b63b4671d449207cad7e3f,"if (currency == null && BLCRequestUtils.getURLorHeaderParameter(request, CURRENCY_CODE_PARAM) != null) {",1,6,0.6000000000000001,32
+c791912933ec9b1311b63b4671d449207cad7e3f,* @param request - the current request,1,6,0.6000000000000001,33
+c791912933ec9b1311b63b4671d449207cad7e3f,"//If there is no Customer object in session, AND no customer id in session, create a new customer",1,6,0.6000000000000001,34
+c791912933ec9b1311b63b4671d449207cad7e3f,* that the customer has not already been persisted) and returns that. If there is no full customer in session (and,0,6,0.6000000000000001,35
+c791912933ec9b1311b63b4671d449207cad7e3f,"//If there is no Customer object in session, AND no customer id in session, create a new customer",0,6,0.6000000000000001,36
+c791912933ec9b1311b63b4671d449207cad7e3f,* @param request the current request,0,6,0.6000000000000001,37
+c791912933ec9b1311b63b4671d449207cad7e3f,"//If there is no Customer object in session, AND no customer id in session, create a new customer",1,6,0.6000000000000001,38
+c791912933ec9b1311b63b4671d449207cad7e3f,* that the customer has not already been persisted) and returns that. If there is no full customer in session (and,0,6,0.6000000000000001,39
+c791912933ec9b1311b63b4671d449207cad7e3f,"//If there is no Customer object in session, AND no customer id in session, create a new customer",0,6,0.6000000000000001,40
+c791912933ec9b1311b63b4671d449207cad7e3f,"// Leaving the following line in for backwards compatibility, but all rules should use order as the",1,6,0.6000000000000001,41
+c791912933ec9b1311b63b4671d449207cad7e3f,"public Order mergeCart(Customer customer, WebRequest request) {",0,6,0.6000000000000001,42
+c791912933ec9b1311b63b4671d449207cad7e3f,"// Leaving the following line in for backwards compatibility, but all rules should use order as the",0,6,0.6000000000000001,43
+c791912933ec9b1311b63b4671d449207cad7e3f,* Ensures that the customer's current cart is available to the request.,0,6,0.6000000000000001,44
+c791912933ec9b1311b63b4671d449207cad7e3f,* @param request the current request,0,6,0.6000000000000001,45
+c791912933ec9b1311b63b4671d449207cad7e3f,"if (desiredCurrency == null && BLCRequestUtils.getURLorHeaderParameter(request, CURRENCY_CODE_PARAM) != null) {",0,5,0.5,46
+c791912933ec9b1311b63b4671d449207cad7e3f,* {@link Customer} and then utilize just the customer ID from session.,1,5,0.5,47
+c791912933ec9b1311b63b4671d449207cad7e3f,"// When we have a hold of the lock for the order, we want to reload the order from the database.",0,5,0.5,48
+c791912933ec9b1311b63b4671d449207cad7e3f,"// When we have a hold of the lock for the order, we want to reload the order from the database.",0,5,0.5,49
+c791912933ec9b1311b63b4671d449207cad7e3f,*          <li>Create a new customer with null customer id</li>,0,5,0.5,50
+c791912933ec9b1311b63b4671d449207cad7e3f,if (currency == null && BLCRequestUtils.isOKtoUseSession(request)) {,1,5,0.5,51
+c791912933ec9b1311b63b4671d449207cad7e3f,if (currency == null) {,1,5,0.5,52
+c791912933ec9b1311b63b4671d449207cad7e3f,public class CustomerStateFilter extends GenericFilterBean implements Ordered {,1,5,0.5,53
+c791912933ec9b1311b63b4671d449207cad7e3f,* {@link Customer} and then utilize just the customer ID from session.</p>,0,5,0.5,54
+c791912933ec9b1311b63b4671d449207cad7e3f,"//we have a customer ID in session, look up the customer from the database to ensure we have an up-to-date",1,5,0.5,55
+c791912933ec9b1311b63b4671d449207cad7e3f,"public boolean mergeCartNeeded(Customer customer, WebRequest request) {",0,5,0.5,56
+c791912933ec9b1311b63b4671d449207cad7e3f,"//we have a customer ID in session, look up the customer from the database to ensure we have an up-to-date",0,5,0.5,57
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName != null && (customer == null || !userName.equals(customer.getUsername()))) {,1,5,0.5,58
+c791912933ec9b1311b63b4671d449207cad7e3f,// can only get here if the authenticated user does not match the user in session,0,5,0.5,59
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName != null && (customer == null || !userName.equals(customer.getUsername()))) {,0,5,0.5,60
+c791912933ec9b1311b63b4671d449207cad7e3f,* {@link Customer} and then utilize just the customer ID from session.,1,5,0.5,61
+c791912933ec9b1311b63b4671d449207cad7e3f,"//we have a customer ID in session, look up the customer from the database to ensure we have an up-to-date",1,5,0.5,62
+c791912933ec9b1311b63b4671d449207cad7e3f,* {@link Customer} and then utilize just the customer ID from session.</p>,0,5,0.5,63
+c791912933ec9b1311b63b4671d449207cad7e3f,"//we have a customer ID in session, look up the customer from the database to ensure we have an up-to-date",0,5,0.5,64
+c791912933ec9b1311b63b4671d449207cad7e3f,* Utilizes the current BroadleafRequestContext to lookup a customer from the request.,1,5,0.5,65
+c791912933ec9b1311b63b4671d449207cad7e3f,// can only get here if the authenticated user does not match the user in session,1,5,0.5,66
+c791912933ec9b1311b63b4671d449207cad7e3f,protected final Log LOG = LogFactory.getLog(getClass());,1,4,0.4,67
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final SimpleDateFormat CONTENT_DATE_DISPLAY_MINUTES_FORMATTER = new SimpleDateFormat(""mm"");",1,4,0.4,68
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final SimpleDateFormat CONTENT_DATE_DISPLAY_HOURS_FORMATTER = new SimpleDateFormat(""h"");",1,4,0.4,69
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final SimpleDateFormat CONTENT_DATE_DISPLAY_FORMATTER = new SimpleDateFormat(""MM/dd/yyyy"");",1,4,0.4,70
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final SimpleDateFormat CONTENT_DATE_FORMATTER = new SimpleDateFormat(""yyyyMMddHHmm"");",1,4,0.4,71
+c791912933ec9b1311b63b4671d449207cad7e3f,protected final Log LOG = LogFactory.getLog(getClass());,1,4,0.4,72
+c791912933ec9b1311b63b4671d449207cad7e3f,// sure we detach the order from the EntityManager and forcefully reload the order.,0,4,0.4,73
+c791912933ec9b1311b63b4671d449207cad7e3f,// This is because a different thread could have modified the order in between the time we initially,0,4,0.4,74
+c791912933ec9b1311b63b4671d449207cad7e3f,protected static final Log LOG = LogFactory.getLog(CartStateFilter.class);,0,4,0.4,75
+c791912933ec9b1311b63b4671d449207cad7e3f,* are marked as requiring a lock will execute strictly serially as defined by the configured {@link OrderLockManager}.,0,4,0.4,76
+c791912933ec9b1311b63b4671d449207cad7e3f,if (desiredCurrency == null && BLCRequestUtils.isOKtoUseSession(request)) {,0,4,0.4,77
+c791912933ec9b1311b63b4671d449207cad7e3f,// sure we detach the order from the EntityManager and forcefully reload the order.,0,4,0.4,78
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final SimpleDateFormat CONTENT_DATE_PARSE_FORMAT = new SimpleDateFormat(""MM/dd/yyyy hh:mm aa"");",1,4,0.4,79
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafCurrency resolveCurrency(WebRequest request) {,1,4,0.4,80
+c791912933ec9b1311b63b4671d449207cad7e3f,if (desiredCurrency == null) {,0,4,0.4,81
+c791912933ec9b1311b63b4671d449207cad7e3f,if (resultHolder != null && resultHolder.getResult() != null) {,0,4,0.4,82
+c791912933ec9b1311b63b4671d449207cad7e3f,public class CartStateFilter extends GenericFilterBean implements  Ordered {,1,4,0.4,83
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafCurrency resolveCurrency(HttpServletRequest request) {,1,4,0.4,84
+c791912933ec9b1311b63b4671d449207cad7e3f,if (resultHolder != null && resultHolder.getResult() != null) {,1,4,0.4,85
+c791912933ec9b1311b63b4671d449207cad7e3f,public class CustomerStateFilter extends OncePerRequestFilter implements Ordered {,0,4,0.4,86
+c791912933ec9b1311b63b4671d449207cad7e3f,"protected void publishEvent(ApplicationEvent event, WebRequest request, String eventClass, String username) {",0,4,0.4,87
+c791912933ec9b1311b63b4671d449207cad7e3f,"protected void publishEvent(ApplicationEvent event, WebRequest request, String eventClass, String username) {",0,4,0.4,88
+c791912933ec9b1311b63b4671d449207cad7e3f,private Long userId = null;,0,4,0.4,89
+c791912933ec9b1311b63b4671d449207cad7e3f,* Once it has been persisted (like once the user has added something to the cart) then {@link #getAnonymousCustomerIdSessionAttributeName()},0,4,0.4,90
+c791912933ec9b1311b63b4671d449207cad7e3f,* Once it has been persisted (like once the user has added something to the cart) then {@link #getAnonymousCustomerIdAttributeName()},1,4,0.4,91
+c791912933ec9b1311b63b4671d449207cad7e3f,protected static final Log LOG = LogFactory.getLog(CartStateFilter.class);,0,4,0.4,92
+c791912933ec9b1311b63b4671d449207cad7e3f,// This is because a different thread could have modified the order in between the time we initially,0,4,0.4,93
+c791912933ec9b1311b63b4671d449207cad7e3f,if (logger.isDebugEnabled() && customer != null) {,0,4,0.4,94
+c791912933ec9b1311b63b4671d449207cad7e3f,* are marked as requiring a lock will execute strictly serially as defined by the configured {@link OrderLockManager}.,0,4,0.4,95
+c791912933ec9b1311b63b4671d449207cad7e3f,if (ruleMap == null) {,1,4,0.4,96
+c791912933ec9b1311b63b4671d449207cad7e3f,public static Customer getAnonymousCustomer(WebRequest request) {,1,4,0.4,97
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer anonymousCustomer = (Customer) request.getAttribute(CustomerStateRequestProcessor.ANONYMOUS_CUSTOMER_SESSION_ATTRIBUTE_NAME, WebRequest.SCOPE_GLOBAL_SESSION);",1,4,0.4,98
+c791912933ec9b1311b63b4671d449207cad7e3f,if (this.request == null) {,1,4,0.4,99
+c791912933ec9b1311b63b4671d449207cad7e3f,"* Also invokes blMergeCartProcessor"" if the user has just logged in.",0,4,0.4,100
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer customer = (Customer) request.getAttribute(CustomerStateRequestProcessor.getCustomerRequestAttributeName(),",0,4,0.4,101
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customer == null) {,0,4,0.4,102
+c791912933ec9b1311b63b4671d449207cad7e3f,if (cart == null) {,0,4,0.4,103
+c791912933ec9b1311b63b4671d449207cad7e3f,// Setup cart for content rule processing,0,4,0.4,104
+c791912933ec9b1311b63b4671d449207cad7e3f,if (ruleMap == null) {,0,4,0.4,105
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer customer = (Customer) request.getAttribute(CustomerStateRequestProcessor.getCustomerRequestAttributeName(), WebRequest.SCOPE_REQUEST);",1,4,0.4,106
+c791912933ec9b1311b63b4671d449207cad7e3f,if (cart == null) {,1,4,0.4,107
+c791912933ec9b1311b63b4671d449207cad7e3f,// Setup cart for content rule processing,1,4,0.4,108
+c791912933ec9b1311b63b4671d449207cad7e3f,if (webRequest == null) {,1,4,0.4,109
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer customer = (Customer) request.getAttribute(CustomerStateRequestProcessor.getCustomerRequestAttributeName(),",1,4,0.4,110
+c791912933ec9b1311b63b4671d449207cad7e3f,if (logger.isDebugEnabled() && customer != null) {,1,4,0.4,111
+c791912933ec9b1311b63b4671d449207cad7e3f,public Customer getAnonymousCustomer(WebRequest request) {,0,4,0.4,112
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer anonymousCustomer = (Customer) request.getAttribute(getAnonymousCustomerSessionAttributeName(),",0,4,0.4,113
+c791912933ec9b1311b63b4671d449207cad7e3f,public Customer getAnonymousCustomer(WebRequest request) {,0,4,0.4,114
+c791912933ec9b1311b63b4671d449207cad7e3f,if (anonymousCustomer == null) {,0,4,0.4,115
+c791912933ec9b1311b63b4671d449207cad7e3f,public static Customer getAnonymousCustomer(WebRequest request) {,1,4,0.4,116
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customer == null) {,1,4,0.4,117
+c791912933ec9b1311b63b4671d449207cad7e3f,if (anonymousCustomer == null) {,0,4,0.4,118
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer anonymousCustomer = (Customer) request.getAttribute(getAnonymousCustomerSessionAttributeName(),",0,4,0.4,119
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customer == null) {,1,4,0.4,120
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafRequestedCurrencyDto resolveCurrency(WebRequest request) {,0,3,0.30000000000000004,121
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafRequestedCurrencyDto resolveCurrency(HttpServletRequest request) {,0,3,0.30000000000000004,122
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Attempt to find currency by param "" + currencyCode + "" resulted in "" + desiredCurrency);",0,3,0.30000000000000004,123
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafCurrency resolveCurrency(WebRequest request);,1,3,0.30000000000000004,124
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafCurrency resolveCurrency(HttpServletRequest request);,1,3,0.30000000000000004,125
+c791912933ec9b1311b63b4671d449207cad7e3f,public class CartStateFilter extends OncePerRequestFilter implements Ordered {,0,3,0.30000000000000004,126
+c791912933ec9b1311b63b4671d449207cad7e3f,"currency = (BroadleafCurrency) request.getAttribute(CURRENCY_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,3,0.30000000000000004,127
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Attempt to find currency by param "" + currencyCode + "" resulted in "" + currency);",1,3,0.30000000000000004,128
+c791912933ec9b1311b63b4671d449207cad7e3f,"currency = (BroadleafCurrency) request.getAttribute(CURRENCY_VAR, WebRequest.SCOPE_REQUEST);",1,3,0.30000000000000004,129
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafCurrency currency = null;,1,3,0.30000000000000004,130
+c791912933ec9b1311b63b4671d449207cad7e3f,if (extensionManager != null) {,0,3,0.30000000000000004,131
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final FastDateFormat CONTENT_DATE_FORMATTER = FastDateFormat.getInstance(""yyyyMMddHHmm"");",0,3,0.30000000000000004,132
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final FastDateFormat CONTENT_DATE_PARSE_FORMAT = FastDateFormat.getInstance(""MM/dd/yyyy hh:mm aa"");",0,3,0.30000000000000004,133
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final FastDateFormat CONTENT_DATE_DISPLAY_MINUTES_FORMATTER = FastDateFormat.getInstance(""mm"");",0,3,0.30000000000000004,134
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final FastDateFormat CONTENT_DATE_DISPLAY_HOURS_FORMATTER = FastDateFormat.getInstance(""h"");",0,3,0.30000000000000004,135
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final FastDateFormat CONTENT_DATE_DISPLAY_FORMATTER = FastDateFormat.getInstance(""MM/dd/yyyy"");",0,3,0.30000000000000004,136
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {",1,3,0.30000000000000004,137
+c791912933ec9b1311b63b4671d449207cad7e3f,protected boolean requestRequiresLock(ServletRequest request) {,0,3,0.30000000000000004,138
+c791912933ec9b1311b63b4671d449207cad7e3f,"// read it for this thread and now, resulting in the order being stale. Additionally, we want to make",0,3,0.30000000000000004,139
+c791912933ec9b1311b63b4671d449207cad7e3f,Order order = CartState.getCart();,0,3,0.30000000000000004,140
+c791912933ec9b1311b63b4671d449207cad7e3f,"* by {@link #requestRequiresLock(ServletRequest)}. By default, this is configured for all POST requests. Requests that",0,3,0.30000000000000004,141
+c791912933ec9b1311b63b4671d449207cad7e3f,if (currencyDto != null) {,0,3,0.30000000000000004,142
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {",1,3,0.30000000000000004,143
+c791912933ec9b1311b63b4671d449207cad7e3f,if (extensionManager != null) {,1,3,0.30000000000000004,144
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerAuthenticatedFromCookieEvent) {,1,3,0.30000000000000004,145
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafCurrency currency = currencyResolver.resolveCurrency(request);,1,3,0.30000000000000004,146
+c791912933ec9b1311b63b4671d449207cad7e3f,"Customer customer = customerService.readCustomerByUsername(""customer1"");",0,3,0.30000000000000004,147
+c791912933ec9b1311b63b4671d449207cad7e3f,"// read it for this thread and now, resulting in the order being stale. Additionally, we want to make",0,3,0.30000000000000004,148
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerIdAttributeName()},1,3,0.30000000000000004,149
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerAttributeName()},1,3,0.30000000000000004,150
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link CustomerStateFilter},1,3,0.30000000000000004,151
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerIdSessionAttributeName()},0,3,0.30000000000000004,152
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerSessionAttributeName()},0,3,0.30000000000000004,153
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link org.broadleafcommerce.profile.web.site.security.CustomerStateFilter},0,3,0.30000000000000004,154
+c791912933ec9b1311b63b4671d449207cad7e3f,"locale = (Locale) request.getAttribute(LOCALE_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,3,0.30000000000000004,155
+c791912933ec9b1311b63b4671d449207cad7e3f,"locale = (Locale) request.getAttribute(LOCALE_VAR, WebRequest.SCOPE_SESSION);",0,3,0.30000000000000004,156
+c791912933ec9b1311b63b4671d449207cad7e3f,Customer customer = customerService.readCustomerById(userId);,1,3,0.30000000000000004,157
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerLoggedInEvent) {,1,3,0.30000000000000004,158
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilterInternal(HttpServletRequest baseRequest, HttpServletResponse baseResponse, FilterChain chain) throws IOException, ServletException {",0,3,0.30000000000000004,159
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final String LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME = ""_blc_lastPublishedEvent"";",1,3,0.30000000000000004,160
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final String LAST_PUBLISHED_EVENT_USERNAME_SESSION_ATTRIBUTE_NAME = ""_blc_lastPublishedEventUsername"";",0,3,0.30000000000000004,161
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final String LAST_PUBLISHED_EVENT_CLASS_SESSION_ATTRIBUTE_NAME = ""_blc_lastPublishedEventClass"";",0,3,0.30000000000000004,162
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerLoggedInEvent) {,1,3,0.30000000000000004,163
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerAuthenticatedFromCookieEvent) {,1,3,0.30000000000000004,164
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final String LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME = ""_blc_lastPublishedEvent"";",1,3,0.30000000000000004,165
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final String LAST_PUBLISHED_EVENT_USERNAME_SESSION_ATTRIBUTE_NAME = ""_blc_lastPublishedEventUsername"";",0,3,0.30000000000000004,166
+c791912933ec9b1311b63b4671d449207cad7e3f,"private static final String LAST_PUBLISHED_EVENT_CLASS_SESSION_ATTRIBUTE_NAME = ""_blc_lastPublishedEventClass"";",0,3,0.30000000000000004,167
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilter(ServletRequest baseRequest, ServletResponse baseResponse, FilterChain chain) throws IOException, ServletException {",1,3,0.30000000000000004,168
+c791912933ec9b1311b63b4671d449207cad7e3f,"ServletWebRequest request = new ServletWebRequest(baseRequest, baseResponse);",0,3,0.30000000000000004,169
+c791912933ec9b1311b63b4671d449207cad7e3f,protected boolean requestRequiresLock(ServletRequest request) {,0,3,0.30000000000000004,170
+c791912933ec9b1311b63b4671d449207cad7e3f,if ((authentication != null) && !(authentication instanceof AnonymousAuthenticationToken)) {,1,3,0.30000000000000004,171
+c791912933ec9b1311b63b4671d449207cad7e3f,Order order = CartState.getCart();,0,3,0.30000000000000004,172
+c791912933ec9b1311b63b4671d449207cad7e3f,"* Genericized version of the CartStateFilter. This was made to facilitate reuse between Servlet Filters, Portlet Filters and Spring MVC interceptors. Spring has an easy way of converting HttpRequests and PortletRequests into WebRequests via <br />",1,3,0.30000000000000004,173
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customerId != null) {,0,3,0.30000000000000004,174
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerIdSessionAttributeName()},0,3,0.30000000000000004,175
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerSessionAttributeName()},0,3,0.30000000000000004,176
+c791912933ec9b1311b63b4671d449207cad7e3f,//and store the entire customer in session (don't persist to DB just yet),0,3,0.30000000000000004,177
+c791912933ec9b1311b63b4671d449207cad7e3f,Customer anonymousCustomer = customerStateRequestProcessor.resolveAnonymousCustomer(request);,1,3,0.30000000000000004,178
+c791912933ec9b1311b63b4671d449207cad7e3f,Customer anonymousCustomer = CustomerStateRequestProcessor.getAnonymousCustomer(request);,0,3,0.30000000000000004,179
+c791912933ec9b1311b63b4671d449207cad7e3f,Customer customer = CustomerState.getCustomer();,0,3,0.30000000000000004,180
+c791912933ec9b1311b63b4671d449207cad7e3f,"ruleMap = new HashMap<String, Object>();",1,3,0.30000000000000004,181
+c791912933ec9b1311b63b4671d449207cad7e3f,Order cart = orderService.findCartForCustomer(customer);,1,3,0.30000000000000004,182
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customer != null) {,1,3,0.30000000000000004,183
+c791912933ec9b1311b63b4671d449207cad7e3f,Order cart = orderService.findCartForCustomer(anonymousCustomer);,0,3,0.30000000000000004,184
+c791912933ec9b1311b63b4671d449207cad7e3f,//and store the entire customer in session (don't persist to DB just yet),1,3,0.30000000000000004,185
+c791912933ec9b1311b63b4671d449207cad7e3f,return (anonymousCustomer != null && customer.getId() != null && !customer.getId().equals(anonymousCustomer.getId()));,0,3,0.30000000000000004,186
+c791912933ec9b1311b63b4671d449207cad7e3f,Customer anonymousCustomer = customerStateRequestProcessor.resolveAnonymousCustomer(request);,0,3,0.30000000000000004,187
+c791912933ec9b1311b63b4671d449207cad7e3f,"ruleMap = new HashMap<String, Object>();",0,3,0.30000000000000004,188
+c791912933ec9b1311b63b4671d449207cad7e3f,"cart = mergeCart(customer, request);",0,3,0.30000000000000004,189
+c791912933ec9b1311b63b4671d449207cad7e3f,Order cart = null;,0,3,0.30000000000000004,190
+c791912933ec9b1311b63b4671d449207cad7e3f,"* Genericized version of the CartStateFilter. This was made to facilitate reuse between Servlet Filters, Portlet Filters",0,3,0.30000000000000004,191
+c791912933ec9b1311b63b4671d449207cad7e3f,"customer = (Customer) request.getAttribute(customerRequestAttributeName, WebRequest.SCOPE_REQUEST);",1,3,0.30000000000000004,192
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = (Customer) BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().getCustomer(request);,0,3,0.30000000000000004,193
+c791912933ec9b1311b63b4671d449207cad7e3f,WebRequest request = BroadleafRequestContext.getBroadleafRequestContext().getWebRequest();,1,3,0.30000000000000004,194
+c791912933ec9b1311b63b4671d449207cad7e3f,"* by {@link #requestRequiresLock(ServletRequest)}. By default, this is configured for all POST requests. Requests that",0,3,0.30000000000000004,195
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customerId != null) {,1,3,0.30000000000000004,196
+c791912933ec9b1311b63b4671d449207cad7e3f,Customer anonymousCustomer = customerStateRequestProcessor.resolveAnonymousCustomer(request);,0,3,0.30000000000000004,197
+c791912933ec9b1311b63b4671d449207cad7e3f,"public static final String OVERRIDE_CUSTOMER_SESSION_ATTR_NAME = ""_blc_overrideCustomerId"";",0,3,0.30000000000000004,198
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customer != null) {,1,3,0.30000000000000004,199
+c791912933ec9b1311b63b4671d449207cad7e3f,if (overrideId != null) {,0,3,0.30000000000000004,200
+c791912933ec9b1311b63b4671d449207cad7e3f,Site site = siteResolver.resolveSite(request);,0,3,0.30000000000000004,201
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customerId != null) {,1,3,0.30000000000000004,202
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customerId != null) {,0,3,0.30000000000000004,203
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerIdSessionAttributeName()},0,3,0.30000000000000004,204
+c791912933ec9b1311b63b4671d449207cad7e3f,* @see {@link #getAnonymousCustomerSessionAttributeName()},0,3,0.30000000000000004,205
+c791912933ec9b1311b63b4671d449207cad7e3f,//and store the entire customer in session (don't persist to DB just yet),0,3,0.30000000000000004,206
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerLoggedInEvent) {,1,3,0.30000000000000004,207
+c791912933ec9b1311b63b4671d449207cad7e3f,} else if (authentication instanceof UsernamePasswordAuthenticationToken) {,1,3,0.30000000000000004,208
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerAuthenticatedFromCookieEvent) {,1,3,0.30000000000000004,209
+c791912933ec9b1311b63b4671d449207cad7e3f,//and store the entire customer in session (don't persist to DB just yet),1,3,0.30000000000000004,210
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = (Customer) BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().getCustomer(request);,1,3,0.30000000000000004,211
+c791912933ec9b1311b63b4671d449207cad7e3f,if (customer != null) {,0,3,0.30000000000000004,212
+c791912933ec9b1311b63b4671d449207cad7e3f,Authentication authentication = SecurityContextHolder.getContext().getAuthentication();,0,3,0.30000000000000004,213
+c791912933ec9b1311b63b4671d449207cad7e3f,if ((authentication != null) && !(authentication instanceof AnonymousAuthenticationToken)) {,0,3,0.30000000000000004,214
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = (Customer) BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().getCustomer(request);,0,3,0.30000000000000004,215
+c791912933ec9b1311b63b4671d449207cad7e3f,Site site = siteResolver.resolveSite(request);,1,3,0.30000000000000004,216
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerAuthenticatedFromCookieEvent) {,0,3,0.30000000000000004,217
+c791912933ec9b1311b63b4671d449207cad7e3f,Authentication authentication = SecurityContextHolder.getContext().getAuthentication();,1,3,0.30000000000000004,218
+c791912933ec9b1311b63b4671d449207cad7e3f,} else if (authentication instanceof UsernamePasswordAuthenticationToken) {,0,3,0.30000000000000004,219
+c791912933ec9b1311b63b4671d449207cad7e3f,if (lastPublishedEvent != null && lastPublishedEvent instanceof CustomerLoggedInEvent) {,0,3,0.30000000000000004,220
+c791912933ec9b1311b63b4671d449207cad7e3f,if (!requestRequiresLock(request)) {,0,2,0.2,221
+c791912933ec9b1311b63b4671d449207cad7e3f,if (LOG.isTraceEnabled()) {,0,2,0.2,222
+c791912933ec9b1311b63b4671d449207cad7e3f,} finally {,0,2,0.2,223
+c791912933ec9b1311b63b4671d449207cad7e3f,if (request instanceof HttpServletRequest) {,0,2,0.2,224
+c791912933ec9b1311b63b4671d449207cad7e3f,/** Logger for this class and subclasses */,1,2,0.2,225
+c791912933ec9b1311b63b4671d449207cad7e3f,if (BLCRequestUtils.isOKtoUseSession(request)) {,0,2,0.2,226
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blCurrencyResolverExtensionManager"")",0,2,0.2,227
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafCurrency desiredCurrency = null;,0,2,0.2,228
+c791912933ec9b1311b63b4671d449207cad7e3f,"desiredCurrency = (BroadleafCurrency) request.getAttribute(CURRENCY_VAR, WebRequest.SCOPE_REQUEST);",0,2,0.2,229
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafCurrency defaultCurrency = broadleafCurrencyService.findDefaultBroadleafCurrency();,0,2,0.2,230
+c791912933ec9b1311b63b4671d449207cad7e3f,"desiredCurrency = (BroadleafCurrency) request.getAttribute(CURRENCY_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",0,2,0.2,231
+c791912933ec9b1311b63b4671d449207cad7e3f,private boolean updatePrices = true;,1,2,0.2,232
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafCurrency currencyToUse = defaultCurrency;,0,2,0.2,233
+c791912933ec9b1311b63b4671d449207cad7e3f,if (updatePrices) {,1,2,0.2,234
+c791912933ec9b1311b63b4671d449207cad7e3f,currency = broadleafCurrencyService.findCurrencyByCode(currencyCode);,1,2,0.2,235
+c791912933ec9b1311b63b4671d449207cad7e3f,currency = locale.getDefaultCurrency();,1,2,0.2,236
+c791912933ec9b1311b63b4671d449207cad7e3f,currency = broadleafCurrencyService.findDefaultBroadleafCurrency();,1,2,0.2,237
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,0,2,0.2,238
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,1,2,0.2,239
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)",0,2,0.2,240
+c791912933ec9b1311b63b4671d449207cad7e3f,ExtensionResultHolder<BroadleafCurrency> resultHolder = new ExtensionResultHolder<BroadleafCurrency>();,0,2,0.2,241
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blOrderLockManager"")",0,2,0.2,242
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blOrderService"")",0,2,0.2,243
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blOrderLockManager"")",0,2,0.2,244
+c791912933ec9b1311b63b4671d449207cad7e3f,* return it.,0,2,0.2,245
+c791912933ec9b1311b63b4671d449207cad7e3f,public boolean isUpdatePrices() {,1,2,0.2,246
+c791912933ec9b1311b63b4671d449207cad7e3f,"Long customerId = (Long) request.getAttribute(getAnonymousCustomerIdSessionAttributeName(), WebRequest.SCOPE_GLOBAL_SESSION);",0,2,0.2,247
+c791912933ec9b1311b63b4671d449207cad7e3f,anonymousCustomer = customerService.readCustomerById(customerId);,0,2,0.2,248
+c791912933ec9b1311b63b4671d449207cad7e3f,* date in regards to Hibernate (specifically with lists).</p>,0,2,0.2,249
+c791912933ec9b1311b63b4671d449207cad7e3f,"Long customerId = (Long) request.getAttribute(getAnonymousCustomerIdSessionAttributeName(), WebRequest.SCOPE_GLOBAL_SESSION);",1,2,0.2,250
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.readCustomerById(customerId);,1,2,0.2,251
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.createNewCustomer();,1,2,0.2,252
+c791912933ec9b1311b63b4671d449207cad7e3f,"return (Customer) request.getAttribute(getAnonymousCustomerSessionAttributeName(), WebRequest.SCOPE_GLOBAL_SESSION);",1,2,0.2,253
+c791912933ec9b1311b63b4671d449207cad7e3f,* date in regards to Hibernate (specifically with lists).,1,2,0.2,254
+c791912933ec9b1311b63b4671d449207cad7e3f,"* This filter is also responsible for establishing a session-wide lock for operations that require a lock, indicated",0,2,0.2,255
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blOrderService"")",0,2,0.2,256
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)",0,2,0.2,257
+c791912933ec9b1311b63b4671d449207cad7e3f,if (!requestRequiresLock(request)) {,0,2,0.2,258
+c791912933ec9b1311b63b4671d449207cad7e3f,if (LOG.isTraceEnabled()) {,0,2,0.2,259
+c791912933ec9b1311b63b4671d449207cad7e3f,} finally {,0,2,0.2,260
+c791912933ec9b1311b63b4671d449207cad7e3f,if (request instanceof HttpServletRequest) {,0,2,0.2,261
+c791912933ec9b1311b63b4671d449207cad7e3f,/** Logger for this class and subclasses */,1,2,0.2,262
+c791912933ec9b1311b63b4671d449207cad7e3f,"* This filter is also responsible for establishing a session-wide lock for operations that require a lock, indicated",0,2,0.2,263
+c791912933ec9b1311b63b4671d449207cad7e3f,order = orderDao.updatePrices(order);,1,2,0.2,264
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(loggedInEvent.getCustomer().getUsername())) {,1,2,0.2,265
+c791912933ec9b1311b63b4671d449207cad7e3f,public void setUpdatePrices(boolean updatePrices) {,1,2,0.2,266
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)",0,2,0.2,267
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletRequest;,0,2,0.2,268
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletResponse;,0,2,0.2,269
+c791912933ec9b1311b63b4671d449207cad7e3f,HttpServletResponse response = ((ServletWebRequest) request).getResponse();,0,2,0.2,270
+c791912933ec9b1311b63b4671d449207cad7e3f,} catch(Exception e) {,0,2,0.2,271
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,1,2,0.2,272
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletRequest;,1,2,0.2,273
+c791912933ec9b1311b63b4671d449207cad7e3f,} catch(EncodingException e) {,1,2,0.2,274
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,0,2,0.2,275
+c791912933ec9b1311b63b4671d449207cad7e3f,public class CustomerPhoneControllerTest extends TestNGSiteIntegrationSetup {,0,2,0.2,276
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,1,2,0.2,277
+c791912933ec9b1311b63b4671d449207cad7e3f,public class CustomerPhoneControllerTest extends BaseTest {,1,2,0.2,278
+c791912933ec9b1311b63b4671d449207cad7e3f,protected void setupCustomerId(Method testMethod) throws Exception {,0,2,0.2,279
+c791912933ec9b1311b63b4671d449207cad7e3f,"userId = customerService.readCustomerByUsername(""customer1"").getId();",0,2,0.2,280
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,1,2,0.2,281
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blRequestProcessor"")",1,2,0.2,282
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.createCustomerWithNullId();,0,2,0.2,283
+c791912933ec9b1311b63b4671d449207cad7e3f,*          <li>Create a new customer</li>,1,2,0.2,284
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.createNewCustomer();,1,2,0.2,285
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = resolveAuthenticatedCustomer(authentication);,1,2,0.2,286
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.annotation.Resource;,0,2,0.2,287
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerAuthenticatedFromCookieEvent cookieEvent = new CustomerAuthenticatedFromCookieEvent(customer, this.getClass().getName());",1,2,0.2,288
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(cookieEvent.getCustomer().getUsername())) {,1,2,0.2,289
+c791912933ec9b1311b63b4671d449207cad7e3f,if (CustomerAuthenticatedFromCookieEvent.class.getName().equals(lastPublishedEventClass)) {,0,2,0.2,290
+c791912933ec9b1311b63b4671d449207cad7e3f,"public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)",1,2,0.2,291
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafRequestedCurrencyDto resolveCurrency(HttpServletRequest request);,0,2,0.2,292
+c791912933ec9b1311b63b4671d449207cad7e3f,public BroadleafRequestedCurrencyDto resolveCurrency(WebRequest request);,0,2,0.2,293
+c791912933ec9b1311b63b4671d449207cad7e3f,"BroadleafRequestedCurrencyDto dto = new BroadleafRequestedCurrencyDto(currencyToUse, desiredCurrency);",0,2,0.2,294
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blCurrencyResolverExtensionManager"")",1,2,0.2,295
+c791912933ec9b1311b63b4671d449207cad7e3f,ExtensionResultHolder<BroadleafCurrency> resultHolder = new ExtensionResultHolder<BroadleafCurrency>();,1,2,0.2,296
+c791912933ec9b1311b63b4671d449207cad7e3f,} finally {,0,2,0.2,297
+c791912933ec9b1311b63b4671d449207cad7e3f,protected boolean shouldNotFilterErrorDispatch() {,0,2,0.2,298
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(eventUsername)) {,0,2,0.2,299
+c791912933ec9b1311b63b4671d449207cad7e3f,if (CustomerLoggedInEvent.class.getName().equals(lastPublishedEventClass)) {,0,2,0.2,300
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerAuthenticatedFromCookieEvent cookieEvent = new CustomerAuthenticatedFromCookieEvent(customer, this.getClass().getName());",0,2,0.2,301
+c791912933ec9b1311b63b4671d449207cad7e3f,if (CustomerLoggedInEvent.class.getName().equals(lastPublishedEventClass)) {,0,2,0.2,302
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(cookieEvent.getCustomer().getUsername())) {,1,2,0.2,303
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerAuthenticatedFromCookieEvent cookieEvent = new CustomerAuthenticatedFromCookieEvent(customer, this.getClass().getName());",1,2,0.2,304
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(loggedInEvent.getCustomer().getUsername())) {,1,2,0.2,305
+c791912933ec9b1311b63b4671d449207cad7e3f,if (CustomerAuthenticatedFromCookieEvent.class.getName().equals(lastPublishedEventClass)) {,0,2,0.2,306
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(eventUsername)) {,0,2,0.2,307
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerAuthenticatedFromCookieEvent cookieEvent = new CustomerAuthenticatedFromCookieEvent(customer, this.getClass().getName());",0,2,0.2,308
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.createNewCustomer();,0,2,0.2,309
+c791912933ec9b1311b63b4671d449207cad7e3f,"@BeforeMethod(alwaysRun = true, dependsOnMethods = ""springTestContextBeforeTestMethod"")",0,2,0.2,310
+c791912933ec9b1311b63b4671d449207cad7e3f,} else {,1,2,0.2,311
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.HashMap;,1,2,0.2,312
+c791912933ec9b1311b63b4671d449207cad7e3f,"private String mergeCartResponseKey = ""bl_merge_cart_response"";",0,2,0.2,313
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blMergeCartService"")",0,2,0.2,314
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blCustomerStateRequestProcessor"")",0,2,0.2,315
+c791912933ec9b1311b63b4671d449207cad7e3f,"protected static String cartRequestAttributeName = ""cart"";",0,2,0.2,316
+c791912933ec9b1311b63b4671d449207cad7e3f,"if (mergeCartNeeded(customer, request)) {",0,2,0.2,317
+c791912933ec9b1311b63b4671d449207cad7e3f,} else {,0,2,0.2,318
+c791912933ec9b1311b63b4671d449207cad7e3f,cart = orderService.findCartForCustomer(customer);,0,2,0.2,319
+c791912933ec9b1311b63b4671d449207cad7e3f,cart = orderService.getNullOrder();,0,2,0.2,320
+c791912933ec9b1311b63b4671d449207cad7e3f,"Map<String, Object> ruleMap = (Map<String, Object>) request.getAttribute(BLC_RULE_MAP_PARAM, WebRequest.SCOPE_REQUEST);",0,2,0.2,321
+c791912933ec9b1311b63b4671d449207cad7e3f,} catch (PricingException e) {,0,2,0.2,322
+c791912933ec9b1311b63b4671d449207cad7e3f,} catch (RemoveFromCartException e) {,0,2,0.2,323
+c791912933ec9b1311b63b4671d449207cad7e3f,public static String getCartRequestAttributeName() {,0,2,0.2,324
+c791912933ec9b1311b63b4671d449207cad7e3f,public static void setCartRequestAttributeName(String cartRequestAttributeName) {,0,2,0.2,325
+c791912933ec9b1311b63b4671d449207cad7e3f,protected boolean copyCartWhenSpecifiedStateChanges = false;,1,2,0.2,326
+c791912933ec9b1311b63b4671d449207cad7e3f,"protected static String cartRequestAttributeName = ""cart"";",1,2,0.2,327
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Looking up cart for customer "" + customer.getId());",1,2,0.2,328
+c791912933ec9b1311b63b4671d449207cad7e3f,cart = orderService.getNullOrder();,1,2,0.2,329
+c791912933ec9b1311b63b4671d449207cad7e3f,} else {,1,2,0.2,330
+c791912933ec9b1311b63b4671d449207cad7e3f,} catch (IllegalArgumentException e) {,1,2,0.2,331
+c791912933ec9b1311b63b4671d449207cad7e3f,if (webRequest instanceof ServletWebRequest) {,1,2,0.2,332
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletResponse;,1,2,0.2,333
+c791912933ec9b1311b63b4671d449207cad7e3f,cart = orderService.createNewCartForCustomer(customer);,1,2,0.2,334
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletRequest;,1,2,0.2,335
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerLoggedInEvent loggedInEvent = new CustomerLoggedInEvent(customer, this.getClass().getName());",1,2,0.2,336
+c791912933ec9b1311b63b4671d449207cad7e3f,return (Customer) BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().getCustomer(request);,0,2,0.2,337
+c791912933ec9b1311b63b4671d449207cad7e3f,return (Customer) BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().getCustomer();,0,2,0.2,338
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.context.request.ServletWebRequest;,1,2,0.2,339
+c791912933ec9b1311b63b4671d449207cad7e3f,return getCustomer(new ServletWebRequest(request));,1,2,0.2,340
+c791912933ec9b1311b63b4671d449207cad7e3f,"return (Customer) request.getAttribute(CustomerStateRequestProcessor.getCustomerRequestAttributeName(), WebRequest.SCOPE_REQUEST);",1,2,0.2,341
+c791912933ec9b1311b63b4671d449207cad7e3f,"protected static String customerRequestAttributeName = ""customer"";",1,2,0.2,342
+c791912933ec9b1311b63b4671d449207cad7e3f,public static void setCustomerRequestAttributeName(String customerRequestAttributeName) {,1,2,0.2,343
+c791912933ec9b1311b63b4671d449207cad7e3f,protected boolean copyCartWhenSpecifiedStateChanges = false;,0,2,0.2,344
+c791912933ec9b1311b63b4671d449207cad7e3f,* {@link UpdateCartService#validateCart(Order)} throws an IllegalArgumentException,0,2,0.2,345
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return the copyCartWhenSpecifiedStateChanges,0,2,0.2,346
+c791912933ec9b1311b63b4671d449207cad7e3f,public boolean isCopyCartWhenSpecifiedStateChanges() {,0,2,0.2,347
+c791912933ec9b1311b63b4671d449207cad7e3f,public void setCopyCartWhenSpecifiedStateChanges(boolean copyCartWhenSpecifiedStateChanges) {,0,2,0.2,348
+c791912933ec9b1311b63b4671d449207cad7e3f,protected static boolean copyCartWhenSpecifiedStateChanges = false;,1,2,0.2,349
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blCustomerStateRequestProcessor"")",0,2,0.2,350
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletRequest;,0,2,0.2,351
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.http.HttpServletResponse;,0,2,0.2,352
+c791912933ec9b1311b63b4671d449207cad7e3f,this.webRequest = new ServletWebRequest(request);,0,2,0.2,353
+c791912933ec9b1311b63b4671d449207cad7e3f,if (webRequest instanceof ServletWebRequest) {,0,2,0.2,354
+c791912933ec9b1311b63b4671d449207cad7e3f,if (copyCartWhenSpecifiedStateChanges) {,1,2,0.2,355
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.HashMap;,0,2,0.2,356
+c791912933ec9b1311b63b4671d449207cad7e3f,"Map<String, Object> ruleMap = (Map<String, Object>) request.getAttribute(BLC_RULE_MAP_PARAM, WebRequest.SCOPE_REQUEST);",1,2,0.2,357
+c791912933ec9b1311b63b4671d449207cad7e3f,"Long overrideId = (Long) request.getAttribute(OVERRIDE_CUSTOMER_SESSION_ATTR_NAME, WebRequest.SCOPE_GLOBAL_SESSION);",0,2,0.2,358
+c791912933ec9b1311b63b4671d449207cad7e3f,} else {,0,2,0.2,359
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.readCustomerByUsername(userName);,0,2,0.2,360
+c791912933ec9b1311b63b4671d449207cad7e3f,if (authentication instanceof RememberMeAuthenticationToken) {,0,2,0.2,361
+c791912933ec9b1311b63b4671d449207cad7e3f,// set transient property of customer,0,2,0.2,362
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(cookieEvent.getCustomer().getUsername())) {,0,2,0.2,363
+c791912933ec9b1311b63b4671d449207cad7e3f,if (publishRememberMeEvent) {,0,2,0.2,364
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerAuthenticatedFromCookieEvent cookieEvent = new CustomerAuthenticatedFromCookieEvent(customer, this.getClass().getName());",0,2,0.2,365
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(loggedInEvent.getCustomer().getUsername())) {,0,2,0.2,366
+c791912933ec9b1311b63b4671d449207cad7e3f,if (publishLoggedInEvent) {,0,2,0.2,367
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerLoggedInEvent loggedInEvent = new CustomerLoggedInEvent(customer, this.getClass().getName());",0,2,0.2,368
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = resolveAuthenticatedCustomer(authentication);,0,2,0.2,369
+c791912933ec9b1311b63b4671d449207cad7e3f,if (authentication instanceof RememberMeAuthenticationToken) {,1,2,0.2,370
+c791912933ec9b1311b63b4671d449207cad7e3f,// set transient property of customer,1,2,0.2,371
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(cookieEvent.getCustomer().getUsername())) {,1,2,0.2,372
+c791912933ec9b1311b63b4671d449207cad7e3f,if (publishRememberMeEvent) {,1,2,0.2,373
+c791912933ec9b1311b63b4671d449207cad7e3f,"CustomerAuthenticatedFromCookieEvent cookieEvent = new CustomerAuthenticatedFromCookieEvent(customer, this.getClass().getName());",1,2,0.2,374
+c791912933ec9b1311b63b4671d449207cad7e3f,if (userName.equals(loggedInEvent.getCustomer().getUsername())) {,1,2,0.2,375
+c791912933ec9b1311b63b4671d449207cad7e3f,public static String getCartRequestAttributeName() {,1,2,0.2,376
+c791912933ec9b1311b63b4671d449207cad7e3f,if (publishLoggedInEvent) {,1,2,0.2,377
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.readCustomerById(overrideId);,0,2,0.2,378
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.readCustomerByUsername(userName);,1,2,0.2,379
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.context.request.ServletWebRequest;,1,2,0.2,380
+c791912933ec9b1311b63b4671d449207cad7e3f,* return it.,0,2,0.2,381
+c791912933ec9b1311b63b4671d449207cad7e3f,public static void setCartRequestAttributeName(String cartRequestAttributeName) {,1,2,0.2,382
+c791912933ec9b1311b63b4671d449207cad7e3f,* {@link UpdateCartService#validateCart(Order)} throws an IllegalArgumentException,1,2,0.2,383
+c791912933ec9b1311b63b4671d449207cad7e3f,} catch (HaltFilterChainException e) {,0,2,0.2,384
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return the copyCartWhenSpecifiedStateChanges,1,2,0.2,385
+c791912933ec9b1311b63b4671d449207cad7e3f,public boolean isCopyCartWhenSpecifiedStateChanges() {,1,2,0.2,386
+c791912933ec9b1311b63b4671d449207cad7e3f,public void setCopyCartWhenSpecifiedStateChanges(boolean copyCartWhenSpecifiedStateChanges) {,1,2,0.2,387
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name = ""blCustomerStateRequestProcessor"")",1,2,0.2,388
+c791912933ec9b1311b63b4671d449207cad7e3f,if (LOG.isTraceEnabled()) {,1,2,0.2,389
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.createNewCustomer();,0,2,0.2,390
+c791912933ec9b1311b63b4671d449207cad7e3f,if (LOG.isDebugEnabled()) {,0,2,0.2,391
+c791912933ec9b1311b63b4671d449207cad7e3f,"Long customerId = (Long) request.getAttribute(getAnonymousCustomerIdSessionAttributeName(), WebRequest.SCOPE_GLOBAL_SESSION);",0,2,0.2,392
+c791912933ec9b1311b63b4671d449207cad7e3f,* date in regards to Hibernate (specifically with lists).</p>,0,2,0.2,393
+c791912933ec9b1311b63b4671d449207cad7e3f,"Long customerId = (Long) request.getAttribute(getAnonymousCustomerIdSessionAttributeName(), WebRequest.SCOPE_GLOBAL_SESSION);",1,2,0.2,394
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.readCustomerById(customerId);,1,2,0.2,395
+c791912933ec9b1311b63b4671d449207cad7e3f,customer = customerService.createNewCustomer();,1,2,0.2,396
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.context.request.ServletWebRequest;,0,2,0.2,397
+c791912933ec9b1311b63b4671d449207cad7e3f,* date in regards to Hibernate (specifically with lists).,1,2,0.2,398
+c791912933ec9b1311b63b4671d449207cad7e3f,anonymousCustomer = customerService.readCustomerById(customerId);,0,2,0.2,399
+c791912933ec9b1311b63b4671d449207cad7e3f,"return (Customer) request.getAttribute(getAnonymousCustomerSessionAttributeName(), WebRequest.SCOPE_GLOBAL_SESSION);",1,2,0.2,400
+c791912933ec9b1311b63b4671d449207cad7e3f,"ApplicationEvent lastPublishedEvent = (ApplicationEvent) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME);",0,1,0.1,401
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,402
+c791912933ec9b1311b63b4671d449207cad7e3f,"ApplicationEvent lastPublishedEvent = (ApplicationEvent) request.getAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, WebRequest.SCOPE_REQUEST);",1,1,0.1,403
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,404
+c791912933ec9b1311b63b4671d449207cad7e3f,publishLoggedInEvent = false;,0,1,0.1,405
+c791912933ec9b1311b63b4671d449207cad7e3f,return currencyToUse;,0,1,0.1,406
+c791912933ec9b1311b63b4671d449207cad7e3f,return currency;,1,1,0.1,407
+c791912933ec9b1311b63b4671d449207cad7e3f,// 5) Check default currency from DB,1,1,0.1,408
+c791912933ec9b1311b63b4671d449207cad7e3f,currencyToUse = resultHolder.getResult();,0,1,0.1,409
+c791912933ec9b1311b63b4671d449207cad7e3f,// Allow extension managers (like enterprise pricing) to indicate whether additional currency support is,0,1,0.1,410
+c791912933ec9b1311b63b4671d449207cad7e3f,"// For an out-of-box installation, only one currency is supported, so even though we have a",0,1,0.1,411
+c791912933ec9b1311b63b4671d449207cad7e3f,private OrderDao orderDao;,1,1,0.1,412
+c791912933ec9b1311b63b4671d449207cad7e3f,"// desired currency, we may not have any prices that support it.",0,1,0.1,413
+c791912933ec9b1311b63b4671d449207cad7e3f,protected OrderDao orderDao;,0,1,0.1,414
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.currency.domain.BroadleafCurrency;,1,1,0.1,415
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,416
+c791912933ec9b1311b63b4671d449207cad7e3f,return updatePrices;,1,1,0.1,417
+c791912933ec9b1311b63b4671d449207cad7e3f,this.updatePrices = updatePrices;,1,1,0.1,418
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.filter.OncePerRequestFilter;,0,1,0.1,419
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.filter.GenericFilterBean;,1,1,0.1,420
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.ServletResponse;,1,1,0.1,421
+c791912933ec9b1311b63b4671d449207cad7e3f,"cartStateProcessor.process(new ServletWebRequest((HttpServletRequest) request, (HttpServletResponse) response));",1,1,0.1,422
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.currency.domain.BroadleafRequestedCurrencyDto;,0,1,0.1,423
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.currency.domain.BroadleafRequestedCurrencyDto;,0,1,0.1,424
+c791912933ec9b1311b63b4671d449207cad7e3f,return dto;,0,1,0.1,425
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.extension.ExtensionResultHolder;,1,1,0.1,426
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.extension.currency.CurrencyResolverExtensionManager;,1,1,0.1,427
+c791912933ec9b1311b63b4671d449207cad7e3f,desiredCurrency = defaultCurrency;,0,1,0.1,428
+c791912933ec9b1311b63b4671d449207cad7e3f,protected CurrencyResolverExtensionManager extensionManager;,1,1,0.1,429
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,430
+c791912933ec9b1311b63b4671d449207cad7e3f,protected OrderService orderService;,0,1,0.1,431
+c791912933ec9b1311b63b4671d449207cad7e3f,// 5) Lookup default currency from DB,0,1,0.1,432
+c791912933ec9b1311b63b4671d449207cad7e3f,desiredCurrency = locale.getDefaultCurrency();,0,1,0.1,433
+c791912933ec9b1311b63b4671d449207cad7e3f,currencyToUse = resultHolder.getResult();,1,1,0.1,434
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.OrderService;,0,1,0.1,435
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.web.order.CartState;,0,1,0.1,436
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.io.IOException;,0,1,0.1,437
+c791912933ec9b1311b63b4671d449207cad7e3f,*,0,1,0.1,438
+c791912933ec9b1311b63b4671d449207cad7e3f,* <p>,0,1,0.1,439
+c791912933ec9b1311b63b4671d449207cad7e3f,* </p>,0,1,0.1,440
+c791912933ec9b1311b63b4671d449207cad7e3f,* @author Andre Azzolini (apazzolini),0,1,0.1,441
+c791912933ec9b1311b63b4671d449207cad7e3f,protected OrderLockManager orderLockManager;,0,1,0.1,442
+c791912933ec9b1311b63b4671d449207cad7e3f,"throws IOException, ServletException {",0,1,0.1,443
+c791912933ec9b1311b63b4671d449207cad7e3f,"cartStateProcessor.process(new ServletWebRequest((HttpServletRequest) request, (HttpServletResponse) response));",0,1,0.1,444
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,445
+c791912933ec9b1311b63b4671d449207cad7e3f,Object lockObject = orderLockManager.acquireLock(order);,0,1,0.1,446
+c791912933ec9b1311b63b4671d449207cad7e3f,try {,0,1,0.1,447
+c791912933ec9b1311b63b4671d449207cad7e3f,"return ((HttpServletRequest) request).getMethod().equalsIgnoreCase(""post"");",0,1,0.1,448
+c791912933ec9b1311b63b4671d449207cad7e3f,return false;,0,1,0.1,449
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.io.IOException;,1,1,0.1,450
+c791912933ec9b1311b63b4671d449207cad7e3f,"cartStateProcessor.process(new ServletWebRequest((HttpServletRequest) request, (HttpServletResponse)response));",1,1,0.1,451
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,452
+c791912933ec9b1311b63b4671d449207cad7e3f,@Override,0,1,0.1,453
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,454
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.apache.commons.lang3.time.FastDateFormat;,0,1,0.1,455
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.text.SimpleDateFormat;,1,1,0.1,456
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.extension.ExtensionResultHolder;,0,1,0.1,457
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.extension.currency.CurrencyResolverExtensionManager;,0,1,0.1,458
+c791912933ec9b1311b63b4671d449207cad7e3f,protected CurrencyResolverExtensionManager extensionManager;,0,1,0.1,459
+c791912933ec9b1311b63b4671d449207cad7e3f,desiredCurrency = broadleafCurrencyService.findCurrencyByCode(currencyCode);,0,1,0.1,460
+c791912933ec9b1311b63b4671d449207cad7e3f,// Allow extension managers (like enterprise pricing) to indicate whether additional currency support is,1,1,0.1,461
+c791912933ec9b1311b63b4671d449207cad7e3f,List<CustomerPhone> phones_1 = customerPhoneService.readAllCustomerPhonesByCustomerId(userId);,0,1,0.1,462
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,463
+c791912933ec9b1311b63b4671d449207cad7e3f,List<CustomerPhone> phones = customerPhoneService.readAllCustomerPhonesByCustomerId(1L);,1,1,0.1,464
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerLoggedInEvent loggedInEvent = (CustomerLoggedInEvent) lastPublishedEvent;,1,1,0.1,465
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.owasp.esapi.errors.EncodingException;,1,1,0.1,466
+c791912933ec9b1311b63b4671d449207cad7e3f,String encodedURL = ESAPI.encoder().encodeForURL(url.toString());,1,1,0.1,467
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.test.TestNGSiteIntegrationSetup;,0,1,0.1,468
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.test.BaseTest;,1,1,0.1,469
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.test.annotation.Commit;,0,1,0.1,470
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.testng.annotations.BeforeMethod;,0,1,0.1,471
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.lang.reflect.Method;,0,1,0.1,472
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,473
+c791912933ec9b1311b63b4671d449207cad7e3f,List<CustomerPhone> phones = customerPhoneService.readAllCustomerPhonesByCustomerId(userId);,0,1,0.1,474
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.domain.Order;,0,1,0.1,475
+c791912933ec9b1311b63b4671d449207cad7e3f,List<CustomerPhone> phones_2 = customerPhoneService.readAllCustomerPhonesByCustomerId(userId);,0,1,0.1,476
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.test.annotation.Rollback;,1,1,0.1,477
+c791912933ec9b1311b63b4671d449207cad7e3f,List<CustomerPhone> phones_1 = customerPhoneService.readAllCustomerPhonesByCustomerId(1L);,1,1,0.1,478
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerAuthenticatedFromCookieEvent cookieEvent = (CustomerAuthenticatedFromCookieEvent) lastPublishedEvent;,1,1,0.1,479
+c791912933ec9b1311b63b4671d449207cad7e3f,List<CustomerPhone> phones_2 = customerPhoneService.readAllCustomerPhonesByCustomerId(1L);,1,1,0.1,480
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.beans.factory.annotation.Autowired;,0,1,0.1,481
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.beans.factory.annotation.Qualifier;,0,1,0.1,482
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.beans.factory.annotation.Autowired;,0,1,0.1,483
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.beans.factory.annotation.Qualifier;,0,1,0.1,484
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LOCALE_VAR, locale, WebRequest.SCOPE_SESSION);",0,1,0.1,485
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LOCALE_VAR, locale, WebRequest.SCOPE_GLOBAL_SESSION);",1,1,0.1,486
+c791912933ec9b1311b63b4671d449207cad7e3f,"previousSandBoxId = (Long) request.getAttribute(SANDBOX_ID_VAR, WebRequest.SCOPE_SESSION);",0,1,0.1,487
+c791912933ec9b1311b63b4671d449207cad7e3f,"sandboxId = (Long) request.getAttribute(SANDBOX_ID_VAR, WebRequest.SCOPE_SESSION);",0,1,0.1,488
+c791912933ec9b1311b63b4671d449207cad7e3f,"overrideTime = (Date) request.getAttribute(SANDBOX_DATE_TIME_VAR, WebRequest.SCOPE_SESSION);",0,1,0.1,489
+c791912933ec9b1311b63b4671d449207cad7e3f,"previousSandBoxId = (Long) request.getAttribute(SANDBOX_ID_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,1,0.1,490
+c791912933ec9b1311b63b4671d449207cad7e3f,"sandboxId = (Long) request.getAttribute(SANDBOX_ID_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,1,0.1,491
+c791912933ec9b1311b63b4671d449207cad7e3f,"overrideTime = (Date) request.getAttribute(SANDBOX_DATE_TIME_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,1,0.1,492
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,493
+c791912933ec9b1311b63b4671d449207cad7e3f,"ApplicationEvent lastPublishedEvent = (ApplicationEvent) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME);",1,1,0.1,494
+c791912933ec9b1311b63b4671d449207cad7e3f,return currencyToUse;,1,1,0.1,495
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.io.IOException;,1,1,0.1,496
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.currency.domain.BroadleafRequestedCurrencyDto;,0,1,0.1,497
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafRequestedCurrencyDto currencyDto = currencyResolver.resolveCurrency(request);,0,1,0.1,498
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,499
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.currency.domain.BroadleafCurrency;,1,1,0.1,500
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.filter.OncePerRequestFilter;,0,1,0.1,501
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.io.IOException;,0,1,0.1,502
+c791912933ec9b1311b63b4671d449207cad7e3f,try {,0,1,0.1,503
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,504
+c791912933ec9b1311b63b4671d449207cad7e3f,@Override,0,1,0.1,505
+c791912933ec9b1311b63b4671d449207cad7e3f,return false;,0,1,0.1,506
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.filter.GenericFilterBean;,1,1,0.1,507
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.ServletRequest;,1,1,0.1,508
+c791912933ec9b1311b63b4671d449207cad7e3f,import javax.servlet.ServletResponse;,1,1,0.1,509
+c791912933ec9b1311b63b4671d449207cad7e3f,"customerStateProcessor.process(new ServletWebRequest((HttpServletRequest) baseRequest, (HttpServletResponse)baseResponse));",1,1,0.1,510
+c791912933ec9b1311b63b4671d449207cad7e3f,"publishEvent(loggedInEvent, request, CustomerLoggedInEvent.class.getName(), userName);",0,1,0.1,511
+c791912933ec9b1311b63b4671d449207cad7e3f,"String lastPublishedEventClass = (String) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_CLASS_SESSION_ATTRIBUTE_NAME);",0,1,0.1,512
+c791912933ec9b1311b63b4671d449207cad7e3f,"String eventUsername = (String) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_USERNAME_SESSION_ATTRIBUTE_NAME);",0,1,0.1,513
+c791912933ec9b1311b63b4671d449207cad7e3f,"publishEvent(cookieEvent, request, CustomerAuthenticatedFromCookieEvent.class.getName(), userName);",0,1,0.1,514
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,515
+c791912933ec9b1311b63b4671d449207cad7e3f,"publishEvent(loggedInEvent, request, CustomerLoggedInEvent.class.getName(), userName);",0,1,0.1,516
+c791912933ec9b1311b63b4671d449207cad7e3f,"ApplicationEvent lastPublishedEvent = (ApplicationEvent) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME);",1,1,0.1,517
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerAuthenticatedFromCookieEvent cookieEvent = (CustomerAuthenticatedFromCookieEvent) lastPublishedEvent;,1,1,0.1,518
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,519
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerLoggedInEvent loggedInEvent = (CustomerLoggedInEvent) lastPublishedEvent;,1,1,0.1,520
+c791912933ec9b1311b63b4671d449207cad7e3f,"String lastPublishedEventClass = (String) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_CLASS_SESSION_ATTRIBUTE_NAME);",0,1,0.1,521
+c791912933ec9b1311b63b4671d449207cad7e3f,"String eventUsername = (String) BLCRequestUtils.getSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_USERNAME_SESSION_ATTRIBUTE_NAME);",0,1,0.1,522
+c791912933ec9b1311b63b4671d449207cad7e3f,"publishEvent(cookieEvent, request, CustomerAuthenticatedFromCookieEvent.class.getName(), userName);",0,1,0.1,523
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,524
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.OrderLockManager;,0,1,0.1,525
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.util.BLCRequestUtils;,0,1,0.1,526
+c791912933ec9b1311b63b4671d449207cad7e3f,"cartStateProcessor.process(new ServletWebRequest((HttpServletRequest) request, (HttpServletResponse)response));",1,1,0.1,527
+c791912933ec9b1311b63b4671d449207cad7e3f,return cartRequestAttributeName;,0,1,0.1,528
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.exception.RemoveFromCartException;,0,1,0.1,529
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.pricing.service.exception.PricingException;,0,1,0.1,530
+c791912933ec9b1311b63b4671d449207cad7e3f,*,0,1,0.1,531
+c791912933ec9b1311b63b4671d449207cad7e3f,* and Spring MVC interceptors. Spring has an easy way of converting HttpRequests and PortletRequests into WebRequests,0,1,0.1,532
+c791912933ec9b1311b63b4671d449207cad7e3f,* via <br />,0,1,0.1,533
+c791912933ec9b1311b63b4671d449207cad7e3f,private MergeCartService mergeCartService;,0,1,0.1,534
+c791912933ec9b1311b63b4671d449207cad7e3f,protected CustomerStateRequestProcessor customerStateRequestProcessor;,0,1,0.1,535
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,536
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Merge cart required, calling mergeCart "" + customer.getId());",0,1,0.1,537
+c791912933ec9b1311b63b4671d449207cad7e3f,try {,0,1,0.1,538
+c791912933ec9b1311b63b4671d449207cad7e3f,"mergeCartResponse = mergeCartService.mergeCart(customer, cart);",0,1,0.1,539
+c791912933ec9b1311b63b4671d449207cad7e3f,throw new RuntimeException(e);,0,1,0.1,540
+c791912933ec9b1311b63b4671d449207cad7e3f,return mergeCartResponse.getOrder();,0,1,0.1,541
+c791912933ec9b1311b63b4671d449207cad7e3f,CartStateRequestProcessor.cartRequestAttributeName = cartRequestAttributeName;,0,1,0.1,542
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,543
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.call.UpdateCartResponse;,1,1,0.1,544
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,545
+c791912933ec9b1311b63b4671d449207cad7e3f,try {,1,1,0.1,546
+c791912933ec9b1311b63b4671d449207cad7e3f,UpdateCartResponse updateCartResponse = updateCartService.copyCartToCurrentContext(cart);,1,1,0.1,547
+c791912933ec9b1311b63b4671d449207cad7e3f,return cartRequestAttributeName;,1,1,0.1,548
+c791912933ec9b1311b63b4671d449207cad7e3f,CartStateRequestProcessor.cartRequestAttributeName = cartRequestAttributeName;,1,1,0.1,549
+c791912933ec9b1311b63b4671d449207cad7e3f,/**,1,1,0.1,550
+c791912933ec9b1311b63b4671d449207cad7e3f,*,1,1,0.1,551
+c791912933ec9b1311b63b4671d449207cad7e3f,*/,1,1,0.1,552
+c791912933ec9b1311b63b4671d449207cad7e3f,return copyCartWhenSpecifiedStateChanges;,1,1,0.1,553
+c791912933ec9b1311b63b4671d449207cad7e3f,this.copyCartWhenSpecifiedStateChanges = copyCartWhenSpecifiedStateChanges;,1,1,0.1,554
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.profile.web.core.CustomerState;,0,1,0.1,555
+c791912933ec9b1311b63b4671d449207cad7e3f,"+ "" blCustomerStateFilter occurs prior to the blCartStateFilter"");",0,1,0.1,556
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.call.MergeCartResponse;,0,1,0.1,557
+c791912933ec9b1311b63b4671d449207cad7e3f,setWebRequest(new ServletWebRequest(request));,1,1,0.1,558
+c791912933ec9b1311b63b4671d449207cad7e3f,protected CustomerStateRequestProcessor customerStateRequestProcessor;,1,1,0.1,559
+c791912933ec9b1311b63b4671d449207cad7e3f,/**,0,1,0.1,560
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.io.IOException;,1,1,0.1,561
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.web.BroadleafRequestCustomerResolverImpl;,0,1,0.1,562
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.web.BroadleafRequestContext;,1,1,0.1,563
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.profile.web.core.security.CustomerStateRequestProcessor;,1,1,0.1,564
+c791912933ec9b1311b63b4671d449207cad7e3f,/**,1,1,0.1,565
+c791912933ec9b1311b63b4671d449207cad7e3f,* @return,1,1,0.1,566
+c791912933ec9b1311b63b4671d449207cad7e3f,*/,1,1,0.1,567
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(CustomerStateRequestProcessor.getCustomerRequestAttributeName(), customer, WebRequest.SCOPE_REQUEST);",1,1,0.1,568
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.web.BroadleafRequestCustomerResolverImpl;,0,1,0.1,569
+c791912933ec9b1311b63b4671d449207cad7e3f,return BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().getCustomerRequestAttributeName();,0,1,0.1,570
+c791912933ec9b1311b63b4671d449207cad7e3f,return customerRequestAttributeName;,1,1,0.1,571
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,572
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerStateRequestProcessor.customerRequestAttributeName = customerRequestAttributeName;,1,1,0.1,573
+c791912933ec9b1311b63b4671d449207cad7e3f,*,0,1,0.1,574
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.TimeZone;,1,1,0.1,575
+c791912933ec9b1311b63b4671d449207cad7e3f,*/,0,1,0.1,576
+c791912933ec9b1311b63b4671d449207cad7e3f,return copyCartWhenSpecifiedStateChanges;,0,1,0.1,577
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,578
+c791912933ec9b1311b63b4671d449207cad7e3f,this.copyCartWhenSpecifiedStateChanges = copyCartWhenSpecifiedStateChanges;,0,1,0.1,579
+c791912933ec9b1311b63b4671d449207cad7e3f,protected CustomerStateRequestProcessor customerStateRequestProcessor;,0,1,0.1,580
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.Currency;,0,1,0.1,581
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.Map;,0,1,0.1,582
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.TimeZone;,0,1,0.1,583
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.classloader.release.ThreadLocalManager;,0,1,0.1,584
+c791912933ec9b1311b63b4671d449207cad7e3f,this.request = ((ServletWebRequest) webRequest).getRequest();,0,1,0.1,585
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.classloader.release.ThreadLocalManager;,1,1,0.1,586
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.Currency;,1,1,0.1,587
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.util.Map;,1,1,0.1,588
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.debug(""Merge cart required, calling mergeCart "" + customer.getId());",0,1,0.1,589
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.MergeCartService;,0,1,0.1,590
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Merge cart required, calling mergeCart "" + customer.getId());",1,1,0.1,591
+c791912933ec9b1311b63b4671d449207cad7e3f,"ApplicationEvent lastPublishedEvent = (ApplicationEvent) request.getAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, WebRequest.SCOPE_REQUEST);",1,1,0.1,592
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerAuthenticatedFromCookieEvent cookieEvent = (CustomerAuthenticatedFromCookieEvent) lastPublishedEvent;,1,1,0.1,593
+c791912933ec9b1311b63b4671d449207cad7e3f,publishRememberMeEvent = false;,1,1,0.1,594
+c791912933ec9b1311b63b4671d449207cad7e3f,boolean publishLoggedInEvent = true;,1,1,0.1,595
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerLoggedInEvent loggedInEvent = (CustomerLoggedInEvent) lastPublishedEvent;,1,1,0.1,596
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(getAnonymousCustomerSessionAttributeName(), customer, WebRequest.SCOPE_GLOBAL_SESSION);",0,1,0.1,597
+c791912933ec9b1311b63b4671d449207cad7e3f,//customer to store in CustomerState,0,1,0.1,598
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,599
+c791912933ec9b1311b63b4671d449207cad7e3f,return anonymousCustomer;,0,1,0.1,600
+c791912933ec9b1311b63b4671d449207cad7e3f,//customer to store in CustomerState,1,1,0.1,601
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,602
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(getAnonymousCustomerSessionAttributeName(), customer, WebRequest.SCOPE_GLOBAL_SESSION);",1,1,0.1,603
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.domain.Order;,0,1,0.1,604
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.OrderLockManager;,0,1,0.1,605
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.web.order.CartState;,0,1,0.1,606
+c791912933ec9b1311b63b4671d449207cad7e3f,import java.io.IOException;,0,1,0.1,607
+c791912933ec9b1311b63b4671d449207cad7e3f,*,0,1,0.1,608
+c791912933ec9b1311b63b4671d449207cad7e3f,* <p>,0,1,0.1,609
+c791912933ec9b1311b63b4671d449207cad7e3f,* </p>,0,1,0.1,610
+c791912933ec9b1311b63b4671d449207cad7e3f,* @author Andre Azzolini (apazzolini),0,1,0.1,611
+c791912933ec9b1311b63b4671d449207cad7e3f,protected OrderLockManager orderLockManager;,0,1,0.1,612
+c791912933ec9b1311b63b4671d449207cad7e3f,protected OrderService orderService;,0,1,0.1,613
+c791912933ec9b1311b63b4671d449207cad7e3f,"throws IOException, ServletException {",0,1,0.1,614
+c791912933ec9b1311b63b4671d449207cad7e3f,"cartStateProcessor.process(new ServletWebRequest((HttpServletRequest) request, (HttpServletResponse) response));",0,1,0.1,615
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,616
+c791912933ec9b1311b63b4671d449207cad7e3f,Object lockObject = orderLockManager.acquireLock(order);,0,1,0.1,617
+c791912933ec9b1311b63b4671d449207cad7e3f,try {,0,1,0.1,618
+c791912933ec9b1311b63b4671d449207cad7e3f,"return ((HttpServletRequest) request).getMethod().equalsIgnoreCase(""post"");",0,1,0.1,619
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(getAnonymousCustomerSessionAttributeName(), customer, WebRequest.SCOPE_GLOBAL_SESSION);",0,1,0.1,620
+c791912933ec9b1311b63b4671d449207cad7e3f,return false;,0,1,0.1,621
+c791912933ec9b1311b63b4671d449207cad7e3f,boolean publishRememberMeEvent = true;,1,1,0.1,622
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.core.order.service.OrderService;,0,1,0.1,623
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,624
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.apache.commons.logging.LogFactory;,1,1,0.1,625
+c791912933ec9b1311b63b4671d449207cad7e3f,//customer to store in CustomerState,0,1,0.1,626
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,627
+c791912933ec9b1311b63b4671d449207cad7e3f,return anonymousCustomer;,0,1,0.1,628
+c791912933ec9b1311b63b4671d449207cad7e3f,//customer to store in CustomerState,1,1,0.1,629
+c791912933ec9b1311b63b4671d449207cad7e3f,},1,1,0.1,630
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(getAnonymousCustomerSessionAttributeName(), customer, WebRequest.SCOPE_GLOBAL_SESSION);",1,1,0.1,631
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.apache.commons.logging.Log;,0,1,0.1,632
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.apache.commons.logging.LogFactory;,0,1,0.1,633
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.exception.SiteNotFoundException;,0,1,0.1,634
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.web.exception.HaltFilterChainException;,0,1,0.1,635
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.stereotype.Component;,0,1,0.1,636
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.filter.OncePerRequestFilter;,0,1,0.1,637
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.apache.commons.logging.Log;,1,1,0.1,638
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.RequestDTOImpl;,0,1,0.1,639
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.RequestDTOImpl;,1,1,0.1,640
+c791912933ec9b1311b63b4671d449207cad7e3f,"ApplicationEvent lastPublishedEvent = (ApplicationEvent) request.getAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, WebRequest.SCOPE_REQUEST);",0,1,0.1,641
+c791912933ec9b1311b63b4671d449207cad7e3f,String userName = authentication.getName();,1,1,0.1,642
+c791912933ec9b1311b63b4671d449207cad7e3f,boolean publishLoggedInEvent = true;,0,1,0.1,643
+c791912933ec9b1311b63b4671d449207cad7e3f,publishRememberMeEvent = false;,0,1,0.1,644
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerAuthenticatedFromCookieEvent cookieEvent = (CustomerAuthenticatedFromCookieEvent) lastPublishedEvent;,0,1,0.1,645
+c791912933ec9b1311b63b4671d449207cad7e3f,boolean publishRememberMeEvent = true;,0,1,0.1,646
+c791912933ec9b1311b63b4671d449207cad7e3f,CustomerLoggedInEvent loggedInEvent = (CustomerLoggedInEvent) lastPublishedEvent;,0,1,0.1,647
+c791912933ec9b1311b63b4671d449207cad7e3f,},0,1,0.1,648
+c791912933ec9b1311b63b4671d449207cad7e3f,String userName = authentication.getName();,0,1,0.1,649
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.web.filter.OncePerRequestFilter;,1,1,0.1,650
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.springframework.stereotype.Component;,1,1,0.1,651
+c791912933ec9b1311b63b4671d449207cad7e3f,import org.broadleafcommerce.common.exception.SiteNotFoundException;,1,1,0.1,652
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(event);,0,0,0.0,653
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.setRequestedBroadleafCurrency(currencyDto.getRequestedCurrency());,0,0,0.0,654
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.setBroadleafCurrency(currency);,1,0,0.0,655
+c791912933ec9b1311b63b4671d449207cad7e3f,customerStateProcessor.process(request);,0,0,0.0,656
+c791912933ec9b1311b63b4671d449207cad7e3f,"chain.doFilter(baseRequest, baseResponse);",0,0,0.0,657
+c791912933ec9b1311b63b4671d449207cad7e3f,customerStateProcessor.postProcess(request);,0,0,0.0,658
+c791912933ec9b1311b63b4671d449207cad7e3f,"chain.doFilter(baseRequest, baseResponse);",1,0,0.0,659
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_USERNAME_SESSION_ATTRIBUTE_NAME, username);",0,0,0.0,660
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_CLASS_SESSION_ATTRIBUTE_NAME, eventClass);",0,0,0.0,661
+c791912933ec9b1311b63b4671d449207cad7e3f,"extensionManager.getProxy().overrideCurrency(desiredCurrency, defaultCurrency, resultHolder);",1,0,0.0,662
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(cookieEvent);,1,0,0.0,663
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, cookieEvent);",1,0,0.0,664
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, loggedInEvent);",1,0,0.0,665
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(loggedInEvent);,1,0,0.0,666
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.setBroadleafCurrency(currencyDto.getCurrencyToUse());,0,0,0.0,667
+c791912933ec9b1311b63b4671d449207cad7e3f,"@SuppressWarnings(""unchecked"")",1,0,0.0,668
+c791912933ec9b1311b63b4671d449207cad7e3f,// available.,1,0,0.0,669
+c791912933ec9b1311b63b4671d449207cad7e3f,"cartStateProcessor.process(new ServletWebRequest(request, response));",0,0,0.0,670
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, loggedInEvent, WebRequest.SCOPE_REQUEST);",1,0,0.0,671
+c791912933ec9b1311b63b4671d449207cad7e3f,publishLoggedInEvent= false;,1,0,0.0,672
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, cookieEvent, WebRequest.SCOPE_REQUEST);",1,0,0.0,673
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, loggedInEvent);",0,0,0.0,674
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, cookieEvent);",0,0,0.0,675
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(CURRENCY_VAR, currency, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,676
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(CURRENCY_VAR, currencyToUse, WebRequest.SCOPE_GLOBAL_SESSION);",0,0,0.0,677
+c791912933ec9b1311b63b4671d449207cad7e3f,"extensionManager.getProxy().overrideCurrency(desiredCurrency, defaultCurrency, resultHolder);",0,0,0.0,678
+c791912933ec9b1311b63b4671d449207cad7e3f,// available.,0,0,0.0,679
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(mergeCartResponseKey, mergeCartResponse, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,680
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(mergeCartResponseKey, mergeCartResponse, WebRequest.SCOPE_GLOBAL_SESSION);",0,0,0.0,681
+c791912933ec9b1311b63b4671d449207cad7e3f,"chain.doFilter(request, response);",1,0,0.0,682
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_CLASS_SESSION_ATTRIBUTE_NAME, eventClass);",0,0,0.0,683
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(event);,0,0,0.0,684
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(SANDBOX_DATE_TIME_VAR, overrideTime, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,685
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_USERNAME_SESSION_ATTRIBUTE_NAME, username);",0,0,0.0,686
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(cookieEvent);,1,0,0.0,687
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Thread["" + Thread.currentThread().getId() + ""] released lock for order["" + order.getId() +""]"");",0,0,0.0,688
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(mergeCartResponseKey, mergeCartResponse, WebRequest.SCOPE_SESSION);",0,0,0.0,689
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(SANDBOX_ID_VAR, sandboxId, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,690
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.removeAttribute(SANDBOX_ID_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,691
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.removeAttribute(SANDBOX_DATE_TIME_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,692
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(SANDBOX_DATE_TIME_VAR, overrideTime, WebRequest.SCOPE_SESSION);",0,0,0.0,693
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(SANDBOX_ID_VAR, sandboxId, WebRequest.SCOPE_SESSION);",0,0,0.0,694
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.removeAttribute(SANDBOX_ID_VAR, WebRequest.SCOPE_SESSION);",0,0,0.0,695
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.removeAttribute(SANDBOX_DATE_TIME_VAR, WebRequest.SCOPE_SESSION);",0,0,0.0,696
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.removeAttribute(BroadleafCurrencyResolverImpl.CURRENCY_VAR, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,697
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.removeAttribute(BroadleafCurrencyResolverImpl.CURRENCY_VAR, WebRequest.SCOPE_SESSION);",0,0,0.0,698
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Resource(name=""blCustomerStateRequestProcessor"")",1,0,0.0,699
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Qualifier(""blCustomerStateRequestProcessor"")",0,0,0.0,700
+c791912933ec9b1311b63b4671d449207cad7e3f,@Autowired,0,0,0.0,701
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Qualifier(""blRequestProcessor"")",0,0,0.0,702
+c791912933ec9b1311b63b4671d449207cad7e3f,@Autowired,0,0,0.0,703
+c791912933ec9b1311b63b4671d449207cad7e3f,@Rollback(false),1,0,0.0,704
+c791912933ec9b1311b63b4671d449207cad7e3f,@Commit,0,0,0.0,705
+c791912933ec9b1311b63b4671d449207cad7e3f,((ServletWebRequest) request).getResponse().sendError(403);,1,0,0.0,706
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.error(""Encoding Exception for url when reprocessing request"", e);",1,0,0.0,707
+c791912933ec9b1311b63b4671d449207cad7e3f,((ServletWebRequest) request).getResponse().sendRedirect(encodedURL);,1,0,0.0,708
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.setSite(site);,1,0,0.0,709
+c791912933ec9b1311b63b4671d449207cad7e3f,response.sendError(403);,0,0,0.0,710
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.error(""SECURITY FAILURE Bad redirect location: "" + url.toString(), e);",0,0,0.0,711
+c791912933ec9b1311b63b4671d449207cad7e3f,"ESAPI.httpUtilities().sendRedirect(response, url.toString());",0,0,0.0,712
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.setNonPersistentSite(site);,0,0,0.0,713
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, loggedInEvent);",1,0,0.0,714
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(loggedInEvent);,1,0,0.0,715
+c791912933ec9b1311b63b4671d449207cad7e3f,"BLCRequestUtils.setSessionAttributeIfOk(request, LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, cookieEvent);",1,0,0.0,716
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Component(""blCartStateFilter"")",1,0,0.0,717
+c791912933ec9b1311b63b4671d449207cad7e3f,setResponse(((ServletWebRequest) webRequest).getResponse());,1,0,0.0,718
+c791912933ec9b1311b63b4671d449207cad7e3f,orderLockManager.releaseLock(lockObject);,0,0,0.0,719
+c791912933ec9b1311b63b4671d449207cad7e3f,orderService.cancelOrder(cart);,1,0,0.0,720
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, cookieEvent, WebRequest.SCOPE_REQUEST);",0,0,0.0,721
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(cookieEvent);,0,0,0.0,722
+c791912933ec9b1311b63b4671d449207cad7e3f,customer.setCookied(true);,0,0,0.0,723
+c791912933ec9b1311b63b4671d449207cad7e3f,"logger.debug(""Customer found by username "" + userName);",0,0,0.0,724
+c791912933ec9b1311b63b4671d449207cad7e3f,return;,0,0,0.0,725
+c791912933ec9b1311b63b4671d449207cad7e3f,//already been persisted),1,0,0.0,726
+c791912933ec9b1311b63b4671d449207cad7e3f,//already been persisted),0,0,0.0,727
+c791912933ec9b1311b63b4671d449207cad7e3f,WebRequest.SCOPE_GLOBAL_SESSION);,0,0,0.0,728
+c791912933ec9b1311b63b4671d449207cad7e3f,WebRequest.SCOPE_REQUEST);,1,0,0.0,729
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(BLC_RULE_MAP_PARAM, ruleMap, WebRequest.SCOPE_REQUEST);",1,0,0.0,730
+c791912933ec9b1311b63b4671d449207cad7e3f,"ruleMap.put(""cart"", cart);",1,0,0.0,731
+c791912933ec9b1311b63b4671d449207cad7e3f,// variable name.,1,0,0.0,732
+c791912933ec9b1311b63b4671d449207cad7e3f,"ruleMap.put(""order"", cart);",1,0,0.0,733
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(cartRequestAttributeName, cart, WebRequest.SCOPE_REQUEST);",1,0,0.0,734
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(""updateCartResponse"", updateCartResponse, WebRequest.SCOPE_REQUEST);",1,0,0.0,735
+c791912933ec9b1311b63b4671d449207cad7e3f,CartState.setCart(orderService.reloadOrder(order));,0,0,0.0,736
+c791912933ec9b1311b63b4671d449207cad7e3f,updateCartService.validateCart(cart);,1,0,0.0,737
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(mergeCartResponseKey, mergeCartResponse, WebRequest.SCOPE_GLOBAL_SESSION);",0,0,0.0,738
+c791912933ec9b1311b63b4671d449207cad7e3f,MergeCartResponse mergeCartResponse;,0,0,0.0,739
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(BLC_RULE_MAP_PARAM, ruleMap, WebRequest.SCOPE_REQUEST);",0,0,0.0,740
+c791912933ec9b1311b63b4671d449207cad7e3f,"ruleMap.put(""cart"", cart);",0,0,0.0,741
+c791912933ec9b1311b63b4671d449207cad7e3f,// variable name.,0,0,0.0,742
+c791912933ec9b1311b63b4671d449207cad7e3f,"ruleMap.put(""order"", cart);",0,0,0.0,743
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(cartRequestAttributeName, cart, WebRequest.SCOPE_REQUEST);",0,0,0.0,744
+c791912933ec9b1311b63b4671d449207cad7e3f,updateCartService.updateAndValidateCart(cart);,0,0,0.0,745
+c791912933ec9b1311b63b4671d449207cad7e3f,return;,0,0,0.0,746
+c791912933ec9b1311b63b4671d449207cad7e3f,WebRequest.SCOPE_REQUEST);,0,0,0.0,747
+c791912933ec9b1311b63b4671d449207cad7e3f,setRequest(((ServletWebRequest) webRequest).getRequest());,1,0,0.0,748
+c791912933ec9b1311b63b4671d449207cad7e3f,setResponse(((ServletWebRequest) webRequest).getResponse());,0,0,0.0,749
+c791912933ec9b1311b63b4671d449207cad7e3f,BroadleafRequestCustomerResolverImpl.getRequestCustomerResolver().setCustomer(customer);,0,0,0.0,750
+c791912933ec9b1311b63b4671d449207cad7e3f,customer.setLoggedIn(true);,0,0,0.0,751
+c791912933ec9b1311b63b4671d449207cad7e3f,publishLoggedInEvent= false;,0,0,0.0,752
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(loggedInEvent);,0,0,0.0,753
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, loggedInEvent, WebRequest.SCOPE_REQUEST);",0,0,0.0,754
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Thread["" + Thread.currentThread().getId() + ""] grabbed lock for order["" + order.getId() + ""]"");",0,0,0.0,755
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Thread["" + Thread.currentThread().getId() + ""] attempting to lock order["" + order.getId() + ""]"");",0,0,0.0,756
+c791912933ec9b1311b63b4671d449207cad7e3f,return;,0,0,0.0,757
+c791912933ec9b1311b63b4671d449207cad7e3f,"chain.doFilter(request, response);",0,0,0.0,758
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Component(""blCartStateFilter"")",0,0,0.0,759
+c791912933ec9b1311b63b4671d449207cad7e3f,"chain.doFilter(request, response);",1,0,0.0,760
+c791912933ec9b1311b63b4671d449207cad7e3f,"@SuppressWarnings(""unchecked"")",1,0,0.0,761
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Component(""blCartStateFilter"")",1,0,0.0,762
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Thread["" + Thread.currentThread().getId() + ""] released lock for order["" + order.getId() +""]"");",0,0,0.0,763
+c791912933ec9b1311b63b4671d449207cad7e3f,orderLockManager.releaseLock(lockObject);,0,0,0.0,764
+c791912933ec9b1311b63b4671d449207cad7e3f,CartState.setCart(orderService.reloadOrder(order));,0,0,0.0,765
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Thread["" + Thread.currentThread().getId() + ""] grabbed lock for order["" + order.getId() + ""]"");",0,0,0.0,766
+c791912933ec9b1311b63b4671d449207cad7e3f,"LOG.trace(""Thread["" + Thread.currentThread().getId() + ""] attempting to lock order["" + order.getId() + ""]"");",0,0,0.0,767
+c791912933ec9b1311b63b4671d449207cad7e3f,return;,0,0,0.0,768
+c791912933ec9b1311b63b4671d449207cad7e3f,"chain.doFilter(request, response);",0,0,0.0,769
+c791912933ec9b1311b63b4671d449207cad7e3f,"@Component(""blCartStateFilter"")",0,0,0.0,770
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.getAdditionalProperties().putAll(entityExtensionManagers);,1,0,0.0,771
+c791912933ec9b1311b63b4671d449207cad7e3f,brc.getAdditionalProperties().putAll(entityExtensionManagers);,0,0,0.0,772
+c791912933ec9b1311b63b4671d449207cad7e3f,//already been persisted),1,0,0.0,773
+c791912933ec9b1311b63b4671d449207cad7e3f,//already been persisted),0,0,0.0,774
+c791912933ec9b1311b63b4671d449207cad7e3f,WebRequest.SCOPE_GLOBAL_SESSION);,0,0,0.0,775
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, loggedInEvent, WebRequest.SCOPE_REQUEST);",1,0,0.0,776
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(loggedInEvent);,1,0,0.0,777
+c791912933ec9b1311b63b4671d449207cad7e3f,publishLoggedInEvent= false;,1,0,0.0,778
+c791912933ec9b1311b63b4671d449207cad7e3f,customer.setLoggedIn(true);,1,0,0.0,779
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(LAST_PUBLISHED_EVENT_SESSION_ATTRIBUTED_NAME, cookieEvent, WebRequest.SCOPE_REQUEST);",1,0,0.0,780
+c791912933ec9b1311b63b4671d449207cad7e3f,eventPublisher.publishEvent(cookieEvent);,1,0,0.0,781
+c791912933ec9b1311b63b4671d449207cad7e3f,customer.setCookied(true);,1,0,0.0,782
+c791912933ec9b1311b63b4671d449207cad7e3f,"logger.debug(""Customer found by username "" + userName);",1,0,0.0,783
+c791912933ec9b1311b63b4671d449207cad7e3f,"request.setAttribute(mergeCartResponseKey, mergeCartResponse, WebRequest.SCOPE_GLOBAL_SESSION);",1,0,0.0,784

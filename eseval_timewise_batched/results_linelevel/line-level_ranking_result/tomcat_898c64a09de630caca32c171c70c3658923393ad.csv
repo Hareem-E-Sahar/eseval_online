@@ -1,0 +1,17 @@
+commit_id,line,line_level_label,count,line_score,row
+898c64a09de630caca32c171c70c3658923393ad,String uri = getRequestURI();,0,3,1.0,1
+898c64a09de630caca32c171c70c3658923393ad,String uri = getRequestURI();,1,3,1.0,2
+898c64a09de630caca32c171c70c3658923393ad,do {,0,2,0.6666666666666666,3
+898c64a09de630caca32c171c70c3658923393ad,} while (pos < uri.length() && uri.charAt(pos) == '/');,0,2,0.6666666666666666,4
+898c64a09de630caca32c171c70c3658923393ad,uri = uri.substring(pos);,0,2,0.6666666666666666,5
+898c64a09de630caca32c171c70c3658923393ad,String canonicalContextPath = getServletContext().getContextPath();,0,1,0.3333333333333333,6
+898c64a09de630caca32c171c70c3658923393ad,if (!getContext().getAllowMultipleLeadingForwardSlashInPath()) {,0,1,0.3333333333333333,7
+898c64a09de630caca32c171c70c3658923393ad,// relative URI if used with sendRedirect().,0,1,0.3333333333333333,8
+898c64a09de630caca32c171c70c3658923393ad,},0,1,0.3333333333333333,9
+898c64a09de630caca32c171c70c3658923393ad,char[] uriChars = uri.toCharArray();,0,1,0.3333333333333333,10
+898c64a09de630caca32c171c70c3658923393ad,String canonicalContextPath = getServletContext().getContextPath();,1,1,0.3333333333333333,11
+898c64a09de630caca32c171c70c3658923393ad,char[] uriChars = uri.toCharArray();,1,1,0.3333333333333333,12
+898c64a09de630caca32c171c70c3658923393ad,// Ensure that the returned value only starts with a single '/'.,0,0,0.0,13
+898c64a09de630caca32c171c70c3658923393ad,// This prevents the value being misinterpreted as a protocol-,0,0,0.0,14
+898c64a09de630caca32c171c70c3658923393ad,pos++;,0,0,0.0,15
+898c64a09de630caca32c171c70c3658923393ad,pos--;,0,0,0.0,16

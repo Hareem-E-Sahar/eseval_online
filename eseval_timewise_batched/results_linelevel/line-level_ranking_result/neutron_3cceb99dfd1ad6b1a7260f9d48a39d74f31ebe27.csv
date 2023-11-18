@@ -1,0 +1,115 @@
+commit_id,line,line_level_label,count,line_score,row
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,segment = port_segment_map.get(binding['port_id']),1,2,1.0,1
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['segment'] = segment,1,2,1.0,2
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"port_segments = engine.execute(""""""",1,1,0.5,3
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['network_type'] = network_type,1,1,0.5,4
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['segmentation_id'] = segmentation_id,1,1,0.5,5
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,# Code similar to migrate_to_ml2.BaseMigrateToMl2.migrate_vlan_allocations,1,1,0.5,6
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,'WHERE allocated = 1'),1,1,0.5,7
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,'WHERE allocated = TRUE'),1,1,0.5,8
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,# Code similar to migrate_to_ml2.BaseMigrateToMl2.migrate_network_segments,1,1,0.5,9
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,source_table = sa_expr.table('hyperv_network_bindings'),1,1,0.5,10
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,source_segments = engine.execute(,1,1,0.5,11
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,ml2_segments = [dict(x) for x in source_segments],1,1,0.5,12
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,for segment in ml2_segments:,1,1,0.5,13
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,ml2_network_segments = sa_expr.table('ml2_network_segments'),1,1,0.5,14
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,WHERE portbindingports.port_id = ports.id,1,1,0.5,15
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,vlan_id = binding.pop('segmentation_id'),1,1,0.5,16
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,WHERE ml2_network_segments.network_id = ports_network.network_id,1,1,0.5,17
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,# Code similar to migrate_to_ml2.BaseMigrateToMl2.migrate_port_bindings,1,1,0.5,18
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,port_segment_map = _get_port_segment_map(engine),1,1,0.5,19
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,port_binding_ports = sa_expr.table('portbindingports'),1,1,0.5,20
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,source_bindings = engine.execute(,1,1,0.5,21
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,ml2_bindings = [dict(x) for x in source_bindings],1,1,0.5,22
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,for binding in ml2_bindings:,1,1,0.5,23
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['vif_type'] = 'hyperv',1,1,0.5,24
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['driver'] = HYPERV,1,1,0.5,25
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,md = sa.MetaData(),1,1,0.5,26
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,bind = op.get_bind(),1,1,0.5,27
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"network_type, segmentation_id = _interpret_vlan_id(vlan_id)",1,1,0.5,28
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,# Code from migrate_to_ml2.BaseMigrateToMl2.get_port_segment_map,1,1,0.5,29
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['id'] = uuidutils.generate_uuid(),1,1,0.5,30
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,1,0.5,31
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,import sqlalchemy as sa,0,1,0.5,32
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"# avoid being dependent on it, as it will eventually be removed.",1,1,0.5,33
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,md = sa.MetaData(),0,1,0.5,34
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,ml2_port_bindings = sa_expr.table('ml2_port_bindings'),1,1,0.5,35
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['vif_type'] = constants.VIF_TYPE_HYPERV,0,1,0.5,36
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,binding['vif_type'] = portbindings.VIF_TYPE_HYPERV,1,1,0.5,37
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,# Copyright 2015 OpenStack Foundation,1,1,0.5,38
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,#,1,1,0.5,39
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,#    not use this file except in compliance with the License. You may obtain,1,1,0.5,40
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,#    a copy of the License at,1,1,0.5,41
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.5,42
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"#    Unless required by applicable law or agreed to in writing, software",1,1,0.5,43
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,1,0.5,44
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,1,0.5,45
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,down_revision = '2d2a8a565438',1,1,0.5,46
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,# Duplicated from neutron.plugins.linuxbridge.common.constants to,1,1,0.5,47
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,LOCAL_VLAN_ID = -2,1,1,0.5,48
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,FLAT_VLAN_ID = -1,1,1,0.5,49
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,import sqlalchemy as sa,1,1,0.5,50
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from alembic import op,1,1,0.5,51
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,HYPERV = 'hyperv',1,1,0.5,52
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,revision = '2b801560a332',1,1,0.5,53
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"# revision identifiers, used by Alembic.",1,1,0.5,54
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,#    under the License.,1,1,0.5,55
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,#    License for the specific language governing permissions and limitations,1,1,0.5,56
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,if ml2_segments:,1,0,0.0,57
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"SELECT portbindingports.port_id, ports.network_id",1,0,0.0,58
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"FROM ml2_network_segments, (",1,0,0.0,59
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"SELECT ports_network.port_id, ml2_network_segments.id AS segment_id",1,0,0.0,60
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def _get_port_segment_map(engine):,1,0,0.0,61
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"op.execute(ml2_network_segments.insert(), ml2_segments)",1,0,0.0,62
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"sa_expr.select(['*'], from_obj=source_table))",1,0,0.0,63
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,_migrate_segment_dict(segment),1,0,0.0,64
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,) AS ports_network,1,0,0.0,65
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def _migrate_network_segments(engine):,1,0,0.0,66
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,'FROM hyperv_vlan_allocations ',1,0,0.0,67
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"'SELECT physical_network, vlan_id, allocated '",1,0,0.0,68
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"FROM portbindingports, ports",1,0,0.0,69
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,op.drop_table('hyperv_vlan_allocations'),1,0,0.0,70
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,""""""")",1,0,0.0,71
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,return dict(x for x in port_segments),1,0,0.0,72
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def _migrate_port_bindings(engine):,1,0,0.0,73
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"sa_expr.select(['*'], from_obj=port_binding_ports))",1,0,0.0,74
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,if segment:,1,0,0.0,75
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,if ml2_bindings:,1,0,0.0,76
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"sa.Table('ml2_port_bindings', md, autoload=True, autoload_with=engine)",1,0,0.0,77
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"op.bulk_insert(md.tables['ml2_port_bindings'], ml2_bindings)",1,0,0.0,78
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def upgrade():,1,0,0.0,79
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,_migrate_vlan_allocations(),1,0,0.0,80
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,_migrate_network_segments(bind),1,0,0.0,81
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,_migrate_port_bindings(bind),1,0,0.0,82
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,if op.get_bind().engine.name == 'ibm_db_sa':,1,0,0.0,83
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,op.execute('INSERT INTO ml2_vlan_allocations ',1,0,0.0,84
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"op.bulk_insert(md.tables['ml2_port_bindings'], ml2_bindings)",0,0,0.0,85
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def _migrate_vlan_allocations():,1,0,0.0,86
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,Revises: 4119216b7365,1,0,0.0,87
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"sa.Table('ml2_port_bindings', md, autoload=True, autoload_with=engine)",0,0,0.0,88
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"op.execute(ml2_port_bindings.insert(), ml2_bindings)",1,0,0.0,89
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from oslo_utils import uuidutils,0,0,0.0,90
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from neutron.openstack.common import uuidutils,1,0,0.0,91
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from neutron.plugins.ml2.drivers.hyperv import constants,0,0,0.0,92
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from neutron.extensions import portbindings,1,0,0.0,93
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"""""""Remove Hyper-V Neutron Plugin",1,0,0.0,94
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,Migrates the contents of the tables 'hyperv_vlan_allocations' and,1,0,0.0,95
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,'hyperv_network_bindings' to 'ml2_vlan_allocations' and 'ml2_network_segments',1,0,0.0,96
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"respectively, and then removes the tables.",1,0,0.0,97
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"Thse tables are used by HyperVNeutronPlugin, which will be removed.",1,0,0.0,98
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,Revision ID: 2b801560a332,1,0,0.0,99
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,Create Date: 2015-02-12 09:23:40.346104,1,0,0.0,100
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def _migrate_segment_dict(binding):,1,0,0.0,101
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"""""""",1,0,0.0,102
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from oslo_utils import uuidutils,1,0,0.0,103
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from sqlalchemy.sql import expression as sa_expr,1,0,0.0,104
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,from neutron.plugins.common import constants as p_const,1,0,0.0,105
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,def _interpret_vlan_id(vlan_id):,1,0,0.0,106
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"""""""Return (network_type, segmentation_id) tuple for encoded vlan_id.""""""",1,0,0.0,107
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,if vlan_id == LOCAL_VLAN_ID:,1,0,0.0,108
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"return (p_const.TYPE_LOCAL, None)",1,0,0.0,109
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,elif vlan_id == FLAT_VLAN_ID:,1,0,0.0,110
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"return (p_const.TYPE_FLAT, None)",1,0,0.0,111
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,else:,1,0,0.0,112
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,"return (p_const.TYPE_VLAN, vlan_id)",1,0,0.0,113
+3cceb99dfd1ad6b1a7260f9d48a39d74f31ebe27,op.drop_table('hyperv_network_bindings'),1,0,0.0,114

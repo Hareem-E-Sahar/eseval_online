@@ -1,0 +1,183 @@
+commit_id,line,line_level_label,count,line_score,row
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.kubernetes.api.model.EnvVar;,1,2,1.0,1
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.kubernetes.api.model.EnvVar;,1,2,1.0,2
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,// TODO add builderImage,1,2,1.0,3
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.slf4j.Logger;,1,1,0.5,4
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.context.UIContext;,1,1,0.5,5
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.context.UIExecutionContext;,1,1,0.5,6
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.input.UIInput;,1,1,0.5,7
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.metadata.UICommandMetadata;,1,1,0.5,8
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.metadata.WithAttributes;,1,1,0.5,9
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.result.Result;,1,1,0.5,10
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.result.Results;,1,1,0.5,11
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.util.Categories;,1,1,0.5,12
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.util.Metadata;,1,1,0.5,13
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import javax.inject.Inject;,1,1,0.5,14
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.slf4j.LoggerFactory;,1,1,0.5,15
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.apache.maven.model.Model;,1,1,0.5,16
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import java.util.Map;,1,1,0.5,17
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import java.util.concurrent.Callable;,1,1,0.5,18
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import static io.fabric8.utils.cxf.JsonHelper.toJson;,1,1,0.5,19
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"return Metadata.from(super.getMetadata(context), getClass())",1,1,0.5,20
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"return mavenModel.getArtifactId() + ""-int-test"";",1,1,0.5,21
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return null;,1,1,0.5,22
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"return Results.success(""Added BuildConfig: "" + Builds.getName(buildConfig) + "" to OpenShift at master: "" + getKubernetes().getMasterUrl());",1,1,0.5,23
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return builder.build();,1,1,0.5,24
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import org.jboss.forge.addon.ui.context.UIBuilder;,1,1,0.5,25
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import java.util.List;,1,1,0.5,26
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.utils.Objects;,1,1,0.5,27
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import java.util.Map;,1,1,0.5,28
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*/,1,1,0.5,29
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.ImageStream;,1,1,0.5,30
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.BuildConfig;,1,1,0.5,31
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.BuildConfigBuilder;,1,1,0.5,32
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.BuildConfigSpec;,1,1,0.5,33
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.ImageStream;,1,1,0.5,34
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.ImageStreamBuilder;,1,1,0.5,35
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.utils.Strings;,1,1,0.5,36
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import java.util.HashMap;,1,1,0.5,37
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import java.util.List;,1,1,0.5,38
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.BuildConfigSpecBuilder;,1,1,0.5,39
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return answer;,1,1,0.5,40
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return new ImageStreamBuilder().,1,1,0.5,41
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return builder.,1,1,0.5,42
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return new BuildConfigBuilder().,1,1,0.5,43
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,return buildConfigBuilder.withSpec(specBuilder.build()).build();,1,1,0.5,44
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*/,1,1,0.5,45
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.kubernetes.api.Controller;,1,1,0.5,46
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.kubernetes.api.builders.ListEnvVarBuilder;,1,1,0.5,47
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.kubernetes.api.builds.Builds;,1,1,0.5,48
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,import io.fabric8.openshift.api.model.BuildConfig;,1,1,0.5,49
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,UIInput<String> mavenCommand;,1,0,0.0,50
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,UIInput<String> buildName;,1,0,0.0,51
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"@WithAttributes(name = ""mavenCommand"", label = ""Maven command"",",1,0,0.0,52
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"description = ""The docker image name to generate."",",1,0,0.0,53
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"required = true,",1,0,0.0,54
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"defaultValue = ""mvn failsafe:integration-test -Pkit"")",1,0,0.0,55
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,UIInput<String> image;,1,0,0.0,56
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"@WithAttributes(name = ""image"", label = ""Docker image"",",1,0,0.0,57
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"description = ""The docker image to use to run the maven build."",",1,0,0.0,58
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"defaultValue = ""fabric8/maven"")",1,0,0.0,59
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,UIInput<String> gitUri;,1,0,0.0,60
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"@WithAttributes(name = ""gitUri"", label = ""Git Uri"",",1,0,0.0,61
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"description = ""If the git URI is not specified in the pom.xml then this allows you to specify one to be used."",",1,0,0.0,62
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"description = ""The build configuration name to generate."",",1,0,0.0,63
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,required = false),1,0,0.0,64
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,65
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"@WithAttributes(name = ""buildName"", label = ""Build name"",",1,0,0.0,66
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,@Inject,1,0,0.0,67
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,private static final transient Logger LOG = LoggerFactory.getLogger(NewIntegrationTestBuildCommand.class);,1,0,0.0,68
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,public class NewIntegrationTestBuildCommand extends AbstractDevOpsCommand {,1,0,0.0,69
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,* Creates a new integration test build in OpenShift for the current project,1,0,0.0,70
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,package io.fabric8.forge.devops;,1,0,0.0,71
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*  permissions and limitations under the License.,1,0,0.0,72
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*  implied.  See the License for the specific language governing,1,0,0.0,73
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,74
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,75
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,76
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*  with the License.  You may obtain a copy of the License at,1,0,0.0,77
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,78
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,79
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,public UICommandMetadata getMetadata(UIContext context) {,1,0,0.0,80
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,@Override,1,0,0.0,81
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"LOG.info(""Generated BuildConfig: "" + toJson(buildConfig));",1,0,0.0,82
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,.category(Categories.create(CATEGORY)),1,0,0.0,83
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"Objects.assertNotNull(buildConfigName, ""buildName"");",1,0,0.0,84
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"builder.withEnvVar(""SOURCE_URI"", gitUrlText);",1,0,0.0,85
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"builder.withEnvVar(""BUILD_NAME"", buildConfigName);",1,0,0.0,86
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,ListEnvVarBuilder builder = new ListEnvVarBuilder();,1,0,0.0,87
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"private List<EnvVar> createEnvVars(String buildConfigName, String gitUrlText, String mavenCommand) {",1,0,0.0,88
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"controller.applyBuildConfig(buildConfig, ""generated BuildConfig: "" + toJson(buildConfig));",1,0,0.0,89
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"controller.applyImageStream(imageRepository, ""generated ImageStream: "" + toJson(imageRepository));",1,0,0.0,90
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,Controller controller = createController();,1,0,0.0,91
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"ImageStream imageRepository = BuildConfigs.imageRepository(buildConfigName, labels);",1,0,0.0,92
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,93
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"BuildConfig buildConfig = BuildConfigs.createIntegrationTestBuildConfig(buildConfigName, labels, gitUrlText, imageText, envVars);",1,0,0.0,94
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"List<EnvVar> envVars = createEnvVars(buildConfigName, gitUrlText, mavenCommand.getValue());",1,0,0.0,95
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,String imageText = image.getValue();,1,0,0.0,96
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"String gitUrlText = getOrFindGitUrl(context, gitUri.getValue());",1,0,0.0,97
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"Map<String, String> labels = BuildConfigs.createBuildLabels(buildConfigName);",1,0,0.0,98
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,String buildConfigName = buildName.getValue();,1,0,0.0,99
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,".name(CATEGORY + "": New Integration Test Build"")",1,0,0.0,100
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,public Result execute(UIExecutionContext context) throws Exception {,1,0,0.0,101
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,builder.add(gitUri);,1,0,0.0,102
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,builder.add(image);,1,0,0.0,103
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,builder.add(mavenCommand);,1,0,0.0,104
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,builder.add(buildName);,1,0,0.0,105
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,});,1,0,0.0,106
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,if (mavenModel != null) {,1,0,0.0,107
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,Model mavenModel = getMavenModel(builder);,1,0,0.0,108
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,public String call() throws Exception {,1,0,0.0,109
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,buildName.setDefaultValue(new Callable<String>() {,1,0,0.0,110
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,super.initializeUI(builder);,1,0,0.0,111
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,public void initializeUI(final UIBuilder builder) throws Exception {,1,0,0.0,112
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,},1,0,0.0,113
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,".description(""Create a new integration test build configuration"");",1,0,0.0,114
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*,1,0,0.0,115
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfigSpecBuilder addWebHookTriggers(BuildConfigSpecBuilder builder, String secret) {",1,0,0.0,116
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,/**,1,0,0.0,117
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"Map<String, String> answer = new HashMap<>();",1,0,0.0,118
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endSource().,1,0,0.0,119
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewGit().withUri(gitUrl).endGit().,1,0,0.0,120
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withType(""Git"").",1,0,0.0,121
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewSource().,1,0,0.0,122
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfigSpec addBuildParameterGitSource(BuildConfigSpecBuilder builder, String gitUrl) {",1,0,0.0,123
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endOutput().,1,0,0.0,124
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withNewTo().withKind(""ImageStreamImage"").withName(imageName).endTo().",1,0,0.0,125
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewOutput().,1,0,0.0,126
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfigSpec addBuildParameterOutput(BuildConfigSpecBuilder builder, String imageName) {",1,0,0.0,127
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,build();,1,0,0.0,128
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewMetadata().withLabels(labels).withName(buildName).endMetadata().,1,0,0.0,129
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static ImageStream imageRepository(String buildName, Map<String, String> labels) {",1,0,0.0,130
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,},1,0,0.0,131
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"answer.put(""name"", buildName);",1,0,0.0,132
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static Map<String, String> createBuildLabels(String buildName) {",1,0,0.0,133
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"addBuildParameterCustomStrategy(specBuilder, image, envVars);",1,0,0.0,134
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,public class BuildConfigs {,1,0,0.0,135
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,package io.fabric8.forge.devops;,1,0,0.0,136
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*  permissions and limitations under the License.,1,0,0.0,137
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*  implied.  See the License for the specific language governing,1,0,0.0,138
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,139
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,140
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,141
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,142
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*  with the License.  You may obtain a copy of the License at,1,0,0.0,143
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,144
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,145
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,*,1,0,0.0,146
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"*  Copyright 2005-2015 Red Hat, Inc.",1,0,0.0,147
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,/**,1,0,0.0,148
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfigSpecBuilder addBuildConfigSpectiStrategy(BuildConfigSpecBuilder builder, String image) {",1,0,0.0,149
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewStrategy().,1,0,0.0,150
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withType(""STI"").",1,0,0.0,151
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewSourceStrategy().,1,0,0.0,152
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,if (Strings.isNotBlank(image)) {,1,0,0.0,153
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfig createIntegrationTestBuildConfig(String buildConfigName, Map<String, String> labels, String gitUrlText, String image, List<EnvVar> envVars) {",1,0,0.0,154
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"addWebHookTriggers(specBuilder, webhookSecret);",1,0,0.0,155
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,if (Strings.isNotBlank(webhookSecret)) {,1,0,0.0,156
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"addBuildConfigSpectiStrategy(specBuilder, imageText);",1,0,0.0,157
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,if (Strings.isNotBlank(imageText)) {,1,0,0.0,158
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"addBuildParameterOutput(specBuilder, outputImageStreamName);",1,0,0.0,159
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,if (Strings.isNotBlank(outputImageStreamName)) {,1,0,0.0,160
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"addBuildParameterGitSource(specBuilder, gitUrlText);",1,0,0.0,161
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,BuildConfigSpecBuilder specBuilder = new BuildConfigSpecBuilder();,1,0,0.0,162
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"BuildConfigBuilder buildConfigBuilder = buildConfigBuilder(buildConfigName, labels);",1,0,0.0,163
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfig createBuildConfig(String buildConfigName, Map<String, String> labels, String gitUrlText, String outputImageStreamName, String imageText, String webhookSecret) {",1,0,0.0,164
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewMetadata().withLabels(labels).withName(buildName).endMetadata();,1,0,0.0,165
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfigBuilder buildConfigBuilder(String buildName, Map<String, String> labels) {",1,0,0.0,166
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endTrigger();,1,0,0.0,167
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewGeneric().withSecret(secret).endGeneric().,1,0,0.0,168
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withType(""generic"").",1,0,0.0,169
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endTrigger().,1,0,0.0,170
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewGithub().withSecret(secret).endGithub().,1,0,0.0,171
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withType(""github"").",1,0,0.0,172
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,addNewTrigger().,1,0,0.0,173
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endCustomStrategy().,1,0,0.0,174
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withEnv(envVars).,1,0,0.0,175
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,withNewCustomStrategy().,1,0,0.0,176
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withType(""Custom"").",1,0,0.0,177
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"public static BuildConfigSpecBuilder addBuildParameterCustomStrategy(BuildConfigSpecBuilder builder, String image, List<EnvVar> envVars) {",1,0,0.0,178
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endStrategy();,1,0,0.0,179
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,endSourceStrategy().,1,0,0.0,180
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"withNewFrom().withName(image).withKind(""ImageStreamImage"").endFrom().",1,0,0.0,181
+957acfd0684a49b104ee5f9fd7f0b2f2f5c23855,"builder.withEnvVar(""MAVEN_COMMAND"", mavenCommand);",1,0,0.0,182

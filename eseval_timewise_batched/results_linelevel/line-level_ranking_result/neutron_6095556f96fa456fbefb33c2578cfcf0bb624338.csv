@@ -1,0 +1,439 @@
+commit_id,line,line_level_label,count,line_score,row
+6095556f96fa456fbefb33c2578cfcf0bb624338,"all_tables = self.execute(args, run_as_root=True)",1,4,1.0,1
+6095556f96fa456fbefb33c2578cfcf0bb624338,"current_table = self.execute(args, run_as_root=True)",1,4,1.0,2
+6095556f96fa456fbefb33c2578cfcf0bb624338,"save_output = self.execute(args, run_as_root=True)",0,3,0.75,3
+6095556f96fa456fbefb33c2578cfcf0bb624338,all_chains = [':%s' % name for name in unwrapped_chains],1,3,0.75,4
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args = ['%s-restore' % (cmd,), '-c']",1,2,0.5,5
+6095556f96fa456fbefb33c2578cfcf0bb624338,current_table = self.execute(,0,2,0.5,6
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args = [cmd, '-t', table, '-L', name, '-n', '-v', '-x']",1,2,0.5,7
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args = [cmd, '-t', table, '-L', name, '-n', '-v', '-x',",0,2,0.5,8
+6095556f96fa456fbefb33c2578cfcf0bb624338,args = args[:],0,2,0.5,9
+6095556f96fa456fbefb33c2578cfcf0bb624338,# maybe we run on a platform that includes iptables commit,0,2,0.5,10
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args = ['%s-save' % (cmd,), '-c']",1,2,0.5,11
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_chains += [':%s' % name for name in unwrapped_chains,0,2,0.5,12
+6095556f96fa456fbefb33c2578cfcf0bb624338,"our_chains = [':%s-%s' % (self.wrap_name, name) for name in chains]",0,2,0.5,13
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args = ['%s-restore' % (cmd,), '-n']",0,2,0.5,14
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args = ['%s-save' % (cmd,)]",0,2,0.5,15
+6095556f96fa456fbefb33c2578cfcf0bb624338,# platforms get iptables with 999eaa241212d3952ddff39a99d0d55a74e3639e,0,1,0.25,16
+6095556f96fa456fbefb33c2578cfcf0bb624338,filter_map = collections.defaultdict(list),1,1,0.25,17
+6095556f96fa456fbefb33c2578cfcf0bb624338,key = data.rpartition('] ')[2],1,1,0.25,18
+6095556f96fa456fbefb33c2578cfcf0bb624338,"key = data.rsplit(' [', 1)[0]",1,1,0.25,19
+6095556f96fa456fbefb33c2578cfcf0bb624338,key = key[:-2],1,1,0.25,20
+6095556f96fa456fbefb33c2578cfcf0bb624338,# include a lookup without the CIDR here to match as well,1,1,0.25,21
+6095556f96fa456fbefb33c2578cfcf0bb624338,"alt_key = key.replace(cidr, '')",1,1,0.25,22
+6095556f96fa456fbefb33c2578cfcf0bb624338,XTABLES_RESOURCE_PROBLEM_CODE = 4,0,1,0.25,23
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_start = max(0, line_no - context)",0,1,0.25,24
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args += ['-w', self.xlock_wait_time]",0,1,0.25,25
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.execute(args, process_input='\n'.join(commands),",0,1,0.25,26
+6095556f96fa456fbefb33c2578cfcf0bb624338,run_as_root=True),0,1,0.25,27
+6095556f96fa456fbefb33c2578cfcf0bb624338,except RuntimeError as error:,0,1,0.25,28
+6095556f96fa456fbefb33c2578cfcf0bb624338,line_no = int(re.search(,0,1,0.25,29
+6095556f96fa456fbefb33c2578cfcf0bb624338,context = IPTABLES_ERROR_LINES_OF_CONTEXT,0,1,0.25,30
+6095556f96fa456fbefb33c2578cfcf0bb624338,return False,1,1,0.25,31
+6095556f96fa456fbefb33c2578cfcf0bb624338,rule_str = _strip_packets_bytes(str(rule)),1,1,0.25,32
+6095556f96fa456fbefb33c2578cfcf0bb624338,"line = line.split(' - [', 1)[0]",1,1,0.25,33
+6095556f96fa456fbefb33c2578cfcf0bb624338,seen_rules = set(),1,1,0.25,34
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter[rules_index:rules_index] = our_rules,1,1,0.25,35
+6095556f96fa456fbefb33c2578cfcf0bb624338,rule_str = str(rule).strip(),1,1,0.25,36
+6095556f96fa456fbefb33c2578cfcf0bb624338,"old = self._find_last_entry(old_filter_map, rule_str)",1,1,0.25,37
+6095556f96fa456fbefb33c2578cfcf0bb624338,"dup = self._find_last_entry(new_filter_map, rule_str)",1,1,0.25,38
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter = [s for s in new_filter if rule_str not in s.strip()],1,1,0.25,39
+6095556f96fa456fbefb33c2578cfcf0bb624338,rule_str = str(old or dup),1,1,0.25,40
+6095556f96fa456fbefb33c2578cfcf0bb624338,rule_str = '[0:0] ' + rule_str,1,1,0.25,41
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter[rules_index:rules_index] = our_chains,1,1,0.25,42
+6095556f96fa456fbefb33c2578cfcf0bb624338,return True,1,1,0.25,43
+6095556f96fa456fbefb33c2578cfcf0bb624338,line = line.split(':')[1],1,1,0.25,44
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_start = 0,0,1,0.25,45
+6095556f96fa456fbefb33c2578cfcf0bb624338,"line = line.split('] ', 1)[1]",1,1,0.25,46
+6095556f96fa456fbefb33c2578cfcf0bb624338,line = line.strip(),1,1,0.25,47
+6095556f96fa456fbefb33c2578cfcf0bb624338,seen_chains = set(),1,1,0.25,48
+6095556f96fa456fbefb33c2578cfcf0bb624338,line = _strip_packets_bytes(line),1,1,0.25,49
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_end = line_no + context,0,1,0.25,50
+6095556f96fa456fbefb33c2578cfcf0bb624338,run_as_root=True),1,1,0.25,51
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_end = len(commands),0,1,0.25,52
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_lines = ('%7d. %s' % (idx, l)",0,1,0.25,53
+6095556f96fa456fbefb33c2578cfcf0bb624338,"args, run_as_root=True, log_fail_as_error=cfg.CONF.debug)",0,1,0.25,54
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True, log_fail_as_error=False),",0,1,0.25,55
+6095556f96fa456fbefb33c2578cfcf0bb624338,"'-n', '-v', '-x', '-w', '10'], run_as_root=True,",0,1,0.25,56
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['iptables-save'], run_as_root=True, privsep_exec=True),",0,1,0.25,57
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True, privsep_exec=True,",0,1,0.25,58
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=filter_dump, run_as_root=True,",0,1,0.25,59
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True, privsep_exec=True),",0,1,0.25,60
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=mock.ANY, run_as_root=True,",0,1,0.25,61
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['iptables-save'], run_as_root=True,",0,1,0.25,62
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True, log_fail_as_error=False),",1,1,0.25,63
+6095556f96fa456fbefb33c2578cfcf0bb624338,"['iptables-save'], run_as_root=True, privsep_exec=True,",0,1,0.25,64
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=self._regex(v4_filter + raw), run_as_root=True,",0,1,0.25,65
+6095556f96fa456fbefb33c2578cfcf0bb624338,"['ip6tables-save'], run_as_root=True, privsep_exec=True,",0,1,0.25,66
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=self._regex(v6_filter + raw), run_as_root=True,",0,1,0.25,67
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True,",1,1,0.25,68
+6095556f96fa456fbefb33c2578cfcf0bb624338,# Execute iptables command in the linux host.,0,1,0.25,69
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=mock.ANY, run_as_root=True,",0,1,0.25,70
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True, log_fail_as_error=False),",0,1,0.25,71
+6095556f96fa456fbefb33c2578cfcf0bb624338,except RuntimeError as r_error:,1,1,0.25,72
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""following set of iptables rules:\n%s"",",0,1,0.25,73
+6095556f96fa456fbefb33c2578cfcf0bb624338,"err = self._run_restore(args, commands)",0,1,0.25,74
+6095556f96fa456fbefb33c2578cfcf0bb624338,# iptables process running in parallel. Try to use -w to,0,1,0.25,75
+6095556f96fa456fbefb33c2578cfcf0bb624338,"err = self._run_restore(args, commands, lock=True)",0,1,0.25,76
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.execute(args, process_input='\n'.join(commands),",1,1,0.25,77
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_rules = [],1,1,0.25,78
+6095556f96fa456fbefb33c2578cfcf0bb624338,line_no = int(re.search(,1,1,0.25,79
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""following set of iptables rules:\n%s"",",1,1,0.25,80
+6095556f96fa456fbefb33c2578cfcf0bb624338,context = IPTABLES_ERROR_LINES_OF_CONTEXT,1,1,0.25,81
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_start = max(0, line_no - context)",1,1,0.25,82
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_end = line_no + context,1,1,0.25,83
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_start = 0,1,1,0.25,84
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_end = len(commands),1,1,0.25,85
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_lines = ('%7d. %s' % (idx, l)",1,1,0.25,86
+6095556f96fa456fbefb33c2578cfcf0bb624338,bot_rules = [],1,1,0.25,87
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['ip6tables-save'], run_as_root=True,",0,1,0.25,88
+6095556f96fa456fbefb33c2578cfcf0bb624338,chain_str = str(old or dup),1,1,0.25,89
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_by_chain = _get_rules_by_chain(new_rules),0,1,0.25,90
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_bottom_rules = [],0,1,0.25,91
+6095556f96fa456fbefb33c2578cfcf0bb624338,rule_str = str(rule),0,1,0.25,92
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter = [s for s in new_filter if rule_str not in s],0,1,0.25,93
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_chains_and_rules = our_chains + our_top_rules + our_bottom_rules,0,1,0.25,94
+6095556f96fa456fbefb33c2578cfcf0bb624338,rules_index = self._find_rules_index(new_filter),0,1,0.25,95
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter[rules_index:rules_index] = our_chains_and_rules,0,1,0.25,96
+6095556f96fa456fbefb33c2578cfcf0bb624338,chain = line[1:],0,1,0.25,97
+6095556f96fa456fbefb33c2578cfcf0bb624338,seen_lines = set(),0,1,0.25,98
+6095556f96fa456fbefb33c2578cfcf0bb624338,thing = 'chain' if line.startswith(':') else 'rule',0,1,0.25,99
+6095556f96fa456fbefb33c2578cfcf0bb624338,"LOG.warning(_LW(""Duplicate iptables %(thing)s detected. This """,0,1,0.25,100
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""may indicate a bug in the the iptables """,0,1,0.25,101
+6095556f96fa456fbefb33c2578cfcf0bb624338,return False,0,1,0.25,102
+6095556f96fa456fbefb33c2578cfcf0bb624338,table.remove_rules = [],0,1,0.25,103
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""""""Generates iptables commands to get from old_rules to new_rules.",0,1,0.25,104
+6095556f96fa456fbefb33c2578cfcf0bb624338,This function diffs the two rule sets and then calculates the iptables,0,1,0.25,105
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_top_rules = [],0,1,0.25,106
+6095556f96fa456fbefb33c2578cfcf0bb624338,if not any(':%s' % name in s for s in new_filter)],0,1,0.25,107
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter = [line.strip() for line in current_lines,0,1,0.25,108
+6095556f96fa456fbefb33c2578cfcf0bb624338,# generate the new table state we want,0,1,0.25,109
+6095556f96fa456fbefb33c2578cfcf0bb624338,and replace them with the current set of rules.,0,1,0.25,110
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter = [s for s in new_filter if chain_str not in s.strip()],1,1,0.25,111
+6095556f96fa456fbefb33c2578cfcf0bb624338,all_commands = []  # variable to keep track all commands for return val,0,1,0.25,112
+6095556f96fa456fbefb33c2578cfcf0bb624338,commands = [],0,1,0.25,113
+6095556f96fa456fbefb33c2578cfcf0bb624338,# isolate the lines of the table we are modifying,0,1,0.25,114
+6095556f96fa456fbefb33c2578cfcf0bb624338,old_rules = all_lines[start:end],0,1,0.25,115
+6095556f96fa456fbefb33c2578cfcf0bb624338,"new_rules = self._modify_rules(old_rules, table, table_name)",0,1,0.25,116
+6095556f96fa456fbefb33c2578cfcf0bb624338,end = lines[start:].index('COMMIT') + start + 1,0,1,0.25,117
+6095556f96fa456fbefb33c2578cfcf0bb624338,# generate the iptables commands to get between the old state,0,1,0.25,118
+6095556f96fa456fbefb33c2578cfcf0bb624338,"changes = _generate_path_between_rules(old_rules, new_rules)",0,1,0.25,119
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.execute(args, process_input='\n'.join(commands),",0,1,0.25,120
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_end = len(commands),0,1,0.25,121
+6095556f96fa456fbefb33c2578cfcf0bb624338,"LOG.debug(""IPTablesManager.apply completed with success. %d iptables """,0,1,0.25,122
+6095556f96fa456fbefb33c2578cfcf0bb624338,start = lines.index('*%s' % table_name),0,1,0.25,123
+6095556f96fa456fbefb33c2578cfcf0bb624338,old_by_chain = _get_rules_by_chain(old_rules),0,1,0.25,124
+6095556f96fa456fbefb33c2578cfcf0bb624338,all_lines = save_output.split('\n'),0,1,0.25,125
+6095556f96fa456fbefb33c2578cfcf0bb624338,"old_chains, new_chains = set(old_by_chain.keys()), set(new_by_chain.keys())",0,1,0.25,126
+6095556f96fa456fbefb33c2578cfcf0bb624338,old_filter_map = make_filter_map(old_filter),1,1,0.25,127
+6095556f96fa456fbefb33c2578cfcf0bb624338,remove_chains = table.remove_chains,1,1,0.25,128
+6095556f96fa456fbefb33c2578cfcf0bb624338,rules = table.rules,1,1,0.25,129
+6095556f96fa456fbefb33c2578cfcf0bb624338,remove_rules = table.remove_rules,1,1,0.25,130
+6095556f96fa456fbefb33c2578cfcf0bb624338,"fake_table = ['# Generated by iptables_manager',",1,1,0.25,131
+6095556f96fa456fbefb33c2578cfcf0bb624338,# Fill new_filter with any chains or rules without our name in them.,1,1,0.25,132
+6095556f96fa456fbefb33c2578cfcf0bb624338,"old_filter, new_filter = [], []",1,1,0.25,133
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter_map = make_filter_map(new_filter),1,1,0.25,134
+6095556f96fa456fbefb33c2578cfcf0bb624338,start = lines.index('*%s' % table_name) - 1,1,1,0.25,135
+6095556f96fa456fbefb33c2578cfcf0bb624338,rules_index = self._find_rules_index(new_filter),1,1,0.25,136
+6095556f96fa456fbefb33c2578cfcf0bb624338,"all_chains += [':%s-%s' % (self.wrap_name, name) for name in chains]",1,1,0.25,137
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_chains = [],1,1,0.25,138
+6095556f96fa456fbefb33c2578cfcf0bb624338,"old = self._find_last_entry(old_filter_map, chain_str)",1,1,0.25,139
+6095556f96fa456fbefb33c2578cfcf0bb624338,chain_str = str(chain).strip(),1,1,0.25,140
+6095556f96fa456fbefb33c2578cfcf0bb624338,"dup = self._find_last_entry(new_filter_map, chain_str)",1,1,0.25,141
+6095556f96fa456fbefb33c2578cfcf0bb624338,end = lines[start:].index('COMMIT') + start + 2,1,1,0.25,142
+6095556f96fa456fbefb33c2578cfcf0bb624338,current_lines = fake_table,1,1,0.25,143
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_end = len(all_lines),1,1,0.25,144
+6095556f96fa456fbefb33c2578cfcf0bb624338,old_index = 1,0,1,0.25,145
+6095556f96fa456fbefb33c2578cfcf0bb624338,statements = [':%s - [0:0]' % c for c in sorted(new_chains - old_chains)],0,1,0.25,146
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.execute(args, process_input='\n'.join(all_lines),",1,1,0.25,147
+6095556f96fa456fbefb33c2578cfcf0bb624338,other_chains = [],0,1,0.25,148
+6095556f96fa456fbefb33c2578cfcf0bb624338,by_chain = collections.defaultdict(list),0,1,0.25,149
+6095556f96fa456fbefb33c2578cfcf0bb624338,"chain = line[1:].split(' ', 1)[0]",0,1,0.25,150
+6095556f96fa456fbefb33c2578cfcf0bb624338,by_chain[chain] = [],0,1,0.25,151
+6095556f96fa456fbefb33c2578cfcf0bb624338,"chain = line[3:].split(' ', 1)[0]",0,1,0.25,152
+6095556f96fa456fbefb33c2578cfcf0bb624338,sg_chains = [],0,1,0.25,153
+6095556f96fa456fbefb33c2578cfcf0bb624338,statements = [],0,1,0.25,154
+6095556f96fa456fbefb33c2578cfcf0bb624338,"same component of Nova, and replace them with our current set of",1,1,0.25,155
+6095556f96fa456fbefb33c2578cfcf0bb624338,all_lines[start:end] = self._modify_rules(,1,1,0.25,156
+6095556f96fa456fbefb33c2578cfcf0bb624338,# strip the chain name since we have to add it before the index,0,1,0.25,157
+6095556f96fa456fbefb33c2578cfcf0bb624338,all_lines = all_tables.split('\n'),1,1,0.25,158
+6095556f96fa456fbefb33c2578cfcf0bb624338,# tests. iptables doesn't care about the order here,0,1,0.25,159
+6095556f96fa456fbefb33c2578cfcf0bb624338,"rule = line[5:].split(' ', 1)[-1]",0,1,0.25,160
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# out anything in the ""remove"" list.",1,0,0.0,161
+6095556f96fa456fbefb33c2578cfcf0bb624338,if _weed_out_duplicate_chains(line) and,1,0,0.0,162
+6095556f96fa456fbefb33c2578cfcf0bb624338,_weed_out_duplicate_rules(line) and,1,0,0.0,163
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# flush lists, just in case we didn't find something",1,0,0.0,164
+6095556f96fa456fbefb33c2578cfcf0bb624338,# non-zero [packet:byte] count we want to preserve.  We also filter,1,0,0.0,165
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# things like COMMIT, *filter, and *nat land here",1,0,0.0,166
+6095556f96fa456fbefb33c2578cfcf0bb624338,def make_filter_map(filter_list):,1,0,0.0,167
+6095556f96fa456fbefb33c2578cfcf0bb624338,for data in filter_list:,1,0,0.0,168
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# strip any [packet:byte] counts at start or end of lines,",1,0,0.0,169
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# for example, chains look like "":neutron-foo - [0:0]""",1,0,0.0,170
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# and rules look like ""[0:0] -A neutron-foo...""",1,0,0.0,171
+6095556f96fa456fbefb33c2578cfcf0bb624338,if data.startswith('['):,1,0,0.0,172
+6095556f96fa456fbefb33c2578cfcf0bb624338,elif data.endswith(']'):,1,0,0.0,173
+6095556f96fa456fbefb33c2578cfcf0bb624338,if key.endswith(' -'):,1,0,0.0,174
+6095556f96fa456fbefb33c2578cfcf0bb624338,remove_chains.clear(),1,0,0.0,175
+6095556f96fa456fbefb33c2578cfcf0bb624338,"def _run_restore(self, args, commands, lock=False):",0,0,0.0,176
+6095556f96fa456fbefb33c2578cfcf0bb624338,filter_map[key].append(data),1,0,0.0,177
+6095556f96fa456fbefb33c2578cfcf0bb624338,# regular IP(v6) entries are translated into /32s or /128s so we,1,0,0.0,178
+6095556f96fa456fbefb33c2578cfcf0bb624338,"for cidr in ('/32', '/128'):",1,0,0.0,179
+6095556f96fa456fbefb33c2578cfcf0bb624338,if cidr in key:,1,0,0.0,180
+6095556f96fa456fbefb33c2578cfcf0bb624338,filter_map[alt_key].append(data),1,0,0.0,181
+6095556f96fa456fbefb33c2578cfcf0bb624338,# return a regular dict so readers don't accidentally add entries,1,0,0.0,182
+6095556f96fa456fbefb33c2578cfcf0bb624338,return dict(filter_map),1,0,0.0,183
+6095556f96fa456fbefb33c2578cfcf0bb624338,# RESOURCE_PROBLEM in include/xtables.h,0,0,0.0,184
+6095556f96fa456fbefb33c2578cfcf0bb624338,# NOTE(ihrachys) we may get rid of the lock once all supported,0,0,0.0,185
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# (""iptables-restore: support acquiring the lock."")",0,0,0.0,186
+6095556f96fa456fbefb33c2578cfcf0bb624338,@property,0,0,0.0,187
+6095556f96fa456fbefb33c2578cfcf0bb624338,def xlock_wait_time(self):,0,0,0.0,188
+6095556f96fa456fbefb33c2578cfcf0bb624338,# give agent some time to report back to server,0,0,0.0,189
+6095556f96fa456fbefb33c2578cfcf0bb624338,return str(int(cfg.CONF.AGENT.report_interval / 3.0)),0,0,0.0,190
+6095556f96fa456fbefb33c2578cfcf0bb624338,if lock:,0,0,0.0,191
+6095556f96fa456fbefb33c2578cfcf0bb624338,# the *last* occurrence take precedence since it could have a,1,0,0.0,192
+6095556f96fa456fbefb33c2578cfcf0bb624338,# ignore [packet:byte] counts at end of lines,1,0,0.0,193
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# We filter duplicates.  Go through the chains and rules, letting",1,0,0.0,194
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_rules += [rule_str],1,0,0.0,195
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# it's a chain, for example, "":neutron-billing - [0:0]""",1,0,0.0,196
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line.startswith(':'):,1,0,0.0,197
+6095556f96fa456fbefb33c2578cfcf0bb624338,# strip any [packet:byte] counts at start or end of lines,1,0,0.0,198
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _strip_packets_bytes(line):,1,0,0.0,199
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_rules += bot_rules,1,0,0.0,200
+6095556f96fa456fbefb33c2578cfcf0bb624338,bot_rules += [rule_str],1,0,0.0,201
+6095556f96fa456fbefb33c2578cfcf0bb624338,rules_index -= 1,1,0,0.0,202
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# it's a rule, for example, ""[0:0] -A neutron-billing...""",1,0,0.0,203
+6095556f96fa456fbefb33c2578cfcf0bb624338,# backup one index so we write the array correctly,1,0,0.0,204
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# if no old or duplicates, use original rule",1,0,0.0,205
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# list, so here we remove the dupes ahead of time.",1,0,0.0,206
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# Further down, we weed out duplicates from the bottom of the",1,0,0.0,207
+6095556f96fa456fbefb33c2578cfcf0bb624338,return error,0,0,0.0,208
+6095556f96fa456fbefb33c2578cfcf0bb624338,for rule in rules:,1,0,0.0,209
+6095556f96fa456fbefb33c2578cfcf0bb624338,elif line.startswith('['):,1,0,0.0,210
+6095556f96fa456fbefb33c2578cfcf0bb624338,return line,1,0,0.0,211
+6095556f96fa456fbefb33c2578cfcf0bb624338,remove_rules.remove(rule),1,0,0.0,212
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _weed_out_removes(line):,1,0,0.0,213
+6095556f96fa456fbefb33c2578cfcf0bb624338,if rule_str == line:,1,0,0.0,214
+6095556f96fa456fbefb33c2578cfcf0bb624338,for rule in remove_rules:,1,0,0.0,215
+6095556f96fa456fbefb33c2578cfcf0bb624338,remove_chains.remove(chain),1,0,0.0,216
+6095556f96fa456fbefb33c2578cfcf0bb624338,if chain == line:,1,0,0.0,217
+6095556f96fa456fbefb33c2578cfcf0bb624338,for chain in remove_chains:,1,0,0.0,218
+6095556f96fa456fbefb33c2578cfcf0bb624338,# We need to find exact matches here,1,0,0.0,219
+6095556f96fa456fbefb33c2578cfcf0bb624338,seen_rules.add(line),1,0,0.0,220
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _weed_out_duplicate_chains(line):,1,0,0.0,221
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line in seen_rules:,1,0,0.0,222
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line.startswith('['):,1,0,0.0,223
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _weed_out_duplicate_rules(line):,1,0,0.0,224
+6095556f96fa456fbefb33c2578cfcf0bb624338,# Leave it alone,1,0,0.0,225
+6095556f96fa456fbefb33c2578cfcf0bb624338,seen_chains.add(line),1,0,0.0,226
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line in seen_chains:,1,0,0.0,227
+6095556f96fa456fbefb33c2578cfcf0bb624338,try:,0,0,0.0,228
+6095556f96fa456fbefb33c2578cfcf0bb624338,"LOG.error(""IPTablesManager.apply failed to apply the """,1,0,0.0,229
+6095556f96fa456fbefb33c2578cfcf0bb624338,"def _log_restore_err(self, err, commands):",0,0,0.0,230
+6095556f96fa456fbefb33c2578cfcf0bb624338,# generating alarms that will be ignored by  operators.,0,0,0.0,231
+6095556f96fa456fbefb33c2578cfcf0bb624338,"privsep_exec=True, log_fail_as_error=False),",0,0,0.0,232
+6095556f96fa456fbefb33c2578cfcf0bb624338,"privsep_exec=True),",0,0,0.0,233
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_fail_as_error=False),",0,0,0.0,234
+6095556f96fa456fbefb33c2578cfcf0bb624338,"'-n', '-v', '-x', '-w', '10'], run_as_root=True),",1,0,0.0,235
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True),",1,0,0.0,236
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_fail_as_error=False),",0,0,0.0,237
+6095556f96fa456fbefb33c2578cfcf0bb624338,# enabled is that we need to log the error. This is used to avoid,0,0,0.0,238
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_fail_as_error=False),",0,0,0.0,239
+6095556f96fa456fbefb33c2578cfcf0bb624338,# this error in production environments. Only when debug mode is,0,0,0.0,240
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# and we do not care about it. Therefore, we do not need to log",0,0,0.0,241
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# When routers migrate from a host,an exception might happen here,",0,0,0.0,242
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=mock.ANY, run_as_root=True),",1,0,0.0,243
+6095556f96fa456fbefb33c2578cfcf0bb624338,"),",1,0,0.0,244
+6095556f96fa456fbefb33c2578cfcf0bb624338,run_as_root=True,1,0,0.0,245
+6095556f96fa456fbefb33c2578cfcf0bb624338,privsep_exec=True)]),0,0,0.0,246
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['iptables-save'],",1,0,0.0,247
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True),",1,0,0.0,248
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['ip6tables-save'],",1,0,0.0,249
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=filter_dump,",1,0,0.0,250
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_fail_as_error=False),",1,0,0.0,251
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=mock.ANY, run_as_root=True)])",1,0,0.0,252
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['iptables-save'], run_as_root=True),",1,0,0.0,253
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=mock.ANY, run_as_root=True),",1,0,0.0,254
+6095556f96fa456fbefb33c2578cfcf0bb624338,"(mock.call(['ip6tables-save'], run_as_root=True),",1,0,0.0,255
+6095556f96fa456fbefb33c2578cfcf0bb624338,"privsep_exec=True, log_fail_as_error=False, return_value='')",0,0,0.0,256
+6095556f96fa456fbefb33c2578cfcf0bb624338,"['iptables-save'],",1,0,0.0,257
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=self._regex(v4_filter + raw),",1,0,0.0,258
+6095556f96fa456fbefb33c2578cfcf0bb624338,"log_fail_as_error=False,",1,0,0.0,259
+6095556f96fa456fbefb33c2578cfcf0bb624338,return_value=''),1,0,0.0,260
+6095556f96fa456fbefb33c2578cfcf0bb624338,"['ip6tables-save'],",1,0,0.0,261
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_chains += [chain_str],1,0,0.0,262
+6095556f96fa456fbefb33c2578cfcf0bb624338,"run_as_root=True),",1,0,0.0,263
+6095556f96fa456fbefb33c2578cfcf0bb624338,'\n'.join(log_lines)),1,0,0.0,264
+6095556f96fa456fbefb33c2578cfcf0bb624338,"'iptables-restore: line ([0-9]+?) failed',",0,0,0.0,265
+6095556f96fa456fbefb33c2578cfcf0bb624338,"LOG.error(""IPTablesManager.apply failed to apply the """,0,0,0.0,266
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# 999eaa241212d3952ddff39a99d0d55a74e3639e (for example, latest",0,0,0.0,267
+6095556f96fa456fbefb33c2578cfcf0bb624338,err.returncode == XTABLES_RESOURCE_PROBLEM_CODE):,0,0,0.0,268
+6095556f96fa456fbefb33c2578cfcf0bb624338,"if (isinstance(err, linux_utils.ProcessExecutionError) and",0,0,0.0,269
+6095556f96fa456fbefb33c2578cfcf0bb624338,commands.append(''),0,0,0.0,270
+6095556f96fa456fbefb33c2578cfcf0bb624338,# always end with a new line,0,0,0.0,271
+6095556f96fa456fbefb33c2578cfcf0bb624338,'\n'.join(log_lines)),0,0,0.0,272
+6095556f96fa456fbefb33c2578cfcf0bb624338,),0,0,0.0,273
+6095556f96fa456fbefb33c2578cfcf0bb624338,),1,0,0.0,274
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_start + 1),0,0,0.0,275
+6095556f96fa456fbefb33c2578cfcf0bb624338,"commands[log_start:log_end],",0,0,0.0,276
+6095556f96fa456fbefb33c2578cfcf0bb624338,"for idx, l in enumerate(",0,0,0.0,277
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# line error wasn't found, print all lines instead",0,0,0.0,278
+6095556f96fa456fbefb33c2578cfcf0bb624338,except AttributeError:,0,0,0.0,279
+6095556f96fa456fbefb33c2578cfcf0bb624338,str(err)).group(1)),0,0,0.0,280
+6095556f96fa456fbefb33c2578cfcf0bb624338,# RHEL) and failed because of xlock acquired by another,0,0,0.0,281
+6095556f96fa456fbefb33c2578cfcf0bb624338,# acquire xlock.,0,0,0.0,282
+6095556f96fa456fbefb33c2578cfcf0bb624338,if err:,0,0,0.0,283
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self._log_restore_err(err, commands)",0,0,0.0,284
+6095556f96fa456fbefb33c2578cfcf0bb624338,raise err,0,0,0.0,285
+6095556f96fa456fbefb33c2578cfcf0bb624338,"'-w', self.xlock_wait_time]",0,0,0.0,286
+6095556f96fa456fbefb33c2578cfcf0bb624338,try:,1,0,0.0,287
+6095556f96fa456fbefb33c2578cfcf0bb624338,# always end with a new line,1,0,0.0,288
+6095556f96fa456fbefb33c2578cfcf0bb624338,commands.append(''),1,0,0.0,289
+6095556f96fa456fbefb33c2578cfcf0bb624338,with excutils.save_and_reraise_exception():,1,0,0.0,290
+6095556f96fa456fbefb33c2578cfcf0bb624338,"'iptables-restore: line ([0-9]+?) failed',",1,0,0.0,291
+6095556f96fa456fbefb33c2578cfcf0bb624338,str(r_error)).group(1)),1,0,0.0,292
+6095556f96fa456fbefb33c2578cfcf0bb624338,except AttributeError:,1,0,0.0,293
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# line error wasn't found, print all lines instead",1,0,0.0,294
+6095556f96fa456fbefb33c2578cfcf0bb624338,"for idx, l in enumerate(",1,0,0.0,295
+6095556f96fa456fbefb33c2578cfcf0bb624338,"commands[log_start:log_end],",1,0,0.0,296
+6095556f96fa456fbefb33c2578cfcf0bb624338,log_start + 1),1,0,0.0,297
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# Iterate through all the rules, trying to find an existing",1,0,0.0,298
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# flush lists, just in case a rule or chain marked for removal",0,0,0.0,299
+6095556f96fa456fbefb33c2578cfcf0bb624338,chain_str += ' - [0:0]',1,0,0.0,300
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _weed_out_removes(line):,0,0,0.0,301
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line in table.remove_rules:,0,0,0.0,302
+6095556f96fa456fbefb33c2578cfcf0bb624338,else:,0,0,0.0,303
+6095556f96fa456fbefb33c2578cfcf0bb624338,table.remove_chains.remove(chain),0,0,0.0,304
+6095556f96fa456fbefb33c2578cfcf0bb624338,if chain in table.remove_chains:,0,0,0.0,305
+6095556f96fa456fbefb33c2578cfcf0bb624338,# for removal,0,0,0.0,306
+6095556f96fa456fbefb33c2578cfcf0bb624338,# remove any rules or chains from the filter that were slated,0,0,0.0,307
+6095556f96fa456fbefb33c2578cfcf0bb624338,# our chains and rules,0,0,0.0,308
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# similar to the unwrapped chains, there are some rules that belong",0,0,0.0,309
+6095556f96fa456fbefb33c2578cfcf0bb624338,# locate the position immediately after the existing chains to insert,0,0,0.0,310
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_bottom_rules += [rule_str],0,0,0.0,311
+6095556f96fa456fbefb33c2578cfcf0bb624338,our_top_rules += [rule_str],0,0,0.0,312
+6095556f96fa456fbefb33c2578cfcf0bb624338,# (e.g. '-A FORWARD -j neutron-filter-top'),0,0,0.0,313
+6095556f96fa456fbefb33c2578cfcf0bb624338,# case our new rules changed the order.,0,0,0.0,314
+6095556f96fa456fbefb33c2578cfcf0bb624338,# from the new_filter and then add them in the right location in,0,0,0.0,315
+6095556f96fa456fbefb33c2578cfcf0bb624338,table.remove_rules.remove(line),0,0,0.0,316
+6095556f96fa456fbefb33c2578cfcf0bb624338,# TODO(kevinbenton): remove this function and the next one. They are,0,0,0.0,317
+6095556f96fa456fbefb33c2578cfcf0bb624338,# just oversized brooms to sweep bugs under the rug!!! We generate the,0,0,0.0,318
+6095556f96fa456fbefb33c2578cfcf0bb624338,# rules and we shouldn't be generating duplicates.,0,0,0.0,319
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _weed_out_duplicates(line):,0,0,0.0,320
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line in seen_lines:,0,0,0.0,321
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""%(thing)s generation code. Line: %(line)s""),",0,0,0.0,322
+6095556f96fa456fbefb33c2578cfcf0bb624338,"{'thing': thing, 'line': line})",0,0,0.0,323
+6095556f96fa456fbefb33c2578cfcf0bb624338,seen_lines.add(line),0,0,0.0,324
+6095556f96fa456fbefb33c2578cfcf0bb624338,if _weed_out_duplicates(line) and,0,0,0.0,325
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# was already gone. (chains is a set, rules is a list)",0,0,0.0,326
+6095556f96fa456fbefb33c2578cfcf0bb624338,table.remove_chains.clear(),0,0,0.0,327
+6095556f96fa456fbefb33c2578cfcf0bb624338,"def _generate_path_between_rules(old_rules, new_rules):",0,0,0.0,328
+6095556f96fa456fbefb33c2578cfcf0bb624338,commands necessary to get from the old rules to the new rules using,0,0,0.0,329
+6095556f96fa456fbefb33c2578cfcf0bb624338,insert and delete commands.,0,0,0.0,330
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""""""",0,0,0.0,331
+6095556f96fa456fbefb33c2578cfcf0bb624338,# all referenced chains should be declared at the top before rules.,0,0,0.0,332
+6095556f96fa456fbefb33c2578cfcf0bb624338,# to us but they don't have the wrap name. we want to remove them,0,0,0.0,333
+6095556f96fa456fbefb33c2578cfcf0bb624338,for rule in table.rules:,0,0,0.0,334
+6095556f96fa456fbefb33c2578cfcf0bb624338,for chain in sorted(old_chains | new_chains):,0,0,0.0,335
+6095556f96fa456fbefb33c2578cfcf0bb624338,This will create a diff between the rules from the previous runs,0,0,0.0,336
+6095556f96fa456fbefb33c2578cfcf0bb624338,# and footer that iptables-save needs,0,0,0.0,337
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# if there are changes to the table, we put on the header",0,0,0.0,338
+6095556f96fa456fbefb33c2578cfcf0bb624338,if changes:,0,0,0.0,339
+6095556f96fa456fbefb33c2578cfcf0bb624338,# and the new state,0,0,0.0,340
+6095556f96fa456fbefb33c2578cfcf0bb624338,Returns a list of the changes that were sent to iptables-save.,0,0,0.0,341
+6095556f96fa456fbefb33c2578cfcf0bb624338,"This happens atomically, thanks to iptables-restore.",0,0,0.0,342
+6095556f96fa456fbefb33c2578cfcf0bb624338,return self._apply(),0,0,0.0,343
+6095556f96fa456fbefb33c2578cfcf0bb624338,# want to add them if they arent' already there,0,0,0.0,344
+6095556f96fa456fbefb33c2578cfcf0bb624338,comment=comment))),0,0,0.0,345
+6095556f96fa456fbefb33c2578cfcf0bb624338,"top, self.wrap_name,",0,0,0.0,346
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.remove_rules.append(str(IptablesRule(chain, rule, wrap,",0,0,0.0,347
+6095556f96fa456fbefb33c2578cfcf0bb624338,if r.chain == name],0,0,0.0,348
+6095556f96fa456fbefb33c2578cfcf0bb624338,self.remove_rules += [str(r) for r in self.rules,0,0,0.0,349
+6095556f96fa456fbefb33c2578cfcf0bb624338,import difflib,0,0,0.0,350
+6095556f96fa456fbefb33c2578cfcf0bb624338,commands += (['# Generated by iptables_manager'] +,0,0,0.0,351
+6095556f96fa456fbefb33c2578cfcf0bb624338,['*%s' % table_name] + changes +,0,0,0.0,352
+6095556f96fa456fbefb33c2578cfcf0bb624338,"['COMMIT', '# Completed by iptables_manager'])",0,0,0.0,353
+6095556f96fa456fbefb33c2578cfcf0bb624338,if not commands:,0,0,0.0,354
+6095556f96fa456fbefb33c2578cfcf0bb624338,continue,0,0,0.0,355
+6095556f96fa456fbefb33c2578cfcf0bb624338,all_commands += commands,0,0,0.0,356
+6095556f96fa456fbefb33c2578cfcf0bb624338,# always end with a new line,0,0,0.0,357
+6095556f96fa456fbefb33c2578cfcf0bb624338,commands.append(''),0,0,0.0,358
+6095556f96fa456fbefb33c2578cfcf0bb624338,"commands[log_start:log_end],",0,0,0.0,359
+6095556f96fa456fbefb33c2578cfcf0bb624338,"""commands were issued"", len(all_commands))",0,0,0.0,360
+6095556f96fa456fbefb33c2578cfcf0bb624338,return all_commands,0,0,0.0,361
+6095556f96fa456fbefb33c2578cfcf0bb624338,# we don't want to change any rules that don't belong to us so we start,0,0,0.0,362
+6095556f96fa456fbefb33c2578cfcf0bb624338,# the new_filter with these rules,0,0,0.0,363
+6095556f96fa456fbefb33c2578cfcf0bb624338,if self.wrap_name not in line],0,0,0.0,364
+6095556f96fa456fbefb33c2578cfcf0bb624338,# generate our list of chain names,0,0,0.0,365
+6095556f96fa456fbefb33c2578cfcf0bb624338,# the unwrapped chains (e.g. neutron-filter-top) may already exist in,0,0,0.0,366
+6095556f96fa456fbefb33c2578cfcf0bb624338,# the new_filter since they aren't marked by the wrap_name so we only,0,0,0.0,367
+6095556f96fa456fbefb33c2578cfcf0bb624338,# NOTE(kevinbenton): sorting and grouping chains is for determinism in,0,0,0.0,368
+6095556f96fa456fbefb33c2578cfcf0bb624338,if '-sg-' in chain:,0,0,0.0,369
+6095556f96fa456fbefb33c2578cfcf0bb624338,# add-on the [packet:bytes],1,0,0.0,370
+6095556f96fa456fbefb33c2578cfcf0bb624338,"all_lines[start:end], table, table_name)",1,0,0.0,371
+6095556f96fa456fbefb33c2578cfcf0bb624338,return filter_map[match_str][-1],1,0,0.0,372
+6095556f96fa456fbefb33c2578cfcf0bb624338,try:,1,0,0.0,373
+6095556f96fa456fbefb33c2578cfcf0bb624338,# find last matching entry,1,0,0.0,374
+6095556f96fa456fbefb33c2578cfcf0bb624338,"def _find_last_entry(self, filter_map, match_str):",1,0,0.0,375
+6095556f96fa456fbefb33c2578cfcf0bb624338,"LOG.debug(""IPTablesManager.apply completed with success"")",1,0,0.0,376
+6095556f96fa456fbefb33c2578cfcf0bb624338,"all_lines[log_start:log_end],",1,0,0.0,377
+6095556f96fa456fbefb33c2578cfcf0bb624338,"rules. This happens atomically, thanks to iptables-restore.",1,0,0.0,378
+6095556f96fa456fbefb33c2578cfcf0bb624338,old_index += 1,0,0,0.0,379
+6095556f96fa456fbefb33c2578cfcf0bb624338,This will blow away any rules left over from previous runs of the,1,0,0.0,380
+6095556f96fa456fbefb33c2578cfcf0bb624338,self._apply(),1,0,0.0,381
+6095556f96fa456fbefb33c2578cfcf0bb624338,comment=comment)),1,0,0.0,382
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.wrap_name,",1,0,0.0,383
+6095556f96fa456fbefb33c2578cfcf0bb624338,"self.remove_rules.append(IptablesRule(chain, rule, wrap, top,",1,0,0.0,384
+6095556f96fa456fbefb33c2578cfcf0bb624338,self.remove_rules += [r for r in self.rules,1,0,0.0,385
+6095556f96fa456fbefb33c2578cfcf0bb624338,except KeyError:,1,0,0.0,386
+6095556f96fa456fbefb33c2578cfcf0bb624338,pass,1,0,0.0,387
+6095556f96fa456fbefb33c2578cfcf0bb624338,if not current_lines:,1,0,0.0,388
+6095556f96fa456fbefb33c2578cfcf0bb624338,"'*' + table_name, 'COMMIT',",1,0,0.0,389
+6095556f96fa456fbefb33c2578cfcf0bb624338,'# Completed by iptables_manager'],1,0,0.0,390
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# Fill old_filter with any chains or rules we might have added,",1,0,0.0,391
+6095556f96fa456fbefb33c2578cfcf0bb624338,# they could have a [packet:byte] count we want to preserve.,1,0,0.0,392
+6095556f96fa456fbefb33c2578cfcf0bb624338,for line in current_lines:,1,0,0.0,393
+6095556f96fa456fbefb33c2578cfcf0bb624338,(old_filter if self.wrap_name in line else,1,0,0.0,394
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_filter).append(line.strip()),1,0,0.0,395
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# Iterate through all the chains, trying to find an existing",1,0,0.0,396
+6095556f96fa456fbefb33c2578cfcf0bb624338,# match.,1,0,0.0,397
+6095556f96fa456fbefb33c2578cfcf0bb624338,for chain in all_chains:,1,0,0.0,398
+6095556f96fa456fbefb33c2578cfcf0bb624338,if not old:,1,0,0.0,399
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# if no old or duplicates, use original chain",1,0,0.0,400
+6095556f96fa456fbefb33c2578cfcf0bb624338,if old or dup:,1,0,0.0,401
+6095556f96fa456fbefb33c2578cfcf0bb624338,else:,1,0,0.0,402
+6095556f96fa456fbefb33c2578cfcf0bb624338,self.remove_rules += [r for r in self.rules if r.chain == name],1,0,0.0,403
+6095556f96fa456fbefb33c2578cfcf0bb624338,"statements.append('-I %s %d %s' % (chain, old_index, rule))",0,0,0.0,404
+6095556f96fa456fbefb33c2578cfcf0bb624338,sg_chains.append(chain),0,0,0.0,405
+6095556f96fa456fbefb33c2578cfcf0bb624338,return statements,0,0,0.0,406
+6095556f96fa456fbefb33c2578cfcf0bb624338,# they might be a jump reference,0,0,0.0,407
+6095556f96fa456fbefb33c2578cfcf0bb624338,# chains to ensure that ones without rules are included because,0,0,0.0,408
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# even though this is a default dict, we need to manually add",0,0,0.0,409
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line.startswith(':'):,0,0,0.0,410
+6095556f96fa456fbefb33c2578cfcf0bb624338,for line in rules:,0,0,0.0,411
+6095556f96fa456fbefb33c2578cfcf0bb624338,def _get_rules_by_chain(rules):,0,0,0.0,412
+6095556f96fa456fbefb33c2578cfcf0bb624338,statements += ['-X %s' % chain],0,0,0.0,413
+6095556f96fa456fbefb33c2578cfcf0bb624338,# rule inserted at this position,0,0,0.0,414
+6095556f96fa456fbefb33c2578cfcf0bb624338,for chain in sorted(old_chains - new_chains):,0,0,0.0,415
+6095556f96fa456fbefb33c2578cfcf0bb624338,# unreferenced chains get the axe,0,0,0.0,416
+6095556f96fa456fbefb33c2578cfcf0bb624338,"chain, old_by_chain[chain], new_by_chain[chain])",0,0,0.0,417
+6095556f96fa456fbefb33c2578cfcf0bb624338,statements += _generate_chain_diff_iptables_commands(,0,0,0.0,418
+6095556f96fa456fbefb33c2578cfcf0bb624338,for chain in other_chains + sg_chains:,0,0,0.0,419
+6095556f96fa456fbefb33c2578cfcf0bb624338,other_chains.append(chain),0,0,0.0,420
+6095556f96fa456fbefb33c2578cfcf0bb624338,if chain not in by_chain:,0,0,0.0,421
+6095556f96fa456fbefb33c2578cfcf0bb624338,elif line.startswith('-A'):,0,0,0.0,422
+6095556f96fa456fbefb33c2578cfcf0bb624338,by_chain[chain].append(line),0,0,0.0,423
+6095556f96fa456fbefb33c2578cfcf0bb624338,return by_chain,0,0,0.0,424
+6095556f96fa456fbefb33c2578cfcf0bb624338,"def _generate_chain_diff_iptables_commands(chain, old_chain_rules,",0,0,0.0,425
+6095556f96fa456fbefb33c2578cfcf0bb624338,new_chain_rules):,0,0,0.0,426
+6095556f96fa456fbefb33c2578cfcf0bb624338,# keep track of the old index because we have to insert rules,0,0,0.0,427
+6095556f96fa456fbefb33c2578cfcf0bb624338,# in the right position,0,0,0.0,428
+6095556f96fa456fbefb33c2578cfcf0bb624338,"for line in difflib.ndiff(old_chain_rules, new_chain_rules):",0,0,0.0,429
+6095556f96fa456fbefb33c2578cfcf0bb624338,if line.startswith('?'):,0,0,0.0,430
+6095556f96fa456fbefb33c2578cfcf0bb624338,# skip ? because that's a guide string for intraline differences,0,0,0.0,431
+6095556f96fa456fbefb33c2578cfcf0bb624338,elif line.startswith('-'):  # line deleted,0,0,0.0,432
+6095556f96fa456fbefb33c2578cfcf0bb624338,"statements.append('-D %s %d' % (chain, old_index))",0,0,0.0,433
+6095556f96fa456fbefb33c2578cfcf0bb624338,"# since we are removing a line from the old rules, we",0,0,0.0,434
+6095556f96fa456fbefb33c2578cfcf0bb624338,# backup the index by 1,0,0,0.0,435
+6095556f96fa456fbefb33c2578cfcf0bb624338,old_index -= 1,0,0,0.0,436
+6095556f96fa456fbefb33c2578cfcf0bb624338,elif line.startswith('+'):  # line added,0,0,0.0,437
+6095556f96fa456fbefb33c2578cfcf0bb624338,"process_input=self._regex(v6_filter + raw),",1,0,0.0,438

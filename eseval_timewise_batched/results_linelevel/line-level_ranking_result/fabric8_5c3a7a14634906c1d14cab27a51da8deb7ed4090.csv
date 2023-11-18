@@ -1,0 +1,271 @@
+commit_id,line,line_level_label,count,line_score,row
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""dataDir"", label = ""Container Data Dir"", description = ""The data directory of the container"", value = ""${runtime.data}"", propertyPrivate = true)",1,6,1.0,1
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""homeDir"", label = ""Container Home"", description = ""The homeDir directory of the container"", value = ""${runtime.home}"", propertyPrivate = true)",1,5,0.8333333333333333,2
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""confDir"", label = ""Container Conf"", description = ""The configuration directory of the container"", value = ""${runtime.conf}"", propertyPrivate = true)",1,5,0.8333333333333333,3
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""zookeeper.url"", label = ""ZooKeeper URL"", description = ""The url to an existing zookeeper ensemble"", value = ""${zookeeper.url}"", propertyPrivate = true)",1,5,0.8333333333333333,4
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""runtime.id"", label = ""Container Name"", description = ""The name of the container"", value = ""${runtime.id}"", propertyPrivate = true)",1,5,0.8333333333333333,5
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""profiles.auto.import.path"", label = ""Auto Import Enabled"", description = ""Flag to automatically import the default profiles"", value = ""${profiles.auto.import.path}"")",1,4,0.6666666666666666,6
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"org.apache.felix.utils.properties.Properties props = new org.apache.felix.utils.properties.Properties(new File(dataDir, ENSEMBLE_MARKER));",1,4,0.6666666666666666,7
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""publichostname"", label = ""Public Hostname"", description = ""The public hostname"", value = ""${publichostname}"")",1,4,0.6666666666666666,8
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""manualip"", label = ""Global Resolver"", description = ""The manally set ip"", value = ""${manualip}"")",1,4,0.6666666666666666,9
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""global.resolver"", label = ""Global Resolver"", description = ""The global resolver"", value = ""${global.resolver}"")",1,4,0.6666666666666666,10
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""local.resolver"", label = ""Resolver"", description = ""The container resolver"", value = ""${local.resolver}"")",1,4,0.6666666666666666,11
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""profiles.auto.import"", label = ""Auto Import Enabled"", description = ""Flag to automatically import the default profiles"", value = ""${profiles.auto.import}"")",1,4,0.6666666666666666,12
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""zookeeper.server.connection.port"", label = ""ZooKeeper Client Port"", description = ""The zookeeper server connection port"", value = ""${zookeeper.server.connection.port}"")",1,4,0.6666666666666666,13
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""zookeeper.server.port"", label = ""ZooKeeper Server Port"", description = ""The zookeeper server binding port"", value = ""${zookeeper.server.port}"")",1,4,0.6666666666666666,14
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""zookeeper.password"", label = ""ZooKeeper Password"", description = ""The zookeeper password"", value = ""${zookeeper.password}"")",1,4,0.6666666666666666,15
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""bind.address"", label = ""Bind Address"", description = ""The Bind Address"", value = ""${bind.address}"")",1,4,0.6666666666666666,16
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""agent.auto.start"", label = ""Agent Auto Start"", description = ""Flag to automatically start the provisioning agent"", value = ""${agent.auto.start}"")",1,4,0.6666666666666666,17
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""ensemble.auto.start"", label = ""Ensemble Auto Start"", description = ""Flag to automatically start a zookeeper ensemble"", value = ""${ensemble.auto.start}"")",1,4,0.6666666666666666,18
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Reference(referenceInterface = RuntimeProperties.class, bind = ""bindRuntimeProperties"", unbind = ""unbindRuntimeProperties"")",1,3,0.5,19
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,Properties properties = new Properties();,1,3,0.5,20
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,Properties userProps = new Properties();,1,2,0.3333333333333333,21
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"Dictionary<String, Object> properties = new Hashtable<String, Object>();",1,2,0.3333333333333333,22
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,org.apache.felix.utils.properties.Properties props = new org.apache.felix.utils.properties.Properties(marker);,1,2,0.3333333333333333,23
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"File marker = new File(dataDir, ENSEMBLE_MARKER);",1,2,0.3333333333333333,24
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""version"", value = ""${version}"")",1,2,0.3333333333333333,25
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"@Property(name = ""profiles"", value = ""${profiles}"")",1,2,0.3333333333333333,26
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public static final String ROLE_DELIMITER = "","";",1,2,0.3333333333333333,27
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public static final String DEFAULT_ADMIN_USER = ""admin"";",1,2,0.3333333333333333,28
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"Configuration config = configAdmin.get().createFactoryConfiguration(Constants.ZOOKEEPER_SERVER_PID, null);",1,1,0.16666666666666666,29
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"userProps.put(DEFAULT_ADMIN_USER, decodedZookeeperPassword+ ROLE_DELIMITER + DEFAULT_ADMIN_ROLE);",1,1,0.16666666666666666,30
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,options = CreateEnsembleOptions.builder().bindAddress(bindAddress).agentEnabled(agentAutoStart).ensembleStart(ensembleAutoStart).zookeeperPassword(decodedZookeeperPassword),1,1,0.16666666666666666,31
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,BundleContext bundleContext = componentContext.getBundleContext();,1,1,0.16666666666666666,32
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,boolean isCreated = checkCreated(bundleContext);,1,1,0.16666666666666666,33
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,String connectionUrl = getConnectionUrl(options);,1,1,0.16666666666666666,34
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"DataStoreOptions bootOptions = new DataStoreOptions(runtimeId, homeDir, connectionUrl, options);",1,1,0.16666666666666666,35
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,int zooKeeperServerConnectionPort = options.getZooKeeperServerConnectionPort();,1,1,0.16666666666666666,36
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"String connectionUrl = getConnectionAddress(options) + "":"" + zooKeeperServerConnectionPort;",1,1,0.16666666666666666,37
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,String serverHost = options.getBindAddress();,1,1,0.16666666666666666,38
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"Configuration config = configAdmin.get().getConfiguration(Constants.ZOOKEEPER_CLIENT_PID, null);",1,1,0.16666666666666666,39
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,properties,1,1,0.16666666666666666,40
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"decodedZookeeperPassword = passwordAndRole.substring(0, passwordAndRole.indexOf(ROLE_DELIMITER));",1,1,0.16666666666666666,41
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,String oResolver = Strings.isNotBlank(options.getResolver()) ? options.getResolver() : localResolver;,1,1,0.16666666666666666,42
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,String oManualIp = Strings.isNotBlank(options.getManualIp()) ? options.getManualIp() : manualip;,1,1,0.16666666666666666,43
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,InputStream is = null;,1,1,0.16666666666666666,44
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,is = new FileInputStream(from);,1,1,0.16666666666666666,45
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.connectionUrl = connectionUrl;,1,1,0.16666666666666666,46
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.containerId = containerId;,1,1,0.16666666666666666,47
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.homeDir = homeDir;,1,1,0.16666666666666666,48
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.options = options;,1,1,0.16666666666666666,49
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,decodedZookeeperPassword = PasswordEncoder.encode(CreateEnsembleOptions.generatePassword());,1,1,0.16666666666666666,50
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"int serverPort = Ports.mapPortToRange(options.getZooKeeperServerPort(), options.getMinimumPort(), options.getMaximumPort());",1,1,0.16666666666666666,51
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,String passwordAndRole = userProps.getProperty(DEFAULT_ADMIN_USER).trim();,1,1,0.16666666666666666,52
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private int zookeeperServerConnectionPort = 2181;,1,1,0.16666666666666666,53
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,decodedZookeeperPassword = PasswordEncoder.decode(zookeeperPassword);,1,1,0.16666666666666666,54
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public static final String ENSEMBLE_MARKER = ""ensemble-created.properties"";",1,1,0.16666666666666666,55
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public static final String COMPONENT_PID = ""io.fabric8.bootstrap.configuration"";",1,1,0.16666666666666666,56
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public static final String COMPONENT_NAME = COMPONENT_PID;,1,1,0.16666666666666666,57
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public static final String DEFAULT_ADMIN_ROLE = ""admin,manager,viewer"";",1,1,0.16666666666666666,58
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private final ValidatingReference<RuntimeProperties> runtimeProperties = new ValidatingReference<RuntimeProperties>();,1,1,0.16666666666666666,59
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"private String bindAddress = ""0.0.0.0"";",1,1,0.16666666666666666,60
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String zookeeperPassword = null;,1,1,0.16666666666666666,61
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private int zookeeperServerPort = 2181;,1,1,0.16666666666666666,62
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private boolean agentAutoStart = true;,1,1,0.16666666666666666,63
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private boolean profilesAutoImport = true;,1,1,0.16666666666666666,64
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.componentContext = componentContext;,1,1,0.16666666666666666,65
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,String decodedZookeeperPassword = null;,1,1,0.16666666666666666,66
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"private String profilesAutoImportPath = ""fabric/import"";",1,1,0.16666666666666666,67
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,localResolver = globalResolver;,1,1,0.16666666666666666,68
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"configuration = configurer.configure(conf, this);",1,1,0.16666666666666666,69
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,static final Logger LOGGER = LoggerFactory.getLogger(BootstrapConfiguration.class);,1,1,0.16666666666666666,70
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"private String globalResolver = ""localhostname"";",1,1,0.16666666666666666,71
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String version = ContainerOptions.DEFAULT_VERSION;,1,1,0.16666666666666666,72
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private Set<String> profiles = Collections.emptySet();,1,1,0.16666666666666666,73
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""clientPort"", Integer.toString(serverPort));",1,0,0.0,74
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public void createZooKeeeperServerConfig(CreateEnsembleOptions options) throws IOException {,1,0,0.0,75
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (options.isAutoImportEnabled()) {,1,0,0.0,76
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"loadPropertiesFrom(properties, options.getImportPath() + ""/fabric/profiles/default.profile/io.fabric8.zookeeper.server.properties"");",1,0,0.0,77
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""tickTime"", String.valueOf(options.getZooKeeperServerTickTime()));",1,0,0.0,78
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""initLimit"", String.valueOf(options.getZooKeeperServerInitLimit()));",1,0,0.0,79
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""syncLimit"", String.valueOf(options.getZooKeeperServerSyncLimit()));",1,0,0.0,80
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return connectionUrl;,1,0,0.0,81
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""dataDir"", options.getZooKeeperServerDataDir() + File.separator + ""0000"");",1,0,0.0,82
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* Creates ZooKeeper server configuration,1,0,0.0,83
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""zookeeper.password"", PasswordEncoder.encode(options.getZookeeperPassword()));",1,0,0.0,84
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""clientPortAddress"", serverHost);",1,0,0.0,85
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""fabric.zookeeper.pid"", ""io.fabric8.zookeeper.server-0000"");",1,0,0.0,86
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,config.update(properties);,1,0,0.0,87
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* Creates ZooKeeper client configuration.,1,0,0.0,88
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public void createZooKeeeperClientConfig(String connectionUrl, CreateEnsembleOptions options) throws IOException {",1,0,0.0,89
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"loadPropertiesFrom(properties, options.getImportPath() + ""/fabric/profiles/default.profile/io.fabric8.zookeeper.properties"");",1,0,0.0,90
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""zookeeper.url"", connectionUrl);",1,0,0.0,91
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,".put(""zookeeper.timeout"", System.getProperties().containsKey(""zookeeper.timeout"") ? System.getProperties().getProperty(""zookeeper.timeout"") : ""30000"");",1,0,0.0,92
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"properties.put(""fabric.zookeeper.pid"", Constants.ZOOKEEPER_CLIENT_PID);",1,0,0.0,93
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return options;,1,0,0.0,94
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String getConnectionAddress(CreateEnsembleOptions options) throws UnknownHostException {,1,0,0.0,95
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getConnectionUrl(CreateEnsembleOptions options) throws UnknownHostException {,1,0,0.0,96
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return componentContext;,1,0,0.0,97
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,assertValid();,1,0,0.0,98
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public CreateEnsembleOptions getBootstrapOptions() {,1,0,0.0,99
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return HostUtils.getLocalHostName();,1,0,0.0,100
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (userProps.isEmpty()) {,1,0,0.0,101
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,.zooKeeperServerPort(zookeeperServerPort).zooKeeperServerConnectionPort(zookeeperServerConnectionPort).autoImportEnabled(profilesAutoImport),1,0,0.0,102
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,.importPath(profilesAutoImportPath).resolver(localResolver).globalResolver(globalResolver).users(userProps).profiles(profiles).version(version).build();,1,0,0.0,103
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,void bootIfNeeded() throws IOException {,1,0,0.0,104
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (!Strings.isNotBlank(zookeeperUrl) && !isCreated && options.isEnsembleStart()) {,1,0,0.0,105
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"runtimeProperties.get().putRuntimeAttribute(DataStoreTemplate.class, new DataStoreBootstrapTemplate(bootOptions));",1,0,0.0,106
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,createOrUpdateDataStoreConfig(options);,1,0,0.0,107
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*//*,1,0,0.0,108
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,createZooKeeeperServerConfig(options);,1,0,0.0,109
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"createZooKeeeperClientConfig(connectionUrl, options);",1,0,0.0,110
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"// On restart, the configuration should be available in configadmin",1,0,0.0,111
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,markCreated(bundleContext);,1,0,0.0,112
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public ComponentContext getComponentContext() {,1,0,0.0,113
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private boolean checkCreated(BundleContext bundleContext) throws IOException {,1,0,0.0,114
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"return props.containsKey(""created"");",1,0,0.0,115
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private void markCreated(BundleContext bundleContext) throws IOException {,1,0,0.0,116
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (!marker.exists() && !marker.getParentFile().exists() && !marker.getParentFile().mkdirs()) {,1,0,0.0,117
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"throw new IOException(""Cannot create marker file"");",1,0,0.0,118
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"props.put(""created"", ""true"");",1,0,0.0,119
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,props.save();,1,0,0.0,120
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (oResolver.equals(ZkDefs.LOCAL_HOSTNAME)) {,1,0,0.0,121
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getContainerId() {,1,0,0.0,122
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} else if (oResolver.equals(ZkDefs.LOCAL_IP)) {,1,0,0.0,123
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getBindAddress() {,1,0,0.0,124
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public Map<String, ?> getConfiguration() {",1,0,0.0,125
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return Collections.unmodifiableMap(configuration);,1,0,0.0,126
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public static class DataStoreOptions {,1,0,0.0,127
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private final String containerId;,1,0,0.0,128
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private final File homeDir;,1,0,0.0,129
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private final String connectionUrl;,1,0,0.0,130
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private final CreateEnsembleOptions options;,1,0,0.0,131
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"public DataStoreOptions(String containerId, File homeDir, String connectionUrl, CreateEnsembleOptions options) {",1,0,0.0,132
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} else if (userProps.containsKey(DEFAULT_ADMIN_USER)) {,1,0,0.0,133
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return containerId;,1,0,0.0,134
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public File getHomeDir() {,1,0,0.0,135
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return homeDir;,1,0,0.0,136
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getConnectionUrl() {,1,0,0.0,137
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public CreateEnsembleOptions getCreateOptions() {,1,0,0.0,138
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,void bindConfigAdmin(ConfigurationAdmin service) {,1,0,0.0,139
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.configAdmin.bind(service);,1,0,0.0,140
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,void unbindConfigAdmin(ConfigurationAdmin service) {,1,0,0.0,141
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.configAdmin.unbind(service);,1,0,0.0,142
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,void bindRuntimeProperties(RuntimeProperties service) {,1,0,0.0,143
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.runtimeProperties.bind(service);,1,0,0.0,144
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,void unbindRuntimeProperties(RuntimeProperties service) {,1,0,0.0,145
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return bindAddress;,1,0,0.0,146
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return Collections.unmodifiableSet(profiles);,1,0,0.0,147
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return HostUtils.getLocalIp();,1,0,0.0,148
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public Set<String> getProfiles() {,1,0,0.0,149
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} else if (oResolver.equals(ZkDefs.PUBLIC_HOSTNAME) && (publichostname != null && !publichostname.isEmpty())) {,1,0,0.0,150
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return publichostname;,1,0,0.0,151
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} else if (oResolver.equals(ZkDefs.MANUAL_IP) && (oManualIp != null && !oManualIp.isEmpty())) {,1,0,0.0,152
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return oManualIp;,1,0,0.0,153
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"private void loadPropertiesFrom(Dictionary<String, Object> dictionary, String from) {",1,0,0.0,154
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,properties.load(is);,1,0,0.0,155
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,for (String key : properties.keySet()) {,1,0,0.0,156
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"dictionary.put(key, properties.get(key));",1,0,0.0,157
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} catch (Exception e) {,1,0,0.0,158
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,// Ignore,1,0,0.0,159
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} finally {,1,0,0.0,160
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (is != null) {,1,0,0.0,161
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,is.close();,1,0,0.0,162
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getLocalResolver() {,1,0,0.0,163
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return localResolver;,1,0,0.0,164
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getGlobalResolver() {,1,0,0.0,165
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return globalResolver;,1,0,0.0,166
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getManualip() {,1,0,0.0,167
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return manualip;,1,0,0.0,168
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public String getVersion() {,1,0,0.0,169
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,return version;,1,0,0.0,170
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} else {,1,0,0.0,171
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.osgi.service.cm.Configuration;,1,0,0.0,172
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (Strings.isNotBlank(zookeeperPassword)) {,1,0,0.0,173
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* See the License for the specific language governing permissions and,1,0,0.0,174
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,public class BootstrapConfiguration {,1,0,0.0,175
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,},1,0,0.0,176
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,/*,1,0,0.0,177
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.Constants;,1,0,0.0,178
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.ContainerOptions;,1,0,0.0,179
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.CreateEnsembleOptions;,1,0,0.0,180
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.DataStoreTemplate;,1,0,0.0,181
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.RuntimeProperties;,1,0,0.0,182
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.ZkDefs;,1,0,0.0,183
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.jcip.ThreadSafe;,1,0,0.0,184
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.scr.AbstractComponent;,1,0,0.0,185
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.scr.Configurer;,1,0,0.0,186
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.api.scr.ValidatingReference;,1,0,0.0,187
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.utils.Strings;,1,0,0.0,188
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.utils.HostUtils;,1,0,0.0,189
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.utils.PasswordEncoder;,1,0,0.0,190
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import io.fabric8.utils.Ports;,1,0,0.0,191
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.io.File;,1,0,0.0,192
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.io.FileInputStream;,1,0,0.0,193
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.io.IOException;,1,0,0.0,194
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.io.InputStream;,1,0,0.0,195
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* limitations under the License.,1,0,0.0,196
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",1,0,0.0,197
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"LOGGER.warn(""Failed to load users from etc/users.properties. No users will be imported."", e);",1,0,0.0,198
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"* distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,199
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,/**,1,0,0.0,200
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"*  Copyright 2005-2014 Red Hat, Inc.",1,0,0.0,201
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*,1,0,0.0,202
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"*  Red Hat licenses this file to you under the Apache License, version",1,0,0.0,203
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"*  2.0 (the ""License""); you may not use this file except in compliance",1,0,0.0,204
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*  with the License.  You may obtain a copy of the License at,1,0,0.0,205
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*     http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,206
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"*  Unless required by applicable law or agreed to in writing, software",1,0,0.0,207
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"*  distributed under the License is distributed on an ""AS IS"" BASIS,",1,0,0.0,208
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or",1,0,0.0,209
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*  implied.  See the License for the specific language governing,1,0,0.0,210
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*  permissions and limitations under the License.,1,0,0.0,211
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*/,1,0,0.0,212
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,package io.fabric8.zookeeper.bootstrap;,1,0,0.0,213
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"* Copyright (C) FuseSource, Inc.",1,0,0.0,214
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* http://fusesource.com,1,0,0.0,215
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"* Licensed under the Apache License, Version 2.0 (the ""License"");",1,0,0.0,216
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* you may not use this file except in compliance with the License.,1,0,0.0,217
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,* You may obtain a copy of the License at,1,0,0.0,218
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,*    http://www.apache.org/licenses/LICENSE-2.0,1,0,0.0,219
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"* Unless required by applicable law or agreed to in writing, software",1,0,0.0,220
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.net.UnknownHostException;,1,0,0.0,221
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.util.Collections;,1,0,0.0,222
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.util.Dictionary;,1,0,0.0,223
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.util.Hashtable;,1,0,0.0,224
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private File dataDir;,1,0,0.0,225
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String zookeeperUrl;,1,0,0.0,226
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private ComponentContext componentContext;,1,0,0.0,227
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"private Map<String, ?> configuration;",1,0,0.0,228
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,@Activate,1,0,0.0,229
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"void activate(ComponentContext componentContext, Map<String, ?> conf) throws Exception {",1,0,0.0,230
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,configureInternal(conf);,1,0,0.0,231
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,bootIfNeeded();,1,0,0.0,232
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,activateComponent();,1,0,0.0,233
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,@Modified,1,0,0.0,234
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"void modified(Map<String, ?> conf) throws Exception {",1,0,0.0,235
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,@Deactivate,1,0,0.0,236
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,void deactivate() {,1,0,0.0,237
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,deactivateComponent();,1,0,0.0,238
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"void configureInternal(Map<String, ?> conf) throws Exception {",1,0,0.0,239
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (Strings.isNullOrBlank(runtimeId)) {,1,0,0.0,240
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"throw new IllegalArgumentException(""Runtime id must not be null or empty."");",1,0,0.0,241
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,if (Strings.isNullOrBlank(localResolver)) {,1,0,0.0,242
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,try {,1,0,0.0,243
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,"userProps.load(new File(confDir , ""users.properties""));",1,0,0.0,244
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,} catch (IOException e) {,1,0,0.0,245
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private File confDir;,1,0,0.0,246
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private File homeDir;,1,0,0.0,247
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String runtimeId;,1,0,0.0,248
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.apache.felix.scr.annotations.Service;,1,0,0.0,249
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.util.Map;,1,0,0.0,250
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import java.util.Set;,1,0,0.0,251
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import Activate;,1,0,0.0,252
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import Component;,1,0,0.0,253
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import ConfigurationPolicy;,1,0,0.0,254
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import Deactivate;,1,0,0.0,255
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import Modified;,1,0,0.0,256
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.apache.felix.scr.annotations.Property;,1,0,0.0,257
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.apache.felix.scr.annotations.Reference;,1,0,0.0,258
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.apache.felix.utils.properties.Properties;,1,0,0.0,259
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String publichostname;,1,0,0.0,260
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.osgi.framework.BundleContext;,1,0,0.0,261
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.osgi.service.cm.ConfigurationAdmin;,1,0,0.0,262
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.osgi.service.component.ComponentContext;,1,0,0.0,263
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.slf4j.Logger;,1,0,0.0,264
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,import org.slf4j.LoggerFactory;,1,0,0.0,265
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private CreateEnsembleOptions options;,1,0,0.0,266
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private boolean ensembleAutoStart;,1,0,0.0,267
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String localResolver;,1,0,0.0,268
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,private String manualip;,1,0,0.0,269
+5c3a7a14634906c1d14cab27a51da8deb7ed4090,this.runtimeProperties.unbind(service);,1,0,0.0,270

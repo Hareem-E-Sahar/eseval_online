@@ -1,0 +1,49 @@
+commit_id,line,line_level_label,count,line_score,row
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"server = wsgi.Server(""test_app"")",0,1,1.0,1
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,backlog=128,1,1,1.0,2
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"""""""WSGI server tests.""""""",0,1,1.0,3
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,mock_listen.return_value.dup.return_value),0,0,0.0,4
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,refresh_mock.assert_called_once_with(),0,0,0.0,5
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"CONF.set_default(""ssl_cert_file"",",0,0,0.0,6
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"os.path.join(TEST_VAR_DIR, 'certificate.crt'))",0,0,0.0,7
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"CONF.set_default(""ssl_key_file"",",0,0,0.0,8
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"os.path.join(TEST_VAR_DIR, 'privatekey.key'))",0,0,0.0,9
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,@webob.dec.wsgify,0,0,0.0,10
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,def hello_world(req):,0,0,0.0,11
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,return greetings,0,0,0.0,12
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,response = urllib2.urlopen('https://127.0.0.1:%d/' % server.port),0,0,0.0,13
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,def test_app_using_ipv6_and_ssl(self):,0,0,0.0,14
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"server.start(hello_world, 0, host=""::1"")",0,0,0.0,15
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,response = urllib2.urlopen('https://[::1]:%d/' % server.port),0,0,0.0,16
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"CONF.set_default('use_ssl', True)",0,0,0.0,17
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"@mock.patch(""neutron.common.config.setup_logging"")",0,0,0.0,18
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"def test_reset(self, setup_logging_mock, refresh_mock):",0,0,0.0,19
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,_service = mock.Mock(),0,0,0.0,20
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,_app = mock.Mock(),0,0,0.0,21
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"worker_service = wsgi.WorkerService(_service, _app)",0,0,0.0,22
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,worker_service.reset(),0,0,0.0,23
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,setup_logging_mock.assert_called_once_with(),0,0,0.0,24
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"@mock.patch(""neutron.policy.refresh"")",0,0,0.0,25
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,def test_app_using_ssl(self):,0,0,0.0,26
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,class TestWSGIServerWithSSL(base.BaseTestCase):,0,0,0.0,27
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,server.stop(),0,0,0.0,28
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,import os,0,0,0.0,29
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,import urllib2,0,0,0.0,30
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,from oslo.config import cfg,0,0,0.0,31
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,CONF = cfg.CONF,0,0,0.0,32
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"TEST_VAR_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__),",0,0,0.0,33
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"'..', 'var'))",0,0,0.0,34
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,backlog=cfg.CONF.backlog,0,0,0.0,35
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,def test_app(self):,0,0,0.0,36
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"greetings = 'Hello, World!!!'",0,0,0.0,37
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"def hello_world(env, start_response):",0,0,0.0,38
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,if env['PATH_INFO'] != '/':,0,0,0.0,39
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"start_response('404 Not Found',",0,0,0.0,40
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"[('Content-Type', 'text/plain')])",0,0,0.0,41
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,return ['Not Found\r\n'],0,0,0.0,42
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"start_response('200 OK', [('Content-Type', 'text/plain')])",0,0,0.0,43
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,return [greetings],0,0,0.0,44
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"server.start(hello_world, 0, host=""127.0.0.1"")",0,0,0.0,45
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,response = urllib2.urlopen('http://127.0.0.1:%d/' % server.port),0,0,0.0,46
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,"self.assertEquals(greetings, response.read())",0,0,0.0,47
+0bc4588692314d2c1cbba22590ec0e2737ef1e4c,mock_listen.return_value),1,0,0.0,48

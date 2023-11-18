@@ -1,0 +1,19 @@
+commit_id,line,line_level_label,count,line_score,row
+c6923ec603288e1d46fdb80e874c8e71361442f5,if errcode == libvirt.VIR_ERR_NO_DOMAIN:,0,2,1.0,1
+c6923ec603288e1d46fdb80e874c8e71361442f5,if error_code == libvirt.VIR_ERR_NO_DOMAIN:,0,2,1.0,2
+c6923ec603288e1d46fdb80e874c8e71361442f5,msg = (_('Error from libvirt while getting domain info for ',0,2,1.0,3
+c6923ec603288e1d46fdb80e874c8e71361442f5,if errcode == libvirt.VIR_ERR_OPERATION_INVALID:,1,2,1.0,4
+c6923ec603288e1d46fdb80e874c8e71361442f5,is_okay = True,0,2,1.0,5
+c6923ec603288e1d46fdb80e874c8e71361442f5,dom_info = virt_dom.info(),0,1,0.5,6
+c6923ec603288e1d46fdb80e874c8e71361442f5,error_code = ex.get_error_code(),0,1,0.5,7
+c6923ec603288e1d46fdb80e874c8e71361442f5,dom_info = virt_dom.info(),1,1,0.5,8
+c6923ec603288e1d46fdb80e874c8e71361442f5,elif errcode == libvirt.VIR_ERR_OPERATION_INVALID:,0,1,0.5,9
+c6923ec603288e1d46fdb80e874c8e71361442f5,# Domain already gone. This can safely be ignored.,0,1,0.5,10
+c6923ec603288e1d46fdb80e874c8e71361442f5,try:,0,0,0.0,11
+c6923ec603288e1d46fdb80e874c8e71361442f5,except libvirt.libvirtError as ex:,0,0,0.0,12
+c6923ec603288e1d46fdb80e874c8e71361442f5,raise exception.InstanceNotFound(instance_id=instance['name']),0,0,0.0,13
+c6923ec603288e1d46fdb80e874c8e71361442f5,'%(instance_name)s: [Error Code %(error_code)s] %(ex)s') %,0,0,0.0,14
+c6923ec603288e1d46fdb80e874c8e71361442f5,"{'instance_name': instance['name'],",0,0,0.0,15
+c6923ec603288e1d46fdb80e874c8e71361442f5,"'error_code': error_code,",0,0,0.0,16
+c6923ec603288e1d46fdb80e874c8e71361442f5,'ex': ex}),0,0,0.0,17
+c6923ec603288e1d46fdb80e874c8e71361442f5,raise exception.NovaException(msg),0,0,0.0,18

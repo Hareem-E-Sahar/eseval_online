@@ -1,0 +1,584 @@
+commit_id,line,line_level_label,count,line_score,row
+79cba8301fef86f355b87c794ca860f314a739f0,"return ""selector: "" + entity.getSelector() + "" ports: "" + portText;",0,7,1.0,1
+79cba8301fef86f355b87c794ca860f314a739f0,"log.debug(""Service "" + id + "" has ports: "" + ports);",0,7,1.0,2
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (entity instanceof KubernetesList) {,0,6,0.8571428571428571,3
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (entity instanceof HasMetadata[]) {,0,6,0.8571428571428571,4
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (entity instanceof Object[]) {,1,6,0.8571428571428571,5
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof Collection) {,0,5,0.7142857142857142,6
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof Route) {,1,5,0.7142857142857142,7
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof Service) {,1,5,0.7142857142857142,8
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof ReplicationController) {,1,5,0.7142857142857142,9
+79cba8301fef86f355b87c794ca860f314a739f0,"json = e.getMessage() + "". object: "" + route;",0,5,0.7142857142857142,10
+79cba8301fef86f355b87c794ca860f314a739f0,} if (entity instanceof List) {,1,5,0.7142857142857142,11
+79cba8301fef86f355b87c794ca860f314a739f0,"json = e.getMessage() + "". object: "" + route;",1,5,0.7142857142857142,12
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof Pod) {,0,5,0.7142857142857142,13
+79cba8301fef86f355b87c794ca860f314a739f0,} if (entity instanceof List) {,0,5,0.7142857142857142,14
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof Route) {,0,5,0.7142857142857142,15
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof Service) {,0,5,0.7142857142857142,16
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object instanceof ReplicationController) {,0,5,0.7142857142857142,17
+79cba8301fef86f355b87c794ca860f314a739f0,"LOG.debug(""Ignoring Service: "" + namespace + "":"" + id);",0,5,0.7142857142857142,18
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""Template"", kind)) {",1,4,0.5714285714285714,19
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setNamespace(Template entity, String namespace) {",1,4,0.5714285714285714,20
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(Route entity, String namespace, String name) {",1,4,0.5714285714285714,21
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity instanceof HasMetadata) {,0,4,0.5714285714285714,22
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setNamespace(HasMetadata entity, String namespace) {",0,4,0.5714285714285714,23
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(HasMetadata entity, String namespace, String name) {",0,4,0.5714285714285714,24
+79cba8301fef86f355b87c794ca860f314a739f0,} else if (object == null) {,1,4,0.5714285714285714,25
+79cba8301fef86f355b87c794ca860f314a739f0,"String key = kind + "":"" + id;",1,4,0.5714285714285714,26
+79cba8301fef86f355b87c794ca860f314a739f0,"throw new IllegalArgumentException(""config "" + template + "" is not a ObjectNode"");",1,4,0.5714285714285714,27
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""Config"", kind) || Objects.equal(""List"", kind)) {",1,4,0.5714285714285714,28
+79cba8301fef86f355b87c794ca860f314a739f0,"throw new IllegalArgumentException(""config "" + config + "" is not a ObjectNode"");",1,4,0.5714285714285714,29
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""ImageRepository"", kind)) {",1,4,0.5714285714285714,30
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity instanceof JsonNode) {,1,4,0.5714285714285714,31
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""DeploymentConfig"", kind)) {",1,4,0.5714285714285714,32
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity instanceof List) {,1,4,0.5714285714285714,33
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity instanceof List) {,0,4,0.5714285714285714,34
+79cba8301fef86f355b87c794ca860f314a739f0,"String key = kind + "":"" + id;",0,4,0.5714285714285714,35
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity instanceof JsonNode) {,0,4,0.5714285714285714,36
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static Object loadEntity(byte[] json, String kind, Object defaultValue) throws IOException {",1,4,0.5714285714285714,37
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""ReplicationController"", kind)) {",1,4,0.5714285714285714,38
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""Service"", kind)) {",1,4,0.5714285714285714,39
+79cba8301fef86f355b87c794ca860f314a739f0,"} else if (Objects.equal(""BuildConfig"", kind)) {",1,4,0.5714285714285714,40
+79cba8301fef86f355b87c794ca860f314a739f0,} else {,1,3,0.42857142857142855,41
+79cba8301fef86f355b87c794ca860f314a739f0,String id = KubernetesHelper.getName(service);,1,3,0.42857142857142855,42
+79cba8301fef86f355b87c794ca860f314a739f0,Route route = new Route();,1,3,0.42857142857142855,43
+79cba8301fef86f355b87c794ca860f314a739f0,String json = null;,1,3,0.42857142857142855,44
+79cba8301fef86f355b87c794ca860f314a739f0,if (object instanceof HasMetadata) {,0,3,0.42857142857142855,45
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity != null) {,0,3,0.42857142857142855,46
+79cba8301fef86f355b87c794ca860f314a739f0,* @returns true if we should create an OpenShift Route for this service.,0,3,0.42857142857142855,47
+79cba8301fef86f355b87c794ca860f314a739f0,* Returns true if this entity has a valid non blank resourceVersion in its metadata,0,3,0.42857142857142855,48
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(HasMetadata entity, String name) {",0,3,0.42857142857142855,49
+79cba8301fef86f355b87c794ca860f314a739f0,if (object instanceof Pod) {,1,3,0.42857142857142855,50
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity != null) {,1,3,0.42857142857142855,51
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static Object getAdditionalProperty(Map<String, Object> additionalProperties, String name) {",1,3,0.42857142857142855,52
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(Pod entity, String name) {",1,3,0.42857142857142855,53
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(Service entity, String name) {",1,3,0.42857142857142855,54
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(ReplicationController entity, String name) {",1,3,0.42857142857142855,55
+79cba8301fef86f355b87c794ca860f314a739f0,"public static void setName(Template entity, String name) {",1,3,0.42857142857142855,56
+79cba8301fef86f355b87c794ca860f314a739f0,} else {,0,3,0.42857142857142855,57
+79cba8301fef86f355b87c794ca860f314a739f0,* @return true if we should create an OpenShift Route for this service.,0,3,0.42857142857142855,58
+79cba8301fef86f355b87c794ca860f314a739f0,"throw new MojoFailureException(""Could not load kubernetes json: "" + json);",1,3,0.42857142857142855,59
+79cba8301fef86f355b87c794ca860f314a739f0,String json = null;,1,3,0.42857142857142855,60
+79cba8301fef86f355b87c794ca860f314a739f0,* @returns true if we should create an OpenShift Route for this service.,1,3,0.42857142857142855,61
+79cba8301fef86f355b87c794ca860f314a739f0,String id = KubernetesHelper.getName(service);,0,3,0.42857142857142855,62
+79cba8301fef86f355b87c794ca860f314a739f0,String json = null;,0,3,0.42857142857142855,63
+79cba8301fef86f355b87c794ca860f314a739f0,"throw new MojoFailureException(""Cannot load kubernetes json: "" + json);",0,3,0.42857142857142855,64
+79cba8301fef86f355b87c794ca860f314a739f0,Route route = null;,0,3,0.42857142857142855,65
+79cba8301fef86f355b87c794ca860f314a739f0,if (entity != null) {,1,3,0.42857142857142855,66
+79cba8301fef86f355b87c794ca860f314a739f0,"public static Route createRouteForService(String routeDomainPostfix, String namespace, Service service, Log log) {",0,3,0.42857142857142855,67
+79cba8301fef86f355b87c794ca860f314a739f0,String id = getId(service);,0,3,0.42857142857142855,68
+79cba8301fef86f355b87c794ca860f314a739f0,String id = getId(service);,1,3,0.42857142857142855,69
+79cba8301fef86f355b87c794ca860f314a739f0,if (object instanceof Pod) {,0,3,0.42857142857142855,70
+79cba8301fef86f355b87c794ca860f314a739f0,if (object instanceof Route) {,0,3,0.42857142857142855,71
+79cba8301fef86f355b87c794ca860f314a739f0,"return ""host: "" + entity.getHost();",0,3,0.42857142857142855,72
+79cba8301fef86f355b87c794ca860f314a739f0,if (item instanceof Service) {,0,3,0.42857142857142855,73
+79cba8301fef86f355b87c794ca860f314a739f0,} else {,0,3,0.42857142857142855,74
+79cba8301fef86f355b87c794ca860f314a739f0,String id = getObjectId(item);,0,3,0.42857142857142855,75
+79cba8301fef86f355b87c794ca860f314a739f0,if (object instanceof KubernetesList) {,0,3,0.42857142857142855,76
+79cba8301fef86f355b87c794ca860f314a739f0,} else  {,0,3,0.42857142857142855,77
+79cba8301fef86f355b87c794ca860f314a739f0,} else {,1,3,0.42857142857142855,78
+79cba8301fef86f355b87c794ca860f314a739f0,if (template instanceof ObjectNode) {,1,3,0.42857142857142855,79
+79cba8301fef86f355b87c794ca860f314a739f0,String json = toJson(item);,1,3,0.42857142857142855,80
+79cba8301fef86f355b87c794ca860f314a739f0,String json = toJson(object);,1,3,0.42857142857142855,81
+79cba8301fef86f355b87c794ca860f314a739f0,String id = getId(jsonNode);,1,3,0.42857142857142855,82
+79cba8301fef86f355b87c794ca860f314a739f0,if (object instanceof JsonNode) {,1,3,0.42857142857142855,83
+79cba8301fef86f355b87c794ca860f314a739f0,if (config instanceof ObjectNode) {,1,3,0.42857142857142855,84
+79cba8301fef86f355b87c794ca860f314a739f0,if (items instanceof ArrayNode) {,1,3,0.42857142857142855,85
+79cba8301fef86f355b87c794ca860f314a739f0,"Object entity = loadEntity(bytes, kind, null);",1,3,0.42857142857142855,86
+79cba8301fef86f355b87c794ca860f314a739f0,"Route route = createRouteForService(routeDomainPostfix, namespace, service, log);",0,3,0.42857142857142855,87
+79cba8301fef86f355b87c794ca860f314a739f0,json = KubernetesHelper.toJson(route);,1,2,0.2857142857142857,88
+79cba8301fef86f355b87c794ca860f314a739f0,} catch (JsonProcessingException e) {,1,2,0.2857142857142857,89
+79cba8301fef86f355b87c794ca860f314a739f0,if (metadata != null) {,0,2,0.2857142857142857,90
+79cba8301fef86f355b87c794ca860f314a739f0,"getLog().debug(""Created route: "" + json);",1,2,0.2857142857142857,91
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNotBlank(namespace)) {,1,2,0.2857142857142857,92
+79cba8301fef86f355b87c794ca860f314a739f0,* Returns the resource version for the entity or null if it does not have one,0,2,0.2857142857142857,93
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getResourceVersion(HasMetadata entity) {,0,2,0.2857142857142857,94
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectMeta metadata = entity.getMetadata();,0,2,0.2857142857142857,95
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectMeta metadata = getOrCreateMetadata(entity);,0,2,0.2857142857142857,96
+79cba8301fef86f355b87c794ca860f314a739f0,String resourceVersion = metadata.getResourceVersion();,0,2,0.2857142857142857,97
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNotBlank(resourceVersion)) {,0,2,0.2857142857142857,98
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(HasMetadata entity) {,0,2,0.2857142857142857,99
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(HasMetadata entity) {,0,2,0.2857142857142857,100
+79cba8301fef86f355b87c794ca860f314a739f0,return (List<HasMetadata>) entity;,0,2,0.2857142857142857,101
+79cba8301fef86f355b87c794ca860f314a739f0,HasMetadata[] array = (HasMetadata[]) entity;,0,2,0.2857142857142857,102
+79cba8301fef86f355b87c794ca860f314a739f0,"String host = Strings.stripSuffix(Strings.stripSuffix(id, ""-service""), ""."");",1,2,0.2857142857142857,103
+79cba8301fef86f355b87c794ca860f314a739f0,List<HasMetadata> answer = new ArrayList<>();,0,2,0.2857142857142857,104
+79cba8301fef86f355b87c794ca860f314a739f0,"routeSpec.setHost(host + ""."" + Strings.stripPrefix(routeDomain, "".""));",1,2,0.2857142857142857,105
+79cba8301fef86f355b87c794ca860f314a739f0,* Should we try to create a route for the given service?,0,2,0.2857142857142857,106
+79cba8301fef86f355b87c794ca860f314a739f0,"KubernetesHelper.setName(route, namespace, id + ""-route"");",1,2,0.2857142857142857,107
+79cba8301fef86f355b87c794ca860f314a739f0,if (metadata == null) {,1,2,0.2857142857142857,108
+79cba8301fef86f355b87c794ca860f314a739f0,route = new Route();,0,2,0.2857142857142857,109
+79cba8301fef86f355b87c794ca860f314a739f0,"KubernetesHelper.setName(route, namespace, id + ""-route"");",0,2,0.2857142857142857,110
+79cba8301fef86f355b87c794ca860f314a739f0,"String host = Strings.stripSuffix(Strings.stripSuffix(id, ""-service""), ""."");",0,2,0.2857142857142857,111
+79cba8301fef86f355b87c794ca860f314a739f0,"routeSpec.setHost(host + ""."" + Strings.stripPrefix(routeDomainPostfix, "".""));",0,2,0.2857142857142857,112
+79cba8301fef86f355b87c794ca860f314a739f0,json = KubernetesHelper.toJson(route);,0,2,0.2857142857142857,113
+79cba8301fef86f355b87c794ca860f314a739f0,} catch (JsonProcessingException e) {,0,2,0.2857142857142857,114
+79cba8301fef86f355b87c794ca860f314a739f0,"log.debug(""Created route: "" + json);",0,2,0.2857142857142857,115
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static boolean shouldCreateRouteForService(Log log, Service service, String id) {",0,2,0.2857142857142857,116
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNotBlank(id)) {,1,2,0.2857142857142857,117
+79cba8301fef86f355b87c794ca860f314a739f0,"if (""kubernetes"".equals(id) || ""kubernetes-ro"".equals(id)) {",0,2,0.2857142857142857,118
+79cba8301fef86f355b87c794ca860f314a739f0,if (!ports.contains(80) && !ports.contains(443)) {,0,2,0.2857142857142857,119
+79cba8301fef86f355b87c794ca860f314a739f0,* Should we fail the build if an apply fails?,1,2,0.2857142857142857,120
+79cba8301fef86f355b87c794ca860f314a739f0,"@Parameter(property = ""fabric8.apply.failOnError"", defaultValue = ""true"")",1,2,0.2857142857142857,121
+79cba8301fef86f355b87c794ca860f314a739f0,"@Parameter(property = ""fabric8.apply.domain"", defaultValue = ""${env.KUBERNETES_DOMAIN}"")",1,2,0.2857142857142857,122
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNullOrBlank(routeDomain)) {,1,2,0.2857142857142857,123
+79cba8301fef86f355b87c794ca860f314a739f0,"getLog().warn(""Could not load routes; we maybe are not connected to an OpenShift environment? "" + e, e);",1,2,0.2857142857142857,124
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectMeta metadata = entity.getMetadata();,1,2,0.2857142857142857,125
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(Pod entity) {,1,2,0.2857142857142857,126
+79cba8301fef86f355b87c794ca860f314a739f0,metadata = new ObjectMeta();,1,2,0.2857142857142857,127
+79cba8301fef86f355b87c794ca860f314a739f0,"KubernetesHelper.setName(route, namespace, id + ""-route"");",1,2,0.2857142857142857,128
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> answer = new ArrayList<>();,1,2,0.2857142857142857,129
+79cba8301fef86f355b87c794ca860f314a739f0,Object item = list.get(i);,1,2,0.2857142857142857,130
+79cba8301fef86f355b87c794ca860f314a739f0,Object nonService = list.get(lastNonService);,1,2,0.2857142857142857,131
+79cba8301fef86f355b87c794ca860f314a739f0,Object item = itemArray.get(i);,1,2,0.2857142857142857,132
+79cba8301fef86f355b87c794ca860f314a739f0,List<HasMetadata> list = KubernetesHelper.toItemList(dto);,0,2,0.2857142857142857,133
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> list = KubernetesHelper.toItemList(dto);,1,2,0.2857142857142857,134
+79cba8301fef86f355b87c794ca860f314a739f0,String routeId = id;,0,2,0.2857142857142857,135
+79cba8301fef86f355b87c794ca860f314a739f0,if (openShift) {,0,2,0.2857142857142857,136
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(Pod entity) {,1,2,0.2857142857142857,137
+79cba8301fef86f355b87c794ca860f314a739f0,"log.warn(""Cannot load OpenShift Routes; maybe not connected to an OpenShift platform? "" + e, e);",0,2,0.2857142857142857,138
+79cba8301fef86f355b87c794ca860f314a739f0,"log.debug(""Loading file "" + file);",0,2,0.2857142857142857,139
+79cba8301fef86f355b87c794ca860f314a739f0,"getLog().info(""Is OpenShift: "" + openShift);",1,2,0.2857142857142857,140
+79cba8301fef86f355b87c794ca860f314a739f0,if (!openShift) {,1,2,0.2857142857142857,141
+79cba8301fef86f355b87c794ca860f314a739f0,"log.warn(""Could not load routes; we maybe are not connected to an OpenShift environment? "" + e, e);",1,2,0.2857142857142857,142
+79cba8301fef86f355b87c794ca860f314a739f0,"log.info(""Loading file "" + file);",1,2,0.2857142857142857,143
+79cba8301fef86f355b87c794ca860f314a739f0,if (route != null) {,0,2,0.2857142857142857,144
+79cba8301fef86f355b87c794ca860f314a739f0,Object[] array = (Object[]) entity;,1,2,0.2857142857142857,145
+79cba8301fef86f355b87c794ca860f314a739f0,return (List<Object>) entity;,1,2,0.2857142857142857,146
+79cba8301fef86f355b87c794ca860f314a739f0,if (map == null) {,1,2,0.2857142857142857,147
+79cba8301fef86f355b87c794ca860f314a739f0,for (int i = 0; i < lastIdx; i++) {,1,2,0.2857142857142857,148
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(ReplicationController entity) {,1,2,0.2857142857142857,149
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(Service entity) {,1,2,0.2857142857142857,150
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(OAuthClient entity) {,1,2,0.2857142857142857,151
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(Route entity) {,1,2,0.2857142857142857,152
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(Node entity) {,1,2,0.2857142857142857,153
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(Template entity) {,1,2,0.2857142857142857,154
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(ImageStream entity) {,1,2,0.2857142857142857,155
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getName(Endpoints entity) {,1,2,0.2857142857142857,156
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(ReplicationController entity) {,1,2,0.2857142857142857,157
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(Service entity) {,1,2,0.2857142857142857,158
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(OAuthClient entity) {,1,2,0.2857142857142857,159
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(Route entity) {,1,2,0.2857142857142857,160
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getNamespace(Template entity) {,1,2,0.2857142857142857,161
+79cba8301fef86f355b87c794ca860f314a739f0,if (additionalProperties != null) {,1,2,0.2857142857142857,162
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static String getAdditionalNestedPropertyText(Map<String, Object> additionalProperties, String... names) {",1,2,0.2857142857142857,163
+79cba8301fef86f355b87c794ca860f314a739f0,"if (Strings.isNotBlank(id) && shouldCreateRouteForService(log, service, id)) {",0,2,0.2857142857142857,164
+79cba8301fef86f355b87c794ca860f314a739f0,private KubernetesClient kubernetes = new KubernetesClient();,1,2,0.2857142857142857,165
+79cba8301fef86f355b87c794ca860f314a739f0,"log.warn(""Could not load routes; we maybe are not connected to an OpenShift environment? "" + e, e);",0,2,0.2857142857142857,166
+79cba8301fef86f355b87c794ca860f314a739f0,public static Object combineJson(Object... objects) throws IOException {,0,2,0.2857142857142857,167
+79cba8301fef86f355b87c794ca860f314a739f0,if (manifest != null) {,0,2,0.2857142857142857,168
+79cba8301fef86f355b87c794ca860f314a739f0,if (containers != null) {,0,2,0.2857142857142857,169
+79cba8301fef86f355b87c794ca860f314a739f0,String image = container.getImage();,0,2,0.2857142857142857,170
+79cba8301fef86f355b87c794ca860f314a739f0,"appendText(buffer, ""image: "" + image);",0,2,0.2857142857142857,171
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static void appendText(StringBuilder buffer, String text) {",0,2,0.2857142857142857,172
+79cba8301fef86f355b87c794ca860f314a739f0,if (buffer.length() > 0) {,0,2,0.2857142857142857,173
+79cba8301fef86f355b87c794ca860f314a739f0,KubernetesList config = (KubernetesList) entity;,0,2,0.2857142857142857,174
+79cba8301fef86f355b87c794ca860f314a739f0,KubernetesList list = findOrCreateList(objects);,0,2,0.2857142857142857,175
+79cba8301fef86f355b87c794ca860f314a739f0,public static String summaryText(Pod entity) {,0,2,0.2857142857142857,176
+79cba8301fef86f355b87c794ca860f314a739f0,if (items == null) {,0,2,0.2857142857142857,177
+79cba8301fef86f355b87c794ca860f314a739f0,if (object != list) {,0,2,0.2857142857142857,178
+79cba8301fef86f355b87c794ca860f314a739f0,Object item = list.get(i);,0,2,0.2857142857142857,179
+79cba8301fef86f355b87c794ca860f314a739f0,Object nonService = list.get(lastNonService);,0,2,0.2857142857142857,180
+79cba8301fef86f355b87c794ca860f314a739f0,Object item = itemArray.get(i);,0,2,0.2857142857142857,181
+79cba8301fef86f355b87c794ca860f314a739f0,if (item == null) {,0,2,0.2857142857142857,182
+79cba8301fef86f355b87c794ca860f314a739f0,String kind = item.getClass().getSimpleName();,0,2,0.2857142857142857,183
+79cba8301fef86f355b87c794ca860f314a739f0,if (podState != null) {,0,2,0.2857142857142857,184
+79cba8301fef86f355b87c794ca860f314a739f0,if (podTemplate != null) {,0,2,0.2857142857142857,185
+79cba8301fef86f355b87c794ca860f314a739f0,if (!keys.add(key)) {,0,2,0.2857142857142857,186
+79cba8301fef86f355b87c794ca860f314a739f0,public static String summaryText(Object object) {,0,2,0.2857142857142857,187
+79cba8301fef86f355b87c794ca860f314a739f0,if (isIgnoreServiceMode()) {,0,2,0.2857142857142857,188
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNullOrBlank(routeDomainPostfix)) {,0,2,0.2857142857142857,189
+79cba8301fef86f355b87c794ca860f314a739f0,if (isRecreateMode()) {,0,2,0.2857142857142857,190
+79cba8301fef86f355b87c794ca860f314a739f0,if (isUpdateViaDeleteAndCreate()) {,1,2,0.2857142857142857,191
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getObjectId(Object object) {,0,2,0.2857142857142857,192
+79cba8301fef86f355b87c794ca860f314a739f0,return object != null ? object.toString() : null;,0,2,0.2857142857142857,193
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode jsonNode = (JsonNode) entity;,0,2,0.2857142857142857,194
+79cba8301fef86f355b87c794ca860f314a739f0,public static String summaryText(Route entity) {,0,2,0.2857142857142857,195
+79cba8301fef86f355b87c794ca860f314a739f0,"buffer.append(""replicas: "" + desiredState.getReplicas());",0,2,0.2857142857142857,196
+79cba8301fef86f355b87c794ca860f314a739f0,public static String summaryText(Service entity) {,0,2,0.2857142857142857,197
+79cba8301fef86f355b87c794ca860f314a739f0,if (number != null) {,0,2,0.2857142857142857,198
+79cba8301fef86f355b87c794ca860f314a739f0,if (portText.length() > 0) {,0,2,0.2857142857142857,199
+79cba8301fef86f355b87c794ca860f314a739f0,if (portText.length() == 0) {,0,2,0.2857142857142857,200
+79cba8301fef86f355b87c794ca860f314a739f0,if (port != null) {,0,2,0.2857142857142857,201
+79cba8301fef86f355b87c794ca860f314a739f0,public static String summaryText(ReplicationController entity) {,0,2,0.2857142857142857,202
+79cba8301fef86f355b87c794ca860f314a739f0,if (desiredState != null) {,0,2,0.2857142857142857,203
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNotBlank(id)) {,0,2,0.2857142857142857,204
+79cba8301fef86f355b87c794ca860f314a739f0,if (ports != null) {,0,2,0.2857142857142857,205
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static void addObjectsToItemArray(List destinationList, Object object) throws IOException {",0,2,0.2857142857142857,206
+79cba8301fef86f355b87c794ca860f314a739f0,if (isService(jsonNode)) {,1,2,0.2857142857142857,207
+79cba8301fef86f355b87c794ca860f314a739f0,if (kind != null) {,1,2,0.2857142857142857,208
+79cba8301fef86f355b87c794ca860f314a739f0,return entity;,1,2,0.2857142857142857,209
+79cba8301fef86f355b87c794ca860f314a739f0,if (object != config) {,1,2,0.2857142857142857,210
+79cba8301fef86f355b87c794ca860f314a739f0,if (isTemplate(jsonNode)) {,1,2,0.2857142857142857,211
+79cba8301fef86f355b87c794ca860f314a739f0,if (template == null) {,1,2,0.2857142857142857,212
+79cba8301fef86f355b87c794ca860f314a739f0,if (template != null) {,1,2,0.2857142857142857,213
+79cba8301fef86f355b87c794ca860f314a739f0,if (!isTemplate(jsonNode)) {,1,2,0.2857142857142857,214
+79cba8301fef86f355b87c794ca860f314a739f0,"String kind = Strings.defaultIfEmpty(getKind(jsonNode), """");",1,2,0.2857142857142857,215
+79cba8301fef86f355b87c794ca860f314a739f0,String kind = kindObject.asText();,1,2,0.2857142857142857,216
+79cba8301fef86f355b87c794ca860f314a739f0,if (!keys.add(key)) {,1,2,0.2857142857142857,217
+79cba8301fef86f355b87c794ca860f314a739f0,if (jsonNode != null) {,1,2,0.2857142857142857,218
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static void addObjectsToItemArray(ArrayNode itemArray, Object object) throws IOException {",1,2,0.2857142857142857,219
+79cba8301fef86f355b87c794ca860f314a739f0,if (items != null && items.isArray()) {,1,2,0.2857142857142857,220
+79cba8301fef86f355b87c794ca860f314a739f0,String routeDomainPostfix = this.routeDomain;,0,2,0.2857142857142857,221
+79cba8301fef86f355b87c794ca860f314a739f0,if (items != null) {,0,2,0.2857142857142857,222
+79cba8301fef86f355b87c794ca860f314a739f0,// lets create a new list,1,2,0.2857142857142857,223
+79cba8301fef86f355b87c794ca860f314a739f0,public static Object getEntity(JsonNode item) throws IOException {,1,2,0.2857142857142857,224
+79cba8301fef86f355b87c794ca860f314a739f0,if (Strings.isNotBlank(id)) {,1,2,0.2857142857142857,225
+79cba8301fef86f355b87c794ca860f314a739f0,if (kindObject != null && kindObject.isTextual()) {,1,2,0.2857142857142857,226
+79cba8301fef86f355b87c794ca860f314a739f0,if (current == null) {,1,2,0.2857142857142857,227
+79cba8301fef86f355b87c794ca860f314a739f0,list = (KubernetesList) object;,0,2,0.2857142857142857,228
+79cba8301fef86f355b87c794ca860f314a739f0,if (list == null) {,0,2,0.2857142857142857,229
+79cba8301fef86f355b87c794ca860f314a739f0,if (item != null) {,1,2,0.2857142857142857,230
+79cba8301fef86f355b87c794ca860f314a739f0,KubernetesList list = null;,0,2,0.2857142857142857,231
+79cba8301fef86f355b87c794ca860f314a739f0,list = new KubernetesList();,0,2,0.2857142857142857,232
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getKind(JsonNode entity) {,1,2,0.2857142857142857,233
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static String getJsonTextProperty(JsonNode node, String... names) {",1,2,0.2857142857142857,234
+79cba8301fef86f355b87c794ca860f314a739f0,for (String name : names) {,1,2,0.2857142857142857,235
+79cba8301fef86f355b87c794ca860f314a739f0,public static String getId(JsonNode entity) {,1,2,0.2857142857142857,236
+79cba8301fef86f355b87c794ca860f314a739f0,if (tree != null) {,1,2,0.2857142857142857,237
+79cba8301fef86f355b87c794ca860f314a739f0,"if (Objects.equal(""Pod"", kind)) {",1,2,0.2857142857142857,238
+79cba8301fef86f355b87c794ca860f314a739f0,if (kindNode != null) {,1,2,0.2857142857142857,239
+79cba8301fef86f355b87c794ca860f314a739f0,String kind = kindNode.asText();,1,2,0.2857142857142857,240
+79cba8301fef86f355b87c794ca860f314a739f0,"LOG.warn(""No JSON type for: "" + tree);",1,2,0.2857142857142857,241
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode jsonNode = (JsonNode) entity;,1,2,0.2857142857142857,242
+79cba8301fef86f355b87c794ca860f314a739f0,import java.util.Set;,0,1,0.14285714285714285,243
+79cba8301fef86f355b87c794ca860f314a739f0,return false;,0,1,0.14285714285714285,244
+79cba8301fef86f355b87c794ca860f314a739f0,* By default lets ignore the kubernetes services and any service which does not expose ports 80 and 443,0,1,0.14285714285714285,245
+79cba8301fef86f355b87c794ca860f314a739f0,return route;,0,1,0.14285714285714285,246
+79cba8301fef86f355b87c794ca860f314a739f0,},0,1,0.14285714285714285,247
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectReference objectRef = new ObjectReference();,0,1,0.14285714285714285,248
+79cba8301fef86f355b87c794ca860f314a739f0,try {,0,1,0.14285714285714285,249
+79cba8301fef86f355b87c794ca860f314a739f0,Log log = getLog();,0,1,0.14285714285714285,250
+79cba8301fef86f355b87c794ca860f314a739f0,RouteSpec routeSpec = new RouteSpec();,0,1,0.14285714285714285,251
+79cba8301fef86f355b87c794ca860f314a739f0,"log.warn(""No fabric8.apply.routeDomain property or $KUBERNETES_DOMAIN environment variable so cannot create any OpenShift Routes"");",0,1,0.14285714285714285,252
+79cba8301fef86f355b87c794ca860f314a739f0,return true;,0,1,0.14285714285714285,253
+79cba8301fef86f355b87c794ca860f314a739f0,Controller controller = createController();,0,1,0.14285714285714285,254
+79cba8301fef86f355b87c794ca860f314a739f0,Set<Integer> ports = KubernetesHelper.getPorts(service);,0,1,0.14285714285714285,255
+79cba8301fef86f355b87c794ca860f314a739f0,"getLog().warn(""No fabric8.apply.routeDomain property or $KUBERNETES_DOMAIN environment variable so cannot create any OpenShift Routes"");",1,1,0.14285714285714285,256
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.openshift.api.model.template.Template;,1,1,0.14285714285714285,257
+79cba8301fef86f355b87c794ca860f314a739f0,"@Parameter(property = ""fabric8.apply.recreate"")",1,1,0.14285714285714285,258
+79cba8301fef86f355b87c794ca860f314a739f0,* The domain added to the service ID when creating OpenShift routes,1,1,0.14285714285714285,259
+79cba8301fef86f355b87c794ca860f314a739f0,private String routeDomain;,1,1,0.14285714285714285,260
+79cba8301fef86f355b87c794ca860f314a739f0,Controller controller = new Controller(this.kubernetes);,1,1,0.14285714285714285,261
+79cba8301fef86f355b87c794ca860f314a739f0,RouteSpec routeSpec = new RouteSpec();,1,1,0.14285714285714285,262
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectReference objectRef = new ObjectReference();,1,1,0.14285714285714285,263
+79cba8301fef86f355b87c794ca860f314a739f0,try {,1,1,0.14285714285714285,264
+79cba8301fef86f355b87c794ca860f314a739f0,},1,1,0.14285714285714285,265
+79cba8301fef86f355b87c794ca860f314a739f0,public KubernetesClient getKubernetes() {,1,1,0.14285714285714285,266
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.openshift.api.model.template.Template;,0,1,0.14285714285714285,267
+79cba8301fef86f355b87c794ca860f314a739f0,return kubernetes;,1,1,0.14285714285714285,268
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.kubernetes.api.model.HasMetadata;,0,1,0.14285714285714285,269
+79cba8301fef86f355b87c794ca860f314a739f0,import org.apache.maven.plugin.logging.Log;,0,1,0.14285714285714285,270
+79cba8301fef86f355b87c794ca860f314a739f0,"return kind != null && Objects.equal(""Service"", kind.textValue());",1,1,0.14285714285714285,271
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader().readTree(json);,1,1,0.14285714285714285,272
+79cba8301fef86f355b87c794ca860f314a739f0,return (JsonNode) object;,1,1,0.14285714285714285,273
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode items = config.get(""objects"");",1,1,0.14285714285714285,274
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(HasMetadata entity) {,0,1,0.14285714285714285,275
+79cba8301fef86f355b87c794ca860f314a739f0,objects = (ArrayNode) items;,1,1,0.14285714285714285,276
+79cba8301fef86f355b87c794ca860f314a739f0,objects = new ArrayNode(createNodeFactory());,1,1,0.14285714285714285,277
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectNode objectNode = (ObjectNode) template;,1,1,0.14285714285714285,278
+79cba8301fef86f355b87c794ca860f314a739f0,return template;,1,1,0.14285714285714285,279
+79cba8301fef86f355b87c794ca860f314a739f0,protected static void moveServicesToFrontOfArray(ArrayNode itemArray) {,1,1,0.14285714285714285,280
+79cba8301fef86f355b87c794ca860f314a739f0,int size = itemArray.size();,1,1,0.14285714285714285,281
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode jsonNode = itemArray.get(i);,1,1,0.14285714285714285,282
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode nonService = itemArray.get(lastNonService);,1,1,0.14285714285714285,283
+79cba8301fef86f355b87c794ca860f314a739f0,protected static void removeDuplicates(ArrayNode itemArray) {,1,1,0.14285714285714285,284
+79cba8301fef86f355b87c794ca860f314a739f0,protected static boolean isService(JsonNode jsonNode) {,1,1,0.14285714285714285,285
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode kind = jsonNode.get(""kind"");",1,1,0.14285714285714285,286
+79cba8301fef86f355b87c794ca860f314a739f0,return false;,1,1,0.14285714285714285,287
+79cba8301fef86f355b87c794ca860f314a739f0,protected static boolean isTemplate(JsonNode jsonNode) {,1,1,0.14285714285714285,288
+79cba8301fef86f355b87c794ca860f314a739f0,"return kind != null && Objects.equal(""Template"", kind.textValue());",1,1,0.14285714285714285,289
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode node = toJsonNode(object);,1,1,0.14285714285714285,290
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode items = node.get(""items"");",1,1,0.14285714285714285,291
+79cba8301fef86f355b87c794ca860f314a739f0,Iterator<JsonNode> iter = items.iterator();,1,1,0.14285714285714285,292
+79cba8301fef86f355b87c794ca860f314a739f0,protected static JsonNodeFactory createNodeFactory() {,1,1,0.14285714285714285,293
+79cba8301fef86f355b87c794ca860f314a739f0,return new JsonNodeFactory(false);,1,1,0.14285714285714285,294
+79cba8301fef86f355b87c794ca860f314a739f0,protected static JsonNode findOrCreateConfig(Object[] objects) {,1,1,0.14285714285714285,295
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode jsonNode = (JsonNode) object;,1,1,0.14285714285714285,296
+79cba8301fef86f355b87c794ca860f314a739f0,return jsonNode;,1,1,0.14285714285714285,297
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNodeFactory factory = createNodeFactory();,1,1,0.14285714285714285,298
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectNode config = factory.objectNode();,1,1,0.14285714285714285,299
+79cba8301fef86f355b87c794ca860f314a739f0,public static JsonNode toJsonNode(Object object) throws IOException {,1,1,0.14285714285714285,300
+79cba8301fef86f355b87c794ca860f314a739f0,return getName((HasMetadata) object);,0,1,0.14285714285714285,301
+79cba8301fef86f355b87c794ca860f314a739f0,"return Strings.firstNonBlank(getName(entity.getMetadata()),",1,1,0.14285714285714285,302
+79cba8301fef86f355b87c794ca860f314a739f0,return resourceVersion;,0,1,0.14285714285714285,303
+79cba8301fef86f355b87c794ca860f314a739f0,public static List<Object> toItemList(Object entity) throws IOException {,1,1,0.14285714285714285,304
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(DeploymentConfig entity) {,1,1,0.14285714285714285,305
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(ImageStream entity) {,1,1,0.14285714285714285,306
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(OAuthClient entity) {,1,1,0.14285714285714285,307
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(Template entity) {,1,1,0.14285714285714285,308
+79cba8301fef86f355b87c794ca860f314a739f0,return null;,1,1,0.14285714285714285,309
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectMeta objectMeta = getOrCreateMetadata(entity);,1,1,0.14285714285714285,310
+79cba8301fef86f355b87c794ca860f314a739f0,"return Strings.firstNonBlank(getNamespace(entity.getMetadata()),",1,1,0.14285714285714285,311
+79cba8301fef86f355b87c794ca860f314a739f0,return additionalProperties.get(name);,1,1,0.14285714285714285,312
+79cba8301fef86f355b87c794ca860f314a739f0,int lastIdx = names.length - 1;,1,1,0.14285714285714285,313
+79cba8301fef86f355b87c794ca860f314a739f0,"Map<String, Object> map = additionalProperties;",1,1,0.14285714285714285,314
+79cba8301fef86f355b87c794ca860f314a739f0,"map = getAdditionalPropertyMap(map, names[i]);",1,1,0.14285714285714285,315
+79cba8301fef86f355b87c794ca860f314a739f0,"return getAdditionalPropertyText(map, names[lastIdx]);",1,1,0.14285714285714285,316
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> items = list.getItems();,1,1,0.14285714285714285,317
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(Build entity) {,1,1,0.14285714285714285,318
+79cba8301fef86f355b87c794ca860f314a739f0,public static void moveServicesToFrontOfArray(List<Object> list) {,1,1,0.14285714285714285,319
+79cba8301fef86f355b87c794ca860f314a739f0,protected static void removeDuplicates(List<Object> itemArray) {,1,1,0.14285714285714285,320
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> items = kubernetesList.getItems();,1,1,0.14285714285714285,321
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> items = toItemList(dto);,1,1,0.14285714285714285,322
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.kubernetes.api.model.HasMetadata;,0,1,0.14285714285714285,323
+79cba8301fef86f355b87c794ca860f314a739f0,"protected void createRoutes(KubernetesClient kubernetes, List<HasMetadata> list) {",0,1,0.14285714285714285,324
+79cba8301fef86f355b87c794ca860f314a739f0,"protected void createRoutes(KubernetesClient kubernetes, List<Object> list) {",1,1,0.14285714285714285,325
+79cba8301fef86f355b87c794ca860f314a739f0,"throw new MojoFailureException(""Cannot find Kubernetes master URL"");",0,1,0.14285714285714285,326
+79cba8301fef86f355b87c794ca860f314a739f0,String json;,0,1,0.14285714285714285,327
+79cba8301fef86f355b87c794ca860f314a739f0,"throw new MojoFailureException(""Can't find Kubernetes master URL"");",1,1,0.14285714285714285,328
+79cba8301fef86f355b87c794ca860f314a739f0,List<Route> items = routes.getItems();,1,1,0.14285714285714285,329
+79cba8301fef86f355b87c794ca860f314a739f0,for (JsonNode jsonNode : config) {,1,1,0.14285714285714285,330
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(BuildConfig entity) {,1,1,0.14285714285714285,331
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(Route entity) {,1,1,0.14285714285714285,332
+79cba8301fef86f355b87c794ca860f314a739f0,},0,1,0.14285714285714285,333
+79cba8301fef86f355b87c794ca860f314a739f0,HasMetadata nonService = list.get(lastNonService);,0,1,0.14285714285714285,334
+79cba8301fef86f355b87c794ca860f314a739f0,return null;,0,1,0.14285714285714285,335
+79cba8301fef86f355b87c794ca860f314a739f0,public static boolean hasResourceVersion(HasMetadata entity) {,0,1,0.14285714285714285,336
+79cba8301fef86f355b87c794ca860f314a739f0,return getResourceVersion(entity) != null;,0,1,0.14285714285714285,337
+79cba8301fef86f355b87c794ca860f314a739f0,return getName(entity.getMetadata());,0,1,0.14285714285714285,338
+79cba8301fef86f355b87c794ca860f314a739f0,return getNamespace(entity.getMetadata());,0,1,0.14285714285714285,339
+79cba8301fef86f355b87c794ca860f314a739f0,"public static Map<String, String> getLabels(HasMetadata entity) {",0,1,0.14285714285714285,340
+79cba8301fef86f355b87c794ca860f314a739f0,return getLabels(entity.getMetadata());,0,1,0.14285714285714285,341
+79cba8301fef86f355b87c794ca860f314a739f0,return Collections.EMPTY_MAP;,0,1,0.14285714285714285,342
+79cba8301fef86f355b87c794ca860f314a739f0,public static List<HasMetadata> toItemList(Object entity) throws IOException {,0,1,0.14285714285714285,343
+79cba8301fef86f355b87c794ca860f314a739f0,List<HasMetadata> items = list.getItems();,0,1,0.14285714285714285,344
+79cba8301fef86f355b87c794ca860f314a739f0,public static void moveServicesToFrontOfArray(List<HasMetadata> list) {,0,1,0.14285714285714285,345
+79cba8301fef86f355b87c794ca860f314a739f0,HasMetadata item = list.get(i);,0,1,0.14285714285714285,346
+79cba8301fef86f355b87c794ca860f314a739f0,protected static void removeDuplicates(List<HasMetadata> itemArray) {,0,1,0.14285714285714285,347
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(Namespace entity) {,1,1,0.14285714285714285,348
+79cba8301fef86f355b87c794ca860f314a739f0,HasMetadata item = itemArray.get(i);,0,1,0.14285714285714285,349
+79cba8301fef86f355b87c794ca860f314a739f0,List<HasMetadata> items = kubernetesList.getItems();,0,1,0.14285714285714285,350
+79cba8301fef86f355b87c794ca860f314a739f0,List<HasMetadata> items = toItemList(dto);,0,1,0.14285714285714285,351
+79cba8301fef86f355b87c794ca860f314a739f0,return getName((Pod) object);,1,1,0.14285714285714285,352
+79cba8301fef86f355b87c794ca860f314a739f0,return getName((ReplicationController) object);,1,1,0.14285714285714285,353
+79cba8301fef86f355b87c794ca860f314a739f0,return getName((Service) object);,1,1,0.14285714285714285,354
+79cba8301fef86f355b87c794ca860f314a739f0,return getName((Route) object);,1,1,0.14285714285714285,355
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(Pod entity) {,1,1,0.14285714285714285,356
+79cba8301fef86f355b87c794ca860f314a739f0,},1,1,0.14285714285714285,357
+79cba8301fef86f355b87c794ca860f314a739f0,return metadata;,1,1,0.14285714285714285,358
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(ReplicationController entity) {,1,1,0.14285714285714285,359
+79cba8301fef86f355b87c794ca860f314a739f0,public static ObjectMeta getOrCreateMetadata(Service entity) {,1,1,0.14285714285714285,360
+79cba8301fef86f355b87c794ca860f314a739f0,template = jsonNode;,1,1,0.14285714285714285,361
+79cba8301fef86f355b87c794ca860f314a739f0,import java.util.Collection;,0,1,0.14285714285714285,362
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode template = null;,1,1,0.14285714285714285,363
+79cba8301fef86f355b87c794ca860f314a739f0,},0,1,0.14285714285714285,364
+79cba8301fef86f355b87c794ca860f314a739f0,StringBuilder portText = new StringBuilder();,0,1,0.14285714285714285,365
+79cba8301fef86f355b87c794ca860f314a739f0,List<ServicePort> ports = entity.getPorts();,0,1,0.14285714285714285,366
+79cba8301fef86f355b87c794ca860f314a739f0,for (ServicePort port : ports) {,0,1,0.14285714285714285,367
+79cba8301fef86f355b87c794ca860f314a739f0,Integer number = port.getPort();,0,1,0.14285714285714285,368
+79cba8301fef86f355b87c794ca860f314a739f0,"portText.append("""" + number);",0,1,0.14285714285714285,369
+79cba8301fef86f355b87c794ca860f314a739f0,Integer port = entity.getPort();,0,1,0.14285714285714285,370
+79cba8301fef86f355b87c794ca860f314a739f0,"portText.append("""" + port);",0,1,0.14285714285714285,371
+79cba8301fef86f355b87c794ca860f314a739f0,StringBuilder buffer = new StringBuilder();,0,1,0.14285714285714285,372
+79cba8301fef86f355b87c794ca860f314a739f0,ReplicationControllerState desiredState = entity.getDesiredState();,0,1,0.14285714285714285,373
+79cba8301fef86f355b87c794ca860f314a739f0,PodTemplate podTemplate = desiredState.getPodTemplate();,0,1,0.14285714285714285,374
+79cba8301fef86f355b87c794ca860f314a739f0,PodState podState = podTemplate.getDesiredState();,0,1,0.14285714285714285,375
+79cba8301fef86f355b87c794ca860f314a739f0,return buffer.toString();,0,1,0.14285714285714285,376
+79cba8301fef86f355b87c794ca860f314a739f0,PodState podState = entity.getDesiredState();,0,1,0.14285714285714285,377
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static void appendSummaryText(StringBuilder buffer, PodState podState) {",0,1,0.14285714285714285,378
+79cba8301fef86f355b87c794ca860f314a739f0,ContainerManifest manifest = podState.getManifest();,0,1,0.14285714285714285,379
+79cba8301fef86f355b87c794ca860f314a739f0,List<Container> containers = manifest.getContainers();,0,1,0.14285714285714285,380
+79cba8301fef86f355b87c794ca860f314a739f0,for (Container container : containers) {,0,1,0.14285714285714285,381
+79cba8301fef86f355b87c794ca860f314a739f0,public static List<Object> toItemList(Object entity) {,1,1,0.14285714285714285,382
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.kubernetes.api.extensions.Templates;,0,1,0.14285714285714285,383
+79cba8301fef86f355b87c794ca860f314a739f0,* from the Kubernetes REST API,0,1,0.14285714285714285,384
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(Object.class).readValue(json);,0,1,0.14285714285714285,385
+79cba8301fef86f355b87c794ca860f314a739f0,return config.getItems();,0,1,0.14285714285714285,386
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> items = list.getItems();,0,1,0.14285714285714285,387
+79cba8301fef86f355b87c794ca860f314a739f0,items = new ArrayList<>();,0,1,0.14285714285714285,388
+79cba8301fef86f355b87c794ca860f314a739f0,"return Templates.combineTemplates(list, items);",0,1,0.14285714285714285,389
+79cba8301fef86f355b87c794ca860f314a739f0,protected static void moveServicesToFrontOfArray(List<Object> list) {,0,1,0.14285714285714285,390
+79cba8301fef86f355b87c794ca860f314a739f0,int size = list.size();,0,1,0.14285714285714285,391
+79cba8301fef86f355b87c794ca860f314a739f0,"return """";",0,1,0.14285714285714285,392
+79cba8301fef86f355b87c794ca860f314a739f0,return summaryText((Pod) object);,0,1,0.14285714285714285,393
+79cba8301fef86f355b87c794ca860f314a739f0,return summaryText((ReplicationController) object);,0,1,0.14285714285714285,394
+79cba8301fef86f355b87c794ca860f314a739f0,return updateViaDeleteAndCreate;,1,1,0.14285714285714285,395
+79cba8301fef86f355b87c794ca860f314a739f0,},0,1,0.14285714285714285,396
+79cba8301fef86f355b87c794ca860f314a739f0,public boolean isRecreateMode() {,0,1,0.14285714285714285,397
+79cba8301fef86f355b87c794ca860f314a739f0,return recreateMode;,0,1,0.14285714285714285,398
+79cba8301fef86f355b87c794ca860f314a739f0,public void setRecreateMode(boolean recreateMode) {,0,1,0.14285714285714285,399
+79cba8301fef86f355b87c794ca860f314a739f0,this.recreateMode = recreateMode;,0,1,0.14285714285714285,400
+79cba8301fef86f355b87c794ca860f314a739f0,* If enabled then all services are ignored to avoid them being recreated. This is useful if you want to,0,1,0.14285714285714285,401
+79cba8301fef86f355b87c794ca860f314a739f0,public boolean isIgnoreServiceMode() {,0,1,0.14285714285714285,402
+79cba8301fef86f355b87c794ca860f314a739f0,return ignoreServiceMode;,0,1,0.14285714285714285,403
+79cba8301fef86f355b87c794ca860f314a739f0,"protected static JsonNode combineTemplates(JsonNode config, ArrayNode itemArray) {",1,1,0.14285714285714285,404
+79cba8301fef86f355b87c794ca860f314a739f0,this.ignoreServiceMode = ignoreServiceMode;,0,1,0.14285714285714285,405
+79cba8301fef86f355b87c794ca860f314a739f0,import javax.ws.rs.WebApplicationException;,1,1,0.14285714285714285,406
+79cba8301fef86f355b87c794ca860f314a739f0,public boolean isUpdateViaDeleteAndCreate() {,1,1,0.14285714285714285,407
+79cba8301fef86f355b87c794ca860f314a739f0,public void setUpdateViaDeleteAndCreate(boolean updateViaDeleteAndCreate) {,1,1,0.14285714285714285,408
+79cba8301fef86f355b87c794ca860f314a739f0,return summaryText((Service) object);,0,1,0.14285714285714285,409
+79cba8301fef86f355b87c794ca860f314a739f0,this.updateViaDeleteAndCreate = updateViaDeleteAndCreate;,1,1,0.14285714285714285,410
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.kubernetes.api.model.ServicePort;,0,1,0.14285714285714285,411
+79cba8301fef86f355b87c794ca860f314a739f0,* Returns the ID of the given object,0,1,0.14285714285714285,412
+79cba8301fef86f355b87c794ca860f314a739f0,return getId((Pod) object);,0,1,0.14285714285714285,413
+79cba8301fef86f355b87c794ca860f314a739f0,return getId((ReplicationController) object);,0,1,0.14285714285714285,414
+79cba8301fef86f355b87c794ca860f314a739f0,return getId((Service) object);,0,1,0.14285714285714285,415
+79cba8301fef86f355b87c794ca860f314a739f0,return getId((Route) object);,0,1,0.14285714285714285,416
+79cba8301fef86f355b87c794ca860f314a739f0,},0,1,0.14285714285714285,417
+79cba8301fef86f355b87c794ca860f314a739f0,public static List<Object> toItemList(Object entity) throws IOException {,0,1,0.14285714285714285,418
+79cba8301fef86f355b87c794ca860f314a739f0,return toItemList(getEntity(jsonNode));,0,1,0.14285714285714285,419
+79cba8301fef86f355b87c794ca860f314a739f0,* Returns a short summary text message for the given kubernetes resource,0,1,0.14285714285714285,420
+79cba8301fef86f355b87c794ca860f314a739f0,return summaryText((Route) object);,0,1,0.14285714285714285,421
+79cba8301fef86f355b87c794ca860f314a739f0,protected static void removeDuplicates(List<Object> itemArray) {,0,1,0.14285714285714285,422
+79cba8301fef86f355b87c794ca860f314a739f0,public void setIgnoreServiceMode(boolean ignoreServiceMode) {,0,1,0.14285714285714285,423
+79cba8301fef86f355b87c794ca860f314a739f0,KubernetesList kubernetesList = (KubernetesList) object;,0,1,0.14285714285714285,424
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode jsonNode = objectMapper.readTree(data);,1,1,0.14285714285714285,425
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(Pod.class).readValue(json);,1,1,0.14285714285714285,426
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(ReplicationController.class).readValue(json);,1,1,0.14285714285714285,427
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(Service.class).readValue(json);,1,1,0.14285714285714285,428
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(BuildConfig.class).readValue(json);,1,1,0.14285714285714285,429
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(DeploymentConfig.class).readValue(json);,1,1,0.14285714285714285,430
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(ImageRepository.class).readValue(json);,1,1,0.14285714285714285,431
+79cba8301fef86f355b87c794ca860f314a739f0,return objectMapper.reader(Template.class).readValue(json);,1,1,0.14285714285714285,432
+79cba8301fef86f355b87c794ca860f314a739f0,return loadList(json);,1,1,0.14285714285714285,433
+79cba8301fef86f355b87c794ca860f314a739f0,return defaultValue;,1,1,0.14285714285714285,434
+79cba8301fef86f355b87c794ca860f314a739f0,protected static Config loadList(byte[] data) throws IOException {,1,1,0.14285714285714285,435
+79cba8301fef86f355b87c794ca860f314a739f0,Config config = new Config();,1,1,0.14285714285714285,436
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> itemList = new ArrayList<>();,1,1,0.14285714285714285,437
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode items = jsonNode.get(""items"");",1,1,0.14285714285714285,438
+79cba8301fef86f355b87c794ca860f314a739f0,return tree;,1,1,0.14285714285714285,439
+79cba8301fef86f355b87c794ca860f314a739f0,for (JsonNode item : items) {,1,1,0.14285714285714285,440
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode kindObject = item.get(""kind"");",1,1,0.14285714285714285,441
+79cba8301fef86f355b87c794ca860f314a739f0,byte[] bytes = json.getBytes();,1,1,0.14285714285714285,442
+79cba8301fef86f355b87c794ca860f314a739f0,return config;,1,1,0.14285714285714285,443
+79cba8301fef86f355b87c794ca860f314a739f0,* Loads the entity for the given item,1,1,0.14285714285714285,444
+79cba8301fef86f355b87c794ca860f314a739f0,public static JsonNode combineJson(Object... objects) throws IOException {,1,1,0.14285714285714285,445
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode config = findOrCreateConfig(objects);,1,1,0.14285714285714285,446
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode items = config.get(""items"");",1,1,0.14285714285714285,447
+79cba8301fef86f355b87c794ca860f314a739f0,itemArray = new ArrayNode(createNodeFactory());,1,1,0.14285714285714285,448
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectNode objectNode = (ObjectNode) config;,1,1,0.14285714285714285,449
+79cba8301fef86f355b87c794ca860f314a739f0,"return combineTemplates(config, itemArray);",1,1,0.14285714285714285,450
+79cba8301fef86f355b87c794ca860f314a739f0,List<Object> items = kubernetesList.getItems();,0,1,0.14285714285714285,451
+79cba8301fef86f355b87c794ca860f314a739f0,return toItemList(getEntity(jsonNode));,1,1,0.14285714285714285,452
+79cba8301fef86f355b87c794ca860f314a739f0,itemArray = (ArrayNode) items;,1,1,0.14285714285714285,453
+79cba8301fef86f355b87c794ca860f314a739f0,"return loadEntity(json, kind, tree);",1,1,0.14285714285714285,454
+79cba8301fef86f355b87c794ca860f314a739f0,import java.util.Iterator;,1,1,0.14285714285714285,455
+79cba8301fef86f355b87c794ca860f314a739f0,Collection collection = (Collection) object;,0,1,0.14285714285714285,456
+79cba8301fef86f355b87c794ca860f314a739f0,"JsonNode kindNode = tree.get(""kind"");",1,1,0.14285714285714285,457
+79cba8301fef86f355b87c794ca860f314a739f0,protected static KubernetesList findOrCreateList(Object[] objects) {,0,1,0.14285714285714285,458
+79cba8301fef86f355b87c794ca860f314a739f0,import com.fasterxml.jackson.databind.JsonNode;,1,1,0.14285714285714285,459
+79cba8301fef86f355b87c794ca860f314a739f0,import com.fasterxml.jackson.databind.ObjectReader;,1,1,0.14285714285714285,460
+79cba8301fef86f355b87c794ca860f314a739f0,import com.fasterxml.jackson.databind.node.ArrayNode;,1,1,0.14285714285714285,461
+79cba8301fef86f355b87c794ca860f314a739f0,import com.fasterxml.jackson.databind.node.JsonNodeFactory;,1,1,0.14285714285714285,462
+79cba8301fef86f355b87c794ca860f314a739f0,import com.fasterxml.jackson.databind.node.ObjectNode;,1,1,0.14285714285714285,463
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.openshift.api.model.BuildConfig;,1,1,0.14285714285714285,464
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.openshift.api.model.DeploymentConfig;,1,1,0.14285714285714285,465
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.openshift.api.model.ImageRepository;,1,1,0.14285714285714285,466
+79cba8301fef86f355b87c794ca860f314a739f0,import java.io.ByteArrayInputStream;,1,1,0.14285714285714285,467
+79cba8301fef86f355b87c794ca860f314a739f0,return list;,0,1,0.14285714285714285,468
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.kubernetes.api.model.Item;,1,1,0.14285714285714285,469
+79cba8301fef86f355b87c794ca860f314a739f0,current = current.get(name);,1,1,0.14285714285714285,470
+79cba8301fef86f355b87c794ca860f314a739f0,* {@link JsonNode} if it cannot be recognised.,1,1,0.14285714285714285,471
+79cba8301fef86f355b87c794ca860f314a739f0,ObjectReader reader = objectMapper.reader();,1,1,0.14285714285714285,472
+79cba8301fef86f355b87c794ca860f314a739f0,* from the Kubernetes REST API or,1,1,0.14285714285714285,473
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode tree = reader.readTree(new ByteArrayInputStream(json));,1,1,0.14285714285714285,474
+79cba8301fef86f355b87c794ca860f314a739f0,return current != null ? current.textValue() : null;,1,1,0.14285714285714285,475
+79cba8301fef86f355b87c794ca860f314a739f0,JsonNode current = node;,1,1,0.14285714285714285,476
+79cba8301fef86f355b87c794ca860f314a739f0,"return getJsonTextProperty(entity, ""kind"");",1,1,0.14285714285714285,477
+79cba8301fef86f355b87c794ca860f314a739f0,},1,1,0.14285714285714285,478
+79cba8301fef86f355b87c794ca860f314a739f0,return null;,1,1,0.14285714285714285,479
+79cba8301fef86f355b87c794ca860f314a739f0,return Strings.firstNonBlank(,1,1,0.14285714285714285,480
+79cba8301fef86f355b87c794ca860f314a739f0,import io.fabric8.kubernetes.api.model.Template;,1,1,0.14285714285714285,481
+79cba8301fef86f355b87c794ca860f314a739f0,*,0,0,0.0,482
+79cba8301fef86f355b87c794ca860f314a739f0,routeSpec.setTo(objectRef);,0,0,0.0,483
+79cba8301fef86f355b87c794ca860f314a739f0,route.setSpec(routeSpec);,0,0,0.0,484
+79cba8301fef86f355b87c794ca860f314a739f0,/**,0,0,0.0,485
+79cba8301fef86f355b87c794ca860f314a739f0,private boolean recreate;,1,0,0.0,486
+79cba8301fef86f355b87c794ca860f314a739f0,*/,0,0,0.0,487
+79cba8301fef86f355b87c794ca860f314a739f0,/**,1,0,0.0,488
+79cba8301fef86f355b87c794ca860f314a739f0,* Should we update resources by deleting them first and then creating them again?,1,0,0.0,489
+79cba8301fef86f355b87c794ca860f314a739f0,*/,1,0,0.0,490
+79cba8301fef86f355b87c794ca860f314a739f0,objectRef.setNamespace(namespace);,0,0,0.0,491
+79cba8301fef86f355b87c794ca860f314a739f0,itemArray.add(node);,1,0,0.0,492
+79cba8301fef86f355b87c794ca860f314a739f0,objectRef.setName(id);,0,0,0.0,493
+79cba8301fef86f355b87c794ca860f314a739f0,* Converts the DTO to a JsonNode,1,0,0.0,494
+79cba8301fef86f355b87c794ca860f314a739f0,"config.set(""items"", factory.arrayNode());",1,0,0.0,495
+79cba8301fef86f355b87c794ca860f314a739f0,"config.set(""kind"", factory.textNode(""List""));",1,0,0.0,496
+79cba8301fef86f355b87c794ca860f314a739f0,"config.set(""apiVersion"", factory.textNode(defaultApiVersion));",1,0,0.0,497
+79cba8301fef86f355b87c794ca860f314a739f0,itemArray.add(item);,1,0,0.0,498
+79cba8301fef86f355b87c794ca860f314a739f0,size--;,1,0,0.0,499
+79cba8301fef86f355b87c794ca860f314a739f0,i--;,1,0,0.0,500
+79cba8301fef86f355b87c794ca860f314a739f0,itemArray.remove(i);,1,0,0.0,501
+79cba8301fef86f355b87c794ca860f314a739f0,// lets remove this one,1,0,0.0,502
+79cba8301fef86f355b87c794ca860f314a739f0,controller.setRecreateMode(recreate);,1,0,0.0,503
+79cba8301fef86f355b87c794ca860f314a739f0,"itemArray.set(lastNonService, jsonNode);",1,0,0.0,504
+79cba8301fef86f355b87c794ca860f314a739f0,private boolean failOnError;,1,0,0.0,505
+79cba8301fef86f355b87c794ca860f314a739f0,"getAdditionalPropertyText(entity.getAdditionalProperties(), ""name""),",1,0,0.0,506
+79cba8301fef86f355b87c794ca860f314a739f0,controller.setThrowExceptionOnError(failOnError);,1,0,0.0,507
+79cba8301fef86f355b87c794ca860f314a739f0,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""id"")",1,0,0.0,508
+79cba8301fef86f355b87c794ca860f314a739f0,objects.add(jsonNode);,1,0,0.0,509
+79cba8301fef86f355b87c794ca860f314a739f0,"getLog().info(""OpenShift platform detected"");",0,0,0.0,510
+79cba8301fef86f355b87c794ca860f314a739f0,"KubernetesHelper.setName(route, namespace, routeId);",0,0,0.0,511
+79cba8301fef86f355b87c794ca860f314a739f0,answer.add(answer);,1,0,0.0,512
+79cba8301fef86f355b87c794ca860f314a739f0,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""namespace""));",1,0,0.0,513
+79cba8301fef86f355b87c794ca860f314a739f0,"getAdditionalPropertyText(entity.getAdditionalProperties(), ""namespace""),",1,0,0.0,514
+79cba8301fef86f355b87c794ca860f314a739f0,objectMeta.setName(name);,1,0,0.0,515
+79cba8301fef86f355b87c794ca860f314a739f0,objectMeta.setNamespace(namespace);,1,0,0.0,516
+79cba8301fef86f355b87c794ca860f314a739f0,getOrCreateMetadata(entity).setName(name);,1,0,0.0,517
+79cba8301fef86f355b87c794ca860f314a739f0,);,1,0,0.0,518
+79cba8301fef86f355b87c794ca860f314a739f0,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""name""),",1,0,0.0,519
+79cba8301fef86f355b87c794ca860f314a739f0,objectRef.setName(id);,1,0,0.0,520
+79cba8301fef86f355b87c794ca860f314a739f0,entity.setMetadata(metadata);,1,0,0.0,521
+79cba8301fef86f355b87c794ca860f314a739f0,answer.add((HasMetadata) entity);,0,0,0.0,522
+79cba8301fef86f355b87c794ca860f314a739f0,metadata.setName(name);,0,0,0.0,523
+79cba8301fef86f355b87c794ca860f314a739f0,metadata.setNamespace(namespace);,0,0,0.0,524
+79cba8301fef86f355b87c794ca860f314a739f0,*/,0,0,0.0,525
+79cba8301fef86f355b87c794ca860f314a739f0,/**,0,0,0.0,526
+79cba8301fef86f355b87c794ca860f314a739f0,kubernetes.setNamespace(namespace);,1,0,0.0,527
+79cba8301fef86f355b87c794ca860f314a739f0,route.setSpec(routeSpec);,1,0,0.0,528
+79cba8301fef86f355b87c794ca860f314a739f0,routeSpec.setTo(objectRef);,1,0,0.0,529
+79cba8301fef86f355b87c794ca860f314a739f0,objectRef.setNamespace(namespace);,1,0,0.0,530
+79cba8301fef86f355b87c794ca860f314a739f0,"itemArray.set(i, nonService);",1,0,0.0,531
+79cba8301fef86f355b87c794ca860f314a739f0,* @param itemArray,0,0,0.0,532
+79cba8301fef86f355b87c794ca860f314a739f0,"objectNode.set(""objects"", itemArray);",1,0,0.0,533
+79cba8301fef86f355b87c794ca860f314a739f0,*/,0,0,0.0,534
+79cba8301fef86f355b87c794ca860f314a739f0,"list.set(lastNonService, item);",0,0,0.0,535
+79cba8301fef86f355b87c794ca860f314a739f0,"list.set(i, nonService);",0,0,0.0,536
+79cba8301fef86f355b87c794ca860f314a739f0,removeDuplicates(items);,0,0,0.0,537
+79cba8301fef86f355b87c794ca860f314a739f0,moveServicesToFrontOfArray(items);,0,0,0.0,538
+79cba8301fef86f355b87c794ca860f314a739f0,"addObjectsToItemArray(items, object);",0,0,0.0,539
+79cba8301fef86f355b87c794ca860f314a739f0,list.setItems(items);,0,0,0.0,540
+79cba8301fef86f355b87c794ca860f314a739f0,buffer.append(text);,0,0,0.0,541
+79cba8301fef86f355b87c794ca860f314a739f0,"buffer.append("", "");",0,0,0.0,542
+79cba8301fef86f355b87c794ca860f314a739f0,"appendSummaryText(buffer, podState);",0,0,0.0,543
+79cba8301fef86f355b87c794ca860f314a739f0,"portText.append("", "");",0,0,0.0,544
+79cba8301fef86f355b87c794ca860f314a739f0,/**,0,0,0.0,545
+79cba8301fef86f355b87c794ca860f314a739f0,i--;,0,0,0.0,546
+79cba8301fef86f355b87c794ca860f314a739f0,* If enabled then updates are performed by deleting the resource first then rereating it,1,0,0.0,547
+79cba8301fef86f355b87c794ca860f314a739f0,private boolean updateViaDeleteAndCreate;,1,0,0.0,548
+79cba8301fef86f355b87c794ca860f314a739f0,*/,0,0,0.0,549
+79cba8301fef86f355b87c794ca860f314a739f0,* changing,0,0,0.0,550
+79cba8301fef86f355b87c794ca860f314a739f0,* recreate ReplicationControllers and Pods but leave Services as they are to avoid the portalIP addresses,0,0,0.0,551
+79cba8301fef86f355b87c794ca860f314a739f0,/**,0,0,0.0,552
+79cba8301fef86f355b87c794ca860f314a739f0,* If enabled then updates are performed by deleting the resource first then creating it,0,0,0.0,553
+79cba8301fef86f355b87c794ca860f314a739f0,return;,0,0,0.0,554
+79cba8301fef86f355b87c794ca860f314a739f0,private boolean ignoreServiceMode;,0,0,0.0,555
+79cba8301fef86f355b87c794ca860f314a739f0,private boolean recreateMode;,0,0,0.0,556
+79cba8301fef86f355b87c794ca860f314a739f0,itemArray.remove(i);,0,0,0.0,557
+79cba8301fef86f355b87c794ca860f314a739f0,size--;,0,0,0.0,558
+79cba8301fef86f355b87c794ca860f314a739f0,ArrayNode objects;,1,0,0.0,559
+79cba8301fef86f355b87c794ca860f314a739f0,config.setItems(itemList);,1,0,0.0,560
+79cba8301fef86f355b87c794ca860f314a739f0,// lets move all the content into the template,1,0,0.0,561
+79cba8301fef86f355b87c794ca860f314a739f0,// TODO combine templates...,1,0,0.0,562
+79cba8301fef86f355b87c794ca860f314a739f0,* If we have any templates inside the itemArray then lets unpack them and combine any parameters,1,0,0.0,563
+79cba8301fef86f355b87c794ca860f314a739f0,removeDuplicates(itemArray);,1,0,0.0,564
+79cba8301fef86f355b87c794ca860f314a739f0,moveServicesToFrontOfArray(itemArray);,1,0,0.0,565
+79cba8301fef86f355b87c794ca860f314a739f0,"addObjectsToItemArray(itemArray, object);",1,0,0.0,566
+79cba8301fef86f355b87c794ca860f314a739f0,"objectNode.set(""items"", itemArray);",1,0,0.0,567
+79cba8301fef86f355b87c794ca860f314a739f0,ArrayNode itemArray;,1,0,0.0,568
+79cba8301fef86f355b87c794ca860f314a739f0,/**,1,0,0.0,569
+79cba8301fef86f355b87c794ca860f314a739f0,itemList.add(entity);,1,0,0.0,570
+79cba8301fef86f355b87c794ca860f314a739f0,"getJsonTextProperty(entity, ""id""));",1,0,0.0,571
+79cba8301fef86f355b87c794ca860f314a739f0,// lets remove this one,0,0,0.0,572
+79cba8301fef86f355b87c794ca860f314a739f0,"getJsonTextProperty(entity, ""name""),",1,0,0.0,573
+79cba8301fef86f355b87c794ca860f314a739f0,"getJsonTextProperty(entity, ""metadata"", ""id""),",1,0,0.0,574
+79cba8301fef86f355b87c794ca860f314a739f0,"getJsonTextProperty(entity, ""metadata"", ""name""),",1,0,0.0,575
+79cba8301fef86f355b87c794ca860f314a739f0,*/,1,0,0.0,576
+79cba8301fef86f355b87c794ca860f314a739f0,TODO Config,1,0,0.0,577
+79cba8301fef86f355b87c794ca860f314a739f0,/*,1,0,0.0,578
+79cba8301fef86f355b87c794ca860f314a739f0,break;,0,0,0.0,579
+79cba8301fef86f355b87c794ca860f314a739f0,destinationList.add(object);,0,0,0.0,580
+79cba8301fef86f355b87c794ca860f314a739f0,destinationList.addAll(collection);,0,0,0.0,581
+79cba8301fef86f355b87c794ca860f314a739f0,destinationList.addAll(items);,0,0,0.0,582
+79cba8301fef86f355b87c794ca860f314a739f0,routes.getItems();,0,0,0.0,583

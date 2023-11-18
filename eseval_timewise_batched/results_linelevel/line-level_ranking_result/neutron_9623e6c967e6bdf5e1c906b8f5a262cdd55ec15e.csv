@@ -1,0 +1,283 @@
+commit_id,line,line_level_label,count,line_score,row
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# bind. Note that is is OK for the same driver to bind at,0,8,1.0,1
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Attempting to bind port %(port)s on host %(host)s """,0,7,0.875,2
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(_(""Attempting to bind port %(port)s on """,1,7,0.875,3
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Attempting to bind port %(port)s on """,0,6,0.75,4
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(_(""Refusing to bind due to unsupported vnic_type: %s""),",1,6,0.75,5
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.error(_LE(""Failed to bind port %(port)s on host %(host)s""),",0,6,0.75,6
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# REVISIT(irenab) Add support for vnic_type for plugins that,1,6,0.75,7
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# Currently implemented for ML2 plugin that does not use,1,6,0.75,8
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    License for the specific language governing permissions and limitations,1,5,0.625,9
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if not binding_vnic_set and binding_vnic is not None:,1,5,0.625,10
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if not binding_profile_set and binding_profile is not None:,1,5,0.625,11
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.625,12
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT",1,5,0.625,13
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    License for the specific language governing permissions and limitations,1,5,0.625,14
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Refusing to bind due to unsupported vnic_type: %s"",",0,5,0.625,15
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# level to one of the segments we are currently trying to,0,4,0.5,16
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,host = port_db.portbinding.host if port_db.portbinding else None,1,4,0.5,17
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,host = bind_port.host if bind_port else None,1,4,0.5,18
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.error(_LE(""Exceeded maximum binding levels attempting to bind """,0,4,0.5,19
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# this driver if the same driver has already bound at a higher,0,4,0.5,20
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"# To prevent a possible binding loop, don't try to bind with",0,4,0.5,21
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,revision = '27cc183af192',1,3,0.375,22
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.api.definitions import portbindings,1,3,0.375,23
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.api.definitions import port as port_def,1,3,0.375,24
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.375,25
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.375,26
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    a copy of the License at,1,3,0.375,27
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    not use this file except in compliance with the License. You may obtain,1,3,0.375,28
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron.db import migration,1,3,0.375,29
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from alembic import op,1,3,0.375,30
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the",1,3,0.375,31
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    a copy of the License at,1,3,0.375,32
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    not use this file except in compliance with the License. You may obtain,1,3,0.375,33
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""port %(port)s on host %(host)s""),",0,3,0.375,34
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.warning(_(""Attempting to bind with dead agent: %s""),",1,3,0.375,35
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.warning(_LW(""Attempting to bind with dead agent: %s""),",0,3,0.375,36
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"host = sa.Column(sa.String(255), nullable=False, default='')",1,3,0.375,37
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"host = sa.Column(sa.String(255), nullable=False, default='',",0,3,0.375,38
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    Unless required by applicable law or agreed to in writing, software",1,3,0.375,39
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.25,40
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.plugins import directory,1,2,0.25,41
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron.db import models_v2,1,2,0.25,42
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron.db.models import portbinding as pmodels,1,2,0.25,43
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.api import validators,1,2,0.25,44
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.db import resource_extend,1,2,0.25,45
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.db import model_query,1,2,0.25,46
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron_lib.db import api as db_api,1,2,0.25,47
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"values = filters and filters.get(portbindings.HOST_ID, [])",1,2,0.25,48
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron.db import portbindings_base,1,2,0.25,49
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,host_set = validators.is_attr_set(host),1,2,0.25,50
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if not values:,1,2,0.25,51
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# can handle more than one type.,1,2,0.25,52
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,host = port_data.get(portbindings.HOST_ID),1,2,0.25,53
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if not bind_port:,1,2,0.25,54
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,bind_port.host = host,1,2,0.25,55
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,return bind_port.host if bind_port else None,1,2,0.25,56
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,port_res[portbindings.HOST_ID] = host,1,2,0.25,57
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"if not isinstance(plugin, PortBindingMixin):",1,2,0.25,58
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    under the License.,1,2,0.25,59
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,import sqlalchemy as sa,1,2,0.25,60
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from oslo_config import cfg,1,2,0.25,61
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if (level.driver == driver and,0,2,0.25,62
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,supported_vnic_types = (supported_vnic_types or,0,2,0.25,63
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"vif_details = sa.Column(sa.String(4095), nullable=False, default='',",0,2,0.25,64
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"vif_details = sa.Column(sa.String(4095), nullable=False, default='')",1,2,0.25,65
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"if not self._bind_port_level(context, 0,",0,2,0.25,66
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,binding = context._binding,0,2,0.25,67
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"if not self._check_driver_to_bind(driver, segments_to_bind,",0,2,0.25,68
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# Continue binding another level.,0,2,0.25,69
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# Binding complete.,0,2,0.25,70
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,from neutron.openstack.common.gettextutils import _LW,0,2,0.25,71
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'host': binding.host,",1,2,0.25,72
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# Copyright 2014 OpenStack Foundation,1,2,0.25,73
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"#    Licensed under the Apache License, Version 2.0 (the ""License""); you may",1,2,0.25,74
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#    under the License.,1,2,0.25,75
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"# revision identifiers, used by Alembic.",1,2,0.25,76
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,down_revision = '4ca36cfc898c',1,2,0.25,77
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'vnic_type': binding.vnic_type,",1,2,0.25,78
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,:param vnic_type_prohibit_list: VNIC types administratively prohibited,0,2,0.25,79
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,vnic_arg = {portbindings.VNIC_TYPE: self.vnic_type},1,1,0.125,80
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def __init__(self, agent_type,",1,1,0.125,81
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,self.supported_vnic_types = self.prohibit_list_supported_vnic_types(,0,1,0.125,82
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,by the mechanism driver,0,1,0.125,83
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,:return The supported vnic_types minus those ones present in,0,1,0.125,84
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def __init__(self, agent_type, supported_vnic_types):",0,1,0.125,85
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"with self.port(name='name1',",1,1,0.125,86
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if migration.schema_has_table('ml2_port_bindings'):,1,1,0.125,87
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"nullable=False,",1,1,0.125,88
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"op.add_column('ml2_port_bindings',",1,1,0.125,89
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,Revises: 4ca36cfc898c,1,1,0.125,90
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,91
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,Revision ID: 27cc183af192,1,1,0.125,92
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# Copyright 2013 IBM Corp.,1,1,0.125,93
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,supported_vnic_types=[portbindings.VNIC_NORMAL]):,1,1,0.125,94
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,binding_vnic = port.get(portbindings.VNIC_TYPE),1,1,0.125,95
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# All Rights Reserved.,1,1,0.125,96
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#,1,1,0.125,97
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#         http://www.apache.org/licenses/LICENSE-2.0,1,1,0.125,98
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,query = query.outerjoin(,1,1,0.125,99
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,query = query.filter(pmodels.PortBindingPort.host.in_(values)),1,1,0.125,100
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,class PortBindingMixin(portbindings_base.PortBindingBaseMixin):,1,1,0.125,101
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,binding_profile = port.get(portbindings.PROFILE),1,1,0.125,102
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,binding_profile_set = validators.is_attr_set(binding_profile),1,1,0.125,103
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,binding_vnic_set = validators.is_attr_set(binding_vnic),1,1,0.125,104
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# PortBindingMixin.,1,1,0.125,105
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,bind_port = context.session.query(,1,1,0.125,106
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if host_set:,1,1,0.125,107
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,plugin = directory.get_plugin(),1,1,0.125,108
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name1',",1,1,0.125,109
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,#,1,1,0.125,110
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,bind_port = (,1,1,0.125,111
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,import contextlib,1,1,0.125,112
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""host: %(host)s, """,0,1,0.125,113
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"with self.port(name='name1', arg_list=(portbindings.VNIC_TYPE,),",0,1,0.125,114
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(_(""Checking agent: %s""), agent)",1,1,0.125,115
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(_(""Bound using segment: %s""), segment)",1,1,0.125,116
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,MAX_BINDING_LEVELS = 10,0,1,0.125,117
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'host': context.host,",0,1,0.125,118
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,binding.vif_type = portbindings.VIF_TYPE_BINDING_FAILED,0,1,0.125,119
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,'host': context.host}),0,1,0.125,120
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,port_id = context._port['id'],0,1,0.125,121
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,return False,0,1,0.125,122
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,next_segments = context._next_segments_to_bind,0,1,0.125,123
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if next_segments:,0,1,0.125,124
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"if self._bind_port_level(context, level + 1,",0,1,0.125,125
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,return True,0,1,0.125,126
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Bound port: %(port)s, """,0,1,0.125,127
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,if level == MAX_BINDING_LEVELS:,0,1,0.125,128
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""vif_type: %(vif_type)s, """,0,1,0.125,129
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""host: %(host)s, """,1,1,0.125,130
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""vif_details: %(vif_details)s, """,0,1,0.125,131
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"with self.port(name='name1',",0,1,0.125,132
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'host': context.host,",1,1,0.125,133
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""vif_details: %(vif_details)s, """,1,1,0.125,134
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""profile: %(profile)s, """,1,1,0.125,135
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""vnic_type: %(vnic_type)s, """,1,1,0.125,136
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""vif_type: %(vif_type)s, """,1,1,0.125,137
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"with self.port(name='name1', arg_list=(portbindings.HOST_ID,),",0,1,0.125,138
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Bound port: %(port)s, """,1,1,0.125,139
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context._binding_levels = [,1,1,0.125,140
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,port_id = context._port['id'],1,1,0.125,141
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,for level in binding_levels:,0,1,0.125,142
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,# multiple levels using different segments.,0,1,0.125,143
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"supported_vnic_types=None, vnic_type_prohibit_list=None):",0,0,0.0,144
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"query_params='%s=%s' % (portbindings.VNIC_TYPE,",1,0,0.0,145
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,self.vnic_type)),1,0,0.0,146
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,prohibit_list,0,0,0.0,147
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.info(""%s's supported_vnic_types: %s"", self.agent_type,",0,0,0.0,148
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,vnic_types),0,0,0.0,149
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,supported_vnic_types),0,0,0.0,150
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,(original_model.id == pmodels.PortBindingPort.port_id)),1,0,0.0,151
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,[portbindings.VNIC_NORMAL]),0,0,0.0,152
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.supported_vnic_types, vnic_type_prohibit_list)",0,0,0.0,153
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,:return The prohibited vnic_types,1,0,0.0,154
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"cfg.CONF.set_default('allow_overlapping_ips', True)",1,0,0.0,155
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _port_model_hook(context, original_model, query):",1,0,0.0,156
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"pmodels.PortBindingPort,",1,0,0.0,157
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,self._test_list_resources(,1,0,0.0,158
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'port', (port1, port2, port3),",1,0,0.0,159
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"is_admin=False,",1,0,0.0,160
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,**vnic_arg) as port3:,1,0,0.0,161
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name3',",1,0,0.0,162
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name2') as port2,\",1,0,0.0,163
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**vnic_arg) as port1,\",1,0,0.0,164
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"arg_list=(portbindings.VNIC_TYPE,),",1,0,0.0,165
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"cfg.CONF.set_default('allow_overlapping_ips', True)",1,0,0.0,166
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,def test_ports_vnic_type_list(self):,1,0,0.0,167
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,server_default='normal')),1,0,0.0,168
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"sa.Column('vnic_type', sa.String(length=64),",1,0,0.0,169
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,def upgrade():,1,0,0.0,170
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""""""",1,0,0.0,171
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,Create Date: 2014-02-09 12:19:21.362967,1,0,0.0,172
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""""""ml2_vnic_type",1,0,0.0,173
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"read_deleted=""no"")",1,0,0.0,174
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _port_result_filter_hook(query, filters):",1,0,0.0,175
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,return query,1,0,0.0,176
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context.session.add(,1,0,0.0,177
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,@resource_extend.has_resource_extenders,1,0,0.0,178
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"super(PortBindingMixin, self).extend_port_dict_binding(",1,0,0.0,179
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,with db_api.CONTEXT_READER.using(context):,1,0,0.0,180
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context.session.query(pmodels.PortBindingPort.host).,1,0,0.0,181
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,filter_by(port_id=port_id).,1,0,0.0,182
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,first(),1,0,0.0,183
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,),1,0,0.0,184
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _extend_port_dict_binding_host(self, port_res, host):",1,0,0.0,185
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"port_res, None)",1,0,0.0,186
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self._extend_port_dict_binding_host(port, host)",1,0,0.0,187
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def extend_port_dict_binding(self, port_res, port_db):",1,0,0.0,188
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self._extend_port_dict_binding_host(port_res, host)",1,0,0.0,189
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,@staticmethod,1,0,0.0,190
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,@resource_extend.extends([port_def.COLLECTION_NAME]),1,0,0.0,191
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _extend_port_dict_binding(port_res, port_db):",1,0,0.0,192
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,return,1,0,0.0,193
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def get_port_host(self, context, port_id):",1,0,0.0,194
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,else:,1,0,0.0,195
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def __new__(cls, *args, **kwargs):",1,0,0.0,196
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"return super(PortBindingMixin, cls).__new__(cls, *args, **kwargs)",1,0,0.0,197
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,model_query.register_hook(,1,0,0.0,198
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"models_v2.Port,",1,0,0.0,199
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""portbindings_port"",",1,0,0.0,200
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"query_hook=_port_model_hook,",1,0,0.0,201
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"filter_hook=None,",1,0,0.0,202
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,result_filters=_port_result_filter_hook),1,0,0.0,203
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _process_portbindings_create_and_update(self, context, port_data,",1,0,0.0,204
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"pmodels.PortBindingPort(port_id=port['id'], host=host))",1,0,0.0,205
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,port):,1,0,0.0,206
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,del port[portbindings.PROFILE],1,0,0.0,207
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,del port[portbindings.VNIC_TYPE],1,0,0.0,208
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,with db_api.CONTEXT_WRITER.using(context):,1,0,0.0,209
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,pmodels.PortBindingPort).filter_by(port_id=port['id']).first(),1,0,0.0,210
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**vnic_arg),) as (port1, port2, port3):",1,0,0.0,211
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,is_admin=False),0,0,0.0,212
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**vnic_arg), self.port(name='name2'):",0,0,0.0,213
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**vnic_arg),",1,0,0.0,214
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"level=level,",0,0,0.0,215
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,'segments': segments_to_bind}),0,0,0.0,216
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context._binding_levels):,0,0,0.0,217
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,continue,0,0,0.0,218
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context._prepare_to_bind(segments_to_bind),0,0,0.0,219
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context._push_binding_level(,0,0,0.0,220
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"host=context.host,",0,0,0.0,221
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,segment_id=segment)),0,0,0.0,222
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _check_driver_to_bind(self, driver, segments_to_bind, binding_levels):",0,0,0.0,223
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,next_segments):,0,0,0.0,224
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,else:,0,0,0.0,225
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context._pop_binding_level(),0,0,0.0,226
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""binding_levels: %(binding_levels)s"",",0,0,0.0,227
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'vif_type': binding.vif_type,",0,0,0.0,228
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'vif_details': binding.vif_details,",0,0,0.0,229
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'level': level,",0,0,0.0,230
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"{'port': port_id,",0,0,0.0,231
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""at level %(level)s using segments %(segments)s"",",0,0,0.0,232
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"def _bind_port_level(self, context, level, segments_to_bind):",0,0,0.0,233
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context.network.network_segments):,0,0,0.0,234
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,context._clear_binding_levels(),0,0,0.0,235
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"{'port': context.current['id'],",0,0,0.0,236
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""network %(network)s""),",1,0,0.0,237
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Bound using segment: %s"", segment)",0,0,0.0,238
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"LOG.debug(""Checking agent: %s"", agent)",0,0,0.0,239
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""network %(network)s"",",0,0,0.0,240
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,default=''),1,0,0.0,241
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,default=portbindings.VNIC_NORMAL),1,0,0.0,242
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"default='', server_default='')",0,0,0.0,243
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,server_default=portbindings.VNIC_NORMAL),0,0,0.0,244
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"default=portbindings.VNIC_NORMAL,",0,0,0.0,245
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,server_default=''),0,0,0.0,246
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,'binding_levels': context.binding_levels}),0,0,0.0,247
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,level.segment_id in segments_to_bind):,0,0,0.0,248
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"arg_list=(portbindings.VNIC_TYPE,),",1,0,0.0,249
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,with contextlib.nested(,1,0,0.0,250
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,**host_arg) as port3:,0,0,0.0,251
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"arg_list=(portbindings.VNIC_TYPE,),",0,0,0.0,252
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**vnic_arg) as port1,\",0,0,0.0,253
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name2') as port2,\",0,0,0.0,254
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,**vnic_arg) as port3:,0,0,0.0,255
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"with contextlib.nested(self.port(), self.port()):",1,0,0.0,256
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"arg_list=(portbindings.HOST_ID,),",1,0,0.0,257
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"{'port': port_id,",1,0,0.0,258
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**host_arg),",1,0,0.0,259
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,self.port(name='name2')):,1,0,0.0,260
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name2')) as (port1, port2):",1,0,0.0,261
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name2'),",1,0,0.0,262
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name3',",1,0,0.0,263
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**host_arg),) as (port1, _port2, port3):",1,0,0.0,264
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name3',",0,0,0.0,265
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"self.port(name='name2'),\",0,0,0.0,266
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**host_arg) as port1,\",0,0,0.0,267
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**host_arg) as port1, self.port(name='name2') as port2:",0,0,0.0,268
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"**host_arg), self.port(name='name2'):",0,0,0.0,269
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"arg_list=(portbindings.HOST_ID,),",0,0,0.0,270
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"with self.port(), self.port():",0,0,0.0,271
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,return,1,0,0.0,272
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,'binding_levels': context.binding_levels}),1,0,0.0,273
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'vif_details': binding.vif_details,",1,0,0.0,274
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'vif_type': binding.vif_type,",1,0,0.0,275
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"'profile': binding.profile,",1,0,0.0,276
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"""binding_levels: %(binding_levels)s"",",1,0,0.0,277
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,],1,0,0.0,278
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,segment_id=segment),1,0,0.0,279
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"level=0,",1,0,0.0,280
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"host=binding.host,",1,0,0.0,281
+9623e6c967e6bdf5e1c906b8f5a262cdd55ec15e,"plugin.extend_port_dict_binding(port_res, port_db)",1,0,0.0,282

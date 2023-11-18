@@ -1,0 +1,220 @@
+commit_id,line,line_level_label,count,line_score,row
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE = portbindings.VIF_TYPE_OVS,1,3,1.0,1
+e02c746a94c3024678dd6b3458573667b1cb9d73,mtu = self.conf.network_device_mtu or mtu,0,3,1.0,2
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE = portbindings.VIF_TYPE_IVS,1,2,0.6666666666666666,3
+e02c746a94c3024678dd6b3458573667b1cb9d73,"dev_name = dev_name.replace(prefix or self.DEV_NAME_PREFIX,",1,2,0.6666666666666666,4
+e02c746a94c3024678dd6b3458573667b1cb9d73,"cmd = ['ivs-ctl', 'add-port', device_name]",1,2,0.6666666666666666,5
+e02c746a94c3024678dd6b3458573667b1cb9d73,ip = ip_lib.IPWrapper(),1,2,0.6666666666666666,6
+e02c746a94c3024678dd6b3458573667b1cb9d73,"root_dev, ns_dev = ip.add_veth(tap_name, device_name)",1,2,0.6666666666666666,7
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def unplug(self, device_name, bridge=None, namespace=None, prefix=None):",1,2,0.6666666666666666,8
+e02c746a94c3024678dd6b3458573667b1cb9d73,"cmd = ['ivs-ctl', 'del-port', tap_name]",1,2,0.6666666666666666,9
+e02c746a94c3024678dd6b3458573667b1cb9d73,"device = ip_lib.IPDevice(device_name, namespace=namespace)",1,2,0.6666666666666666,10
+e02c746a94c3024678dd6b3458573667b1cb9d73,devname = 'ns-0',1,2,0.6666666666666666,11
+e02c746a94c3024678dd6b3458573667b1cb9d73,HAS_PORT_FILTER = False,1,2,0.6666666666666666,12
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def plug_new(self, network_id, port_id, device_name, mac_address,",1,1,0.3333333333333333,13
+e02c746a94c3024678dd6b3458573667b1cb9d73,br = interface.IVSInterfaceDriver(self.conf),1,1,0.3333333333333333,14
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.debug(""Unplugged interface '%s'"", device_name)",1,1,0.3333333333333333,15
+e02c746a94c3024678dd6b3458573667b1cb9d73,namespace_obj = ip.ensure_namespace(namespace),1,1,0.3333333333333333,16
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev = ip.device(device_name),1,1,0.3333333333333333,17
+e02c746a94c3024678dd6b3458573667b1cb9d73,"tap_name = self._get_tap_name(device_name, prefix)",1,1,0.3333333333333333,18
+e02c746a94c3024678dd6b3458573667b1cb9d73,DEV_NAME_PREFIX = constants.TAP_DEVICE_PREFIX,1,1,0.3333333333333333,19
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _ivs_add_port(self, device_name, port_id, mac_address):",1,1,0.3333333333333333,20
+e02c746a94c3024678dd6b3458573667b1cb9d73,return dev_name,1,1,0.3333333333333333,21
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _get_tap_name(self, dev_name, prefix=None):",1,1,0.3333333333333333,22
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.DEV_NAME_PREFIX = 'ns-',1,1,0.3333333333333333,23
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.assertEqual('ns-abcdef01-12', device_name)",1,1,0.3333333333333333,24
+e02c746a94c3024678dd6b3458573667b1cb9d73,device_name = br.get_device_name(FakePort()),1,1,0.3333333333333333,25
+e02c746a94c3024678dd6b3458573667b1cb9d73,_ns_dev = mock.Mock(),1,1,0.3333333333333333,26
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, devname=None, namespace=None, prefix=None):",1,1,0.3333333333333333,27
+e02c746a94c3024678dd6b3458573667b1cb9d73,return dev == 'indigo',1,1,0.3333333333333333,28
+e02c746a94c3024678dd6b3458573667b1cb9d73,ivs = interface.IVSInterfaceDriver(self.conf),1,1,0.3333333333333333,29
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.device_exists.side_effect = device_exists,1,1,0.3333333333333333,30
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev = mock.Mock(),1,1,0.3333333333333333,31
+e02c746a94c3024678dd6b3458573667b1cb9d73,ipv6_status.return_value = True,1,1,0.3333333333333333,32
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev = mock.Mock(),1,1,0.3333333333333333,33
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.ip().add_veth = mock.Mock(return_value=(root_dev, _ns_dev))",1,1,0.3333333333333333,34
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.ip().device = mock.Mock(return_value=(ns_dev)),1,1,0.3333333333333333,35
+e02c746a94c3024678dd6b3458573667b1cb9d73,"expected = [mock.call(), mock.call().add_veth('tap0', devname),",1,1,0.3333333333333333,36
+e02c746a94c3024678dd6b3458573667b1cb9d73,"ivsctl_cmd = ['ivs-ctl', 'add-port', 'tap0']",1,1,0.3333333333333333,37
+e02c746a94c3024678dd6b3458573667b1cb9d73,"ivsctl_cmd = ['ivs-ctl', 'del-port', 'tap0']",1,1,0.3333333333333333,38
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.device_exists.return_value = False,1,1,0.3333333333333333,39
+e02c746a94c3024678dd6b3458573667b1cb9d73,device_name),1,1,0.3333333333333333,40
+e02c746a94c3024678dd6b3458573667b1cb9d73,additional_expectation = additional_expectation or [],1,1,0.3333333333333333,41
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.debug(_(""Unplugged interface '%s'""), device_name)",1,1,0.3333333333333333,42
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, devname=None, namespace=None, prefix=None):",0,1,0.3333333333333333,43
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.info(_(""Device %s already exists""), device_name)",0,1,0.3333333333333333,44
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.error(_(""Failed unplugging interface '%s'""), device_name)",0,1,0.3333333333333333,45
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.warn(_(""Device %s already exists""), device_name)",1,1,0.3333333333333333,46
+e02c746a94c3024678dd6b3458573667b1cb9d73,# ivshost is in the test config to override to IVS,0,1,0.3333333333333333,47
+e02c746a94c3024678dd6b3458573667b1cb9d73,"BigSwitchProxyPluginV2TestCase,",1,1,0.3333333333333333,48
+e02c746a94c3024678dd6b3458573667b1cb9d73,self).setUp(),1,1,0.3333333333333333,49
+e02c746a94c3024678dd6b3458573667b1cb9d73,"super(TestNoHostIDVIFOverride, self).setUp()",1,1,0.3333333333333333,50
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.info(_LI(""Device %s already exists""), device_name)",0,1,0.3333333333333333,51
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.debug(""Unplugged interface '%s'"", device_name)",0,1,0.3333333333333333,52
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.error(_LE(""Failed unplugging interface '%s'""), device_name)",0,1,0.3333333333333333,53
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.info(_(""Device %s already exists""), device_name)",1,1,0.3333333333333333,54
+e02c746a94c3024678dd6b3458573667b1cb9d73,test_bindings.PortBindingsTestCase):,1,1,0.3333333333333333,55
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.error(_(""Failed unplugging interface '%s'""), device_name)",1,1,0.3333333333333333,56
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_DVS = 'dvs',1,1,0.3333333333333333,57
+e02c746a94c3024678dd6b3458573667b1cb9d73,prefix=None):,0,1,0.3333333333333333,58
+e02c746a94c3024678dd6b3458573667b1cb9d73,from oslo_config import cfg,0,1,0.3333333333333333,59
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_MIDONET = 'midonet',1,1,0.3333333333333333,60
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_802_QBH = '802.1qbh',1,1,0.3333333333333333,61
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_802_QBG = '802.1qbg',1,1,0.3333333333333333,62
+e02c746a94c3024678dd6b3458573667b1cb9d73,"bridge=None, namespace=None, prefix=None):",1,1,0.3333333333333333,63
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_VHOST_USER = 'vhostuser',1,1,0.3333333333333333,64
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_IOVISOR = 'iovisor',1,1,0.3333333333333333,65
+e02c746a94c3024678dd6b3458573667b1cb9d73,from oslo.config import cfg,1,1,0.3333333333333333,66
+e02c746a94c3024678dd6b3458573667b1cb9d73,VIF_TYPE_IVS = 'ivs',1,1,0.3333333333333333,67
+e02c746a94c3024678dd6b3458573667b1cb9d73,"""removed in Rocky."")",1,0,0.0,68
+e02c746a94c3024678dd6b3458573667b1cb9d73,if mtu:,1,0,0.0,69
+e02c746a94c3024678dd6b3458573667b1cb9d73,"utils.execute(cmd, run_as_root=True)",1,0,0.0,70
+e02c746a94c3024678dd6b3458573667b1cb9d73,"bridge=None, namespace=None, prefix=None, mtu=None):",1,0,0.0,71
+e02c746a94c3024678dd6b3458573667b1cb9d73,"""""""Plug in the interface.""""""",1,0,0.0,72
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.disable_ipv6(),1,0,0.0,73
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self._ivs_add_port(tap_name, port_id, mac_address)",1,0,0.0,74
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.link.set_address(mac_address),1,0,0.0,75
+e02c746a94c3024678dd6b3458573667b1cb9d73,else:,1,0,0.0,76
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.link.set_mtu(mtu),1,0,0.0,77
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.link.set_mtu(mtu),1,0,0.0,78
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.warning(""No MTU configured for port %s"", port_id)",1,0,0.0,79
+e02c746a94c3024678dd6b3458573667b1cb9d73,if namespace:,1,0,0.0,80
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.link.set_up(),1,0,0.0,81
+e02c746a94c3024678dd6b3458573667b1cb9d73,namespace_obj.add_device_to_namespace(ns_dev),1,0,0.0,82
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.link.set_up(),1,0,0.0,83
+e02c746a94c3024678dd6b3458573667b1cb9d73,constants.TAP_DEVICE_PREFIX),1,0,0.0,84
+e02c746a94c3024678dd6b3458573667b1cb9d73,self._test_plug(mtu=9000),1,0,0.0,85
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG, ""IVS interface driver is deprecated in Queens and will be """,1,0,0.0,86
+e02c746a94c3024678dd6b3458573667b1cb9d73,versionutils.report_deprecated_feature(,1,0,0.0,87
+e02c746a94c3024678dd6b3458573667b1cb9d73,try:,1,0,0.0,88
+e02c746a94c3024678dd6b3458573667b1cb9d73,prefix=prefix),1,0,0.0,89
+e02c746a94c3024678dd6b3458573667b1cb9d73,if mtu:,1,0,0.0,90
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.assert_has_calls([mock.call.link.set_mtu(mtu)]),1,0,0.0,91
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.assert_has_calls([mock.call.link.set_mtu(mtu)]),1,0,0.0,92
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, namespace=None, mtu=None):",1,0,0.0,93
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_veth.assert_has_calls([mock.call.link.set_mtu(mtu)]),1,0,0.0,94
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_veth.assert_has_calls([mock.call.link.set_mtu(mtu)]),1,0,0.0,95
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, devname=None, namespace=None,",1,0,0.0,96
+e02c746a94c3024678dd6b3458573667b1cb9d73,from oslo_log import versionutils,1,0,0.0,97
+e02c746a94c3024678dd6b3458573667b1cb9d73,from neutron.agent.linux import utils,1,0,0.0,98
+e02c746a94c3024678dd6b3458573667b1cb9d73,class IVSInterfaceDriver(LinuxInterfaceDriver):,1,0,0.0,99
+e02c746a94c3024678dd6b3458573667b1cb9d73,"""""""Driver for creating an internal interface on an IVS bridge.""""""",1,0,0.0,100
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def __init__(self, conf):",1,0,0.0,101
+e02c746a94c3024678dd6b3458573667b1cb9d73,"super(IVSInterfaceDriver, self).__init__(conf)",1,0,0.0,102
+e02c746a94c3024678dd6b3458573667b1cb9d73,"""""""Unplug the interface.""""""",1,0,0.0,103
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_plug_namespace(self):,1,0,0.0,104
+e02c746a94c3024678dd6b3458573667b1cb9d73,device.link.delete(),1,0,0.0,105
+e02c746a94c3024678dd6b3458573667b1cb9d73,mock.ANY)]),1,0,0.0,106
+e02c746a94c3024678dd6b3458573667b1cb9d73,[mock.call.link.set_address('aa:bb:cc:dd:ee:ff')]),1,0,0.0,107
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.assert_has_calls([mock.call.link.set_mtu(9000)]),1,0,0.0,108
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.assert_has_calls([mock.call.link.set_mtu(9000)]),1,0,0.0,109
+e02c746a94c3024678dd6b3458573667b1cb9d73,if namespace:,1,0,0.0,110
+e02c746a94c3024678dd6b3458573667b1cb9d73,expected.extend(,1,0,0.0,111
+e02c746a94c3024678dd6b3458573667b1cb9d73,"[mock.call().ensure_namespace(namespace),",1,0,0.0,112
+e02c746a94c3024678dd6b3458573667b1cb9d73,mock.call().ensure_namespace().add_device_to_namespace(,1,0,0.0,113
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.ip.assert_has_calls(expected),1,0,0.0,114
+e02c746a94c3024678dd6b3458573667b1cb9d73,except RuntimeError:,1,0,0.0,115
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.assert_has_calls([mock.call.link.set_up()]),1,0,0.0,116
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.assert_has_calls([mock.call.link.set_up()]),1,0,0.0,117
+e02c746a94c3024678dd6b3458573667b1cb9d73,self._test_plug([mock.call().device().link.set_mtu(9000)]),1,0,0.0,118
+e02c746a94c3024678dd6b3458573667b1cb9d73,self._test_plug(namespace='mynamespace'),1,0,0.0,119
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_unplug(self):,1,0,0.0,120
+e02c746a94c3024678dd6b3458573667b1cb9d73,ivs.unplug('ns-0'),1,0,0.0,121
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.ip_dev.assert_has_calls([mock.call('ns-0', namespace=None),",1,0,0.0,122
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.assert_has_calls(,1,0,0.0,123
+e02c746a94c3024678dd6b3458573667b1cb9d73,"execute.assert_called_once_with(ivsctl_cmd, run_as_root=True)",1,0,0.0,124
+e02c746a94c3024678dd6b3458573667b1cb9d73,mtu=9000),1,0,0.0,125
+e02c746a94c3024678dd6b3458573667b1cb9d73,"prefix=prefix,",1,0,0.0,126
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.error(""Failed unplugging interface '%s'"",",1,0,0.0,127
+e02c746a94c3024678dd6b3458573667b1cb9d73,from neutron.agent.linux import utils,1,0,0.0,128
+e02c746a94c3024678dd6b3458573667b1cb9d73,class TestIVSInterfaceDriver(TestBase):,1,0,0.0,129
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_get_device_name(self):,1,0,0.0,130
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_plug_with_prefix(self):,1,0,0.0,131
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self._test_plug(devname='qr-0', prefix='qr-')",1,0,0.0,132
+e02c746a94c3024678dd6b3458573667b1cb9d73,if not devname:,1,0,0.0,133
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def device_exists(dev, namespace=None):",1,0,0.0,134
+e02c746a94c3024678dd6b3458573667b1cb9d73,mock.call().device(devname)],1,0,0.0,135
+e02c746a94c3024678dd6b3458573667b1cb9d73,"with mock.patch.object(utils, 'execute') as execute:",1,0,0.0,136
+e02c746a94c3024678dd6b3458573667b1cb9d73,"ivs.plug('01234567-1234-1234-99',",1,0,0.0,137
+e02c746a94c3024678dd6b3458573667b1cb9d73,"'port-1234',",1,0,0.0,138
+e02c746a94c3024678dd6b3458573667b1cb9d73,"devname,",1,0,0.0,139
+e02c746a94c3024678dd6b3458573667b1cb9d73,"'aa:bb:cc:dd:ee:ff',",1,0,0.0,140
+e02c746a94c3024678dd6b3458573667b1cb9d73,"namespace=namespace,",1,0,0.0,141
+e02c746a94c3024678dd6b3458573667b1cb9d73,"prefix=None, mtu=None):",1,0,0.0,142
+e02c746a94c3024678dd6b3458573667b1cb9d73,if self.conf.network_device_mtu:,1,0,0.0,143
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_plug_mtu(self):,1,0,0.0,144
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.debug(""Driver location: %s"", driver_provider)",0,0,0.0,145
+e02c746a94c3024678dd6b3458573667b1cb9d73,"class TestNoHostIDVIFOverride(test_plugin.TestPortsV2,",1,0,0.0,146
+e02c746a94c3024678dd6b3458573667b1cb9d73,"cfg.CONF.set_override('vif_type', 'ovs', 'NOVA')",1,0,0.0,147
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_port_vif_details(self):,1,0,0.0,148
+e02c746a94c3024678dd6b3458573667b1cb9d73,"class TestBigSwitchVIFOverride(test_plugin.TestPortsV2,",1,0,0.0,149
+e02c746a94c3024678dd6b3458573667b1cb9d73,"super(TestBigSwitchVIFOverride,",1,0,0.0,150
+e02c746a94c3024678dd6b3458573667b1cb9d73,"from neutron.openstack.common.gettextutils import _LE, _LI",0,0,0.0,151
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.error(_LE(""Failed unplugging interface '%s'""),",0,0,0.0,152
+e02c746a94c3024678dd6b3458573667b1cb9d73,from neutron.openstack.common.gettextutils import _LE,1,0,0.0,153
+e02c746a94c3024678dd6b3458573667b1cb9d73,BaseChild(self.conf),1,0,0.0,154
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.error(_(""Failed unplugging interface '%s'""),",1,0,0.0,155
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.debug(_(""Driver location: %s""), driver_provider)",1,0,0.0,156
+e02c746a94c3024678dd6b3458573667b1cb9d73,"from neutron._i18n import _, _LE, _LI, _LW",0,0,0.0,157
+e02c746a94c3024678dd6b3458573667b1cb9d73,"bridge=None, namespace=None, prefix=None, mtu=None):",0,0,0.0,158
+e02c746a94c3024678dd6b3458573667b1cb9d73,"bridge, namespace, prefix, mtu)",0,0,0.0,159
+e02c746a94c3024678dd6b3458573667b1cb9d73,if mtu:,0,0,0.0,160
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.link.set_mtu(mtu),0,0,0.0,161
+e02c746a94c3024678dd6b3458573667b1cb9d73,"cfg.CONF.set_override('vif_type', 'ivs', 'NOVA')",1,0,0.0,162
+e02c746a94c3024678dd6b3458573667b1cb9d73,"super(TestBigSwitchProxyPortsV2IVS,",1,0,0.0,163
+e02c746a94c3024678dd6b3458573667b1cb9d73,def setUp(self):,1,0,0.0,164
+e02c746a94c3024678dd6b3458573667b1cb9d73,"class TestBigSwitchProxyPortsV2IVS(test_plugin.TestPortsV2,",1,0,0.0,165
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.check_bridge_exists(bridge),0,0,0.0,166
+e02c746a94c3024678dd6b3458573667b1cb9d73,try:,0,0,0.0,167
+e02c746a94c3024678dd6b3458573667b1cb9d73,device.link.delete(),0,0,0.0,168
+e02c746a94c3024678dd6b3458573667b1cb9d73,except RuntimeError:,0,0,0.0,169
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.check_bridge_exists(bridge),1,0,0.0,170
+e02c746a94c3024678dd6b3458573667b1cb9d73,device.link.delete(),1,0,0.0,171
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_port_vif_details_default(self):,0,0,0.0,172
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_port_vif_details_override(self):,0,0,0.0,173
+e02c746a94c3024678dd6b3458573667b1cb9d73,class TestVifDifferentDefault(BigSwitchProxyPluginV2TestCase):,0,0,0.0,174
+e02c746a94c3024678dd6b3458573667b1cb9d73,def setup_config_files(self):,0,0,0.0,175
+e02c746a94c3024678dd6b3458573667b1cb9d73,"super(TestVifDifferentDefault, self).setup_config_files()",0,0,0.0,176
+e02c746a94c3024678dd6b3458573667b1cb9d73,"cfg.CONF.set_override('vif_type', 'ivs', 'NOVA')",0,0,0.0,177
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_default_viftype(self):,0,0,0.0,178
+e02c746a94c3024678dd6b3458573667b1cb9d73,with self.port() as port:,0,0,0.0,179
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.assertEqual(port['port']['binding:vif_type'], 'ivs')",0,0,0.0,180
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.link.set_mtu(mtu),0,0,0.0,181
+e02c746a94c3024678dd6b3458573667b1cb9d73,else:,0,0,0.0,182
+e02c746a94c3024678dd6b3458573667b1cb9d73,"LOG.warning(_LW(""No MTU configured for port %s""), port_id)",0,0,0.0,183
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, namespace=None):",0,0,0.0,184
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_veth.assert_has_calls([mock.call.link.set_mtu(9000)]),0,0,0.0,185
+e02c746a94c3024678dd6b3458573667b1cb9d73,import testtools,1,0,0.0,186
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, additional_expectation=None, bridge=None,",1,0,0.0,187
+e02c746a94c3024678dd6b3458573667b1cb9d73,namespace=None):,1,0,0.0,188
+e02c746a94c3024678dd6b3458573667b1cb9d73,namespace=namespace),1,0,0.0,189
+e02c746a94c3024678dd6b3458573667b1cb9d73,expected.extend(additional_expectation),1,0,0.0,190
+e02c746a94c3024678dd6b3458573667b1cb9d73,expected.extend([mock.call().device().link.set_up()]),1,0,0.0,191
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_mtu_int(self):,1,0,0.0,192
+e02c746a94c3024678dd6b3458573667b1cb9d73,self.assertIsNone(self.conf.network_device_mtu),1,0,0.0,193
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.conf.set_override('network_device_mtu', 9000)",1,0,0.0,194
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.assertEqual(self.conf.network_device_mtu, 9000)",1,0,0.0,195
+e02c746a94c3024678dd6b3458573667b1cb9d73,def test_validate_min_ipv6_mtu(self):,1,0,0.0,196
+e02c746a94c3024678dd6b3458573667b1cb9d73,"self.conf.set_override('network_device_mtu', 1200)",1,0,0.0,197
+e02c746a94c3024678dd6b3458573667b1cb9d73,with mock.patch('neutron.common.ipv6_utils.is_enabled') as ipv6_status:,1,0,0.0,198
+e02c746a94c3024678dd6b3458573667b1cb9d73,with testtools.ExpectedException(SystemExit):,1,0,0.0,199
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_veth.assert_has_calls([mock.call.link.set_mtu(9000)]),0,0,0.0,200
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.assert_has_calls([mock.call.link.set_mtu(9000)]),0,0,0.0,201
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_veth.link.set_mtu(mtu),0,0,0.0,202
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.assert_has_calls([mock.call.link.set_mtu(9000)]),0,0,0.0,203
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_veth.link.set_mtu(mtu),0,0,0.0,204
+e02c746a94c3024678dd6b3458573667b1cb9d73,"from neutron._i18n import _, _LE, _LI",1,0,0.0,205
+e02c746a94c3024678dd6b3458573667b1cb9d73,"bridge, namespace, prefix)",1,0,0.0,206
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_dev.link.set_mtu(self.conf.network_device_mtu),1,0,0.0,207
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_dev.link.set_mtu(self.conf.network_device_mtu),1,0,0.0,208
+e02c746a94c3024678dd6b3458573667b1cb9d73,root_veth.link.set_mtu(self.conf.network_device_mtu),1,0,0.0,209
+e02c746a94c3024678dd6b3458573667b1cb9d73,ns_veth.link.set_mtu(self.conf.network_device_mtu),1,0,0.0,210
+e02c746a94c3024678dd6b3458573667b1cb9d73,"def _test_plug(self, bridge=None, namespace=None):",0,0,0.0,211
+e02c746a94c3024678dd6b3458573667b1cb9d73,"namespace=namespace,",0,0,0.0,212
+e02c746a94c3024678dd6b3458573667b1cb9d73,mtu=9000),0,0,0.0,213
+e02c746a94c3024678dd6b3458573667b1cb9d73,expected.extend([,0,0,0.0,214
+e02c746a94c3024678dd6b3458573667b1cb9d73,"mock.call().device().link.set_mtu(9000),",0,0,0.0,215
+e02c746a94c3024678dd6b3458573667b1cb9d73,"mock.call().device().link.set_up(),",0,0,0.0,216
+e02c746a94c3024678dd6b3458573667b1cb9d73,]),0,0,0.0,217
+e02c746a94c3024678dd6b3458573667b1cb9d73,"prefix=prefix,",0,0,0.0,218
+e02c746a94c3024678dd6b3458573667b1cb9d73,mock.call().link.delete()]),1,0,0.0,219

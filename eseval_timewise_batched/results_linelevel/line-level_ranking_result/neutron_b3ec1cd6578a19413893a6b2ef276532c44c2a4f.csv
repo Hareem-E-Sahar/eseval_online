@@ -1,0 +1,494 @@
+commit_id,line,line_level_label,count,line_score,row
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# been no such entry in the table and multiple agent status,0,8,1.0,1
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# been no such entry in the table and multiple agent status,1,8,1.0,2
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# (agent_type, host) pair at the same time (if there has",0,7,0.875,3
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# insert a new agent entry, others will fail and be rolled",0,7,0.875,4
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# (agent_type, host) pair at the same time (if there has",1,7,0.875,5
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# insert a new agent entry, others will fail and be rolled",1,7,0.875,6
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Exception has already been logged by execute,1,7,0.875,7
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE('Policy check error while calling %s!'), f)",0,6,0.75,8
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# a RetryRequest so the API will redo the lookup and the,1,6,0.75,9
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# agent entry, which will be updated multiple times",1,6,0.75,10
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# a RetryRequest so the API will redo the lookup and the,0,6,0.75,11
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# agent entry, which will be updated multiple times",0,6,0.75,12
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# having a unique constraint on (agent_type, host) columns",1,5,0.625,13
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE('Policy check error while calling %s!'),",1,5,0.625,14
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# list operation is happening at the same time as one of,1,5,0.625,15
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# f *must* exist, if not found it is better to let neutron",1,5,0.625,16
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# f *must* exist, if not found it is better to let neutron",0,5,0.625,17
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# list operation is happening at the same time as one of,0,5,0.625,18
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# are trying to insert new rows having the same value of,1,5,0.625,19
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# having a unique constraint on (agent_type, host) columns",0,5,0.625,20
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# are trying to insert new rows having the same value of,0,5,0.625,21
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.exception(_('Unrecoverable error: please check log ',1,5,0.625,22
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.exception(_LE('Unrecoverable error: please check log for ',0,5,0.625,23
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# resource is handled by the core plugin. It might be worth,0,4,0.5,24
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# INSERTs will be issued, because",0,4,0.5,25
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# _get_agent_by_type_and_host() will return the existing,0,4,0.5,26
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception() as ctxt:,1,4,0.5,27
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# back. That means we must retry them one more time: no,1,4,0.5,28
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# INSERTs will be issued, because",1,4,0.5,29
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# _get_agent_by_type_and_host() will return the existing,1,4,0.5,30
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# the parents and its children being deleted. So we issue,0,4,0.5,31
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# explode. Check will be performed with admin context,0,4,0.5,32
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.exception(_LE('Unrecoverable error: please check log ',0,4,0.5,33
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# resource is handled by the core plugin. It might be worth,1,4,0.5,34
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# explode. Check will be performed with admin context,1,4,0.5,35
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# the parents and its children being deleted. So we issue,1,4,0.5,36
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception() as ctxt:,1,4,0.5,37
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# back. That means we must retry them one more time: no,0,4,0.5,38
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,39
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,40
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,41
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception() as ctxt:,1,4,0.5,42
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from xml.etree import ElementTree as etree,1,4,0.5,43
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# xml serializers and view builders have been updated to the current,1,4,0.5,44
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,45
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,46
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,47
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,48
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,49
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,50
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,51
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,52
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,53
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import excutils,1,4,0.5,54
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.common import cache_utils as cache,0,3,0.375,55
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,56
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,57
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,58
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,59
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,60
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg = _(""%(url)s returned with HTTP %(status)d"") % msg_dict",1,3,0.375,61
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# guarantees that only one transaction will succeed and,0,3,0.375,62
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,1,3,0.375,63
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# guarantees that only one transaction will succeed and,1,3,0.375,64
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# NOTE(kevinbenton): a NotFound exception can occur if a,1,3,0.375,65
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# NOTE(salv-orlando): This check currently assumes the parent,0,3,0.375,66
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# check more general,0,3,0.375,67
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# NOTE(kevinbenton): a NotFound exception can occur if a,0,3,0.375,68
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# problem items will be gone.,0,3,0.375,69
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# NOTE(salv-orlando): This check currently assumes the parent,1,3,0.375,70
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# check more general,1,3,0.375,71
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,72
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# problem items will be gone.,1,3,0.375,73
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Unexpected errors are the responsibility of the caller,1,3,0.375,74
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,75
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,76
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,77
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import timeutils,1,3,0.375,78
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,79
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception() as ctx:,0,3,0.375,80
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception(reraise=False) as ctxt:,0,3,0.375,81
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,#NOTE (ameade): the has_atom should be removed after all of the,1,3,0.375,82
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if (hasattr(etree, 'ParseError') and",1,3,0.375,83
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"isinstance(e, getattr(etree, 'ParseError'))):",1,3,0.375,84
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"elif isinstance(e, expat.ExpatError):",1,3,0.375,85
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,86
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,87
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# spec that required all responses include the xmlns:atom, the has_atom",1,3,0.375,88
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,89
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,90
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,91
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,92
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,93
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import timeutils,1,3,0.375,94
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,95
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.openstack.common import importutils,1,3,0.375,96
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import excutils,0,3,0.375,97
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,98
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,99
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""Unable to deserialize body as provided """,0,2,0.25,100
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"from neutron.i18n import _LE, _LI",0,2,0.25,101
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg = _(""'rpc_workers = %d' ignored because start_rpc_listeners """,1,2,0.25,102
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"from neutron.i18n import _LE, _LI",0,2,0.25,103
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,104
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,105
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,106
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,107
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import timeutils,0,2,0.25,108
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import importutils,0,2,0.25,109
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from oslo.utils import timeutils,0,2,0.25,110
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg = _(""%(url)s returned a fault: %(exception)s"") % msg_dict",1,2,0.25,111
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""Unable to deserialize body as provided """,1,2,0.25,112
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"f = getattr(directory.get_plugin(), 'get_%s' % parent_res)",1,2,0.25,113
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# It might happen that two or more concurrent transactions,0,2,0.25,114
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# updates are being processed at the moment). In this case,0,2,0.25,115
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# It might happen that two or more concurrent transactions,1,2,0.25,116
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# updates are being processed at the moment). In this case,1,2,0.25,117
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctxt.reraise = False,1,2,0.25,118
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# having a way to map resources to plugins so to make this,0,2,0.25,119
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"f = getattr(directory.get_plugin(), 'get_%s' % resource_type)",0,2,0.25,120
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception():,0,2,0.25,121
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# having a way to map resources to plugins so to make this,1,2,0.25,122
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception():,1,2,0.25,123
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if no_children_found:,1,2,0.25,124
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctxt.reraise = False,1,2,0.25,125
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,child_pids = [x.strip() for x in raw_pids.split('\n') if x.strip()],1,2,0.25,126
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# use serializer's xmlns for populating Fault generator xmlns,1,2,0.25,127
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""""""Provide the XML namespace to use if none is otherwise specified.""""""",1,2,0.25,128
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception():,1,2,0.25,129
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Adding a migration path to allow us to remove unncessary classes,1,2,0.25,130
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# the request's response,1,2,0.25,131
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return [self._from_xml_node(n, listnames) for n in node]",1,2,0.25,132
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception():,1,2,0.25,133
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctxt.reraise = False,1,2,0.25,134
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception(reraise=False) as ctx:,0,2,0.25,135
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception(reraise=False) as ctx:,0,2,0.25,136
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception():,1,2,0.25,137
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from neutron.common import constants,1,2,0.25,138
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,case will use 'VIRTUAL_ROOT_KEY' as XML root.,1,2,0.25,139
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# Provides a migration path to a cleaner WSGI layer, this",1,2,0.25,140
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"# ""default"" stuff and extreme extensibility isn't being used",1,2,0.25,141
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# flag is to prevent current tests from breaking,1,2,0.25,142
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"for k, v in data.items():",1,2,0.25,143
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Remove link node in order to avoid link node process as,1,2,0.25,144
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Deserialize link node was needed by unit test for verifying,1,2,0.25,145
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,from xml.parsers import expat,1,2,0.25,146
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# root_tag = constants.VIRTUAL_ROOT_KEY and links is not None,1,2,0.25,147
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,elif (len(node) == 0 and node.text):,1,2,0.25,148
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except Exception as e:,1,2,0.25,149
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,with excutils.save_and_reraise_exception():,1,2,0.25,150
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,parseError = False,1,2,0.25,151
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Python2.7,1,2,0.25,152
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# Python2.6,1,2,0.25,153
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if parseError:,1,2,0.25,154
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# is not possible because of the way data are serialized.,1,2,0.25,155
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if (attrNil and attrNil.lower() == 'true'):,1,2,0.25,156
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,elif not len(node) and not node.text:,1,2,0.25,157
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if attrType and attrType in converters:,1,2,0.25,158
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if (attrType and attrType == constants.TYPE_DICT):,1,2,0.25,159
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,elif (attrType and attrType == constants.TYPE_LIST):,1,2,0.25,160
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,for attr in node.keys():,1,1,0.125,161
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if (attr == 'xmlns' or,1,1,0.125,162
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,children = list(node),1,1,0.125,163
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,'for details.')),0,1,0.125,164
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,for child in children:,1,1,0.125,165
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if hasattr(xml_serializer, 'xmlns'):",1,1,0.125,166
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,be considered list items.,1,1,0.125,167
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.error(_LE(""'rpc_workers = %d' ignored because """,0,1,0.125,168
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,elif self._get_key(node.tag) in listnames:,1,1,0.125,169
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return link_list and {link_key: link_list} or {},1,1,0.125,170
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,raise exception.MalformedRequestBody(reason=msg),1,1,0.125,171
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg = _(""Cannot understand XML"")",1,1,0.125,172
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,parseError = True,1,1,0.125,173
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if root_tag == constants.VIRTUAL_ROOT_KEY:,1,1,0.125,174
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if datastring is None:,1,1,0.125,175
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# an item in _from_xml_node,1,1,0.125,176
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,for link in link_nodes:,1,1,0.125,177
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"link_key = ""%s_links"" % root_tag",1,1,0.125,178
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE(""Exception occurs when waiting for timer""))",0,1,0.125,179
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_LI(""Neutron service started, listening on %(host)s:%(port)s""),",0,1,0.125,180
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,raise db_exc.RetryRequest(e),1,1,0.125,181
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,'for details.')),1,1,0.125,182
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_(""Neutron service started, listening on %(host)s:%(port)s""),",1,1,0.125,183
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if ns == _ns:,1,1,0.125,184
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,no_children_found = e.returncode == 1,1,1,0.125,185
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except exceptions.ProcessExecutionError as e:,1,1,0.125,186
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,child_pids = [str(p.pid) for p in process.children()],0,1,0.125,187
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,f),1,1,0.125,188
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except exceptions.NotFound as e:,1,1,0.125,189
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,raise db_exc.RetryRequest(e),0,1,0.125,190
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except exceptions.NotFound as e:,0,1,0.125,191
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return self._create_or_update_agent(context, agent)",1,1,0.125,192
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if e.columns == ['agent_type', 'host']:",1,1,0.125,193
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except db_exc.DBDuplicateEntry as e:,1,1,0.125,194
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return self._create_or_update_agent(context, agent)",0,1,0.125,195
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_(""HTTP exception thrown: %s""), unicode(ex))",1,1,0.125,196
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""%(url)s returned with HTTP %(status)d"",",0,1,0.125,197
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_LI(""%(url)s returned with HTTP %(status)d""),",0,1,0.125,198
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_LI(""HTTP exception thrown: %s""), ex)",0,1,0.125,199
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_(""Exception occurs when waiting for timer""))",1,1,0.125,200
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"for prefix, _ns in ext_ns_bc.items():",1,1,0.125,201
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if isinstance(data, list):",1,1,0.125,202
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"for prefix, _ns in ext_ns.items():",1,1,0.125,203
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,has_atom = False,1,1,0.125,204
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,# like originally intended,1,1,0.125,205
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except AttributeError as e:,1,1,0.125,206
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if links:,1,1,0.125,207
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,root_key = (len(data) == 1 and,1,1,0.125,208
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if link_keys:,1,1,0.125,209
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if k.endswith('_links')],1,1,0.125,210
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,link_keys = [k for k in data.iterkeys() or [],1,1,0.125,211
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if data is None:,1,1,0.125,212
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,contain another '*_links' key as atom links. Other,1,1,0.125,213
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,for prefix in used_prefixes:,1,1,0.125,214
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,":param data: expect data to contain a single key as XML root, or",1,1,0.125,215
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if not xmlns:,1,1,0.125,216
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self.metadata = metadata or {},1,1,0.125,217
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,:param xmlns: XML namespace to include with serialized xml,1,1,0.125,218
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if _format in ['json', 'xml']:",1,1,0.125,219
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if _format in ['json']:,0,1,0.125,220
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctx.reraise = False,0,1,0.125,221
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if ns == self.xmlns:,1,1,0.125,222
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if has_atom:,1,1,0.125,223
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""""""Return data as XML string.",1,1,0.125,224
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if prefix in ext_ns:,1,1,0.125,225
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if isinstance(data, bool):",1,1,0.125,226
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if len(tags) == 2:,1,1,0.125,227
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if prefix in ext_ns_bc:,1,1,0.125,228
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"raise ValueError(_(""Inline DTD forbidden""))",1,1,0.125,229
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,for link in links:,1,1,0.125,230
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if isinstance(data, str):",1,1,0.125,231
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"elif isinstance(data, float):",1,1,0.125,232
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"elif isinstance(data, long):",1,1,0.125,233
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"elif isinstance(data, int):",1,1,0.125,234
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""Data %(data)s type is %(type)s""),",1,1,0.125,235
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,elif data is None:,1,1,0.125,236
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"elif isinstance(data, dict):",1,1,0.125,237
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,for item in data:,1,1,0.125,238
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if nodename.endswith('s'):,1,1,0.125,239
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if singular is None:,1,1,0.125,240
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"if "":"" in nodename:",1,1,0.125,241
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if k in attrs:,1,1,0.125,242
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,if not data:,1,1,0.125,243
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"xml_serializer = XMLDictSerializer(metadata, self._xmlns)",1,0,0.0,244
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _serialize(self, data, content_type, default_xmlns):",1,0,0.0,245
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"body = self._serialize(result, content_type, default_xmlns)",1,0,0.0,246
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,default_xmlns = self.get_default_xmlns(req),1,0,0.0,247
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"'application/xml': xml_serializer,",1,0,0.0,248
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, exception, xmlns=None, body_function=None):",1,0,0.0,249
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"action_result = Fault(ex,",1,0,0.0,250
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self._xmlns = xmlns,1,0,0.0,251
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return Fault(webob.exc.HTTPBadRequest(),",1,0,0.0,252
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self._fault_body_function),1,0,0.0,253
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def get_default_xmlns(self, req):",1,0,0.0,254
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self._xmlns,",1,0,0.0,255
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"serializer = Serializer(_metadata, default_xmlns)",1,0,0.0,256
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.error(_LE('No known API applications configured.')),0,0,0.0,257
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, metadata=None, default_xmlns=None):",1,0,0.0,258
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self.default_xmlns = default_xmlns,1,0,0.0,259
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"'application/xml': XMLDictSerializer(self.metadata),",1,0,0.0,260
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"'application/xml': XMLDeserializer(self.metadata),",1,0,0.0,261
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""Active plugin doesn't implement start_rpc_listeners"")",0,0,0.0,262
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""start_rpc_listeners is not implemented.""),",0,0,0.0,263
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,cfg.CONF.rpc_workers),0,0,0.0,264
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,'details.')),0,0,0.0,265
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"{'host': cfg.CONF.bind_host, 'port': cfg.CONF.bind_port})",0,0,0.0,266
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE(""Exception occurs when timer stops""))",0,0,0.0,267
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""Active plugin doesn't implement start_rpc_listeners""))",1,0,0.0,268
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""is not implemented."")",1,0,0.0,269
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return Fault(webob.exc.HTTPBadRequest(explanation=msg),",1,0,0.0,270
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.error(msg, cfg.CONF.rpc_workers)",1,0,0.0,271
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self._xmlns),1,0,0.0,272
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"lambda x: long(x),",1,0,0.0,273
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self._xmlns = xml_serializer.xmlns,1,0,0.0,274
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return converters[attrType](node.text),1,0,0.0,275
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"attrNil = node.get(str(etree.QName(constants.XSI_NAMESPACE, ""nil"")))",1,0,0.0,276
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,attrType = node.get(str(etree.QName(,1,0,0.0,277
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self.metadata.get('xmlns'), ""type"")))",1,0,0.0,278
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return {},1,0,0.0,279
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return [],1,0,0.0,280
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,converters = {constants.TYPE_BOOL:,1,0,0.0,281
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"lambda x: x.lower() == 'true',",1,0,0.0,282
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_INT:,1,0,0.0,283
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"lambda x: int(x),",1,0,0.0,284
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_LONG:,1,0,0.0,285
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"{'host': cfg.CONF.bind_host,",1,0,0.0,286
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_FLOAT:,1,0,0.0,287
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,lambda x: float(x)},1,0,0.0,288
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return node.text,1,0,0.0,289
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,xml_serializer = self.serializer.body_serializers['application/xml'],1,0,0.0,290
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,result = dict(),1,0,0.0,291
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,attr.startswith('xmlns:') or,1,0,0.0,292
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,attr == constants.XSI_ATTR or,1,0,0.0,293
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,attr == constants.TYPE_ATTR):,1,0,0.0,294
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,continue,1,0,0.0,295
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,result[self._get_key(attr)] = node.get(attr),1,0,0.0,296
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,result[self._get_key(child.tag)] = self._from_xml_node(,1,0,0.0,297
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"child, listnames)",1,0,0.0,298
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def default(self, datastring):",1,0,0.0,299
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return {'body': self._from_xml(datastring)},1,0,0.0,300
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __call__(self, datastring):",1,0,0.0,301
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return self.default(datastring),1,0,0.0,302
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"'application/xml': XMLDeserializer(),",1,0,0.0,303
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.error(_('No known API applications configured.')),1,0,0.0,304
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""Unrecognized Content-Type provided in request""))",1,0,0.0,305
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,'port': cfg.CONF.bind_port}),1,0,0.0,306
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,context = importutils.import_module('neutron.context'),1,0,0.0,307
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except db_exc.DBDuplicateEntry:,0,0,0.0,308
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self._cache = cache._get_memory_cache_region(expiration_time=5),0,0,0.0,309
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,@cache.cache_method_results,0,0,0.0,310
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _extract(self, resource_type, resource_id, field):",0,0,0.0,311
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,context = importutils.import_module('neutron.context'),0,0,0.0,312
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,try:,0,0,0.0,313
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"data = f(context.get_admin_context(),",0,0,0.0,314
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"resource_id,",0,0,0.0,315
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,fields=[field]),0,0,0.0,316
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except Exception:,0,0,0.0,317
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return data[field],0,0,0.0,318
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,target[self.target_field] = self._extract(,0,0,0.0,319
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"parent_res, target[parent_foreign_key], parent_field)",0,0,0.0,320
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,try:,1,0,0.0,321
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_(""Exception occurs when timer stops""))",1,0,0.0,322
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"data = f(context.get_admin_context(),",1,0,0.0,323
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"target[parent_foreign_key],",1,0,0.0,324
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,fields=[parent_field]),1,0,0.0,325
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,target[self.target_field] = data[parent_field],1,0,0.0,326
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except Exception:,1,0,0.0,327
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,process = psutil.Process(pid=int(pid)),0,0,0.0,328
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,except psutil.NoSuchProcess:,0,0,0.0,329
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return [],0,0,0.0,330
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"child_pids += find_child_pids(child, recursive=True)",0,0,0.0,331
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"raw_pids = execute(['ps', '--ppid', pid, '-o', 'pid='],",1,0,0.0,332
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,log_fail_as_error=False),1,0,0.0,333
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return [],1,0,0.0,334
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""""""Convert a minidom node to a simple Python type.",1,0,0.0,335
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.debug(msg),1,0,0.0,336
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg_dict = dict(url=req.url, status=response.status_int)",1,0,0.0,337
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.info(msg),1,0,0.0,338
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg_dict = dict(url=request.url, exception=e)",1,0,0.0,339
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,pass,1,0,0.0,340
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE(""Unable to listen on %(host)s:%(port)s""),",0,0,0.0,341
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""Missing Content-Type"")",0,0,0.0,342
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""Unrecognized Content-Type provided in request"")",0,0,0.0,343
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""No Content-Type provided in request"")",0,0,0.0,344
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(""Empty body provided in request"")",0,0,0.0,345
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""Content-Type"")",0,0,0.0,346
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_LI(""%(method)s %(url)s""),",0,0,0.0,347
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"{""method"": request.method, ""url"": request.url})",0,0,0.0,348
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE(""InvalidContentType: %s""), msg)",0,0,0.0,349
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE(""MalformedRequestBody: %s""), msg)",0,0,0.0,350
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_LE(""Internal error""))",0,0,0.0,351
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"dict(url=request.url, status=response.status_int))",0,0,0.0,352
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_LI(""%(url)s returned a fault: %(exception)s""),",0,0,0.0,353
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"dict(url=request.url, exception=e))",0,0,0.0,354
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"dict(url=req.url, status=response.status_int))",0,0,0.0,355
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_(""Unable to listen on %(host)s:%(port)s""),",1,0,0.0,356
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""Missing Content-Type""))",1,0,0.0,357
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""No Content-Type provided in request""))",1,0,0.0,358
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.debug(_(""Empty body provided in request""))",1,0,0.0,359
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""Content-Type""))",1,0,0.0,360
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.info(_(""%(method)s %(url)s""), {""method"": request.method,",1,0,0.0,361
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""url"": request.url})",1,0,0.0,362
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_(""InvalidContentType: %s""), msg)",1,0,0.0,363
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_(""MalformedRequestBody: %s""), msg)",1,0,0.0,364
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"LOG.exception(_(""Internal error""))",1,0,0.0,365
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"msg_dict = dict(url=request.url, status=response.status_int)",1,0,0.0,366
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,:param listnames: list of XML node names whose subnodes should,1,0,0.0,367
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctypes = ['application/json'],0,0,0.0,368
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _from_xml_node(self, node, listnames):",1,0,0.0,369
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return self.default(data),1,0,0.0,370
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"links = data.pop(link_keys[0], None)",1,0,0.0,371
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,has_atom = True,1,0,0.0,372
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,data.keys()[0] or constants.VIRTUAL_ROOT_KEY),1,0,0.0,373
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"root_value = data.get(root_key, data)",1,0,0.0,374
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"doc = etree.Element(""_temp_root"")",1,0,0.0,375
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,used_prefixes = [],1,0,0.0,376
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self._to_xml_node(doc, self.metadata, root_key,",1,0,0.0,377
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"root_value, used_prefixes)",1,0,0.0,378
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self._create_link_nodes(list(doc)[0], links)",1,0,0.0,379
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return self.to_xml_string(list(doc)[0], used_prefixes, has_atom)",1,0,0.0,380
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,LOG.exception(str(e)),1,0,0.0,381
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return '',1,0,0.0,382
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __call__(self, data):",1,0,0.0,383
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def to_xml_string(self, node, used_prefixes, has_atom=False):",1,0,0.0,384
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"used_prefixes.append(nodename.split("":"", 1)[0])",1,0,0.0,385
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self._add_xmlns(node, used_prefixes, has_atom)",1,0,0.0,386
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return etree.tostring(node, encoding='UTF-8')",1,0,0.0,387
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _add_xmlns(self, node, used_prefixes, has_atom=False):",1,0,0.0,388
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"node.set('xmlns', self.xmlns)",1,0,0.0,389
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"node.set(constants.TYPE_XMLNS, self.xmlns)",1,0,0.0,390
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"node.set(constants.ATOM_XMLNS, constants.ATOM_NAMESPACE)",1,0,0.0,391
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"node.set(constants.XSI_NIL_ATTR, constants.XSI_NAMESPACE)",1,0,0.0,392
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"ext_ns = self.metadata.get(constants.EXT_NS, {})",1,0,0.0,393
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"ext_ns_bc = self.metadata.get(constants.EXT_NS_COMP, {})",1,0,0.0,394
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"node.set('xmlns:' + prefix, ext_ns[prefix])",1,0,0.0,395
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"node.set('xmlns:' + prefix, ext_ns_bc[prefix])",1,0,0.0,396
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _to_xml_node(self, parent, metadata, nodename, data, used_prefixes):",1,0,0.0,397
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""""""Recursive method to convert data members to XML nodes.""""""",1,0,0.0,398
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,else:,1,0,0.0,399
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,root_value = None,1,0,0.0,400
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,root_key = constants.VIRTUAL_ROOT_KEY,1,0,0.0,401
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,links = None,1,0,0.0,402
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctx.reraise = True,0,0,0.0,403
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ctx.reraise = True,0,0,0.0,404
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,1) URI extension (.json),0,0,0.0,405
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"allowed_types = (""application/json"")",0,0,0.0,406
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return Fault(webob.exc.HTTPBadRequest(explanation=msg)),0,0,0.0,407
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"action_result = Fault(ex, self._fault_body_function)",0,0,0.0,408
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return Fault(webob.exc.HTTPBadRequest()),0,0,0.0,409
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, exception, body_function=None):",0,0,0.0,410
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"body = self._serialize(result, content_type)",0,0,0.0,411
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _serialize(self, data, content_type):",0,0,0.0,412
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,serializer = Serializer(_metadata),0,0,0.0,413
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, metadata=None):",0,0,0.0,414
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,1) URI extension (.json/.xml),1,0,0.0,415
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"ctypes = ['application/json', 'application/xml']",1,0,0.0,416
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"allowed_types = (""application/xml"", ""application/json"")",1,0,0.0,417
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,class XMLDictSerializer(DictSerializer):,1,0,0.0,418
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, metadata=None, xmlns=None):",1,0,0.0,419
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""""""Object initialization.",1,0,0.0,420
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,:param metadata: information needed to deserialize xml into,1,0,0.0,421
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,a dictionary.,1,0,0.0,422
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"""""""",1,0,0.0,423
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"super(XMLDictSerializer, self).__init__()",1,0,0.0,424
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,xmlns = self.metadata.get('xmlns'),1,0,0.0,425
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,xmlns = constants.XML_NS_V20,1,0,0.0,426
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self.xmlns = xmlns,1,0,0.0,427
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def default(self, data):",1,0,0.0,428
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,try:,1,0,0.0,429
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"result = etree.SubElement(parent, nodename)",1,0,0.0,430
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,#TODO(bcwaldon): accomplish this without a type-check,1,0,0.0,431
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return dict({root_tag: result}, **links)",1,0,0.0,432
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,root_tag = self._get_key(node.tag),1,0,0.0,433
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def doctype(self, name, pubid, system):",1,0,0.0,434
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,class XMLDeserializer(TextDeserializer):,1,0,0.0,435
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, metadata=None):",1,0,0.0,436
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"super(XMLDeserializer, self).__init__()",1,0,0.0,437
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _get_key(self, tag):",1,0,0.0,438
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"tags = tag.split(""}"", 1)",1,0,0.0,439
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,ns = tags[0][1:],1,0,0.0,440
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,bare_tag = tags[1],1,0,0.0,441
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return bare_tag,1,0,0.0,442
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"return prefix + "":"" + bare_tag",1,0,0.0,443
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return tag,1,0,0.0,444
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _get_links(self, root_tag, node):",1,0,0.0,445
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,link_nodes = node.findall(constants.ATOM_LINK_NOTATION),1,0,0.0,446
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,link_list = [],1,0,0.0,447
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,result.set(,1,0,0.0,448
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"link_list.append({'rel': link.get('rel'),",1,0,0.0,449
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,'href': link.get('href')}),1,0,0.0,450
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,node.remove(link),1,0,0.0,451
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _parseXML(self, text):",1,0,0.0,452
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,parser = ProtectedXMLParser(),1,0,0.0,453
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,parser.feed(text),1,0,0.0,454
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return parser.close(),1,0,0.0,455
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _from_xml(self, datastring):",1,0,0.0,456
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return None,1,0,0.0,457
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"plurals = set(self.metadata.get('plurals', {}))",1,0,0.0,458
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,node = self._parseXML(datastring),1,0,0.0,459
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"links = self._get_links(root_tag, node)",1,0,0.0,460
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"result = self._from_xml_node(node, plurals)",1,0,0.0,461
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def start_doctype_decl(self, name, sysid, pubid, internal):",1,0,0.0,462
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,self._parser.StartDoctypeDeclHandler = self.start_doctype_decl,1,0,0.0,463
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"etree.XMLParser.__init__(self, *args, **kwargs)",1,0,0.0,464
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def __init__(self, *args, **kwargs):",1,0,0.0,465
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"constants.TYPE_ATTR,",1,0,0.0,466
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_LIST),1,0,0.0,467
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,return result,1,0,0.0,468
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"singular = metadata.get('plurals', {}).get(nodename, None)",1,0,0.0,469
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,singular = nodename[:-1],1,0,0.0,470
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,singular = 'item',1,0,0.0,471
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self._to_xml_node(result, metadata, singular, item,",1,0,0.0,472
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,used_prefixes),1,0,0.0,473
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_DICT),1,0,0.0,474
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"attrs = metadata.get('attributes', {}).get(nodename, {})",1,0,0.0,475
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"result.set(k, str(v))",1,0,0.0,476
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"self._to_xml_node(result, metadata, k, v,",1,0,0.0,477
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"result.set(constants.XSI_ATTR, 'true')",1,0,0.0,478
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_BOOL),1,0,0.0,479
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_INT),1,0,0.0,480
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_LONG),1,0,0.0,481
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,constants.TYPE_FLOAT),1,0,0.0,482
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"{'data': data,",1,0,0.0,483
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,'type': type(data)}),1,0,0.0,484
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"result.text = unicode(data, 'utf-8')",1,0,0.0,485
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,result.text = unicode(data),1,0,0.0,486
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"def _create_link_nodes(self, xml_doc, links):",1,0,0.0,487
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"link_node = etree.SubElement(xml_doc, 'atom:link')",1,0,0.0,488
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"link_node.set('rel', link['rel'])",1,0,0.0,489
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"link_node.set('href', link['href'])",1,0,0.0,490
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"'application/xml': XMLDictSerializer(),",1,0,0.0,491
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,class ProtectedXMLParser(etree.XMLParser):,1,0,0.0,492
+b3ec1cd6578a19413893a6b2ef276532c44c2a4f,"child_pids = child_pids + find_child_pids(child, True)",1,0,0.0,493

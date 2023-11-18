@@ -1,0 +1,113 @@
+commit_id,line,line_level_label,count,line_score,row
+94c99119c3821c752b657fe9ca850d1b11fb15db,* This class is being un-deprecated because we want the query for the customer to happen through Hibernate instead of,0,6,1.0,1
+94c99119c3821c752b657fe9ca850d1b11fb15db,* This class is being un-deprecated because we want the query for the customer to happen through Hibernate instead of,0,6,1.0,2
+94c99119c3821c752b657fe9ca850d1b11fb15db,"* through raw JDBC, which is the case when <sec:jdbc-user-service /> is used. We need the query to go through Hibernate",0,6,1.0,3
+94c99119c3821c752b657fe9ca850d1b11fb15db,"* through raw JDBC, which is the case when <sec:jdbc-user-service /> is used. We need the query to go through Hibernate",0,6,1.0,4
+94c99119c3821c752b657fe9ca850d1b11fb15db,protected boolean forcePasswordChange = false;,1,4,0.6666666666666666,5
+94c99119c3821c752b657fe9ca850d1b11fb15db,protected boolean forcePasswordChange = false;,1,4,0.6666666666666666,6
+94c99119c3821c752b657fe9ca850d1b11fb15db,* so that we are able to attach the necessary filters in certain circumstances.,0,3,0.5,7
+94c99119c3821c752b657fe9ca850d1b11fb15db,public void setCustomerService(CustomerService customerService) {,1,3,0.5,8
+94c99119c3821c752b657fe9ca850d1b11fb15db,* Copyright 2008-2013 the original author or authors.,1,3,0.5,9
+94c99119c3821c752b657fe9ca850d1b11fb15db,boolean roleUserFound = false;,0,3,0.5,10
+94c99119c3821c752b657fe9ca850d1b11fb15db,Customer customer = customerService.readCustomerByUsername(username);,0,3,0.5,11
+94c99119c3821c752b657fe9ca850d1b11fb15db,public void setForcePasswordChange(boolean forcePasswordChange) {,1,3,0.5,12
+94c99119c3821c752b657fe9ca850d1b11fb15db,public void setCustomerService(CustomerService customerService) {,1,3,0.5,13
+94c99119c3821c752b657fe9ca850d1b11fb15db,boolean roleUserFound = false;,0,3,0.5,14
+94c99119c3821c752b657fe9ca850d1b11fb15db,Customer customer = customerService.readCustomerByUsername(username);,0,3,0.5,15
+94c99119c3821c752b657fe9ca850d1b11fb15db,* so that we are able to attach the necessary filters in certain circumstances.,0,3,0.5,16
+94c99119c3821c752b657fe9ca850d1b11fb15db,public void setForcePasswordChange(boolean forcePasswordChange) {,1,3,0.5,17
+94c99119c3821c752b657fe9ca850d1b11fb15db,if (pwChangeRequired) {,1,2,0.3333333333333333,18
+94c99119c3821c752b657fe9ca850d1b11fb15db,"return new CustomerUserDetails(customer.getId(), username, customer.getPassword(), !customer.isDeactivated(), true, !customer.isPasswordChangeRequired(), true, grantedAuthorities);",0,2,0.3333333333333333,19
+94c99119c3821c752b657fe9ca850d1b11fb15db,if (!roleUserFound) {,0,2,0.3333333333333333,20
+94c99119c3821c752b657fe9ca850d1b11fb15db,org.broadleafcommerce.profile.core.domain.Customer customer = customerService.readCustomerByUsername(username);,1,2,0.3333333333333333,21
+94c99119c3821c752b657fe9ca850d1b11fb15db,User returnUser = null;,1,2,0.3333333333333333,22
+94c99119c3821c752b657fe9ca850d1b11fb15db,boolean pwChangeRequired = customer.isPasswordChangeRequired();,1,2,0.3333333333333333,23
+94c99119c3821c752b657fe9ca850d1b11fb15db,"returnUser = new User(username, customer.getPassword(), true, true, !customer.isPasswordChangeRequired(), true, grantedAuthorities);",1,2,0.3333333333333333,24
+94c99119c3821c752b657fe9ca850d1b11fb15db,if (forcePasswordChange) {,1,2,0.3333333333333333,25
+94c99119c3821c752b657fe9ca850d1b11fb15db,} else {,1,2,0.3333333333333333,26
+94c99119c3821c752b657fe9ca850d1b11fb15db,"returnUser = new User(username, customer.getPassword(), true, true, true, true, grantedAuthorities);",1,2,0.3333333333333333,27
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@ConditionalOnProperty(value = ""use.customer.state.filter"", matchIfMissing = true)",0,2,0.3333333333333333,28
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name = ""blCustomerService"")",0,2,0.3333333333333333,29
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name = ""blRoleService"")",0,2,0.3333333333333333,30
+94c99119c3821c752b657fe9ca850d1b11fb15db,"if (role.getRoleName().equals(""ROLE_USER"")) {",0,2,0.3333333333333333,31
+94c99119c3821c752b657fe9ca850d1b11fb15db,"returnUser = new User(username, customer.getPassword(), true, true, true, true, grantedAuthorities);",1,2,0.3333333333333333,32
+94c99119c3821c752b657fe9ca850d1b11fb15db,org.broadleafcommerce.profile.core.domain.Customer customer = customerService.readCustomerByUsername(username);,1,2,0.3333333333333333,33
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name = ""blCustomerService"")",0,2,0.3333333333333333,34
+94c99119c3821c752b657fe9ca850d1b11fb15db,} else {,1,2,0.3333333333333333,35
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name = ""blRoleService"")",0,2,0.3333333333333333,36
+94c99119c3821c752b657fe9ca850d1b11fb15db,"if (role.getRoleName().equals(""ROLE_USER"")) {",0,2,0.3333333333333333,37
+94c99119c3821c752b657fe9ca850d1b11fb15db,if (!roleUserFound) {,0,2,0.3333333333333333,38
+94c99119c3821c752b657fe9ca850d1b11fb15db,"return new User(username, customer.getPassword(), true, true, !customer.isPasswordChangeRequired(), true, grantedAuthorities);",0,2,0.3333333333333333,39
+94c99119c3821c752b657fe9ca850d1b11fb15db,User returnUser = null;,1,2,0.3333333333333333,40
+94c99119c3821c752b657fe9ca850d1b11fb15db,boolean pwChangeRequired = customer.isPasswordChangeRequired();,1,2,0.3333333333333333,41
+94c99119c3821c752b657fe9ca850d1b11fb15db,if (pwChangeRequired) {,1,2,0.3333333333333333,42
+94c99119c3821c752b657fe9ca850d1b11fb15db,if (forcePasswordChange) {,1,2,0.3333333333333333,43
+94c99119c3821c752b657fe9ca850d1b11fb15db,"returnUser = new User(username, customer.getPassword(), true, true, !customer.isPasswordChangeRequired(), true, grantedAuthorities);",1,2,0.3333333333333333,44
+94c99119c3821c752b657fe9ca850d1b11fb15db,@Deprecated,1,1,0.16666666666666666,45
+94c99119c3821c752b657fe9ca850d1b11fb15db,* @author Phillip Verheyden (phillipuniverse),0,1,0.16666666666666666,46
+94c99119c3821c752b657fe9ca850d1b11fb15db,roleUserFound = true;,0,1,0.16666666666666666,47
+94c99119c3821c752b657fe9ca850d1b11fb15db,},0,1,0.16666666666666666,48
+94c99119c3821c752b657fe9ca850d1b11fb15db,*,1,1,0.16666666666666666,49
+94c99119c3821c752b657fe9ca850d1b11fb15db,*        http://www.apache.org/licenses/LICENSE-2.0,1,1,0.16666666666666666,50
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.springframework.security.core.authority.GrantedAuthorityImpl;,1,1,0.16666666666666666,51
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.springframework.security.core.userdetails.User;,1,1,0.16666666666666666,52
+94c99119c3821c752b657fe9ca850d1b11fb15db,* @author Andre Azzolini (apazzolini),0,1,0.16666666666666666,53
+94c99119c3821c752b657fe9ca850d1b11fb15db,import javax.annotation.Resource;,1,1,0.16666666666666666,54
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.broadleafcommerce.common.admin.condition.ConditionalOnNotAdmin;,0,1,0.16666666666666666,55
+94c99119c3821c752b657fe9ca850d1b11fb15db,this.forcePasswordChange = forcePasswordChange;,1,1,0.16666666666666666,56
+94c99119c3821c752b657fe9ca850d1b11fb15db,},1,1,0.16666666666666666,57
+94c99119c3821c752b657fe9ca850d1b11fb15db,return returnUser;,1,1,0.16666666666666666,58
+94c99119c3821c752b657fe9ca850d1b11fb15db,this.customerService = customerService;,1,1,0.16666666666666666,59
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.broadleafcommerce.common.admin.condition.ConditionalOnAdmin;,0,1,0.16666666666666666,60
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.broadleafcommerce.common.web.filter.FilterOrdered;,0,1,0.16666666666666666,61
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;,0,1,0.16666666666666666,62
+94c99119c3821c752b657fe9ca850d1b11fb15db,return FilterOrdered.POST_SECURITY_HIGH + 50;,0,1,0.16666666666666666,63
+94c99119c3821c752b657fe9ca850d1b11fb15db,return 1501;,1,1,0.16666666666666666,64
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.springframework.security.core.authority.SimpleGrantedAuthority;,0,1,0.16666666666666666,65
+94c99119c3821c752b657fe9ca850d1b11fb15db,import javax.annotation.Resource;,0,1,0.16666666666666666,66
+94c99119c3821c752b657fe9ca850d1b11fb15db,return returnUser;,1,1,0.16666666666666666,67
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.broadleafcommerce.profile.core.domain.Customer;,0,1,0.16666666666666666,68
+94c99119c3821c752b657fe9ca850d1b11fb15db,@Deprecated,1,1,0.16666666666666666,69
+94c99119c3821c752b657fe9ca850d1b11fb15db,* #L%,0,1,0.16666666666666666,70
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.broadleafcommerce.profile.core.domain.Customer;,0,1,0.16666666666666666,71
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.springframework.security.core.authority.SimpleGrantedAuthority;,0,1,0.16666666666666666,72
+94c99119c3821c752b657fe9ca850d1b11fb15db,import javax.annotation.Resource;,0,1,0.16666666666666666,73
+94c99119c3821c752b657fe9ca850d1b11fb15db,*,0,1,0.16666666666666666,74
+94c99119c3821c752b657fe9ca850d1b11fb15db,roleUserFound = true;,0,1,0.16666666666666666,75
+94c99119c3821c752b657fe9ca850d1b11fb15db,},0,1,0.16666666666666666,76
+94c99119c3821c752b657fe9ca850d1b11fb15db,import org.springframework.security.core.authority.GrantedAuthorityImpl;,1,1,0.16666666666666666,77
+94c99119c3821c752b657fe9ca850d1b11fb15db,import javax.annotation.Resource;,1,1,0.16666666666666666,78
+94c99119c3821c752b657fe9ca850d1b11fb15db,* @author Andre Azzolini (apazzolini),0,1,0.16666666666666666,79
+94c99119c3821c752b657fe9ca850d1b11fb15db,this.forcePasswordChange = forcePasswordChange;,1,1,0.16666666666666666,80
+94c99119c3821c752b657fe9ca850d1b11fb15db,* %%,0,1,0.16666666666666666,81
+94c99119c3821c752b657fe9ca850d1b11fb15db,},1,1,0.16666666666666666,82
+94c99119c3821c752b657fe9ca850d1b11fb15db,*,0,1,0.16666666666666666,83
+94c99119c3821c752b657fe9ca850d1b11fb15db,* Copyright (C) 2009 - 2013 Broadleaf Commerce,0,1,0.16666666666666666,84
+94c99119c3821c752b657fe9ca850d1b11fb15db,*       http://www.apache.org/licenses/LICENSE-2.0,0,1,0.16666666666666666,85
+94c99119c3821c752b657fe9ca850d1b11fb15db,* BroadleafCommerce Profile,0,1,0.16666666666666666,86
+94c99119c3821c752b657fe9ca850d1b11fb15db,* #%L,0,1,0.16666666666666666,87
+94c99119c3821c752b657fe9ca850d1b11fb15db,this.customerService = customerService;,1,1,0.16666666666666666,88
+94c99119c3821c752b657fe9ca850d1b11fb15db,grantedAuthorities.add(new SimpleGrantedAuthority(role.getRoleName()));,0,0,0.0,89
+94c99119c3821c752b657fe9ca850d1b11fb15db,//FilterChainOrder has been dropped from Spring Security 3,1,0,0.0,90
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Component(""blCustomerStateFilter"")",1,0,0.0,91
+94c99119c3821c752b657fe9ca850d1b11fb15db,@ConditionalOnNotAdmin,0,0,0.0,92
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Component(""blCustomerStateFilter"")",0,0,0.0,93
+94c99119c3821c752b657fe9ca850d1b11fb15db,grantedAuthorities.add(new GrantedAuthorityImpl(role.getRoleName()));,1,0,0.0,94
+94c99119c3821c752b657fe9ca850d1b11fb15db,"grantedAuthorities.add(new GrantedAuthorityImpl(""ROLE_USER""));",1,0,0.0,95
+94c99119c3821c752b657fe9ca850d1b11fb15db,"grantedAuthorities.add(new GrantedAuthorityImpl(""ROLE_PASSWORD_CHANGE_REQUIRED""));",1,0,0.0,96
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name=""blRoleService"")",1,0,0.0,97
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name=""blCustomerService"")",1,0,0.0,98
+94c99119c3821c752b657fe9ca850d1b11fb15db,"grantedAuthorities.add(new SimpleGrantedAuthority(""ROLE_USER""));",0,0,0.0,99
+94c99119c3821c752b657fe9ca850d1b11fb15db,*/,0,0,0.0,100
+94c99119c3821c752b657fe9ca850d1b11fb15db,@Override,0,0,0.0,101
+94c99119c3821c752b657fe9ca850d1b11fb15db,*/,0,0,0.0,102
+94c99119c3821c752b657fe9ca850d1b11fb15db,/**,0,0,0.0,103
+94c99119c3821c752b657fe9ca850d1b11fb15db,grantedAuthorities.add(new GrantedAuthorityImpl(role.getRoleName()));,1,0,0.0,104
+94c99119c3821c752b657fe9ca850d1b11fb15db,"grantedAuthorities.add(new GrantedAuthorityImpl(""ROLE_USER""));",1,0,0.0,105
+94c99119c3821c752b657fe9ca850d1b11fb15db,"grantedAuthorities.add(new GrantedAuthorityImpl(""ROLE_PASSWORD_CHANGE_REQUIRED""));",1,0,0.0,106
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name=""blRoleService"")",1,0,0.0,107
+94c99119c3821c752b657fe9ca850d1b11fb15db,"@Resource(name=""blCustomerService"")",1,0,0.0,108
+94c99119c3821c752b657fe9ca850d1b11fb15db,"grantedAuthorities.add(new SimpleGrantedAuthority(""ROLE_USER""));",0,0,0.0,109
+94c99119c3821c752b657fe9ca850d1b11fb15db,grantedAuthorities.add(new SimpleGrantedAuthority(role.getRoleName()));,0,0,0.0,110
+94c99119c3821c752b657fe9ca850d1b11fb15db,/**,0,0,0.0,111
+94c99119c3821c752b657fe9ca850d1b11fb15db,//return FilterChainOrder.REMEMBER_ME_FILTER+1;,1,0,0.0,112

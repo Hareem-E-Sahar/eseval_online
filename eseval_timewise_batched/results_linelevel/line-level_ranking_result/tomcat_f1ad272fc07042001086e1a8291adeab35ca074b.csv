@@ -1,0 +1,42 @@
+commit_id,line,line_level_label,count,line_score,row
+f1ad272fc07042001086e1a8291adeab35ca074b,// Identify the HTTP-specific request and response objects (if any),1,2,1.0,1
+f1ad272fc07042001086e1a8291adeab35ca074b,hrequest = (HttpServletRequest) request;,1,1,0.5,2
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletRequest hrequest = null;,0,1,0.5,3
+f1ad272fc07042001086e1a8291adeab35ca074b,"invoke(request, state.outerResponse, state);",1,1,0.5,4
+f1ad272fc07042001086e1a8291adeab35ca074b,servletPath);,1,1,0.5,5
+f1ad272fc07042001086e1a8291adeab35ca074b,hresponse = (HttpServletResponse) response;,1,1,0.5,6
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletResponse hresponse = null;,1,1,0.5,7
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletResponse hresponse = (HttpServletResponse) response;,1,1,0.5,8
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletRequest hrequest = null;,1,1,0.5,9
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletResponse hresponse = null;,0,1,0.5,10
+f1ad272fc07042001086e1a8291adeab35ca074b,state.hrequest = (HttpServletRequest)current;,0,1,0.5,11
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletResponse hresponse = state.hresponse;,0,1,0.5,12
+f1ad272fc07042001086e1a8291adeab35ca074b,HttpServletRequest hrequest = state.hrequest;,0,1,0.5,13
+f1ad272fc07042001086e1a8291adeab35ca074b,state.hresponse = (HttpServletResponse)current;,0,1,0.5,14
+f1ad272fc07042001086e1a8291adeab35ca074b,if ((hrequest == null) || (hresponse == null)) {,1,0,0.0,15
+f1ad272fc07042001086e1a8291adeab35ca074b,"processRequest(hrequest,hresponse,state);",1,0,0.0,16
+f1ad272fc07042001086e1a8291adeab35ca074b,},1,0,0.0,17
+f1ad272fc07042001086e1a8291adeab35ca074b,else if ((servletPath == null) && (pathInfo == null)) {,1,0,0.0,18
+f1ad272fc07042001086e1a8291adeab35ca074b,// Handle a non-HTTP include,1,0,0.0,19
+f1ad272fc07042001086e1a8291adeab35ca074b,"request.setAttribute(ApplicationFilterFactory.DISPATCHER_TYPE_ATTR,",1,0,0.0,20
+f1ad272fc07042001086e1a8291adeab35ca074b,if (!(request instanceof HttpServletRequest) ||,1,0,0.0,21
+f1ad272fc07042001086e1a8291adeab35ca074b,!(response instanceof HttpServletResponse)) {,1,0,0.0,22
+f1ad272fc07042001086e1a8291adeab35ca074b,Integer.valueOf(ApplicationFilterFactory.INCLUDE));,1,0,0.0,23
+f1ad272fc07042001086e1a8291adeab35ca074b,request.setAttribute(,1,0,0.0,24
+f1ad272fc07042001086e1a8291adeab35ca074b,"ApplicationFilterFactory.DISPATCHER_REQUEST_PATH_ATTR,",1,0,0.0,25
+f1ad272fc07042001086e1a8291adeab35ca074b,if (response instanceof HttpServletResponse),1,0,0.0,26
+f1ad272fc07042001086e1a8291adeab35ca074b,// Handle a non-HTTP forward by passing the existing request/response,1,0,0.0,27
+f1ad272fc07042001086e1a8291adeab35ca074b,if (name != null) {,0,0,0.0,28
+f1ad272fc07042001086e1a8291adeab35ca074b,if (request instanceof HttpServletRequest),1,0,0.0,29
+f1ad272fc07042001086e1a8291adeab35ca074b,},0,0,0.0,30
+f1ad272fc07042001086e1a8291adeab35ca074b,return null;,0,0,0.0,31
+f1ad272fc07042001086e1a8291adeab35ca074b,if(!state.including) // Forward only needs hresponse,0,0,0.0,32
+f1ad272fc07042001086e1a8291adeab35ca074b,if(state.hresponse == null && (current instanceof HttpServletResponse)) {,0,0,0.0,33
+f1ad272fc07042001086e1a8291adeab35ca074b,if(state.hrequest == null && (current instanceof HttpServletRequest)),0,0,0.0,34
+f1ad272fc07042001086e1a8291adeab35ca074b,if ((servletPath == null) && (pathInfo == null)) {,0,0,0.0,35
+f1ad272fc07042001086e1a8291adeab35ca074b,wrapResponse(state);,0,0,0.0,36
+f1ad272fc07042001086e1a8291adeab35ca074b,* Outermost HttpServletResponse in the chain,0,0,0.0,37
+f1ad272fc07042001086e1a8291adeab35ca074b,*/,0,0,0.0,38
+f1ad272fc07042001086e1a8291adeab35ca074b,* Outer most HttpServletRequest in the chain,0,0,0.0,39
+f1ad272fc07042001086e1a8291adeab35ca074b,/**,0,0,0.0,40
+f1ad272fc07042001086e1a8291adeab35ca074b,else if (name != null) {,1,0,0.0,41

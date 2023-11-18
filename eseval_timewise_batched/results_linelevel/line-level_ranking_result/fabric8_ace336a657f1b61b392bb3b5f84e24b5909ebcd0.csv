@@ -1,0 +1,381 @@
+commit_id,line,line_level_label,count,line_score,row
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* Returns the resource version for the entity or null if it does not have one,0,6,1.0,1
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* Loads the entity for the given item,1,5,0.8333333333333333,2
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"throw new IllegalArgumentException(""config "" + config + "" is not a ObjectNode"");",1,5,0.8333333333333333,3
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"throw new IllegalArgumentException(""config "" + template + "" is not a ObjectNode"");",1,5,0.8333333333333333,4
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"String key = kind + "":"" + id;",1,5,0.8333333333333333,5
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"String key = kind + "":"" + id;",0,5,0.8333333333333333,6
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""Template"", kind)) {",1,4,0.6666666666666666,7
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (entity instanceof Object[]) {,1,4,0.6666666666666666,8
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (object instanceof Service) {,1,4,0.6666666666666666,9
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (object instanceof ReplicationController) {,1,4,0.6666666666666666,10
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (entity instanceof HasMetadata[]) {,0,4,0.6666666666666666,11
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (object == null) {,1,4,0.6666666666666666,12
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* If we have any templates inside the itemArray then lets unpack them and combine any parameters,1,4,0.6666666666666666,13
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""Config"", kind) || Objects.equal(""List"", kind)) {",1,4,0.6666666666666666,14
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (object instanceof Route) {,1,4,0.6666666666666666,15
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""ImageRepository"", kind)) {",1,4,0.6666666666666666,16
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static Object loadEntity(byte[] json, String kind, Object defaultValue) throws IOException {",1,4,0.6666666666666666,17
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""DeploymentConfig"", kind)) {",1,4,0.6666666666666666,18
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (object instanceof Collection) {,0,4,0.6666666666666666,19
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else if (entity instanceof KubernetesList) {,0,4,0.6666666666666666,20
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""ReplicationController"", kind)) {",1,4,0.6666666666666666,21
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""Service"", kind)) {",1,4,0.6666666666666666,22
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"} else if (Objects.equal(""BuildConfig"", kind)) {",1,4,0.6666666666666666,23
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String id = getId(jsonNode);,1,3,0.5,24
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String json = toJson(object);,1,3,0.5,25
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"String kind = Strings.defaultIfEmpty(getKind(jsonNode), """");",1,3,0.5,26
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode kind = jsonNode.get(""kind"");",1,3,0.5,27
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return kind != null && Objects.equal(""Service"", kind.textValue());",1,3,0.5,28
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return kind != null && Objects.equal(""Template"", kind.textValue());",1,3,0.5,29
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode items = node.get(""items"");",1,3,0.5,30
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (items != null && items.isArray()) {,1,3,0.5,31
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* Converts the DTO to a JsonNode,1,3,0.5,32
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(Route entity, String namespace, String name) {",1,3,0.5,33
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* Returns true if this entity has a valid non blank resourceVersion in its metadata,0,3,0.5,34
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(HasMetadata entity, String namespace, String name) {",0,3,0.5,35
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else {,1,3,0.5,36
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static Object getAdditionalProperty(Map<String, Object> additionalProperties, String name) {",1,3,0.5,37
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object item = list.get(i);,1,3,0.5,38
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object item = itemArray.get(i);,1,3,0.5,39
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (Object object : items) {,1,3,0.5,40
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (Object object : objects) {,1,3,0.5,41
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode items = config.get(""objects"");",1,3,0.5,42
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (template instanceof ObjectNode) {,1,3,0.5,43
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (Object item : items) {,1,3,0.5,44
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,// lets move all the content into the template,1,3,0.5,45
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} if (entity instanceof List) {,1,3,0.5,46
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (template != null) {,1,3,0.5,47
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* from the Kubernetes REST API,0,3,0.5,48
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object item = list.get(i);,0,3,0.5,49
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object item = itemArray.get(i);,0,3,0.5,50
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String id = getObjectId(item);,0,3,0.5,51
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String kind = item.getClass().getSimpleName();,0,3,0.5,52
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else {,1,3,0.5,53
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* from the Kubernetes REST API or,1,3,0.5,54
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String kind = kindNode.asText();,1,3,0.5,55
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,} else {,0,3,0.5,56
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode items = jsonNode.get(""items"");",1,3,0.5,57
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String kind = kindObject.asText();,1,3,0.5,58
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String json = toJson(item);,1,3,0.5,59
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"Object entity = loadEntity(bytes, kind, null);",1,3,0.5,60
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode config = findOrCreateConfig(objects);,1,3,0.5,61
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode items = config.get(""items"");",1,3,0.5,62
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode template = null;,1,3,0.5,63
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (kindObject != null && kindObject.isTextual()) {,1,3,0.5,64
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (template == null) {,1,3,0.5,65
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (entity != null) {,1,2,0.3333333333333333,66
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (object instanceof Pod) {,1,2,0.3333333333333333,67
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (metadata == null) {,1,2,0.3333333333333333,68
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(Pod entity) {,1,2,0.3333333333333333,69
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(ReplicationController entity) {,1,2,0.3333333333333333,70
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(Node entity) {,1,2,0.3333333333333333,71
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(Service entity) {,1,2,0.3333333333333333,72
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(OAuthClient entity) {,1,2,0.3333333333333333,73
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(Route entity) {,1,2,0.3333333333333333,74
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(Template entity) {,1,2,0.3333333333333333,75
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(ImageStream entity) {,1,2,0.3333333333333333,76
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> items = kubernetesList.getItems();,0,2,0.3333333333333333,77
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> items = toItemList(dto);,0,2,0.3333333333333333,78
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,String resourceVersion = metadata.getResourceVersion();,0,2,0.3333333333333333,79
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,HasMetadata item = itemArray.get(i);,0,2,0.3333333333333333,80
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,HasMetadata item = list.get(i);,0,2,0.3333333333333333,81
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> items = list.getItems();,0,2,0.3333333333333333,82
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (entity instanceof HasMetadata) {,0,2,0.3333333333333333,83
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(HasMetadata entity) {,0,2,0.3333333333333333,84
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setNamespace(HasMetadata entity, String namespace) {",0,2,0.3333333333333333,85
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(HasMetadata entity, String name) {",0,2,0.3333333333333333,86
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(HasMetadata entity) {,0,2,0.3333333333333333,87
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (Strings.isNotBlank(resourceVersion)) {,0,2,0.3333333333333333,88
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(Pod entity, String name) {",1,2,0.3333333333333333,89
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (metadata != null) {,0,2,0.3333333333333333,90
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (entity != null) {,0,2,0.3333333333333333,91
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getResourceVersion(HasMetadata entity) {,0,2,0.3333333333333333,92
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (object instanceof HasMetadata) {,0,2,0.3333333333333333,93
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getName(Endpoints entity) {,1,2,0.3333333333333333,94
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(Template entity) {,1,2,0.3333333333333333,95
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(Service entity, String name) {",1,2,0.3333333333333333,96
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> items = kubernetesList.getItems();,1,2,0.3333333333333333,97
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode jsonNode = (JsonNode) object;,1,2,0.3333333333333333,98
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static Object combineTemplates(KubernetesList kubernetesList, List<Object> items) {",1,2,0.3333333333333333,99
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void addTemplateObject(Template template, Object object) {",1,2,0.3333333333333333,100
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> objects = template.getObjects();,1,2,0.3333333333333333,101
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> items = kubernetesList.getItems();,1,2,0.3333333333333333,102
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static Object combineTemplates(KubernetesList kubernetesList, List<HasMetadata> items) {",0,2,0.3333333333333333,103
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (HasMetadata object : objects) {,0,2,0.3333333333333333,104
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> objects = template.getObjects();,0,2,0.3333333333333333,105
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (HasMetadata object : items) {,0,2,0.3333333333333333,106
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (HasMetadata item : items) {,0,2,0.3333333333333333,107
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> items = kubernetesList.getItems();,0,2,0.3333333333333333,108
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> items = toItemList(dto);,1,2,0.3333333333333333,109
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object nonService = list.get(lastNonService);,1,2,0.3333333333333333,110
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(ReplicationController entity, String name) {",1,2,0.3333333333333333,111
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> items = list.getItems();,1,2,0.3333333333333333,112
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (map == null) {,1,2,0.3333333333333333,113
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (int i = 0; i < lastIdx; i++) {,1,2,0.3333333333333333,114
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static String getAdditionalNestedPropertyText(Map<String, Object> additionalProperties, String... names) {",1,2,0.3333333333333333,115
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (additionalProperties != null) {,1,2,0.3333333333333333,116
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(Route entity) {,1,2,0.3333333333333333,117
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(OAuthClient entity) {,1,2,0.3333333333333333,118
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(Service entity) {,1,2,0.3333333333333333,119
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(ReplicationController entity) {,1,2,0.3333333333333333,120
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getNamespace(Pod entity) {,1,2,0.3333333333333333,121
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setNamespace(Template entity, String namespace) {",1,2,0.3333333333333333,122
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void setName(Template entity, String name) {",1,2,0.3333333333333333,123
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static JsonNode toJsonNode(Object object) throws IOException {,1,2,0.3333333333333333,124
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectNode config = factory.objectNode();,1,2,0.3333333333333333,125
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (object instanceof JsonNode) {,1,2,0.3333333333333333,126
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"LOG.warn(""No JSON type for: "" + tree);",1,2,0.3333333333333333,127
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode kindNode = tree.get(""kind"");",1,2,0.3333333333333333,128
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (tree != null) {,1,2,0.3333333333333333,129
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode tree = reader.readTree(new ByteArrayInputStream(json));,1,2,0.3333333333333333,130
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* {@link JsonNode} if it cannot be recognised.,1,2,0.3333333333333333,131
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return current != null ? current.textValue() : null;,1,2,0.3333333333333333,132
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (current == null) {,1,2,0.3333333333333333,133
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode current = node;,1,2,0.3333333333333333,134
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static String getJsonTextProperty(JsonNode node, String... names) {",1,2,0.3333333333333333,135
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getKind(JsonNode entity) {,1,2,0.3333333333333333,136
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (entity != null) {,1,2,0.3333333333333333,137
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static String getId(JsonNode entity) {,1,2,0.3333333333333333,138
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (list == null) {,0,2,0.3333333333333333,139
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (items != null) {,0,2,0.3333333333333333,140
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (object instanceof KubernetesList) {,0,2,0.3333333333333333,141
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static void addObjectsToItemArray(List destinationList, Object object) throws IOException {",0,2,0.3333333333333333,142
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (!keys.add(key)) {,0,2,0.3333333333333333,143
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (Strings.isNotBlank(id)) {,0,2,0.3333333333333333,144
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (item == null) {,0,2,0.3333333333333333,145
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object nonService = list.get(lastNonService);,0,2,0.3333333333333333,146
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (item instanceof Service) {,0,2,0.3333333333333333,147
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (object != list) {,0,2,0.3333333333333333,148
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,items = new ArrayList<>();,0,2,0.3333333333333333,149
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (items == null) {,0,2,0.3333333333333333,150
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> items = list.getItems();,0,2,0.3333333333333333,151
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static Object combineJson(Object... objects) throws IOException {,0,2,0.3333333333333333,152
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,KubernetesList config = (KubernetesList) entity;,0,2,0.3333333333333333,153
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (entity instanceof List) {,0,2,0.3333333333333333,154
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (kindNode != null) {,1,2,0.3333333333333333,155
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> items = kubernetesList.getItems();,0,2,0.3333333333333333,156
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (entity instanceof JsonNode) {,1,2,0.3333333333333333,157
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (isTemplate(jsonNode)) {,1,2,0.3333333333333333,158
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static JsonNode findOrCreateConfig(Object[] objects) {,1,2,0.3333333333333333,159
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode jsonNode = (JsonNode) entity;,1,2,0.3333333333333333,160
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode node = toJsonNode(object);,1,2,0.3333333333333333,161
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static void addObjectsToItemArray(ArrayNode itemArray, Object object) throws IOException {",1,2,0.3333333333333333,162
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (jsonNode != null) {,1,2,0.3333333333333333,163
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (!keys.add(key)) {,1,2,0.3333333333333333,164
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (Strings.isNotBlank(id)) {,1,2,0.3333333333333333,165
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode nonService = itemArray.get(lastNonService);,1,2,0.3333333333333333,166
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode jsonNode = itemArray.get(i);,1,2,0.3333333333333333,167
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (!isTemplate(jsonNode)) {,1,2,0.3333333333333333,168
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,objects = new ArrayNode(createNodeFactory());,1,2,0.3333333333333333,169
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,objects = (ArrayNode) items;,1,2,0.3333333333333333,170
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,template = jsonNode;,1,2,0.3333333333333333,171
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (isService(jsonNode)) {,1,2,0.3333333333333333,172
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (item != null) {,1,2,0.3333333333333333,173
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (object != config) {,1,2,0.3333333333333333,174
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (config instanceof ObjectNode) {,1,2,0.3333333333333333,175
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (items instanceof ArrayNode) {,1,2,0.3333333333333333,176
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static JsonNode combineJson(Object... objects) throws IOException {,1,2,0.3333333333333333,177
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,if (kind != null) {,1,2,0.3333333333333333,178
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static Object getEntity(JsonNode item) throws IOException {,1,2,0.3333333333333333,179
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"JsonNode kindObject = item.get(""kind"");",1,2,0.3333333333333333,180
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"if (Objects.equal(""Pod"", kind)) {",1,2,0.3333333333333333,181
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (JsonNode item : items) {,1,2,0.3333333333333333,182
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNode jsonNode = objectMapper.readTree(data);,1,2,0.3333333333333333,183
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"protected static JsonNode combineTemplates(JsonNode config, ArrayNode itemArray) {",1,2,0.3333333333333333,184
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Config config = new Config();,1,2,0.3333333333333333,185
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return Collections.EMPTY_MAP;,0,1,0.16666666666666666,186
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return (List<HasMetadata>) entity;,0,1,0.16666666666666666,187
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static List<HasMetadata> toItemList(Object entity) throws IOException {,0,1,0.16666666666666666,188
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getName((Route) object);,1,1,0.16666666666666666,189
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getLabels(entity.getMetadata());,0,1,0.16666666666666666,190
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> answer = new ArrayList<>();,0,1,0.16666666666666666,191
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static Map<String, String> getLabels(HasMetadata entity) {",0,1,0.16666666666666666,192
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,HasMetadata[] array = (HasMetadata[]) entity;,0,1,0.16666666666666666,193
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getName((ReplicationController) object);,1,1,0.16666666666666666,194
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static void moveServicesToFrontOfArray(List<HasMetadata> list) {,0,1,0.16666666666666666,195
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,HasMetadata nonService = list.get(lastNonService);,0,1,0.16666666666666666,196
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static void removeDuplicates(List<HasMetadata> itemArray) {,0,1,0.16666666666666666,197
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getName((Pod) object);,1,1,0.16666666666666666,198
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getName((Service) object);,1,1,0.16666666666666666,199
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectMeta metadata = getOrCreateMetadata(entity);,0,1,0.16666666666666666,200
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getNamespace(entity.getMetadata());,0,1,0.16666666666666666,201
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,JsonNodeFactory factory = createNodeFactory();,1,1,0.16666666666666666,202
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getName(entity.getMetadata());,0,1,0.16666666666666666,203
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getResourceVersion(entity) != null;,0,1,0.16666666666666666,204
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static boolean hasResourceVersion(HasMetadata entity) {,0,1,0.16666666666666666,205
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return null;,0,1,0.16666666666666666,206
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,},0,1,0.16666666666666666,207
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return resourceVersion;,0,1,0.16666666666666666,208
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectMeta metadata = entity.getMetadata();,0,1,0.16666666666666666,209
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(HasMetadata entity) {,0,1,0.16666666666666666,210
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return getName((HasMetadata) object);,0,1,0.16666666666666666,211
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.kubernetes.api.model.HasMetadata;,0,1,0.16666666666666666,212
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader().readTree(json);,1,1,0.16666666666666666,213
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return (JsonNode) object;,1,1,0.16666666666666666,214
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return jsonNode;,1,1,0.16666666666666666,215
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return new JsonNodeFactory(false);,1,1,0.16666666666666666,216
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectMeta metadata = entity.getMetadata();,1,1,0.16666666666666666,217
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(Pod entity) {,1,1,0.16666666666666666,218
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.kubernetes.api.model.HasMetadata;,0,1,0.16666666666666666,219
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,metadata = new ObjectMeta();,1,1,0.16666666666666666,220
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return additionalProperties.get(name);,1,1,0.16666666666666666,221
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> list = KubernetesHelper.toItemList(kubeResource);,1,1,0.16666666666666666,222
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<HasMetadata> list = KubernetesHelper.toItemList(kubeResource);,0,1,0.16666666666666666,223
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"public static void addTemplateObject(Template template, HasMetadata object) {",0,1,0.16666666666666666,224
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Iterator<JsonNode> iter = items.iterator();,1,1,0.16666666666666666,225
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static void removeDuplicates(List<Object> itemArray) {,1,1,0.16666666666666666,226
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static void moveServicesToFrontOfArray(List<Object> list) {,1,1,0.16666666666666666,227
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> answer = new ArrayList<>();,1,1,0.16666666666666666,228
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Object[] array = (Object[]) entity;,1,1,0.16666666666666666,229
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return (List<Object>) entity;,1,1,0.16666666666666666,230
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static List<Object> toItemList(Object entity) throws IOException {,1,1,0.16666666666666666,231
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return getAdditionalPropertyText(map, names[lastIdx]);",1,1,0.16666666666666666,232
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"map = getAdditionalPropertyMap(map, names[i]);",1,1,0.16666666666666666,233
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"Map<String, Object> map = additionalProperties;",1,1,0.16666666666666666,234
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,int lastIdx = names.length - 1;,1,1,0.16666666666666666,235
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return Strings.firstNonBlank(getNamespace(entity.getMetadata()),",1,1,0.16666666666666666,236
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,},1,1,0.16666666666666666,237
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectMeta objectMeta = getOrCreateMetadata(entity);,1,1,0.16666666666666666,238
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return null;,1,1,0.16666666666666666,239
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return Strings.firstNonBlank(getName(entity.getMetadata()),",1,1,0.16666666666666666,240
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(Template entity) {,1,1,0.16666666666666666,241
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(OAuthClient entity) {,1,1,0.16666666666666666,242
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(ImageStream entity) {,1,1,0.16666666666666666,243
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(DeploymentConfig entity) {,1,1,0.16666666666666666,244
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(BuildConfig entity) {,1,1,0.16666666666666666,245
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(Build entity) {,1,1,0.16666666666666666,246
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(Route entity) {,1,1,0.16666666666666666,247
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(Namespace entity) {,1,1,0.16666666666666666,248
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(Service entity) {,1,1,0.16666666666666666,249
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,public static ObjectMeta getOrCreateMetadata(ReplicationController entity) {,1,1,0.16666666666666666,250
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return metadata;,1,1,0.16666666666666666,251
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static JsonNodeFactory createNodeFactory() {,1,1,0.16666666666666666,252
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return Templates.combineTemplates(list, items);",0,1,0.16666666666666666,253
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static boolean isTemplate(JsonNode jsonNode) {,1,1,0.16666666666666666,254
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.openshift.api.model.DeploymentConfig;,1,1,0.16666666666666666,255
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import com.fasterxml.jackson.databind.JsonNode;,1,1,0.16666666666666666,256
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import com.fasterxml.jackson.databind.ObjectReader;,1,1,0.16666666666666666,257
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import com.fasterxml.jackson.databind.node.ArrayNode;,1,1,0.16666666666666666,258
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import com.fasterxml.jackson.databind.node.JsonNodeFactory;,1,1,0.16666666666666666,259
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import com.fasterxml.jackson.databind.node.ObjectNode;,1,1,0.16666666666666666,260
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.openshift.api.model.BuildConfig;,1,1,0.16666666666666666,261
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.openshift.api.model.ImageRepository;,1,1,0.16666666666666666,262
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return getJsonTextProperty(entity, ""kind"");",1,1,0.16666666666666666,263
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import java.io.ByteArrayInputStream;,1,1,0.16666666666666666,264
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import java.util.Iterator;,1,1,0.16666666666666666,265
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.kubernetes.api.model.Item;,1,1,0.16666666666666666,266
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.kubernetes.api.model.Template;,1,1,0.16666666666666666,267
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return Strings.firstNonBlank(,1,1,0.16666666666666666,268
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return null;,1,1,0.16666666666666666,269
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return list;,0,1,0.16666666666666666,270
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,list = new KubernetesList();,0,1,0.16666666666666666,271
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,list = (KubernetesList) object;,0,1,0.16666666666666666,272
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,KubernetesList list = null;,0,1,0.16666666666666666,273
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static KubernetesList findOrCreateList(Object[] objects) {,0,1,0.16666666666666666,274
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,Collection collection = (Collection) object;,0,1,0.16666666666666666,275
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,KubernetesList kubernetesList = (KubernetesList) object;,0,1,0.16666666666666666,276
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,},0,1,0.16666666666666666,277
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static void removeDuplicates(List<Object> itemArray) {,0,1,0.16666666666666666,278
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,* @param itemArray,0,1,0.16666666666666666,279
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,int size = list.size();,0,1,0.16666666666666666,280
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static void moveServicesToFrontOfArray(List<Object> list) {,0,1,0.16666666666666666,281
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,KubernetesList list = findOrCreateList(objects);,0,1,0.16666666666666666,282
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return false;,1,1,0.16666666666666666,283
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(Object.class).readValue(json);,0,1,0.16666666666666666,284
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import java.util.Collection;,0,1,0.16666666666666666,285
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,import io.fabric8.kubernetes.api.extensions.Templates;,0,1,0.16666666666666666,286
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,},1,1,0.16666666666666666,287
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return config.getItems();,0,1,0.16666666666666666,288
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (String name : names) {,1,1,0.16666666666666666,289
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,byte[] bytes = json.getBytes();,1,1,0.16666666666666666,290
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,current = current.get(name);,1,1,0.16666666666666666,291
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static boolean isService(JsonNode jsonNode) {,1,1,0.16666666666666666,292
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,int size = itemArray.size();,1,1,0.16666666666666666,293
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static void moveServicesToFrontOfArray(ArrayNode itemArray) {,1,1,0.16666666666666666,294
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return template;,1,1,0.16666666666666666,295
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectNode objectNode = (ObjectNode) template;,1,1,0.16666666666666666,296
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,// TODO combine templates...,1,1,0.16666666666666666,297
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,for (JsonNode jsonNode : config) {,1,1,0.16666666666666666,298
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return combineTemplates(config, itemArray);",1,1,0.16666666666666666,299
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectNode objectNode = (ObjectNode) config;,1,1,0.16666666666666666,300
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemArray = new ArrayNode(createNodeFactory());,1,1,0.16666666666666666,301
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemArray = (ArrayNode) items;,1,1,0.16666666666666666,302
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return entity;,1,1,0.16666666666666666,303
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return config;,1,1,0.16666666666666666,304
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static void removeDuplicates(ArrayNode itemArray) {,1,1,0.16666666666666666,305
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,List<Object> itemList = new ArrayList<>();,1,1,0.16666666666666666,306
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(Service.class).readValue(json);,1,1,0.16666666666666666,307
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,protected static Config loadList(byte[] data) throws IOException {,1,1,0.16666666666666666,308
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ObjectReader reader = objectMapper.reader();,1,1,0.16666666666666666,309
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return tree;,1,1,0.16666666666666666,310
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return toItemList(getEntity(jsonNode));,1,1,0.16666666666666666,311
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(Pod.class).readValue(json);,1,1,0.16666666666666666,312
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(ReplicationController.class).readValue(json);,1,1,0.16666666666666666,313
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"return loadEntity(json, kind, tree);",1,1,0.16666666666666666,314
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(BuildConfig.class).readValue(json);,1,1,0.16666666666666666,315
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(ImageRepository.class).readValue(json);,1,1,0.16666666666666666,316
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(Template.class).readValue(json);,1,1,0.16666666666666666,317
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return loadList(json);,1,1,0.16666666666666666,318
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return objectMapper.reader(DeploymentConfig.class).readValue(json);,1,1,0.16666666666666666,319
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,return defaultValue;,1,1,0.16666666666666666,320
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemArray.add(node);,1,0,0.0,321
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"config.set(""items"", factory.arrayNode());",1,0,0.0,322
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"config.set(""kind"", factory.textNode(""List""));",1,0,0.0,323
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"config.set(""apiVersion"", factory.textNode(defaultApiVersion));",1,0,0.0,324
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,// lets create a new list,1,0,0.0,325
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,i--;,1,0,0.0,326
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemArray.add(item);,1,0,0.0,327
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,size--;,1,0,0.0,328
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemArray.remove(i);,1,0,0.0,329
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,// lets remove this one,1,0,0.0,330
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"itemArray.set(lastNonService, jsonNode);",1,0,0.0,331
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"itemArray.set(i, nonService);",1,0,0.0,332
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,/**,0,0,0.0,333
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""name""),",1,0,0.0,334
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,*/,0,0,0.0,335
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,metadata.setNamespace(namespace);,0,0,0.0,336
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,metadata.setName(name);,0,0,0.0,337
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,answer.add((HasMetadata) entity);,0,0,0.0,338
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,entity.setMetadata(metadata);,1,0,0.0,339
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getAdditionalPropertyText(entity.getAdditionalProperties(), ""name""),",1,0,0.0,340
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""id"")",1,0,0.0,341
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,);,1,0,0.0,342
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,getOrCreateMetadata(entity).setName(name);,1,0,0.0,343
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,objectMeta.setNamespace(namespace);,1,0,0.0,344
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,objectMeta.setName(name);,1,0,0.0,345
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getAdditionalPropertyText(entity.getAdditionalProperties(), ""namespace""),",1,0,0.0,346
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getAdditionalNestedPropertyText(entity.getAdditionalProperties(), ""metadata"", ""namespace""));",1,0,0.0,347
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"objectNode.set(""objects"", itemArray);",1,0,0.0,348
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,objects.add(jsonNode);,1,0,0.0,349
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,/*,1,0,0.0,350
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ArrayNode objects;,1,0,0.0,351
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,removeDuplicates(itemArray);,1,0,0.0,352
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,list.setItems(items);,0,0,0.0,353
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"addObjectsToItemArray(items, object);",0,0,0.0,354
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,moveServicesToFrontOfArray(items);,0,0,0.0,355
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,removeDuplicates(items);,0,0,0.0,356
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"list.set(i, nonService);",0,0,0.0,357
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"list.set(lastNonService, item);",0,0,0.0,358
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemArray.remove(i);,0,0,0.0,359
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,i--;,0,0,0.0,360
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,size--;,0,0,0.0,361
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,// lets remove this one,0,0,0.0,362
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,destinationList.addAll(items);,0,0,0.0,363
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,destinationList.addAll(collection);,0,0,0.0,364
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,destinationList.add(object);,0,0,0.0,365
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,break;,0,0,0.0,366
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,TODO Config,1,0,0.0,367
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,*/,1,0,0.0,368
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getJsonTextProperty(entity, ""metadata"", ""name""),",1,0,0.0,369
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getJsonTextProperty(entity, ""metadata"", ""id""),",1,0,0.0,370
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getJsonTextProperty(entity, ""name""),",1,0,0.0,371
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"getJsonTextProperty(entity, ""id""));",1,0,0.0,372
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,config.setItems(itemList);,1,0,0.0,373
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,itemList.add(entity);,1,0,0.0,374
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,/**,1,0,0.0,375
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,ArrayNode itemArray;,1,0,0.0,376
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"objectNode.set(""items"", itemArray);",1,0,0.0,377
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,"addObjectsToItemArray(itemArray, object);",1,0,0.0,378
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,moveServicesToFrontOfArray(itemArray);,1,0,0.0,379
+ace336a657f1b61b392bb3b5f84e24b5909ebcd0,answer.add(answer);,1,0,0.0,380

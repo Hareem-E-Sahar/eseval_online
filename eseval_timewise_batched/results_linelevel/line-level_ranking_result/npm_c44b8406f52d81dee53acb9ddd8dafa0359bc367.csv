@@ -1,0 +1,32 @@
+commit_id,line,line_level_label,count,line_score,row
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,var depObjectifyWarn = {},0,3,1.0,1
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"if (typeof deps === ""string"") {",0,3,1.0,2
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,if (!deps) return {},0,3,1.0,3
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,function depObjectify (deps) {,1,2,0.6666666666666666,4
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"if (opts.dev || npm.config.get(""dev"") || npm.config.get(""npat"")) {",1,2,0.6666666666666666,5
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"json[d] = json.hasOwnProperty(d) ? depObjectify(json[d], d, json._id) : {}",1,2,0.6666666666666666,6
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,";[""dependencies"", ""devDependencies""].forEach(function (d) {",1,2,0.6666666666666666,7
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,Object.keys(json.optionalDependencies).forEach(function (d) {,0,2,0.6666666666666666,8
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,].forEach(function (d) {,0,2,0.6666666666666666,9
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,json[d] = json[d] ? depObjectify(json[d]) : {},1,2,0.6666666666666666,10
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"deps = deps.trim().split(/[\n\r\s\t ,]+/)",0,2,0.6666666666666666,11
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,&& !depObjectifyWarn[id+d]) {,0,2,0.6666666666666666,12
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"if ((!deps || typeof deps !== ""object"" || Array.isArray(deps))",0,2,0.6666666666666666,13
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"function depObjectify (deps, d, id) {",0,2,0.6666666666666666,14
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"json[d] = json.hasOwnProperty(d) ? depObjectify(json[d], d, json._id) : {}",0,2,0.6666666666666666,15
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,}),0,1,0.3333333333333333,16
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"|| npm.config.get(""npat"")) {",0,1,0.3333333333333333,17
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,if (opts.dev,0,1,0.3333333333333333,18
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,json.dependencies[d] = json.optionalDependencies[d],0,1,0.3333333333333333,19
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,// always merge optionals into deps,0,1,0.3333333333333333,20
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"log.warn( d + "" field should be hash of <name>:<version-range> pairs""",0,1,0.3333333333333333,21
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,: {},0,1,0.3333333333333333,22
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,json[d] = json.hasOwnProperty(d),0,1,0.3333333333333333,23
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,},0,1,0.3333333333333333,24
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,depObjectifyWarn[id + d] = true,0,1,0.3333333333333333,25
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,", id )",0,0,0.0,26
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"; [ ""dependencies""",0,0,0.0,27
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,", ""devDependencies""",0,0,0.0,28
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,", ""optionalDependencies""",0,0,0.0,29
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"? depObjectify(json[d], d, json._id)",0,0,0.0,30
+c44b8406f52d81dee53acb9ddd8dafa0359bc367,"|| npm.config.get(""dev"")",0,0,0.0,31
