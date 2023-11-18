@@ -13,21 +13,25 @@ also contains the code to conduct line level evaluation, the code for which is i
 
 
 ## Step2: Reproduce the results
+1. Download elasticsearch latest version (https://www.elastic.co/downloads/elasticsearch) and run the server before running irjit evaluation.
 
-1. To run the online evaluation for IRJIT go to eseval_timewise/code and run this command. \
+2. To run the online evaluation for IRJIT go to eseval_timewise/code and run this command. \
 python3 eseval_for_cabral_dataset_with_latency_v6.py -project npm -K 5
 
 
-2. To run the batched evaluation for IRJIT go to eseval_timewise_batched/code and run this command. \
+3. To run the batched evaluation for IRJIT go to eseval_timewise_batched/code and run this command. \
 python3 eseval_for_cabral_dataset_with_latency_v5.py -project camel -K 3 -settings "indexsettings_camel.txt" -querytype "notboolean"
 
 
-3. To run line level evaluation go to eseval_timewise_batched/linelevel_code and run this command. \
+4. To run line level evaluation go to eseval_timewise_batched/linelevel_code and run this command. \
 python3 eseval_linelevel.py -project brackets -K 3 -settings "indexsettings_camel.txt" -querytype "notboolean"
 The code uses data in the linelevel_data folder.
 
 
-4. To run the batched evaluation for JITLine go to JITLine and run these commands:\
+5. To run the batched evaluation for JITLine first set up the environment using following commands.
+conda env create --file requirements.yml
+conda activate JITLine go to JITLine \
+Then run the following command
 python3 JITLine_RQ1-RQ2.py
 python3 JITLine-RQ3.py
 for commit level and line level evaluation respectively.
