@@ -28,8 +28,8 @@ python3 eseval_linelevel.py -project brackets -K 3 -settings "indexsettings_came
 The code uses data in the linelevel_data folder.
 
 
-5. To run the batched evaluation for JITLine first set up the environment using following commands.
-conda env create --file requirements.yml
+5. To run the batched evaluation for JITLine first set up the environment using following commands.\
+conda env create --file requirements.yml\
 conda activate JITLine go to JITLine \
 Then run the following command
 python3 JITLine_RQ1-RQ2.py
