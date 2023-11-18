@@ -24,7 +24,7 @@ python3 eseval_for_cabral_dataset_with_latency_v5.py -project camel -K 3 -settin
 
 3. To run line level evaluation go to eseval_timewise_batched/linelevel_code and run this command. \
 python3 eseval_linelevel.py -project brackets -K 3 -settings "indexsettings_camel.txt" -querytype "notboolean"
-The code uses data in the linelevel_data folder.\
+The code uses data in the linelevel_data folder.
 
 
 4. To run the batched evaluation for JITLine go to JITLine and run these commands:\
