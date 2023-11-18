@@ -9,8 +9,10 @@ from Queue import Queue
 from Classifier import Classifier
 from elasticsearch.helpers import bulk
 import cProfile, pstats, io
-from pstats import SortKey
+from lineEval import *
+
 commit_files_dict = {}
+project = "tomcat"
 #the commit is not buggy
 NOT_BUG = 0
 # the commit is buggy but its true label was not found within W days for test dataset
@@ -42,51 +44,67 @@ def populate_index_bulk(es_handler,index_name,folder_path,commit_id,doc_id):
     return doc_id
 
 
-def run_evaluation_with_latency(csv_data_list,type3_dict,folder_path,es_handler,index_name,K,test_data,qtype):
+def get_lines_added_to_commit(commit):
+	commit_files = commit_files_dict[commit]
+
+	lines_added = []
+	for file_path in commit_files:
+		lines_added_str = get_lines_added(file_path)
+		lines_added = lines_added_str.splitlines() #str to list of lines
+	return lines_added
+
+
+def run_evaluation_with_latency(csv_data_list, type3_dict, folder_path, es_handler, index_name, project, K, sampled_test_data, qtype):
 	TRAIN_DATA_LENGTH = math.ceil(len(csv_data_list)*0.1)
 	W = 90
-	row_count = 0
 	doc_id = 0
 	WFL_queue = Queue()
 	CLH_queue = Queue()
 	result_list = []
+	new_tr_examples = []
+	commit_vs_buggy_tokens_dict = {}
+	commit_vs_buggy_lines = {}
+	all_buggy_line_result_df = []
+      
+	       
 	for row in csv_data_list:
-
-		if row.commit_id not in test_data['commit_id'].values:
+		if row.commit_id not in sampled_test_data['commit_id'].values:
 			doc_id = populate_index_bulk(es_handler,index_name,folder_path,row.commit_id,doc_id)
-		else:
-			predicted = predict(K,row.commit_id,folder_path,index_name,qtype)
-			#if predicted is not None:
-			res = Result(row.commit_id,row.contains_bug,predicted)
-			result_list.append(res)
-			print(row.commit_id,row.contains_bug,predicted)
-
-			duplicate_count = np.count_nonzero(test_data['commit_id'].values == row.commit_id)
 			
-			for i in range(1,duplicate_count):
-				result_list.append(res)
+
+		else:
+			predicted, commit_buggy_tokens  = predict(K,row.commit_id,row.contains_bug,folder_path,index_name,qtype)
+			#print(row.commit_id,row.contains_bug,predicted)
+			
+			if row.contains_bug=='True' and predicted=='True':
+				line_score_df = rank_ground_truth_lines(project, row.commit_id, commit_buggy_tokens)
+				if line_score_df is not None:
+					all_buggy_line_result_df.append(line_score_df)                            
+			
+			res = Result(row.commit_id,row.contains_bug,predicted) #previously, we checked if predicted is not None
+			result_list.append(res)
+			
+			duplicate_count = np.count_nonzero(sampled_test_data['commit_id'].values == row.commit_id)
+			result_list.extend([res] * (duplicate_count - 1)) #add to list count-1 times
 
 			WFL_queue.enqueue(row) #store object of class CSVData
 			new_tr_examples = check_WFL_queue(WFL_queue,CLH_queue,row.author_date_unix_timestamp,W,type3_dict)
+			new_tr_examples.extend ( check_CLH_queue(CLH_queue,row.author_date_unix_timestamp,W,type3_dict) )
+
 			if len(new_tr_examples) > 0:
-				for example in new_tr_examples:
-					doc_id = populate_index_bulk(es_handler,index_name,folder_path,example.commit_id,doc_id)
-
-			new_tr_examples = check_CLH_queue(CLH_queue,row.author_date_unix_timestamp,W,type3_dict)
-			if len(new_tr_examples) > 0:
-				for example in new_tr_examples:
-					doc_id = populate_index_bulk(es_handler,index_name,folder_path,example.commit_id,doc_id)
-		row_count +=1
-	return result_list
+				for row in new_tr_examples:
+					doc_id = populate_index_bulk(es_handler,index_name,folder_path,row.commit_id,doc_id)
+	print("all_buggy_line_result_df:",len(all_buggy_line_result_df))
+	return result_list,all_buggy_line_result_df
 
 
-#parallelize
-def predict(K,commit_id,folder_path,index_name,qtype):
+def predict(K,commit_id,contains_bug,folder_path,index_name,qtype):
 	mlt_query_executor = MoreLikeThisQuery(index_name) #class object
 	commit_files = get_files_for_commit(commit_id,folder_path)
-	commit_files_dict[commit_id] = commit_files #populate after predict
-	print("Test commit:",commit_id)
+	commit_files_dict[commit_id] = commit_files
+	#print("Test commit:",commit_id)
 	predicted = 'False'
+	commit_buggy_tokens = []
 	if len(commit_files)>0:
 		for file_path in commit_files:
 			like_text = get_lines_added(file_path)       # text to use for similarity
@@ -99,17 +117,21 @@ def predict(K,commit_id,folder_path,index_name,qtype):
 			else:
 				mlt_query_executor.execute_mlt_query(like_text, field) #min_term_freq, min_doc_freq
 
+		commit_buggy_tokens = mlt_query_executor.exp_obj.get_explanation_tokens()
+		#print_similar_documents(mlt_query_executor.similar_documents)
+
 		clf = Classifier(mlt_query_executor.similar_documents)
 		predicted = clf.classify_knn(K)
-	return predicted #'True','False' but not None anymore
+
+	return predicted,commit_buggy_tokens  #'True','False' but not None anymore
 
 
 def check_WFL_queue(WFL_queue,CLH_queue,current_timestamp,W,type3_dict):
-    #either bug is reported for commit or it has waited for W days in WFL_queue
     tr_examples = []
     for row in WFL_queue:
         if row.commit_type==NOT_BUG or row.commit_type==BUG_NOT_DISCOVERED_W_DAYS:
             if calculate_time_elapsed(current_timestamp,row.author_date_unix_timestamp) >= W:
+                #print(row.commit_id," is clean example at", current_timestamp)
                 row.contains_bug = 'False'
                 tr_examples.append(row)
                 WFL_queue.remove(row) #specific element
@@ -117,7 +139,7 @@ def check_WFL_queue(WFL_queue,CLH_queue,current_timestamp,W,type3_dict):
 
         elif row.commit_type == BUG_DISCOVERED_W_DAYS:#2
             if (defect_linked_at_timestamp(row,current_timestamp,type3_dict) is True):
-                #print(">>>>>>Defect linked to:",row.commit_id,"and current_timestamp is:",current_timestamp)
+                #print(">>>>>>>>>>>>>>>>>>Defect linked to:",row.commit_id,"and current_timestamp is:",current_timestamp)
                 row.contains_bug = 'True'
                 tr_examples.append(row)
                 WFL_queue.remove(row)
@@ -159,8 +181,6 @@ def calculate_time_elapsed(timestamp1,timestamp2):
 
 
 def main(argv):
-	# TO DOs:
-	# Dry run
 	parser = argparse.ArgumentParser(description="Pass arguments -p project -K integervalue.")
 	parser.add_argument('-project', type=str,  default='', help='Project name.')
 	parser.add_argument('-K', type=int, default=3, help='value of K for KNN.')
@@ -174,6 +194,8 @@ def main(argv):
 	print(parent_dir)
 	results_dir = os.path.join(parent_dir, "results") #results dir
 	data_dir = os.path.join(parent_dir, "cabral_dataset",args.project,"data/")
+	linelevel_results_dir = os.path.join(parent_dir, "results_linelevel/") #results dir
+      
 	print(data_dir)
 
 	index_name = "cabral_"+args.project.lower()
@@ -185,31 +207,36 @@ def main(argv):
 
 	es_handler = ElasticsearchHandler()
 	#response = es_handler.check_health()
-	response = es_handler.delete_index(index_name)
+	#response = es_handler.delete_index(index_name)
 	if not es_handler.client.indices.exists(index=index_name):
-	    response = es_handler.create_index(index_name,index_settings)
-	    print(response)
+		response = es_handler.create_index(index_name,index_settings)
+		print(response)
+
 
 	csv_data_list,type3_list = read_commits_csv(csv_file)
 	type3_dict = find_matches(csv_data_list,type3_list)
 
 	jitline_results_folder = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/online_eval_results/sampled_test_commits/"
-	#jitline_results_folder = "/home/hareem/UofA2023/JITLine-replication-package/JITLine/RQ4_prep/"
 
 
-	test_commits_file = jitline_results_folder + "/"+args.project+"_sampled_test_commits.csv"
-	test_data = pd.read_csv(test_commits_file,header=0)
-
+	test_commits_file = jitline_results_folder + "./"+args.project+"_sampled_test_commits.csv"
+	sampled_test_data = pd.read_csv(test_commits_file,header=0)
+	
+    
 	start_time = time.time()
-	result_list = run_evaluation_with_latency(csv_data_list,type3_dict,jsonfolder_path,es_handler,index_name,args.K,test_data,args.querytype)
+	result_list, all_buggy_line_result_df = run_evaluation_with_latency(csv_data_list, type3_dict, jsonfolder_path, es_handler, index_name, args.project , args.K, sampled_test_data, args.querytype)
 	end_time = time.time()
 	execution_time = end_time - start_time
 	cm = ConfusionMatrix(result_list)
 	cm.compute_metrics()
-	save_result(args.project,args.K,cm,execution_time,results_dir)
+	#save_result(args.project,args.K,cm,execution_time,results_dir)
+	save_linelevel_result(args.project, args.K, cm, linelevel_results_dir, all_buggy_line_result_df)
+	eval_line_level_at_commit(args.project, linelevel_results_dir)
+	
 	response = es_handler.delete_index(index_name)
 	print("Index deleted:",response)
 
+    
 
 if __name__ == "__main__":
     main(sys.argv[1:])
