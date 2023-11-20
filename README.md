@@ -23,7 +23,7 @@ Follow these steps to replicate the evaluation results:
      ```
      python3 eseval_for_cabral_dataset_with_latency_v6.py -project npm -K 5
      ```
-   - Before running the above command make sure you have obtained the source code changes for each commit and saved those as json files. 
+   - Before running the above command make sure you have obtained the source code changes for each commit and saved those as json files. A few sample json files are inside `~/cabral_dataset/npm/data/npm_jsonfiles`
 3. **Batched Evaluation for IRJIT**:
    - Go to `eseval_timewise_batched/code`.
    - Execute this command:
