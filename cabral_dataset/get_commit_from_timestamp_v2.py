@@ -1,3 +1,8 @@
+"""
+How to run 
+Copy the script to the github repository
+python3 get_commit_from_timestamp_v2.py -r ./ -p "/home/hareem/UofA2023/eseval_v2/eseval_online/cabral_dataset/BroadleafCommerce/data/BroadleafCommerce_commits.csv" -n BroadleafCommerce
+"""
 from datetime import datetime
 from dateutil.parser import parse
 import csv, subprocess
@@ -5,15 +10,6 @@ import pytz, argparse
 from github import Github
 from dateutil import parser
 from datetime import datetime
-'''
-Now we write one row at a time to the file, instead of saving all data in memory.
-python3 timestamp_to_commit.py -r ../camel -p "../suppmaterial-19-dayi-risk_data_merging_jit/data/camel2.csv" -n "camel"
-
-
-How to run 
-python3 get_commit_from_timestamp_v2.py -r ./ -p "/home/hareem/UofA2023/geocabral-spdisc-icse19-0a7955c/datasets/csv/broadleaf_test.csv" -n brackets
-
-'''
 
 data=[]
 def read_and_analyze_data(fname):
@@ -54,22 +50,6 @@ def get_commit_hashes(fname,wfname):
 				row['commit_id'] = commit_sha
 				writer.writerow(row)
 
-'''
-def timestamp_to_commit_using_API(actual_timestamp):
-	access_token = "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"
-	g = Github(access_token)
-	repo = g.get_repo("apache/camel")
-
-	start_datetime = datetime.fromtimestamp(actual_timestamp-60,tz=pytz.UTC)
-	end_datetime = datetime.fromtimestamp(actual_timestamp+60,tz=pytz.UTC)
-	print("start time",start_datetime)
-	print("end time",end_datetime)
-
-	#git log --after="2017-11-29 10:40:05" --before="2017-11-29 10:40:05"
-	commits = repo.get_commits(since=start_datetime, until=end_datetime)
-	for commit in commits:
-		return commit.sha #in case of multiple, first is returned
-'''
 
 def timestamp_to_commit_using_gitlog(actual_timestamp):
 	#This way you don't encounter API rate limit error.
