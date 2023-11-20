@@ -4,7 +4,8 @@
 ## Step 1: Clone the Repo
 The repository contains several important directories:
 - **JITLine**: Contains source code used to conduct batched evaluation of the baseline approach.
-- **cabral_dataset**: Includes the dataset of Cabral et al., now with commit IDs added to the original data.
+- **cabral_dataset**: Includes the dataset of Cabral et al., now with commit IDs added to the original data. Also contains a script 
+to extract source code changes of each commit and save as json files.
 - **eseval_timewise**: Contains code and results for the online evaluation of IRJIT.
 - **eseval_timewise_batched**: Has code and results for the batched evaluation of IRJIT, including line-level evaluation code found in the `linelevel_code` directory.
 - **linelevel_data**: Features line-level data and code used to extract this data.
@@ -22,7 +23,7 @@ Follow these steps to replicate the evaluation results:
      ```
      python3 eseval_for_cabral_dataset_with_latency_v6.py -project npm -K 5
      ```
-
+   - Before running the above command make sure you have obtained the source code changes for each commit and saved those as json files. 
 3. **Batched Evaluation for IRJIT**:
    - Go to `eseval_timewise_batched/code`.
    - Execute this command:
