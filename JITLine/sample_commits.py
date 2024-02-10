@@ -1,22 +1,23 @@
 import csv,random,math
 import pandas as pd
+def sample_from_both_classes(df,number_of_splits):
+	'''This function just helps in making bins. By sampling from both classes
+	we ensure that there is atleast one True and False example in the test data,
+	but since we sample 100 test commits from each bin, there is no guarantee
+	of what the final class distribution of the test data will look like'''
 
-'''
-def get_type3_commits_dictionary(df):
-	#df = pd.read_csv(filename)
-	#for a commit_id (key), the bug was reported at author_date_unix_timestamp (value)
-	type3_data_rows = df[df['commit_type'] == 3]
-	other = df[df['commit_type'] != 3]
-	type3_dict = {}
-	for i, row1 in type3_data_rows.iterrows():
-		for j, row2 in other.iterrows():
-			print(i,j)
-			if rows_equal(row1,row2):
-				author_date_unix_timestamp = row1['author_date_unix_timestamp']
-				commit_id = row2['commit_id']
-				type3_dict[commit_id]= author_date_unix_timestamp
-	return type3_dict
-'''
+	final_sampled_data = []
+	class1_data = df[df['contains_bug'] == True]
+	class2_data = df[df['contains_bug'] == False]
+	class1_commits = class1_data['commit_id'].tolist()
+	class2_commits = class2_data['commit_id'].tolist()
+
+	number_of_samples = math.floor(number_of_splits/2) #don't sample equal from each class, choose size randomly
+
+	sampled_class1 = random.sample(class1_commits,k=number_of_samples)
+	sampled_class2 = random.sample(class2_commits,k=number_of_samples)
+	final_sampled_data = sampled_class1 + sampled_class2
+	return final_sampled_data
 
 def get_type3_commits_dictionary(df):
 	#for a commit_id (key), the bug was reported at author_date_unix_timestamp (value)
@@ -101,11 +102,11 @@ def get_duplicates(input_file):
 	duplicate_rows = df[duplicate_mask]
 	duplicate_rows.to_csv('duplicate_rows.csv', index=False)# Filter and display the duplicate rows
 
-
-
 # Now commits_by_set contains lists of commits for each set,
 # sets contain row ranges for each set
-input_file="/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/spring-integration_metrics.csv"
-#commits_by_set = split_data_into_multiple_eval_sets (input_file,3)
+input_file="/home/hareem/UofA2023/JITLine-replication-package/JITLine/data/change_metrics/spring-integration_metrics.csv"
+import pandas as pd
+df = pd.read_csv(input_file)
+#commits_by_set = split_data_into_multiple_eval_sets (df,3)
 
 
